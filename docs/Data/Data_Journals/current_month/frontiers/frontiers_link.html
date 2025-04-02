@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>frontiers_link</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h1 id="frontiers">FRONTIERS</h1>
+<ul>
+<li><a
+href="Data/Data_Journals/current_month/frontiers/frontiers_all.html">All
+Journals</a></li>
+<li><a
+href="Data/Data_Journals/current_month/frontiers/FCOMP/FCOMP_complex_beauty.html">FCOMP</a></li>
+<li><a
+href="Data/Data_Journals/current_month/frontiers/FDATA/FDATA_complex_beauty.html">FDATA</a></li>
+<li><a
+href="Data/Data_Journals/current_month/frontiers/FRAI/FRAI_complex_beauty.html">FRAI</a></li>
+<li><a
+href="Data/Data_Journals/current_month/frontiers/FROBT/FROBT_complex_beauty.html">FROBT</a></li>
+</ul>
+
+</body>
+</html>

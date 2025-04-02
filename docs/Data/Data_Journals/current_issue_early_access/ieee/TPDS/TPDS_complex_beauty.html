@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPDS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpds---16">TPDS - 16</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Towards communication-efficient out-of-core graph processing
+on the GPU. <em>TPDS</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPDS.2025.3547356">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The key performance bottleneck of large-scale graph processing on memory-limited GPUs is the host-GPU graph data transfer. Existing GPU-accelerated graph processing frameworks address this issue by managing the active subgraph transfer at runtime. Some frameworks adopt explicit transfer management approaches based on explicit memory copy with filter or compaction. In contrast, others adopt implicit transfer management approaches based on on-demand accesses with the zero-copy mechanism or unified virtual memory. Having made intensive analysis, we find that as the active vertices evolve, the performance of the two approaches varies in different workloads. Due to heavy redundant data transfers, high CPU compaction overhead, or low bandwidth utilization, adopting a single approach often results in suboptimal performance. Moreover, these methods lack effective cache management methods to address the irregular and sparse memory access pattern of graph processing. In this work, we propose a hybrid transfer management approach that takes the merits of both two transfer approaches at runtime. Moreover, we present an efficient vertex-centric graph caching framework that minimizes CPU-GPU communication by caching frequently accessed graph data at runtime. Based on these techniques, we present HytGraph, a GPU-accelerated graph processing framework, which is empowered by a set of effective task-scheduling optimizations to improve performance. Experiments on real-world and synthetic graphs show that HytGraph achieves average speedups of 2.5×, 5.0×, and 2.0× compared to the state-of-the-art GPU-accelerated graph processing systems, Grus, Subway, and EMOGI, respectively.},
+  archive      = {J_TPDS},
+  author       = {Qiange Wang and Xin Ai and Yongze Yan and Shufeng Gong and Yanfeng Zhang and Jing Chen and Ge Yu},
+  doi          = {10.1109/TPDS.2025.3547356},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Towards communication-efficient out-of-core graph processing on the GPU},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PimBeam: Efficient regular path queries over graph database
+using processing-in-memory. <em>TPDS</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPDS.2025.3547365">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Regular path queries (RPQs) in graph databases are bottlenecked by the memory wall. Emerging processingin-memory (PIM) technologies offer a promising solution to dispatch and execute path matching tasks in parallel within PIM modules. We present an efficient PIM-based data management system tailored for RPQs and graph updates. Our solution, called PimBeam, facilitates efficient batch RPQs and graph updates by implementing a PIM-friendly dynamic graph partitioning algorithm. This algorithm effectively addresses graph skewness issues while maintaining graph locality with low overhead for handling RPQs. PimBeam streamlines label filtering queries by adding a filtering module on the PIM side and leveraging the parallelism of PIM. For the graph updates, PimBeam enhances processing efficiency by amortizing the host CPU&#39;s update overhead to PIM modules. Evaluation results of PimBeam indicate 3.59x speedup for RPQs and 29.33x speedup for graph update on average over the state-of-the-art traditional graph database.},
+  archive      = {J_TPDS},
+  author       = {Weihan Kong and Shengan Zheng and Yifan Hua and Ruoyan Ma and Yuheng Wen and Guifeng Wang and Cong Zhou and Linpeng Huang},
+  doi          = {10.1109/TPDS.2025.3547365},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {PimBeam: Efficient regular path queries over graph database using processing-in-memory},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward load-balanced redundancy transitioning for
+erasure-coded storage. <em>TPDS</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPDS.2025.3547872">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Redundancy transitioning enables erasure-coded storage to adapt to varying performance and reliability requirements by re-encoding data with new coding parameters on-the-fly. Existing studies focus on bandwidth-driven redundancy transitioning that reduces the transitioning bandwidth across storage nodes, yet the actual redundancy transitioning performance remains bottlenecked by the most loaded node. We present BART, a load-balanced redundancy transitioning scheme that aims to reduce the redundancy transitioning time via carefully scheduled parallelization. We show that finding an optimal load-balanced solution is difficult due to the large solution space. Given this challenge, BART decomposes the redundancy transitioning problem into multiple sub-problems and solves the sub-problems via efficient heuristics. We evaluate BART using both simulations for large-scale storage and HDFS prototype experiments on Alibaba Cloud. We show that BART significantly reduces the redundancy transitioning time compared with the bandwidth-driven approach.},
+  archive      = {J_TPDS},
+  author       = {Keyun Cheng and Huancheng Puyang and Xiaolu Li and Patrick P. C. Lee and Yuchong Hu and Jie Li and Ting-Yi Wu},
+  doi          = {10.1109/TPDS.2025.3547872},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Toward load-balanced redundancy transitioning for erasure-coded storage},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SMore: Enhancing GPU utilization in deep learning clusters
+by serverless-based co-location scheduling. <em>TPDS</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPDS.2025.3548320">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning (DL) clusters allow machine learning practitioners to submit their computation-intensive tasks, with GPUs accelerating their execution process. However, GPUs in current deep learning clusters are often under-utilized, which hampers the job performance and overall cluster throughput. It is urgent to improve GPU utilization, but existing works lack research on fine-grained allocation for GPU resources, as it typically allocates GPUs as indivisible units. Serverless computing reveals an opportunity to optimize utilization with fine-grained resource allocation methods, but it requires addressing three main challenges: co-location performance degradation, service level objectives guarantee of serverless functions, and cold start overhead. We propose SMore, a framework based on serverless computing to optimize GPU resource utilization of DL clusters. SMore dynamically predicts the possible co-location performance degradation and leverages a degradation-aware scheduling algorithm to ensure that the co-location decisions do not impact workload performance. It also dynamically preloads or offloads DL models by predicting the request numbers of the subsequent period to address the cold start issue. Through actual trace testing on the prototype of SMore, we find that the average GPU utilization can be increased by 34% with degradation being controlled effectively.},
+  archive      = {J_TPDS},
+  author       = {Junhan Liu and Zinuo Cai and Yumou Liu and Hao Li and Zongpu Zhang and Ruhui Ma and Rajkumar Buyya},
+  doi          = {10.1109/TPDS.2025.3548320},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {SMore: Enhancing GPU utilization in deep learning clusters by serverless-based co-location scheduling},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FedLoRE: Communication-efficient and personalized edge
+intelligence framework via federated low-rank estimation. <em>TPDS</em>,
+1–17. (<a href="https://doi.org/10.1109/TPDS.2025.3548444">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) has recently garnered significant attention in edge intelligence. However, FL faces two major challenges: First, statistical heterogeneity can adversely impact the performance of the global model on each client. Second, the model transmission between server and clients leads to substantial communication overhead. Previous works often suffer from the trade-off issue between these seemingly competing goals, yet we show that it is possible to address both challenges simultaneously. We propose a novel communication-efficient personalized FL framework for edge intelligence that estimates the low-rank component of the training model gradient and stores the residual component at each client. The low-rank components obtained across communication rounds have high similarity, and sharing these components with the server can significantly reduce communication overhead. Specifically, we highlight the importance of previously neglected residual components in tackling statistical heterogeneity, and retaining them locally for training model updates can effectively improve the personalization performance. Moreover, we provide a theoretical analysis of the convergence guarantee of our framework. Extensive experimental results demonstrate that our framework outperforms state-of-the-art approaches, achieving up to 89.18% reduction in communication overhead and 91.00% reduction in computation overhead while maintaining comparable personalization accuracy compared to previous works.},
+  archive      = {J_TPDS},
+  author       = {Zerui Shao and Beibei Li and Peiran Wang and Yi Zhang and Kim-Kwang Raymond Choo},
+  doi          = {10.1109/TPDS.2025.3548444},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {FedLoRE: Communication-efficient and personalized edge intelligence framework via federated low-rank estimation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graphite: Hardware-aware GNN reshaping for acceleration with
+GPU tensor cores. <em>TPDS</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPDS.2025.3549180">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph neural networks (GNNs) have emerged as powerful tools for addressing non-Euclidean problems. GNNs operate through two key execution phases: i) aggregation and ii) combination. In the aggregation phase, the feature data of neighboring graph nodes are gathered, which is expressed as sparse-dense matrix multiplication (SpMM) between an adjacency matrix and a feature embedding table. The combination phase takes the aggregated feature embedding as input to a neural network model with learnable weights. Typically, the adjacency matrix is extremely sparse due to inherent graph structures, making the aggregation phase a significant bottleneck in GNN computations. This paper introduces Graphite, a GNN acceleration framework to overcome the challenge of SpMM operations and enable graphics processing units (GPUs) to exploit massive thread-level parallelism more efficiently via existing dense acceleration units (i.e., tensor cores). To that end, Graphite employs three techniques for GNN acceleration. Firstly, hardware-aware sparse graph reshaping (HAS) rearranges graph structures to replace sparse operations with dense computations, enabling hardware acceleration through GPU tensor cores. Additionally, balanced thread block scheduling (BTS) distributes sparse thread blocks evenly across streaming multiprocessors in GPUs, and zero-aware warp skipping (ZAWS) eliminates ineffective threads that operate on meaningless zeros. Experimental results show that Graphite achieves an average compression rate of 84.1% for adjacency matrices using HAS. Combined with BTS and ZAWS, Graphite delivers an average 1.55x speedup over the conventional SpMM-based GNN computation method.},
+  archive      = {J_TPDS},
+  author       = {Hyeonjin Kim and Taesoo Lim and William J. Song},
+  doi          = {10.1109/TPDS.2025.3549180},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Graphite: Hardware-aware GNN reshaping for acceleration with GPU tensor cores},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement learning-driven adaptive prefetch
+aggressiveness control for enhanced performance in parallel system
+architectures. <em>TPDS</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPDS.2025.3550531">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In modern parallel system architectures, prefetchers are essential to mitigating the performance challenges posed by long memory access latencies. These architectures rely heavily on efficient memory access patterns to maximize system throughput and resource utilization. Prefetch aggressiveness is a central parameter in managing these access patterns; although increased prefetch aggressiveness can enhance performance for certain applications, it often risks causing cache pollution and bandwidth contention, leading to significant performance degradation in other workloads. While many existing prefetchers rely on static or simple built-in aggressiveness controllers, a more flexible, adaptive approach based on system-level feedback is essential to achieving optimal performance across parallel computing environments. In this paper, we introduce an Adaptive Prefetch Aggressiveness Control (APAC) framework that leverages Reinforcement Learning (RL) to dynamically manage prefetch aggressiveness in parallel system architectures. The APAC controller operates as an RL agent, which optimizes prefetch aggressiveness by dynamically responding to system feedback on prefetch accuracy, timeliness, and cache pollution. The agent receives a reward signal that reflects the impact of each adjustment on both performance and memory bandwidth, learning to adapt its control strategy based on workload characteristics. This data-driven adaptability makes APAC particularly well-suited for parallel architectures, where efficient resource management across cores is essential to scaling system performance. Our evaluation with the ChampSim simulator demonstrates that APAC effectively adapts to diverse workloads and system configurations, achieving performance gains of 6.73% in multi-core systems compared to traditional Feedback Directed Prefetching (FDP). By improving memory bandwidth utilization, reducing cache pollution, and minimizing inter-core interference, APAC significantly enhances prefetching performance in multi-core processors. These results underscore APAC&#39;s potential as a robust solution for performance optimization in parallel system architectures, where efficient resource management is paramount for scaling modern processing environments.},
+  archive      = {J_TPDS},
+  author       = {Huijing Yang and Juan Fang and Yumin Hou and Xing Su and Neal N. Xiong},
+  doi          = {10.1109/TPDS.2025.3550531},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Reinforcement learning-driven adaptive prefetch aggressiveness control for enhanced performance in parallel system architectures},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CiMBA: Accelerating genome sequencing through on-device
+basecalling via compute-in-memory. <em>TPDS</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPDS.2025.3550811">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As genome sequencing is finding utility in a wide variety of domains beyond the confines of traditional medical settings, its computational pipeline faces two significant challenges. First, the creation of up to 0.5 GB of data per minute imposes substantial communication and storage overheads. Second, the sequencing pipeline is bottlenecked at the basecalling step, consuming &gt;40% of genome analysis time. A range of proposals have attempted to address these challenges, with limited success. We propose to address these challenges with a Compute-in-Memory Basecalling Accelerator (CiMBA), the first embedded ($\sim 25$mm$^{2}$) accelerator capable of real-time, on-device basecalling, coupled with AnaLog (AL)-Dorado, a new family of analog focused basecalling DNNs. Our resulting hardware/software co-design greatly reduces data communication overhead, is capable of a throughput of 4.77 million bases per second, 24× that required for real-time operation, and achieves 17×/27× power/area efficiency over the best prior basecalling embedded accelerator while maintaining a high accuracy comparable to state-of-the-art software basecallers.},
+  archive      = {J_TPDS},
+  author       = {William Andrew Simon and Irem Boybat and Riselda Kodra and Elena Ferro and Gagandeep Singh and Mohammed Alser and Shubham Jain and Hsinyu Tsai and Geoffrey W. Burr and Onur Mutlu and Abu Sebastian},
+  doi          = {10.1109/TPDS.2025.3550811},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {CiMBA: Accelerating genome sequencing through on-device basecalling via compute-in-memory},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The design of a high-performance fine-grained deduplication
+framework for backup storage. <em>TPDS</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPDS.2025.3551306">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fine-grained deduplication (also known as delta compression) can achieve a better deduplication ratio compared to chunk-level deduplication. This technique removes not only identical chunks but also reduces redundancies between similar but non-identical chunks. Nevertheless, it introduces considerable I/O overhead in deduplication and restore processes, hindering the performance of these two processes and rendering fine-grained deduplication less popular than chunk-level deduplication to date. In this paper, we explore various issues that lead to additional I/O overhead and tackle them using several techniques. Moreover, we introduce MeGA, which attains fine-grained deduplication/restore speed nearly equivalent to chunk-level deduplication while maintaining the significant deduplication ratio benefit of fine-grained deduplication. Specifically, MeGA employs (1) a backup-workflow-oriented delta selector and cache-centric resemblance detection to mitigate poor spatial/temporal locality in the deduplication process, and (2) a delta-friendly data layout and “Always-Forward-Reference” traversal to address poor spatial/temporal locality in the restore workflow. Evaluations on four datasets show that MeGA achieves a better performance than other fine-grained deduplication approaches. Specifically, MeGA significantly outperforms the traditional greedy approach, providing 10–46 times better backup speed and 30–105 times more efficient restore speed, all while preserving a high deduplication ratio.},
+  archive      = {J_TPDS},
+  author       = {Xiangyu Zou and Wen Xia and Philip Shilane and Haijun Zhang and Xuan Wang},
+  doi          = {10.1109/TPDS.2025.3551306},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {The design of a high-performance fine-grained deduplication framework for backup storage},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GEREM: Fast and precise error resilience assessment for GPU
+microarchitectures. <em>TPDS</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPDS.2025.3552679">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {GPUs are widely used hardware acceleration platforms in many areas due to their great computational throughput. In the meanwhile, GPUs are vulnerable to transient hardware faults in the post-Moore era. Analyzing the error resilience of GPUs are critical for both hardware and software. Statistical fault injection approaches are commonly used for error resilience analysis, which are highly accurate but very time consuming. In this work, we propose GEREM, a first framework to speed up fault injection process so as to estimate the error resilience of GPU microarchitectures swiftly and precisely. We find early fault behaviors can be used to accurately predict the final outcomes of program execution. Based on this observation, we categorize the early behaviors of hardware faults into GPU Early Fault Manifestation models (EFMs). For data structures, EFMs are early propagation characteristics of faults, while for pipeline instructions, EFMs are heuristic properties of several instruction contexts. We further observe that EFMs are determined by static microarchitecture states, so we can capture them without actually simulating the program execution process under fault injections. Leveraging these observations, our GEREM framework first profiles the microarchitectural states related for EFMs at one time. It then injects faults into the profiled traces to immediately generate EFMs. For data storage structures, EFMs are directly used to predict final fault outcomes, while for pipeline instructions, machine learning is used for prediction. Evaluation results show GEREM precisely assesses the error resilience of GPU microarchitecture structures with $237\times$ speedup on average comparing with traditional fault injections.},
+  archive      = {J_TPDS},
+  author       = {Jingweijia Tan and Xurui Li and An Zhong and Kaige Yan and Xiaohui Wei and Guanpeng Li},
+  doi          = {10.1109/TPDS.2025.3552679},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {GEREM: Fast and precise error resilience assessment for GPU microarchitectures},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). OmniLearn: A framework for distributed deep learning over
+heterogeneous clusters. <em>TPDS</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPDS.2025.3553066">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning systems are optimized for clusters with homogeneous resources. However, heterogeneity is prevalent in computing infrastructure across edge, cloud and HPC. When training neural networks using stochastic gradient descent techniques on heterogeneous resources, performance degrades due to stragglers and stale updates. In this work, we develop an adaptive batch-scaling framework called OmniLearn to mitigate the effects of heterogeneity in distributed training. Our approach is inspired by proportional controllers to balance computation across heterogeneous servers, and works under varying resource availability. By dynamically adjusting worker mini-batches at runtime, OmniLearn reduces training time by 14-85%. We also investigate asynchronous training, where our techniques improve accuracy by up to 6.9%},
+  archive      = {J_TPDS},
+  author       = {Sahil Tyagi and Prateek Sharma},
+  doi          = {10.1109/TPDS.2025.3553066},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {OmniLearn: A framework for distributed deep learning over heterogeneous clusters},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerating sparse tensor decomposition using adaptive
+linearized representation. <em>TPDS</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPDS.2025.3553092">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-dimensional sparse data emerge in many critical application domains such as healthcare and cybersecurity. To extract meaningful insights from massive volumes of these multi-dimensional data, scientists employ unsupervised analysis tools based on tensor decomposition (TD) methods. However, real-world sparse tensors exhibit highly irregular shapes and data distributions, which pose significant challenges for making efficient use of modern parallel processors. This study breaks the prevailing assumption that compressing sparse tensors into coarse-grained structures (i.e., tensor slices or blocks) or along a particular dimension/mode (i.e., mode-specific) is more efficient than keeping them in a fine-grained, mode-agnostic form. Our novel sparse tensor representation, Adaptive Linearized Tensor Order (ALTO), encodes tensors in a compact format that can be easily streamed from memory and is amenable to both caching and parallel execution. In contrast to existing compressed tensor formats, ALTO constructs one tensor copy that is agnostic to both the mode orientation and the irregular distribution of nonzero elements. To demonstrate the efficacy of ALTO, we accelerate popular TD methods that compute the Canonical Polyadic Decomposition (CPD) model across different types of sparse tensors. We propose a set of parallel TD algorithms that exploit the inherent data reuse of tensor computations to substantially reduce synchronization overhead, decrease memory footprint, and improve parallel performance. Additionally, we characterize the major execution bottlenecks of TD methods on multiple generations of the latest Intel Xeon Scalable processors, including Sapphire Rapids CPUs, and introduce dynamic adaptation heuristics to automatically select the best algorithm based on the sparse tensor characteristics. Across a diverse set of real-world data sets, ALTO outperforms the state-of-the-art approaches, achieving more than an order-of-magnitude speedup over the best mode-agnostic formats. Compared to the best mode-specific formats, which require multiple tensor copies, ALTO achieves $5.1\times$ geometric mean speedup at a fraction (25%) of their storage costs. Moreover, ALTO obtains $8.4\times$ geometric mean speedup over the state-of-the-art memoization approach, which reduces computations by using extra memory, while requiring 14% of its memory consumption.},
+  archive      = {J_TPDS},
+  author       = {Jan Laukemann and Ahmed E. Helal and S. Isaac Geronimo Anderson and Fabio Checconi and Yongseok Soh and Jesmin Jahan Tithi and Teresa Ranadive and Brian J Gravelle and Fabrizio Petrini and Jee Choi},
+  doi          = {10.1109/TPDS.2025.3553092},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Accelerating sparse tensor decomposition using adaptive linearized representation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ICEFROG: A layer-elastic scheduling system for deep learning
+training in GPU clusters. <em>TPDS</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPDS.2025.3553137">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The high resource demand of deep learning training (DLT) workloads necessitates the design of efficient schedulers. While most existing schedulers expedite DLT workloads by considering GPU sharing and elastic training, they neglect layer elasticity, which dynamically freezes certain layers of a network. This technique has been shown to significantly speed up individual workloads. In this paper, we explore how to incorporate layer elasticity into DLT scheduler designs to achieve higher cluster-wide efficiency. A key factor that hinders the application of layer elasticity in GPU clusters is the potential loss in model accuracy, making users reluctant to enable layer elasticity for their workloads. It is necessary to have an efficient layer-elastic system, which can well balance training accuracy and speed for layer elasticity. We introduce ICEFROG, the first scheduling system that utilizes layer elasticity to improve the efficiency of DLT workloads in GPU clusters. It achieves this goal with superior algorithmic designs and intelligent resource management. In particular, (1) we model the frozen penalty and layer-aware throughput to measure the effective progress metric of layer-elastic workloads. (2) We design a novel scheduler to further improve the efficiency of layer elasticity. We implement and deploy ICEFROG in a physical cluster of 48 GPUs. Extensive evaluations and large-scale simulations show that ICEFROG reduces average job completion times by 36-48 % relative to state-of-the-art DL schedulers.},
+  archive      = {J_TPDS},
+  author       = {Wei Gao and Zhuoyuan Ouyang and Peng Sun and Tianwei Zhang},
+  doi          = {10.1109/TPDS.2025.3553137},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {ICEFROG: A layer-elastic scheduling system for deep learning training in GPU clusters},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Workload-aware performance model based soft preemptive
+real-time scheduling for neural processing units. <em>TPDS</em>, 1–13.
+(<a href="https://doi.org/10.1109/TPDS.2025.3553922">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A neural processing unit (NPU) is a microprocessor which is specially designed for various types of neural network applications. Because of its high acceleration efficiency and lower power consumption, the airborne embedded system has widely deployed NPU to replace GPU as the new accelerator. Unfortunately, the inherent scheduler of NPU does not consider real-time scheduling. Therefore, it cannot meet real-time requirements of airborne embedded systems. At present, there is less research on the multi-task real-time scheduling of the NPU device. In this paper, we first design an NPU resource management framework based on Kubernetes. Then, we propose WAMSPRES, a workload-aware NPU performance model based soft preemptive real-time scheduling method. The proposed workload-aware NPU performance model can accurately predict the remaining execution time of the task when it runs with other tasks concurrently. The soft preemptive real-time scheduling algorithm can provide approximate preemption capability by dynamically adjusting the NPU computing resources of tasks. Finally, we implement a prototype NPU scheduler of the airborne embedded system for the fixed-wing UAV. The proposed models and algorithms are validated on both the simulated and realistic task sets. Experimental results illustrate that WAMSPRES can achieve low prediction error and high scheduling success rate.},
+  archive      = {J_TPDS},
+  author       = {Yuan Yao and Yujiao Hu and Yi Dang and Wei Tao and Kai Hu and Qiming Huang and Zhe Peng and Gang Yang and Xingshe Zhou},
+  doi          = {10.1109/TPDS.2025.3553922},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Workload-aware performance model based soft preemptive real-time scheduling for neural processing units},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DFU-e: A dataflow architecture for edge DSP and AI
+applications. <em>TPDS</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPDS.2025.3555329">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Edge computing aims to enable swift, real-time data processing, analysis, and storage close to the data source. However, edge computing platforms are often constrained by limited processing power and efficiency. This paper presents DFU-E, a dataflow-based accelerator specifically designed to meet the demands of edge digital signal processing (DSP) and artificial intelligence (AI) applications. Our design addresses real-world requirements with three main innovations. First, to accommodate the diverse algorithms utilized at the edge, we propose a multi-layer dataflow mechanism capable of exploiting task-level, instruction block-level, instruction-level, and data-level parallelism. Second, we develop an edge dataflow architecture that includes a customized processing element (PE) array, memory, and on-chip network microarchitecture optimized for the multi-layer dataflow mechanism. Third, we design an edge dataflow software stack that enables automatic optimizations through operator fusion, dataflow graph mapping, and task scheduling. We utilize representative real-world DSP and AI applications for evaluation. Comparing with Nvidia&#39;s state-of-the-art edge computing processor, DFU-E achieves up to 1.42× geometric mean performance improvement and 1.27× energy efficiency improvement.},
+  archive      = {J_TPDS},
+  author       = {Wenming Li and Zhihua Fan and Tianyu Liu and Zhen Wang and Haibin Wu and Meng Wu and Kunming Zhang and Yanhuan Liu and Ninghui Sun and Xiaochun Ye and Dongrui Fan},
+  doi          = {10.1109/TPDS.2025.3555329},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {DFU-E: A dataflow architecture for edge DSP and AI applications},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Taming offload overheads in a massively parallel open-source
+RISC-v MPSoC: Analysis and optimization. <em>TPDS</em>, 1–13. (<a
+href="https://doi.org/10.1109/TPDS.2025.3555718">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Heterogeneous multi-core architectures combine on a single chip a few large, general-purpose host cores, optimized for single-thread performance, with (many) clusters of small, specialized, energy-efficient accelerator cores for data-parallel processing. Offloading a computation to the many-core acceleration fabric implies synchronization and communication overheads which can hamper overall performance and efficiency, particularly for small and fine-grained parallel tasks. In this work, we present a detailed, cycle-accurate quantitative analysis of the offload overheads on Occamy, an open-source massively parallel RISC-V based heterogeneous MPSoC. We study how the overheads scale with the number of accelerator cores. We explore an approach to drastically reduce these overheads by co-designing the hardware and the offload routines. Notably, we demonstrate that by incorporating multicast capabilities into the Network-on-Chip of a large (200+ cores) accelerator fabric we can improve offloaded application runtimes by as much as 2.3x, restoring more than 70% of the ideally attainable speedups. Finally, we propose a quantitative model to estimate the runtime of selected applications accounting for the offload overheads, with an error consistently below 15%.},
+  archive      = {J_TPDS},
+  author       = {Luca Colagrande and Luca Benini},
+  doi          = {10.1109/TPDS.2025.3555718},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Taming offload overheads in a massively parallel open-source RISC-V MPSoC: Analysis and optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

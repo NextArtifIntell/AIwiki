@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TODAES_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="todaes---10">TODAES - 10</h2>
+<ul>
+<li><details>
+<summary>
+(2025). HEANA: A hybrid time-amplitude analog optical accelerator
+with flexible dataflows for energy-efficient CNN inference.
+<em>TODAES</em>, <em>30</em>(2), 1–37. (<a
+href="https://doi.org/10.1145/3711845">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Several photonic microring resonator (MRR)-based analog accelerators have been proposed to accelerate the inference of integer-quantized Convolutional Neural Networks (CNNs) with remarkably higher throughput and energy efficiency compared to their electronic counterparts. However, the existing analog photonic accelerators suffer from three shortcomings: (1) severe hampering of wavelength parallelism due to various crosstalk effects, (2) inflexibility of supporting various dataflows with temporal accumulations, and (3) failure in fully leveraging the ability of photodetectors to perform in situ accumulations. These shortcomings collectively hamper the performance and energy efficiency of prior accelerators. To tackle these shortcomings, we present a novel H ybrid tim E - A mplitude a N alog optical A ccelerator, called HEANA. HEANA employs hybrid time-amplitude analog optical modulators (TAOMs) in a spectrally hitless arrangement, which significantly reduces optical signal losses and crosstalk effects, thereby increasing the wavelength parallelism in HEANA. HEANA employs our invented balanced photo-charge accumulators (BPCAs) that enable buffer-less, in situ, spatio-temporal accumulations to eliminate the need to use reduction networks in HEANA, relieving it from related latency and energy overheads. Moreover, TAOMs and BPCAs increase the flexibility of HEANA to efficiently support spatio-temporal accumulations for various dataflows. Our evaluation for the inference of four modern CNNs indicates that HEANA provides improvements of at least 25× and 32× in frames per second (FPS) and FPS/W (energy efficiency), respectively, for equal-area comparisons on gmean over two MRR-based analog CNN accelerators from prior work.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3711845},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {HEANA: A hybrid time-amplitude analog optical accelerator with flexible dataflows for energy-efficient CNN inference},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm-hardware co-design for accelerating depthwise
+separable CNNs. <em>TODAES</em>, <em>30</em>(2), 1–22. (<a
+href="https://doi.org/10.1145/3711846">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Depthwise separable convolution (DSC) is a popular method for constructing lightweight neural networks. However, the pointwise convolution (PWC) has a much larger number of parameters than the depthwise convolution (DWC), causing the imbalanced parameter ratio of PWC to DWC. In this article, we propose an efficient and hardware-efficiency convolution (Shared Kernel sliding on channel Convolution, SKC) to replace the redundant PWC in DSC for a balanced parameter ratio, where SKC customizes the sharing kernel in the channel dimension to reduce the number of parameters, and the local connection in the channel dimension reduces the computation. Furthermore, the proposed SKC is suitable for Winograd acceleration, and the large kernel decomposition method is introduced to facilitate its use. We implement the first Winograd-based FPGA hardware accelerator for DSCNets. The shared 1D and 2D Winograd convolution computing engine is proposed to compute the proposed DSC consisting of DWC and SKC efficiently. An alternating loading and reusing storage approach is developed to efficiently load SKC input feature maps. Experimental results show our DSC-based accelerator can achieve 20× higher power efficiency at the cost of a small loss of accuracy by algorithm-hardware co-design compared with traditional accelerators.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3711846},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Algorithm-hardware co-design for accelerating depthwise separable CNNs},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automatic hardware pragma insertion in high-level synthesis:
+A non-linear programming approach. <em>TODAES</em>, <em>30</em>(2),
+1–44. (<a href="https://doi.org/10.1145/3711847">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-Level Synthesis enables the rapid prototyping of hardware accelerators, by combining a high-level description of the functional behavior of a kernel with a set of micro-architecture optimizations as inputs. Such optimizations can be described by inserting pragmas e.g., pipelining and replication of units, or even higher level transformations for HLS such as automatic data caching using the AMD/Xilinx Merlin compiler. Selecting the best combination of pragmas, even within a restricted set, remains particularly challenging and the typical state-of-practice uses design-space exploration to navigate this space. But due to the highly irregular performance distribution of pragma configurations, typical DSE approaches are either extremely time consuming, or operating on a severely restricted search space. This work proposes a framework to automatically insert HLS pragmas in regular loop-based programs, supporting pipelining, unit replication, and data caching. We develop an analytical performance and resource model as a function of the input program properties and pragmas inserted, using non-linear constraints and objectives. We prove this model provides a lower bound on the actual performance after HLS. We then encode this model as a Non-Linear Program, by making the pragma configuration unknowns of the system, which is computed optimally by solving this NLP. This approach can also be used during DSE, to quickly prune points with a (possibly partial) pragma configuration, driven by lower bounds on achievable latency. We extensively evaluate our end-to-end, fully implemented system, showing it can effectively manipulate spaces of billions of designs in seconds to minutes for the kernels evaluated.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3711847},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-44},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Automatic hardware pragma insertion in high-level synthesis: A non-linear programming approach},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LOGIC: Logic synthesis for digital in-memory computing.
+<em>TODAES</em>, <em>30</em>(2), 1–27. (<a
+href="https://doi.org/10.1145/3711848">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In-memory processing offers a promising solution for enhancing the performance of data-intensive applications. While analog in-memory computing demonstrates remarkable efficiency, its limited precision is suitable only for approximate computing tasks. In contrast, digital in-memory computing delivers the deterministic precision necessary to accelerate high-assurance applications. Current digital in-memory computing methods typically involve manually breaking down arithmetic operations into in-memory compute kernels. In contrast, traditional digital circuits are synthesized through intricate and automated design workflows. In this article, we introduce a logic synthesis framework called LOGIC, which facilitates the translation of high-level applications into digital in-memory compute kernels that can be executed using non-volatile memory. We propose techniques for decomposing element-wise arithmetic operations into in-memory kernels while minimizing the number of in-memory operations. Additionally, we optimize the sequence of in-memory operations to reduce non-volatile memory utilization. To address the NP-hard execution sequencing optimization problem, we have developed two look-ahead algorithms that offer practical solutions. Additionally, we leverage data layout reorganization to efficiently accelerate applications that heavily rely on sparse matrix-vector multiplication operations. Our experimental evaluations demonstrate that our proposed synthesis approach improves the area and latency of fixed-point multiplication by 84% and 20% compared to the state-of-the-art, respectively. Moreover, when applied to scientific computing applications sourced from the SuiteSparse Matrix Collection, our design achieves remarkable improvements in area, latency, and energy efficiency by factors of 4.8×, 2.6×, and 11×, respectively.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3711848},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {LOGIC: Logic synthesis for digital in-memory computing},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Non-preemptive scheduling of periodic tasks with data
+dependencies in heterogeneous multiprocessor embedded systems.
+<em>TODAES</em>, <em>30</em>(2), 1–25. (<a
+href="https://doi.org/10.1145/3711849">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Heterogeneous multiprocessor architecture is frequently employed as an economical and efficient means of providing excellent parallel processing capabilities while keeping production cost and power consumption under control. Although this architecture achieves significant performance enhancement and cost reduction, it results in a serious task allocation and scheduling problem, especially for periodic tasks with data dependencies, all of which should be reasonably scheduled and executed in a timely manner such that their deadlines and dependence requirements could be satisfied even if the worst happens. In this article, we concentrate on the non-preemptive scheduling problem of periodic tasks with data dependencies upon heterogeneous multiprocessor platforms. First, with models of data-dependent tasks and heterogeneous processors, we analyze the time, space, precedence, and data dependence constraints of tasks and design an exact formulation based on the mixed integer linear programming to completely explore the solution space and produce the optimal solutions. Then, by constructing a directed acyclic graph to depict the dependence relationship of jobs generated by tasks, we propose an efficient off-line list-based scheduling algorithm to provide a reasonable time and processor allocation for each job, with a view to minimizing the completion time of jobs. Experiments with randomly generated tasks are performed to evaluate the effectiveness and efficiency of the proposed algorithm, and the experimental results show that our algorithm can averagely enhance the scheduling success ratio by 28.5%, and, respectively, reduce the task completion time and the deviation ratio by 23.3% and 17.2%, on average.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3711849},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Non-preemptive scheduling of periodic tasks with data dependencies in heterogeneous multiprocessor embedded systems},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-row guiding template design for lamellar directed
+self-assembly with self-aligned via process. <em>TODAES</em>,
+<em>30</em>(2), 1–17. (<a
+href="https://doi.org/10.1145/3711851">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Directed self-assembly (DSA) of block copolymers can generate tiny and dense layout features, holding great potential for patterning vias and contacts at advanced nodes. Existing studies mainly focused on guiding template design for cylindrical DSA, but by leveraging self-aligned via process, lamellar DSA can form vias to be immune to placement errors and free of a uniform pitch between vias, which cylindrical DSA suffers from. The state-of-the-art guiding template design for lamellar DSA can handle only single-row templates, thus limiting the flexibility of via grouping. Therefore, in this article, we explore further and propose a novel and general multi-row guiding template design approach. Experimental results show that our approach outperforms the state-of-the-art work on both mask conflicts and short guiding templates, and requires much less computation time.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3711851},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-17},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Multi-row guiding template design for lamellar directed self-assembly with self-aligned via process},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SPTA 2.0: Enhanced scalable parallel track assignment
+algorithm with two-stage partition considering timing delay.
+<em>TODAES</em>, <em>30</em>(2), 1–23. (<a
+href="https://doi.org/10.1145/3712009">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Routability has always been a significant challenge in Very Large Scale Integration (VLSI) design. To overcome the potential mismatch between the global routing results and the detailed routing requirements, track assignment is introduced to achieve an efficient routability estimation. Moreover, with the increasing scale of circuits, the intricate interconnections among the components on the chip lead to increased timing delay in signal transmission, thereby significantly impacting the performance and reliability of the circuit. Thus, to further improve the routability of the circuit, it is also critical to realize an accurate estimation of the timing delay within the track assignment stage. Existing heuristic track assignment algorithms, however, are prone to local optimality, and thus fail to provide accurate routability estimations. In this article, we propose an enhanced scalable parallel track assignment algorithm called SPTA 2.0 for VLSI design, employing a two-stage partition strategy and considering timing delay. First, the proposed algorithm achieves efficient assignment of all wires by considering the routing information from both the global and local nets. Second, the overlap cost, the blockage cost, and the wirelength cost can be minimized to significantly improve the routability. Third, a critical wire controlling strategy is proposed to optimize signal timing delays inside nets. Finally, a two-stage partition strategy and a panel-subpanel-level parallelism are designed to further reduce the runtime, improving the scalability of the proposed methodology. Experimental results on multiple benchmarks demonstrate that the proposed method provides better routability estimations, and leads to superior track assignment solutions compared with existing algorithms.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3712009},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {SPTA 2.0: Enhanced scalable parallel track assignment algorithm with two-stage partition considering timing delay},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient area and reliability optimization method for
+MPRM circuits based on high-dimensional genetic algorithm.
+<em>TODAES</em>, <em>30</em>(2), 1–22. (<a
+href="https://doi.org/10.1145/3712591">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Area and reliability optimization have become the primary constraints in circuits logic synthesis. To address the increasing area and transient fault susceptibility in combinational circuits, we propose a high-dimensional genetic algorithm (HGA). HGA adopts an evolutionary scheme based on ternary tree, and uses adaptive crossover operator and flight operator to jump out of local optimum. Moreover, based on the HGA, we propose an area and reliability optimization method (AROM) for mixed polarity Reed-Muller logic circuits, which searches the best polarity with minimum area and soft error rate. The experimental results confirm that AROM can search for more desirable nondominated solutions in less time compared to existing optimization methods, and can be used as an effective electronic design automation tool for multi-objective optimization.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3712591},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {An efficient area and reliability optimization method for MPRM circuits based on high-dimensional genetic algorithm},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unveiling cross-checking opportunities in verilog compilers.
+<em>TODAES</em>, <em>30</em>(2), 1–23. (<a
+href="https://doi.org/10.1145/3715325">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The landscape of Verilog toolchains for electronic design automation (EDA) is diverse, and their reliability is crucial, as errors can lead to significant debugging challenges and delays in development. Methodologies such as testing and formal verification have been applied to identify and eliminate defects in these toolchains. We propose a framework named VeriXmith to interconnect design tools involved in logical synthesis and simulation for cross-checking. These tools process circuit designs and produce outputs in different languages, such as Verilog netlists from synthesizers and C++ programs from simulators. Since these outputs represent the same circuit semantics, we can leverage this semantic consistency to verify the tools that translate one representation into another. Our approach involves creating semantics extractors to extend the range of circuit representations available for semantic equivalence checking by converting them into a canonical and comparable form. Additionally, we develop mutation operators for Verilog designs to introduce new data/control paths and language constructs, enhancing the diversity of circuit designs as test inputs. By validating semantic equivalence, our framework successfully identifies defects in existing Verilog toolchains. An exploratory experiment uncovers 31 previously unknown bugs in well-known open-source Verilog tools, including Verilator and Yosys.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3715325},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Unveiling cross-checking opportunities in verilog compilers},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Effective fault effects evaluation for permanent faults in
+GPUs executing DNNs. <em>TODAES</em>, <em>30</em>(2), 1–33. (<a
+href="https://doi.org/10.1145/3715327">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep Neural Networks (DNNs) have permeated multiple applications, including cutting-edge safety-critical domains, which require relevant computational power, often provided by Graphic Processing Units (GPUs). GPUs are manufactured with advanced semiconductor technologies that can be affected by faults during the operational phase (e.g., due to wear-out, aging, or environmental harshness), whose effects possibly reach the DNN outputs, in some cases leading to catastrophic consequences. Hence, hardware-aware reliability assessments of DNNs are crucial to be considered in the context of safety-critical systems (following regulations/standards of specific application domains). Application-level fault injection (FI) techniques (i.e., DNN parameter corruption) are often adopted for the reliability evaluation of DNNs; unfortunately, these approaches hardly represent fault effects from GPU hardware. This work proposes an FI strategy based on Hardware-Injection-Through-Program-Transformation (HITPT) to mimic the effect of permanent faults (PFs) at the GPU instruction level, enabling effective assessment of PFs on DNN’s reliability. Our approach provides a good trade-off between the fault effect evaluation’s accuracy and the required computational time. Using the proposed approach, for the first time, we systematically assessed the effects of PF in GPUs executing some DNN sample cases. The results indicate that the faults injected closer to the hardware, using our evaluation strategy, can produce a higher accuracy degradation than the evaluations performed by the typical application-level FI that modify only the DNN parameters. Furthermore, the proposed FI methodology provides insightful results to identify the most suitable fault-tolerance solutions (e.g., selective hardening or design diversity) for their application at thread levels inside GPU’s kernels.},
+  archive      = {J_TODAES},
+  doi          = {10.1145/3715327},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Effective fault effects evaluation for permanent faults in GPUs executing DNNs},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

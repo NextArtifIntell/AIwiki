@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TC_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tc---26">TC - 26</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Enabling printed multilayer perceptrons realization via
+area-aware neural minimization. <em>TC</em>, <em>74</em>(4), 1461–1469.
+(<a href="https://doi.org/10.1109/TC.2024.3524076">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Printed Electronics (PE) set up a new path for the realization of ultra low-cost circuits that can be deployed in every-day consumer goods and disposables. In addition, PE satisfy requirements such as porosity, flexibility, and conformity. However, the large feature sizes in PE and limited device counts incur high restrictions and increased area and power overheads, prohibiting the realization of complex circuits. As a result, although printed Machine Learning (ML) circuits could open new horizons and bring “intelligence” in such domains, the implementation of complex classifiers, as required in target applications, is hardly feasible. In this paper, we aim to address this and focus on the design of battery-powered printed Multilayer Perceptrons (MLPs). To that end, we exploit fully-customized circuit (bespoke) implementations, enabled in PE, and propose a hardware-aware neural minimization framework dedicated for such customized MLP circuits. Our evaluation demonstrates that, for up to 3% accuracy loss, our co-design methodology enables, for the first time, battery-powered operation of complex printed MLPs.},
+  archive      = {J_TC},
+  author       = {Argyris Kokkinis and Georgios Zervakis and Kostas Siozios and Mehdi Baradaran Tahoori and Jörg Henkel},
+  doi          = {10.1109/TC.2024.3524076},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1461-1469},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Enabling printed multilayer perceptrons realization via area-aware neural minimization},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing structured-sparse matrix multiplication in RISC-v
+vector processors. <em>TC</em>, <em>74</em>(4), 1446–1460. (<a
+href="https://doi.org/10.1109/TC.2025.3533083">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Structured sparsity has been proposed as an efficient way to prune the complexity of Machine Learning (ML) applications and to simplify the handling of sparse data in hardware. Accelerating ML models, whether for training, or inference, heavily relies on matrix multiplications that can be efficiently executed on vector processors, or custom matrix engines. This work aims to integrate the simplicity of structured sparsity into vector execution to speed up the corresponding matrix multiplications. Initially, the implementation of structured-sparse matrix multiplication using the current RISC-V instruction set vector extension is comprehensively explored. Critical parameters that affect performance, such as the impact of data distribution across the scalar and vector register files, data locality, and the effectiveness of loop unrolling are analyzed both qualitatively and quantitatively. Furthermore, it is demonstrated that the addition of a single new instruction would reap even higher performance. The newly proposed instruction is called vindexmac, i.e., vector index-multiply-accumulate. It allows for indirect reads from the vector register file and it reduces the number of instructions executed per matrix multiplication iteration, without introducing additional dependencies that would limit loop unrolling. The proposed new instruction was integrated in a decoupled RISC-V vector processor with negligible hardware cost. Experimental results demonstrate the runtime efficiency and the scalability offered by the introduced optimizations and the new instruction for the execution of state-of-the-art Convolutional Neural Networks. More particularly, the addition of a custom instruction improves runtime by 25% and 33%, when compared with highly-optimized vectorized kernels that use only the currently defined RISC-V instructions.},
+  archive      = {J_TC},
+  author       = {Vasileios Titopoulos and Kosmas Alexandridis and Christodoulos Peltekis and Chrysostomos Nicopoulos and Giorgos Dimitrakopoulos},
+  doi          = {10.1109/TC.2025.3533083},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1446-1460},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Optimizing structured-sparse matrix multiplication in RISC-V vector processors},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SLOpt: Serving real-time inference pipeline with strict
+latency constraint. <em>TC</em>, <em>74</em>(4), 1431–1445. (<a
+href="https://doi.org/10.1109/TC.2025.3528125">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rise of machine learning as a service (MLaaS) has driven the demand for complex and customized real-time inference tasks, often requiring cascading multiple deep neural network (DNN) models into inference pipelines. However, these pipelines pose significant challenges due to scheduling complexity, particularly in maintaining strict latency service level objectives (SLOs). Existing systems serve pipelines with model-independent scheduling policies, which ignore the unique workload characteristics introduced by model cascading in the inference pipeline, leading to SLO violations and resource inefficiencies. In this paper, we propose that the serving system should exploit the model-cascading nature and intermodel workload dependency of the inference pipeline to ensure strict latency SLO cost-effectively. Based on this, we design and implement SLOpt, a serving system optimized for real-time inference pipelines with a three-stage codesign of workload estimation, resource provisioning, and request execution. SLOpt proposes cascade workload estimation and ahead-of-time tuning, which together address the challenge of cascade blocking and head-of-line blocking in workload estimation and resource provisioning. SLOpt further implements an adaptive batch drop policy to mitigate latency amplification issues within the pipeline. These innovations enable SLOpt to reduce the 99th percentile latency (P99 latency) by $1.4$ to $2.5$ times compared to the state of the arts while lowering serving costs by up to $29\%$. Moreover, to achieve comparable P99 latency, SLOpt requires up to $70\%$ less cost than existing systems. Extensive evaluations on a 64-GPU cluster demonstrate SLOpt&#39;s effectiveness in meeting strict P99 latency SLOs under diverse real-world workloads.},
+  archive      = {J_TC},
+  author       = {Zhixin Zhao and Yitao Hu and Guotao Yang and Ziqi Gong and Chen Shen and Laiping Zhao and Wenxin Li and Xiulong Liu and Wenyu Qu},
+  doi          = {10.1109/TC.2025.3528125},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1431-1445},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {SLOpt: Serving real-time inference pipeline with strict latency constraint},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NetCRC-NR: In-network 5G NR CRC accelerator. <em>TC</em>,
+<em>74</em>(4), 1418–1430. (<a
+href="https://doi.org/10.1109/TC.2025.3526326">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In 5G Radio Access Networks (RAN), Cyclic Redundancy Check (CRC) algorithms play a vital role in detecting accidental changes to digital data during transmission. However, due to the massive bandwidth demands in 5G networks, CRC computation is a resource-intensive process. To address this challenge, we propose performing CRC computation and verification directly in the network path. Specifically, we introduce NetCRC-NR, a 5G New Radio (NR) standard-compliant in-network CRC accelerator. NetCRC-NR implements the 5G NR CRC algorithms specified in 3GPP TS 38.212, including CRC24A, CRC24B, CRC24C, CRC16, CRC11, and CRC6. It leverages programmable switches to perform in-network CRC generation and validation for the Transport Blocks (TBs) and Code Blocks (CBs), aiming at providing high CRC computation throughput and alleviating the computational burden on General-Purpose Processors (GPPs). We design and implement NetCRC-NR on Intel Tofino programmable switch and commodity servers running the Data Plane Development Kit (DPDK). Extensive experiments demonstrate that NetCRC-NR performs CRC generation and verification at the switch line rate of up to 4+Tbps CRC throughput, showcasing its efficiency and potential in accelerating the 5G RAN error detection process.},
+  archive      = {J_TC},
+  author       = {Abdulbary Naji and Xingfu Wang and Ping Liu and Ammar Hawbani and Liang Zhao and Xiaohua Xu and Fuyou Miao},
+  doi          = {10.1109/TC.2025.3526326},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1418-1430},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {NetCRC-NR: In-network 5G NR CRC accelerator},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secure and efficient cross-modal retrieval over encrypted
+multimodal data. <em>TC</em>, <em>74</em>(4), 1405–1417. (<a
+href="https://doi.org/10.1109/TC.2025.3525614">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the popularity of social media, mobile devices and the Internet, a large amount of multimodal data (e.g, text, image, audio, video, etc.) is increasingly being outsourced to cloud to save local computing and storage costs. To search through encrypted multimodal data in the cloud, privacy-preserving cross-modal retrieval (PPCMR) techniques have attracted extensive attention. However, most of the existing PPCMR schemes lack the ability to resist quantum attacks and have low search efficiency on large-scale datasets. To solve above problems, we first propose a basic PPCMR scheme FECMR using the enhanced Single-key Function-hiding Inner Product Functional Encryption for Binary strings (SFB-IPFE) and cross-modal hashing technology, which achieves the measurement of similarity over encrypted multimodal data while resisting quantum attacks. Then, we design an efficient index KM-tree utilizing the K-modes clustering algorithm. On this basis, we propose an improved scheme FECMR+, which achieves sub-linear search complexity. Finally, formal security analysis proves that our schemes are secure against quantum attacks, and extensive experiments prove that our schemes are efficient and feasible for practical application.},
+  archive      = {J_TC},
+  author       = {Li Yang and Wei Zhang and Yinbin Miao and Yanrong Liang and Xinghua Li and Kim-Kwang Raymond Choo and Robert H. Deng},
+  doi          = {10.1109/TC.2025.3525614},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1405-1417},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Secure and efficient cross-modal retrieval over encrypted multimodal data},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-precision error bit prediction for 3D QLC NAND flash
+memory: Observations, analysis, and modeling. <em>TC</em>,
+<em>74</em>(4), 1392–1404. (<a
+href="https://doi.org/10.1109/TC.2025.3525610">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the age of artificial intelligence, large language models (LLM) require rapid development along with massive volumes of training data and parameter storage. Over the past decade, 3D NAND flash memory has emerged as the dominant non-volatile memory technology due to its high bit density and large capacity. However, because of its 3D vertical stacking technique and array designs, 3D NAND flash memory has more complicated data loss mechanisms compared to 2D NAND flash memory. As bit densities rise to Quad-level-cells (QLC), the small read margins will further complicate and make the situation more unpredictable. In this work, we propose an error-bit prediction model in this paper for 3D QLC NAND flash memory with the charge-trap (CT) cell structure based on a thorough analysis of multiple parameters that affect the error-bit distributions, including read disturb (RD) and degradation from program/erase (PE) cycles. Specifically, we develop the whole-block prediction (WBP) and the dynamic-worst-page prediction (DWPM) models. It is shown that the proposed models can be used for high-precision error-bit prediction to guarantee data reliability in commonly used NAND-based storage systems based on the characterization results of raw NAND chips.},
+  archive      = {J_TC},
+  author       = {Guangkuo Yang and Meng Zhang and Peng Guo and Xuepeng Zhan and Shaoqi Yang and Xiaohuan Zhao and Xinyi Guo and Pengpeng Sang and Jixuan Wu and Fei Wu and Jiezhi Chen},
+  doi          = {10.1109/TC.2025.3525610},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1392-1404},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {High-precision error bit prediction for 3D QLC NAND flash memory: Observations, analysis, and modeling},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Karatsuba matrix multiplication and its efficient custom
+hardware implementations. <em>TC</em>, <em>74</em>(4), 1377–1391. (<a
+href="https://doi.org/10.1109/TC.2025.3525606">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While the Karatsuba algorithm reduces the complexity of large integer multiplication, the extra additions required minimize its benefits for smaller integers of more commonly-used bitwidths. In this work, we propose the extension of the scalar Karatsuba multiplication algorithm to matrix multiplication, showing how this maintains the reduction in multiplication complexity of the original Karatsuba algorithm while reducing the complexity of the extra additions. Furthermore, we propose new matrix multiplication hardware architectures for efficiently exploiting this extension of the Karatsuba algorithm in custom hardware. We show that the proposed algorithm and hardware architectures can provide real area or execution time improvements for integer matrix multiplication compared to scalar Karatsuba or conventional matrix multiplication algorithms, while also supporting implementation through proven systolic array and conventional multiplier architectures at the core. We provide a complexity analysis of the algorithm and architectures and evaluate the proposed designs both in isolation and in an end-to-end deep learning accelerator system compared to baseline designs and prior state-of-the-art works implemented on the same type of compute platform, demonstrating their ability to increase the performance-per-area of matrix multiplication hardware.},
+  archive      = {J_TC},
+  author       = {Trevor E. Pogue and Nicola Nicolici},
+  doi          = {10.1109/TC.2025.3525606},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1377-1391},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Karatsuba matrix multiplication and its efficient custom hardware implementations},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Asynchronous control based aggregation transport protocol
+for distributed deep learning. <em>TC</em>, <em>74</em>(4), 1362–1376.
+(<a href="https://doi.org/10.1109/TC.2025.3525604">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid growth scale of dataset and model, the training of deep neural networks (DNN) tends to be deployed in a distributed manner. In the large-scale distributed training, the bottlenecks have gradually moved from computational resources to communication process. Recent researches adopt in-network aggregation (INA) that offloads the gradient aggregation process to programmable switches, thereby reducing network traffic amount and transmission latency. Unfortunately, due to the bandwidth competition in shared training clusters, the straggler will slow down the training efficiency of INA. To address this issue, we propose an Asynchronous Control based Aggregation Transport Protocol (AC-ATP), which makes full use uncongested links to transmit gradients and the switch memory to cache gradients from the fast workers to accelerate the gradient aggregation. Meanwhile, AC-ATP performs congestion control according to the transmission progress of worker and the remaining completion time of the job. The evaluation results of real testbed and large-scale simulations show that AC-ATP reduces the aggregate time by up to 68% and speeds up training in real-world benchmark models.},
+  archive      = {J_TC},
+  author       = {Jin Ye and Yajun Peng and Yijun Li and Zhaoyi Li and Jiawei Huang},
+  doi          = {10.1109/TC.2025.3525604},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1362-1376},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Asynchronous control based aggregation transport protocol for distributed deep learning},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LUNA-CiM: A programmable compute-in-memory fabric for neural
+network acceleration. <em>TC</em>, <em>74</em>(4), 1348–1361. (<a
+href="https://doi.org/10.1109/TC.2025.3525601">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Compute-in-memory (CiM) has emerged as a promising approach for improving energy efficiency for diverse data-intensive applications. In this paper, we present LUNA-CiM, a lookup table (LUT)-based programmable fabric for flexible and efficient mapping of artificial neural network (ANN) in memory. Its objective is to tackle scalability challenges in LUT-based computation by minimizing hardware, storage elements, and energy consumption. The proposed method utilizes the divide and conquer (D&amp;C) strategy to enhance the scalability of LUT-based computation. For example, in a 4b $\boldsymbol{\times}$ 4b lookup table-based multiplier, as one of the main components in ANN, decomposing high-precision operations into lower-precision counterparts leads to a substantial reduction in area overheads, approximately 73% less compared to conventional LUT-based approaches. Importantly, this efficiency gain is achieved without compromising accuracy. Extensive simulations were conducted to validate the performance of the proposed method. The analysis presented in this paper reveals a noteworthy advancement in energy efficiency, indicating a 58% reduction in energy consumption per computation compared to the conventional lookup table approach. Additionally, the introduced approach demonstrates a 36% improvement in speed over the traditional lookup table approach. These findings highlight notable advancements in performance, showcasing the potential of this inventive method to achieve low power, low-area overhead, and fast computations through the utilization of LUTs within an SRAM array.},
+  archive      = {J_TC},
+  author       = {Peyman Dehghanzadeh and Ovishake Sen and Baibhab Chatterjee and Swarup Bhunia},
+  doi          = {10.1109/TC.2025.3525601},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1348-1361},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {LUNA-CiM: A programmable compute-in-memory fabric for neural network acceleration},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AVL function table for LeafHooks insertion with obfuscated
+control flow integrity. <em>TC</em>, <em>74</em>(4), 1334–1347. (<a
+href="https://doi.org/10.1109/TC.2024.3524080">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Control flow is the execution order of individual statements, instructions, or function calls within an imperative program. Malicious operation of control flow (e.g., tampering with normal function addresses) leads to severe consequences such as data leakage and system crash. Control Flow Integrity (CFI) is a defense restricting the execution order of program within Control Flow Graph (CFG). IndexHooks is an existing CFI solution designed against forward function calls tampering (including direct and indirect jump). This solution constructs a read-only linear function table that stores function addresses during compilation. Then, IndexHooks checks the table to make program jump to the correct target address during runtime. However, IndexHooks faces limitations in backtracking CFG construction, which can lead to excessive memory usage; the linear structure of the function table is vulnerable to brute force tampering. Addressing the limitations of IndexHooks, this study develops an obfuscated CFI solution called LeafHooks. LeafHooks is implemented during compilation by the LLVM compiler, which performs static analysis and instrumentation on the LLVM Intermediate Representation (IR) code of a program. We make the following three innovations: 1) we propose a speculation-free identification method for indirect function calls by linear traversing and analyzing codes to obtain legal function information (function address); 2) we save this information into a function table in the form of a Balanced Binary Tree (also known as AVL), enhancing the fuzzification of function addresses to defend against brute force; 3) we design a method to simulate control tamper attacks on ARM64 architecture to verify the ability of LeafHooks to protection. LeafHooks shows less overhead than state-of-the-art solutions and reduces 2.9% and 0.55% overhead on average using UnixBench and Phoronix, respectively.},
+  archive      = {J_TC},
+  author       = {Sirong Zhao and Guoqi Xie and Chenglai Xiong and Kenli Li and Xuejun Yu and Bo Wan and Yiwen Jiang},
+  doi          = {10.1109/TC.2024.3524080},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1334-1347},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {AVL function table for LeafHooks insertion with obfuscated control flow integrity},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Flexible job scheduling with spatial-temporal compatibility
+for in-network aggregation. <em>TC</em>, <em>74</em>(4), 1322–1333. (<a
+href="https://doi.org/10.1109/TC.2024.3523420">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In-Network Aggregation (INA) solutions represent the forefront in advancing All-Reduce, utilizing limited switch memory for efficient gradient aggregation. However, existing INA solutions primarily focus on enhancing aggregation efficiency, often overlooking the efficient utilization of memory. Isolation solutions typically pre-allocate resources for each job, leading to memory wastage due to the uncontrolled use of resources. In contrast, the sharing solutions encounter significant memory contention, resulting in performance degradation within a multi-tenant environment. In this paper, we propose DynaINA, a flexible job scheduler to support multi-tenant training. The core idea of DynaINA is to provide spatial and temporal compatibility between jobs. For spatial compatibility, DynaINA utilizes multiple dynamic memory pools to provide job isolation. For temporal compatibility, DynaINA employs contention-aware job scheduling to facilitate memory sharing. Furthermore, DynaINA prioritizes communication-intensive jobs, leveraging the benefits of INA to enhance overall performance in training clusters. Extensive experiments with popular vision and language models demonstrate that DynaINA reduces training time by up to 65.16% and improves switch memory utilization by up to 85.02% compared to state-of-the-art solutions in a 100Gbps network.},
+  archive      = {J_TC},
+  author       = {Yulong Li and Wenxin Li and Yuxuan Du and Yinan Yao and Song Zhang and Linxuan Zhong and Keqiu Li},
+  doi          = {10.1109/TC.2024.3523420},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1322-1333},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Flexible job scheduling with spatial-temporal compatibility for in-network aggregation},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Qu-trefoil: Large-scale quantum circuit simulator working on
+FPGA with SATA storages. <em>TC</em>, <em>74</em>(4), 1306–1321. (<a
+href="https://doi.org/10.1109/TC.2024.3521546">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum circuits are fundamental components of quantum computing, and state-vector-based quantum circuit simulation is a widely used technique for tracking qubit behavior throughout circuit evolution. However, simulating a circuit with $n$ qubits requires $2^{n+4}$ bytes of memory, making simulations of more than 40 qubits feasible only on supercomputers. To address this limitation, we propose the Qu-Trefoil, a system designed for large-scale quantum circuit simulations on an FPGA-based platform called Trefoil. Trefoil is a multi-FPGA system connected to eight storage subsystems, each equipped with 32 SATA disks. Qu-Trefoil integrates a suite of HLS-based universal quantum gates, including Clifford gates (Hadamard (H), Pauli-Z (Z), Phase (S), Controlled-NOT (CNOT)), the T gate, and unitary matrix computation, along with HDL-designed modules for system-wide integration. Our extensive evaluation demonstrates the system&#39;s robustness and flexibility, covering quantum gate performance, chunk size, disk extensibility, and efficiency across different SATA generations. We successfully simulated quantum circuits with over 43 qubits, which required more than 128 TB of memory, in approximately 3.72 to 13.06 hours on a single storage subsystem equipped with one FPGA. This achievement represents a significant milestone in the advancement of quantum computing simulations. Furthermore, thanks to its unique architecture, Qu-Trefoil is more accessible, flexible, and cost-efficient than other existing simulators for large-scale quantum circuit simulations, making it a viable option for researchers with limited access to supercomputers.},
+  archive      = {J_TC},
+  author       = {Kaijie Wei and Hideharu Amano and Ryohei Niwase and Yoshiki Yamaguchi and Takefumi Miyoshi},
+  doi          = {10.1109/TC.2024.3521546},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1306-1321},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Qu-trefoil: Large-scale quantum circuit simulator working on FPGA with SATA storages},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new ECC configuration method for DRAM system considering
+metadata. <em>TC</em>, <em>74</em>(4), 1293–1305. (<a
+href="https://doi.org/10.1109/TC.2024.3521545">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, a new ECC (error correcting code) solution for DRAM (dynamic random access memory) in computing systems is proposed. Existing papers on ECC for DRAM systems do not consider storage space for metadata. The methodology proposed in this paper considers storing metadata attached to a cacheline data in DRAM. We infer the maximum number of single-chip error correction cases that a linear code can support while considering metadata storage space. This can be said to be the maximum theoretical correction probability for a single chip error. A methodology to construct a code with maximum single-chip error correction is presented. A decoding methodology for the code is proposed. The proposed ECC solution can correct not only single chip failure but also additional small bit errors. We calculate the correction capability of the proposed methodology and verified it through simulation. The encoder and decoder hardware were synthesized and compared with existing methodologies.},
+  archive      = {J_TC},
+  author       = {Jaeil Lim and Jaewon Chung and Donghun Jeong and Daegeun Jee and Euicheol Lim},
+  doi          = {10.1109/TC.2024.3521545},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1293-1305},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A new ECC configuration method for DRAM system considering metadata},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive scan test cost model to optimize the
+production of very large SoCs. <em>TC</em>, <em>74</em>(4), 1278–1292.
+(<a href="https://doi.org/10.1109/TC.2024.3521246">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper explores the trade-offs of reducing scan test patterns during Wafer Sort, accepting additional packaging costs, and screening more chips during Package Tests. Previous works proposed ways of selecting or reordering patterns to bring the most efficient to the left. Unlike such studies, this work quantifies the benefit of removing patterns directly from the tail of any pattern set. The paper elaborates on novel formulas to propose a comprehensive cost model that combines yield, Wafer Sort, packaging, and Package Test costs. The model evolves from known concepts by assuming that mass production defectivity is non-uniformly distributed over the die population and accounts for sacrificial lots to extract guiding information. It is shown that reducing patterns at Wafer Sort is beneficial under certain conditions of yield, fault coverage, and considering equipment and production costs. The model accurately estimates the number of patterns to remove for maximum gain in these cases. As a further by-product, the paper shows that a significant cost advantage can be achieved if pattern generation is guided based on the basics of the non-uniform failure distribution. This approach is validated with an academic benchmark and by observing six months of production for a real-world microcontroller by STMicroelectronics.},
+  archive      = {J_TC},
+  author       = {Giusy Iaria and Paolo Bernardi and Claudia Bertani and Lorenzo Cardone and Giuseppe Garozzo and Vincenzo Tancorre},
+  doi          = {10.1109/TC.2024.3521246},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1278-1292},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A comprehensive scan test cost model to optimize the production of very large SoCs},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design of a universal decoder model based on DNA
+winner-takes-all neural networks. <em>TC</em>, <em>74</em>(4),
+1267–1277. (<a href="https://doi.org/10.1109/TC.2024.3521230">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {DNA computing has proven to possess strong parallel processing capabilities, offering notable advantages for multi-objective computation. Traditional, complex nonlinear DNA molecular logic circuits require the pre-construction of basic logic gates, followed by their cascading to achieve logic functions. However, as the number of cascade levels increases, more DNA strands are required to amplify and recover signals, causing the system&#39;s reaction time to grow exponentially. This paper introduces a novel approach for building complex nonlinear digital logic circuits using DNA winner-take-all neural networks. The logic circuit comprises four computational modules: weight multiplication, summation, competitive annihilation, and reporting. First, an annihilation strand is designed to control the reaction rate between two competing signals, resolving the interference between weight multiplication and competitive annihilation. Second, new grouping strategies—complementary annihilation, equal annihilation, and denoise annihilation—are introduced. These strategies exponentially reduce the number of competitive strands and significantly decrease system reaction time. The effect becomes more pronounced as the number of input patterns increases. Finally, 2-4, 3-8, and 4-16 decoder circuits are built using the winner-take-all neural networks, and an $\boldsymbol{n}\boldsymbol{-}\boldsymbol{2}^{\boldsymbol{n}}$ universal decoder model is further developed. This study presents an effective method for implementing complex nonlinear logic circuits through DNA strand displacement reactions.},
+  archive      = {J_TC},
+  author       = {Chun Huang and Jiaying Shao and Baolei Peng and Qingshuang Guo and Panlong Li and Junwei Sun and Yanfeng Wang},
+  doi          = {10.1109/TC.2024.3521230},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1267-1277},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Design of a universal decoder model based on DNA winner-takes-all neural networks},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Microarchitectural attacks and mitigations on retire
+resources in modern processors. <em>TC</em>, <em>74</em>(4), 1253–1266.
+(<a href="https://doi.org/10.1109/TC.2024.3521225">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In modern processors, the Retire Control Unit (RCU) is responsible for receiving the µops decoded from the frontend and retiring the completed µops in order through the retirement. Consequently, the retirement may stall differently depending on the execution time of the first instruction in the RCU, causing varying stalling in the RCU reception. Moreover, We find that the RCU reception in AMD processors and retirement in Intel processors are shared between two logical cores of the same physical core, allowing an attacker to infer the instructions executed by another logical core based on its retire resources efficiency. Based on these findings, we introduce the retirement covert channel on Intel processors and the RCU covert channel on AMD processors. Furthermore, we explores additional applications of retire resources. On the one hand, we combined the misprediction penalty mechanism to apply our covert channels to the Spectre attacks. On the other hand, based on the principle that different programs result in varied usage patterns of retire resources, we propose an attack method that leverages the retire resources to infer the program run by the victim. Finally, we design the corresponding mitigations and extend our mitigation to fetch unit to reduce the performance overhead.},
+  archive      = {J_TC},
+  author       = {Ke Xu and Ming Tang and Quancheng Wang and Han Wang},
+  doi          = {10.1109/TC.2024.3521225},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1253-1266},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Microarchitectural attacks and mitigations on retire resources in modern processors},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Big-computing and little-storing STT-MRAM PIM architecture
+with charge domain based MAC operation. <em>TC</em>, <em>74</em>(4),
+1239–1252. (<a href="https://doi.org/10.1109/TC.2024.3517754">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spin transfer torque magnetic random access memory (STT-MRAM) is a promising memory technology for processing in memory (PIM) thanks to its high endurance and relatively low device-to-device and cycle-to-cycle variations. However, the low OFF/ON ratio of STT device limits the number of active row-lines during multiply-accumulate (MAC) operations, degrading energy efficiency and computation speed. In this paper, we present an energy efficient and high speed Big-computing and Little-storing STT-MRAM PIM (BCLS-SP) architecture, which can increase the number of active row-lines with almost no area overhead. In the BCLS-SP architecture, a charge domain-based STT-MRAM PIM (CD-SP) structure is employed to concurrently activate many row-lines by improving MAC operation reliability. Filter-wise weight compression (FWC) and weight sharing (WS) are also devised to compress the weights stored in CD-SP, thus reducing area cost. In addition, the proposed architecture performs MAC operations with skipping zero-valued input (SZI) and zero-conversion scheme (ZCS) for better energy efficiency and performance. The simulations using 28nm CMOS process show that the BCLS-SP architecture shows energy reduction of 29% and performance improvement of 3.6 compared to the recent memristive device-based PIM using weight compression and input skipping.},
+  archive      = {J_TC},
+  author       = {Yunho Jang and Dongsu Kim and Yeseul Kim and Jongsun Park},
+  doi          = {10.1109/TC.2024.3517754},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1239-1252},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Big-computing and little-storing STT-MRAM PIM architecture with charge domain based MAC operation},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hardware accelerated vision transformer via heterogeneous
+architecture design and adaptive dataflow mapping. <em>TC</em>,
+<em>74</em>(4), 1224–1238. (<a
+href="https://doi.org/10.1109/TC.2024.3517751">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vision transformer (ViT) models have demonstrated remarkable advantages in visual tasks. However, the ViT model contains various types of operators, and its sophisticated model structure imposes substantial computational complexity and storage burden. Existing hardware solutions still fail to fully unleash the ViT acceleration potential due to the mismatch between operators and hardware architectures, suffering from inefficient dataflow mapping. This work proposes HDViT, a full-fledged heterogeneous hardware accelerator on FPGA, to enhance the ViT acceleration by comprehensively analyzing and addressing the challenges of heterogeneous architecture design. Specifically, HDViT first develops a heterogeneous architecture design that is composed of multiple processing engines (PEs) to accelerate various operators in the ViT model. Then, HDViT devises a hybrid-oriented dataflow mapping strategy to reduce data transmission granularity and alleviate storage resource pressure. Lastly, to achieve the latency balancing among multiple PEs, we formulate the HDViT architecture and implement an automated exploration process to identify optimized parallelism parameters that satisfy computation and storage demands while enhancing the heterogeneous architectural performance. Experimental results indicate that HDViT achieves significant performance speedups of 2.16$\times$ and 3.51$\times$ compared to previous heterogeneous and unified accelerators, respectively. HDViT also achieves a maximum of 98.46% hardware utilization.},
+  archive      = {J_TC},
+  author       = {Yingxue Gao and Teng Wang and Lei Gong and Chao Wang and Dong Dai and Yang Yang and Xianglan Chen and Xi Li and Xuehai Zhou},
+  doi          = {10.1109/TC.2024.3517751},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1224-1238},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Hardware accelerated vision transformer via heterogeneous architecture design and adaptive dataflow mapping},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed sketch deployment for software switches.
+<em>TC</em>, <em>74</em>(4), 1210–1223. (<a
+href="https://doi.org/10.1109/TC.2024.3517749">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Network measurement is critical for various network applications, but scaling measurement techniques to the network-wide level is challenging for existing sketch-based solutions. In software switches, centralized deployment provides low resource usage but suffers from poor load balancing. In contrast, collaborative measurement achieves load balancing through flow distribution across software switches but requires high resource usage. This paper presents a novel distributed deployment framework that overcomes the limitations above. First, our framework is lightweight such that it splits sketches into segments and allocates them across forwarding paths to minimize resource usage and achieve load balancing. This also enables per-packet load balancing by distributing computations across software switches. Second, through a novel collaborative strategy, our framework achieves finer-grained flow distribution and further optimizes load balancing. Third, we further optimize load balancing by eliminating the mutual influence among forwarding paths. We evaluate the proposed framework on various network topologies and different sketches. Results indicate our solution matches the load balancing of collaborative measurement while approaching the low resource usage of centralized deployment. Moreover, it achieves superior performance in per-packet load balancing, which is not considered in previous deployment solutions.},
+  archive      = {J_TC},
+  author       = {Kejun Guo and Fuliang Li and Jiaxing Shen and Xingwei Wang and Jiannong Cao},
+  doi          = {10.1109/TC.2024.3517749},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1210-1223},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Distributed sketch deployment for software switches},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AutoPipe-h: A heterogeneity-aware data-paralleled pipeline
+approach on commodity GPU servers. <em>TC</em>, <em>74</em>(4),
+1196–1209. (<a href="https://doi.org/10.1109/TC.2024.3517748">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, the data-parallel pipeline approach has been widely used in training DNN models on commodity GPU servers. However, there are still three challenges for hybrid parallelism on commodity GPU servers: i) a balanced model partition is crucial for efficiency, whereas prior works lack a sound solution to generate a balanced partition automatically; ii) an orchestrated device mapping is essential to reduce communication contention, however, prior works ignore server heterogeneity, exacerbating communication contention; iii) the startup overhead is inevitable and especially significant for deep pipelines, which is an essential source of pipeline bubbles and severely affects pipeline scalability. We propose AutoPipe-H to solve these three problems, which contains i) a pipeline partitioner component for automatically and quickly generating a balanced sub-block partition scheme; ii) a device mapping component that assigns pipeline stages to devices, considering server heterogeneity, to reduce communication contention; and iii) a distributed training runtime component that reduces pipeline startup overhead by splitting the micro-batch evenly. The experimental results show that AutoPipe-H can accelerate training by up to 1.26x over the hybrid parallelism framework DAPPLE and Piper, with a 2.73x-12.7x improvement in the partition balance and an order-of-magnitude time reduction in partition scheme searching.},
+  archive      = {J_TC},
+  author       = {Weijie Liu and Kai Lu and Zhiquan Lai and Shengwei Li and Keshi Ge and Dongsheng Li and Xicheng Lu},
+  doi          = {10.1109/TC.2024.3517748},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1196-1209},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {AutoPipe-H: A heterogeneity-aware data-paralleled pipeline approach on commodity GPU servers},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A context-awareness and hardware-friendly sparse matrix
+multiplication kernel for CNN inference acceleration. <em>TC</em>,
+<em>74</em>(4), 1182–1195. (<a
+href="https://doi.org/10.1109/TC.2024.3517745">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparsification technology is crucial for deploying convolutional neural networks in resource-constrained environments. However, the efficiency of sparse models is hampered by irregular memory access patterns in sparse matrix multiplication kernels. Hardware-level support for 2:4 granularity in sparse tensor cores presents an opportunity for designing efficient sparse matrix multiplication kernels. Existing approaches often involve adjusting sparse structures or secondary sparsification, introducing additional computational errors. To tackle this challenge, we introduce a flexible 2:4 structured adaptive sparse matrix multiplication (FS-AMM) method, a hardware-friendly sparse matrix multiplication kernel that leverages model context to accelerate convolutional neural networks. First, we propose a model context-aware matrix pre-processing method that employs heuristic algorithms to estimate a loss of accuracy due to weight sparsity at each layer. Second, we design a hardware-friendly sparse storage format that combines 2:4 sparse and dense storage formats, enabling more versatile sparsity ratio selection. Third, we implement efficient matrix multiplication kernels to optimize GPU utilization. Finally, experimental results on A100 GPUs show that our method effectively utilizes the sparse tensor kernel and obtains an average 3.09 times speedup ratio compared to other sparse methods while maintaining a high accuracy.},
+  archive      = {J_TC},
+  author       = {Haotian Wang and Yan Ding and Yumeng Liu and Weichen Liu and Chubo Liu and Wangdong Yang and Kenli Li},
+  doi          = {10.1109/TC.2024.3517745},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1182-1195},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A context-awareness and hardware-friendly sparse matrix multiplication kernel for CNN inference acceleration},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A GPU-enabled framework for light field efficient
+compression and real-time rendering. <em>TC</em>, <em>74</em>(4),
+1168–1181. (<a href="https://doi.org/10.1109/TC.2024.3517743">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time rendering offers instantaneous visual feedback, making it crucial for mixed-reality applications. The light field captures both light intensity and direction in a 3D environment, serving as a data-rich medium to enhance mixed-reality experiences. However, two major challenges remain: 1) current light field rendering techniques are unsuitable for real-time computation, and 2) existing real-time methods cannot efficiently process high-dimensional light field data on GPU platforms. To overcome these challenges, we propose an framework utilizing a compact neural representation of light field data, implemented on a GPU platform for real-time rendering. This framework provides both compact storage and high-fidelity real-time computation. Specifically, we introduce a ray global alignment strategy to simplify the framework and improve practicality. This strategy enables the learning of an optimal embedding for all local rays in a globally consistent way, removing the need for camera pose calculations. To achieve effective compression, the neural light field is employed to map each embedded ray to its corresponding color. To enable real-time rendering, we design a novel super-resolution network to enhance rendering speed. Extensive experiments demonstrate that our framework significantly enhances compression efficiency and real-time rendering performance, achieving nearly 50$\mathbf{\times}$ compression ratio and 100 FPS rendering.},
+  archive      = {J_TC},
+  author       = {Mingyuan Zhao and Hao Sheng and Rongshan Chen and Ruixuan Cong and Tun Wang and Zhenglong Cui and Da Yang and Shuai Wang and Wei Ke},
+  doi          = {10.1109/TC.2024.3517743},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1168-1181},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A GPU-enabled framework for light field efficient compression and real-time rendering},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Trident: The acceleration architecture for high-performance
+private set intersection. <em>TC</em>, <em>74</em>(4), 1152–1167. (<a
+href="https://doi.org/10.1109/TC.2024.3517738">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Private Set Intersection (PSI) is imperative in discovering the properties of the same data owned by two competitive parties, without revealing anything else of their respective data asset. Existing PSI solutions such as APSI and ORI-PSI suffer from severe communication and computation overhead due to inefficient communication and FHE polynomial evaluation, which hinders their deployment in practice. This issue is evident in both the upper-level protocol and the lower-level hardware platform. In this paper, we propose a novel software/hardware co-design acceleration architecture for PSI, termed as “Trident”, which includes two tightly coupled segments: from the protocol perspective, we investigate existing bottlenecks and propose a new PSI protocol with significantly less communication and computation under the security guarantee; besides, we re-architect the hardware platform by designing a PSI-specific accelerator, implemented with both FPGA and ASIC, targeting the key operations in the proposed protocol. We build a real-world experimental environment with two instantiated parties to verify the acceleration architecture, and highlight the following results: (1) up to 130$\boldsymbol{\times}$/145$\boldsymbol{\times}$ speedup for the computation of receiver and sender parties; (2) up to 37$\boldsymbol{\times}$ reduction of communication overhead. (3) up to 93,651$\boldsymbol{\times}$ and 74,326$\boldsymbol{\times}$ higher energy efficiency over the CPU-based ORI-PSI and APSI, respectively.},
+  archive      = {J_TC},
+  author       = {Jinkai Zhang and Yinghao Yang and Zhe Zhou and Zhicheng Hu and Xin Zhao and Liang Chang and Hang Lu and Xiaowei Li},
+  doi          = {10.1109/TC.2024.3517738},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1152-1167},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Trident: The acceleration architecture for high-performance private set intersection},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hierarchical hashing: A dynamic hashing method with low
+write amplification and high performance for non-volatile memory.
+<em>TC</em>, <em>74</em>(4), 1138–1151. (<a
+href="https://doi.org/10.1109/TC.2024.3517737">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The hashing method is widely used as the index structure, which can be stored in NVM to improve the application performance. However, existing hashing methods may cause high extra write amplification to NVM and bring high additional storage overhead on NVM while providing low request performance. To solve these problems, we have proposed a dynamic hashing method called Hierarchical Hashing, whose basic idea is to leverage a novel hash collision resolution mechanism that can dynamically expand the size of the hash table. Hierarchical Hashing can incur no extra write amplification to NVM when resolving hash collisions. Additionally, it can directly address all cells when resizing the hash table, thereby avoiding the additional storage overhead caused by non-addressable linked lists. Furthermore, the request performance can be improved as all cells of the hash table are addressable when resizing to resolve hash collisions. The experimental results demonstrate that Hierarchical Hashing brings no extra write amplification to NVM and achieves nearly 90% space utilization and high request performance while providing 99% memory utilization, compared with existing representative hashing methods.},
+  archive      = {J_TC},
+  author       = {Jinquan Wang and Zhisheng Huo and Limin Xiao and Jinqian Yang and Jiantong Huo and Minyi Guo},
+  doi          = {10.1109/TC.2024.3517737},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1138-1151},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Hierarchical hashing: A dynamic hashing method with low write amplification and high performance for non-volatile memory},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards optimal customized architecture for heterogeneous
+federated learning with contrastive cloud-edge model decoupling.
+<em>TC</em>, <em>74</em>(4), 1123–1137. (<a
+href="https://doi.org/10.1109/TC.2024.3514302">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning, as a promising distributed learning paradigm, enables collaborative training of a global model across multiple network edge clients without the need for central data collecting. However, the heterogeneity of edge data distribution drags the model towards the local minima, which can be distant from the global optimum. Such heterogeneity often leads to slow convergence and substantial communication overhead. To address these issues, we propose a novel federated learning framework called FedCMD, a model decoupling tailored to the Cloud-edge supported federated learning that separates deep neural networks into a body for capturing shared representations in Cloud and a personalized head for migrating data heterogeneity. Our motivation is that, by the deep investigation of the performance of selecting different neural network layers as the personalized head, we found rigidly assigning the last layer as the personalized head in current studies is not always optimal. Instead, it is necessary to dynamically select the personalized layer that maximizes the training performance by taking the representation difference between neighbor layers into account. To find the optimal personalized layer, we utilize the low-dimensional representation of each layer to contrast feature distribution transfer and introduce a Wasserstein-based layer selection method, aimed at identifying the best-match layer for personalization. Additionally, a weighted global aggregation algorithm is proposed based on the selected personalized layer for the practical application of FedCMD. Extensive experiments on ten benchmarks demonstrate the efficiency and superior performance of our solution compared with nine state-of-the-art solutions. All code and results are available at https://github.com/elegy112138/FedCMD.},
+  archive      = {J_TC},
+  author       = {Xingyan Chen and Tian Du and Mu Wang and Tiancheng Gu and Yu Zhao and Gang Kou and Changqiao Xu and Dapeng Oliver Wu},
+  doi          = {10.1109/TC.2024.3514302},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1123-1137},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Towards optimal customized architecture for heterogeneous federated learning with contrastive cloud-edge model decoupling},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A data-centric software-hardware co-designed architecture
+for large-scale graph processing. <em>TC</em>, <em>74</em>(4),
+1109–1122. (<a href="https://doi.org/10.1109/TC.2024.3514292">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph processing plays an important role in many practical applications. However, the inherent characteristics of graph processing, including random memory access and the low computation-to-communication ratio, make it difficult to efficiently execute on traditional computing architectures, such as CPUs and GPUs. Near-memory computing has the characteristics of low latency and high bandwidth. It is widely regarded as a promising direction for designing graph processing accelerators. However, the storage space of a single device cannot meet the demand of large-scale graph processing. Using multiple devices will bring lots of inter-device data transmission, which may counteract the benefits of near-memory computing. To fundamentally reduce the data transmission overhead, we propose a data-centric graph processing framework for systems with multiple near-memory computing devices. The framework uses a data-centric programming model as the software hardware interface. For software, we propose an optimized data flow and a heuristic multi-step weighted maximum matching algorithm to achieve efficient inter-device communication and ensure load balancing. For hardware, we design a data reuse driven task controller and a data type-aware on-chip memory, which can effectively improve the utilization of the on-chip memory. Compared with the two most recent near-memory graph accelerators, our framework significantly reduces energy consumption and inter-device communication.},
+  archive      = {J_TC},
+  author       = {Zerun Li and Xiaoming Chen and Yuxin Yang and Feng Min and Xiaoyu Zhang and Yinhe Han},
+  doi          = {10.1109/TC.2024.3514292},
+  journal      = {IEEE Transactions on Computers},
+  month        = {4},
+  number       = {4},
+  pages        = {1109-1122},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A data-centric software-hardware co-designed architecture for large-scale graph processing},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

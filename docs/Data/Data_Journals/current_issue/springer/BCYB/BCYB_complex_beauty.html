@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BCYB_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="bcyb---1">BCYB - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Optimal control for stochastic neural oscillators.
+<em>BCYB</em>, <em>119</em>(2), 1–16. (<a
+href="https://doi.org/10.1007/s00422-025-01007-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study develops an event-based, energy-efficient control strategy for desynchronizing coupled neuronal networks using optimal control theory. Inspired by phase resetting techniques in Parkinson’s disease treatment, we incorporate stochasticity of the system’s dynamics into deterministic models to address neural system intrinsic noise. We use an advanced computational solver for nonlinear stochastic partial differential equations to solve the stochastic Hamilton–Jacobi–Bellman equation via level set methods for a single neuron model; this allows us to find control inputs which drive the dynamics close to the system’s phaseless set. When applied to coupled neuronal networks, these inputs achieve effective randomization of neuronal spike timing, leading to significant network desynchronization. Compared to its deterministic counterpart, our stochastic method can achieve considerable energy savings. The event-based control minimizes unnecessary charge transfer, potentially extending implanted stimulator battery life while maintaining robustness against variations in neuronal coupling strengths and network heterogeneities. These findings highlight the potential for developing energy-efficient neurostimulation techniques with implications for deep brain stimulation protocols. The presented computational framework could also be applied to other domains for which stochastic optimal control problems are prevalent.},
+  archive      = {J_BCYB},
+  author       = {Rajabi, Faranak and Gibou, Frederic and Moehlis, Jeff},
+  doi          = {10.1007/s00422-025-01007-3},
+  journal      = {Biological Cybernetics},
+  month        = {6},
+  number       = {2},
+  pages        = {1-16},
+  shortjournal = {Biol. Cybern.},
+  title        = {Optimal control for stochastic neural oscillators},
+  volume       = {119},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

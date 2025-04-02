@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TKDE_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tkde---44">TKDE - 44</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Towards accurate truth discovery with privacy-preserving
+over crowdsourced data streams. <em>TKDE</em>, <em>37</em>(4),
+2155–2168. (<a href="https://doi.org/10.1109/TKDE.2025.3536180">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Truth discovery endeavors to extract valuable information from multi-source data through weighted aggregation. Some studies have integrated differential privacy techniques into traditional truth discovery algorithms to protect data privacy. However, due to the neglect of outliers and limitations in budget allocation, these schemes still need improvement in the accuracy of discovery results. To solve these challenges, we propose a privacy-preserving scheme called PriPTD to achieve secure and accurate truth discovery services over crowdsourced data streams. Instead of assuming that worker weights are always stable between two neighboring timestamps, we delve deeper to consider outliers where worker weights change rapidly. Accordingly, we develop an outlier-aware weight estimation method with a time series model to capture and handle these outliers. Furthermore, to ensure data utility under a limited budget, we devise a weight-aware budget allocation algorithm. Its core idea is that timestamps with higher importance consume a larger proportion of the remaining budget. Additionally, we design a noise-aware error adjustment approach to mitigate the adverse effects of introduced noise on accuracy. Theoretical analysis and extensive experiments validate our scheme. Final comparative experiments against existing works confirm that our scheme achieves more accurate truth discovery while preserving privacy.},
+  archive      = {J_TKDE},
+  author       = {Zhimao Gong and Zhibang Yang and Shenghong Yang and Siyang Yu and Kenli Li and Mingxing Duan},
+  doi          = {10.1109/TKDE.2025.3536180},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2155-2168},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Towards accurate truth discovery with privacy-preserving over crowdsourced data streams},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). STCDM: Spatio-temporal contrastive diffusion model for
+check-in sequence generation. <em>TKDE</em>, <em>37</em>(4), 2141–2154.
+(<a href="https://doi.org/10.1109/TKDE.2025.3525718">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Analyzing and comprehending check-in sequences is crucial for various applications in smart cities. However, publicly available check-in datasets are often limited in scale due to privacy concerns. This poses a significant obstacle to academic research and downstream applications. Thus, it is urgent to generate realistic check-in datasets. The denoising diffusion probabilistic model (DDPM) as one of the most capable generation methods is a good choice to achieve this goal. However, generating check-in sequences using DDPM is not an easy feat. The difficulties lie in handling check-in sequences of variable lengths and capturing the correlation from check-in sequences’ distinct characteristics. This paper addresses the challenges by proposing a Spatio-Temporal Contrastive Diffusion Model (STCDM). This model introduces a novel spatio-temporal lossless encoding method that effectively encodes check-in sequences into a suitable format with equal length. Furthermore, we capture the spatio-temporal correlations with two disentangled diffusion modules to reduce the impact of the difference between spatial and temporal characteristics. Finally, we incorporate contrastive learning to enhance the relationship between diffusion modules. We generate four realistic datasets in different scenarios using STCDM and design four metrics for comparison. Experiments demonstrate that our generated datasets are more realistic and free of privacy leakage.},
+  archive      = {J_TKDE},
+  author       = {Letian Gong and Shengnan Guo and Yan Lin and Yichen Liu and Erwen Zheng and Yiwei Shuang and Youfang Lin and Jilin Hu and Huaiyu Wan},
+  doi          = {10.1109/TKDE.2025.3525718},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2141-2154},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {STCDM: Spatio-temporal contrastive diffusion model for check-in sequence generation},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spatio-temporal prediction on streaming data: A unified
+federated continuous learning framework. <em>TKDE</em>, <em>37</em>(4),
+2126–2140. (<a href="https://doi.org/10.1109/TKDE.2025.3528876">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The widespread deployment of wireless and mobile devices results in a proliferation of decentralized spatio-temporal data. Many recent proposals that target deep learning for spatio-temporal prediction assume that all data is available at a central location and suffers from so-called catastrophic forgetting, where previously learned knowledge is entirely forgotten when new data arrives. Such proposals may face data privacy concerns and may experience deteriorating prediction performance when applied in decentralized settings where data streams into the system. To bridge the gap between decentralized training and spatio-temporal prediction on streaming data, we propose a unified federated continuous learning framework, which uses a horizontal federated learning mechanism for protecting data privacy and includes a global replay buffer with synthetic spatio-temporal data generated by the previously learned global model. For each client, we fuse the current training data with synthetic spatio-temporal data using a spatio-temporal mixup mechanism to preserve historical knowledge effectively, thus avoiding catastrophic forgetting. To enable holistic representation preservation, the local models at clients each integrates a general spatio-temporal autoencoder with a spatio-temporal simple siamese network that aims to ensure prediction accuracy and avoid holistic feature loss. Extensive experiments on real data offer insight into the effectiveness of the proposed framework.},
+  archive      = {J_TKDE},
+  author       = {Hao Miao and Yan Zhao and Chenjuan Guo and Bin Yang and Kai Zheng and Christian S. Jensen},
+  doi          = {10.1109/TKDE.2025.3528876},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2126-2140},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Spatio-temporal prediction on streaming data: A unified federated continuous learning framework},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SMPCache: Towards more efficient SQL queries in multi-party
+collaborative data analysis. <em>TKDE</em>, <em>37</em>(4), 2111–2125.
+(<a href="https://doi.org/10.1109/TKDE.2025.3535944">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Privacy-preserving collaborative data analysis is a popular research direction in recent years. Among all such analysis tasks, privacy-preserving SQL queries on multi-party databases are of particular industrial interest. Although the privacy concern can be addressed by many cryptographic tools, such as secure multi-party computation (MPC), the efficiency of executing such SQL queries is far from satisfactory, especially for high-volume databases. In particular, existing MPC-based solutions treat each SQL query as an isolated task and launch it from scratch, in spite of the nature that many SQL queries are done regularly and somewhat overlap in their functionalities. In this work, we are motivated to exploit this nature to improve the efficiency of MPC-based, privacy-preserving SQL queries. We introduce a cache-like optimization mechanism. To ensure a higher cache hit rate and reduce redundant MPC operators, we present a cache structure different from that of plain databases and design a set of cache strategies. Our optimization mechanism, SMPCache, can be built upon secret-sharing-based MPC frameworks, which attract much attention from the industry. To demonstrate the utility of SMPCache, we implement it on Rosetta, an open-source MPC library, and use real-world datasets to launch extensive experiments on some basic SQL operators (e.g., Filter, Order-by, Aggregation, and Inner-Join) and some representative composite SQL queries. To give a data point, we note that SMPCache can achieve most up to 3536× efficiency improvement on the TPC-DS dataset and 562× on the TPC-H dataset at a moderate storage cost. We also apply SMPCache to the basic SQL operators (Filter, Order-by, Group-by, Aggregation, and Inner-join) of the Secrecy framework, achieving up to 127.3× efficiency improvement.},
+  archive      = {J_TKDE},
+  author       = {Junjian Shi and Ye Han and Xiaojie Guo and Zekun Fei and Zheli Liu and Siyi Lv and Tong Li and Xiaotao Liu},
+  doi          = {10.1109/TKDE.2025.3535944},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2111-2125},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {SMPCache: Towards more efficient SQL queries in multi-party collaborative data analysis},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-learning symmetric multi-view probabilistic clustering.
+<em>TKDE</em>, <em>37</em>(4), 2097–2110. (<a
+href="https://doi.org/10.1109/TKDE.2024.3440352">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-view Clustering (MVC) has achieved significant progress, with many efforts dedicated to learn knowledge from multiple views. However, most existing methods are either not applicable or require additional steps for incomplete MVC. Such a limitation results in poor-quality clustering performance and poor missing view adaptation. Besides, noise or outliers might significantly degrade the overall clustering performance, which are not handled well by most existing methods. In this paper, we propose a novel unified framework for incomplete and complete MVC named self-learning symmetric multi-view probabilistic clustering (SLS-MPC). SLS-MPC proposes a novel symmetric multi-view probability estimation and equivalently transforms multi-view pairwise posterior matching probability into composition of each view&#39;s individual distribution, which tolerates data missing and might extend to any number of views. Then, SLS-MPC proposes a novel self-learning probability function without any prior knowledge and hyper-parameters to learn each view&#39;s individual distribution. Next, graph-context-aware refinement with path propagation and co-neighbor propagation is used to refine pairwise probability, which alleviates the impact of noise and outliers. Finally, SLS-MPC proposes a probabilistic clustering algorithm to adjust clustering assignments by maximizing the joint probability iteratively without category information. Extensive experiments on multiple benchmarks show that SLS-MPC outperforms previous state-of-the-art methods.},
+  archive      = {J_TKDE},
+  author       = {Junjie Liu and Junlong Liu and Rongxin Jiang and Yaowu Chen and Chen Shen and Jieping Ye},
+  doi          = {10.1109/TKDE.2024.3440352},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2097-2110},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Self-learning symmetric multi-view probabilistic clustering},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RAGIC: Risk-aware generative framework for stock interval
+construction. <em>TKDE</em>, <em>37</em>(4), 2085–2096. (<a
+href="https://doi.org/10.1109/TKDE.2025.3533492">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Efforts to predict stock market outcomes have yielded limited success due to the inherently stochastic nature of the market, influenced by numerous unpredictable factors. Many existing prediction approaches focus on single-point predictions, lacking the depth needed for effective decision-making and often overlooking market risk. To bridge this gap, we propose RAGIC, a novel risk-aware framework for stock interval prediction to quantify uncertainty. Our approach leverages a Generative Adversarial Network (GAN) to produce future price sequences infused with randomness inherent in financial markets. RAGIC’s generator detects the risk perception of informed investors and captures historical price trends globally and locally. Then the risk-sensitive intervals is built upon the simulated future prices from sequence generation through statistical inference, incorporating horizon-wise insights. The interval’s width is adaptively adjusted to reflect market volatility. Importantly, our approach relies solely on publicly available data and incurs only low computational overhead. RAGIC’s evaluation across globally recognized broad-based indices demonstrates its balanced performance, offering both accuracy and informativeness. Achieving a consistent 95% coverage, RAGIC maintains a narrow interval width. This promising outcome suggests that our approach effectively addresses the challenges of stock market prediction while incorporating vital risk considerations.},
+  archive      = {J_TKDE},
+  author       = {Jingyi Gu and Wenlu Du and Guiling Wang},
+  doi          = {10.1109/TKDE.2025.3533492},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2085-2096},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {RAGIC: Risk-aware generative framework for stock interval construction},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Preference-consistent knowledge distillation for recommender
+system. <em>TKDE</em>, <em>37</em>(4), 2071–2084. (<a
+href="https://doi.org/10.1109/TKDE.2025.3526420">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Feature-based knowledge distillation has been applied to compress modern recommendation models, usually with projectors that align student (small) recommendation models’ dimensions with teacher dimensions. However, existing studies have only focused on making the projected features (i.e., student features after projectors) similar to teacher features, overlooking investigating whether the user preference can be transferred to student features (i.e., student features before projectors) in this manner. In this paper, we find that due to the lack of restrictions on projectors, the process of transferring user preferences will likely be interfered with. We refer to this phenomenon as preference inconsistency. It greatly wastes the power of feature-based knowledge distillation. To mitigate preference inconsistency, we propose PCKD, which consists of two regularization terms for projectors. We also propose a hybrid method that combines the two regularization terms. We focus on items with high preference scores and significantly mitigate preference inconsistency, improving the performance of feature-based knowledge distillation. Extensive experiments on three public datasets and three backbones demonstrate the effectiveness of PCKD.},
+  archive      = {J_TKDE},
+  author       = {Zhangchi Zhu and Wei Zhang},
+  doi          = {10.1109/TKDE.2025.3526420},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2071-2084},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Preference-consistent knowledge distillation for recommender system},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NALSpatial: A natural language interface for spatial
+databases. <em>TKDE</em>, <em>37</em>(4), 2056–2070. (<a
+href="https://doi.org/10.1109/TKDE.2025.3525587">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spatial databases play a vital role in a number of applications ranging from geographic information systems to location-based services. Application tasks typically access underlying spatial data to answer queries. However, non-experts lack the expertise necessary for formulating spatial queries. To fill in this gap, we propose an effective framework that translates natural language queries over spatial data into executable database queries, called NALSpatial. The framework consists of two core phases: (i) natural language understanding and (ii) natural language translation. Phase (i) extracts key entity information, comprehends the query intent and determines the query type by employing natural language processing techniques and deep learning algorithms. The key entities and query type are passed to phase (ii), which makes use of entity mapping rules and structured language models to construct executable database queries. NALSpatial supports dealing with five types of queries including (i) basic queries (e.g. distance and area), (ii) range queries, (iii) nearest neighbor queries, (iv) spatial join queries and (v) aggregation queries. We develop NALSpatial in an open-source extensible database system SECONDO. Extensive experiments show that NALSpatial on average achieves response time of about 2.5 seconds, translatability of 95% and translation precision of 92%, outperforming three state-of-the-art methods.},
+  archive      = {J_TKDE},
+  author       = {Mengyi Liu and Xieyang Wang and Jianqiu Xu and Hua Lu and Yongxin Tong},
+  doi          = {10.1109/TKDE.2025.3525587},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2056-2070},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {NALSpatial: A natural language interface for spatial databases},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-label feature selection with missing features via
+implicit label replenishment and positive correlation feature recovery.
+<em>TKDE</em>, <em>37</em>(4), 2042–2055. (<a
+href="https://doi.org/10.1109/TKDE.2025.3536080">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-label feature selection can effectively solve the curse of dimensionality problem in multi-label learning. Existing multi-label feature selection methods mostly handle multi-label data without missing features. However, in practical applications, multi-label data with missing features exist widely, and most existing multi-label feature selection methods are not directly applicable. Therefore, we propose a feature selection method for multi-label data with missing features. First, we propose a method to extract implicit label information from the feature space to replenish the binary label information. Second, we learn the positive correlation between features to construct a feature correlation recovery matrix to recover missing features. Finally, we design a sparse model-based multi-label feature selection method for processing multi-label data with missing features and prove the convergence of this method. Comparative experiments with existing feature selection methods demonstrate the effectiveness of our method.},
+  archive      = {J_TKDE},
+  author       = {Jianhua Dai and Wenxiang Chen and Yuhua Qian},
+  doi          = {10.1109/TKDE.2025.3536080},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2042-2055},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Multi-label feature selection with missing features via implicit label replenishment and positive correlation feature recovery},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mitigating the tail effect in fraud detection by community
+enhanced multi-relation graph neural networks. <em>TKDE</em>,
+<em>37</em>(4), 2029–2041. (<a
+href="https://doi.org/10.1109/TKDE.2025.3530467">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fraud detection, a classical data mining problem in finance applications, has risen in significance amid the intensifying confrontation between fraudsters and anti-fraud forces. Recently, an increasing number of criminals are constantly expanding the scope of fraud activities to covet the property of innocent victims. However, most existing approaches require abundant historical records to mine fraud patterns from financial transaction behaviors, thereby leading to significant challenges to protect minority groups, who are less involved in the modern financial market but also under the threat of fraudsters nowadays. Therefore, in this paper, we propose a novel community-enhanced multi-relation graph neural network-based model, named CMR-GNN, to address the important defects of existing fraud detection models in the tail effect situation. In particular, we first construct multiple types of relation graphs from historical transactions and then devise a clustering-based neural network module to capture diverse patterns from transaction communities. To mitigate information lacking tailed nodes, we proposed tailed-groups learning modules to aggregate features from similarly clustered subgraphs by graph convolution networks. Extensive experiments on both the real-world and public datasets demonstrate that our method not only surpasses the state-of-the-art baselines but also could effectively harness information within transaction communities while mitigating the impact of tail effects.},
+  archive      = {J_TKDE},
+  author       = {Li Han and Longxun Wang and Ziyang Cheng and Bo Wang and Guang Yang and Dawei Cheng and Xuemin Lin},
+  doi          = {10.1109/TKDE.2025.3530467},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2029-2041},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Mitigating the tail effect in fraud detection by community enhanced multi-relation graph neural networks},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MHR: A multi-modal hyperbolic representation framework for
+fake news detection. <em>TKDE</em>, <em>37</em>(4), 2015–2028. (<a
+href="https://doi.org/10.1109/TKDE.2025.3528951">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid growth of the internet has led to an alarming increase in the dissemination of fake news, which has had many negative effects on society. Various methods have been proposed for detecting fake news. However, these approaches suffer from several limitations. First, most existing works only consider news as separate entities and do not consider the correlations between fake news and real news. Moreover, these works are usually conducted in the Euclidean space, which is unable to capture complex relationships between news, in particular the hierarchical relationships. To tackle these issues, we introduce a novel Multi-modal Hyperbolic Representation framework (MHR) for fake news detection. Specifically, we capture the correlations between news for graph construction to arrange and analyze different news. To fully utilize the multi-modal characteristics, we first extract the textual and visual information, and then design a Lorentzian multi-modal fusion module to fuse them as the node information in the graph. By utilizing the fully hyperbolic graph neural networks, we learn the graph’s representation in hyperbolic space, followed by a detector for detecting fake news. The experimental results on three real-world datasets demonstrate that our proposed MHR model achieves state-of-the-art performance, indicating the benefits of hyperbolic representation.},
+  archive      = {J_TKDE},
+  author       = {Shanshan Feng and Guoxin Yu and Dawei Liu and Han Hu and Yong Luo and Hui Lin and Yew-Soon Ong},
+  doi          = {10.1109/TKDE.2025.3528951},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2015-2028},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {MHR: A multi-modal hyperbolic representation framework for fake news detection},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Making non-overlapping matters: An unsupervised alignment
+enhanced cross-domain cold-start recommendation. <em>TKDE</em>,
+<em>37</em>(4), 2001–2014. (<a
+href="https://doi.org/10.1109/TKDE.2024.3511602">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cold-start recommendation is a long-standing challenge when presenting potential preferred items to new users. Most empirical studies leverage side information to promote cold-start recommendation. In this work, we focus on cross-domain cold-start recommendation, which aims to provide suggestions to those non-overlapping users who have only interacted in the source domain and are viewed as new users in the target domain. Pre-training and then mapping is the common solution for the cross-domain cold-start recommendation. The former learns domain-specific user preference, and the latter transfers preference knowledge from the source to the target domain. Despite the effectiveness, we argue that current mapping-based methods still have the following limitations. First, current mapping functions fail to fully consider the similarity of user behavioral patterns, either common transfer or personalized transfer mappings. Second, sparse supervision signals from the limited overlapping users, lead to insufficient mapping function learning for recommendation. To tackle the above limitations, we propose a novel MACDR model for cross-domain cold-start recommendation. Specifically, MACDR consists of two elaborate modules: a Prototype enhanced Mixture-Of-Experts (PMOE) based mapping function and a Preference Distribution Alignment (PDA) enhanced optimization. PMOE is designed to balance the transfer patterns of common and personalized preferences, following the basis that similar users share similar preference transfer. Furthermore, to alleviate the sparse supervision issue, PDA is designed to explore the utilization of non-overlapping users in an unsupervised manner based on the prototype distribution alignment technique. Extensive experiments on three real-world datasets demonstrate the effectiveness of the proposed method.},
+  archive      = {J_TKDE},
+  author       = {Zihan Wang and Yonghui Yang and Le Wu and Richang Hong and Meng Wang},
+  doi          = {10.1109/TKDE.2024.3511602},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {2001-2014},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Making non-overlapping matters: An unsupervised alignment enhanced cross-domain cold-start recommendation},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MagicNet: Memory-aware graph interactive causal network for
+multivariate stock price movement prediction. <em>TKDE</em>,
+<em>37</em>(4), 1989–2000. (<a
+href="https://doi.org/10.1109/TKDE.2025.3527480">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantitative trading is a prominent field that employs time series analysis today, attracting researchers who apply machine intelligence to real-world issues like stock price movement prediction. In recent literature, various types of auxiliary data have been integrated alongside stock prices to improve prediction accuracy, such as textual news and correlational information. However, they typically rely on directly related documents or symmetric price correlations to make predictions for a particular stock (we refer to as “self-influence”). In this paper, we propose a Memory-Aware Graph Interactive Causal Network (MagicNet) that considers both temporal and spatial dependencies in financial documents and introduces causality-based correlations between multivariate stocks in a hierarchical fashion. MagicNet involves a text memory slot for each stock to retain the most influential texts over time and contains a dynamic interaction graph based on causal relationships to aggregate interactive influences asymmetrically. We believe that MagicNet leverages influential texts across stocks and explores their interrelationships through a logical structure, improving predictions on multiple stocks (we refer to as “interactive-influence”). The effectiveness of MagicNet is demonstrated through experiments on three real-world datasets, where MagicNet outperforms existing state-of-the-art models, offering an intuitive framework for understanding how texts and correlations affect future stock prices.},
+  archive      = {J_TKDE},
+  author       = {Di Luo and Shuqi Li and Weiheng Liao and Rui Yan},
+  doi          = {10.1109/TKDE.2025.3527480},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1989-2000},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {MagicNet: Memory-aware graph interactive causal network for multivariate stock price movement prediction},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Machine unlearning through fine-grained model parameters
+perturbation. <em>TKDE</em>, <em>37</em>(4), 1975–1988. (<a
+href="https://doi.org/10.1109/TKDE.2025.3528551">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine unlearning involves retracting data records and reducing their influence on trained models, aiding user privacy protection, at a significant computational cost potentially. Weight perturbation-based unlearning is common but typically modifies parameters globally. We propose fine-grained Top-K and Random-k parameters perturbed inexact machine unlearning that address the privacy needs while keeping the computational costs tractable. However, commonly used training data are independent and identically distributed, for inexact machine unlearning, current metrics are inadequate in quantifying unlearning degree that occurs after unlearning. To address this quantification issue, we introduce SPD-GAN, which subtly perturbs data distribution targeted for unlearning. Then, we evaluate unlearning degree by measuring the performance difference of the models on the perturbed unlearning data before and after unlearning. Furthermore, to demonstrate efficacy, we tackle the challenge of evaluating machine unlearning by assessing model generalization across unlearning and remaining data. To better assess the unlearning effect and model generalization, we propose novel metrics, namely, the forgetting rate and memory retention rate. By implementing these innovative techniques and metrics, we achieve computationally efficacious privacy protection in machine learning applications without significant sacrifice of model performance. A by-product of our work is a novel method for evaluating and quantifying unlearning degree.},
+  archive      = {J_TKDE},
+  author       = {Zhiwei Zuo and Zhuo Tang and Kenli Li and Anwitaman Datta},
+  doi          = {10.1109/TKDE.2025.3528551},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1975-1988},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Machine unlearning through fine-grained model parameters perturbation},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LUNA: Efficient backward-private dynamic symmetric
+searchable encryption scheme with secure deletion in encrypted database.
+<em>TKDE</em>, <em>37</em>(4), 1961–1974. (<a
+href="https://doi.org/10.1109/TKDE.2023.3329234">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic symmetric searchable encryption (SSE) enables clients to perform searches and updates on an encrypted database outsourced to an untrusted server while preserving the privacy of data and queries. For restricting information leakage, it is very important to limit what the server can learn about the deleted data during searches after the deletion, i.e., to satisfy backward privacy. However, previous backward privacy definitions only considered the logical deletion of keywords in documents while ignoring security risks caused by the actual deletion of documents. Moreover, existing SSE schemes often depend on heavy cryptographic primitives for achieving high-level backward privacy, which greatly degrades the end-to-end performance. To this end, we define a new backward privacy notion named BP-DEL, which restricts the information leakage of the actual deletion. Moreover, we design a hybrid index structure that provides BP-DEL for SSE schemes such that they support deletions securely. Based on the hybrid index, we propose a BP-DEL construction named LUNA and design its protocols with a trusted execution environment (TEE) to maintain the index efficiently. Finally, we implement LUNA in the MySQL database by encapsulating it in UDFs. The experimental results show that LUNA has a performance much better than previous works satisfying BP-DEL.},
+  archive      = {J_TKDE},
+  author       = {Siyi Lv and Yanyu Huang and Xinhao Li and Tong Li and Liang Guo and Xiaofeng Chen and Zheli Liu},
+  doi          = {10.1109/TKDE.2023.3329234},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1961-1974},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {LUNA: Efficient backward-private dynamic symmetric searchable encryption scheme with secure deletion in encrypted database},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LLM-driven causal discovery via harmonized prior.
+<em>TKDE</em>, <em>37</em>(4), 1943–1960. (<a
+href="https://doi.org/10.1109/TKDE.2025.3528461">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional domain-specific causal discovery relies on expert knowledge to guide the data-based structure learning process, thereby improving the reliability of recovered causality. Recent studies have shown promise in using the Large Language Model (LLM) as causal experts to construct autonomous expert-guided causal discovery systems through causal reasoning between pairwise variables. However, their performance is hampered by inaccuracies in aligning LLM-derived causal knowledge with the actual causal structure. To address this issue, this paper proposes a novel LLM-driven causal discovery framework that limits LLM’s prior within a reliable range. Instead of pairwise causal reasoning that requires both precise and comprehensive output results, the LLM is directed to focus on each single aspect separately. By combining these distinct causal insights, a unified set of structural constraints is created, termed a harmonized prior, which draws on their respective strengths to ensure prior accuracy. On this basis, we introduce plug-and-play integrations of the harmonized prior into mainstream categories of structure learning methods, thereby enhancing their applicability in practical scenarios. Evaluations on real-world data demonstrate the effectiveness of our approach.},
+  archive      = {J_TKDE},
+  author       = {Taiyu Ban and Lyuzhou Chen and Derui Lyu and Xiangyu Wang and Qinrui Zhu and Huanhuan Chen},
+  doi          = {10.1109/TKDE.2025.3528461},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1943-1960},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {LLM-driven causal discovery via harmonized prior},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning latent and changing dynamics in real non-stationary
+environments. <em>TKDE</em>, <em>37</em>(4), 1930–1942. (<a
+href="https://doi.org/10.1109/TKDE.2025.3535961">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model-based reinforcement learning (RL) aims to learn the underlying dynamics of a given environment. The success of most existing works is built on the critical assumption that the dynamic is fixed, which is unrealistic in many open-world scenarios, such as drone delivery and online chatting, where agents may need to deal with environments with unpredictable changing dynamics (hereafter, real non-stationary environment). Therefore, learning changing dynamics in a real non-stationary environment offers both significant benefits and challenges. This paper proposes a new model-based reinforcement learning algorithm that proactively and dynamically detects possible changes and Learns these Latent and Changing Dynamics (LLCD) in a latent Markovian space for real non-stationary environments. To ensure the Markovian property of the RL model and improve computational efficiency, we employ a latent space model to learn the environment’s transition dynamics. Furthermore, we perform online change detection in the latent space to promptly identify change points in non-stationary environments. Then, we utilize the detected information to help the agent adapt to new conditions. Experiments indicate that the rewards of the proposed algorithm accumulate for the most rapid adaptions to environmental change, among other benefits. This work has a strong potential to enhance environmentally suitable model-based reinforcement learning capabilities.},
+  archive      = {J_TKDE},
+  author       = {Zihe Liu and Jie Lu and Junyu Xuan and Guangquan Zhang},
+  doi          = {10.1109/TKDE.2025.3535961},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1930-1942},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Learning latent and changing dynamics in real non-stationary environments},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intent-guided heterogeneous graph contrastive learning for
+recommendation. <em>TKDE</em>, <em>37</em>(4), 1915–1929. (<a
+href="https://doi.org/10.1109/TKDE.2025.3536096">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contrastive Learning (CL)-based recommender systems have gained prominence in the context of Heterogeneous Graph (HG) due to their capacity to enhance the consistency of representations across different views. However, existing frameworks often neglect the fact that user-item interactions within HG are governed by diverse latent intents (e.g., brand preferences or demographic characteristics of item audiences), which are pivotal in capturing fine-grained relations. The exploration of these underlying intents, particularly through the lens of meta-paths in HGs, presents us with two principal challenges: i) How to integrate CL with intents; ii) How to mitigate noise from meta-path-driven intents. To address these challenges, we propose an innovative framework termed Intent-guided Heterogeneous Graph Contrastive Learning (IHGCL), which designed to enhance CL-based recommendation by capturing the intents contained within meta-paths. Specifically, the IHGCL framework includes: i) a meta-path-based Dual Contrastive Learning (DCL) approach to effectively integrate intents into the recommendation, constructing intent-intent contrast and intent-interaction contrast; ii) a Bottlenecked AutoEncoder (BAE) that combines mask propagation with the information bottleneck principle to significantly reduce noise perturbations introduced by meta-paths. Empirical evaluations conducted across six distinct datasets demonstrate the superior performance of our IHGCL framework relative to conventional baseline methods.},
+  archive      = {J_TKDE},
+  author       = {Lei Sang and Yu Wang and Yi Zhang and Yiwen Zhang and Xindong Wu},
+  doi          = {10.1109/TKDE.2025.3536096},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1915-1929},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Intent-guided heterogeneous graph contrastive learning for recommendation},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HyCubE: Efficient knowledge hypergraph 3D circular
+convolutional embedding. <em>TKDE</em>, <em>37</em>(4), 1902–1914. (<a
+href="https://doi.org/10.1109/TKDE.2025.3531372">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge hypergraph embedding models are usually computationally expensive due to the inherent complex semantic information. However, existing works mainly focus on improving the effectiveness of knowledge hypergraph embedding, making the model architecture more complex and redundant. It is desirable and challenging for knowledge hypergraph embedding to reach a trade-off between model effectiveness and efficiency. In this paper, we propose an end-to-end efficient knowledge hypergraph embedding model, HyCubE, which designs a novel 3D circular convolutional neural network and the alternate mask stack strategy to enhance the interaction and extraction of feature information comprehensively. Furthermore, our proposed model achieves a better trade-off between effectiveness and efficiency by adaptively adjusting the 3D circular convolutional layer structure to handle $n$-ary knowledge tuples of different arities with fewer parameters. In addition, we use a knowledge hypergraph 1-N multilinear scoring way to accelerate the model training efficiency further. Finally, extensive experimental results on all datasets demonstrate that our proposed model consistently outperforms state-of-the-art baselines, with an average improvement of 8.22% and a maximum improvement of 33.82% across all metrics. Meanwhile, HyCubE is 6.12x faster, GPU memory usage is 52.67% lower, and the number of parameters is reduced by 85.21% compared with the average metric of the latest state-of-the-art baselines.},
+  archive      = {J_TKDE},
+  author       = {Zhao Li and Xin Wang and Jun Zhao and Wenbin Guo and Jianxin Li},
+  doi          = {10.1109/TKDE.2025.3531372},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1902-1914},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {HyCubE: Efficient knowledge hypergraph 3D circular convolutional embedding},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HPST-GT: Full-link delivery time estimation via
+heterogeneous periodic spatial-temporal graph transformer.
+<em>TKDE</em>, <em>37</em>(4), 1885–1901. (<a
+href="https://doi.org/10.1109/TKDE.2025.3533610">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A warehouse-distribution integration (WDI) e-commerce platform is an approach that combines warehousing and distribution processes, which is increasingly adopted in industry to enhance business efficiency. In the WDI e-commerce, one of the most important problems is to estimate the full-link delivery time for decision-making. Traditional methods designed for separate warehouse-distribution models struggle to address challenges in integrated systems. The difficulties stem from two main factors: (i) the contextual influence exerted by neighboring units within heterogeneous delivery networks, and (ii) the uncertainty in delivery times caused by dynamic and periodic temporal factors such as fluctuations in online sales volumes and the varying characteristics of different delivery units (e.g., warehouses and sorting centers). To address these challenges, we propose a novel full-link delivery time estimation framework called Heterogeneous Periodic Spatial-Temporal Graph Transformer (HPST-GT). First, we develop heterogeneous graph transformers to capture the hierarchical and diverse information of the warehouse-distribution network. Next, we design spatial-temporal transformers based on heterogeneous features to analyze the correlation between spatial and temporal information. Finally, we create a heterogeneous spatial-temporal graph prediction module to estimate full-link delivery time. Our method, evaluated on a one-month dataset from a leading e-commerce platform, surpasses current benchmarks across multiple performance metrics.},
+  archive      = {J_TKDE},
+  author       = {Shuai Wang and Hai Wang and Li Lin and Xiaohui Zhao and Tian He and Dian Shen and Wei Xi},
+  doi          = {10.1109/TKDE.2025.3533610},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1885-1901},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {HPST-GT: Full-link delivery time estimation via heterogeneous periodic spatial-temporal graph transformer},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HG-SCC: A subgraph-aware convolutional few-shot
+classification method on heterogeneous graphs. <em>TKDE</em>,
+<em>37</em>(4), 1871–1884. (<a
+href="https://doi.org/10.1109/TKDE.2024.3523573">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot classification is increasingly relevant in emerging applications, such as university course classification in intelligent education systems. University course classification helps students acquire specific skills, comprehend course purposes, and assists departments in defining training goals. However, classifying frontier courses presents challenges due to the absence of labels and descriptions. Few-shot learning addresses this by acquiring meta-knowledge. Heterogeneous graphs (HGs), rich in semantic information, introduce complexities that make few-shot particularly challenging. Addressing this problem, we propose a subgraph-aware convolutional few-shot classification method on HGs (HG-SCC). We first formalize the subgraph sampling strategy for HGs and different views under meta-paths. Then, the layer number adaptive spectral-based graph convolution is designed for personalized node embedding. Furthermore, a high-order convolution operation with classes as nodes is designed to increase the class representation coverage. Modeling subgraph centrality, combined with node features, captures structural information, improving awareness of each sampled subgraph, thus alleviating sparsity in new class labels and enhancing classification accuracy. Euclidean distance-based and task-affected cosine similarity-based classifiers under different meta-paths are proposed, with stacking introduced to blend multiple classifiers based on subgraph features. Experimental results show that our method has high performance in course classification and also outperforms state-of-the-art methods on benchmark datasets.},
+  archive      = {J_TKDE},
+  author       = {Minghe Yu and Yun Zhang and Jintong Sun and Min Huang and Tiancheng Zhang and Ge Yu},
+  doi          = {10.1109/TKDE.2024.3523573},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1871-1884},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {HG-SCC: A subgraph-aware convolutional few-shot classification method on heterogeneous graphs},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Heavy nodes in a small neighborhood: Exact and peeling
+algorithms with applications. <em>TKDE</em>, <em>37</em>(4), 1853–1870.
+(<a href="https://doi.org/10.1109/TKDE.2024.3515875">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a weighted and unconstrained variant of the well-known minimum $k$ union problem: Given a bipartite graph $\mathcal {G}(U,V,E)$ with weights for all nodes in $V$, find a set $S\subseteq V$ such that the ratio between the total weight of the nodes in $S$ and the number of their distinct adjacent nodes in $U$ is maximized. Our problem, which we term Heavy Nodes in a Small Neighborhood (HNSN), finds applications in marketing, team formation, and money laundering detection. For example, in the latter application, $S$ represents bank account holders who obtain illicit money from some peers of a criminal and route it through their accounts to a target account belonging to the criminal. We prove that HNSN can be solved exactly in polynomial time via linear programming. We also develop several algorithms offering different effectiveness/efficiency trade-offs: an exact algorithm, based on node contraction, graph decomposition, and linear programming, as well as three peeling algorithms. The first peeling algorithm is a near-linear time approximation algorithm with a tight approximation ratio, the second is an iterative algorithm that converges to an optimal solution in a very small number of iterations in practice, and the third is a near-linear time greedy heuristic. In addition, we formalize a money laundering scenario involving multiple target accounts and show how our algorithms can be extended to deal with it. Our experiments on real and synthetic datasets show that our algorithms find (near-)optimal solutions, outperforming a natural baseline, and that they can detect money laundering more effectively and efficiently than two state-of-the-art methods.},
+  archive      = {J_TKDE},
+  author       = {Ling Li and Hilde Verbeek and Huiping Chen and Grigorios Loukides and Robert Gwadera and Leen Stougie and Solon P. Pissis},
+  doi          = {10.1109/TKDE.2024.3515875},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1853-1870},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Heavy nodes in a small neighborhood: Exact and peeling algorithms with applications},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graph linear convolution pooling for learning in incomplete
+high-dimensional data. <em>TKDE</em>, <em>37</em>(4), 1838–1852. (<a
+href="https://doi.org/10.1109/TKDE.2024.3524627">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-dimensional and incomplete (HDI) data are frequently encountered in diverse real-world applications involving complex interactions among numerous nodes. Approaches based on latent feature analysis (LFA) have proven effective in performing representation learning in HDI data. Nevertheless, they cannot handle the high-order connectivity among nodes in HDI data well, resulting in severe accuracy loss. To address the previously mentioned issue, we present a novel model in this paper, namely Graph Linear Convolution Pooling Network (GLCPN). The proposed GLCPN adopts the three-fold ideas. First, it leverages simplified graph convolutions to efficiently capture high-order connectivity among nodes for learning representations of matrix factorization. Second, a simple yet effective priori convolution operator is adopted by each graph neural layer to capture node-node collaboration for aggregation. Third, a locality-enhanced pooling scheme is designed to holistically utilize multi-layer representations of the neighborhood. Therefore, GLCPN can effectively acquire the hidden information in HDI data with high efficiency. In addition, we have conducted a theoretical analysis demonstrating that the proposed GLCPN is more expressive compared with existing graph neural networks for HDI data. Extensive experiments have been further conducted on ten well-established HDI datasets from various applications. The experimental results demonstrate that the proposed GLCPN significantly outperforms state-of-the-art models for learning representations in HDI data evaluated by accuracy and efficiency metrics.},
+  archive      = {J_TKDE},
+  author       = {Fanghui Bi and Tiantian He and Yew-Soon Ong and Xin Luo},
+  doi          = {10.1109/TKDE.2024.3524627},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1838-1852},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Graph linear convolution pooling for learning in incomplete high-dimensional data},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graph condensation: A survey. <em>TKDE</em>, <em>37</em>(4),
+1819–1837. (<a href="https://doi.org/10.1109/TKDE.2025.3535877">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid growth of graph data poses significant challenges in storage, transmission, and particularly the training of graph neural networks (GNNs). To address these challenges, graph condensation (GC) has emerged as an innovative solution. GC focuses on synthesizing a compact yet highly representative graph, enabling GNNs trained on it to achieve performance comparable to those trained on the original large graph. The notable efficacy of GC and its broad prospects have garnered significant attention and spurred extensive research. This survey paper provides an up-to-date and systematic overview of GC, organizing existing research into five categories aligned with critical GC evaluation criteria: effectiveness, generalization, efficiency, fairness, and robustness. To facilitate an in-depth and comprehensive understanding of GC, this paper examines various methods under each category and thoroughly discusses two essential components within GC: optimization strategies and condensed graph generation. We also empirically compare and analyze representative GC methods with diverse optimization strategies based on the five proposed GC evaluation criteria. Finally, we explore the applications of GC in various fields, outline the related open-source libraries, and highlight the present challenges and novel insights, with the aim of promoting advancements in future research.},
+  archive      = {J_TKDE},
+  author       = {Xinyi Gao and Junliang Yu and Tong Chen and Guanhua Ye and Wentao Zhang and Hongzhi Yin},
+  doi          = {10.1109/TKDE.2025.3535877},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1819-1837},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Graph condensation: A survey},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Few-shot causal representation learning for
+out-of-distribution generalization on heterogeneous graphs.
+<em>TKDE</em>, <em>37</em>(4), 1804–1818. (<a
+href="https://doi.org/10.1109/TKDE.2025.3531469">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To address the issue of label sparsity in heterogeneous graphs (HGs), heterogeneous graph few-shot learning (HGFL) has recently emerged. HGFL aims to extract meta-knowledge from source HGs with rich-labeled data and transfers it to a target HG, facilitating learning new classes with few-labeled training data and improving predictions on unlabeled testing data. Existing methods typically assume the same distribution across the source HG, training data, and testing data. However, in practice, distribution shifts in HGFL are inevitable due to (1) the scarcity of source HGs that match the target HG&#39;s distribution, and (2) the unpredictable data generation mechanism of the target HG. Such distribution shifts can degrade the performance of existing methods, leading to a novel problem of out-of-distribution (OOD) generalization in HGFL. To address this challenging problem, we propose COHF, a Causal OOD Heterogeneous graph Few-shot learning model. In COHF, we first adopt a bottom-up data generative perspective to identify the invariance principle for OOD generalization. Then, based on this principle, we design a novel variational autoencoder-based heterogeneous graph neural network (VAE-HGNN) to mitigate the impact of distribution shifts. Finally, we propose a novel meta-learning framework that incorporates VAE-HGNN to effectively transfer meta-knowledge in OOD environments. Extensive experiments on seven real-world datasets have demonstrated the superior performance of COHF over the state-of-the-art methods.},
+  archive      = {J_TKDE},
+  author       = {Pengfei Ding and Yan Wang and Guanfeng Liu and Nan Wang and Xiaofang Zhou},
+  doi          = {10.1109/TKDE.2025.3531469},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1804-1818},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Few-shot causal representation learning for out-of-distribution generalization on heterogeneous graphs},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FedDict: Towards practical federated dictionary-based time
+series classification. <em>TKDE</em>, <em>37</em>(4), 1785–1803. (<a
+href="https://doi.org/10.1109/TKDE.2025.3528023">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The dictionary-based approach is one of the most representative types of time series classification (TSC) algorithm due to its high accuracy, efficiency, and good interpretability. However, existing studies focus on the centralized scenario where data from multiple sources are gathered. Considering that in many practical applications, data owners are reluctant to share their data due to privacy concerns, we study an unexplored problem involving collaboratively building the dictionary-based model over the data owners without disclosing their private data (i.e., in the federated scenario). We propose FedDict, a novel dictionary-based TSC approach customized for the federated setting to benefit from the advantages of the centralized algorithms. To further improve the performance and practicality, we propose a novel federated optimization algorithm for training logistic regression classifiers using dictionary features. The algorithm does not rely on any secure broker and is more accurate and efficient than existing solutions without hyper-parameter tuning. We also propose two contract algorithms for federated dictionary building, such that the user can flexibly balance the running time and the TSC performance through a pre-defined time limit. Extensive experiments on a total of 117 highly heterogeneous datasets validate the effectiveness of our methods and the superiority over existing solutions.},
+  archive      = {J_TKDE},
+  author       = {Zhiyu Liang and Zheng Liang and Hongzhi Wang and Bo Zheng},
+  doi          = {10.1109/TKDE.2025.3528023},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1785-1803},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {FedDict: Towards practical federated dictionary-based time series classification},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing hyperedge prediction with context-aware
+self-supervised learning. <em>TKDE</em>, <em>37</em>(4), 1772–1784. (<a
+href="https://doi.org/10.1109/TKDE.2025.3532263">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hypergraphs can naturally model group-wise relations (e.g., a group of users who co-purchase an item) as hyperedges. Hyperedge prediction is to predict future or unobserved hyperedges, which is a fundamental task in many real-world applications (e.g., group recommendation). Despite the recent breakthrough of hyperedge prediction methods, the following challenges have been rarely studied: (C1) How to aggregate the nodes in each hyperedge candidate for accurate hyperedge prediction? and (C2) How to mitigate the inherent data sparsity problem in hyperedge prediction? To tackle both challenges together, in this paper, we propose a novel hyperedge prediction framework ($\mathsf{CASH}$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi mathvariant=&quot;sans-serif&quot;&gt;CASH&lt;/mml:mi&gt;&lt;/mml:math&gt;) that employs (1) context-aware node aggregation to precisely capture complex relations among nodes in each hyperedge for (C1) and (2) self-supervised contrastive learning in the context of hyperedge prediction to enhance hypergraph representations for (C2). Furthermore, as for (C2), we propose a hyperedge-aware augmentation method to fully exploit the latent semantics behind the original hypergraph and consider both node-level and group-level contrasts (i.e., dual contrasts) for better node and hyperedge representations. Extensive experiments on six real-world hypergraphs reveal that $\mathsf{CASH}$ consistently outperforms all competing methods in terms of the accuracy in hyperedge prediction and each of the proposed strategies is effective in improving the model accuracy of $\mathsf{CASH}$.},
+  archive      = {J_TKDE},
+  author       = {Yunyong Ko and Hanghang Tong and Sang-Wook Kim},
+  doi          = {10.1109/TKDE.2025.3532263},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1772-1784},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Enhancing hyperedge prediction with context-aware self-supervised learning},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient generalized temporal pattern mining in time series
+using mutual information. <em>TKDE</em>, <em>37</em>(4), 1753–1771. (<a
+href="https://doi.org/10.1109/TKDE.2025.3526800">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Big time series are increasingly available from an ever wider range of IoT-enabled sensors deployed in various environments. Significant insights can be gained by mining temporal patterns from these time series. Temporal pattern mining (TPM) extends traditional pattern mining by adding event time intervals into extracted patterns, making them more expressive at the expense of increased time and space complexities. Besides frequent temporal patterns (FTPs), which occur frequently in the entire dataset, another useful type of temporal patterns are so-called rare temporal patterns (RTPs), which appear rarely but with high confidence. Mining rare temporal patterns yields additional challenges. For FTP mining, the temporal information and complex relations between events already create an exponential search space. For RTP mining, the support measure is set very low, leading to a further combinatorial explosion and potentially producing too many uninteresting patterns. Thus, there is a need for a better approach to mine frequent and rare temporal patterns. This paper presents our Generalized Temporal Pattern Mining from Time Series (GTPMfTS) approach that can mine both types of patterns, with the following specific contributions: (1) The end-to-end GTPMfTS process taking time series as input and producing frequent/rare temporal patterns as output. (2) The efficient Generalized Temporal Pattern Mining (GTPM) algorithm mines frequent and rare temporal patterns using efficient data structures for fast retrieval of events and patterns during the mining process, and employs effective pruning techniques for significantly faster mining. (3) An approximate version of GTPM that uses mutual information, a measure of data correlation, to prune unpromising time series from the search space. (4) An extensive experimental evaluation of GTPM for rare temporal pattern mining (RTPM) and frequent temporal pattern mining (FTPM), showing that RTPM and FTPM significantly outperform the baselines on runtime and memory consumption, and can scale to big datasets. The approximate RTPM is up to one order of magnitude, and the approximate FTPM is up to two orders of magnitude, faster than the baselines, while retaining high accuracy.},
+  archive      = {J_TKDE},
+  author       = {Van Long Ho and Nguyen Ho and Torben Bach Pedersen and Panagiotis Papapetrou},
+  doi          = {10.1109/TKDE.2025.3526800},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1753-1771},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Efficient generalized temporal pattern mining in time series using mutual information},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EA2N: Evidence-based AMR attention network for fake news
+detection. <em>TKDE</em>, <em>37</em>(4), 1742–1752. (<a
+href="https://doi.org/10.1109/TKDE.2025.3529707">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Proliferation of fake news has become a critical issue in today&#39;s information-driven society. Our study includes external knowledge from Wikidata which allows the model to cross-reference factual claims with established knowledge. This approach deviates from the reliance on social information to detect fake news that many state-of-the-art (SOTA) fact-checking models adopt. This paper introduces EA$^{2}$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:msup&gt;&lt;mml:mrow/&gt;&lt;mml:mn&gt;2&lt;/mml:mn&gt;&lt;/mml:msup&gt;&lt;/mml:math&gt;N, an Evidence-based AMR (abstract meaning representation) Attention Network for Fake News Detection. EA$^{2}$N utilizes the proposed Evidence based Abstract Meaning Representation (WikiAMR) which incorporates knowledge using a proposed evidence-linking algorithm, pushing the boundaries of fake news detection. The proposed framework encompasses a combination of a novel language encoder and a graph encoder to detect fake news. While the language encoder effectively combines transformer-encoded textual features with affective lexical features, the graph encoder encodes semantic relations with evidence through external knowledge, referred to as WikiAMR graph. A path-aware graph learning module is designed to capture crucial semantic relationships among entities over evidence. Extensive experiments support our model&#39;s superior performance, surpassing SOTA methodologies with a difference of 2-3% in F1-score and accuracy for Politifact and Gossipcop datasets. The improvement due to the introduction of WikiAMR is found to be statistically significant with t-value less than 0.01.},
+  archive      = {J_TKDE},
+  author       = {Shubham Gupta and Abhishek Rajora and Suman Kundu},
+  doi          = {10.1109/TKDE.2025.3529707},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1742-1752},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {EA2N: Evidence-based AMR attention network for fake news detection},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual enhanced meta-learning with adaptive task scheduler for
+cold-start recommendation. <em>TKDE</em>, <em>37</em>(4), 1728–1741. (<a
+href="https://doi.org/10.1109/TKDE.2025.3529525">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recommendation systems typically rely on users’ historical behavior to infer their preferences. However, when new entries emerge, the system cannot make accurate prediction due to the lack of historical data. This is known as the “cold-start” problem, which not only limits the exposure of new items but also impacts the first experience of new users severely. Meta-learning has emerged as a promising approach to address this issue, but existing methods have limitations in dealing with the differences in user preferences and sparse monitoring data. To overcome these limitations, Dual enhanced Meta-learning with Adaptive Task Sampling is proposed. First, we propose an embedding enhancement strategy for cold nodes. Specifically, we map the cold-start embeddings into the warm space based on the common features shared across all nodes, and then add uniform noise to create the contrastive views. This strategy injects warm co-occurrence signals into the content of cold nodes, effectively enriching the feature space of cold nodes. Second, we introduce an adaptive task scheduler to measure the effectiveness of different meta-tasks and filter out the noise from invalid tasks. We assign different sampling probabilities to the tasks based on the learning process (gradient similarity) and the learning result (loss) of the meta-tasks. Finally, we consider the above two modules as auxiliary tasks for the main meta-model. Then, joint optimization is carried out through a multi-task learning framework. Experiments in three cold-start scenarios show that our approach outperforms the most advanced baselines, including traditional methods, HIN-based methods, and meta-learning-based methods.},
+  archive      = {J_TKDE},
+  author       = {Dongxiao He and Jiaqi Cui and Xiaobao Wang and Guojie Song and Yuxiao Huang and Lingfei Wu},
+  doi          = {10.1109/TKDE.2025.3529525},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1728-1741},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Dual enhanced meta-learning with adaptive task scheduler for cold-start recommendation},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DASKT: A dynamic affect simulation method for knowledge
+tracing. <em>TKDE</em>, <em>37</em>(4), 1714–1727. (<a
+href="https://doi.org/10.1109/TKDE.2025.3526584">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge Tracing (KT) predicts future performance by modeling students’ historical interactions, and understanding students’ affective states can enhance the effectiveness of KT, thereby improving the quality of education. Although traditional KT values students’ cognition and learning behaviors, efficient evaluation of students’ affective states and their application in KT still require further exploration due to the non-affect-oriented nature of the data and budget constraints. To address this issue, we propose a computation-driven approach, Dynamic Affect Simulation Knowledge Tracing (DASKT), to explore the impact of various student affective states (such as frustration, concentration, boredom, and confusion) on their knowledge states. In this model, we first extract affective factors from students’ non-affect-oriented behavioral data, then use clustering and spatiotemporal sequence modeling to accurately simulate students’ dynamic affect changes when dealing with different problems. Subsequently, we incorporate affect with time-series analysis to improve the model&#39;s ability to infer knowledge states over time and space. Extensive experimental results on two public real-world educational datasets show that DASKT can achieve more reasonable knowledge states under the effect of students’ affective states. Moreover, DASKT outperforms the most advanced KT methods in predicting student performance. Our research highlights a promising avenue for future KT studies, focusing on achieving high interpretability and accuracy.},
+  archive      = {J_TKDE},
+  author       = {Xinjie Sun and Kai Zhang and Qi Liu and Shuanghong Shen and Fei Wang and Yuxiang Guo and Enhong Chen},
+  doi          = {10.1109/TKDE.2025.3526584},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1714-1727},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {DASKT: A dynamic affect simulation method for knowledge tracing},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CoreSense: Social commonsense knowledge-aware context
+refinement for conversational recommender system. <em>TKDE</em>,
+<em>37</em>(4), 1702–1713. (<a
+href="https://doi.org/10.1109/TKDE.2025.3536464">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unlike the traditional recommender systems that rely on historical data such as clicks or purchases, a conversational recommender system (CRS) aims to provide a personalized recommendation through a natural conversation. The conversational interaction facilitates capturing not only explicit preference from mentioned items but also implicit states, such as a user’s current situation and emotional states from a dialogue context. Nevertheless, existing CRSs fall short of fully exploiting a dialogue context since they primarily derive explicit user preferences from the items and item-attributes mentioned in a conversation. To address this limitation and attain a comprehensive understanding of a dialogue context, we propose CoreSense, a conversational recommender system enhanced with social commonsense knowledge. In other words, CoreSense exploits the social commonsense knowledge graph ATOMIC to capture the user’s implicit states, such as a user’s current situation and emotional states, from a dialogue context. Thus, the social commonsense knowledge-augmented CRS can provide a more appropriate recommendation from a given dialogue context. Furthermore, we enhance the collaborative filtering effect by utilizing the user’s states inferred from commonsense knowledge as an improved criterion for retrieving other dialogues of similar interests. Extensive experiments on CRS benchmark datasets show that CoreSense provides human-like recommendations and responses based on inferred user states, achieving significant performance improvements.},
+  archive      = {J_TKDE},
+  author       = {Hyeongjun Yang and Donghyun Kim and Gayeon Park and KyuHwan Yeom and Kyong-Ho Lee},
+  doi          = {10.1109/TKDE.2025.3536464},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1702-1713},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {CoreSense: Social commonsense knowledge-aware context refinement for conversational recommender system},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CloudRGK: Towards private similarity measurement between
+graphs on the cloud. <em>TKDE</em>, <em>37</em>(4), 1688–1701. (<a
+href="https://doi.org/10.1109/TKDE.2025.3529949">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph kernels are a significant class of tools for measuring the similarity of graph data, which is the basis of a wide range of graph learning methods. However, graph kernels often suffer from high computing overhead. With the shining of cloud computing, it is desirable to transfer the computing burden to the server with abundant computing resources to reduce the cost of local machines. Nonetheless, under the honest-but-curious cloud assumption, the server may peek at the data, raising privacy concerns. To eliminate the risk of data privacy leakage, we propose CloudRGK to securely perform Random walk Graph Kernel(RGK), one of the most well-known graph kernels, on the cloud. We first prove that the edge- and vertex-labeled graphs could be transformed into an equivalent matrix representation. Afterward, we prove that the cloud could perform the core operations in RGK on the encrypted graphs without feature information loss. Evaluations of the real-world graph data demonstrate that our strategy significantly reduces the overhead of the local party to perform RGK without performance degradation. Meanwhile, it introduces only a small amount of extra computation cost. To the best of our knowledge, it is the first work towards private graph kernel computation on the cloud.},
+  archive      = {J_TKDE},
+  author       = {Linxiao Yu and Jun Tao and Yifan Xu and Haotian Wang},
+  doi          = {10.1109/TKDE.2025.3529949},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1688-1701},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {CloudRGK: Towards private similarity measurement between graphs on the cloud},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CLEAR: Spatial-temporal traffic data representation learning
+for traffic prediction. <em>TKDE</em>, <em>37</em>(4), 1672–1687. (<a
+href="https://doi.org/10.1109/TKDE.2025.3536009">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the evolving field of urban development, precise traffic prediction is essential for optimizing traffic and mitigating congestion. While traditional graph learning-based models effectively exploit complex spatial-temporal correlations, their reliance on trivially generated graph structures or deeply intertwined adjacency learning without supervised loss significantly impedes their efficiency. This paper presents Contrastive Learning of spatial-tEmporal trAffic data Representations (CLEAR) framework, a comprehensive approach to spatial-temporal traffic data representation learning aimed at enhancing the accuracy of traffic predictions. Employing self-supervised contrastive learning, CLEAR strategically extracts discriminative embeddings from both traffic time-series and graph-structured data. The framework applies weak and strong data augmentations to facilitate subsequent exploitations of intrinsic spatial-temporal correlations that are critical for accurate prediction. Additionally, CLEAR incorporates advanced representation learning models that transmute these dynamics into compact, semantic-rich embeddings, thereby elevating downstream models’ prediction accuracy. By integrating with existing traffic predictors, CLEAR boosts predicting performance and accelerates the training process by effectively decoupling adjacency learning from correlation learning. Comprehensive experiments validate that CLEAR can robustly enhance the capabilities of existing graph learning-based traffic predictors and provide superior traffic predictions with a straightforward representation decoder. This investigation highlights the potential of contrastive representation learning in developing robust traffic data representations for traffic prediction.},
+  archive      = {J_TKDE},
+  author       = {James Jianqiao Yu and Xinwei Fang and Shiyao Zhang and Yuxin Ma},
+  doi          = {10.1109/TKDE.2025.3536009},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1672-1687},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {CLEAR: Spatial-temporal traffic data representation learning for traffic prediction},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Brain and cognitive science inspired deep learning: A
+comprehensive survey. <em>TKDE</em>, <em>37</em>(4), 1650–1671. (<a
+href="https://doi.org/10.1109/TKDE.2025.3527551">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning (DL) is increasingly viewed as a foundational methodology for advancing Artificial Intelligence (AI). However, its interpretability remains limited, and it often underperforms in certain fields due to its lack of human-like characteristics. Consequently, leveraging insights from Brain and Cognitive Science (BCS) to understand and advance DL has become a focal point for researchers in the DL community. However, BCS is a diverse discipline where existing studies often concentrate on cognitive theories within their respective domains. These theories are typically grounded in certain assumptions, complicating comparisons between different approaches. Therefore, this review is intended to provide a comprehensive landscape of more than 300 papers on the intersection of DL and BCS grounded in DL community. Unlike previous reviews that based on sub-disciplines of Cognitive Science, this article aims to establish a unified framework encompassing all aspects of DL inspired by BCS, offering insights into the symbiotic relationship between DL and BCS. Additionally, we present a forward-looking perspective on future research directions, with the intention of inspiring further advancements in AI research.},
+  archive      = {J_TKDE},
+  author       = {Zihan Zhang and Xiao Ding and Xia Liang and Yusheng Zhou and Bing Qin and Ting Liu},
+  doi          = {10.1109/TKDE.2025.3527551},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1650-1671},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Brain and cognitive science inspired deep learning: A comprehensive survey},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Boosting GNN-based link prediction via PU-AUC optimization.
+<em>TKDE</em>, <em>37</em>(4), 1635–1649. (<a
+href="https://doi.org/10.1109/TKDE.2025.3525490">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Link prediction, which aims to predict the existence of a link between two nodes in a network, has various applications ranging from friend recommendation to protein interaction prediction. Recently, Graph Neural Network (GNN)-based link prediction has demonstrated its advantages and achieved the state-of-the-art performance. Typically, GNN-based link prediction can be formulated as a binary classification problem. However, in link prediction, we only have positive data (observed links) and unlabeled data (unobserved links), but no negative data. Therefore, Positive Unlabeled (PU) learning naturally fits the link prediction scenario. Unfortunately, the unknown class prior and data imbalance of networks impede the use of PU learning in link prediction. To deal with these issues, this paper proposes a novel model-agnostic PU learning algorithm for GNN-based link prediction by means of Positive-Unlabeled Area Under the Receiver Operating Characteristic Curve (PU-AUC) optimization. The proposed method is free of class prior estimation and able to handle the data imbalance. Moreover, we propose an accelerated method to reduce the operational complexity of PU-AUC optimization from quadratic to approximately linear. Extensive experiments back up our theoretical analysis and validate that the proposed method is capable of boosting the performance of the state-of-the-art GNN-based link prediction models.},
+  archive      = {J_TKDE},
+  author       = {Yuren Mao and Yu Hao and Xin Cao and Yunjun Gao and Chang Yao and Xuemin Lin},
+  doi          = {10.1109/TKDE.2025.3525490},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1635-1649},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Boosting GNN-based link prediction via PU-AUC optimization},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Are large language models really good logical reasoners? A
+comprehensive evaluation and beyond. <em>TKDE</em>, <em>37</em>(4),
+1620–1634. (<a href="https://doi.org/10.1109/TKDE.2025.3536008">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Logical reasoning consistently plays a fundamental and significant role in the domains of knowledge engineering and artificial intelligence. Recently, Large Language Models (LLMs) have emerged as a noteworthy innovation in natural language processing (NLP). However, the question of whether LLMs can effectively address the task of logical reasoning, which requires gradual cognitive inference similar to human intelligence, remains unanswered. To this end, we aim to bridge this gap and provide comprehensive evaluations in this paper. First, to offer systematic evaluations, we select fifteen typical logical reasoning datasets and organize them into deductive, inductive, abductive and mixed-form reasoning settings. Considering the comprehensiveness of evaluations, we include 3 early-era representative LLMs and 4 trending LLMs. Second, different from previous evaluations relying only on simple metrics (e.g., accuracy), we propose fine-level evaluations in objective and subjective manners, covering both answers and explanations, including answer correctness, explain correctness, explain completeness and explain redundancy. Additionally, to uncover the logical flaws of LLMs, problematic cases will be attributed to five error types from two dimensions, i.e., evidence selection process and reasoning process. Third, to avoid the influences of knowledge bias and concentrate purely on benchmarking the logical reasoning capability of LLMs, we propose a new dataset with neutral content. Based on the in-depth evaluations, this paper finally forms a general evaluation scheme of logical reasoning capability from six dimensions (i.e., Correct, Rigorous, Self-aware, Active, Oriented and No hallucination). It reflects the pros and cons of LLMs and gives guiding directions for future works.},
+  archive      = {J_TKDE},
+  author       = {Fangzhi Xu and Qika Lin and Jiawei Han and Tianzhe Zhao and Jun Liu and Erik Cambria},
+  doi          = {10.1109/TKDE.2025.3536008},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1620-1634},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Are large language models really good logical reasoners? a comprehensive evaluation and beyond},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An extensive survey with empirical studies on deep temporal
+point process. <em>TKDE</em>, <em>37</em>(4), 1599–1619. (<a
+href="https://doi.org/10.1109/TKDE.2024.3522114">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Temporal point process as the stochastic process on a continuous domain of time is commonly used to model the asynchronous event sequence featuring occurrence timestamps. Thanks to the strong expressivity of deep neural networks, they are emerging as a promising choice for capturing the patterns in asynchronous sequences, in the context of temporal point process. In this paper, we first review recent research emphasis and difficulties in modeling asynchronous event sequences with deep temporal point process, which can be concluded into four fields: encoding of history sequence, formulation of conditional intensity function, relational discovery of events, and learning approaches for optimization. We introduce most of the recently proposed models by dismantling them into four parts and conduct experiments by re-modularizing the first three parts with the same learning strategy for a fair empirical evaluation. Besides, we extend the history encoders and conditional intensity function family and propose a Granger causality discovery framework for exploiting the relations among multi-types of events. Because the Granger causality can be represented by the Granger causality graph, discrete graph structure learning in the framework of Variational Inference is employed to reveal latent structures of the graph. Further experiments show that the proposed framework with latent graph discovery can both capture the relations and achieve an improved fitting and predicting performance.},
+  archive      = {J_TKDE},
+  author       = {Haitao Lin and Cheng Tan and Lirong Wu and Zicheng Liu and Zhangyang Gao and Stan Z. Li},
+  doi          = {10.1109/TKDE.2024.3522114},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1599-1619},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {An extensive survey with empirical studies on deep temporal point process},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An adaptive entire-space multi-scenario multi-task transfer
+learning model for recommendations. <em>TKDE</em>, <em>37</em>(4),
+1585–1598. (<a href="https://doi.org/10.1109/TKDE.2025.3536334">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-scenario and multi-task recommendation systems efficiently facilitate knowledge transfer across different scenarios and tasks. However, many existing approaches inadequately incorporate personalized information across users and scenarios. Moreover, the conversion rate (CVR) task in multi-task learning often encounters challenges like sample selection bias, resulting from systematic differences between the training and inference sample spaces, and data sparsity due to infrequent clicks. To address these issues, we propose Adaptive Entire-space Multi-scenario Multi-task Transfer Learning model (AEM$^{2}$TL) with four key modules: 1) Scenario-CGC (Scenario-Customized Gate Control), 2) Task-CGC (Task-Customized Gate Control), 3) Personalized Gating Network, and 4) Entire-space Supervised Multi-Task Module. AEM$^{2}$TL employs a multi-gate mechanism to effectively integrate shared and specific information across scenarios and tasks, enhancing prediction adaptability. To further improve task-specific personalization, it incorporates personalized prior features and applies a gating mechanism that dynamically scales the top-layer neural units. A novel post-impression behavior decomposition technique is designed to leverage all impression samples across the entire space, mitigating sample selection bias and data sparsity. Furthermore, an adaptive weighting mechanism dynamically allocates attention to tasks based on their relative importance, ensuring optimal task prioritization. Extensive experiments on one industrial and two real-world public datasets indicate the superiority of AEM$^{2}$TL over state-of-the-art methods.},
+  archive      = {J_TKDE},
+  author       = {Qingqing Yi and Jingjing Tang and Xiangyu Zhao and Yujian Zeng and Zengchun Song and Jia Wu},
+  doi          = {10.1109/TKDE.2025.3536334},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1585-1598},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {An adaptive entire-space multi-scenario multi-task transfer learning model for recommendations},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AISFuser: Encoding maritime graphical representations with
+temporal attribute modeling for vessel trajectory prediction.
+<em>TKDE</em>, <em>37</em>(4), 1571–1584. (<a
+href="https://doi.org/10.1109/TKDE.2025.3531770">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Maritime transportation, vital for nearly 90% of global trade, necessitates precise vessel trajectory prediction for safety and efficiency. Although the Automatic Identification System (AIS) provides a comprehensive data source, how to model these multi-modal and heterogeneous time-varying sequences (such as vessels’ kinetic information and ocean weather factors) poses a formidable challenge. Moreover, most existing approaches are limited by the confined scope of vessel trajectory modeling, making it impossible to consider the unique characteristics of maritime transportation system. To tackle these challenges, we propose a novel framework called AISFuser to i) encode unique maritime traffic network into graphical representations, and ii) introduce the heterogeneity into multi-modal temporal embeddings through Self-Supervised Learning (SSL). Specifically, our AISFuser is constructed by combining an attention-based graph block with a transformer network to encode information across space and time, respectively. In terms of temporal dimension, one SSL auxiliary task is also designed to enhance the heterogeneity of temporal representations and supplement the main vessel prediction task. We validate the effectiveness of the proposed AISFuser on a real-world AIS dataset. Extensive experimental results demonstrate that our method can forecast multiple attributes of vessel trajectory for over 10 hours into the future, outperforming competitive baselines.},
+  archive      = {J_TKDE},
+  author       = {Zhiwen Zhang and Wei Yuan and Zipei Fan and Xuan Song and Ryosuke Shibasaki},
+  doi          = {10.1109/TKDE.2025.3531770},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1571-1584},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {AISFuser: Encoding maritime graphical representations with temporal attribute modeling for vessel trajectory prediction},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A generalized <span
+class="math inline"><em>f</em></span>&lt;mml:math
+xmlns:mml=“http://www.w3.org/1998/math/MathML”&gt;&lt;mml:mi&gt;f&lt;/mml:mi&gt;&lt;/mml:math&gt;-divergence
+with applications in pattern classification. <em>TKDE</em>,
+<em>37</em>(4), 1556–1570. (<a
+href="https://doi.org/10.1109/TKDE.2025.3530524">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In multisource information fusion (MSIF), Dempster–Shafer evidence (DSE) theory offers a useful framework for reasoning under uncertainty. However, measuring the divergence between belief functions within this theory remains an unresolved challenge, particularly in managing conflicts in MSIF, which is crucial for enhancing decision-making level. In this paper, several divergence and distance functions are proposed to quantitatively measure discrimination between belief functions in DSE theory, including the reverse evidential KullbackLeibler (REKL) divergence, evidential Jeffrey’s (EJ) divergence, evidential JensenShannon (EJS) divergence, evidential $\chi ^{2}$ (E$\chi ^{2}$) divergence, evidential symmetric $\chi ^{2}$ (ES$\chi ^{2}$) divergence, evidential triangular (ET) discrimination, evidential Hellinger (EH) distance, and evidential total variation (ETV) distance. On this basis, a generalized $f$-divergence, also called the evidential $f$-divergence (Ef divergence), is proposed. Depending on different kernel functions, the Ef divergence degrades into several specific classes: EKL, REKL, EJ, EJS, E$\chi ^{2}$ and ES$\chi ^{2}$ divergences, ET discrimination, and EH and ETV distances. Notably, when basic belief assignments (BBAs) are transformed into probability distributions, these classes of Ef divergence revert to their classical counterparts in statistics and information theory. In addition, several Ef-MSIF algorithms are proposed for pattern classification based on the classes of Ef divergence. These Ef-MSIF algorithms are evaluated on real-world datasets to demonstrate their practical effectiveness in solving classification problems. In summary, this work represents the first attempt to extend classical $f$-divergence within the DSE framework, capitalizing on the distinct properties of BBA functions. Experimental results show that the proposed Ef-MSIF algorithms improve classification accuracy, with the best-performing Ef-MSIF algorithm achieving an overall performance difference approximately 1.22 times smaller than the suboptimal method and 14.12 times smaller than the worst-performing method.},
+  archive      = {J_TKDE},
+  author       = {Fuyuan Xiao and Weiping Ding and Witold Pedrycz},
+  doi          = {10.1109/TKDE.2025.3530524},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1556-1570},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {A generalized $f$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi&gt;f&lt;/mml:mi&gt;&lt;/mml:math&gt;-divergence with applications in pattern classification},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adversarial conservative alternating q-learning for credit
+card debt collection. <em>TKDE</em>, <em>37</em>(4), 1542–1555. (<a
+href="https://doi.org/10.1109/TKDE.2025.3528219">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Debt collection is utilized for risk control after credit card delinquency. The existing rule-based method tends to be myopic and non-adaptive due to the delayed feedback. Reinforcement learning (RL) has an inherent advantage in dealing with such task and can learn policies end-to-end. However, employing RL here remains difficult because of different interaction processes from standard RL and the notorious problem of optimistic estimations in the offline setting. To tackle these challenges, we first propose an Alternating Q-Learning (AQL) framework to adapt debt collection processes to comparable procedures in RL. Based on AQL, we further develop an Adversarial Conservative Alternating Q-Learning (ACAQL) to address the issue of overoptimistic estimations. Specifically, adversarial conservative value regularization is proposed to balance optimism and conservatism on Q-values of out-of-distribution actions. Furthermore, ACAQL utilizes the counterfactual action stitching to mitigate the overestimation by enhancing behavior data. Finally, we evaluate ACAQL on a real-world dataset created from Bank of Shanghai. Offline experimental results show that our approach outperforms state-of-the-art methods and effectively alleviates the optimistic estimation issue. Moreover, we conduct online A/B tests on the bank, and ACAQL achieves at least a 6% improvement of the debt recovery rate, which yields tangible economic benefits.},
+  archive      = {J_TKDE},
+  author       = {Wenhui Liu and Jiapeng Zhu and Lyu Ni and Jingyu Bi and Zhijian Wu and Jiajie Long and Mengyao Gao and Dingjiang Huang and Shuigeng Zhou},
+  doi          = {10.1109/TKDE.2025.3528219},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1542-1555},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Adversarial conservative alternating Q-learning for credit card debt collection},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive learning in imbalanced data streams with
+unpredictable feature evolution. <em>TKDE</em>, <em>37</em>(4),
+1527–1541. (<a href="https://doi.org/10.1109/TKDE.2025.3531431">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning from data streams collected sequentially over time are widely spread in real-world applications. Previous methods typically assume that the data stream has a feature space with a fixed or clearly defined evolution pattern, as well as a balanced class distribution. However, in many practical scenarios, such as environmental monitoring systems, the frequency of anomalous events is significantly imbalanced compared to normal ones and the feature space dynamically changes due to ecological evolution and sensor lifespan. To alleviate this important but rarely studied problem, we propose the Adaptive Learning in Imbalace data streams with Unpredictable feature evolution (ALIU) algorithm. As data streams with imbalanced class distribution arrive, ALIU first mitigates the model&#39;s bias for the majority class by reweighting the adaptive gradient descent magnitudes between different classes. Then, a new loss function is proposed that simultaneously focuses on misclassifications and maintains model robustness. Further, when imbalanced data streams arrive with feature evolutions, we reuse the previously learned model and update the incomplete and augmented features by adopting the adaptive gradient strategy and ensemble method, respectively. Finally, we utilize the projected technique to build a sparse yet efficient model. Based on a few common and mild assumptions, we theoretically analyze that the ALIU satisfies a sub-linear regret bound under both convex and strong convex loss functions and the performance of model can be improved with the assistance of old features. Besides, extensive experimental results further demonstrate the effectiveness of our proposed algorithm.},
+  archive      = {J_TKDE},
+  author       = {Jiahang Tu and Xijia Tang and Shilin Gu and Yucong Dai and Ruidong Fan and Chenping Hou},
+  doi          = {10.1109/TKDE.2025.3531431},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1527-1541},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Adaptive learning in imbalanced data streams with unpredictable feature evolution},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Achieving top-<span
+class="math inline"><em>K</em></span>&lt;mml:math
+xmlns:mml=“http://www.w3.org/1998/math/MathML”&gt;&lt;mml:mi&gt;k&lt;/mml:mi&gt;&lt;/mml:math&gt;-fairness
+for finding global top-<span
+class="math inline"><em>K</em></span>&lt;mml:math
+xmlns:mml=“http://www.w3.org/1998/math/MathML”&gt;&lt;mml:mi&gt;k&lt;/mml:mi&gt;&lt;/mml:math&gt;
+frequent items. <em>TKDE</em>, <em>37</em>(4), 1508–1526. (<a
+href="https://doi.org/10.1109/TKDE.2024.3523033">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Finding top-$K$ frequent items has been a hot topic in data stream processing with wide-ranging applications. However, most existing sketch algorithms focus on finding local top-$K$ in a single data stream. In this paper, we tackle finding global top-$K$ across multiple data streams. We find that using prior sketch algorithms directly is often unfair in global scenarios, degrading global top-$K$ accuracy. We define top-$K$-fairness and show its importance for finding global top-$K$. To achieve this, we propose the Double-Anonymous (DA) sketch, where double-anonymity ensures fairness. We also propose two techniques, hot-filtering and early-freezing, to improve accuracy further. We theoretically prove that the DA sketch achieves top-$K$-fairness while maintaining high accuracy. Extensive experiments verify top-$K$-fairness in disjoint data streams, showing that the DA sketch&#39;s error is up to 129 times (60 times on average) smaller than the state-of-the-art. To enhance the applicability and technical depth, we also investigate how to extend the DA sketch to general distributed data stream scenarios and how to provide a fairer and more accurate global ranking for top-$K$ items. The experimental results show that the extended version of the DA sketch can indeed compute better rankings and still has significant advantages in general data streams.},
+  archive      = {J_TKDE},
+  author       = {Yikai Zhao and Wei Zhou and Wenchen Han and Zheng Zhong and Yinda Zhang and Xiuqi Zheng and Tong Yang and Bin Cui},
+  doi          = {10.1109/TKDE.2024.3523033},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {4},
+  number       = {4},
+  pages        = {1508-1526},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Achieving top-$K$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi&gt;K&lt;/mml:mi&gt;&lt;/mml:math&gt;-fairness for finding global top-$K$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi&gt;K&lt;/mml:mi&gt;&lt;/mml:math&gt; frequent items},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

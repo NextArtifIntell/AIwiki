@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJMIR_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijmir---10">IJMIR - 10</h2>
+<ul>
+<li><details>
+<summary>
+(2025). STCA: An action recognition network with spatio-temporal
+convolution and attention. <em>IJMIR</em>, <em>14</em>(1), 1–12. (<a
+href="https://doi.org/10.1007/s13735-024-00350-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolution and self-attention mechanisms are two commonly used methods in the field of video understanding. Convolution preserves spatiotemporal relationships in video data while reducing the number of parameters and computations. The self-attention mechanism captures global and long-distance dependencies in sequence data. To address the challenges of low accuracy and excessive parameters in networks for action recognition, we propose a new network that combines convolution and self-attention mechanisms (STCA). STCA consists of two modules: efficient spatiotemporal convolution (ESTConv) and spatiotemporal self-attention (STA). ESTConv extracts local spatiotemporal features of actions, enabling fast reasoning. STA consists of two sub-modules: the spatial self-attention (SA) and the temporal self-attention (TA). SA analyzes the spatial characteristics of actions, while TA analyzes their temporal characteristics. We conducted experiments on the Kinetics400, UCF101, HMDB51, and Something-Something V2 datasets to evaluate our network. Results show that STCA achieves accuracy comparable to the leading action recognition models while reducing parameters by over 20%, making it more lightweight than current best-performing models.},
+  archive      = {J_IJMIR},
+  author       = {Tian, Qiuhong and Miao, Weilun and Zhang, Lizao and Yang, Ziyu and Yu, Yang and Zhao, Yanying and Yao, Lan},
+  doi          = {10.1007/s13735-024-00350-8},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-12},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {STCA: An action recognition network with spatio-temporal convolution and attention},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CAMIR: Fine-tuning CLIP and multi-head cross-attention
+mechanism for multimodal image retrieval with sketch and text features.
+<em>IJMIR</em>, <em>14</em>(1), 1–15. (<a
+href="https://doi.org/10.1007/s13735-024-00352-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sketches and texts are two input modes of queries that are widely used in image retrieval tasks of different granularities. Text-based image retrieval (TBIR) is mainly used for coarse-grained retrieval, while sketch-based image retrieval (SBIR) aims to retrieve images based on hand-drawn sketches, which pose unique challenges due to the abstract nature of sketches. Existing methods mainly focus on retrieval based on a single modality but fail to explore the connections between multiple modalities comprehensively. In addition, the emerging contrastive language image pre-training (CLIP) model and powerful contrastive learning methods are underexplored in this field. We propose a novel multimodal image retrieval framework (CAMIR) to address these challenges. It obtains sketch and text features through a fine-tuned CLIP model, fuses the extracted features using multi-head cross-attention, and combines contrastive learning for retrieval tasks. In the indexing stage, we introduce Faiss, an open-source similarity search library developed by Meta AI Research, to enhance retrieval efficiency. Comprehensive experiments on the benchmark dataset Sketchy demonstrate the effectiveness of our proposed framework, achieving superior performance compared to existing methods while highlighting the potential of integrating sketch and text features for retrieval tasks.},
+  archive      = {J_IJMIR},
+  author       = {Yang, Fan and Ismail, Nor Azman and Pang, Yee Yong and Alsayed, Alhuseen Omar},
+  doi          = {10.1007/s13735-024-00352-6},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-15},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {CAMIR: Fine-tuning CLIP and multi-head cross-attention mechanism for multimodal image retrieval with sketch and text features},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving skeleton-based action recognition with interactive
+object information. <em>IJMIR</em>, <em>14</em>(1), 1–13. (<a
+href="https://doi.org/10.1007/s13735-024-00351-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human skeleton information is important in skeleton-based action recognition, which provides a simple and efficient way to describe human pose. However, existing skeleton-based methods focus more on the skeleton, ignoring the objects interacting with humans, resulting in poor performance in recognizing actions that involve object interactions. We propose a new action recognition framework introducing object nodes to supplement absent interactive object information. We also propose Spatial Temporal Variable Graph Convolutional Networks (ST-VGCN) to effectively model the Variable Graph (VG) containing object nodes. Specifically, in order to validate the role of interactive object information, by leveraging a simple self-training approach, we establish a new dataset, JXGC 24, and an extended dataset, NTU RGB+D+Object 60, including more than 2 million additional object nodes. At the same time, we designe the Variable Graph construction method to accommodate a variable number of nodes for graph structure. Additionally, we are the first to explore the overfitting issue introduced by incorporating additional object information, and we propose a VG-based data augmentation method to address this issue, called Random Node Attack. Finally, regarding the network structure, we introduce two fusion modules, CAF and WNPool, along with a novel Node Balance Loss, to enhance the comprehensive performance by effectively fusing and balancing skeleton and object node information. Our method surpasses the previous state-of-the-art on multiple skeleton-based action recognition benchmarks. The accuracy of our method on NTU RGB+D 60 cross-subject split is 96.7%, and on cross-view split, it is 99.2%. The project page: https://github.com/moonlight52137/ST-VGCN .},
+  archive      = {J_IJMIR},
+  author       = {Wen, Hao and Lu, Ziqian and Shen, Fengli and Lu, Zhe-Ming and Cui, Jialin},
+  doi          = {10.1007/s13735-024-00351-7},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-13},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {Improving skeleton-based action recognition with interactive object information},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual-matrix guided reconstruction hashing for unsupervised
+cross-modal retrieval. <em>IJMIR</em>, <em>14</em>(1), 1–12. (<a
+href="https://doi.org/10.1007/s13735-025-00353-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unsupervised cross-modal hashing, due to its independence from heavy label information, is more convenient for application to other fields. In recent years, this area has gained widespread attention and achieved great success. However, existing unsupervised cross-modal hashing methods still face some issues, such as simple fusion after feature extraction, the use of a single similarity measure to express data relationships, and guiding hash code learning through a single affinity matrix. To address these problems, we propose a new method called Dual-Matrix Guided Reconstruction Hashing for Unsupervised Cross-Modal Retrieval. We construct an effective matrix from the extracted raw semantic information to guide the generation of reconstructed hash codes for images and texts. Simultaneously, we construct another matrix for the extracted image and text features, guiding the generation of reconstructed hash codes using graph convolution, thus directing hash code learning through dual matrices. In evaluations on three standard datasets, our method achieved an average improvement of approximately 1.3% in MAP@5000 and 1.5% in MAP@50, particularly showing significant performance gains with shorter hash codes.},
+  archive      = {J_IJMIR},
+  author       = {Lin, Ziyong and Jiang, Xiaolong and Zhang, Jie and Li, Mingyong},
+  doi          = {10.1007/s13735-025-00353-z},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-12},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {Dual-matrix guided reconstruction hashing for unsupervised cross-modal retrieval},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-task classification network for few-shot learning.
+<em>IJMIR</em>, <em>14</em>(1), 1–12. (<a
+href="https://doi.org/10.1007/s13735-025-00354-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic information provides both internal coherence within categories and distinctiveness between categories that surpass mere visual concepts. Semantic information has been employed in Few-Shot Learning (FSL) to achieve additional performance improvements. Previous methods usually combine support image and semantic information to classify query image. However, in FSL, it is challenging to train a model on a limited base dataset such that the model can effectively fuse or interact with both modalities and obtain better feature representation on the novel dataset. To address this problem, we propose a Multi-task Classification Network (MCN) to decompose the current classification problem into a image-image classification problem and a semantic-image classification problem. Considering the issue that the results of image-image classification and semantic-image classification may not always be trustworthy, we introduce an Uncertainty-Aware Decision Module (UADM) which biases the final classification result towards the result with lower uncertainty in the two types of classification. Extensive experimental results on three datasets have consistently shown that our proposed method achieves impressive results. Particularly, compared to the baseline, we achieved a 2–3% improvement on the CUB, SUN, and Flower datasets in both the 5-way 1-shot and 5-way 5-shot settings.},
+  archive      = {J_IJMIR},
+  author       = {Ji, Zhong and Liu, Yuanheng and Wang, Xuan and Liu, Jingren and Cao, Jiale and Yu, YunLong},
+  doi          = {10.1007/s13735-025-00354-y},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-12},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {Multi-task classification network for few-shot learning},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimized RT-DETR for accurate and efficient video object
+detection via decoupled feature aggregation. <em>IJMIR</em>,
+<em>14</em>(1), 1–13. (<a
+href="https://doi.org/10.1007/s13735-025-00355-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video object detection (VOD) is a challenging task, and image object detectors are difficult to detect degradation phenomena in certain video frames. However, existing research on VOD mostly trades high computational costs for accuracy, making it difficult to achieve a balance between accuracy and speed. This work proposes an optimized Real-Time Detection Transformer (RT-DETR) model for VOD that introduces a decoupled Feature Aggregation Module (FAM) to separately refine the localization and classification detection heads. This method only requires a minimal increase in the number of parameters to achieve significant improvements in accuracy. Specifically, we insert FAM before the localization detection head and classification detection head, and first freeze all parameters of the feature extractor and classification detection head to train only the parameters of the localization detection head to obtain more accurate localization results. Then, we freeze all parameters of the feature extractor and localization detection head to train only the parameters of the classification detection head to improve the final detection accuracy. We have conducted a large number of ablation experiments to verify the effectiveness of the method. Without using any post-processing methods, we achieved 90.0% mAP on the ImageNet-VID dataset, with only 77.9 M parameters and an average inference speed of 14.1ms.},
+  archive      = {J_IJMIR},
+  author       = {Chen, Hao and Huang, Wu and Zhang, Tao},
+  doi          = {10.1007/s13735-025-00355-x},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-13},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {Optimized RT-DETR for accurate and efficient video object detection via decoupled feature aggregation},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PAMoE-MSA: Polarity-aware mixture of experts network for
+multimodal sentiment analysis. <em>IJMIR</em>, <em>14</em>(1), 1–16. (<a
+href="https://doi.org/10.1007/s13735-025-00362-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multimodal sentiment analysis (MSA) is a challenging task that aims to understand human emotions from text, visual, and audio modalities. Existing studies struggle to capture the monotonic relationship between emotional expressions. This monotonic relationship means that the emotional intensity changes consistently with the expression amplitude when considering emotional polarities, which is a crucial aspect of MSA tasks. To tackle this, we propose a polarity-aware mixture of experts network (PAMoE-MSA). PAMoE-MSA is capable of learning polarity-specific and polarity-common features to capture the monotonic relationship of emotional expressions from multimodal sentiment data. Our model consists of three experts: a positive expert, a negative expert, and a general expert. They are trained through a unique Guide Task, where the positive and negative experts are trained by non-neutral samples, while the general expert is trained by all samples. A gating mechanism is utilized to adaptively perceive the monotonic relationship within emotional expressions. Moreover, the self-supervised labels are introduced to preserve modality-specific information. The experts module is fed with the fusion features, which contain richer emotional information. To enhance model stability during the training phase, we employ multi-side contrastive learning before making predictions. Our evaluation of PAMoE-MSA on the CMU-MOSI, CMU-MOSEI, and CH-SIMS datasets shows notable improvements over state-of-the-art methods, with increases of approximately 1.3% in Acc-7 for CMU-MOSI, 1.2% in Acc-2 for CMU-MOSEI, and 0.8% in F1-score for CH-SIMS.},
+  archive      = {J_IJMIR},
+  author       = {Huang, Changqin and Lin, Zhenheng and Han, Zhongmei and Huang, Qionghao and Jiang, Fan and Huang, Xiaodi},
+  doi          = {10.1007/s13735-025-00362-y},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-16},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {PAMoE-MSA: Polarity-aware mixture of experts network for multimodal sentiment analysis},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MFAFD: A few-shot learning method for cascading models with
+parameter free attention and finite discrete space. <em>IJMIR</em>,
+<em>14</em>(1), 1–11. (<a
+href="https://doi.org/10.1007/s13735-025-00357-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Based on existing learning models, multimodal approaches have demonstrated promising performance in the realm of few-shot learning, owing to contrastive language-image pretraining. However, shortcomings persist in multimodal fusion methods, particularly in aligning textual and visual features across different granularity levels, and in the independent feature extraction by encoders lacking interaction. Therefore, this paper proposes MFAFD: a cascaded model for few-shot learning featuring parameter free attention mechanisms and a finite discrete space. Initially, the model employs a parameter free attention module in the pretraining phase to facilitate cross-modal interactions, enhancing alignment between spatial features of images and generated text prior to extracting global features from images via CLIP. This bidirectional update of textual and visual information addresses the issue of feature alignment. During training, the model leverages a representation based on Finite Discrete Space (FDS), constructing a finite discrete space foundation for textual and image features, effectively bridging modal differences. Ultimately, using text as a baseline, the model predicts image classification based on similarity weights between images and text. Through quantitative and qualitative analyses, this study demonstrates that parameter free attention mechanisms and finite discrete space modules significantly enhance the performance of cascaded multimodal aggregation models. The model exhibits robust performance in few-shot classification across multiple datasets. The code is available at https://github.com/turelove999/MFDFA-dj .},
+  archive      = {J_IJMIR},
+  author       = {Xue, Lixia and Dong, Jiang and Wang, Ronggui and Yang, Juan},
+  doi          = {10.1007/s13735-025-00357-9},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-11},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {MFAFD: A few-shot learning method for cascading models with parameter free attention and finite discrete space},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Image forgery classification and localization through vision
+transformers. <em>IJMIR</em>, <em>14</em>(1), 1–11. (<a
+href="https://doi.org/10.1007/s13735-025-00358-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the easy availability of software over the Internet, any naive user can tamper the images for entertainment purposes or to defame a personality by circulating over social media networks. The practice of image tampering is a serious issue and can attract legal action if proven guilty. Forensic researchers employ various methods to detect and localize image forgeries. In this research, we use a Vision transformer (ViT) as a method for binary classification of images distinguishing forged and unforged images. Further, we use a pre-trained Segment Anything Model(SAM) which is fine-tuned with custom data to adaptively recognize patterns indicating forged regions within the images. SAM can localize these forged areas and is leveraged to create templates by extracting the identified regions. The proposed method is rigorously tested across various datasets, including CASIA v1.0, CASIA v2.0, MICC-F2000, MICC-F600, and Columbia. Through comprehensive experimentation, our approach showcases considerable promise yielding accuracy in image forgery classification and localization. Our model’s robustness and adaptability make it an attractive tool for forensic analysis in diverse scenarios, contributing to the advancement of multimedia forensics security research.},
+  archive      = {J_IJMIR},
+  author       = {Pawar, Digambar and Gowda, Raghavendra and Chandra, Krishna},
+  doi          = {10.1007/s13735-025-00358-8},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-11},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {Image forgery classification and localization through vision transformers},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). VPC-VoxelNet: Multi-modal fusion 3D object detection
+networks based on virtual point clouds. <em>IJMIR</em>, <em>14</em>(1),
+1–11. (<a href="https://doi.org/10.1007/s13735-025-00360-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To address the impact of sparsity and disorder of point clouds on object detection accuracy, this paper proposes a multi-modal fusion network VPC-VoxelNet based on virtual point clouds. Firstly, virtual point clouds are constructed using image detection object information to increase the density of point clouds, thus improving the performance of object features; Secondly, increasing the dimensionality of point cloud features, distinguishing virtual point clouds and avoiding the accumulation of multi model errors; Finally, an optimized loss function such as the scale factor of the virtual point cloud is used to improve the training efficiency of the multi-modal network. The object detection network, VPC-VoxelNet, was tested on the KITTI dataset, and the detection accuracy was better than that of the classical 3D point cloud detection network and certain multi-modal information fusion networks, with a vehicle detection accuracy of 86.9%.},
+  archive      = {J_IJMIR},
+  author       = {Zhang, Qiang and Shi, Qin and Cheng, Teng and Zhang, Junning and Chen, Jiong},
+  doi          = {10.1007/s13735-025-00360-0},
+  journal      = {International Journal of Multimedia Information Retrieval},
+  month        = {3},
+  number       = {1},
+  pages        = {1-11},
+  shortjournal = {Int. J. Multimed. Inf. Retr.},
+  title        = {VPC-VoxelNet: Multi-modal fusion 3D object detection networks based on virtual point clouds},
+  volume       = {14},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

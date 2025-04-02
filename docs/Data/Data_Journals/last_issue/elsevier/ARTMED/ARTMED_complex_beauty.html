@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ARTMED_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="artmed---13">ARTMED - 13</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Sum of similarity-regularized squared correlations for
+enhancing SSVEP detection. <em>ARTMED</em>, <em>162</em>, 103100. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103100">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A brain-computer interface (BCI) provides a direct control pathway between human brain and external devices. Steady-state visual evoked potential based BCI (SSVEP-BCI) has been proven to be a valuable solution due to its advantages of high information transfer rate (ITR) and minimal calibration requirement. Recently, some methods have been proposed based on calibration-training techniques to compute optimal spatial filters from covariances, and have achieved good detection performance. However, these methods ignore the temporally-varying and spatially-coupled characteristics of the EEG signals, which is essentially an important clue for enhancing ITR. More importantly, existing methods cannot well deal with intrinsic noise components of electroencephalogram (EEG) signals, greatly affecting their detection performance. In this paper, we propose a novel method, termed as S um of S imilarity- R egularized S quared C orrelations (SSRSC), which is extended and regularized from the sum of squared correlations. We simultaneously compute the squared correlations for both calibration data and sine-cosine harmonics templates, and mitigate variations by the similarity regularization. Moreover, we extend the SSRSC by adopting the ranking weighted ensemble strategy, termed as weSSCOR. Extensive experiments have been conducted on two benchmark SSVEP datasets, and the results demonstrated that the proposed SSRSC/weSSRSC can significantly improve accuracy and ITR of SSVEP detection with less calibration data, which has great potential in designing high ITR SSVEP-BCIs with less calibration efforts.},
+  archive      = {J_ARTMED},
+  author       = {Tian-jian Luo and Tao Wu},
+  doi          = {10.1016/j.artmed.2025.103100},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103100},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Sum of similarity-regularized squared correlations for enhancing SSVEP detection},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TDMFS: Tucker decomposition multimodal fusion model for
+pan-cancer survival prediction. <em>ARTMED</em>, <em>162</em>, 103099.
+(<a href="https://doi.org/10.1016/j.artmed.2025.103099">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Integrated analysis of multimodal data offers a more comprehensive view for cancer survival prediction, yet it faces challenges like computational intensity, overfitting, and challenges in achieving a unified representation due to data heterogeneity. To address the above issues, the first Tucker decomposition multimodal fusion model was hereby proposed for pan-cancer survival prediction (TDMFS). The model employed Tucker decomposition to limit complex tensor parameters during fusion, achieving deep modality integration with reduced computational cost and lower overfitting risk. The individual modality-specific representations were then fully exploited by signal modulation mechanisms in a bilinear pooling decomposition to serve as complementary information for the deep fusion representation. Furthermore, the performance of TDMFS was evaluated using a 5-fold cross-validation method with two modal data, gene expression (GeneExpr), and copy number variation (CNV), for 33 cancers from The Cancer Genome Atlas (TCGA) database. The experiments demonstrated that the proposed TDMFS model achieved an average C-index of 0.757 across 33 cancer datasets, with a C-index exceeding 0.80 on 10 of these datasets. Survival curves for both high and low risk patients plotted on 27 cancer datasets were statistically significant. The TDMFS model demonstrated superior performance in survival prediction, outperforming models like LinearSum and Multimodal Factorisation Higher Order Pooling, making it a valuable asset for advancing clinical cancer research.},
+  archive      = {J_ARTMED},
+  author       = {Jinchao Chen and Pei Liu and Chen Chen and Ying Su and Enguang Zuo and Min Li and Jiajia Wang and Ziwei Yan and Xinya Chen and Cheng Chen and Xiaoyi Lv},
+  doi          = {10.1016/j.artmed.2025.103099},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103099},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {TDMFS: Tucker decomposition multimodal fusion model for pan-cancer survival prediction},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Joint segmentation of retinal layers and fluid lesions in
+optical coherence tomography with cross-dataset learning.
+<em>ARTMED</em>, <em>162</em>, 103096. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103096">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background and objectives Age-related macular degeneration (AMD) is the leading cause of irreversible vision loss among people over 50 years old, which manifests in the retina through various changes of retinal layers and pathological lesions. The accurate segmentation of optical coherence tomography (OCT) image features is crucial for the identification and tracking of AMD. Although the recent developments in deep neural network have brought profound progress in this area, accurately segmenting retinal layers and pathological lesions remains a challenging task because of the interaction between these two tasks. Methods In this study, we propose a three-branch, hierarchical multi-task framework that enables joint segmentation of seven retinal layers and three types of pathological lesions. A regression guidance module is introduced to provide explicit shape guidance between sub-tasks. We also propose a cross-dataset learning strategy to leverage public datasets with partial labels. The proposed framework was evaluated on a clinical dataset consisting of 140 OCT B-scans with pixel-level annotations of seven retinal layers and three types of lesions. Additionally, we compared its performance with the state-of-the-art methods on two public datasets. Results Comprehensive ablation showed that the proposed hierarchical architecture significantly improved performance for most retinal layers and pathological lesions, achieving the highest mean DSC of 76.88 %. The IRF also achieved the best performance with a DSC of 68.15 %. Comparative studies demonstrated that the hierarchical multi-task architecture could significantly enhance segmentation accuracy and outperform state-of-the-art methods. Conclusion The proposed framework could also be generalized to other medical image segmentation tasks with interdependent relationships.},
+  archive      = {J_ARTMED},
+  author       = {Xiayu Xu and Hualin Wang and Yulei Lu and Hanze Zhang and Tao Tan and Feng Xu and Jianqin Lei},
+  doi          = {10.1016/j.artmed.2025.103096},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103096},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Joint segmentation of retinal layers and fluid lesions in optical coherence tomography with cross-dataset learning},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unsupervised learning from EEG data for epilepsy: A
+systematic literature review. <em>ARTMED</em>, <em>162</em>, 103095. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103095">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background and objectives Epilepsy is a neurological disorder characterized by recurrent epileptic seizures, whose neurophysiological signature is altered electroencephalographic (EEG) activity. The use of artificial intelligence (AI) methods on EEG data can positively impact the management of the disease, significantly improving diagnostic and prognostic accuracy as well as treatment outcomes. Our work aims to systematically review the available literature on the use of unsupervised machine learning methods on EEG data in epilepsy, focusing on methodological and clinical differences in terms of algorithms used and clinical applications. Methods Following the PRISMA guidelines, a systematic literature search was performed in several databases for papers published in the last 10 years. Studies employing both unsupervised and self-supervised methods for the classification of EEG data in epilepsy patients were included. The main outcomes of the study were: (i) to provide an overview of the datasets used as input to train the algorithms; (ii) to identify trends in pre-processing, algorithm architectures, validation, and metrics for performance estimation; (iii) to identify and review the clinical applications of AI in epilepsy patients. Results A total of 108 studies met the inclusion criteria. Of them, 86 (79.6 %) have been published in the last 5 years and 60 (55.5 %) in the last two years. The most used validation methods were: hold-out in 37 (34.2 %), k-fold-cross validation in 35 (32.4 %), and leave-one-out in 19 (17.6 %) studies, respectively. Accuracy, sensitivity, and specificity were the most used performance metrics being reported in 71 (65.7 %), 62 (57.4 %), and 42 (39.8 %) studies, respectively, followed by F1-score (27 studies; 25 %), precision (26 studies; 24 %), area under the curve (25 studies; 23.1 %), and false positive rate (22 studies; 20.3 %). Furthermore, 42 (38.9 %) compared to 63 (58.3 %) studies used individual patient versus multiple patients models, respectively. Finally, concerning the clinical applications of unsupervised learning methods on epilepsy patients, we identified six main fields of interest: seizure detection (69 studies; 63.9 %), seizure prediction (27 studies; 25 %), signal propagation and characterization (2 studies; 1.8 %), seizure localization (4 studies; 3.7 %), and seizure classification (22 studies; 20.3 %), respectively. Conclusion The results of this review suggest that the interest in the use of unsupervised learning methods in epilepsy has significantly increased in recent years. From a methodological perspective, the input EEG datasets used for training and testing the algorithms remain the hardest challenge. From a clinical standpoint, the vast majority of studies addressed seizure detection, prediction, and classification whereas studies focusing on seizure characterization and localization are lacking. Future work that can potentially improve the performance of these algorithms includes the use of context information via reinforcement learning and a focus on model explainability.},
+  archive      = {J_ARTMED},
+  author       = {Alexandra-Maria Tautan and Alexandra-Georgiana Andrei and Carmelo Luca Smeralda and Giampaolo Vatti and Simone Rossi and Bogdan Ionescu},
+  doi          = {10.1016/j.artmed.2025.103095},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103095},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Unsupervised learning from EEG data for epilepsy: A systematic literature review},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SDMentor: A virtual reality-based intelligent tutoring
+system for surgical decision making in dentistry. <em>ARTMED</em>,
+<em>162</em>, 103092. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103092">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background While VR simulation has already had a significant impact on training of psychomotor surgical skills, there is still a lack of work on the use of VR simulation to teach surgical decision making. Since surgical decision making is a cognitive process, a simulation for teaching it must be able to not only accurately simulate the surgical environment but to also represent and reason about the cognitive aspects involved. Materials and methods This paper presents and evaluates SDMentor, a virtual training environment that integrates high-fidelity VR simulation with an intelligent tutoring system for teaching surgical decision making in dentistry. SDMentor provides a virtual dental operating room with 3D stereoscopic graphics and with haptic feedback to realistically render the interaction of dental tools with the patient teeth. The intelligent tutor evaluates the student&#39;s actions and generates a variety of tutorial feedback. To evaluate the teaching effectiveness of the system, we carried out a randomized controlled trial in the domain of root canal treatment. Results In all three aspects of scores: situation awareness ability, procedural knowledge, and overall performance; the post-test scores showed significant improvement over the pre-test scores of students in the same group ( P &lt; .05). The students from the experimental group had significantly higher learning gains than the students in the control group (P &lt; .05). Conclusions The integration of high-fidelity VR simulation with intelligent tutoring is a promising approach to teaching surgical decision making and could be useful for teaching decision making in other high-precision psychomotor tasks.},
+  archive      = {J_ARTMED},
+  author       = {Narumol Vannaprathip and Peter Haddawy and Holger Schultheis and Siriwan Suebnukarn},
+  doi          = {10.1016/j.artmed.2025.103092},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103092},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {SDMentor: A virtual reality-based intelligent tutoring system for surgical decision making in dentistry},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A multi-stage multi-modal learning algorithm with adaptive
+multimodal fusion for improving multi-label skin lesion classification.
+<em>ARTMED</em>, <em>162</em>, 103091. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103091">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Skin cancer is frequently occurring and has become a major contributor to both cancer incidence and mortality. Accurate and timely diagnosis of skin cancer holds the potential to save lives. Deep learning-based methods have demonstrated significant advancements in the screening of skin cancers. However, most current approaches rely on a single modality input for diagnosis, thereby missing out on valuable complementary information that could enhance accuracy. Although some multimodal-based methods exist, they often lack adaptability and fail to fully leverage multimodal information. In this paper, we introduce a novel uncertainty-based hybrid fusion strategy for a multi-modal learning algorithm aimed at skin cancer diagnosis. Our approach specifically combines three different modalities: clinical images, dermoscopy images, and metadata, to make the final classification. For the fusion of two image modalities, we employ an intermediate fusion strategy that considers the similarity between clinical and dermoscopy images to extract features containing both complementary and correlated information. To capture the correlated information, we utilize cosine similarity, and we employ concatenation as the means for integrating complementary information. In the fusion of image and metadata modalities, we leverage uncertainty to obtain confident late fusion results, allowing our method to adaptively combine the information from different modalities. We conducted comprehensive experiments using a popular publicly available skin disease diagnosis dataset, and the results of these experiments demonstrate the effectiveness of our proposed method. Our proposed fusion algorithm could enhance the clinical applicability of automated skin lesion classification, offering a more robust and adaptive way to make automatic diagnoses with the help of uncertainty mechanism. Code is available at https://github.com/Zuo-Lihan/CosCatNet-Adaptive_Fusion_Algorithm .},
+  archive      = {J_ARTMED},
+  author       = {Lihan Zuo and Zizhou Wang and Yan Wang},
+  doi          = {10.1016/j.artmed.2025.103091},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103091},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {A multi-stage multi-modal learning algorithm with adaptive multimodal fusion for improving multi-label skin lesion classification},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hyperbolic multivariate feature learning in higher-order
+heterogeneous networks for drug–disease prediction. <em>ARTMED</em>,
+<em>162</em>, 103090. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103090">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {New drug discovery has always been a costly, time-consuming process with a high failure rate. Repurposing existing drugs offers a valuable alternative and reduces the risks associated with developing new drugs. Various experimental methods have been employed to facilitate drug repositioning; however, associations prediction between drugs and diseases through biological experiments is both expensive and time-consuming. Consequently, it is imperative to develop efficient and highly precise computational methods for predicting these associations. Based on this, we propose a drug–disease associations prediction method based on H yperbolic M ultivariate feature L earning in H igh-order H eterogeneous Networks for Drug–Disease Prediction, called H 3 ML. Our approach begins by mining high-order information from protein–disease and drug–protein networks to construct high-order heterogeneous networks. Subsequently, we employ multivariate feature learning to create hyperbolic representations, and then enhance the features of the heterogeneous network. Finally, we utilize a hyperbolic graph attention network in the hyperbolic space to aggregate neighbor information and perform the final prediction task. In addition, we evaluate the performance of H 3 ML by comparing it with some state-of-the-art methods across different datasets. The case study further validate the effectiveness of H 3 ML. Our implementation will be publicly available at: https://github.com/jianruichen/H-3ML .},
+  archive      = {J_ARTMED},
+  author       = {Jiamin Li and Jianrui Chen and Junjie Huang and Xiujuan Lei},
+  doi          = {10.1016/j.artmed.2025.103090},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103090},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Hyperbolic multivariate feature learning in higher-order heterogeneous networks for drug–disease prediction},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Artificial intelligence-driven approaches in antibiotic
+stewardship programs and optimizing prescription practices: A systematic
+review. <em>ARTMED</em>, <em>162</em>, 103089. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103089">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Antimicrobial stewardship programs (ASPs) are essential in optimizing the use of antibiotics to address the global concern of antimicrobial resistance (AMR). Artificial intelligence (AI) and machine learning (ML) have emerged as promising tools for enhancing ASPs efficiency by improving antibiotic prescription accuracy, resistance prediction, and dosage optimization. This systematic review evaluated the application of AI-driven ASPs, focusing on their methodologies, outcomes, and challenges. We searched all of the databases in PubMed, Scopus, Web of Science, and Embase using keywords related to “AI” and “antibiotic.” We only included studies that used AI and ML algorithms in ASPs, with the main criteria being empirical antibiotic selection, dose adjustment, and ASP adherence. There were no limits on time, setting, or language. Two authors independently screened studies for inclusion and assessed their risk of bias using the Newcastle Ottawa Scale (NOS) Assessment tool for observational studies. Implementation studies underscored AI&#39;s potential for improving antimicrobial stewardship programs. Two studies showed that logistic regression, boosted-tree models, and gradient-boosting machines could effectively describe the difference between patients who needed to change their antibiotic regimen and those who did not. Twenty-four studies have confirmed the role of machine learning in optimizing empirical antibiotic selection, predicting resistance, and enhancing therapy appropriateness, all of which have the potential to reduce mortality rates. Additionally, machine learning algorithms showed promise in optimizing antibiotic dosing, particularly for vancomycin. This systematic review aimed to highlight various AI models, their applications in ASPs, and the resulting impact on healthcare outcomes. Machine learning and AI models effectively enhance antibiotic stewardship by optimizing patient interventions, empirical antibiotic selection, resistance prediction, and dosing. However, it subtly draws attention to the differences between high-income countries (HICs) and low- and middle-income countries (LMICs), highlighting the structural difficulties that LMICs confront while simultaneously highlighting the progress made in HICs.},
+  archive      = {J_ARTMED},
+  author       = {Hamid Harandi and Maryam Shafaati and Mohammadreza Salehi and Mohammad Mahdi Roozbahani and Keyhan Mohammadi and Samaneh Akbarpour and Ramin Rahimnia and Gholamreza Hassanpour and Yasin Rahmani and Arash Seifi},
+  doi          = {10.1016/j.artmed.2025.103089},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103089},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Artificial intelligence-driven approaches in antibiotic stewardship programs and optimizing prescription practices: A systematic review},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Artificial intelligence non-invasive methods for neonatal
+jaundice detection: A review. <em>ARTMED</em>, <em>162</em>, 103088. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103088">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neonatal jaundice is a common and potentially fatal health condition in neonates, especially in low and middle income countries, where it contributes considerably to neonatal morbidity and death. Traditional diagnostic approaches, such as Total Serum Bilirubin (TSB) testing, are invasive and could lead to discomfort, infection risk, and diagnostic delays. As a result, there is a rising interest in non-invasive approaches for detecting jaundice early and accurately. An in-depth analysis of non-invasive techniques for detecting neonatal jaundice is presented by this review, exploring several AI-driven techniques, such as Machine Learning (ML) and Deep Learning (DL), which have demonstrated the ability to enhance diagnostic accuracy by evaluating complex patterns in neonatal skin color and other relevant features. It is identified that AI models incorporating variants of neural networks achieve an accuracy rate of over 90% in detecting jaundice when compared to traditional methods. Furthermore, satisfactory outcomes in field settings have been demonstrated by mobile-based applications that use smartphone cameras to estimate bilirubin levels, providing a practical alternative for resource-constrained areas. The potential impact of AI-based solutions on reducing neonatal morbidity and mortality is evaluated by this review, with a focus on real-world clinical challenges, highlighting the effectiveness and practicality of AI-based strategies as an assistive tool in revolutionizing neonatal care through early jaundice diagnosis, while also addressing the ethical and practical implications of integrating these technologies in clinical practice. Future research areas, such as the development of new imaging technologies and the incorporation of wearable sensors for real-time bilirubin monitoring, are recommended by the paper.},
+  archive      = {J_ARTMED},
+  author       = {Fati Oiza Salami and Muhammad Muzammel and Youssef Mourchid and Alice Othmani},
+  doi          = {10.1016/j.artmed.2025.103088},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103088},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Artificial intelligence non-invasive methods for neonatal jaundice detection: A review},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving unified information extraction in chinese mental
+health domain with instruction-tuned LLMs and type-verification
+component. <em>ARTMED</em>, <em>162</em>, 103087. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103087">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background: Extracting psychological counseling help-seeker information from unstructured text is crucial for providing effective mental health support. This task involves identifying personal emotions, psychological states, and underlying psychological issues but faces significant challenges. These challenges include the sensitivity of mental health data, the lack of Chinese instruction datasets, and the difficulties large language models (LLMs) encounter with complex natural language understanding tasks. Objective: This study aims to address these challenges by developing a unified information extraction framework for Chinese mental health texts. Specifically, it leverages instruction-tuned LLMs and incorporates a novel type-verification (TV) component to improve performance while minimizing computational demands. Methods: We first constructed a Chinese mental health domain instruction dataset for mental health information extraction using synthetic data generated by ChatGPT, guided by psychology experts. This dataset includes self-reported statements from psychological counseling help-seekers, capturing their personal situations, emotions, thoughts, and experiences. Subsequently, we fine-tuned open-source LLMs on this dataset to perform named entity recognition, relation extraction, and event extraction. To address errors and omissions in the extracted information, we introduced a type-verification component. This component employs a lightweight model with significantly fewer parameters to verify the extracted types. The verification results were then fed back into LLMs for further refinement. Results: Experimental results demonstrate that our framework achieves outstanding performance in mental health information extraction. The type-verification component significantly enhances extraction accuracy while reducing computational resource requirements through the use of a lightweight model. By combining robust instruction-tuned LLMs with an efficient type-verification component, our approach delivers exceptional results. Conclusion: This study presents a novel and efficient framework for tackling the challenges of mental health information extraction in Chinese texts. By integrating instruction-tuned LLMs with a lightweight type-verification component, our approach significantly improves extraction accuracy and computational efficiency. This framework holds promise for supporting scalable, automated mental health support systems, advancing both research and practical applications in the mental health domain.},
+  archive      = {J_ARTMED},
+  author       = {Zijie Cai and Hui Fang and Jianhua Liu and Ge Xu and Yunfei Long and Yin Guan and Tianci Ke},
+  doi          = {10.1016/j.artmed.2025.103087},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103087},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Improving unified information extraction in chinese mental health domain with instruction-tuned LLMs and type-verification component},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BDFormer: Boundary-aware dual-decoder transformer for skin
+lesion segmentation. <em>ARTMED</em>, <em>162</em>, 103079. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103079">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Segmenting skin lesions from dermatoscopic images is crucial for improving the quantitative analysis of skin cancer. However, automatic segmentation of skin lesions remains a challenging task due to the presence of unclear boundaries, artifacts, and obstacles such as hair and veins, all of which complicate the segmentation process. Transformers have demonstrated superior capabilities in capturing long-range dependencies through self-attention mechanisms and are gradually replacing CNNs in this domain. However, one of their primary limitations is the inability to effectively capture local details, which is crucial for handling unclear boundaries and significantly affects segmentation accuracy. To address this issue, we propose a novel boundary-aware dual-decoder transformer that employs a single encoder and dual-decoder framework for both skin lesion segmentation and dilated boundary segmentation. Within this model, we introduce a shifted window cross-attention block to build the dual-decoder structure and apply multi-task distillation to enable efficient interaction of inter-task information. Additionally, we propose a multi-scale aggregation strategy to refine the extracted features, ensuring optimal predictions. To further enhance boundary details, we incorporate a dilated boundary loss function, which expands the single-pixel boundary mask into planar information. We also introduce a task-wise consistency loss to promote consistency across tasks. Our method is evaluated on three datasets: ISIC2018, ISIC2017, and PH 2 , yielding promising results with excellent performance compared to state-of-the-art models. The code is available at https://github.com/Yuxuan-Ye/BDFormer .},
+  archive      = {J_ARTMED},
+  author       = {Zexuan Ji and Yuxuan Ye and Xiao Ma},
+  doi          = {10.1016/j.artmed.2025.103079},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103079},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {BDFormer: Boundary-aware dual-decoder transformer for skin lesion segmentation},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Empowering large language models for automated clinical
+assessment with generation-augmented retrieval and hierarchical
+chain-of-thought. <em>ARTMED</em>, <em>162</em>, 103078. (<a
+href="https://doi.org/10.1016/j.artmed.2025.103078">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background: Understanding and extracting valuable information from electronic health records (EHRs) is important for improving healthcare delivery and health outcomes. Large language models (LLMs) have demonstrated significant proficiency in natural language understanding and processing, offering promises for automating the typically labor-intensive and time-consuming analytical tasks with EHRs. Despite the active application of LLMs in the healthcare setting, many foundation models lack real-world healthcare relevance. Applying LLMs to EHRs is still in its early stage. To advance this field, in this study, we pioneer a generation-augmented prompting paradigm “GAPrompt” to empower generic LLMs for automated clinical assessment, in particular, quantitative stroke severity assessment, using data extracted from EHRs. Methods: The GAPrompt paradigm comprises five components: (i) prompt-driven selection of LLMs, (ii) generation-augmented construction of a knowledge base, (iii) summary-based generation-augmented retrieval (SGAR); (iv) inferencing with a hierarchical chain-of-thought (HCoT), and (v) ensembling of multiple generations. Results: GAPrompt addresses the limitations of generic LLMs in clinical applications in a progressive manner. It efficiently evaluates the applicability of LLMs in specific tasks through LLM selection prompting, enhances their understanding of task-specific knowledge from the constructed knowledge base, improves the accuracy of knowledge and demonstration retrieval via SGAR, elevates LLM inference precision through HCoT, enhances generation robustness, and reduces hallucinations of LLM via ensembling. Experiment results demonstrate the capability of our method to empower LLMs to automatically assess EHRs and generate quantitative clinical assessment results. Conclusion: Our study highlights the applicability of enhancing the capabilities of foundation LLMs in medical domain-specific tasks, i.e. , automated quantitative analysis of EHRs, addressing the challenges of labor-intensive and often manually conducted quantitative assessment of stroke in clinical practice and research. This approach offers a practical and accessible GAPrompt paradigm for researchers and industry practitioners seeking to leverage the power of LLMs in domain-specific applications. Its utility extends beyond the medical domain, applicable to a wide range of fields.},
+  archive      = {J_ARTMED},
+  author       = {Zhanzhong Gu and Wenjing Jia and Massimo Piccardi and Ping Yu},
+  doi          = {10.1016/j.artmed.2025.103078},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103078},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Empowering large language models for automated clinical assessment with generation-augmented retrieval and hierarchical chain-of-thought},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Finger-aware artificial neural network for predicting
+arthritis in patients with hand pain. <em>ARTMED</em>, <em>162</em>,
+103077. (<a href="https://doi.org/10.1016/j.artmed.2025.103077">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Arthritis is an inflammatory condition associated with joint damage, the incidence of which is increasing worldwide. In severe cases, arthritis can result in the restriction of joint movement, thereby affecting daily activities; as such, early and accurate diagnosis crucial to ensure effective treatment and management. Advances in imaging technologies used for arthritis diagnosis, particularly Single Photon Emission Computed Tomography/Computed Tomography (SPECT/CT), have enabled the quantitative measurement of joint inflammation using SUV max . To the best of our knowledge, this is the first study to apply deep learning to SUV max to predict the development of hand arthritis. We developed a transformer-based Finger-aware Artificial Neural Network (FANN) to predict arthritis in patients experiencing hand pain, including finger embedding, and to share unique finger-specific information between hands. Compared to conventional machine learning models, the FANN model demonstrated superior performance, achieving an area under the receiver operating characteristic curve of 0.85, accuracy of 0.79, precision of 0.87, recall of 0.79, and F1-score of 0.83. Furthermore, analysis using the SHapley Additive exPlanations (SHAP) algorithm revealed that the FANN predictions were most significantly influenced by the proximal interphalangeal joints of the right hand, in which arthritis is the most clinically prevalent. These findings indicate that the FANN significantly enhances arthritis prediction, representing a promising tool for clinical decision-making in arthritis diagnosis.},
+  archive      = {J_ARTMED},
+  author       = {Hwa-Ah-Ni Lee and Geun-Hyeong Kim and Seung Park and In Ah Choi and Hyun Woo Kwon and Hansol Moon and Jae Hyun Jung and Chulhan Kim},
+  doi          = {10.1016/j.artmed.2025.103077},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {4},
+  pages        = {103077},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {Finger-aware artificial neural network for predicting arthritis in patients with hand pain},
+  volume       = {162},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

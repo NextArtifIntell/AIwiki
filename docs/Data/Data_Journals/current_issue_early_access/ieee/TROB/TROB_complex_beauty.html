@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TROB_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="trob---42">TROB - 42</h2>
+<ul>
+<li><details>
+<summary>
+(2025). TacSL: A library for visuotactile sensor simulation and
+learning. <em>TROB</em>, 1–17. (<a
+href="https://doi.org/10.1109/TRO.2025.3547267">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For both humans and robots,the sense of touch, known as tactile sensing, is critical for performing contact-rich manipulation tasks. Three key challenges in robotic tactile sensing are 1) interpreting sensor signals, 2) generating sensor signals in novel scenarios, and 3) learning sensor-based policies. For visuotactile sensors, interpretation has been facilitated by their close relationship with vision sensors (e.g., RGB cameras). However, generation is still difficult, as visuotactile sensors typically involve contact, deformation, illumination, and imaging, all of which are expensive to simulate; in turn, policy learning has been challenging, as simulation cannot be leveraged for large-scale data collection. We present TacSL (taxel), a library for GPU-based visuotactile sensor simulation and learning. TacSL can be used to simulate visuotactile images and extract contact-force distributions over $200\times$ faster than the prior state-of-the-art, all within the widely-used Isaac Simulator. Furthermore, TacSL provides a learning toolkit containing multiple sensor models, contact-intensive training environments, and online/offline algorithms that can facilitate policy learning for sim-to-real applications. On the algorithmic side, we introduce a novel online reinforcement-learning algorithm called asymmetric actor-critic distillation (AACD), designed to effectively and efficiently learn tactile-based policies in simulation that can transfer to the real world. Finally, we demonstrate the utility of our library and algorithms by evaluating the benefits of distillation and multimodal sensing for contact-rich manipulation tasks, and most critically, performing sim-to-real transfer. Supplementary videos and results are at https://iakinola23.github.io/tacsl/.},
+  archive      = {J_TROB},
+  author       = {Iretiayo Akinola and Jie Xu and Jan Carius and Dieter Fox and Yashraj Narang},
+  doi          = {10.1109/TRO.2025.3547267},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {TacSL: A library for visuotactile sensor simulation and learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CAT-ORA: Collision-aware time-optimal formation reshaping
+for efficient robot coordination in 3D environments. <em>TROB</em>,
+1–20. (<a href="https://doi.org/10.1109/TRO.2025.3547296">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we introduce an algorithm designed to address the problem of time-optimal formation reshaping in three-dimensional environments while preventing collisions between agents. The utility of the proposed approach is particularly evident in mobile robotics, where agents benefit from being organized and navigated in formation for a variety of real-world applications requiring frequent alterations in formation shape for efficient navigation or task completion. Given the constrained operational time inherent to battery-powered mobile robots, the time needed to complete the formation reshaping process is crucial for their efficient operation, especially in case of multi-rotor Unmanned Aerial Vehicles (UAVs). The proposed Collision-Aware Time-Optimal formation Reshaping Algorithm (CAT-ORA) builds upon the Hungarian algorithm for the solution of the robot-to-goal assignment implementing the inter-agent collision avoidance through direct constraints on mutually exclusive robot-goal pairs combined with a trajectory generation approach minimizing the duration of the reshaping process. Theoretical validations confirm the optimality of CAT-ORA, with its efficacy further showcased through simulations, and a real-world outdoor experiment involving 19 UAVs. Thorough numerical analysis shows the potential of CAT-ORA to decrease the time required to perform complex formation reshaping tasks by up to 49%, and 12% on average compared to commonly used methods in randomly generated scenarios.},
+  archive      = {J_TROB},
+  author       = {Vit Kratky and Robert Penicka and Jiri Horyna and Petr Stibinger and Tomas Baca and Matej Petrlik and Petr Stepan and Martin Saska},
+  doi          = {10.1109/TRO.2025.3547296},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {CAT-ORA: Collision-aware time-optimal formation reshaping for efficient robot coordination in 3D environments},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). UniphorM: A new uniform spherical image representation for
+robotic vision. <em>TROB</em>, 1–18. (<a
+href="https://doi.org/10.1109/TRO.2025.3547266">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a new spherical image representation, called unisphorm, and show its strong potential in robotic vision. unisphorm provides an accurate and distortion-free representation of a 360-degree image, by relying on multiple subdivisions of an icosahedron and its associated Voronoi diagrams. The geometric mapping procedure is described in detail, and the trade-off between pixel accuracy and computational complexity is investigated. To demonstrate the benefits of unisphorm in real-world problems, we applied it to direct visual attitude estimation and (vpr), by considering dual-fisheye images captured by a camera mounted on multiple robotic platforms. In the experiments, we measured the impact of the number of subdivision levels of the icosahedron on the attitude estimation error, time efficiency, and size of convergence domain of an existing visual gyroscope, using unisphorm and three competing mapping algorithms. A similar evaluation procedure was carried out for vpr. Finally, two new omnidirectional image datasets, one recorded with a hexacopter, called SVMIS+, the other based on the Mapillary platform, have been created and released for the entire research community.},
+  archive      = {J_TROB},
+  author       = {Antoine N. André and Fabio Morbidi and Guillaume Caron},
+  doi          = {10.1109/TRO.2025.3547266},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {UniphorM: A new uniform spherical image representation for robotic vision},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Propeller damage detection, classification and estimation in
+multirotor vehicles. <em>TROB</em>, 1–17. (<a
+href="https://doi.org/10.1109/TRO.2025.3548536">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This manuscript details an architecture and training methodology for a data-driven framework aimed at detecting, identifying, and quantifying damage in the propeller blades of multirotor Unmanned Aerial Vehicles. Real flight data was collected by substituting one propeller with a damaged counterpart, representing three distinct damage types of varying severity. This data was then used to train a composite model, which included both classifiers and neural networks, capable of accurately identifying the type of failure, estimating damage severity, and pinpointing the affected rotor. The data employed for this analysis were exclusively sourced from inertial measurements and control command inputs. This strategic choice ensures the adaptability of the proposed methodology across diverse multirotor vehicle platforms.},
+  archive      = {J_TROB},
+  author       = {Claudio Pose and Juan Giribet and Gabriel Torre},
+  doi          = {10.1109/TRO.2025.3548536},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Propeller damage detection, classification and estimation in multirotor vehicles},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hierarchical diffusion policy: Manipulation trajectory
+generation via contact guidance. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3547272">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decision-making in robotics using denoising diffusion processes has increasingly become a hot research topic, but end-to-end policies perform poorly in tasks with rich contact and have limited interactivity. This paper proposes Hierarchical Diffusion Policy (HDP), a new robot manipulation policy of using contact points to guide the generation of robot trajectories. The policy is divided into two layers: the high-level policy predicts the contact for the robot&#39;s next object manipulation based on 3D information, while the low-level policy predicts the action sequence toward the high-level contact based on the latent variables of observation and contact. We represent both-level policies as conditional denoising diffusion processes, and combine behavioral cloning and Q-learning to optimize the low-level policy for accurately guiding actions towards contact. We benchmark Hierarchical Diffusion Policy across 6 different tasks and find that it significantly outperforms the existing state-of-the-art imitation learning method Diffusion Policy with an average improvement of 20.8%. We find that contact guidance yields significant improvements, including superior performance, greater interpretability, and stronger interactivity, especially on contact-rich tasks. To further unlock the potential of HDP, this paper proposes a set of key technical contributions including one-shot gradient optimization, trajectory augmentation, and prompt guidance, which improve the policy&#39;s optimization efficiency, spatial awareness, and interactivity respectively. Finally, real-world experiments verify that HDP can handle both rigid and deformable objects. Code, data and training details can be found at https://github.com/dexin-wang/Hierarchical-Diffusion-Policy/.},
+  archive      = {J_TROB},
+  author       = {Dexin Wang and Chunsheng Liu and Faliang Chang and Yichen Xu},
+  doi          = {10.1109/TRO.2025.3547272},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Hierarchical diffusion policy: Manipulation trajectory generation via contact guidance},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PRO-MIND<span class="math inline"><sup>⋆</sup></span>:
+Proximity and reactivity optimisation of robot motion to tune safety
+limits, human stress, and productivity in INDustrial settings.
+<em>TROB</em>, 1–18. (<a
+href="https://doi.org/10.1109/TRO.2025.3547270">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite impressive advancements of industrial collaborative robots, their potential remains largely untapped due to the difficulty in balancing human safety and comfort with fast production constraints. To help address this challenge, we present PRO-MIND$^{\star }$, a novel human-in-the-loop framework that exploits valuable data about the human co-worker to optimise robot trajectories. By estimating human attention and mental effort, our method dynamically adjusts safety zones and enables on-the-fly alterations of the robot path to enhance human comfort and optimal stopping conditions. Moreover, we formulate a multi-objective optimisation to adapt the robot&#39;s trajectory execution time and smoothness based on the current human psycho-physical stress, estimated from heart rate variability and frantic movements. These adaptations exploit the properties of B-spline curves to preserve continuity and smoothness, which are crucial factors in improving motion predictability and comfort. Evaluation in two realistic case studies showcases the framework&#39;s ability to restrain the operators&#39; workload and stress and to ensure their safety while enhancing human-robot productivity. Further strengths of PRO-MIND include its adaptability to each individual&#39;s specific needs and sensitivity to variations in attention, mental effort, and stress during task execution.},
+  archive      = {J_TROB},
+  author       = {Marta Lagomarsino and Marta Lorenzini and Elena De Momi and Arash Ajoudani},
+  doi          = {10.1109/TRO.2025.3547270},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {PRO-MIND$^{\star }$: Proximity and reactivity optimisation of robot motion to tune safety limits, human stress, and productivity in INDustrial settings},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human-inspired active compliant and passive shared control
+framework for robotic contact-rich tasks in medical applications.
+<em>TROB</em>, 1–19. (<a
+href="https://doi.org/10.1109/TRO.2025.3548493">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work presents a compliant and passive shared control framework for teleoperated robot-assisted tasks. Inspired by the human operator&#39;s capability of continuously regulating the arm impedance to perform contact-rich tasks, a novel control schema, exploiting the variable impedance control framework for force tracking is proposed. Moreover, bilateral teleoperation and shared control strategies are implemented to alleviate the human operator&#39;s workload. Furthermore, a global energy tank-based approach is integrated to enforce the system&#39;s passivity. The proposed framework is first evaluated to assess the force-tracking capability when the robot autonomously performs contact-rich tasks, e.g., in an ultrasound scanning scenario. Then, a validation experiment is conducted utilizing the proposed shared control framework. Finally, the system&#39;s usability is investigated with 12 users. The experiment results in system assessment revealed a maximum median error of 0.25 N across all the force-tracking experiment setups, i.e., constant and time-varying ones. Then, the validation experiment demonstrated significant improvements regarding the force tracking tasks compared to conventional control methods, and the system passivity was preserved during the task execution. Finally, the usability experiment shows that the human operator workload is significantly reduced by 54.6% compared to the other two control modalities. The proposed framework holds significant potential for the execution of remote robot-assisted medical procedures, such as palpation and ultrasound scanning, particularly in addressing deformation challenges while ensuring safety, compliance, and system passivity.},
+  archive      = {J_TROB},
+  author       = {Junling Fu and Giorgia Maimone and Elisa Iovene and Jianzhuang Zhao and Alberto Redaelli and Giancarlo Ferrigno and Elena De Momi},
+  doi          = {10.1109/TRO.2025.3548493},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-19},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Human-inspired active compliant and passive shared control framework for robotic contact-rich tasks in medical applications},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autonomous synthesis of self-aligning knee joint exoskeleton
+mechanisms. <em>TROB</em>, 1–16. (<a
+href="https://doi.org/10.1109/TRO.2025.3547274">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Self-aligning mechanisms are essential components in facilitating adaptability in wearable robots, but their synthesis from scratch is very challenging. To overcome this hurdle, we propose a so-far-unprecedented autonomous method to synthesize self-aligning knee joint mechanisms, requiring neither a baseline design nor human intervention during synthesis. Our method transforms the synthesis problem into an optimization problem amenable to an efficient gradient-based algorithm using a discretized ground mechanism model. The main challenge in the conversion lies in how to define the objective and constraint functions in order to ensure the fundamental self-aligning capability and also to impose a desired force transmittance profile. Several design cases were considered to show the effectiveness of the newly proposed functions for the optimization-based synthesis formulation, notably in addressing degree-of-freedom requirements. Although this study focuses primarily on knee joint mechanisms assisting gait motion and aligning with the flexion axis, the developed method can be applied to other self-aligning robot mechanisms.},
+  archive      = {J_TROB},
+  author       = {Jeonghan Yu and Seok Won Kang and Yoon Young Kim},
+  doi          = {10.1109/TRO.2025.3547274},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Autonomous synthesis of self-aligning knee joint exoskeleton mechanisms},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ESVO2: Direct visual-inertial odometry with stereo event
+cameras. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3548523">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Event-based visual odometry is a specific branch of visual Simultaneous Localization and Mapping (SLAM) techniques, which aims at solving tracking and mapping sub-problems (typically in parallel), by exploiting the special working principles of neuromorphic (i.e., event-based) cameras. Due to the motion-dependent nature of event data, explicit data association (i.e., feature matching) under large-baseline viewpoint changes is difficult to establish, making direct methods a more rational choice. However, state-of-the-art direct methods are limited by the high computational complexity of the mapping sub-problem and the degeneracy of camera pose tracking in certain degrees of freedom (DoF) in rotation. In this paper, we tackle these issues by building an event-based stereo visual-inertial odometry system on top of a direct pipeline [1]. Specifically, to speed up the mapping operation, we propose an efficient strategy for sampling contour points according to the local dynamics of events. The mapping performance is also improved in terms of structure completeness and local smoothness by merging the temporal stereo and static stereo results. To circumvent the degeneracy of camera pose tracking in recovering the pitch and yaw components of general 6-DoF motion, we introduce IMU measurements as motion priors via pre-integration. To this end, a compact back-end is proposed for continuously updating the IMU bias and predicting the linear velocity, enabling an accurate motion prediction for camera pose tracking. The resulting system scales well with modern high-resolution event cameras and leads to better global positioning accuracy in large-scale outdoor environments. Extensive evaluations on five publicly available datasets featuring different resolutions and scenarios justify the superior performance of the proposed system against five state-of-the-art methods. Compared to ESVO [1], our new pipeline significantly reduces the camera pose tracking error by $40\%$–$80\%$ and $20\%$–$80\%$ in terms of absolute trajectory error and relative pose error, respectively; at the same time, the mapping efficiency is improved by a factor of five. We release our pipeline as an open-source software for future research in this field.},
+  archive      = {J_TROB},
+  author       = {Junkai Niu and Sheng Zhong and Xiuyuan Lu and Shaojie Shen and Guillermo Gallego and Yi Zhou},
+  doi          = {10.1109/TRO.2025.3548523},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {ESVO2: Direct visual-inertial odometry with stereo event cameras},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Environment-centric learning approach for gait synthesis in
+terrestrial soft robots. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3548543">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Locomotion gaits are fundamental for control of soft terrestrial robots. However, synthesis of these gaits is challenging due to modeling of robot-environment interaction and lack of a mathematical framework. This work presents an environment-centric, data-driven, and fault-tolerant probabilistic Model-Free Control (pMFC) framework that allows for soft multi-limb robots to learn from their environment and synthesize diverse sets of locomotion gaits for realizing open-loop control. Here, discretization of factors dominating robot-environment interactions enables an environment-specific graphical representation where the edges encode experimental locomotion data corresponding to the robot motion primitives. In this graph, locomotion gaits are defined as simple cycles that are transformation invariant, i.e., the locomotion is independent of the starting vertex of these periodic cycles. Gait synthesis, the problem of finding optimal locomotion gaits for a given substrate, is formulated as Binary Integer Linear Programming (BILP) problems with a linearized cost function, linear constraints, and iterative simple cycle detection. Experimentally, gaits are synthesized for varying robot-environment interactions. Variables include robot morphology - three-limb and four-limb robots, TerreSoRo-III and TerreSoRo-IV; substrate - rubber mat, whiteboard and carpet; and actuator functionality - simulated loss of robot limb actuation. On an average, gait synthesis improves the translation and rotation speeds by 82% and 97% respectively. The results highlight that data-driven methods are vital to soft robot locomotion control due to complex robot-environment interactions and simulation-to-reality gaps, particularly when biological analogues are unavailable.},
+  archive      = {J_TROB},
+  author       = {Caitlin Freeman and Arun Niddish Mahendran and Vishesh Vikas},
+  doi          = {10.1109/TRO.2025.3548543},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Environment-centric learning approach for gait synthesis in terrestrial soft robots},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Inspection planning under execution uncertainty.
+<em>TROB</em>, 1–18. (<a
+href="https://doi.org/10.1109/TRO.2025.3548528">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous inspection tasks require path-planning algorithms to efficiently gather observations from points of interest (POIs). However, localization errors in urban environments introduce execution uncertainty, posing challenges to successfully completing such tasks. Existing inspection-planning algorithms do not explicitly address this uncertainty, which can hinder their performance. To overcome this, we introduce IRIS-under uncertainty (IRIS-U2), an inspection-planning algorithm that provides statistical assurances regarding coverage, path length, and collision probability. Our approach builds upon IRIS—our framework for deterministic, highly efficient, and provably asymptotically-optimal framework. This extension adapts IRIS to uncertain settings using a refined search procedure that estimates POI coverage probabilities through Monte Carlo (MC) sampling. We demonstrate IRIS-U2 through a case study on bridge inspections, achieving improved expected coverage, reduced collision probability, and increasingly precise statistical guarantees as MC samples grow. Additionally, we explore bounded suboptimal solutions to reduce computation time while preserving statistical assurances.},
+  archive      = {J_TROB},
+  author       = {Shmuel David Alpert and Kiril Solovey and Itzik Klein and Oren Salzman},
+  doi          = {10.1109/TRO.2025.3548528},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Inspection planning under execution uncertainty},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Composite whole-body control of two-wheeled robots.
+<em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3548494">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to their fast and efficient locomotion, two-wheeled humanoids are fascinating systems with the potential to be involved in many application domains, including healthcare, manufacturing, and many others. However, these robots constitute a challenging case of study for control purposes due to the two-wheeled inverted pendulum dynamics that characterizes their mobility and support, as it is underactuated and unstable. In this paper, we propose a novel whole-body control approach to stabilize two-wheeled humanoids. To tackle the control problem of their forward motion and pitch equilibrium, leveraging on the observation that such systems are usually characterized by a faster and a slower dynamics (being the pitch angle faster and the forward displacement slower), we design a Composite Whole-Body control that combines two computed-torque control loops to stabilize both dynamics to the desired trajectories. The control approach is introduced and its derivation is described for the simpler case of a two-wheeled inverted pendulum first, and for a whole two-wheeled humanoid after. To prove its validity, the control approach is tested experimentally on the two-wheeled humanoid robot Alter-Ego. The robot proves to be able to perform complicated interaction tasks, including opening a door, grasping a heavy object, and resisting to external dynamic disturbances.},
+  archive      = {J_TROB},
+  author       = {Grazia Zambella and Danilo Caporale and Giorgio Grioli and Lucia Pallottino and Antonio Bicchi},
+  doi          = {10.1109/TRO.2025.3548494},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Composite whole-body control of two-wheeled robots},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Night-voyager: Consistent and efficient nocturnal
+vision-aided state estimation in object maps. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3548540">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate and robust state estimation at nighttime is essential for autonomous robotic navigation to achieve nocturnal or round-the-clock tasks. An intuitive question arises: Can low-cost standard cameras be exploited for nocturnal state estimation? Regrettably, most existing visual methods may fail under adverse illumination conditions, even with active lighting or image enhancement. A pivotal insight, however, is that streetlights in most urban scenarios act as stable and salient prior visual cues at night, reminiscent of stars in deep space aiding spacecraft voyage in interstellar navigation. Inspired by this, we propose Night-Voyager, an object-level nocturnal vision-aided state estimation framework that leverages prior object maps and keypoints for versatile localization. We also find that the primary limitation of conventional visual methods under poor lighting conditions stems from the reliance on pixel-level metrics. In contrast, metric-agnostic, non-pixel-level object detection serves as a bridge between pixel-level and object-level spaces, enabling effective propagation and utilization of object map information within the system. Night-Voyager begins with a fast initialization to solve the global localization problem. By employing an effective two-stage cross-modal data association, the system delivers globally consistent state updates using map-based observations. To address the challenge of significant uncertainties in visual observations at night, a novel matrix Lie group formulation and a feature-decoupled multi-state invariant filter are introduced, ensuring consistent and efficient estimation. Through comprehensive experiments in both simulation and diverse real-world scenarios (spanning approximately 12.3 km), Night-Voyager showcases its efficacy, robustness, and efficiency, filling a critical gap in nocturnal vision-aided state estimation.},
+  archive      = {J_TROB},
+  author       = {Tianxiao Gao and Mingle Zhao and Chengzhong Xu and Hui Kong},
+  doi          = {10.1109/TRO.2025.3548540},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Night-voyager: Consistent and efficient nocturnal vision-aided state estimation in object maps},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Physics-informed neural mapping and motion planning in
+unknown environments. <em>TROB</em>, 1–15. (<a
+href="https://doi.org/10.1109/TRO.2025.3548495">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mapping and motion planning are two essential elements of robot intelligence that are interdependent in generating environment maps and navigating around obstacles. The existing mapping methods create maps that require computationally expensive motion planning tools to find a path solution. In this paper, we propose a new mapping feature called arrival time fields, which is a solution to the Eikonal equation. The arrival time fields can directly guide the robot in navigating the given environments. Therefore, this paper introduces a new approach called Active Neural Time Fields (Active NTFields), which is a physics-informed neural framework that actively explores the unknown environment and maps its arrival time field on the fly for robot motion planning. Our method does not require any expert data for learning and uses neural networks to directly solve the Eikonal equation for arrival time field mapping and motion planning. We benchmark our approach against state-of-the-art mapping and motion planning methods and demonstrate its superior performance in both simulated and real-world environments with a differential drive robot and a 6 degrees-of-freedom (DOF) robot manipulator. The supplementary videos can be found at https://youtu.be/qTPL5a6pRKk , and the implementation code repository is available at https://github.com/Rtlyc/antfields-demo.},
+  archive      = {J_TROB},
+  author       = {Yuchen Liu and Ruiqi Ni and Ahmed H. Qureshi},
+  doi          = {10.1109/TRO.2025.3548495},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Physics-informed neural mapping and motion planning in unknown environments},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autonomous flights inside narrow tunnels. <em>TROB</em>,
+1–20. (<a href="https://doi.org/10.1109/TRO.2025.3548525">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multirotors are usually desired to enter confined narrow tunnels that are barely accessible to humans in various applications including inspection, search and rescue, and so on. This task is extremely challenging since the lack of geometric features and illuminations, together with the limited field of view, cause problems in perception; the restricted space and significant ego airflow disturbances induce control issues. This paper introduces an autonomous aerial system designed for navigation through tunnels as narrow as 0.5 m in diameter. The real-time and online system includes a virtual omni-directional perception module tailored for the mission and a novel motion planner that incorporates perception and ego airflow disturbance factors modeled using camera projections and computational fluid dynamics analyses, respectively. Extensive flight experiments on a custom-designed quadrotor are conducted in multiple realistic narrow tunnels to validate the superior performance of the system, even over human pilots, proving its potential for real applications. Additionally, a deployment pipeline on other multirotor platforms is outlined and open-source packages are provided for future developments.},
+  archive      = {J_TROB},
+  author       = {Luqi Wang and Yan Ning and Hongming Chen and Peize Liu and Yang Xu and Hao Xu and Ximin Lyu and Shaojie Shen},
+  doi          = {10.1109/TRO.2025.3548525},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Autonomous flights inside narrow tunnels},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiscale and uncertainty-aware targetless hand-eye
+calibration via the gauss-helmert model. <em>TROB</em>, 1–18. (<a
+href="https://doi.org/10.1109/TRO.2025.3548538">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The operational reliability of an autonomous robot depends crucially on extrinsic sensor calibration as a prerequisite for precise and accurate data fusion. Exploring the calibration of unscaled sensors (e.g., monocular cameras) and the effective utilization of uncertainties are difficult and often overlooked. The development of a solution for the simultaneous calibration of hand-eye sensors and scale estimation based on the Gauss-Helmert model aims to utilize the valuable information contained in the uncertainty of odometry. In this work, we propose a versatile and robust solution for batch calibration based on the analytical on-manifold approach for estimation. The versatility of our method is demonstrated by its ability to calibrate multiple unscaled and metric-scaled sensors while dealing with odometry failures and reinitializations. Importantly, all estimated parameters are provided with their corresponding uncertainties. The validation of our method and its comparison with five competing state-of-the-art calibration methods in both simulations and real-world experiments show its superior accuracy, with particularly promising results observed in high-noise scenarios.},
+  archive      = {J_TROB},
+  author       = {Marta Čolaković-Bencerić and Juraj Peršić and Ivan Marković and Ivan Petrović},
+  doi          = {10.1109/TRO.2025.3548538},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Multiscale and uncertainty-aware targetless hand-eye calibration via the gauss-helmert model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CURE: Simulation-augmented auto-tuning in robotics.
+<em>TROB</em>, 1–17. (<a
+href="https://doi.org/10.1109/TRO.2025.3548546">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic systems are typically composed of various subsystems, such as localization and navigation, each encompassing numerous configurable components (e.g., selecting different planning algorithms). Once an algorithm has been selected for a component, its associated configuration options must be set to the appropriate values. Configuration options across the system stack interact non-trivially. Finding optimal configurations for highly configurable robots to achieve desired performance poses a significant challenge due to the interactions between configuration options across software and hardware that result in an exponentially large and complex configuration space. These challenges are further compounded by the need for transferability between different environments and robotic platforms. Data efficient optimization algorithms (e.g., Bayesian optimization) have been increasingly employed to automate the tuning of configurable parameters in cyber-physical systems. However, such optimization algorithms converge at later stages, often after exhausting the allocated budget (e.g., optimization steps, allotted time) and lacking transferability. This paper proposes CURE—a method that identifies causally relevant configuration options, enabling the optimization process to operate in a reduced search space, thereby enabling faster optimization of robot performance. CURE abstracts the causal relationships between various configuration options and the robot performance objectives by learning a causal model in the source (a low-cost environment such as the Gazebo simulator) and applying the learned knowledge to perform optimization in the target (e.g., Turtlebot 3 physical robot). We demonstrate the effectiveness and transferability of CURE by conducting experiments that involve varying degrees of deployment changes in both physical robots and simulation.},
+  archive      = {J_TROB},
+  author       = {Md Abir Hossen and Sonam Kharade and Jason M. O&#39;Kane and Bradley Schmerl and David Garlan and Pooyan Jamshidi},
+  doi          = {10.1109/TRO.2025.3548546},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {CURE: Simulation-augmented auto-tuning in robotics},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Informative path planning for active regression with
+gaussian processes via sparse optimization. <em>TROB</em>, 1–16. (<a
+href="https://doi.org/10.1109/TRO.2025.3548865">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study informative path planning for active regression in Gaussian Processes (GP). Here, a resource constrained robot team collects measurements of an unknown function, assumed to be a sample from a GP, with the goal of minimizing the trace of the $M$-weighted expected squared estimation error covariance (where $M$ is a positive semidefinite matrix) resulting from the GP posterior mean. While greedy heuristics are a popular solution in the case of length constrained paths, it remains a challenge to compute optimal solutions in the discrete setting subject to routing constraints. We show that this challenge is surprisingly easy to circumvent. Using the optimality of the posterior mean for a class of functions of the squared loss yields an exact formulation as a mixed integer program. We demonstrate that this approach finds optimal solutions in a variety of settings in seconds and when terminated early, it finds sub-optimal solutions of higher quality than existing heuristics.},
+  archive      = {J_TROB},
+  author       = {Shamak Dutta and Nils Wilde and Stephen L. Smith},
+  doi          = {10.1109/TRO.2025.3548865},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Informative path planning for active regression with gaussian processes via sparse optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic control of multimodal motion for bistable soft
+millirobots in complex environments. <em>TROB</em>, 1–16. (<a
+href="https://doi.org/10.1109/TRO.2025.3551541">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft millirobots are highly promising for biomedical applications due to their reconfigurability and multifunctionality within physiological environments. However, the diverse and narrow biological cavity environments pose significant adaptability challenges for these millirobots. Here, we present a dual-morphology, thin-film millirobot equipped with a magnetic drive head and a functional tail to facilitate multimodal motion and targeted cell delivery. The millirobot can reversibly switch between two distinct morphologies in response to environmental stimuli through the deformation of its hydrogel body. Utilizing these dual morphologies, the millirobot can perform robust multimodal fundamental motions controlled by magnetic fields. We encapsulate fundamental motions with specific programmable magnetic field parameters into motion primitives, allowing easy invocation and adjustment of motion modes on demand. A knowledge graph is established to map terrain features to motion units, enabling the identification of optimal motion modes based on typical terrain characteristics. Experimental results indicate that the millirobot can effectively switch its morphology and movement modes to navigate various terrains, including narrow and curved channels as small as 1 mm, 0.8 mm high stairs with a 15° incline, and even the complex environment of a swine intestinal lumen. Its functional tail can carry immune cells to target and kill cancer cells. This robot can transport drugs and cells while navigating complex terrains through multimodal motion, paving the way for targeted medical tasks in intricate human environments in the future.},
+  archive      = {J_TROB},
+  author       = {Zhengyuan Xin and Shihao Zhong and Anping Wu and Zhiqiang Zheng and Qing Shi and Qiang Huang and Toshio Fukuda and Huaping Wang},
+  doi          = {10.1109/TRO.2025.3551541},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Dynamic control of multimodal motion for bistable soft millirobots in complex environments},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A compact 6D suction cup model for robotic manipulation via
+symmetry reduction. <em>TROB</em>, 1–16. (<a
+href="https://doi.org/10.1109/TRO.2025.3551197">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Active suction cups are widely adopted in industrial and logistics automation. Despite that, validated dynamic models describing their 6D force/torque interaction with objects are rare. This work aims at filling this gap by showing that it is possible to employ a compact model for suction cups, providing good accuracy also for large deformations. Its potential use is for advanced manipulation, planning and control. We model the interconnected object-suction cup system as a lumped 6D massspring-damper systems, employing a potential energy function on SE(3), parametrized by a 6 × 6 stiffness matrix. By exploiting geometric symmetries of the suction cup, we reduce the parameter identification problem, from 6(6 + 1)/2 = 21 to only 5 independent parameters, greatly simplifying the parameter identification procedure, that is otherwise ill-conditioned. Experimental validation is provided and data is shared openly to further stimulate research. As an indication of the achievable pose prediction in steady state, for an object of about 1.75 kg, we obtain a pose error in the order of 5 mm and 3 deg, with a gripper inclination of 60 deg.},
+  archive      = {J_TROB},
+  author       = {Alexander A. Oliva and Maarten J. Jongeneel and Alessandro Saccon},
+  doi          = {10.1109/TRO.2025.3551197},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {A compact 6D suction cup model for robotic manipulation via symmetry reduction},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RADIUM: Predicting and repairing end-to-end robot failures
+using gradient-accelerated sampling. <em>TROB</em>, 1–18. (<a
+href="https://doi.org/10.1109/TRO.2025.3551198">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Before deploying autonomous systems in safety-critical applications, we must be able to understand and verify the safety of these systems. For cases where the risk or cost of real-world testing is prohibitive, we propose a simulation-based framework for a) predicting ways in which an autonomous system is likely to fail and b) automatically adjusting the system&#39;s design and control policy to preemptively mitigate those failures. Existing tools for failure prediction struggle to search over high-dimensional environmental parameters, cannot efficiently handle end-to-end testing for systems with vision in the loop, and provide little guidance on how to mitigate failures once they are discovered. We approach this problem through the lens of approximate Bayesian inference, using differentiable simulation and rendering for efficient failure case prediction and repair (and providing a gradient-free version of our algorithm for cases where a differentiable simulator is not available). We include a theoretical and empirical evaluation of the trade-offs between gradient-based and gradient-free methods, applying our approach to a range of robotics and control problems, including optimizing search patterns for robot swarms, UAV formation control, and robust network control. Compared to optimization-based falsification methods, our method predicts a more diverse, representative set of failure modes, and we find that our use of differentiable simulation yields solutions that have up to 10x lower cost and requires up to 2x fewer iterations to converge relative to gradient-free techniques. In hardware experiments, we find that repairing control policies using our method leads to a 5x robustness improvement. Accompanying code and video can be found at https://mit-realm.github.io/radium.},
+  archive      = {J_TROB},
+  author       = {Charles Dawson and Anjali Parashar and Chuchu Fan},
+  doi          = {10.1109/TRO.2025.3551198},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {RADIUM: Predicting and repairing end-to-end robot failures using gradient-accelerated sampling},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Safe start regions for medical steerable needle automation.
+<em>TROB</em>, 1–18. (<a
+href="https://doi.org/10.1109/TRO.2025.3552323">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Steerable needles are minimally invasive devices that enable novel medical procedures by following curved paths to avoid critical anatomical obstacles. We introduce a new start pose robustness metric for steerable needle motion plans. A steerable needle deployment typically consists of a physician manually placing a steerable needle at a precomputed start pose on the surface of tissue and handing off control to a robot, which then autonomously steers the needle through the tissue to the target. The handoff between humans and robots is critical for procedure success, as even small deviations from a planned start pose change the steerable needle&#39;s reachable workspace. Our metric is based on a novel geometric method to efficiently compute how far the physician can deviate from the planned start pose in both position and orientation such that the steerable needle can still reach the target. We evaluate our metric through simulation in liver and lung scenarios. Our evaluation shows that our metric can be applied to plans computed by different steerable needle motion planners and that it can be used to efficiently select plans with large safe start regions.},
+  archive      = {J_TROB},
+  author       = {Janine Hoelscher and Inbar Fried and Spiros Tsalikis and Jason Akulian and Robert J. Webster and Ron Alterovitz},
+  doi          = {10.1109/TRO.2025.3552323},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Safe start regions for medical steerable needle automation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Strategic decision-making in multi-agent domains: A weighted
+constrained potential dynamic game approach. <em>TROB</em>, 1–16. (<a
+href="https://doi.org/10.1109/TRO.2025.3552325">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In interactive multi-agent settings, decision-making and planning are challenging mainly due to the agents&#39; interconnected objectives. Dynamic game theory offers a formal framework for analyzing such intricacies. Yet, solving constrained dynamic games and determining the interaction outcome in the form of generalized Nash Equilibria (GNE) pose computational challenges due to the need for solving constrained coupled optimal control problems. In this paper, we address this challenge by proposing to leverage the special structure of many real-world multi-agent interactions. More specifically, our key idea is to leverage constrained dynamic potential games, which are games for which GNE can be found by solving a single constrained optimal control problem associated with minimizing the potential function. We argue that constrained dynamic potential games can effectively facilitate interactive decision-making in many multi-agent interactions. We will identify structures in realistic multi-agent interactive scenarios that can be transformed into weighted constrained potential dynamic games (WCPDGs). We will show that the GNE of the resulting WCPDG can be obtained by solving a single constrained optimal control problem. We will demonstrate the effectiveness of the proposed method through various simulation studies and show that we achieve significant improvements in solve time compared to state-of-the-art game solvers. We further provide experimental validation of our proposed method in a navigation setup involving two quadrotors carrying a rigid object while avoiding collisions with two humans.},
+  archive      = {J_TROB},
+  author       = {Maulik Bhatt and Yixuan Jia and Negar Mehr},
+  doi          = {10.1109/TRO.2025.3552325},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Strategic decision-making in multi-agent domains: A weighted constrained potential dynamic game approach},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CODEI: Resource-efficient task-driven co-design of
+perception and decision making for mobile robots applied to autonomous
+vehicles. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3552347">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper discusses the integration challenges and strategies for designing mobile robots, by focusing on the taskdriven, optimal selection of hardware and software to balance safety, efficiency, and minimal usage of resources such as costs, energy, computational requirements, and weight. We emphasize the interplay between perception and motion planning in decisionmaking by introducing the concept of occupancy queries to quantify the perception requirements for sampling-based motion planners. Sensor and algorithm performance are evaluated using False Negative Rate (FNR) and False Positive Rate (FPR) across various factors such as geometric relationships, object properties, sensor resolution, and environmental conditions. By integrating perception requirements with perception performance, an Integer Linear Programming (ILP) approach is proposed for efficient sensor and algorithm selection and placement. This forms the basis for a co-design optimization that includes the robot body, motion planner, perception pipeline, and computing unit. We refer to this framework for solving the co-design problem of mobile robots as CODEI, short for Co-design of Embodied Intelligence. A case study on developing an Autonomous Vehicle (AV) for urban scenarios provides actionable information for designers, and shows that complex tasks escalate resource demands, with task performance affecting choices of the autonomy stack. The study demonstrates that resource prioritization influences sensor choice: cameras are preferred for cost-effective and lightweight designs, while lidar sensors are chosen for better energy and computational efficiency.},
+  archive      = {J_TROB},
+  author       = {Dejan Milojevic and Gioele Zardini and Miriam Elser and Andrea Censi and Emilio Frazzoli},
+  doi          = {10.1109/TRO.2025.3552347},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {CODEI: Resource-efficient task-driven co-design of perception and decision making for mobile robots applied to autonomous vehicles},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Splat-nav: Safe real-time robot navigation in gaussian
+splatting maps. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3552348">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present Splat-Nav, a real-time robot navigation pipeline for Gaussian Splatting (GSplat) scenes, a powerful new 3D scene representation. Splat-Nav consists of two components: 1) Splat-Plan, a safe planning module, and 2) Splat-Loc, a robust vision-based pose estimation module. Splat-Plan builds a safe-by-construction polytope corridor through the map based on mathematically rigorous collision constraints and then constructs a Bézier curve trajectory through this corridor. Splat-Loc provides real-time recursive state estimates given only an RGB feed from an on-board camera, leveraging the point-cloud representation inherent in GSplat scenes. Working together, these modules give robots the ability to recursively re-plan smooth and safe trajectories to goal locations. Goals can be specified with position coordinates, or with language commands by using a semantic GSplat. We demonstrate improved safety compared to point cloud-based methods in extensive simulation experiments. In a total of 126 hardware flights, we demonstrate equivalent safety and speed compared to motion capture and visual odometry, but without a manual frame alignment required by those methods. We show online re-planning at more than 2 Hz and pose estimation at about 25 Hz, an order of magnitude faster than Neural Radiance Field (NeRF)-based navigation methods, thereby enabling real-time navigation. We provide experiment videos on our project page at https://chengine.github.io/splatnav/. Our codebase and ROS nodes can be found at https://github.com/chengine/splatnav.},
+  archive      = {J_TROB},
+  author       = {Timothy Chen and Ola Shorinwa and Joseph Bruno and Aiden Swann and Javier Yu and Weijia Zeng and Keiko Nagami and Philip Dames and Mac Schwager},
+  doi          = {10.1109/TRO.2025.3552348},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Splat-nav: Safe real-time robot navigation in gaussian splatting maps},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High resolution, large area vision-based tactile sensing
+based on a novel piezoluminescent skin. <em>TROB</em>, 1–19. (<a
+href="https://doi.org/10.1109/TRO.2025.3552327">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ability to precisely perceive external physical interactions would enable robots to interact effectively with the environment and humans. While vision-based tactile sensing has improved robotic grippers, it is challenging to realize high resolution vision-based tactile sensing in robot arms due to presence of curved surfaces, difficulty in uniform illumination, and large distance of sensing area from the cameras. In this paper, we propose a novel piezoluminescent skin that transduces external applied pressures into changes in light intensity on the other side for viewing by a camera for pressure estimation. By engineering elastomer layers with specific optical properties and integrating a flexible electroluminescent panel as a light source, we develop a compact tactile sensing layer that resolves the layout issues in curved surfaces. We achieved multipoint pressure estimation over an expansive area of 502 sq. cm with high spatial resolution, a Two-Point Discrimination distance of 3 mm horizontally and 5 mm vertically which is comparable to that of human fingers as well as a high localization accuracy (RMSE of 1.92 mm). These promising attributes make this tactile sensing technique suitable for use in robot arms and other applications requiring high resolution tactile information over a large area.},
+  archive      = {J_TROB},
+  author       = {Ruxiang Jiang and Lanhui Fu and Yanan Li and Hareesh Godaba},
+  doi          = {10.1109/TRO.2025.3552327},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-19},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {High resolution, large area vision-based tactile sensing based on a novel piezoluminescent skin},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Modeling, embedded control and design of soft robots using a
+learned condensed FEM model. <em>TROB</em>, 1–19. (<a
+href="https://doi.org/10.1109/TRO.2025.3552353">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Finite Element Method (FEM) is a powerful modeling tool for predicting soft robots&#39; behavior, but its computation time can limit practical applications. In this paper, a learning-based approach based on condensation of the FEM model is detailed. The proposed method handles several kinds of actuators and contacts with the environment. We demonstrate that this compact model can be learned as a unified model across several designs and remains very efficient in terms of modeling since we can deduce the direct and inverse kinematics of the robot. Building upon the intuition introduced in [11], the learned model is presented as a general framework for modeling, controlling, and designing soft manipulators. First, the method&#39;s adaptability and versatility are illustrated through optimization-based control problems involving positioning and manipulation tasks with mechanical contact-based coupling. Secondly, the low-memory consumption and the high prediction speed of the learned condensed model are leveraged for real-time embedding control without relying on costly online FEM simulation. Finally, the ability of the learned condensed FEM model to capture soft robot design variations and its differentiability are leveraged in calibration and design optimization applications.},
+  archive      = {J_TROB},
+  author       = {Tanguy Navez and Etienne Ménager and Paul Chaillou and Olivier Goury and Alexandre Kruszewski and Christian Duriez},
+  doi          = {10.1109/TRO.2025.3552353},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-19},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Modeling, embedded control and design of soft robots using a learned condensed FEM model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AVOCADO: Adaptive optimal collision avoidance driven by
+opinion. <em>TROB</em>, 1–17. (<a
+href="https://doi.org/10.1109/TRO.2025.3552350">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present AVOCADO (AdaptiVe Optimal Collision Avoidance Driven by Opinion), a novel navigation approach to address holonomic robot collision avoidance when the robot does not know how cooperative the other agents in the environment are. AVOCADO departs from a Velocity Obstacle&#39;s (VO) formulation akin to the Optimal Reciprocal Collision Avoidance method. However, instead of assuming reciprocity, it poses an adaptive control problem to adapt to the cooperation level of other robots and agents in real time. This is achieved through a novel nonlinear opinion dynamics design that relies solely on sensor observations. As a by-product, we leverage tools from the opinion dynamics formulation to naturally avoid the deadlocks in geometrically symmetric scenarios that typically suffer VO-based planners. Extensive numerical simulations show that AVOCADO surpasses existing motion planners in mixed cooperative/ non-cooperative navigation environments in terms of success rate, time to goal and computational time. In addition, we conduct multiple real experiments that verify that AVOCADO is able to avoid collisions in environments crowded with other robots and humans.},
+  archive      = {J_TROB},
+  author       = {Diego Martinez-Baselga and Eduardo Sebastián and Eduardo Montijano and Luis Riazuelo and Carlos Sagüés and Luis Montano},
+  doi          = {10.1109/TRO.2025.3552350},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {AVOCADO: Adaptive optimal collision avoidance driven by opinion},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CoverLib: Classifiers-equipped experience library by
+iterative problem distribution coverage maximization for domain-tuned
+motion planning. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3552346">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Library-based methods are known to be very effective for fast motion planning by adapting an experience retrieved from a precomputed library. This article presents CoverLib, a principled approach for constructing and utilizing such a library. CoverLib iteratively adds an experience-classifier-pair to the library, where each classifier corresponds to an adaptable region of the experience within the problem space. This iterative process is an active procedure, as it selects the next experience based on its ability to effectively cover the uncovered region. During the query phase, these classifiers are utilized to select an experience that is expected to be adaptable for a given problem. Experimental results demonstrate that CoverLib effectively mitigates the trade-off between plannability and speed observed in global (e.g. sampling-based) and local (e.g. optimization-based) methods. As a result, it achieves both fast planning and high success rates over the problem domain. Moreover, due to its adaptation-algorithm-agnostic nature, CoverLib seamlessly integrates with various adaptation methods, including nonlinear programming-based and sampling-based algorithms.},
+  archive      = {J_TROB},
+  author       = {Hirokazu Ishida and Naoki Hiraoka and Kei Okada and Masayuki Inaba},
+  doi          = {10.1109/TRO.2025.3552346},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {CoverLib: Classifiers-equipped experience library by iterative problem distribution coverage maximization for domain-tuned motion planning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A wearable isokinetic training robot for enhanced bedside
+knee rehabilitation. <em>TROB</em>, 1–18. (<a
+href="https://doi.org/10.1109/TRO.2025.3552332">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knee pain is prevalent in over 20% of the population, limiting the mobility of those affected. In turn, isokinetic dynamometers and robots have been used to facilitate rehabilitation for those still capable of ambulation. However, there are at most only a few wearable robots capable of delivering isokinetic training for bedridden patients. Here, we developed a wearable robot that provides bedside isokinetic training by utilizing a variable stiffness actuator and dynamic energy regeneration. The efficacy of this device was validated in a study involving 6 subjects with debilitating knee injuries. During two courses of rehabilitation over a total of 3 weeks, the average peak torque, average torque, and average work produced by their affected knees increased significantly by 81.0%, 101.4%, and 117.6%, respectively. Furthermore, the device&#39;s energy regeneration features were found capable of extending its operating time to 198 days under normal usage, representing a 57.8% increase over the same device without regeneration. These results suggest potential methodologies for delivering isokinetic joint rehabilitation to bedridden patients in areas with limited infrastructure.},
+  archive      = {J_TROB},
+  author       = {Yanggang Feng and Xingyu Hu and Yuebing Li and Ke Ma and Jiaxin Ren and Zhihao Zhou and Fuzhen Yuan and Yan Huang and Liu Wang and Qining Wang and Wuxiang Zhang and Xilun Ding},
+  doi          = {10.1109/TRO.2025.3552332},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {A wearable isokinetic training robot for enhanced bedside knee rehabilitation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). General place recognition survey: Towards real-world
+autonomy. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3550771">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of robotics, the quest for achieving realworld autonomy, capable of executing large-scale and long-term operations, has positioned place recognition (PR) as a cornerstone technology. Despite the PR community&#39;s remarkable strides over the past two decades, garnering attention from fields like computer vision and robotics, the development of PR methods that sufficiently support real-world robotic systems remains a challenge. This paper aims to bridge this gap by highlighting the crucial role of PR within the framework of Simultaneous Localization and Mapping (SLAM) 2.0. This new phase in robotic navigation calls for scalable, adaptable, and efficient PR solutions by integrating advanced artificial intelligence (AI) technologies. For this goal, we provide a comprehensive review of the current state-of-the-art (SOTA) advancements in PR, alongside the remaining challenges, and underscore its broad applications in robotics. This paper begins with an exploration of PR&#39;s formulation and key research challenges. We extensively review literature, focusing on related methods on place representation and solutions to various PR challenges. Applications showcasing PR&#39;s potential in robotics, key PR datasets, and open-source libraries are discussed. We conclude with a discussion on PR&#39;s future directions and provide a summary of the literature covered at: https://github.com/MetaSLAM/GPRS.},
+  archive      = {J_TROB},
+  author       = {Peng Yin and Jianhao Jiao and Shiqi Zhao and Lingyun Xu and Guoquan Huang and Howie Choset and Sebastian Scherer and Jianda Han},
+  doi          = {10.1109/TRO.2025.3550771},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {General place recognition survey: Towards real-world autonomy},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simultaneous trajectory optimization and contact selection
+for contact-rich manipulation with high-fidelity geometry.
+<em>TROB</em>, 1–14. (<a
+href="https://doi.org/10.1109/TRO.2025.3554380">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contact-implicit trajectory optimization (CITO) is an effective method to plan complex trajectories for various contact-rich systems including manipulation and locomotion. CITO formulates a mathematical program with complementarity constraints (MPCC) that enforces that contact forces must be zero when points are not in contact. However, MPCC solve times increase steeply with the number of allowable points of contact, which limits CITO&#39;s applicability to problems in which only a few, simple geometries are allowed to make contact. This paper introduces simultaneous trajectory optimization and contact selection (STOCS), as an extension of CITO that overcomes this limitation. The innovation of STOCS is to identify salient contact points and times inside the iterative trajectory optimization process. This effectively reduces the number of variables and constraints in each MPCC invocation. The STOCS framework, instantiated with key contact identification subroutines, renders the optimization of manipulation trajectories computationally tractable even for high-fidelity geometries consisting of tens of thousands of vertices.},
+  archive      = {J_TROB},
+  author       = {Mengchao Zhang and Devesh K. Jha and Arvind U. Raghunathan and Kris Hauser},
+  doi          = {10.1109/TRO.2025.3554380},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Simultaneous trajectory optimization and contact selection for contact-rich manipulation with high-fidelity geometry},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-query robotic manipulator task sequencing with
+gromov-hausdorff approximations. <em>TROB</em>, 1–17. (<a
+href="https://doi.org/10.1109/TRO.2025.3554404">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic manipulator applications often require efficient online motion planning. When completing multiple tasks, sequence order and choice of goal configuration can have a drastic impact on planning performance. This is well known as the robot task sequencing problem (RTSP). Existing general-purpose RTSP algorithms are susceptible to producing poor-quality solutions or failing entirely when available computation time is restricted. We propose a new multi-query task sequencing method designed to operate in semi-structured environments with a combination of static and non-static obstacles. Our method intentionally trades off workspace generality for planning efficiency. Given a user-defined task space with static obstacles, we compute a subspace decomposition. The key idea is to establish approximate isometries known as $\epsilon$-Gromov-Hausdorff approximations that identify points that are close to one another in both task and configuration space. Importantly, we prove bounded suboptimality guarantees on the lengths of paths within these subspaces. These bounding relations further imply that paths within the same subspace can be smoothly concatenated, which we show is useful for determining efficient task sequences. We evaluate our method with several kinematic configurations in a complex simulated environment, achieving up to 3x faster motion planning and 5x lower maximum trajectory jerk compared to baselines.},
+  archive      = {J_TROB},
+  author       = {Fouad Sukkar and Jennifer Wakulicz and Ki Myung Brian Lee and Weiming Zhi and Robert Fitch},
+  doi          = {10.1109/TRO.2025.3554404},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Multi-query robotic manipulator task sequencing with gromov-hausdorff approximations},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerated reeds-shepp and under-specified reeds-shepp
+algorithms for mobile robot path planning. <em>TROB</em>, 1–19. (<a
+href="https://doi.org/10.1109/TRO.2025.3554406">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this study, we present a simple and intuitive method for accelerating optimal Reeds-Shepp path computation. Our approach uses geometrical reasoning to analyze the behavior of optimal paths, resulting in a new partitioning of the state space and a further reduction in the minimal set of viable paths. We revisit and reimplement classic methodologies from the literature, which lack contemporary open-source implementations, to serve as benchmarks for evaluating our method. Additionally, we address the under-specified Reeds-Shepp planning problem where the final orientation is unspecified. We perform exhaustive experiments to validate our solutions. Compared to the modern C++ implementation of the original Reeds-Shepp solution in the Open Motion Planning Library, our method demonstrates a $15\times$ speedup, while classic methods achieve a $5.79\times$ speedup. Both approaches exhibit machine-precision differences in path lengths compared to the original solution. We release our proposed C++ implementations for both the accelerated and under-specified Reeds-Shepp problems as open-source code.},
+  archive      = {J_TROB},
+  author       = {Ibrahim Ibrahim and Wilm Decré and Jan Swevers},
+  doi          = {10.1109/TRO.2025.3554406},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-19},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Accelerated reeds-shepp and under-specified reeds-shepp algorithms for mobile robot path planning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sensitivity-aware model predictive control for robots with
+parametric uncertainty. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3554415">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a computationally efficient robust Model Predictive Control (MPC) scheme for controlling nonlinear systems affected by parametric uncertainties in their models. The approach leverages the recent notion of closed-loop state sensitivity and the associated ellipsoidal tubes of perturbed trajectories for taking into account online time-varying restrictions on state and input constraints. This makes the MPC controller “aware” of potential additional requirements needed to cope with parametric uncertainty, thus significantly improving the tracking performance and success rates during navigation in constrained environments. One key contribution lies in the introduction of a computationally efficient robust MPC formulation with a comparable computational complexity to a standard MPC (i.e., an MPC not explicitly dealing with parametric uncertainty). An extensive simulation campaign is presented to demonstrate the effectiveness of the proposed approach in handling parametric uncertainties and enhancing task performance, safety, and overall robustness. Furthermore, we also provide an experimental validation that shows the feasibility of the approach in real-world conditions and corroborates the statistical findings of the simulation campaign. The versatility and efficiency of the proposed method make it therefore a valuable tool for real-time control of robots subject to non-negligible uncertainty in their models.},
+  archive      = {J_TROB},
+  author       = {Tommaso Belvedere and Marco Cognetti and Giuseppe Oriolo and Paolo Robuffo Giordano},
+  doi          = {10.1109/TRO.2025.3554415},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Sensitivity-aware model predictive control for robots with parametric uncertainty},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalized multi-speed dubins motion model. <em>TROB</em>,
+1–18. (<a href="https://doi.org/10.1109/TRO.2025.3554436">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The paper develops a novel motion model, called Generalized Multi-Speed Dubins Motion Model (GMDM), which extends the Dubins model by considering multiple speeds. While the Dubins model produces time-optimal paths under a constant-speed constraint, these paths could be suboptimal if this constraint is relaxed to include multiple speeds. This is because a constant speed results in a large minimum turning radius, thus producing paths with longer maneuvers and larger travel times. In contrast, multi-speed relaxation allows for slower speed sharp turns, thus producing more direct paths with shorter maneuvers and smaller travel times. Furthermore, the inability of the Dubins model to reduce speed could result in fast maneuvers near obstacles, thus producing paths with high collision risks. In this regard, GMDM provides the motion planners the ability to jointly optimize time and risk by allowing the change of speed along the path. GMDM is built upon the six Dubins path types considering the change of speed on path segments. It is theoretically established that GMDM provides full reachability of the configuration space for any speed selections. Furthermore, it is shown that the Dubins model is a specific case of GMDM for constant speeds. The solutions of GMDM are analytical and suitable for real-time applications. The performance of GMDM in terms of solution quality (i.e., time/time-risk cost) and computation time is comparatively evaluated against the existing motion models in obstacle-free as well as obstacle-rich environments via extensive Monte Carlo simulations. The results show that in obstacle-free environments, GMDM produces near time-optimal paths with significantly lower travel times than the Dubins model while having similar computation times. In obstacle-rich environments, GMDM produces time-risk optimized paths with substantially lower collision risks.},
+  archive      = {J_TROB},
+  author       = {James P. Wilson and Shalabh Gupta and Thomas A. Wettergren},
+  doi          = {10.1109/TRO.2025.3554436},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Generalized multi-speed dubins motion model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AQUA-SLAM: Tightly-coupled underwater
+acoustic-visual-inertial SLAM with sensor calibration. <em>TROB</em>,
+1–20. (<a href="https://doi.org/10.1109/TRO.2025.3554396">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Underwater environments pose significant challenges for visual Simultaneous Localization and Mapping (SLAM) systems due to limited visibility, inadequate illumination, and sporadic loss of structural features in images. Addressing these challenges, this paper introduces a novel, tightly-coupled Acoustic-Visual-Inertial SLAM approach, termed AQUA-SLAM, to fuse a Doppler Velocity Log (DVL), a stereo camera, and an Inertial Measurement Unit (IMU) within a graph optimization framework. Moreover, we propose an efficient sensor calibration technique, encompassing multi-sensor extrinsic calibration (among the DVL, camera and IMU) and DVL transducer misalignment calibration, with a fast linear approximation procedure for real-time online execution. The proposed methods are extensively evaluated in a tank environment with ground truth, and validated for offshore applications in the North Sea. The results demonstrate that our method surpasses current state-of-the-art underwater and visual-inertial SLAM systems in terms of localization accuracy and robustness. The proposed system will be made open-source for the community.},
+  archive      = {J_TROB},
+  author       = {Shida Xu and Kaicheng Zhang and Sen Wang},
+  doi          = {10.1109/TRO.2025.3554396},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {AQUA-SLAM: Tightly-coupled underwater acoustic-visual-inertial SLAM with sensor calibration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Linearized virtual energy tank for passivity-based bilateral
+teleoperation using linear MPC. <em>TROB</em>, 1–16. (<a
+href="https://doi.org/10.1109/TRO.2025.3554447">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bilateral teleoperation systems are often used in safety-critical scenarios where human operators may interact with the environment remotely, as in robotic-assisted surgery or nuclear plant maintenance. Teleoperation&#39;s stability and transparency are the two most important properties to be satisfied, but they cannot be optimized independently since they are in contrast. This paper presents a passive linear MPC control scheme to implement bilateral teleoperation that optimizes the trade-off between stability and transparency (a.k.a. performance). First, we introduce a linear virtual energy tank with a novel energy-sharing policy, allowing us to define a passive linear MPC. Second, we provide conditions to guarantee the stability of the non-linear closed-loop system. We validate the proposed approach in a teleoperation scheme using two 7-DOF manipulators while performing an assembly task. This novel passivity-based bilateral teleoperation using linear MPC and linearized energy tank reduces the computational effort of existing passive non-linear MPC controllers.},
+  archive      = {J_TROB},
+  author       = {Nicola Piccinelli and Riccardo Muradore},
+  doi          = {10.1109/TRO.2025.3554447},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Linearized virtual energy tank for passivity-based bilateral teleoperation using linear MPC},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PROXDDP: Proximal constrained trajectory optimization.
+<em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3554437">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trajectory optimization has been a popular choice for motion generation and control in robotics for at least a decade. Several numerical approaches have exhibited the required speed to enable online computation of trajectories for real-time of various systems, including complex robots. Many of these said are based on the differential dynamic programming (DDP) algorithm – initially designed for unconstrained trajectory optimization problems – and its variants, which are relatively easy to implement and provide good runtime performance. However, several problems in robot control call for using constrained formulations (e.g. torque limits, obstacle avoidance), from which several difficulties arise when trying to adapt DDP-type methods: numerical stability, computational efficiency, and constraint satisfaction. In this article, we leverage proximal methods for constrained optimization and introduce a DDP-type method for fast, constrained trajectory optimization suited for model-predictive control (MPC) applications with easy warm-starting. Compared to earlier solvers, our approach effectively manages hard constraints without warm-start limitations and exhibits good convergence behavior. We provide a complete implementation as part of an open-source and flexible C++ trajectory optimization library called ALIGATOR. These algorithmic contributions are validated through several trajectory planning scenarios from the robotics literature and the real-time whole-body MPC of a quadruped robot.},
+  archive      = {J_TROB},
+  author       = {Wilson Jallet and Antoine Bambade and Etienne Arlaud and Sarah El-Kazdadi and Nicolas Mansard and Justin Carpentier},
+  doi          = {10.1109/TRO.2025.3554437},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {PROXDDP: Proximal constrained trajectory optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SLIM: Scalable and lightweight LiDAR mapping in urban
+environments. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3554400">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {LiDAR point cloud maps are extensively utilized on roads for robot navigation due to their high consistency. However, dense point clouds face challenges of high memory consumption and reduced maintainability for long-term operations. In this study, we introduce SLIM, a scalable and lightweight mapping system for long-term LiDAR mapping in urban environments. The system begins by parameterizing structural point clouds into lines and planes. These lightweight and structural representations meet the requirements of map merging, pose graph optimization, and bundle adjustment, ensuring incremental management and local consistency. For long-term operations, a map-centric nonlinear factor recovery method is designed to sparsify poses while preserving mapping accuracy. We validate the SLIM system with multi-session real-world LiDAR data from classical LiDAR mapping datasets, including KITTI, NCLT, HeLiPR and M2DGR. The experiments demonstrate its capabilities in mapping accuracy, lightweightness, and scalability. Map re-use is also verified through map-based robot localization. Finally, with multi-session LiDAR data, the SLIM system provides a globally consistent map with low memory consumption ($\sim$ 130KB/km on KITTI).},
+  archive      = {J_TROB},
+  author       = {Zehuan Yu and Zhijian Qiao and Wenyi Liu and Huan Yin and Shaojie Shen},
+  doi          = {10.1109/TRO.2025.3554400},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {SLIM: Scalable and lightweight LiDAR mapping in urban environments},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NeuPAN: Direct point robot navigation with end-to-end
+model-based learning. <em>TROB</em>, 1–20. (<a
+href="https://doi.org/10.1109/TRO.2025.3554252">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Navigating a nonholonomic robot in a cluttered, unknown environment requires accurate perception and precise motion control for real-time collision avoidance. This paper presents NeuPAN: a real-time, highly accurate, map-free, easy-to-deploy, and environment-invariant robot motion planner. Leveraging a tightly coupled perception-to-control framework, NeuPAN has two key innovations compared to existing approaches: 1) it directly maps raw point cloud data to a latent distance feature space for collision-free motion generation, avoiding error propagation from the perception to control pipeline; 2) it is interpretable from an end-to-end model-based learning perspective. The crux of NeuPAN is solving an end-to-end mathematical model with numerous point-level constraints using a plug-and-play (PnP) proximal alternating-minimization network (PAN), incorporating neurons in the loop. This allows NeuPAN to generate real-time, physically interpretable motions. It seamlessly integrates data and knowledge engines, and its network parameters can be fine-tuned via backpropagation. We evaluate NeuPAN on a ground mobile robot, a wheel-legged robot, and an autonomous vehicle, in extensive simulated and real-world environments. Results demonstrate that NeuPAN outperforms existing baselines in terms of accuracy, efficiency, robustness, and generalization capabilities across various environments, including the cluttered sandbox, office, corridor, and parking lot. We show that NeuPAN works well in unknown and unstructured environments with arbitrarily shaped objects, transforming impassable paths into passable ones.},
+  archive      = {J_TROB},
+  author       = {Ruihua Han and Shuai Wang and Shuaijun Wang and Zeqing Zhang and Jianjun Chen and Shijie Lin and Chengyang Li and Chengzhong Xu and Yonina C. Eldar and Qi Hao and Jia Pan},
+  doi          = {10.1109/TRO.2025.3554252},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {NeuPAN: Direct point robot navigation with end-to-end model-based learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Wrench control of dual-arm robot on flexible base with
+supporting contact surface. <em>TROB</em>, 1–19. (<a
+href="https://doi.org/10.1109/TRO.2025.3554411">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a novel high-force/high-precision interaction control framework of a dual-arm robot system on a flexible base, with one arm holding, or making contact with, a supporting surface, while the other arm can exert any arbitrary wrench in a certain polytope through a desired pose against environments or objects. Our proposed framework can achieve high-force/precision tasks by utilizing the supporting surface just as we humans do while taking into account various important constraints (e.g., system stability, joint angle/torque limits, friction-cone constraint, etc.) and the passive compliance of the flexible base. We first design the control as a combination of: 1) nominal control; 2) active stiffness control; and 3) feedback wrench control. We then sequentially perform optimizations of the nominal configuration (and its related wrenches) and the active stiffness control gain. We also design the PI (proportional-integral) type feedback wrench control to improve the robustness and precision of the control. The key theoretical enabler for our framework is a novel stiffness analysis of the dual-arm system with flexibility, which, when combined with certain constraints, provides some peculiar relations, that can effectively be used to significantly simplify the optimization problem-solving and to facilitate the feedback wrench control design by manifesting the compliance relation at the interaction port. The efficacy of the theory is then validated and demonstrated through simulations and experiments.},
+  archive      = {J_TROB},
+  author       = {Jeongseob Lee and Doyoon Kong and Hojun Cha and Jeongmin Lee and Dongseok Ryu and Hocheol Shin and Dongjun Lee},
+  doi          = {10.1109/TRO.2025.3554411},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {3},
+  pages        = {1-19},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Wrench control of dual-arm robot on flexible base with supporting contact surface},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NN_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="nn---16">NN - 16</h2>
+<ul>
+<li><details>
+<summary>
+(2025). BSA-seg: A bi-level sparse attention network combining
+narrow band loss for multi-target medical image segmentation.
+<em>NN</em>, <em>188</em>, 107431. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107431">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Segmentation of multiple targets of varying sizes within medical images is of significant importance for the diagnosis of disease and pathological research. Transformer-based methods are emerging in the medical image segmentation, leveraging the powerful yet computationally intensive self-attention mechanism. A variety of attention mechanisms have been proposed to reduce computation at the cost of accuracy loss, utilizing handcrafted patterns within local or artificially defined receptive fields. Furthermore, the common region-based loss functions are insufficient for guiding the transformer to focus on tissue regions, resulting in their unsuitability for the segmentation of tissues with intricate boundaries. This paper presents the development of a bi-level sparse attention network and a narrow band (NB) loss function for the accurate and efficient multi-target segmentation of medical images. In particular, we introduce a bi-level sparse attention module (BSAM) and formulate a segmentation network based on this module. The BSAM consists of coarse-grained patch-level attention and fine-grained pixel-level attention, which captures fine-grained contextual features in adaptive receptive fields learned by patch-level attention. This results in enhanced segmentation accuracy while simultaneously reducing computational complexity. The proposed narrow-band (NB) loss function constructs a target region in close proximity to the tissue boundary. The network is thus guided to perform boundary-aware segmentation, thereby simultaneously alleviating the issues of over-segmentation and under-segmentation. A series of comprehensive experiments on whole brains, brain tumors and abdominal organs, demonstrate that our method outperforms other state-of-the-art segmentation methods. Furthermore, the BSAM and NB loss can be applied flexibly to a variety of network frameworks.},
+  archive      = {J_NN},
+  author       = {Zhiyong Zhou and Zhechen Zhou and Xusheng Qian and Jisu Hu and Bo Peng and Chen Geng and Bin Dai and He Huang and Wenbin Zhang and Yakang Dai},
+  doi          = {10.1016/j.neunet.2025.107431},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107431},
+  shortjournal = {Neural Netw.},
+  title        = {BSA-seg: A bi-level sparse attention network combining narrow band loss for multi-target medical image segmentation},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive bigraph-based multi-view unsupervised
+dimensionality reduction. <em>NN</em>, <em>188</em>, 107424. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107424">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a crucial machine learning technology, graph-based multi-view unsupervised dimensionality reduction aims to learn compact low-dimensional representations for unlabeled multi-view data using graph structures. However, it faces several challenges, including the integration of multiple heterogeneous views, the absence of label guidance, the rigidity of predefined similarity graphs, and high computational intensity. To address these issues, we propose a novel method called adaptive Bigraph-based Multi-view Unsupervised Dimensionality Reduction (BMUDR). BMUDR dynamically learns view-specific anchor sets and adaptively constructs a bigraph shared by multiple views, facilitating the discovery of low-dimensional representations through sample-anchor relationships. The generation of anchors and the construction of anchor similarity matrices are integrated into the dimensionality reduction process. Diverse contributions of different views are automatically weighed to leverage their complementary and consistent properties. In addition, an optimization algorithm is designed to enhance computational efficiency and scalability, and it provides impressive performance in low-dimensional representation learning, as demonstrated by extensive experiments on various benchmark datasets.},
+  archive      = {J_NN},
+  author       = {Qianyao Qiang and Bin Zhang and Chen Jason Zhang and Feiping Nie},
+  doi          = {10.1016/j.neunet.2025.107424},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107424},
+  shortjournal = {Neural Netw.},
+  title        = {Adaptive bigraph-based multi-view unsupervised dimensionality reduction},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). L3Net: Localized and layered reparameterization for
+incremental learning. <em>NN</em>, <em>188</em>, 107420. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107420">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model-based class incremental learning (CIL) methods aim to address the challenge of catastrophic forgetting by retaining certain parameters and expanding the model architecture. However, retaining too many parameters can lead to an overly complex model, increasing inference overhead. Additionally, compressing these parameters to reduce the model size can result in performance degradation. To tackle these challenges, we propose a novel three-stage CIL framework called L ocalized and L ayered Reparameterization for Incremental L earning ( L 3 Net ). The rationale behind our approach is to balance model complexity and performance by selectively expanding and optimizing critical components. Specifically, the framework introduces a Localized Dual-path Expansion structure, which allows the model to learn simultaneously from both old and new features by integrating a fusion selector after each convolutional layer. To further minimize potential conflicts between old and new features, we implement the Feature Selectors Gradient Resetting method, which sparsifies the fusion selectors and reduces the influence of redundant old features. Additionally, to address classification bias resulting from class imbalance, we design the Decoupled Balanced Distillation technique and apply Logit Adjustment to more effectively retain knowledge from the rehearsal set. Extensive experiments demonstrate that our L 3 Net framework outperforms state-of-the-art methods on widely used benchmarks, including CIFAR-100 and ImageNet-100/1000.},
+  archive      = {J_NN},
+  author       = {Xuandi Luo and Huaidong Zhang and Yi Xie and Hongrui Zhang and Xuemiao Xu and Shengfeng He},
+  doi          = {10.1016/j.neunet.2025.107420},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107420},
+  shortjournal = {Neural Netw.},
+  title        = {L3Net: Localized and layered reparameterization for incremental learning},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An information-theoretic approach for heterogeneous
+differentiable causal discovery. <em>NN</em>, <em>188</em>, 107417. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107417">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the advancement of deep learning, a variety of differential causal discovery methods have emerged, inevitably attracting more attention for their excellent scalability and interpretability. However, these methods often struggle with complex heterogeneous datasets that exhibit environmental diversity and are characterized by shifts in noise distribution. To this end, we introduce a novel information-theoretic approach designed to enhance the robustness of differential causal discovery methods. Specifically, we integrate Minimum Error Entropy (MEE) as an adaptive error regulator into the structure learning framework. MEE effectively reduces error variability across diverse samples, enabling our model to adapt dynamically to varying levels of complexity and noise. This adjustment significantly improves the precision and stability of the model. Extensive experiments on both synthetic and real-world datasets have demonstrated significant performance enhancements over existing methods, affirming the effectiveness of our approach. The code is available at https://github.com/ElleZWQ/MHCD .},
+  archive      = {J_NN},
+  author       = {Wanqi Zhou and Shuanghao Bai and Yuqing Xie and Yicong He and Qibin Zhao and Badong Chen},
+  doi          = {10.1016/j.neunet.2025.107417},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107417},
+  shortjournal = {Neural Netw.},
+  title        = {An information-theoretic approach for heterogeneous differentiable causal discovery},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CCA: Contrastive cluster assignment for supervised and
+semi-supervised medical image segmentation. <em>NN</em>, <em>188</em>,
+107415. (<a href="https://doi.org/10.1016/j.neunet.2025.107415">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformers have shown great potential in vision tasks such as semantic segmentation. However, most of the existing transformer-based segmentation models neglect the cross-attention between pixel features and class features which impedes the application of transformers. Inspired by the concept of object queries in k-means Mask Transformer, we develop cluster learning and contrastive cluster assignment (CCA) for medical image segmentation in this paper. The cluster learning leverages the object queries to fit the feature-level cluster centers. The contrastive cluster assignment is introduced to guide the pixel class prediction using the cluster centers. Our method is a plug-in and can be integrated into any model. We design two networks for supervised segmentation tasks and semi-supervised segmentation tasks respectively. We equip the decoder with our proposed modules for the supervised segmentation to improve the pixel-level predictions. For the semi-supervised segmentation, we enhance the feature extraction capability of the encoder by using our proposed modules. We conduct comprehensive comparison and ablation experiments on public medical image datasets (ACDC, LA, Synapse, and ISIC2018), the results demonstrate that our proposed models outperform state-of-the-art models consistently, validating the effectiveness of our proposed method. The source code is accessible at https://github.com/zhujinghua1234/CCA-Seg .},
+  archive      = {J_NN},
+  author       = {Jinghua Zhu and Chengying Huang and Heran Xi and Hui Cui},
+  doi          = {10.1016/j.neunet.2025.107415},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107415},
+  shortjournal = {Neural Netw.},
+  title        = {CCA: Contrastive cluster assignment for supervised and semi-supervised medical image segmentation},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fixed-time synchronization of proportional delay memristive
+complex-valued competitive neural networks. <em>NN</em>, <em>188</em>,
+107411. (<a href="https://doi.org/10.1016/j.neunet.2025.107411">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The fixed-time synchronization (FXS) is considered for memristive complex-valued competitive neural networks (MCVCNNs) with proportional delays. Two less conservative criteria supporting the FXS of MCVCNNs are founded by involving Lyapunov method and inequality techniques. Suitable switch controllers are designed by defining different norms of complex numbers instead of treating complex-valued neural networks as two real-valued systems. Furthermore, the settling time (ST) has been approximated. Finally, two simulations are shown to confirm the effectiveness of criteria in this paper and the outcomes of practical application in image protection.},
+  archive      = {J_NN},
+  author       = {Jiapeng Han and Liqun Zhou},
+  doi          = {10.1016/j.neunet.2025.107411},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107411},
+  shortjournal = {Neural Netw.},
+  title        = {Fixed-time synchronization of proportional delay memristive complex-valued competitive neural networks},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SuperM2M: Supervised and mixture-to-mixture co-learning for
+speech enhancement and noise-robust ASR. <em>NN</em>, <em>188</em>,
+107408. (<a href="https://doi.org/10.1016/j.neunet.2025.107408">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The current dominant approach for neural speech enhancement is based on supervised learning by using simulated training data. The trained models, however, often exhibit limited generalizability to real-recorded data. To address this, this paper investigates training enhancement models directly on real target-domain data. We propose to adapt mixture-to-mixture (M2M) training, originally designed for speaker separation, for speech enhancement, by modeling multi-source noise signals as a single, combined source. In addition, we propose a co-learning algorithm that improves M2M with the help of supervised algorithms. When paired close-talk and far-field mixtures are available for training, M2M realizes speech enhancement by training a deep neural network (DNN) to produce speech and noise estimates in a way such that they can be linearly filtered to reconstruct the close-talk and far-field mixtures. This way, the DNN can be trained directly on real mixtures, and can leverage close-talk and far-field mixtures as a weak supervision to enhance far-field mixtures. To improve M2M, we combine it with supervised approaches to co-train the DNN, where mini-batches of real close-talk and far-field mixture pairs and mini-batches of simulated mixture and clean speech pairs are alternately fed to the DNN, and the loss functions are respectively (a) the mixture reconstruction loss on the real close-talk and far-field mixtures and (b) the regular enhancement loss on the simulated clean speech and noise. We find that, this way, the DNN can learn from real and simulated data to achieve better generalization to real data. We name this algorithm SuperM2M (supervised and mixture-to-mixture co-learning). Evaluation results on the CHiME-4 dataset show its effectiveness and potential.},
+  archive      = {J_NN},
+  author       = {Zhong-Qiu Wang},
+  doi          = {10.1016/j.neunet.2025.107408},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107408},
+  shortjournal = {Neural Netw.},
+  title        = {SuperM2M: Supervised and mixture-to-mixture co-learning for speech enhancement and noise-robust ASR},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Revisiting low-homophily for graph-based fraud detection.
+<em>NN</em>, <em>188</em>, 107407. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107407">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The openness of Internet stimulates a large number of fraud behaviors which have become a huge threat. Graph-based fraud detectors have attracted extensive interest since the abundant structure information of graph data has proved effective. Conventional Graph Neural Network (GNN) approaches reveal fraudsters based on the homophily assumption. But fraudsters typically generate heterophilous connections and label-imbalanced neighborhood. Such behaviors deteriorate the performance of GNNs in fraud detection tasks due to the low homophily in graphs. Though some recent works have noticed the challenges, they either treat the heterophilous connections as homophilous ones or tend to reduce heterophily, which roughly ignore the benefits from heterophily. In this work, an integrated two-strategy framework HeteGAD is proposed to balance both homophily and heterophily information from neighbors. The key lies in explicitly shrinking intra-class distance and increasing inter-class segregation. Specifically, the Heterophily-aware Aggregation Strategy tease out the feature disparity on heterophilous neighbors and augment the disparity between representations with different labels. And the Homophily-aware Aggregation Strategy are devised to capture the homophilous information in global text and augment the representation similarity with the same label. Finally, two corresponding inter-relational attention mechanisms are incorporated to refine the procedure of modeling the interaction of multiple relations. Experiments are conducted to evaluate the proposed method with two real-world datasets, and demonstrate that the HeteGAD outperforms 11 state-of-the-art baselines for fraud detection.},
+  archive      = {J_NN},
+  author       = {Tairan Huang and Qiutong Li and Cong Xu and Jianliang Gao and Zhao Li and Shichao Zhang},
+  doi          = {10.1016/j.neunet.2025.107407},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107407},
+  shortjournal = {Neural Netw.},
+  title        = {Revisiting low-homophily for graph-based fraud detection},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intra-class progressive and adaptive self-distillation.
+<em>NN</em>, <em>188</em>, 107404. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107404">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, knowledge distillation (KD) has become widely used in compressing models, training compact and efficient students to reduce computational load and training time due to the increasing parameters in deep neural networks. To minimize training costs, self-distillation has been proposed, with methods like offline-KD and online-KD requiring pre-trained teachers and multiple networks. However, these self-distillation methods often overlook feature knowledge and category information. In this paper, we introduce Intra-class Progressive and Adaptive Self-Distillation (IPASD), which transfers knowledge from the front to the back in adjacent epochs. This method extracts class-typical features and promotes compactness within classes. By integrating feature-level and logits-level knowledge into strong teacher knowledge and using ground-truth labels as supervision signals, we adaptively optimize the model. We evaluated IPASD on CIFAR-10, CIFAR-100, Tiny ImageNet, Plant Village datasets, and ImageNet showing its superiority over state-of-the-art self-distillation methods in knowledge transfer and model compression. Our codes are available at: https://github.com/JLinye/IPASD .},
+  archive      = {J_NN},
+  author       = {Jianping Gou and Jiaye Lin and Lin Li and Weihua Ou and Baosheng Yu and Zhang Yi},
+  doi          = {10.1016/j.neunet.2025.107404},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107404},
+  shortjournal = {Neural Netw.},
+  title        = {Intra-class progressive and adaptive self-distillation},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AAPMatcher: Adaptive attention pruning matcher for accurate
+local feature matching. <em>NN</em>, <em>188</em>, 107403. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107403">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Local feature matching, which seeks to establish correspondences between two images, serves as a fundamental component in numerous computer vision applications, such as camera tracking and 3D mapping. Recently, Transformer has demonstrated remarkable capability in modeling accurate correspondences for the two input sequences owing to its long-range context integration capability. Whereas, indiscriminate modeling in traditional transformers inevitably introduces noise and includes irrelevant information which can degrade the quality of feature representations. Towards this end, we introduce an adaptive attention pruning matcher for accurate local feature matching (AAPMatcher) , which is designed for robust and accurate local feature matching. We overhaul the traditional uniform feature extraction for sequences by introducing the adaptive pruned transformer (APFormer), which adaptively retains the most profitable attention values for feature consolidation, enabling the network to obtain more useful feature information while filtering out useless information. Moreover, considering the fixed combination of self- and cross-APFormer greatly limits the flexibility of the network, we propose a two-stage adaptive hybrid attention strategy (AHAS) , which achieves the optimal combination for APFormers in a coarse to fine manner. Benefiting from the clean feature representations and the optimal combination of APFormers, AAPMatcher exceeds the state-of-the-art approaches over multiple benchmarks, including pose estimation, homography estimation, and visual localization.},
+  archive      = {J_NN},
+  author       = {Xuan Fan and Sijia Liu and Shuaiyan Liu and Lijun Zhao and Ruifeng Li},
+  doi          = {10.1016/j.neunet.2025.107403},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107403},
+  shortjournal = {Neural Netw.},
+  title        = {AAPMatcher: Adaptive attention pruning matcher for accurate local feature matching},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Structure information preserving domain adaptation network
+for fault diagnosis of sucker rod pumping systems. <em>NN</em>,
+<em>188</em>, 107392. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107392">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fault diagnosis is of great importance to the reliability and security of Sucker Rod Pumping (SRP) oil production system. With the development of digital oilfield, data-driven deep learning SRP fault diagnosis has become the development trend of oilfield system. However, due to the different working conditions, time periods, and areas, the fault diagnosis models trained from certain SRP data do not consider the statistical discrepancy of different SRP systems, resulting in insufficient generalization. To consider the fault diagnosis and generalization performances of deep models at the same time, this paper proposes a Structure Information Preserving Domain Adaptation Network (SIP-DAN) for SRP fault diagnosis. Different from the usual domain adaptation methods, SIP-DAN divides the source domain data into different subdomains according to the fault categories of the source domain, and then realizes structure information preserving domain adaptation through subdomains alignment of the source domain and the target domain. Due to the lack of fault category information in the target domain, we designed a Classifier Voting Assisted Alignment (CVAA) mechanism. The target domain data are divided into clusters using fuzzy clustering algorithm. Then, fault diagnosis classifier trained in source domain is employed to classify the samples in each cluster, and the majority voting principle is used to assign pseudo-labels to each cluster in the target domain. With these pseudo-labels, source and target subdomains alignment is carried out by optimizing the Local Maximum Mean Discrepancy (LMMD) loss to achieve fine-grained domain adaptation. Experimental results illustrate that the proposed method is better than the existing methods in fault diagnosis of SRP systems.},
+  archive      = {J_NN},
+  author       = {Xiaohua Gu and Fei Lu and Liping Yang and Kan Wang and Lusi Li and Guang Yang and Yiling Sun},
+  doi          = {10.1016/j.neunet.2025.107392},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107392},
+  shortjournal = {Neural Netw.},
+  title        = {Structure information preserving domain adaptation network for fault diagnosis of sucker rod pumping systems},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stagger network: Rethinking information loss in medical
+image segmentation with various-sized targets. <em>NN</em>,
+<em>188</em>, 107386. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107386">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Medical image segmentation presents the challenge of segmenting various-size targets, demanding the model to effectively capture both local and global information. Despite recent efforts using CNNs and ViTs to predict annotations of different scales, these approaches often struggle to effectively balance the detection of targets across varying sizes. Simply utilizing local information from CNNs and global relationships from ViTs without considering potential significant divergence in latent feature distributions may result in substantial information loss. To address this issue, in this paper, we will introduce a novel Stagger Network (SNet) and argues that a well-designed fusion structure can mitigate the divergence in latent feature distributions between CNNs and ViTs, thereby reducing information loss. Specifically, to emphasize both global dependencies and local focus, we design a Parallel Module to bridge the semantic gap. Meanwhile, we propose the Stagger Module, trying to fuse the selected features that are more semantically similar. An Information Recovery Module is further adopted to recover complementary information back to the network. As a key contribution, we theoretically analyze that the proposed parallel and stagger strategies would lead to less information loss, thus certifying the SNet’s rationale. Experimental results clearly proved that the proposed SNet excels comparisons with recent SOTAs in segmenting on the Synapse dataset where targets are in various sizes. Besides, it also demonstrates superiority on the ACDC and the MoNuSeg datasets where targets are with more consistent dimensions.},
+  archive      = {J_NN},
+  author       = {Tianyi Liu and Zhaorui Tan and Haochuan Jiang and Kaizhu Huang},
+  doi          = {10.1016/j.neunet.2025.107386},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107386},
+  shortjournal = {Neural Netw.},
+  title        = {Stagger network: Rethinking information loss in medical image segmentation with various-sized targets},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). IBPL: Information bottleneck-based prompt learning for graph
+out-of-distribution detection. <em>NN</em>, <em>188</em>, 107381. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107381">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When training and test graph samples follow different data distributions, graph out-of-distribution (OOD) detection becomes an indispensable component of constructing the reliable and safe graph learning systems. Motivated by the significant progress on prompt learning, graph prompt-based methods, which enable a well-trained graph neural network to detect OOD graphs without modifying any model parameters, have been a standard benchmark with promising computational efficiency and model effectiveness. However, these methods ignore the influence of overlapping features existed in both in-distribution (ID) and OOD graphs, which weakens the difference between them and leads to sub-optimal detection results. In this paper, we present the I nformation B ottleneck-based P rompt L earning (IBPL) to overcome this challenging problem. Specifically, IBPL includes a new graph prompt that jointly performs the mask operation on node features and the graph structure. Building upon this, we develop an information bottleneck (IB)-based objective to optimize the proposed graph prompt. Since the overlapping features are inaccessible, IBPL introduces the noise data augmentation which generates a series of perturbed graphs to fully covering the overlapping features. Through minimizing the mutual information between the prompt graph and the perturbed graphs, our objective can eliminate the overlapping features effectively. In order to avoid the negative impact of perturbed graphs, IBPL simultaneously maximizes the mutual information between the prompt graph and the category label for better extracting the ID features. We conduct experiments on multiple real-world datasets in both supervised and unsupervised scenarios. The empirical results and extensive model analyses demonstrate the superior performance of IBPL over several competitive baselines.},
+  archive      = {J_NN},
+  author       = {Yanan Cao and Fengzhao Shi and Qing Yu and Xixun Lin and Chuan Zhou and Lixin Zou and Peng Zhang and Zhao Li and Dawei Yin},
+  doi          = {10.1016/j.neunet.2025.107381},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107381},
+  shortjournal = {Neural Netw.},
+  title        = {IBPL: Information bottleneck-based prompt learning for graph out-of-distribution detection},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimating uncertainty from feed-forward network based
+sensing using quasi-linear approximation. <em>NN</em>, <em>188</em>,
+107376. (<a href="https://doi.org/10.1016/j.neunet.2025.107376">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A fundamental problem in neural network theory is the quantification of uncertainty as it propagates through these constructs. Such quantification is crucial as neural networks become integrated into broader engineered systems that render decisions based on their outputs. In this paper, we engage the problem of estimating uncertainty in feedforward neural network constructs. Mathematically, the problem, in essence, amounts to understanding how the moments of an input distribution become modifies as they move through network layers. Despite its straightforward formulation, the nonlinear nature of modern feedforward architectures makes this is a mathematically challenging problem. Most contemporary approaches rely on some form of Monte Carlo sampling to construct inter-laminar distributions. Here, we borrow an approach from the control systems community known as quasilinear approximation, to enable a more analytical approach to the uncertainty quantification problem in this setting. Specifically, by using quasilinear approximation, nonlinearities are linearized in terms of the expectation of their gain in an input–output sense. We derive these expectations for several commonly used nonlinearities, under the assumption of Gaussian inputs. We then establish that the ensuing approximation is accurate relative to traditional linearization. Furthermore, we provide a rigorous example how this method can enable formal estimation of uncertainty in latent variables upstream of the network, within a target-tracking case study.},
+  archive      = {J_NN},
+  author       = {Songhan Zhang and Matthew Singh and Delsin Menolascino and ShiNung Ching},
+  doi          = {10.1016/j.neunet.2025.107376},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107376},
+  shortjournal = {Neural Netw.},
+  title        = {Estimating uncertainty from feed-forward network based sensing using quasi-linear approximation},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cauchy activation function and XNet. <em>NN</em>,
+<em>188</em>, 107375. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107375">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We have developed a novel activation function, named the Cauchy Activation Function . This function is derived from the Cauchy Integral Theorem in complex analysis and is specifically tailored for problems requiring high precision. This innovation has led to the creation of a new class of neural networks, which we call (Comple)XNet, or simply XNet. We will demonstrate that XNet is particularly effective for high-dimensional challenges such as image classification and solving Partial Differential Equations (PDEs). Our evaluations show that XNet significantly outperforms established benchmarks like MNIST and CIFAR-10 in computer vision, and offers substantial advantages over Physics-Informed Neural Networks (PINNs) in both low-dimensional and high-dimensional PDE scenarios.},
+  archive      = {J_NN},
+  author       = {Xin Li and Zhihong Xia and Hongkun Zhang},
+  doi          = {10.1016/j.neunet.2025.107375},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107375},
+  shortjournal = {Neural Netw.},
+  title        = {Cauchy activation function and XNet},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A hierarchical mixture-of-experts framework for few labeled
+node classification. <em>NN</em>, <em>188</em>, 107285. (<a
+href="https://doi.org/10.1016/j.neunet.2025.107285">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {F ew L abeled N ode C lassification ( FLNC ) is a challenging subtask of node classification, where training nodes are extremely limited, often with only one or two labels per class. While Graph Neural Networks (GNNs) show promise, they often suffer from feature convergence. A common method to address this challenge is multi-perspective feature extraction, with the Mixture of Experts (MoE) model being a popular approach. However, directly applying MoE to FLNC frequently results in overfitting. To address these issues, we propose the Hierarchical Mixture-of-Experts (HMoE) framework. First, we mitigate overfitting by applying three data augmentation techniques to enrich input features. Next, we design a novel hierarchical mixture-of-experts encoder to achieve diversified feature representations, where the first layer extracts unique feature information, and the second layer refines shared information. Additionally, we design an auxiliary task to distinguish between original and augmented data, using a gradient reversal mechanism to enhance the feature representation ability of graph data. The experimental results show that HMoE outperforms the baseline methods, achieving an average 1.2% performance improvement across six datasets.},
+  archive      = {J_NN},
+  author       = {Yimeng Wang and Zhiyao Yang and Xiangjiu Che},
+  doi          = {10.1016/j.neunet.2025.107285},
+  journal      = {Neural Networks},
+  month        = {8},
+  pages        = {107285},
+  shortjournal = {Neural Netw.},
+  title        = {A hierarchical mixture-of-experts framework for few labeled node classification},
+  volume       = {188},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

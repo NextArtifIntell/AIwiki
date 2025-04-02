@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPAMI_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpami---61">TPAMI - 61</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Heterogeneous correlation aware regularization for
+sequential confidence calibration. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3546461">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite notable advancements across various tasks, deep sequence recognition models are shown to grapple with the dilemma of over-confidence, leading to unreliable predicted confidence, necessitating the need for calibration. Current efforts predominantly focus on classification model calibration, leaving the sequence recognition model calibration analysis underexplored and challenging. In this work, we discover that the primary reason for over-confidence in sequence recognition models stems from the one-hot encoding target sequence training paradigm and identify two distinct manifestations of over-confidence: perception and semantic context over-confidence. To address these challenges, we propose a heterogeneous correlation aware sequence regularization (HCSR) method that adaptively incorporates correlated sequences into training alongside the target sequence as additional supervision to regularize the probability of the target sequence from arbitrarily escalating. Specifically, a correlated sequence mining (CSM) model is designed, capable of efficiently mining heterogeneous correlated sequences, which can be flexibly customized to search for specific types of correlated sequences in demand to facilitate the calibration of corresponding types of over-confidence in the calibrating model, thereby achieving fine-grained calibration. Meanwhile, an adaptive calibration module is introduced to adaptively coordinate the optimization weights between the target sequence and correlated sequences, enabling the co-calibration among different samples. Comprehensive experiments conducted on several widely employed sequence recognition tasks demonstrate that the proposed method outperforms the current competing methods by a substantial margin. The code is available at  https://github.com/husterpzh/HCSR.},
+  archive      = {J_TPAMI},
+  author       = {Zhenghua Peng and Tianshui Chen and Shuangping Huang and Yunqing Hu},
+  doi          = {10.1109/TPAMI.2025.3546461},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Heterogeneous correlation aware regularization for sequential confidence calibration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pixel2Pixel: A pixelwise approach for zero-shot single image
+denoising. <em>TPAMI</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3546870">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose Pixel2Pixel, a novel zero-shot image denoising framework that leverages the non-local self-similarity of images to generate a large number of training samples using only the input noisy image. This framework employs a compact convolutional neural network architecture to achieve high-quality image denoising. Given a single observed noisy image, we first aim to obtain multiple images with different noise versions. We ensure that the content remains as consistent as possible with the true signal of the noisy image while keeping the noise independent. Specifically, we construct a pixel bank tensor, where each pixel consists of the most similar pixels from the non-local region of the noisy image. Then, multiple training samples, also known as pseudo instances, can be derived from the pixel bank by randomly pixel sampling. By harnessing pixel- wise random sampling, Pixel2Pixel generates a large number of training pseudo instances, thus avoiding reliance on specific training data. In addition, this non-local pixel selection and random sampling strategy helps to break down the spatial correlation of real-world noise as well. Since the proposed method does not require accurate priors on the noise distribution and clean training images, it is suitable for a wide range of noise types and different noise levels, exhibiting strong generalization ability, especially in real noisy scenes. Extensive experiments across various noise types show that Pixel2Pixel outperforms existing methods. The code is available at https://github.com/qingma2016/Pixel2Pixel.},
+  archive      = {J_TPAMI},
+  author       = {Qing Ma and Junjun Jiang and Xiong Zhou and Pengwei Liang and Xianming Liu and Jiayi Ma},
+  doi          = {10.1109/TPAMI.2025.3546870},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Pixel2Pixel: A pixelwise approach for zero-shot single image denoising},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SVGDreamer++: Advancing editability and diversity in
+text-guided SVG generation. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3547889">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, text-guided scalable vector graphics (SVG) synthesis has shown great promise in domains like iconography and sketching. However, existing Text-to-SVG methods often face challenges in editability, visual quality, and diversity. To address these issues, we propose a novel framework for text-guided SVG synthesis that significantly enhances editability, quality, and diversity. To enhance the editability of output SVGs, we introduce a Hierarchical Image VEctorization (HIVE) framework that operates at the semantic object level and supervises the optimization of components within the vector object. This approach facilitates the decoupling of vector graphics into distinct objects and component levels. Our proposed HIVE algorithm, informed by image segmentation priors, not only ensures a more precise representation of vector graphics but also enables fine-grained editing capabilities within vector objects. To improve the diversity of output SVGs, we present a Vectorized Particle-based Score Distillation (VPSD) approach. VPSD addresses over-saturation issues in existing methods and enhances sample diversity. A pre-trained reward model is incorporated to re-weight vector particles, improving aesthetic appeal and enabling faster convergence. Additionally, we design a novel adaptive vector primitives control strategy, which allows for the dynamic adjustment of the number of primitives, thereby enhancing the presentation of graphic details. Extensive experiments validate the effectiveness of the proposed method, demonstrating its superiority over baseline methods in terms of editability, visual quality, and diversity. We also show that our new method supports up to six distinct vector styles, capable of generating high-quality vector assets suitable for stylized vector design and poster design},
+  archive      = {J_TPAMI},
+  author       = {Ximing Xing and Qian Yu and Chuang Wang and Haitao Zhou and Jing Zhang and Dong Xu},
+  doi          = {10.1109/TPAMI.2025.3547889},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {SVGDreamer++: Advancing editability and diversity in text-guided SVG generation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Measuring the validity of clustering validation datasets.
+<em>TPAMI</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548011">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Clustering techniques are often validated using benchmark datasets where class labels are used as ground-truth clusters. However, depending on the datasets, class labels may not align with the actual data clusters, and such misalignment hampers accurate validation. Therefore, it is essential to evaluate and compare datasets regarding their cluster-label matching (CLM), i.e., how well their class labels match actual clusters. Internal validation measures (IVMs), like Silhouette, can compare CLM over different labeling of the same dataset, but are not designed to do so across different datasets. We thus introduce Adjusted IVMs as fast and reliable methods to evaluate and compare CLM across datasets. We establish four axioms that require validation measures to be independent of data properties not related to cluster structure (e.g., dimensionality, dataset size). Then, we develop standardized protocols to convert any IVM to satisfy these axioms, and use these protocols to adjust six widely used IVMs. Quantitative experiments (1) verify the necessity and effectiveness of our protocols and (2) show that adjusted IVMs outperform the competitors, including standard IVMs, in accurately evaluating CLM both within and across datasets. We also show that the datasets can be filtered or improved using our method to form more reliable benchmarks for clustering validation.},
+  archive      = {J_TPAMI},
+  author       = {Hyeon Jeon and Michaël Aupetit and DongHwa Shin and Aeri Cho and Seokhyeon Park and Jinwook Seo},
+  doi          = {10.1109/TPAMI.2025.3548011},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Measuring the validity of clustering validation datasets},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bayesian variance change point detection with credible sets.
+<em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548012">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a novel Bayesian approach to detect changes in the variance of a Gaussian sequence model, focusing on quantifying the uncertainty in the change point locations and providing a scalable algorithm for inference. We do that by framing the problem as a product of multiple single changes in the scale parameter. We fit the model through an iterative procedure similar to what is done for additive models. The novelty is that each iteration returns a probability distribution on time instances, which captures the uncertainty in the change point location. Leveraging a recent result in the literature, we can show that our proposal is a variational approximation of the exact model posterior distribution. We study the convergence of the algorithm and the change point localization rate. Extensive experiments in simulation studies and applications to biological data illustrate the performance of our method.},
+  archive      = {J_TPAMI},
+  author       = {Lorenzo Cappello and Oscar Hernan Madrid Padilla},
+  doi          = {10.1109/TPAMI.2025.3548012},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Bayesian variance change point detection with credible sets},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Class-agnostic repetitive action counting using wearable
+devices. <em>TPAMI</em>, 1–13. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548131">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present Class-agnostic Repetitive action Counting (CaRaCount), a novel approach to count repetitive human actions in the wild using wearable devices time series data. CaRaCount is the first few-shot class-agnostic method, being able to count repetitions of any action class with only a short exemplar data sequence containing a few examples from the action class of interest. To develop and evaluate this method, we collect a large-scale time series dataset of repetitive human actions in various context, containing smartwatch data from 10 subjects performing 50 different activities. Experiments on this dataset and three other activity counting datasets namely Crossfit, Recofit, and MM-Fit show that CaRaCount can count repetitive actions with low error, and it outperforms other baselines and state-of-the-art action counting methods. Finally, with a user experience study, we evaluate the usability of our real-time implementation. Our results highlight the efficiency and effectiveness of our approach when deployed outside the laboratory environments.},
+  archive      = {J_TPAMI},
+  author       = {Duc Duy Nguyen and Lam Thanh Nguyen and Yifeng Huang and Cuong Pham and Minh Hoai},
+  doi          = {10.1109/TPAMI.2025.3548131},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Class-agnostic repetitive action counting using wearable devices},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rate-distortion theory in coding for machines and its
+applications. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548516">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent years have seen a tremendous growth in both the capability and popularity of automatic machine analysis of media, especially images and video. As a result, a growing need for efficient compression methods optimised for machine vision, rather than human vision, has emerged. To meet this growing demand, significant developments have been made in image and video coding for machines. Unfortunately, while there is a substantial body of knowledge regarding rate-distortion theory for human vision, the same cannot be said of machine analysis. In this paper, we greatly extend the current rate-distortion theory for machines, providing insight into important design considerations of machine-vision codecs. We then utilise this newfound understanding to improve several methods for learned image coding for machines. Our proposed methods achieve state-of-the-art rate-distortion performance on several computer vision tasks – classification, instance and semantic segmentation, and object detection.},
+  archive      = {J_TPAMI},
+  author       = {Alon Harell and Yalda Foroutan and Nilesh Ahuja and Parual Datta and Bhavya Kanzariya and V. Srinivasa Somayazulu and Omesh Tickoo and Anderson de Andrade and Ivan V. Bajić},
+  doi          = {10.1109/TPAMI.2025.3548516},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Rate-distortion theory in coding for machines and its applications},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Visible-thermal tiny object detection: A benchmark dataset
+and baselines. <em>TPAMI</em>, 1–8. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3544621">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visible-thermal small object detection (RGBT SOD) is a significant yet challenging task with a wide range of applications, including video surveillance, traffic monitoring, search and rescue. However, existing studies mainly focus on either visible or thermal modality, while RGBT SOD is rarely explored. Although some RGBT datasets have been developed, the insufficient quantity, limited diversity, unitary application, misaligned images and large target size cannot provide an impartial benchmark to evaluate RGBT SOD algorithms. In this paper, we build the first large-scale benchmark with high diversity for RGBT SOD (namely RGBT-Tiny), including 115 paired sequences, 93 K frames and 1.2 M manual annotations. RGBT-Tiny contains abundant objects (7 categories) and high-diversity scenes (8 types that cover different illumination and density variations). Note that, over 81% of objects are smaller than 16×16, and we provide paired bounding box annotations with tracking ID to offer an extremely challenging benchmark with wide-range applications, such as RGBT image fusion, object detection and tracking. In addition, we propose a scale adaptive fitness (SAFit) measure that exhibits high robustness on both small and large objects. The proposed SAFit can provide reasonable performance evaluation and promote detection performance. Based on the proposed RGBT-Tiny dataset, extensive evaluations have been conducted with IoU and SAFit metrics, including 32 recent state-of-the-art algorithms that cover four different types (i.e., visible generic detection, visible SOD, thermal SOD and RGBT object detection). Project is available at https://github.com/XinyiYing/RGBT-Tiny.},
+  archive      = {J_TPAMI},
+  author       = {Xinyi Ying and Chao Xiao and Wei An and Ruojing Li and Xu He and Boyang Li and Xu Cao and Zhaoxu Li and Yingqian Wang and Mingyuan Hu and Qingyu Xu and Zaiping Lin and Miao Li and Shilin Zhou and Weidong Sheng and Li Liu},
+  doi          = {10.1109/TPAMI.2025.3544621},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-8},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Visible-thermal tiny object detection: A benchmark dataset and baselines},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the upper bounds of number of linear regions and
+generalization error of deep convolutional neural networks.
+<em>TPAMI</em>, 1–8. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548620">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding the effect of hyperparameters of the network structure on the performance of Convolutional Neural Networks (CNNs) remains the most fundamental and urgent issue in deep learning, and we attempt to address this issue based on the piecewise linear (PWL) function nature of CNNs in this paper. Firstly, the operations of convolutions, ReLUs and Max pooling in a CNN are represented as the multiplication of multiple matrices for a fixed sample in order to obtain an algebraic expression of CNNs, this expression clearly suggests that CNNs are PWL functions. Although such representation has high time complexity, it provides a more convenient and intuitive way to study the mathematical properties of CNNs. Secondly, we develop a tight bound of the number of linear regions and the upper bounds of generalization error for CNNs, both taking into account factors such as the number of layers, dimension of pooling, and the width in the network. The above research results provide a possible guidance for designing and training CNNs.},
+  archive      = {J_TPAMI},
+  author       = {Degang Chen and Jiayu Liu and Xiaoya Che},
+  doi          = {10.1109/TPAMI.2025.3548620},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-8},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {On the upper bounds of number of linear regions and generalization error of deep convolutional neural networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graph foundation models: Concepts, opportunities and
+challenges. <em>TPAMI</em>, 1–23. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548729">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Foundation models have emerged as critical components in a variety of artificial intelligence applications, and showcase significant success in natural language processing and several other domains. Meanwhile, the field of graph machine learning is witnessing a paradigm transition from shallow methods to more sophisticated deep learning approaches. The capabilities of foundation models in generalization and adaptation motivate graph machine learning researchers to discuss the potential of developing a new graph learning paradigm. This paradigm envisions models that are pre-trained on extensive graph data and can be adapted for various graph tasks. Despite this burgeoning interest, there is a noticeable lack of clear definitions and systematic analyses pertaining to this new domain. To this end, this article introduces the concept of Graph Foundation Models (GFMs), and offers an exhaustive explanation of their key characteristics and underlying technologies. We proceed to classify the existing work related to GFMs into three distinct categories, based on their dependence on graph neural networks and large language models. In addition to providing a thorough review of the current state of GFMs, this article also outlooks potential avenues for future research in this rapidly evolving domain.},
+  archive      = {J_TPAMI},
+  author       = {Jiawei Liu and Cheng Yang and Zhiyuan Lu and Junze Chen and Yibo Li and Mengmei Zhang and Ting Bai and Yuan Fang and Lichao Sun and Philip S. Yu and Chuan Shi},
+  doi          = {10.1109/TPAMI.2025.3548729},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-23},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Graph foundation models: Concepts, opportunities and challenges},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning to rebalance multi-modal optimization by adaptively
+masking subnetworks. <em>TPAMI</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3547417">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modal learning aims to enhance performance by unifying models from various modalities but often faces the “modality imbalance” problem in real data, leading to a bias towards dominant modalities and neglecting others, thereby limiting its overall effectiveness. To address this challenge, the core idea is to balance the optimization of each modality to achieve a joint optimum. Existing approaches often employ a modal-level control mechanism for adjusting the update of each modal parameter. However, such a global-wise updating mechanism ignores the different importance of each parameter. Inspired by subnetwork optimization, we explore a uniform sampling-based optimization strategy and find it more effective than global-wise updating. According to the findings, we further propose a novel importance sampling-based, element-wise joint optimization method, called Adaptively Mask Subnetworks Considering Modal Significance (AMSS). Specifically, we incorporate mutual information rates to determine the modal significance and employ non-uniform adaptive sampling to select foreground subnetworks from each modality for parameter updates, thereby rebalancing multi-modal learning. Additionally, we demonstrate the reliability of the AMSS strategy through convergence analysis. Building upon theoretical insights, we further enhance the multi-modal mask subnetwork strategy using unbiased estimation, referred to as AMSS+. Extensive experiments reveal the superiority of our approach over comparison methods.},
+  archive      = {J_TPAMI},
+  author       = {Yang Yang and Hongpeng Pan and Qing-Yuan Jiang and Yi Xu and Jinhui Tang},
+  doi          = {10.1109/TPAMI.2025.3547417},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Learning to rebalance multi-modal optimization by adaptively masking subnetworks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A lightweight deep exclusion unfolding network for single
+image reflection removal. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548148">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Single Image Reflection Removal (SIRR) is a canonical blind source separation problem and refers to the issue of separating a reflection-contaminated image into a transmission and a reflection image. The core challenge lies in minimizing the commonalities among different sources. Existing deep learning approaches either neglect the significance of feature interactions or rely on heuristically designed architectures. In this paper, we propose a novel Deep Exclusion unfolding Network (DExNet), a lightweight, interpretable, and effective network architecture for SIRR. DExNet is principally constructed by unfolding and parameterizing a simple iterative Sparse and Auxiliary Feature Update (i-SAFU) algorithm, which is specifically designed to solve a new model-based SIRR optimization formulation incorporating a general exclusion prior. This general exclusion prior enables the unfolded SAFU module to inherently identify and penalize commonalities between the transmission and reflection features, ensuring more accurate separation. The principled design of DExNet not only enhances its interpretability but also significantly improves its performance. Comprehensive experiments on four benchmark datasets demonstrate that DExNet achieves state-of-the-art visual and quantitative results while utilizing only approximately 8% of the parameters required by leading methods.},
+  archive      = {J_TPAMI},
+  author       = {Jun-Jie Huang and Tianrui Liu and Zihan Chen and Xinwang Liu and Meng Wang and Pier Luigi Dragotti},
+  doi          = {10.1109/TPAMI.2025.3548148},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {A lightweight deep exclusion unfolding network for single image reflection removal},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spatial residual for underwater object detection.
+<em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548652">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Feature drift is caused by the dynamic coupling of target features and degradation factors, which reduce underwater detector performance. We redefine feature drift as the instability of target features within boundary constraints while solving partial differential equations (PDEs). From this insight, we propose the Spatial Residual (SR) block, which uses SkipCut to establish effective constraints across the network width for solving PDEs and optimizes the solution space. It is implemented as a general-purpose backbone with 5 Spatial Residuals (BSR5) for complex feature scenarios. Specifically, BSR5 extracts discrete channel slices through SkipCut, where each sliced feature is parsed within the appropriate data capacity. In gradient backpropagation, SkipCut functions as a ShortCut, optimizing information flow and gradient allocation to enhance performance and accelerate training. Experiments on the RUOD dataset show that BSR5-integrated DETRs and YOLOs achieve state-of-the-art results for conventional and end-to-end detectors. Specifically, our BSR5-DETR improves 1.3% and 2.7% AP than RT-DETR with ResNet-101, while reducing parameters by 41.6% and 6.6%, respectively. Further validation highlights BSR5&#39;s strong convergence and robustness, especially in training from scratch scenarios, making it well suited for data-scarce, resource-constrained, and real-time tasks.},
+  archive      = {J_TPAMI},
+  author       = {Jingchun Zhou and Zongxin He and Dehuan Zhang and Siyuan Liu and Xianping Fu and Xuelong Li},
+  doi          = {10.1109/TPAMI.2025.3548652},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Spatial residual for underwater object detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MAIR++: Improving multi-view attention inverse rendering
+with implicit lighting representation. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548679">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a scene-level inverse rendering framework that uses multi-view images to decompose the scene into geometry, SVBRDF, and 3D spatially-varying lighting. While multi-view images have been widely used for object-level inverse rendering, scene-level inverse rendering has primarily been studied using single-view images due to the lack of a dataset containing high dynamic range multi-view images with ground-truth geometry, material, and spatially-varying lighting. To improve the quality of scene-level inverse rendering, a novel framework called Multi-view Attention Inverse Rendering (MAIR) was recently introduced. MAIR performs scene-level multi-view inverse rendering by expanding the OpenRooms dataset, designing efficient pipelines to handle multi-view images, and splitting spatially-varying lighting. Although MAIR showed impressive results, its lighting representation is fixed to spherical Gaussians, which limits its ability to render images realistically. Consequently, MAIR cannot be directly used in applications such as material editing. Moreover, its multi-view aggregation networks have difficulties extracting rich features because they only focus on the mean and variance between multi-view features. In this paper, we propose its extended version, called MAIR++. MAIR++ addresses the aforementioned limitations by introducing an implicit lighting representation that accurately captures the lighting conditions of an image while facilitating realistic rendering. Furthermore, we design a directional attention-based multi-view aggregation network to infer more intricate relationships between views. Experimental results show that MAIR++ not only outperforms MAIR and single-view-based methods but also demonstrates robust performance on unseen real-world scenes.},
+  archive      = {J_TPAMI},
+  author       = {JunYong Choi and SeokYeong Lee and Haesol Park and Seung-Won Jung and Ig-Jae Kim and Junghyun Cho},
+  doi          = {10.1109/TPAMI.2025.3548679},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {MAIR++: Improving multi-view attention inverse rendering with implicit lighting representation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hessian-aware zeroth-order optimization. <em>TPAMI</em>,
+1–9. (<a href="https://doi.org/10.1109/TPAMI.2025.3548810">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Zeroth-order optimization algorithms recently emerge as a popular research theme in optimization and machine learning, playing important roles in many deep-learning related tasks such as black-box adversarial attack, deep reinforcement learning, as well as hyper-parameter tuning. Mainstream zeroth-order optimization algorithms, however, concentrate on exploiting zeroth-order-estimated first-order gradient information of the objective landscape. In this paper, we propose a novel meta-algorithm called Hessian-Aware Zeroth-Order (ZOHA) optimization algorithm, which utilizes several canonical variants of zeroth-order-estimated second-order Hessian information of the objective: power-method-based, and Gaussian-smoothing-based. We conclude theoretically that ZOHA enjoys an improved convergence rate compared with existing work without incorporating in zeroth-order optimization second-order Hessian information. Empirical studies on logistic regression as well as the black-box adversarial attack are provided to validate the effectiveness and improved success rates with reduced query complexity of the zeroth-order oracle.},
+  archive      = {J_TPAMI},
+  author       = {Haishan Ye and Zhichao Huang and Cong Fang and Chris Junchi Li and Tong Zhang},
+  doi          = {10.1109/TPAMI.2025.3548810},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-9},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Hessian-aware zeroth-order optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Monte carlo neural PDE solver for learning PDEs via
+probabilistic representation. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548673">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In scenarios with limited available data, training the function-to-function neural PDE solver in an unsupervised manner is essential. However, the efficiency and accuracy of existing methods are constrained by the properties of numerical algorithms, such as finite difference and pseudo-spectral methods, integrated during the training stage. These methods necessitate careful spatiotemporal discretization to achieve reasonable accuracy, leading to significant computational challenges and inaccurate simulations, particularly in cases with substantial spatiotemporal variations. To address these limitations, we propose the Monte Carlo Neural PDE Solver (MCNP Solver) for training unsupervised neural solvers via the PDEs&#39; probabilistic representation, which regards macroscopic phenomena as ensembles of random particles. Compared to other unsupervised methods, MCNP Solver naturally inherits the advantages of the Monte Carlo method, which is robust against spatiotemporal variations and can tolerate coarse step size. In simulating the trajectories of particles, we employ Heun&#39;s method for the convection process and calculate the expectation via the probability density function of neighbouring grid points during the diffusion process. These techniques enhance accuracy and circumvent the computational issues associated with Monte Carlo sampling. Our numerical experiments on convection-diffusion, Allen-Cahn, and Navier-Stokes equations demonstrate significant improvements in accuracy and efficiency compared to other unsupervised baselines.},
+  archive      = {J_TPAMI},
+  author       = {Rui Zhang and Qi Meng and Rongchan Zhu and Yue Wang and Wenlei Shi and Shihua Zhang and Zhi-Ming Ma and Tie-Yan Liu},
+  doi          = {10.1109/TPAMI.2025.3548673},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Monte carlo neural PDE solver for learning PDEs via probabilistic representation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning to explore sample relationships. <em>TPAMI</em>,
+1–15. (<a href="https://doi.org/10.1109/TPAMI.2025.3549300">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite the great success achieved, deep learning technologies usually suffer from data scarcity issues in real-world applications, where existing methods mainly explore sample relationships in a vanilla way from the perspectives of either the input or the loss function. In this paper, we propose a batch transformer module, BatchFormerV1, to equip deep neural networks themselves with the abilities to explore sample relationships in a learnable way. Basically, the proposed method enables data collaboration, e.g., head-class samples will also contribute to the learning of tail classes. Considering that exploring instance-level relationships has very limited impacts on dense prediction, we generalize and refer to the proposed module as BatchFormerV2, which further enables exploring sample relationships for pixel-/patch-level dense representations. In addition, to address the train-test inconsistency where a mini-batch of data samples are neither necessary nor desirable during inference, we also devise a two-stream training pipeline, i.e., a shared model is first jointly optimized with and without BatchFormerV2 which is then removed during testing. The proposed module is plug-and-play without requiring any extra inference cost. Lastly, we evaluate the proposed method on over ten popular datasets, including 1) different data scarcity settings such as long-tailed recognition, zero-shot learning, domain generalization, and contrastive learning; and 2) different visual recognition tasks ranging from image classification to object detection and panoptic segmentation. Code is available at https://zhihou7.github.io/BatchFormer.},
+  archive      = {J_TPAMI},
+  author       = {Zhi Hou and Baosheng Yu and Chaoyue Wang and Yibing Zhan and Dacheng Tao},
+  doi          = {10.1109/TPAMI.2025.3549300},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Learning to explore sample relationships},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Correlated topic modeling for short texts in spherical
+embedding spaces. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550032">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the prevalence of short texts in various forms such as news headlines, tweets, and reviews, short text analysis has gained significant interest in recent times. However, modeling short texts remains a challenging task due to its sparse and noisy nature. In this paper, we propose a new Spherical Correlated Topic Model (SCTM), which takes into account the correlation between topics. Our model integrates word and knowledge graph embeddings to better capture the semantic relationships among short texts. We adopt the von Mises-Fisher distribution to model the high-dimensional word and entity embeddings on a hypersphere, enabling better preservation of the angular relationships between topic vectors. Moreover, knowledge graph embeddings are incorporated to further enrich the semantic meaning of short texts. Experimental results on several datasets demonstrate that our proposed SCTM model outperforms existing models in terms of both topic coherence and document classification. In addition, our model is capable of providing interpretable topics and revealing meaningful correlations among short texts.},
+  archive      = {J_TPAMI},
+  author       = {Hafsa Ennajari and Nizar Bouguila and Jamal Bentahar},
+  doi          = {10.1109/TPAMI.2025.3550032},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Correlated topic modeling for short texts in spherical embedding spaces},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MB-RACS: Measurement-bounds-based rate-adaptive image
+compressed sensing network. <em>TPAMI</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3549986">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conventional compressed sensing (CS) algorithms typically apply a uniform sampling rate to different image blocks. A more strategic approach could be to allocate the number of measurements adaptively, based on each image block&#39;s complexity. In this paper, we propose a Measurement-Bounds-based Rate-Adaptive Image Compressed Sensing Network (MB-RACS) framework, which aims to adaptively determine the sampling rate for each image block in accordance with traditional measurement bounds theory. Moreover, since in real-world scenarios statistical information about the original image cannot be directly obtained, we suggest a multi-stage rate-adaptive sampling strategy. This strategy sequentially adjusts the sampling ratio allocation based on the information gathered from previous samplings. We formulate the multi-stage rate-adaptive sampling as a convex optimization problem and address it using a combination of Newton&#39;s method and binary search techniques. Our experiments demonstrate that the proposed MB-RACS method surpasses current leading methods, with experimental evidence also underscoring the effectiveness of each module within our proposed framework.},
+  archive      = {J_TPAMI},
+  author       = {Yujun Huang and Bin Chen and Naiqi Li and Baoyi An and Shu-Tao Xia and Yaowei Wang},
+  doi          = {10.1109/TPAMI.2025.3549986},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {MB-RACS: Measurement-bounds-based rate-adaptive image compressed sensing network},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BEVHeight++: Toward robust visual centric 3D object
+detection. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3549711">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While most recent autonomous driving system focuses on developing perception methods on ego-vehicle sensors, people tend to overlook an alternative approach to leverage intelligent roadside cameras to extend the perception ability beyond the visual range. We discover that the state-of-the-art vision-centric detection methods perform poorly on roadside cameras. This is because these methods mainly focus on recovering the depth regarding the camera center, where the depth difference between the car and the ground quickly shrinks while the distance increases. In this paper, we propose a simple yet effective approach, dubbed BEVHeight++, to address this issue. In essence, we regress the height to the ground to achieve a distance-agnostic formulation to ease the optimization process of camera-only perception methods. By incorporating both height and depth encoding techniques, we achieve a more accurate and robust projection from 2D to BEV spaces. On popular 3D detection benchmarks of roadside cameras, our method surpasses all previous vision-centric methods by a significant margin. In terms of the ego-vehicle scenario, BEVHeight++ surpasses depth-only methods with increases of +2.8% NDS and +1.7% mAP on the nuScenes test set, and even higher gains of +9.3% NDS and +8.8% mAP on the nuScenes-C benchmark with object-level distortion. Consistent and substantial performance improvements are achieved across the KITTI, KITTI-360, and Waymo datasets as well. The code is available at https://github.com/yanglei18/BEVHeight_Plus.},
+  archive      = {J_TPAMI},
+  author       = {Lei Yang and Tao Tang and Jun Li and Kun Yuan and Kai Wu and Peng Chen and Li Wang and Yi Huang and Lei Li and Xinyu Zhang and Kaicheng Yu},
+  doi          = {10.1109/TPAMI.2025.3549711},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {BEVHeight++: Toward robust visual centric 3D object detection},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Video4DGen: Enhancing video and 4D generation through mutual
+optimization. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550031">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The advancement of 4D (i.e., sequential 3D) generation opens up new possibilities for lifelike experiences in various applications, where users can explore dynamic objects or characters from any viewpoint. Meanwhile, video generative models are receiving particular attention given their ability to produce realistic and imaginative frames. These models are also observed to exhibit strong 3D consistency, indicating the potential to act as world simulators. In this work, we present Video4DGen, a novel framework that excels in generating 4D representations from single or multiple generated videos as well as generating 4D-guided videos. This framework is pivotal for creating high-fidelity virtual contents that maintain both spatial and temporal coherence. The 4D outputs generated by Video4DGen are represented using our proposed Dynamic Gaussian Surfels (DGS), which optimizes time-varying warping functions to transform Gaussian surfels (surface elements) from a static state to a dynamically warped state. We design warped-state geometric regularization and refinements on Gaussian surfels, to preserve the structural integrity and fine-grained appearance details, respectively. Additionally, in order to perform 4D generation from multiple videos and effectively capture representation across spatial, temporal, and pose dimensions, we design multi-video alignment, root pose optimization, and pose-guided frame sampling strategies. The leveraging of continuous warping fields also enables a precise depiction of pose, motion, and deformation over per-video frames. Further, to improve the overall fidelity from the observation of all camera poses, Video4DGen performs novel-view video generation guided by the 4D content, with the proposed confidence-filtered DGS to enhance the quality of generated sequences. In summary, Video4DGen yields dynamic 4D generation with the ability to handle different subject movements, while preserving details in both geometry and appearance. The framework also generates 4D-guided videos with high spatial and temporal coherence. With the ability of 4D and video generation, Video4DGen offers a powerful tool for applications in virtual reality, animation, and beyond.},
+  archive      = {J_TPAMI},
+  author       = {Yikai Wang and Guangce Liu and Xinzhou Wang and Zilong Chen and Jiafang Li and Xin Liang and Fuchun Sun and Jun Zhu},
+  doi          = {10.1109/TPAMI.2025.3550031},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Video4DGen: Enhancing video and 4D generation through mutual optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The NeRF signature: Codebook-aided watermarking for neural
+radiance fields. <em>TPAMI</em>, 1–16. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550166">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural Radiance Fields (NeRF) have been gaining attention as a significant form of 3D content representation. With the proliferation of NeRF-based creations, the need for copyright protection has emerged as a critical issue. Although some approaches have been proposed to embed digital watermarks into NeRF, they often neglect essential model-level considerations and incur substantial time overheads, resulting in reduced imperceptibility and robustness, along with user inconvenience. In this paper, we extend the previous criteria for image watermarking to the model level and propose NeRF Signature, a novel watermarking method for NeRF. We employ a Codebook-aided Signature Embedding (CSE) that does not alter the model structure, thereby maintaining imperceptibility and enhancing robustness at the model level. Furthermore, after optimization, any desired signatures can be embedded through the CSE, and no fine-tuning is required when NeRF owners want to use new binary signatures. Then, we introduce a joint pose-patch encryption watermarking strategy to hide signatures into patches rendered from a specific viewpoint for higher robustness. In addition, we explore a Complexity-Aware Key Selection (CAKS) scheme to embed signatures in high visual complexity patches to enhance imperceptibility. The experimental results demonstrate that our method outperforms other baseline methods in terms of imperceptibility and robustness.},
+  archive      = {J_TPAMI},
+  author       = {Ziyuan Luo and Anderson Rocha and Boxin Shi and Qing Guo and Haoliang Li and Renjie Wan},
+  doi          = {10.1109/TPAMI.2025.3550166},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {The NeRF signature: Codebook-aided watermarking for neural radiance fields},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active supervised cross-modal retrieval. <em>TPAMI</em>,
+1–15. (<a href="https://doi.org/10.1109/TPAMI.2025.3550526">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Supervised Cross-Modal Retrieval (SCMR) achieves significant performance with the supervision provided by substantial label annotations of multi-modal data. However, the requirement for large annotated multi-modal datasets restricts the use of supervised cross-modal retrieval in many practical scenarios. Active Learning (AL) has been proposed to reduce labeling costs while improving performance in various label-dependent tasks, in which the most informative unlabeled samples are selected for labeling and training. Directly exploiting the existing AL methods for supervised cross-modal retrieval may not be a good idea since they only focus on the uncertainty within each modality, ignoring the inter-modality relationship within the text-image pairs. Furthermore, existing methods focus exclusively on the informativeness of data during sample selection, leading to a biased, homogenized set where selected samples often contain nearly identical semantics and are densely distributed in a region of the feature space. Persistent training with such biased data selections can disturb multi-modal representation learning and substantially degrade the retrieval performance of SCMR. In this work, we propose an Active Supervised Cross-Modal Retrieval (ASCMR) framework, which effectively identifies informative multi-modal samples and generates unbiased sample selections. In particular, we propose a probabilistic multi-modal informativeness estimation that captures both the intra-modality and inter-modality uncertainty of multi-modal pairs within a unified representation. To ensure unbiased sample selection, we introduce a density-aware budget allocation strategy that constrains the active learning objective of maximizing the informativeness of selection with a novel semantic density regularization term. The proposed methods are evaluated on three widely used benchmark datasets, MS-COCO, NUS-WIDE, and MIRFlickr, demonstrating our effectiveness in significantly reducing the annotation cost while outperforming other baselines of active learning strategies. We could achieve over 95% of the fully supervised model&#39;s performance by only utilizing 6%, 3%, and 4% active selected samples for MS-COCO, NUS-WIDE, and MIRFlickr, respectively. Our source code is available at https://github.com/openimmc/ascmr.},
+  archive      = {J_TPAMI},
+  author       = {Huaiwen Zhang and Yang Yang and Fan Qi and Shengsheng Qian and Changsheng Xu},
+  doi          = {10.1109/TPAMI.2025.3550526},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Active supervised cross-modal retrieval},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BackMix: Regularizing open set recognition by removing
+underlying fore-background priors. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550703">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Open set recognition (OSR) requires models to classify known samples while detecting unknown samples for real-world applications. Existing studies show impressive progress using unknown samples from auxiliary datasets to regularize OSR models, but they have proved to be sensitive to selecting such known outliers. In this paper, we discuss the aforementioned problem from a new perspective: Can we regularize OSR models without elaborately selecting auxiliary known outliers? We first empirically and theoretically explore the role of foregrounds and backgrounds in open set recognition and disclose that: 1) backgrounds that correlate with foregrounds would mislead the model and cause failures when encounters ‘partially’ known images; 2) Backgrounds unrelated to foregrounds can serve as auxiliary known outliers and provide regularization via global average pooling. Based on the above insights, we propose a new method, Background Mix (BackMix), that mixes the foreground of an image with different backgrounds to remove the underlying fore-background priors. Specifically, BackMix first estimates the foreground with class activation maps (CAMs), then randomly replaces image patches with backgrounds from other images to obtain mixed images for training. With backgrounds de-correlated from foregrounds, the open set recognition performance is significantly improved. The proposed method is quite simple to implement, requires no extra operation for inferences, and can be seamlessly integrated into almost all of the existing frameworks.},
+  archive      = {J_TPAMI},
+  author       = {Yu Wang and Junxian Mu and Hongzhi Huang and Qilong Wang and Pengfei Zhu and Qinghua Hu},
+  doi          = {10.1109/TPAMI.2025.3550703},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {BackMix: Regularizing open set recognition by removing underlying fore-background priors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LMP-GAN: Out-of-distribution detection for non-control data
+malware attacks. <em>TPAMI</em>, 1–13. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550457">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Anomaly detection is a common application of machine learning. Out-of-distribution (OOD) detection in particular is a semi-supervised anomaly detection technique where the detection method is trained only on the inlier (in-distribution) samples—unlike the fully supervised variant, the distribution of the outlier samples are never explicitly modeled in OOD detection tasks. In this work, we design a novel GAN-based OOD detection network specifically designed to protect a cyber-physical signal systems from novel Trojan malware called non-control data (NCD) attack that evades conventional malware detection techniques. Inspired in part by the classical locally most powerful (LMP) test in statistical inferences, the proposed LMP-GAN trains the OOD detector (discriminator) by generating OOD samples that are aimed at making maximal alteration to the inlier samples while evading detection. We experimentally compare the results to the state-of-the-art anomaly detection methods to demonstrate the benefits and the appropriateness of the LMP-GAN OOD detector.},
+  archive      = {J_TPAMI},
+  author       = {David Wood and David Kapp and Temesgen Kebede and Keigo Hirakawa},
+  doi          = {10.1109/TPAMI.2025.3550457},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {LMP-GAN: Out-of-distribution detection for non-control data malware attacks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deformable graph transformer. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550281">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformer-based models have recently shown success in representation learning on graph-structured data beyond natural language processing and computer vision. However, the success is limited to small-scale graphs due to the drawbacks of full dot-product attention on graphs such as the quadratic complexity with respect to the number of nodes and message aggregation from enormous irrelevant nodes. To address these issues, we propose Deformable Graph Transformer (DGT) that performs sparse attention via dynamically selected relevant nodes for efficiently handling large-scale graphs with a linear complexity in the number of nodes. Specifically, our framework first constructs multiple node sequences with various criteria to consider both structural and semantic proximity. Then, combining with our learnable Katz Positional Encodings, the sparse attention is applied to the node sequences for learning node representations with a significantly reduced computational cost. Extensive experiments demonstrate that our DGT achieves superior performance on 7 graph benchmark datasets with 2.5 ∼ 449 times less computational cost compared to transformer-based graph models with full attention},
+  archive      = {J_TPAMI},
+  author       = {Jinyoung Park and Seongjun Yun and Hyeonjin Park and Jaewoo Kang and Jisu Jeong and Kyung-Min Kim and Jung-Woo Ha and Hyunwoo J. Kim},
+  doi          = {10.1109/TPAMI.2025.3550281},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Deformable graph transformer},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Instant gaussian splatting generation for high-quality and
+real-time facial asset rendering. <em>TPAMI</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550195">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional and AI-driven modeling techniques enable high-fidelity 3D asset generation from scans, videos, or text prompts. However, editing and rendering these assets often involves a trade-off between quality and speed. In this paper, we propose GauFace, a novel Gaussian Splatting representation, tailored for efficient rendering of facial mesh with textures. Then, we introduce TransGS, a diffusion transformer that instantly generates the GauFace assets from mesh, textures and lightning conditions. Specifically, we adopt a patch-based pipeline to handle the vast number of Gaussian Points, a novel texel-aligned sampling scheme with UV positional encoding to enhance the throughput of generating GauFace assets. Once trained, TransGS can generate GauFace assets in 5 seconds, delivering high fidelity and real-time facial interaction of 30fps@1440p to a Snapdragon 8 Gen 2 mobile platform. The rich conditional modalities further enable editing and animation capabilities reminiscent of traditional CG pipelines. We conduct extensive evaluations and user studies, compared to traditional renderers, as well as recent neural rendering methods. They demonstrate the superior performance of our approach for facial asset rendering. We also showcase diverse applications of facial assets using our TransGS approach and GauFace representation, across various platforms like PCs, phones, and VR headsets.},
+  archive      = {J_TPAMI},
+  author       = {Dafei Qin and Hongyang Lin and Qixuan Zhang and Kaichun Qiao and Longwen Zhang and Jun Saito and Zijun Zhao and Jingyi Yu and Lan Xu and Taku Komura},
+  doi          = {10.1109/TPAMI.2025.3550195},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Instant gaussian splatting generation for high-quality and real-time facial asset rendering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CLIP-driven transformer for weakly supervised object
+localization. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3548704">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Weakly supervised object localization (WSOL) aims to localize objects using only image-level labels as supervision. Despite recent advancements incorporating transformers into WSOL have resulted in improvements, these methods often rely on category-agnostic attention maps, leading to suboptimal object localization. This paper presents a novel CLIP-DrivenTRansformer (CDTR) that learns category-aware representations for accurate object localization. Specifically, we initially propose a Category-aware Stimulation Module (CSM) that embeds learnable category biases into self-attention maps, enhancing the learning process with auxiliary supervision. Additionally, an Object Constraint Module (OCM) is designed to refine object regions in a self-supervised manner, leveraging the discriminative potential of the self-attention maps provided by CSM. To create a synergistic connection between CSM and OCM, we further develop a Semantic Kernel Integrator (SKI), which generates a semantic kernel for self-attention maps. Meanwhile, we explore the CLIP model and design a Semantic Boost Adapter (SBA) to enrich object representations by integrating semantic-specific image and text representations into self-attention maps. Extensive experimental evaluations on benchmark datasets, such as CUB-200-2011 and ILSVRC highlight the superior performance of our CDTR framework. The code and models for this study are available at https://github.com/zhiweichen0012/CDTR},
+  archive      = {J_TPAMI},
+  author       = {Zhiwei Chen and Yunhang Shen and Liujuan Cao and Shengchuan Zhang and Rongrong Ji},
+  doi          = {10.1109/TPAMI.2025.3548704},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {CLIP-driven transformer for weakly supervised object localization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Re-fed+: A better replay strategy for federated incremental
+learning. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3551732">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) has emerged as a significant distributed machine learning paradigm. It allows the training of a global model through user collaboration without the necessity of sharing their original data. Traditional FL generally assumes that each client&#39;s data remains fixed or static. However, in realworld scenarios, data typically arrives incrementally, leading to a dynamically expanding data domain. In this study, we examine catastrophic forgetting within Federated Incremental Learning (FIL) and focus on the training resources, where edge clients may not have sufficient storage to keep all data or computational budget to implement complex algorithms designed for the server-based environment. We propose a general and lowcost framework for FIL named Re-Fed+, which is designed to help clients cache important samples for replay. Specifically, when a new task arrives, each client initially caches selected previous samples based on their global and local significance. The client then trains the local model using both the cached samples and the new task samples. From a theoretical perspective, we analyze how effectively Re-Fed+ can identify significant samples for replay to alleviate the catastrophic forgetting issue. Empirically, we show that Re-Fed+ achieves competitive performance compared to state-of-the-art methods.},
+  archive      = {J_TPAMI},
+  author       = {Yichen Li and Haozhao Wang and Yining Qi and Wei Liu and Ruixuan Li},
+  doi          = {10.1109/TPAMI.2025.3551732},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Re-fed+: A better replay strategy for federated incremental learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalizable multi-modal adversarial imitation learning for
+non-stationary dynamics. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552228">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Imitation Learning (IL) learns from experts, on which most existing studies assume that the imitator will be deployed in stationary environments. However, real-world scenarios commonly involve perturbations, necessitating robust imitators for non-stationary scenarios. To fulfill this, we leverage a multi-modal expert dataset encompassing diverse dynamics, while still adhering to the shared goal between the experts and imitator. Different from conventional multi-modal IL work that considers reproducing the demonstrated different behaviors, we aim to imitate a policy that rapidly adapts to sudden dynamic changes, even when encountering dynamics unseen during training. We propose a method called Generalizable Multi-modal Adversarial Imitation Learning (GMAIL) for non-stationary dynamics, which adversarially trains a discriminator and a generator. Due to dynamic mismatch between the experts and the imitator, the optimal next state for the imitator may require several steps for the experts to reach, inspiring us to propose to take the state-next-state pairs within multiple steps in the demonstrated trajectories to facilitate imitation under dynamic mismatch. For quick identification of the changed dynamic, GMAIL learns a dynamics-sensitive generator by introducing a history-based context encoder. On a wide range of navigation, locomotion and autonomous driving tasks, empirical results illustrate the effectiveness of GMAIL.},
+  archive      = {J_TPAMI},
+  author       = {Yi-Chen Li and Ningjing Chao and Zongzhang Zhang and Fuxiang Zhang and Lei Yuan and Yang Yu},
+  doi          = {10.1109/TPAMI.2025.3552228},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Generalizable multi-modal adversarial imitation learning for non-stationary dynamics},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CLRNetV2: A faster and stronger lane detector.
+<em>TPAMI</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3551935">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lane is critical in the vision navigation system of intelligent vehicles. Naturally, the lane is a traffic sign with high-level semantics, whereas it owns the specific local pattern which needs detailed low-level features to localize accurately. Using different feature levels is of great importance for accurate lane detection, but it is still under-explored. On the other hand, current lane detection methods still struggle to detect complex dense lanes, such as Y-shape or fork-shape. In this work, we present Cross Layer Refinement Network aiming at fully utilizing both high-level and low-level features in lane detection. In particular, it first detects lanes with high-level semantic features and then performs refinement based on low-level features. In this way, we can exploit more contextual information to detect lanes while leveraging local-detailed features to improve localization accuracy. We present Fast-ROIGather to gather global context, which further enhances the representation of lane features. To detect dense lanes accurately, we propose Correlation Discrimination Module (CDM) to discriminate the correlation of dense lanes, enabling nearly cost-free high-quality dense lane prediction. In addition to our novel network design, we introduce LineIoU loss which regresses lanes as a whole unit to improve localization accuracy. Experiments demonstrate our approach significantly outperforms the state-of-the-art lane detection methods.},
+  archive      = {J_TPAMI},
+  author       = {Tu Zheng and Yifei Huang and Yang Liu and Binbin Lin and Zheng Yang and Deng Cai and Xiaofei He},
+  doi          = {10.1109/TPAMI.2025.3551935},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {CLRNetV2: A faster and stronger lane detector},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Diff9D: Diffusion-based domain-generalized category-level
+9-DoF object pose estimation. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552132">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Nine-degrees-of-freedom (9-DoF) object pose and size estimation is crucial for enabling augmented reality and robotic manipulation. Category-level methods have received extensive research attention due to their potential for generalization to intra-class unknown objects. However, these methods require manual collection and labeling of large-scale real-world training data. To address this problem, we introduce a diffusion-based paradigm for domain-generalized category-level 9-DoF object pose estimation. Our motivation is to leverage the latent generalization ability of the diffusion model to address the domain generalization challenge in object pose estimation. This entails training the model exclusively on rendered synthetic data to achieve generalization to real-world scenes. We propose an effective diffusion model to redefine 9-DoF object pose estimation from a generative perspective. Our model does not require any 3D shape priors during training or inference. By employing the Denoising Diffusion Implicit Model, we demonstrate that the reverse diffusion process can be executed in as few as 3 steps, achieving near real-time performance. Finally, we design a robotic grasping system comprising both hardware and software components. Through comprehensive experiments on two benchmark datasets and the real-world robotic system, we show that our method achieves state-of-the-art domain generalization performance. Our code will be made public at https://github.com/CNJianLiu/Diff9D.},
+  archive      = {J_TPAMI},
+  author       = {Jian Liu and Wei Sun and Hui Yang and Pengchao Deng and Chongpei Liu and Nicu Sebe and Hossein Rahmani and Ajmal Mian},
+  doi          = {10.1109/TPAMI.2025.3552132},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Diff9D: Diffusion-based domain-generalized category-level 9-DoF object pose estimation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Revisiting stochastic multi-level compositional
+optimization. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552197">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper explores stochastic multi-level compositional optimization, where the objective function is a composition of multiple smooth functions. Traditional methods for solving this problem suffer from either sub-optimal sample complexities or require huge batch sizes. To address these limitations, we introduce the Stochastic Multi-level Variance Reduction (SMVR) method. In the expectation case, our SMVR method attains the optimal sample complexity of $\mathcal {O}(1/\epsilon ^{3})$ to find an $\epsilon$-stationary point for non-convex objectives. When the function satisfies convexity or the Polyak-Łojasiewicz (PL) condition, we propose a stage-wise SMVR variant. This variant improves the sample complexity to $\mathcal {O}(1/\epsilon ^{2})$ for convex functions and $\mathcal {O}(1/(\mu \epsilon ))$ for functions meeting the $\mu$-PL condition or $\mu$-strong convexity. These complexities match the lower bounds not only in terms of $\epsilon$ but also in terms of $\mu$ (for PL or strongly convex functions), without relying on large batch sizes in each iteration. Furthermore, in the finite-sum case, we develop the SMVR-FS algorithm, which can achieve a complexity of $\mathcal {O}(\sqrt{n}/\epsilon ^{2})$ for non-convex objectives, $\mathcal {O}(\sqrt{n}/\epsilon \log (1/\epsilon ))$ for convex functions and $\mathcal {O}(\sqrt{n}/\mu \log (1/\epsilon ))$ for objectives satisfying the $\mu$-PL condition, where $n$ denotes the number of functions in each level. To make use of adaptive learning rates, we propose the Adaptive SMVR method, which maintains the same complexities while demonstrating faster convergence in practice.},
+  archive      = {J_TPAMI},
+  author       = {Wei Jiang and Sifan Yang and Yibo Wang and Tianbao Yang and Lijun Zhang},
+  doi          = {10.1109/TPAMI.2025.3552197},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Revisiting stochastic multi-level compositional optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human as points: Explicit point-based 3D human
+reconstruction from single-view RGB images. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552408">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The latest trends in the research field of single-view human reconstruction are devoted to learning deep implicit functions constrained by explicit body shape priors. Despite the remarkable performance improvements compared with traditional processing pipelines, existing learning approaches still exhibit limitations in terms of flexibility, generalizability, robustness, and/or representation capability. To comprehensively address the above issues, in this paper, we investigate an explicit point-based human reconstruction framework named HaP, which utilizes point clouds as the intermediate representation of the target geometric structure. Technically, our approach features fully explicit point cloud estimation (exploiting depth and SMPL), manipulation (SMPL rectification), generation (built upon diffusion), and refinement (displacement learning and depth replacement) in the 3D geometric space, instead of an implicit learning process that can be ambiguous and less controllable. Extensive experiments demonstrate that our framework achieves quantitative performance improvements of 20% to 40% over current state-of-the-art methods, and better qualitative results. Our promising results may indicate a paradigm rollback to the fully-explicit and geometry-centric algorithm design. In addition, we newly contribute a real-scanned 3D human dataset featuring more intricate geometric details. We will make our code and data publicly available at https://github.com/yztang4/HaP.},
+  archive      = {J_TPAMI},
+  author       = {Yingzhi Tang and Qijian Zhang and Yebin Liu and Junhui Hou},
+  doi          = {10.1109/TPAMI.2025.3552408},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Human as points: Explicit point-based 3D human reconstruction from single-view RGB images},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The conditional cauchy-schwarz divergence with applications
+to time-series data and sequential decision making. <em>TPAMI</em>,
+1–16. (<a href="https://doi.org/10.1109/TPAMI.2025.3552434">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Cauchy-Schwarz (CS) divergence was developed by Príncipe et al. in 2000. In this paper, we extend the classic CS divergence to quantify the closeness between two conditional distributions and show that the developed conditional CS divergence can be elegantly estimated by a kernel density estimator from given samples. We illustrate the advantages (e.g., rigorous faithfulness guarantee, lower computational complexity, higher statistical power, and much more flexibility in a wide range of applications) of our conditional CS divergence over previous proposals, such as the conditional KL divergence and the conditional maximum mean discrepancy. We also demonstrate the compelling performance of conditional CS divergence in two machine learning tasks related to time series data and sequential inference, namely time series clustering and uncertainty-guided exploration for sequential decision making. The code of conditional CS divergence is available at https://github.com/SJYuCNEL/conditional_CS_divergence.},
+  archive      = {J_TPAMI},
+  author       = {Shujian Yu and Hongming Li and Sigurd Løkse and Robert Jenssen and José C. Príncipe},
+  doi          = {10.1109/TPAMI.2025.3552434},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {The conditional cauchy-schwarz divergence with applications to time-series data and sequential decision making},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural vector fields: Generalizing distance vector fields by
+codebooks and zero-curl regularization. <em>TPAMI</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552684">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent neural networks based surface reconstruction can be roughly divided into two categories, one warping templates explicitly and the other representing 3D surfaces implicitly. To enjoy the advantages of both, we propose a novel 3D representation, Neural Vector Fields (NVF), which adopts the explicit learning process to manipulate meshes and implicit unsigned distance function (UDF) representation to break the barriers in resolution and topology. This is achieved by directly predicting the displacements from surface queries and modeling shapes as Vector Fields, rather than relying on network differentiation to obtain direction fields as most existing UDF-based methods do. In this way, our approach is capable of encoding both the distance and the direction fields so that the calculation of direction fields is differentiation-free, circumventing the non-trivial surface extraction step. Furthermore, building upon NVFs, we propose to incorporate two types of shape codebooks, ı.e., NVFs (Lite or Ultra), to promote cross-category reconstruction through encoding cross-object priors. Moreover, we propose a new regularization based on analyzing the zero-curl property of NVFs, and implement this through the fully differentiable framework of our NVF (ultra). We evaluate both NVFs on four surface reconstruction scenarios, including watertight vs non-watertight shapes, category-agnostic reconstruction vs category-unseen reconstruction, category-specific, and cross-domain reconstruction.},
+  archive      = {J_TPAMI},
+  author       = {Xianghui Yang and Guosheng Lin and Zhenghao Chen and Luping Zhou},
+  doi          = {10.1109/TPAMI.2025.3552684},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Neural vector fields: Generalizing distance vector fields by codebooks and zero-curl regularization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hard-aware instance adaptive self-training for unsupervised
+cross-domain semantic segmentation. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552484">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The divergence between labeled training data and unlabeled testing data is a significant challenge for recent deep learning models. Unsupervised domain adaptation (UDA) attempts to solve such problem. Recent works show that self-training is a powerful approach to UDA. However, existing methods have difficulty in balancing the scalability and performance. In this paper, we propose a hard-aware instance adaptive self-training framework for UDA on the task of semantic segmentation. To effectively improve the quality and diversity of pseudo-labels, we develop a novel pseudo-label generation strategy with an instance adaptive selector. We further enrich the hard class pseudo-labels with inter-image information through a skillfully designed hard-aware pseudo-label augmentation. Besides, we propose the region-adaptive regularization to smooth the pseudo-label region and sharpen the non-pseudo-label region. For the non-pseudo-label region, consistency constraint is also constructed to introduce stronger supervision signals during model optimization. Our method is so concise and efficient that it is easy to be generalized to other UDA methods. Experiments on GTA5 $\rightarrow$ Cityscapes, SYNTHIA $\rightarrow$ Cityscapes, and Cityscapes $\rightarrow$ Oxford RobotCar demonstrate the superior performance of our approach compared with the state-of-the-art methods. Our codes are available at https://github.com/bupt-ai-cz/HIAST.},
+  archive      = {J_TPAMI},
+  author       = {Chuang Zhu and Kebin Liu and Wenqi Tang and Ke Mei and Jiaqi Zou and Tiejun Huang},
+  doi          = {10.1109/TPAMI.2025.3552484},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Hard-aware instance adaptive self-training for unsupervised cross-domain semantic segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hulk: A universal knowledge translator for human-centric
+tasks. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552604">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human-centric perception tasks, e.g., pedestrian detection, skeleton-based action recognition, and pose estimation, have wide industrial applications, such as metaverse and sports analysis. There is a recent surge to develop human-centric foundation models that can benefit a broad range of human-centric perception tasks. While many human-centric foundation models have achieved success, they did not explore 3D and vision-language tasks for human-centric and required task-specific finetuning. These limitations restrict their application to more downstream tasks and situations. To tackle these problems, we present Hulk, the first multimodal human-centric generalist model, capable of addressing 2D vision, 3D vision, skeleton-based, and vision-language tasks without task-specific finetuning. The key to achieving this is condensing various task-specific heads into two general heads, one for discrete representations, e.g., languages, and the other for continuous representations, e.g., location coordinates. The outputs of two heads can be further stacked into four distinct input and output modalities. This uniform representation enables Hulk to treat diverse human-centric tasks as modality translation, integrating knowledge across a wide range of tasks. Comprehensive evaluations of Hulk on 12 benchmarks covering 8 human-centric tasks demonstrate the superiority of our proposed method, achieving state-of-the-art performance in 11 benchmarks. The code will be available on https://github.com/OpenGVLab/Hulk.},
+  archive      = {J_TPAMI},
+  author       = {Yizhou Wang and Yixuan Wu and Weizhen He and Xun Guo and Feng Zhu and Lei Bai and Rui Zhao and Jian Wu and Tong He and Wanli Ouyang and Shixiang Tang},
+  doi          = {10.1109/TPAMI.2025.3552604},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Hulk: A universal knowledge translator for human-centric tasks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Systematic bias of machine learning regression models and
+correction. <em>TPAMI</em>, 1–11. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552368">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine learning models for continuous outcomes often yield systematically biased predictions, particularly for values that largely deviate from the mean. Specifically, predictions for large-valued outcomes tend to be negatively biased (underestimating actual values), while those for small-valued outcomes are positively biased (overestimating actual values). We refer to this linear central tendency warped bias as the “systematic bias of machine learning regression”. In this paper, we first demonstrate that this systematic prediction bias persists across various machine learning regression models, and then delve into its theoretical underpinnings. To address this issue, we propose a general constrained optimization approach designed to correct this bias and develop computationally efficient implementation algorithms. Simulation results indicate that our correction method effectively eliminates the bias from the predicted outcomes. We apply the proposed approach to the prediction of brain age using neuroimaging data. In comparison to competing machine learning regression models, our method effectively addresses the longstanding issue of “systematic bias of machine learning regression” in neuroimaging-based brain age calculation, yielding unbiased predictions of brain age.},
+  archive      = {J_TPAMI},
+  author       = {Hwiyoung Lee and Shuo Chen},
+  doi          = {10.1109/TPAMI.2025.3552368},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-11},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Systematic bias of machine learning regression models and correction},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HOZ++: Versatile hierarchical object-to-zone graph for
+object navigation. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552987">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The goal of object navigation task is to reach the expected objects using visual information in unseen environments. Previous works typically implement deep models as agents that are trained to predict actions based on visual observations. Despite extensive training, agents often fail to make wise decisions when navigating in unseen environments toward invisible targets. In contrast, humans demonstrate a remarkable talent to navigate toward targets even in unseen environments. This superior capability is attributed to the cognitive map in the hippocampus, which enables humans to recall past experiences in similar situations and anticipate future occurrences during navigation. It is also dynamically updated with new observations from unseen environments. The cognitive map equips humans with a wealth of prior knowledge, significantly enhancing their navigation capabilities. Inspired by human navigation mechanisms, we propose the Hierarchical Object-to-Zone (HOZ++) graph, which encapsulates the regularities among objects, zones, and scenes. The HOZ++ graph helps the agent to identify the current zone and the target zone, and computes an optimal path between them, then selects the next zone along the path as the guidance for the agent. Moreover, the HOZ++ graph continuously updates based on real-time observations in new environments, thereby enhancing its adaptability to new environments. Our HOZ++ graph is versatile and can be integrated into existing methods, including end-to-end RL and modular methods. Our method is evaluated across four simulators, including AI2-THOR, RoboTHOR, Gibson, and Matterport 3D. Additionally, we build a realistic environment to evaluate our method in the real world. Experimental results demonstrate the effectiveness and efficiency of our proposed method. The code is available at https://github.com/sx-zhang/HOZplus.},
+  archive      = {J_TPAMI},
+  author       = {Sixian Zhang and Xinhang Song and Xinyao Yu and Yubing Bai and Xinlong Guo and Weijie Li and Shuqiang Jiang},
+  doi          = {10.1109/TPAMI.2025.3552987},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {HOZ++: Versatile hierarchical object-to-zone graph for object navigation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DVIS++: Improved decoupled framework for universal video
+segmentation. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552694">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the Decoupled VIdeo Segmentation (DVIS) framework, a novel approach for the challenging task of universal video segmentation, including video instance segmentation (VIS), video semantic segmentation (VSS), and video panoptic segmentation (VPS). Unlike previous methods that model video segmentation in an end-to-end manner, our approach decouples video segmentation into three cascaded sub-tasks: segmentation, tracking, and refinement. This decoupling design allows for simpler and more effective modeling of the spatio-temporal representations of objects, especially in complex scenes and long videos. Accordingly, we introduce two novel components: the referring tracker and the temporal refiner. These components track objects frame by frame and model spatio-temporal representations based on pre-aligned features. To improve the tracking capability of DVIS, we propose a denoising training strategy and introduce contrastive learning, resulting in a more robust framework named DVIS++. The proposed decoupled framework efficiently handles universal and open-vocabulary object representations, allowing DVIS++ to conduct universal and open-vocabulary video segmentation. We conduct extensive experiments on six mainstream benchmarks, including the VIS, VSS, and VPS datasets. Using a unified architecture, DVIS++ significantly outperforms state-of-the-art specialized methods on these benchmarks in closed- and open-vocabulary settings. Code is available at https://github.com/zhang-tao-whu/DVIS_Plus.},
+  archive      = {J_TPAMI},
+  author       = {Tao Zhang and Xingye Tian and Yikang Zhou and Shunping Ji and Xuebo Wang and Xin Tao and Yuan Zhang and Pengfei Wan and Zhongyuan Wang and Yu Wu},
+  doi          = {10.1109/TPAMI.2025.3552694},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {DVIS++: Improved decoupled framework for universal video segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Low-shot video object segmentation. <em>TPAMI</em>, 1–18.
+(<a href="https://doi.org/10.1109/TPAMI.2025.3552779">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Prior research in video object segmentation (VOS) predominantly relies on videos with dense annotations. However, obtaining pixel-level annotations is both costly and time-intensive. In this work, we highlight the potential of effectively training a VOS model using remarkably sparse video annotations—specifically, as few as one or two labeled frames per training video, yet maintaining near equivalent performance levels. We introduce this innovative training methodology as low-shot video object segmentation, abbreviated as low-shot VOS. Central to this method is the generation of reliable pseudo labels for unlabeled frames during the training phase, which are then used in tandem with labeled frames to optimize the model. Notably, our strategy is extremely simple and can be incorporated into the vast majority of current VOS models. For the first time, we propose a universal method for training VOS models on one-shot and two-shot VOS datasets. In the two-shot configuration, utilizing just 7.3% and 2.9% of labeled data from the YouTube-VOS and DAVIS benchmarks respectively, our model delivers results on par with those trained on completely labeled datasets. It is also worth noting that in the one-shot setting, a minor performance decrement is observed in comparison to models trained on fully annotated datasets. Code and models are available at https://github.com/yk-pku/Low-shot-VOS.},
+  archive      = {J_TPAMI},
+  author       = {Kun Yan and Fangyun Wei and Shuyu Dai and Minghui Wu and Ping Wang and Chang Xu},
+  doi          = {10.1109/TPAMI.2025.3552779},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Low-shot video object segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reason and discovery: A new paradigm for open set
+recognition. <em>TPAMI</em>, 1–14. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552760">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Open set recognition (OSR) effectively enhances the reliability of pattern recognition systems by accurately identifying samples of unknown classes. However, the decision-making process in most existing OSR methods adheres to an ill-considered pipeline, where classification probabilities are inferred directly from overall feature representations, neglecting the reasoning about inherent relations. Besides, the handling of identified unknown samples is typically restricted to the assignment of a generic “unknown” class label but fails to explore underlying category information. To tackle the above challenges, we propose a new paradigm for OSR, entitled Reason and Discovery (RAD), which comprises two main modules: the Reason Module and the Discovery Module. Specifically, in the Reason Module, the distinction between known and unknown is performed from the perspective of reasoning the matching relations between topological information and appearance characteristics of discriminative regions. Then, the mixture and recombination of relation representations across classes are employed to provide diverse estimations of unknown distribution, thereby recalibrating OSR decision boundaries. Moreover, in the Discovery Module, the identified unknown samples are semantically grouped through a biased deep clustering process for discovering novel category information. Experimental results on various datasets indicate that the proposed method can achieve outstanding OSR performance and good novel category discovery efficacy.},
+  archive      = {J_TPAMI},
+  author       = {Yimin Fu and Zhunga Liu and Jialin Lyu},
+  doi          = {10.1109/TPAMI.2025.3552760},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Reason and discovery: A new paradigm for open set recognition},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generating inverse feature space for class imbalance in
+point cloud semantic segmentation. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3553051">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point cloud semantic segmentation can enhance the understanding of the production environment and is a crucial component of vision tasks. The efficacy and generalization prowess of deep learning-based segmentation models are inherently contingent upon the quality and nature of the data employed in their training. However, it is often challenging to obtain data with inter-class balance, and training an intelligent segmentation network with the imbalanced data may cause cognitive bias. In this paper, a network framework InvSpaceNet is proposed, which generates an inverse feature space to alleviate the cognitive bias caused by imbalanced data. Specifically, we design a dual-branch training architecture that combines the superior feature representations derived from instance-balanced sampling data with the cognitive corrections introduced by the proposed inverse sampling data. In the inverse feature space of the point cloud generated by the auxiliary branch, the central points aggregated by class are constrained by the contrastive loss. To refine the class cognition in the inverse feature space, features are used to generate point cloud class prototypes through momentum update. These class prototypes from the inverse space are utilized to generate feature maps and structure maps that are aligned with the positive feature space of the main branch segmentation network. The training of the main branch is dynamically guided through gradients back propagated from different losses. Extensive experiments conducted on four large benchmarks (i.e., S3DIS, ScanNet v2, Toronto-3D, and SemanticKITTI) demonstrate that the proposed method can effectively mitigate point cloud imbalance issues and improve segmentation performance.},
+  archive      = {J_TPAMI},
+  author       = {Jiawei Han and Kaiqi Liu and Wei Li and Feng Zhang and Xiang-Gen Xia},
+  doi          = {10.1109/TPAMI.2025.3553051},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Generating inverse feature space for class imbalance in point cloud semantic segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graph prompt clustering. <em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3553129">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the wide existence of unlabeled graph-structured data (e.g. molecular structures), the graph-level clustering has recently attracted increasing attention, whose goal is to divide the input graphs into several disjoint groups. However, the existing methods habitually focus on learning the graphs embeddings with different graph reguralizations, and seldom refer to the obvious differences in data distributions of distinct graph-level datasets. How to characteristically consider multiple graph-level datasets in a general well-designed model without prior knowledge is still challenging. In view of this, we propose a novel Graph Prompt Clustering (GPC) method. Within this model, there are two main modules, i.e., graph model pretraining as well as prompt and finetuning. In the graph model pretraining module, the graph model is pretrained by a selected source graph-level dataset with mutual information maximization and self-supervised clustering regularization. In the prompt and finetuning module, the network parameters of the pretrained graph model are frozen, and a groups of learnable prompt vectors assigned to each graph-level representation are trained for adapting different target graph-level datasets with various data distributions. Experimental results across six benchmark datasets demonstrate the impressive generalization capability and effectiveness of GPC compared with the state-of-the-art methods.},
+  archive      = {J_TPAMI},
+  author       = {Man-Sheng Chen and Pei-Yuan Lai and De-Zhang Liao and Chang-Dong Wang and Jian-Huang Lai},
+  doi          = {10.1109/TPAMI.2025.3553129},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Graph prompt clustering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Impact of noisy supervision in foundation model learning.
+<em>TPAMI</em>, 1–19. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3552309">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Foundation models are usually pre-trained on large-scale datasets and then adapted to different downstream tasks through tuning. This pre-training and then fine-tuning paradigm has become a standard practice in deep learning. However, the large-scale pre-training datasets, often inaccessible or too expensive to handle, can contain label noise that may adversely affect the generalization of the model and pose unexpected risks. This paper stands out as the first work to comprehensively understand and analyze the nature of noise in pre-training datasets and then effectively mitigate its impacts on downstream tasks. Specifically, through extensive experiments of fully-supervised and image-text contrastive pre-training on synthetic noisy ImageNet-1K, YFCC15M, and CC12M datasets, we demonstrate that, while slight noise in pre-training can benefit in-domain (ID) performance, where the training and testing data share a similar distribution, it always deteriorates out-of-domain (OOD) performance, where training and testing distributions are significantly different. These observations are agnostic to scales of pre-training datasets, pre-training noise types, model architectures, pre-training objectives, downstream tuning methods, and downstream applications. We empirically ascertain that the reason behind this is that the pre-training noise shapes the feature space differently. We then propose a tuning method (NMTune) to affine the feature space to mitigate the malignant effect of noise and improve generalization, which is applicable in both parameter-efficient and black-box tuning manners, considering one may not be able to access or fully fine-tune the pre-trained models. We additionally conduct extensive experiments on popular vision and language models, including APIs, which are supervised and self-supervised pre-trained on realistic noisy data for evaluation. Our analysis and results demonstrate the importance of this novel and fundamental research direction, which we term as Noisy Model Transfer Learning.},
+  archive      = {J_TPAMI},
+  author       = {Hao Chen and Zihan Wang and Ran Tao and Hongxin Wei and Xing Xie and Masashi Sugiyama and Bhiksha Raj and Jindong Wang},
+  doi          = {10.1109/TPAMI.2025.3552309},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-19},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Impact of noisy supervision in foundation model learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GDRNPP: A geometry-guided and fully learning-based object
+pose estimator. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3553485">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {6D pose estimation of rigid objects is a long-standing and challenging task in computer vision. Recently, the emergence of deep learning reveals the potential of Convolutional Neural Networks (CNNs) to predict reliable 6D poses. Given that direct pose regression networks currently exhibit suboptimal performance, most methods still resort to traditional techniques to varying degrees. For example, top-performing methods often adopt an indirect strategy by first establishing 2D-3D or 3D-3D correspondences followed by applying the RANSAC-based P $n$ P or Kabsch algorithms, and further employing ICP for refinement. Despite the performance enhancement, the integration of traditional techniques makes the networks time-consuming and not end-to-end trainable. Orthogonal to them, this paper introduces a fully learning-based object pose estimator. In this work, we first perform an in-depth investigation of both direct and indirect methods and propose a simple yet effective Geometry-guided Direct Regression Network (GDRN) to learn the 6D pose from monocular images in an end-to-end manner. Afterwards, we introduce a geometry-guided pose refinement module, enhancing pose accuracy when extra depth data is available. Guided by the predicted coordinate map, we build an end-to-end differentiable architecture that establishes robust and accurate 3D-3D correspondences between the observed and rendered RGB-D images to refine the pose. Our enhanced pose estimation pipeline GDRNPP (GDRN Plus Plus) conquered the leaderboard of the BOP Challenge for two consecutive years, becoming the first to surpass all prior methods that relied on traditional techniques in both accuracy and speed. The code and models are available at https://github.com/shanice-l/gdrnpp_bop2022.},
+  archive      = {J_TPAMI},
+  author       = {Xingyu Liu and Ruida Zhang and Chenyangguang Zhang and Gu Wang and Jiwen Tang and Zhigang Li and Xiangyang Ji},
+  doi          = {10.1109/TPAMI.2025.3553485},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {GDRNPP: A geometry-guided and fully learning-based object pose estimator},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). M2 diffuser: Diffusion-based trajectory optimization for
+mobile manipulation in 3D scenes. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3553454">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in diffusion models have opened new avenues for research into embodied AI agents and robotics. Despite significant achievements in complex robotic locomotion and skills, mobile manipulation–a capability that requires the coordination of navigation and manipulation–remains a challenge for generative AI techniques. This is primarily due to the high-dimensional action space, extended motion trajectories, and interactions with the surrounding environment. In this paper, we introduce M2 Diffuser, a diffusion-based, scene-conditioned generative model that directly generates coordinated and efficient whole-body motion trajectories for mobile manipulation based on robot-centric 3D scans. M2 Diffuser first learns trajectory-level distributions from mobile manipulation trajectories provided by an expert planner. Crucially, it incorporates an optimization module that can flexibly accommodate physical constraints and task objectives, modeled as cost and energy functions, during the inference process. This enables the reduction of physical violations and execution errors at each denoising step in a fully differentiable manner. Through benchmarking on three types of mobile manipulation tasks across over 20 scenes, we demonstrate that M2 Diffuser outperforms state-of-the-art neural planners and successfully transfers the generated trajectories to a real-world robot. Our evaluations underscore the potential of generative AI to enhance the generalization of traditional planning and learning-based robotic methods, while also highlighting the critical role of enforcing physical constraints for safe and robust execution. Videos, code and more details are available at https://m2diffuser.github.io.},
+  archive      = {J_TPAMI},
+  author       = {Sixu Yan and Zeyu Zhang and Muzhi Han and Zaijin Wang and Qi Xie and Zhitian Li and Zhehan Li and Hangxin Liu and Xinggang Wang and Song-Chun Zhu},
+  doi          = {10.1109/TPAMI.2025.3553454},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {M2 diffuser: Diffusion-based trajectory optimization for mobile manipulation in 3D scenes},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Addressing information asymmetry: Deep temporal causality
+discovery for mixed time series. <em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3553957">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While existing causal discovery methods mostly focus on continuous time series, causal discovery for mixed time series encompassing both continuous variables (CVs) and discrete variables (DVs) is a fundamental yet underexplored problem. Together with nonlinearity and high dimensionality, mixed time series pose significant challenges for causal discovery. This study addresses the aforementioned challenges based on the following recognitions: (1) DVs may originate from latent continuous variables (LCVs) and undergo discretization processes due to measurement limitations, storage requirements, and other reasons. (2) LCVs contain fine-grained information and interact with CVs. By leveraging these interactions, the intrinsic continuity of DVs can be recovered. Thereupon, we propose a generic deep mixed time series temporal causal discovery framework. Our key idea is to adaptively recover LCVs from DVs with the guidance of CVs and perform causal discovery in a unified continuous-valued space. Technically, a new contextual adaptive Gaussian kernel embedding technique is developed for latent continuity recovery by adaptively aggregating temporal contextual information of DVs. Accordingly, two interdependent model training stages are devised for learning the latent continuity recovery with self-supervision and causal structure learning with sparsity-induced optimization. Experimentally, extensive empirical evaluations and in-depth investigations validate the superior performance of our framework. Our code and data are available at https://github.com/chunhuiz/MiTCD.},
+  archive      = {J_TPAMI},
+  author       = {Jiawei Chen and Chunhui Zhao},
+  doi          = {10.1109/TPAMI.2025.3553957},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Addressing information asymmetry: Deep temporal causality discovery for mixed time series},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). WAGE: Weight-sharing attribute-missing graph autoencoder.
+<em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3554053">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Attribute-missing graph learning, a common yet challenging problem, has recently attracted considerable attention. Existing efforts have at least one of the following limitations: 1) lack a noise filtering and information enhancing scheme, resulting in less comprehensive data completion; 2) isolate the node attribute and graph structure encoding processes, introducing more parameters and failing to take full advantage of the two types of information; and 3) impose overly strict distribution assumptions on the latent variables, leading to biased or less discriminative node representations. To tackle the issues, based on the idea of introducing intimate information interaction between the two information sources, we propose Weight-sharing Attribute-missing Graph autoEncoder (WAGE) to boost the expressive capacity of node representations for high-quality missing attribute reconstruction. Specifically, three strategies have been conducted. Firstly, we entangle the attribute embedding and structure embedding by introducing a weight-sharing architecture to share the parameters learned by both processes, which allows the network training to benefit from more abundant and diverse information. Secondly, we introduce a $K$-nearest neighbor-based dual non-local learning mechanism to improve the quality of data imputation by revealing unobserved high-confidence connections while filtering unreliable ones. Thirdly, we manually mask the connections on multiple adjacency matrices and force the structure-oriented embedding sub-network to recover the actual adjacency matrix, thus enforcing the resulting network to be able to selectively exploit more high-order discriminative features for data completion. Extensive experiments on six benchmark datasets demonstrate the effectiveness and superiority of WAGE against state-of-the-art competitors.},
+  archive      = {J_TPAMI},
+  author       = {Wenxuan Tu and Sihang Zhou and Xinwang Liu and Zhiping Cai and Yawei Zhao and Yue Liu and Kunlun He},
+  doi          = {10.1109/TPAMI.2025.3554053},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {WAGE: Weight-sharing attribute-missing graph autoencoder},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DIST+: Knowledge distillation from a stronger adaptive
+teacher. <em>TPAMI</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3554235">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The paper introduces DIST, an innovative knowledge distillation method that excels in learning from a superior teacher model. DIST differentiates itself from conventional techniques by adeptly handling the often significant prediction discrepancies between the student and teacher models. It achieves this by focusing on maintaining the relationships between their predictions, implementing a correlation-based loss to explicitly capture the teacher&#39;s intrinsic inter-class relations. Moreover, DIST uniquely considers the semantic similarities between different instances and each class at the intra-class level. The method is further enhanced by two significant improvements: (1) A teacher acclimation strategy, which effectively reduces the discrepancy between teacher and student, thereby optimizing the distillation process. (2) An extension of the DIST loss from the logit level to the feature level, a modification that proves especially beneficial for dense prediction tasks. DIST stands out for its simplicity, practicality, and adaptability to various architectures, model sizes, and training strategies. It consistently delivers state-of-the-art results across a range of applications, including image classification, object detection, and semantic segmentation. The methodology and results are detailed in the paper, and the implementation code is available at https://github.com/hunto/DIST_KD.},
+  archive      = {J_TPAMI},
+  author       = {Tao Huang and Shan You and Fei Wang and Chen Qian and Chang Xu},
+  doi          = {10.1109/TPAMI.2025.3554235},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {DIST+: Knowledge distillation from a stronger adaptive teacher},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Calibration-free raw image denoising via fine-grained noise
+estimation. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3550264">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image denoising has progressed significantly due to the development of effective deep denoisers. To improve the performance in real-world scenarios, recent trends prefer to formulate superior noise models to generate realistic training data, or estimate noise levels to steer non-blind denoisers. In this paper, we bridge both strategies by presenting an innovative noise estimation and realistic noise synthesis pipeline. Specifically, we integrates a fine-grained statistical noise model and contrastive learning strategy, with a unique data augmentation to enhance learning ability. Then, we use this model to estimate noise parameters on evaluation dataset, which are subsequently used to craft camera-specific noise distribution and synthesize realistic noise. One distinguishing feature of our methodology is its adaptability: our pre-trained model can directly estimate unknown cameras, making it possible to unfamiliar sensor noise modeling using only testing images, without calibration frames or paired training data. Another highlight is our attempt in estimating parameters for fine-grained noise models, which extends the applicability to even more challenging low-light conditions. Through empirical testing, our calibration-free pipeline demonstrates effectiveness in both normal and low-light scenarios, further solidifying its utility in real-world noise synthesis and denoising tasks.},
+  archive      = {J_TPAMI},
+  author       = {Yunhao Zou and Ying Fu and Yulun Zhang and Tao Zhang and Chenggang Yan and Radu Timofte},
+  doi          = {10.1109/TPAMI.2025.3550264},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Calibration-free raw image denoising via fine-grained noise estimation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning-aided neighborhood search for vehicle routing
+problems. <em>TPAMI</em>, 1–17. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3554669">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Vehicle Routing Problem (VRP) is a classic optimization problem with diverse real-world applications. The neighborhood search has emerged as an effective approach, yielding high-quality solutions across different VRPs. However, most existing studies exhaustively explore all considered neighborhoods with a pre-fixed order, leading to an inefficient search process. To address this issue, this paper proposes a Learning-aided Neighborhood Search algorithm (LaNS) that employs a cutting-edge multi-agent reinforcement learning-driven adaptive operator/neighborhood selection mechanism to achieve efficient routing for VRP. Within this framework, two agents serve as high-level instructors, collaboratively guiding the search direction by selecting perturbation/improvement operators from a pool of low-level heuristics. Furthermore, to equip the agents with comprehensive information for learning guidance knowledge, we have developed a new informative state representation. This representation transforms the spatial route structures into an image-like tensor, allowing us to extract spatial features using a convolutional neural network. Comprehensive evaluations on diverse VRP benchmarks, including the capacitated VRP (CVRP), multi-depot VRP (MDVRP) and cumulative multi-depot VRP with energy constraints, demonstrate LaNS&#39;s superiority over the state-of-the-art neighborhood search methods as well as the existing learning-guided neighborhood search algorithms.},
+  archive      = {J_TPAMI},
+  author       = {Tong Guo and Yi Mei and Mengjie Zhang and Haoran Zhao and Kaiquan Cai and Wenbo Du},
+  doi          = {10.1109/TPAMI.2025.3554669},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Learning-aided neighborhood search for vehicle routing problems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ONNXPruner: ONNX-based general model pruning adapter.
+<em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3554560">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in model pruning have focused on developing new algorithms and improving upon benchmarks. However, the practical application of these algorithms across various models and platforms remains a significant challenge. To address this challenge, we propose ONNXPruner, a versatile pruning adapter designed for the ONNX format models. ONNXPruner streamlines the adaptation process across diverse deep learning frameworks and hardware platforms. A novel aspect of ONNXPruner is its use of node association trees, which automatically adapt to various model architectures. These trees clarify the structural relationships between nodes, guiding the pruning process, particularly highlighting the impact on interconnected nodes. Furthermore, we introduce a tree-level evaluation method. By leveraging node association trees, this method allows for a comprehensive analysis beyond traditional single-node evaluations, enhancing pruning performance without the need for extra operations. Experiments across multiple models and datasets confirm ONNXPruner&#39;s strong adaptability and increased efficacy. Our work aims to advance the practical application of model pruning.},
+  archive      = {J_TPAMI},
+  author       = {Dongdong Ren and Wenbin Li and Tianyu Ding and Lei Wang and Qi Fan and Jing Huo and Hongbing Pan and Yang Gao},
+  doi          = {10.1109/TPAMI.2025.3554560},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {ONNXPruner: ONNX-based general model pruning adapter},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pushing the limit of post-training quantization.
+<em>TPAMI</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3554523">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, post-training quantization (PTQ) has become the de facto way to produce efficient low-precision neural networks without long-time retraining. Despite its low cost, current PTQ works fail to succeed under the extremely low-bit setting. In this work, we delve into extremely low-bit quantization and construct a unified theoretical analysis, which provides an in-depth understanding of the reason for the failure of low-bit quantization. According to the theoretical study, we argue that the existing methods fail in low-bit schemes due to significant perturbation on weights and lack of consideration of activation quantization. To this end, we propose Brecq and QDrop to respectively solve these two challenges, based on which a Q-Limit framework is constructed. Then the Q-Limit framework is further extended to support a mixed precision quantization scheme. To the best of our knowledge, this is the first work that can push the limit of PTQ down to INT2. Extensive experiments on various handcrafted and searched neural architectures are conducted for both visual recognition/detection tasks and language processing tasks. Without bells and whistles, our PTQ framework can attain low-bit ResNet and MobileNetV2 comparable with quantization-aware training (QAT), establishing a new state-of-the-art for PTQ. Our code has been open-sourced at https://github.com/ModelTC/MQBench/.},
+  archive      = {J_TPAMI},
+  author       = {Ruihao Gong and Xianglong Liu and Yuhang Li and Yunqiang Fan and Xiuying Wei and Jinyang Guo},
+  doi          = {10.1109/TPAMI.2025.3554523},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Pushing the limit of post-training quantization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NavCoT: Boosting LLM-based vision-and-language navigation
+via learning disentangled reasoning. <em>TPAMI</em>, 1–13. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3554559">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vision-and-Language Navigation (VLN), as a crucial research problem of Embodied AI, requires an embodied agent to navigate through complex 3D environments following natural language instructions. Recent research has highlighted the promising capacity of large language models (LLMs) in VLN by improving navigational reasoning accuracy and interpretability. However, their predominant use in an offline manner usually suffers from substantial domain gap between the VLN task and the LLM training corpus. This paper proposes a novel strategy called Navigational Chain-of-Thought (NavCoT), where we fulfill parameter-efficient in-domain training to enable self-guided navigational decision, leading to a significant mitigation of the domain gap in a cost-effective manner. Specifically, at each timestep, the LLM is prompted to forecast the navigational chain-of-thought by: 1) acting as a world model to imagine the next observation according to the instruction, 2) selecting the candidate observation that best aligns with the imagination, and 3) determining the action based on the reasoning from the prior steps. In this way, the action prediction can be effectively simplified benefiting from the disentangled reasoning. Through constructing formalized labels for training, the LLM can learn to generate desired and reasonable chain-of-thought outputs for improving the action decision. Experimental results across various training settings and popular VLN benchmarks (e.g., Room-to-Room (R2R), Room-across-Room (RxR), Room-for-Room (R4R)) show the significant superiority of NavCoT over the direct action prediction variants. Through simple parameter-efficient finetuning, our NavCoT outperforms a recent GPT4-based approach with $\sim$7% relative improvement on the R2R dataset. We believe that NavCoT will help unlock more task-adaptive and scalable LLM-based embodied agents, which are helpful for developing real-world robotics applications. Code is available at https://github.com/expectorlin/NavCoT.},
+  archive      = {J_TPAMI},
+  author       = {Bingqian Lin and Yunshuang Nie and Ziming Wei and Jiaqi Chen and Shikui Ma and Jianhua Han and Hang Xu and Xiaojun Chang and Xiaodan Liang},
+  doi          = {10.1109/TPAMI.2025.3554559},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {NavCoT: Boosting LLM-based vision-and-language navigation via learning disentangled reasoning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable high-fidelity 3D hand shape reconstruction via
+graph-image frequency mapping and graph frequency decomposition.
+<em>TPAMI</em>, 1–15. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3554516">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite the impressive performance obtained by recent single-image hand modeling techniques, they lack the capability to capture sufficient details of the 3D hand mesh. This deficiency greatly limits their applications when high-fidelity hand modeling is required, e.g., personalized hand modeling. To address this problem, we design a frequency split network to generate 3D hand meshes using different frequency bands in a coarse-to-fine manner. To capture high-frequency personalized details, we transform the 3D mesh into the frequency domain, and proposed a novel frequency decomposition loss to supervise each frequency component. By leveraging such a coarse-to-fine scheme, hand details that correspond to the higher frequency domain can be preserved. In addition, the proposed network is scalable, and can stop the inference at any resolution level to accommodate different hardware with varying computational powers. To feed the scalable frequency network with frequency split image features, we proposed an image-graph ring feature mapping strategy. To train our network with per-vertex supervision, we use a bidirectional registration strategy to generate a topology-fixed ground-truth. To quantitatively evaluate the performance of our method in terms of recovering personalized shape details, we introduce a new evaluation metric named Mean-frequency Signal-to-Noise Ratio (MSNR) to measure the mean signal-to-noise ratio of mesh signal on each frequency component. Extensive experiments demonstrate that our approach generates fine-grained details for high-fidelity 3D hand reconstruction, and our evaluation metric is more effective than traditional metrics for measuring mesh details.},
+  archive      = {J_TPAMI},
+  author       = {Tianyu Luan and Yuanhao Zhai and Jingjing Meng and Zhong Li and Zhang Chen and Yi Xu and Junsong Yuan},
+  doi          = {10.1109/TPAMI.2025.3554516},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Scalable high-fidelity 3D hand shape reconstruction via graph-image frequency mapping and graph frequency decomposition},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Aesthetics-guided low-light enhancement. <em>TPAMI</em>,
+1–18. (<a href="https://doi.org/10.1109/TPAMI.2025.3554639">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evaluating the performance of low-light image enhancement (LLE) is highly subjective, thus making integrating human preferences into LLE a necessity. Existing methods fail to consider this and present a series of potentially valid heuristic criteria for training LLE models. In this paper, we propose a new paradigm, i.e., aesthetics-guided low-light image enhancement (ALL-E), which introduces aesthetic preferences to LLE and motivates training in a reinforcement learning framework with an aesthetic reward. Each pixel, functioning as an agent, refines itself by recursive actions. We further present ALL-E+, an extended version of ALL-E, which casts a two-stage aesthetics-guided enhancement and denoising. ALL-E+ achieves low-light enhancement and denoising compensation sequentially in a unified framework, resulting in significant improvements in both subjective visual experience and objective evaluation. Extensive experiments show that integrating aesthetic preferences can further improve the visual experience of enhanced images. Our results on various benchmarks also demonstrate the superiority of our method over state-of-the-art methods.},
+  archive      = {J_TPAMI},
+  author       = {Dong Liang and Yuanhang Gao and Ling Li and Zhengyan Xu and Sheng-Jun Huang and Songcan Chen},
+  doi          = {10.1109/TPAMI.2025.3554639},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Aesthetics-guided low-light enhancement},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HandRT: Simultaneous hand shape and appearance
+reconstruction with pose tracking from monocular RGB-d video.
+<em>TPAMI</em>, 1–12. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3555117">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a method to reconstruct a personalized hand avatar, representing the user&#39;s hand shape and appearance, from a monocular RGB-D video of a hand performing unknown hand poses under unknown illumination. Our method, HandRT, jointly optimizes hand pose, shape, appearance, and lighting parameters using a physically-based shading model in a differentiable rendering framework incorporating Monte Carlo path tracing. HandRT extends our previous work, Intrinsic Hand Avatar, by relaxing the assumption of a known coarse hand pose and utilizing depth data in the optimization. Specifically, we introduce an articulated registration energy based on iterative closest point over the depth point cloud that enables reconstruction from unknown hand poses via tracking across frames. Thus, we can reconstruct the avatar from arbitrary poses with high accuracy without relying on an off-the-shelf 2D joint detector at each frame. Further, HandRT is capable of precisely tracking the reconstructed avatar from either RGB or RGB-D input. Our evaluation demonstrates that our method outperforms existing hand avatar reconstruction methods on all commonly used metrics while producing significantly accurate mesh compared to state-of-the-art hand mesh recovery methods by a large margin on public and our captured datasets. To facilitate future research, we release our code at https://github.com/pmkalshetti/handrt.},
+  archive      = {J_TPAMI},
+  author       = {Pratik Kalshetti and Parag Chaudhuri},
+  doi          = {10.1109/TPAMI.2025.3555117},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {HandRT: Simultaneous hand shape and appearance reconstruction with pose tracking from monocular RGB-D video},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cross-modality distillation for multi-modal tracking.
+<em>TPAMI</em>, 1–18. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3555485">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contemporary multi-modal trackers achieve strong performance by leveraging complex backbones and fusion strategies, but this comes at the cost of computational efficiency, limiting their deployment in resource-constrained settings. On the other hand, compact multi-modal trackers are more efficient but often suffer from reduced performance due to limited feature representation. To mitigate the performance gap between compact and more complex trackers, we introduce a cross-modality distillation framework. This framework includes a complementarity-aware mask autoencoder designed to enhance cross-modal interactions by selectively masking patches within a modality, thereby forcing the model to learn more robust multi-modal representations. Additionally, we present a specific-common feature distillation module that transfers both modality-specific and shared information from a more powerful model&#39;s backbone to the compact model. Moreover, we develop a multi-path selection distillation module to guide a simple fusion module in learning more accurate multi-modal information from a sophisticated fusion mechanism using multiple paths. Extensive experiments on six multi-modal tracking benchmarks demonstrate that the proposed tracker, despite being lightweight, outperforms most state-of-the-art methods, highlighting its effectiveness. Notably, our tiny variant achieves a PR score of 67.5% on LasHeR, a PR score of 58.5% on DepthTrack, and a PR score of 73.1% on VisEvent with only 6.5 M parameters, while operating at 126 FPS on an NVIDIA 2080Ti GPU.},
+  archive      = {J_TPAMI},
+  author       = {Tianlu Zhang and Qiang Zhang and Kurt Debattista and Jungong Han},
+  doi          = {10.1109/TPAMI.2025.3555485},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Cross-modality distillation for multi-modal tracking},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards unified deep image deraining: A survey and a new
+benchmark. <em>TPAMI</em>, 1–20. (<a
+href="https://doi.org/10.1109/TPAMI.2025.3556133">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent years have witnessed significant advances in image deraining due to the progress of effective image priors and deep learning models. As each deraining approach has individual settings (e.g., training and test datasets, evaluation criteria), how to fairly evaluate existing approaches comprehensively is not a trivial task. Although existing surveys aim to thoroughly review image deraining approaches, few of them focus on unifying evaluation settings to examine the deraining capability and practicality evaluation. In this paper, we provide a comprehensive review of existing image deraining methods and provide a unified evaluation setting to evaluate their performance. Furthermore, we construct a new high-quality benchmark named HQ-RAIN to conduct extensive evaluations, consisting of 5,000 paired high-resolution synthetic images with high harmony and realism. We also discuss existing challenges and highlight several future research opportunities worth exploring. To facilitate the reproduction and tracking of the latest deraining technologies for general users, we build an online platform to provide the off-the-shelf toolkit, involving the large-scale performance evaluation. This online platform and the proposed new benchmark are publicly available at http://www.deraining.tech/.},
+  archive      = {J_TPAMI},
+  author       = {Xiang Chen and Jinshan Pan and Jiangxin Dong and Jinhui Tang},
+  doi          = {10.1109/TPAMI.2025.3556133},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {3},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Towards unified deep image deraining: A survey and a new benchmark},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

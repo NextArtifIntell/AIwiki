@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>acs_all</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h1 id="acs">ACS</h1>
+<h2 id="jacs---1">JACS - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Development of a thioetherification of heteroarene
+electrophiles with broad scope via a proton transfer dual ionization
+mechanism. <em>JACS</em>, <em>XXXX</em>(XXX), XXX. (<a
+href="https://doi.org/10.1021/jacs.4c18304">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sulfur-derived functional groups represent prevalent motifs in highly sought-after small molecules, such as active pharmaceutical ingredients (APIs). Thioethers are one such example, being commonly encountered in APIs, prodrugs, and as valuable synthetic “linchpins” to access an array of sulfur-derived functional groups. While nucleophilic aromatic substitution (S N Ar) has traditionally been used to synthesize aryl thioethers, modern approaches leverage transition metals to catalyze thermal or photochemical cross-coupling. While studying photochemical thioetherification reactions, we uncovered a remarkably mild condition that does not require light, transition metals, or exogenous bases. An array of thiols and halogenated heterocycles were coupled to produce &gt;70 diverse products. Reaction progress kinetic analysis (RPKA) and computational studies support a unique mechanism termed proton transfer dual ionization (PTDI) S N Ar. Finally, a predictive statistical model was constructed aided by high-throughput experimentation (HTE) to understand when the PTDI processes are successful, resulting in the completion of ten target-oriented syntheses. This transformation complements modern approaches to thioether synthesis and motivates additional research evaluating PTDI as a general activation mode between reaction partners.},
+  archive      = {J_JACS},
+  author       = {Christian R. Zwick, III and Maike Eckhoff and Jeremy J. Henle and Anna V. Bay and Rafal Swiatowiec and Shashank Shekhar and Cassie Yang and Yong Zhou and Amanda L. Wall and Rodger F. Henry and Jessica N. Hoskins and Matthew S. Sigman},
+  doi          = {10.1021/jacs.4c18304},
+  journal      = {Journal of the American Chemical Society},
+  month        = {2},
+  number       = {XXX},
+  pages        = {XXX},
+  shortjournal = {J. Am. Chem. Soc.},
+  title        = {Development of a thioetherification of heteroarene electrophiles with broad scope via a proton transfer dual ionization mechanism},
+  volume       = {XXXX},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TC_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tc---26">TC - 26</h2>
+<ul>
+<li><details>
+<summary>
+(2025). WaWoT: Towards flexible and efficient web of things services
+via WebAssembly on resource-constrained IoT devices. <em>TC</em>,
+<em>74</em>(3), 1094–1108. (<a
+href="https://doi.org/10.1109/TC.2024.3500385">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Web of Things (WoT) is an emerging concept to connect IoT devices to the web using standard interfaces. This provides interoperability between different IoT platforms and enables seamless integration with web and cloud services. However, running sophisticated web services directly on resource-constrained IoT devices is challenging due to limitations in memory, computation, and energy. This paper proposes WaWoT, a Wasm-based framework for flexible and efficient Web of Things services. WaWoT allows flexible WoT service development using annotations and automatic partitioning. It also enables dynamic service migration using WebAssembly modules to adapt placement between IoT devices and web clients. We also introduce an ahead-of-time compiler optimized for low memory usage through techniques like streamed compilation and trimming. For energy efficiency, we use optimizations like bulk instruction writing and direct I/O accessing. Safety is ensured through compile-time and run-time analyses to guarantee sandboxed execution. Evaluations demonstrate WaWoT exhibits better flexibility than existing WoT development approaches. Furthermore, WaWoT can also reduce RAM usage by 84.9x and energy consumption by 1.9x-4.9x over existing WebAssembly runtimes. Overall, it enables efficient, safe, and flexible WoT services on constrained IoT devices.},
+  archive      = {J_TC},
+  author       = {Borui Li and Hongchang Fan and Yi Gao and Wei Dong},
+  doi          = {10.1109/TC.2024.3500385},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {1094-1108},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {WaWoT: Towards flexible and efficient web of things services via WebAssembly on resource-constrained IoT devices},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ReViT: Vision transformer accelerator with reconfigurable
+semantic-aware differential attention. <em>TC</em>, <em>74</em>(3),
+1079–1093. (<a href="https://doi.org/10.1109/TC.2024.3504263">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While vision transformers (ViTs) have continued to achieve new milestones in computer vision, their complicated network architectures with high computation and memory costs have hindered their deployment on resource-limited edge devices. Some customized accelerators have been proposed to accelerate the execution of ViTs, achieving improved performance with reduced energy consumption. However, these approaches utilize flattened attention mechanisms and ignore the inherent hierarchical visual semantics in images. In this work, we conduct a thorough analysis of hierarchical visual semantics in real-world images, revealing opportunities and challenges of leveraging visual semantics to accelerate ViTs. We propose ReViT, a systematic algorithm and architecture co-design approach, which aims to exploit the visual semantics to accelerate ViTs. Our proposed algorithm can leverage the same semantic class with strong feature similarity to reduce computation and communication in a differential attention mechanism, and support the semantic-aware attention efficiently. A novel dedicated architecture is designed to support the proposed algorithm and translate it into performance improvements. Moreover, we propose an efficient execution dataflow to alleviate workload imbalance and maximize hardware utilization. ReViT opens new directions for accelerating ViTs by exploring the underlying visual semantics of images. ReViT gains an average of 2.3$\boldsymbol{\times}$ speedup and 3.6$\boldsymbol{\times}$ energy efficiency over state-of-the-art ViT accelerators.},
+  archive      = {J_TC},
+  author       = {Xiaofeng Zou and Cen Chen and Hongen Shao and Qinyu Wang and Xiaobin Zhuang and Yangfan Li and Keqin Li},
+  doi          = {10.1109/TC.2024.3504263},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {1079-1093},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {ReViT: Vision transformer accelerator with reconfigurable semantic-aware differential attention},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Access-pattern hiding search over encrypted databases by
+using distributed point functions. <em>TC</em>, <em>74</em>(3),
+1066–1078. (<a href="https://doi.org/10.1109/TC.2024.3504288">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Encrypted databases have been extensively studied with the increasing concern of data privacy in cloud services. For practical efficiency, most encrypted database systems are built under Dynamic Searchable Symmetric Encryption (DSSE) schemes to support fast query and update over encrypted data. However, DSSE schemes allow leakages in their security frameworks, especially access-pattern leakages (i.e., the search results corresponding to queried keywords), which lead to various attacks to infer sensitive information of queries and databases. Existing oblivious-access techniques, such as Oblivious RAM and differential privacy, suffer from excessive communication overhead and loss of query accuracy. In this paper, we propose a new DSSE scheme that enables access-pattern hiding keyword search and update operations. Servers can obliviously query and update databases within only a single communication round. Our building block is based on the Distributed Point Function (DPF), an advanced secret sharing technique that provides provable security guarantees against adversaries with arbitrary background knowledge. Moreover, we devise a novel update protocol that integrates DPF and Somewhat Homomorphic Encryption (SHE) such that servers can obliviously update their local data. We formally analyze the security and implement the prototype. The comprehensive experimental results demonstrate the security and efficiency of our scheme.},
+  archive      = {J_TC},
+  author       = {Hongcheng Xie and Yu Guo and Yinbin Miao and Xiaohua Jia},
+  doi          = {10.1109/TC.2024.3504288},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {1066-1078},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Access-pattern hiding search over encrypted databases by using distributed point functions},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Feynman meets turing: The uncomputability of quantum
+gate-circuit emulation and concatenation. <em>TC</em>, <em>74</em>(3),
+1053–1065. (<a href="https://doi.org/10.1109/TC.2024.3506861">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate the feasibility of computing quantum gate-circuit emulation (QGCE) and quantum gate-circuit concatenation (QGCC) on digital hardware. QGCE serves the purpose of rewriting gate circuits comprised of gates from a varying input gate set to gate circuits formed of gates from a fixed target gate set. Analogously, QGCC serves the purpose of finding an approximation to the concatenation of two arbitrary elements of a varying list of input gate circuits in terms of another element from the same list. Problems of this kind occur regularly in quantum computing and are often assumed an easy task for the digital computers controlling the quantum hardware. Arguably, this belief is due to analogical reasoning: The classical Boolean equivalents of QGCE and QGCC are natively computable on digital hardware. In the present paper, we present two insights in this regard: Upon applying a rigorous theory of computability, QGCE and QGCC turn out to be uncomputable on digital hardware. The results remain valid when we restrict the set of feasible inputs for the relevant functions to one parameter families of fixed gate sets. Our results underline the possibility that several ideas from quantum-computing theory may require a rethinking to become feasible for practical implementation.},
+  archive      = {J_TC},
+  author       = {Holger Boche and Yannik N. Böck and Zoe Garcia del Toro and Frank H. P. Fitzek},
+  doi          = {10.1109/TC.2024.3506861},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {1053-1065},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Feynman meets turing: The uncomputability of quantum gate-circuit emulation and concatenation},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lock-free triangle counting on GPU. <em>TC</em>,
+<em>74</em>(3), 1040–1052. (<a
+href="https://doi.org/10.1109/TC.2024.3504295">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Finding the triangles of large scale graphs is a fundamental graph mining task in many applications, such as motif detection, microscopic evolution, and link prediction. The recent works on triangle counting can be classified into merge-based or binary search-based paradigms. The merge-based triangle counting paradigm locates the triangles using the set intersection operation, which suffers from the random memory access problem. The binary search-based triangle counting paradigm sets the neighbors of the source vertex of an edge as the lookup array and searches the neighbors of the destination vertex. There are lots of expensive lock operations needed in the binary search-based paradigm, which leads to low thread efficiency. In this paper, we aim to improve the triangle counting efficiency on GPU by designing a lock-free policy named Skiff to implement a hash-based triangle counting algorithm. In Skiff, we first design a hash trie data layout to meet the coalesced memory access model and then propose a lock-free policy to reduce the conflicts of the hash trie. In addition, we use a level array to manage the index of the hash trie to make sure the nodes of the hash trie can be quickly located. Furthermore, we implement a CTA thread organization model to reduce the load imbalance of the real-world graphs. We conducted extensive experiments on NVIDIA GPUs to show the performance of Skiff. The results show that Skiff can achieve a good system performance improvement than the state-of-the-art (SOTA) works.},
+  archive      = {J_TC},
+  author       = {Zhigao Zheng and Guojia Wan and Jiawei Jiang and Chuang Hu and Hao Liu and Shahid Mumtaz and Bo Du},
+  doi          = {10.1109/TC.2024.3504295},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {1040-1052},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Lock-free triangle counting on GPU},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NPC: A non-conflicting processing-in-memory controller in
+DDR memory systems. <em>TC</em>, <em>74</em>(3), 1025–1039. (<a
+href="https://doi.org/10.1109/TC.2024.3477981">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Processing-in-Memory (PIM) has emerged as a promising solution to address the memory wall problem. Existing memory interfaces must support new PIM commands to utilize PIM, making the definition of PIM commands according to memory modes a major issue in the development of practical PIM products. For performance and OS-transparency, the memory controller is responsible for changing the memory mode, which requires modifying the controller and resolving conflicts with existing functionalities. Additionally, it must operate to minimize mode transition overhead, which can cause significant performance degradation. In this study, we present NPC, a memory controller designed for mode transition PIM that delivers PIM commands via the DDR interface. NPC issues PIM commands while transparently changing the memory mode with a dedicated scheduling policy that reduces the number of mode transitions with aggregative issuing. Moreover, existing functions, such as refresh, are optimized for PIM operation. We implement NPC in hardware and develop a PIM emulation system to validate it on FPGA platforms. Experimental results reveal that NPC is compatible with existing interfaces and functionality, and the proposed scheduling policy improves performance by 2.2$\boldsymbol{\times}$ with balanced fairness, achieving up to 97% of the ideal performance. These findings have the potential to aid the application of PIM in real systems and contribute to the commercialization of mode transition PIM.},
+  archive      = {J_TC},
+  author       = {Seungyong Lee and Sanghyun Lee and Minseok Seo and Chunmyung Park and Woojae Shin and Hyuk-Jae Lee and Hyun Kim},
+  doi          = {10.1109/TC.2024.3477981},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {1025-1039},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {NPC: A non-conflicting processing-in-memory controller in DDR memory systems},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accurate and reliable energy measurement and modelling of
+data transfer between CPU and GPU in parallel applications on
+heterogeneous hybrid platforms. <em>TC</em>, <em>74</em>(3), 1011–1024.
+(<a href="https://doi.org/10.1109/TC.2024.3504262">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Developing energy-efficient software that leverages application-level energy optimization techniques is essential to tackle the pressing technological challenge of energy efficiency on modern heterogeneous computing platforms. While energy modelling and optimization of computations have received considerable attention in energy research, there remains a significant gap in the energy modelling of data transfer between computing devices on heterogeneous hybrid platforms. Our study aims to fill this crucial gap. In this work, we comprehensively study the energy consumption of data transfer between a host CPU and a GPU accelerator on heterogeneous hybrid platforms using the three mainstream energy measurement methods: (a) System-level physical measurements based on external power meters (ground-truth), (b) Measurements using on-chip power sensors, and (c) Energy predictive models. The ground-truth method is accurate but prohibitively time-consuming. While the on-chip sensors in Intel multicore CPU processors are inaccurate, the Nvidia GPU sensors do not capture data transfer activity. Therefore, we focus on the third approach and propose a novel methodology to select a small subset of performance events that effectively capture all the energy consumption activities during a data transfer and develop accurate linear energy predictive models employing the shortlisted performance events. Finally, we develop independent and accurate runtime pluggable software energy sensors based on our proposed energy predictive models that employ disjoint sets of performance events to estimate the dynamic energy of computations and data transfers. We employ the sensors to predict the energy consumption of computations and data transfer between a host CPU and two A40 Nvidia GPUs in three parallel scientific applications, and the high accuracy (average prediction error of 5%) of our sensors’ predictions further underscores their practical relevance.},
+  archive      = {J_TC},
+  author       = {Hafiz Adnan Niaz and Ravi Reddy Manumachu and Alexey Lastovetsky},
+  doi          = {10.1109/TC.2024.3504262},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {1011-1024},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Accurate and reliable energy measurement and modelling of data transfer between CPU and GPU in parallel applications on heterogeneous hybrid platforms},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A parallel computing scheme utilizing memristor crossbars
+for fast corner detection and rotation invariance in the ORB algorithm.
+<em>TC</em>, <em>74</em>(3), 996–1010. (<a
+href="https://doi.org/10.1109/TC.2024.3504817">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Oriented FAST and Rotated BRIEF (ORB) algorithm plays a crucial role in rapidly extracting image keypoints. However, in the domain of high-frame-rate real-time applications, the algorithm faces challenges of the speed and computational efficiency with the increase in both the size and quantity of images. To address this issue, an ORB algorithm accelerator based on a computing-in-memory (CIM) circuit is firstly proposed in this paper, which replaces the iterative calculations in traditional methods with one-step parallel analog computation. The proposed accelerator improves algorithm computational efficiency through CIM technology and enhances algorithm speed through parallel computation. Simulation demonstrate that the proposed method exhibits an average processing speed 22 $\boldsymbol{\times}$ faster than traditional methods and obtains more uniform corners distribution in large-scale images.},
+  archive      = {J_TC},
+  author       = {Qinghui Hong and Haoyou Jiang and Pingdan Xiao and Sichun Du and Tao Li},
+  doi          = {10.1109/TC.2024.3504817},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {996-1010},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A parallel computing scheme utilizing memristor crossbars for fast corner detection and rotation invariance in the ORB algorithm},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-radix generalized hyperbolic CORDIC and its hardware
+implementation. <em>TC</em>, <em>74</em>(3), 983–995. (<a
+href="https://doi.org/10.1109/TC.2024.3512183">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a high-radix generalized hyperbolic coordinate rotation digital computer (HGH-CORDIC). This algorithm not only computes logarithmic and exponential functions with any fixed base but also significantly reduces the number of iterations required compared to traditional CORDIC methods. Initially, we present the general iteration formulas for HGH-CORDIC. Subsequently, we discuss its pivotal convergence properties and selection criteria, exemplifying these with commonly used cases. Through extensive software simulations, we validate the theoretical foundations of our approach. Finally, we explore efficient hardware implementation strategies. Our analysis indicates that, relative to state-of-the-art radix-2 GH-CORDIC, the proposed HGH-CORDIC can decrease the number of iterations by more than $50\%$ while maintaining comparable accuracy. Synthesized under the 28nm CMOS technology, the reports show that the reference circuit can save about $40\%$ area and power consumption averagely for $2^{x}$ and $log_{2}x$ calculations compared with the latest CORDIC method.},
+  archive      = {J_TC},
+  author       = {Hui Chen and Lianghua Quan and Ke Chen and Weiqiang Liu},
+  doi          = {10.1109/TC.2024.3512183},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {983-995},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {High-radix generalized hyperbolic CORDIC and its hardware implementation},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Humas: A heterogeneity- and upgrade-aware microservice
+auto-scaling framework in large-scale data centers. <em>TC</em>,
+<em>74</em>(3), 968–982. (<a
+href="https://doi.org/10.1109/TC.2024.3506862">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An effective auto-scaling framework is essential for microservices to ensure performance stability and resource efficiency under dynamic workloads. As revealed by many prior studies, the key to efficient auto-scaling lies in accurately learning performance patterns, i.e., the relationship between performance metrics and workloads in data-driven schemes. However, we notice that there are two significant challenges in characterizing performance patterns for large-scale microservices. Firstly, diverse microservices demonstrate varying sensitivities to heterogeneous machines, causing difficulty in quantifying the performance difference in a fixed manner. Secondly, frequent version upgrades of microservices result in uncertain changes in performance patterns, known as pattern drifts, leading to imprecise resource capacity estimation issues. To address these challenges, we propose Humas, a heterogeneity- and upgrade-aware auto-scaling framework for large-scale microservices. Firstly, Humas quantifies the difference in resource efficiency among heterogeneous machines for various microservices online and normalizes their resources in standard units. Additionally, Humas develops a least-squares density-difference (LSDD) based algorithm to identify pattern drifts caused by upgrades. Lastly, Humas generates capacity adjustment plans for microservices based on the latest performance patterns and predicted workloads. The experiment results conducted on 50 real microservices with over 11,000 containers demonstrate that Humas improves resource efficiency and performance stability by approximately 30.4% and 48.0%, respectively, compared to state-of-the-art approaches.},
+  archive      = {J_TC},
+  author       = {Qin Hua and Dingyu Yang and Shiyou Qian and Jian Cao and Guangtao Xue and Minglu Li},
+  doi          = {10.1109/TC.2024.3506862},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {968-982},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Humas: A heterogeneity- and upgrade-aware microservice auto-scaling framework in large-scale data centers},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RuYi: Optimizing burst buffer through automated,
+fine-grained process-to-BB mapping. <em>TC</em>, <em>74</em>(3),
+955–967. (<a href="https://doi.org/10.1109/TC.2024.3510624">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current supercomputers use an SSD-based storage layer called Burst Buffer (BB) to provide I/O-intensive applications with accelerated storage access. However, efficiently utilizing this limited and expensive storage remains a critical issue, creating an urgent need for implementing Quality of Service (QoS) in BB. To address this, we propose RuYi, a QoS-aware method to provide applications with bandwidth guarantees in the BB file system. RuYi tackles two main issues. First, it quantitatively profiles available bandwidth resources in BB to ensure reliable QoS, a crucial aspect seldom studied in the literature. Second, RuYi offers fine-grained process-level QoS via an innovative process-to-BB mapping, maximizing resource utilization—something not achievable with conventional coarse-grained compute-to-BB mapping. We evaluated RuYi on a subsystem of the leading exascale supercomputer Sunway, consisting of 4,000 compute nodes and 200 BB nodes. The experimental results demonstrate that RuYi achieves an impressive end-to-end bandwidth control accuracy of 97%, while improving BB utilization by up to 116% compared to conventional coarse-grained compute-to-BB mapping.},
+  archive      = {J_TC},
+  author       = {Yusheng Hua and Xuanhua Shi and Ligang He and Kang He and Teng Zhang and Hai Jin and Yong Chen},
+  doi          = {10.1109/TC.2024.3510624},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {955-967},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {RuYi: Optimizing burst buffer through automated, fine-grained process-to-BB mapping},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Protecting the CCSDS 123.0-b-2 compression algorithm against
+single-event upsets for space applications. <em>TC</em>, <em>74</em>(3),
+944–954. (<a href="https://doi.org/10.1109/TC.2024.3512203">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hyperspectral imaging is an excellent tool to remotely analyze the Earth from in-orbit devices. Satellites capture these images containing vast information about the ground pixels. To optimize storage and transmission speeds, compression is often performed onboard the satellite. To that end, algorithms such as the CCSDS 123.0-B-2 are implemented on FPGAs, enabling this process in an efficient and fast manner. Single-Event Upsets (SEU) are commonplace in this scenario, e.g. bit flips in the FPGA’s configuration memory which can catastrophically alter the algorithm’s output. In this paper, we propose a fault tolerance technique for this specific case. The compression core is checked periodically by running a golden model designed to excite the full internal datapath based on a synthetic image. A failure in this check will trigger a reconfiguration of the compression core. Results show better detection rates than Dual Modular Redundancy (DMR) at a fraction of the resource cost, proving this technique as a viable alternative. Furthermore, other algorithms with similar processing flows might benefit as well from this technique.},
+  archive      = {J_TC},
+  author       = {Daniel Báscones and Francisco García-Herrero and Óscar Ruano and Carlos González and Daniel Mozos and Juan Antonio Maestro},
+  doi          = {10.1109/TC.2024.3512203},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {944-954},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Protecting the CCSDS 123.0-B-2 compression algorithm against single-event upsets for space applications},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NStore: A high-performance NUMA-aware key-value store for
+hybrid memory. <em>TC</em>, <em>74</em>(3), 929–943. (<a
+href="https://doi.org/10.1109/TC.2024.3504269">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Emerging persistent memory (PM) promises near-DRAM performance, larger capacity, and data persistence, attracting researchers to design PM-based key-value stores. However, existing PM-based key-value stores lack awareness of the Non-Uniform Memory Access (NUMA) architecture on PM, where accessing PM on remote NUMA sockets is considerably slower than accessing local PM. This NUMA-unawareness results in sub-optimal performance when scaling on NUMA. Although DRAM caching alleviates this issue, existing cache policies ignore the performance disparity between remote and local PM accesses, keeping remote PM access as a performance bottleneck when scaling PM stores on NUMA. Furthermore, creating hot data views in each socket&#39;s PM fails to eliminate remote PM writes and, worse, induces additional local PM writes. This paper presents NStore, a high-performance NUMA-aware key-value store for the PM-DRAM hybrid memory. NStore introduces a NUMA-aware cache replacement strategy, called Remote Access First (RAF) cache in DRAM, to minimize remote PM accesses. In addition, NStore deploys Nlog, a write-optimized log-structured persistent storage, purposed to eliminate remote PM writes. NStore further mitigates the NUMA impacts through localized scan operations, efficient garbage collection, and multi-thread recovery for Nlog. Evaluations show that NStore outperforms state-of-the-art PM-based key-value stores, achieving up to 13.9$\times$ and 11.2$\times$ higher write and read throughput, respectively.},
+  archive      = {J_TC},
+  author       = {Zhonghua Wang and Kai Lu and Jiguang Wan and Hong Jiang and Zeyang Zhao and Peng Xu and Biliang Lai and Guokuan Li and Changsheng Xie},
+  doi          = {10.1109/TC.2024.3504269},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {929-943},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {NStore: A high-performance NUMA-aware key-value store for hybrid memory},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nicaea: A byzantine fault tolerant consensus under
+unpredictable message delivery failures for parallel and distributed
+computing. <em>TC</em>, <em>74</em>(3), 915–928. (<a
+href="https://doi.org/10.1109/TC.2024.3506856">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Byzantine fault-tolerant (BFT) consensus is a critical problem in parallel and distributed computing systems, particularly with potential adversaries. Most prior work on BFT consensus assumes reliable message delivery and tolerates arbitrary failures of up to $\frac{n}{3}$ nodes out of $n$ total nodes. However, many systems face unpredictable message delivery failures. This paper investigates the impact of unpredictable message delivery failures on the BFT consensus problem. We propose Nicaea, a novel protocol enabling consensus among loyal nodes when the number of Byzantine nodes is below a new threshold, given by: $\frac{\left(2-\rho\right)\left(1-\rho\right)^{2n-2}-1}{\left(2-\rho\right) \left(1-\rho\right)^{2n-2}+1}n$, where $\rho$ denotes the message failure rate. Theoretical proofs and experimental results validate Nicaea&#39;s Byzantine resilience. Our findings reveal a fundamental trade-off: as message delivery instability increases, a system&#39;s tolerance to Byzantine failures decreases. The well-known $\frac{n}{3}$ threshold under reliable message delivery is a special case of our generalized threshold when $\rho=0$. To the best of our knowledge, this work presents the first quantitative characterization of unpredictable message delivery failures’ impact on Byzantine fault tolerance in parallel and distributed computing.},
+  archive      = {J_TC},
+  author       = {Guanlin Jing and Yifei Zou and Minghui Xu and Yanqiang Zhang and Dongxiao Yu and Zhiguang Shan and Xiuzhen Cheng and Rajiv Ranjan},
+  doi          = {10.1109/TC.2024.3506856},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {915-928},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Nicaea: A byzantine fault tolerant consensus under unpredictable message delivery failures for parallel and distributed computing},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data sharing in the metaverse with key abuse resistance
+based on decentralized CP-ABE. <em>TC</em>, <em>74</em>(3), 901–914. (<a
+href="https://doi.org/10.1109/TC.2024.3512177">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data sharing is ubiquitous in the metaverse, which adopts blockchain as its foundation. Blockchain is employed because it enables data transparency, achieves tamper resistance, and supports smart contracts. However, securely sharing data based on blockchain necessitates further consideration. Ciphertext-policy attribute-based encryption (CP-ABE) is a promising primitive to provide confidentiality and fine-grained access control. Nonetheless, authority accountability and key abuse are critical issues that practical applications must address. Few studies have considered CP-ABE key confidentiality and authority accountability simultaneously. To our knowledge, we are the first to fill this gap by integrating non-interactive zero-knowledge (NIZK) proofs into CP-ABE keys and outsourcing the verification process to a smart contract. To meet the decentralization requirement, we incorporate a decentralized CP-ABE scheme into the proposed data sharing system. Additionally, we provide an implementation based on smart contract to determine whether an access control policy is satisfied by a set of CP-ABE keys. We also introduce an open incentive mechanism to encourage honest participation in data sharing. Hence, the key abuse issue is resolved through the NIZK proof and the incentive mechanism. We provide a theoretical analysis and conduct comprehensive experiments to demonstrate the feasibility and efficiency of the data sharing system. Based on the proposed accountable approach, we further illustrate an application in GameFi, where players can play to earn or contribute to an accountable DAO, fostering a thriving metaverse ecosystem.},
+  archive      = {J_TC},
+  author       = {Liang Zhang and Zhanrong Ou and Changhui Hu and Haibin Kan and Jiheng Zhang},
+  doi          = {10.1109/TC.2024.3512177},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {901-914},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Data sharing in the metaverse with key abuse resistance based on decentralized CP-ABE},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pako: Multi-valued byzantine agreement comparable to
+partially-synchronous BFT. <em>TC</em>, <em>74</em>(3), 887–900. (<a
+href="https://doi.org/10.1109/TC.2024.3510620">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Asynchronous Byzantine Fault Tolerance (BFT) consensus protocols are gaining attention for their resilience against network attacks. Among them, Multi-valued Byzantine Agreement (MVBA) protocols play a critical role, which accepts input values from each replica and returns a consistent output. The state-of-the-art MVBA protocol, sMVBA, has a good-case latency of $6\delta$ and an expected bad-case latency of $12\delta$, with $\delta$ representing the network delay. Additionally, sMVBA exhibits a communication of $O(n^{2})$ in both good and bad cases. Although it outperforms other MVBA protocols, sMVBA still lags behind partially-synchronous counterparts. For instance, PBFT achieves a good-case latency of $3\delta$, and HotStuff boasts a good-case communication of $O(n)$. This paper introduces a novel MVBA protocol, Pako, aiming for performance comparable to partially-synchronous protocols. Pako leverages an existing MVBA protocol as a black box and introduces an additional view with an optimistic path to commit values efficiently. Two Pako variants, Pako1 and Pako2, provide a trade-off between latency and communication. To be more specific, Pako1 achieves a good-case latency of $3\delta$ with $O(n^{2})$ communication, while Pako2 reduces the communication to $O(n)$ with a slightly higher good-case latency of $5\delta$. A series of experiments demonstrate Pako&#39;s significant outperformance of counterparts.},
+  archive      = {J_TC},
+  author       = {Xiaohai Dai and Zhengxuan Guo and Jiang Xiao and Guanxiong Wang and Yifei Liang and Chen Yu and Hai Jin},
+  doi          = {10.1109/TC.2024.3510620},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {887-900},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Pako: Multi-valued byzantine agreement comparable to partially-synchronous BFT},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Being patient and persistent: Optimizing an early stopping
+strategy for deep learning in profiled attacks. <em>TC</em>,
+<em>74</em>(3), 875–886. (<a
+href="https://doi.org/10.1109/TC.2023.3234205">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The absence of an algorithm that effectively monitors the deep learning models used in side-channel attacks increases the difficulty of a security evaluation. If an attack is unsuccessful, that could be due to multiple reasons. It can be that we are indeed dealing with a resistant implementation, but it is possible that the deep learning model used is faulty. In this contribution, we formalize two conditions, persistence and patience, for a deep learning model to be optimal and we propose an early stopping algorithm that reliably recognizes the model&#39;s optimal state during training. The novelty of our solution is in an efficient implementation of guessing entropy estimation as a success metric used to measure the strength of a side-channel adversary. As a result, the model which uses our strategy for learning converges with fewer traces than other known methods.},
+  archive      = {J_TC},
+  author       = {Servio Paguada and Lejla Batina and Ileana Buhan and Igor Armendariz},
+  doi          = {10.1109/TC.2023.3234205},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {875-886},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Being patient and persistent: Optimizing an early stopping strategy for deep learning in profiled attacks},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AI trojan attack for evading machine learning-based
+detection of hardware trojans. <em>TC</em>, <em>74</em>(3), 860–874. (<a
+href="https://doi.org/10.1109/TC.2023.3251864">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The globalized semiconductor supply chain significantly increases the risk of exposing System-on-Chip (SoC) designs to hardware Trojans. While machine learning (ML) based Trojan detection approaches are promising due to their scalability as well as detection accuracy, ML-based methods themselves are vulnerable from Trojan attacks. In this paper, we propose a robust backdoor attack on ML-based Trojan detection algorithms to demonstrate this serious vulnerability. The proposed framework is able to design an AI Trojan and implant it inside the ML model that can be triggered by specific inputs. Experimental results demonstrate that the proposed AI Trojans can bypass state-of-the-art defense algorithms. Moreover, our approach provides a fast and cost-effective solution in achieving 100% attack success rate that outperforms state-of-the art methods based on adversarial attacks.},
+  archive      = {J_TC},
+  author       = {Zhixin Pan and Prabhat Mishra},
+  doi          = {10.1109/TC.2023.3251864},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {860-874},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {AI trojan attack for evading machine learning-based detection of hardware trojans},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secure remote attestation with strong key insulation
+guarantees. <em>TC</em>, <em>74</em>(3), 848–859. (<a
+href="https://doi.org/10.1109/TC.2023.3290870">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Secure processors with hardware-enforced isolation are crucial for secure cloud computation. However, commercial secure processors have underestimated the capabilities of attackers and failed to provide secure execution environments capable of protecting sensitive information against side-channel attacks. Remote Attestation protocols based on traditional signature schemes are not secure under side-channel attacks anymore since their secret keys can be leaked. Previously, Key-Insulated Schemes (KIS) have been introduced to mitigate the damage caused by secret key exposure in cryptosystems by breaking the lifetime of secret keys into independent sessions. KIS protect the security of all other sessions if any session keys are compromised, however, provide no security guarantees for a compromised session. We introduce a new cryptographic primitive called One-Time Signature with Secret Key Exposure (OTS-SKE), which ensures no one can forge a valid signature of a new message or nonce even if all secret session keys are leaked. OTS-SKE enables us to sign attestation reports securely under a powerful adversary who can observe all digital states in secure enclaves through side-channel attacks. We also minimize the trusted computing base by introducing a secure co-processor that is only responsible for key generation into the system. Our experiments show that the signing of OTS-SKE is faster than KIS as well as Elliptic Curve Digital Signature Algorithm (ECDSA) used in Intel SGX.},
+  archive      = {J_TC},
+  author       = {Deniz Gurevin and Chenglu Jin and Phuong Ha Nguyen and Omer Khan and Marten van Dijk},
+  doi          = {10.1109/TC.2023.3290870},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {848-859},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Secure remote attestation with strong key insulation guarantees},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). How to launch a powerful side-channel collision attack?
+<em>TC</em>, <em>74</em>(3), 835–847. (<a
+href="https://doi.org/10.1109/TC.2023.3259319">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A cryptographic implementation produces very similar power leakages when fed with the same input. Side-channel collision attacks exploit these similarities to establish the relationship between sub-keys and improve the efficiency of key recovery. Benefiting from independence of leakage model, they play an important role in non-profiled setting. However, performance of existing approaches against single collision value is still sub-optimal and optimization is promising. Motivated by this, we first theoretically analyze the mathematical dependency between the number of collisions and the number of encryptions, and propose an efficient side-channel attack named Collision-Paired Correlation Attack (CPCA) to guarantee that the side with fewer samples in a collision is completely paired in low noise scenario. This allows overcoming the inefficient utilization of information in existing works. Moreover, to further employ underlying informativeness, we maximize collision pairs as many as possible. This optimization significantly improves performance of CPCA and thereby extends it to large noise scenarios. Finally, to achieve moderate computational complexity, two equivalent variants of CPCA are investigated to address the potential problem of limited computing resources. Our further theoretical study illustrates that CPCA provides the upper security bound of Correlation-Enhanced Collision Attack (CECA), and experimental results fully verify its superiority.},
+  archive      = {J_TC},
+  author       = {Jiangshan Long and Changhai Ou and Yajun Ma and Yifan Fan and Hua Chen and Shihui Zheng},
+  doi          = {10.1109/TC.2023.3259319},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {835-847},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {How to launch a powerful side-channel collision attack?},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). <span
+class="math inline"><code>P</code><code>A</code><code>R</code><code>L</code><code>E</code></span>&lt;Mml:math
+xmlns:mml=“http://www.w3.org/1998/math/MathML”&gt;&lt;mml:mi
+mathvariant=“monospace”&gt;PARLE&lt;/mml:mi&gt;&lt;/mml:math&gt;-<span
+class="math inline"><code>G</code></span>&lt;mml:math
+xmlns:mml=“http://www.w3.org/1998/math/MathML”&gt;&lt;mml:mi
+mathvariant=“monospace”&gt;g&lt;/mml:mi&gt;&lt;/mml:math&gt;: Provable
+automated representation and analysis framework for learnability
+evaluation of generic PUF compositions. <em>TC</em>, <em>74</em>(3),
+820–834. (<a href="https://doi.org/10.1109/TC.2023.3259327">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Besides enormous research efforts in the design of Physically Unclonable Functions (PUFs), its vulnerabilities are still being exploited using machine learning (ML) based model-building attacks. Due to inherent complicacy in exploring and manually converging to a strong PUF composition, the challenge of building ML-attack resistant PUFs continues. Hence, it becomes imperative to develop an automated framework that can formally assess the learnability of different PUF constructions and compositions to guide the designer to explore resilient PUFs. In this work, we present an automated analysis framework ($\mathtt{PARLE}$-$\mathtt{G}$), to formally represent and evaluate the Probably Approximately Correct (PAC) learnability of PUF constructions and their compositions. A high-level specification language $\mathtt{PUF}$-$\mathtt{G}$ has been developed to structurally represent any PUF composition comprising a specified set of primitive components and composition operations. The tool takes a PUF design represented in $\mathtt{PUF}$-$\mathtt{G}$ language as input and returns its PAC learnability result, identifying a suitable PAC learning algorithm and the PAC model parameters based on the input PUF design. PUF designs proven to be learnable by $\mathtt{PARLE}$-$\mathtt{G}$ are segregated into different classes based on the asymptotic complexity of their learnability bounds. Such automated analysis helps a designer to make informed design choices, thereby strengthening a PUF construction from the architectural level.},
+  archive      = {J_TC},
+  author       = {Durba Chatterjee and Aritra Hazra and Debdeep Mukhopadhyay},
+  doi          = {10.1109/TC.2023.3259327},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {820-834},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {$\mathtt{PARLE}$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi mathvariant=&quot;monospace&quot;&gt;PARLE&lt;/mml:mi&gt;&lt;/mml:math&gt;-$\mathtt{G}$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi mathvariant=&quot;monospace&quot;&gt;G&lt;/mml:mi&gt;&lt;/mml:math&gt;: provable automated representation and analysis framework for learnability evaluation of generic PUF compositions},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). WhistleBlower: A system-level empirical study on RowHammer.
+<em>TC</em>, <em>74</em>(3), 805–819. (<a
+href="https://doi.org/10.1109/TC.2023.3235973">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With frequent software-induced activations on DRAM rows, bit flips can occur on their physically adjacent rows (i.e., RowHammer). Existing studies leverage FPGA platforms to characterize RowHammer, which have identified key factors that contribute to RowHammer bit flips, e.g., data pattern. As the FPGA-based studies have removed the interference of the OS and the memory controller, their findings on the identified contributing factors do not always work as reported in a real-world computing system, resulting in negative effects on system-level RowHammer attacks and defenses. In this paper, we carry out a system-level empirical study on factors from both the software side and the DRAM side that contribute to RowHammer. We conduct the study on 33 DRAM modules including both DDR4 and DDR3, with 292 DRAM chips from various vendors. Our experimental results from the software side show that some prior findings about existing factors are inconsistent with our observations, thus not applicable to a real-world system. Also, we contribute to identifying one new factor that effectively affects RowHammer bit flips. Our DRAM-side results identify three types of new contributing factors and indicate that DRAM modules are more vulnerable if they achieve better performance and lower power consumption. Particularly, Intel XMP, intended for improving DRAM performance, might be abused for RowHammer attacks.},
+  archive      = {J_TC},
+  author       = {Wei He and Zhi Zhang and Yueqiang Cheng and Wenhao Wang and Wei Song and Yansong Gao and Qifei Zhang and Kang Li and Dongxi Liu and Surya Nepal},
+  doi          = {10.1109/TC.2023.3235973},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {805-819},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {WhistleBlower: A system-level empirical study on RowHammer},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multivariate TVLA—efficient side-channel evaluation using
+confidence intervals. <em>TC</em>, <em>74</em>(3), 790–804. (<a
+href="https://doi.org/10.1109/TC.2023.3299045">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Securing cryptographic hardware designs and software implementations against side-channel attacks that leverage the power consumption or electromagnetic emanations of a device is an active topic of research. Different countermeasures against these attacks have been published, many of which rely on masking where sensitive information is split into multiple shares. Here, the information is hidden in higher statistical moments of the leakage if processed at the same time (univariate) or in combinations of side-channel information from different points in time (multivariate) if processed sequentially. Test Vector Leakage Assessment (TVLA) is a common evaluation technique to address the growing number of specific attacks. However, the assessment of multivariate leakage requires the evaluation of all possible combinations of sample points, massively slowing down the evaluation and in turn the development of countermeasures due to computational complexity. In this work, we develop and compare techniques to determine clock cycle combinations that leak information in a multivariate setting. We develop an efficient multivariate assessment framework and show how this approach can be used to generate evaluation results that satisfy a desired confidence level. Eventually, we demonstrate the practical relevance of our approach by applying it to two masked implementations of block ciphers.},
+  archive      = {J_TC},
+  author       = {Florian Bache and Jonas Wloka and Pascal Sasdrich and Tim Güneysu},
+  doi          = {10.1109/TC.2023.3299045},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {790-804},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Multivariate TVLA—Efficient side-channel evaluation using confidence intervals},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reducing paging and exit overheads in intel SGX for
+oblivious conjunctive keyword search. <em>TC</em>, <em>74</em>(3),
+776–789. (<a href="https://doi.org/10.1109/TC.2023.3281857">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Paging and exit overheads have been proven to be the performance bottlenecks when adopting Searchable Symmetric Encryption (SSE) with trusted hardware such as Intel SGX for keyword search. This problem becomes more serious when incorporating ORAM and SGX to design oblivious SSE schemes such as POSUP (Hoang et al., 2019) and Oblidb (Eskandarian and Zaharia, 2019) which can defend against inference attacks. The main reason comes from high round communication complexity of ORAM and constrained trusted memory created by SGX. To overcome this performance bottleneck, we propose a set of novel SSE constructions with realistic security/performance trade-offs. Our core idea is to encode the keyword-identifier pairs into a bloom filter to reduce the number of ORAM operations during the search procedure. Specifically, Construction 1 loads the bloom filter into the enclave sequentially, which outperforms about $1.7\times$ when the dataset is large compared with the performance of the baseline that directly combines ORAM and SGX. To further improve the performance of Construction 1, Construction 2 classifies keywords into groups and stores these groups in different bloom filters. By additionally leaking the keywords in search token belonging to which groups, Construction 2 outperforms Construction 1 by $16.5\sim 36.8\times$ and provides an improvement of at least one order over state-of-the-art oblivious protocols.},
+  archive      = {J_TC},
+  author       = {Qin Jiang and Saiyu Qi and Xu Yang and Yong Qi and Jianfeng Wang and Youshui Lu and Bochao An and Ee-Chien Chang},
+  doi          = {10.1109/TC.2023.3281857},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {776-789},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Reducing paging and exit overheads in intel SGX for oblivious conjunctive keyword search},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hardware design of an advanced-feature cryptographic tile
+within the european processor initiative. <em>TC</em>, <em>74</em>(3),
+762–775. (<a href="https://doi.org/10.1109/TC.2023.3278536">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work describes the hardware implementation of a cryptographic accelerators suite, named Crypto-Tile, in the framework of the European Processor Initiative (EPI) project. The EPI project traced the roadmap to develop the first family of low-power processors with the design fully made in Europe, for Big Data, supercomputers and automotive. Each of the coprocessors of Crypto-Tile is dedicated to a specific family of cryptographic algorithms, offering functions for symmetric and public-key cryptography, computation of digests, generation of random numbers, and Post-Quantum cryptography. The performances of each coprocessor outperform other available solutions, offering innovative hardware-native services, such as key management, clock randomisation and access privilege mechanisms. The system has been synthesised on a 7 nm standard-cell technology, being the first Cryptoprocessor to be characterised in such an advanced silicon technology. The post-synthesis netlist has been employed to assess the resistance of Crypto-Tile to power analysis side-channel attacks. Finally, a demoboard has been implemented, integrating a RISC-V softcore processor and the Crypto-Tile module, and drivers for hardware abstraction layer, bare-metal applications and drivers for Linux kernel in C language have been developed. Finally, we exploited them to compare in terms of execution speed the hardware-accelerated algorithms against software-only solutions.},
+  archive      = {J_TC},
+  author       = {Pietro Nannipieri and Luca Crocetti and Stefano Di Matteo and Luca Fanucci and Sergio Saponara},
+  doi          = {10.1109/TC.2023.3278536},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {762-775},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Hardware design of an advanced-feature cryptographic tile within the european processor initiative},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Node-wise hardware trojan detection based on graph learning.
+<em>TC</em>, <em>74</em>(3), 749–761. (<a
+href="https://doi.org/10.1109/TC.2023.3280134">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the fourth industrial revolution, securing the protection of supply chains has become an ever-growing concern. One such cyber threat is a hardware Trojan (HT), a malicious modification to an IC. HTs are often identified during the hardware manufacturing process but should be removed earlier in the design process. Machine learning-based HT detection in gate-level netlists is an efficient approach to identifying HTs at the early stage. However, feature-based modeling has limitations in terms of discovering an appropriate set of HT features. We thus propose NHTD-GL in this paper, a novel node-wise HT detection method based on graph learning (GL). Given the formal analysis of the HT features obtained from domain knowledge, NHTD-GL bridges the gap between graph representation learning and feature-based HT detection. The experimental results demonstrate that NHTD-GL achieves 0.998 detection accuracy and 0.921 F1-score and outperforms state-of-the-art node-wise HT detection methods. NHTD-GL extracts HT features without heuristic feature engineering.},
+  archive      = {J_TC},
+  author       = {Kento Hasegawa and Kazuki Yamashita and Seira Hidano and Kazuhide Fukushima and Kazuo Hashimoto and Nozomu Togawa},
+  doi          = {10.1109/TC.2023.3280134},
+  journal      = {IEEE Transactions on Computers},
+  month        = {3},
+  number       = {3},
+  pages        = {749-761},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Node-wise hardware trojan detection based on graph learning},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Alg_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="alg---5">Alg - 5</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Complexity framework for forbidden subgraphs i: The
+framework. <em>Alg</em>, <em>87</em>(3), 429–464. (<a
+href="https://doi.org/10.1007/s00453-024-01289-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For a set of graphs $${\mathcal {H}}$$ , a graph G is $${\mathcal {H}}$$ -subgraph-free if G does not contain any graph from $${{{\mathcal {H}}}}$$ as a subgraph. We propose general and easy-to-state conditions on graph problems that explain a large set of results for $${\mathcal {H}}$$ -subgraph-free graphs. Namely, a graph problem must be efficiently solvable on graphs of bounded treewidth, computationally hard on subcubic graphs, and computational hardness must be preserved under edge subdivision of subcubic graphs. Our meta-classification says that if a graph problem $$\Pi $$ satisfies all three conditions, then for every finite set $${{{\mathcal {H}}}}$$ , it is “efficiently solvable” on $${{{\mathcal {H}}}}$$ -subgraph-free graphs if $${\mathcal {H}}$$ contains a disjoint union of one or more paths and subdivided claws, and $$\Pi $$ is “computationally hard” otherwise. We apply our meta-classification on many well-known partitioning, covering and packing problems, network design problems and width parameter problems to obtain a dichotomy between polynomial-time solvability and NP-completeness. For distance-metric problems, we obtain a dichotomy between almost-linear-time solvability and having no subquadratic-time algorithm (conditioned on some hardness hypotheses). Apart from capturing a large number of explicitly and implicitly known results in the literature, we also prove a number of new results. Moreover, we perform an extensive comparison between the subgraph framework and the existing frameworks for the minor and topological minor relations, and pose several new open problems and research directions.},
+  archive      = {J_Alg},
+  author       = {Johnson, Matthew and Martin, Barnaby and Oostveen, Jelle J. and Pandey, Sukanya and Paulusma, Daniël and Smith, Siani and van Leeuwen, Erik Jan},
+  doi          = {10.1007/s00453-024-01289-2},
+  journal      = {Algorithmica},
+  month        = {3},
+  number       = {3},
+  pages        = {429-464},
+  shortjournal = {Algorithmica},
+  title        = {Complexity framework for forbidden subgraphs i: The framework},
+  volume       = {87},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FREIGHT: Fast streaming hypergraph partitioning.
+<em>Alg</em>, <em>87</em>(3), 405–428. (<a
+href="https://doi.org/10.1007/s00453-024-01291-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Partitioning the vertices of a (hyper)graph into k roughly balanced blocks such that few (hyper)edges run between blocks is a key problem for large-scale distributed processing. A current trend for partitioning huge (hyper)graphs using low computational resources are streaming algorithms. In this work, we propose FREIGHT: a Fast stREamInG Hypergraph parTitioning algorithm which is an adaptation of the widely-known graph-based algorithm Fennel. By using an efficient data structure, we make the overall running of FREIGHT linearly dependent on the pin-count of the hypergraph and the memory consumption linearly dependent on the numbers of nets and blocks. The results of our extensive experimentation showcase the promising performance of FREIGHT as a highly efficient and effective solution for streaming hypergraph partitioning. Our algorithm demonstrates competitive running time with the Hashing algorithm, with a geometric mean runtime within a factor of four compared to the Hashing algorithm. Significantly, our findings highlight the superiority of FREIGHT over all existing (buffered) streaming algorithms and even the in-memory algorithm HYPE, with respect to both cut-net and connectivity measures. This indicates that our proposed algorithm is a promising hypergraph partitioning tool to tackle the challenge posed by large-scale and dynamic data processing.},
+  archive      = {J_Alg},
+  author       = {Eyubov, Kamal and Fonseca Faraj, Marcelo and Schulz, Christian},
+  doi          = {10.1007/s00453-024-01291-8},
+  journal      = {Algorithmica},
+  month        = {3},
+  number       = {3},
+  pages        = {405-428},
+  shortjournal = {Algorithmica},
+  title        = {FREIGHT: Fast streaming hypergraph partitioning},
+  volume       = {87},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shared versus private randomness in distributed interactive
+proofs. <em>Alg</em>, <em>87</em>(3), 377–404. (<a
+href="https://doi.org/10.1007/s00453-024-01288-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In distributed interactive proofs, the nodes of a graph G interact with a powerful but untrustable prover who tries to convince them, in a small number of rounds and through short messages, that G satisfies some property. This series of rounds is followed by a phase of distributed verification, which may be either deterministic or randomized, where nodes exchange messages with their neighbors. The nature of this last verification round defines the two types of interactive protocols. We say that the protocol is of Arthur–Merlin type if the verification round is deterministic. We say that the protocol is of Merlin–Arthur type if, in the verification round, the nodes are allowed to use a fresh set of random bits. In the original model introduced by Kol, Oshman, and Saxena [PODC 2018], the randomness was private in the sense that each node had only access to an individual source of random coins. Crescenzi, Fraigniaud, and Paz [DISC 2019] initiated the study of the impact of shared randomness (the situation where the coin tosses are visible to all nodes) in the distributed interactive model. In this work, we continue that research line by showing that the impact of the two forms of randomness is very different depending on whether we are considering Arthur–Merlin protocols or Merlin–Arthur protocols. While private randomness gives more power to the first type of protocols, shared randomness provides more power to the second. We also show that there exists at most an exponential gap between the certificate size in distributed interactive proofs with respect to distributed verification protocols without any randomness.},
+  archive      = {J_Alg},
+  author       = {Montealegre, Pedro and Ramírez-Romero, Diego and Rapaport, Ivan},
+  doi          = {10.1007/s00453-024-01288-3},
+  journal      = {Algorithmica},
+  month        = {3},
+  number       = {3},
+  pages        = {377-404},
+  shortjournal = {Algorithmica},
+  title        = {Shared versus private randomness in distributed interactive proofs},
+  volume       = {87},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient algorithm for power dominating set.
+<em>Alg</em>, <em>87</em>(3), 344–376. (<a
+href="https://doi.org/10.1007/s00453-024-01283-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The problem Power Dominating Set (PDS) is motivated by the placement of phasor measurement units to monitor electrical networks. It asks for a minimum set of vertices in a graph that observes all remaining vertices by exhaustively applying two observation rules. Our contribution is twofold. First, we determine the parameterized complexity of PDS by proving it is W[P]-complete when parameterized with respect to the solution size. We note that it was only known to be W[2]-hard before. Our second and main contribution is a new algorithm for PDS that efficiently solves practical instances. Our algorithm consists of two complementary parts. The first is a set of reduction rules for PDS that can also be used in conjunction with previously existing algorithms. The second is an algorithm for solving the remaining kernel based on the implicit hitting set approach. Our evaluation on a set of power grid instances from the literature shows that our solver outperforms previous state-of-the-art solvers for PDS by more than one order of magnitude on average. Furthermore, our algorithm can solve previously unsolved instances of continental scale within a few minutes.},
+  archive      = {J_Alg},
+  author       = {Bläsius, Thomas and Göttlicher, Max},
+  doi          = {10.1007/s00453-024-01283-8},
+  journal      = {Algorithmica},
+  month        = {3},
+  number       = {3},
+  pages        = {344-376},
+  shortjournal = {Algorithmica},
+  title        = {An efficient algorithm for power dominating set},
+  volume       = {87},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Symmetry breaking in the plane. <em>Alg</em>,
+<em>87</em>(3), 321–343. (<a
+href="https://doi.org/10.1007/s00453-024-01286-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a fundamental question related to the feasibility of deterministic symmetry breaking in the infinite Euclidean plane for two robots that have minimal or no knowledge of the respective capabilities and “measuring instruments” of themselves and each other. Assume that two anonymous mobile robots are placed at different locations at unknown distance d from each other on the infinite Euclidean plane. Each robot knows neither the location of itself nor of the other robot. The robots cannot communicate wirelessly, but have a certain nonzero visibility radius r (with range r unknown to the robots). By rendezvous we mean that they are brought at distance at most r of each other by executing symmetric (identical) mobility algorithms. The robots are moving with unknown and constant but not necessarily identical speeds, their clocks and pedometers may be asymmetric, and their chirality inconsistent. We demonstrate that rendezvous for two robots is feasible under the studied model iff the robots have either: different speeds; or different clocks; or different orientations but equal chiralities. When the rendezvous is feasible, we provide a universal algorithm which always solves rendezvous despite the fact that the robots have no knowledge of which among their respective parameters may be different.},
+  archive      = {J_Alg},
+  author       = {Czyzowicz, Jurek and Gąsieniec, Leszek and Killick, Ryan and Kranakis, Evangelos},
+  doi          = {10.1007/s00453-024-01286-5},
+  journal      = {Algorithmica},
+  month        = {3},
+  number       = {3},
+  pages        = {321-343},
+  shortjournal = {Algorithmica},
+  title        = {Symmetry breaking in the plane},
+  volume       = {87},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FROBT_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="frobt---14">FROBT - 14</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Editorial: AI-powered musical and entertainment robotics.
+<em>FROBT</em>, <em>12</em>, 1572828. (<a
+href="https://doi.org/10.3389/frobt.2025.1572828">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The convergence of robotics and artificial intelligence (AI) is revolutionizing the field of music and entertainment. Robots are evolving from performing traditional service-oriented tasks to enabling advanced human-robot interaction (HRI) with potential emotional engagement. The pursuit of robotic expressiveness presents new challenges and opportunities in the modeling, design and control of musical and entertainment robots. Current studies mainly work on the design and physical implementation of robots capable of manipulating various musical instruments \cite{wang2022data,lim2012towards}, while the development of socially intelligent robots for real-time HRI remains underexplored. With advancements in AI, robots can now compose and improvise, as well as interpret and respond to human affective states during HRI \cite{mccoll2016survey, wang2024human}.This research topic was initiated to present the latest developments of AI-powered musical and entertainment robots. As a result of the call, six papers have been accepted and collected in this research topic. These articles provide a comprehensive exploration of diverse artistic forms including singing, dancing and musical performance on instruments such as the piano, violin, guitar, drum and marimba. Figure \ref{fig:overview} shows an overview of the musical robots investigated in these studies.Among the contributed works, two articles focused on dexterous manipulation and sensorimotor coordination. \href{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1463744/full}{Gilday et al.} introduced a general-purpose system featuring a parametric hand capable of playing both the piano and performing guitar pick strumming. Unlike existing bespoke robotic musical systems, the proposed hand was designed as a single-piece 3D-printed structure, demonstrating potential for enhanced expressiveness in entertainment applications through the modulation of mechanical properties and actuation modes. The study highlighted that leveraging system-environment interactions enabled diverse, multi-instrument functionalities and variable playing styles with simplified control. Instead of musical instrument playing, \href{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1450177/full}{Twomey et al.} investigated dance performance using wearable soft sensors on the arm to explore whether such devices could enhance artistic expression. Dance movements were modeled as colliders within virtual mass-spring-damper systems, and limb segments were analyzed in local frames to avoid drift issues commonly associated with IMUs. The authors proposed a parallel algorithm to detect improvisational dance movements and control soft wearable actuators which can change size and lighting in response to detected motions. This work exemplified sensorimotor coordination and demonstrated how traditional dance and aesthetics could be enriched by spontaneous wearable-driven movements.Robot learning and control represent one of the biggest challenges in musical and entertainment robotics, particularly for acquiring manipulation skills and robotic expressiveness. \href{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1439629/full}{Horigome and Shibuya} developed a RL-based controller for a violin-playing robot, a 7-DoF dual-arm system actuated by DC motors. The system mimics human performance with the left arm handling fingering and the right arm controlling bowing movements. The right arm regulates multiple parameters including bowing speed, pressure, sounding point and direction. Analysis of the target sound pressure demonstrated that the robot successfully learned violin-playing techniques and enables expressive performance variations. The robot was automated to play the violin based on musical scores, demonstrating its ability to interpret and execute complex musical tasks. Similarly, \href{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1450097/full}{Karbasi et al.} explored robotic drumming using a two-DoF robotic arm with flexible grippers, which is referred to as ZRob. They employed an RL-based algorithm with a Deep Deterministic Policy Gradient (DDPG) architecture, incorporating both extrinsic and intrinsic reward signals. The results showed that intrinsic rewards triggered the emergence of novel rhythmic patterns. Additionally, the robot&amp;#39;s physical dynamics—embodied intelligence—were found to influence the learning algorithm due to the physical constraints of the drumming setup. This study highlights the interplay between robotic hardware and learning algorithms in achieving expressive musical performance. It can be seen that reinforcement learning continues to be a powerful and widely utilized approach for enabling robots to acquire complex manipulation and expressive skills. The aforementioned studies have investigated both hardware and software advancements. However, the interaction between these robots and humans has not been explored. \href{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1461615/full}{Gao et al.} investigated synchronization between human musicians and Shimon, a robotic marimba player capable of head and arm movements. Their study revealed that ancillary and social gestures, particularly head movements, significantly enhance temporal synchronization between humans and robots. Through experiments with human participants, the results demonstrated positive social engagement when collaborating with robots in artistic performances. The study also found that social head gestures improved synchronicity slightly more than ancillary or instrumental gestures, providing quantitative insights into the role of non-verbal cues in HRI. Similarly, \href{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1463477/full}{Nishiyama and Nonaka} investigated the concept of &amp;quot;togetherness&amp;quot; in a singing scenario, where human participants coordinated their voices with either another human or a machine (Vocaloid) under non-visual conditions. The study highlighted that human-to-human cooperation achieved higher similarity and anticipatory synchronization compared to human-machine interaction. These findings highlight the critical role of embodiment in enabling natural and effective collaboration, demonstrating how physical presence and human-like traits shape interaction dynamics.In conclusion, reinforcement learning holds strong potential in tackling the key challenges of equipping musical robots with advanced skills. Current AI-driven robotic systems have demonstrated the feasibility of achieving robotic expressiveness in various musical instruments. However, human-robot interaction presents a more complex research topic that requires interdisciplinary collaboration across fields such as robotics, materials science, computer science, psychology, musicology, sociology and ethics.},
+  archive      = {J_FROBT},
+  author       = {Wang, Huijiang and Hughes, Josie and Nonaka, Tetsushi and Abdulali, Arsen and Lalitharatne, Thilina Dulantha and Iida, Fumiya},
+  doi          = {10.3389/frobt.2025.1572828},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1572828},
+  shortjournal = {Front. Robot. AI},
+  title        = {Editorial: AI-powered musical and entertainment robotics},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial: Human factors and cognitive ergonomics in
+advanced industrial human-robot interaction. <em>FROBT</em>,
+<em>12</em>, 1564948. (<a
+href="https://doi.org/10.3389/frobt.2025.1564948">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Collaborative robotics is a very promising technology for many industrial processes, including e.g., manufacturing, logistics, or construction. This new technology are also changing the environment for workers in industry. Research on human-robot interaction (HRI) will be crucial for enhancing the operator&amp;#39;s work conditions and well-being, as well as production performance. In that regard, human factors, with a special emphasis on cognitive ergonomics are fundamental to implementing safe, fluent, and efficient collaborative applications. This Research Topic gathers a range of contributions on the study of Human Factors and Cognitive ergonomics in user-centered and collaborative applications in industrial settings. Here, we summarize these studies from the perspective of three pivotal areas impacted by collaborative robotics: workers&amp;#39; safety, performance, and well-being. The Reseach Topic provides a timely analysis of the changing landscape of industrial HRI as we stand on the cusp of a new era in industrial automation, defined by the fusion of human ingenuity and robotic efficiency. The contributions within offer practical insights and forwardthinking perspectives on how collaborative robotics can transform industrial workspaces in the future, in addition to reflecting state-of-the-art research in the field. A different aspect of this intricate relationship is covered by each article in this issue, from the social and psychological effects of incorporating robots into human-centered work environments to the complexities of design and implementation. Developing solutions that are both technologically sophisticated and human-centered requires a holistic approach, which is crucial for comprehending the complex nature of HRI.Before delving into the particulars of each contribution, we invite the reader to this brief summary, briefly presenting each contribution to the research topic through the lenses of safety, performance, and well-being.We hope that this will support reflections on the wider societal implications of HRC development, in addition to their technical and ergonomic aspects. A harmonious balance between human needs and machine capabilities will be key to the future of industry.In the field of Human Factors and Cognitive Ergonomics, introducing advanced collaborative robotic systems in production environments necessitates reevaluating safety from different perspectives, namely safety perceptions of workers, safety behaviours and mechanical safety. Integrating this technology in various industrial environments, such as manufacturing and logistics, prompts a critical examination of the interplay of the different elements interacting in the socio-technical system. As with any human-system interaction in the work context, a more ergonomic and anthropocentric system (characteristics that can be measured through optimisation of associated cognitive factors) implies greater safety in terms of prevention and mitigation of potential mechanical risk (understood as collisions, crushing, entrapment, etc.) and psychosocial risk as defined by Occupational Safety and Health Administration (OSHA) such as excessive workload, lack of control, job insecurity or insufficient communication .The present special issue includes diverse studies, each exploring different aspects of safety in human-robot collaboration.The contribution by Mirnig et al. (2023) constitutes an excellent opening to the special issue. While focusing on automated material handling vehicles, Mirnig et al. discuss many design aspects that are applicable also to HRI more broadly, including contextual factors such as purpose and context of use, and many aspects of the interaction itself. The study by Onnasch et al. (2023) investigates how directing a worker&amp;#39;s attention to specific targets with gaze communication can improve safety in humanrobot interaction by, first of all, suggesting how robotic eye design could affect operator attention and perceived cognitive workload. Furthermore, the paper indirectly suggests how robotic eyes could potentially prevent mechanical risks like collisions and entrapments. According to research, an operator&amp;#39;s situational awareness and capacity to anticipate and respond to possible hazards are enhanced when they focus on anthropomorphic robot eyes. This study highlights anthropomorphism&amp;#39;s contribution to improving operator safety and attention, leading to safer and more conscious HRIs in industrial settings. On the effect of anthropomorphic features in collaborative robots, the paper by Roesler (2023) examines the impact of anthropomorphic versus technical framing of robots on operators&amp;#39; trust, particularly in the context of robot failures. The study concludes that although the general levels of trust between technically framed and anthropomorphically framed robots did not significantly differ, people perceived the anthropomorphically framed robots as being more transparent, particularly after understandable failures. Because it improves operators&amp;#39; awareness and skill in anticipating and responding to potential mechanical risks like collisions or entrapments, this increased perceived transparency and positive perception in the event of understandable failures by potentially contributing to increased safety in HRIs. In a complementary way, Freire et al. (2024) also addresses the importance of safety in human-robot collaboration, but through a different mechanism.Their proposed cognitive architecture incorporates a &amp;quot;Socially Adaptive Safety Engine,&amp;quot; which dynamically adjusts safety parameters like distance and robot speed based on the worker&amp;#39;s trust level and preferences. While Roesler&amp;#39;s study emphasizes how transparency in robot behavior following failures can enhance safety, Freire et al. go further by actively modifying robot behavior in real-time to adapt to each worker&amp;#39;s trust and comfort, creating a more personalized and context-sensitive safety environment. Together, these articles suggest that fostering both transparency and adaptability in robots-through anthropomorphic design and context-aware systems-can significantly enhance operator safety and well-being in industrial environments.In a comprehensive perspective, Heinold et al. (2023) discusses various occupational safety and health (OSH) risks and benefits associated with the integration of robotic systems in industrial settings. These include both physical risks, such as collisions and mechanical failures, and psychosocial risks, including mental stress and job insecurity, which can arise from the use of advanced robotics in workplaces. The study also explores opportunities, such as the potential for reducing physical strain and improving longterm physical health by automating physically demanding tasks. The peculiarity of this manuscript lies in its comprehensive analysis of both physical and psychosocial OSH risks and opportunities, uniquely incorporating workers&amp;#39; expectations alongside evidence from the literature, offering a dual perspective on the safety implications of HRI. On a similar note, also addressing logistics and agricultural domains in addition to the manufacturing one, Pietrantoni et al. (2024) investigated experts&amp;#39; opinions regarding collaborative robotics safety considerations. Their study emphasized the critical role of tailored safety protocols, highlighting the need for advanced collision avoidance systems, failsafe mechanisms, and emergency stop protocols. Key aspects in agriculture include stability control and navigation on uneven ground for the safety and efficiency of workers. This sectoral approach completes the dual perspective taken by Heinold et al. in that it details how diverse industrial working contexts require tailor-made safety solutions to address both physical risks and ergonomic challenges and further promote the safe integration of robotics into complex work environments.The impact of human autonomy and robot work pace on job quality in collaborative settings is examined by Van Dijk et al. (2023). They find that higher human autonomy levels correlate with lower perceived workloads. The present article generally addresses some of the main working conditions leading to psychosocial risks according to OSHA, namely excessive workloads, lack of involvement in making decisions that affect the worker, and lack of influence over the way the job is done. This study shows that increasing human autonomy and modifying robot work pace can effectively reduce cognitive and temporal demands on workers. It compares scenarios of human-led work, fast-paced robot-led work, and slow-paced robot-led work. According to these results, reducing workload is linked to a lower mechanical risk because there is a lower probability of mistakes in HRI. This suggests that such measures optimise perceived workload and improve safety in collaborative scenarios.In the context of an industrial defect inspection task, the article of Cymek et al. (2023) examines the phenomenon of decreased individual effort and attention in human-robot collaborative tasks. The study finds that individuals searching for defects with a robot partner may have been less focused and exerted more mental energy than those searching alone, who on average, found more defects. Because less alert workers may be more likely to overlook safety hazards in their environment. This lower level of attentiveness and operational performance in human-robot teams affects productivity and may increase exposure to mechanical risks.workload. The article&amp;#39;s relevance is critical, considering that collaborative robotics is one of the most promising technology for retaining the ageing workforce and maintaining an appropriate quality of work. It finds that senior workers have a strong acceptance of technology and positive experiences during increased cognitive demand. As a result of increased mental demand during dual-task collaboration, the study found that task errors and duration increased despite these favourable perceptions. This might have detrimental effects on safety behaviours. While senior workers are generally open to working with robots, this increased cognitive workload-as indicated by eye tracking and cardiac activity-indicates that overburdening from collaboration may result in overwork and increase the mechanical risks in the workplace.For human-robot interaction to be considered successful, assessing and supporting the performance of the system as a whole is of utmost importance. In fact, one might even say that successful performance of the system is a necessary requisite when arguing for its existence. Successful performance can be defined in many different ways but in essence it is the combination of two things; doing things accurately (effective), and being efficient while doing it. In the context of collaborative human-robot settings, this research topic investigates relations between human-factors and performance in terms of temporal performance and cognitive load (Van Dijk et al., 2023;Pluchino et al., 2023), collaborative setting and error rate (Cymek et al., 2023), as well as collaborative setting and perceived workload (Van Dijk et al., 2023). While all these papers are mentioned above in relation to safety, they also bring relevant results in relation to performance. Van Dijk et al. (2023) show a positive correlation between temporal performance and cognitive load, comparing two conditions with a fast vs slow scheduling for the HRC setup. Pluchino et al. ( 2023) analyze the performance in terms of errors and time on task of senior workers engaged in a sequential collaborative manufacturing task together with a cobot. A dual task condition where the subjects were challenged with a secondary mathematical assignment is compared to a single task (control) condition. Results show that the dual task condition lead to increases in both errors and time spent on task, which corresponded with higher levels of perceived mental effort. However, no differences in perceived performance, as assessed by the NASA-TLX questionnaire, were found between the conditions. Cymek et al. (2023) compares two versions of an inspection task, one collaborative where a human operator is working together with a robot, and one individual where the operator is working alone. Results show lower performance for the collaborative setting in terms of fewer identified defects during inspection, indicating an reduction in cognitive load compared to the individual condition.As previously discussed, the effects on performance of different types of collaborative queues are investigated by Onnasch et al. (2023). An indirect argument is made for faster reallocation of attention as a result of naturalistic attentional queues leading to increased performance. This paper also provides a brief argumentation that some queues used to improve collaboration, e.g., legible motion, may directly impact performance in a negative way, while robot eyes does not.Finally, in their study of technical expert&amp;#39;s opinions of HRC also mentioned earlier, Pietrantoni et al. (2024) found that the introduction of collaborative robots is expected to bring improved efficiency and better worker conditions, e.g. as a result of automation of physically demanding operations. While the participants in the study generally held a positive attitude towards collaborative robots, the increased efficiency was also linked to concerns of job displacement and the need for reskilling.A key concern of cognitive ergonomics is to reduce negative effects of work. This also specifically refers to deployed technologies at the workplace, like advanced robotic systems. However, a truly humancentered approach to workplace and technology design aims at developing a person&amp;#39;s personality and fostering individual and organizational health in its broadest sense. A holistic understanding of health goes beyond the physical safety of humans, but includes mental and social well-being of humans. In the everevolving landscape of human-robot interaction, the integration of advanced robotics to different workplaces, raises critical questions about how the well-being of individuals might be affected. This research topic includes different publications, each shedding light on different facets of human-robot-interaction and its implications for the human experience thus potentially leading to well-being in the long-term.As mentioned earlier, Heinold et al. (2023) address the question which psycho-social consequences are associated with a close interaction between humans and robots. By combining scientific perspectives through a literature review and insights from workers&amp;#39; expectations, the study provides a holistic view of the implications of task automation via robotic systems. The findings highlight the psycho-social impacts advanced robotics may have on workers. It becomes clear, that the aspects of task design and function allocation as well as the specific interactions design of systems as well as operation and supervision design are relevant sources potentially affecting the specific user experience and the well-being of workers in the long run.When further considering potential psychological effects, assessing traditional workplace factors can be beneficial. From human factors research it is well understood, that the level of job control or autonomy within a given task is a strong determinant for job quality and well-being (Van Der Doef and Maes, 1999). This also applies to industrial tasks (Rosen and Wischniewski, 2019). As working tasks are newly allocated between humans and robots, human autonomy levels can change. The investigation of human autonomy and robotic work pace by Van Dijk et al. (2023) discussed earlier is also relevant from a well-being perspective.The research underscores the significance of autonomy and work pace in shaping job quality, emphasizing the importance of designing collaborative scenarios that prioritize human autonomy and adjustments to the robot&amp;#39;s work pace to optimize workload and enhance overall well-being.Exploring psycho-social effects more on a team level in this research topic is done by Cymek and colleagues. Their contribution focuses on the well-studied phenomenon of social loafing (Cymek et al., 2023). Using a visual-search task, the presented study investigates whether reduced individual effort, the phenomenon in question, which is commonly observed in human teams, also occurs in human-robot teams.The findings suggest that working with a robot team partner may lead to less attentive task execution, highlighting the need to address mental effort and attention allocation in human-robot collaboration to ensure optimal performance and, consequently, well-being.A human-centred technology design can contribute to a positive human-robot interaction and thus ensure a seamless workflow. One very relevant aspect of robot design which is touched upon in research is the application of anthropomorphic design features (Roesler et al., 2021). Two papers of this research topic explore the unique effects of anthropomorphic features in human-robot-interaction on different aspect of the distinct interaction quality and user experience. As mentioned earlier, Onnasch et al. (2023) examine how the design of predictive robot eyes influences human attention. The results indicate that anthropomorphic features contribute to a smooth interaction experience. Anthropomorphic robotic eyes trigger reflexive attention reallocation, hinting at a social and automatic processing of artificial stimuli, emphasizing the emotional and cognitive impact of such interactions on well-being. Through their analysis of anthropomorphic framing discussed earlier, Roesler (2023) show that an adequate level of trust within human-robot-interaction is also an important element contributing to a smooth interaction and a humancentered design. In this paper the perceived transparency of anthropomorphic robots emerges as a key factor, underscoring its role in shaping individuals&amp;#39; well-being.A novel design approach in order to facilitate socially adaptive robot behaviour in industrial settings is presented by Freire and colleaguesFreire et al. (2024). The authors present a theoretical cognitive architecture for robotic actions control, highlighting modules that among others take into account human preferences and situational awareness and by thus can adapt to human needs. The presented cognitive architecture is integrated into a recycling plant use case for disassembly tasks showcasing the basic functionalities of the systems. In the piloted use cases, the architecture demonstrated key Frontiers},
+  archive      = {J_FROBT},
+  author       = {Billing, Erik and Fraboni, Federico and Gualtieri, Luca and Rosen, Patricia Helen and Thorvald, Peter},
+  doi          = {10.3389/frobt.2025.1564948},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1564948},
+  shortjournal = {Front. Robot. AI},
+  title        = {Editorial: Human factors and cognitive ergonomics in advanced industrial human-robot interaction},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unsupervised semantic label generation in agricultural
+fields. <em>FROBT</em>, <em>12</em>, 1548143. (<a
+href="https://doi.org/10.3389/frobt.2025.1548143">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Roggiolani, Gianmarco and Rückin, Julius and Popović, Marija and Behley, Jens and Stachniss, Cyrill},
+  doi          = {10.3389/frobt.2025.1548143},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1548143},
+  shortjournal = {Front. Robot. AI},
+  title        = {Unsupervised semantic label generation in agricultural fields},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On realizing autonomous transport services in multi story
+buildings with doors and elevators. <em>FROBT</em>, <em>12</em>,
+1546894. (<a href="https://doi.org/10.3389/frobt.2025.1546894">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Schulze, Paul Robert and Müller, Steffen and Müller, Tristan and Gross, Horst-Michael},
+  doi          = {10.3389/frobt.2025.1546894},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1546894},
+  shortjournal = {Front. Robot. AI},
+  title        = {On realizing autonomous transport services in multi story buildings with doors and elevators},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A mini-review on mobile manipulators with variable autonomy.
+<em>FROBT</em>, <em>12</em>, 1540476. (<a
+href="https://doi.org/10.3389/frobt.2025.1540476">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Contreras, Cesar Alan and Rastegarpanah, Alireza and Chiou, Manolis and Stolkin, Rustam},
+  doi          = {10.3389/frobt.2025.1540476},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1540476},
+  shortjournal = {Front. Robot. AI},
+  title        = {A mini-review on mobile manipulators with variable autonomy},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). OpenSEA: A 3D printed planetary gear series elastic actuator
+for a compliant elbow joint exoskeleton. <em>FROBT</em>, <em>12</em>,
+1528266. (<a href="https://doi.org/10.3389/frobt.2025.1528266">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Jenks, Benjamin and Levan, Hailey and Stefanovic, Filip},
+  doi          = {10.3389/frobt.2025.1528266},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1528266},
+  shortjournal = {Front. Robot. AI},
+  title        = {OpenSEA: A 3D printed planetary gear series elastic actuator for a compliant elbow joint exoskeleton},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autonomous robotic ultrasound scanning system: A key to
+enhancing image analysis reproducibility and observer consistency in
+ultrasound imaging. <em>FROBT</em>, <em>12</em>, 1527686. (<a
+href="https://doi.org/10.3389/frobt.2025.1527686">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Lin, Xin-Xin and Li, Ming-De and Ruan, Si-Min and Ke, Wei-Ping and Zhang, Hao-Ruo and Huang, Hui and Wu, Shao-Hong and Cheng, Mei-Qing and Tong, Wen-Juan and Hu, Hang-Tong and He, Dan-Ni and Lu, Rui-Fang and Lin, Ya-Dan and Kuang, Ming and Lu, Ming-De and Chen, Li-Da and Huang, Qing-Hua and Wang, Wei},
+  doi          = {10.3389/frobt.2025.1527686},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1527686},
+  shortjournal = {Front. Robot. AI},
+  title        = {Autonomous robotic ultrasound scanning system: A key to enhancing image analysis reproducibility and observer consistency in ultrasound imaging},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Grand challenges for burrowing soft robots. <em>FROBT</em>,
+<em>12</em>, 1525186. (<a
+href="https://doi.org/10.3389/frobt.2025.1525186">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Le, Caitlin L. and Yirmibesoglu, Osman Dogan and Even, Sean and Buckner, Trevor and Ozkan-Aydin, Yasemin and Kramer-Bottiglio, Rebecca},
+  doi          = {10.3389/frobt.2025.1525186},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1525186},
+  shortjournal = {Front. Robot. AI},
+  title        = {Grand challenges for burrowing soft robots},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An analysis of the role of different levels of exchange of
+explicit information in human–robot cooperation. <em>FROBT</em>,
+<em>12</em>, 1511619. (<a
+href="https://doi.org/10.3389/frobt.2025.1511619">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {San Martin, Ane and Kildal, Johan and Lazkano, Elena},
+  doi          = {10.3389/frobt.2025.1511619},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1511619},
+  shortjournal = {Front. Robot. AI},
+  title        = {An analysis of the role of different levels of exchange of explicit information in human–robot cooperation},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive perspective on electric vehicles as
+evolutionary robots. <em>FROBT</em>, <em>12</em>, 1499215. (<a
+href="https://doi.org/10.3389/frobt.2025.1499215">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Che, Haoyang and Wang, Shaolin and Yao, Lei and Gu, Ying},
+  doi          = {10.3389/frobt.2025.1499215},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1499215},
+  shortjournal = {Front. Robot. AI},
+  title        = {A comprehensive perspective on electric vehicles as evolutionary robots},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Artificial social intelligence in teamwork: How team traits
+influence human-AI dynamics in complex tasks. <em>FROBT</em>,
+<em>12</em>, 1487883. (<a
+href="https://doi.org/10.3389/frobt.2025.1487883">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Bendell, Rhyse and Williams, Jessica and Fiore, Stephen M. and Jentsch, Florian},
+  doi          = {10.3389/frobt.2025.1487883},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1487883},
+  shortjournal = {Front. Robot. AI},
+  title        = {Artificial social intelligence in teamwork: How team traits influence human-AI dynamics in complex tasks},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CARE: Towards customized assistive robot-based education.
+<em>FROBT</em>, <em>12</em>, 1474741. (<a
+href="https://doi.org/10.3389/frobt.2025.1474741">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Maaz, Nafisa and Mounsef, Jinane and Maalouf, Noel},
+  doi          = {10.3389/frobt.2025.1474741},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1474741},
+  shortjournal = {Front. Robot. AI},
+  title        = {CARE: Towards customized assistive robot-based education},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From traditional robotic deployments towards assisted
+robotic deployments in nuclear decommissioning. <em>FROBT</em>,
+<em>12</em>, 1432845. (<a
+href="https://doi.org/10.3389/frobt.2025.1432845">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {Lopez Pulgarin, Erwin Jose and Hopper, Dave and Montgomerie, Jon and Kell, James and Carrasco, Joaquin and Herrmann, Guido and Lanzon, Alexander and Lennox, Barry},
+  doi          = {10.3389/frobt.2025.1432845},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1432845},
+  shortjournal = {Front. Robot. AI},
+  title        = {From traditional robotic deployments towards assisted robotic deployments in nuclear decommissioning},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The italian version of the unified theory of acceptance and
+use of technology questionnaire: A pilot validation study.
+<em>FROBT</em>, <em>12</em>, 1371583. (<a
+href="https://doi.org/10.3389/frobt.2025.1371583">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FROBT},
+  author       = {D’Iorio, Alfonsina and Garramone, Federica and Rossi, Silvia and Baiano, Chiara and Santangelo, Gabriella},
+  doi          = {10.3389/frobt.2025.1371583},
+  journal      = {Frontiers in Robotics and AI},
+  month        = {2},
+  pages        = {1371583},
+  shortjournal = {Front. Robot. AI},
+  title        = {The italian version of the unified theory of acceptance and use of technology questionnaire: A pilot validation study},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

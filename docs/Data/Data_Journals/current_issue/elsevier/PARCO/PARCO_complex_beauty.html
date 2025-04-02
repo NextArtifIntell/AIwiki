@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PARCO_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="parco---6">PARCO - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Estimating resource budgets to ensure autotuning efficiency.
+<em>PARCO</em>, <em>123</em>, 103126. (<a
+href="https://doi.org/10.1016/j.parco.2025.103126">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many state-of-the-art HPC applications rely on autotuning to maintain peak performance. Autotuning allows a program to be re-optimized for new hardware, settings, or input — even during execution. However, the approach has an inherent problem that has yet to be properly addressed: since the autotuning process itself requires computational resources, it is also subject to optimization. In other words, while autotuning aims to decrease a program’s run time by improving its efficiency, it also introduces additional overhead that can extend the overall run time. To achieve optimal performance, both the application and the autotuning process should be optimized together, treating them as a single optimization criterion. This framing allows us to determine a reasonable tuning budget to avoid both undertuning, where insufficient autotuning leads to suboptimal performance, and overtuning, where excessive autotuning imposes overhead that outweighs the benefits of program optimization. In this paper, we explore the tuning budget optimization problem in detail, highlighting its interesting properties and implications, which have largely been overlooked in the literature. Additionally, we present several viable solutions for tuning budget optimization and evaluate their efficiency across a range of commonly used HPC kernels.},
+  archive      = {J_PARCO},
+  author       = {Jaroslav Olha and Jana Hozzová and Matej Antol and Jiří Filipovič},
+  doi          = {10.1016/j.parco.2025.103126},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103126},
+  shortjournal = {Parallel Comput.},
+  title        = {Estimating resource budgets to ensure autotuning efficiency},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lowering entry barriers to developing custom simulators of
+distributed applications and platforms with SimGrid. <em>PARCO</em>,
+<em>123</em>, 103125. (<a
+href="https://doi.org/10.1016/j.parco.2025.103125">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Researchers in parallel and distributed computing (PDC) often resort to simulation because experiments conducted using a simulator can be for arbitrary experimental scenarios, are less resource-, labor-, and time-consuming than their real-world counterparts, and are perfectly repeatable and observable. Many frameworks have been developed to ease the development of PDC simulators, and these frameworks provide different levels of accuracy, scalability, versatility, extensibility, and usability. The SimGrid framework has been used by many PDC researchers to produce a wide range of simulators for over two decades. Its popularity is due to a large emphasis placed on accuracy, scalability, and versatility, and is in spite of shortcomings in terms of extensibility and usability. Although SimGrid provides sensible simulation models for the common case, it was difficult for users to extend these models to meet domain-specific needs. Furthermore, SimGrid only provided relatively low-level simulation abstractions, making the implementation of a simulator of a complex system a labor-intensive undertaking. In this work we describe developments in the last decade that have contributed to vastly improving extensibility and usability, thus lowering or removing entry barriers for users to develop custom SimGrid simulators.},
+  archive      = {J_PARCO},
+  author       = {Henri Casanova and Arnaud Giersch and Arnaud Legrand and Martin Quinson and Frédéric Suter},
+  doi          = {10.1016/j.parco.2025.103125},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103125},
+  shortjournal = {Parallel Comput.},
+  title        = {Lowering entry barriers to developing custom simulators of distributed applications and platforms with SimGrid},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable tasking runtime with parallelized builders for
+explicit message passing architectures. <em>PARCO</em>, <em>123</em>,
+103124. (<a href="https://doi.org/10.1016/j.parco.2024.103124">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The sequential task flow (STF) model introduces implicit data dependences to exploit task-based parallelism, simplifying programming but also introducing non-negligible runtime overhead. On emerging cache-less, explicit inter-core message passing (EMP) architectures, the long latency of memory access further amplifies the runtime overhead of the traditional STF model, resulting in unsatisfactory performance. This paper addresses two main components in the STF tasking runtime. We uncover abundant concurrency in the task dependence graph (TDG) building process through three sufficient conditions, put forward PBH, a parallelized TDG building algorithm with helpers which mixes pipeline parallelism and data parallelism to overcome the TDG building bottleneck for fine-grained tasks. We also introduce a centralized, lock-less task scheduler, EMP-C, based on the EMP interface, and propose three optimizations. These two techniques are implemented and evaluated on a product processor with EMP support, i.e. SW26010. Experimental results show that compared to traditional techniques, PBH achieves an average speedup of 1.55 for fine-grained task workloads, and the EMP-C scheduler brings speedups as high as 1.52 and 2.38 for fine-grained and coarse-grained task workloads, respectively. And the combination of these two techniques significantly improves the granularity scalability of the runtime, reducing the minimum effective task granularity (METG) to 0.1 ms and achieving an order of magnitude decrease in some cases.},
+  archive      = {J_PARCO},
+  author       = {Xiran Gao and Li Chen and Haoyu Wang and Huimin Cui and Xiaobing Feng},
+  doi          = {10.1016/j.parco.2024.103124},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103124},
+  shortjournal = {Parallel Comput.},
+  title        = {Scalable tasking runtime with parallelized builders for explicit message passing architectures},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Iterative methods in GPU-resident linear solvers for
+nonlinear constrained optimization. <em>PARCO</em>, <em>123</em>,
+103123. (<a href="https://doi.org/10.1016/j.parco.2024.103123">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Linear solvers are major computational bottlenecks in a wide range of decision support and optimization computations. The challenges become even more pronounced on heterogeneous hardware, where traditional sparse numerical linear algebra methods are often inefficient. For example, methods for solving ill-conditioned linear systems have relied on conditional branching, which degrades performance on hardware accelerators such as graphical processing units (GPUs). To improve the efficiency of solving ill-conditioned systems, our computational strategy separates computations that are efficient on GPUs from those that need to run on traditional central processing units (CPUs). Our strategy maximizes the reuse of expensive CPU computations. Iterative methods, which thus far have not been broadly used for ill-conditioned linear systems, play an important role in our approach. In particular, we extend ideas from Arioli et al., (2007) to implement iterative refinement using inexact LU factors and flexible generalized minimal residual (FGMRES), with the aim of efficient performance on GPUs. We focus on solutions that are effective within broader application contexts, and discuss how early performance tests could be improved to be more predictive of the performance in a realistic environment.},
+  archive      = {J_PARCO},
+  author       = {Kasia Świrydowicz and Nicholson Koukpaizan and Maksudul Alam and Shaked Regev and Michael Saunders and Slaven Peleš},
+  doi          = {10.1016/j.parco.2024.103123},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103123},
+  shortjournal = {Parallel Comput.},
+  title        = {Iterative methods in GPU-resident linear solvers for nonlinear constrained optimization},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards resilient and energy efficient scalable krylov
+solvers. <em>PARCO</em>, <em>123</em>, 103122. (<a
+href="https://doi.org/10.1016/j.parco.2024.103122">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Exascale computing must simultaneously address both energy efficiency and resilience as power limits impact scalability and faults are more common. Unfortunately, energy efficiency and resilience have been traditionally studied in isolation and optimizing one typically detrimentally impacts the other. To deliver the promised performance within the given power budget, exascale computing mandates a deep understanding of the interplay among energy efficiency, resilience, and scalability. In this work, we propose novel methods to analyze and optimize the costs of common resilience techniques including checkpoint-restart and forward recovery. We focus on sparse linear solvers as they are the fundamental kernels in many scientific applications. In particular, we present generalized analytical and experimental methods to analyze and quantify the time and energy costs of various recovery schemes on computer clusters, and develop and prototype performance optimization and power management strategies to improve energy efficiency. Moreover, we take a deep dive into the forward recovery that recently started to draw attention from researchers, and propose a practical matrix-aware optimization technique to reduce its recovery time. This work shows that while the time and energy costs of various resilience techniques are different, they share the common components and can be quantitatively evaluated with a generalized framework. This analysis framework can be used to guide the design of performance and energy optimization technologies. While each resilience technique has its advantages depending on the fault rate, system size, and power budget, the forward recovery can further benefit from matrix-aware optimizations for large-scale computing.},
+  archive      = {J_PARCO},
+  author       = {Zheng Miao and Jon C. Calhoun and Rong Ge},
+  doi          = {10.1016/j.parco.2024.103122},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103122},
+  shortjournal = {Parallel Comput.},
+  title        = {Towards resilient and energy efficient scalable krylov solvers},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Seesaw: A 4096-bit vector processor for accelerating kyber
+based on RISC-v ISA extensions. <em>PARCO</em>, <em>123</em>, 103121.
+(<a href="https://doi.org/10.1016/j.parco.2024.103121">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ML-KEM standard based on Kyber algorithm is one of the post-quantum cryptography (PQC) standards released by the National Institute of Standards and Technology (NIST) to withstand quantum attacks. To increase throughput and reduce the execution time that is limited by the high computational complexity of the Kyber algorithm, an RISC-V-based processor Seesaw is designed to accelerate the Kyber algorithm. The 32 specialized extension instructions are mainly designed to enhance the parallel computing ability of the processor and accelerate all the processes of the Kyber algorithm by thoroughly analyzing its characteristics. Subsequently, by carefully designing hardware such as poly vector registers and algorithm execution units on the RISC-V processor, the support of microarchitecture for extension instructions was achieved. Seesaw supports 4096-bit vector calculations through its poly vector registers and execution unit to meet high-throughput requirements and is implemented on the field-programmable gate array (FPGA). In addition, we modify the compiler simultaneously to adapt to the instruction extension and execution of Seesaw. Experimental results indicate that the processor achieves a speed-up of 432 × and 18864 × for hash and NTT, respectively, compared with that without extension instructions and a speed-up of 5.6 × for the execution of the Kyber algorithm compared with the advanced hardware design.},
+  archive      = {J_PARCO},
+  author       = {Xiaofeng Zou and Yuanxi Peng and Tuo Li and Lingjun Kong and Lu Zhang},
+  doi          = {10.1016/j.parco.2024.103121},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103121},
+  shortjournal = {Parallel Comput.},
+  title        = {Seesaw: A 4096-bit vector processor for accelerating kyber based on RISC-V ISA extensions},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

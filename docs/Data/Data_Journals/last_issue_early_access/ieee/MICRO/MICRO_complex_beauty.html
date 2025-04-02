@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MICRO_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="micro---1">MICRO - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Spine-free networks for LLM training. <em>MICRO</em>, 1–6.
+(<a href="https://doi.org/10.1109/MM.2025.3540663">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the optimal parallelization strategy of large language models (LLMs) and demonstrate that LLM training workloads generate sparse communication patterns in the network. Consequently, we argue LLM training clusters do not require any-to-any full-bisection networks. We then propose Railonly, a novel datacenter network architecture tailored to LLMs’ unique communication patterns. Rail-only networks eliminate the spine layer of conventional fabrics, resulting in lower cost and energy consumption. We demonstrate that Rail-only networks achieve the same training performance while reducing network cost by 38% to 77% and network power consumption by 37% to 75%, compared to traditional GPU clusters with full-bisection bandwidth.},
+  archive      = {J_MICRO},
+  author       = {Weiyang Wang and Manya Ghobadi},
+  doi          = {10.1109/MM.2025.3540663},
+  journal      = {IEEE Micro},
+  month        = {2},
+  pages        = {1-6},
+  shortjournal = {IEEE Micro},
+  title        = {Spine-free networks for LLM training},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TAP_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tap---1">TAP - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Personality expression using co-speech gesture.
+<em>TAP</em>, <em>22</em>(2), 1–20. (<a
+href="https://doi.org/10.1145/3694905">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We express our personality through verbal and nonverbal behavior. While verbal cues are mostly related to the semantics of what we say, nonverbal cues include our posture, gestures, and facial expressions. Appropriate expression of these behavioral elements improves conversational virtual agents’ communication capabilities and realism. Although previous studies focus on co-speech gesture generation, they do not consider the personality aspect of the synthesized animations. We show that automatically generated co-speech gestures naturally express personality traits, and heuristics-based adjustments for such animations can further improve personality expression. To this end, we present a framework for enhancing co-speech gestures with the different personalities of the Five-Factor model. Our experiments suggest that users perceive increased realism and improved personality expression when combining heuristics-based motion adjustments with co-speech gestures.},
+  archive      = {J_TAP},
+  doi          = {10.1145/3694905},
+  journal      = {ACM Transactions on Applied Perception},
+  month        = {2},
+  number       = {2},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. Appl. Perc.},
+  title        = {Personality expression using co-speech gesture},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

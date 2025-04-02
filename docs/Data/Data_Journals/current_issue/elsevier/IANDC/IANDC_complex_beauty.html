@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IANDC_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="iandc---11">IANDC - 11</h2>
+<ul>
+<li><details>
+<summary>
+(2025). On the data persistency of replicated erasure codes in
+distributed storage systems. <em>IANDC</em>, <em>304</em>, 105297. (<a
+href="https://doi.org/10.1016/j.ic.2025.105297">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the fundamental problem of data persistency for a general family of redundancy schemes, called replicated erasure codes . In replicated erasure codes each document is divided into p chunks and then encoded into p + q chunks. Then, each of the p + q chunks is replicated into r replicas. We analyze two strategies of replicated erasure codes distribution: random (all chunks are spread randomly among storage nodes) and sequential (the chunks are sequentially placed into storage nodes). For both strategies we derive closed-form expression and asymptotic bounds for expected data persistency of replicated erasure codes when the storage nodes leave the storage system and erase their locally stored data. We observe that the maximal expected data persistency of replicated erasure codes for both placement strategies is attained for parameter p = 1 and give formulas in terms of the beta function in this case.},
+  archive      = {J_IANDC},
+  author       = {Roy Friedman and Rafał Kapelko and Karol Marchwicki},
+  doi          = {10.1016/j.ic.2025.105297},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105297},
+  shortjournal = {Inf. Comput.},
+  title        = {On the data persistency of replicated erasure codes in distributed storage systems},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Elastic-degenerate string comparison. <em>IANDC</em>,
+<em>304</em>, 105296. (<a
+href="https://doi.org/10.1016/j.ic.2025.105296">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An elastic-degenerate (ED) string T is a sequence of n sets T [ 1 ] , … , T [ n ] containing m strings in total whose cumulative length is N . We call n , m , and N the length, the cardinality and the size of T , respectively. The language of T is defined as L ( T ) = { S 1 ⋯ S n : S i ∈ T [ i ] for all i ∈ [ 1 , n ] } . Given two ED strings, how fast can we check whether the two languages they represent have a nonempty intersection? We call this problem the ED String Intersection (EDSI) problem. For two ED strings T 1 and T 2 of lengths n 1 and n 2 , cardinalities m 1 and m 2 , and sizes N 1 and N 2 , respectively, we show the following: • There is no O ( ( N 1 N 2 ) 1 − ϵ ) -time algorithm, for any ϵ &gt; 0 , for EDSI even if T 1 and T 2 are over a binary alphabet, unless the Strong Exponential-Time Hypothesis is false. • There is no combinatorial O ( ( N 1 + N 2 ) 1.2 − ϵ f ( n 1 , n 2 ) ) -time algorithm, for any ϵ &gt; 0 and any function f , for EDSI even if T 1 and T 2 are over a binary alphabet, unless the Boolean Matrix Multiplication conjecture is false. • An O ( N 1 log ⁡ N 1 log ⁡ n 1 + N 2 log ⁡ N 2 log ⁡ n 2 ) -time algorithm for outputting a compact representation of the intersection language of two unary ED strings. When T 1 and T 2 are given in a compact representation, we show that the problem is NP-complete. • An O ( N 1 m 2 + N 2 m 1 ) -time algorithm for EDSI. • An O ˜ ( N 1 ω − 1 n 2 + N 2 ω − 1 n 1 ) -time algorithm for EDSI, where ω is the matrix multiplication exponent; the O ˜ notation suppresses factors that are polylogarithmic in the input size.},
+  archive      = {J_IANDC},
+  author       = {Estéban Gabory and Moses Njagi Mwaniki and Nadia Pisanti and Solon P. Pissis and Jakub Radoszewski and Michelle Sweering and Wiktor Zuba},
+  doi          = {10.1016/j.ic.2025.105296},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105296},
+  shortjournal = {Inf. Comput.},
+  title        = {Elastic-degenerate string comparison},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Derandomization of quantum algorithm for triangle finding.
+<em>IANDC</em>, <em>304</em>, 105295. (<a
+href="https://doi.org/10.1016/j.ic.2025.105295">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Derandomization is the process of taking a randomized algorithm and turning it into a deterministic algorithm, which has attracted great attention in classical computing. In quantum computing, it is challenging and intriguing to derandomize quantum algorithms, due to the inherent randomness of quantum mechanics. The significance of derandomizing quantum algorithms lies not only in theoretically proving that the success probability can essentially be 1 without sacrificing quantum speedups, but also in experimentally improving the success rate when the algorithm is implemented on a real quantum computer. In this paper, we focus on derandomizing quantum algorithms for the triangle sum problem (including the famous triangle finding problem as a special case), which asks to find a triangle in an edge-weighted graph with n vertices, such that its edges sum up to a given weight. We show that when the graph is promised to contain at most one target triangle, there exists a deterministic quantum algorithm that either finds the triangle if it exists or outputs “no triangle” if none exists. It makes O ( n 9 / 7 ) queries to the edge weight matrix oracle, and thus has the same complexity as the state-of-the-art bounded-error quantum algorithm. To achieve this derandomization, we make full use of several techniques: nested quantum walk with quantum data structure, deterministic quantum search with adjustable parameters, and dimensional reduction of quantum walk search on Johnson graph.},
+  archive      = {J_IANDC},
+  author       = {Guanzhong Li and Lvzhou Li},
+  doi          = {10.1016/j.ic.2025.105295},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105295},
+  shortjournal = {Inf. Comput.},
+  title        = {Derandomization of quantum algorithm for triangle finding},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Collision-free robot scheduling. <em>IANDC</em>,
+<em>304</em>, 105294. (<a
+href="https://doi.org/10.1016/j.ic.2025.105294">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we investigate the problem of designing schedules for completing a set of tasks at fixed locations with multiple robots in a laboratory. We represent the laboratory as a graph with tasks placed on fixed vertices and robots represented as agents, with the constraint that no two robots may occupy the same vertex at any given timestep. Each schedule is partitioned into a set of timesteps, corresponding to a walk through the graph (allowing for a robot to wait at a vertex to complete a task), with each timestep taking time equal to the time for a robot to move from one vertex to another and each task taking some given number of timesteps during the completion of which a robot must stay at the vertex containing the task. The goal is to determine a set of schedules, with one schedule for each robot, minimising the number of timesteps taken by the schedule taking the greatest number of timesteps within the set of schedules. We show that this problem is NP-complete for both star graphs (for k ≥ 2 robots), and planar graphs (for any number of robots). Finally, we provide positive results for path, cycle, and tadpole graphs, showing that we can find an optimal set of schedules for k robots completing m tasks of equal duration of a path of length n in O ( k m n ) , O ( k m n 2 ) time, and O ( k 3 m 4 n ) time respectively.},
+  archive      = {J_IANDC},
+  author       = {Duncan Adamson and Nathan Flaherty and Igor Potapov and Paul G. Spirakis},
+  doi          = {10.1016/j.ic.2025.105294},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105294},
+  shortjournal = {Inf. Comput.},
+  title        = {Collision-free robot scheduling},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A dichotomy result for countably based sober spaces.
+<em>IANDC</em>, <em>304</em>, 105293. (<a
+href="https://doi.org/10.1016/j.ic.2025.105293">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cartesian closed categories have been playing fundamental roles in providing denotational semantic for higher-order programming languages. In this paper we try to identify Cartesian closed subcategories of the category C S ⊥ of pointed countably based sober spaces, and we present a conclusion known as the dichotomy result in the category C S ⊥ . This result explains that any Cartesian closed full subcategory of C S ⊥ is contained within either the category of weakly compact open connected spaces or that of principally connected spaces. To prove our dichotomy theorem, we first deduce that every pointed countably based sober space X is locally connected, if the space of all continuous functions from X to X is locally compact. Next, we demonstrate that a function space in C S ⊥ is locally connected only if its input space is either weakly compact open connected or its output space is principally connected.},
+  archive      = {J_IANDC},
+  author       = {Hualin Miao and Qingguo Li},
+  doi          = {10.1016/j.ic.2025.105293},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105293},
+  shortjournal = {Inf. Comput.},
+  title        = {A dichotomy result for countably based sober spaces},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A multivariate convertible undeniable signature scheme.
+<em>IANDC</em>, <em>304</em>, 105286. (<a
+href="https://doi.org/10.1016/j.ic.2025.105286">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Digital signature is an important cryptographic primitive which can be universally verified. However, this universal verifiability can be ominous in case of e-auction, e-voting, and e-cash, where the verifiability must be restricted. Undeniable signature is a type of digital signature that is mainly used to achieve the goal of access control. In this article, we propose the first multivariate-based quantum secure undeniable signature scheme, which can also be converted into an ordinary signature. The security of this scheme relies on the hardness of multivariate quadratic problem which is computationally hard to solve when defined over any finite field. We deploy Monteiro et al.&#39;s improvement on Sakumoto et al.&#39;s zero-knowledge protocol for the verification process. We discuss the security properties of undeniable signature, viz., completeness, soundness, unforgeability, invisibility, and non-impersonation. Additionally, we show that the proposed undeniable signature has the smallest signature and key sizes among all the existing quantum-resistant undeniable signatures.},
+  archive      = {J_IANDC},
+  author       = {Satyam Omar and Sahadeo Padhye and Dhananjoy Dey and Devansh Mehrotra},
+  doi          = {10.1016/j.ic.2025.105286},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105286},
+  shortjournal = {Inf. Comput.},
+  title        = {A multivariate convertible undeniable signature scheme},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Composing bridges. <em>IANDC</em>, <em>304</em>, 105285. (<a
+href="https://doi.org/10.1016/j.ic.2025.105285">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The present work builds on previous investigations of the authors (and their collaborators) regarding bridges, a certain type of morphisms between encryption schemes, making a step forward in developing a (category theory) language for studying relations between encryption schemes. Here we analyse the conditions under which bridges can be performed sequentially, formalizing the notion of composability. One of our results gives a sufficient condition for a pair of bridges to be composable. We illustrate that composing two bridges, each independently satisfying a previously established IND-CPA security definition, can actually lead to an insecure bridge. Our main result gives a sufficient condition that a pair of secure composable bridges should satisfy in order for their composition to be a secure bridge. We also introduce the concept of a complete bridge and show that it is connected to the notion of Fully composable Homomorphic Encryption (FcHE), recently considered by Micciancio. Moreover, we show that a result of Micciancio which gives a construction of FcHE schemes can be phrased in the language of complete bridges, where his insights can be formalized in a greater generality.},
+  archive      = {J_IANDC},
+  author       = {Mugurel Barcau and Vicenţiu Paşol and George C. Ţurcaş},
+  doi          = {10.1016/j.ic.2025.105285},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105285},
+  shortjournal = {Inf. Comput.},
+  title        = {Composing bridges},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Identity based proxy blind signature scheme using NTRU
+lattices. <em>IANDC</em>, <em>304</em>, 105284. (<a
+href="https://doi.org/10.1016/j.ic.2025.105284">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Proxy blind signatures represent a specific type of blind signature that allows a proxy signer to sign documents on behalf of the original signer without having access to the content they are signing. Currently, most of the existing proxy blind signature schemes rely on complex number-theoretic hard problems like bilinear pairing and the discrete logarithm problem or on general lattices&#39; hardness. Unfortunately, the security of number-theoretic hard problems-based systems is struggling due to vulnerability to Shor&#39;s algorithm, which jeopardizes the security of cryptographic schemes based on them, and general lattices suffer from large key sizes. Thus, we are looking for a new scheme that is efficient in time and storage, has short key and signature sizes, and is crucially secure against threats posed by quantum computers. Recently, NTRU lattice-based schemes have gained significant popularity due to their ease of implementation and proven security reductions. In 2018, Zhu et al. presented an identity-based proxy blind signature scheme over NTRU lattices, which is not secure. Therefore, by explaining the security breach of Zhu et al.&#39;s scheme, we present a novel, secure, and improved identity-based proxy blind signature system resistant to quantum threats and utilizing NTRU lattices. Based on the standard hardness assumptions related to the approximate shortest vector problem ( γ -SVP) and the shortest integer solution problem (SIS), it is demonstrated that the proposed method is secure against quantum forgery.},
+  archive      = {J_IANDC},
+  author       = {Sonika Singh and Swati Rawal and Sahadeo Padhye and Namita Tiwari},
+  doi          = {10.1016/j.ic.2025.105284},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105284},
+  shortjournal = {Inf. Comput.},
+  title        = {Identity based proxy blind signature scheme using NTRU lattices},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Computing maximal palindromes in non-standard matching
+models. <em>IANDC</em>, <em>304</em>, 105283. (<a
+href="https://doi.org/10.1016/j.ic.2025.105283">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Palindromes are popular and important objects in textual data processing, bioinformatics, and combinatorics on words. Let S = X a Y be a string where X and Y are of the same length, and a is either a single character or the empty string. Then, there exist two alternative definitions for palindromes: S is said to be a palindrome if S is equal to its reversal S R (Reversal-based definition); or if its right-arm Y is equal to the reversal of its left-arm X R (Symmetry-based definition). It is clear that if the “equality” (≈) used in both definitions is exact character matching (=), then the two definitions are the same. However, if we apply other string-equality criteria ≈, including the complementary-matching model for biological sequences, the Cartesian-tree model [Park et al., TCS 2020], the parameterized model [Baker, JCSS 1996], the order-preserving model [Kim et al., TCS 2014], and the palindromic-structure model [I et al., TCS 2013], then are the reversal-based palindromes and the symmetry-based palindromes the same? To the best of our knowledge, no previous work has considered or answered this natural question. In this paper, we first provide answers to this question, and then present efficient algorithms for computing all maximal palindromes under the non-standard matching models in a given string. After confirming that Gusfield&#39;s offline suffix-tree-based algorithm for computing maximal symmetry-based palindromes can be readily extended to the aforementioned matching models, we show how to extend Manacher&#39;s online algorithm for computing maximal reversal-based palindromes in linear time for all the aforementioned matching models.},
+  archive      = {J_IANDC},
+  author       = {Takuya Mieno and Mitsuru Funakoshi and Yuto Nakashima and Shunsuke Inenaga and Hideo Bannai and Masayuki Takeda},
+  doi          = {10.1016/j.ic.2025.105283},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105283},
+  shortjournal = {Inf. Comput.},
+  title        = {Computing maximal palindromes in non-standard matching models},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Polynomial-delay enumeration of large maximal common
+independent sets in two matroids and beyond. <em>IANDC</em>,
+<em>304</em>, 105282. (<a
+href="https://doi.org/10.1016/j.ic.2025.105282">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Finding a maximum cardinality common independent set in two matroids (also known as Matroid Intersection ) is a classical combinatorial optimization problem, which generalizes several well-known problems, such as finding a maximum bipartite matching, a maximum colorful forest, and an arborescence in directed graphs. Enumerating all maximal common independent sets in two (or more) matroids is a classical enumeration problem. In this paper, we address an “intersection” of these problems: Given two matroids and a threshold τ , the goal is to enumerate all maximal common independent sets in the matroids with cardinality at least τ . We show that this problem can be solved in polynomial delay and polynomial space. Moreover, our technique can be extended to a more general problem, which is relevant to Matroid Matching . We give a polynomial-delay and polynomial-space algorithm for enumerating all maximal “matchings” with cardinality at least τ , assuming that the optimization counterpart is “tractable” in a certain sense. This extension allows us to enumerate small minimal connected vertex covers in subcubic graphs. We also discuss a framework to convert enumeration with cardinality constraints into ranked enumeration.},
+  archive      = {J_IANDC},
+  author       = {Yasuaki Kobayashi and Kazuhiro Kurita and Kunihiro Wasa},
+  doi          = {10.1016/j.ic.2025.105282},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105282},
+  shortjournal = {Inf. Comput.},
+  title        = {Polynomial-delay enumeration of large maximal common independent sets in two matroids and beyond},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Homogeneous spiking neural p systems with synaptic failure.
+<em>IANDC</em>, <em>304</em>, 105281. (<a
+href="https://doi.org/10.1016/j.ic.2025.105281">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spiking neural P (SN P) systems are a class of neural-like computational models, inspired by the way biological neurons process information through electrical impulses known as spikes. Homogeneous spiking neural P (HSN P) systems are a specialized variant of SN P systems, where all neurons share the same set of rules. In this work, with the biological inspiration that excessive synaptic transmission can lead to short-term failures in signal delivery between neurons in neural systems, the notion of synaptic failure is considered in HSN P systems, termed HSN P systems with synaptic failure (HSNPSF systems). Specifically, synaptic failure is referred to a family of sets of failure-prone synapses: if spikes simultaneously pass along all the synapses in such a set, the transmitted spikes across the synapses are suppressed; if a synapse in the set does not transmit any spike, the spikes pass along the synapses at that time, ultimately reaching the destination neurons. The computational power of HSNPSF systems is investigated by proving that they can achieve computational completeness both in generating and accepting modes. Furthermore, the computational efficiency of HSNPSF systems is examined, and it is demonstrated that with the help of non-deterministic feature, these systems are capable of solving NP -complete (the Subset Sum) problem in a semi-uniform way and within constant time.},
+  archive      = {J_IANDC},
+  author       = {Luping Zhang and Tingfang Wu},
+  doi          = {10.1016/j.ic.2025.105281},
+  journal      = {Information and Computation},
+  month        = {5},
+  pages        = {105281},
+  shortjournal = {Inf. Comput.},
+  title        = {Homogeneous spiking neural p systems with synaptic failure},
+  volume       = {304},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

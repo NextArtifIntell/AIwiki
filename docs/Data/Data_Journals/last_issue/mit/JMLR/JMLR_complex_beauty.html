@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JMLR_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jmlr---1">JMLR - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Statistical inference of constrained stochastic optimization
+via sketched sequential quadratic programming. <em>JMLR</em>,
+<em>26</em>(33), 1–75. (<a
+href="https://jmlr.org/papers/v26/24-0530.html">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider online statistical inference of constrained stochastic nonlinear optimization problems. We apply the Stochastic Sequential Quadratic Programming (StoSQP) method to solve these problems, which can be regarded as applying second-order Newton&#39;s method to the Karush-Kuhn-Tucker (KKT) conditions. In each iteration, the StoSQP method computes the Newton direction by solving a quadratic program, and then selects a proper adaptive stepsize $\bar{\alpha}_t$ to update the primal-dual iterate. To reduce dominant computational cost of the method, we inexactly solve the quadratic program in each iteration by employing an iterative sketching solver. Notably, the approximation error of the sketching solver need not vanish as iterations proceed, meaning that the per-iteration computational cost does not blow up. For the above StoSQP method, we show that under mild assumptions, the rescaled primal-dual sequence $1/\sqrt{\bar{\alpha}_t}\cdot (x_t -x^\star, \lambda_t - \lambda^\star)$ converges to a mean-zero Gaussian distribution with a nontrivial covariance matrix depending on the underlying sketching distribution. To perform inference in practice, we also analyze a plug-in covariance matrix estimator. We illustrate the asymptotic normality result of the method both on benchmark nonlinear problems in CUTEst test set and on linearly/nonlinearly constrained regression problems.},
+  archive      = {J_JMLR},
+  author       = {Sen Na and Michael Mahoney},
+  journal      = {Journal of Machine Learning Research},
+  number       = {33},
+  pages        = {1-75},
+  shortjournal = {J. Mach. Learn. Res.},
+  title        = {Statistical inference of constrained stochastic optimization via sketched sequential quadratic programming},
+  url          = {https://jmlr.org/papers/v26/24-0530.html},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

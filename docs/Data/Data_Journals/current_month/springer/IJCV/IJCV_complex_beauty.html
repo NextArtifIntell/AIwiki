@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJCV_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijcv---38">IJCV - 38</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Correction: Continual face forgery detection via historical
+distribution preserving. <em>IJCV</em>, <em>133</em>(4), 2246. (<a
+href="https://doi.org/10.1007/s11263-024-02287-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJCV},
+  author       = {Sun, Ke and Chen, Shen and Yao, Taiping and Sun, Xiaoshuai and Ding, Shouhong and Ji, Rongrong},
+  doi          = {10.1007/s11263-024-02287-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2246},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Correction: Continual face forgery detection via historical distribution preserving},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Correction: Multi-source-free domain adaptive object
+detection. <em>IJCV</em>, <em>133</em>(4), 2245. (<a
+href="https://doi.org/10.1007/s11263-024-02257-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJCV},
+  author       = {Zhao, Sicheng and Yao, Huizai and Lin, Chuang and Gao, Yue and Ding, Guiguang},
+  doi          = {10.1007/s11263-024-02257-7},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2245},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Correction: Multi-source-free domain adaptive object detection},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Diagnosing human-object interaction detectors.
+<em>IJCV</em>, <em>133</em>(4), 2227–2244. (<a
+href="https://doi.org/10.1007/s11263-025-02369-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We have witnessed significant progress in human-object interaction (HOI) detection. However, relying solely on mAP (mean Average Precision) scores as a summary metric does not provide sufficient insight into the nuances of model performance (e.g., why one model outperforms another), which can hinder further innovation in this field. To address this issue, we introduce a diagnosis toolbox in this paper to offer a detailed quantitative breakdown of HOI detection models, inspired by the success of object detection diagnosis tools. We first conduct a holistic investigation into the HOI detection pipeline. By defining a set of errors and using oracles to fix each one, we quantitatively analyze the significance of different errors based on the mAP improvement gained from fixing them. Next, we explore the two key sub-tasks of HOI detection: human-object pair localization and interaction classification. For the pair localization task, we compute the coverage of ground-truth human-object pairs and assess the noisiness of the localization results. For the classification task, we measure a model’s ability to distinguish between positive and negative detection results and to classify actual interactions when human-object pairs are correctly localized. We analyze eight state-of-the-art HOI detection models, providing valuable diagnostic insights to guide future research. For instance, our diagnosis reveals that the state-of-the-art model RLIPv2 outperforms others primarily due to its significant improvement in multi-label interaction classification accuracy. Our toolbox is applicable across various methods and datasets and is available at https://neu-vi.github.io/Diag-HOI/ .},
+  archive      = {J_IJCV},
+  author       = {Zhu, Fangrui and Xie, Yiming and Xie, Weidi and Jiang, Huaizu},
+  doi          = {10.1007/s11263-025-02369-8},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2227-2244},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Diagnosing human-object interaction detectors},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MVTN: Learning multi-view transformations for 3D
+understanding. <em>IJCV</em>, <em>133</em>(4), 2197–2226. (<a
+href="https://doi.org/10.1007/s11263-024-02283-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-view projection techniques have shown themselves to be highly effective in achieving top-performing results in the recognition of 3D shapes. These methods involve learning how to combine information from multiple view-points. However, the camera view-points from which these views are obtained are often fixed for all shapes. To overcome the static nature of current multi-view techniques, we propose learning these view-points. Specifically, we introduce the Multi-View Transformation Network (MVTN), which uses differentiable rendering to determine optimal view-points for 3D shape recognition. As a result, MVTN can be trained end-to-end with any multi-view network for 3D shape classification. We integrate MVTN into a novel adaptive multi-view pipeline that is capable of rendering both 3D meshes and point clouds. Our approach demonstrates state-of-the-art performance in 3D classification and shape retrieval on several benchmarks (ModelNet40, ScanObjectNN, ShapeNet Core55). Further analysis indicates that our approach exhibits improved robustness to occlusion compared to other methods. We also investigate additional aspects of MVTN, such as 2D pretraining and its use for segmentation. To support further research in this area, we have released MVTorch, a PyTorch library for 3D understanding and generation using multi-view projections.},
+  archive      = {J_IJCV},
+  author       = {Hamdi, Abdullah and AlZahrani, Faisal and Giancola, Silvio and Ghanem, Bernard},
+  doi          = {10.1007/s11263-024-02283-5},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2197-2226},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {MVTN: Learning multi-view transformations for 3D understanding},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive middle modality alignment learning for
+visible-infrared person re-identification. <em>IJCV</em>,
+<em>133</em>(4), 2176–2196. (<a
+href="https://doi.org/10.1007/s11263-024-02276-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visible-infrared person re-identification (VIReID) has attracted increasing attention due to the requirements for 24-hour intelligent surveillance systems. In this task, one of the major challenges is the modality discrepancy between the visible (VIS) and infrared (NIR) images. Most conventional methods try to design complex networks or generative models to mitigate the cross-modality discrepancy while ignoring the fact that the modality gaps differ between the different VIS and NIR images. Different from existing methods, in this paper, we propose an Adaptive Middle-modality Alignment Learning (AMML) method, which can effectively reduce the modality discrepancy via an adaptive middle modality learning strategy at both image level and feature level. The proposed AMML method enjoys several merits. First, we propose an Adaptive Middle-modality Generator (AMG) module to reduce the modality discrepancy between the VIS and NIR images from the image level, which can effectively project the VIS and NIR images into a unified middle modality image (UMMI) space to adaptively generate middle-modality (M-modality) images. Second, we propose a feature-level Adaptive Distribution Alignment (ADA) loss to force the distribution of the VIS features and NIR features adaptively align with the distribution of M-modality features. Moreover, we also propose a novel Center-based Diverse Distribution Learning (CDDL) loss, which can effectively learn diverse cross-modality knowledge from different modalities while reducing the modality discrepancy between the VIS and NIR modalities. Extensive experiments on three challenging VIReID datasets show the superiority of the proposed AMML method over the other state-of-the-art methods. More remarkably, our method achieves 77.8% in terms of Rank-1 and 74.8% in terms of mAP on the SYSU-MM01 dataset for all search mode, and 86.6% in terms of Rank-1 and 88.3% in terms of mAP on the SYSU-MM01 dataset for indoor search mode. The code is released at: https://github.com/ZYK100/MMN .},
+  archive      = {J_IJCV},
+  author       = {Zhang, Yukang and Yan, Yan and Lu, Yang and Wang, Hanzi},
+  doi          = {10.1007/s11263-024-02276-4},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2176-2196},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Adaptive middle modality alignment learning for visible-infrared person re-identification},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rethinking contemporary deep learning techniques for error
+correction in biometric data. <em>IJCV</em>, <em>133</em>(4), 2158–2175.
+(<a href="https://doi.org/10.1007/s11263-024-02280-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of cryptography, the implementation of error correction in biometric data offers many benefits, including secure data storage and key derivation. Deep learning-based decoders have emerged as a catalyst for improved error correction when decoding noisy biometric data. Although these decoders exhibit competence in approximating precise solutions, we expose the potential inadequacy of their security assurances through a minimum entropy analysis. This limitation curtails their applicability in secure biometric contexts, as the inherent complexities of their non-linear neural network architectures pose challenges in modeling the solution distribution precisely. To address this limitation, we introduce U-Sketch, a universal approach for error correction in biometrics, which converts arbitrary input random biometric source distributions into independent and identically distributed (i.i.d.) data while maintaining the pairwise distance of the data post-transformation. This method ensures interpretability within the decoder, facilitating transparent entropy analysis and a substantiated security claim. Moreover, U-Sketch employs Maximum Likelihood Decoding, which provides optimal error tolerance and a precise security guarantee.},
+  archive      = {J_IJCV},
+  author       = {Lai, YenLung and Dong, XingBo and Jin, Zhe and Jia, Wei and Tistarelli, Massimo and Li, XueJun},
+  doi          = {10.1007/s11263-024-02280-8},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2158-2175},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Rethinking contemporary deep learning techniques for error correction in biometric data},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Day2Dark: Pseudo-supervised activity recognition beyond
+silent daylight. <em>IJCV</em>, <em>133</em>(4), 2136–2157. (<a
+href="https://doi.org/10.1007/s11263-024-02273-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper strives to recognize activities in the dark, as well as in the day. We first establish that state-of-the-art activity recognizers are effective during the day, but not trustworthy in the dark. The main causes are the limited availability of labeled dark videos to learn from, as well as the distribution shift towards the lower color contrast at test-time. To compensate for the lack of labeled dark videos, we introduce a pseudo-supervised learning scheme, which utilizes easy to obtain unlabeled and task-irrelevant dark videos to improve an activity recognizer in low light. As the lower color contrast results in visual information loss, we further propose to incorporate the complementary activity information within audio, which is invariant to illumination. Since the usefulness of audio and visual features differs depending on the amount of illumination, we introduce our ‘darkness-adaptive’ audio-visual recognizer. Experiments on EPIC-Kitchens, Kinetics-Sound, and Charades demonstrate our proposals are superior to image enhancement, domain adaptation and alternative audio-visual fusion methods, and can even improve robustness to local darkness caused by occlusions. Project page: https://xiaobai1217.github.io/Day2Dark/ .},
+  archive      = {J_IJCV},
+  author       = {Zhang, Yunhua and Doughty, Hazel and Snoek, Cees G. M.},
+  doi          = {10.1007/s11263-024-02273-7},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2136-2157},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Day2Dark: Pseudo-supervised activity recognition beyond silent daylight},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EfficientDeRain+: Learning uncertainty-aware filtering via
+RainMix augmentation for high-efficiency deraining. <em>IJCV</em>,
+<em>133</em>(4), 2111–2135. (<a
+href="https://doi.org/10.1007/s11263-024-02281-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deraining is a significant and fundamental computer vision task, aiming to remove the rain streaks and accumulations in an image or video. Existing deraining methods usually make heuristic assumptions of the rain model, which compels them to employ complex optimization or iterative refinement for high recovery quality. However, this leads to time-consuming methods and affects the effectiveness of addressing rain patterns, deviating from the assumptions. This paper proposes a simple yet efficient deraining method by formulating deraining as a predictive filtering problem without complex rain model assumptions. Specifically, we identify spatially-variant predictive filtering (SPFilt) that adaptively predicts proper kernels via a deep network to filter different individual pixels. Since the filtering can be implemented via well-accelerated convolution, our method can be significantly efficient. We further propose the EfDeRain+ that contains three main contributions to address residual rain traces, multi-scale, and diverse rain patterns without harming efficiency. First, we propose the uncertainty-aware cascaded predictive filtering (UC-PFilt) that can identify the difficulties of reconstructing clean pixels via predicted kernels and remove the residual rain traces effectively. Second, we design the weight-sharing multi-scale dilated filtering (WS-MS-DFilt) to handle multi-scale rain streaks without harming the efficiency. Third, to eliminate the gap across diverse rain patterns, we propose a novel data augmentation method (i.e., RainMix) to train our deep models. By combining all contributions with sophisticated analysis on different variants, our final method outperforms baseline methods on six single-image deraining datasets and one video-deraining dataset in terms of both recovery quality and speed. In particular, EfDeRain+ can derain within about 6.3 ms on a $$481\times 321$$ image and is over 74 times faster than the top baseline method with even better recovery quality. We release code in https://github.com/tsingqguo/efficientderainplus .},
+  archive      = {J_IJCV},
+  author       = {Guo, Qing and Qi, Hua and Sun, Jingyang and Juefei-Xu, Felix and Ma, Lei and Lin, Di and Feng, Wei and Wang, Song},
+  doi          = {10.1007/s11263-024-02281-7},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2111-2135},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {EfficientDeRain+: Learning uncertainty-aware filtering via RainMix augmentation for high-efficiency deraining},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Few annotated pixels and point cloud based weakly supervised
+semantic segmentation of driving scenes. <em>IJCV</em>, <em>133</em>(4),
+2096–2110. (<a
+href="https://doi.org/10.1007/s11263-024-02275-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Previous weakly supervised semantic segmentation (WSSS) methods mainly begin with the segmentation seeds from the CAM method. Because of the high complexity of driving scene images, their framework performs not well on driving scene datasets. In this paper, we propose a new kind of WSSS annotations on the complex driving scene dataset, with only one or several labeled points per category. This annotation is more lightweight than image-level annotation and provides critical localization information for prototypes. We propose a framework to address the WSSS task under this annotation, which generates prototype feature vectors from labeled points and then produces 2D pseudo labels. Besides, we found the point cloud data is useful for distinguishing different objects. Our framework could extract rich semantic information from unlabeled point cloud data and generate instance masks, which does not require extra annotation resources. We combine the pseudo labels and the instance masks to modify the incorrect regions and thus obtain more accurate supervision for training the semantic segmentation network. We evaluated this framework on the KITTI dataset. Experiments show that the proposed method achieves state-of-the-art performance.},
+  archive      = {J_IJCV},
+  author       = {Ma, Huimin and Yi, Sheng and Chen, Shijie and Chen, Jiansheng and Wang, Yu},
+  doi          = {10.1007/s11263-024-02275-5},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2096-2110},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Few annotated pixels and point cloud based weakly supervised semantic segmentation of driving scenes},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Achieving procedure-aware instructional video correlation
+learning under weak supervision from a collaborative perspective.
+<em>IJCV</em>, <em>133</em>(4), 2070–2095. (<a
+href="https://doi.org/10.1007/s11263-024-02272-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video Correlation Learning (VCL) delineates a high-level research domain that centers on analyzing the semantic and temporal correspondences between videos through a comparative paradigm. Recently, instructional video-related tasks have drawn increasing attention due to their promising potential. Compared with general videos, instructional videos possess more complex procedure information, making correlation learning quite challenging. To obtain procedural knowledge, current methods rely heavily on fine-grained step-level annotations, which are costly and non-scalable. To improve VCL on instructional videos, we introduce a weakly supervised framework named Collaborative Procedure Alignment (CPA). To be specific, our framework comprises two core components: the collaborative step mining (CSM) module and the frame-to-step alignment (FSA) module. Free of the necessity for step-level annotations, the CSM module can properly conduct temporal step segmentation and pseudo-step learning by exploring the inner procedure correspondences between paired videos. Subsequently, the FSA module efficiently yields the probability of aligning one video’s frame-level features with another video’s pseudo-step labels, which can act as a reliable correlation degree for paired videos. The two modules are inherently interconnected and can mutually enhance each other to extract the step-level knowledge and measure the video correlation distances accurately. Our framework provides an effective tool for instructional video correlation learning. We instantiate our framework on four representative tasks, including sequence verification, few-shot action recognition, temporal action segmentation, and action quality assessment. Furthermore, we extend our framework to more innovative functions to further exhibit its potential. Extensive and in-depth experiments validate CPA’s strong correlation learning capability on instructional videos. The implementation can be found at https://github.com/hotelll/Collaborative_Procedure_Alignment .},
+  archive      = {J_IJCV},
+  author       = {He, Tianyao and Liu, Huabin and Ni, Zelin and Li, Yuxi and Ma, Xiao and Zhong, Cheng and Zhang, Yang and Wang, Yingxue and Lin, Weiyao},
+  doi          = {10.1007/s11263-024-02272-8},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2070-2095},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Achieving procedure-aware instructional video correlation learning under weak supervision from a collaborative perspective},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). APPTracker+: Displacement uncertainty for occlusion handling
+in low-frame-rate multiple object tracking. <em>IJCV</em>,
+<em>133</em>(4), 2044–2069. (<a
+href="https://doi.org/10.1007/s11263-024-02237-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-object tracking (MOT) in the scenario of low-frame-rate videos is a promising solution to better meet the computing, storage, and transmitting bandwidth resource constraints of edge devices. Tracking with a low frame rate poses particular challenges in the association stage as objects in two successive frames typically exhibit much quicker variations in locations, velocities, appearances, and visibilities than those in normal frame rates. In this paper, we observe severe performance degeneration of many existing association strategies caused by such variations. Though optical-flow-based methods like CenterTrack can handle the large displacement to some extent due to their large receptive field, the temporally local nature makes them fail to give reliable displacement estimations of objects that newly appear in the current frame (i.e., not visible in the previous frame). To overcome the local nature of optical-flow-based methods, we propose an online tracking method by extending the CenterTrack architecture with a new head, named APP, to recognize unreliable displacement estimations. Further, to capture the fine-grained and private unreliability of each displacement estimation, we extend the binary APP predictions to displacement uncertainties. To this end, we reformulate the displacement estimation task via Bayesian deep learning tools. With APP predictions, we propose to conduct association in a multi-stage manner where vision cues or historical motion cues are leveraged in the corresponding stage. By rethinking the commonly used bipartite matching algorithms, we equip the proposed multi-stage association policy with a hybrid matching strategy conditioned on displacement uncertainties. Our method shows robustness in preserving identities in low-frame-rate video sequences. Experimental results on public datasets in various low-frame-rate settings demonstrate the advantages of the proposed method.},
+  archive      = {J_IJCV},
+  author       = {Zhou, Tao and Ye, Qi and Luo, Wenhan and Ran, Haizhou and Shi, Zhiguo and Chen, Jiming},
+  doi          = {10.1007/s11263-024-02237-x},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2044-2069},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {APPTracker+: Displacement uncertainty for occlusion handling in low-frame-rate multiple object tracking},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Anti-fake vaccine: Safeguarding privacy against face
+swapping via visual-semantic dual degradation. <em>IJCV</em>,
+<em>133</em>(4), 2025–2043. (<a
+href="https://doi.org/10.1007/s11263-024-02259-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deepfake techniques pose a significant threat to personal privacy and social security. To mitigate these risks, various defensive techniques have been introduced, including passive methods through fake detection and proactive methods through adding invisible perturbations. Recent proactive methods mainly focus on face manipulation but perform poorly against face swapping, as face swapping involves the more complex process of identity information transfer. To address this issue, we develop a novel privacy-preserving framework, named Anti-Fake Vaccine, to protect the facial images against the malicious face swapping. This new proactive technique dynamically fuses visual corruption and content misdirection, significantly enhancing protection performance. Specifically, we first formulate constraints from two distinct perspectives: visual quality and identity semantics. The visual perceptual constraint targets image quality degradation in the visual space, while the identity similarity constraint induces erroneous alterations in the semantic space. We then introduce a multi-objective optimization solution to effectively balance the allocation of adversarial perturbations generated according to these constraints. To further improving performance, we develop an additive perturbation strategy to discover the shared adversarial perturbations across diverse face swapping models. Extensive experiments on the CelebA-HQ and FFHQ datasets demonstrate that our method exhibits superior generalization capabilities across diverse face swapping models, including commercial ones.},
+  archive      = {J_IJCV},
+  author       = {Li, Jingzhi and Luo, Changjiang and Zhang, Hua and Cao, Yang and Liao, Xin and Cao, Xiaochun},
+  doi          = {10.1007/s11263-024-02259-5},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {2025-2043},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Anti-fake vaccine: Safeguarding privacy against face swapping via visual-semantic dual degradation},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Basis restricted elastic shape analysis on the space of
+unregistered surfaces. <em>IJCV</em>, <em>133</em>(4), 1999–2024. (<a
+href="https://doi.org/10.1007/s11263-024-02269-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a new framework for surface analysis derived from the general setting of elastic Riemannian metrics on shape spaces. Traditionally, those metrics are defined over the infinite dimensional manifold of immersed surfaces and satisfy specific invariance properties enabling the comparison of surfaces modulo shape preserving transformations such as reparametrizations. The specificity of our approach is to restrict the space of allowable transformations to predefined finite dimensional bases of deformation fields. These are estimated in a data-driven way so as to emulate specific types of surface transformations. This allows us to simplify the representation of the corresponding shape space to a finite dimensional latent space. However, in sharp contrast with methods involving e.g. mesh autoencoders, the latent space is equipped with a non-Euclidean Riemannian metric inherited from the family of elastic metrics. We demonstrate how this model can be effectively implemented to perform a variety of tasks on surface meshes which, importantly, does not assume these to be pre-registered or to even have a consistent mesh structure. We specifically validate our approach on human body shape and pose data as well as human face and hand scans for problems such as shape registration, interpolation, motion transfer or random pose generation.},
+  archive      = {J_IJCV},
+  author       = {Hartman, Emmanuel and Pierson, Emery and Bauer, Martin and Daoudi, Mohamed and Charon, Nicolas},
+  doi          = {10.1007/s11263-024-02269-3},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1999-2024},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Basis restricted elastic shape analysis on the space of unregistered surfaces},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving 3D finger traits recognition via generalizable
+neural rendering. <em>IJCV</em>, <em>133</em>(4), 1964–1998. (<a
+href="https://doi.org/10.1007/s11263-024-02248-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D biometric techniques on finger traits have become a new trend and have demonstrated a powerful ability for recognition and anti-counterfeiting. Existing methods follow an explicit 3D pipeline that reconstructs the models first and then extracts features from 3D models. However, these explicit 3D methods suffer from the following problems: 1) Inevitable information dropping during 3D reconstruction; 2) Tight coupling between specific hardware and algorithm for 3D reconstruction. It leads us to a question: Is it indispensable to reconstruct 3D information explicitly in recognition tasks? Hence, we consider this problem in an implicit manner, leaving the nerve-wracking 3D reconstruction problem for learnable neural networks with the help of neural radiance fields (NeRFs). We propose FingerNeRF, a novel generalizable NeRF for 3D finger biometrics. To handle the shape-radiance ambiguity problem that may result in incorrect 3D geometry, we aim to involve extra geometric priors based on the correspondence of binary finger traits like fingerprints or finger veins. First, we propose a novel Trait Guided Transformer (TGT) module to enhance the feature correspondence with the guidance of finger traits. Second, we involve extra geometric constraints on the volume rendering loss with the proposed Depth Distillation Loss and Trait Guided Rendering Loss. To evaluate the performance of the proposed method on different modalities, we collect two new datasets: SCUT-Finger-3D with finger images and SCUT-FingerVein-3D with finger vein images. Moreover, we also utilize the UNSW-3D dataset with fingerprint images for evaluation. In experiments, our FingerNeRF can achieve 4.37% EER on SCUT-Finger-3D dataset, 8.12% EER on SCUT-FingerVein-3D dataset, and 2.90% EER on UNSW-3D dataset, showing the superiority of the proposed implicit method in 3D finger biometrics.},
+  archive      = {J_IJCV},
+  author       = {Xu, Hongbin and Huang, Junduan and Ma, Yuer and Li, Zifeng and Kang, Wenxiong},
+  doi          = {10.1007/s11263-024-02248-8},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1964-1998},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Improving 3D finger traits recognition via generalizable neural rendering},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A memory-assisted knowledge transferring framework with
+curriculum anticipation for weakly supervised online activity detection.
+<em>IJCV</em>, <em>133</em>(4), 1940–1963. (<a
+href="https://doi.org/10.1007/s11263-024-02279-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a crucial topic of high-level video understanding, weakly supervised online activity detection (WS-OAD) involves identifying the ongoing behaviors moment-to-moment in streaming videos, trained with solely cheap video-level annotations. It is essentially a challenging task, which requires addressing the entangled issues of the weakly supervised settings and online constraints. In this paper, we tackle the WS-OAD task from the knowledge-distillation (KD) perspective, which trains an online student detector to distill dual-level knowledge from a weakly supervised offline teacher model. To guarantee the completeness of knowledge transfer, we improve the vanilla KD framework from two aspects. First, we introduce an external memory bank to maintain the long-term activity prototypes, which serves as a bridge to align the activity semantics learned from the offline teacher and online student models. Second, to compensate the missing contexts of unseen near future, we leverage a curriculum learning paradigm to gradually train the online student detector to anticipate the future activity semantics. By dynamically scheduling the provided auxiliary future states, the online detector progressively distills contextual information from the offline model in an easy-to-hard course. Extensive experimental results on three public data sets demonstrate the superiority of our proposed method over the competing methods.},
+  archive      = {J_IJCV},
+  author       = {Liu, Tianshan and Lam, Kin-Man and Bao, Bing-Kun},
+  doi          = {10.1007/s11263-024-02279-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1940-1963},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {A memory-assisted knowledge transferring framework with curriculum anticipation for weakly supervised online activity detection},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic attention vision-language transformer network for
+person re-identification. <em>IJCV</em>, <em>133</em>(4), 1927–1939. (<a
+href="https://doi.org/10.1007/s11263-024-02277-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multimodal based person re-identification (ReID) has garnered increasing attention in recent years. However, the integration of visual and textual information encounters significant challenges. Biases in feature integration are frequently observed in existing methods, resulting in suboptimal performance and restricted generalization across a spectrum of ReID tasks. At the same time, since there is a domain gap between the datasets used by the pretraining model and the ReID datasets, it has a certain impact on the performance. In response to these challenges, we proposed a dynamic attention vision-language transformer network for the ReID task. In this network, a novel image-text dynamic attention module (ITDA) is designed to promote unbiased feature integration by dynamically assigning the importance of image and text representations. Additionally, an adapter module is adopted to address the domain gap between pretraining datasets and ReID datasets. Our network can capture complex connections between visual and textual information and achieve satisfactory performance. We conducted numerous experiments on ReID benchmarks to demonstrate the efficacy of our proposed method. The experimental results show that our method achieves state-of-the-art performance, surpassing existing integration strategies. These findings underscore the critical role of unbiased feature dynamic integration in enhancing the capabilities of multimodal based ReID models.},
+  archive      = {J_IJCV},
+  author       = {Zhang, Guifang and Tan, Shijun and Ji, Zhe and Fang, Yuming},
+  doi          = {10.1007/s11263-024-02277-3},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1927-1939},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Dynamic attention vision-language transformer network for person re-identification},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sample correlation for fingerprinting deep face recognition.
+<em>IJCV</em>, <em>133</em>(4), 1912–1926. (<a
+href="https://doi.org/10.1007/s11263-024-02254-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Face recognition has witnessed remarkable advancements in recent years, thanks to the development of deep learning techniques. However, an off-the-shelf face recognition model as a commercial service could be stolen by model stealing attacks, posing great threats to the rights of the model owner. Model fingerprinting, as a model stealing detection method, aims to verify whether a suspect model is stolen from the victim model, gaining more and more attention nowadays. Previous methods always utilize transferable adversarial examples as the model fingerprint, but this method is known to be sensitive to adversarial defense and transfer learning techniques. To address this issue, we consider the pairwise relationship between samples instead and propose a novel yet simple model stealing detection method based on SAmple Correlation (SAC). Specifically, we present SAC-JC that selects JPEG compressed samples as model inputs and calculates the correlation matrix among their model outputs. Extensive results validate that SAC successfully defends against various model stealing attacks in deep face recognition, encompassing face verification and face emotion recognition, exhibiting the highest performance in terms of AUC, p-value and F1 score. Furthermore, we extend our evaluation of SAC-JC to object recognition datasets including Tiny-ImageNet and CIFAR10, which also demonstrates the superior performance of SAC-JC to previous methods. The code will be available at https://github.com/guanjiyang/SAC_JC .},
+  archive      = {J_IJCV},
+  author       = {Guan, Jiyang and Liang, Jian and Wang, Yanbo and He, Ran},
+  doi          = {10.1007/s11263-024-02254-w},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1912-1926},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Sample correlation for fingerprinting deep face recognition},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). StyleAdapter: A unified stylized image generation model.
+<em>IJCV</em>, <em>133</em>(4), 1894–1911. (<a
+href="https://doi.org/10.1007/s11263-024-02253-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work focuses on generating high-quality images with specific style of reference images and content of provided textual descriptions. Current leading algorithms, i.e., DreamBooth and LoRA, require fine-tuning for each style, leading to time-consuming and computationally expensive processes. In this work, we propose StyleAdapter, a unified stylized image generation model capable of producing a variety of stylized images that match both the content of a given prompt and the style of reference images, without the need for per-style fine-tuning. It introduces a two-path cross-attention (TPCA) module to separately process style information and textual prompt, which cooperate with a semantic suppressing vision model (SSVM) to suppress the semantic content of style images. In this way, it can ensure that the prompt maintains control over the content of the generated images, while also mitigating the negative impact of semantic information in style references. This results in the content of the generated image adhering to the prompt, and its style aligning with the style references. Besides, our StyleAdapter can be integrated with existing controllable synthesis methods, such as T2I-adapter and ControlNet, to attain a more controllable and stable generation process. Extensive experiments demonstrate the superiority of our method over previous works.},
+  archive      = {J_IJCV},
+  author       = {Wang, Zhouxia and Wang, Xintao and Xie, Liangbin and Qi, Zhongang and Shan, Ying and Wang, Wenping and Luo, Ping},
+  doi          = {10.1007/s11263-024-02253-x},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1894-1911},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {StyleAdapter: A unified stylized image generation model},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Show-1: Marrying pixel and latent diffusion models for
+text-to-video generation. <em>IJCV</em>, <em>133</em>(4), 1879–1893. (<a
+href="https://doi.org/10.1007/s11263-024-02271-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Significant advancements have been achieved in the realm of large-scale pre-trained text-to-video Diffusion Models (VDMs). However, previous methods either rely solely on pixel-based VDMs, which come with high computational costs, or on latent-based VDMs, which often struggle with precise text-video alignment. In this paper, we are the first to propose a hybrid model, dubbed as Show-1, which marries pixel-based and latent-based VDMs for text-to-video generation. Our model first uses pixel-based VDMs to produce a low-resolution video of strong text-video correlation. After that, we propose a novel expert translation method that employs the latent-based VDMs to further upsample the low-resolution video to high resolution, which can also remove potential artifacts and corruptions from low-resolution videos. Compared to latent VDMs, Show-1 can produce high-quality videos of precise text-video alignment; Compared to pixel VDMs, Show-1 is much more efficient (GPU memory usage during inference is 15 G vs. 72 G). Furthermore, our Show-1 model can be readily adapted for motion customization and video stylization applications through simple temporal attention layer finetuning. Our model achieves state-of-the-art performance on standard video generation benchmarks. Code of Show-1 is publicly available and more videos can be found here .},
+  archive      = {J_IJCV},
+  author       = {Zhang, David Junhao and Wu, Jay Zhangjie and Liu, Jia-Wei and Zhao, Rui and Ran, Lingmin and Gu, Yuchao and Gao, Difei and Shou, Mike Zheng},
+  doi          = {10.1007/s11263-024-02271-9},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1879-1893},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Show-1: Marrying pixel and latent diffusion models for text-to-video generation},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural vector fields for implicit surface representation and
+inference. <em>IJCV</em>, <em>133</em>(4), 1855–1878. (<a
+href="https://doi.org/10.1007/s11263-024-02251-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural implicit fields have recently shown increasing success in representing, learning and analysis of 3D shapes. Signed distance fields and occupancy fields are still the preferred choice of implicit representations with well-studied properties, despite their restriction to closed surfaces. With neural networks, unsigned distance fields as well as several other variations and training principles have been proposed with the goal to represent all classes of shapes. In this paper, we develop a novel and yet a fundamental representation considering unit vectors in 3D space and call it Vector Field (VF). At each point in $$\mathbb {R}^3$$ , VF is directed to the closest point on the surface. We theoretically demonstrate that VF can be easily transformed to surface density by computing the flux density. Unlike other standard representations, VF directly encodes an important physical property of the surface, its normal. We further show the advantages of VF representation, in learning open, closed, or multi-layered surfaces. We show that, thanks to the continuity property of the neural optimization with VF, a separate distance field becomes unnecessary for extracting surfaces from the implicit field via Marching Cubes. We compare our method on several datasets including ShapeNet where the proposed new neural implicit field shows superior accuracy in representing any type of shape, outperforming other standard methods. Codes are available at https://github.com/edomel/ImplicitVF .},
+  archive      = {J_IJCV},
+  author       = {Mello Rella, Edoardo and Chhatkuli, Ajad and Konukoglu, Ender and Van Gool, Luc},
+  doi          = {10.1007/s11263-024-02251-z},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1855-1878},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Neural vector fields for implicit surface representation and inference},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning text-to-video retrieval from image captioning.
+<em>IJCV</em>, <em>133</em>(4), 1834–1854. (<a
+href="https://doi.org/10.1007/s11263-024-02202-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We describe a protocol to study text-to-video retrieval training with unlabeled videos, where we assume (i) no access to labels for any videos, i.e., no access to the set of ground-truth captions, but (ii) access to labeled images in the form of text. Using image expert models is a realistic scenario given that annotating images is cheaper therefore scalable, in contrast to expensive video labeling schemes. Recently, zero-shot image experts such as CLIP have established a new strong baseline for video understanding tasks. In this paper, we make use of this progress and instantiate the image experts from two types of models: a text-to-image retrieval model to provide an initial backbone, and image captioning models to provide supervision signal into unlabeled videos. We show that automatically labeling video frames with image captioning allows text-to-video retrieval training. This process adapts the features to the target domain at no manual annotation cost, consequently outperforming the strong zero-shot CLIP baseline. During training, we sample captions from multiple video frames that best match the visual content, and perform a temporal pooling over frame representations by scoring frames according to their relevance to each caption. We conduct extensive ablations to provide insights and demonstrate the effectiveness of this simple framework by outperforming the CLIP zero-shot baselines on text-to-video retrieval on three standard datasets, namely ActivityNet, MSR-VTT, and MSVD. Code and models will be made publicly available.},
+  archive      = {J_IJCV},
+  author       = {Ventura, Lucas and Schmid, Cordelia and Varol, Gül},
+  doi          = {10.1007/s11263-024-02202-8},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1834-1854},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Learning text-to-video retrieval from image captioning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CogCartoon: Towards practical story visualization.
+<em>IJCV</em>, <em>133</em>(4), 1808–1833. (<a
+href="https://doi.org/10.1007/s11263-024-02267-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The state-of-the-art methods for story visualization demonstrate a significant demand for training data and storage, as well as limited flexibility in story presentation, thereby rendering them impractical for real-world applications. We introduce CogCartoon, a practical story visualization method based on pre-trained diffusion models. To alleviate dependence on data and storage, we propose an innovative strategy of character-plugin generation that can represent a specific character as a compact 316 KB plugin by using a few training samples. To facilitate enhanced flexibility, we employ a strategy of plugin-guided and layout-guided inference, enabling users to seamlessly incorporate new characters and custom layouts into the generated image results at their convenience. We have conducted comprehensive qualitative and quantitative studies, providing compelling evidence for the superiority of CogCartoon over existing methodologies. Moreover, CogCartoon demonstrates its power in tackling challenging tasks, including long story visualization and realistic style story visualization.},
+  archive      = {J_IJCV},
+  author       = {Zhu, Zhongyang and Tang, Jie},
+  doi          = {10.1007/s11263-024-02267-5},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1808-1833},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {CogCartoon: Towards practical story visualization},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AgMTR: Agent mining transformer for few-shot segmentation in
+remote sensing. <em>IJCV</em>, <em>133</em>(4), 1780–1807. (<a
+href="https://doi.org/10.1007/s11263-024-02252-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot Segmentation aims to segment the interested objects in the query image with just a handful of labeled samples (i.e., support images). Previous schemes would leverage the similarity between support-query pixel pairs to construct the pixel-level semantic correlation. However, in remote sensing scenarios with extreme intra-class variations and cluttered backgrounds, such pixel-level correlations may produce tremendous mismatches, resulting in semantic ambiguity between the query foreground (FG) and background (BG) pixels. To tackle this problem, we propose a novel Agent Mining Transformer, which adaptively mines a set of local-aware agents to construct agent-level semantic correlation. Compared with pixel-level semantics, the given agents are equipped with local-contextual information and possess a broader receptive field. At this point, different query pixels can selectively aggregate the fine-grained local semantics of different agents, thereby enhancing the semantic clarity between query FG and BG pixels. Concretely, the Agent Learning Encoder is first proposed to erect the optimal transport plan that arranges different agents to aggregate support semantics under different local regions. Then, for further optimizing the agents, the Agent Aggregation Decoder and the Semantic Alignment Decoder are constructed to break through the limited support set for mining valuable class-specific semantics from unlabeled data sources and the query image itself, respectively. Extensive experiments on the remote sensing benchmark iSAID indicate that the proposed method achieves state-of-the-art performance. Surprisingly, our method remains quite competitive when extended to more common natural scenarios, i.e., PASCAL- $$5^i$$ and COCO- $$20^{i}$$ .},
+  archive      = {J_IJCV},
+  author       = {Bi, Hanbo and Feng, Yingchao and Mao, Yongqiang and Pei, Jianning and Diao, Wenhui and Wang, Hongqi and Sun, Xian},
+  doi          = {10.1007/s11263-024-02252-y},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1780-1807},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {AgMTR: Agent mining transformer for few-shot segmentation in remote sensing},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interweaving insights: High-order feature interaction for
+fine-grained visual recognition. <em>IJCV</em>, <em>133</em>(4),
+1755–1779. (<a
+href="https://doi.org/10.1007/s11263-024-02260-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a novel approach for Fine-Grained Visual Classification (FGVC) by exploring Graph Neural Networks (GNNs) to facilitate high-order feature interactions, with a specific focus on constructing both inter- and intra-region graphs. Unlike previous FGVC techniques that often isolate global and local features, our method combines both features seamlessly during learning via graphs. Inter-region graphs capture long-range dependencies to recognize global patterns, while intra-region graphs delve into finer details within specific regions of an object by exploring high-dimensional convolutional features. A key innovation is the use of shared GNNs with an attention mechanism coupled with the Approximate Personalized Propagation of Neural Predictions (APPNP) message-passing algorithm, enhancing information propagation efficiency for better discriminability and simplifying the model architecture for computational efficiency. Additionally, the introduction of residual connections improves performance and training stability. Comprehensive experiments showcase state-of-the-art results on benchmark FGVC datasets, affirming the efficacy of our approach. This work underscores the potential of GNN in modeling high-level feature interactions, distinguishing it from previous FGVC methods that typically focus on singular aspects of feature representation. Our source code is available at https://github.com/Arindam-1991/I2-HOFI .},
+  archive      = {J_IJCV},
+  author       = {Sikdar, Arindam and Liu, Yonghuai and Kedarisetty, Siddhardha and Zhao, Yitian and Ahmed, Amr and Behera, Ardhendu},
+  doi          = {10.1007/s11263-024-02260-y},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1755-1779},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Interweaving insights: High-order feature interaction for fine-grained visual recognition},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the generalization and causal explanation in
+self-supervised learning. <em>IJCV</em>, <em>133</em>(4), 1727–1754. (<a
+href="https://doi.org/10.1007/s11263-024-02263-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Self-supervised learning (SSL) methods learn from unlabeled data and achieve high generalization performance on downstream tasks. However, they may also suffer from overfitting to their training data and lose the ability to adapt to new tasks. To investigate this phenomenon, we conduct experiments on various SSL methods and datasets and make two observations: (1) Overfitting occurs abruptly in later layers and epochs, while generalizing features are learned in early layers for all epochs; (2) Coding rate reduction can be used as an indicator to measure the degree of overfitting in SSL models. Based on these observations, we propose Undoing Memorization Mechanism (UMM), a plug-and-play method that mitigates overfitting of the pre-trained feature extractor by aligning the feature distributions of the early and the last layers to maximize the coding rate reduction of the last layer output. The learning process of UMM is a bi-level optimization process. We provide a causal analysis of UMM to explain how UMM can help the pre-trained feature extractor overcome overfitting and recover generalization. We also demonstrate that UMM significantly improves the generalization performance of SSL methods on various downstream tasks. The source code is to be released at https://github.com/ZeenSong/UMM .},
+  archive      = {J_IJCV},
+  author       = {Qiang, Wenwen and Song, Zeen and Gu, Ziyin and Li, Jiangmeng and Zheng, Changwen and Sun, Fuchun and Xiong, Hui},
+  doi          = {10.1007/s11263-024-02263-9},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1727-1754},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {On the generalization and causal explanation in self-supervised learning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Facial action unit detection by adaptively constraining
+self-attention and causally deconfounding sample. <em>IJCV</em>,
+<em>133</em>(4), 1711–1726. (<a
+href="https://doi.org/10.1007/s11263-024-02258-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Facial action unit (AU) detection remains a challenging task, due to the subtlety, dynamics, and diversity of AUs. Recently, the prevailing techniques of self-attention and causal inference have been introduced to AU detection. However, most existing methods directly learn self-attention guided by AU detection, or employ common patterns for all AUs during causal intervention. The former often captures irrelevant information in a global range, and the latter ignores the specific causal characteristic of each AU. In this paper, we propose a novel AU detection framework called $$\textrm{AC}^{2}$$ D by adaptively constraining self-attention weight distribution and causally deconfounding the sample confounder. Specifically, we explore the mechanism of self-attention weight distribution, in which the self-attention weight distribution of each AU is regarded as spatial distribution and is adaptively learned under the constraint of location-predefined attention and the guidance of AU detection. Moreover, we propose a causal intervention module for each AU, in which the bias caused by training samples and the interference from irrelevant AUs are both suppressed. Extensive experiments show that our method achieves competitive performance compared to state-of-the-art AU detection approaches on challenging benchmarks, including BP4D, DISFA, GFT, and BP4D+ in constrained scenarios and Aff-Wild2 in unconstrained scenarios.},
+  archive      = {J_IJCV},
+  author       = {Shao, Zhiwen and Zhu, Hancheng and Zhou, Yong and Xiang, Xiang and Liu, Bing and Yao, Rui and Ma, Lizhuang},
+  doi          = {10.1007/s11263-024-02258-6},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1711-1726},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Facial action unit detection by adaptively constraining self-attention and causally deconfounding sample},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards data-centric face anti-spoofing: Improving
+cross-domain generalization via physics-based data synthesis.
+<em>IJCV</em>, <em>133</em>(4), 1689–1710. (<a
+href="https://doi.org/10.1007/s11263-024-02240-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Face Anti-Spoofing (FAS) research is challenged by the cross-domain problem, where there is a domain gap between the training and testing data. While recent FAS works are mainly model-centric, focusing on developing domain generalization algorithms for improving cross-domain performance, data-centric research for face anti-spoofing, improving generalization from data quality and quantity, is largely ignored. Therefore, our work starts with data-centric FAS by conducting a comprehensive investigation from the data perspective for improving cross-domain generalization of FAS models. More specifically, at first, based on physical procedures of capturing and recapturing, we propose task-specific FAS data augmentation (FAS-Aug), which increases data diversity by synthesizing data of artifacts, such as printing noise, color distortion, moiré pattern, etc. Our experiments show that using our FAS augmentation can surpass traditional image augmentation in training FAS models to achieve better cross-domain performance. Nevertheless, we observe that models may rely on the augmented artifacts, which are not environment-invariant, and using FAS-Aug may have a negative effect. As such, we propose Spoofing Attack Risk Equalization (SARE) to prevent models from relying on certain types of artifacts and improve the generalization performance. Last but not least, our proposed FAS-Aug and SARE with recent Vision Transformer backbones can achieve state-of-the-art performance on the FAS cross-domain generalization protocols. The implementation is available at https://github.com/RizhaoCai/FAS-Aug .},
+  archive      = {J_IJCV},
+  author       = {Cai, Rizhao and Soh, Cecelia and Yu, Zitong and Li, Haoliang and Yang, Wenhan and Kot, Alex C.},
+  doi          = {10.1007/s11263-024-02240-2},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1689-1710},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Towards data-centric face anti-spoofing: Improving cross-domain generalization via physics-based data synthesis},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Blind multimodal quality assessment of low-light images.
+<em>IJCV</em>, <em>133</em>(4), 1665–1688. (<a
+href="https://doi.org/10.1007/s11263-024-02239-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Blind image quality assessment (BIQA) aims at automatically and accurately forecasting objective scores for visual signals, which has been widely used to monitor product and service quality in low-light applications, covering smartphone photography, video surveillance, autonomous driving, etc. Recent developments in this field are dominated by unimodal solutions inconsistent with human subjective rating patterns, where human visual perception is simultaneously reflected by multiple sensory information. In this article, we present a unique blind multimodal quality assessment (BMQA) of low-light images from subjective evaluation to objective score. To investigate the multimodal mechanism, we first establish a multimodal low-light image quality (MLIQ) database with authentic low-light distortions, containing image-text modality pairs. Further, we specially design the key modules of BMQA, considering multimodal quality representation, latent feature alignment and fusion, and hybrid self-supervised and supervised learning. Extensive experiments show that our BMQA yields state-of-the-art accuracy on the proposed MLIQ benchmark database. In particular, we also build an independent single-image modality Dark-4K database, which is used to verify its applicability and generalization performance in mainstream unimodal applications. Qualitative and quantitative results on Dark-4K show that BMQA achieves superior performance to existing BIQA approaches as long as a pre-trained model is provided to generate text descriptions. The proposed framework and two databases as well as the collected BIQA methods and evaluation metrics are made publicly available on https://charwill.github.io/bmqa.html .},
+  archive      = {J_IJCV},
+  author       = {Wang, Miaohui and Xu, Zhuowei and Xu, Mai and Lin, Weisi},
+  doi          = {10.1007/s11263-024-02239-9},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1665-1688},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Blind multimodal quality assessment of low-light images},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Audio-visual segmentation with semantics. <em>IJCV</em>,
+<em>133</em>(4), 1644–1664. (<a
+href="https://doi.org/10.1007/s11263-024-02261-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a new problem called audio-visual segmentation (AVS), in which the goal is to output a pixel-level map of the object(s) that produce sound at the time of the image frame. To facilitate this research, we construct the first audio-visual segmentation benchmark, i.e., AVSBench, providing pixel-wise annotations for sounding objects in audible videos. It contains three subsets: AVSBench-object (Single-source subset, Multi-sources subset) and AVSBench-semantic (Semantic-labels subset). Accordingly, three settings are studied: 1) semi-supervised audio-visual segmentation with a single sound source; 2) fully-supervised audio-visual segmentation with multiple sound sources, and 3) fully-supervised audio-visual semantic segmentation. The first two settings need to generate binary masks of sounding objects indicating pixels corresponding to the audio, while the third setting further requires to generate semantic maps indicating the object category. To deal with these problems, we propose a new baseline method that uses a temporal pixel-wise audio-visual interaction module to inject audio semantics as guidance for the visual segmentation process. We also design a regularization loss to encourage audio-visual mapping during training. Quantitative and qualitative experiments on the AVSBench dataset compare our approach to several existing methods for related tasks, demonstrating that the proposed method is promising for building a bridge between the audio and pixel-wise visual semantics. Code can be found at https://github.com/OpenNLPLab/AVSBench .},
+  archive      = {J_IJCV},
+  author       = {Zhou, Jinxing and Shen, Xuyang and Wang, Jianyuan and Zhang, Jiayi and Sun, Weixuan and Zhang, Jing and Birchfield, Stan and Guo, Dan and Kong, Lingpeng and Wang, Meng and Zhong, Yiran},
+  doi          = {10.1007/s11263-024-02261-x},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1644-1664},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Audio-visual segmentation with semantics},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning accurate low-bit quantization towards efficient
+computational imaging. <em>IJCV</em>, <em>133</em>(4), 1611–1643. (<a
+href="https://doi.org/10.1007/s11263-024-02250-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances of deep neural networks (DNNs) promote low-level vision applications in real-world scenarios, e.g., image enhancement, dehazing. Nevertheless, DNN-based methods encounter challenges in terms of high computational and memory requirements, especially when deployed on real-world devices with limited resources. Quantization is one of effective compression techniques that significantly reduces computational and memory requirements by employing low-bit parameters and bit-wise operations. However, low-bit quantization for computational imaging (Q-Imaging) remains largely unexplored and usually suffer from a significant performance drop compared with the real-valued counterparts. In this work, through empirical analysis, we identify the main factor responsible for such significant performance drop underlies in the large gradient estimation error from non-differentiable weight quantization methods, and the activation information degeneration along with the activation quantization. To address these issues, we introduce a differentiable quantization search (DQS) method to learn the quantized weights and an information boosting module (IBM) for network activation quantization. Our DQS method allows us to treat the discrete weights in a quantized neural network as variables that can be searched. We achieve this end by using a differential approach to accurately search for these weights. In specific, each weight is represented as a probability distribution across a set of discrete values. During training, these probabilities are optimized, and the values with the highest probabilities are chosen to construct the desired quantized network. Moreover, our IBM module can rectify the activation distribution before quantization to maximize the self-information entropy, which retains the maximum information during the quantization process. Extensive experiments across a range of image processing tasks, including enhancement, super-resolution, denoising and dehazing, validate the effectiveness of our Q-Imaging along with superior performances compared to a variety of state-of-the-art quantization methods. In particular, the method in Q-Imaging also achieves a strong generalization performance when composing a detection network for the dark object detection task.},
+  archive      = {J_IJCV},
+  author       = {Xu, Sheng and Li, Yanjing and Liu, Chuanjian and Zhang, Baochang},
+  doi          = {10.1007/s11263-024-02250-0},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1611-1643},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Learning accurate low-bit quantization towards efficient computational imaging},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards ultra high-speed hyperspectral imaging by
+integrating compressive and neuromorphic sampling. <em>IJCV</em>,
+<em>133</em>(4), 1587–1610. (<a
+href="https://doi.org/10.1007/s11263-024-02236-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hyperspectral and high-speed imaging are both important for scene representation and understanding. However, simultaneously capturing both hyperspectral and high-speed data is still under-explored. In this work, we propose a high-speed hyperspectral imaging system by integrating compressive sensing sampling with bioinspired neuromorphic sampling. Our system includes a coded aperture snapshot spectral imager capturing moderate-speed hyperspectral measurement frames and a spike camera capturing high-speed grayscale dense spike streams. The two cameras provide complementary dual-modality data for reconstructing high-speed hyperspectral videos (HSV). To effectively synergize the two sampling mechanisms and obtain high-quality HSV, we propose a unified multi-modal reconstruction framework. The framework consists of a Spike Spectral Prior Network for spike-based information extraction and prior regularization, coupled with a dual-modality iterative optimization algorithm for reliable reconstruction. We finally build a hardware prototype to verify the effectiveness of our system and algorithm design. Experiments on both simulated and real data demonstrate the superiority of the proposed approach, where for the first time to our knowledge, high-speed HSV with 30 spectral bands can be captured at a frame rate of up to 20,000 FPS.},
+  archive      = {J_IJCV},
+  author       = {Geng, Mengyue and Wang, Lizhi and Zhu, Lin and Zhang, Wei and Xiong, Ruiqin and Tian, Yonghong},
+  doi          = {10.1007/s11263-024-02236-y},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1587-1610},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Towards ultra high-speed hyperspectral imaging by integrating compressive and neuromorphic sampling},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 4Seasons: Benchmarking visual SLAM and long-term
+localization for autonomous driving in challenging conditions.
+<em>IJCV</em>, <em>133</em>(4), 1564–1586. (<a
+href="https://doi.org/10.1007/s11263-024-02230-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a novel visual SLAM and long-term localization benchmark for autonomous driving in challenging conditions based on the large-scale 4Seasons dataset. The proposed benchmark provides drastic appearance variations caused by seasonal changes and diverse weather and illumination conditions. While significant progress has been made in advancing visual SLAM on small-scale datasets with similar conditions, there is still a lack of unified benchmarks representative of real-world scenarios for autonomous driving. We introduce a new unified benchmark for jointly evaluating visual odometry, global place recognition, and map-based visual localization performance which is crucial to successfully enable autonomous driving in any condition. The data has been collected for more than one year, resulting in more than 300 km of recordings in nine different environments ranging from a multi-level parking garage to urban (including tunnels) to countryside and highway. We provide globally consistent reference poses with up to centimeter-level accuracy obtained from the fusion of direct stereo-inertial odometry with RTK GNSS. We evaluate the performance of several state-of-the-art visual odometry and visual localization baseline approaches on the benchmark and analyze their properties. The experimental results provide new insights into current approaches and show promising potential for future research. Our benchmark and evaluation protocols will be available at https://go.vision.in.tum.de/4seasons .},
+  archive      = {J_IJCV},
+  author       = {Wenzel, Patrick and Yang, Nan and Wang, Rui and Zeller, Niclas and Cremers, Daniel},
+  doi          = {10.1007/s11263-024-02230-4},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1564-1586},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {4Seasons: Benchmarking visual SLAM and long-term localization for autonomous driving in challenging conditions},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Edge-oriented adversarial attack for deep gait recognition.
+<em>IJCV</em>, <em>133</em>(4), 1549–1563. (<a
+href="https://doi.org/10.1007/s11263-024-02225-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gait recognition is a non-intrusive method that captures unique walking patterns without subject cooperation, which has emerged as a promising technique across various fields. Recent studies based on Deep Neural Networks (DNNs) have notably improved the performance, however, the potential vulnerability inherent in DNNs and their resistance to interference in practical gait recognition systems remain under-explored. To fill the gap, in this paper, we focus on imperceptible adversarial attack for deep gait recognition and propose an edge-oriented attack strategy tailored for silhouette-based approaches. Specifically, we make a pioneering attempt to explore the intrinsic characteristics of binary silhouettes, with a primary focus on injecting noise perturbations into the edge area. This simple yet effective solution enables sparse attack in both the spatial and temporal dimensions, which largely ensures imperceptibility and simultaneously achieves high success rate. In particular, our solution is built on a unified framework, allowing seamless switching between untargeted and targeted attack modes. Extensive experiments conducted on in-the-lab and in-the-wild benchmarks validate the effectiveness of our attack strategy and emphasize the necessity to study adversarial attack and defense strategy in the near future.},
+  archive      = {J_IJCV},
+  author       = {Hou, Saihui and Wang, Zengbin and Zhang, Man and Cao, Chunshui and Liu, Xu and Huang, Yongzhen},
+  doi          = {10.1007/s11263-024-02225-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1549-1563},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Edge-oriented adversarial attack for deep gait recognition},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mining generalized multi-timescale inconsistency for
+detecting deepfake videos. <em>IJCV</em>, <em>133</em>(4), 1532–1548.
+(<a href="https://doi.org/10.1007/s11263-024-02249-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in face forgery techniques have continuously evolved, leading to emergent security concerns in society. Existing detection methods have poor generalization ability due to the insufficient extraction of dynamic inconsistency cues on the one hand, and their inability to deal well with the gaps between forgery techniques on the other hand. To develop a new generalized framework that emphasizes extracting generalizable multi-timescale inconsistency cues. Firstly, we capture subtle dynamic inconsistency via magnifying the multipath dynamic inconsistency from the local-consecutive short-term temporal view. Secondly, the inter-group graph learning is conducted to establish the sufficient-interactive long-term temporal view for capturing dynamic inconsistency comprehensively. Finally, we design the domain alignment module to directly reduce the distribution gaps via simultaneously disarranging inter- and intra-domain feature distributions for obtaining a more generalized framework. Extensive experiments on six large-scale datasets and the designed generalization evaluation protocols show that our framework outperforms state-of-the-art deepfake video detection methods.},
+  archive      = {J_IJCV},
+  author       = {Yu, Yang and Ni, Rongrong and Yang, Siyuan and Ni, Yu and Zhao, Yao and Kot, Alex C.},
+  doi          = {10.1007/s11263-024-02249-7},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1532-1548},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Mining generalized multi-timescale inconsistency for detecting deepfake videos},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DLRA-net: Deep local residual attention network with
+contextual refinement for spectral super-resolution. <em>IJCV</em>,
+<em>133</em>(4), 1499–1531. (<a
+href="https://doi.org/10.1007/s11263-024-02238-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hyperspectral Images (HSIs) provide detailed scene insights using extensive spectral bands, crucial for material discrimination and earth observation with substantial costs and low spatial resolution. Recently, Convolutional Neural Networks (CNNs) are common choice for Spectral Super-Resolution (SSR) from Multispectral Images (MSIs). However, they often fail to simultaneously exploit pixel-level noise degradation of MSIs and complex contextual spatial-spectral characteristics of HSIs. In this paper, a Deep Local Residual Attention Network with Contextual Refinement Network (DLRA-Net) is proposed to integrate local low-rank spectral and global contextual priors for improved SSR. Specifically, SSR is unfolded into Contextual-attention Refinement Module (CRM) and Dual Local Residual Attention Module (DLRAM). CRM is proposed to adaptively learn complex contextual priors to guide the convolution layer weights for improved spatial restorations. While DLRAM captures deep refined texture details to enhance contextual priors representations for recovering HSIs. Moreover, lateral fusion strategy is designed to integrate the obtained priors among DLRAMs for faster network convergence. Experimental results on natural-scene datasets with practical noise patterns confirm exceptional DLRA-Net performance with relatively small model size. DLRA-Net demonstrates Maximum Relative Improvements (MRI) between 9.71 and 58.58% in Mean Relative Absolute Error (MRAE) with reduced parameters between 52.18 and 85.85%. Besides, a practical RS-HSI dataset is generated for evaluations showing MRI between 8.64 and 50.56% in MRAE. Furthermore, experiments with HSI classifiers indicate improved performance of reconstructed RS-HSIs compared to RS-MSIs, with MRI in Overall Accuracy (OA) between 7.10 and 15.27%. Lastly, a detailed ablation study assesses model complexity and runtime.},
+  archive      = {J_IJCV},
+  author       = {El-gabri, Ahmed R. and Aly, Hussein A. and Ghoniemy, Tarek S. and Elshafey, Mohamed A.},
+  doi          = {10.1007/s11263-024-02238-w},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1499-1531},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {DLRA-net: Deep local residual attention network with contextual refinement for spectral super-resolution},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Using unreliable pseudo-labels for label-efficient semantic
+segmentation. <em>IJCV</em>, <em>133</em>(4), 1476–1498. (<a
+href="https://doi.org/10.1007/s11263-024-02229-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The crux of label-efficient semantic segmentation is to produce high-quality pseudo-labels to leverage a large amount of unlabeled or weakly labeled data. A common practice is to select the highly confident predictions as the pseudo-ground-truths for each pixel, but it leads to a problem that most pixels may be left unused due to their unreliability. However, we argue that every pixel matters to the model training, even those unreliable and ambiguous pixels. Intuitively, an unreliable prediction may get confused among the top classes, however, it should be confident about the pixel not belonging to the remaining classes. Hence, such a pixel can be convincingly treated as a negative key to those most unlikely categories. Therefore, we develop an effective pipeline to make sufficient use of unlabeled data. Concretely, we separate reliable and unreliable pixels via the entropy of predictions, push each unreliable pixel to a category-wise queue that consists of negative keys, and manage to train the model with all candidate pixels. Considering the training evolution, we adaptively adjust the threshold for the reliable-unreliable partition. Experimental results on various benchmarks and training settings demonstrate the superiority of our approach over the state-of-the-art alternatives.},
+  archive      = {J_IJCV},
+  author       = {Wang, Haochen and Wang, Yuchao and Shen, Yujun and Fan, Junsong and Wang, Yuxi and Zhang, Zhaoxiang},
+  doi          = {10.1007/s11263-024-02229-x},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1476-1498},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Using unreliable pseudo-labels for label-efficient semantic segmentation},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MosaicFusion: Diffusion models as data augmenters for large
+vocabulary instance segmentation. <em>IJCV</em>, <em>133</em>(4),
+1456–1475. (<a
+href="https://doi.org/10.1007/s11263-024-02223-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present MosaicFusion, a simple yet effective diffusion-based data augmentation approach for large vocabulary instance segmentation. Our method is training-free and does not rely on any label supervision. Two key designs enable us to employ an off-the-shelf text-to-image diffusion model as a useful dataset generator for object instances and mask annotations. First, we divide an image canvas into several regions and perform a single round of diffusion process to generate multiple instances simultaneously, conditioning on different text prompts. Second, we obtain corresponding instance masks by aggregating cross-attention maps associated with object prompts across layers and diffusion time steps, followed by simple thresholding and edge-aware refinement processing. Without bells and whistles, our MosaicFusion can produce a significant amount of synthetic labeled data for both rare and novel categories. Experimental results on the challenging LVIS long-tailed and open-vocabulary benchmarks demonstrate that MosaicFusion can significantly improve the performance of existing instance segmentation models, especially for rare and novel categories. Code: https://github.com/Jiahao000/MosaicFusion .},
+  archive      = {J_IJCV},
+  author       = {Xie, Jiahao and Li, Wei and Li, Xiangtai and Liu, Ziwei and Ong, Yew Soon and Loy, Chen Change},
+  doi          = {10.1007/s11263-024-02223-3},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1456-1475},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {MosaicFusion: Diffusion models as data augmenters for large vocabulary instance segmentation},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Group-based distinctive image captioning with memory
+difference encoding and attention. <em>IJCV</em>, <em>133</em>(4),
+1435–1455. (<a
+href="https://doi.org/10.1007/s11263-024-02220-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in image captioning have focused on enhancing accuracy by substantially increasing the dataset and model size. While conventional captioning models exhibit high performance on established metrics such as BLEU, CIDEr, and SPICE, the capability of captions to distinguish the target image from other similar images is under-explored. To generate distinctive captions, a few pioneers employed contrastive learning or re-weighted the ground-truth captions. However, these approaches often overlook the relationships among objects in a similar image group (e.g., items or properties within the same album or fine-grained events). In this paper, we introduce a novel approach to enhance the distinctiveness of image captions, namely Group-based Differential Distinctive Captioning Method, which visually compares each image with other images in one similar group and highlights the uniqueness of each image. In particular, we introduce a Group-based Differential Memory Attention (GDMA) module, designed to identify and emphasize object features in an image that are uniquely distinguishable within its image group, i.e., those exhibiting low similarity with objects in other images. This mechanism ensures that such unique object features are prioritized during caption generation for the image, thereby enhancing the distinctiveness of the resulting captions. To further refine this process, we select distinctive words from the ground-truth captions to guide both the language decoder and the GDMA module. Additionally, we propose a new evaluation metric, the Distinctive Word Rate (DisWordRate), to quantitatively assess caption distinctiveness. Quantitative results indicate that the proposed method significantly improves the distinctiveness of several baseline models, and achieves state-of-the-art performance on distinctiveness while not excessively sacrificing accuracy. Moreover, the results of our user study are consistent with the quantitative evaluation and demonstrate the rationality of the new metric DisWordRate.},
+  archive      = {J_IJCV},
+  author       = {Wang, Jiuniu and Xu, Wenjia and Wang, Qingzhong and Chan, Antoni B.},
+  doi          = {10.1007/s11263-024-02220-6},
+  journal      = {International Journal of Computer Vision},
+  month        = {4},
+  number       = {4},
+  pages        = {1435-1455},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Group-based distinctive image captioning with memory difference encoding and attention},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

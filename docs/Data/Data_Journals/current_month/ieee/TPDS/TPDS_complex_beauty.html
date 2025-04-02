@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPDS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpds---14">TPDS - 14</h2>
+<ul>
+<li><details>
+<summary>
+(2025). FedTune-SGM: A stackelberg-driven personalized federated
+learning strategy for edge networks. <em>TPDS</em>, <em>36</em>(4),
+791–802. (<a href="https://doi.org/10.1109/TPDS.2025.3543368">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning (FL) has emerged as a prominent solution for distributed learning environments, enabling collaborative model training without centralized data collection. However, FL faces significant challenges such as data heterogeneity and resource-constraint edge devices for model training and analysis, leading to accuracy degradation and bias in model performance. To address these critical issues, we propose a novel FL strategy named FedTune-SGM, designed to optimize model training in decentralized settings. In this strategy, a cloud-based model is initially trained and fine-tuned on the edge devices with additional layers tailored to the specific data characteristics. This fine-tuning process effectively mitigates the impact of data heterogeneity, enhancing the robustness and generalization capability of the model. FedTune-SGM employs a strategic weighting mechanism that ensures a balanced and equitable contribution from participating edge devices to prevent dominant influences from resource-rich devices and promote a fairer and more accurate aggregated model. Additionally, the proposed strategy integrates a Stackelberg Game model to foster an interactive and dynamic cloud-edge setup that motivates edge devices to invest more effort in model training and ensures the effectiveness of resource-constraint edge devices. Extensive experiments conducted on three diverse datasets highlight the superior performance of the proposed FedTune-SGM strategy compared to state-of-the-art FL techniques in terms of accuracy and robustness while meeting the critical challenges of data heterogeneity and resource limitations in FL environments. Through these innovations, FedTune-SGM paves the way for more reliable and efficient distributed learning systems, unlocking the full potential of FL in practical applications.},
+  archive      = {J_TPDS},
+  author       = {Neha Singh and Mainak Adhikari},
+  doi          = {10.1109/TPDS.2025.3543368},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {791-802},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {FedTune-SGM: A stackelberg-driven personalized federated learning strategy for edge networks},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Loci: Federated continual learning of heterogeneous tasks at
+edge. <em>TPDS</em>, <em>36</em>(4), 775–790. (<a
+href="https://doi.org/10.1109/TPDS.2025.3531123">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated continual learning (FCL) has attracted growing attention in achieving collaborative model training among edge clients, each of which learns its local model for a sequence of tasks. Most existing FCL approaches aggregate clients’ latest local models to exchange knowledge. This unfortunately deviates from real-world scenarios where each model is optimized independently using the client’s own dynamic data and different clients have heterogeneous tasks. These tasks not only have distinct class labels (e.g., animals or vehicles) but also differ in input feature distributions. The aggregated model thus often shifts to a higher loss value and incurs accuracy degradation. In this article, we depart from the model-grained view of aggregation and transform it into multiple task-grained aggregations. Each aggregation allows a client to learn from other clients to improve its model accuracy on one task. To this end, we propose Loci to provide abstractions for clients’ past and peer task knowledge using compact model weights, and develop a communication-efficient approach to train each client’s local model by exchanging its tasks’ knowledge with the most accuracy relevant one from other clients. Through its general-purpose API, Loci can be used to provide efficient on-device training for existing deep learning applications of graph, image, nature language processing, and multimodal data. Using extensive comparative evaluations, we show Loci improves the model accuracy by 32.48% without increasing training time, reduces communication cost by 83.6%, and achieves more improvements when scale (task/client number) increases.},
+  archive      = {J_TPDS},
+  author       = {Yaxin Luopan and Rui Han and Qinglong Zhang and Xiaojiang Zuo and Chi Harold Liu and Guoren Wang and Lydia Y. Chen},
+  doi          = {10.1109/TPDS.2025.3531123},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {775-790},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Loci: Federated continual learning of heterogeneous tasks at edge},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A tail latency SLO guaranteed task scheduling scheme for
+user-facing services. <em>TPDS</em>, <em>36</em>(4), 759–774. (<a
+href="https://doi.org/10.1109/TPDS.2025.3542638">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A primary design objective for user-facing services for cloud and edge computing is to maximize query throughput, while meeting query tail latency Service Level Objectives (SLOs) for individual queries. Unfortunately, the existing solutions fall short of achieving this design objective, which we argue, is largely attributed to the fact that they fail to take the query fanout explicitly into account. In this paper, we propose TailGuard based on a Tail-latency-SLO-and-Fanout-aware Earliest-Deadline-First Queuing policy (TF-EDFQ) for task queuing at individual task servers the query tasks are fanned out to. With the task pre-dequeuing time deadline for each task being derived based on both query tail latency SLO and query fanout, TailGuard takes an important first step towards achieving the design objective. A query admission control scheme is also developed to provide tail latency SLO guarantee in the presence of resource shortages. TailGuard is evaluated against First-In-First-Out (FIFO) task queuing, task PRIority Queuing (PRIQ) and Tail-latency-SLO-aware EDFQ (T-EDFQ) policies by both simulation and testing in the Amazon EC2 cloud. It is driven by three types of applications in the Tailbench benchmark suite, featuring web search, in-memory key-value store, and transactional database applications. The results demonstrate that TailGuard can significantly improve resource utilization (e.g., up to 80% compared to FIFO), while also meeting the targeted tail latency SLOs, as compared with the other three policies. TailGuard is also implemented and tested in a highly heterogeneous Sensing-$a$s-a-Service (SaS) testbed for a data sensing service, demonstrating performance gains of up to 33% . These results are consistent with both the simulation and Amazon EC2 results.},
+  archive      = {J_TPDS},
+  author       = {Zhijun Wang and Huiyang Li and Lin Sun and Stoddard Rosenkrantz and Hao Che and Hong Jiang},
+  doi          = {10.1109/TPDS.2025.3542638},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {759-774},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A tail latency SLO guaranteed task scheduling scheme for user-facing services},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Flips: A flexible partitioning strategy near memory
+processing architecture for recommendation system. <em>TPDS</em>,
+<em>36</em>(4), 745–758. (<a
+href="https://doi.org/10.1109/TPDS.2025.3539534">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Personalized recommendation systems are massively deployed in production data centers. The memory-intensive embedding layers of recommendation systems are the crucial performance bottleneck, with operations manifesting as sparse memory lookups and simple reduction computations. Recent studies propose near-memory processing (NMP) architectures to speed up embedding operations by utilizing high internal memory bandwidth. However, these solutions typically employ a fixed vector partitioning strategy that fail to adapt to changes in data center deployment scenarios and lack practicality. We propose Flips, a flexible partitioning strategy NMP architecture that accelerates embedding layers. Flips supports more than ten partitioning strategies through hardware-software co-design. Novel hardware architectures and address mapping schemes are designed for the memory-side and host-side. We provide two approaches to determine the optimal partitioning strategy for each embedding table, enabling the architecture to accommodate changes in deployment scenarios. Importantly, Flips is decoupled from the NMP level and can utilize rank-level, bank-group-level and bank-level parallelism. In peer-level NMP evaluations, Flips outperforms state-of-the-art NMP solutions, RecNMP, TRiM, and ReCross by up to 4.0×, 4.1×, and 3.5×, respectively.},
+  archive      = {J_TPDS},
+  author       = {Yudi Qiu and Lingfei Lu and Shiyan Yi and Minge Jing and Xiaoyang Zeng and Yang Kong and Yibo Fan},
+  doi          = {10.1109/TPDS.2025.3539534},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {745-758},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Flips: A flexible partitioning strategy near memory processing architecture for recommendation system},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Task-aware service placement for distributed learning in
+wireless edge networks. <em>TPDS</em>, <em>36</em>(4), 731–744. (<a
+href="https://doi.org/10.1109/TPDS.2025.3539620">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine learning has been a driving force in the evolution of tremendous computing services and applications in the past decade. Traditional learning systems rely on centralized training and inference, which poses serious privacy and security concerns. To solve this problem, distributed learning over wireless edge networks (DLWENs) emerges as a trending solution and has attracted increasing research interests. In DLWENs, corresponding services need to be placed onto the edge servers to process the distributed tasks. Apparently, different placement of training services can significantly affect the performance of all distributed learning tasks. In this article, we propose TASP, a task-aware service placement scheme for distributed learning in wireless edge networks. By carefully considering the structures (directed acyclic graphs) of the distributed learning tasks, the fine-grained task requests and inter-task dependencies are incorporated into the placement strategies to realize the parallel computation of learning services. We also exploit queuing theory to characterize the dynamics caused by task uncertainties. Extensive experiments based on the Alibaba ML dataset show that, compared to the state-of-the-art schemes, the proposed work reduces the overall delay of distributed learning tasks by 38.6% on average.},
+  archive      = {J_TPDS},
+  author       = {Rong Cong and Zhiwei Zhao and Mengfan Wang and Geyong Min and Jiangshu Liu and Jiwei Mo},
+  doi          = {10.1109/TPDS.2025.3539620},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {731-744},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Task-aware service placement for distributed learning in wireless edge networks},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Co-designing transformer architectures for distributed
+inference with low communication. <em>TPDS</em>, <em>36</em>(4),
+717–730. (<a href="https://doi.org/10.1109/TPDS.2024.3521582">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformer models have shown significant success in a wide range of tasks. However, the massive resources required for its inference prevent deployment on a single device with relatively constrainted resources, thus leaving a high threshold of integrating their advancements. Observing scenarios such as smart home applications on edge devices and cloud deployment on commodity hardware, it is promising to distribute Transformer inference across multiple devices. Unfortunately, due to the tightly-coupled feature of Transformer model, existing model parallelism approaches necessitate frequent communication to resolve data dependencies, making them unacceptable for distributed inference, especially under relatively weak interconnection. In this paper, we propose DeTransformer, a communication-efficient distributed Transformer inference system. The key idea of DeTransformer involves the co-design of Transformer architecture to reduce the communication during distributed inference. In detail, DeTransformer is based on a novel block parallelism approach, which restructures the original Transformer layer with a single block to the decoupled layer with multiple sub-blocks. Thus, it can exploit model parallelism between sub-blocks. Next, DeTransformer contains an adaptive execution approach that strikes a trade-off among communication capability, computing power and memory budget over multiple devices. It incorporates a two-phase planning for execution, namely static planning and runtime planning. The static planning runs offline, containing a profiling procedure and a weight placement strategy before execution. The runtime planning dynamically determines the optimal parallel computing strategy from an expertly crafted search space based on real-time requests. Notably, this execution approach can adapt to heterogeneous devices by distributing workload based on devices’ computing capabilities. We conduct experiments for both auto-regressive and auto-encoder tasks of Transformer models. Experimental results show that DeTransformer can reduce distributed inference latency by up to 2.81× compared to the SOTA approach on 4 devices, while effectively maintaining task accuracy and a consistent model size.},
+  archive      = {J_TPDS},
+  author       = {Jiangsu Du and Yuanxin Wei and Shengyuan Ye and Jiazhi Jiang and Xu Chen and Dan Huang and Yutong Lu},
+  doi          = {10.1109/TPDS.2024.3521582},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {717-730},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Co-designing transformer architectures for distributed inference with low communication},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spread+: Scalable model aggregation in federated learning
+with non-IID data. <em>TPDS</em>, <em>36</em>(4), 701–716. (<a
+href="https://doi.org/10.1109/TPDS.2025.3539738">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) addresses privacy concerns by training models without sharing raw data, overcoming the limitations of traditional machine learning paradigms. However, the rise of smart applications has accentuated the heterogeneity in data and devices, which presents significant challenges for FL. In particular, data skewness among participants can compromise model accuracy, while diverse device capabilities lead to aggregation bottlenecks, causing severe model congestion. In this article, we introduce Spread+, a hierarchical system that enhances FL by organizing clients into clusters and delegating model aggregation to edge devices, thus mitigating these challenges. Spread+ leverages hedonic coalition formation game to optimize customer organization and adaptive algorithms to regulate aggregation intervals within and across clusters. Moreover, it refines the aggregation algorithm to boost model accuracy. Our experiments demonstrate that Spread+ significantly alleviates the central aggregation bottleneck and surpasses mainstream benchmarks, achieving performance improvements of 49.58% over FAVG and 22.78% over Ring-allreduce.},
+  archive      = {J_TPDS},
+  author       = {Huanghuang Liang and Xin Yang and Xiaoming Han and Boan Liu and Chuang Hu and Dan Wang and Xiaobo Zhou and Dazhao Cheng},
+  doi          = {10.1109/TPDS.2025.3539738},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {701-716},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Spread+: Scalable model aggregation in federated learning with non-IID data},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Beelog: Online log compaction for dependable systems.
+<em>TPDS</em>, <em>36</em>(4), 689–700. (<a
+href="https://doi.org/10.1109/TPDS.2025.3541628">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Logs are a known abstraction used to develop dependable and secure distributed systems. By logging entries on a sequential global log, systems can synchronize updates over replicas and provide a consistent state recovery in the presence of faults. However, their usage incurs a non-negligible overhead on the application&#39;s performance. This article presents Beelog, an approach to reduce logging impact and accelerate recovery on log-based protocols by safely discarding entries from logs. The technique involves executing a log compaction during run-time concurrently with the persistence and execution of commands. Besides compacting logging information, the proposed technique splits the log file and incorporates strategies to reduce logging overhead, such as batching and parallel I/O. We evaluate the proposed approach by implementing it as a new feature of the etcd key-value store and comparing it against etcd&#39;s standard logging. Utilizing workloads from the YCSB benchmark and experimenting with different configurations for batch size and number of storage devices, our results indicate that Beelog can reduce application recovery time, especially in write-intensive workloads with a small number of keys and a probability favoring the most recent keys to be updated. In such scenarios, we observed up to a 50% compaction in the log file size and a 65% improvement in recovery time compared to etcd&#39;s standard recovery protocol. As a side effect, batching results in higher command execution latency, ranging from $ \text{100 ms}$ to $ \text{350 ms}$ with Beelog, compared to the default etcd&#39;s $ \text{90 ms}$. Except for the latency increase, the proposed technique does not impose other significant performance costs, making it a practical solution for systems where fast recovery and reduced storage are priorities.},
+  archive      = {J_TPDS},
+  author       = {Luiz Gustavo C. Xavier and Cristina Meinhardt and Odorico Machado Mendizabal},
+  doi          = {10.1109/TPDS.2025.3541628},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {689-700},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Beelog: Online log compaction for dependable systems},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EfficientMoE: Optimizing mixture-of-experts model training
+with adaptive load balance. <em>TPDS</em>, <em>36</em>(4), 677–688. (<a
+href="https://doi.org/10.1109/TPDS.2025.3539297">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mixture-of-Experts (MoE) efficiently trains large models by using sparse activation to lower costs, selecting a few experts based on data characteristics. However, it faces challenges such as All-to-All communication overhead and load imbalance, with most optimizations targeting dynamic graphs rather than the more efficient static graphs. This study identifies two key challenges in training MoE on static graphs: 1) excessive All-to-All communication (up to 75% of iteration time) and load imbalance (70% of tokens handled by two experts) between experts due to the sparse structure of the MoE model and the token distribution; and 2) inefficient zero-padding for static shapes, leading to unnecessary computational overhead(wasting approximately 50% of resources). Thus, EfficientMoE, a scheduling method based on expert load and data characteristics, is introduced. EfficientMoE first designs a sampler to collect real-time information about token distribution, expert load, etc. It constructs a load prediction model to evaluate expert load. Subsequently, EfficientMoE proposes a dynamic schedule strategy for experts with evaluated expert load, reducing All-to-All communication and addressing load-balancing issues. Additionally, an expert capacity model is proposed to set different capacities for replicas of hot experts before static graph compilation, minimizing computation and storage overhead caused by significant padding. This study implements EfficientMoE in MindSpore and uses 32 Ascend AI accelerators to train an MoE model with 21 billion parameters and evaluate its validity. EfficientMoE demonstrated an improvement of 30% in model training time, approximately 12% reduction in communication time, and saved 35% computational resources across different clusters, compared with Switch transformers, and the Fastermoe method for static graphs.},
+  archive      = {J_TPDS},
+  author       = {Yan Zeng and Chengchuang Huang and Yipeng Mei and Lifu Zhang and Teng Su and Wei Ye and Wenqi Shi and Shengnan Wang},
+  doi          = {10.1109/TPDS.2025.3539297},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {677-688},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {EfficientMoE: Optimizing mixture-of-experts model training with adaptive load balance},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A note on “AESM2 attribute-based encrypted search for
+multi-owner and multi-user distributed systems.” <em>TPDS</em>,
+<em>36</em>(4), 675–676. (<a
+href="https://doi.org/10.1109/TPDS.2025.3531446">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We show that the attribute-based encrypted search protocol [IEEE TPDS, 2023, 34(1), 92–107] is insecure against unauthorized user querying attack, because an adversary can convert a valid query from any authorized user into a new legitimate query, while the server cannot detect the fraud.},
+  archive      = {J_TPDS},
+  author       = {Zhengjun Cao},
+  doi          = {10.1109/TPDS.2025.3531446},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {675-676},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A note on “AESM2 attribute-based encrypted search for multi-owner and multi-user distributed systems”},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SMDP-based dynamic batching for improving responsiveness and
+energy efficiency of batch services. <em>TPDS</em>, <em>36</em>(4),
+659–674. (<a href="https://doi.org/10.1109/TPDS.2025.3526283">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For servers incorporating parallel computing resources, batching is a pivotal technique for providing efficient and economical services at scale. Parallel computing resources exhibit heightened computational and energy efficiency when operating with larger batch sizes. However, in the realm of online services, the adoption of a larger batch size may lead to longer response times. This paper aims to provide a dynamic batching scheme that delicately balances latency and efficiency. The system is modeled as a batch service queue with size-dependent service times. Then, the design of dynamic batching is formulated as a semi-Markov decision process (SMDP) problem, with the objective of minimizing the weighted sum of average response time and average power consumption. A method is proposed to derive an approximate optimal SMDP solution, representing the chosen dynamic batching policy. By introducing an abstract cost to reflect the impact of “tail” states, the space complexity and the time complexity of the procedure can decrease by 63.5% and 98%, respectively. Numerical results showcase the superiority of SMDP-based batching policies across various parameter setups. Additionally, the proposed scheme exhibits noteworthy flexibility in balancing power consumption and latency.},
+  archive      = {J_TPDS},
+  author       = {Yaodan Xu and Sheng Zhou and Zhisheng Niu},
+  doi          = {10.1109/TPDS.2025.3526283},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {659-674},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {SMDP-based dynamic batching for improving responsiveness and energy efficiency of batch services},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FHE4DMM: A low-latency distributed matrix multiplication
+with fully homomorphic encryption. <em>TPDS</em>, <em>36</em>(4),
+645–658. (<a href="https://doi.org/10.1109/TPDS.2025.3534846">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fully Homomorphic Encryption (FHE) is a promising technology for secure, non-interactive outsourced computation. One notable method to increase the throughput of FHE-based outsourcing is batching, which typically involves large-scale matrix-matrix multiplications (MM). However, the substantial overhead inherent in existing FHE schemes poses a major challenge for processing these large-scale tasks, often resulting in insufficient memory or prolonged delays on a single machine, making it practically unviable. Utilizing multi-machine parallelism in cloud clusters for outsourced computation offers a natural solution to these obstacles. In this work, we propose FHE4DMM, a distributed algorithm that provides a unified view on encrypted matrices, accommodating various FHE schemes and any matrix dimensions, to accelerate large-scale encrypted MM. A key innovation is its reuse optimizations for parallelized homomorphic computations, which can offer valuable insights for broader FHE-based applications. We utilized FHE4DMM to conduct large-scale square ($4096\times 4096$) and rectangular ($32768\times 32768,32768\times 16$ ) matrix multiplications on 256 machines, achieving computation time of 172.2 s and 76.1 s, respectively, while ensuring a 128-bit security level. For scalability, the experiments demonstrate that FHE4DMM achieves linear speedup for $2^{i}$ ($i$ is from 0 to 6) machines across various matrix dimension cases. In addition, within the range of matrix dimensions that the state-of-the-art (SOTA) distributed FHE-MM algorithm (Huang et al. 2023) can handle, FHE4DMM attains a maximum speedup of 16.62x. To assess its practical performance, FHE4DMM is applied in a basic multi-layer feedforward network. We used 64 machines to perform secure outsourced inference on MNIST and CIFAR-10 datasets with encrypted models and data. Compared to using the SOTA, our method achieved speedups of up to 3.54x and 4.22x respectively, with the MM module obtaining a 4.09x and 4.87x speedup.},
+  archive      = {J_TPDS},
+  author       = {Yi Chen and Qiang-Sheng Hua and Zixiao Hong and Lin Zhu and Hai Jin},
+  doi          = {10.1109/TPDS.2025.3534846},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {645-658},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {FHE4DMM: A low-latency distributed matrix multiplication with fully homomorphic encryption},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Monte: SFCs migration scheme in the distributed programmable
+data plane. <em>TPDS</em>, <em>36</em>(4), 633–644. (<a
+href="https://doi.org/10.1109/TPDS.2025.3532467">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Service function chains (SFCs) are sequences of network functions that provide specific services to meet operators’ needs in today&#39;s ISPs and datacenter networks. To improve the performance of SFCs, programmable data planes are used to leverage their low latency and high performance packet processing. However, SFCs need to be adaptable to dynamics such as changes in requirements and attributes. Therefore, the ability to migrate SFCs is essential. Unfortunately, migrating SFCs in distributed programmable data planes is challenging due to the risk of degraded performance and failure to meet SFCs requirements and resource constraints in switches. In this paper, we propose Monte, which provides an effective SFCs migration scheme in distributed programmable data planes. We build a novel integer programming model to represent the migration process with constraints on resource limitations of switches and SFCs attributes in the distributed data plane. Additionally, an SFCs migration algorithm is designed to optimize the migration cost by deeply analyzing resource allocation in the switch pipeline. Monte has been implemented on both P4 software switches (Bmv2) and hardware switches (Intel Tofino ASIC). Extensive evaluation results show that the migration cost in Monte is 94.03% lower on average than the state-of-the-art deployment scheme, and Monte can effectively save pipeline resources.},
+  archive      = {J_TPDS},
+  author       = {Xiaoquan Zhang and Lin Cui and Fung Po Tso and Yuhui Deng and Zhetao Li and Weijia Jia},
+  doi          = {10.1109/TPDS.2025.3532467},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {633-644},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Monte: SFCs migration scheme in the distributed programmable data plane},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Paralfetch: Fast application launch on personal
+computing/communication devices. <em>TPDS</em>, <em>36</em>(4), 616–632.
+(<a href="https://doi.org/10.1109/TPDS.2024.3525337">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Paralfetch speeds up application launches on personal computing/communication devices, by means of: 1) accurate collection of launch-related disk read requests, 2) pre-scheduling of these requests to improve I/O throughput during prefetching, and 3) overlapping application execution with disk prefetching for hiding disk access time from the execution of the application. We implemented Paralfetch under Linux kernels on a desktop/laptop PC, a Raspberry Pi 3 board, and an Android smartphone. Tests with popular applications show that Paralfetch significantly reduces application launch times on flash-based drives and hard disk drives, and it outperforms GSoC Prefetch Lichota et al. 2007 and FAST Joo et al. 2011, which are representative application prefetchers available for Linux-based systems.},
+  archive      = {J_TPDS},
+  author       = {Junhee Ryu and Dongeun Lee and Kang G. Shin and Kyungtae Kang},
+  doi          = {10.1109/TPDS.2024.3525337},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  number       = {4},
+  pages        = {616-632},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Paralfetch: Fast application launch on personal Computing/Communication devices},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

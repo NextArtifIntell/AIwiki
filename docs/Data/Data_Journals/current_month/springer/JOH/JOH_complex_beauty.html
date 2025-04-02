@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JOH_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="joh---1">JOH - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). An adaptive variable neighborhood search for the traveling
+salesman problem with job-times. <em>JOH</em>, <em>31</em>(2), 1–65. (<a
+href="https://doi.org/10.1007/s10732-025-09553-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Traveling Salesman Problem with Job-times (TSPJ) is an extension problem that integrates the Traveling Salesman Problem and the Job Scheduling Problem. TSPJ refers to finding the optimal route for a salesman to visit each location exactly once while assigning one job to each location. Each job can only be assigned once, and its completion time depends on the assigned location. The objective of the TSPJ is to minimize the maximum completion time of all jobs. This paper studies the problem from a new perspective and illustrates the realistic application scenarios of TSPJ. To solve the problem efficiently, we propose a Variable Neighborhood Search algorithm embedded in an adaptive shaking strategy and an intensive local search procedure. The adaptive shaking strategy invokes the small-perturbation or large-perturbation strategy according to the searching states and results during the searching procedure. In the proposed local search procedure, the first improvement strategy is adopted and the parameter of perturbation strength is updated for the following procedures. Experimental results on 310 benchmark instances demonstrate that the proposed algorithm outperforms the state-of-the-art heuristic methods. In particular, the best-known solutions are improved in 241 instances and the proposed algorithm can obtain the same results as the best-known solutions in 60 instances. Two statistical tests show that the results obtained by the proposed algorithm have significant differences from those of the compared methods and therefore verify the superiority of our method.},
+  archive      = {J_JOH},
+  author       = {Lan, Shaowen and Lu, Yongliang and Fan, Wenjuan},
+  doi          = {10.1007/s10732-025-09553-6},
+  journal      = {Journal of Heuristics},
+  month        = {6},
+  number       = {2},
+  pages        = {1-65},
+  shortjournal = {J. Heuristics},
+  title        = {An adaptive variable neighborhood search for the traveling salesman problem with job-times},
+  volume       = {31},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

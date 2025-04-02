@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TKDD_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tkdd---3">TKDD - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). STORM: A MapReduce framework for symbolic time intervals
+series classification. <em>TKDD</em>, <em>19</em>(1), 1–54. (<a
+href="https://doi.org/10.1145/3694788">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Symbolic Time Intervals (STIs) represent events having a non-zero time duration, which are common in various application domains. In this article, we focus on the challenge of STIs series classification (STIC). While in the related problem of time series classification (TSC) Rocket is well-known for its exceptionally fast runtime while achieving accuracy comparable to state-of-the-art, it has only recently been studied in the field of STIC. However, since Rocket as well as its enhanced variants for TSC (e.g., MiniRocket and MultiRocket) solely rely on global features, they might not always fit best for the classification of thousands of time-units long STI series out-of-the-box, which are rather common in STIC. We introduce STORM—a novel, generic MapReduce framework for STIC, which (1) converts raw input STIs series into multivariate time series (MTS) representation; (2) partitions the converted MTS into fixed-sized blocks, each transformed independently into a uniform latent space via a common, desired Rocket variant used as a base transformation in STORM; and (3) performs sequence classification of the blocks’ transformed feature vectors via a deep, lightweight, bidirectional LSTM network. The evaluation demonstrates that STORM significantly improves accuracy over eight state-of-the-art methods for STIC either when applied with MiniRocket and MultiRocket as base transformations, as well as over the baselines of applying the respective Rocket variants directly to the converted MTS representation, that is, while also reporting overall comparable training times, on a benchmark of eight real-world STIC datasets including both extremely long and short STIs series.},
+  archive      = {J_TKDD},
+  doi          = {10.1145/3694788},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {2},
+  number       = {1},
+  pages        = {1-54},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {STORM: A MapReduce framework for symbolic time intervals series classification},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey on the role of crowds in combating online
+misinformation: Annotators, evaluators, and creators. <em>TKDD</em>,
+<em>19</em>(1), 1–30. (<a
+href="https://doi.org/10.1145/3694980">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online misinformation poses a global risk with significant real-world consequences. To combat misinformation, current research relies on professionals like journalists and fact-checkers for annotating and debunking false information while also developing automated machine learning methods for detecting misinformation. Complementary to these approaches, recent research has increasingly concentrated on utilizing the power of ordinary social media users, a.k.a. “the crowd,” who act as eyes-on-the-ground proactively questioning and countering misinformation. Notably, recent studies show that 96% of counter-misinformation responses originate from them. Acknowledging their prominent role, we present the first systematic and comprehensive survey of research papers that actively leverage the crowds to combat misinformation. In this survey, we first identify 88 papers related to crowd-based efforts, 1 following a meticulous annotation process adhering to the PRISMA framework (preferred reporting items for systematic reviews and meta-analyses). We then present key statistics related to misinformation, counter-misinformation, and crowd input in different formats and topics. Upon holistic analysis of the papers, we introduce a novel taxonomy of the roles played by the crowds in combating misinformation: (i) crowds as annotators who actively identify misinformation; (ii) crowds as evaluators who assess counter-misinformation effectiveness; (iii) crowds as creators who create counter-misinformation. This taxonomy explores the crowd’s capabilities in misinformation detection, identifies the prerequisites for effective counter-misinformation, and analyzes crowd-generated counter-misinformation. In each assigned role, we conduct a detailed analysis to categorize the specific utilization of the crowd. Particularly, we delve into (i) distinguishing individual, collaborative, and machine-assisted labeling for annotators; (ii) analyzing the effectiveness of counter-misinformation through surveys, interviews, and in-lab experiments for evaluators; and (iii) characterizing creation patterns and creator profiles for creators. Finally, we conclude this survey by outlining potential avenues for future research in this field.},
+  archive      = {J_TKDD},
+  doi          = {10.1145/3694980},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {2},
+  number       = {1},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {A survey on the role of crowds in combating online misinformation: Annotators, evaluators, and creators},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simplifying distributed neural network training on massive
+graphs: Randomized partitions improve model aggregation. <em>TKDD</em>,
+<em>19</em>(1), 1–26. (<a
+href="https://doi.org/10.1145/3701563">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Distributed graph neural network (GNN) training facilitates learning on massive graphs that surpass the storage and computational capabilities of a single machine. Traditional distributed frameworks strive for performance parity with centralized training by maximally recovering cross-instance node dependencies, relying either on inter-instance communication or periodic fallback to centralized training. However, these processes create overhead and constrain the scalability of the framework. In this work, we propose a streamlined framework for distributed GNN training that eliminates these costly operations, yielding improved scalability, convergence speed, and performance over state-of-the-art approaches. Our framework (1) comprises independent trainers that asynchronously learn local models from locally available parts of the training graph and (2) synchronizes these local models only through periodic (time-based) model aggregation. Contrary to prevailing belief, our theoretical analysis shows that it is not essential to maximize the recovery of cross-instance node dependencies to achieve performance parity with centralized training. Instead, our framework leverages randomized assignment of nodes or super-nodes (i.e., collections of original nodes) to partition the training graph in order to enhance data uniformity and minimize discrepancies in gradient and loss function across instances. Experiments on social and e-commerce networks with up to 1.3 billion edges show that our proposed framework achieves state-of-the-art performance and 2.31 \(\times\) speedup compared to the fastest baseline despite using less training data.},
+  archive      = {J_TKDD},
+  doi          = {10.1145/3701563},
+  journal      = {ACM Transactions on Knowledge Discovery from Data},
+  month        = {2},
+  number       = {1},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. knowl. Discov. Data},
+  title        = {Simplifying distributed neural network training on massive graphs: Randomized partitions improve model aggregation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

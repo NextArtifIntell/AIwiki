@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOSEM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tosem---3">TOSEM - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Don’t complete it! Preventing unhelpful code completion for
+productive and sustainable neural code completion systems.
+<em>TOSEM</em>, <em>34</em>(1), 1–22. (<a
+href="https://doi.org/10.1145/3688831">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Currently, large pre-trained language models are widely applied in neural code completion systems. Though large code models significantly outperform their smaller counterparts, around 70% of displayed code completions from Github Copilot are not accepted by developers. Being reviewed but not accepted, their help to developer productivity is considerably limited and may conversely aggravate the workload of developers, as the code completions are automatically and actively generated in state-of-the-art code completion systems as developers type out once the service is enabled. Even worse, considering the high cost of the large code models, it is a huge waste of computing resources and energy, which severely goes against the sustainable development principle of AI technologies. However, such waste has never been realized, not to mention effectively addressed, in the research community for neural code completion. Hence, preventing such unhelpful code completions from happening in a cost-friendly way is of urgent need. To fill this significant gap, we first investigate the prompts of unhelpful code completions, called “low-return prompts.” We empirically identify four observable patterns in low-return prompts, each lacking necessary information, making it difficult to address through enhancements to the model’s accuracy alone. This demonstrates the feasibility of identifying such low-return prompts based on the prompts themselves. Motivated by this finding, we propose an early-rejection mechanism to turn down low-return prompts by foretelling the code completion qualities. The prompts that are estimated to receive unhelpful code completions will not be sent to the model. Furthermore, we investigated five types of estimators to demonstrate the feasibility of the mechanism. The experimental results show that the estimator can reject 20% of code completion requests with a 97.4% precision. To the best of our knowledge, it is the first systemic approach to address the problem of unhelpful code completions and this work also sheds light on an important research direction of large code models.},
+  archive      = {J_TOSEM},
+  doi          = {10.1145/3688831},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {2},
+  number       = {1},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Don’t complete it! preventing unhelpful code completion for productive and sustainable neural code completion systems},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). History-driven fuzzing for deep learning libraries.
+<em>TOSEM</em>, <em>34</em>(1), 1–29. (<a
+href="https://doi.org/10.1145/3688838">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, many Deep Learning (DL) fuzzers have been proposed for API-level testing of DL libraries. However, they either perform unguided input generation (e.g., not considering the relationship between API arguments when generating inputs) or only support a limited set of corner-case test inputs. Furthermore, many developer APIs crucial for library development remain untested, as they are typically not well documented and lack clear usage guidelines, unlike end-user APIs. This makes them a more challenging target for automated testing. To fill this gap, we propose a novel fuzzer named Orion, which combines guided test input generation and corner-case test input generation based on a set of fuzzing heuristic rules constructed from historical data known to trigger critical issues in the underlying implementation of DL APIs. To extract the fuzzing heuristic rules, we first conduct an empirical study on the root cause analysis of 376 vulnerabilities in two of the most popular DL libraries, PyTorch and TensorFlow. We then construct the fuzzing heuristic rules based on the root causes of the extracted historical vulnerabilities. Using these fuzzing heuristic rules, Orion generates corner-case test inputs for API-level fuzzing. In addition, we extend the seed collection of existing studies to include test inputs for developer APIs. Our evaluation shows that Orion reports 135 vulnerabilities in the latest releases of TensorFlow and PyTorch, 76 of which were confirmed by the library developers. Among the 76 confirmed vulnerabilities, 69 were previously unknown, and 7 have already been fixed. The rest are awaiting further confirmation. For end-user APIs, Orion detected 45.58% and 90% more vulnerabilities in TensorFlow and PyTorch, respectively, compared to the state-of-the-art conventional fuzzer, DeepRel. When compared to the state-of-the-art LLM-based DL fuzzer, AtlasFuz, and Orion detected 13.63% more vulnerabilities in TensorFlow and 18.42% more vulnerabilities in PyTorch. Regarding developer APIs, Orion stands out by detecting 117% more vulnerabilities in TensorFlow and 100% more vulnerabilities in PyTorch compared to the most relevant fuzzer designed for developer APIs, such as FreeFuzz.},
+  archive      = {J_TOSEM},
+  doi          = {10.1145/3688838},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {2},
+  number       = {1},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {History-driven fuzzing for deep learning libraries},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automatically recommend code updates: Are we there yet?
+<em>TOSEM</em>, <em>33</em>(8), 1–27. (<a
+href="https://doi.org/10.1145/3678167">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, large pre-trained Language Models of Code (CodeLMs) have shown promising results on various software engineering tasks. One such task is automatic code update recommendation, which transforms outdated code snippets into their approved and revised counterparts. Although many CodeLM-based approaches have been proposed, claiming high accuracy, their effectiveness and reliability on real-world code update tasks remain questionable. In this article, we present the first extensive evaluation of state-of-the-art CodeLMs for automatically recommending code updates. We assess their performance on two diverse datasets of paired updated methods, considering factors such as temporal evolution, project specificity, method size, and update complexity. Our results reveal that while CodeLMs exhibit higher performance in settings that ignore temporal information, they struggle in more realistic time-wise scenarios and generalize poorly to new projects. Furthermore, CodeLM performance decreases significantly for larger methods and more complex updates. Furthermore, we observe that many CodeLM-generated “updates” are actually null, especially in time-wise settings, and meaningful edits remain challenging. Our findings highlight the significant gap between the perceived and actual effectiveness of CodeLMs for real-world code update recommendation and emphasize the need for more research on improving their practicality, robustness, and generalizability.},
+  archive      = {J_TOSEM},
+  doi          = {10.1145/3678167},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  month        = {2},
+  number       = {8},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Automatically recommend code updates: Are we there yet?},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

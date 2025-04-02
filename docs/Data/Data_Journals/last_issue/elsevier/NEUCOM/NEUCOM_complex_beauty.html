@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NEUCOM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="neucom---57">NEUCOM - 57</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Real-time stereo matching with enhanced geometric
+comprehension through cross-attention integration. <em>NEUCOM</em>,
+<em>636</em>, 130069. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130069">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate disparity estimation through stereo matching remains a critical challenge, especially for real-time applications. This work introduces a novel and computationally efficient framework that achieves high accuracy and real-time performance in stereo-based disparity estimation. The proposed approach introduces three key innovations. This work proposes a context cross-attention (CCA) module, which enhances the cost volume aggregation process by leveraging localized cross-attention for improved geometric understanding. Guided concatenation volume (GCV) is also implemented, which optimizes feature matching by effectively combining correlation clues with contextual information, reducing computational redundancy while maintaining crucial spatial details. Also, this paper proposes an uncertainty-based refinement (UR) module, which improves accuracy in challenging scenarios by utilizing an uncertainty map, a context feature map, and a geometry feature map to correct errors in challenging areas such as textureless regions and occlusions. Comprehensive experiments on multiple benchmark datasets, including KITTI, Sceneflow, Middlebury, and ETH3D, demonstrate that the proposed model performs better than existing state-of-the-art real-time approaches in accuracy metrics while maintaining comparable computational efficiency. These results establish the framework as a viable solution for demanding real-world applications, particularly in autonomous driving and robotics systems where real-time performance is crucial. The source code is available at https://github.com/kayhan-hashemi/CCAStereo .},
+  archive      = {J_NEUCOM},
+  author       = {Hosein Hashemi and Yasser Baleghi and Mohamad Reza Hassanzadeh},
+  doi          = {10.1016/j.neucom.2025.130069},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130069},
+  shortjournal = {Neurocomputing},
+  title        = {Real-time stereo matching with enhanced geometric comprehension through cross-attention integration},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Drop inherent biases: Multi-level attention calibration for
+robust cross-domain few-shot classification. <em>NEUCOM</em>,
+<em>636</em>, 130056. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130056">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot learning (FSL) is a promising approach for addressing the challenge of classifying novel classes with only limited labeled data. Many few-shot studies have elaborated various task-shared inductive biases (meta-knowledge) to solve such tasks and have achieved impressive performance. However, when there is a domain shift between the training and testing tasks, the learned inductive biases fail to generalize across domains. In this paper, we attempt to suppress and correct inherent discriminative inductive biases from the source domain through source domain attention release and target domain attention reaggregation. We propose a few-shot learning framework, which systematically addresses the large domain shift between base and novel classes. Specifically, the framework consists of three parts: prototype-level attention calibration, feature-level attention calibration for attention release and reaggregation, and loss attention calibration. First, the prototype-level attention calibration module highlights key instances via prototype calibration, reducing the influence of noisy instances in few-shot settings. Second, the feature-level attention calibration module suppresses and corrects erroneous discriminative inductive biases from the source domain through base class attention release and novel class attention reaggregation, respectively. Finally, we incorporate the loss attention calibration module into the loss function to balance the discriminability and diversity of the classification matrix, mitigating the decline in generalization ability caused by erroneous discriminative features during domain shift. We conduct experiments on eight classic few-shot cross-domain datasets. The results demonstrate that, under varying domain shifts, our method improves performance, with average accuracy gains of 0.82% and 1.31% in the 5-way 1-shot and 5-way 5-shot settings, respectively, compared to the existing state-of-the-art (SOTA) method.},
+  archive      = {J_NEUCOM},
+  author       = {Minghui Li and Jing Jiang and Hongxun Yao},
+  doi          = {10.1016/j.neucom.2025.130056},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130056},
+  shortjournal = {Neurocomputing},
+  title        = {Drop inherent biases: Multi-level attention calibration for robust cross-domain few-shot classification},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HDCPAA: A few-shot class-incremental learning model for
+remote sensing image recognition. <em>NEUCOM</em>, <em>636</em>, 130043.
+(<a href="https://doi.org/10.1016/j.neucom.2025.130043">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the scene of remote sensing image (RSI) recognition, it is difficult to obtain a sufficient number of samples for training all categories at once. A more realistic situation is that the recognition task occurs in an open environment, with categories gradually increasing. Additionally, due to the difficulty of collecting certain data, there are only a few samples for each new category. This leads to the problem of few-shot class-incremental learning (FSCIL), where the model learns incrementally and the number of samples for incremental classes is very small, generally only a few, while the number of samples for base classes is relatively large. To address this, this paper proposes a model framework for FSCIL of RSIs, called HDCPAA. The model is mainly divided into three parts. The first part is the feature extraction network, which is pre-trained on the base classes and then its parameters are frozen in subsequent incremental learning to alleviate catastrophic forgetting of the base classes. The second part is a fully connected layer, which transforms the prototypes of each category into quasi-orthogonal prototypes to increase the distance between the prototypes. The third part is the prototype adaptation attention module, which adaptively updates prototypes and query vectors using attention mechanisms. The training process of this module is based on the meta-learning of pseudo-incremental classes. Experiments on two popular benchmark RSI datasets, MSTAR and NWPU-RESISC45, show that our model significantly outperforms the baseline models and sets new state-of-the-art results with remarkable advantages. Our code will be uploaded at: https://github.com/lipeng144/HDCPAA .},
+  archive      = {J_NEUCOM},
+  author       = {Peng Li and Cunqian Feng and Xiaowei Hu and Weike Feng},
+  doi          = {10.1016/j.neucom.2025.130043},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130043},
+  shortjournal = {Neurocomputing},
+  title        = {HDCPAA: A few-shot class-incremental learning model for remote sensing image recognition},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unifying the syntax and semantics for math word problem
+solving. <em>NEUCOM</em>, <em>636</em>, 130042. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130042">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Math word problem solving is a complex task for natural language processing systems, requiring both comprehension of problem descriptions and deduction of accurate solutions. Existing studies have shown that graph-based approaches can achieve competitive results by applying multilayer graph neural networks to syntactic structure graphs. However, challenges such as incorrect parsing of syntactic dependency trees and insensitivity to numerical information may lead to misinterpretations in the representation. In this paper, we introduce a novel synthetic graph, the N umber- C entered S ynthetic S emantic G raph (NC-SSG), to address these challenges by reorganizing the dependency tree layout around numerical elements. We propose a double-channel graph transformer to enhance the connections between numbers and their contextual elements, thereby improving the understanding of problem descriptions. Additionally, we present a question-driven tree decoder to generate more accurate solutions, aiming to overcome shallow heuristics. Our approach mitigates the impact of parsing errors in syntactic dependency trees, yielding more precise representations and solutions. Experimental evaluations on two benchmark datasets demonstrate that our solver outperforms previous methods and achieves competitive performance compared to large language models.},
+  archive      = {J_NEUCOM},
+  author       = {Xingyu Tao and Yi Zhang and Zhiwen Xie and Zhuo Zhao and Guangyou Zhou and Yongchun Lu},
+  doi          = {10.1016/j.neucom.2025.130042},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130042},
+  shortjournal = {Neurocomputing},
+  title        = {Unifying the syntax and semantics for math word problem solving},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CS4TE: A novel coded self-attention and semantic synergy
+network for triple extraction. <em>NEUCOM</em>, <em>636</em>, 130034.
+(<a href="https://doi.org/10.1016/j.neucom.2025.130034">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The joint entity relation extraction approach holds great potential for extracting triples from unstructured text. However, in current research, two prevalent shortcomings significantly impact the efficacy of triple extraction task. Firstly, since entities constitute only a small proportion of sentences and token embedding contain a substantial amount of irrelevant information, these factors present significant challenges to the performance of classification models. Secondly, the typical process of predicting triples begins with identifying entities and then predicting triples solely based on the obtained entity representation, this process often overlooks the contextual semantic information associated with the entities. In this work, we propose CS4TE: A Novel Coded Self-Attention and Semantic Synergy Network for Triple Extraction. Specifically, we propose a novel Coded Self-Attention Mechanism designed to refine text representation by effectively masking irrelevant information and enhancing entity representation. Additionally, we propose a Semantic Synergy Network, which innovatively integrates semantic information with token pairs to predict triples, addressing the limitations of previous research that often overlooked semantic information. Finally, our model outperforms state-of-the-art baseline models on two public datasets in the joint entity-relation extraction task, and extensive experiments have been conducted to demonstrate the effectiveness of our method from multiple perspectives.},
+  archive      = {J_NEUCOM},
+  author       = {Huiyong Lv and Yurong Qian and Jiaying Chen and Shuxiang Hou and Hongyong Leng and Mengnan Ma},
+  doi          = {10.1016/j.neucom.2025.130034},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130034},
+  shortjournal = {Neurocomputing},
+  title        = {CS4TE: A novel coded self-attention and semantic synergy network for triple extraction},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Single-morphing attack detection using few-shot learning and
+triplet-loss. <em>NEUCOM</em>, <em>636</em>, 130033. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130033">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Face morphing attack detection is challenging and presents a concrete and severe threat to face verification systems. A reliable detection mechanism for such attacks, tested with a robust cross-dataset protocol and unknown morphing tools, is still a research challenge. This paper proposes a framework based on the Few-Shot-Learning approach that shares image information based on the Siamese network using triplet-semi-hard-loss to tackle the morphing attack detection and boost the learning classification process. This network compares a bona fide or potentially morphed image with triplets of morphing face images. Our results show that this new network clusters the morphed images and assigns them to the right classes to obtain a lower equal error rate in a cross-dataset scenario. Few-shot learning helps to boost the learning process by sharing only small image numbers from an unknown dataset. Experimental results using cross-datasets trained with FRGCv2 and tested with FERET datasets reduced the BPCER 10 from 43% to 4.91% using ResNet50. For the AMSL open-access dataset is reduced for MobileNetV2 from BPCER 10 of 31.50% to 2.02%. For the SDD open-access synthetic dataset, the BPCER 10 is reduced for MobileNetV2 from 21.37% to 1.96%.},
+  archive      = {J_NEUCOM},
+  author       = {Juan E. Tapia and Daniel Schulz and Christoph Busch},
+  doi          = {10.1016/j.neucom.2025.130033},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130033},
+  shortjournal = {Neurocomputing},
+  title        = {Single-morphing attack detection using few-shot learning and triplet-loss},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Broad hashing for image retrieval. <em>NEUCOM</em>,
+<em>636</em>, 130031. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130031">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the popularity of deep learning, deep hashing methods have become mainstream of hashing methods which adopt deep networks to learn better feature representation of images and simultaneously generate compact binary hash codes. Deep hashing methods have a bottleneck in training efficiency due to the complex structure of deep networks. In this work, we propose a broad hashing (BH) method with high retrieval performance and very short learning time. In BH, uncorrelated and balanced binary codes are assigned to each category through a Hadamard matrix. Then, a broad hashing network is constructed to learn hash functions which maps images to binary hash codes with high efficiency. Our method yields higher retrieval precision while its training time is 200 to 700 times faster than that of deep hashing methods. At the same time, more compact hash codes are obtained compared with conventional supervised learning methods. In addition, three incremental algorithms for BH are developed for dynamic environments, which enable the hash network to be remodeled without retraining. Experiments on three benchmark datasets validate the effectiveness and efficiency of BH.},
+  archive      = {J_NEUCOM},
+  author       = {Wing W.Y. Ng and Xuyu Liu and Xing Tian and Ting Wang and Jianjun Zhang and C.L. Philip Chen},
+  doi          = {10.1016/j.neucom.2025.130031},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130031},
+  shortjournal = {Neurocomputing},
+  title        = {Broad hashing for image retrieval},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adversarial erasure network based on multi-instance learning
+for weakly supervised video anomaly detection. <em>NEUCOM</em>,
+<em>636</em>, 130030. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130030">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Weakly supervised video anomaly detection (WSVAD) aims to precisely locate temporal windows of abnormal events in untrimmed videos using only video-level labels. By accurately locating anomalies, WSVAD has great application potential in the security domain and contributes to the progress of smart city development. However, the lack of frame-level annotations during training makes it highly challenging to infer the status of each frame. Multiple-Instance Learning (MIL) is the dominant method in WSVAD. Due to the limitation of video-level annotations, most MIL-based methods detect obvious abnormal segments to represent the overall anomaly level of the video while overlooking weak abnormal segments. To focus on the discrimination of weak anomalies, we propose a novel WSVAD framework named Adversarial Erasure Network (AE-Net). AE-Net consists of two key components: (1) a dual-branch architecture that highlights weak anomalies by erasing the most obvious abnormal features and combining the erased features with the original ones. (2) a novel triplet loss function that improves weak anomaly representation by separating abnormal and normal features in the erased feature space. Through the above design, AE-Net can reduce false negatives in real-world anomaly detection. Extensive experiments on three WSVAD benchmarks demonstrate that our method outperforms most existing state-of-the-art methods. Specifically, AE-Net achieves an AUC of 88.40% on the UCF-Crime dataset and 98.27% on the ShanghaiTech dataset, which demonstrates that AE-Net can effectively distinguish between normal and abnormal events. Moreover, AE-Net achieves an AP of 85.13% on the XD-Violence dataset, which highlights that AE-Net can accurately detect abnormal events.},
+  archive      = {J_NEUCOM},
+  author       = {Xin Song and Penghui Liu and Suyuan Li and Siyang Xu and Ke Wang},
+  doi          = {10.1016/j.neucom.2025.130030},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130030},
+  shortjournal = {Neurocomputing},
+  title        = {Adversarial erasure network based on multi-instance learning for weakly supervised video anomaly detection},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Attributed network community detection based on graph
+contrastive learning and multi-objective evolutionary algorithm.
+<em>NEUCOM</em>, <em>636</em>, 130029. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130029">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Attributed network community detection holds significant research value for network structure analysis and practical applications. However, existing methods still face significant challenges in addressing the conflicts between topological structure and attribute features, as well as balancing structural tightness and attribute similarity in community detection. In light of this, we propose a community detection method based on graph contrastive learning and multi-objective evolutionary algorithm (GCL-MOEA) for attributed networks. Specifically, GCL-MOEA contains two core parts: node embedding and community detection. Considering the conflict between topological structure and attribute features, the node embedding part constructs topology-augmented and attribute-augmented views, which are utilized in a cross-view graph contrastive learning model. This model comprehensively extracts node features to obtain node embedding vectors, effectively preserving the consistency and complementarity between the structure and attributes. The community detection part utilizes clustering results of node embeddings to construct high-quality initial populations. A multi-objective evolutionary algorithm is subsequently employed to obtain community structures where nodes are tightly connected and have similar attributes. The effectiveness of the proposed method is validated on five real-world networks. Experimental results demonstrate that GCL-MOEA outperforms baselines in terms of ACC, NMI, ARI, and F1, obtaining better community detection results.},
+  archive      = {J_NEUCOM},
+  author       = {Yao Liang and Jian Shu and Linlan Liu},
+  doi          = {10.1016/j.neucom.2025.130029},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130029},
+  shortjournal = {Neurocomputing},
+  title        = {Attributed network community detection based on graph contrastive learning and multi-objective evolutionary algorithm},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fine-grained multi-modal prompt learning for vision–language
+models. <em>NEUCOM</em>, <em>636</em>, 130028. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130028">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently advanced pre-trained vision language models have demonstrated outstanding performance in many downstream tasks via prompt learning. Prompt learning provides task-specific prompt information to exploit beneficial knowledge stored in pre-trained models to promote generalization ability for downstream tasks. However, previous work mainly focused on single modal prompt tuning (with only one prompt per modality) and salient distinguished features, which unable to flexibly adjust the two representation spaces on downstream tasks dynamically, yet makes it hard to capture subtle discriminative knowledge, which resulting in suboptimal solutions. In this work, we propose a novel F ine- G rained M ulti-modal P rompt L earning framework, denoted as FGMPL , based on the contrastive language–image pre-trained model (CLIP). To facilitate the pre-trained CLIP model to learn and represent more effective features, we design a dual-grained visual prompt scheme to learn global discrepancies as well as specify the subtle discriminative details among visual classes, and transform random vectors with class names in class-aware text prompt into class-specific discrepancy representation. Moreover, in contrast to the previous prompt approaches, we use shared latent semantic space to generate visual and text prompts to encourage cross-modal interaction. Furthermore, a multimodal prompt tuning evaluator is proposed, which can make the vision and text prompts semantically aligned and enhance each other to promote cross-modal collaborative reasoning to further improve FGMPL. Comprehensive experiments on popular image recognition benchmarks show that our approach has superior generalization and few-shot capabilities.},
+  archive      = {J_NEUCOM},
+  author       = {Yunfei Liu and Yunziwei Deng and Anqi Liu and Yanan Liu and Shengyang Li},
+  doi          = {10.1016/j.neucom.2025.130028},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130028},
+  shortjournal = {Neurocomputing},
+  title        = {Fine-grained multi-modal prompt learning for vision–language models},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Event denoising for dynamic vision sensor using residual
+graph neural network with density-based spatial clustering.
+<em>NEUCOM</em>, <em>636</em>, 130026. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130026">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The bio-inspired emerging dynamic vision sensor (DVS), characterized by its exceptional high temporal resolution and immediate response, possesses an innate advantage in capturing rapidly changing scenes. Nevertheless, it is also susceptible to severe noise interference, especially in challenging conditions like low illumination and high exposure. Notably, the existing noise processing approaches tend to oversimplify data into 2-dimensional (2D) patterns, disregarding the sparse and irregular crucial event structure information that the DVS intrinsically provides via its asynchronous output. Aiming at these problems, we propose a residual graph neural network (RGNN) framework based on density spatial clustering for event denoising, called DBRGNN. Leveraging the temporal window rule, we extract non-overlapping event segments from the DVS event stream and adopt a density-based spatial clustering algorithm to obtain event groups with spatial correlations. To fully exploit the inherent sparsity and plentiful spatiotemporal information of the raw event stream, we transform each event group as compact graph representations via directed edges and feed them into a graph coding module composed of a series of graph convolutional and pooling layers to learn robust geometric features from event sequences. Importantly, our approach effectively reduces noise levels without compromising the spatial structure and temporal coherence of spike events. Compared with other baseline methods, our DBRGNN achieves competitive performance by quantitative and qualitative evaluations on publicly available datasets under varying lighting conditions and noise ratios.},
+  archive      = {J_NEUCOM},
+  author       = {Weibin Feng and Xiaoping Wang and Xin Zhan and Hongzhi Huang},
+  doi          = {10.1016/j.neucom.2025.130026},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130026},
+  shortjournal = {Neurocomputing},
+  title        = {Event denoising for dynamic vision sensor using residual graph neural network with density-based spatial clustering},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SGCDiff: Sketch-guided cross-modal diffusion model for 3D
+shape completion. <em>NEUCOM</em>, <em>636</em>, 130025. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130025">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Shape completion aims to generate complete shapes based on partial observations. Most recent methods utilize existing information on 3D shapes for shape completion tasks, such as inputting a partial 3D shape into an encoder–decoder structure to obtain a complete 3D shape. Despite the recent rapid evolution of neural networks greatly improving the completion performance of 3D shapes, they usually generate deterministic results. However, the completed shape is inherently diverse, leading to the concept of multimodal shape completion, in which a single partial shape can correspond to multiple plausible complete shapes. Existing multimodal shape completion methods are typically unpredictable, which results in the generated complete shapes exhibiting randomness. To address the challenge of achieving a guided generation process for multimodal shape completion, we propose a novel sketch-based diffusion model. Our key designs encompass the following. We propose a novel diffusion-based framework that employs sketches as guidance to generate complete 3D shapes. Within the framework, we introduce a dual cross-modal attention module that ensures the generated results retain sufficient geometric detail. Experimental results indicate that our approach not only facilitates multimodal shape completion based on sketches but also achieves competitive performance in deterministic shape completion.},
+  archive      = {J_NEUCOM},
+  author       = {Zhenjiang Du and Yan Zhang and Zhitao Liu and Guan Wang and Zeyu Ma and Ning Xie and Yang Yang},
+  doi          = {10.1016/j.neucom.2025.130025},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130025},
+  shortjournal = {Neurocomputing},
+  title        = {SGCDiff: Sketch-guided cross-modal diffusion model for 3D shape completion},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Leveraging diffusion and flow matching models for
+demographic bias mitigation of facial attribute classifiers.
+<em>NEUCOM</em>, <em>636</em>, 130024. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130024">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Published research highlights the presence of demographic bias in automated facial attribute classification algorithms, notably impacting women and individuals with darker skin tones. Proposed bias mitigation techniques are not generalizable, need demographic annotations, are application-specific, and often obtain fairness by reducing overall classification accuracy. In response to these challenges, this paper proposes a novel bias mitigation technique that systematically integrates diffusion and flow-matching models with a base classifier with minimal additional computational overhead. These generative models are chosen for their extreme success in capturing diverse data distributions and their inherent stochasticity. Our proposed approach augments the base classifier’s accuracy across all demographic sub-groups with enhanced fairness. Further, the stochastic nature of these generative models is harnessed to quantify prediction uncertainty, allowing for test-time rejection, which further enhances fairness. Additionally, novel solvers are proposed to significantly reduce the computational overhead of generative model inference. An exhaustive evaluation carried out on facial attribute annotated datasets substantiates the efficacy of our approach in enhancing the accuracy and fairness of facial attribute classifiers by 0 . 5 % − 3 % and 0 . 5 % − 5 % across datasets over SOTA mitigation techniques. Thus, obtaining state-of-the-art performance. Further, our proposal does not need a demographically annotated training set and is generalizable to any downstream classification task.},
+  archive      = {J_NEUCOM},
+  author       = {Sreeraj Ramachandran and Ajita Rattani},
+  doi          = {10.1016/j.neucom.2025.130024},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130024},
+  shortjournal = {Neurocomputing},
+  title        = {Leveraging diffusion and flow matching models for demographic bias mitigation of facial attribute classifiers},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-level semantic-assisted prototype learning for
+few-shot action recognition. <em>NEUCOM</em>, <em>636</em>, 130022. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130022">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Few-Shot Action Recognition (FSAR) task involves recognizing new categories with limited labeled data. The conventional fine-tuning-based adaptation approach is often prone to overfitting and lacks temporal modeling for video data. Moreover, the discrepancy in distribution between meta-training and meta-test sets can also lead to suboptimal performance in few-shot scenarios. This paper introduces a simple yet effective multi-level semantic-assisted prototype learning framework to tackle these challenges. Initially, we leverage CLIP to achieve multimodal adaptation learning and present a multi-level semantic-assisted learning module to enhance the prototypes of different action classes based on semantic information. Additionally, we integrate the lightweight adapters into the CLIP visual encoder to support parameter-efficient transfer learning and improve temporal modeling in videos. Especially, a bias compensation block is employed for feature rectification to mitigate the distribution bias in FSAR stemming from data scarcity. Extensive experiments conducted on five standard benchmark datasets demonstrate the effectiveness of the proposed method.},
+  archive      = {J_NEUCOM},
+  author       = {Dan Liu and Qing Xia and Fanrong Meng and Mao Ye and Jianwei Zhang},
+  doi          = {10.1016/j.neucom.2025.130022},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130022},
+  shortjournal = {Neurocomputing},
+  title        = {Multi-level semantic-assisted prototype learning for few-shot action recognition},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fault-tolerant and attack-tolerant cooperative
+event-triggered sampled-data security control for synchronization of
+RDNNs with stochastic actuator failures and random deception attacks.
+<em>NEUCOM</em>, <em>636</em>, 130021. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130021">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, the fault-tolerant and attack-tolerant cooperative event-triggered sampled-data security (FACETSDS) synchronization problem of space-varying reaction–diffusion neural networks (SVRDNNs) under spatially point measurements (SPMs) with stochastic actuator failures and random deception attacks is investigated. First, to save more communication resources and adapt to the variation of system dynamics subject to stochastic actuator failures and random deception attacks, a FACETSDS control scheme is proposed under SPMs. Second, by constructing a Lyapunov functional and utilizing inequality techniques, some synchronization criteria based on spatial linear matrix inequalities (SLMIs) are derived for SVRDNNs. Then, to solve SLMIs, the FETSDS control for synchronization problem of SVRDNNs under SPMs with stochastic actuator failures and random deception attacks is formulated as an linear matrix inequality feasibility problem. Lastly, the designed FACETSDS synchronization strategy is verified by one numerical example.},
+  archive      = {J_NEUCOM},
+  author       = {Feng-Liang Zhao and Zi-Peng Wang and Junfei Qiao and Huai-Ning Wu and Tingwen Huang},
+  doi          = {10.1016/j.neucom.2025.130021},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130021},
+  shortjournal = {Neurocomputing},
+  title        = {Fault-tolerant and attack-tolerant cooperative event-triggered sampled-data security control for synchronization of RDNNs with stochastic actuator failures and random deception attacks},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic facial expression recognition in the wild via
+multi-snippet spatiotemporal learning. <em>NEUCOM</em>, <em>636</em>,
+130020. (<a href="https://doi.org/10.1016/j.neucom.2025.130020">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic Facial Expression Recognition (DFER) in-the-wild poses a significant challenge in emotion recognition research. Many studies have focused on extracting finer facial features while overlooking the effect of noisy frames on the entire sequence. In addition, the imbalance between short- and long-term temporal relationships remains inadequately addressed. To tackle these issues, we propose the Multi-Snippet Spatiotemporal Learning (MSSL) framework that uses distinct temporal and spatial modeling for snippet feature extraction, enabling more accurate simulation of subtle facial expression changes while capturing finer details. We also introduced a dual-branch hierarchical module, BiTemporal Multi-Snippet Enhancement (BTMSE), which is designed to capture spatiotemporal dependencies and model subtle visual changes across snippets effectively. The Temporal-Transformer further enhances the learning of long-term dependencies, whereas learnable temporal position embeddings ensure consistency between snippet and fused features over time. By leveraging (2+1)D multi-snippet spatiotemporal modeling, BTMSE, and the Temporal-Transformer, MSSL hierarchically explores the complex interrelationships between temporal dynamics and facial expressions. Comparative experiments and ablation studies confirmed the effectiveness of our method on three large-scale in-the-wild datasets: DFEW, FERV39K, and MAFW.},
+  archive      = {J_NEUCOM},
+  author       = {Yang Lü and Fuchun Zhang and Zongnan Ma and Bo Zheng and Zhixiong Nan},
+  doi          = {10.1016/j.neucom.2025.130020},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130020},
+  shortjournal = {Neurocomputing},
+  title        = {Dynamic facial expression recognition in the wild via multi-snippet spatiotemporal learning},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Knowledge distillation for object detection with diffusion
+model. <em>NEUCOM</em>, <em>636</em>, 130019. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130019">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge distillation is a method that transfers information from a larger network (i.e. the teacher) to a smaller network (i.e. the student), so that the student network can inherit the strong performance of the teacher network while maintaining its computational complexity within a relatively lower range. Currently, knowledge distillation has been widely applied to object detection field to mitigate the rapid expansion of the model size. In this paper, we propose an object detector based on knowledge distillation method. Meanwhile, directly mimicking the features of the teacher often fails to achieve the desired results due to the extra noise in the feature extracted by the student, which causes significant inconsistency and may even weaken the capability of the student. To address this issue, we utilize diffusion model to remove the noise so as to narrow the gap between the features extracted by the teacher and the student, improving the performance of the student. Furthermore, we develop a noise matching module that matches noise level in the student feature during the denoising process. Extensive experiments have been conducted on COCO and Pascal VOC to validate the effectiveness of the proposed method, in which our method achieves 40.0% mAP and 81.63% mAP respectively, while maintaining a frame rate of 27.3FPS, exhibiting the superiority of our model in both accuracy and speed.},
+  archive      = {J_NEUCOM},
+  author       = {Yi Zhang and Junzong Long and Chunrui Li},
+  doi          = {10.1016/j.neucom.2025.130019},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130019},
+  shortjournal = {Neurocomputing},
+  title        = {Knowledge distillation for object detection with diffusion model},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal multitask similarity learning for vision language
+model on radiological images and reports. <em>NEUCOM</em>, <em>636</em>,
+130018. (<a href="https://doi.org/10.1016/j.neucom.2025.130018">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, large-scale Vision-Language Models (VLM) have shown promise in learning general representations for various medical image analysis tasks. However, current medical VLM methods typically employ contrastive learning approaches that have limited ability to capture nuanced yet crucial medical knowledge, particularly within similar medical images, and do not explicitly consider the uneven and complementary semantic information contained in different modalities. To address these challenges, we propose a novel Multimodal Multitask Similarity Learning (M2SL) method that learns joint representations of image–text pairs and captures the relational similarity between different modalities via a coupling network. Our method also notably leverages the rich information in the text inputs to construct a knowledge-driven semantic similarity matrix as the supervision signal. We conduct extensive experiments for cross-modal retrieval and zero-shot classification tasks on radiological images and reports and demonstrate substantial performance gains over existing methods. Our method also accommodates low-resource settings with limited training data availability and has significant implications for enhancing VLM development.},
+  archive      = {J_NEUCOM},
+  author       = {Yang Yu and Jiahao Wang and Weide Liu and Ivan Ho Mien and Pavitra Krishnaswamy and Xulei Yang and Jun Cheng},
+  doi          = {10.1016/j.neucom.2025.130018},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130018},
+  shortjournal = {Neurocomputing},
+  title        = {Multimodal multitask similarity learning for vision language model on radiological images and reports},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pinning synchronization of higher-order nonlinear networks
+with time delays. <em>NEUCOM</em>, <em>636</em>, 130010. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130010">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the pinning synchronization problem for a class of nonlinear higher-order time-delay networks. In contrast to previous works, the networks studied possess two distinguishing features: (i) the coupling functions governing the higher-order interactions are nonlinear, and (ii) the networks account for time delays, which include intra-node delays and higher-order interaction delays. The above two features are the key factors influencing the synchronization of the networks. By employing Lyapunov stability theory and algebraic graph theory, we derive sufficient conditions for achieving pinning synchronization in the nonlinear higher-order time-delay networks. Two key challenges in deriving the sufficient conditions arise from the two aforementioned features, which introduce: (i) complex tensor computations and (ii) difficulties in decoupling multi-node interactions. In order to address the challenges, we present a pivotal lemma. This lemma serves as a bridge to transform the complex higher-order problem into a first-order one, reducing the complexity of the derivations. Finally, the validity of the theoretical results is demonstrated through two application examples.},
+  archive      = {J_NEUCOM},
+  author       = {Weibin Li and Kaixin Lu and Zhichao Liang and Zhongye Xia and Bo Liu and Yanshan Xiao and Quanying Liu},
+  doi          = {10.1016/j.neucom.2025.130010},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130010},
+  shortjournal = {Neurocomputing},
+  title        = {Pinning synchronization of higher-order nonlinear networks with time delays},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). M-MDD: A multi-task deep learning framework for major
+depressive disorder diagnosis using EEG. <em>NEUCOM</em>, <em>636</em>,
+130008. (<a href="https://doi.org/10.1016/j.neucom.2025.130008">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Major depressive disorder (MDD) is a common and destructive psychiatric disorder worldwide. Traditional MDD diagnosis relies heavily on subjective observation and questionnaires. Recently, a non-invasive method of recording the brain’s spontaneous activity called Electroencephalogram (EEG) has been a useful tool of MDD diagnosis. However, there are still some challenges to be addressed: (1) The model’s robustness to common EEG noise has to be improved, (2) The temporal, spectral and spatial features of EEG need to be extracted and fused appropriately. Learning both robust and powerful features for MDD diagnosis can improve the overall performance, and multi-task learning is a powerful solution. In this paper, we propose M-MDD, a multi-task deep learning framework for MDD diagnosis using EEG. First, we design the Contrastive Noise Robustness Task to learn noise-independent features. Then, we design the Supervised Feature Extraction Task to extract temporal, spectral and spatial features of EEG respectively, and then effectively combine them together. Finally, the above two modules share the same feature space and are trained jointly with the Multi-task Learning Module, improving the overall performance. Validated on two public MDD diagnosis datasets with subject-independent cross-validation, our model achieves the state-of-the-art performance.},
+  archive      = {J_NEUCOM},
+  author       = {Yilin Wang and Sha Zhao and Haiteng Jiang and Shijian Li and Tao Li and Gang Pan},
+  doi          = {10.1016/j.neucom.2025.130008},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130008},
+  shortjournal = {Neurocomputing},
+  title        = {M-MDD: A multi-task deep learning framework for major depressive disorder diagnosis using EEG},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring interaction: Inner-outer spatial–temporal
+transformer for skeleton-based mutual action recognition.
+<em>NEUCOM</em>, <em>636</em>, 130007. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130007">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformer-based methods have achieved significant results in the field of skeleton-based action recognition. However, when dealing with two-person interaction, existing approaches normally embed the skeleton of each person separately and then introduce an additional module to learn their interactions. This risks losing the spatial and semantic connection information between the two entities, which is crucial for interaction identification. To address this issue, a unified interactive spatial–temporal transformer is proposed in this paper. First, a Two-Person Embedding (TPE) is performed to provide a holistic interactive relationship representation, which can effectively avoid the information gap caused by the division of interacting entities. Second, an innovative Inner-Outer Transformer (IOformer) combining with a new spatio-temporal partition strategy is proposed to simultaneously learn the interactions between intra-partition joints and inter-partition skeletal parts. By comprehensively capturing the key spatio-temporal interactive feature, the accuracy and robustness of interaction recognition can be significantly improved. Extensive experiments on three challenging benchmark datasets validate that our method achieves better performance in comprehensive evaluation methods.},
+  archive      = {J_NEUCOM},
+  author       = {Xiaotian Wang and Xiang Jiang and Zhifu Zhao and Kexin Wang and Yifan Yang},
+  doi          = {10.1016/j.neucom.2025.130007},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130007},
+  shortjournal = {Neurocomputing},
+  title        = {Exploring interaction: Inner-outer spatial–temporal transformer for skeleton-based mutual action recognition},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Texture dominated no-reference quality assessment for high
+resolution image by multi-scale mechanism. <em>NEUCOM</em>,
+<em>636</em>, 130003. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130003">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of new media formats, various high-definition display devices are ubiquitous, and high-resolution (HR) images are essential for high-quality visual experiences. Quality assessment of HR images has become an urgent challenge. However, conventional image quality assessment (IQA) methods with good performance are designed for low-resolution (LR) images, which lacks the perceptual characteristics of HR images, resulting in difficult to achieve satisfactory subjective consistency. Moreover, huge computational costs would have to be consumed when applying those deep neural networks in LR-IQA directly to HR images. Inspired by the fact that regions with rich textures are more sensitive to distortion than others, texture dominated no-reference image quality assessment for HR images are proposed in this paper. Specifically, a dual branch network based on multi-scale technology was designed to extract texture and semantic features separately, and cross scale and dual dimensional attention were introduced to ensure the dominance of texture features. Then, multi-layer perception network is used to map the extracted quality perception feature vectors to the predicted quality score. Worthy of note is that local entropy has been calculated and representative blocks are cropped as inputs to the feature extraction network, greatly reducing computational complexity. Overall, the texture dominated high-resolution IQA network (TD-HRNet) proposed utilizes a reference free method, while could perform excellently on HR datasets of different sizes, image types, and distortion types, accurately predicting the quality of different types of HR images.},
+  archive      = {J_NEUCOM},
+  author       = {Ziqing Huang and Hao Liu and Zhihao Jia and Shuo Zhang and Yonghua Zhang and Shiguang Liu},
+  doi          = {10.1016/j.neucom.2025.130003},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130003},
+  shortjournal = {Neurocomputing},
+  title        = {Texture dominated no-reference quality assessment for high resolution image by multi-scale mechanism},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fixed-time synchronization in p-th moment for stochastic
+multi-layer neural networks: An adaptive graph-theoretic lyapunov
+functional approach. <em>NEUCOM</em>, <em>636</em>, 130002. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130002">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, the p-th moment synchronization problem for a class of stochastic multi-layer neural networks with intra-layer and inter-layer connections is investigated. Due to the multiple connections with delays and stochastic noise, the typical methodologies that build a canonical linear or expanded matrix model to analyze its stability by constraining eigenvalues in the left-half plane, such as the Kronecker product method, linear matrix inequality and M -matrix approach are tough to tackle the problem. Consequently, a graph-theory-based Lyapunov functional is constructed by combining multiplicative principles and a graph-theoretic approach to help examine the effect of inter- and intra-layer connectivity on a unified framework. With the proposed adaptive fixed-time controller, sufficient conditions for the p-th moment synchronization in a fixed time are derived in terms of algebraic inequality. A corollary, together with a constant-gain fixed-time controller, is presented in case there is no delay. Finally, a confirmatory and two comparative simulations show the effectiveness and convenient implementation of the proposed control strategy.},
+  archive      = {J_NEUCOM},
+  author       = {Guan-Nan Yu and Xiao-Kang Liu and Yan Lei and Yan-Wu Wang},
+  doi          = {10.1016/j.neucom.2025.130002},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130002},
+  shortjournal = {Neurocomputing},
+  title        = {Fixed-time synchronization in p-th moment for stochastic multi-layer neural networks: An adaptive graph-theoretic lyapunov functional approach},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lag-bipartite consensus control of nonlinear multi-agent
+systems with exogenous disturbances via dynamic event-triggered
+strategy. <em>NEUCOM</em>, <em>636</em>, 130001. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130001">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper explores the lag-bipartite consensus issue for nonlinear multi-agent systems with external disturbances via event-triggered mechanisms. Firstly, a disturbance observer is devised to offset disturbances induced from ambient noise or parameter uncertainties. To save needless communication among neighbor agents and enhance the system’s anti-disturbance abilities, the centralized event-based approach and a distributed dynamic event-triggered control scheme with internal dynamic parameters are raised via combining the disturbance compensation strategy, respectively. Unlike existent static triggering approaches, this dynamic triggering scheme widens interval duration between two successive triggering instants. On the basis of both control schemes, a few sufficient conditions are provided to reach lag-bipartite consensus for nonlinear multi-agent systems, while Zeno behavior cannot arise via developed triggering rules. Finally, the validity of presented schemes is illustrated under numerical examples.},
+  archive      = {J_NEUCOM},
+  author       = {Junsheng Yu and Huizhi Xu and Zhongjun Ma},
+  doi          = {10.1016/j.neucom.2025.130001},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130001},
+  shortjournal = {Neurocomputing},
+  title        = {Lag-bipartite consensus control of nonlinear multi-agent systems with exogenous disturbances via dynamic event-triggered strategy},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed approximate aggregative optimization of multiple
+euler–lagrange systems using only sampling measurements.
+<em>NEUCOM</em>, <em>636</em>, 130000. (<a
+href="https://doi.org/10.1016/j.neucom.2025.130000">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article studies the distributed aggregative optimization for multiple Euler–Lagrange systems over directed networks. First, a new class of auxiliary aggregative variables is proposed that only utilize sampling measurements of adjacent outputs. Then, by selecting a smoothing function, we can gradually integrate the sampling information into new variables within the sampling period. Given the proposed variables, a key theorem is derived to transform the approximate aggregative optimization problem into a regulation problem, such that classical control methods can be utilized to regulate the aggregative variables for more complex dynamics. In addition, an adaptive fuzzy distributed control law is constructed based on aggregative variables, deadzone function and fuzzy system to solve the aggregative optimization for fully actuated Lagrangian agents with bounded disturbance. Finally, a numerical experiment is conducted to demonstrate the validity and effectiveness of the theoretical results.},
+  archive      = {J_NEUCOM},
+  author       = {Cong Li and Qingling Wang},
+  doi          = {10.1016/j.neucom.2025.130000},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {130000},
+  shortjournal = {Neurocomputing},
+  title        = {Distributed approximate aggregative optimization of multiple Euler–Lagrange systems using only sampling measurements},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spatial–spectral morphological mamba for hyperspectral image
+classification. <em>NEUCOM</em>, <em>636</em>, 129995. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129995">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in transformers, specifically self-attention mechanisms, have significantly improved hyperspectral image (HSI) classification. However, these models often have inefficiencies, as their computational complexity scales quadratically with sequence length. To address these challenges, we propose the morphological spatial mamba (SMM) and morphological spatial–spectral Mamba (SSMM) model (MorpMamba), which combines the strengths of morphological operations and the state space model framework, offering a more computationally efficient alternative to transformers. In MorpMamba, a novel token generation module first converts HSI patches into spatial–spectral tokens. These tokens are then processed through morphological operations such as erosion and dilation, utilizing depthwise separable convolutions to capture structural and shape information. A token enhancement module refines these features by dynamically adjusting the spatial and spectral tokens based on central HSI regions, ensuring effective feature fusion within each block. Subsequently, multi-head self-attention is applied to enrich the feature representations further, allowing the model to capture complex relationships and dependencies within the data. Finally, the enhanced tokens are fed into a state space module, which efficiently models the temporal evolution of the features for classification. Experimental results on widely used HSI datasets demonstrate that MorpMamba achieves superior parametric efficiency compared to traditional CNN and transformer models while maintaining high accuracy. The source code is available at https://github.com/mahmad000/MorpMamba .},
+  archive      = {J_NEUCOM},
+  author       = {Muhammad Ahmad and Muhammad Hassaan Farooq Butt and Adil Mehmood Khan and Manuel Mazzara and Salvatore Distefano and Muhammad Usama and Swalpa Kumar Roy and Jocelyn Chanussot and Danfeng Hong},
+  doi          = {10.1016/j.neucom.2025.129995},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129995},
+  shortjournal = {Neurocomputing},
+  title        = {Spatial–spectral morphological mamba for hyperspectral image classification},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decoding motor imagery hand direction in brain computer
+interface from direction-dependent modulation of parietal connectivity
+using a new brain functional connectivity measure. <em>NEUCOM</em>,
+<em>636</em>, 129994. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129994">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The posterior Parietal Cortex (PPC) of human and nonhuman primates plays a vital role in motor planning. However, EEG functional connectivity correlates within PPC associated with motor intentions are less investigated in the literature. In this study, we investigate whether parietal EEG exhibits direction-dependent modulation of functional connectivity, during bidirectional hand movement imagination in right and left directions. Further, the utility of parietal connectivity modulation patterns, in decoding the directions of imagined hand movement is also evaluated. Imagined movement directions of the dominant hand are decoded using connectivity features derived from parietal EEG. A new brain functional connectivity measure called Cumulative Phase Lag is proposed to evaluate the functional connectivity within the right and left hemispheres of the posterior parietal cortex. Parietal connectivity features are derived from twenty-three EEG subbands from both hemispheres. Further, hemispherical asymmetry is exploited to identify the hemisphere with dominant directive discriminability. Connectivity features of the selected hemisphere are used to identify the most discriminative subband and selected features of the discriminative subband are used to classify the directions of imagined hand movement. The proposed algorithm employing subject-specific connectivity features yielded an average right vs left-hand motor imagery direction decoding accuracy of 79.67 % among 15 healthy subjects. The study results revealed that connectivity patterns in the posterior parietal cortex exhibited direction-dependent variability, suggesting a direction-dependent modulation of connectivity within the posterior parietal cortex. The results suggest the use of the posterior parietal cortex as a potential source of control signals for neuro-prosthetic applications.},
+  archive      = {J_NEUCOM},
+  author       = {K. Sagila Gangadharan and A.P. Vinod},
+  doi          = {10.1016/j.neucom.2025.129994},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129994},
+  shortjournal = {Neurocomputing},
+  title        = {Decoding motor imagery hand direction in brain computer interface from direction-dependent modulation of parietal connectivity using a new brain functional connectivity measure},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Zero-reference generative exposure correction and adaptive
+fusion for low-light image enhancement. <em>NEUCOM</em>, <em>636</em>,
+129992. (<a href="https://doi.org/10.1016/j.neucom.2025.129992">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing low-light image enhancement methods have the problem of difficulty in enhancing dark areas while controlling overexposed areas in natural images. To address this issue, a Generative Exposure Correction method based on Retinex theory is proposed in this paper, in which the Pseudo-Exposure Residual map and illumination map are deeply coupled based on the proposed intensity compensation prior to constrain the generative network’s output in order to simultaneously deal with overexposure and underexposure. Furthermore, to enhance the effect and prevent over-correction, an exposure fusion technique is proposed, which adaptively selects the best exposure area from the two corrected images and achieves a globally balanced exposure by using an intensity correction compensation operator. More importantly, our proposed method does not require the collection of additional external datasets, which also overcomes the difficulty of data acquisition. Experimental comparisons of our method with the other seven state-of-the-art methods on five public datasets demonstrate that our method achieves the best performance in terms of detail enhancement and natural color preservation.},
+  archive      = {J_NEUCOM},
+  author       = {Qing Pan and Zirong Zhang and Nili Tian},
+  doi          = {10.1016/j.neucom.2025.129992},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129992},
+  shortjournal = {Neurocomputing},
+  title        = {Zero-reference generative exposure correction and adaptive fusion for low-light image enhancement},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Extending evolution-guided policy gradient learning into the
+multi-objective domain. <em>NEUCOM</em>, <em>636</em>, 129991. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129991">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-Objective Reinforcement Learning (MORL) poses significant challenges, primarily due to the necessity of balancing conflicting objectives—a limitation that traditional single-objective approaches fail to address. This paper introduces Multi-Objective Evolutionary Reinforcement Learning (MO-ERL), the first adaptation of Evolutionary Reinforcement Learning (ERL) specifically designed to address the complexities of the multi-objective domain effectively. MO-ERL integrates policy gradient-based reinforcement learning (RL), which optimizes expected utility, with evolutionary algorithms (EAs) that maintain diversity across the Pareto front. This combination leverages RL’s strength in exploitation and EAs’ proficiency in exploration, enabling MO-ERL to effectively navigate the trade-offs inherent in multi-objective optimization problems. Evaluation on multi-objective continuous control tasks using the MuJoCo physics engine demonstrates that MO-ERL outperforms state-of-the-art baselines, achieving up to 62.71% higher hypervolume and 196.28% greater expected utility. These results validate MO-ERL’s ability to balance solution diversity and optimality, setting a new benchmark for solving MORL tasks.},
+  archive      = {J_NEUCOM},
+  author       = {Adam Callaghan and Karl Mason and Patrick Mannion},
+  doi          = {10.1016/j.neucom.2025.129991},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129991},
+  shortjournal = {Neurocomputing},
+  title        = {Extending evolution-guided policy gradient learning into the multi-objective domain},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HSACT: A hierarchical semantic-aware CNN-transformer for
+remote sensing image spectral super-resolution. <em>NEUCOM</em>,
+<em>636</em>, 129990. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129990">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hyperspectral remote sensing technology has demonstrated its spectral diagnosis advantages in numerous remote sensing observation fields. However, hyperspectral imaging is expensive and less portable compared to RGB imaging. To recover the corresponding hyperspectral image (HSI) from a remote sensing RGB image, this paper proposes a new hierarchical semantic-aware convolutional neural network (CNN)-Transformer (HSACT) for remote sensing image spectral super-resolution (SSR). Particularly, this work aims to reconstruct HSIs from RGB images within the same field of view using a lightweight semantic embedding architecture. Our HSACT consists of the following steps. First, an initial spectrum estimation module (from the RGB image to the HSI) is designed to progressively consider spectral estimation between RGB wavelength-inner and wavelength-outer information. Then, an attention-driven semantic-aware CNN-Transformer is developed to reconstruct the spatial and spectral details of HSI. Specifically, a trainable polymorphic superpixel convolution (PSConv) is proposed to capture features efficiently in the above module. Next, we introduce an information-lossless hierarchical network architecture to link the above modules and achieve end-to-end RGB image SSR through weight sharing. Experimental results on several datasets demonstrated that our HSACT outperforms traditional and advanced SSR methods. The codes of this paper are available from https://github.com/chengle-zhou/HSACT .},
+  archive      = {J_NEUCOM},
+  author       = {Chengle Zhou and Zhi He and Liwei Zou and Yunfei Li and Antonio Plaza},
+  doi          = {10.1016/j.neucom.2025.129990},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129990},
+  shortjournal = {Neurocomputing},
+  title        = {HSACT: A hierarchical semantic-aware CNN-transformer for remote sensing image spectral super-resolution},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PCSViT: Efficient and hardware friendly pyramid vision
+transformer with channel and spatial self-attentions. <em>NEUCOM</em>,
+<em>636</em>, 129987. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129987">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vision Transformers (ViT) have been widely used in various visual tasks and have achieved great success due to their advantageous self-attention mechanism. However, most ViT models focus primarily on spatial self-attention, often overlooking the importance of channel attention. In this paper, we propose a channel self-attention module as a complementary addition to the standard self-attention module in ViTs. Then, we introduce an adaptive feed-forward network designed for different attention modules. Based on the proposed self-attention module and adaptive feed-forward network, we propose a flexible Vision Transformer with channel and spatial attentions (CSViT) and conduct a series of experiments to explore the optimal position of different attention modules. Additionally, we introduce PCSViT, which combines the strengths of CSViT and convolutional neural networks (CNNs). PCSViT features a pyramid architecture and incorporates local spatial attention, global spatial attention, and channel attention. We further explore hardware-friendly designs to efficiently implement and accelerate PCSViT on embedded devices. The performance of the proposed methods is evaluated on small datasets CIFAR and Fashion-MNIST, as well as the larger dataset ImageNet. Experimental results show that the proposed model reduces ViT’s reliance on large datasets and outperforms several lightweight state-of-the-art CNN and ViT models across a range of model sizes. The hardware-friendly designs achieve about 10% acceleration on a RISC-V CPU.},
+  archive      = {J_NEUCOM},
+  author       = {Xiaofeng Zou and Yuanxi Peng and Guoqing Li and Xinye Cao},
+  doi          = {10.1016/j.neucom.2025.129987},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129987},
+  shortjournal = {Neurocomputing},
+  title        = {PCSViT: Efficient and hardware friendly pyramid vision transformer with channel and spatial self-attentions},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adjustable behavior-guided adaptive dynamic programming for
+neural learning control. <em>NEUCOM</em>, <em>636</em>, 129986. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129986">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, an adjustable behavior-guided adaptive dynamic programming (BGADP) algorithm is designed to solve the optimal regulation problem for discrete-time systems. In conventional adaptive dynamic programming methods, gradient information of system dynamics is necessary for conducting policy improvement. However, these methods face challenges when gradient information cannot be computed or when the system dynamics is non-differentiable. To overcome these limitations, a human-behavior-inspired swarm intelligence approach is used to search for superior policies during the iterative process, eliminating the need for gradient information. Additionally, a relaxation factor is introduced into the value function update to accelerate the convergence speed of the algorithm. The monotonicity and convergence properties of the iterative value function are rigorously analyzed. Finally, the effectiveness and practicality of the adjustable BGADP algorithm are validated through two simulation studies, which are implemented using the actor–critic framework with neural networks.},
+  archive      = {J_NEUCOM},
+  author       = {Guohan Tang and Ding Wang and Ao Liu and Junfei Qiao},
+  doi          = {10.1016/j.neucom.2025.129986},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129986},
+  shortjournal = {Neurocomputing},
+  title        = {Adjustable behavior-guided adaptive dynamic programming for neural learning control},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Grid mamba: Grid state space model for large-scale point
+cloud analysis. <em>NEUCOM</em>, <em>636</em>, 129985. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129985">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale point cloud semantic segmentation aims to classify scene point clouds at the pixel level, which is crucial for understanding 3D real-world scenes. Existing Transformer-based models for point cloud segmentation face the challenge of quadratic computational complexity, limiting their ability to handle high-resolution and large-scale point clouds. Inspired by the recently proposed Mamba model, known for its efficient long-sequence modeling capabilities, we propose Grid Mamba in this work, which is a specialized network tailored for large-scale point cloud learning, achieving global linear computational complexity. Grid Mamba’s highlights consist of three parts: Grid Multi-view Scanning, Grid Sparsity Pooling, and Grid Mamba Block. Grid Multi-view Scanning can reduce the loss of spatial proximity caused by serialization. Grid Sparsity Pooling addresses the issue of local information loss during the pooling stage of large-scale point clouds. Additionally, Grid Mamba Block overcomes the limitations of Mamba in scene point cloud feature interactions. Extensive experimental results demonstrate that Grid Mamba achieves outstanding performance across multiple indoor and outdoor scene datasets.},
+  archive      = {J_NEUCOM},
+  author       = {Yulong Yang and Tianzhou Xun and Kuangrong Hao and Bing Wei and Xue-song Tang},
+  doi          = {10.1016/j.neucom.2025.129985},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129985},
+  shortjournal = {Neurocomputing},
+  title        = {Grid mamba: Grid state space model for large-scale point cloud analysis},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GCD-net: Global consciousness-driven open-vocabulary
+semantic segmentation network. <em>NEUCOM</em>, <em>636</em>, 129982.
+(<a href="https://doi.org/10.1016/j.neucom.2025.129982">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Open-vocabulary semantic segmentation aims to achieve accurate classification of different categories of pixels, even if these categories are not explicitly labeled during training. The current research trend in this field emphasizes the utilization of pre-trained visual–language models to augment exploration capabilities. The core of these methods is to use image-level models to guide the segmentation process at the pixel level, thereby enhancing the model’s ability to recognize and segment unseen categories during training. However, many approaches overlook global information, which may lead to a lack of comprehensive scene understanding when processing images. Thereby, GCD-Net is introduced as an innovative open-vocabulary semantic segmentation framework, which integrates a novel decoder with a hierarchical encoder to form an encoder–decoder architecture. The hierarchical encoder leverages a hierarchical backbone network to generate a pixel-level image–text cost map, which preserves spatial information effectively at different levels. The proposed decoder, known as the Feature Fusion Decoder, comprises three pivotal modules: the Global Feature Extraction Module, the Visual Enhancement Module, and the Feature Aggregation Module. These modules cooperate to process hierarchical feature maps from different levels to capture global context information and effectively aggregate pixel blocks into semantic regions for high-quality open-vocabulary semantic segmentation. Experiments on multiple open-vocabulary semantic segmentation datasets demonstrate that GCD-Net achieves an mIoU score of 17.5% on PC-459 and 94.3% on PAS-20, verifying the effectiveness and superiority of the method.},
+  archive      = {J_NEUCOM},
+  author       = {Xing Wu and Zhenyao Xu and Quan Qian and Bin Huang},
+  doi          = {10.1016/j.neucom.2025.129982},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129982},
+  shortjournal = {Neurocomputing},
+  title        = {GCD-net: Global consciousness-driven open-vocabulary semantic segmentation network},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimized inverse dead-zone formation control using
+reinforcement learning for the nonlinear single-integrator dynamic
+multi-agent system. <em>NEUCOM</em>, <em>636</em>, 129981. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129981">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, an optimized inverse dead-zone formation control using identifier–critic–actor reinforcement learning (RL) is studied for the nonlinear single-integral dynamic multi-agent system (MAS). Since MAS formation is often accompanied with a high energy expenditure, it is very necessary and essential to take optimization as a control design principle. In order to smoothly achieve the optimized MAS formation control, a simplified RL is developed by performing the gradient descent method to a simple positive function, which is equivalent to Hamilton–Jacobi–Bellman (HJB) equation. Furthermore, since the MAS formation cooperation is depended on the information exchange among agents, it is very possible to happen the control dead-zone phenomenon, which makes the actuator without control signal. For eliminating the effect of dead-zone, an adaptive inverse dead-zone method is developed and then is combined with RL for this optimized formation control. In comparison to the conventional inverse dead-zone approach, this design has the less adaptive parameters. Finally, the results of theoretical and simulation demonstrate viability of the proposed method.},
+  archive      = {J_NEUCOM},
+  author       = {Guoxing Wen and Wenxia Sun and Shuaihua Ma},
+  doi          = {10.1016/j.neucom.2025.129981},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129981},
+  shortjournal = {Neurocomputing},
+  title        = {Optimized inverse dead-zone formation control using reinforcement learning for the nonlinear single-integrator dynamic multi-agent system},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shading- and geometry-aware lighting calibration network for
+uncalibrated photometric stereo. <em>NEUCOM</em>, <em>636</em>, 129979.
+(<a href="https://doi.org/10.1016/j.neucom.2025.129979">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Three-dimensional measurement provides essential geometric information for fault diagnosis and product optimization in intelligent manufacturing applications. Photometric stereo is a non-destructive 3D measurement technique that estimates the surface normals of objects using shading cues from images under different lighting conditions. However, the generalized bas-relief (GBR) ambiguity caused by unknown or varying lighting will significantly decrease measurement accuracy. To address this issue, we propose a shading- and geometry-aware lighting calibration network (SGLC-Net) to mitigate the inherent ambiguity and enhance surface normal estimation in uncalibrated photometric stereo by generating accurate lighting information. The proposed method iteratively optimizes lighting direction and intensity by leveraging self-generated shading and normal prior features. To further improve the accuracy of the lighting estimation, we introduce collocated light into SGLC-Net to implicitly extract shading features of images to generate accurate rough lighting. Accurate rough lighting can generate accurate shading and normal prior features, which can be used to optimize rough lighting to generate fine lighting. Experimental results indicate that the proposed method significantly outperforms most uncalibrated photometric stereo methods in lighting estimation on multiple real-world datasets. Furthermore, our method can seamlessly integrate with most uncalibrated photometric stereo methods to effectively enhance the accuracy of the surface normal estimation under unknown illumination.},
+  archive      = {J_NEUCOM},
+  author       = {Yuze Yang and Jiahang Liu and Yangyu Fu and Yue Ni and Yan Xu},
+  doi          = {10.1016/j.neucom.2025.129979},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129979},
+  shortjournal = {Neurocomputing},
+  title        = {Shading- and geometry-aware lighting calibration network for uncalibrated photometric stereo},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing offline reinforcement learning for wastewater
+treatment via transition filter and prioritized approximation loss.
+<em>NEUCOM</em>, <em>636</em>, 129977. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129977">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Wastewater treatment plays a crucial role in urban society, requiring efficient control strategies to optimize its performance. In this paper, we propose an enhanced offline reinforcement learning (RL) approach for wastewater treatment. Our algorithm improves the learning process. It uses a transition filter to sort out low-performance transitions and employs prioritized approximation loss to achieve prioritized experience replay with uniformly sampled loss. Additionally, the variational autoencoder is introduced to address the problem of distribution shift in offline RL. The proposed approach is evaluated on a nonlinear system and wastewater treatment simulation platform, demonstrating its effectiveness in achieving optimal control. The contributions of this paper include the development of an improved offline RL algorithm for wastewater treatment and the integration of transition filtering and prioritized approximation loss. Evaluation results demonstrate that the proposed algorithm achieves lower tracking error and cost.},
+  archive      = {J_NEUCOM},
+  author       = {Ruyue Yang and Ding Wang and Menghua Li and Chengyu Cui and Junfei Qiao},
+  doi          = {10.1016/j.neucom.2025.129977},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129977},
+  shortjournal = {Neurocomputing},
+  title        = {Enhancing offline reinforcement learning for wastewater treatment via transition filter and prioritized approximation loss},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). VLSG-net: Vision-language scene graphs network for paragraph
+video captioning. <em>NEUCOM</em>, <em>636</em>, 129976. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129976">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Paragraph Video captioning seeks to automatically describe multiple events in a video. Despite significant progress, most current approaches fail to fully leverage scene graph knowledge when performing cross-modal alignment between video and text representations. Consequently, such methods may not learn causal associations between entities, leading to a degradation in captioning performance. In this paper, we propose an end-to-end Vision-Language Scene Graphs Network (VLSG-net) to address this issue. We first introduce an encoder that integrates scene graph knowledge with global features and predicates to understand visual scenes. Specifically, scene graph knowledge detects entities and models their correlations and constraints, enabling the representation of relationships between various entities. We then introduce a Knowledge-Enhanced Encoder paired with a contrastive loss to leverage scene graph knowledge, thereby enhancing multimodal structured representations. Finally, we propose a transformer-in-transformer decoder to model the coherency of intra- and inter-event relationships within the video and generate captions. By incorporating relationship reasoning among entities through scene graphs and video-language alignment learning, VLSG-net generates more logical and detailed captions. Extensive experiments confirm that VLSG-net performs favorably against the state-of-the-art methods on two widely used benchmark datasets, ActivityNet Captions, and YouCookII.},
+  archive      = {J_NEUCOM},
+  author       = {Yufeng Hou and Qingguo Zhou and Hui Lv and Lan Guo and Yan Li and La Duo and Zhenyu He},
+  doi          = {10.1016/j.neucom.2025.129976},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129976},
+  shortjournal = {Neurocomputing},
+  title        = {VLSG-net: Vision-language scene graphs network for paragraph video captioning},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Privacy-preserving and byzantine-robust federated broad
+learning with chain-loop structure. <em>NEUCOM</em>, <em>636</em>,
+129975. (<a href="https://doi.org/10.1016/j.neucom.2025.129975">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) can collaboratively train a model by aggregating local models instead of aggregating raw data, which can protect privacy by ensuring that data remains on the client. However, the traditional FL still faces some challenges such as privacy leakage and the presence of Byzantine clients. We propose a privacy-preserving and Byzantine-robust federated broad learning framework with chain-loop structure i.e., PBFBL-CL, and this algorithm can simultaneously achieve protection of clients’ privacy and robustness against Byzantine attacks. In this paper, we apply Byzantine step-by-step co-validation algorithm to address the existence of Byzantine clients. We pass the aggregated model through the chain, so each client’s privacy is well protected. Moreover, PBFBL-CL can reduce the communication overhead between clients and server. Finally, we evaluate the PBFBL-CL algorithm in MNIST, Fashion-MNIST and NORB datasets, and the results show that our algorithm is better than existing FL algorithms in terms of model accuracy and training speed. Experimental results demonstrate that under the extreme scenario where Byzantine client proportion reaches 90%, the model achieves an accuracy of 89.53%, only 4.17% lower than the 93.7% accuracy observed in the ideal scenario without Byzantine clients.},
+  archive      = {J_NEUCOM},
+  author       = {Nan Li and Chang-E Ren and Siyao Cheng},
+  doi          = {10.1016/j.neucom.2025.129975},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129975},
+  shortjournal = {Neurocomputing},
+  title        = {Privacy-preserving and byzantine-robust federated broad learning with chain-loop structure},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spectrum-guided spatial feature enhancement network for
+event-based lip-reading. <em>NEUCOM</em>, <em>636</em>, 129974. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129974">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Automatic Lip-reading task aims to recognize spoken words through visual cues from the speaker’s lip movements. This crucial task complements audio-based speech recognition systems and can substitute them when sound is unavailable. Event-based lip-reading methods have gained increasing attention due to the advantages of event cameras, such as high temporal resolution and low power consumption. However, existing methods often fail to fully utilize the spatial information in event data due to its sparsity and the presence of random activations. To address this, we propose a novel Spectral-guided Spatial Enhancement Network (SSE-Net). SSE-Net introduces two core innovations: the Spectrum-guided Spatial Feature Enhance Module (SSEM) and the Multi-Scale Spatial Interaction Module (MS-SIM). SSEM employs frequency domain enhancement and spatial feature enhancement strategies to augment spatial features crucial for event-based lipreading tasks. MS-SIM conducts the fusion and interaction of multi-level semantics, enriching the contextual information of lip representations. We conducted experiments on the event-based lip-reading dataset DVS-Lip with our proposed method and demonstrated its superiority over other state-of-the-art event-based lip-reading methods.},
+  archive      = {J_NEUCOM},
+  author       = {Yi Zhang and Xiuping Liu and Hongchen Tan and Xin Li},
+  doi          = {10.1016/j.neucom.2025.129974},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129974},
+  shortjournal = {Neurocomputing},
+  title        = {Spectrum-guided spatial feature enhancement network for event-based lip-reading},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HRL-painter: Optimal planning painter based on hierarchical
+reinforcement learning. <em>NEUCOM</em>, <em>636</em>, 129972. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129972">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Stroke-based rendering method has shown its superiority in generating stylized paintings from realistic photographs. However, the existing methods often divide the image into regular blocks for parallel painting or start painting by progressively narrowing down the painting region from the entire canvas. Not only does this lead to an irrational allocation of stroke resources, but also deviates from the painting approach employed by human artists. To address this, we propose a novel painting method based on hierarchical reinforcement learning, namely HRL-Painter, which consists of a high-level agent that strategically plans the sequence of painting regions and a low-level agent that carries out specific painting tasks in the corresponding regions. In the initial stage, we consider the entire canvas as the painting region and then use a small number of strokes for a rough depiction. Next, our high-level agent plans the optimal sequence of painting regions based on the content of the target image, taking into account the error between the current canvas and the target image. Finally, the low-level agent is dedicated to executing detailed painting tasks within the painting regions proposed by the high-level agent. Extensive experiments on standard datasets including CelebA , ImageNet , CUB-200 Birds and Stanford Cars-196 demonstrate that our proposed hierarchical painting agent not only produce high-quality canvases but also exhibit a painting process that closely resembles the human painting style, showcasing excellent interpretability.},
+  archive      = {J_NEUCOM},
+  author       = {Jiong Zhang and Guangxin Xu and Xiaoyan Zhang},
+  doi          = {10.1016/j.neucom.2025.129972},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129972},
+  shortjournal = {Neurocomputing},
+  title        = {HRL-painter: Optimal planning painter based on hierarchical reinforcement learning},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed neural predictor enhanced coordinated control of
+AUVs. <em>NEUCOM</em>, <em>636</em>, 129971. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129971">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article investigates an enhanced tunnel prescribed performance coordinated control problem of multiple autonomous underwater vehicles (AUVs) under initial constraints. To meet high performance requirements in complex underwater conditions, AUV control faces challenges. In order to address these, an enhanced tunnel prescribed performance (ETPP) method is proposed, which is composed of composite error scaling function (CESF) and tunnel prescribed performance (TPP). In particular, a CESF-based error transformation is performed to scale the tracking error within the TPP limits. In the guidance loop, an ETPP-based guidance law is devised to guarantee the transient and steady-state behavior of the tracking error. In the control loop, based on the distributed learning strategy with weighted average, a quantized input-based distributed neural predictor (QDNP) is proposed to estimate the unknown external disturbances. Using the antidisturbance technique, a QDNP-based quantized control law is designed to stabilize multi-AUV formations. The uniformly ultimately bounded (UUB) stability of the overall closed-loop system is established in the Lyapunov sense. Finally, simulation examples with four AUVs are provided to demonstrate the effectiveness of the proposed distributed tunnel performance-guaranteed coordinated control method.},
+  archive      = {J_NEUCOM},
+  author       = {Minjing Wang and Di Wu and Lei Qiao and Rui Gao and Wenlong Feng},
+  doi          = {10.1016/j.neucom.2025.129971},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129971},
+  shortjournal = {Neurocomputing},
+  title        = {Distributed neural predictor enhanced coordinated control of AUVs},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rad-mark: Reliable adversarial zero-watermarking.
+<em>NEUCOM</em>, <em>636</em>, 129970. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129970">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Zero-watermarking is a lossless protection technique, and thus it is widely used in medical images, artworks and other carriers that require lossless protection. However, the current zero-watermarking suffers from the problem of high similarity between the feature images of different host images, which results in a high false positive rate. To address this challenge, we propose Rad-Mark, a deep learning-based zero-watermarking framework that leverages adversarial feature optimization to enhance the robustness and accuracy of watermark detection significantly for the first time. The adversarial samples are employed to significantly improve the framework’s security, which can achieve the NC value of false positives close to 0.5. Both image perturbation and Gaussian noise are incorporated into the training process. Specifically, our Rad-Mark involves a feature fusion design, a mapping network based on the fusion of locally filtered and global handcrafted features. We conduct an in-depth analysis of key parameters, including Gaussian noise, watermark dimensions, and weighting factors, exploring their impact on the performance of our Rad-Mark. Extensive experimental results demonstrate that Rad-Mark outperforms existing zero-watermarking methods in terms of both security and robustness.},
+  archive      = {J_NEUCOM},
+  author       = {Kun Hu and Dakai Zhai and Heng Gao and Haoyu Xie and Xingjun Wang},
+  doi          = {10.1016/j.neucom.2025.129970},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129970},
+  shortjournal = {Neurocomputing},
+  title        = {Rad-mark: Reliable adversarial zero-watermarking},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An event-triggered reliable cloud control scheme based on
+ADP and integral sliding mode. <em>NEUCOM</em>, <em>636</em>, 129968.
+(<a href="https://doi.org/10.1016/j.neucom.2025.129968">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates event-triggered (ET) reliable control problems for cloud control systems under actuator faults and data injection attacks via the adaptive dynamic programming (ADP) and integral sliding mode (ISM). A mist-fog-regional cloud control architecture is first given, which can improve computing efficiency of the cloud platform. In this architecture, a fog-based fault parameter estimation method is proposed with the aid of neural networks. It is driven by the feedback of fault parameter estimation errors, so as to achieve more accurate estimations of fault parameters. A double ET reliable cloud control scheme is further presented. It is composed of an ISM-based and an ADP-based regional cloud controllers. As a result, it not only saves communication resources, but also eliminates the influence of the attacks and matched uncertainties, as well as ensures the stability of the equivalent sliding-mode dynamics with optimal performance. Finally, the effectiveness of the proposed method is verified by the simulation results.},
+  archive      = {J_NEUCOM},
+  author       = {Xin Huang and Sicheng Bi and Xinyu Han and Shuyi Xiao and Qingyu Su},
+  doi          = {10.1016/j.neucom.2025.129968},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129968},
+  shortjournal = {Neurocomputing},
+  title        = {An event-triggered reliable cloud control scheme based on ADP and integral sliding mode},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A memory failure computational model in alzheimer-like
+disease via continuous delayed hopfield network with lurie control
+system based healing. <em>NEUCOM</em>, <em>636</em>, 129967. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129967">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Alzheimer’s disease (AD) is a degenerative neurological condition that impacts millions of individuals across the globe and remains without a healing. In the search for new possibilities of treatments for this terrible disease, this work presents the improved Alzheimer-like disease (IALD) model for memory failure and connects it to a new control technique that establishes a cure for the memory lost, either in biological or in artificial neural networks. For the IALD model, continuous Hopfield neural networks (HNN) with time delay are used. From the healing side, a robust control technique is used, which is based on new discoveries in Lurie control systems. In addition, this paper reviews the development of Alzheimer-like disease (ALD) model, as well as, the relationship of HNN with Lurie system. Simulations are executed to validate the model and to show the efficacy of applying a new theorem from Lurie problem. With the results presented, this work proposes a new conceptual paradigm that could potentially be applied in memory failure treatments in AD, as well as in hardware implemented HNN under adversarial attacks or adverse environmental conditions.},
+  archive      = {J_NEUCOM},
+  author       = {Rafael Fernandes Pinheiro and Diego Colón and Rui Fonseca-Pinto},
+  doi          = {10.1016/j.neucom.2025.129967},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129967},
+  shortjournal = {Neurocomputing},
+  title        = {A memory failure computational model in alzheimer-like disease via continuous delayed hopfield network with lurie control system based healing},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fine-grained hierarchical singular value decomposition for
+convolutional neural networks compression and acceleration.
+<em>NEUCOM</em>, <em>636</em>, 129966. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129966">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolutional neural networks (CNNs) still remain crucial in the field of computer vision, especially in industrial-embedded scenarios. Although modern artificial intelligence chips such as embedded graphics processing units (GPUs) and neural process units (NPUs) are equipped with sufficient computability, making CNNs more lightweight always has non-negligible significance. Until now, many researchers have made multiple corresponding achievements, in which a series of tensor decomposition methods have represented their unique advantages such as concision, flexibility, and low-rank approximation theory. However, balancing the compression, acceleration, and precision, is still an open issue, because the traditional tensor decompositions are hard to deal with the trade-off between approximation and compression ability, while the so-called fine-grained tensor decompositions such as Kronecker canonical polyadic (KCP) have not created a way to merge the factors for efficient inference. In this paper, we first review related works on convolutional neural network (CNN) compression and the necessary prior knowledge. We then propose a novel matrix decomposition method, termed hierarchical singular value (HSV) decomposition, and validate its effectiveness. Subsequently, we introduce a fast contraction strategy based on the merged factors of HSV and explain how our method addresses the inefficiencies in inference associated with traditional contraction processes. Additionally, we validate the advantages of HSV by comparing its complexity with that of other classical tensor decomposition methods. Thereafter, we apply HSV to CNN compression and acceleration by transforming convolution operations into matrix multiplication. We also propose a self-adaptive rank selection algorithm tailored to standard CNN architecture and conduct a theoretical analysis of the convergence of our method. Multiple experiments on CIFAR-10, ImageNet, COCO, and Cityscapes benchmark datasets show that the proposed HSV-Conv can simultaneously gain considerable compression ratio and acceleration ratio, while the precision loss is almost non-existent. We also make a comprehensive comparison with the other related works, and the superiority of our method is further validated. Besides, we give a deep discussion about the rank selection issue of HSV in the aspects of practice and theory, which explains the strategy of the proposed self-adaptive rank selection and the reason for choosing fine-tuning rather than training from scratch.},
+  archive      = {J_NEUCOM},
+  author       = {Mengmeng Qi and Dingheng Wang and Wei Yang and Baorong Liu and Fuyong Wang and Zengqiang Chen},
+  doi          = {10.1016/j.neucom.2025.129966},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129966},
+  shortjournal = {Neurocomputing},
+  title        = {Fine-grained hierarchical singular value decomposition for convolutional neural networks compression and acceleration},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-level feature splicing 3D network based on multi-task
+joint learning for video anomaly detection. <em>NEUCOM</em>,
+<em>636</em>, 129964. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129964">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In video anomaly detection research, deep learning is dedicated to identifying anomalous events accurately and efficiently. However, due to the scarcity and diversity of anomaly samples, previous methods have not adequately taken into account important information about location and timing. In addition, the overpowered generalization ability of the models leads to the fact that anomalies can also be well reconstructed or predicted. To address the above challenges, we propose a 3D network based on multi-level feature splicing with joint multi-task learning. The network is improved by the autoencoder (AE) as a backbone network. Firstly, we design a normal sample training task and a Gaussian noise task from a spatial perspective to enhance the reconstruction of positive samples. The frame-skipping task and the inverse sequence task of the video are designed from the temporal perspective to suppress the reconstruction ability of negative samples. Secondly, we use multi-level feature splicing in the encoding and decoding process to equip the network with the ability to explore sufficient information from the full scale. At the same time, we use an attention gating module to filter redundant features. The results show that our network is competitive with state-of-the-art methods. In terms of AUC, UCSD Ped2 achieves 99.3%, CUHK Avenue achieves 88.4%, and ShanghaiTech Campus achieves 74.2%.},
+  archive      = {J_NEUCOM},
+  author       = {Yang Li and Guoxiang Tong},
+  doi          = {10.1016/j.neucom.2025.129964},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129964},
+  shortjournal = {Neurocomputing},
+  title        = {Multi-level feature splicing 3D network based on multi-task joint learning for video anomaly detection},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). L2M-GCN: A new framework for learning robust GCN against
+structural attacks. <em>NEUCOM</em>, <em>636</em>, 129962. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129962">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Convolutional Networks (GCNs) have gained extensive attention due to their strong ability to learn from graphs. However, with the advent of stealthy attacks that cause significant differences in node embeddings, the vulnerability of GCNs to malicious attacks has been exposed. Although there are many studies on defense in the spatial or spectral domains, they neglect the complementary roles of the two. In this paper, we propose a new framework, Low frequency and 2-hop in Multi-channel GCN (L2M-GCN), which combines spatial and spectral defense. L2M-GCN has two GCN-based modules. In module one, a new structure reconstructed from learnable spectrum and low-frequency components replaces the adjacency matrix in GCN. In module two, purified 2-hop is introduced and the attention mechanism is used to learn the importance weights of node embeddings. The two modules are eventually assembled into L2M-GCN for joint learning in a parameter-sharing and end-to-end fashion. Extensive experiments demonstrate that L2M-GCN significantly improves the defense performance against structural attacks and outperforms the baselines and state-of-the-art methods.},
+  archive      = {J_NEUCOM},
+  author       = {Haoran Chen and Xianchen Zhou and Jiwei Zhang and Hongxia Wang},
+  doi          = {10.1016/j.neucom.2025.129962},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129962},
+  shortjournal = {Neurocomputing},
+  title        = {L2M-GCN: A new framework for learning robust GCN against structural attacks},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Channel pruning for convolutional neural networks using
+l0-norm constraints. <em>NEUCOM</em>, <em>636</em>, 129925. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129925">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Channel pruning can effectively reduce the size and inference time of Convolutional Neural Networks (CNNs). However, existing channel pruning methods still face several issues, including high computational costs, extensive manual intervention, difficulty in hyperparameter tuning, and challenges in directly controlling the sparsity. To address these issues, this paper proposes two channel pruning methods based on l 0 -norm sparse optimization: the l 0 -norm Pruner and the Automated l 0 -norm Pruner. The l 0 -norm Pruner formulates the channel pruning problem as a sparse optimization problem involving the l 0 -norm and achieves a fast solution through a series of approximations and transformations. Inspired by this solution process, we devise the Zero-Norm (ZN) module, which can autonomously select output channels for each layer based on a predefined global pruning ratio. This approach incurs low computational cost and allows for precise control over the overall pruning ratio. Furthermore, to further enhance the performance of the pruned model, we have developed the Automated l 0 -norm Pruner. This method utilizes a Bee Colony Optimization algorithm to adjust the pruning ratio, mitigating the negative impact of manually preset pruning ratios on model performance. Our experiments demonstrate that the proposed pruning methods outperform several state-of-the-art techniques. The source code for our proposed methods is available at: https://github.com/TCCofWANG/l0_prune .},
+  archive      = {J_NEUCOM},
+  author       = {Enhao Chen and Hao Wang and Zhanglei Shi and Wei Zhang},
+  doi          = {10.1016/j.neucom.2025.129925},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129925},
+  shortjournal = {Neurocomputing},
+  title        = {Channel pruning for convolutional neural networks using l0-norm constraints},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cascade-UDA: A cascade paradigm for unsupervised domain
+adaptation. <em>NEUCOM</em>, <em>636</em>, 129924. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129924">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unsupervised domain adaptation (UDA) aims to enhance the performance of models on unlabeled target domains by utilizing labeled data from a related source domain. However, existing UDA methods often struggle with semantic confusion and distribution shifts. To address these issues, we propose a novel two-stage UDA framework called Cascade-UDA. In the first stage, we fine-tune CLIP-LoRA on the source domain to learn class-related, domain-invariant features while preserving semantic integrity. In the second stage, we freeze the fine-tuned CLIP-LoRA and introduce a textual prompt for target domain adaptation, refining pseudo-labels with knowledge from the source domain. Our proposed method effectively decouples semantic learning from domain-specific adaptation, enhancing performance on the target domain. Extensive experiments on public datasets demonstrate the superiority of our approach over existing methods.},
+  archive      = {J_NEUCOM},
+  author       = {Mengmeng Zhan and Zongqian Wu and Huafu Xu and Xiaofeng Zhu and Rongyao Hu},
+  doi          = {10.1016/j.neucom.2025.129924},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129924},
+  shortjournal = {Neurocomputing},
+  title        = {Cascade-UDA: A cascade paradigm for unsupervised domain adaptation},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). YOLO-ELWNet: A lightweight object detection network.
+<em>NEUCOM</em>, <em>636</em>, 129904. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129904">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a YOLO-based efficient lightweight network (YOLO-ELWNet) for onboard object detection based on the YOLOv3. A channel split and shuffle with coordinate attention module is developed in the backbone block, which effectively reduces the size of model parameters and computational cost while maintaining the detection accuracy. A new feature fusion network is proposed in the neck block, where a cross-stage partial with efficient bottleneck module is put forward to improve the feature extraction ability and reduce the computational cost. The Scylla intersection over union-based loss function is utilized in the head block, which accelerates the convergence speed of the YOLO-ELWNet. The effectiveness of the proposed YOLO-ELWNet is validated on the open source KITTI vision benchmark. The performance of YOLO-ELWNet is superior to some mainstream lightweight object detection models in terms of detection accuracy and computational cost, which demonstrates its applicability for resource-constrained onboard object detection.},
+  archive      = {J_NEUCOM},
+  author       = {Baoye Song and Jianyu Chen and Weibo Liu and Jingzhong Fang and Yani Xue and Xiaohui Liu},
+  doi          = {10.1016/j.neucom.2025.129904},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129904},
+  shortjournal = {Neurocomputing},
+  title        = {YOLO-ELWNet: A lightweight object detection network},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DCFT: Dependency-aware continual learning fine-tuning for
+sparse LLMs. <em>NEUCOM</em>, <em>636</em>, 129897. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129897">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the size of Large Language Models (LLMs) increasing, they exhibit enhanced capabilities in general intelligence but also present greater challenges in deployment. Consequently, compressing LLMs has become critically important. Among the various compression techniques, post-training pruning is highly favored by researchers due to its efficiency. However, this one-shot pruning approach often results in a significant deterioration of model performance. To mitigate this issue, we introduce Dependency-aware Continual learning Fine-Tuning (DCFT) for sparse LLMs. This method facilitates fine-tuning across sequential tasks without compromising the model’s sparsity. Initially, we revisit the inference process in LLMs from a novel perspective, treating two matrices that previously required independent optimization as a unified entity. This strategy involves introduces merely 0.011‰ additional parameters to achieve efficient fine-tuning. Furthermore, we re-evaluate the parameter fine-tuning process through the lens of matrix space mapping. By constraining the similarity of the mapping matrices, our approach enables the model to retain its performance on prior tasks while learning new ones. We tested our method on models from the LLaMA-V1/V2 families, with parameters ranging from 7B to 70B, and under various sparsity ratios and patterns (unstructured and N:M sparsity). The results consistently demonstrate outstanding performance.},
+  archive      = {J_NEUCOM},
+  author       = {Yanzhe Wang and Yizhen Wang and Baoqun Yin},
+  doi          = {10.1016/j.neucom.2025.129897},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129897},
+  shortjournal = {Neurocomputing},
+  title        = {DCFT: Dependency-aware continual learning fine-tuning for sparse LLMs},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parallel spatiotemporal network to recognize
+micro-expression. <em>NEUCOM</em>, <em>636</em>, 129891. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129891">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Micro-expressions are fleeting spontaneous facial expressions that commonly occur in high-stakes scenarios and reflect humans’ mental states. Thus, it is one of the crucial clues for lie detection. Furthermore, due to the brief duration of micro-expression, temporal information is important for micro-expression recognition. The paper proposes a Parallel Spatiotemporal Network (PSN) to recognize micro-expression. The proposed PSN includes a spatial sub-network and a temporal sub-network. The spatial sub-network is a shallow network with subtle motion information as the input. And the temporal sub-network is a network with a novel temporal feature extraction unit that extracts sparse temporal features of micro-expressions. Finally, we propose an element-wise addition with 1 × 1 convolutional kernel fusion model to fuse the spatial and temporal features. The proposed PSN gets better measurement metrics (such as recognition rate, F1 score, true positive rate, and true negative rate) than the other state-of-the-art methods on the consisted databases consisting of CASME, CASME II, CAS(ME) 2 , and SAMM.},
+  archive      = {J_NEUCOM},
+  author       = {Jingting Li and Su-Jing Wang and Yong Wang and Haoliang Zhou and Xiaolan Fu},
+  doi          = {10.1016/j.neucom.2025.129891},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129891},
+  shortjournal = {Neurocomputing},
+  title        = {Parallel spatiotemporal network to recognize micro-expression},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Farewell to CycleGAN: Single GAN with decoupled constraint
+for unpaired image dehazing. <em>NEUCOM</em>, <em>636</em>, 129888. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129888">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unpaired image dehazing has attracted more and more attention, since the pair-wise training data which is prerequisite for the supervised dehazing methods leads to high cost if they are really captured or performance degradation on the real-hazy scenes if they are synthesized. The existing methods for unpaired image dehazing are all based on the CycleGAN-like framework with pixel-to-pixel constraint, which leads to burdensome model complexity and unstable training. In this paper, we propose a novel single GAN model for unpaired image dehazing (SinGAN-Dehaze), which gets rid of the cycle-consistency constraint. To be specific, the cycle-consistency is decoupled to content-consistency and style-consistency, where the pixel-to-pixel mapping is replaced by the patch-to-patch semantic mapping. The content-consistency is ensured by capturing local distinctive representations and global contextual dependencies. The style-consistency is achieved by forcing the high-frequency information distribution of dehazing result close to that of the clear image with similar style. Extensive experiments demonstrate that our proposal can achieve superior performance for unpaired image dehazing in terms of the objective index and visual effect on both synthetic and real-hazy scenarios.},
+  archive      = {J_NEUCOM},
+  author       = {Xiaotong Luo and Wenjin Yang and Yuan Xie and Yanyun Qu},
+  doi          = {10.1016/j.neucom.2025.129888},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129888},
+  shortjournal = {Neurocomputing},
+  title        = {Farewell to CycleGAN: Single GAN with decoupled constraint for unpaired image dehazing},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A hybrid approach combining sentiment analysis and deep
+learning to mitigate data sparsity in recommender systems.
+<em>NEUCOM</em>, <em>636</em>, 129886. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129886">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The optimization of recommendation systems (RS) is crucial for delivering personalized product suggestions. Despite their successes, RS approaches often face challenges, such as data sparsity in the user–item matrix, which can undermine their performance. To address these challenges, integrating additional information sources, such as item/user profiles and textual reviews, is essential. These sources offer valuable insights into user preferences and item characteristics, helping in understanding the contextual details of both. This study focuses on developing an advanced RS architecture that combines Singular Value Decomposition (SVD) with BERT-CB methods and a Hybrid Model-based Sentiment Analysis. By integrating BERT with Multilayer Perceptron (MLP) methods, the system gains a deeper understanding of item profiles, improving the comprehension of user preferences and item characteristics. Additionally, a novel hybrid approach for sentiment analysis is proposed, using GloVe embeddings and CNN-BiGRU, improving the accuracy and robustness of sentiment detection in user reviews. This comprehensive understanding, combined with collaborative filtering models like SVD, enables the system to provide highly accurate recommendations. The proposed approach consists of four main phases: first, embedding review text using GloVe embeddings and developing a hybrid sentiment analysis approach with CNN and BiGRU architectures; second, creating a BERT language model for generating embeddings from item profile texts, followed by dimensionality reduction using Auto-Encoder; third, using these vectors to build a novel MLP model; fourth, developing a Collaborative Filtering method using SVD, and finally, combining these methods into a hybrid approach and conducting a comprehensive evaluation. Empirical results clearly show the effectiveness of our approach, particularly the combination of GloVe-CNN-BiGRU and BERT-CB with SVD methodology, demonstrating significant improvements across various performance metrics. This confirms the practical value of using contextualized data from BERT-CB and the sentiment analysis approach, enhancing the recommendation system’s effectiveness.},
+  archive      = {J_NEUCOM},
+  author       = {Ikram Karabila and Nossayba Darraz and Anas El-Ansari and Nabil Alami and Mostafa El Mallahi},
+  doi          = {10.1016/j.neucom.2025.129886},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129886},
+  shortjournal = {Neurocomputing},
+  title        = {A hybrid approach combining sentiment analysis and deep learning to mitigate data sparsity in recommender systems},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural learning rules from associative networks theory.
+<em>NEUCOM</em>, <em>636</em>, 129865. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129865">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Associative networks theory is increasingly providing tools to interpret update rules of artificial neural networks. At the same time, deriving neural learning rules from a solid theory remains a fundamental challenge. We make some steps in this direction by considering general energy-based associative networks of continuous neurons and synapses that evolve in multiple time scales. We use the separation of these timescales to recover a limit in which the activation of the neurons, the energy of the system and the neural dynamics can all be recovered from a generating function. By allowing the generating function to depend on memories, we recover the conventional Hebbian modeling choice for the interaction strength between neurons. Finally, we propose and discuss a dynamics of memories that enables us to include learning in this framework.},
+  archive      = {J_NEUCOM},
+  author       = {Daniele Lotito},
+  doi          = {10.1016/j.neucom.2025.129865},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129865},
+  shortjournal = {Neurocomputing},
+  title        = {Neural learning rules from associative networks theory},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive temperature distillation method for mining hard
+samples’ knowledge. <em>NEUCOM</em>, <em>636</em>, 129745. (<a
+href="https://doi.org/10.1016/j.neucom.2025.129745">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge distillation can transfer knowledge from a complex teacher network into a simple student one through a high temperature factor, improving the latter’s performance. However, existing studies usually use fixed temperatures, making them ineffective in mining the rich knowledge contained in hard samples. Specifically, high temperature tends to over-smooth knowledge on hard samples, whereas low temperature makes knowledge almost equivalent to hard labels on easy samples. In this paper, we propose an Adaptive Temperature Distillation (ATD) method to effectively address these challenges. A well-trained teacher network’s information entropy is used to assess a sample’s relative difficulty. Then, low temperature is used in a hard sample, which allows the student network to learn its dark knowledge more effectively. And high temperature is employed in an easy sample to prevent the student network from becoming overconfident and ignoring the dark knowledge of negative classes. Furthermore, we propose a mixup variant to enable the student network to access more hard samples with rich dark knowledge. Instead of focusing on data augmentation as the existing mixup studies, ATD pays attention to increasing the richness of dark knowledge by mixing the output logits of easy and hard samples. The overall performance of ATD is verified in multiple benchmark datasets by comparing it with state-of-the-art knowledge distillation methods.},
+  archive      = {J_NEUCOM},
+  author       = {Shunzhi Yang and Xiong Yang and Jin Ren and Liuchi Xu and Jinfeng Yang and Zhenhua Huang and Zheng Gong and Wenguang Wang},
+  doi          = {10.1016/j.neucom.2025.129745},
+  journal      = {Neurocomputing},
+  month        = {7},
+  pages        = {129745},
+  shortjournal = {Neurocomputing},
+  title        = {Adaptive temperature distillation method for mining hard samples’ knowledge},
+  volume       = {636},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

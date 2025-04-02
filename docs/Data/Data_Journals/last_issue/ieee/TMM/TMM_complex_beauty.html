@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TMM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tmm---5">TMM - 5</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Deep learning-based point cloud coding and super-resolution:
+A joint geometry and color approach. <em>TMM</em>, <em>27</em>, 914–926.
+(<a href="https://doi.org/10.1109/TMM.2023.3338081">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this golden age of multimedia, realistic content is in high demand with users seeking more immersive and interactive experiences. As a result, new image modalities for 3D representations have emerged in recent years, among which point clouds have deserved especial attention. Naturally, with this increase in demand, efficient storage and transmission became a must, with standardization groups such as MPEG and JPEG entering the scene, as it happened before with other types of visual media. In a surprising development, JPEG issued a Call for Proposals on point cloud coding targeting exclusively learning-based solutions, in parallel to a similar call for image coding. This is a natural consequence of the growing popularity of deep learning, which due to its excellent performances is currently dominant in the multimedia processing field, including coding. This article presents the coding solution selected by JPEG as the best-performing response to the Call for Proposals and adopted as the first version of the JPEG Pleno Point Cloud Coding Verification Model, in practice the first step for developing a standard. The proposed solution offers a novel joint geometry and color approach for point cloud coding, in which a single deep learning model processes both geometry and color simultaneously. To maximize the RD performance for a large range of point clouds, the proposed solution uses down-sampling and learning-based super-resolution as pre- and post-processing steps. Compared to the MPEG point cloud coding standards, the proposed coding solution comfortably outperforms G-PCC, for both geometry, color, and joint quality metrics.},
+  archive      = {J_TMM},
+  author       = {André F. R. Guarda and Manuel Ruivo and Luís Coelho and Abdelrahman Seleem and Nuno M. M. Rodrigues and Fernando Pereira},
+  doi          = {10.1109/TMM.2023.3338081},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {11},
+  pages        = {914-926},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {Deep learning-based point cloud coding and super-resolution: A joint geometry and color approach},
+  volume       = {27},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RDD: Learning reinforced 3D detectors and descriptors based
+on policy gradient. <em>TMM</em>, <em>27</em>, 900–913. (<a
+href="https://doi.org/10.1109/TMM.2023.3338054">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Keypoint detection and descriptor matching are two vital steps in the 3D feature extraction framework, but they are difficult to learn in an end-to-end fashion due to their inherent discreteness. To tackle the non-differentiable operations, we formulate feature extraction as a decision-making problem: the network is treated as a policy pool that can make probabilistic estimations for keypoint selection and feature matching, supervised by maximizing a reward expectation of actions. In this way, we propose a novel end-to-end training paradigm of 3D feature extraction based on the stochastic policy gradient method, named Reinforced Detectors and Descriptors (RDD). Firstly, we propose a local-to-global probabilistic keypoint selection module that formulates the sampling probabilities of keypoints in a local-and-global mechanism to yield sparse and accurate keypoints. Secondly, we regard feature matching as an optimal transport problem and an efficient Sinkhorn method is leveraged to solve the optimal matching probabilities. In particular, we carefully design a reward function and derive gradients of probabilistic actions, thus overcoming the discreteness and providing reinforced supervision signals. Since our reward function is calculated from sampled keypoints rather than from randomly sampled points as in existing methods, the gap between training and inference is bridged. Experimental results demonstrate that our approach exceeds the quality of state-of-the-art methods and shows strong generalization ability. Remarkably, our approach can achieve significantly higher Registration Recall than other advanced methods when aligning scenes with a small number of keypoints, due to our highly accurate and repeatable detector.},
+  archive      = {J_TMM},
+  author       = {Wenting Cui and Shaoyi Du and Runzhao Yao and Canhui Tang and Aixue Ye and Feng Wen and Zhiqiang Tian},
+  doi          = {10.1109/TMM.2023.3338054},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {11},
+  pages        = {900-913},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {RDD: Learning reinforced 3D detectors and descriptors based on policy gradient},
+  volume       = {27},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable point cloud attribute compression. <em>TMM</em>,
+<em>27</em>, 889–899. (<a
+href="https://doi.org/10.1109/TMM.2023.3331584">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article develops a Scalable Point Cloud Attribute Compression solution, termed ScalablePCAC. In a two-layer example, ScalablePCAC uses the standard G-PCC at the base layer to directly encode the thumbnail point cloud that is downscaled from the original input, and a learning-based model at the enhancement layer to compress and restore the full-resolution input point cloud conditioned on the base layer reconstruction. As such, the base layer provides a coarse reconstruction of the input point cloud and the enhancement layer further improves the quality. We then adopt a cross-layer rate allocation strategy that flexibly determines the resolution downscaling factor, the quantization parameter of the base layer, and the quality controlling factor of the enhancement layer to adapt the bitrate of the two layers for approximately optimal Rate-Distortion (R-D) performance. We conduct extensive experiments on popular point clouds following the MPEG common test conditions. Results demonstrate that the proposed ScalablePCAC achieves $&amp;gt;$10% BD-BR reduction against the latest G-PCC version 22 (TMC13v22) on the Y component; it also significantly outperforms existing learning-based solutions for point cloud attribute compression, e.g., compared with a recent work showing state-of-the-art performance, it achieves $&amp;gt;$20% BD-BR reduction.},
+  archive      = {J_TMM},
+  author       = {Junteng Zhang and Jianqiang Wang and Dandan Ding and Zhan Ma},
+  doi          = {10.1109/TMM.2023.3331584},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {11},
+  pages        = {889-899},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {Scalable point cloud attribute compression},
+  volume       = {27},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Steerable graph neural network on point clouds via
+second-order random walks. <em>TMM</em>, <em>27</em>, 875–888. (<a
+href="https://doi.org/10.1109/TMM.2023.3330338">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point cloud analysis, arising from computer graphics, remains a fundamental but challenging problem, mainly due to the non-Euclidean property of point cloud data modality. With the snap increase in the amount and breadth of related research in deep learning for graphs, many important works come in the form of graphs representing the point clouds. In this paper, we present a sampling adaptive graph convolutional network that combines the powerful representation ability of random walk subgraph searching and the essential success of the Fisher vector. Extending from those existing graph representation learning or embedding methods with multi-hop neighbor random searching, we sample multi-scale walk fields by using a steerable exploration-exploitation second order random walk, which endows our model with the most flexibility compared with the original first order random walk. To encode each-scale walk field consisting of several walk paths, specifically, we characterize these paths of walk field by Gaussian mixture models (GMMs) so as to better analogize the standard CNNs on Euclidean modality. Each Gaussian component implicitly defines a direction and all of them properly encode the spatial layout of walk fields after the gradient projecting to the space of Gaussian parameters, i.e. the Fisher vectors. Thereby, we introduce and name our deep graph convolutional network as PointFisher. Comprehensive evaluations on several public datasets well demonstrate the superiority of our proposed learning method over other state-of-the-arts for point cloud classification and segmentation.},
+  archive      = {J_TMM},
+  author       = {Xianglin Guo and Yifan Wang and Heng Liu and Haoran Xie and Gary Cheng and Fu Lee Wang},
+  doi          = {10.1109/TMM.2023.3330338},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {11},
+  pages        = {875-888},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {Steerable graph neural network on point clouds via second-order random walks},
+  volume       = {27},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). JPEG image encryption with DC rotation and undivided
+RSV-based AC group permutation. <em>TMM</em>, <em>27</em>, 1–15. (<a
+href="https://doi.org/10.1109/TMM.2023.3336236">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing JPEG encryption approaches pose a security risk due to the difficulty in changing all block-feature values while considering format compatibility and file size expansion. To address these concerns, this paper introduces a novel JPEG image encryption scheme. First, the security of sketch information against chosen-plaintext attacks is improved by increasing the change rate of block-feature values. Second, a classification global permutation approach is designed to encrypt the undivided run/size, value (RSV)-based AC groups to achieve larger changes in the block-feature values. Third, to reduce file size expansion while maintaining format compatibility, the DC coefficients are rotated based on the mapped DC differences in the same category, and the nonzero AC coefficients are mapped in the same category. Extensive experiments demonstrate that the proposed algorithm is superior to existing schemes in terms of security. Notably, the average change rate of block-feature values is increased by at least 20%. Furthermore, the proposed scheme reduces the file size by an average of 2.036% compared to existing JPEG image encryption methods.},
+  archive      = {J_TMM},
+  author       = {Yuan Yuan and Hongjie He and Yaolin Yang and Hadi Amirpour and Christian Timmerer and Fan Chen},
+  doi          = {10.1109/TMM.2023.3336236},
+  journal      = {IEEE Transactions on Multimedia},
+  month        = {11},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Multimed.},
+  title        = {JPEG image encryption with DC rotation and undivided RSV-based AC group permutation},
+  volume       = {27},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>
