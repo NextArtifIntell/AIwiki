@@ -2,15 +2,15 @@
 
 ## Offline
 
-| **Number** | **Publisher: Current Year Papers** | **Publisher: Last Year Papers** |
-| --- | --- | --- |
-| 1 | [**AAAI**](Data/Data_Conferences/2025_current_month/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2024_current_month/aaai/aaai_link.html) |
-| 2 | [**ACM**](Data/Data_Conferences/2025_current_month/acm/acm_link.html) | [**ACM**](Data/Data_Conferences/2024_current_month/acm/acm_link.html) |
-| 3 | [**IEEE**](Data/Data_Conferences/2025_current_month/ieee/ieee_link.html) | [**IEEE**](Data/Data_Conferences/2024_current_month/ieee/ieee_link.html) |
-| 4 | [**OPEN**](Data/Data_Conferences/2025_current_month/open/open_link.html) | [**OPEN**](Data/Data_Conferences/2024_current_month/open/open_link.html) |
-| 5 | [**PMLR**](Data/Data_Conferences/2025_current_month/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2024_current_month/pmlr/pmlr_link.html) |
-| 6 | [**SPRINGER**](Data/Data_Conferences/2025_current_month/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2024_current_month/springer/springer_link.html) |
-| 7 | [**USENIX**](Data/Data_Conferences/2025_current_month/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2024_current_month/usenix/usenix_link.html) |
+| **Number** | **2025 Papers** | **2024 Papers** | **2023 Papers** | **2022 Papers** | **2021 Papers** | **2020 Papers** |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | [**AAAI**](Data/Data_Conferences/2025_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2024_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2023_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2022_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2021_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2020_all_months/aaai/aaai_link.html) |
+| 2 | [**ACM**](Data/Data_Conferences/2025_all_months/acm/acm_link.html) | [**ACM**](Data/Data_Conferences/2024_all_months/acm/acm_link.html) | [**ACM**](Data/Data_Conferences/2023_all_months/acm/acm_link.html) | [**ACM**](Data/Data_Conferences/2022_all_months/acm/acm_link.html) | [**ACM**](Data/Data_Conferences/2021_all_months/acm/acm_link.html) | [**ACM**](Data/Data_Conferences/2020_all_months/acm/acm_link.html) |
+| 3 | [**IEEE**](Data/Data_Conferences/2025_all_months/ieee/ieee_link.html) | [**IEEE**](Data/Data_Conferences/2024_all_months/ieee/ieee_link.html) | [**IEEE**](Data/Data_Conferences/2023_all_months/ieee/ieee_link.html) | [**IEEE**](Data/Data_Conferences/2022_all_months/ieee/ieee_link.html) | [**IEEE**](Data/Data_Conferences/2021_all_months/ieee/ieee_link.html) | [**IEEE**](Data/Data_Conferences/2020_all_months/ieee/ieee_link.html) |
+| 4 | [**OPEN**](Data/Data_Conferences/2025_all_months/open/open_link.html) | [**OPEN**](Data/Data_Conferences/2024_all_months/open/open_link.html) | [**OPEN**](Data/Data_Conferences/2023_all_months/open/open_link.html) | [**OPEN**](Data/Data_Conferences/2022_all_months/open/open_link.html) | [**OPEN**](Data/Data_Conferences/2021_all_months/open/open_link.html) | [**OPEN**](Data/Data_Conferences/2020_all_months/open/open_link.html) |
+| 5 | [**PMLR**](Data/Data_Conferences/2025_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2024_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2023_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2022_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2021_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2020_all_months/pmlr/pmlr_link.html) |
+| 6 | [**SPRINGER**](Data/Data_Conferences/2025_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2024_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2023_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2022_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2021_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2020_all_months/springer/springer_link.html) |
+| 7 | [**USENIX**](Data/Data_Conferences/2025_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2024_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2023_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2022_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2021_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2020_all_months/usenix/usenix_link.html) |
 
 ## Online
 
