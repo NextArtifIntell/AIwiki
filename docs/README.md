@@ -15,8 +15,15 @@ For full documentation visit [docsify.js.org](https://docsify.js.org).
 
     docs/
         index.html # The configuration file.
-        index.md   # The documentation homepage.
+        README.md  # The documentation homepage.
+        .nojekyll  # Prevents GitHub Pages from ignoring files that begin with an underscore
         ...        # Other markdown pages, images and other files.
+
+### nohup Docsify
+
+* Run Docsify without hanging up - `nohup docsify serve docs -p 3000 > docsify.log 2>&1 &`
+* List the `PID` of Docsify - `pgrep -fl docsify` or `jobs -l` or `ps -u $(whoami)`
+* Kill the process of Docsify - `kill PID`
 
 ## MkDocs
 
