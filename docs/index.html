@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="author" content="NextArtifIntell (NextAI)">
   <meta name="keywords" content="AI wiki">
-  <meta name="description" content="Arfificial Intelligence wiki">
+  <meta name="description" content="Artificial Intelligence wiki">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 
   <!-- TOC -->
-  <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css"> -->
+  <link rel="stylesheet" href="./CSS/light.css">
 
   <!-- Sidebar -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
@@ -26,6 +27,11 @@
 
   <script>
     window.$docsify = {
+      // Set name and repository link
+      name: '',
+      repo: 'https://github.com/NextArtifIntell/AIwiki',
+
+      // HTML
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (content) {
@@ -53,10 +59,6 @@
         formatUpdated: "{HH}:{mm} {DD}/{MM}/{YYYY}",
         whereToPlace: "top",  // "top" or "bottom", default to "bottom"
       },
-
-      // Set name and repository link
-      name: '',
-      repo: 'https://github.com/NextArtifIntell/AIwiki',
 
       // Load from _coverpage.md
       coverpage: true,
@@ -92,7 +94,7 @@
       hideCode: {
           scroll: true,
           height: 200
-      }
+      },
     };
   </script>
 
