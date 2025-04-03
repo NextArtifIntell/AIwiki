@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPDS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpds---16">TPDS - 16</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A collaborative service composition approach considering
+providers’ self-interest and minimal service sharing. <em>TPDS</em>,
+<em>36</em>(3), 598–615. (<a
+href="https://doi.org/10.1109/TPDS.2025.3534283">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Service composition dynamically integrates various services from multiple providers to meet complex user requirements. However, most existing methods assume centralized control over all services, which is often unrealistic because providers typically prefer to independently manage their own services, posing challenges to the application of traditional methods. Collaborative service composition offers a solution by enabling providers to work together to complete service composition. However, this approach also faces its own challenges. Driven by self-interest, providers may be reluctant to offer services needed by others, and due to business competition, they may wish to share as few services as possible (where sharing services means disclosing service information to other providers). To address these challenges, we propose a novel collaborative service composition approach that comprehensively considers each provider’s self-interest and achieves service composition with minimal service sharing. First, we introduce a “self-interest degree” model to capture providers’ self-interest. This behavior may lead to service refusal, so we design a service availability prediction method based on a reputation model to minimize rejections. Then, we propose a decentralized service composition method. It utilizes historical composition records to mine empirical rules between requirements and services, constructing a correlations matrix, and collaboratively trains a multi-label classification model with other providers under a distributed federated learning framework. Combining the matrix and model outputs, we design a service composition method and a node coordination protocol that completes service composition with minimal service sharing. Experimental results demonstrate the effectiveness of the proposed method in capturing providers’ self-interest and showcase its superior performance compared to existing methods.},
+  archive      = {J_TPDS},
+  author       = {Xiao Wang and Hanchuan Xu and Jian Yang and Xiaofei Xu and Zhongjie Wang},
+  doi          = {10.1109/TPDS.2025.3534283},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {598-615},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A collaborative service composition approach considering providers’ self-interest and minimal service sharing},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Collaborative edge-cloud data transfer optimization for
+industrial internet of things. <em>TPDS</em>, <em>36</em>(3), 580–597.
+(<a href="https://doi.org/10.1109/TPDS.2025.3532261">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the Industrial Internet of Things, it is necessary to reserve enough bandwidth resources according to the maximum traffic peak. However, bandwidth reservation based on the maximum traffic peak leads to low resource utilization. In this paper, we propose a data transfer optimization solution, based on the cooperation of different entities in the local area, which strives to deliver data acquired by sensors to the cloud in a reliable manner and improve bandwidth utilization to save limited network resources. In our solution, the data transfers from the sensors in a local network are controlled by a local controller and some edge gateways with acceptable cost such that no congestion occurs in the path to the cloud and the bandwidth requirement of each flow can be met. To obtain a tradeoff between resource utilization and transfer delay, we study the problem of minimizing the maximum rate peak of periodic real-time traffic from distributed sensors and propose an algorithm to solve this problem with a desirable lower boundary of the performance. In addition, we design an application-level forwarding method that significantly improves resource utilization and a method of implementing reliable sampling instant adjustment. The experimental results show that our solution significantly improves resource utilization without producing network congestion.},
+  archive      = {J_TPDS},
+  author       = {Xinchang Zhang and Maoli Wang and Xiaomin Zhu and Zhiwei Yan and Guanggang Geng},
+  doi          = {10.1109/TPDS.2025.3532261},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {580-597},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Collaborative edge-cloud data transfer optimization for industrial internet of things},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comparative study of sampling methods with
+cross-validation in the FedHome framework. <em>TPDS</em>,
+<em>36</em>(3), 570–579. (<a
+href="https://doi.org/10.1109/TPDS.2025.3526238">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents a comparative study of sampling methods within the FedHome framework, designed for personalized in-home health monitoring. FedHome leverages federated learning (FL) and generative convolutional autoencoders (GCAE) to train models on decentralized edge devices while prioritizing data privacy. A notable challenge in this domain is the class imbalance in health data, where critical events such as falls are underrepresented, adversely affecting model performance. To address this, the research evaluates six oversampling techniques using Stratified K-fold cross-validation: SMOTE, Borderline-SMOTE, Random OverSampler, SMOTE-Tomek, SVM-SMOTE, and SMOTE-ENN. These methods are tested on FedHome&#39;s public implementation over 200 training rounds with and without stratified K-fold cross-validation. The findings indicate that SMOTE-ENN achieves the most consistent test accuracy, with a standard deviation range of 0.0167–0.0176, demonstrating stable performance compared to other samplers. In contrast, SMOTE and SVM-SMOTE exhibit higher variability in performance, as reflected by their wider standard deviation ranges of 0.0157–0.0180 and 0.0155–0.0180, respectively. Similarly, the Random OverSampler method shows a significant deviation range of 0.0155–0.0176. SMOTE-Tomek, with a deviation range of 0.0160–0.0175, also shows greater stability but not as much as SMOTE-ENN. This finding highlights the potential of SMOTE-ENN to enhance the reliability and accuracy of personalized health monitoring systems within the FedHome framework.},
+  archive      = {J_TPDS},
+  author       = {Arash Ahmadi and Sarah S. Sharif and Yaser M. Banad},
+  doi          = {10.1109/TPDS.2025.3526238},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {570-579},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A comparative study of sampling methods with cross-validation in the FedHome framework},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AsyncFedGAN: An efficient and staleness-aware asynchronous
+federated learning framework for generative adversarial networks.
+<em>TPDS</em>, <em>36</em>(3), 553–569. (<a
+href="https://doi.org/10.1109/TPDS.2024.3521016">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative Adversarial Networks (GANs) are deep learning models that learn and generate new samples similar to existing ones. Traditionally, GANs are trained in centralized data centers, raising data privacy concerns due to the need for clients to upload their data. To address this, Federated Learning (FL) integrates with GANs, allowing collaborative training without sharing local data. However, this integration is complex because GANs involve two interdependent models—the generator and the discriminator—while FL typically handles a single model over distributed datasets. In this article, we propose a novel asynchronous FL framework for GANs, called AsyncFedGAN, designed to efficiently and distributively train both models tailored for molecule generation. AsyncFedGAN addresses the challenges of training interactive models, resolves the straggler issue in synchronous FL, reduces model staleness in asynchronous FL, and lowers client energy consumption. Our extensive simulations for molecular discovery show that AsyncFedGAN achieves convergence with proper settings, outperforms baseline methods, and balances model performance with client energy usage.},
+  archive      = {J_TPDS},
+  author       = {Daniel Manu and Abee Alazzwi and Jingjing Yao and Youzuo Lin and Xiang Sun},
+  doi          = {10.1109/TPDS.2024.3521016},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {553-569},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {AsyncFedGAN: An efficient and staleness-aware asynchronous federated learning framework for generative adversarial networks},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Survey on characterizing and understanding GNNs from a
+computer architecture perspective. <em>TPDS</em>, <em>36</em>(3),
+537–552. (<a href="https://doi.org/10.1109/TPDS.2025.3532089">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Characterizing and understanding graph neural networks (GNNs) is essential for identifying performance bottlenecks and facilitating their deployment in parallel and distributed systems. Despite substantial work in this area, a comprehensive survey on characterizing and understanding GNNs from a computer architecture perspective is lacking. This article presents a comprehensive survey, proposing a triple-level classification method to categorize, summarize, and compare existing efforts, particularly focusing on their implications for parallel architectures and distributed systems. We identify promising future directions for GNN characterization that align with the challenges of optimizing hardware and software in parallel and distributed systems. Our survey aims to help scholars systematically understand GNN performance bottlenecks and execution patterns from a computer architecture perspective, thereby contributing to the development of more efficient GNN implementations across diverse parallel architectures and distributed systems.},
+  archive      = {J_TPDS},
+  author       = {Meng Wu and Mingyu Yan and Wenming Li and Xiaochun Ye and Dongrui Fan and Yuan Xie},
+  doi          = {10.1109/TPDS.2025.3532089},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {537-552},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Survey on characterizing and understanding GNNs from a computer architecture perspective},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). <span class="math inline">GPABE</span>&lt;Mml:math
+xmlns:mml=“http://www.w3.org/1998/math/MathML”&gt;&lt;mml:mi
+mathvariant=“sans-serif”&gt;GPABE&lt;/mml:mi&gt;&lt;/mml:math&gt;:
+GPU-based parallelization framework for attribute-based encryption
+schemes. <em>TPDS</em>, <em>36</em>(3), 520–536. (<a
+href="https://doi.org/10.1109/TPDS.2025.3529776">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Attribute-based encryption (ABE) has emerged as a new paradigm for access control in cloud computing. However, despite the many promising features of ABE, its deployment in real-world systems is still limited, partially due to the expensive cost of its underlying mathematical operations, which often grow linearly with the size and complexity of the system&#39;s security policies. This becomes particularly challenging in data-intensive applications, where multiple users may simultaneously access and manipulate large volumes of data, resulting in high levels of concurrency and demand for computing resources, which are too heavy even for high-end servers. Further exacerbating the issues are the functionality and security requirements of a cloud, as they introduce additional computations to both the client and the server. Therefore, in this work, we introduce $ \mathsf{GPABE} $, the first GPU-based parallelization framework for ABE to facilitate its batch processing in cloud computing. By analyzing ABE&#39;s major computational workload, we identify multiple arithmetic modules that are common in the design of pairing-based ABEs. Based on the analysis, we further propose to decompose the ABE algorithm into computation graph, which can be efficiently implemented on the GPU platform. Our graph representation bridges the gap between ABE&#39;s high-level design and their low-level implementation on GPUs, and is applicable to a variety of popular schemes in the realm of ABE. We then implement $ \mathsf{GPABE} $ as a heterogeneous computing server, with several optimization techniques to improve its throughput. Finally, we evaluate the GPU implementation of several ABE schemes using $ \mathsf{GPABE} $. The results show a speedup of least 51.0× and at most 253.6× for the throughput of ABE algorithms, compared to their state-of-the-art CPU implementations, which preliminarily demonstrated the effectiveness of $ \mathsf{GPABE} $.},
+  archive      = {J_TPDS},
+  author       = {Wenhan Xu and Hui Ma and Rui Zhang and Jianhao Li},
+  doi          = {10.1109/TPDS.2025.3529776},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {520-536},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {$ \mathsf{GPABE} $&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi mathvariant=&quot;sans-serif&quot;&gt;GPABE&lt;/mml:mi&gt;&lt;/mml:math&gt;: GPU-based parallelization framework for attribute-based encryption schemes},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ViTeGNN: Towards versatile inference of temporal graph
+neural networks on FPGA. <em>TPDS</em>, <em>36</em>(3), 502–519. (<a
+href="https://doi.org/10.1109/TPDS.2024.3521897">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Temporal Graph Neural Networks (TGNNs) are powerful models to capture temporal, structural, and contextual information on temporal graphs, outperforming other methods in many high-impact downstream tasks. However, achieving high-performance TGNN inference in production environments is challenging because TGNN models suffer from high computation complexity and intrinsic temporal data dependency that hinders data parallelism. In addition, real-world TGNN applications have different latency and throughput requirements. This work presents ViTeGNN, a versatile TGNN inference solution for memory-based TGNNs on FPGAs. ViTeGNN performs algorithm-model-architecture co-design to meet the latency and throughput requirements of real-world TGNN applications. Besides the vanilla inference mode ViTeGNN-bal that updates embeddings for nodes interacting with others, we propose ViTeGNN-lat and ViTeGNN-thpt, optimized for latency and throughput. Our model optimizations include a lightweight method to compute attention scores and a related temporal neighbor pruning strategy to reduce computation and memory accesses. These are holistically coupled with key hardware optimizations that leverage the FPGA hardware. We propose a novel hardware module to execute the complex neighbor update process efficiently. To ensure similar accuracy vis-á-vis the original model, the simplified models are trained using the knowledge distillation technique. We propose a unified hardware design that supports all of these three inference modes without FPGA reconfiguration. Enabled by our flexible hardware architecture, we further propose ViTeGNN-auto, which automatically selects the best inference mode at runtime based on latency and throughput requirements, guided by our accurate performance model. We evaluate the performance of the proposed hardware accelerator on five real-world datasets. ViTeGNN-bal reduces the computation complexity by an average of 62% and memory accesses by an average of 36% with only 0.0042 accuracy loss. Compared with state-of-the-art implementations on CPU and GPU, our FPGA implementation achieves $53.9/26.0/16.1\times$ speedup and $8.2/4.0/2.5\times$ speedup for ViTeGNN-lat/-bal/-thpt, respectively.},
+  archive      = {J_TPDS},
+  author       = {Hongkuan Zhou and Bingyi Zhang and Rajgopal Kannan and Carl Busart and Viktor K. Prasanna},
+  doi          = {10.1109/TPDS.2024.3521897},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {502-519},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {ViTeGNN: Towards versatile inference of temporal graph neural networks on FPGA},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards efficient verifiable cloud storage and distribution
+for large-scale data streaming. <em>TPDS</em>, <em>36</em>(3), 487–501.
+(<a href="https://doi.org/10.1109/TPDS.2025.3526642">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data streaming is an ordered sequence of data continuously generated over time, whose dynamic scale is hard to be predicated in advance. Since the traditional integrity verification primitives are not qualified to check the integrity of the retrieved data and the outsourced database in streaming setting, some specific schemes were proposed by adopting the tree-like authentication structure or the combination of signature and accumulator. However, these schemes are not optimal for the owner. The main concerns can be generalized as how to reduce the size of the authentication information to be less than the scale of the data streaming, and enable the resource-constrained owner to check the data integrity without using challenge. To address the problems, we intend to find a new approach to design the scheme by exploiting the novel technique called decentralized vector commitment (DVC). Towards this goal, we first propose a key exposure-freeness chameleon vector commitment scheme, and then present the efficient DVC technique based on our key exposure-freeness chameleon vector commitment scheme. The scheme is finally constructed by leveraging the efficient DVC technique. Besides the integrity verification, our scheme is also sufficient to efficiently distribute the data to a user who is protected from receiving the stale data. To optimize the performance in concurrently retrieving multiple data, we introduce the batch query that reduces large amounts of communication and computation overheads. The security analysis and performance evaluation show that our solutions are secure and efficient.},
+  archive      = {J_TPDS},
+  author       = {Haining Yang and Dengguo Feng and Jing Qin},
+  doi          = {10.1109/TPDS.2025.3526642},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {487-501},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Towards efficient verifiable cloud storage and distribution for large-scale data streaming},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HTLL: Latency-aware scalable blocking mutex. <em>TPDS</em>,
+<em>36</em>(3), 471–486. (<a
+href="https://doi.org/10.1109/TPDS.2025.3526859">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article finds that existing mutex locks suffer from throughput collapses or latency collapses, or both, in the oversubscribed scenarios where applications create more threads than the CPU core number, e.g., database applications like mysql use per thread per connection. We make an in-depth performance analysis on existing locks and then identify three design rules for the lock primitive to achieve scalable performance in oversubscribed scenarios. First, to achieve ideal throughput, the lock design should keep adequate number of active competitors. Second, the active competitors should be arranged carefully to avoid the lock-holder preemption problem. Third, to meet latency requirements, the lock design should track the latency of each competitor and reorder the competitors according to the latency requirement. We propose a new lock library called HTLL that satisfies these rules and achieves both high throughput and low latency even when the cores are oversubscribed. HTLL only requires minimal human effort (e.g., add several lines of code) to annotate the latency requirement. Evaluation results show that HTLL achieves scalable performance in the oversubscribed scenarios. Specifically, for the real-world database, LMDB, HTLL can reduce the tail latency by up to 97% with only an average 5% degradation in throughput, compared with state-of-the-art alternatives such as Malthusian, CST, and Mutexee locks; In comparison to the widely used pthread_mutex_lock, it can increase the throughput by up to 22% and decrease the latency by up to 80%. Meanwhile, for the under-subscribed scenarios, it also shows comparable performance than state-of-the-art blocking locks.},
+  archive      = {J_TPDS},
+  author       = {Ziqu Yu and Jinyu Gu and Zijian Wu and Nian Liu and Jian Guo},
+  doi          = {10.1109/TPDS.2025.3526859},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {471-486},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {HTLL: Latency-aware scalable blocking mutex},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Response time analysis and optimal priority assignment for
+global non-preemptive fixed-priority rigid gang scheduling.
+<em>TPDS</em>, <em>36</em>(3), 455–470. (<a
+href="https://doi.org/10.1109/TPDS.2025.3529218">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Non-preemptive rigid gang scheduling combines the efficiency of parallel execution with the reduced overhead of non-preemptive scheduling. This approach is particularly advantageous for parallel hardware accelerators, such as Google&#39;s Edge Tensor Processing Unit (TPU), which is widely used for deep neural network (DNN) inference on embedded systems. This paper studies sporadic global non-preemptive fixed-priority (NP-FP) rigid gang scheduling, which is well-suited for DNN applications in Edge TPU pipelines. Each gang task spawns a fixed number of threads that must execute concurrently across distinct processing units. We introduce the first carry-in limitation technique specifically designed for gang task response time analysis, addressing the unique challenges posed by intra-task parallelism. This technique is formulated as a generalized knapsack problem, and we develop both a linear programming relaxation and a dynamic programming approach to solve it under different time complexities. Additionally, we propose the first optimal priority assignment policy for NP-FP gang schedulability tests. Our proposed schedulability analysis and optimal priority assignment policy are evaluated through extensive experiments, including both synthetic task sets and a case study using DNN benchmarks on commercial off-the-shelf Edge TPU accelerators. The results demonstrate that the proposed approaches effectively enhance the state-of-the-art global NP-FP gang schedulability tests, achieving improvements of up to 57.9% for synthetic task sets and 76.7% for Edge TPU benchmarks. Furthermore, we conduct an ablations study to examine the impact of different algorithmic components in the proposed technique, providing valuable insights for future research.},
+  archive      = {J_TPDS},
+  author       = {Binqi Sun and Tomasz Kloda and Jiyang Chen and Cen Lu and Marco Caccamo},
+  doi          = {10.1109/TPDS.2025.3529218},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {455-470},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Response time analysis and optimal priority assignment for global non-preemptive fixed-priority rigid gang scheduling},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Chasing common knowledge: Joint large model selection and
+pulling in MEC with parameter sharing. <em>TPDS</em>, <em>36</em>(3),
+437–454. (<a href="https://doi.org/10.1109/TPDS.2025.3527649">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pretrained Foundation Models (PFMs) are regarded as a promising accelerator for the development of various Artificial Intelligence (AI) applications, and have recently been widely fine-tuned to satisfy users’ personalized inference demands. As many users are attracted to PFM-based AI applications, remote data centers are increasingly unable to solely bear the enormous computational demands and meet the delay requirements of inference requests. Mobile edge computing (MEC) offers a viable solution for delivering low-latency inference services by pulling fine-tuned PFMs from the remote data center to cloudlets in the proximity of users. However, a fine-tuned PFM typically comprises billions of model parameters, which are highly resource-intensive, time-consuming, and cost-prohibitive to execute at the edge. To address this, we investigate a novel joint large model selection and pulling problem in MEC networks. The novelty of our study lies in exploring parameter sharing among fine-tuned PFMs based on their common knowledge. Specifically, we first formulate a Non-Linear Integer Programming (NLIP) for the problem to minimize the total delay of implementing all inference requests. We then transform the NLIP into an equivalent Integer Linear Program (ILP) that is much simpler to solve. We further propose a randomized algorithm with a provable approximation ratio for the problem. We also consider the online version of the problem with uncertain request demand, and develop an online learning algorithm with a bounded regret. The crux of the online algorithm is the adoption of the multi-armed bandit technique with restricted context for dynamic admissions of inference requests. We finally conduct extensive experiments based on real datasets. Experimental results demonstrate that our algorithms reduce at least 38% in total delays and average costs, while achieving a 5% improvement in average accuracies.},
+  archive      = {J_TPDS},
+  author       = {Lizhen Zhou and Zichuan Xu and Qiufen Xia and Zhou Xu and Wenhao Ren and Wenbo Qi and Jinjing Ma and Song Yan and Yuan Yang},
+  doi          = {10.1109/TPDS.2025.3527649},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {437-454},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Chasing common knowledge: Joint large model selection and pulling in MEC with parameter sharing},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High performance householder QR factorization on emerging
+GPU architectures using tensor cores. <em>TPDS</em>, <em>36</em>(3),
+422–436. (<a href="https://doi.org/10.1109/TPDS.2024.3522776">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Since 2017, NVIDIA GPUs have been equipped with specialized units known as Tensor Cores, which demonstrate remarkable efficiency in processing matrix multiplications (GEMMs). Beyond GEMMs, researchers have explored the potential applications of Tensor Cores in matrix factorization, such as QR factorization. However, the inside GEMMs in QR factorization are typically tall and skinny. Compared to compute-bound square GEMMs, these tall and skinny GEMMs are memory bound, leading to suboptimal performance on Tensor Cores. To solve this problem, we indicate the recursive QR factorization can convert the tall and skinny GEMMs to relatively square and large GEMMs, resulting in better performance on Tensor Cores. Besides, we extend the FP16 Tensor-Cores-based QR factorization to accommodate FP32 and FP64 on FP16 and INT8 Tensor Cores, respectively. Additionally, to address the issue of orthogonality loss in the preceding Tensor Cores-based QR factorization, we transition from the Gram-Schmidt to the Householder algorithm while preserving high performance. According to our experimental evaluation conducted on NVIDIA&#39;s A100 and GeForce RTX 3090 GPU, the precision levels of FP64, FP32, and FP16 are up to 6.22x, 8.67x, and 4.03x faster, respectively, than the current state-of-the-art implementations.},
+  archive      = {J_TPDS},
+  author       = {Yuhan Leng and Gaoyuan Zou and Hansheng Wang and Panruo Wu and Shaoshuai Zhang},
+  doi          = {10.1109/TPDS.2024.3522776},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {422-436},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {High performance householder QR factorization on emerging GPU architectures using tensor cores},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HpT: Hybrid acceleration of spatio-temporal attention model
+training on heterogeneous manycore architectures. <em>TPDS</em>,
+<em>36</em>(3), 407–421. (<a
+href="https://doi.org/10.1109/TPDS.2024.3522781">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformer models have become widely popular in numerous applications, and especially for building foundation large language models (LLMs). Recently, there has been a surge in the exploration of transformer-based architectures in non-LLM applications. In particular, the self-attention mechanism within the transformer architecture offers a way to exploit any hidden relations within data, making it widely applicable for a variety of spatio-temporal tasks in scientific computing domains (e.g., weather, traffic, agriculture). Most of these efforts have primarily focused on accelerating the inference phase. However, the computational resources required to train these attention-based models for scientific applications remain a significant challenge to address. Emerging non-volatile memory (NVM)-based processing-in-memory (PIM) architectures can achieve higher performance and better energy efficiency than their GPU-based counterparts. However, the frequent weight updates during training would necessitate write operations to NVM cells, posing a significant barrier for considering stand-alone NVM-based PIM architectures. In this paper, we present HpT, a new hybrid approach to accelerate the training of attention-based models for scientific applications. Our approach is hybrid at two different layers: at the software layer, our approach dynamically switches from a full-parameter training mode to a lower-parameter training mode by incorporating intrinsic dimensionality; and at the hardware layer, our approach harnesses the combined power of GPUs, resistive random-access memory (ReRAM)-based PIM devices, and systolic arrays. This software-hardware co-design approach is aimed at adaptively reducing both runtime and energy costs during the training phase, without compromising on quality. Experiments on four concrete real-world scientific applications demonstrate that our hybrid approach is able to significantly reduce training time (up to $11.9\times$) and energy consumption (up to $12.05\times$), compared to the corresponding full-parameter training executing on only GPUs. Our approach serves as an example for accelerating the training of attention-based models on heterogeneous platforms including ReRAMs.},
+  archive      = {J_TPDS},
+  author       = {Saiman Dahal and Pratyush Dhingra and Krishu Kumar Thapa and Partha Pratim Pande and Ananth Kalyanaraman},
+  doi          = {10.1109/TPDS.2024.3522781},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {407-421},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {HpT: Hybrid acceleration of spatio-temporal attention model training on heterogeneous manycore architectures},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integrated and fungible scheduling of deep learning
+workloads using multi-agent reinforcement learning. <em>TPDS</em>,
+<em>36</em>(3), 391–406. (<a
+href="https://doi.org/10.1109/TPDS.2024.3522333">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {GPU clusters have been widely used to co-locate various deep learning (DL) workloads in a multi-tenant way. Although such resource sharing can significantly reduce training cost, resource contention and interference among co-located workloads make task scheduling very complex and challenging. To simplify the scheduling problem, existing algorithms usually divide the procedure of scheduling into two sub-tasks, i.e., task placement and resource allocation, and allocate resources according to pre-defined and fixed resource demands. However, such a paradigm significantly constrains the selection of potential scheduling solutions. In this article, we present MAIFS, a novel multi-agent reinforcement learning based scheduling algorithm that handles task placement and resource allocation integratedly, and allows fungible resource allocation based on resource sensitivity of DL workloads. The core of MAIFS lies in two mechanisms. The multi-agent attention mechanism is designed to learn and share inter-related resource state features observed from different agents, which enables agents to explore fungible resource allocation solutions. The dynamic coordination graph mechanism is designed for coordinating interactive task placement decisions of agents during integrated scheduling, so as to mitigate potential task conflicts. Simulated experiments using two large scale production DL workload traces and physical deployment experiments based on a Kubernetes based GPU cluster show that MAIFS can outperform state-of-the-art scheduling algorithms by up to 44% in terms of makespan and 46% in terms of job completion time (JCT).},
+  archive      = {J_TPDS},
+  author       = {Jialun Li and Danyang Xiao and Diying Yang and Xuan Mo and Weigang Wu},
+  doi          = {10.1109/TPDS.2024.3522333},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {391-406},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Integrated and fungible scheduling of deep learning workloads using multi-agent reinforcement learning},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sparrow: Expediting smart contract execution for blockchain
+sharding via inter-shard caching. <em>TPDS</em>, <em>36</em>(3),
+377–390. (<a href="https://doi.org/10.1109/TPDS.2024.3522016">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sharding is a promising solution to scale blockchain by separating the system into multiple shards to process transactions in parallel. However, due to state separation and shard isolation, it is still challenging to efficiently support smart contracts on a blockchain sharding system where smart contracts can interact with each other, involving states maintained by multiple shards. Specifically, existing sharding systems adopt a costly multi-step collaboration mechanism to execute smart contracts, resulting in long latency and low throughput. This article proposes Sparrow, a blockchain sharding protocol achieving one-step execution for smart contracts. To break shard isolation, inspired by non-local hotspot data caching in traditional databases, we propose a new idea of inter-shard caching, allowing a shard to prefetch and cache frequently accessed contract states of other shards. The miner can thus use the inter-shard cache to pre-execute a pending transaction, retrieve all its contract invocations, and commit it to multiple shards in one step. Particularly, we first propose a speculative dispersal cache synchronisation mechanism for efficient and secure cache synchronization across shards in Byzantine environments. Then, we propose a multi-branch exploration mechanism to solve the rollback problem during the optimistic one-step execution of contract invocations with dependencies. We also present a series of conflict resolution mechanisms to decrease the rollback caused by inherent transaction conflicts. We implement prototypes for Sparrow and existing sharding systems, and the evaluation shows that Sparrow improves the throughput by $2.44\times$ and reduces the transaction latency by 30% compared with the existing sharding systems.},
+  archive      = {J_TPDS},
+  author       = {Junyuan Liang and Peiyuan Yao and Wuhui Chen and Zicong Hong and Jianting Zhang and Ting Cai and Min Sun and Zibin Zheng},
+  doi          = {10.1109/TPDS.2024.3522016},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {377-390},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Sparrow: Expediting smart contract execution for blockchain sharding via inter-shard caching},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online elastic resource provisioning with QoS guarantee in
+container-based cloud computing. <em>TPDS</em>, <em>36</em>(3), 361–376.
+(<a href="https://doi.org/10.1109/TPDS.2024.3522085">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In cloud data centers, the exponential growth of data places increasing demands on computing, storage, and network resources, especially in multi-tenant environments. While this growth is crucial for ensuring Quality of Service (QoS), it also introduces challenges such as fluctuating resource requirements and static container configurations, which can lead to resource underutilization and high energy consumption. This article addresses online resource provisioning and efficient scheduling for multi-tenant environments, aiming to minimize energy consumption while balancing elasticity and QoS requirements. To address this, we propose a novel optimization framework that reformulates the resource provisioning problem into a more manageable form. By reducing the original multi-constraint optimization to a container placement problem, we apply the interior-point barrier method to simplify the optimization, integrating constraints directly into the objective function for efficient computation. We also introduce elasticity as a key parameter to balance energy consumption with autonomous resource scaling, ensuring that resource consolidation does not compromise system flexibility. The proposed Energy-Efficient and Elastic Resource Provisioning (EEP) framework comprises three main modules: a distributed resource management module that employs vertical partitioning and dynamic leader election for adaptive resource allocation; a prediction module using $\omega$-step prediction for accurate resource demand forecasting; and an elastic scheduling module that dynamically adjusts to tenant scaling needs, optimizing resource allocation and minimizing energy consumption. Extensive experiments across diverse cloud scenarios demonstrate that the EEP framework significantly improves energy efficiency and resource utilization compared to established baselines, supporting sustainable cloud management practices.},
+  archive      = {J_TPDS},
+  author       = {Shuaibing Lu and Ran Yan and Jie Wu and Jackson Yang and Xinyu Deng and Shen Wu and Zhi Cai and Juan Fang},
+  doi          = {10.1109/TPDS.2024.3522085},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {361-376},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Online elastic resource provisioning with QoS guarantee in container-based cloud computing},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

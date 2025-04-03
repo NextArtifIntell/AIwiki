@@ -2,8 +2,8 @@
 
 ## Table
 
-| |Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+| |Publisher|Full/Homepage|Abbr/About|Flag/Issues|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|-|
 |1|[AAAI](https://www.aaai.org/)|[Journal of Artificial Intelligence Research](https://www.jair.org/index.php/jair)|[J. Artif. Intell. Res.](https://www.jair.org/index.php/jair/about)|[JAIR](https://www.jair.org/index.php/jair/issue/archive)|1996-|False|B|3|Q2|4.5|Artificial Intelligence|
 |2|[AAAS](https://www.science.org/)|[Science Advances](https://www.science.org/journal/sciadv)|[Sci. Adv.](https://www.science.org/content/page/science-advances-mission-and-scope)|[SCIADV](https://www.science.org/loi/sciadv)|2015-|True||1|Q1|11.7|Multidisciplinary|
 |3|[AAAS](https://www.science.org/)|[Science](https://www.science.org/journal/science)|[Science](https://www.science.org/content/page/about-science-aaas)|[SCIENCE](https://www.science.org/loi/science)|1880-|True||1|Q1|44.7|Multidisciplinary|
@@ -20,12 +20,12 @@
 |14|[ACM](https://www.acm.org/)|[ACM Transactions on Intelligent Systems and Technology](https://dl.acm.org/journal/its-transactions)|ACM Trans. Intell. Syst. Technol.|[TIST](https://dl.acm.org/loi/its-transactions)|2000-|False||3|Q1|7.2||
 |15|[ACM](https://www.acm.org/)|[ACM Transactions on Knowledge Discovery from Data](https://dl.acm.org/journal/tkdd)|ACM Trans. knowl. Discov. Data|[TKDD](https://dl.acm.org/loi/tkdd)|2007-|False|B|3|Q1|4.0||
 |16|[ACM](https://www.acm.org/)|[ACM Transactions on Management Information Systems](https://dl.acm.org/journal/tmis)|ACM Trans. Manag. Inf. Sys.|[TMIS](https://dl.acm.org/loi/tmis)|2010-|False||4||2.5||
-|17|[ACM](https://www.acm.org/)|[ACM Transactions on Computer Systems](https://dl.acm.org/journal/tocs)|ACM Trans. Comput. Syst.|[TOCS](https://dl.acm.org/loi/tocs)|1994-|False|A|4|Q2|2.0||
-|18|[ACM](https://www.acm.org/)|[ACM Transactions on Design Automation of Electronic Systems](https://dl.acm.org/journal/todaes)|ACM Trans. Des. Autom. Electron. Syst.|[TODAES](https://dl.acm.org/loi/todaes)|1996-|False|B|4|Q2|2.2||
-|19|[ACM](https://www.acm.org/)|[ACM Transactions on Graphics](https://dl.acm.org/journal/tog)|ACM Trans. Graph.|[TOG](https://dl.acm.org/loi/tog)|1982-|True|A|1|Q1|7.8||
-|20|[ACM](https://www.acm.org/)|[ACM Transactions on Mathematical Software](https://dl.acm.org/journal/toms)|ACM Trans. Math. Softw.|[TOMS](https://dl.acm.org/loi/toms)|1975-|False|B|2|Q1|2.7||
-|21|[ACM](https://www.acm.org/)|[ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)|ACM Trans. Softw. Eng. Methodol.|[TOSEM](https://dl.acm.org/loi/tosem)|1992-|True|A|1|Q1|6.6||
-|22|[ACM](https://www.acm.org/)|[ACM Transactions on Speech and Language Processing](https://dl.acm.org/journal/tslp)|ACM Trans. Speech Lang. Process.|[TSLP](https://dl.acm.org/loi/tslp)|2004-|False|B|||||
+|17|[ACM](https://www.acm.org/)|[ACM Transactions on Computer Systems](https://dl.acm.org/journal/tocs)|[ACM Trans. Comput. Syst.](https://dl.acm.org/journal/tocs/about)|[TOCS](https://dl.acm.org/loi/tocs)|1994-|False|A|4|Q2|2.0|Computer Systems|
+|18|[ACM](https://www.acm.org/)|[ACM Transactions on Design Automation of Electronic Systems](https://dl.acm.org/journal/todaes)|[ACM Trans. Des. Autom. Electron. Syst.](https://dl.acm.org/journal/todaes/about)|[TODAES](https://dl.acm.org/loi/todaes)|1996-|False|B|4|Q2|2.2|Electronic Systems|
+|19|[ACM](https://www.acm.org/)|[ACM Transactions on Graphics](https://dl.acm.org/journal/tog)|[ACM Trans. Graph.](https://dl.acm.org/journal/tog/about)|[TOG](https://dl.acm.org/loi/tog)|1982-|True|A|1|Q1|7.8|Graphics|
+|20|[ACM](https://www.acm.org/)|[ACM Transactions on Mathematical Software](https://dl.acm.org/journal/toms)|[ACM Trans. Math. Softw.](https://dl.acm.org/journal/toms/about)|[TOMS](https://dl.acm.org/loi/toms)|1975-|False|B|2|Q1|2.7|Software|
+|21|[ACM](https://www.acm.org/)|[ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)|[ACM Trans. Softw. Eng. Methodol.](https://dl.acm.org/journal/tosem/about)|[TOSEM](https://dl.acm.org/loi/tosem)|1992-|True|A|1|Q1|6.6|Software|
+|22|[ACM](https://www.acm.org/)|[ACM Transactions on Speech and Language Processing](https://dl.acm.org/journal/tslp)|[ACM Trans. Speech Lang. Process.](https://dl.acm.org/journal/tslp/about)|[TSLP](https://dl.acm.org/loi/tslp)|2004-|False|B||||NLP|
 |23|[ACS](https://www.acs.org/)|[Journal of the American Chemical Society](https://pubs.acs.org/journal/jacsat)|[J. Am. Chem. Soc.](https://pubs.acs.org/page/jacsat/about.html)|[JACS](https://pubs.acs.org/loi/jacsat)|1879-|True||1|Q1|14.4|Chemistry|
 |24|[AIAA](https://www.aiaa.org/)|[AIAA Journal](https://arc.aiaa.org/journal/aiaaj)|[AIAA J.](https://arc.aiaa.org/aiaaj/about)|[AIAAJ](https://arc.aiaa.org/loi/aiaaj)|1963-|False||3|Q2|2.1|Aeronautics and Astronautics|
 |25|[AIAA](https://www.aiaa.org/)|[Journal of Guidance, Control, and Dynamics](https://arc.aiaa.org/journal/jgcd)|[J. Guid. Contr. Dyn.](https://arc.aiaa.org/jgcd/about)|[JGCD](https://arc.aiaa.org/loi/jgcd)|1978-|False||3|Q1|2.3|Aeronautics and Astronautics|

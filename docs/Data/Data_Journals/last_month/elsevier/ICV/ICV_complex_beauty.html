@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ICV_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="icv---19">ICV - 19</h2>
+<ul>
+<li><details>
+<summary>
+(2025). MUNet: A lightweight mamba-based under-display camera
+restoration network. <em>ICV</em>, <em>156</em>, 105486. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105486">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Under-Display Camera (UDC) restoration aims to recover the underlying clean images from the degraded images captured by UDC. Although promising results have been achieved, most existing UDC restoration methods still suffer from two vital obstacles in practice: (i) existing UDC restoration models are parameter-intensive, and (ii) most of them struggle to capture long-range dependencies within high-resolution images. To overcome above drawbacks, we study a challenging problem in UDC restoration, namely, how to design a lightweight UDC restoration model that could capture long-range image dependencies. To this end, we propose a novel lightweight Mamba-based UDC restoration network (MUNet) consisting of two modules, named Separate Multi-scale Mamba (SMM) and Separate Convolutional Feature Extractor (SCFE). Specifically, SMM exploits our proposed alternate scanning strategy to efficiently capture long-range dependencies across multi-scale image features. SCFE preserves local dependencies through convolutions with various receptive fields. Thanks to SMM and SCFE, MUNet achieves state-of-the-art lightweight UDC restoration performance with significantly fewer parameters, making it well-suited for deployment on mobile devices. Our codes will be available after acceptance.},
+  archive      = {J_ICV},
+  author       = {Wenxin Wang and Boyun Li and Wanli Liu and Xi Peng and Yuanbiao Gou},
+  doi          = {10.1016/j.imavis.2025.105486},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105486},
+  shortjournal = {Image Vis. Comput.},
+  title        = {MUNet: A lightweight mamba-based under-display camera restoration network},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dense small target detection algorithm for UAV aerial
+imagery. <em>ICV</em>, <em>156</em>, 105485. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105485">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unmanned aerial vehicle (UAV) aerial images make dense small target detection challenging due to the complex background, small object size in the wide field of view, low resolution, and dense target distribution. Many aerial target detection networks and attention-based methods have been proposed to enhance the capability of dense small target detection, but there are still problems, such as insufficient effective information extraction, missed detection, and false detection of small targets in dense areas. Therefore, this paper proposes a novel dense small target detection algorithm (DSTDA) for UAV aerial images suitable for various high-altitude complex environments. The core component of the proposed DSTDA consists of the multi-axis attention units, the adaptive feature transformation mechanism, and the target-guided sample allocation strategy. Firstly, by introducing the multi-axis attention units into DSTDA, the limitation of DSTDA on global information perception can be addressed. Thus, the detailed features and spatial relationships of small targets at long distances can be sufficiently extracted by our proposed algorithm. Secondly, an adaptive feature transformation mechanism is designed to flexibly adjust the feature map according to the characteristics of the target distribution, which enables the DSTDA to focus more on densely populated target areas. Lastly, a goal-oriented sample allocation strategy is presented, combining coarse screening based on positional information and fine screening guided by target prediction information. By employing this dynamic sample allocation from coarse to fine, the detection performance of small and dense targets in complex backgrounds is further improved. These above innovative improvements empower the DSTDA with enhanced global perception and target-focusing capabilities, effectively addressing the challenges of detecting dense small targets in complex aerial scenes. Experimental validation was conducted on three publicly available datasets: VisDrone, SIMD, and CARPK. The results showed that the proposed DSTDA outperforms other state-of-the-art algorithms in terms of comprehensive performance. The algorithm significantly improves the issues of false alarms and missed detection in drone-based target detection, showcasing remarkable accuracy and real-time performance. It proves to be proficient in the task of detecting dense small targets in drone scenarios.},
+  archive      = {J_ICV},
+  author       = {Sheng Lu and Yangming Guo and Jiang Long and Zun Liu and Zhuqing Wang and Ying Li},
+  doi          = {10.1016/j.imavis.2025.105485},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105485},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Dense small target detection algorithm for UAV aerial imagery},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time localization and navigation method for autonomous
+vehicles based on multi-modal data fusion by integrating memory
+transformer and DDQN. <em>ICV</em>, <em>156</em>, 105484. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105484">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of autonomous driving, real-time localization and navigation are the core technologies that ensure vehicle safety and precise operation. With advancements in sensor technology and computing power, multi-modal data fusion has become a key method for enhancing the environmental perception capabilities of autonomous vehicles. This study aims to explore a novel visual-language navigation technology to achieve precise navigation of autonomous cars in complex environments. By integrating information from radar, sonar, 5G networks, Wi-Fi, Bluetooth, and a 360-degree visual information collection device mounted on the vehicle&#39;s roof, the model fully exploits rich multi-source data. The model uses the Memory Transformer for efficient data encoding and a data fusion strategy with a self-attention network, ensuring a balance between feature integrity and algorithm real-time performance. Furthermore, the encoded data is input into a DDQN vehicle navigation algorithm based on an automatically growing environmental target knowledge graph and large-scale scene maps, enabling continuous learning and optimization in real-world environments. Comparative experiments show that the proposed model outperforms existing SOTA models, particularly in terms of macro-spatial reference from large-scale scene maps, background knowledge support from the automatically growing knowledge graph, and the experience-optimized navigation strategies of the DDQN algorithm. In the comparative experiments with the SOTA models, the proposed model achieved scores of 3.99, 0.65, 0.67, 0.65, 0.63, and 0.63 on the six metrics NE, SR, OSR, SPL, CLS, and DTW, respectively. All of these results significantly enhance the intelligent positioning and navigation capabilities of autonomous driving vehicles.},
+  archive      = {J_ICV},
+  author       = {Li Zha and Chen Gong and Kunfeng Lv},
+  doi          = {10.1016/j.imavis.2025.105484},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105484},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Real-time localization and navigation method for autonomous vehicles based on multi-modal data fusion by integrating memory transformer and DDQN},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A spatial-frequency domain multi-branch decoder method for
+real-time semantic segmentation. <em>ICV</em>, <em>156</em>, 105483. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105483">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic segmentation is crucial for the functionality of autonomous driving systems. However, most of the existing real-time semantic segmentation models focus on encoder design and underutilize spatial and frequency domain information in the decoder, limiting the segmentation accuracy of the model. To solve this problem, this paper proposes a multi-branch decoder network combining spatial domain and frequency domain to meet the real-time and accuracy requirements of the semantic segmentation task of road scenes for autonomous driving systems. Firstly, the network introduces a novel multi-scale dilated fusion block that gradually enlarges the receptive field through three consecutive dilated convolutions, and integrates features from different levels using skip connections. At the same time, a strategy of gradually reducing the number of channels is adopted to effectively remove redundant features. Secondly, we design three branches for the decoder. The global branch utilizes a lightweight Transformer architecture to extract global features and employs horizontal and vertical convolutions to achieve interaction among global features. The multi-scale branch combines dilated convolution and adaptive pooling to perform multi-scale feature extraction through fusion and post-processing. The wavelet transform feature converter maps spatial domain features into low-frequency and high-frequency components, which are then fused with global and multi-scale features to enhance the model representation. Finally, we conduct experiments on multiple datasets. The experimental results show that the proposed method best balances segmentation accuracy and inference speed.},
+  archive      = {J_ICV},
+  author       = {Liwei Deng and Boda Wu and Songyu Chen and Dongxue Li and Yanze Fang},
+  doi          = {10.1016/j.imavis.2025.105483},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105483},
+  shortjournal = {Image Vis. Comput.},
+  title        = {A spatial-frequency domain multi-branch decoder method for real-time semantic segmentation},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CMS-net: Edge-aware multimodal MRI feature fusion for brain
+tumor segmentation. <em>ICV</em>, <em>156</em>, 105481. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105481">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the growing application of artificial intelligence in medical image processing, multimodal MRI brain tumor segmentation has become crucial for clinical diagnosis and treatment. Accurate segmentation relies heavily on the effective utilization of multimodal information. However, most existing methods primarily focus on global and local deep semantic features, often overlooking critical aspects such as edge information and cross-channel correlations. To address these limitations while retaining the strengths of existing methods, we propose a novel brain tumor segmentation approach: an edge-aware feature fusion model based on a dual-encoder architecture. CMS-Net is a novel brain tumor segmentation model that integrates edge-aware fusion, cross-channel interaction, and spatial state feature extraction to fully leverage multimodal information for improved segmentation accuracy. The architecture comprises two main components: an encoder and a decoder. The encoder utilizes both convolutional downsampling and Smart Swin Transformer downsampling, with the latter employing Shifted Spatial Multi-Head Self-Attention (SSW-MSA) to capture global features and enhance long-range dependencies. The decoder reconstructs the image via the CMS-Block, which consists of three key modules: the Multi-Scale Deep Convolutional Cross-Channel Attention module (MDTA), the Spatial State Module (SSM), and the Boundary-Aware Feature Fusion module (SWA). CMS-Net&#39;s dual-encoder architecture allows for deep extraction of both local and global features, enhancing segmentation performance. MDTA generates attention maps through cross-channel covariance, while SSM models spatial context to improve the understanding of complex structures. The SWA module, combining SSW-MSA with pooling, subtraction, and convolution, facilitates feature fusion and edge extraction. Dice and Focal loss functions were introduced to optimize cross-channel and spatial feature extraction. Experimental results on the BraTS2018, BraTS2019, and BraTS2020 datasets demonstrate that CMS-Net effectively integrates spatial state, cross-channel, and boundary information, significantly improving multimodal brain tumor segmentation accuracy.},
+  archive      = {J_ICV},
+  author       = {Chunjie Lv and Biyuan Li and Xiuwei Wang and Pengfei Cai and Bo Yang and Xuefeng Jia and Jun Yan},
+  doi          = {10.1016/j.imavis.2025.105481},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105481},
+  shortjournal = {Image Vis. Comput.},
+  title        = {CMS-net: Edge-aware multimodal MRI feature fusion for brain tumor segmentation},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spatial cascaded clustering and weighted memory for
+unsupervised person re-identification. <em>ICV</em>, <em>156</em>,
+105478. (<a href="https://doi.org/10.1016/j.imavis.2025.105478">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in unsupervised person re-identification (re-ID) methods have demonstrated high performance by leveraging fine-grained local context, often referred to as part-based methods. However, many existing part-based methods rely on horizontal division to obtain local contexts, leading to misalignment issues caused by various human poses. Moreover, misalignment of semantic information within part features hampers the effectiveness of metric learning, thereby limiting the potential of part-based methods. These challenges result in under-utilization of part features in existing approaches. To address these issues, we introduce the Spatial Cascaded Clustering and Weighted Memory (SCWM) method. SCWM aims to parse and align more accurate local contexts for different human body parts while allowing the memory module to balance hard example mining and noise suppression. Specifically, we first analyze the issues of foreground omissions and spatial confusions in previous methods. We then propose foreground and space corrections to enhance the completeness and reasonableness of human parsing results. Next, we introduce a weighted memory and utilize two weighting strategies. These strategies address hard sample mining for global features and enhance noise resistance for part features, enabling better utilization of both global and part features. Extensive experiments conducted on Market-1501, DukeMTMC-reID and MSMT17 datasets validate the effectiveness of the proposed method over numerous state-of-the-art methods.},
+  archive      = {J_ICV},
+  author       = {Jiahao Hong and Jialong Zuo and Chuchu Han and Ruochen Zheng and Ming Tian and Changxin Gao and Nong Sang},
+  doi          = {10.1016/j.imavis.2025.105478},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105478},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Spatial cascaded clustering and weighted memory for unsupervised person re-identification},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-information guided camouflaged object detection.
+<em>ICV</em>, <em>156</em>, 105470. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105470">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Camouflaged Object Detection (COD) aims to identify the objects hidden in the background environment. Though more and more COD methods have been proposed in recent years, existing methods still perform poorly for detecting small objects, obscured objects, boundary-rich objects, and multi-objects, mainly because they fail to effectively utilize context information, texture information, and boundary information simultaneously. Therefore, in this paper, we propose a Multi-information Guided Camouflaged Object Detection Network (MIGNet) to fully utilize multi-information containing context information, texture information, and boundary information to boost the performance of camouflaged object detection. Specifically, firstly, we design the texture and boundary label and the Texture and Boundary Enhanced Module (TBEM) to obtain differentiated texture information and boundary information. Next, the Neighbor Context Information Exploration Module (NCIEM) is designed to obtain rich multi-scale context information. Then, the Parallel Group Bootstrap Module (PGBM) is designed to maximize the effective aggregation of context information, texture information and boundary information. Finally, Information Enhanced Decoder (IED) is designed to effectively enhance the interaction of neighboring layer features and suppress the background noise for good detection results. Extensive quantitative and qualitative experiments are conducted on four widely used datasets. The experimental results indicate that our proposed MIGNet with good performance of camouflaged object detection outperforms the other 22 COD models.},
+  archive      = {J_ICV},
+  author       = {Caijuan Shi and Lin Zhao and Rui Wang and Kun Zhang and Fanyue Kong and Changyu Duan},
+  doi          = {10.1016/j.imavis.2025.105470},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105470},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Multi-information guided camouflaged object detection},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SFFEF-YOLO: Small object detection network based on
+fine-grained feature extraction and fusion for unmanned aerial images.
+<em>ICV</em>, <em>156</em>, 105469. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105469">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unmanned aerial vehicles (UAVs) images object detection has emerged as a research hotspot, yet remains a significant challenge due to variable target scales and the high proportion of small objects caused by UAVs’ diverse altitudes and angles. To address these issues, we propose a novel Small Object Detection Network Based on Fine-Grained Feature Extraction and Fusion(SFFEF-YOLO). First, we introduce a tiny prediction head to replace the large prediction head, enhancing the detection accuracy for tiny objects while reducing model complexity. Second, we design a Fine-Grained Information Extraction Module (FIEM) to replace standard convolutions. This module improves feature extraction and reduces information loss during downsampling by utilizing multi-branch operations and SPD-Conv. Third, we develop a Multi-Scale Feature Fusion Module (MFFM), which adds an additional skip connection branch based on the bidirectional feature pyramid network (BiFPN) to preserve fine-grained information and improve multi-scale feature fusion. We evaluated SFFEF-YOLO on the VisDrone2019-DET and UAVDT datasets. Compared to YOLOv8, experimental results demonstrate that SFFEF-YOLO achieves a 9.9% mAP0.5 improvement on the VisDrone2019-DET dataset and a 3.6% mAP0.5 improvement on the UAVDT dataset.},
+  archive      = {J_ICV},
+  author       = {Chenxi Bai and Kexin Zhang and Haozhe Jin and Peng Qian and Rui Zhai and Ke Lu},
+  doi          = {10.1016/j.imavis.2025.105469},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105469},
+  shortjournal = {Image Vis. Comput.},
+  title        = {SFFEF-YOLO: Small object detection network based on fine-grained feature extraction and fusion for unmanned aerial images},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Joint transformer and mamba fusion for multispectral object
+detection. <em>ICV</em>, <em>156</em>, 105468. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105468">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multispectral object detection is generally considered better than single-modality-based object detection, due to the complementary properties of multispectral image pairs. However, how to integrate features from images of different modalities for object detection is still an open problem. In this paper, we propose a new multispectral object detection framework based on the Transformer and Mamba architectures, called the joint Transformer and Mamba detection (JTMDet). Specifically, we divide the feature fusion process into two stages, the intra-scale fusion stage and the inter-scale fusion stage, to comprehensively utilize the multi-modal features at different scales. To this end, we designed the so-called cross-modal fusion (CMF) and cross-level fusion (CLF) modules, both of which contain JTMBlock modules. A JTMBlock module interweaves the Transformer and Mamba layers to robustly capture the useful information in multispectral image pairs while maintaining high inference speed. Extensive experiments on three publicly available datasets conclusively show that the proposed JTMDet framework achieves state-of-the-art multispectral object detection performance, and is competitive with current leading methods. Code and pre-trained models are publicly available at https://github.com/LiC2023/JTMDet .},
+  archive      = {J_ICV},
+  author       = {Chao Li and Xiaoming Peng},
+  doi          = {10.1016/j.imavis.2025.105468},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105468},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Joint transformer and mamba fusion for multispectral object detection},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AF2CN: Towards effective demoiréing from multi-resolution
+images. <em>ICV</em>, <em>156</em>, 105467. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105467">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, CNN-based methods have gained significant attention for addressing the demoiré task due to their powerful feature extraction capabilities. However, these methods are generally trained on datasets with fixed resolutions, limiting their applicability to diverse real-world scenarios. To address this limitation, we introduce a more generalized task: effective demoiréing across multiple resolutions. To facilitate this task, we constructed MTADM, the first multi-resolution moiré dataset, designed to capture diverse real-world scenarios. Leveraging this dataset, we conducted extensive studies and introduced the Adaptive Fractional Calculus and Adjacency Fusion Convolution Network (AF2CN). Specifically, we employ fractional derivatives to develop an adaptive frequency enhancement module, which refines spatial distribution and texture details in moiré patterns. Additionally, we design a spatial attention gate to enhance deep feature interaction. Extensive experiments demonstrate that AF2CN effectively handles multi-resolution moiré patterns. It significantly outperforms previous state-of-the-art methods on fixed-resolution benchmarks while requiring fewer parameters and achieving lower computational costs.},
+  archive      = {J_ICV},
+  author       = {Shitan Asu and Yujin Dai and Shijie Li and Zheng Li},
+  doi          = {10.1016/j.imavis.2025.105467},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105467},
+  shortjournal = {Image Vis. Comput.},
+  title        = {AF2CN: Towards effective demoiréing from multi-resolution images},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Innovative underwater image enhancement algorithm: Combined
+application of adaptive white balance color compensation and pyramid
+image fusion to submarine algal microscopy. <em>ICV</em>, <em>156</em>,
+105466. (<a href="https://doi.org/10.1016/j.imavis.2025.105466">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time collected microscopic images of harmful algal blooms (HABs) in coastal areas often suffer from significant color deviations and loss of fine cellular details. To address these issues, this paper proposes an innovative method for enhancing underwater marine algal microscopic images based on Adaptive White Balance Color Compensation (AWBCC) and Image Pyramid Fusion (IPF). Firstly, an effective Algorithm Adaptive Cyclic Channel Compensation (ACCC) is proposed based on the gray world assumption to enhance the color of underwater images. Then, the Maximum Color Channel Attention Guidance (MCCAG) method is employed to reduce color disturbance caused by ignoring light absorption. This paper introduces an Empirical Contrast Enhancement (ECH) module based on multi-scale IPF tailored for underwater microscopic images of algae, which is used for global contrast enhancement, texture detail enhancement, and noise control. Secondly, this paper proposes a network based on a diffusion probability model for edge detection in HABs, which simultaneously considers both high-order and low-order features extracted from images. This approach enriches the semantic information of the feature maps and enhances edge detection accuracy. This edge detection method achieves an ODS of 0.623 and an OIS of 0.683. Experimental evaluations demonstrate that our underwater algae microscopic image enhancement method amplifies local texture features while preserving the original image structure. This significantly improves the accuracy of edge detection and key point matching. Compared to several state-of-the-art underwater image enhancement methods, our approach achieves the highest values in contrast, average gradient, entropy, and Enhancement Measure Estimation (EME), and also delivers competitive results in terms of image noise control. .},
+  archive      = {J_ICV},
+  author       = {Yi-Ning Fan and Geng-Kun Wu and Jia-Zheng Han and Bei-Ping Zhang and Jie Xu},
+  doi          = {10.1016/j.imavis.2025.105466},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105466},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Innovative underwater image enhancement algorithm: Combined application of adaptive white balance color compensation and pyramid image fusion to submarine algal microscopy},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Feature field fusion for few-shot novel view synthesis.
+<em>ICV</em>, <em>156</em>, 105465. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105465">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reconstructing neural radiance fields from limited or sparse views has given very promising potential for this field of research. Previous methods usually constrain the reconstruction process with additional priors, e.g. semantic-based or patch-based regularization. Nevertheless, such regularization is given to the synthesis of unseen views, which may not effectively assist the field of learning, in particular when the training views are sparse. Instead, we propose a feature Field Fusion (FFusion) NeRF in this paper that can learn structure and more details from features extracted from pre-trained neural networks for the sparse training views, and use as extra guide for the training of the RGB field. With such extra feature guides, FFusion predicts more accurate color and density when synthesizing novel views. Experimental results have shown that FFusion can effectively improve the quality of the synthesized novel views with only limited or sparse inputs.},
+  archive      = {J_ICV},
+  author       = {Junting Li and Yanghong Zhou and Jintu Fan and Dahua Shou and Sa Xu and P.Y. Mok},
+  doi          = {10.1016/j.imavis.2025.105465},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105465},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Feature field fusion for few-shot novel view synthesis},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Gait recognition via view-aware part-wise attention and
+multi-scale dilated temporal extractor. <em>ICV</em>, <em>156</em>,
+105464. (<a href="https://doi.org/10.1016/j.imavis.2025.105464">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gait recognition based on silhouette sequences has made significant strides in recent years through the extraction of body shape and motion features. However, challenges remain in achieving accurate gait recognition under covariate changes, such as variations in view and clothing. To tackle these issues, this paper introduces a novel methodology incorporating a View-aware Part-wise Attention (VPA) mechanism and a Multi-scale Dilated Temporal Extractor (MDTE) to enhance gait recognition. Distinct from existing techniques, VPA mechanism acknowledges the differential sensitivity of various body parts to view changes, applying targeted attention weights at the feature level to improve the efficacy of view-aware constraints in areas of higher saliency or distinctiveness. Concurrently, MDTE employs dilated convolutions across multiple scales to capture the temporal dynamics of gait at diverse levels, thereby refining the motion representation. Comprehensive experiments on the CASIA-B, OU-MVLP, and Gait3D datasets validate the superior performance of our approach. Remarkably, our method achieves a 91.0% accuracy rate under clothing-change conditions on the CASIA-B dataset using solely silhouette information, surpassing the current state-of-the-art (SOTA) techniques. These results underscore the effectiveness and adaptability of our proposed strategy in overcoming the complexities of gait recognition amidst covariate changes.},
+  archive      = {J_ICV},
+  author       = {Xu Song and Yang Wang and Yan Huang and Caifeng Shan},
+  doi          = {10.1016/j.imavis.2025.105464},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105464},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Gait recognition via view-aware part-wise attention and multi-scale dilated temporal extractor},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep learning for brain tumor segmentation in multimodal MRI
+images: A review of methods and advances. <em>ICV</em>, <em>156</em>,
+105463. (<a href="https://doi.org/10.1016/j.imavis.2025.105463">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background and Objectives: Image segmentation is crucial in applications like image understanding, feature extraction, and analysis. The rapid development of deep learning techniques in recent years has significantly enhanced the field of medical image processing, with the process of segmenting tumor from MRI images of the brain emerging as a particularly active area of interest within the medical science community. Existing reviews predominantly focus on traditional CNNs and Transformer models but lack systematic analysis and experimental validation on the application of the emerging Mamba architecture in multimodal brain tumor segmentation, the handling of missing modalities, the potential of multimodal fusion strategies, and the heterogeneity of datasets. Methods: This paper provides a comprehensive literature review of recent deep learning-based methods for multimodal brain tumor segmentation using multimodal MRI images, including performance and quantitative analysis of state-of-the-art approaches. It focuses on the handling of multimodal fusion, adaptation techniques, and missing modality, while also delving into the performance, advantages, and disadvantages of deep learning models such as U-Net, Transformer, hybrid deep learning, and Mamba-based methods in segmentation tasks. Results: Through the entire review process, It is found that most researchers preferred to use the Transformer-based U-Net model and mamba-based U-Net, especially the fusion model combination of U-Net and mamba, for image segmentation.},
+  archive      = {J_ICV},
+  author       = {Bin Jiang and Maoyu Liao and Yun Zhao and Gen Li and Siyu Cheng and Xiangkai Wang and Qingling Xia},
+  doi          = {10.1016/j.imavis.2025.105463},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105463},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Deep learning for brain tumor segmentation in multimodal MRI images: A review of methods and advances},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multispectral images reconstruction using median filtering
+based spectral correlation. <em>ICV</em>, <em>156</em>, 105462. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105462">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multispectral images are widely utilized in various computer vision applications because they capture more information than traditional color images. Multispectral imaging systems utilize a multispectral filter array (MFA), an extension of the color filter array found in standard RGB cameras. This approach provides an efficient, cost-effective, and practical method for capturing multispectral images. The primary challenge with multispectral imaging systems using an MFA is the significant undersampling of spectral bands in the mosaicked image. This occurs because a multispectral mosaic image contains a greater number of spectral bands compared to an RGB mosaicked image, leading to reduced sampling density per band. Now, multispectral demosaicing algorithm is required to generate the complete multispectral image from the mosaicked image. The effectiveness of demosaicing algorithms relies heavily on the efficient utilization of spatial and spectral correlations inherent in mosaicked images. In the proposed method, a binary tree-based MFA pattern is employed to capture the mosaicked image. Rather than directly leveraging spectral correlations between bands, median filtering is applied to the spectral differences to mitigate the impact of noise on these correlations. Experimental results demonstrate that the proposed method achieves an improvement of 1.03 dB and 0.92 dB on average from 5-band to 10-band multispectral images from the widely used TokyoTech and CAVE datasets, respectively.},
+  archive      = {J_ICV},
+  author       = {Vishwas Rathi and Abhilasha Sharma and Amit Kumar Singh},
+  doi          = {10.1016/j.imavis.2025.105462},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105462},
+  shortjournal = {Image Vis. Comput.},
+  title        = {Multispectral images reconstruction using median filtering based spectral correlation},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NPVForensics: Learning VA correlations in non-critical
+phoneme–viseme regions for deepfake detection. <em>ICV</em>,
+<em>156</em>, 105461. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105461">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advanced deepfake technology enables the manipulation of visual and audio signals within videos, leading to visual–audio (VA) inconsistencies. Current multimodal detectors primarily rely on VA contrastive learning to identify such inconsistencies, particularly in critical phoneme–viseme (PV) regions. However, state-of-the-art deepfake techniques have aligned critical PV pairs, thereby reducing the inconsistency traces on which existing methods rely. Due to technical constraints, forgers cannot fully synchronize VA in non-critical phoneme–viseme (NPV) regions. Consequently, we exploit inconsistencies in NPV regions as a general cue for deepfake detection. We propose NPVForensics, a two-stage VA correlation learning framework specifically designed to detect VA inconsistencies in NPV regions of deepfake videos. Firstly, to better extract VA unimodal features, we utilize the Swin Transformer to capture long-term global dependencies. Additionally, the Local Feature Aggregation (LFA) module aggregates local features from spatial and channel dimensions, thus preserving more comprehensive and subtle information. Secondly, the VA Correlation Learning (VACL) module enhances intra-modal augmentation and inter-modal information interaction, exploring intrinsic correlations between the two modalities. Moreover, Representation Alignment is introduced for real videos to narrow the modal gap and effectively extract VA correlations. Finally, our model is pre-trained on real videos using a self-supervised strategy and fine-tuned for the deepfake detection task. We conducted extensive experiments on six widely used deepfake datasets: FaceForensics++, FakeAVCeleb, Celeb-DF-v2, DFDC, FaceShifter, and DeeperForensics-1.0. Our method achieves state-of-the-art performance in cross-manipulation generalization and robustness. Notably, our approach demonstrates superior performance on VA-coordinated datasets such as A2V, T2V-L, and T2V-S. It indicates that VA inconsistencies in NPV regions serve as a general cue for deepfake detection.},
+  archive      = {J_ICV},
+  author       = {Yu Chen and Yang Yu and Rongrong Ni and Haoliang Li and Wei Wang and Yao Zhao},
+  doi          = {10.1016/j.imavis.2025.105461},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105461},
+  shortjournal = {Image Vis. Comput.},
+  title        = {NPVForensics: Learning VA correlations in non-critical phoneme–viseme regions for deepfake detection},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FRoundation: Are foundation models ready for face
+recognition? <em>ICV</em>, <em>156</em>, 105453. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105453">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Foundation models are predominantly trained in an unsupervised or self-supervised manner on highly diverse and large-scale datasets, making them broadly applicable to various downstream tasks. In this work, we investigate for the first time whether such models are suitable for the specific domain of face recognition (FR). We further propose and demonstrate the adaptation of these models for FR across different levels of data availability, including synthetic data. Extensive experiments are conducted on multiple foundation models and datasets of varying scales for training and fine-tuning, with evaluation on a wide range of benchmarks. Our results indicate that, despite their versatility, pre-trained foundation models tend to underperform in FR in comparison with similar architectures trained specifically for this task. However, fine-tuning foundation models yields promising results, often surpassing models trained from scratch, particularly when training data is limited. For example, after fine-tuning only on 1K identities, DINOv2 ViT-S achieved average verification accuracy on LFW, CALFW, CPLFW, CFP-FP, and AgeDB30 benchmarks of 87.10%, compared to 64.70% achieved by the same model and without fine-tuning. While training the same model architecture, ViT-S, from scratch on 1k identities reached 69.96%. With access to larger-scale FR training datasets, these performances reach 96.03% and 95.59% for the DINOv2 and CLIP ViT-L models, respectively. In comparison to the ViT-based architectures trained from scratch for FR, fine-tuned same architectures of foundation models achieve similar performance while requiring lower training computational costs and not relying on the assumption of extensive data availability. We further demonstrated the use of synthetic face data, showing improved performances over both pre-trained foundation and ViT models. Additionally, we examine demographic biases, noting slightly higher biases in certain settings when using foundation models compared to models trained from scratch. We release our code and pre-trained models’ weights at github.com/TaharChettaoui/FRoundation .},
+  archive      = {J_ICV},
+  author       = {Tahar Chettaoui and Naser Damer and Fadi Boutros},
+  doi          = {10.1016/j.imavis.2025.105453},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105453},
+  shortjournal = {Image Vis. Comput.},
+  title        = {FRoundation: Are foundation models ready for face recognition?},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PolarDETR: Polar parametrization for vision-based
+surround-view 3D detection. <em>ICV</em>, <em>156</em>, 105438. (<a
+href="https://doi.org/10.1016/j.imavis.2025.105438">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D detection based on surround-view camera system is a critical and promising technique in autopilot. In this work, we exploit the view symmetry of surround-view camera system as inductive bias to improve optimization and boost performance. We parameterize object’s position by polar coordinate and decompose velocity along radial and tangential direction. And the perception range, label assignment and loss function are correspondingly reformulated in polar coordinate system. This new Polar Parametrization scheme establishes explicit associations between image patterns and prediction targets. Based on it, we propose a surround-view 3D detection method, termed PolarDETR. PolarDETR achieves competitive performance on nuScenes dataset. Thorough ablation studies are provided to validate the effectiveness.},
+  archive      = {J_ICV},
+  author       = {Shaoyu Chen and Xinggang Wang and Tianheng Cheng and Qian Zhang and Chang Huang and Wenyu Liu},
+  doi          = {10.1016/j.imavis.2025.105438},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105438},
+  shortjournal = {Image Vis. Comput.},
+  title        = {PolarDETR: Polar parametrization for vision-based surround-view 3D detection},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DAN: Distortion-aware network for fisheye image
+rectification using graph reasoning. <em>ICV</em>, <em>156</em>, 105423.
+(<a href="https://doi.org/10.1016/j.imavis.2025.105423">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite the wide-field view of fisheye images, their application is still hindered by the presentation of distortions. Existing learning-based methods still suffer from artifacts and loss of details, especially at the image edges. To address this, we introduce the Distortion-aware Network (DAN), a novel deep network architecture for fisheye image rectification that leverages graph reasoning. Specifically, we employ the superior relational understanding capability of graph technology to associate distortion patterns in different regions, generating an accurate and globally consistent unwarping flow. Meanwhile, during the image reconstruction process, we utilize deformable convolution to construct same-resolution feature blocks and employ skip connections to supplement the detailed information. Additionally, we introduce a weight decay-based multi-scale loss function, enabling the model to focus more on accuracy at high-resolution layers while enhancing the model’s generalization ability. To address the lack of quantitative evaluation standards for real fisheye images, we propose a new metric called the “Line Preservation Metric.” Through qualitative and quantitative experiments on PLACE365, COCO2017 and real fisheye images, the proposed method proves to outperform existing methods in terms of performance and generalization.},
+  archive      = {J_ICV},
+  author       = {Yongjia Yan and Hongzhe Liu and Cheng Zhang and Cheng Xu and Bingxin Xu and Weiguo Pan and Songyin Dai and Yiqing Song},
+  doi          = {10.1016/j.imavis.2025.105423},
+  journal      = {Image and Vision Computing},
+  month        = {4},
+  pages        = {105423},
+  shortjournal = {Image Vis. Comput.},
+  title        = {DAN: Distortion-aware network for fisheye image rectification using graph reasoning},
+  volume       = {156},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

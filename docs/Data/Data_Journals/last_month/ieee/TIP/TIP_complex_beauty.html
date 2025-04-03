@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TIP_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tip---6">TIP - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). ESOD: Efficient small object detection on high-resolution
+images. <em>TIP</em>, <em>34</em>, 183–195. (<a
+href="https://doi.org/10.1109/TIP.2024.3501853">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Enlarging input images is a straightforward and effective approach to promote small object detection. However, simple image enlargement is significantly expensive on both computations and GPU memory. In fact, small objects are usually sparsely distributed and locally clustered. Therefore, massive feature extraction computations are wasted on the non-target background area of images. Recent works have tried to pick out target-containing regions using an extra network and perform conventional object detection, but the newly introduced computation limits their final performance. In this paper, we propose to reuse the detector’s backbone to conduct feature-level object-seeking and patch-slicing, which can avoid redundant feature extraction and reduce the computation cost. Incorporating with a sparse detection head, we are able to detect small objects on high-resolution inputs (e.g., 1080P or larger) for superior performance. The resulting Efficient Small Object Detection (ESOD) approach is a generic framework, which can be applied to both CNN- and ViT-based detectors to save the computation and GPU memory costs. Extensive experiments demonstrate the efficacy and efficiency of our method. In particular, our method consistently surpasses the SOTA detectors by a large margin (e.g., 8% gains on AP) on the representative VisDrone, UAVDT, and TinyPerson datasets. Code will be made public soon.},
+  archive      = {J_TIP},
+  author       = {Kai Liu and Zhihang Fu and Sheng Jin and Ze Chen and Fan Zhou and Rongxin Jiang and Yaowu Chen and Jieping Ye},
+  doi          = {10.1109/TIP.2024.3501853},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {11},
+  pages        = {183-195},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {ESOD: Efficient small object detection on high-resolution images},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HAda: Hyper-adaptive parameter-efficient learning for
+multi-view ConvNets. <em>TIP</em>, <em>34</em>, 85–99. (<a
+href="https://doi.org/10.1109/TIP.2024.3504252">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent years have witnessed a great success of multi-view learning empowered by deep ConvNets, leveraging a large number of network parameters. Nevertheless, there is an ongoing consideration regarding the essentiality of all these parameters in multi-view ConvNets. As we know, hypernetworks offer a promising solution to reduce the number of parameters by learning a concise network to generate weights for the larger target network, illustrating the presence of redundant information within network parameters. However, how to leverage hypernetworks for learning parameter-efficient multi-view ConvNets remains underexplored. In this paper, we present a lightweight multi-layer shared Hyper-Adaptive network (HAda), aiming to simultaneously generate adaptive weights for different views and convolutional layers of deep multi-view ConvNets. The adaptability inherent in HAda not only contributes to a substantial reduction in parameter redundancy but also enables the modeling of intricate view-aware and layer-wise information. This capability ensures the maintenance of high performance, ultimately achieving parameter-efficient learning. Specifically, we design a multi-view shared module in HAda to capture information common across views. This module incorporates a shared global gated interpolation strategy, which generates layer-wise gating factors. These factors facilitate adaptive interpolation of global contextual information into the weights. Meanwhile, we put forward a tailored weight-calibrated adapter for each view that facilitates the conveyance of view-specific information. These adapters generate view-adaptive weight scaling calibrators, allowing the selective emphasis of personalized information for each view without introducing excessive parameters. Extensive experiments on six publicly available datasets demonstrate the effectiveness of the proposed method. In particular, HAda can serve as a flexible plug-in strategy to work well with existing multi-view methods for both image classification and image clustering tasks.},
+  archive      = {J_TIP},
+  author       = {Shiye Wang and Changsheng Li and Zeyu Yan and Wanjun Liang and Ye Yuan and Guoren Wang},
+  doi          = {10.1109/TIP.2024.3504252},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {11},
+  pages        = {85-99},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {HAda: Hyper-adaptive parameter-efficient learning for multi-view ConvNets},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RSB-pose: Robust short-baseline binocular 3D human pose
+estimation with occlusion handling. <em>TIP</em>, <em>34</em>, 60–72.
+(<a href="https://doi.org/10.1109/TIP.2024.3490401">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the domain of 3D Human Pose Estimation, which finds widespread daily applications, the requirement for convenient acquisition equipment continues to grow. To satisfy this demand, we focus on a short-baseline binocular setup that offers both portability and a geometric measurement capability that significantly reduces depth ambiguity. However, as the binocular baseline shortens, two serious challenges emerge: first, the robustness of 3D reconstruction against 2D errors deteriorates; second, occlusion reoccurs frequently due to the limited visual differences between two views. To address the first challenge, we propose the Stereo Co-Keypoints Estimation module to improve the view consistency of 2D keypoints and enhance the 3D robustness. In this module, the disparity is utilized to represent the correspondence of binocular 2D points, and the Stereo Volume Feature (SVF) is introduced to contain binocular features across different disparities. Through the regression of SVF, two-view 2D keypoints are simultaneously estimated in a collaborative way which restricts their view consistency. Furthermore, to deal with occlusions, a Pre-trained Pose Transformer module is introduced. Through this module, 3D poses are refined by perceiving pose coherence, a representation of joint correlations. This perception is injected by the Pose Transformer network and learned through a pre-training task that recovers iterative masked joints. Comprehensive experiments on H36M and MHAD datasets validate the effectiveness of our approach in the short-baseline binocular 3D Human Pose Estimation and occlusion handling.},
+  archive      = {J_TIP},
+  author       = {Xiaoyue Wan and Zhuo Chen and Xu Zhao},
+  doi          = {10.1109/TIP.2024.3490401},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {11},
+  pages        = {60-72},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {RSB-pose: Robust short-baseline binocular 3D human pose estimation with occlusion handling},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GeodesicPSIM: Predicting the quality of static mesh with
+texture map via geodesic patch similarity. <em>TIP</em>, <em>34</em>,
+44–59. (<a href="https://doi.org/10.1109/TIP.2024.3501074">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Static meshes with texture maps have attracted considerable attention in both industrial manufacturing and academic research, leading to an urgent requirement for effective and robust objective quality evaluation. However, current model-based static mesh quality metrics (i.e., metrics that directly use the raw data of the static mesh to extract features and predict the quality) have obvious limitations: most of them only consider geometry information, while color information is ignored, and they have strict constraints for the meshes’ geometrical topology. Other metrics, such as image-based and point-based metrics, are easily influenced by the prepossessing algorithms, e.g., projection and sampling, hampering their ability to perform at their best. In this paper, we propose Geodesic Patch Similarity (GeodesicPSIM), a novel model-based metric to accurately predict human perception quality for static meshes. After selecting a group keypoints, 1-hop geodesic patches are constructed based on both the reference and distorted meshes cleaned by an effective mesh cleaning algorithm. A two-step patch cropping algorithm and a patch texture mapping module refine the size of 1-hop geodesic patches and build the relationship between the mesh geometry and color information, resulting in the generation of 1-hop textured geodesic patches. Three types of features are extracted to quantify the distortion: patch color smoothness, patch discrete mean curvature, and patch pixel color average and variance. To the best of our knowledge, GeodesicPSIM is the first model-based metric especially designed for static meshes with texture maps. GeodesicPSIM provides state-of-the-art performance in comparison with image-based, point-based, and video-based metrics on a newly created and challenging database. We also prove the robustness of GeodesicPSIM by introducing different settings of hyperparameters. Ablation studies also exhibit the effectiveness of three proposed features and the patch cropping algorithm. The code is available at https://multimedia.tencent.com/resources/GeodesicPSIM .},
+  archive      = {J_TIP},
+  author       = {Qi Yang and Joel Jung and Xiaozhong Xu and Shan Liu},
+  doi          = {10.1109/TIP.2024.3501074},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {11},
+  pages        = {44-59},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {GeodesicPSIM: Predicting the quality of static mesh with texture map via geodesic patch similarity},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PTH-net: Dynamic facial expression recognition without face
+detection and alignment. <em>TIP</em>, <em>34</em>, 30–43. (<a
+href="https://doi.org/10.1109/TIP.2024.3504298">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pyramid Temporal Hierarchy Network (PTH-Net) is a new paradigm for dynamic facial expression recognition, applied directly to raw videos, without face detection and alignment. Unlike the traditional paradigm, which focus only on facial areas and often overlooks valuable information like body movements, PTH-Net preserves more critical information. It does this by distinguishing between backgrounds and human bodies at the feature level, offering greater flexibility as an end-to-end network. Specifically, PTH-Net utilizes a pre-trained backbone to extract multiple general features of video understanding at various temporal frequencies, forming a temporal feature pyramid. It then further expands this temporal hierarchy through differentiated parameter sharing and downsampling, ultimately refining emotional information under the supervision of expression temporal-frequency invariance. Additionally, PTH-Net features an efficient Scalable Semantic Distinction layer that enhances feature discrimination, helping to better identify target expressions versus non-target ones in the video. Finally, extensive experiments demonstrate that PTH-Net performs excellently in eight challenging benchmarks, with lower computational costs compared to previous methods. The source code is available at https://github.com/lm495455/PTH-Net .},
+  archive      = {J_TIP},
+  author       = {Min Li and Xiaoqin Zhang and Tangfei Liao and Sheng Lin and Guobao Xiao},
+  doi          = {10.1109/TIP.2024.3504298},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {11},
+  pages        = {30-43},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {PTH-net: Dynamic facial expression recognition without face detection and alignment},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Saliency segmentation oriented deep image compression with
+novel bit allocation. <em>TIP</em>, <em>34</em>, 16–29. (<a
+href="https://doi.org/10.1109/TIP.2024.3504282">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image compression distortion can cause performance degradation of machine analysis tasks, therefore recent years have witnessed fast progress in developing deep image compression methods optimized for machine perception. However, the investigation still lacks for saliency segmentation. First, in this paper we propose a deep compression network increasing local signal fidelity of important image pixels for saliency segmentation, which is different from existing methods utilizing the analysis network loss for backward propagation. By this means, these two types of networks can be decoupled to improve the compatibility of proposed compression method for diverse saliency segmentation networks. Second, pixel-level bit weights are modeled with probability distribution in the proposed bit allocation method. The ascending cosine roll-down (ACRD) function allocates bits to those important pixels, which fits the essence that saliency segmentation can be regarded as the pixel-level bi-classification task. Third, the compression network is trained without the help of saliency segmentation, where latent representations are decomposed into base and enhancement channels. Base channels are retained in the whole image, while enhancement channels are utilized only for important pixels, and therefore more bits can benefit saliency segmentation via enhancement channels. Extensive experimental results demonstrate that the proposed method can save an average of 10.34% bitrate compared with the state-of-the-art deep image compression method, where the rate-accuracy (R-A) performances are evaluated on sixteen downstream saliency segmentation networks with five conventional SOD datasets. The code will be available at: https://openi.pcl.ac.cn/OpenAICoding/SaliencyIC and https://github.com/AkeLiLi/SaliencyIC .},
+  archive      = {J_TIP},
+  author       = {Yuan Li and Wei Gao and Ge Li and Siwei Ma},
+  doi          = {10.1109/TIP.2024.3504282},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {11},
+  pages        = {16-29},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Saliency segmentation oriented deep image compression with novel bit allocation},
+  volume       = {34},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -8,19 +8,19 @@ The Proceedings of Machine Learning Research is a series that publishes machine 
 
 ## AISTATS
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[PMLR](https://proceedings.mlr.press/)|[International Conference on Artificial Intelligence and Statistics](https://aistats.org)|[Proc. Int. Conf. Artif. Intell. Statist.](https://aistats.org)|[AISTATS](https://proceedings.mlr.press/)|1997-|False|C||||Artificial Intelligence|
 
 ## ALT
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[PMLR](https://proceedings.mlr.press/)|[International Conference on Algorithmic Learning Theory](http://algorithmiclearningtheory.org/)|[Proc. Int. Conf. Algorithmic Learn. Theory](http://algorithmiclearningtheory.org/)|[ALT](https://proceedings.mlr.press/)|1990-|False|C||||Learning Theory|
 
 ## COLT
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[PMLR](https://proceedings.mlr.press/)|[Annual Conference On Computational Learning Theory](http://learningtheory.org)|[Proc. Conf. Learn. Theory](http://learningtheory.org)|[COLT](https://dl.acm.org/conference/colt/proceedings)|1988-|False|B||||Learning Theory|
 

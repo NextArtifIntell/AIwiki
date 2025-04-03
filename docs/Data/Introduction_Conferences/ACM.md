@@ -10,55 +10,55 @@ Founded at the dawn of the computer age, ACM’s reach extends to every part of 
 
 ## AAMAS
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
-|[ACM](https://www.acm.org/)|International Conference on Autonomous Agents and Multiagent Systems|[Proc. Int. Conf. Auton. Agents Multiagent Syst.](https://aamas2025.org/)|[AAMAS](https://dl.acm.org/conference/aamas/proceedings)|2002-|False||||||
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
+|[ACM](https://www.acm.org/)|International Conference on Autonomous Agents and Multiagent Systems|[Proc. Int. Conf. Auton. Agents Multiagent Syst.](https://aamas2025.org/)|[AAMAS](https://dl.acm.org/conference/aamas/proceedings)|2002-|False|||||Multiagent|
 
 ## FOGA
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[ACM](https://www.acm.org/)|ACM/SIGEVO Conference on Foundations of Genetic Algorithms|[Proc. ACM/SIGEVO Conf. Found. Genet. Algo.](https://naco.liacs.nl/foga2025/)|[FOGA](https://dl.acm.org/conference/foga)|1990-|False|||||Evolutionary Computation|
 
 ## GECCO
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[ACM](https://www.acm.org/)|Genetic and Evolutionary Computation Conference|[Proc. Genet. Evol. Comput. Conf.](https://gecco-2025.sigevo.org/HomePage)|[GECCO](https://dl.acm.org/conference/gecco)|1996-|False|C||||Evolutionary Computation|
 
 ## GECCOC
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[ACM](https://www.acm.org/)|Genetic and Evolutionary Computation Conference Companion|[Proc. Conf. Comp. Genet. Evol. Comput.](https://gecco-2025.sigevo.org/HomePage)|[GECCOC](https://dl.acm.org/conference/gecco)|1996-|False|C||||Evolutionary Computation|
 
 ## KDD
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[ACM](https://www.acm.org/)|[ACM SIGKDD International Conference on Knowledge Discovery And Data Mining](https://kdd.org)|[Proc. ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining](https://kdd.org)|KDD|1995-|False|A||||Data Mining|
 
 ## SIGMOD
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[ACM](https://www.acm.org/)|[ACM SIGKDD International Conference on Management of Data](https://sigmod.org/)|[Proc. ACM SIGMOD Int. Conf. Manag. Data](https://sigmod.org/)|SIGMOD|1975-|False|A||||Data Mining|
 
 ## SODA
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
-|[ACM](https://www.acm.org/)|[ACM-SIAM Symposium on Discrete Algorithms](https://www.sigact.org/)|[Proc. ACM-SIAM Symp. Discret. Algo.](https://www.siam.org/conferences-events/siam-conferences/soda26/)|SODA|1990-|False|A|||||
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
+|[ACM](https://www.acm.org/)|[ACM-SIAM Symposium on Discrete Algorithms](https://www.sigact.org/)|[Proc. ACM-SIAM Symp. Discret. Algo.](https://www.siam.org/conferences-events/siam-conferences/soda26/)|SODA|1990-|False|A||||Discrete Algorithms|
 
 ## STOC
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
-|[ACM](https://www.acm.org/)|[ACM Symposium on Theory of Computing](http://acm-stoc.org/)|[Proc. ACM Symp. Theor. Comput.](https://acm-stoc.org/)|STOC|1969-|False|A|||||
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
+|[ACM](https://www.acm.org/)|[ACM Symposium on Theory of Computing](http://acm-stoc.org/)|[Proc. ACM Symp. Theor. Comput.](https://acm-stoc.org/)|STOC|1969-|False|A||||Computation Theory|
 
 ## SoCC
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[ACM](https://www.acm.org/)|[ACM Symposium On Cloud Computing](https://acmsocc.org/)|[Proc. Symp. Cloud Comput.](https://acmsocc.org/2024/)|SoCC|2010-|False|B||||Cloud Computing|
 

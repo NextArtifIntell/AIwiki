@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>open_link</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h1 id="open">OPEN</h1>
+<ul>
+<li><a
+href="Data/Data_Conferences/2020_all_months/open/ICLR/ICLR_complex_beauty.html">ICLR</a></li>
+<li><a
+href="Data/Data_Conferences/2020_all_months/open/ICML/ICML_complex_beauty.html">ICML</a></li>
+<li><a
+href="Data/Data_Conferences/2020_all_months/open/IJCAI/IJCAI_complex_beauty.html">IJCAI</a></li>
+<li><a
+href="Data/Data_Conferences/2020_all_months/open/NeurIPS/NeurIPS_complex_beauty.html">NeurIPS</a></li>
+<li><a
+href="Data/Data_Conferences/2020_all_months/open/RSS/RSS_complex_beauty.html">RSS</a></li>
+</ul>
+
+</body>
+</html>

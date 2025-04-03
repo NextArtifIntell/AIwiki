@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TROB_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="trob---17">TROB - 17</h2>
+<ul>
+<li><details>
+<summary>
+(2025). FALCON: Fast autonomous aerial exploration using coverage
+path guidance. <em>TROB</em>, <em>41</em>, 1365–1385. (<a
+href="https://doi.org/10.1109/TRO.2024.3522148">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we introduce a novel Fast Autonomous expLoration framework using COverage path guidaNce (FALCON), which aims at setting a new performance benchmark in the field of autonomous aerial exploration. Despite recent advancements in the domain, existing exploration planners often suffer from inefficiencies, such as frequent revisitations of previously explored regions. FALCON effectively harnesses the full potential of online generated coverage paths in enhancing exploration efficiency. The framework begins with an incremental connectivity-aware space decomposition and connectivity graph construction, which facilitate efficient coverage path planning. Subsequently, a hierarchical planner generates a coverage path spanning the entire unexplored space, serving as a global guidance. Then, a local planner optimizes the frontier visitation order, minimizing traversal time while consciously incorporating the intention of the global guidance. Finally, minimum-time smooth and safe trajectories are produced to visit the frontier viewpoints. For fair and comprehensive benchmark experiments, we introduce a lightweight exploration planner evaluation environment that allows for comparing exploration planners across a variety of testing scenarios using an identical quadrotor simulator. In addition, an in-depth analysis and evaluation is conducted to highlight the significant performance advantages of FALCON in comparison with the state-of-the-art exploration planners based on objective criteria. Extensive ablation studies demonstrate the effectiveness of each component in the proposed framework. Real-world experiments conducted fully onboard further validate FALCON’s practical capability in complex and challenging environments. The source code of both the exploration planner FALCON and the exploration planner evaluation environment has been released to benefit the community.},
+  archive      = {J_TROB},
+  author       = {Yichen Zhang and Xinyi Chen and Chen Feng and Boyu Zhou and Shaojie Shen},
+  doi          = {10.1109/TRO.2024.3522148},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {1365-1385},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {FALCON: Fast autonomous aerial exploration using coverage path guidance},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On lie group IMU and linear velocity preintegration for
+autonomous navigation considering the earth rotation compensation.
+<em>TROB</em>, <em>41</em>, 1346–1364. (<a
+href="https://doi.org/10.1109/TRO.2024.3521865">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robot localization is a fundamental task in achieving true autonomy. Recently, many graph-based navigators have been proposed that combine an inertial measurement unit (IMU) with an exteroceptive sensor applying IMU preintegration to synchronize both sensors. IMUs are affected by biases that also have to be estimated. To increase the navigator robustness when faults appear on the perception system, IMU preintegration can be complemented with linear velocity measurements obtained from visual odometry, leg odometry, or a Doppler Velocity Log (DVL), depending on the robotic application. Moreover, higher grade IMUs are sensitive to the Earth rotation rate, which must be compensated in the preintegrated measurements. In this article, we propose a general purpose preintegration methodology formulated on a compact Lie group to set motion constraints on graph simultaneous localization and mapping problems considering the Earth rotation effect. We introduce the SE$_{N}(3)$ group to jointly preintegrate IMU data and linear velocity measurements to preserve all the existing correlation within the preintegrated quantity. Field experiments using an autonomous underwater vehicle equipped with a DVL and a navigational grade IMU are provided and results are benchmarked against a commercial filter-based inertial navigation system to prove the effectiveness of our methodology.},
+  archive      = {J_TROB},
+  author       = {Pau Vial and Joan Solà and Narcís Palomeras and Marc Carreras},
+  doi          = {10.1109/TRO.2024.3521865},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {1346-1364},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {On lie group IMU and linear velocity preintegration for autonomous navigation considering the earth rotation compensation},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TactGen: Tactile sensory data generation via zero-shot
+sim-to-real transfer. <em>TROB</em>, <em>41</em>, 1316–1328. (<a
+href="https://doi.org/10.1109/TRO.2024.3521967">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in machine learning have driven a step-change in robot perception with modalities such as vision, where large amounts of training data are readily available or cheap to collect. However, in tactile perception, the relatively high cost of data collection still largely impedes the adoption of such data-driven learning solutions. In this article, we introduce TactGen, a novel, cross-modal framework to tackle this challenge. In particular, using a two-step data generation pipeline, we leverage easily accessible vision data to synthesise artificial tactile data for downstream classifier training. Specifically, we use readily collected video data of objects of interest to efficiently learn neural radiance field (NeRF) representations. The NeRF models are then used to render red–green–blue-depth (RGBD) images from any desired vantage points. In the second stage, the RGBD images are translated into corresponding tactile images typically generated by camera-based tactile sensors using a conditional generative adversarial network (cGAN). The cGAN model is itself trained with a large set of visuo-tactile images collected in simulation, and can be transferred into the real world without fine-tuning or additional data collection. We extensively validate this approach in the context of tactile object classification, showing that it effectively reduces data collection time by a factor of 20 while achieving similar performance to training a classifier on manually collected real data.},
+  archive      = {J_TROB},
+  author       = {Shaohong Zhong and Alessandro Albini and Perla Maiolino and Ingmar Posner},
+  doi          = {10.1109/TRO.2024.3521967},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {1316-1328},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {TactGen: Tactile sensory data generation via zero-shot sim-to-real transfer},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Soft synergies: Model order reduction of hybrid soft-rigid
+robots via optimal strain parameterization. <em>TROB</em>, <em>41</em>,
+1118–1137. (<a href="https://doi.org/10.1109/TRO.2024.3522182">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft robots offer remarkable adaptability and safety advantages over rigid robots, but modeling their complex, nonlinear dynamics remains challenging. Strain-based models have recently emerged as a promising candidate to describe such systems, however, they tend to be high-dimensional and time-consuming. This article presents a novel model order reduction approach for soft and hybrid robots by combining strain-based modeling with proper orthogonal decomposition (POD). The method identifies optimal coupled strain basis functions—or mechanical synergies—from simulation data, enabling the description of soft robot configurations with a minimal number of generalized coordinates. The reduced order model (ROM) achieves substantial dimensionality reduction in the configuration space while preserving accuracy. Rigorous testing demonstrates the interpolation and extrapolation capabilities of the ROM for soft manipulators under static and dynamic conditions. The approach is further validated on a snake-like hyper-redundant rigid manipulator and a closed-chain system with soft and rigid components, illustrating its broad applicability. Moreover, the approach is leveraged for shape estimation of a real six-actuator soft manipulator using only two position markers, showcasing its practical utility. Finally, the ROM&#39;s dynamic and static behavior is validated experimentally against a parallel hybrid soft-rigid system, highlighting its effectiveness in representing the high-order model and the real system. This POD-based ROM offers significant computational speed-ups, paving the way for real-time simulation and control of complex soft and hybrid robots.},
+  archive      = {J_TROB},
+  author       = {Abdulaziz Y. Alkayas and Anup Teejo Mathew and Daniel Feliu-Talegon and Ping Deng and Thomas George Thuruthel and Federico Renda},
+  doi          = {10.1109/TRO.2024.3522182},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {1118-1137},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Soft synergies: Model order reduction of hybrid soft-rigid robots via optimal strain parameterization},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Continuous-time radar-inertial and lidar-inertial odometry
+using a gaussian process motion prior. <em>TROB</em>, <em>41</em>,
+1059–1076. (<a href="https://doi.org/10.1109/TRO.2024.3521856">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we demonstrate continuous-time radar-inertial and lidar-inertial odometry using a Gaussian process motion prior. Using a sparse prior, we demonstrate improved computational complexity during preintegration and interpolation. We use a white-noise-on-acceleration motion prior and treat the gyroscope as a direct measurement of the state while preintegrating accelerometer measurements to form relative velocity factors. Our odometry is implemented using sliding-window batch trajectory estimation. To our knowledge, our work is the first to demonstrate radar-inertial odometry with a spinning mechanical radar using both gyroscope and accelerometer measurements. We improve the performance of our radar odometry by 43% by incorporating an inertial measurement unit. Our approach is efficient and we demonstrate real-time performance. Code for this article can be found at: https://github.com/utiasASRL/steam_icp.},
+  archive      = {J_TROB},
+  author       = {Keenan Burnett and Angela P. Schoellig and Timothy D. Barfoot},
+  doi          = {10.1109/TRO.2024.3521856},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {1059-1076},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Continuous-time radar-inertial and lidar-inertial odometry using a gaussian process motion prior},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Path-constrained haptic motion guidance via adaptive
+phase-based admittance control. <em>TROB</em>, <em>41</em>, 1039–1058.
+(<a href="https://doi.org/10.1109/TRO.2024.3521861">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robots have surpassed humans in terms of strength and precision, yet humans retain an unparalleled ability for decision-making in the face of unpredictable disturbances. This article aims to combine the strengths of both entities within a singular task: human motion guidance under strict geometric constraints, particularly adhering to predetermined paths. To tackle this challenge, a modular haptic guidance law is proposed that takes the human-applied wrench as an input. Using an auxiliary variable called phase, the generated desired motion is guaranteed to consistently adhere to the constraint path. It is demonstrated how the guidance policy can be generalized into physically interpretable terms, adjustable either prior to initiating the task or dynamically while the task is in progress. Additionally, an illustrative guidance adaptation policy is showcased that takes into account the human&#39;s manipulability. Leveraging passivity analysis, potential sources of instability are pinpointed, and subsequently, overall system stability is ensured by incorporating an augmented virtual energy tank. Lastly, a comprehensive set of experiments, including a 20-participant user study, explores various aspects of the approach in practice, encompassing both technical and usability considerations.},
+  archive      = {J_TROB},
+  author       = {Erfan Shahriari and Petr Svarny and Seyed Ali Baradaran Birjandi and Matej Hoffmann and Sami Haddadin},
+  doi          = {10.1109/TRO.2024.3521861},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {1039-1058},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Path-constrained haptic motion guidance via adaptive phase-based admittance control},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generative graphical inverse kinematics. <em>TROB</em>,
+<em>41</em>, 1002–1018. (<a
+href="https://doi.org/10.1109/TRO.2024.3521862">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quickly and reliably finding accurate inverse kinematics (IK) solutions remains a challenging problem for many robot manipulators. Existing numerical solvers are broadly applicable but typically only produce a single solution and rely on local search techniques to minimize nonconvex objective functions. Recent learning-based approaches that approximate the entire feasible set of solutions have shown promise in generating multiple fast and accurate IK results in parallel. However, existing learning-based techniques have a significant drawback: each robot of interest requires a specialized model that must be trained from scratch. To address this key shortcoming, we propose a novel distance-geometric robot representation coupled with a graph structure that allows us to leverage the generalizability of graph neural networks (GNNs). Our approach, which we call generative graphical IK (GGIK), is the first learned IK solver that is able to efficiently yield a large number of diverse solutions in parallel while also displaying the ability to generalize—a single learned model can be used to produce IK solutions for a variety of different robots. When compared to several other learned IK methods, GGIK provides more accurate solutions with the same amount of training data. GGIK can also generalize reasonably well to robot manipulators unseen during training. In addition, GGIK is able to learn a constrained distribution that encodes joint limits and scales well with the number of robot joints and sampled solutions. Finally, GGIK can be used to complement local IK solvers by providing a reliable initialization for the local optimization process.},
+  archive      = {J_TROB},
+  author       = {Oliver Limoyo and Filip Marić and Matthew Giamou and Petra Alexson and Ivan Petrović and Jonathan Kelly},
+  doi          = {10.1109/TRO.2024.3521862},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {1002-1018},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Generative graphical inverse kinematics},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Safe robot reflexes: A taxonomy-based decision and
+modulation framework. <em>TROB</em>, <em>41</em>, 982–1001. (<a
+href="https://doi.org/10.1109/TRO.2024.3519421">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in control and planning allow for seamless physical human–robot interaction (pHRI). At the same time, novel challenges appear in orchestrating intelligent decision-making and ensuring safe control of robots. Particularly in scenarios involving unforeseen or unintended collisions, robots face the imperative of reacting judiciously to avert potential risks to humans, other robots, obstacles, or themselves. At the same time, they need to maintain focus on their primary task or be able to safely resume it. Collision detection and identification algorithms are now well established in industry, yet complex collision reflexes have not transitioned into industrial applications beyond basic stopping reactions. Despite the introduction of numerous advanced high-performance reflex controllers over the past decades, their real-world adoption has remained a challenge. This work establishes a systematic framework to address that gap. For this, the reflex control problem is defined, reflex behaviors are systematically classified and categorized, and relevant safety data is acquired following existing international standards. We argue that this foundational step is crucial for improving the safety and capabilities of robots in both complex industrial and domestic environments. We validate our approach within the system class of articulated manipulators through a state-of-the-art cooperative pick-and-place task, providing a blueprint for future implementations for other robot classes.},
+  archive      = {J_TROB},
+  author       = {Jonathan Vorndamme and Alessandro Melone and Robin Kirschner and Luis Figueredo and Sami Haddadin},
+  doi          = {10.1109/TRO.2024.3519421},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {982-1001},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Safe robot reflexes: A taxonomy-based decision and modulation framework},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Swarm-LIO2: Decentralized efficient LiDAR-inertial odometry
+for aerial swarm systems. <em>TROB</em>, <em>41</em>, 960–981. (<a
+href="https://doi.org/10.1109/TRO.2024.3522155">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aerial swarm systems possess immense potential in various aspects, such as cooperative exploration, target tracking, and search and rescue. Efficient accurate self- and mutual state estimation are the critical preconditions for completing these swarm tasks, which remain challenging research topics. This article proposes Swarm-LIO2, a fully decentralized, plug-and-play, computationally efficient, and bandwidth-efficient light detection and ranging (LiDAR)-inertial odometry for aerial swarm systems. Swarm-LIO2 uses a decentralized plug-and-play network as the communication infrastructure. Only bandwidth-efficient and low-dimensional information is exchanged, including identity, ego state, mutual observation measurements, and global extrinsic transformations. To support the plug and play of new teammate participants, Swarm-LIO2 detects potential teammate autonomous aerial vehicles (AAVs) and initializes the temporal offset and global extrinsic transformation all automatically. To enhance the initialization efficiency, novel reflectivity-based AAV detection, trajectory matching, and factor graph optimization methods are proposed. For state estimation, Swarm-LIO2 fuses LiDAR, inertial measurement units, and mutual observation measurements within an efficient error state iterated Kalman filter (ESIKF) framework, with careful compensation of temporal delay and modeling of measurements to enhance the accuracy and consistency. Moreover, the proposed ESIKF framework leverages the global extrinsic for ego state estimation in the case of LiDAR degeneration or refines the global extrinsic along with the ego state estimation otherwise. To enhance the scalability, Swarm-LIO2 introduces a novel marginalization method in the ESIKF, which prevents the growth of computational time with swarm size. Extensive simulation and real-world experiments demonstrate the broad adaptability to large-scale aerial swarm systems and complicated scenarios, including GPS-denied scenes and degenerated scenes for cameras or LiDARs. The experimental results showcase the centimeter-level localization accuracy, which outperforms other state-of-the-art LiDAR-inertial odometry for a single-AAV system. Furthermore, diverse applications demonstrate the potential of Swarm-LIO2 to serve as a reliable infrastructure for various aerial swarm missions.},
+  archive      = {J_TROB},
+  author       = {Fangcheng Zhu and Yunfan Ren and Longji Yin and Fanze Kong and Qingbo Liu and Ruize Xue and Wenyi Liu and Yixi Cai and Guozheng Lu and Haotian Li and Fu Zhang},
+  doi          = {10.1109/TRO.2024.3522155},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {960-981},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Swarm-LIO2: Decentralized efficient LiDAR-inertial odometry for aerial swarm systems},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal and force-matched imitation learning with a
+see-through visuotactile sensor. <em>TROB</em>, <em>41</em>, 946–959.
+(<a href="https://doi.org/10.1109/TRO.2024.3521864">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contact-rich tasks continue to present many challenges for robotic manipulation. In this work, we leverage a multimodal visuotactile sensor within the framework of imitation learning (IL) to perform contact-rich tasks that involve relative motion (e.g., slipping and sliding) between the end-effector and the manipulated object. We introduce two algorithmic contributions, tactile force matching and learned mode switching, as complimentary methods for improving IL. Tactile force matching enhances kinesthetic teaching by reading approximate forces during the demonstration and generating an adapted robot trajectory that recreates the recorded forces. Learned mode switching uses IL to couple visual and tactile sensor modes with the learned motion policy, simplifying the transition from reaching to contacting. We perform robotic manipulation experiments on four door-opening tasks with a variety of observation and algorithm configurations to study the utility of multimodal visuotactile sensing and our proposed improvements. Our results show that the inclusion of force matching raises average policy success rates by 62.5%, visuotactile mode switching by 30.3%, and visuotactile data as a policy input by 42.5%, emphasizing the value of see-through tactile sensing for IL, both for data collection to allow force matching, and for policy execution to enable accurate task feedback.},
+  archive      = {J_TROB},
+  author       = {Trevor Ablett and Oliver Limoyo and Adam Sigal and Affan Jilani and Jonathan Kelly and Kaleem Siddiqi and Francois Hogan and Gregory Dudek},
+  doi          = {10.1109/TRO.2024.3521864},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {946-959},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Multimodal and force-matched imitation learning with a see-through visuotactile sensor},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Task-driven detection of distribution shifts with
+statistical guarantees for robot learning. <em>TROB</em>, <em>41</em>,
+926–945. (<a href="https://doi.org/10.1109/TRO.2024.3521963">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Our goal is to perform out-of-distribution (OOD) detection, i.e., to detect when a robot is operating in environments drawn from a different distribution than the ones used to train the robot. We leverage probably approximately correct-Bayes theory to train a policy with a guaranteed bound on performance on the training distribution. Our idea for OOD detection relies on the following intuition: violation of the performance bound on test environments provides evidence that the robot is operating OOD. We formalize this via statistical techniques based on $p$-values and concentration inequalities. The approach provides guaranteed confidence bounds on OOD detection including bounds on both the false-positive and false-negative rates of the detector and is task-driven and only sensitive to changes that impact the robot&#39;s performance. We demonstrate our approach in simulation and hardware for a grasping task using objects with unfamiliar shapes or poses and a drone performing vision-based obstacle avoidance in environments with wind disturbances and varied obstacle densities. Our examples demonstrate that we can perform task-driven OOD detection within just a handful of trials.},
+  archive      = {J_TROB},
+  author       = {Alec Farid and Sushant Veer and Divyanshu Pachisia and Anirudha Majumdar},
+  doi          = {10.1109/TRO.2024.3521963},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {926-945},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Task-driven detection of distribution shifts with statistical guarantees for robot learning},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). State estimation for continuum multirobot systems on SE(3).
+<em>TROB</em>, <em>41</em>, 905–925. (<a
+href="https://doi.org/10.1109/TRO.2024.3521859">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In contrast to conventional robots, accurately modeling the kinematics and statics of continuum robots is challenging due to partially unknown material properties, parasitic effects, or unknown forces acting on the continuous body. Consequentially, state estimation approaches that utilize additional sensor information to predict the shape of continuum robots have garnered significant interest. This article presents a novel approach to state estimation for systems with multiple coupled continuum robots, which allows estimating the shape and strain variables of multiple continuum robots in an arbitrary coupled topology. Simulations and experiments demonstrate the capabilities and versatility of the proposed method, while achieving accurate and continuous estimates for the state of such systems, resulting in average end-effector errors of 3.3 mm and 5.02$^\circ$ depending on the sensor setup. It is further shown, that the approach offers fast computation times of below 10 ms, enabling its utilization in quasi-static real-time scenarios with average update rates of 100–200 Hz. An open-source C++ implementation of the proposed state estimation method is made publicly available to the community.},
+  archive      = {J_TROB},
+  author       = {Sven Lilge and Timothy Barfoot and Jessica Burgner-Kahrs},
+  doi          = {10.1109/TRO.2024.3521859},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {905-925},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {State estimation for continuum multirobot systems on SE(3)},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Selective, robust, and precision manipulation of particles
+in complex environments with ultrasonic phased transducer array and
+microscope. <em>TROB</em>, <em>41</em>, 887–904. (<a
+href="https://doi.org/10.1109/TRO.2024.3521858">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The noncontact acoustic manipulation of particles, biosamples, droplets, and air bubbles has emerged as a promising technology in the fields of biology, chemistry, medicine, etc. The noncontact nature offers significant advantages in terms of biocompatibility, contamination free, and material versatility. However, current noncontact acoustic manipulation techniques still lack adequate selectivity, robustness, and precision controllability in complex environments. To this end, in this article, we propose an automated noncontact manipulation system that leverages a high-density ultrasonic phased transducer array in combination with a microscope to further optimize and enhance the controllability and flexibility of noncontact particle manipulation. This work presents several notable contributions. First, we successfully realized selective particle manipulation, allowing instantaneous interaction with users to perform user-designated and objective-oriented manipulation tasks. Second, we integrated a closed-loop control strategy into the system that effectively mitigates misalignment errors induced by the trapping stiffness heterogeneity of acoustic trap and enables automated precision position control of particles in complex environments (in 30-mm-wide workspace, positioning precision is 1/40 of the wavelength). Third, we proposed a reconfigurable acoustic trap design method, named pseudovortex trap, featuring real-time computing and trapping particles larger than the wavelength. The system setup, the calibration specifics, the acoustic trap design methodology, and the corresponding visual servo control scheme (in terms of selective trapping, precision positioning, and dynamic trajectory planning) are given in detail in the article. Meanwhile, the trapping stiffness and the manipulation stability are also analyzed in this work. Experimental results well demonstrated the effectiveness of the proposed system.},
+  archive      = {J_TROB},
+  author       = {Mingyue Wang and Siyuan An and Zhenhuan Sun and Jiaqi Li and Yang Wang and Song Liu},
+  doi          = {10.1109/TRO.2024.3521858},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {887-904},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Selective, robust, and precision manipulation of particles in complex environments with ultrasonic phased transducer array and microscope},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FAPP: Fast and adaptive perception and planning for UAVs in
+dynamic cluttered environments. <em>TROB</em>, <em>41</em>, 871–886. (<a
+href="https://doi.org/10.1109/TRO.2024.3522187">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Obstacle avoidance for uncrewed aerial vehicles (UAVs) in cluttered environments is significantly challenging. Existing obstacle avoidance for UAVs either focuses on fully static environments or static environments with only a few dynamic objects. In this article, we take the initiative to consider the obstacle avoidance of UAVs in dynamic cluttered environments in which dynamic objects are the dominant objects. This type of environment poses significant challenges to both perception and planning. Multiple dynamic objects possess various motions, making it extremely difficult to estimate and predict their motions using one motion model. The planning must be highly efficient to avoid cluttered dynamic objects. This article proposes fast and adaptive perception and planning for UAVs flying in complex dynamic cluttered environments. A novel and efficient point cloud segmentation strategy is proposed to distinguish static and dynamic objects. To address multiple dynamic objects with different motions, an adaptive estimation method with covariance adaptation is proposed to quickly and accurately predict their motions. Our proposed trajectory optimization algorithm is highly efficient, enabling it to avoid fast objects. Furthermore, an adaptive replanning method is proposed to address the case when the trajectory optimization cannot find a feasible solution, which is common for dynamic cluttered environments. Extensive validations in both simulation and real-world experiments demonstrate the effectiveness of our proposed system for highly dynamic and cluttered environments.},
+  archive      = {J_TROB},
+  author       = {Minghao Lu and Xiyu Fan and Han Chen and Peng Lu},
+  doi          = {10.1109/TRO.2024.3522187},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {871-886},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {FAPP: Fast and adaptive perception and planning for UAVs in dynamic cluttered environments},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integrating human-like impedance regulation and model-based
+approaches for compliance discrimination via biomimetic optical tactile
+sensors. <em>TROB</em>, <em>41</em>, 857–870. (<a
+href="https://doi.org/10.1109/TRO.2024.3522149">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Endowing robots with advanced tactile abilities based on biomimicry involves designing human-like tactile sensors, computational models, and motor control policies to enhance contact information retrieval. Here, we consider compliance discrimination with a soft biomimetic tactile optical sensor (TacTip). In previous work, we proposed a vision-based approach derived from a computational model of human tactile perception to discriminate object compliance with the TacTip, based on contact area spread computation over the indenting force. In this work, we first increased the robustness of our vision-based method with a more precise estimation of the initial contact area condition, which enables correct compliance estimation also when the probing direction is other than normal to the specimen surface. Then, we integrated within our validated framework the mechanisms of internal muscular regulation (co-contraction) that humans adopt during object compliance probing, to maximize the information uptake. To this aim, we used human co-contraction patterns extracted during object softness probing to control a Variable Stiffness Actuator (that emulates the agonistic-antagonistic behavior of human muscles), which is used to actuate the indenter system endowed with the TacTip for object compliance exploration. We found that our model-based approach for compliance discrimination, fed with more precisely estimated initial conditions, significantly improves with the human-inspired impedance regulation, with respect to the usage of a rigid actuator.},
+  archive      = {J_TROB},
+  author       = {Giulia Pagnanelli and Lucia Zinelli and Nathan Lepora and Manuel Catalano and Antonio Bicchi and Matteo Bianchi},
+  doi          = {10.1109/TRO.2024.3522149},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {857-870},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Integrating human-like impedance regulation and model-based approaches for compliance discrimination via biomimetic optical tactile sensors},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Augment laminar jamming variable stiffness through
+electroadhesion and vacuum actuation. <em>TROB</em>, <em>41</em>,
+819–836. (<a href="https://doi.org/10.1109/TRO.2024.3519433">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Various variable stiffness mechanisms have been developed to bestow new capabilities for the robotics community by changing the mechanical behaviors of robots. However, variable stiffness is limited in actuation, response speed, stiffness ratio, and, most importantly, modeling. This article proposes hybrid actuated laminar jamming to outperform individual actuated variable stiffness mechanisms. An analytical model for multilayer laminar jamming that accurately characterizes mechanical behaviors in experiments is first built. Comprehensive parametrical analysis based on this model serves as design guidelines for performance improvements of laminar jamming. Feedforward control further proves the validity of the proposed model and exhibits good controllability, showing response speed as fast as 5 ms. The synergy between electroadhesion and vacuum actuation significantly enhances overall performance, resulting in far greater effects than individual contributions. For instance, the proposed device generates a high stiffness that is almost impossible for individual vacuum or electroadhesion. Moreover, vacuuming increases 23% of the breakdown voltage, which leads to a larger electroadhesion force and, hence, a higher stiffness.},
+  archive      = {J_TROB},
+  author       = {Cheng Chen and Hongliang Ren and Hongqiang Wang},
+  doi          = {10.1109/TRO.2024.3519433},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {819-836},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Augment laminar jamming variable stiffness through electroadhesion and vacuum actuation},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient, responsive, and robust hopping on deformable
+terrain. <em>TROB</em>, <em>41</em>, 782–800. (<a
+href="https://doi.org/10.1109/TRO.2024.3509023">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Legged robot locomotion is hindered by a mismatch between applications where legs can outperform wheels or treads, most of which feature deformable substrates, and existing tools for planning and control, most of which assume flat, rigid substrates. In this study, we focus on the ramifications of plastic terrain deformation on the hop-to-hop energy dynamics of a spring-legged monopedal hopping robot animated by a switched-compliance energy injection controller. From this deliberately simple robot-terrain template, we derive a hop-to-hop energy return map, and we use physical experiments and simulations to validate the hop-to-hop energy map for a real robot hopping on a real deformable substrate. The dynamical properties (fixed points, eigenvalues, basins of attraction) of this map provide insights into efficient, responsive, and robust locomotion on deformable terrain. Specifically, we identify constant-fixed-point surfaces in a controller parameter space that suggest it is possible to tune control parameters for efficiency or responsiveness while targeting a desired gait energy level. We also identify conditions under which fixed points of the energy map are globally stable, and we further characterize the basins of attraction of fixed points when these conditions are not satisfied. We conclude by discussing the implications of this hop-to-hop energy map for planning, control, and estimation for efficient, agile, and robust legged locomotion on deformable terrain.},
+  archive      = {J_TROB},
+  author       = {Daniel J. Lynch and Jason L. Pusey and Sean W. Gart and Paul B. Umbanhowar and Kevin M. Lynch},
+  doi          = {10.1109/TRO.2024.3509023},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {12},
+  pages        = {782-800},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Efficient, responsive, and robust hopping on deformable terrain},
+  volume       = {41},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

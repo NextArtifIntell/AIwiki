@@ -4,8 +4,8 @@
 
 ## JAIR
 
-|Publisher|Full|Abbr|Flag|Period|Top|CCF|CAS|JCR|IF|Type|
-|-        |-   |-   |-   |-     |-  |-  |-  |-  |- |-   |
+|Publisher|Full/Homepage|Abbr/About|Flag/Issues|Period|Top|CCF|CAS|JCR|IF|Type|
+|-|-|-|-|-|-|-|-|-|-|-|
 |[AAAI](https://www.aaai.org/)|[Journal of Artificial Intelligence Research](https://www.jair.org/index.php/jair)|[J. Artif. Intell. Res.](https://www.jair.org/index.php/jair/about)|[JAIR](https://www.jair.org/index.php/jair/issue/archive)|1996-|False|B|3|Q2|4.5|Artificial Intelligence|
 
 The Journal of Artificial Intelligence Research (JAIR) is dedicated to the rapid dissemination of important research results to the global artificial intelligence (AI) community. The journal’s scope encompasses all areas of AI, including agents and multi-agent systems, automated reasoning, constraint processing and search, knowledge representation, machine learning, natural language, planning and scheduling, robotics and vision, and uncertainty in AI.
