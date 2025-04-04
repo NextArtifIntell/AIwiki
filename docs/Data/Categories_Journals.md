@@ -15,10 +15,10 @@
 |[IOS](https://www.iospress.com/)|[Intelligent Data Analysis](https://www.iospress.com/catalog/journals/intelligent-data-analysis)|Intell. Data Anal.|[IDA](https://content.iospress.com/journals/intelligent-data-analysis)|1997-|False|C|4|Q4|0.9|Artificial Intelligence; Data Mining|
 |[IOS](https://www.iospress.com/)|[Journal of Intelligent & Fuzzy Systems](https://www.iospress.com/catalog/journals/journal-of-intelligent-fuzzy-systems)|J. Intell. Fuzzy Syst.|[JIFS](https://content.iospress.com/journals/journal-of-intelligent-and-fuzzy-systems)|1993-|False|||||Artificial Intelligence; Fuzzy Systems|
 |[MIT](https://direct.mit.edu/)|[Transactions on Machine Learning Research](https://www.jmlr.org/tmlr/index.html)|Trans. Mach. Learn. Res.|[TMLR](https://www.jmlr.org/tmlr/papers/)|2022-|False|||||Artificial Intelligence; Machine Learning|
-|[SPRINGER](https://link.springer.com/)|[Artificial Intelligence and Law](https://www.springer.com/journal/10506)|Artif. Intell. Law|[AIL](https://link.springer.com/journal/10506/volumes-and-issues)|1992-|False||2|Q2|3.1|Artificial Intelligence|
-|[SPRINGER](https://link.springer.com/)|[Artificial Intelligence Review](https://www.springer.com/journal/10462)|Artif. Intell. Rev.|[AIR](https://link.springer.com/journal/10462/volumes-and-issues)|1987-|True||1|Q1|10.7|Artificial Intelligence|
-|[SPRINGER](https://link.springer.com/)|[Annals of Mathematics and Artificial Intelligence](https://www.springer.com/journal/10472)|Ann. Math. Artif. Intell.|[AMAI](https://link.springer.com/journal/10472/volumes-and-issues)|1990-|False||4|Q2|1.2|Artificial Intelligence|
-|[SPRINGER](https://link.springer.com/)|[Swarm Intelligence](https://www.springer.com/journal/11721)|Swarm Intell.|[SI](https://link.springer.com/journal/11721/volumes-and-issues)|2007-|False||4|Q3|2.1|Artificial Intelligence; Swarm Intelligence|
+|[SPRINGER](https://www.springer.com/)|[Artificial Intelligence and Law](https://www.springer.com/journal/10506)|Artif. Intell. Law|[AIL](https://link.springer.com/journal/10506/volumes-and-issues)|1992-|False||2|Q2|3.1|Artificial Intelligence|
+|[SPRINGER](https://www.springer.com/)|[Artificial Intelligence Review](https://www.springer.com/journal/10462)|Artif. Intell. Rev.|[AIR](https://link.springer.com/journal/10462/volumes-and-issues)|1987-|True||1|Q1|10.7|Artificial Intelligence|
+|[SPRINGER](https://www.springer.com/)|[Annals of Mathematics and Artificial Intelligence](https://www.springer.com/journal/10472)|Ann. Math. Artif. Intell.|[AMAI](https://link.springer.com/journal/10472/volumes-and-issues)|1990-|False||4|Q2|1.2|Artificial Intelligence|
+|[SPRINGER](https://www.springer.com/)|[Swarm Intelligence](https://www.springer.com/journal/11721)|Swarm Intell.|[SI](https://link.springer.com/journal/11721/volumes-and-issues)|2007-|False||4|Q3|2.1|Artificial Intelligence; Swarm Intelligence|
 |[TAYLOR](https://www.tandfonline.com/)|[Applied Artificial Intelligence](https://www.tandfonline.com/journals/uaai20)|Appl. Artif. Intell.|[AAI](https://www.tandfonline.com/loi/uaai20)|1987-|False||4|Q2|2.9|Artificial Intelligence|
 |[TAYLOR](https://www.tandfonline.com/)|[Connection Science](https://www.tandfonline.com/journals/ccos20)|Connect. Sci.|[CSCI](https://www.tandfonline.com/loi/ccos20)|1989-|False|C|3|Q2|3.2|Artificial Intelligence|
 |[TAYLOR](https://www.tandfonline.com/)|[Engineering Optimization](https://www.tandfonline.com/journals/geno20)|Eng. Optim.|[ENGO](https://www.tandfonline.com/loi/geno20)|1974-|False||4|Q2|2.2|Artificial Intelligence|
@@ -67,7 +67,7 @@
 |[ACM](https://www.acm.org/)|[ACM Transactions on Evolutionary Learning and Optimization](https://dlnext.acm.org/journal/telo)|ACM Trans. Evol. Learn. Optim.|[TELO](https://dl.acm.org/loi/telo)|2021-|False|||||Evolutionary Computation; Machine Learning|
 |[AIP](https://www.aip.org/)|[APL Machine Learning](https://pubs.aip.org/aip/aml)|APL Mach. Learn.|[AML](https://pubs.aip.org/aip/aml/issue)|2023-|False|||||Machine Learning; Physics|
 |[MIT](https://direct.mit.edu/)|[Transactions on Machine Learning Research](https://www.jmlr.org/tmlr/index.html)|Trans. Mach. Learn. Res.|[TMLR](https://www.jmlr.org/tmlr/papers/)|2022-|False|||||Artificial Intelligence; Machine Learning|
-|[SPRINGER](https://link.springer.com/)|[International Journal of Computer Vision](https://www.springer.com/journal/11263)|Int. J. Comput. Vis.|[IJCV](https://link.springer.com/journal/11263/volumes-and-issues)|1988-|False|A|2|Q1|11.6|Computer Vision; Machine Learning|
+|[SPRINGER](https://www.springer.com/)|[International Journal of Computer Vision](https://www.springer.com/journal/11263)|Int. J. Comput. Vis.|[IJCV](https://link.springer.com/journal/11263/volumes-and-issues)|1988-|False|A|2|Q1|11.6|Computer Vision; Machine Learning|
 
 ## Computer Systems
 
@@ -160,7 +160,7 @@
 |Publisher|Full/Homepage|Abbr/About|Flag/Issues|Period|Top|CCF|CAS|JCR|IF|Type|
 |-        |-            |-         |-          |-     |-  |-  |-  |-  |- |-   |
 |[IEEE](https://ieeexplore.ieee.org/)|[IEEE Transactions on Evolutionary Computation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4235)|IEEE Trans. Evol. Comput.|[TEVC](https://ieeexplore.ieee.org/xpl/issues?punumber=4235&isnumber=10198499)|1997-|True|B|1|Q1|11.7|Evolutionary Computation; Swarm Intelligence|
-|[SPRINGER](https://link.springer.com/)|[Swarm Intelligence](https://www.springer.com/journal/11721)|Swarm Intell.|[SI](https://link.springer.com/journal/11721/volumes-and-issues)|2007-|False||4|Q3|2.1|Artificial Intelligence; Swarm Intelligence|
+|[SPRINGER](https://www.springer.com/)|[Swarm Intelligence](https://www.springer.com/journal/11721)|Swarm Intell.|[SI](https://link.springer.com/journal/11721/volumes-and-issues)|2007-|False||4|Q3|2.1|Artificial Intelligence; Swarm Intelligence|
 
 ## Information Theory
 
@@ -228,7 +228,7 @@
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Issues|Period|Top|CCF|CAS|JCR|IF|Type|
 |-        |-            |-         |-          |-     |-  |-  |-  |-  |- |-   |
-|[SPRINGER](https://link.springer.com/)|[International Journal of Computer Vision](https://www.springer.com/journal/11263)|Int. J. Comput. Vis.|[IJCV](https://link.springer.com/journal/11263/volumes-and-issues)|1988-|False|A|2|Q1|11.6|Computer Vision; Machine Learning|
+|[SPRINGER](https://www.springer.com/)|[International Journal of Computer Vision](https://www.springer.com/journal/11263)|Int. J. Comput. Vis.|[IJCV](https://link.springer.com/journal/11263/volumes-and-issues)|1988-|False|A|2|Q1|11.6|Computer Vision; Machine Learning|
 
 ## Computational Intelligence
 

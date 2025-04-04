@@ -1,6 +1,22 @@
 # APS
 
 - [American Physical Society](https://journals.aps.org)
+- [Journals](https://journals.aps.org/all_journals)
+- [About Us](https://journals.aps.org/edannounce/aps-astrobites-partnership)
+
+The American Physical Society (APS) is pleased to announce that it will begin sponsoring Astrobites, a daily astrophysical literature journal written by graduate students in astronomy. This mutually beneficial collaboration aims to enhance the dissemination of research, educational resources, and career insights in the field of astronomy and astrophysics.
+
+APS will provide the support needed to host the Astrobites Slack channel, provide training resources to new writers, and elevate the organization’s prominence within the physics community, all while maintaining Astrobites’ editorial independence.
+
+“Astrobites is a real shining star in the astronomical and graduate student community, and I’m elated that APS sees that and is happy to help us grow and expand. I’m very excited to see what we accomplish together,” says former Astrobites Administrative Committee chair, Huei Sears.
+
+The Physical Review journals have always been a welcome home to the fields of astronomy and astrophysics having published prominent results from the LIGO Collaboration, BICEP/Keck, Parker Solar Probe, HAWC, Dark Energy Survey, and others.
+
+Physical Review journals Executive Editor Jessica Thomas says, “Astrobites makes the latest findings in astronomy accessible to undergraduate students and others who are interested in active research. Supporting this effort aligns with the APS mission to promote physics and serve the broader physics community.”
+
+**Vision, Mission, and Core Values**
+
+The American Physical Society is a scientific membership organization committed to advancing physics and creating a welcoming professional home for the world’s physics community.
 
 ## PRA
 

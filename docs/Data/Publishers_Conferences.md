@@ -75,7 +75,28 @@ The Proceedings of Machine Learning Research is a series that publishes machine 
 
 ### SPRINGER
 
-- [Springer](https://link.springer.com/)
+- [Springer](https://www.springer.com/)
+- [About Us](https://www.springer.com/jp/about-springer)
+
+**SPRINGER**
+
+Springer is a leading global scientific, technical and medical portfolio, providing researchers in academia, scientific institutions and corporate R&D departments with quality content through innovative information, products and services.
+
+Springer has one of the strongest STM and HSS eBook collections and archives, as well as a comprehensive range of hybrid and open access journals and books under the SpringerOpen imprint.
+
+Springer is part of Springer Nature, a global publisher that serves and supports the research community. Springer Nature aims to advance discovery by publishing robust and insightful science, supporting the development of new areas of research and making ideas and knowledge accessible around the world.
+
+As part of Springer Nature, Springer sits alongside other trusted brands like Nature Research, BMC and Palgrave Macmillan.
+
+**SPRINGER NATURE**
+
+Through our leading brands, trusted for more than 180 years, we provide technology-enabled products, platforms and services that help researchers to uncover new ideas and share their discoveries. We are proud to be part of progress and accelerate solutions to address the world’s urgent challenges.
+
+**SPRINGER NATURE LINK**
+
+As part of Springer Nature, Springer Nature Link delivers fast access to the depth and breadth of our online collection of journals, eBooks, reference works and protocols across a vast range of subject disciplines.
+
+Springer Nature Link is the reading platform of choice for hundreds of thousands of researchers worldwide. Find out how to publish your research with Springer Nature.
 
 ### USENIX
 

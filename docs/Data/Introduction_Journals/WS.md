@@ -2,6 +2,11 @@
 
 - [ World Scientific Publishing Company ](https://worldscientific.com/)
 - [Journals](https://worldscientific.com/page/wsjournals)
+- [About Us](https://worldscientific.com/page/about/corporate-profile)
+
+World Scientific Publishing Co Pte Ltd was established in 1981 with only 5 employees in a tiny office. Today, the company employs about 150 staff at its headquarters in Singapore and 450 globally. It has offices in New Jersey, London, Munich, Geneva, Tokyo, Hong Kong, Taipei, Beijing, Shanghai, Tianjin and Chennai. In about 3 decades, it has established itself as one of the leading academic and professional publishers in the world, and the largest international scientific publisher in the Asia-Pacific region..
+
+World Scientific releases approximately 600 new titles per annum and publishes more than 180 journals across multiple fields. With a publication history of over 12,000 titles, a significant proportion of World Scientific's books are prescribed as reading material by prestigious institutions like Harvard University, California Institute of Technology, Stanford University, and Princeton University. At present, WSPC's digital content is accessible to more than 45,000 universities, libraries and organizations worldwide, with usage boosted by collaborating with diverse search and discovery partners.
 
 ## IET
 

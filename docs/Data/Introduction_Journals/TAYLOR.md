@@ -1,7 +1,12 @@
 # TAYLOR
 
 - [Taylor & Francis](https://www.tandfonline.com/)
-- [Journals](https://www.tandfonline.com/)
+- [Journals](https://www.tandfonline.com/journals)
+- [About Us](https://www.tandfonline.com/why-publish-with-us)
+
+As a leading academic publisher, Taylor & Francis is committed to the highest quality of scholarly publishing. Since our founding in 1798, we have demonstrated our commitment to fostering human progress through knowledge and supporting academic communities.
+
+With a legacy of excellence and a commitment to scholarly integrity, we serve a wide and diverse community of experts from a variety of geographies and backgrounds in disseminating groundbreaking research to the global academic community.
 
 ## AAI
 

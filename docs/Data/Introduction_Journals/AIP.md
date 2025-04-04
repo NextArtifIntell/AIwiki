@@ -1,6 +1,19 @@
 # AIP
 
 - [American Institute of Physics](https://www.aip.org/)
+- [About Us](https://ww2.aip.org/aip)
+
+The mission of the American Institute of Physics is to advance, promote, and serve the physical sciences for the benefit of humanity.
+
+With the mission of benefiting humanity through the physical sciences, AIP is both a federation and an institute.
+
+As a federation, AIP helps its Member Societies leverage their diverse expertise and contributions in advancing the physical sciences in the research enterprise, in the economy, in education and in society. Through their shared goals and partnership with AIP, Member Societies broaden their impact and achieve results beyond their individual missions and mandates.
+
+AIP also acts as an independent institute whose journalism, research, history and student programs enrich the discipline of the physical sciences.
+
+Together, AIP and its Member Societies form a unified community that includes stakeholders in government, academia, the nonprofit and private sectors, the student and teacher communities and the general public.
+
+AIP’s Strategic Framework, detailed below, comprises four overarching “FIRE” goals, which articulate AIP’s aspirations as a federation and an institute, with a reputation as a trusted source for information on the physical sciences and as an employer of excellence.
 
 ## AML
 

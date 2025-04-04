@@ -2,6 +2,11 @@
 
 - [Society for International and Applied Mathmatics](https://epubs.siam.org)
 - [Journals](https://epubs.siam.org/action/showPublications?pubType=journal)
+- [About Us](https://www.siam.org/)
+
+Inspiring Innovation through Research
+
+Applied mathematics, computational and data science are essential to moving society forward and solving many of the world’s most pressing questions and problems. SIAM plays a central role in bringing mathematical and computational scientists together, providing a platform and community for this important work.
 
 SIAM publishes 18 peer-reviewed research journals and is the leading source of knowledge for the world's applied mathematics and computational science communities. The full text of all SIAM journals are available electronically by subscription.
 

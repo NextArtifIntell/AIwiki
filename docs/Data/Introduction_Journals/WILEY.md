@@ -2,6 +2,11 @@
 
 - [John Wiley & Sons, Inc.](https://www.wiley.com/)
 - [Journals](https://onlinelibrary.wiley.com/)
+- [About Us](https://www.wiley.com/en-jp/about)
+
+A trusted leader in research and learning, our pioneering solutions and services are paving the way for knowledge seekers as they work to solve the world’s most important challenges. We are advocates of advancement, empowering knowledge-seekers to transform today’s biggest obstacles into tomorrow’s brightest opportunities.
+
+With over 200 years of experience in publishing, we continue to evolve knowledge seekers’ steps into strides, illuminating their path forward to personal, educational, and professional success at every stage. Around the globe, we break down barriers for innovators, empowering them to advance discoveries in their fields, adapt their workforces, and shape minds.
 
 ## AAIL
 

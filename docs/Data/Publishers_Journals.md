@@ -95,14 +95,49 @@ Our purpose is to ignite and celebrate aerospace ingenuity and collaboration, an
 ### AIP
 
 - [American Institute of Physics](https://www.aip.org/)
+- [About Us](https://ww2.aip.org/aip)
+
+The mission of the American Institute of Physics is to advance, promote, and serve the physical sciences for the benefit of humanity.
+
+With the mission of benefiting humanity through the physical sciences, AIP is both a federation and an institute.
+
+As a federation, AIP helps its Member Societies leverage their diverse expertise and contributions in advancing the physical sciences in the research enterprise, in the economy, in education and in society. Through their shared goals and partnership with AIP, Member Societies broaden their impact and achieve results beyond their individual missions and mandates.
+
+AIP also acts as an independent institute whose journalism, research, history and student programs enrich the discipline of the physical sciences.
+
+Together, AIP and its Member Societies form a unified community that includes stakeholders in government, academia, the nonprofit and private sectors, the student and teacher communities and the general public.
+
+AIP’s Strategic Framework, detailed below, comprises four overarching “FIRE” goals, which articulate AIP’s aspirations as a federation and an institute, with a reputation as a trusted source for information on the physical sciences and as an employer of excellence.
 
 ### AMS
 
 - [American Mathematical Society](https://www.ams.org/)
+- [Journals](https://www.ams.org/journals)
+- [About Us](https://www.ams.org/about)
+
+We are a society of mathematics students and professionals dedicated to advancing research, supporting learning and careers, and building our mathematical community.
+
+We work to advance your scholarship and connect you to the mathematical community through meetings, programs, grants, publications, education resources, and advocacy work.
 
 ### APS
 
 - [American Physical Society](https://journals.aps.org)
+- [Journals](https://journals.aps.org/all_journals)
+- [About Us](https://journals.aps.org/edannounce/aps-astrobites-partnership)
+
+The American Physical Society (APS) is pleased to announce that it will begin sponsoring Astrobites, a daily astrophysical literature journal written by graduate students in astronomy. This mutually beneficial collaboration aims to enhance the dissemination of research, educational resources, and career insights in the field of astronomy and astrophysics.
+
+APS will provide the support needed to host the Astrobites Slack channel, provide training resources to new writers, and elevate the organization’s prominence within the physics community, all while maintaining Astrobites’ editorial independence.
+
+“Astrobites is a real shining star in the astronomical and graduate student community, and I’m elated that APS sees that and is happy to help us grow and expand. I’m very excited to see what we accomplish together,” says former Astrobites Administrative Committee chair, Huei Sears.
+
+The Physical Review journals have always been a welcome home to the fields of astronomy and astrophysics having published prominent results from the LIGO Collaboration, BICEP/Keck, Parker Solar Probe, HAWC, Dark Energy Survey, and others.
+
+Physical Review journals Executive Editor Jessica Thomas says, “Astrobites makes the latest findings in astronomy accessible to undergraduate students and others who are interested in active research. Supporting this effort aligns with the APS mission to promote physics and serve the broader physics community.”
+
+**Vision, Mission, and Core Values**
+
+The American Physical Society is a scientific membership organization committed to advancing physics and creating a welcoming professional home for the world’s physics community.
 
 ### CAMBRIDGE
 
@@ -118,6 +153,15 @@ At Cambridge University Press, we currently publish more than 420 peer-reviewed 
 
 - [EDP Sciences](https://www.edpsciences.org/)
 - [Journals](https://publications.edpsciences.org/)
+- [About Us](https://www.edpsciences.org/en/about-edp-sciences)
+
+Over 100 years of publishing excellence
+
+EDP Sciences was established in 1920 by a prestigious academic community of French learned societies seeking to inspire, innovate and inform others by sharing their knowledge. Members of this community included eminent scientists like Marie Curie, Paul Langevin and Louis de Broglie.
+
+Marie Curie was a pioneer in the field of radioactivity and won two Nobel Prizes in physics and chemistry. Paul Langevin was a French physicist who gave his name to Langevin dynamics and the Langevin equation, while Louis de Broglie gained worldwide acclaim for his ground-breaking work on quantum theory.
+
+Since November 2019, EDP Sciences is owned by Science Press which is itself majority-owned by the Chinese Academy of Sciences (CAS). CAS is a prestigious learned society and the world’s largest research organisation. EDP Sciences has always been, and continues to be, the publishing partner of scientific communities throughout the world. EDP Sciences is guided by a Scientific Advisory Committee which is an independent body composed of scientists and influential, well-known members of the scientific community. The Committee is responsible for advising EDP Sciences on strategic matters and ensuring a permanent, formal link between the publisher and the scientific community.
 
 ### ELSEVIER
 
@@ -209,28 +253,69 @@ At Cambridge University Press, we currently publish more than 420 peer-reviewed 
 
 - [Society for International and Applied Mathmatics](https://epubs.siam.org)
 - [Journals](https://epubs.siam.org/action/showPublications?pubType=journal)
+- [About Us](https://www.siam.org/)
+
+Inspiring Innovation through Research
+
+Applied mathematics, computational and data science are essential to moving society forward and solving many of the world’s most pressing questions and problems. SIAM plays a central role in bringing mathematical and computational scientists together, providing a platform and community for this important work.
 
 SIAM publishes 18 peer-reviewed research journals and is the leading source of knowledge for the world's applied mathematics and computational science communities. The full text of all SIAM journals are available electronically by subscription.
 
 ### SPRINGER
 
-- [Springer](https://link.springer.com/)
+- [Springer](https://www.springer.com/)
 - [Journals](https://link.springer.com/journals)
+- [About Us](https://www.springer.com/jp/about-springer)
+
+**SPRINGER**
+
+Springer is a leading global scientific, technical and medical portfolio, providing researchers in academia, scientific institutions and corporate R&D departments with quality content through innovative information, products and services.
+
+Springer has one of the strongest STM and HSS eBook collections and archives, as well as a comprehensive range of hybrid and open access journals and books under the SpringerOpen imprint.
+
+Springer is part of Springer Nature, a global publisher that serves and supports the research community. Springer Nature aims to advance discovery by publishing robust and insightful science, supporting the development of new areas of research and making ideas and knowledge accessible around the world.
+
+As part of Springer Nature, Springer sits alongside other trusted brands like Nature Research, BMC and Palgrave Macmillan.
+
+**SPRINGER NATURE**
+
+Through our leading brands, trusted for more than 180 years, we provide technology-enabled products, platforms and services that help researchers to uncover new ideas and share their discoveries. We are proud to be part of progress and accelerate solutions to address the world’s urgent challenges.
+
+**SPRINGER NATURE LINK**
+
+As part of Springer Nature, Springer Nature Link delivers fast access to the depth and breadth of our online collection of journals, eBooks, reference works and protocols across a vast range of subject disciplines.
+
+Springer Nature Link is the reading platform of choice for hundreds of thousands of researchers worldwide. Find out how to publish your research with Springer Nature.
 
 ### TAYLOR
 
 - [Taylor & Francis](https://www.tandfonline.com/)
-- [Journals](https://www.tandfonline.com/)
+- [Journals](https://www.tandfonline.com/journals)
+- [About Us](https://www.tandfonline.com/why-publish-with-us)
+
+As a leading academic publisher, Taylor & Francis is committed to the highest quality of scholarly publishing. Since our founding in 1798, we have demonstrated our commitment to fostering human progress through knowledge and supporting academic communities.
+
+With a legacy of excellence and a commitment to scholarly integrity, we serve a wide and diverse community of experts from a variety of geographies and backgrounds in disseminating groundbreaking research to the global academic community.
 
 ### WILEY
 
 - [John Wiley & Sons, Inc.](https://www.wiley.com/)
 - [Journals](https://onlinelibrary.wiley.com/)
+- [About Us](https://www.wiley.com/en-jp/about)
+
+A trusted leader in research and learning, our pioneering solutions and services are paving the way for knowledge seekers as they work to solve the world’s most important challenges. We are advocates of advancement, empowering knowledge-seekers to transform today’s biggest obstacles into tomorrow’s brightest opportunities.
+
+With over 200 years of experience in publishing, we continue to evolve knowledge seekers’ steps into strides, illuminating their path forward to personal, educational, and professional success at every stage. Around the globe, we break down barriers for innovators, empowering them to advance discoveries in their fields, adapt their workforces, and shape minds.
 
 ### WS
 
 - [ World Scientific Publishing Company ](https://worldscientific.com/)
 - [Journals](https://worldscientific.com/page/wsjournals)
+- [About Us](https://worldscientific.com/page/about/corporate-profile)
+
+World Scientific Publishing Co Pte Ltd was established in 1981 with only 5 employees in a tiny office. Today, the company employs about 150 staff at its headquarters in Singapore and 450 globally. It has offices in New Jersey, London, Munich, Geneva, Tokyo, Hong Kong, Taipei, Beijing, Shanghai, Tianjin and Chennai. In about 3 decades, it has established itself as one of the leading academic and professional publishers in the world, and the largest international scientific publisher in the Asia-Pacific region..
+
+World Scientific releases approximately 600 new titles per annum and publishes more than 180 journals across multiple fields. With a publication history of over 12,000 titles, a significant proportion of World Scientific's books are prescribed as reading material by prestigious institutions like Harvard University, California Institute of Technology, Stanford University, and Princeton University. At present, WSPC's digital content is accessible to more than 45,000 universities, libraries and organizations worldwide, with usage boosted by collaborating with diverse search and discovery partners.
 
 ### arXiv
 
