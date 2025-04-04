@@ -6,7 +6,7 @@
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|OPEN|[Conference on Robot Learning](https://www.corl.org/)|[Proc. Conf. Robot Learn.](https://www.corl.org/)|CoRL|2017-|False||||NONE||Robotics|
+|OPEN|[Conference on Robot Learning](https://www.corl.org/)|[Proc. Conf. Robot Learn.](https://www.corl.org/)|CoRL|2017-|False||23/04/2025|27/09/2025|**19**|Seoul, Korea|Robotics|
 
 ## ECAL
 
@@ -18,7 +18,7 @@
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|OPEN|[European Symposium on Artificial Neural Networks](https://www.esann.org/)|[Proc. Eur. Symp. Artif. Neural Netw.](https://www.esann.org/)|ESANN|1993-|False||||NONE||European Conference; Neural Networks|
+|OPEN|[European Symposium on Artificial Neural Networks](https://www.esann.org/)|[Proc. Eur. Symp. Artif. Neural Netw.](https://www.esann.org/)|ESANN|1993-|False||27/11/2024|23/04/2025|**-128**|Bruges, Belgium|European Conference; Neural Networks|
 
 ## ICLR
 
@@ -42,17 +42,17 @@
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|OPEN|[Advances in Neural Information Processing Systems](https://nips.cc/)|[Proc. Adv. Neural Inf. Process. Syst.](https://nips.cc/)|[NeurIPS](https://proceedings.neurips.cc/)|1987-|False|A|11/05/2025|03/12/2025|**37**|San Diego|Artificial Intelligence; Machine Learning|
+|OPEN|[Advances in Neural Information Processing Systems](https://nips.cc/)|[Proc. Adv. Neural Inf. Process. Syst.](https://nips.cc/)|[NeurIPS](https://proceedings.neurips.cc/)|1987-|False|A|11/05/2025|03/12/2025|**37**|San Diego, USA|Artificial Intelligence; Machine Learning|
 
 ## RSS
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|OPEN|[Robotics: Science and Systems Conference](https://roboticsconference.org)|[Proc. Robot. Sci. Syst.](https://roboticsconference.org)|RSS|2005-|False||||NONE||Robotics|
+|OPEN|[Robotics: Science and Systems Conference](https://roboticsconference.org)|[Proc. Robot. Sci. Syst.](https://roboticsconference.org)|RSS|2005-|False||17/02/2025|21/06/2025|**-46**|Los Angeles, California|Robotics|
 
 ## SoCS
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|OPEN|[Symposium on Combinatorial Search](http://search-conference.org)|[Proc. Symp. Comb. Search](https://socs25.search-conference.org/)|SoCS|2008-|False||||NONE||Combinatorial Optimization; Heuristic Search|
+|OPEN|[Symposium on Combinatorial Search](http://search-conference.org)|[Proc. Symp. Comb. Search](https://socs25.search-conference.org/)|SoCS|2008-|False||19/03/2025|12/08/2025|**-16**|Scotland, United Kingdom|Combinatorial Optimization; Heuristic Search|
 

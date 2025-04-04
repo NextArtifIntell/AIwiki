@@ -18,7 +18,7 @@ Founded at the dawn of the computer age, ACM’s reach extends to every part of 
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[ACM](https://www.acm.org/)|ACM/SIGEVO Conference on Foundations of Genetic Algorithms|[Proc. ACM/SIGEVO Conf. Found. Genet. Algo.](https://naco.liacs.nl/foga2025/)|[FOGA](https://dl.acm.org/conference/foga)|1990-|False||02/05/2025|27/08/2025|**28**|Netherlands|Evolutionary Computation|
+|[ACM](https://www.acm.org/)|ACM/SIGEVO Conference on Foundations of Genetic Algorithms|[Proc. ACM/SIGEVO Conf. Found. Genet. Algo.](https://naco.liacs.nl/foga2025/)|[FOGA](https://dl.acm.org/conference/foga)|1990-|False||02/05/2025|27/08/2025|**28**|Leiden, The Netherlands|Evolutionary Computation|
 
 ## GECCO
 

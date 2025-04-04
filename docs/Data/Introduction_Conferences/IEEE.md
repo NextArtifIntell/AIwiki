@@ -36,25 +36,25 @@ IEEE is the world's largest technical professional organization dedicated to adv
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[IEEE](https://ieeexplore.ieee.org/)|IEEE International Conference on Machine Learning and Cybernetics|Proc. IEEE Int. Conf. Mach. Learn. Cybern.|[ICMLC](https://ieeexplore.ieee.org/xpl/conhome/1000424/all-proceedings)|2005-**2023**|False||||NONE||Machine Learning|
+|[IEEE](https://ieeexplore.ieee.org/)|[IEEE International Conference on Machine Learning and Cybernetics](https://www.icmlc.com/)|[Proc. IEEE Int. Conf. Mach. Learn. Cybern.](https://www.icmlc.com/)|[ICMLC](https://ieeexplore.ieee.org/xpl/conhome/1000424/all-proceedings)|2005-**2023**|False||01/04/2025|12/07/2025|**-3**|Bali, Indonesia|Machine Learning|
 
 ## ICRA
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[IEEE](https://ieeexplore.ieee.org/)|IEEE International Conference on Robotics and Automation|Proc. IEEE Int. Conf. Robot. Automat.|[ICRA](https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings)|1984-|False|B|||NONE||Robotics|
+|[IEEE](https://ieeexplore.ieee.org/)|[IEEE International Conference on Robotics and Automation](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra)|[Proc. IEEE Int. Conf. Robot. Automat.](https://2025.ieee-icra.org/)|[ICRA](https://ieeexplore.ieee.org/xpl/conhome/1000639/all-proceedings)|1984-|False|B|16/09/2024|19/05/2025|**-200**|Atlanta, USA|Robotics|
 
 ## IROS
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[IEEE](https://ieeexplore.ieee.org/)|IEEE/RSJ International Conference on Intelligent Robots and Systems|Proc. IEEE/RSJ Int. Conf. Intell. Robot. Syst.|[IROS](https://ieeexplore.ieee.org/xpl/conhome/1000393/all-proceedings)|1988-|False|C|||NONE||Robotics|
+|[IEEE](https://ieeexplore.ieee.org/)|[IEEE/RSJ International Conference on Intelligent Robots and Systems](https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros)|[Proc. IEEE/RSJ Int. Conf. Intell. Robot. Syst.](http://www.iros25.org/)|[IROS](https://ieeexplore.ieee.org/xpl/conhome/1000393/all-proceedings)|1988-|False|C|02/03/2025|19/10/2025|**-33**|Hangzhou, China|Robotics|
 
 ## SMC
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[IEEE](https://ieeexplore.ieee.org/)|IEEE International Conference on Systems, Man and Cybernetics|[Proc. IEEE Int. Conf. Syst., Man, Cybern.](https://www.ieeesmc2025.org/)|[SMC](https://ieeexplore.ieee.org/xpl/conhome/1000738/all-proceedings)|1989-|False|C|||NONE||Cybernetics; Human-Machine Systems; Systems Science|
+|[IEEE](https://ieeexplore.ieee.org/)|IEEE International Conference on Systems, Man and Cybernetics|[Proc. IEEE Int. Conf. Syst., Man, Cybern.](https://www.ieeesmc2025.org/)|[SMC](https://ieeexplore.ieee.org/xpl/conhome/1000738/all-proceedings)|1989-|False|C|20/04/2025|08/10/2025|**16**|Vienna, Austria|Cybernetics; Human-Machine Systems; Systems Science|
 
 ## SSCI
 

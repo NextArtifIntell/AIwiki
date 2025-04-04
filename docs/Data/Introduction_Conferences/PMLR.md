@@ -16,11 +16,11 @@ The Proceedings of Machine Learning Research is a series that publishes machine 
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[PMLR](https://proceedings.mlr.press/)|[International Conference on Algorithmic Learning Theory](http://algorithmiclearningtheory.org/)|[Proc. Int. Conf. Algorithmic Learn. Theory](http://algorithmiclearningtheory.org/)|[ALT](https://proceedings.mlr.press/)|1990-|False|C|||NONE||Learning Theory|
+|[PMLR](https://proceedings.mlr.press/)|[International Conference on Algorithmic Learning Theory](http://algorithmiclearningtheory.org/)|[Proc. Int. Conf. Algorithmic Learn. Theory](http://algorithmiclearningtheory.org/alt2025/)|[ALT](https://proceedings.mlr.press/)|1990-|False|C|01/10/2024|24/02/2025|NONE|Politecnico di Milano, Milan, Italy|Learning Theory|
 
 ## COLT
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[PMLR](https://proceedings.mlr.press/)|[Annual Conference On Computational Learning Theory](http://learningtheory.org)|[Proc. Conf. Learn. Theory](http://learningtheory.org)|[COLT](https://dl.acm.org/conference/colt/proceedings)|1988-|False|B|||NONE||Learning Theory|
+|[PMLR](https://proceedings.mlr.press/)|[Annual Conference On Computational Learning Theory](http://learningtheory.org)|[Proc. Conf. Learn. Theory](https://learningtheory.org/colt2025/)|[COLT](https://dl.acm.org/conference/colt/proceedings)|1988-|False|B|06/02/2025|30/06/2025|**-57**| Lyon, France|Learning Theory|
 

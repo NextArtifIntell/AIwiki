@@ -27,7 +27,7 @@ Springer Nature Link is the reading platform of choice for hundreds of thousands
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[SPRINGER](https://www.springer.com/)|[European Conference on Computer Vision](https://eccv.ecva.net/)|[Proc. Eur. Conf. Comput. Vis.](https://eccv.ecva.net/)|[ECCV](https://link.springer.com/conference/eccv)|1990-|False|B|06/03/2026|08/09/2026|**336**|Sweden|Computer Vision; European Conference|
+|[SPRINGER](https://www.springer.com/)|[European Conference on Computer Vision](https://eccv.ecva.net/)|[Proc. Eur. Conf. Comput. Vis.](https://eccv.ecva.net/)|[ECCV](https://link.springer.com/conference/eccv)|1990-|False|B|06/03/2026|08/09/2026|**336**|Malmö, Sweden|Computer Vision; European Conference|
 
 ## EMO
 
