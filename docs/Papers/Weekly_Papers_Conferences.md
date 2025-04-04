@@ -1,7 +1,5 @@
 # Weekly Papers from Conferences
 
-## Offline
-
 | **Number** | **2025 Papers** | **2024 Papers** | **2023 Papers** | **2022 Papers** | **2021 Papers** | **2020 Papers** |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [**AAAI**](Data/Data_Conferences/2025_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2024_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2023_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2022_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2021_all_months/aaai/aaai_link.html) | [**AAAI**](Data/Data_Conferences/2020_all_months/aaai/aaai_link.html) |
@@ -11,7 +9,3 @@
 | 5 | [**PMLR**](Data/Data_Conferences/2025_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2024_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2023_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2022_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2021_all_months/pmlr/pmlr_link.html) | [**PMLR**](Data/Data_Conferences/2020_all_months/pmlr/pmlr_link.html) |
 | 6 | [**SPRINGER**](Data/Data_Conferences/2025_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2024_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2023_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2022_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2021_all_months/springer/springer_link.html) | [**SPRINGER**](Data/Data_Conferences/2020_all_months/springer/springer_link.html) |
 | 7 | [**USENIX**](Data/Data_Conferences/2025_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2024_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2023_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2022_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2021_all_months/usenix/usenix_link.html) | [**USENIX**](Data/Data_Conferences/2020_all_months/usenix/usenix_link.html) |
-
-## Online
-
-<iframe src="https://nextartifintell.notion.site/ebd/1c954bee6c4380deaf79e4b2382442f9?v=1c954bee6c4381c5a132000c6811ac14" width="100%" height="600" frameborder="0" allowfullscreen />

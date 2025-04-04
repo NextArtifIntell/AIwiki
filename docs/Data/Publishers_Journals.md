@@ -50,6 +50,22 @@
 - [Journals](https://www.science.org/)
 - [About Us](https://www.science.org/content/page/aboutus)
 
+Science has been at the center of important scientific discovery since its founding in 1880—with seed money from Thomas Edison. Today, Science continues to publish the very best in research across the sciences, with articles that consistently rank among the most cited in the world. In the last half century alone, Science published:
+
+- The entire human genome for the first time
+
+- Never-before seen images of the Martian surface
+
+- The first studies tying AIDS to human immunodeficiency virus
+
+A trailblazer in online publishing as well, the Science family of publications has grown to include online journals Science Translational Medicine, Science Signaling, Science Immunology, Science Robotics and the open access journal Science Advances.
+
+Science Translational Medicine is an essential platform for peer-reviewed, multidisciplinary research driving the latest medical advances. Science Signaling offers original review articles, protocols and teaching resources for the growing field of cellular signal transduction. Science Immunology publishes basic, translational and clinical research specifically about immunology across all organisms and model systems, including humans. Science Robotics covers new developments in robotics and related fields, with a dual focus on the science of robotics as well as introducing researchers more broadly to how robots can be used to accelerate scientific study. Science Advances represents the next generation of online publishing, with rapid publication of significant, full-length research that is available free to readers.
+
+The Science family of journals is published by the American Association for the Advancement of Science (AAAS), the world’s oldest and largest general science organization. The nonprofit AAAS serves 10 million people through primary memberships and affiliations with some 262 scientific societies and academies.
+
+A voice for science and scientists everywhere, AAAS fulfills its mission to “advance science and serve society” by communicating the value of science to the public, helping governments formulate science policy, promoting advancements in science education and diversity, and helping scientists develop their careers.
+
 ### ACM
 
 - [Association for Computing Machinery](https://www.acm.org/)

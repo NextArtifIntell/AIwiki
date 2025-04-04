@@ -11,7 +11,7 @@ MIT Press Direct has also catalyzed our open access publishing initiatives for b
 
 ## ALIFE
 
-|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|CAS|JCR|IF|Type|
-|-|-|-|-|-|-|-|-|-|-|-|
-|[MIT](https://direct.mit.edu/)|[Artificial Life Conference](https://direct.mit.edu/isal)|[Proc. Int. Conf. Artif. Life](https://direct.mit.edu/isal)|[ALIFE](https://direct.mit.edu/isal)|2018-|False|||||Artificial Life|
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
+|-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
+|[MIT](https://direct.mit.edu/)|[Artificial Life Conference](https://direct.mit.edu/isal)|[Proc. Int. Conf. Artif. Life](https://direct.mit.edu/isal)|[ALIFE](https://direct.mit.edu/isal)|2018-|False||||NONE||Artificial Life|
 

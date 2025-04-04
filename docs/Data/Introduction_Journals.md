@@ -3,7 +3,7 @@
 ## Table
 
 | |Publisher|Full/Homepage|Abbr/About|Flag/Issues|Period|Top|CCF|CAS|JCR|IF|Type|
-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-        |-            |-         |-          |-     |-  |-  |-  |-  |- |-   |
 |1|[AAAI](https://www.aaai.org/)|[Journal of Artificial Intelligence Research](https://www.jair.org/index.php/jair)|[J. Artif. Intell. Res.](https://www.jair.org/index.php/jair/about)|[JAIR](https://www.jair.org/index.php/jair/issue/archive)|1996-|False|B|3|Q2|4.5|Artificial Intelligence|
 |2|[AAAS](https://www.science.org/)|[Science Advances](https://www.science.org/journal/sciadv)|[Sci. Adv.](https://www.science.org/content/page/science-advances-mission-and-scope)|[SCIADV](https://www.science.org/loi/sciadv)|2015-|True||1|Q1|11.7|Multidisciplinary|
 |3|[AAAS](https://www.science.org/)|[Science](https://www.science.org/journal/science)|[Science](https://www.science.org/content/page/about-science-aaas)|[SCIENCE](https://www.science.org/loi/science)|1880-|True||1|Q1|44.7|Multidisciplinary|
