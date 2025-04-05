@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOMS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="toms---40">TOMS - 40</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Algorithm 1038: KCC: A MATLAB package for k-means-based
+consensus clustering. <em>TOMS</em>, <em>49</em>(4), 40:1–27. (<a
+href="https://doi.org/10.1145/3616011">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Consensus clustering is gaining increasing attention for its high quality and robustness. In particular, k -means-based Consensus Clustering (KCC) converts the usual computationally expensive problem to a classic k -means clustering with generalized utility functions, bringing potentials for large-scale data clustering on different types of data. Despite KCC’s applicability and generalizability, implementing this method such as representing the binary dataset in the k -means heuristic is challenging and has seldom been discussed in prior work. To fill this gap, we present a MATLAB package, KCC, that completely implements the KCC framework and utilizes a sparse representation technique to achieve a low space complexity. Compared to alternative consensus clustering packages, the KCC package is of high flexibility, efficiency, and effectiveness. Extensive numerical experiments are also included to show its usability on real-world datasets.},
+  archive      = {J_TOMS},
+  author       = {Hao Lin and Hongfu Liu and Junjie Wu and Hong Li and Stephan Günnemann},
+  doi          = {10.1145/3616011},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {40:1–27},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1038: KCC: a MATLAB package for k-means-based consensus clustering},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). New subspace method for unconstrained derivative-free
+optimization. <em>TOMS</em>, <em>49</em>(4), 39:1–28. (<a
+href="https://doi.org/10.1145/3618297">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article defines an efficient subspace method, called SSDFO , for unconstrained derivative-free optimization problems where the gradients of the objective function are Lipschitz continuous but only exact function values are available. SSDFO employs line searches along directions constructed on the basis of quadratic models. These approximate the objective function in a subspace spanned by some previous search directions. A worst-case complexity bound on the number of iterations and function evaluations is derived for a basic algorithm using this technique. Numerical results for a practical variant with additional heuristic features show that, on the unconstrained CUTEst test problems, SSDFO has superior performance compared to the best solvers from the literature.},
+  archive      = {J_TOMS},
+  author       = {Morteza Kimiaei and Arnold Neumaier and Parvaneh Faramarzi},
+  doi          = {10.1145/3618297},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {39:1–28},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {New subspace method for unconstrained derivative-free optimization},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). KiT-RT: An extendable framework for radiative transfer and
+therapy. <em>TOMS</em>, <em>49</em>(4), 38:1–24. (<a
+href="https://doi.org/10.1145/3630001">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we present Kinetic Transport Solver for Radiation Therapy (KiT-RT), an open source C++-based framework for solving kinetic equations in therapy applications available at https://github.com/CSMMLab/KiT-RT . This software framework aims to provide a collection of classical deterministic solvers for unstructured meshes that allow for easy extendability. Therefore, KiT-RT is a convenient base to test new numerical methods in various applications and compare them against conventional solvers. The implementation includes spherical harmonics, minimal entropy, neural minimal entropy, and discrete ordinates methods. Solution characteristics and efficiency are presented through several test cases ranging from radiation transport to electron radiation therapy. Due to the variety of included numerical methods and easy extendability, the presented open source code is attractive for both developers, who want a basis to build their numerical solvers, and users or application engineers, who want to gain experimental insights without directly interfering with the codebase.},
+  archive      = {J_TOMS},
+  author       = {Jonas Kusch and Steffen Schotthöfer and Pia Stammer and Jannick Wolters and Tianbai Xiao},
+  doi          = {10.1145/3630001},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {38:1–24},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {KiT-RT: An extendable framework for radiative transfer and therapy},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Efficient implementation of modern entropy stable and
+kinetic energy preserving discontinuous galerkin methods for
+conservation laws. <em>TOMS</em>, <em>49</em>(4), 37:1–30. (<a
+href="https://doi.org/10.1145/3625559">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many modern discontinuous Galerkin (DG) methods for conservation laws make use of summation by parts operators and flux differencing to achieve kinetic energy preservation or entropy stability. While these techniques increase the robustness of DG methods significantly, they are also computationally more demanding than standard weak form nodal DG methods. We present several implementation techniques to improve the efficiency of flux differencing DG methods that use tensor product quadrilateral or hexahedral elements, in 2D or 3D, respectively. Focus is mostly given to CPUs and DG methods for the compressible Euler equations, although these techniques are generally also useful for other physical systems, including the compressible Navier-Stokes and magnetohydrodynamics equations. We present results using two open source codes, Trixi.jl written in Julia and FLUXO written in Fortran, to demonstrate that our proposed implementation techniques are applicable to different code bases and programming languages.},
+  archive      = {J_TOMS},
+  author       = {Hendrik Ranocha and Michael Schlottke-Lakemper and Jesse Chan and Andrés M. Rueda-Ramírez and Andrew R. Winters and Florian Hindenlang and Gregor J. Gassner},
+  doi          = {10.1145/3625559},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {37:1–30},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Efficient implementation of modern entropy stable and kinetic energy preserving discontinuous galerkin methods for conservation laws},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). HAZniCS – software components for multiphysics problems.
+<em>TOMS</em>, <em>49</em>(4), 36:1–23. (<a
+href="https://doi.org/10.1145/3625561">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the software toolbox HAZniCS for solving interface-coupled multiphysics problems. HAZniCS is a suite of modules that combines the well-known FEniCS framework for finite element discretization with solver and graph library HAZmath. The focus of this article is on the design and implementation of robust and efficient solver algorithms which tackle issues related to the complex interfacial coupling of the physical problems often encountered in applications in brain biomechanics. The robustness and efficiency of the numerical algorithms and methods is shown in several numerical examples, namely the Darcy-Stokes equations that model the flow of cerebrospinal fluid in the human brain and the mixed-dimensional model of electrodiffusion in the brain tissue.},
+  archive      = {J_TOMS},
+  author       = {Ana Budiša and Xiaozhe Hu and Miroslav Kuchta and Kent-André Mardal and Ludmil T. Zikatanov},
+  doi          = {10.1145/3625561},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {36:1–23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {HAZniCS – software components for multiphysics problems},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Computation of turing bifurcation normal form for
+n-component reaction-diffusion systems. <em>TOMS</em>, <em>49</em>(4),
+35:1–24. (<a href="https://doi.org/10.1145/3625560">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {General expressions are derived for the amplitude equation valid at a Turing bifurcation of a system of reaction-diffusion equations in one spatial dimension, with an arbitrary number of components. The normal form is computed up to fifth order, which enables the detection and analysis of codimension-two points where the criticality of the bifurcation changes. The expressions are implemented within a Python package, in which the user needs to specify only expressions for the reaction kinetics and the values of diffusion constants. The code is augmented with a Mathematica routine to compute curves of Turing bifurcations in a parameter plane and automatically detect codimension-two points. The software is illustrated with examples that show the versatility of the method including a case with cross-diffusion, a higher-order scalar equation and a four-component system.},
+  archive      = {J_TOMS},
+  author       = {Edgardo Villar-Sepúlveda and Alan Champneys},
+  doi          = {10.1145/3625560},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {35:1–24},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Computation of turing bifurcation normal form for n-component reaction-diffusion systems},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Parametric information geometry with the package geomstats.
+<em>TOMS</em>, <em>49</em>(4), 34:1–26. (<a
+href="https://doi.org/10.1145/3627538">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the information geometry module of the Python package Geomstats. The module first implements Fisher–Rao Riemannian manifolds of widely used parametric families of probability distributions, such as normal, gamma, beta, Dirichlet distributions, and more. The module further gives the Fisher–Rao Riemannian geometry of any parametric family of distributions of interest, given a parameterized probability density function as input. The implemented Riemannian geometry tools allow users to compare, average, interpolate between distributions inside a given family. Importantly, such capabilities open the door to statistics and machine learning on probability distributions. We present the object-oriented implementation of the module along with illustrative examples and show how it can be used to perform learning on manifolds of parametric probability distributions.},
+  archive      = {J_TOMS},
+  author       = {Alice Le Brigant and Jules Deschamps and Antoine Collas and Nina Miolane},
+  doi          = {10.1145/3627538},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {34:1–26},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Parametric information geometry with the package geomstats},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Manifolds.jl: An extensible julia framework for data
+analysis on manifolds. <em>TOMS</em>, <em>49</em>(4), 33:1–23. (<a
+href="https://doi.org/10.1145/3618296">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the Julia package Manifolds.jl , providing a fast and easy-to-use library of Riemannian manifolds and Lie groups. This package enables working with data defined on a Riemannian manifold, such as the circle, the sphere, symmetric positive definite matrices, or one of the models for hyperbolic spaces. We introduce a common interface, available in ManifoldsBase.jl , with which new manifolds, applications, and algorithms can be implemented. We demonstrate the utility of Manifolds.jl using Bézier splines, an optimization task on manifolds, and principal component analysis on nonlinear data. In a benchmark, Manifolds.jl outperforms all comparable packages for low-dimensional manifolds in speed; over Python and Matlab packages, the improvement is often several orders of magnitude, while over C/C++ packages, the improvement is two-fold. For high-dimensional manifolds, it outperforms all packages except for Tensorflow-Riemopt, which is specifically tailored for high-dimensional manifolds.},
+  archive      = {J_TOMS},
+  author       = {Seth D. Axen and Mateusz Baran and Ronny Bergmann and Krzysztof Rzecki},
+  doi          = {10.1145/3618296},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {33:1–23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Manifolds.jl: An extensible julia framework for data analysis on manifolds},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). IEEE-754 precision-p base-β arithmetic implemented in
+binary. <em>TOMS</em>, <em>49</em>(4), 32:1–21. (<a
+href="https://doi.org/10.1145/3596218">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We show how an IEEE-754 conformant precision- p base-β arithmetic can be implemented based on some binary floating-point and/or integer arithmetic. This includes the four basic operations and square root subject to the five IEEE-754 rounding modes, namely the nearest roundings with roundTiesToEven and roundTiesToAway, the directed roundings downwards and upwards, as well as rounding towards zero. Exceptional values like ∞ of NaN are covered according to the IEEE-754 arithmetic standard. The results of the precision- p base-β operations are computed using some underlying precision- q binary arithmetic. We distinguish two cases. When using a precision- q binary integer arithmetic, the base-β precision p is limited for all operations by β 2 p ≤ 2 q , whereas using a precision- q binary floating-point arithmetic imposes stronger limits on the base-β precision, namely β 2 p ≤ 2 q for addition and multiplication, β 2 p ≤ 2 q-1 for division and β 2 p ≤ 2 q -3 for the square root. Those limitations cannot be improved. The algorithms are implemented in a Matlab/Octave flbeta-toolbox with the choice of using uint64 or binary64 as underlying arithmetic. The former allows larger precisions, the latter is advantageous for the square root, whereas computing times are similar. The flbeta-toolbox offers precision- p base-β scalar, vector and matrix operations including sparse matrices as well as corresponding interval operations. The base β can be chosen in the range β ∊ [2,64]. The flbeta-toolbox will be part of Version 13 of INTLAB [ 18 ], the Matlab/Octave toolbox for reliable computing.},
+  archive      = {J_TOMS},
+  author       = {Siegfried M. Rump},
+  doi          = {10.1145/3596218},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {4},
+  pages        = {32:1–21},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {IEEE-754 precision-p base-β arithmetic implemented in binary},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Emgr – EMpirical GRamian framework version 5.99.
+<em>TOMS</em>, <em>49</em>(3), 31:1–8. (<a
+href="https://doi.org/10.1145/3609860">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Version 5.99 of the empirical Gramian framework – emgr – completes a development cycle which focused on parametric model order reduction of gas network models while preserving compatibility to the previous development for the application of combined state and parameter reduction for neuroscience network models. Second, new features concerning empirical Gramian types, perturbation design, and trajectory post-processing, as well as a Python version in addition to the default MATLAB / Octave implementation, have been added. This work summarizes these changes, particularly since emgr version 5.4, see Himpe , 2018 [Algorithms 11(7): 91], and gives recent as well as future applications, such as parameter identification in systems biology, based on the current feature set.},
+  archive      = {J_TOMS},
+  author       = {Christian Himpe},
+  doi          = {10.1145/3609860},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {31:1–8},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Emgr – EMpirical GRamian framework version 5.99},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). IFISS3D: A computational laboratory for investigating finite
+element approximation in three dimensions. <em>TOMS</em>,
+<em>49</em>(3), 30:1–14. (<a
+href="https://doi.org/10.1145/3604934">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IFISS is an established MATLAB finite element software package for studying strategies for solving partial differential equations (PDEs). IFISS3D is a new add-on toolbox that extends IFISS capabilities for elliptic PDEs from two to three space dimensions. The open-source MATLAB framework provides a computational laboratory for experimentation and exploration of finite element approximation and error estimation, as well as iterative solvers. The package is designed to be useful as a teaching tool for instructors and students who want to learn about state-of-the-art finite element methodology. It will also be useful for researchers as a source of reproducible test matrices of arbitrarily large dimension.},
+  archive      = {J_TOMS},
+  author       = {Georgios Papanikos and Catherine E. Powell and David J. Silvester},
+  doi          = {10.1145/3604934},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {30:1–14},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {IFISS3D: A computational laboratory for investigating finite element approximation in three dimensions},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Improvements to SLEPc in releases 3.14–3.18. <em>TOMS</em>,
+<em>49</em>(3), 29:1–11. (<a
+href="https://doi.org/10.1145/3603373">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This short article describes the main new features added to SLEPc, the Scalable Library for Eigenvalue Problem Computations, in the past two and a half years, corresponding to five release versions. The main novelty is the extension of the SVD module with new problem types, such as the generalized SVD or the hyperbolic SVD. Additionally, many improvements have been incorporated in different parts of the library, including contour integral eigensolvers, preconditioning, and GPU support.},
+  archive      = {J_TOMS},
+  author       = {Jose E. Roman and Fernando Alvarruiz and Carmen Campos and Lisandro Dalcin and Pierre Jolivet and Alejandro Lamas Daviña},
+  doi          = {10.1145/3603373},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {29:1–11},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Improvements to SLEPc in releases 3.14–3.18},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithm 1037: SuiteSparse:GraphBLAS: Parallel graph
+algorithms in the language of sparse linear algebra. <em>TOMS</em>,
+<em>49</em>(3), 28:1–30. (<a
+href="https://doi.org/10.1145/3577195">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {SuiteSparse:GraphBLAS is a full parallel implementation of the GraphBLAS standard, which defines a set of sparse matrix operations on an extended algebra of semirings using an almost unlimited variety of operators and types. When applied to sparse adjacency matrices, these algebraic operations are equivalent to computations on graphs. A description of the parallel implementation of SuiteSparse:GraphBLAS is given, including its novel parallel algorithms for sparse matrix multiply, addition, element-wise multiply, submatrix extraction and assignment, and the GraphBLAS mask/accumulator operation. Its performance is illustrated by solving the graph problems in the GAP Benchmark and by comparing it with other sparse matrix libraries.},
+  archive      = {J_TOMS},
+  author       = {Timothy A. Davis},
+  doi          = {10.1145/3577195},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {28:1–30},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1037: SuiteSparse:GraphBLAS: parallel graph algorithms in the language of sparse linear algebra},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Array-aware matching: Taming the complexity of large-scale
+simulation models. <em>TOMS</em>, <em>49</em>(3), 27:1–25. (<a
+href="https://doi.org/10.1145/3611661">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Equation-based modelling is a powerful approach to tame the complexity of large-scale simulation problems. Equation-based tools automatically translate models into imperative languages. When confronted with nowadays’ problems, however, well assessed model translation techniques exhibit scalability issues that are particularly severe when models contain very large arrays. In fact, such models can be made very compact by enclosing equations into looping constructs, but reflecting the same compactness into the translated imperative code is nontrivial. In this paper, we face this issue by concentrating on a key step of equations-to-code translation, the equation/variable matching. We first show that an efficient translation of models with (large) arrays needs awareness of their presence, by defining a figure of merit to measure how much the looping constructs are preserved along the translation. We then show that the said figure of merit allows to define an optimal array-aware matching, and as our main result, that the so stated optimal array-aware matching problem is NP-complete. As an additional result, we propose a heuristic algorithm capable of performing array-aware matching in polynomial time. The proposed algorithm can be proficiently used by model translator developers in the implementation of efficient tools for large-scale system simulation.},
+  archive      = {J_TOMS},
+  author       = {Massimo Fioravanti and Daniele Cattaneo and Federico Terraneo and Silvano Seva and Stefano Cherubin and Giovanni Agosta and Francesco Casella and Alberto Leva},
+  doi          = {10.1145/3611661},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {27:1–25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Array-aware matching: Taming the complexity of large-scale simulation models},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Approximating inverse cumulative distribution functions to
+produce approximate random variables. <em>TOMS</em>, <em>49</em>(3),
+26:1–29. (<a href="https://doi.org/10.1145/3604935">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For random variables produced through the inverse transform method, approximate random variables are introduced, which are produced using approximations to a distribution’s inverse cumulative distribution function. These approximations are designed to be computationally inexpensive and much cheaper than library functions, which are exact to within machine precision and, thus, highly suitable for use in Monte Carlo simulations. The approximation errors they introduce can then be eliminated through use of the multilevel Monte Carlo method. Two approximations are presented for the Gaussian distribution: a piecewise constant on equally spaced intervals and a piecewise linear using geometrically decaying intervals. The errors of the approximations are bounded and the convergence demonstrated, and the computational savings are measured for C and C++ implementations. Implementations tailored for Intel and Arm hardware are inspected alongside hardware agnostic implementations built using OpenMP. The savings are incorporated into a nested multilevel Monte Carlo framework with the Euler-Maruyama scheme to exploit the speedups without losing accuracy, offering speed ups by a factor of 5–7. These ideas are empirically extended to the Milstein scheme and the non-central χ 2 distribution for the Cox-Ingersoll-Ross process, offering speedups of a factor of 250 or more.},
+  archive      = {J_TOMS},
+  author       = {Michael Giles and Oliver Sheridan-Methven},
+  doi          = {10.1145/3604935},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {26:1–29},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Approximating inverse cumulative distribution functions to produce approximate random variables},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithms for parallel generic hp-adaptive finite element
+software. <em>TOMS</em>, <em>49</em>(3), 25:1–26. (<a
+href="https://doi.org/10.1145/3603372">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The hp -adaptive finite element method—where one independently chooses the mesh size ( h ) and polynomial degree ( p ) to be used on each cell—has long been known to have better theoretical convergence properties than either h - or p -adaptive methods alone. However, it is not widely used, owing at least in part to the difficulty of the underlying algorithms and the lack of widely usable implementations. This is particularly true when used with continuous finite elements. Herein, we discuss algorithms that are necessary for a comprehensive and generic implementation of hp -adaptive finite element methods on distributed-memory, parallel machines. In particular, we will present a multistage algorithm for the unique enumeration of degrees of freedom suitable for continuous finite element spaces, describe considerations for weighted load balancing, and discuss the transfer of variable size data between processes. We illustrate the performance of our algorithms with numerical examples and demonstrate that they scale reasonably up to at least 16,384 message passage interface processes. We provide a reference implementation of our algorithms as part of the open source library deal.II .},
+  archive      = {J_TOMS},
+  author       = {Marc Fehling and Wolfgang Bangerth},
+  doi          = {10.1145/3603372},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {25:1–26},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithms for parallel generic hp-adaptive finite element software},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Sparse approximate multifrontal factorization with composite
+compression methods. <em>TOMS</em>, <em>49</em>(3), 24:1–28. (<a
+href="https://doi.org/10.1145/3611662">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents a fast and approximate multifrontal solver for large sparse linear systems. In a recent work by Liu et al., we showed the efficiency of a multifrontal solver leveraging the butterfly algorithm and its hierarchical matrix extension, HODBF (hierarchical off-diagonal butterfly) compression to compress large frontal matrices. The resulting multifrontal solver can attain quasi-linear computation and memory complexity when applied to sparse linear systems arising from spatial discretization of high-frequency wave equations. To further reduce the overall number of operations and especially the factorization memory usage to scale to larger problem sizes, in this article we develop a composite multifrontal solver that employs the HODBF format for large-sized fronts, a reduced-memory version of the nonhierarchical block low-rank format for medium-sized fronts, and a lossy compression format for small-sized fronts. This allows us to solve sparse linear systems of dimension up to 2.7 × larger than before and leads to a memory consumption that is reduced by 70\% while ensuring the same execution time. The code is made publicly available in GitHub.},
+  archive      = {J_TOMS},
+  author       = {Lisa Claus and Pieter Ghysels and Yang Liu and Thái Anh Nhan and Ramakrishnan Thirumalaisamy and Amneet Pal Singh Bhalla and Sherry Li},
+  doi          = {10.1145/3611662},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {24:1–28},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Sparse approximate multifrontal factorization with composite compression methods},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Cache optimization and performance modeling of batched,
+small, and rectangular matrix multiplication on intel, AMD, and fujitsu
+processors. <em>TOMS</em>, <em>49</em>(3), 23:1–29. (<a
+href="https://doi.org/10.1145/3595178">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Factorization and multiplication of dense matrices and tensors are critical, yet extremely expensive pieces of the scientific toolbox. Careful use of low rank approximation can drastically reduce the computation and memory requirements of these operations. In addition to a lower arithmetic complexity, such methods can, by their structure, be designed to efficiently exploit modern hardware architectures. The majority of existing work relies on batched BLAS libraries to handle the computation of many small dense matrices. We show that through careful analysis of the cache utilization, register accumulation using SIMD registers and a redesign of the implementation, one can achieve significantly higher throughput for these types of batched low-rank matrices across a large range of block and batch sizes. We test our algorithm on three CPUs using diverse ISAs – the Fujitsu A64FX using ARM SVE, the Intel Xeon 6148 using AVX-512, and AMD EPYC 7502 using AVX-2, and show that our new batching methodology is able to obtain more than twice the throughput of vendor optimized libraries for all CPU architectures and problem sizes.},
+  archive      = {J_TOMS},
+  author       = {Sameer Deshmukh and Rio Yokota and George Bosilca},
+  doi          = {10.1145/3595178},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {3},
+  pages        = {23:1–29},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Cache optimization and performance modeling of batched, small, and rectangular matrix multiplication on intel, AMD, and fujitsu processors},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Enabling research through the SCIP optimization suite 8.0.
+<em>TOMS</em>, <em>49</em>(2), 22:1–21. (<a
+href="https://doi.org/10.1145/3585516">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The SCIP Optimization Suite provides a collection of software packages for mathematical optimization centered around the constraint integer programming framework SCIP . The focus of this article is on the role of the SCIP Optimization Suite in supporting research. SCIP ’s main design principles are discussed, followed by a presentation of the latest performance improvements and developments in version 8.0, which serve both as examples of SCIP ’s application as a research tool and as a platform for further developments. Furthermore, this article gives an overview of interfaces to other programming and modeling languages, new features that expand the possibilities for user interaction with the framework, and the latest developments in several extensions built upon SCIP .},
+  archive      = {J_TOMS},
+  author       = {Ksenia Bestuzheva and Mathieu Besançon and Wei-Kun Chen and Antonia Chmiela and Tim Donkiewicz and Jasper van Doornmalen and Leon Eifler and Oliver Gaul and Gerald Gamrath and Ambros Gleixner and Leona Gottwald and Christoph Graczyk and Katrin Halbig and Alexander Hoen and Christopher Hojny and Rolf van der Hulst and Thorsten Koch and Marco Lübbecke and Stephen J. Maher and Frederic Matter and Erik Mühmer and Benjamin Müller and Marc E. Pfetsch and Daniel Rehfeldt and Steffan Schlein and Franziska Schlösser and Felipe Serrano and Yuji Shinano and Boro Sofranac and Mark Turner and Stefan Vigerske and Fabian Wegscheider and Philipp Wellner and Dieter Weninger and Jakob Witzig},
+  doi          = {10.1145/3585516},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {22:1–21},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Enabling research through the SCIP optimization suite 8.0},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithm 1036: ATC, an advanced tucker compression library
+for multidimensional data. <em>TOMS</em>, <em>49</em>(2), 21:1–25. (<a
+href="https://doi.org/10.1145/3585514">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present ATC, a C++ library for advanced Tucker-based lossy compression of dense multidimensional numerical data in a shared-memory parallel setting, based on the sequentially truncated higher-order singular value decomposition (ST-HOSVD) and bit plane truncation. Several techniques are proposed to improve speed, memory usage, error control and compression rate. First, a hybrid truncation scheme is described which combines Tucker rank truncation and TTHRESH quantization. We derive a novel expression to approximate the error of truncated Tucker decompositions in the case of core and factor perturbations. We parallelize the quantization and encoding scheme and adjust this phase to improve error control. Implementation aspects are described, such as an ST-HOSVD procedure using only a single transposition. We also discuss several usability features of ATC, including the presence of multiple interfaces, extensive data type support, and integrated downsampling of the decompressed data. Numerical results show that ATC maintains state-of-the-art Tucker compression rates while providing average speed-up factors of 2.2 to 3.5 and halving memory usage. Our compressor provides precise error control, deviating only 1.4\% from the requested error on average. Finally, ATC often achieves higher compression than non-Tucker-based compressors in the high-error domain.},
+  archive      = {J_TOMS},
+  author       = {Wouter Baert and Nick Vannieuwenhoven},
+  doi          = {10.1145/3585514},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {21:1–25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1036: ATC, an advanced tucker compression library for multidimensional data},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithm 1035: A gradient-based implementation of the
+polyhedral active set algorithm. <em>TOMS</em>, <em>49</em>(2), 20:1–13.
+(<a href="https://doi.org/10.1145/3583559">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Polyhedral Active Set Algorithm (PASA) is designed to optimize a general nonlinear function over a polyhedron. Phase one of the algorithm is a nonmonotone gradient projection algorithm, while phase two is an active set algorithm that explores faces of the constraint polyhedron. A gradient-based implementation is presented, where a projected version of the conjugate gradient algorithm is employed in phase two. Asymptotically, only phase two is performed. Comparisons are given with IPOPT using polyhedral-constrained problems from CUTEst and the Maros/Meszaros quadratic programming test set.},
+  archive      = {J_TOMS},
+  author       = {William W. Hager and Hongchao Zhang},
+  doi          = {10.1145/3583559},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {20:1–13},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1035: A gradient-based implementation of the polyhedral active set algorithm},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). ARKODE: A flexible IVP solver infrastructure for one-step
+methods. <em>TOMS</em>, <em>49</em>(2), 19:1–26. (<a
+href="https://doi.org/10.1145/3594632">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We describe the ARKODE library of one-step time integration methods for ordinary differential equation (ODE) initial-value problems (IVPs). In addition to providing standard explicit and diagonally implicit Runge–Kutta methods, ARKODE supports one-step methods designed to treat additive splittings of the IVP, including implicit-explicit (ImEx) additive Runge–Kutta methods and multirate infinitesimal (MRI) methods. We present the role of ARKODE within the SUNDIALS suite of time integration and nonlinear solver libraries, the core ARKODE infrastructure for utilities common to large classes of one-step methods, as well as its use of “time stepper” modules enabling easy incorporation of novel algorithms into the library. Numerical results show example problems of increasing complexity, highlighting the algorithmic flexibility afforded through this infrastructure, and include a larger multiphysics application leveraging multiple algorithmic features from ARKODE and SUNDIALS.},
+  archive      = {J_TOMS},
+  author       = {Daniel R. Reynolds and David J. Gardner and Carol S. Woodward and Rujeko Chinomona},
+  doi          = {10.1145/3594632},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {19:1–26},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {ARKODE: A flexible IVP solver infrastructure for one-step methods},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). CPFloat: A c library for simulating low-precision
+arithmetic. <em>TOMS</em>, <em>49</em>(2), 18:1–32. (<a
+href="https://doi.org/10.1145/3585515">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One can simulate low-precision floating-point arithmetic via software by executing each arithmetic operation in hardware and then rounding the result to the desired number of significant bits. For IEEE-compliant formats, rounding requires only standard mathematical library functions, but handling subnormals, underflow, and overflow demands special attention, and numerical errors can cause mathematically correct formulae to behave incorrectly in finite arithmetic. Moreover, the ensuing implementations are not necessarily efficient, as the library functions these techniques build upon are typically designed to handle a broad range of cases and may not be optimized for the specific needs of rounding algorithms. CPFloat is a C library for simulating low-precision arithmetics. It offers efficient routines for rounding, performing mathematical computations, and querying properties of the simulated low-precision format. The software exploits the bit-level floating-point representation of the format in which the numbers are stored and replaces costly library calls with low-level bit manipulations and integer arithmetic. In numerical experiments, the new techniques bring a considerable speedup (typically one order of magnitude or more) over existing alternatives in C, C++, and MATLAB. To our knowledge, CPFloat is currently the most efficient and complete library for experimenting with custom low-precision floating-point arithmetic.},
+  archive      = {J_TOMS},
+  author       = {Massimiliano Fasi and Mantas Mikaitis},
+  doi          = {10.1145/3585515},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {18:1–32},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {CPFloat: A c library for simulating low-precision arithmetic},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). HIPPYlib-MUQ: A bayesian inference software framework for
+integration of data with complex predictive models under uncertainty.
+<em>TOMS</em>, <em>49</em>(2), 17:1–31. (<a
+href="https://doi.org/10.1145/3580278">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bayesian inference provides a systematic framework for integration of data with mathematical models to quantify the uncertainty in the solution of the inverse problem. However, the solution of Bayesian inverse problems governed by complex forward models described by partial differential equations (PDEs) remains prohibitive with black-box Markov chain Monte Carlo (MCMC) methods. We present hIPPYlib-MUQ, an extensible and scalable software framework that contains implementations of state-of-the art algorithms aimed to overcome the challenges of high-dimensional, PDE-constrained Bayesian inverse problems. These algorithms accelerate MCMC sampling by exploiting the geometry and intrinsic low-dimensionality of parameter space via derivative information and low rank approximation. The software integrates two complementary open-source software packages, hIPPYlib and MUQ. hIPPYlib solves PDE-constrained inverse problems using automatically-generated adjoint-based derivatives, but it lacks full Bayesian capabilities. MUQ provides a spectrum of powerful Bayesian inversion models and algorithms, but expects forward models to come equipped with gradients and Hessians to permit large-scale solution. By combining these two complementary libraries, we created a robust, scalable, and efficient software framework that realizes the benefits of each and allows us to tackle complex large-scale Bayesian inverse problems across a broad spectrum of scientific and engineering disciplines. To illustrate the capabilities of hIPPYlib-MUQ, we present a comparison of a number of MCMC methods available in the integrated software on several high-dimensional Bayesian inverse problems. These include problems characterized by both linear and nonlinear PDEs, various noise models, and different parameter dimensions. The results demonstrate that large (∼ 50×) speedups over conventional black box and gradient-based MCMC algorithms can be obtained by exploiting Hessian information (from the log-posterior), underscoring the power of the integrated hIPPYlib-MUQ framework.},
+  archive      = {J_TOMS},
+  author       = {Ki-Tae Kim and Umberto Villa and Matthew Parno and Youssef Marzouk and Omar Ghattas and Noemi Petra},
+  doi          = {10.1145/3580278},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {17:1–31},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {HIPPYlib-MUQ: A bayesian inference software framework for integration of data with complex predictive models under uncertainty},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Truncated log-concave sampling for convex bodies with
+reflective hamiltonian monte carlo. <em>TOMS</em>, <em>49</em>(2),
+16:1–25. (<a href="https://doi.org/10.1145/3589505">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce Reflective Hamiltonian Monte Carlo (ReHMC), an HMC-based algorithm to sample from a log-concave distribution restricted to a convex body. The random walk is based on incorporating reflections to the Hamiltonian dynamics such that the support of the target density is the convex body. We develop an efficient open source implementation of ReHMC and perform an experimental study on various high-dimensional datasets. The experiments suggest that ReHMC outperforms Hit-and-Run and Coordinate-Hit-and-Run regarding the time it needs to produce an independent sample, introducing practical truncated sampling in thousands of dimensions.},
+  archive      = {J_TOMS},
+  author       = {Apostolos Chalkis and Vissarion Fisikopoulos and Marios Papachristou and Elias Tsigaridas},
+  doi          = {10.1145/3589505},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {16:1–25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Truncated log-concave sampling for convex bodies with reflective hamiltonian monte carlo},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Task-based parallel programming for scalable matrix product
+algorithms. <em>TOMS</em>, <em>49</em>(2), 15:1–23. (<a
+href="https://doi.org/10.1145/3583560">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task-based programming models have succeeded in gaining the interest of the high-performance mathematical software community because they relieve part of the burden of developing and implementing distributed-memory parallel algorithms in an efficient and portable way.In increasingly larger, more heterogeneous clusters of computers, these models appear as a way to maintain and enhance more complex algorithms. However, task-based programming models lack the flexibility and the features that are necessary to express in an elegant and compact way scalable algorithms that rely on advanced communication patterns. We show that the Sequential Task Flow paradigm can be extended to write compact yet efficient and scalable routines for linear algebra computations. Although, this work focuses on dense General Matrix Multiplication, the proposed features enable the implementation of more complex algorithms. We describe the implementation of these features and of the resulting GEMM operation. Finally, we present an experimental analysis on two homogeneous supercomputers showing that our approach is competitive up to 32,768 CPU cores with state-of-the-art libraries and may outperform them for some problem dimensions. Although our code can use GPUs straightforwardly, we do not deal with this case because it implies other issues which are out of the scope of this work.},
+  archive      = {J_TOMS},
+  author       = {Emmanuel Agullo and Alfredo Buttari and Abdou Guermouche and Julien Herrmann and Antoine Jego},
+  doi          = {10.1145/3583560},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {15:1–23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Task-based parallel programming for scalable matrix product algorithms},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Distributed ℋ2-matrices for boundary element methods.
+<em>TOMS</em>, <em>49</em>(2), 14:1–21. (<a
+href="https://doi.org/10.1145/3582494">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Standard discretization techniques for boundary integral equations, e.g., the Galerkin boundary element method, lead to large densely populated matrices that require fast and efficient compression techniques like the fast multipole method or hierarchical matrices. If the underlying mesh is very large, running the corresponding algorithms on a distributed computer is attractive, e.g., since distributed computers frequently are cost-effective and offer a high accumulated memory bandwidth. Compared to the closely related particle methods, for which distributed algorithms are well-established, the Galerkin discretization poses a challenge, since the supports of the basis functions influence the block structure of the matrix and therefore the flow of data in the corresponding algorithms. This article introduces distributed ℋ 2 -matrices, a class of hierarchical matrices that is closely related to fast multipole methods and particularly well-suited for distributed computing. While earlier efforts required the global tree structure of the ℋ 2 -matrix to be stored in every node of the distributed system, the new approach needs only local multilevel information that can be obtained via a simple distributed algorithm, allowing us to scale to significantly larger systems. Experiments show that this approach can handle very large meshes with more than 130 million triangles efficiently.},
+  archive      = {J_TOMS},
+  author       = {Steffen Börm},
+  doi          = {10.1145/3582494},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {14:1–21},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Distributed ℋ2-matrices for boundary element methods},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Computing with b-series. <em>TOMS</em>, <em>49</em>(2),
+13:1–23. (<a href="https://doi.org/10.1145/3573384">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present BSeries.jl, a Julia package for the computation and manipulation of B-series, which are a versatile theoretical tool for understanding and designing discretizations of differential equations. We give a short introduction to the theory of B-series and associated concepts and provide examples of their use, including method composition and backward error analysis. The associated software is highly performant and makes it possible to work with B-series of high order.},
+  archive      = {J_TOMS},
+  author       = {David I. Ketcheson and Hendrik Ranocha},
+  doi          = {10.1145/3573384},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {13:1–23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Computing with B-series},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). FastSpline: Automatic generation of interpolants for lattice
+samplings. <em>TOMS</em>, <em>49</em>(2), 12:1–35. (<a
+href="https://doi.org/10.1145/3577194">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Interpolation is a foundational concept in scientific computing and is at the heart of many scientific visualization techniques. There is usually a tradeoff between the approximation capabilities of an interpolation scheme and its evaluation efficiency. For many applications, it is important for a user to navigate their data in real time. In practice, evaluation efficiency outweighs any incremental improvements in reconstruction fidelity. We first analyze, from a general standpoint, the use of compact piece-wise polynomial basis functions to efficiently interpolate data that is sampled on a lattice. We then detail our automatic code-generation framework on both CPU and GPU architectures. Specifically, we propose a general framework that can produce a fast evaluation scheme by analyzing the algebro-geometric structure of the convolution sum for a given lattice and basis function combination. We demonstrate the utility and generality of our framework by providing fast implementations of various box splines on the Body Centered and Face Centered Cubic lattices, as well as some non-separable box splines on the Cartesian lattice. We also provide fast implementations for certain Voronoi-splines that have not yet appeared in the literature. Finally, we demonstrate that this framework may also be used for non-Cartesian lattices in 4D.},
+  archive      = {J_TOMS},
+  author       = {Joshua Horacsek and Usman Alim},
+  doi          = {10.1145/3577194},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {2},
+  pages        = {12:1–35},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {FastSpline: Automatic generation of interpolants for lattice samplings},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Certifying zeros of polynomial systems using interval
+arithmetic. <em>TOMS</em>, <em>49</em>(1), 11:1–14. (<a
+href="https://doi.org/10.1145/3580277">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We establish interval arithmetic as a practical tool for certification in numerical algebraic geometry. Our software HomotopyContinuation.jl now has a built-in function certify , which proves the correctness of an isolated nonsingular solution to a square system of polynomial equations. The implementation rests on Krawczyk’s method. We demonstrate that it dramatically outperforms earlier approaches to certification. We see this contribution as a powerful new tool in numerical algebraic geometry, which can make certification the default and not just an option.},
+  archive      = {J_TOMS},
+  author       = {Paul Breiding and Kemal Rose and Sascha Timme},
+  doi          = {10.1145/3580277},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {11:1–14},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Certifying zeros of polynomial systems using interval arithmetic},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Newly released capabilities in the distributed-memory
+SuperLU sparse direct solver. <em>TOMS</em>, <em>49</em>(1), 10:1–20.
+(<a href="https://doi.org/10.1145/3577197">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the new features available in the recent release of SuperLU_DIST , Version 8.1.1. SuperLU_DIST is a distributed-memory parallel sparse direct solver. The new features include (1) a 3D communication-avoiding algorithm framework that trades off inter-process communication for selective memory duplication, (2) multi-GPU support for both NVIDIA GPUs and AMD GPUs, and (3) mixed-precision routines that perform single-precision LU factorization and double-precision iterative refinement. Apart from the algorithm improvements, we also modernized the software build system to use CMake and Spack package installation tools to simplify the installation procedure. Throughout the article, we describe in detail the pertinent performance-sensitive parameters associated with each new algorithmic feature, show how they are exposed to the users, and give general guidance of how to set these parameters. We illustrate that the solver’s performance both in time and memory can be greatly improved after systematic tuning of the parameters, depending on the input sparse matrix and underlying hardware.},
+  archive      = {J_TOMS},
+  author       = {Xiaoye S. Li and Paul Lin and Yang Liu and Piyush Sao},
+  doi          = {10.1145/3577197},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {10:1–20},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Newly released capabilities in the distributed-memory SuperLU sparse direct solver},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithm 1034: An accelerated algorithm to compute the qn
+robust statistic, with corrections to constants. <em>TOMS</em>,
+<em>49</em>(1), 9:1–12. (<a
+href="https://doi.org/10.1145/3576920">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The robust scale estimator Q n developed by Croux and Rousseeuw [ 3 ], for the computation of which they provided a deterministic algorithm, has proven to be very useful in several domains including in quality management and time series analysis. It has interesting mathematical (50\% breakdown, 82\% Asymptotic Relative Efficiency) and computing ( O(nlogn) time, O ( n ) space) properties. While working on a faster algorithm to compute Q n , we have discovered an error in the computation of the d constant, and as a consequence in the d n constants that are used to scale the statistic for consistency with the variance of a normal sample. These errors have been reproduced in several articles including in the International Standard Organisation 13,528 [ 12 ] document. In this article, we fix the errors and present a new approach, which includes a new algorithm, allowing computations to run 1.3 to 4.5 times faster when n grows from 10 to 100,000.},
+  archive      = {J_TOMS},
+  author       = {Thierry Fahmy},
+  doi          = {10.1145/3576920},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {9:1–12},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1034: An accelerated algorithm to compute the qn robust statistic, with corrections to constants},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithm 1033: Parallel implementations for computing the
+minimum distance of a random linear code on distributed-memory
+architectures. <em>TOMS</em>, <em>49</em>(1), 8:1–24. (<a
+href="https://doi.org/10.1145/3573383">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The minimum distance of a linear code is a key concept in information theory. Therefore, the time required by its computation is very important to many problems in this area. In this article, we introduce a family of implementations of the Brouwer–Zimmermann algorithm for distributed-memory architectures for computing the minimum distance of a random linear code over 𝔽 2 . Both current commercial and public-domain software only work on either unicore architectures or shared-memory architectures, which are limited in the number of cores/processors employed in the computation. Our implementations focus on distributed-memory architectures, thus being able to employ hundreds or even thousands of cores in the computation of the minimum distance. Our experimental results show that our implementations are much faster, even up to several orders of magnitude, than current implementations widely used nowadays.},
+  archive      = {J_TOMS},
+  author       = {Gregorio Quintana-Ortí and Fernando Hernando and Francisco D. Igual},
+  doi          = {10.1145/3573383},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {8:1–24},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1033: Parallel implementations for computing the minimum distance of a random linear code on distributed-memory architectures},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithm 1032: Bi-cubic splines for polyhedral control
+nets. <em>TOMS</em>, <em>49</em>(1), 7:1–12. (<a
+href="https://doi.org/10.1145/3570158">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For control nets outlining a large class of topological polyhedra, not just tensor-product grids, bi-cubic polyhedral splines form a piecewise polynomial, first-order differentiable space that associates one function with each vertex. Akin to tensor-product splines, the resulting smooth surface approximates the polyhedron. Admissible polyhedral control nets consist of quadrilateral faces in a grid-like layout, star-configuration where n ≠ 4 quadrilateral faces join around an interior vertex, n -gon configurations, where 2n quadrilaterals surround an n -gon, polar configurations where a cone of n triangles meeting at a vertex is surrounded by a ribbon of n quadrilaterals, and three types of T-junctions where two quad-strips merge into one. The bi-cubic pieces of a polyhedral spline have matching derivatives along their break lines, possibly after a known change of variables. The pieces are represented in Bernstein-Bézier form with coefficients depending linearly on the polyhedral control net, so that evaluation, differentiation, integration, moments, and so on, are no more costly than for standard tensor-product splines. Bi-cubic polyhedral splines can be used both to model geometry and for computing functions on the geometry. Although polyhedral splines do not offer nested refinement by refinement of the control net, polyhedral splines support engineering analysis of curved smooth objects. Coarse nets typically suffice since the splines efficiently model curved features. Algorithm 1032 is a C++ library with input-output example pairs and an IGES output choice.},
+  archive      = {J_TOMS},
+  author       = {Jörg Peters and Kyle Lo and Kȩstutis Karčiauskas},
+  doi          = {10.1145/3570158},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {7:1–12},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1032: Bi-cubic splines for polyhedral control nets},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithm 1031: MQSI—monotone quintic spline interpolation.
+<em>TOMS</em>, <em>49</em>(1), 6:1–17. (<a
+href="https://doi.org/10.1145/3570157">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {MQSI is a Fortran 2003 subroutine for constructing monotone quintic spline interpolants to univariate monotone data. Using sharp theoretical monotonicity constraints, first and second derivative estimates at data provided by a quadratic facet model are refined to produce a univariate C 2 monotone interpolant. Algorithm and implementation details, complexity and sensitivity analyses, usage information, a brief performance study, and comparisons with other spline approaches are included.},
+  archive      = {J_TOMS},
+  author       = {Thomas Lux and Layne T. Watson and Tyler Chang and William Thacker},
+  doi          = {10.1145/3570157},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {6:1–17},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1031: MQSI—Monotone quintic spline interpolation},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A geometric multigrid method for space-time finite element
+discretizations of the navier–stokes equations and its application to 3D
+flow simulation. <em>TOMS</em>, <em>49</em>(1), 5:1–25. (<a
+href="https://doi.org/10.1145/3582492">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a parallelized geometric multigrid (GMG) method, based on the cell-based Vanka smoother, for higher order space-time finite element methods (STFEM) to the incompressible Navier–Stokes equations. The STFEM is implemented as a time marching scheme. The GMG solver is applied as a preconditioner for generalized minimal residual iterations. Its performance properties are demonstrated for 2D and 3D benchmarks of flow around a cylinder. The key ingredients of the GMG approach are the construction of the local Vanka smoother over all degrees of freedom in time of the respective subinterval and its efficient application. For this, data structures that store pre-computed cell inverses of the Jacobian for all hierarchical levels and require only a reasonable amount of memory overhead are generated. The GMG method is built for the deal.II finite element library. The concepts are flexible and can be transferred to similar software platforms.},
+  archive      = {J_TOMS},
+  author       = {Mathias Anselmann and Markus Bause},
+  doi          = {10.1145/3582492},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {5:1–25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {A geometric multigrid method for space-time finite element discretizations of the Navier–Stokes equations and its application to 3D flow simulation},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Combining sparse approximate factorizations with
+mixed-precision iterative refinement. <em>TOMS</em>, <em>49</em>(1),
+4:1–29. (<a href="https://doi.org/10.1145/3582493">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The standard LU factorization-based solution process for linear systems can be enhanced in speed or accuracy by employing mixed-precision iterative refinement. Most recent work has focused on dense systems. We investigate the potential of mixed-precision iterative refinement to enhance methods for sparse systems based on approximate sparse factorizations. In doing so, we first develop a new error analysis for LU- and GMRES-based iterative refinement under a general model of LU factorization that accounts for the approximation methods typically used by modern sparse solvers, such as low-rank approximations or relaxed pivoting strategies. We then provide a detailed performance analysis of both the execution time and memory consumption of different algorithms, based on a selected set of iterative refinement variants and approximate sparse factorizations. Our performance study uses the multifrontal solver MUMPS, which can exploit block low-rank factorization and static pivoting. We evaluate the performance of the algorithms on large, sparse problems coming from a variety of real-life and industrial applications showing that mixed-precision iterative refinement combined with approximate sparse factorization can lead to considerable reductions of both the time and memory consumption.},
+  archive      = {J_TOMS},
+  author       = {Patrick Amestoy and Alfredo Buttari and Nicholas J. Higham and Jean-Yves L’Excellent and Theo Mary and Bastien Vieublé},
+  doi          = {10.1145/3582493},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {4:1–29},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Combining sparse approximate factorizations with mixed-precision iterative refinement},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Event-based automatic differentiation of OpenMP with
+OpDiLib. <em>TOMS</em>, <em>49</em>(1), 3:1–31. (<a
+href="https://doi.org/10.1145/3570159">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the new software OpDiLib, a universal add-on for classical operator overloading AD tools that enables the automatic differentiation (AD) of OpenMP parallelized code. With it, we establish support for OpenMP features in a reverse mode operator overloading AD tool to an extent that was previously only reported on in source transformation tools. We achieve this with an event-based implementation ansatz that is unprecedented in AD. Combined with modern OpenMP features around OMPT, we demonstrate how it can be used to achieve differentiation without any additional modifications of the source code; neither do we impose a priori restrictions on the data access patterns, which makes OpDiLib highly applicable. For further performance optimizations, restrictions like atomic updates on adjoint variables can be lifted in a fine-grained manner. OpDiLib can also be applied in a semi-automatic fashion via a macro interface, which supports compilers that do not implement OMPT. We demonstrate the applicability of OpDiLib for a pure operator overloading approach in a hybrid parallel environment. We quantify the cost of atomic updates on adjoint variables and showcase the speedup and scaling that can be achieved with the different configurations of OpDiLib in both the forward and the reverse pass.},
+  archive      = {J_TOMS},
+  author       = {Johannes Blühdorn and Max Sagebaum and Nicolas Gauger},
+  doi          = {10.1145/3570159},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {3:1–31},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Event-based automatic differentiation of OpenMP with OpDiLib},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Robust topological construction of all-hexahedral boundary
+layer meshes. <em>TOMS</em>, <em>49</em>(1), 2:1–32. (<a
+href="https://doi.org/10.1145/3577196">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a robust technique to build a topologically optimal all-hexahedral layer on the boundary of a model with arbitrarily complex ridges and corners. The generated boundary layer mesh strictly respects the geometry of the input surface mesh, and it is optimal in the sense that the hexahedral valences of the boundary edges are as close as possible to their ideal values (local dihedral angle divided by 90°). Starting from a valid watertight surface mesh (all-quad in practice), we build a global optimization integer programming problem to minimize the mismatch between the hexahedral valences of the boundary edges and their ideal values. The formulation of the integer programming problem relies on the duality between boundary hexahedral configurations and triangulations of the disk, which we reframe in terms of integer constraints. The global problem is solved efficiently by performing combinatorial branch-and-bound searches on a series of sub-problems defined in the vicinity of complicated ridges/corners, where the local mesh topology is necessarily irregular because of the inherent constraints in hexahedral meshes. From the integer solution, we build the topology of the all-hexahedral layer, and the mesh geometry is computed by untangling/smoothing. Our approach is fully automated, topologically robust, and fast.},
+  archive      = {J_TOMS},
+  author       = {Maxence Reberol and Kilian Verhetsel and François Henrotte and David Bommes and Jean-François Remacle},
+  doi          = {10.1145/3577196},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {2:1–32},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Robust topological construction of all-hexahedral boundary layer meshes},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Accurate calculation of euclidean norms using double-word
+arithmetic. <em>TOMS</em>, <em>49</em>(1), 1:1–34. (<a
+href="https://doi.org/10.1145/3568672">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the computation of the Euclidean (or L2) norm of an n -dimensional vector in floating-point arithmetic. We review the classical solutions used to avoid spurious overflow or underflow and/or to obtain very accurate results. We modify a recently published algorithm (that uses double-word arithmetic) to allow for a very accurate solution, free of spurious overflows and underflows. To that purpose, we use a double-word square-root algorithm of which we provide a tight error analysis. The returned L2 norm will be within very slightly more than 0.5 ulp from the exact result, which means that we will almost always provide correct rounding.},
+  archive      = {J_TOMS},
+  author       = {Vincent Lefèvre and Nicolas Louvet and Jean-Michel Muller and Joris Picot and Laurence Rideau},
+  doi          = {10.1145/3568672},
+  journal      = {ACM Transactions on Mathematical Software},
+  number       = {1},
+  pages        = {1:1–34},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Accurate calculation of euclidean norms using double-word arithmetic},
+  volume       = {49},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

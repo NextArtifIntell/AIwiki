@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>COLI_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="coli---29">COLI - 29</h2>
+<ul>
+<li><details>
+<summary>
+(2021). LFG generation from acyclic f-structures is NP-hard.
+<em>COLI</em>, <em>47</em>(4), 939–946. (<a
+href="https://doi.org/10.1162/coli_a_00419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The universal generation problem for LFG grammars is the problem of determining whether a given grammar derives any terminal string with a given f-structure. It is known that this problem is decidable for acyclic f-structures. In this brief note, we show that for those f-structures the problem is nonetheless intractable. This holds even for grammars that are off-line parsable.},
+  archive      = {J_COLI},
+  author       = {Wedekind, Jürgen and Kaplan, Ronald M.},
+  doi          = {10.1162/coli_a_00419},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {939-946},
+  shortjournal = {Comput. Lingu.},
+  title        = {LFG generation from acyclic F-structures is NP-hard},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Are ellipses important for machine translation?
+<em>COLI</em>, <em>47</em>(4), 927–937. (<a
+href="https://doi.org/10.1162/coli_a_00414">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This article describes an experiment to evaluate the impact of different types of ellipses discussed in theoretical linguistics on Neural Machine Translation (NMT), using English to Hindi/Telugu as source and target languages. Evaluation with manual methods shows that most of the errors made by Google NMT are located in the clause containing the ellipsis, the frequency of such errors is slightly more in Telugu than Hindi, and the translation adequacy shows improvement when ellipses are reconstructed with their antecedents. These findings not only confirm the importance of ellipses and their resolution for MT, but also hint toward a possible correlation between the translation of discourse devices like ellipses with the morphological incongruity of the source and target. We also observe that not all ellipses are translated poorly and benefit from reconstruction, advocating for a disparate treatment of different ellipses in MT research.},
+  archive      = {J_COLI},
+  author       = {Khullar, Payal},
+  doi          = {10.1162/coli_a_00414},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {927-937},
+  shortjournal = {Comput. Lingu.},
+  title        = {Are ellipses important for machine translation?},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Sequence-level training for non-autoregressive neural
+machine translation. <em>COLI</em>, <em>47</em>(4), 891–925. (<a
+href="https://doi.org/10.1162/coli_a_00421">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In recent years, Neural Machine Translation (NMT) has achieved notable results in various translation tasks. However, the word-by-word generation manner determined by the autoregressive mechanism leads to high translation latency of the NMT and restricts its low-latency applications. Non-Autoregressive Neural Machine Translation (NAT) removes the autoregressive mechanism and achieves significant decoding speedup by generating target words independently and simultaneously. Nevertheless, NAT still takes the word-level cross-entropy loss as the training objective, which is not optimal because the output of NAT cannot be properly evaluated due to the multimodality problem. In this article, we propose using sequence-level training objectives to train NAT models, which evaluate the NAT outputs as a whole and correlates well with the real translation quality. First, we propose training NAT models to optimize sequence-level evaluation metrics (e.g., BLEU) based on several novel reinforcement algorithms customized for NAT, which outperform the conventional method by reducing the variance of gradient estimation. Second, we introduce a novel training objective for NAT models, which aims to minimize the Bag-of-N-grams (BoN) difference between the model output and the reference sentence. The BoN training objective is differentiable and can be calculated efficiently without doing any approximations. Finally, we apply a three-stage training strategy to combine these two methods to train the NAT model. We validate our approach on four translation tasks (WMT14 En↔De, WMT16 En↔Ro), which shows that our approach largely outperforms NAT baselines and achieves remarkable performance on all translation tasks. The source code is available at https://github.com/ictnlp/Seq-NAT.},
+  archive      = {J_COLI},
+  author       = {Shao, Chenze and Feng, Yang and Zhang, Jinchao and Meng, Fandong and Zhou, Jie},
+  doi          = {10.1162/coli_a_00421},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {891-925},
+  shortjournal = {Comput. Lingu.},
+  title        = {Sequence-level training for non-autoregressive neural machine translation},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The (un)suitability of automatic evaluation metrics for text
+simplification. <em>COLI</em>, <em>47</em>(4), 861–889. (<a
+href="https://doi.org/10.1162/coli_a_00418">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In order to simplify sentences, several rewriting operations can be performed, such as replacing complex words per simpler synonyms, deleting unnecessary information, and splitting long sentences. Despite this multi-operation nature, evaluation of automatic simplification systems relies on metrics that moderately correlate with human judgments on the simplicity achieved by executing specific operations (e.g., simplicity gain based on lexical replacements). In this article, we investigate how well existing metrics can assess sentence-level simplifications where multiple operations may have been applied and which, therefore, require more general simplicity judgments. For that, we first collect a new and more reliable data set for evaluating the correlation of metrics and human judgments of overall simplicity. Second, we conduct the first meta-evaluation of automatic metrics in Text Simplification, using our new data set (and other existing data) to analyze the variation of the correlation between metrics’ scores and human judgments across three dimensions: the perceived simplicity level, the system type, and the set of references used for computation. We show that these three aspects affect the correlations and, in particular, highlight the limitations of commonly used operation-specific metrics. Finally, based on our findings, we propose a set of recommendations for automatic evaluation of multi-operation simplifications, suggesting which metrics to compute and how to interpret their scores.},
+  archive      = {J_COLI},
+  author       = {Alva-Manchego, Fernando and Scarton, Carolina and Specia, Lucia},
+  doi          = {10.1162/coli_a_00418},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {861-889},
+  shortjournal = {Comput. Lingu.},
+  title        = {The (Un)Suitability of automatic evaluation metrics for text simplification},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Abstractive text summarization: Enhancing
+sequence-to-sequence models using word sense disambiguation and semantic
+content generalization. <em>COLI</em>, <em>47</em>(4), 813–859. (<a
+href="https://doi.org/10.1162/coli_a_00417">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Nowadays, most research conducted in the field of abstractive text summarization focuses on neural-based models alone, without considering their combination with knowledge-based approaches that could further enhance their efficiency. In this direction, this work presents a novel framework that combines sequence-to-sequence neural-based text summarization along with structure and semantic-based methodologies. The proposed framework is capable of dealing with the problem of out-of-vocabulary or rare words, improving the performance of the deep learning models. The overall methodology is based on a well-defined theoretical model of knowledge-based content generalization and deep learning predictions for generating abstractive summaries. The framework is composed of three key elements: (i) a pre-processing task, (ii) a machine learning methodology, and (iii) a post-processing task. The pre-processing task is a knowledge-based approach, based on ontological knowledge resources, word sense disambiguation, and named entity recognition, along with content generalization, that transforms ordinary text into a generalized form. A deep learning model of attentive encoder-decoder architecture, which is expanded to enable a coping and coverage mechanism, as well as reinforcement learning and transformer-based architectures, is trained on a generalized version of text-summary pairs, learning to predict summaries in a generalized form. The post-processing task utilizes knowledge resources, word embeddings, word sense disambiguation, and heuristic algorithms based on text similarity methods in order to transform the generalized version of a predicted summary to a final, human-readable form. An extensive experimental procedure on three popular data sets evaluates key aspects of the proposed framework, while the obtained results exhibit promising performance, validating the robustness of the proposed approach.},
+  archive      = {J_COLI},
+  author       = {Kouris, Panagiotis and Alexandridis, Georgios and Stafylopatis, Andreas},
+  doi          = {10.1162/coli_a_00417},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {813-859},
+  shortjournal = {Comput. Lingu.},
+  title        = {Abstractive text summarization: Enhancing sequence-to-sequence models using word sense disambiguation and semantic content generalization},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Variational deep logic network for joint inference of
+entities and relations. <em>COLI</em>, <em>47</em>(4), 775–812. (<a
+href="https://doi.org/10.1162/coli_a_00415">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Currently, deep learning models have been widely adopted and achieved promising results on various application domains. Despite their intriguing performance, most deep learning models function as black boxes, lacking explicit reasoning capabilities and explanations, which are usually essential for complex problems. Take joint inference in information extraction as an example. This task requires the identification of multiple structured knowledge from texts, which is inter-correlated, including entities, events, and the relationships between them. Various deep neural networks have been proposed to jointly perform entity extraction and relation prediction, which only propagate information implicitly via representation learning. However, they fail to encode the intensive correlations between entity types and relations to enforce their coexistence. On the other hand, some approaches adopt rules to explicitly constrain certain relational facts, although the separation of rules with representation learning usually restrains the approaches with error propagation. Moreover, the predefined rules are inflexible and might result in negative effects when data is noisy. To address these limitations, we propose a variational deep logic network that incorporates both representation learning and relational reasoning via the variational EM algorithm. The model consists of a deep neural network to learn high-level features with implicit interactions via the self-attention mechanism and a relational logic network to explicitly exploit target interactions. These two components are trained interactively to bring the best of both worlds. We conduct extensive experiments ranging from fine-grained sentiment terms extraction, end-to-end relation prediction, to end-to-end event extraction to demonstrate the effectiveness of our proposed method.},
+  archive      = {J_COLI},
+  author       = {Wang, Wenya and Pan, Sinno Jialin},
+  doi          = {10.1162/coli_a_00415},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {775-812},
+  shortjournal = {Comput. Lingu.},
+  title        = {Variational deep logic network for joint inference of entities and relations},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Detecting local insights from global labels: Supervised and
+zero-shot sequence labeling via a convolutional decomposition.
+<em>COLI</em>, <em>47</em>(4), 729–773. (<a
+href="https://doi.org/10.1162/coli_a_00416">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a new, more actionable view of neural network interpretability and data analysis by leveraging the remarkable matching effectiveness of representations derived from deep networks, guided by an approach for class-conditional feature detection. The decomposition of the filter-n-gram interactions of a convolutional neural network (CNN) and a linear layer over a pre-trained deep network yields a strong binary sequence labeler, with flexibility in producing predictions at—and defining loss functions for—varying label granularities, from the fully supervised sequence labeling setting to the challenging zero-shot sequence labeling setting, in which we seek token-level predictions but only have document-level labels for training. From this sequence-labeling layer we derive dense representations of the input that can then be matched to instances from training, or a support set with known labels. Such introspection with inference-time decision rules provides a means, in some settings, of making local updates to the model by altering the labels or instances in the support set without re-training the full model. Finally, we construct a particular K-nearest neighbors (K-NN) model from matched exemplar representations that approximates the original model’s predictions and is at least as effective a predictor with respect to the ground-truth labels. This additionally yields interpretable heuristics at the token level for determining when predictions are less likely to be reliable, and for screening input dissimilar to the support set. In effect, we show that we can transform the deep network into a simple weighting over exemplars and associated labels, yielding an introspectable—and modestly updatable—version of the original model.},
+  archive      = {J_COLI},
+  author       = {Schmaltz, Allen},
+  doi          = {10.1162/coli_a_00416},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {729-773},
+  shortjournal = {Comput. Lingu.},
+  title        = {Detecting local insights from global labels: Supervised and zero-shot sequence labeling via a convolutional decomposition},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Natural language processing and computational linguistics.
+<em>COLI</em>, <em>47</em>(4), 707–727. (<a
+href="https://doi.org/10.1162/coli_a_00420">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As an engineering field, research on natural language processing (NLP) is much more constrained by currently available resources and technologies, compared with theoretical work on computational linguistics (CL). In today’s technology-driven society, it is almost impossible to imagine the degree to which computational resources, the capacity of secondary and main storage, and software technologies were restricted when I embarked upon my research career 50 years ago. While these restrictions inevitably shaped my early research into NLP, my subsequent work evolved, according to the significant progress made in associated technologies and related academic fields, particularly CL.Figure 1 shows the research topics in which I have been engaged. My initial NLP research was concerned with a question answering system, which I worked on during my M.Eng and D.Eng degrees. The research focused on reasoning and language understanding, which I soon found was too ambitious and ill-defined. After receiving my D.Eng., I changed my direction of research, and began to be engaged in processing forms of language expressions, with less commitment to language understanding, machine translation (MT), and parsing. However, I returned to research into reasoning and language understanding in the later stage of my career, with clearer definitions of tasks and relevant knowledge, and equipped with access to more advanced supporting technologies.In this article, I begin by briefly describing my views on mutual relationships among disciplines related to CL and NLP, and then move on to discussing my own research.Language is a complex topic to study, infinitely harder than I first imagined when I began to work in the field of NLP.There is a whole discipline on the study of language—namely, linguistics. Linguistics is concerned not only with language per se, but must also deal with how humans model the world.1 The study of semantics, for example, must relate language expressions to their meanings, which reside in the mental models possessed by humans.Apart from linguistics, there are two fields of science that are concerned with language, that is, brain science and psychology. These are concerned with how humans process language. Then, there are two disciplines in which we are involved—namely, CL and NLP.Figure 2 is a schematic view of these research disciplines. Both of the lower disciplines are concerned with processing language, that is, how language is processed in our minds or our brains, and how computer systems should be designed to process language efficiently and effectively.The top discipline, linguistics, on the other hand, is concerned with rules that are followed by languages. That is to say, linguists study language as a system. This schematic view is certainly oversimplified, and there are subject fields in which these disciplines overlap. Psycholinguistics, for example, is a subfield of linguistics which is concerned with how the human mind processes language. A broader definition of CL may include NLP as its subfield.In this article, for the sake of discussion, I adopt narrower definitions of linguistics and CL. In this narrower definition, linguistics is concerned with the rules followed by languages as a system, whereas CL, as a subfield of linguistics, is concerned with the formal or computational description of rules that languages follow.2CL, which focuses on formal/computational description of languages as a system, is expected to bridge broader fields of linguistics with the lower disciplines, which are concerned with processing of language.Given my involvement in NLP, I would like to address the question of whether the narrowly defined CL is relevant to NLP. The simple answer is yes. However, the answer is not so straightforward, and requires us to examine the degree to which the representations used to describe language as a system are relevant to the representations used for processing language.Although my colleagues and I have been engaged in diverse research areas, I pick up only on a subset of these, to illustrate how I view the relationships between NLP and CL. Due to the nature of the article, I ignore technical details and focus instead on the motivation of the research and the lessons which I have learned through research.Background and Motivation. Following the ALPAC report Pierce et al. (1966), research into MT had been largely abandoned by academia, with the exception of a small number of institutes (notably, GETA at Grenoble, France, and Kyoto University, Japan). There were only a handful of commercial MT systems, being used for limited purposes. These commercial systems were legacy systems that had been developed over years and had become complicated collections of ad hoc programs. They had become too convoluted to allow for changes and improvements. To re-initiate MT research in academia, we had to have more systematic and disciplined design methodologies.On the other hand, theoretical linguistics, initiated by Noam Chomsky (Chomsky 1957, 1965) had attracted linguists with a mathematical orientation, who were interested in formal frameworks of describing rules followed by language. Those linguists with interests in formal ways of describing rules were the first generation of computational linguists.Although computational linguists did not necessarily follow the Chomskyan way of thinking, they shared the general view of treating language as a system of rules. They had developed formal ways of describing rules of language and showed that these rules consisted of different layers, such as morphology, syntax, and semantics, and that each layer required different formal frameworks with different computational powers. Their work had also motivated work on how one could process language by computerizing its rules of language. This work constituted the beginning of NLP research, and resulted in the development of parsing algorithms for context-free language, finite-state machines, and so forth.3 It was natural to use this work as the basis for designing the second generation of MT systems, which was initiated by an MT project (MU project, 1082-1986) led by Prof. M. Nagao (Nagao, Tsujii, and Nakamura 1985).Research Contributions. When I began research into MT in the late 1970s, there was a common view largely shared by the community, which had been advocated by the group of GETA, in France. The view was called the transfer approach of MT (Boitet 1987).The transfer approach viewed translation as a process consisting of three phases: analysis, transfer, and generation. According to linguists, a language is a system of rules. The analysis and generation phases were monolingual phases that were concerned with a set of rules for a single language, the analysis phase using the rules of the source language and the generation phase using the rules of the target language. Only the transfer phase was a bilingual phase.Another view shared by the community was an abstraction hierarchy of representation, called the triangle of translation. For example, Figure 3(a)4 shows the hierarchy of representation used in the Eurotra project, with their definition of each level (Figure 3(b)).By climbing up such a hierarchy, the differences among languages would become increasingly small, so that the mapping (i.e., the transfer phase) from one language to another would become as simple as possible. Independently of the target language, the goal of the analysis phase was to climb up the hierarchy, while the aim of the generation phase was to climb down the hierarchy to generate surface expressions in the target language. Both phases are concerned only with rules of single languages.In the extreme view, the top of the hierarchy was taken as the language-independent representation of meaning. Proponents of the interlingual approach claimed that, if the analysis phase reached this level, then no transfer phase would be required. Rather, translation would consist only of the two monolingual phases (i.e., the analysis and generation phases).However, in Tsujii (1986), I claimed, and still maintain, that this was a mistaken view about the nature of translation. In particular, this view assumed that a translation pair (consisting of the source and target sentences) encodes the same “information”. This assumption does not hold, in particular, for a language pair such as Japanese and English, that belong to very different language families. Although a good translation should preserve the information conveyed by the source sentence as much as possible in the target sentence, translation may lose some information or add extra information.5Furthermore, the goal of translation may not be to preserve information but to convey the same pragmatic effects to readers of the translation.More seriously, the abstract level of representation such as Interface Structure6 in Eurotra focused only on the propositional content encoded in language, and tended to abstract away other aspects of information, such as the speaker’s empathy, distinction of old/new information, emphasis, and so on.To climb up the hierarchy led to loss of information in lower levels of representation. In Tsujii (1986), instead of mapping at the abstract level, I proposed “transfer based on a bundle of features of all the levels”, in which the transfer would refer to all levels of representation in the source language to produce a corresponding representation in the target language (Figure 4). Because different levels of representation require different geometrical structures (i.e., different tree structures), the realization of this proposal had to wait for development of a clear mathematical formulation of feature-based representation with reentrancy, which allowed multiple levels (i.e., multiple trees) to be represented with their mutual relationships (see the next section).Another idea we adopted to systematize the transfer phase was recursive transfer (Nagao and Tsujii 1986), which was inspired by the idea of compositional semantics in CL. According to the views of linguists at the time, a language is an infinite set of expressions which, in turn, is defined by a finite set of rules. By applying this finite number of rules, one can generate infinitely many grammatical sentences of the language. Compositional semantics claimed that the meaning of a phrase was determined by combining the meanings of its subphrases, using the rules that generated the phrase. Compositional translation applied the same idea to translation. That is, the translation of a phrase was determined by combining the translations of its subphrases. In this way, translations of infinitely many sentences of the source language could be generated.Using the compositional translation approach, the translation of a sentence would be undertaken by recursively tracing a tree structure of a source sentence. The translation of a phrase would then be formulated by combining the translations of its subphrases. That is, translation would be constructed in a bottom up manner, from smaller units of translation to larger units.Furthermore, because the mapping of a phrase from the source to the target would be determined by the lexical head of the phrase, the lexical entry for the head word specified how to map a phrase to the target. In the MU project, we called this lexicon-driven, recursive transfer (Nagao and Tsujii 1986) (Figure 5).Compared with the first-generation MT systems, which replaced source expressions with target ones in an undisciplined and ad hoc order, the order of transfer in the MU project was clearly defined and systematically performed.Lessons. Research and development of the second-generation MT systems benefitted from research into CL, allowing more clearly defined architectures and design principles than first-generation MT systems. The MU project successfully delivered English-Japanese and Japanese-English MT systems within the space of four years. Without these CL-driven design principles, we could not have delivered these results in such a short period of time.However, the differences between the objectives of the two disciplines also became clear. Whereas CL theories tend to focus on specific aspects of language (such as morphology, syntax, semantics, discourse, etc.), MT systems must be able to handle all aspects of information conveyed by language. As discussed, climbing up a hierarchy that focuses on propositional content alone does not result in good translation.A more serious discrepancy between CL and NLP is the treatment of ambiguities of various kinds. Disambiguation is the single most significant challenge in most NLP tasks; it requires the context in which expressions to be disambiguated occur to be processed. In other words, it requires understanding of context.Typical examples of disambiguation are shown in Figure 6. The Japanese word asobu has a core meaning of “spend time without engaging in any specific useful tasks”, and would be translated into “to play”, “to have fun”, “to spend time”, “to hang around”, and so on, depending on the context (Tsujii 1986).Considering context for disambiguation contradicts with recursive transfer, since it requires larger units to be handled (i.e., the context in which a unit to be translated occurs). The nature of disambiguation made the process of recursive transfer clumsy. Disambiguation was also a major problem in the analysis phase, which I discuss in the next section.The major (although hidden) general limitation of CL or linguistics is that it tends to view language as an independent, closed system and avoids the problem of understanding, which requires reference to knowledge or non-linguistic context.7 However, many NLP tasks, including MT, require an understanding or interpretation of language expressions in terms of knowledge and context, which may involve other input modalities, such as visual stimuli, sound, and so forth. I discuss this in the section on the future of research.Background and Motivation. At the time I was engaged in MT research, new developments took place in CL, namely, feature-based grammar formalisms (Kriege 1993).At its early stage, transformational grammar in theoretical linguistics by N. Chomsky assumed that sequential stages of application of tree transformation rules linked the two levels of structures, that is, deep and surface structures. A similar way of thinking was also shared by the MT community. They assumed that climbing up the hierarchy would involve sequential stages of rule application, which map from the representation at one level to another representation at the next adjacent level.8 Because each level of the hierarchy required its own geometrical structure, it was not considered possible to have a unified non-procedural representation, in which representations of all the levels co-exist.This view was changed by the emergence of feature-based formalisms that used directed acyclic graphs (DAGs) to allow reentrancy. Instead of mappings from one level to another, it described mutual relationships among different levels of representation in a declarative manner. This view was in line with our idea of description-based transfer, which used a bundle of features of different levels for transfer. Moreover, some grammar formalisms at the time emphasized the importance of lexical heads. That is, local structures of all the levels are constrained by the lexical head of a phrase, and these constraints are encoded in lexicon. This was also in line with our lexicon-driven transfer.A further significant development in CL took place at the same time. Namely, a number of sizable tree bank projects, most notably the Penn Treebank and the Lancaster/IBM Treebank, had reinvigorated corpus linguistics and started to have significant impacts on research into CL and NLP (Marcus et al. 1994). From the NLP point of view, the emergence of large tree banks led to the development of powerful tools (i.e., probabilistic models) for disambiguation.9We started research that would combine these two trends to systematize the analysis phase—that is, parsing based on feature-based grammar formalisms.Research Contributions. It is often claimed that ambiguities occur because of insufficient constraints. In the analysis phase of the “climbing up the hierarchy” model, lower levels of processing could not refer to constraints in higher levels of representation. This was considered the main cause of the combinatorial explosion of ambiguities at the early stages of climbing up the hierarchy. Syntactic analysis could not refer to semantic constraints, meaning that ambiguities in syntactic analysis would explode.On the other hand, because the feature-based formalisms could describe constraints at all levels in a single unified framework, it was possible to refer to constraints at all levels, to narrow down the set of possible interpretations.However, in practice, the actual grammar was still vastly underconstrained. This was partly because we do not have effective ways of expressing semantic and pragmatic constraints. Computational linguists were interested in formal declarative ways for relating syntactic and semantic levels of representation, but not so much in how semantic constraints are to be expressed. To specify semantic or pragmatic constraints, one may have to refer to the mental models of the world (i.e., how humans see the world), or discourse structures beyond single sentences, and so on. These fell outside of the scope of CL research at the time, whose main focus is on grammar formalisms.Furthermore, it is questionable whether semantics or pragmatics can be used as constraints. They may be more concerned with the plausibility of an interpretation than the constraints which an interpretation should satisfy (for example, see the discussion in Wilks [1975]).Therefore, even for parsing using feature-based formalisms, issues of disambiguation and how to handle the explosion of ambiguities remained major issues for NLP.Probabilistic models were one of the most powerful tools for disambiguation and handling the plausibility of an interpretation. However, probabilistic models for simpler formalisms, such as regular and context-free grammars, had to be changed for more complex grammar formalisms. Techniques for handling combinatorial explosion, such as packing, had to be reformulated for feature-based formalisms.Furthermore, although feature-based formalisms were neat in terms of describing constraints in a declarative manner, the unification operation, which was a basic operation for treating feature-based descriptions, was computationally very expensive. To deliver practical NLP systems, we had to develop efficient implementation technologies and processing architectures for feature-based formalisms.The team at the University of Tokyo started to study how we could transform a feature-based grammar (we chose HPSG) into effective and efficient representations for parsing. The research included:Design of an abstract machine for processing of typed-feature structures and development of a logic programming system—LiLFeS (Makino et al. 1998; Miyao et al. 2000).Transforming HPSG grammar into a more processing-oriented representation, such as extracting CFG skeletons (Torisawa and Tsujii 1996; Torisawa et al. 2000) and supertags from original HPSG.Packing of feature structures (feature forest) and long-linear probabilistic models (Miyao and Tsujii 2003, 2005, 2008).A staged architecture of parsing based on transformation of grammar formalisms and their probabilistic modeling (Matsuzaki, Miyao and Tsujii 2007; Ninomiya et al. 2010).A simplified representation of our parsing model is shown in Figure 7. Given a sentence, its representation of all the levels was constructed at the final stage by using the HPSG grammar. Disambiguation took place mainly in the first two phases. The first phase was a supertagger that would disambiguate supertags assigned to words in a sentence. Supertags were derived from the original HPSG grammar and a set of supertags were attached to a word in its lexicon. A suppertagger would choose the most probable sequence of supertags for the given sequence of words. The task was a sequence labeling task, which could be carried out in a very efficient manner (Zhang, Matsuzaki, and Tsujii 2009). This means that the surface local context (i.e., local sequences of supertags) was used for disambiguation, without constructing actual DAGs of features.The second phase was CFG filtering. A CFG skeleton, which also was derived from the HPSG grammar, was used to check whether sequences of supertags chosen by the first phase could reach a successful derivation tree. The supertagger did not build actual parse trees explicitly to check whether a chosen sequence could reach legitimate derivation trees or not. The second phase of CFG filtering would filter out supertag sequences that could not reach legitimate trees.The final phase not only built the final representation of all the levels, but it also checked extra constraints specified in the original grammar. Because the first two phases only use partial constraints specified in the HPSG grammar, the final phase would reject results produced by the first two phases if they failed to satisfy these extra constraints. In this case, the system would backtrack to the previous phases to obtain the next candidate.All of these research efforts collectively produced a practical efficient parser based on HPSG (Enju ).Lessons. As in MT, CL theories were effective for the systematic development of NLP systems. Feature-based grammar formalisms drastically changed the view of parsing as “climbing up the hierarchy”. Moreover, mathematically well-defined formalisms helped the systematic implementation of efficient implementations of unification, transformation of grammar into supertags, CFG skeletons, and so forth. These formalisms also provided solid ground for operations in NLP such as packing of feature structures, and so on, which are essential for treating combinatorial explosion.On the other hand, direct application of CL theories to NLP did not work, since this would result in extremely slow processing. We had to transform them into more processing-oriented formats, which required significant efforts and time on the NLP side. For example, we had to transform the original HPSG grammar into processing-oriented forms, such as supertags, CFG skeletons, and so on. It is worth noting that, while the resultant architecture was similar to the climbing-up hierarchy processing, each stage in the final architecture was clearly defined and related to each other through the single declarative grammar.I also note that advances in the fields of computer science/engineering significantly changed what was possible to achieve in NLP. For example, the design of an abstract machine and its efficient implementation for unification in LiLFeS (Makino et al. 1998), effective support systems for maintaining large banks of parsed trees (Ninomiya, Makino, and Tsujii 2002; Ninomiya, Tsujii, and Miyao 2004), and so forth, would be impossible without advances in the broader fields of computer science/engineering and without much improved computational power (Taura et al. 2010).On the other hand, disambiguation remained the major issue in NLP. Probabilistic models enabled major breakthroughs in terms of solving the problem. Compared with the fairly clumsy rule-based disambiguation that we adopted for the MU project,10 probabilistic modeling provided the NLP community with systematic ways of handling ambiguities. Combined with large tree banks, objective quantitative comparison of different models also became feasible, which made systematic development of NLP systems possible. However, the error rate in parsing remained (and still remains) high.While reported error rates are getting lower, measuring the error rate in terms of the number of incorrectly recognized dependency relations was misleading. At the sentence level, the error rate remains high. That is, a sentence in which all dependency relations are correctly recognized remains very rare. Because most of dependency relations are trivial (i.e., pairs of adjacent words or pairs of close neighbors), errors in semantically critical dependencies, such as PP-attachments, scopes of conjunction, etc., remain abundant (Hara, Miyao, and Tsujii 2009).Even using probabilistic models, there are obvious limits to disambiguation performance, unless a deeper understanding is taken into account. This leads me to the next research topic: language and knowledge.Background and Motivation. I was interested in the topic of how to relate language with knowledge at the very beginning of my career. At the time, my naiveté led me to believe initially that a large collection of text could be used as a knowledge base and was engaged in research of a question-answering system based on a large text base (Nagao and Tsujii 19731979). However, resources such as a large collection of text, storage capacity, processing speed of computer systems, and basic NLP technologies, such as parsing, were not available at the time.I soon realized, however, that the research would involve a whole range of difficult research topics in artificial intelligence, such as representation of common sense, human ways of reasoning, and so on. Moreover, the topics had to deal with uncertainty and peculiarities of individual humans. Knowledge or the world models that individual humans have may differ from one person to another. I felt that the research target was ill-defined.However, through research in MT and parsing in the later stages of my career, I started to realize that NLP research is incomplete if it ignores how knowledge is involved in processing, and that challenging NLP problems are all related to issues of understanding and knowledge. At the same time, considering NLP as an engineering field, I took it to be essential to have a clear definition of knowledge or information with which language is to be related. I would like to avoid too much vagueness of research into commonsense knowledge and reasoning and to restrict our research focus to the relationship between language and knowledge. As a research strategy, I chose to focus on the biomedicine as the application domain. There were two reasons for the choice.One reason was that microbiology colleagues at the two universities with which I was affiliated told me that, in order to understand life-related phenomena, it had become increasingly important for them to organize pieces of information scattered in a large collection of published papers in diverse subject fields such as microbiology, medical sciences, chemistry, and agriculture. In addition to the large collection of papers, they also had diverse databases that had to be linked with each other. In other words, they had a solid body of knowledge shared by domain specialists that was to be linked with information in text.The other reason was that there were colleagues at the University of Manchester who were interested in sublanguages. According to the discussion on information formats in a medical sublanguage by the NYU group (Sager 1978) and research into medical terminology at the University of Manchester, focusing on relations between terms and concepts (Ananiadou 1994; Frantzi and Ananiadou 1996; Mima et al. 2002), the biomedical domain had been a natural choice of sublanguage research. The important point here was that information formats in a sublanguage and terminology concepts were defined by the target domain, and not by NLP researchers. Furthermore, domain experts had actual needs and concrete requirements to help solve their own problems in the target domains.Research Contributions. Although there had been quite a large amount of research into information retrieval and text mining for the biomedical domain, there had been no serious efforts to apply structure-based NLP techniques to text mining in the domain. To address this, the teams at the University of Manchester and the University of Tokyo jointly launched a new research program in this direction.Because this was a novel research program, we first had to define concrete tasks to solve, to prepare resources, and to involve not only NLP researchers, but also experts in the target domains.Regarding the involvement of NLP researchers and domain experts, we found that a few groups in the world also began to be interested in similar research topics. In response to this, we organized a number of research gatherings in collaboration with colleagues around the world, which led to establishment of a SIG (SIGBIOMED) at ACL. The first workshop took place in 2002, collocated with the ACL conference (Workshop 2002). The SIG now organizes annual workshops and co-located shared tasks. It has been expanding rapidly and has become one of the most active SIGs in NLP applications. The research field of application of structure-based NLP to text-mining is broadening to cover clinical/medical domains (Xu et al. 2012; Sohrab et al. 2020), chemistry, and material science domains (Kuniyoshi et al. 2019).Research contributions by the two teams include the GENIA corpus (Kim et al. 2003; Thompson, Ananiadou, and Tsujii 2017), a large repository of acronyms with their original terms (Okazaki, Ananiadou, and Tsujii 20082010), the GENIA POS tagger Tsuruoka et al. (2005), the BRAT annotation tool (Stenetorp et al. 2012), a workflow design tool for information extraction (Kano et al. 2011), an intelligent search system based on entity association (Tsuruoka, Tsujii, Ananiadou 2008), and a system for pathway construction (Kemper et al. 2010).The GENIA annotated corpus is one of the most frequently used corpora in the biomedical domain. To see what information domain experts considered important in text and how it was encoded in language, we annotated 2000 abstracts, not only from the linguistic point of view but also from the viewpoint of domain experts. Two types of annotations, namely, linguistic annotations (POS, and syntactic trees) and domain-specific annotations (biological entities, relations, and events) were added to the corpus (Ohta et al. 2006).Domain-specific annotations were linked with ontologies of the target domain (GENE ontology, anatomy ontology, etc.) which had been constructed by the target domain communities to share information in diverse databases.To involve domain experts in annotation, we developed a user-friendly annotation tool with intuitive visualization (BRAT), which is now used widely by the NLP community. In close cooperation with domain experts, we defined a set of NLP tasks (Hirshman et al. 2002; Ananiadou, Friedman, and Tsujii 2004; Ananiadou, Kell, and Tsujii 2006; Ananiadou et al. 2020), and developed a set of basic IE tools (Nobata et al. 2008; Miwa et al. 2009; Pyysalo et al. 2012) for solving them, which were to be combined into workflows to meet specific needs of individual groups of domain experts (Kano et al. 2011; Rak et al. 2012).As a result of this work, we recognized large discrepancies between linguistic units such as words, phrases, and clauses, and domain-specific semantic units, such as named entities, and relations and events that link them together (Figure 8). The mapping between linguistic structures and the semantic ones defined by domain specialists was far more complex than the mapping assumed by computational semanticists.We soon realized that, as an NLP task, information extraction (IE) was very different from MT. In particular, there were considerable differences between the information that the authors intended to convey and encode in text and the information that the readers (i.e., a group of domain experts) wanted to identify and extract from text. Regardless of the information that the authors intended to convey, the reader would identify the information that they were interested in.11These characteristics of IE as an NLP task made the mapping from language to information very different from the transfer phase in MT, which attempts to covey the same information in the source and target languages. While the task of named entity recognition (NER) benefited from linguistic structures (i.e., noun phrases and their coordination), linguistic structures would only give cues for the automatic recognition of relations and events, and these cues were to be combined with other cues. The mapping became similar to the transfer based on a bundle of features.Like the transfer in the higher level of representation, we first used the HPSG parser to climb up the hierarchy to the IS (which we called PAS [predicate-argument structure]), from which we tried to identify a set of pattern-rules to extract events (Figure 9) (Yakushiji 20012006). We assumed that, although extraction patterns based on surface sequences of words may be diverse,12 this diversity would reduce at a higher level of abstraction—that is, the same approach to simple transfer at the abstract level. Although this approach initially achieved reasonable performance, it soon reached its limit; extracted patterns became increasingly clumsy and convoluted.As discussed above, we realized that this was because of the nature of IE tasks, and switched to the approach based on a bundle of features (Figure 10) (Miwa et al. 2009). This shift continued further to the ongoing research, which uses a large language model (BioBERT). In this recent work, linguistic information is assumed to be implicitly embedded in the language model. The information is not represented explicitly in IE systems (Figure 11) (Ju, Miwa, and Ananiadou 2018; Trieu et al. 2020).On the other hand, our interest in biomedical text mining extended beyond the traditional IE tasks and moved toward coherent integration of extracted information. In this integration, it became apparent that linguistic structures play more significant roles.For example, claims about an event extracted from different articles often contradict each other. As such, techniques for measuring the credibility or reliability of claims are crucial.In scientific fields such as biology and medical sciences, claims about an event can be made affirmatively or speculatively, with different degrees of confidence. To measure the degree of confidence of a claim, we have to examine the type of linguistic structure in which the claim is embedded (Zerva et al. 2017; Zerva and Ananiadou 2018). Additionally, depending on the position of an extracted event in a sentence, it may be considered as a pre-supposed fact, hypothesis, and so forth. The manner in which structural information recognized by a parser can be utilized to detect and integrate contradicting claims remains an important research issue.Another typical example of an integration problem is the automatic curation of pathways, in which an NLP system is used to combine a set of different events extracted from different articles to build a coherent network of events (Kemper et al. 2010). In this task, a system must be able to decide whether two events reported in different articles can be treated as the same event in a pathway. To do this, the system must be able to detect the biological environments in which two reported events take place, by considering the surrounding contexts of the events. This may also require linguistic structures to be taken into account.Lessons. By focusing on the biomedical domain, we introduced concrete forms of extra-linguistic knowledge (i.e., domain ontologies built by the target domain communities) and diverse databases, which include manually curated pathway networks. The task of linking information in text with these resources helped to define concrete research topics focusing on the relation between language and knowledge of the target domains. Because scientific communities such as microbiologists have agreed views on which pieces of information constitute their domain knowledge, we can avoid the uncertainty and individuality of knowledge that may have hampered research in the general domain.Linguistic structures, with which NLP technologies such as parsing have previously been concerned, play less important roles than we initially expected. Nevertheless, ongoing research into the integration of extracted information has started to reassess the importance of linguistic structures.Another important finding is the nature of human reasoning. The CL and NLP communities tend to consider reasoning as a kind of logical process based on symbolic knowledge. However, the actual reasoning that the experts in the biomedical domain perform may not be so symbolic in nature.For example, we found that the reasoning carried out by domain experts on pathways is based on similarities between entities. For example, they infer that a protein A is likely to be involved in an event by observing a reported fact that a protein B, which is similar to protein A, is involved in the same type of event. The similarity between protein A and B is based on the similarities between their 3D structures. Because such similarities among proteins are scarcely manifested in their occurrences in text, large language models trained on a large collection of papers would be unable to capture their similarities. Symbolic domain ontologies (i.e., a classification scheme of biological entities) also fail to capture such fine-grained similarities. Accordingly, it may be necessary to use heterogenous sources of information, such as databases of protein structures, large collections of pathways, and so on, to capture such semantic similarities among entities and to carry out reasoning based on them.We have witnessed the rapid progress and significant changes that neural network (NN) models and deep learning (DL) have brought to the field of NLP. This is a typical example in which advances in broader fields of computer science/engineering open up new opportunities to change and enhance the NLP field.The changes brought by NN and DL are broad and have had a profound impact not only on NLP but also visual/image processing, speech/signal processing, and many other areas of artificial intelligence. It is a paradigm shift.The new paradigm has significantly improved the performance of diverse NLP tasks. Furthermore, I expect it will contribute significantly toward solving the most challenging NLP problems, by integrating NLP with the processing of other information modalities (images, sounds, haptics, etc.), and with knowledge processing, and so on.In technological fields such as image and speech processing, reasoning based on knowledge traditionally used different modeling and processing techniques. They now share the same technological basis of NN and DL. It is becoming much easier to integrate heterogeneous forms of processing, meaning that carrying out NLP in multimodal contexts and NLP with knowledge bases are far more feasible than we previously thought. The research teams of the institutions with which I am affiliated are now working on these directions (Kumar Sahu et al. 2019; Iso et al. 2020; Christopoulou, Miwa, and Ananiadou 2021).On the negative side, NLP based on large language models is increasingly separating itself from other research disciplines that involve the study of language. The black box nature of NN and DL also makes the analytical methods way of assessing NLP systems difficult.Although the characteristics are very different, I fear that the paradigm may encounter similar difficulties to those suffered by first-generation MT systems. One could improve the overall performance by tweaking computational models, but without rational and systematic analysis of problems, this failed to solve real difficulties and recognize the limit of the technology.As revealed through detailed analysis of parsing errors, even when the overall quantitative performance improved, semantically crucial errors of specific types remained unsolved.Without analysis based on theories provided by other language-related disciplines, erratic and unexpected behaviors of NN-based NLP systems will remain and limit potential applications.On the other hand, CL tends to treat language as a closed system or focus on study on specific aspects of regularities that language show. By examining what takes place in NLP systems, together with NLP practitioners, CL researchers would be able to enrich the scope of their theories and to provide a theoretical basis for analytic assessment of NLP systems.It is the time to re-connect NLP and CL.I was introduced to the field of NLP by my long-time mentor, Professor Makoto Nagao, who was a recipient of the Lifetime Achievement Award (2003). He passed away last May. It is unfortunate that I could not share my honor and happiness with him.In my career of almost 50 years, I have conducted research into NLP at several institutes worldwide, including Kyoto University; CNRS (GETA, Grenoble), France; University of Manchester, UK; the University of Tokyo; and Microsoft Research, China. I receive the honor on behalf of the colleagues, research fellows, and students who worked with me at these institutions. Without them, my research could not have progressed in the way that it has. I deeply appreciate their support.},
+  archive      = {J_COLI},
+  author       = {Tsujii, Junichi},
+  doi          = {10.1162/coli_a_00420},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {707-727},
+  shortjournal = {Comput. Lingu.},
+  title        = {Natural language processing and computational linguistics},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Understanding dialogue: Language use and social interaction.
+<em>COLI</em>, <em>47</em>(3), 703–705. (<a
+href="https://doi.org/10.1162/coli_r_00411">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding Dialogue: Language Use and Social Interaction represents a departure from classic theories in psycholinguistics and cognitive sciences; instead of taking as a starting point the isolated speech of an individual that can be extended to accommodate dialogue, a primary focus is put on developing a model adapted to dialogue itself, bearing in mind important aspects of dialogue as an activity with a heavily cooperative component. As a researcher of natural language processing with a background in linguistics, I find highly intriguing the possibilities provided by the dialogue model presented. Although the book does not itself touch upon the potential for automated dialogue, I am inevitably writing this review from the point of view of a computational linguist with these aspects in mind.Building on numerous previous works, including many of the authors’ own studies and theories, Understanding Dialogue presents the shared workspace framework, a framework for understanding not just dialogue but cooperative activities in general, of which dialogue is viewed as a subtype. Based on Bratman’s (1992) concept of shared cooperative activity, the framework provides a joint environment with which interlocutors can interact, both by contributing to the space (with actions or utterances for example), and by perceiving and processing their own or the other participants’ productions. The authors do not limit their work to linguistic communication: Many of their examples, particularly at the beginning of the book, are non-linguistic (e.g., hand shaking, dancing a tango, playing singles tennis); others are primarily physical, but will most likely also involve linguistic communication (such as jointly constructing flat-pack furniture); and others are purely linguistic (e.g., suggesting which restaurant to go to for lunch).The notion of alignment is highly important to this framework both from a linguistic and non-linguistic perspective, and is one of the main inspirations of the book, having previously been presented in Toward a Mechanistic Theory of Dialogue by the same authors. As individuals interact via the joint space, alignment concerns the equivalence in their representations at a conceptual level, with respect to their goals and relevant props in the shared environment (dialogue model alignment) and linguistic representations shared in the workspace (linguistic alignment). Roughly speaking, in this second (linguistic) case, this may for instance correspond to whether or not the individuals have the same representation of the utterance in terms of phonetics (were the sounds perceived correctly?) or in terms of lexical semantics (do they understand the same reference by the word uttered?). From here can be explained a number of different dialogue behaviors linked to the quest for alignment and the resolution of misalignment should it occur.The book is structured in four main parts, preceded by an Introduction presenting the challenges of dialogue and the main ideas behind the framework. The focus of the book is clearly stated from the beginning as being dialogue first, in a rejection of models that seek to study language primarily from a monologic point of view. As the authors point out, the notion of alignment underpinning the framework involves by its very nature multiple participants and therefore dialogic interactions must be studied in their own right. I shall provide only a brief summary of the four parts here, highlighting some components that in my view are key to the model, without however covering all themes, which would require a far more extensive description.Part I introduces the basis of the shared workspace framework as applied to activities with a cooperative component and then specifically to dialogue. The basic sender-receiver framework is quickly rejected, as it lacks the ability to represent certain key ele- ments of cooperative activities, such as allowing for feedback and representing an environment that is common to the participants. The shared workspace framework is then introduced, along with the four important characteristics of cooperative joint aspect systems that can be successfully illustrated with it: alignment (mentioned above), simulation (the representation of an activity without actually going through with it), prediction (the anticipation of participants’ behaviors), and synchrony (concerning the timing of behaviors in a joint activity), elements that are first studied in the context of joint activities in general (Chapter 3), before being reviewed specifically for dialogue (Chapter 4).Part II is dedicated to the aforementioned concept of alignment, fundamental to the framework of cooperative activity. The chapters in this section look at the distinction between the different levels at which alignment can occur, the processes involved, and the consequences of alignment, such as participants uttering similar linguistic productions. Another important notion introduced in this part is that of the meta-representation of alignment, which represents the participants’ belief about how aligned they are, which has inevitable consequences on how they then plan and implement their contributions.Part III continues with the theme of alignment but turns to aspects involving the efficiency of communication: succinctness of formulation (Chapter 8) and how we time our contributions (Chapter 9). Particularly interesting is the role of commentaries, which are contributions providing some sort of feedback on the alignment of participants and which can therefore affect the participants’ meta-representation of alignment. There is an important distinction between positive and negative commentaries, positive commentaries (such as “uh huh” in English) providing feedback that the speaker is aligned, therefore enabling the participants to meta-represent alignment, and negative ones (such as “huh?”) indicating a misalignment, but then enabling the participants to recover from that it. These commentaries contribute to the succinctness of dialogue and to maximizing the efficiency of joint participation by indicating meta-alignment. Finally, Chapter 9 discusses the notion of “speaking in good time,” related to the necessarily sequential nature of dialogue and the importance of timing, including the effects of different speech rates and the natural adaptation that occurs between interlocutors.Part IV looks beyond the main theme of dialogue to other forms of conversation, including multiparty conversations and collectives, exploring the possible roles of the different participants, and how this relates back to alignment and their contribution to the shared workspace. Also mentioned is monologue and the challenges that it poses with respect to the primary and more natural form of language communication that is dialogue. The final chapter introduces how the shared workspace can be augmented by adding props, illustrations, and recordings and by using alternative communicative tools, such as text messages and social media, which come with their own constraints with respect to the access they allow to the shared workspace.The description of the framework is thorough and well exemplified, with a continuity in the use of examples throughout the book. A repetition and embellishment of schemas helps to keep track of how the new additions from each chapter fit into the framework. I found some of the descriptions a little wordy, particularly because of the reiteration of definitions and motivations, and in the minutely detailed illustration of examples. However, from the point of view of pedagogy, this could be seen as adding clarity, particularly for the reader who decides to focus on particular chapters rather than reading the book from cover to cover. In my opinion, the book will be highly accessible to all readers, even those who have limited background on the topic, and the authors take care to make it clear how their framework and definitions agree with or differ from previous works.For me, there remain two main areas that could have been worthy of further exploration within the scope of this book. The first is the effect of cultural and linguistic differences. The authors do address the topic in Chapter 11, but in comparison with the detail afforded to the description of the framework, this subject remains rather lacking, with only a short section touching on it, under the the title of Social Norms and Joint Planning. The authors cite an interesting study by Fujii (2012) on the differences between American and Japanese speakers in terms of their use of language to foster alignment. However, this teaser does not lead on to a deeper discussion about cross-cultural differences as explained in terms of the concepts used in this framework. The second topic is the link to sign languages, which would appear to link more than perfectly with the shared workspace framework and yet is not mentioned by the authors.There is little doubt that the framework is an important step in modeling dialogue from a psycholinguistic perspective. As a researcher in natural language processing, I would be excited to see the the possibilities for this framework in a computational setting for automated dialogue, something that the authors mention in their conclusion. They evoke the failure of current chatbots such as Siri and Alexa to effectively dialogue due to their inability to provide commentary (e.g., in the context of an ambiguous question) and to meta-represent alignment (i.e., have an opinion on whether the representations of the dialogue participants are the same). They suggest that this framework could help provide the solution to the current disruptions in communication we meet when interacting with these systems. I therefore look forward to seeing what progress can be made from this point of view.},
+  archive      = {J_COLI},
+  author       = {Bawden, Rachel},
+  doi          = {10.1162/coli_r_00411},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {703-705},
+  shortjournal = {Comput. Lingu.},
+  title        = {Understanding dialogue: Language use and social interaction},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Embeddings in natural language processing: Theory and
+advances in vector representations of meaning. <em>COLI</em>,
+<em>47</em>(3), 699–701. (<a
+href="https://doi.org/10.1162/coli_r_00410">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Word vector representations have a long tradition in several research fields, such as cognitive science or computational linguistics. They have been used to represent the meaning of various units of natural languages, including, among others, words, phrases, and sentences. Before the deep learning tsunami, count-based vector space models had been successfully used in computational linguistics to represent the semantics of natural languages. However, the rise of neural networks in NLP popularized the use of word embeddings, which are now applied as pre-trained vectors in most machine learning architectures.This book, written by Mohammad Taher Pilehvar and Jose Camacho-Collados, provides a comprehensive and easy-to-read review of the theory and advances in vector models for NLP, focusing specially on semantic representations and their applications. It is a great introduction to different types of embeddings and the background and motivations behind them. In this sense, the authors adequately present the most relevant concepts and approaches that have been used to build vector representations. They also keep track of the most recent advances of this vibrant and fast-evolving area of research, discussing cross-lingual representations and current language models based on the Transformer. Therefore, this is a useful book for researchers interested in computational methods for semantic representations and artificial intelligence. Although some basic knowledge of machine learning may be necessary to follow a few topics, the book includes clear illustrations and explanations, which make it accessible to a wide range of readers.Apart from the preface and the conclusions, the book is organized into eight chapters. In the first two, the authors introduce some of the core ideas of NLP and artificial neural networks, respectively, discussing several concepts that will be useful throughout the book. Then, Chapters 3 to 6 present different types of vector representations at the lexical level (word embeddings, graph embeddings, sense embeddings, and contextualized embeddings), followed by a brief chapter (7) about sentence and document embeddings. For each specific topic, the book includes methods and data sets to assess the quality of the embeddings. Finally, Chapter 8 raises ethical issues involved in data-driven models for artificial intelligence. Each chapter can be summarized as follows.Chapter 1 makes a brief introduction to some challenges of NLP, both from understanding and from generation perspectives, including different types of linguistic ambiguity. The main part of the chapter introduces vector space models for semantic representation, presenting the distributional hypothesis and the evolution of vector space models.The second chapter starts by giving a quick introduction of some linguistic fundamentals for NLP (syntax, morphology, and semantics) and of statistical language models. Then, it gives an overview of deep learning, presenting the fundamental differences between architectures, and concepts which will be referred along with the book. Finally, the authors present some of the most relevant knowledge resources to build semantically richer vector representations.Chapter 3 is an extensive review of word embeddings. It first presents different count-based approaches and dimensionality reduction techniques and then discusses predictive models such as Word2vec and GloVe. Additionally, it also describes character-based and knowledge-based embeddings as well as supervised and unsupervised approaches of cross-lingual vector representations.Chapter 4 illustrates the principal methods to build node and relation embeddings from graphs. First, it presents the key strategies to build node embeddings, from matrix factorization or random walks to methods based on graph neural networks. Then, two approaches regarding relation embeddings are presented: those built from knowledge graphs, and unsupervised methods which exploit regularities in the vector space.The next chapter (5) starts by presenting the Meaning Conflation Deficiency of static word embeddings, which motivates research on sense representations. This chapter discusses two main approaches to build sense embeddings: unsupervised methods to induce senses from corpora, and knowledge-based approaches which take advantage of lexical resources.Chapter 6 addresses contextualized embeddings and describes the main properties of the Transformer architecture and the self-attention mechanism. It includes an overview of these types of embeddings, from early methods that represent a word by its context, to current language models for contextualized word representation. In this respect, the authors present contextualized models based on recurrent neural networks (e.g., ELMo), and on the Transformer (GPT, BERT, and some derivatives). The potential impact of several parameters, such as subword tokenization or the training objectives, is also explained, and the authors discuss various approaches to use these models in downstream tasks, such as feature extraction and finetuning. Finally, they also summarize some interesting insights regarding the exploration of the linguistic properties encoded by neural language models.Chapter 7 comprises a brief sketch of vector representations of longer units, such as sentences and documents. It presents the bag of words approach and its limitations as well as the concept of compositionality and its significance for the unsupervised learning of sentence embeddings. Some supervised strategies (e.g., training on natural language inference or machine translation datasets) are also discussed.Ethical aspects and biases of word representations are the focus of Chapter 8. Here, the authors present some risks of data-driven models for artificial intelligence and use examples of gender stereotypes to show biases present in word embeddings, followed by several methods aimed at reducing those biases. Overall, the authors emphasize the growing interest in the NLP community to critically analyze the social impact of these models.The book concludes by highlighting some of the major achievements of current vector representations and calling for more rigorous evaluations to measure their progress, especially in languages other than English, and with an eye on interpretability.In summary, this book brings a high-level synthesis of different types of embeddings for NLP, focused on the general concepts and the most established techniques, and includes useful pointers to delve deeper into specific topics. As the book also discusses the most recent contextualized models (up to November 2020), it results in an attractive combination of the foundations of vector space models with current approaches based on artificial neural networks. As suggested by the authors, because of the explosion and rapid development of deep learning methods for NLP, maybe “it is necessary to step back and rethink in order to achieve true language understanding.”},
+  archive      = {J_COLI},
+  author       = {Garcia, Marcos},
+  doi          = {10.1162/coli_r_00410},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {699-701},
+  shortjournal = {Comput. Lingu.},
+  title        = {Embeddings in natural language processing: Theory and advances in vector representations of meaning},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Decoding word embeddings with brain-based semantic features.
+<em>COLI</em>, <em>47</em>(3), 663–698. (<a
+href="https://doi.org/10.1162/coli_a_00412">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Word embeddings are vectorial semantic representations built with either counting or predicting techniques aimed at capturing shades of meaning from word co-occurrences. Since their introduction, these representations have been criticized for lacking interpretable dimensions. This property of word embeddings limits our understanding of the semantic features they actually encode. Moreover, it contributes to the “black box” nature of the tasks in which they are used, since the reasons for word embedding performance often remain opaque to humans. In this contribution, we explore the semantic properties encoded in word embeddings by mapping them onto interpretable vectors, consisting of explicit and neurobiologically motivated semantic features (Binder et al. 2016). Our exploration takes into account different types of embeddings, including factorized count vectors and predict models (Skip-Gram, GloVe, etc.), as well as the most recent contextualized representations (i.e., ELMo and BERT).In our analysis, we first evaluate the quality of the mapping in a retrieval task, then we shed light on the semantic features that are better encoded in each embedding type. A large number of probing tasks is finally set to assess how the original and the mapped embeddings perform in discriminating semantic categories. For each probing task, we identify the most relevant semantic features and we show that there is a correlation between the embedding performance and how they encode those features. This study sets itself as a step forward in understanding which aspects of meaning are captured by vector spaces, by proposing a new and simple method to carve human-interpretable semantic representations from distributional vectors.},
+  archive      = {J_COLI},
+  author       = {Chersoni, Emmanuele and Santus, Enrico and Huang, Chu-Ren and Lenci, Alessandro},
+  doi          = {10.1162/coli_a_00412},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {663-698},
+  shortjournal = {Comput. Lingu.},
+  title        = {Decoding word embeddings with brain-based semantic features},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Toward gender-inclusive coreference resolution: An analysis
+of gender and bias throughout the machine learning lifecycle.
+<em>COLI</em>, <em>47</em>(3), 615–661. (<a
+href="https://doi.org/10.1162/coli_a_00413">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Correctly resolving textual mentions of people fundamentally entails making inferences about those people. Such inferences raise the risk of systematic biases in coreference resolution systems, including biases that can harm binary and non-binary trans and cis stakeholders. To better understand such biases, we foreground nuanced conceptualizations of gender from sociology and sociolinguistics, and investigate where in the machine learning pipeline such biases can enter a coreference resolution system. We inspect many existing data sets for trans-exclusionary biases, and develop two new data sets for interrogating bias in both crowd annotations and in existing coreference resolution systems. Through these studies, conducted on English text, we confirm that without acknowledging and building systems that recognize the complexity of gender, we will build systems that fail for: quality of service, stereotyping, and over- or under-representation, especially for binary and non-binary trans users.},
+  archive      = {J_COLI},
+  author       = {Cao, Yang Trista and Daumé, Hal},
+  doi          = {10.1162/coli_a_00413},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {615-661},
+  shortjournal = {Comput. Lingu.},
+  title        = {Toward gender-inclusive coreference resolution: An analysis of gender and bias throughout the machine learning lifecycle},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Generalizing cross-document event coreference resolution
+across multiple corpora. <em>COLI</em>, <em>47</em>(3), 575–614. (<a
+href="https://doi.org/10.1162/coli_a_00407">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cross-document event coreference resolution (CDCR) is an NLP task in which mentions of events need to be identified and clustered throughout a collection of documents. CDCR aims to benefit downstream multidocument applications, but despite recent progress on corpora and system development, downstream improvements from applying CDCR have not been shown yet. We make the observation that every CDCR system to date was developed, trained, and tested only on a single respective corpus. This raises strong concerns on their generalizability—a must-have for downstream applications where the magnitude of domains or event mentions is likely to exceed those found in a curated corpus. To investigate this assumption, we define a uniform evaluation setup involving three CDCR corpora: ECB+, the Gun Violence Corpus, and the Football Coreference Corpus (which we reannotate on token level to make our analysis possible). We compare a corpus-independent, feature-based system against a recent neural system developed for ECB+. Although being inferior in absolute numbers, the feature-based system shows more consistent performance across all corpora whereas the neural system is hit-or-miss. Via model introspection, we find that the importance of event actions, event time, and so forth, for resolving coreference in practice varies greatly between the corpora. Additional analysis shows that several systems overfit on the structure of the ECB+ corpus. We conclude with recommendations on how to achieve generally applicable CDCR systems in the future—the most important being that evaluation on multiple CDCR corpora is strongly necessary. To facilitate future research, we release our dataset, annotation guidelines, and system implementation to the public.1},
+  archive      = {J_COLI},
+  author       = {Bugert, Michael and Reimers, Nils and Gurevych, Iryna},
+  doi          = {10.1162/coli_a_00407},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {575-614},
+  shortjournal = {Comput. Lingu.},
+  title        = {Generalizing cross-document event coreference resolution across multiple corpora},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Syntax role for neural semantic role labeling.
+<em>COLI</em>, <em>47</em>(3), 529–574. (<a
+href="https://doi.org/10.1162/coli_a_00408">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic role labeling (SRL) is dedicated to recognizing the semantic predicate-argument structure of a sentence. Previous studies in terms of traditional models have shown syntactic information can make remarkable contributions to SRL performance; however, the necessity of syntactic information was challenged by a few recent neural SRL studies that demonstrate impressive performance without syntactic backbones and suggest that syntax information becomes much less important for neural semantic role labeling, especially when paired with recent deep neural network and large-scale pre-trained language models. Despite this notion, the neural SRL field still lacks a systematic and full investigation on the relevance of syntactic information in SRL, for both dependency and both monolingual and multilingual settings. This paper intends to quantify the importance of syntactic information for neural SRL in the deep learning framework. We introduce three typical SRL frameworks (baselines), sequence-based, tree-based, and graph-based, which are accompanied by two categories of exploiting syntactic information: syntax pruning-based and syntax feature-based. Experiments are conducted on the CoNLL-2005, -2009, and -2012 benchmarks for all languages available, and results show that neural SRL models can still benefit from syntactic information under certain conditions. Furthermore, we show the quantitative significance of syntax to neural SRL models together with a thorough empirical survey using existing models.},
+  archive      = {J_COLI},
+  author       = {Li, Zuchao and Zhao, Hai and He, Shexia and Cai, Jiaxun},
+  doi          = {10.1162/coli_a_00408},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {529-574},
+  shortjournal = {Comput. Lingu.},
+  title        = {Syntax role for neural semantic role labeling},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The taxonomy of writing systems: How to measure how
+logographic a system is. <em>COLI</em>, <em>47</em>(3), 477–528. (<a
+href="https://doi.org/10.1162/coli_a_00409">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Taxonomies of writing systems since Gelb (1952) have classified systems based on what the written symbols represent: if they represent words or morphemes, they are logographic; if syllables, syllabic; if segments, alphabetic; and so forth. Sproat (2000) and Rogers (2005) broke with tradition by splitting the logographic and phonographic aspects into two dimensions, with logography being graded rather than a categorical distinction. A system could be syllabic, and highly logographic; or alphabetic, and mostly non-logographic. This accords better with how writing systems actually work, but neither author proposed a method for measuring logography.In this article we propose a novel measure of the degree of logography that uses an attention-based sequence-to-sequence model trained to predict the spelling of a token from its pronunciation in context. In an ideal phonographic system, the model should need to attend to only the current token in order to compute how to spell it, and this would show in the attention matrix activations. In contrast, with a logographic system, where a given pronunciation might correspond to several different spellings, the model would need to attend to a broader context. The ratio of the activation outside the token and the total activation forms the basis of our measure. We compare this with a simple lexical measure, and an entropic measure, as well as several other neural models, and argue that on balance our attention-based measure accords best with intuition about how logographic various systems are.Our work provides the first quantifiable measure of the notion of logography that accords with linguistic intuition and, we argue, provides better insight into what this notion means.},
+  archive      = {J_COLI},
+  author       = {Sproat, Richard and Gutkin, Alexander},
+  doi          = {10.1162/coli_a_00409},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {477-528},
+  shortjournal = {Comput. Lingu.},
+  title        = {The taxonomy of writing systems: How to measure how logographic a system is},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Universal discourse representation structure parsing.
+<em>COLI</em>, <em>47</em>(2), 445–476. (<a
+href="https://doi.org/10.1162/coli_a_00406">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider the task of crosslingual semantic parsing in the style of Discourse Representation Theory (DRT) where knowledge from annotated corpora in a resource-rich language is transferred via bitext to guide learning in other languages. We introduce 𝕌niversal Discourse Representation Theory (𝕌DRT), a variant of DRT that explicitly anchors semantic representations to tokens in the linguistic input. We develop a semantic parsing framework based on the Transformer architecture and utilize it to obtain semantic resources in multiple languages following two learning schemes. The many-to-one approach translates non-English text to English, and then runs a relatively accurate English parser on the translated text, while the one-to-many approach translates gold standard English to non-English text and trains multiple parsers (one per language) on the translations. Experimental results on the Parallel Meaning Bank show that our proposal outperforms strong baselines by a wide margin and can be used to construct (silver-standard) meaning banks for 99 languages.},
+  archive      = {J_COLI},
+  author       = {Liu, Jiangming and Cohen, Shay B. and Lapata, Mirella and Bos, Johan},
+  doi          = {10.1162/coli_a_00406},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {445-476},
+  shortjournal = {Comput. Lingu.},
+  title        = {Universal discourse representation structure parsing},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Analysis and evaluation of language models for word sense
+disambiguation. <em>COLI</em>, <em>47</em>(2), 387–443. (<a
+href="https://doi.org/10.1162/coli_a_00405">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Transformer-based language models have taken many fields in NLP by storm. BERT and its derivatives dominate most of the existing evaluation benchmarks, including those for Word Sense Disambiguation (WSD), thanks to their ability in capturing context-sensitive semantic nuances. However, there is still little knowledge about their capabilities and potential limitations in encoding and recovering word senses. In this article, we provide an in-depth quantitative and qualitative analysis of the celebrated BERT model with respect to lexical ambiguity. One of the main conclusions of our analysis is that BERT can accurately capture high-level sense distinctions, even when a limited number of examples is available for each word sense. Our analysis also reveals that in some cases language models come close to solving coarse-grained noun disambiguation under ideal conditions in terms of availability of training data and computing resources. However, this scenario rarely occurs in real-world settings and, hence, many practical challenges remain even in the coarse-grained setting. We also perform an in-depth comparison of the two main language model-based WSD strategies, namely, fine-tuning and feature extraction, finding that the latter approach is more robust with respect to sense bias and it can better exploit limited available training data. In fact, the simple feature extraction strategy of averaging contextualized embeddings proves robust even using only three training sentences per word sense, with minimal improvements obtained by increasing the size of this training data.},
+  archive      = {J_COLI},
+  author       = {Loureiro, Daniel and Rezaee, Kiamehr and Pilehvar, Mohammad Taher and Camacho-Collados, Jose},
+  doi          = {10.1162/coli_a_00405},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {387-443},
+  shortjournal = {Comput. Lingu.},
+  title        = {Analysis and evaluation of language models for word sense disambiguation},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). CausaLM: Causal model explanation through counterfactual
+language models. <em>COLI</em>, <em>47</em>(2), 333–386. (<a
+href="https://doi.org/10.1162/coli_a_00404">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Understanding predictions made by deep neural networks is notoriously difficult, but also crucial to their dissemination. As all machine learning–based methods, they are as good as their training data, and can also capture unwanted biases. While there are tools that can help understand whether such biases exist, they do not distinguish between correlation and causation, and might be ill-suited for text-based models and for reasoning about high-level language concepts. A key problem of estimating the causal effect of a concept of interest on a given model is that this estimation requires the generation of counterfactual examples, which is challenging with existing generation technology. To bridge that gap, we propose CausaLM, a framework for producing causal model explanations using counterfactual language representation models. Our approach is based on fine-tuning of deep contextualized embedding models with auxiliary adversarial tasks derived from the causal graph of the problem. Concretely, we show that by carefully choosing auxiliary adversarial pre-training tasks, language representation models such as BERT can effectively learn a counterfactual representation for a given concept of interest, and be used to estimate its true causal effect on model performance. A byproduct of our method is a language representation model that is unaffected by the tested concept, which can be useful in mitigating unwanted bias ingrained in the data.1},
+  archive      = {J_COLI},
+  author       = {Feder, Amir and Oved, Nadav and Shalit, Uri and Reichart, Roi},
+  doi          = {10.1162/coli_a_00404},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {333-386},
+  shortjournal = {Comput. Lingu.},
+  title        = {CausaLM: Causal model explanation through counterfactual language models},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). RYANSQL: Recursively applying sketch-based slot fillings for
+complex text-to-SQL in cross-domain databases. <em>COLI</em>,
+<em>47</em>(2), 309–332. (<a
+href="https://doi.org/10.1162/coli_a_00403">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Text-to-SQL is the problem of converting a user question into an SQL query, when the question and database are given. In this article, we present a neural network approach called RYANSQL (Recursively Yielding Annotation Network for SQL) to solve complex Text-to-SQL tasks for cross-domain databases. Statement Position Code (SPC) is defined to transform a nested SQL query into a set of non-nested SELECT statements; a sketch-based slot-filling approach is proposed to synthesize each SELECT statement for its corresponding SPC. Additionally, two input manipulation methods are presented to improve generation performance further. RYANSQL achieved competitive result of 58.2\% accuracy on the challenging Spider benchmark. At the time of submission (April 2020), RYANSQL v2, a variant of original RYANSQL, is positioned at 3rd place among all systems and 1st place among the systems not using database content with 60.6\% exact matching accuracy. The source code is available at https://github.com/kakaoenterprise/RYANSQL.},
+  archive      = {J_COLI},
+  author       = {Choi, DongHyun and Shin, Myeong Cheol and Kim, EungGyun and Shin, Dong Ryeol},
+  doi          = {10.1162/coli_a_00403},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {309-332},
+  shortjournal = {Comput. Lingu.},
+  title        = {RYANSQL: Recursively applying sketch-based slot fillings for complex text-to-SQL in cross-domain databases},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Universal dependencies. <em>COLI</em>, <em>47</em>(2),
+255–308. (<a href="https://doi.org/10.1162/coli_a_00402">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Universal dependencies (UD) is a framework for morphosyntactic annotation of human language, which to date has been used to create treebanks for more than 100 languages. In this article, we outline the linguistic theory of the UD framework, which draws on a long tradition of typologically oriented grammatical theories. Grammatical relations between words are centrally used to explain how predicate–argument structures are encoded morphosyntactically in different languages while morphological features and part-of-speech classes give the properties of words. We argue that this theory is a good basis for crosslinguistically consistent annotation of typologically diverse languages in a way that supports computational natural language understanding as well as broader linguistic studies.},
+  archive      = {J_COLI},
+  author       = {de Marneffe, Marie-Catherine and Manning, Christopher D. and Nivre, Joakim and Zeman, Daniel},
+  doi          = {10.1162/coli_a_00402},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {255-308},
+  shortjournal = {Comput. Lingu.},
+  title        = {Universal dependencies},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Approximating probabilistic models as weighted finite
+automata. <em>COLI</em>, <em>47</em>(2), 221–254. (<a
+href="https://doi.org/10.1162/coli_a_00401">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Weighted finite automata (WFAs) are often used to represent probabilistic models, such as n-gram language models, because among other things, they are efficient for recognition tasks in time and space. The probabilistic source to be represented as a WFA, however, may come in many forms. Given a generic probabilistic model over sequences, we propose an algorithm to approximate it as a WFA such that the Kullback-Leibler divergence between the source model and the WFA target model is minimized. The proposed algorithm involves a counting step and a difference of convex optimization step, both of which can be performed efficiently. We demonstrate the usefulness of our approach on various tasks, including distilling n-gram models from neural models, building compact language models, and building open-vocabulary character models. The algorithms used for these experiments are available in an open-source software library.},
+  archive      = {J_COLI},
+  author       = {Suresh, Ananda Theertha and Roark, Brian and Riley, Michael and Schogol, Vlad},
+  doi          = {10.1162/coli_a_00401},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {221-254},
+  shortjournal = {Comput. Lingu.},
+  title        = {Approximating probabilistic models as weighted finite automata},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Python for linguists. <em>COLI</em>, <em>47</em>(1),
+217–220. (<a href="https://doi.org/10.1162/coli_r_00400">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Teaching programming skills is a hard task. It is even harder if one targets an audience with no or little mathematical background. Although there are books on programming that target such groups, they often fail to raise or maintain interest due to artificial examples that lack reference to the professional issues that the audience typically face. This book fills the gap by addressing linguistics, a profession and academic subject for which basic knowledge of script programming is becoming more and more important. The book Python for Linguists by Michael Hammond is an introductory Python course targeted at linguists with no prior programming background. It succeeds previous books for Perl (Hammond 2008) and Java (Hammond 2002) by the same author, and reflects the current de facto prevalence of Python when it comes to adoption and available packages for natural language processing.We feel it necessary to clarify that the book aims at (general) linguists in the broad sense rather than computational linguists. Its aim is to teach linguists the fundamental concepts of programming using typical examples from linguistics. The book should not be mistaken as a course for learning basic algorithms in computational linguistics. We acknowledge that the author nowhere makes such a claim; however, given the thematic proximity to computational linguistics, one should have the right expectation before working with the book.Chapters 1–5 lay the foundations of the Python programming language, introducing the most important language constructs but deferring object oriented programming to a later part of the book. The focus in Chapters 1 and 2 covers the basic data types (numbers, strings, dictionaries), with a particular emphasis on simple string operations, and introduces some more advanced concepts such as mutability.Chapters 3–5 introduce control structures, input–output operations, and modules. The book goes at great length to visualize the program flow and the state of different variables for different steps in a program execution, which is certainly very helpful for learners with no prior programming experience. The book also guides the learner to understand certain error types that frequently occur in computer programming (but might be unintuitive for beginners). For example, when discussing function calls, much care is devoted to pointing out the unintended consequences stemming from mutability and side effects.The book draws connections to linguistics by using a made-up, nonsensical language for some of the examples (e.g., producing artificial sentences that follow a particular pattern). These examples could be made be more relevant for linguists if a real language fragment were used.It is great that the book shows how to combine the power of character streams through piping (with command line tools on the operating system level) with further processing in a Python script, as mastery of this useful skill can become very handy for any language researcher. However, at certain places the chance was missed to teach beginners how canonical Python code should be written. For example, the syntax used for reading files does not correspond to the official recommendation for file input/output, which encourages the use of the with open(filename) construct.1 Also, for variable naming, the book includes many examples with very short one- or two-letter variables, or names in CamelCase, both of which are discouraged by the Python style guidelines.2The first part of the book ends with the step-by-step construction of a script that reads in a book from Project Gutenberg,3 showing the implementations of necessary helper methods, such as sentences splitting and tokenization, and prints out some basic statistics of the text.The book does a great job introducing all important concepts in a meaningful order and laying the foundation for programming in Python without leaving gaps that could derail beginners that are not yet used to the frustrations inherent to writing software. The idea of efficiency and runtime complexity is less pronounced in this book—probably because it is directed to linguists rather than starting computer scientists. However, one might argue that conveying a basic idea of runtime and how it is dependent on certain choices (1 step vs. 1 loop vs. 2 nested loops) would have been a useful addition. This could have been combined with explaining the basic ideas and motivations behind frequently used data structures (finding an element in a list vs. in a set, lookup in dictionary).Chapters 6–8 go into more detail on showing how more complicated text processing problems are solved using regular expressions, text manipulation, and Web crawling. Regular expressions are introduced using many step-by-step examples and explanations. The first exemplary use case is finding consonant clusters and is inspired by phonology. This use case also demonstrates how rule-based engineering is an iterative process, and initial regular expressions are refined once the effect of their application to actual language data can be observed. The second, more elaborate use case is a (somewhat lengthy) reimplementation of the classic Porter stemmer algorithm (Porter 1980). In order for readers to understand the development of the code better, the book presents the same script in several stages (i.e., repeating the code already shown before). Although this is a good idea in the first, foundational chapters of the book, it becomes tiring when done with the more complex examples like the Porter stemmer (it would be better to present small code snippets, and then their composition in an entire script only once).An entire chapter is devoted to collecting data from the Web; the use case is to crawl a small corpus for the Welsh language. Many real world problems are introduced that NLP practitioners have to face frequently when working with crawled data (such as inconsistent encodings, noisy markup, unresponsive Web pages), as well as tools for parsing Web data and parallel processing. The elaborate example of corpus collection nicely brings together many of the concepts introduced earlier in the book, and serves as a convincing application for showcasing the usefulness of parallel processing.The crawler contains a language guesser based on the most frequent Welsh words. The simple frequency-based heuristic of the language guesser is the only part in the book that shows the potential of quantitative methods for text processing (rather than rule-based methods). Given the prevalence of statistical methods in computational linguistics, it would have been desirable if the book spent more time on the opportunities and pitfalls of using empirical methods for solving practical tasks.In the last part of the book, Chapters 9–12, more attention is directed toward different programming paradigms that are possible within the Python language. In particular, object oriented programming (OOP), event-driven programming (and how to use it for implementing graphical user interfaces), and the functional programming capabilities of Python are presented.Even though OOP has been used throughout the book implicitly (since fundamentally everything has the status of an object in Python), it is only very late in the book that the concepts behind OOP are explicitly discussed. It seems that the book treats OOP as an advanced concept that would be too confusing to confront beginners with early on (which might not be the case if OOP concepts are reduced to their main ideas, such as grouping data and functionality together). In order to illustrate the logic behind inheritance, the book uses examples from linguistic hierarchies, for example, syllabification trees (a syllable has an onset and a rhyme, which are all subspans of a word with a spelling and pronunciation), rather than the typical examples usually used for introducing OOP (e.g., a car is a vehicle and has wheels and a location).A chapter on graphical user interfaces builds on the Tkinter framework, and the most basic concepts (windows, buttons) are introduced. A small graphical demo of the Porter stemmer covered earlier is built as an example for a user interface. Unfortunately there is very little connection to any linguistic use case in this chapter, and user interfaces would have been a great opportunity for showcasing some annotation problem (e.g., rating fluency vs. adequacy of sentences). One could argue that a more modern (and more flexible) approach to user interfaces building on browser-based interaction would have been more useful.Finally, the Python-specific functional programming language constructs are discussed, and the undesirable consequences of non-functional programming (mutability, side effects) as well as the advantages of functional programming (better control, parallelization, conciseness) are highlighted. An Appendix gives a brief introduction to basic processing with the natural language toolkit (NLTK) (Loper and Bird 2002), such as using its corpora or pre-processing raw text.General Observations. The book is clearly structured. The author carefully and consistently arranged the different elements of the Python programming language to make it as accessible as possible. Unlike many tutorials for Python available on the Web, this book not just details the syntax of the programming language but it takes the time to convey important programming skills, such as a divide-and-conquer approach to modularize code. Not in all places is the output of the sample code displayed. This may sometimes slow down the process of understanding it. However, the complete code of the book is made publicly available so that readers may test it on their particular Python installation.Each chapter concludes with a set of exercises. We consider them highly useful in further deepening the subject matter presented in the chapters. The exercises mostly range from simple questions investigating particular details of the concepts presented in the chapter, for example, by modifying the existing examples, up to writing smaller programs from scratch solving particular linguistic tasks.The linguistic examples chosen may occasionally look a bit construed. Yet, overall they are the main asset of this book and they will be more interesting to the target audience than the examples found in other existing books.After reading this book, the reader will have a solid grasp of the Python programming language. It should suffice for solving typical daily tasks for linguistics, such as restructuring files or computing low-level statistics (e.g., collecting word frequencies). The knowledge presented in the book may also enable the reader to study more advanced topics related to Python, for example, computational linguistic algorithms, data science, or machine learning.Some readers may be surprised to see only a few external libraries discussed in the book. However, this may be on purpose and be in line with the didactic concept pursued by the author. The aim of this book is to teach basic programming skills, namely, how to understand and structure code for data processing. This can better be conveyed by showing complete solutions to specific tasks rather than showing how to call a particular Python library. Novices are more likely to acquire a deeper understanding of how programs are written by explaining a programming solution from scratch. Of course, we should also bear in mind that many of the external libraries currently available for Python may be short-lived and not available or maintained in a few years’ time. Nonetheless, we would have appreciated a statement telling the reader to consider publicly available libraries in practice.Summary. The main goal of Python for Linguists is to teach basic programming skills to linguists that do not have any prior background in computer science. By using linguistically motivated examples throughout, the book does a great job making the material covered relevant to the target group. The structure of the book is well thought-out, and ensures that prerequisites are covered before moving to more advanced topics. This and the exercises that come with each chapter would make the book a great companion for a foundational programming course targeted at linguists.},
+  archive      = {J_COLI},
+  author       = {Roth, Benjamin and Wiegand, Michael},
+  doi          = {10.1162/coli_r_00400},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {217-220},
+  shortjournal = {Comput. Lingu.},
+  title        = {Python for linguists},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Depth-bounded statistical PCFG induction as a model of human
+grammar acquisition. <em>COLI</em>, <em>47</em>(1), 181–216. (<a
+href="https://doi.org/10.1162/coli_a_00399">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This article describes a simple PCFG induction model with a fixed category domain that predicts a large majority of attested constituent boundaries, and predicts labels consistent with nearly half of attested constituent labels on a standard evaluation data set of child-directed speech. The article then explores the idea that the difference between simple grammars exhibited by child learners and fully recursive grammars exhibited by adult learners may be an effect of increasing working memory capacity, where the shallow grammars are constrained images of the recursive grammars. An implementation of these memory bounds as limits on center embedding in a depth-specific transform of a recursive grammar yields a significant improvement over an equivalent but unbounded baseline, suggesting that this arrangement may indeed confer a learning advantage.},
+  archive      = {J_COLI},
+  author       = {Jin, Lifeng and Schwartz, Lane and Doshi-Velez, Finale and Miller, Timothy and Schuler, William},
+  doi          = {10.1162/coli_a_00399},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {181-216},
+  shortjournal = {Comput. Lingu.},
+  title        = {Depth-bounded statistical PCFG induction as a model of human grammar acquisition},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Supervised and unsupervised neural approaches to text
+readability. <em>COLI</em>, <em>47</em>(1), 141–179. (<a
+href="https://doi.org/10.1162/coli_a_00398">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a set of novel neural supervised and unsupervised approaches for determining the readability of documents. In the unsupervised setting, we leverage neural language models, whereas in the supervised setting, three different neural classification architectures are tested. We show that the proposed neural unsupervised approach is robust, transferable across languages, and allows adaptation to a specific readability task and data set. By systematic comparison of several neural architectures on a number of benchmark and new labeled readability data sets in two languages, this study also offers a comprehensive analysis of different neural approaches to readability classification. We expose their strengths and weaknesses, compare their performance to current state-of-the-art classification approaches to readability, which in most cases still rely on extensive feature engineering, and propose possibilities for improvements.},
+  archive      = {J_COLI},
+  author       = {Martinc, Matej and Pollak, Senja and Robnik-Šikonja, Marko},
+  doi          = {10.1162/coli_a_00398},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {141-179},
+  shortjournal = {Comput. Lingu.},
+  title        = {Supervised and unsupervised neural approaches to text readability},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Interpretability analysis for named entity recognition to
+understand system predictions and how they can improve. <em>COLI</em>,
+<em>47</em>(1), 117–140. (<a
+href="https://doi.org/10.1162/coli_a_00397">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Named entity recognition systems achieve remarkable performance on domains such as English news. It is natural to ask: What are these models actually learning to achieve this? Are they merely memorizing the names themselves? Or are they capable of interpreting the text and inferring the correct entity type from the linguistic context? We examine these questions by contrasting the performance of several variants of architectures for named entity recognition, with some provided only representations of the context as features. We experiment with GloVe-based BiLSTM-CRF as well as BERT. We find that context does influence predictions, but the main factor driving high performance is learning the named tokens themselves. Furthermore, we find that BERT is not always better at recognizing predictive contexts compared to a BiLSTM-CRF model. We enlist human annotators to evaluate the feasibility of inferring entity types from context alone and find that humans are also mostly unable to infer entity types for the majority of examples on which the context-only system made errors. However, there is room for improvement: A system should be able to recognize any named entity in a predictive context correctly and our experiments indicate that current systems may be improved by such capability. Our human study also revealed that systems and humans do not always learn the same contextual clues, and context-only systems are sometimes correct even when humans fail to recognize the entity type from the context. Finally, we find that one issue contributing to model errors is the use of “entangled” representations that encode both contextual and local token information into a single vector, which can obscure clues. Our results suggest that designing models that explicitly operate over representations of local inputs and context, respectively, may in some cases improve performance. In light of these and related findings, we highlight directions for future work.},
+  archive      = {J_COLI},
+  author       = {Agarwal, Oshin and Yang, Yinfei and Wallace, Byron C. and Nenkova, Ani},
+  doi          = {10.1162/coli_a_00397},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {117-140},
+  shortjournal = {Comput. Lingu.},
+  title        = {Interpretability analysis for named entity recognition to understand system predictions and how they can improve},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Semantic data set construction from human clustering and
+spatial arrangement. <em>COLI</em>, <em>47</em>(1), 69–116. (<a
+href="https://doi.org/10.1162/coli_a_00396">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Research into representation learning models of lexical semantics usually utilizes some form of intrinsic evaluation to ensure that the learned representations reflect human semantic judgments. Lexical semantic similarity estimation is a widely used evaluation method, but efforts have typically focused on pairwise judgments of words in isolation, or are limited to specific contexts and lexical stimuli. There are limitations with these approaches that either do not provide any context for judgments, and thereby ignore ambiguity, or provide very specific sentential contexts that cannot then be used to generate a larger lexical resource. Furthermore, similarity between more than two items is not considered. We provide a full description and analysis of our recently proposed methodology for large-scale data set construction that produces a semantic classification of a large sample of verbs in the first phase, as well as multi-way similarity judgments made within the resultant semantic classes in the second phase. The methodology uses a spatial multi-arrangement approach proposed in the field of cognitive neuroscience for capturing multi-way similarity judgments of visual stimuli. We have adapted this method to handle polysemous linguistic stimuli and much larger samples than previous work. We specifically target verbs, but the method can equally be applied to other parts of speech. We perform cluster analysis on the data from the first phase and demonstrate how this might be useful in the construction of a comprehensive verb resource. We also analyze the semantic information captured by the second phase and discuss the potential of the spatially induced similarity judgments to better reflect human notions of word similarity. We demonstrate how the resultant data set can be used for fine-grained analyses and evaluation of representation learning models on the intrinsic tasks of semantic clustering and semantic similarity. In particular, we find that stronger static word embedding methods still outperform lexical representations emerging from more recent pre-training methods, both on word-level similarity and clustering. Moreover, thanks to the data set’s vast coverage, we are able to compare the benefits of specializing vector representations for a particular type of external knowledge by evaluating FrameNet- and VerbNet-retrofitted models on specific semantic domains such as “Heat” or “Motion.”},
+  archive      = {J_COLI},
+  author       = {Majewska, Olga and McCarthy, Diana and van den Bosch, Jasper J. F. and Kriegeskorte, Nikolaus and Vulić, Ivan and Korhonen, Anna},
+  doi          = {10.1162/coli_a_00396},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {69-116},
+  shortjournal = {Comput. Lingu.},
+  title        = {Semantic data set construction from human clustering and spatial arrangement},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Comparing knowledge-intensive and data-intensive models for
+english resource semantic parsing. <em>COLI</em>, <em>47</em>(1), 43–68.
+(<a href="https://doi.org/10.1162/coli_a_00395">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this work, we present a phenomenon-oriented comparative analysis of the two dominant approaches in English Resource Semantic (ERS) parsing: classic, knowledge-intensive and neural, data-intensive models. To reflect state-of-the-art neural NLP technologies, a factorization-based parser is introduced that can produce Elementary Dependency Structures much more accurately than previous data-driven parsers. We conduct a suite of tests for different linguistic phenomena to analyze the grammatical competence of different parsers, where we show that, despite comparable performance overall, knowledge- and data-intensive models produce different types of errors, in a way that can be explained by their theoretical properties. This analysis is beneficial to in-depth evaluation of several representative parsing techniques and leads to new directions for parser development.},
+  archive      = {J_COLI},
+  author       = {Cao, Junjie and Lin, Zi and Sun, Weiwei and Wan, Xiaojun},
+  doi          = {10.1162/coli_a_00395},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {43-68},
+  shortjournal = {Comput. Lingu.},
+  title        = {Comparing knowledge-intensive and data-intensive models for english resource semantic parsing},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Formal basis of a language universal. <em>COLI</em>,
+<em>47</em>(1), 9–42. (<a
+href="https://doi.org/10.1162/coli_a_00394">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Steedman (2020) proposes as a formal universal of natural language grammar that grammatical permutations of the kind that have given rise to transformational rules are limited to a class known to mathematicians and computer scientists as the “separable” permutations. This class of permutations is exactly the class that can be expressed in combinatory categorial grammars (CCGs). The excluded non-separable permutations do in fact seem to be absent in a number of studies of crosslinguistic variation in word order in nominal and verbal constructions.The number of permutations that are separable grows in the number n of lexical elements in the construction as the Large Schröder Number Sn−1. Because that number grows much more slowly than the n! number of all permutations, this generalization is also of considerable practical interest for computational applications such as parsing and machine translation.The present article examines the mathematical and computational origins of this restriction, and the reason it is exactly captured in CCG without the imposition of any further constraints.},
+  archive      = {J_COLI},
+  author       = {Stanojević, Miloš and Steedman, Mark},
+  doi          = {10.1162/coli_a_00394},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {9-42},
+  shortjournal = {Comput. Lingu.},
+  title        = {Formal basis of a language universal},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Kathy McKeown interviews bonnie webber. <em>COLI</em>,
+<em>47</em>(1), 1–7. (<a
+href="https://doi.org/10.1162/coli_a_00393">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Because the 2020 ACL Lifetime Achievement Award presentation could not be done in person, we replaced the usual LTA talk with an interview between Professor Kathy McKeown (Columbia University) and the recipient, Bonnie Webber. The following is an edited version of the interview, with added citations.},
+  archive      = {J_COLI},
+  author       = {Webber, Bonnie},
+  doi          = {10.1162/coli_a_00393},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {1-7},
+  shortjournal = {Comput. Lingu.},
+  title        = {Kathy McKeown interviews bonnie webber},
+  volume       = {47},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

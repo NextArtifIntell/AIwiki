@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TELO_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="telo---27">TELO - 27</h2>
+<ul>
+<li><details>
+<summary>
+(2024). Introduction to the special issue on data-driven
+evolutionary computation. <em>ACM Transactions on Evolutionary
+Learning</em>, <em>4</em>(4), 1–2. (<a
+href="https://doi.org/10.1145/3704266">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J},
+  doi     = {10.1145/3704266},
+  journal = {ACM Transactions on Evolutionary Learning},
+  month   = {12},
+  number  = {4},
+  pages   = {1-2},
+  title   = {Introduction to the special issue on data-driven evolutionary computation},
+  volume  = {4},
+  year    = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Evolutionary optimization with a simplified helper task for
+high-dimensional expensive multiobjective problems. <em>ACM Transactions
+on Evolutionary Learning</em>, <em>4</em>(4), 1–32. (<a
+href="https://doi.org/10.1145/3637065">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In recent years, surrogate-assisted evolutionary algorithms (SAEAs) have been sufficiently studied for tackling computationally expensive multiobjective optimization problems (EMOPs), as they can quickly estimate the qualities of solutions by using surrogate models to substitute for expensive evaluations. However, most existing SAEAs only show promising performance for solving EMOPs with no more than 10 dimensions, and become less efficient for tackling EMOPs with higher dimensionality. Thus, this article proposes a new SAEA with a simplified helper task for tackling high-dimensional EMOPs. In each generation, one simplified task will be generated artificially by using random dimension reduction on the target task (i.e., the target EMOPs). Then, two surrogate models are trained for the helper task and the target task, respectively. Based on the trained surrogate models, evolutionary multitasking optimization is run to solve these two tasks so that the experiences of solving the helper task can be transferred to speed up the convergence of tackling the target task. Moreover, an effective model management strategy is designed to select new promising samples for training the surrogate models. When compared to five competitive SAEAs on four well-known benchmark suites, the experiments validate the advantages of the proposed algorithm on most test cases.},
+  archive  = {J},
+  doi      = {10.1145/3637065},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-32},
+  title    = {Evolutionary optimization with a simplified helper task for high-dimensional expensive multiobjective problems},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Evolutionary seeding of diverse structural design solutions
+via topology optimization. <em>ACM Transactions on Evolutionary
+Learning</em>, <em>4</em>(4), 1–23. (<a
+href="https://doi.org/10.1145/3670693">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Topology optimization is a powerful design tool in structural engineering and other engineering problems. The design domain is discretized into elements, and a finite element method model is iteratively solved to find the element that maximizes the structure&#39;s performance. Although gradient-based solvers have been used to solve topology optimization problems, they may be susceptible to suboptimal solutions or difficulty obtaining feasible solutions, particularly in non-convex optimization problems. The presence of non-convexities can hinder convergence, leading to challenges in achieving the global optimum. With this in mind, we discuss in this article the application of the quality diversity approach to topological optimization problems. Quality diversity (QD) algorithms have shown promise in the research field of optimization and have many applications in engineering design, robotics, and games. MAP-Elites is a popular QD algorithm used in robotics. In soft robotics, the MAP-Elites algorithm has been used to optimize the shape and control of soft robots, leading to the discovery of new and efficient motion strategies. This article introduces an approach based on MAP-Elites to provide diverse designs for structural optimization problems. Three fundamental topology optimization problems are used for experimental testing, and the results demonstrate the ability of the proposed algorithm to generate diverse, high-performance designs for those problems. Furthermore, the proposed algorithm can be a valuable engineering design tool capable of creating novel and efficient designs.},
+  archive  = {J},
+  doi      = {10.1145/3670693},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-23},
+  title    = {Evolutionary seeding of diverse structural design solutions via topology optimization},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Bayesian inverse transfer in evolutionary multiobjective
+optimization. <em>ACM Transactions on Evolutionary Learning</em>,
+<em>4</em>(4), 1–27. (<a href="https://doi.org/10.1145/3674152">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Transfer optimization enables data-efficient optimization of a target task by leveraging experiential priors from related source tasks. This is especially useful in multiobjective optimization settings where a set of tradeoff solutions is sought under tight evaluation budgets. In this article, we introduce a novel concept of inverse transfer in multiobjective optimization. Inverse transfer stands out by employing Bayesian inverse Gaussian process models to map performance vectors in the objective space to population search distributions in task-specific decision space, facilitating knowledge transfer through objective space unification . Building upon this idea, we introduce the first Inverse Transfer Evolutionary Multiobjective Optimizer (invTrEMO). A key highlight of invTrEMO is its ability to harness the common objective functions prevalent in many application areas, even when decision spaces do not precisely align between tasks. This allows invTrEMO to uniquely and effectively utilize information from heterogeneous source tasks as well. Furthermore, invTrEMO yields high-precision inverse models as a significant byproduct, enabling the generation of tailored solutions on-demand based on user preferences. Empirical studies on multi- and many-objective benchmark problems, as well as a practical case study, showcase the faster convergence rate and modeling accuracy of the invTrEMO relative to state-of-the-art evolutionary and Bayesian optimization algorithms. The source code of the invTrEMO is made available at https://github.com/LiuJ-2023/invTrEMO .},
+  archive  = {J},
+  doi      = {10.1145/3674152},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-27},
+  title    = {Bayesian inverse transfer in evolutionary multiobjective optimization},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). On the generalisation performance of geometric semantic
+genetic programming for boolean functions: Learning block mutations.
+<em>ACM Transactions on Evolutionary Learning</em>, <em>4</em>(4), 1–33.
+(<a href="https://doi.org/10.1145/3677124">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this article, we present the first rigorous theoretical analysis of the generalisation performance of a Geometric Semantic Genetic Programming (GSGP) system. More specifically, we consider a hill-climber using the GSGP Fixed Block Mutation (FBM) operator for the domain of Boolean functions. We prove that the algorithm cannot evolve Boolean conjunctions of arbitrary size that are correct on unseen inputs chosen uniformly at random from the complete truth table i.e., it generalises poorly. Two algorithms based on the Varying Block Mutation (VBM) operator are proposed and analysed to address the issue. We rigorously prove that under the uniform distribution the first one can efficiently evolve any Boolean function of constant size with respect to the number of available variables, while the second one can efficiently evolve general conjunctions or disjunctions of any size without requiring prior knowledge of the target function class. An experimental analysis confirms the theoretical insights for realistic problem sizes and indicates the superiority of the proposed operators also for small parity functions not explicitly covered by the theory.},
+  archive  = {J},
+  doi      = {10.1145/3677124},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-33},
+  title    = {On the generalisation performance of geometric semantic genetic programming for boolean functions: Learning block mutations},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Layer-wise learning rate optimization for task-dependent
+fine-tuning of pre-trained models: An evolutionary approach. <em>ACM
+Transactions on Evolutionary Learning</em>, <em>4</em>(4), 1–23. (<a
+href="https://doi.org/10.1145/3689827">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The superior performance of large-scale pre-trained models, such as Bidirectional Encoder Representations from Transformers (BERT) and Generative Pre-trained Transformer (GPT), has received increasing attention in both academic and industrial research and has become one of the current research hotspots. A pre-trained model refers to a model trained on large-scale unlabeled data, whose purpose is to learn general language representation or features for fine-tuning or transfer learning in subsequent tasks. After pre-training is complete, a small amount of labeled data can be used to fine-tune the model for a specific task or domain. This two-stage method of “pre-training+fine-tuning” has achieved advanced results in natural language processing (NLP) tasks. Despite widespread adoption, existing fixed fine-tuning schemes that adapt well to one NLP task may perform inconsistently on other NLP tasks given that different tasks have different latent semantic structures. In this article, we explore the effectiveness of automatic fine-tuning pattern search for layer-wise learning rates from an evolutionary optimization perspective. Our goal is to use evolutionary algorithms to search for better task-dependent fine-tuning patterns for specific NLP tasks than typical fixed fine-tuning patterns. Experimental results on two real-world language benchmarks and three advanced pre-training language models show the effectiveness and generality of the proposed framework.},
+  archive  = {J},
+  doi      = {10.1145/3689827},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-23},
+  title    = {Layer-wise learning rate optimization for task-dependent fine-tuning of pre-trained models: An evolutionary approach},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Language model crossover: Variation through few-shot
+prompting. <em>ACM Transactions on Evolutionary Learning</em>,
+<em>4</em>(4), 1–40. (<a href="https://doi.org/10.1145/3694791">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article pursues the insight that language models naturally enable an intelligent variation operator similar in spirit to evolutionary crossover. In particular, language models of sufficient scale demonstrate in-context learning, i.e., they can learn from associations between a small number of input patterns to generate outputs incorporating such associations (also called few-shot prompting). This ability can be leveraged to form a simple but powerful variation operator, i.e., to prompt a language model with a few text-based genotypes (such as code, plain-text sentences, or equations), and to parse its corresponding output as those genotypes’ offspring. The promise of such language model crossover (which is simple to implement and can leverage many different open source language models) is that it enables a simple mechanism to evolve semantically rich text representations (with few domain-specific tweaks), and naturally benefits from current progress in language models. Experiments in this article highlight the versatility of language-model crossover, through evolving binary bit-strings, sentences, equations, text-to-image prompts, and Python code. The conclusion is that language model crossover is a flexible and effective method for evolving genomes representable as text.},
+  archive  = {J},
+  doi      = {10.1145/3694791},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-40},
+  title    = {Language model crossover: Variation through few-shot prompting},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Learning the graph structure of regular vine-copulas from
+dependence lists. <em>ACM Transactions on Evolutionary Learning</em>,
+<em>4</em>(4), 1–22. (<a href="https://doi.org/10.1145/3695467">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Regular vine copulas (R-vines) provide a comprehensive framework for modeling high-dimensional dependencies using a hierarchy of trees and conditional pair-copulas. While the graphical structure of R-vines is traditionally derived from data, this work introduces a novel approach by utilizing a (conditional) pairwise dependence list. Our primary goal is to construct R-vine graphs that include the maximum possible number of dependence relationships specified in such lists. To tackle this optimization challenge, characterized by exponential growth in the search space and the structural constraints of R-vines, we propose two distinct methodologies: A 0-1 linear programming formulation and a Genetic Algorithm (GA). Additionally, the Randomized Constructive Technique (RCT) is employed to generate the initial population of the GA, serving as a baseline for our comparison. Experimental results reveal the superior performance of the GA over the RCT in terms of success rate, incorporating more relationships than RCT into the constructed R-vine graphs and achieving near-optimal or optimal graph structures.},
+  archive  = {J},
+  doi      = {10.1145/3695467},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-22},
+  title    = {Learning the graph structure of regular vine-copulas from dependence lists},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Evolving to find optimizations humans miss: Using
+evolutionary computation to improve GPU code for bioinformatics
+applications. <em>ACM Transactions on Evolutionary Learning</em>,
+<em>4</em>(4), 1–29. (<a href="https://doi.org/10.1145/3703920">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {GPUs are used in many settings to accelerate large-scale scientific computation, including simulation, computational biology, and molecular dynamics. However, optimizing codes to run efficiently on GPUs requires developers to have both detailed understanding of the application logic and significant knowledge of parallel programming and GPU architectures. This paper shows that an automated GPU program optimization tool, GEVO, can leverage evolutionary computation to find code edits that reduce the runtime of three important applications, multiple sequence alignment, agent-based simulation and molecular dynamics codes, by 28.9%, 29%, and 17.8% respectively. The paper presents an in-depth analysis of the discovered optimizations, revealing that (1) several of the most important optimizations involve significant epistasis, (2) the primary sources of improvement are application-specific, and (3) many of the optimizations generalize across GPU architectures. In general, the discovered optimizations are not straightforward even for a GPU human expert, showcasing the potential of automated program optimization tools to both reduce the optimization burden for human domain experts and provide new insights for GPU experts.},
+  archive  = {J},
+  doi      = {10.1145/3703920},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {11},
+  number   = {4},
+  pages    = {1-29},
+  title    = {Evolving to find optimizations humans miss: Using evolutionary computation to improve GPU code for bioinformatics applications},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Applicability of neural combinatorial optimization: A
+critical view. <em>TELO</em>, <em>4</em>(3), 1–26. (<a
+href="https://doi.org/10.1145/3647644">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural Combinatorial Optimization has emerged as a new paradigm in the optimization area. It attempts to solve optimization problems by means of neural networks and reinforcement learning. In the past few years, due to their novelty and presumably good performance, many research papers have been published introducing new neural architectures for a variety of combinatorial problems. However, the incorporation of such models in the conventional optimization portfolio raises many questions related to their performance compared to other existing methods, such as exact algorithms, heuristics, or metaheuristics. This article aims to present a critical view of these new proposals, discussing their benefits and drawbacks with respect to the tools and algorithms already present in the optimization field. For this purpose, a comprehensive study is carried out to analyze the fundamental aspects of such methods, including performance, computational cost, transferability, and reusability of the trained model. Moreover, this discussion is accompanied by the design and validation of a new neural combinatorial optimization algorithm on two well-known combinatorial problems: the Linear Ordering Problem and the Permutation Flowshop Scheduling Problem. Finally, new directions for future work in the area of Neural Combinatorial Optimization algorithms are suggested.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3647644},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {7},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Applicability of neural combinatorial optimization: A critical view},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Effective and imperceptible adversarial textual attack via
+multi-objectivization. <em>TELO</em>, <em>4</em>(3), 1–23. (<a
+href="https://doi.org/10.1145/3651166">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The field of adversarial textual attack has significantly grown over the past few years, where the commonly considered objective is to craft adversarial examples (AEs) that can successfully fool the target model. However, the imperceptibility of attacks, which is also essential for practical attackers, is often left out by previous studies. In consequence, the crafted AEs tend to have obvious structural and semantic differences from the original human-written text, making them easily perceptible. In this work, we advocate leveraging multi-objectivization to address such an issue. Specifically, we reformulate the problem of crafting AEs as a multi-objective optimization problem, where the attack imperceptibility is considered as an auxiliary objective. Then, we propose a simple yet effective evolutionary algorithm, dubbed HydraText, to solve this problem. HydraText can be effectively applied to both score-based and decision-based attack settings. Exhaustive experiments involving 44,237 instances demonstrate that HydraText consistently achieves competitive attack success rates and better attack imperceptibility than the recently proposed attack approaches. A human evaluation study also shows that the AEs crafted by HydraText are more indistinguishable from human-written text. Finally, these AEs exhibit good transferability and can bring notable robustness improvement to the target model by adversarial training.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3651166},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {7},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Effective and imperceptible adversarial textual attack via multi-objectivization},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Generalized early stopping in evolutionary direct policy
+search. <em>ACM Transactions on Evolutionary Learning</em>,
+<em>4</em>(3), 1–28. (<a href="https://doi.org/10.1145/3653024">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Lengthy evaluation times are common in many optimization problems such as direct policy search tasks, especially when they involve conducting evaluations in the physical world, for example, in robotics applications. Often when evaluating solution over a fixed time period, it becomes clear that the objective value will not increase with additional computation time (e.g., when a two-wheeled robot continuously spins on the spot). In such cases, it makes sense to stop the evaluation early to save computation time. However, most approaches to stop the evaluation are problem specific and need to be specifically designed for the task at hand. Therefore, we propose an early stopping method for direct policy search. The proposed method only looks at the objective value at each timestep and requires no problem-specific knowledge. We test the introduced stopping criterion in five direct policy search environments drawn from games, robotics, and classic control domains and show that it can save up to \(75\%\) of the computation time. We also compare it with problem-specific stopping criteria and show that it performs comparably, while being more generally applicable.},
+  archive  = {J},
+  doi      = {10.1145/3653024},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {7},
+  number   = {3},
+  pages    = {1-28},
+  title    = {Generalized early stopping in evolutionary direct policy search},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A population initialization method based on similarity and
+mutual information in evolutionary algorithm for bi-objective feature
+selection. <em>ACM Transactions on Evolutionary Learning</em>,
+<em>4</em>(3), 1–21. (<a href="https://doi.org/10.1145/3653025">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Feature selection (FS) is an important data pre-processing technique in classification. It aims to remove redundant and irrelevant features from the data, which reduces the dimensionality of data and improves the performance of the classifier. Thus, FS is a bi-objective optimization problem, and evolutionary algorithms (EAs) have been proven to be effective in solving bi-objective FS problems. EA is a population-based metaheuristic algorithm, and the quality of the initial population is an important factor affecting the performance of EA. An improper initial population may negatively affect the convergence speed of the EA and even make the algorithm fall into the local optimum. In this article, we propose a similarity and mutual information-based initialization method, named SMII, to improve the quality of the initial population. This method determines the distribution of initial solutions based on similarity and shields features with high correlation to the selected features according to mutual information. In the experiment, we embed SMII, the latest four initialization methods, and a traditional random initialization method into NSGA-II and compared their performance on 15 public datasets. The experimental results show that SMII performs best on most datasets and can effectively improve the performance of the algorithm. Moreover, we compare the performance of two other EAs before and after embedding SMII on 15 datasets, and the results further prove that the proposed method can effectively improve the search capability of the EA for FS.},
+  archive  = {J},
+  doi      = {10.1145/3653025},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {7},
+  number   = {3},
+  pages    = {1-21},
+  title    = {A population initialization method based on similarity and mutual information in evolutionary algorithm for bi-objective feature selection},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A combinatorial optimization framework for probability-based
+algorithms by means of generative models. <em>ACM Transactions on
+Evolutionary Learning</em>, <em>4</em>(3), 1–28. (<a
+href="https://doi.org/10.1145/3665650">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Probability-based algorithms have proven to be a solid alternative for approaching optimization problems. Nevertheless, in many cases, using probabilistic models that efficiently exploit the characteristics of the problem involves large computational overheads, and therefore, lower complexity models such as those that are univariate are usually employed within approximation algorithms. With the motivation to address such an issue, in this article, we aim to introduce an iterative optimization framework that employs generative models to efficiently estimate the parameters of probability models for optimization problems. This allows the use of complex probabilistic models (or those that are appropriate for each problem) in a way that is feasible to apply them iteratively. Specifically, the framework is composed of three elements: a generative model, a probability model whose probability rule is differentiable, and a loss function. The possibility of modifying any of the three elements of the framework offers the flexibility to design algorithms that best adapt to the problem at hand. Experiments conducted on two case studies reveal that the presented approach has strong performance in terms of objective value and execution time when compared to other probability-based algorithms. Moreover, the experimental analysis demonstrates that the convergence of the algorithms is controllable by adjusting the components of the framework. For the sake of reproducibility, the source code, results, scripts, figures, and other material related to the manuscript are available at https://github.com/mikelma/nnco_lib .},
+  archive  = {J},
+  doi      = {10.1145/3665650},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {7},
+  number   = {3},
+  pages    = {1-28},
+  title    = {A combinatorial optimization framework for probability-based algorithms by means of generative models},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Comparison of high-dimensional bayesian optimization
+algorithms on BBOB. <em>ACM Transactions on Evolutionary Learning</em>,
+<em>4</em>(3), 1–33. (<a href="https://doi.org/10.1145/3670683">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Bayesian Optimization (BO) is a class of surrogate-based black-box optimization heuristics designed to efficiently locate high-quality solutions for problems that are expensive to evaluate, and therefore allow only small evaluation budgets. BO is particularly popular for solving numerical optimization problems in industry, where the evaluation of objective functions often relies on time-consuming simulations or physical experiments. However, many industrial problems depend on a large number of parameters. This poses a challenge for BO algorithms, whose performance is often reported to suffer when the dimension grows beyond 15 decision variables. Although many new algorithms have been proposed to address this, it remains unclear which one is best suited for a specific optimization problem. In this work, we compare five state-of-the-art high-dimensional BO algorithms with vanilla BO, CMA-ES, and random search on the 24 BBOB functions of the COCO environment at increasing dimensionality, ranging from 10 to 60 variables. Our results confirm the superiority of BO over CMA-ES for limited evaluation budgets and suggest that the most promising approach to improve BO is the use of trust regions. However, we also observe significant performance differences for different function landscapes and budget exploitation phases, indicating improvement potential, e.g., through hybridization of algorithmic components.},
+  archive  = {J},
+  doi      = {10.1145/3670683},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {7},
+  number   = {3},
+  pages    = {1-33},
+  title    = {Comparison of high-dimensional bayesian optimization algorithms on BBOB},
+  volume   = {4},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Multiobjective evolutionary component effect on algorithm
+behaviour. <em>TELO</em>, <em>4</em>(2), 1–24. (<a
+href="https://doi.org/10.1145/3612933">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The performance of multiobjective evolutionary algorithms (MOEAs) varies across problems, making it hard to develop new algorithms or apply existing ones to new problems. To simplify the development and application of new multiobjective algorithms, there has been an increasing interest in their automatic design from their components. These automatically designed metaheuristics can outperform their human-developed counterparts. However, it is still unknown what are the most influential components that lead to performance improvements. This study specifies a new methodology to investigate the effects of the final configuration of an automatically designed algorithm. We apply this methodology to a tuned Multiobjective Evolutionary Algorithm based on Decomposition (MOEA/D) designed by the iterated racing (irace) configuration package on constrained problems of 3 groups: (1) analytical real-world problems, (2) analytical artificial problems and (3) simulated real-world. We then compare the impact of the algorithm components in terms of their Search Trajectory Networks (STNs), the diversity of the population, and the anytime hypervolume values. Looking at the objective space behavior, the MOEAs studied converged before half of the search to generally good HV values in the analytical artificial problems and the analytical real-world problems. For the simulated problems, the HV values are still improving at the end of the run. In terms of decision space behavior, we see a diverse set of the trajectories of the STNs in the analytical artificial problems. These trajectories are more similar and frequently reach optimal solutions in the other problems.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3612933},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {6},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Multiobjective evolutionary component effect on algorithm behaviour},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). The influence of noise on multi-parent crossover for an
+island model genetic algorithm. <em>TELO</em>, <em>4</em>(2), 1–28. (<a
+href="https://doi.org/10.1145/3630638">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many optimization problems tackled by evolutionary algorithms are not only computationally expensive but also complicated, with one or more sources of noise. One technique to deal with high computational overhead is parallelization. However, though the existing literature gives good insight about the expected behavior of parallelized evolutionary algorithms, we still lack an understanding of their performance in the presence of noise. This article considers how parallelization might be leveraged together with multi-parent crossover in order to handle noisy problems. We present a rigorous running time analysis of an island model with weakly connected topology tasked with hill climbing in the presence of general additive noise (i.e., noisy OneMax ). Our proofs yield insights into the relationship between the noise intensity and number of required parents. We translate this into positive and negative results for two kinds of multi-parent crossover operators. We then empirically analyze and extend this framework to investigate the tradeoffs between noise impact, optimization time, and limits of computation power to deal with noise.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3630638},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {6},
+  number       = {2},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {The influence of noise on multi-parent crossover for an island model genetic algorithm},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Marginal probability-based integer handling for CMA-ES
+tackling single- and multi-objective mixed-integer black-box
+optimization. <em>TELO</em>, <em>4</em>(2), 1–26. (<a
+href="https://doi.org/10.1145/3632962">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study targets the mixed-integer black-box optimization (MI-BBO) problem where continuous and integer variables should be optimized simultaneously. The covariance matrix adaptation evolution strategy (CMA-ES), our focus in this study, is a population-based stochastic search method that samples solution candidates from a multivariate Gaussian distribution (MGD), which shows excellent performance in continuous black-box optimization. The parameters of MGD, mean and (co)variance, are updated based on the evaluation value of candidate solutions in the CMA-ES. If the CMA-ES is applied to the MI-BBO with straightforward discretization, however, the variance corresponding to the integer variables becomes much smaller than the granularity of the discretization before reaching the optimal solution, which leads to the stagnation of the optimization. In particular, when binary variables are included in the problem, this stagnation more likely occurs because the granularity of the discretization becomes wider, and the existing integer handling for the CMA-ES does not address this stagnation. To overcome these limitations, we propose a simple integer handling for the CMA-ES based on lower-bounding the marginal probabilities associated with the generation of integer variables in the MGD. The numerical experiments on the MI-BBO benchmark problems demonstrate the efficiency and robustness of the proposed method. Furthermore, to demonstrate the generality of the idea of the proposed method, in addition to the single-objective optimization case, we incorporate it into multi-objective CMA-ES and verify its performance on bi-objective mixed-integer benchmark problems.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3632962},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {6},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Marginal probability-based integer handling for CMA-ES tackling single- and multi-objective mixed-integer black-box optimization},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). On the use of quality diversity algorithms for the
+travelling thief problem. <em>TELO</em>, <em>4</em>(2), 1–22. (<a
+href="https://doi.org/10.1145/3641109">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In real-world optimisation, it is common to face several sub-problems interacting and forming the main problem. There is an inter-dependency between the sub-problems, making it impossible to solve such a problem by focusing on only one component. The travelling thief problem (TTP) belongs to this category and is formed by the integration of the travelling salesperson problem (TSP) and the knapsack problem (KP). In this paper, we investigate the inter-dependency of the TSP and the KP by means of quality diversity (QD) approaches. QD algorithms provide a powerful tool not only to obtain high-quality solutions but also to illustrate the distribution of high-performing solutions in the behavioural space. We introduce a multi-dimensional archive of phenotypic elites (MAP-Elites) based evolutionary algorithm using well-known TSP and KP search operators, taking the TSP and KP score as the behavioural descriptor. MAP-Elites algorithms are QD-based techniques to explore high-performing solutions in a behavioural space. Afterwards, we conduct comprehensive experimental studies that show the usefulness of using the QD approach applied to the TTP. First, we provide insights regarding high-quality TTP solutions in the TSP/KP behavioural space. Afterwards, we show that better solutions for the TTP can be obtained by using our QD approach, and it can improve the best-known solution for a number of TTP instances used for benchmarking in the literature.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3641109},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {6},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {On the use of quality diversity algorithms for the travelling thief problem},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Generating cheap representative functions for expensive
+automotive crashworthiness optimization. <em>TELO</em>, <em>4</em>(2),
+1–26. (<a href="https://doi.org/10.1145/3646554">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Solving real-world engineering optimization problems, such as automotive crashworthiness optimization, is extremely challenging, because the problem characteristics are oftentimes not well understood. Furthermore, typical hyperparameter optimization (HPO) approaches that require a large function evaluation budget are computationally hindered, if the function evaluation is expensive, for example, requires finite element (FE) simulation runs. In this article, we propose an approach to characterize real-world expensive black-box optimization problems using the exploratory landscape analysis (ELA). Based on these landscape characteristics, we can identify test functions that are fast-to-evaluate and representative for HPO purposes. Focusing on 20 problem instances from automotive crashworthiness optimization, our results reveal that these 20 crashworthiness problems exhibit landscape features different from classical optimization benchmark test suites, such as the widely-used black-box optimization benchmarking (BBOB) problem set. In fact, these 20 problem instances belong to problem classes that are distinct from the BBOB test functions based on the clustering results. Further analysis indicates that, as far as the ELA features concern, they are most similar to problem classes of tree-based test functions. By analyzing the performance of two optimization algorithms with different hyperparameters, namely the covariance matrix adaptation evolutionary strategy (CMA-ES) and Bayesian optimization (BO), we show that the tree-based test functions are indeed representative in terms of predicting the algorithm performances. Following this, such scalable and fast-to-evaluate tree-based test functions have promising potential for automated design of an optimization algorithm for specific real-world problem classes.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3646554},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {6},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Generating cheap representative functions for expensive automotive crashworthiness optimization},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Iterated local search with linkage learning. <em>TELO</em>,
+<em>4</em>(2), 1–29. (<a href="https://doi.org/10.1145/3651165">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In pseudo-Boolean optimization, a variable interaction graph represents variables as vertices, and interactions between pairs of variables as edges. In black-box optimization, the variable interaction graph may be at least partially discovered by using empirical linkage learning techniques. These methods never report false variable interactions, but they are computationally expensive. The recently proposed local search with linkage learning discovers the partial variable interaction graph as a side-effect of iterated local search. However, information about the strength of the interactions is not learned by the algorithm. We propose local search with linkage learning 2, which builds a weighted variable interaction graph that stores information about the strength of the interaction between variables. The weighted variable interaction graph can provide new insights about the optimization problem and behavior of optimizers. Experiments with NK landscapes, knapsack problem, and feature selection show that local search with linkage learning 2 is able to efficiently build weighted variable interaction graphs. In particular, experiments with feature selection show that the weighted variable interaction graphs can be used for visualizing the feature interactions in machine learning. Additionally, new transformation operators that exploit the interactions between variables can be designed. We illustrate this ability by proposing a new perturbation operator for iterated local search.},
+  archive      = {J_TELO},
+  doi          = {10.1145/3651165},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {6},
+  number       = {2},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Iterated local search with linkage learning},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Introduction to the “best of GECCO 2022” special issue: Part
+II. <em>ACM Transactions on Evolutionary Learning</em>, <em>4</em>(2),
+1–2. (<a href="https://doi.org/10.1145/3665797">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J},
+  doi     = {10.1145/3665797},
+  journal = {ACM Transactions on Evolutionary Learning},
+  month   = {6},
+  number  = {2},
+  pages   = {1-2},
+  title   = {Introduction to the “Best of GECCO 2022” special issue: Part II},
+  volume  = {4},
+  year    = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Introduction to the special issue on explainable AI in
+evolutionary computation. <em>TELO</em>, <em>4</em>(1), 1:1–2. (<a
+href="https://doi.org/10.1145/3649144">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TELO},
+  author       = {Jaume Bacardit and Alexander Brownlee and Stefano Cagnoni and Giovanni Iacca and John McCall and David Walker},
+  doi          = {10.1145/3649144},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {3},
+  number       = {1},
+  pages        = {1:1–2},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Introduction to the special issue on explainable AI in evolutionary computation},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An analysis of the ingredients for learning interpretable
+symbolic regression models with human-in-the-loop and genetic
+programming. <em>TELO</em>, <em>4</em>(1), 5:1–30. (<a
+href="https://doi.org/10.1145/3643688">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Interpretability is a critical aspect to ensure a fair and responsible use of machine learning (ML) in high-stakes applications. Genetic programming (GP) has been used to obtain interpretable ML models because it operates at the level of functional building blocks: if these building blocks are interpretable, there is a chance that their composition (i.e., the entire ML model) is also interpretable. However, the degree to which a model is interpretable depends on the observer. Motivated by this, we study a recently-introduced human-in-the-loop system that allows the user to steer GP’s generation process to their preferences, which shall be online-learned by an artificial neural network (ANN). We focus on the generation of ML models as analytical functions (i.e., symbolic regression) as this is a key problem in interpretable ML, and propose a two-fold contribution. First, we devise more general representations for the ML models for the ANN to learn upon, to enable the application of the system to a wider range of problems. Second, we delve into a deeper analysis of the system’s components. To this end, we propose an incremental experimental evaluation, aimed at (1) studying the effectiveness by which an ANN can capture the perceived interpretability for simulated users, (2) investigating how the GP’s outcome is affected across different simulated user feedback profiles, and (3) determining whether humans participants would prefer models that were generated with or without their involvement. Our results pose clarity on pros and cons of using a human-in-the-loop approach to discover interpretable ML models with GP.},
+  archive      = {J_TELO},
+  author       = {Giorgia Nadizar and Luigi Rovito and Andrea De Lorenzo and Eric Medvet and Marco Virgolin},
+  doi          = {10.1145/3643688},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {2},
+  number       = {1},
+  pages        = {5:1–30},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {An analysis of the ingredients for learning interpretable symbolic regression models with human-in-the-loop and genetic programming},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Exploring the explainable aspects and performance of a
+learnable evolutionary multiobjective optimization method.
+<em>TELO</em>, <em>4</em>(1), 4:1–39. (<a
+href="https://doi.org/10.1145/3626104">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multiobjective optimization problems have multiple conflicting objective functions to be optimized simultaneously. The solutions to these problems are known as Pareto optimal solutions, which are mathematically incomparable. Thus, a decision maker must be employed to provide preferences to find the most preferred solution. However, decision makers often lack support in providing preferences and insights in exploring the solutions available. We explore the combination of learnable evolutionary models with interactive indicator-based evolutionary multiobjective optimization to create a learnable evolutionary multiobjective optimization method. Furthermore, we leverage interpretable machine learning to provide decision makers with potential insights about the problem being solved in the form of rule-based explanations. In fact, we show that a learnable evolutionary multiobjective optimization method can offer advantages in the search for solutions to a multiobjective optimization problem. We also provide an open source software framework for other researchers to implement and explore our ideas in their own works. Our work is a step toward establishing a new paradigm in the field on multiobjective optimization: explainable and learnable multiobjective optimization . We take the first steps toward this new research direction and provide other researchers and practitioners with necessary tools and ideas to further contribute to this field.},
+  archive      = {J_TELO},
+  author       = {Giovanni Misitano},
+  doi          = {10.1145/3626104},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {2},
+  number       = {1},
+  pages        = {4:1–39},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Exploring the explainable aspects and performance of a learnable evolutionary multiobjective optimization method},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A multi-objective evolutionary approach to discover
+explainability tradeoffs when using linear regression to effectively
+model the dynamic thermal behaviour of electrical machines.
+<em>TELO</em>, <em>4</em>(1), 3:1–16. (<a
+href="https://doi.org/10.1145/3597618">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modelling and controlling heat transfer in rotating electrical machines is very important as it enables the design of assemblies (e.g., motors) that are efficient and durable under multiple operational scenarios. To address the challenge of deriving accurate data-driven estimators of key motor temperatures, we propose a multi-objective strategy for creating Linear Regression (LR) models that integrate optimised synthetic features. The main strength of our approach is that it provides decision makers with a clear overview of the optimal tradeoffs between data collection costs, the expected modelling errors and the overall explainability of the generated thermal models. Moreover, as parsimonious models are required for both microcontroller deployment and domain expert interpretation, our modelling strategy contains a simple but effective step-wise regularisation technique that can be applied to outline domain-relevant mappings between LR variables and thermal profiling capabilities. Results indicate that our approach can generate accurate LR-based dynamic thermal models when training on data associated with a limited set of load points within the safe operating area of the electrical machine under study.},
+  archive      = {J_TELO},
+  author       = {Tiwonge Msulira Banda and Alexandru-Ciprian Zăvoianu and Andrei Petrovski and Daniel Wöckinger and Gerd Bramerdorfer},
+  doi          = {10.1145/3597618},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {2},
+  number       = {1},
+  pages        = {3:1–16},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {A multi-objective evolutionary approach to discover explainability tradeoffs when using linear regression to effectively model the dynamic thermal behaviour of electrical machines},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Multi-objective feature attribution explanation for
+explainable machine learning. <em>TELO</em>, <em>4</em>(1), 2:1–32. (<a
+href="https://doi.org/10.1145/3617380">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The feature attribution-based explanation (FAE) methods, which indicate how much each input feature contributes to the model’s output for a given data point, are one of the most popular categories of explainable machine learning techniques. Although various metrics have been proposed to evaluate the explanation quality, no single metric could capture different aspects of the explanations. Different conclusions might be drawn using different metrics. Moreover, during the processes of generating explanations, existing FAE methods either do not consider any evaluation metric or only consider the faithfulness of the explanation, failing to consider multiple metrics simultaneously. To address this issue, we formulate the problem of creating FAE explainable models as a multi-objective learning problem that considers multiple explanation quality metrics simultaneously. We first reveal conflicts between various explanation quality metrics, including faithfulness, sensitivity, and complexity. Then, we define the considered multi-objective explanation problem and propose a multi-objective feature attribution explanation (MOFAE) framework to address this newly defined problem. Subsequently, we instantiate the framework by simultaneously considering the explanation’s faithfulness, sensitivity, and complexity. Experimental results comparing with six state-of-the-art FAE methods on eight datasets demonstrate that our method can optimize multiple conflicting metrics simultaneously and can provide explanations with higher faithfulness, lower sensitivity, and lower complexity than the compared methods. Moreover, the results have shown that our method has better diversity, i.e., it provides various explanations that achieve different tradeoffs between multiple conflicting explanation quality metrics. Therefore, it can provide tailored explanations to different stakeholders based on their specific requirements.},
+  archive      = {J_TELO},
+  author       = {Ziming Wang and Changwu Huang and Yun Li and Xin Yao},
+  doi          = {10.1145/3617380},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {2},
+  number       = {1},
+  pages        = {2:1–32},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Multi-objective feature attribution explanation for explainable machine learning},
+  volume       = {4},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

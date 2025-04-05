@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SIIMS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="siims---74">SIIMS - 74</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Short communication: Localized adversarial artifacts for
+compressed sensing MRI. <em>SIIMS</em>, <em>16</em>(4), SC14–SC26. (<a
+href="https://doi.org/10.1137/22M1503221">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. As interest in deep neural networks (DNNs) for image reconstruction tasks grows, their reliability has been called into question [V. Antun, F. Renna, C. Poon, B. Adcock, and A. C. Hansen, Proc. Natl. Acad. Sci. USA, 117 (2020), pp. 30088–30095; N. M. Gottschling, V. Antun, B. Adcock, and A. C. Hansen, The Troublesome Kernel: Why Deep Learning for Inverse Problems Is Typically Unstable, preprint, arXiv:2001.01258, 2020]. However, recent work has shown that, compared to total variation (TV) minimization, when appropriately regularized, DNNs show similar robustness to adversarial noise in terms of -reconstruction error [M. Genzel, J. Macdonald, and M. März, IEEE Trans. Pattern Anal., 45 (2022), pp. 1119–1134]. We consider a different notion of robustness, using the -norm, and argue that localized reconstruction artifacts are a more relevant defect than the -error. We create adversarial perturbations to undersampled magnetic resonance imaging measurements (in the frequency domain) which induce severe localized artifacts in the TV-regularized reconstruction. Notably, the same attack method is not as effective against DNN-based reconstruction. Finally, we show that this phenomenon is inherent to reconstruction methods for which exact recovery can be guaranteed, as with compressed sensing reconstructions with - or TV-minimization.},
+  archive      = {J_SIIMS},
+  author       = {Rima Alaifari and Giovanni S. Alberti and Tandri Gauksson},
+  doi          = {10.1137/22M1503221},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {SC14-SC26},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Short communication: Localized adversarial artifacts for compressed sensing MRI},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Self-supervised deep learning for image reconstruction: A
+langevin monte carlo approach. <em>SIIMS</em>, <em>16</em>(4),
+2247–2284. (<a href="https://doi.org/10.1137/23M1548025">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Deep learning has proved to be a powerful tool for solving inverse problems in imaging, and most of the related work is based on supervised learning. In many applications, collecting truth images is a challenging and costly task, and the prerequisite of having a training dataset of truth images limits its applicability. This paper proposes a self-supervised deep learning method for solving inverse imaging problems that does not require any training samples. The proposed approach is built on a reparametrization of latent images using a convolutional neural network, and the reconstruction is motivated by approximating the minimum mean square error estimate of the latent image using a Langevin dynamics–based Monte Carlo (MC) method. To efficiently sample the network weights in the context of image reconstruction, we propose a Langevin MC scheme called Adam-LD, inspired by the well-known optimizer in deep learning, Adam. The proposed method is applied to solve linear and nonlinear inverse problems, specifically, sparse-view computed tomography image reconstruction and phase retrieval. Our experiments demonstrate that the proposed method outperforms existing unsupervised or self-supervised solutions in terms of reconstruction quality.},
+  archive      = {J_SIIMS},
+  author       = {Ji Li and Weixi Wang and Hui Ji},
+  doi          = {10.1137/23M1548025},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2247-2284},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Self-supervised deep learning for image reconstruction: A langevin monte carlo approach},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Learning regularization parameter-maps for variational image
+reconstruction using deep neural networks and algorithm unrolling.
+<em>SIIMS</em>, <em>16</em>(4), 2202–2246. (<a
+href="https://doi.org/10.1137/23M1552486">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We introduce a method for the fast estimation of data-adapted, spatially and temporally dependent regularization parameter-maps for variational image reconstruction, focusing on total variation (TV) minimization. The proposed approach is inspired by recent developments in algorithm unrolling using deep neural networks (NNs) and relies on two distinct subnetworks. The first subnetwork estimates the regularization parameter-map from the input data. The second subnetwork unrolls iterations of an iterative algorithm which approximately solves the corresponding TV-minimization problem incorporating the previously estimated regularization parameter-map. The overall network is then trained end-to-end in a supervised learning fashion using pairs of clean and corrupted data but crucially without the need for access to labels for the optimal regularization parameter-maps. We first prove consistency of the unrolled scheme by showing that the unrolled minimizing energy functional used for the supervised learning -converges, as tends to infinity, to the corresponding functional that incorporates the exact solution map of the TV-minimization problem. Then, we apply and evaluate the proposed method on a variety of large-scale and dynamic imaging problems with retrospectively simulated measurement data for which the automatic computation of such regularization parameters has been so far challenging using the state-of-the-art methods: a 2D dynamic cardiac magnetic resonance imaging (MRI) reconstruction problem, a quantitative brain MRI reconstruction problem, a low-dose computed tomography problem, and a dynamic image denoising problem. The proposed method consistently improves the TV reconstructions using scalar regularization parameters, and the obtained regularization parameter-maps adapt well to imaging problems and data by leading to the preservation of detailed features. Although the choice of the regularization parameter-maps is data-driven and based on NNs, the subsequent reconstruction algorithm is interpretable since it inherits the properties (e.g., convergence guarantees) of the iterative reconstruction method from which the network is implicitly defined.},
+  archive      = {J_SIIMS},
+  author       = {Andreas Kofler and Fabian Altekrüger and Fatima Antarou Ba and Christoph Kolbitsch and Evangelos Papoutsellis and David Schote and Clemens Sirotenko and Felix Frederik Zimmermann and Kostas Papafitsoros},
+  doi          = {10.1137/23M1552486},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2202-2246},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Learning regularization parameter-maps for variational image reconstruction using deep neural networks and algorithm unrolling},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). IFF: A superresolution algorithm for multiple measurements.
+<em>SIIMS</em>, <em>16</em>(4), 2175–2201. (<a
+href="https://doi.org/10.1137/23M1568569">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider the problem of reconstructing one-dimensional point sources from their Fourier measurements in a bounded interval . This problem is known to be challenging in the regime where the spacing of the sources is below the Rayleigh length . In this paper, we propose a superresolution algorithm, called iterative focusing-localization and iltering, to resolve closely spaced point sources from their multiple measurements that are obtained by using multiple unknown illumination patterns. The new proposed algorithm has a distinct feature in that it reconstructs the point sources one by one in an iterative manner and hence requires no prior information about the source numbers. The new feature also allows for a subsampling strategy that can reconstruct sources using small-sized Hankel matrices and thus circumvent the computation of singular-value decomposition for large matrices as in the usual subspace methods. In addition, the algorithm can be paralleled. A theoretical analysis of the methods behind the algorithm is also provided. The derived results imply a phase transition phenomenon in the reconstruction of source locations which is confirmed in the numerical experiment. Numerical results show that the algorithm can achieve a stable reconstruction for point sources with a minimum separation distance that is close to the theoretical limit. The efficiency and robustness of the algorithm have also been tested. This algorithm can be generalized to higher dimensions.},
+  archive      = {J_SIIMS},
+  author       = {Zetao Fei and Hai Zhang},
+  doi          = {10.1137/23M1568569},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2175-2201},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {IFF: A superresolution algorithm for multiple measurements},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Transionospheric autofocus for synthetic aperture radar.
+<em>SIIMS</em>, <em>16</em>(4), 2144–2174. (<a
+href="https://doi.org/10.1137/22M153570X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Turbulent fluctuations of the electron number density in the Earth’s ionosphere may hamper the performance of spaceborne synthetic aperture radar (SAR). Previously, we have quantified the extent of the possible degradation of transionospheric SAR images as it depends on the state of the ionosphere and parameters of the SAR instrument. Yet no attempt has been made to mitigate the adverse effect of the ionospheric turbulence. In the current work, we propose a new optimization-based autofocus algorithm that helps correct the turbulence-induced distortions of spaceborne SAR images. Unlike the traditional autofocus procedures available in the literature, the new algorithm allows for the dependence of the phase perturbations of SAR signals not only on slow time but also on the target coordinates. This dependence is central for the analysis of image distortions due to turbulence, but in the case of traditional autofocus where the distortions are due to uncertainties in the antenna position, it is not present.},
+  archive      = {J_SIIMS},
+  author       = {Mikhail Gilman and Semyon V. Tsynkov},
+  doi          = {10.1137/22M153570X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2144-2174},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Transionospheric autofocus for synthetic aperture radar},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). An operator theory for analyzing the resolution of
+multi-illumination imaging modalities. <em>SIIMS</em>, <em>16</em>(4),
+2105–2143. (<a href="https://doi.org/10.1137/23M1551730">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. By introducing a new operator theory, we provide a unified mathematical theory for general source resolution in the multi-illumination imaging problem. Our main idea is to transform multi-illumination imaging into single-snapshot imaging with a new imaging kernel that depends on both the illumination patterns and the point spread function of the imaging system. We therefore prove that the resolution of multi-illumination imaging is approximately determined by the essential cutoff frequency of the new imaging kernel, which is roughly limited by the sum of the cutoff frequency of the point spread function and the maximum essential frequency in the illumination patterns. Our theory provides a unified way to estimate the resolution of various existing super-resolution modalities and results in the same estimates as those obtained in experiments. In addition, based on the reformulation of the multi-illumination imaging problem, we also estimate the resolution limits for resolving both complex and positive sources by sparsity-based approaches. We show that the resolution of multi-illumination imaging is approximately determined by the new imaging kernel from our operator theory and better resolution can be realized by sparsity-promoting techniques in practice but only for resolving very sparse sources. This explains experimentally observed phenomena in some sparsity-based super-resolution modalities.},
+  archive      = {J_SIIMS},
+  author       = {Ping Liu and Habib Ammari},
+  doi          = {10.1137/23M1551730},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2105-2143},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {An operator theory for analyzing the resolution of multi-illumination imaging modalities},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Spherical framelets from spherical designs. <em>SIIMS</em>,
+<em>16</em>(4), 2072–2104. (<a
+href="https://doi.org/10.1137/22M1542362">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we investigate in detail the structures of the variational characterization of the spherical -design, its gradient , and its Hessian in terms of fast spherical harmonic transforms. Moreover, we propose solving the minimization problem of using the trust-region method to provide spherical -designs with large values of . Based on the obtained spherical -designs, we develop (semidiscrete) spherical tight framelets as well as their truncated systems and their fast spherical framelet transforms for the practical spherical signal/image processing. Thanks to the large spherical -designs and localization property of our spherical framelets, we are able to provide signal/image denoising using local thresholding techniques based on a fine-tuned spherical cap restriction. Many numerical experiments are conducted to demonstrate the efficiency and effectiveness of our spherical framelets and spherical designs, including Wendland function approximation, ETOPO data processing, and spherical image denoising.},
+  archive      = {J_SIIMS},
+  author       = {Yuchen Xiao and Xiaosheng Zhuang},
+  doi          = {10.1137/22M1542362},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2072-2104},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Spherical framelets from spherical designs},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The split gibbs sampler revisited: Improvements to its
+algorithmic structure and augmented target distribution. <em>SIIMS</em>,
+<em>16</em>(4), 2040–2071. (<a
+href="https://doi.org/10.1137/22M1506122">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Developing efficient Bayesian computation algorithms for imaging inverse problems is challenging due to the dimensionality involved and because Bayesian imaging models are often not smooth. Current state-of-the-art methods often address these difficulties by replacing the posterior density with a smooth approximation that is amenable to efficient exploration by using Langevin Markov chain Monte Carlo (MCMC) methods. Such methods rely on gradient or proximal operators to exploit geometric information about the target posterior density and scale efficiently to large problems. An alternative approach is based on data augmentation and relaxation, where auxiliary variables are introduced in order to construct an approximate augmented posterior distribution that is amenable to efficient exploration by Gibbs sampling. This paper proposes a new accelerated proximal MCMC method called latent space SK-ROCK (ls-SK-ROCK), which tightly combines the benefits of the two aforementioned strategies. Additionally, instead of viewing the augmented posterior distribution as an approximation of the original model, we propose to consider it as a generalization of this model. Following on from this, we empirically show that there is a range of values for the relaxation parameter for which the accuracy of the model improves and propose a stochastic optimization algorithm to automatically identify the optimal amount of relaxation for a given problem. In this regime, ls-SK-ROCK converges faster than competing approaches from the state of the art, and it also achieves better accuracy since the underlying augmented Bayesian model has a higher Bayesian evidence. The proposed methodology is demonstrated with a range of numerical experiments related to image deblurring and inpainting, as well as with comparisons with alternative approaches from the state of the art. An open-source implementation of the proposed MCMC methods is available from https://github.com/luisvargasmieles/ls-MCMC.},
+  archive      = {J_SIIMS},
+  author       = {Marcelo Pereyra and Luis A. Vargas-Mieles and Konstantinos C. Zygalakis},
+  doi          = {10.1137/22M1506122},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2040-2071},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {The split gibbs sampler revisited: Improvements to its algorithmic structure and augmented target distribution},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Sequential model correction for nonlinear inverse problems.
+<em>SIIMS</em>, <em>16</em>(4), 2015–2039. (<a
+href="https://doi.org/10.1137/23M1549286">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Inverse problems are in many cases solved with optimization techniques. When the underlying model is linear, first-order gradient methods are usually sufficient. With nonlinear models, due to nonconvexity, one must often resort to second-order methods that are computationally more expensive. In this work we aim to approximate a nonlinear model with a linear one and correct the resulting approximation error. We develop a sequential method that iteratively solves a linear inverse problem and updates the approximation error by evaluating it at the new solution. This treatment convexifies the problem and allows us to benefit from established convex optimization methods. We separately consider cases where the approximation is fixed over iterations and where the approximation is adaptive. In the fixed case we show theoretically under what assumptions the sequence converges. In the adaptive case, particularly considering the special case of approximation by first-order Taylor expansion, we show that with certain assumptions the sequence converges to a critical point of the original nonconvex functional. Furthermore, we show that with quadratic objective functions the sequence corresponds to the Gauss–Newton method. Finally, we showcase numerical results superior to the conventional model correction method. We also show that a fixed approximation can provide competitive results with considerable computational speed-up.},
+  archive      = {J_SIIMS},
+  author       = {Arttu Arjas and Mikko J. Sillanpää and Andreas S. Hauptmann},
+  doi          = {10.1137/23M1549286},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {2015-2039},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Sequential model correction for nonlinear inverse problems},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A common lines approach for ab initio modeling of molecules
+with tetrahedral and octahedral symmetry. <em>SIIMS</em>,
+<em>16</em>(4), 1978–2014. (<a
+href="https://doi.org/10.1137/22M150383X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. A main task in cryo-electron microscopy single particle reconstruction is to find a three-dimensional model of a molecule given a set of its randomly oriented and positioned projection-images. In this work, we propose an algorithm for ab initio reconstruction for molecules with tetrahedral or octahedral symmetry. The algorithm exploits the multiple common lines between each pair of projection-images as well as self common lines within each image, and integrates the information from all images at once. The applicability of the proposed algorithm is demonstrated using simulated and experimental cryo-electron microscopy data.},
+  archive      = {J_SIIMS},
+  author       = {Adi Shasha Geva and Yoel Shkolnisky},
+  doi          = {10.1137/22M150383X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {1978-2014},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A common lines approach for ab initio modeling of molecules with tetrahedral and octahedral symmetry},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Convolutional forward models for x-ray computed tomography.
+<em>SIIMS</em>, <em>16</em>(4), 1953–1977. (<a
+href="https://doi.org/10.1137/21M1464191">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper presents a framework for efficient and accurate computation of X-ray optics, a key ingredient in optimization-based computed tomography (CT) reconstruction algorithms. Based on an algebraic framework for directional convolution in image space and detector space, we construct forward models for X-ray imaging whose computational cost can be optimized for each specific CT geometry. While the framework allows for modeling various sources of blur in the X-ray imaging process for any CT geometry, we demonstrate and characterize its effectiveness in fan-beam and cone-beam geometries with flat detectors. The experiments show improvements in computational efficiency as well as accuracy, in optics calculations and reconstruction error, of the proposed projector compared to the state-of-the-art methods used in forward- and back-projection algorithms.},
+  archive      = {J_SIIMS},
+  author       = {Kai Zhang and Alireza Entezari},
+  doi          = {10.1137/21M1464191},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {1953-1977},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Convolutional forward models for X-ray computed tomography},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A data-assisted two-stage method for the inverse random
+source problem. <em>SIIMS</em>, <em>16</em>(4), 1929–1952. (<a
+href="https://doi.org/10.1137/23M1562561">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a data-assisted two-stage method for solving an inverse random source problem of the Helmholtz equation. In the first stage, the regularized Kaczmarz method is employed to generate initial approximations of the mean and variance based on the mild solution of the stochastic Helmholtz equation. A dataset is then obtained by sampling the approximate and corresponding true profiles from a certain a priori criterion. The second stage is formulated as an image-to-image translation problem, and several data-assisted approaches are utilized to handle the dataset and obtain enhanced reconstructions. Numerical experiments demonstrate that the data-assisted two-stage method provides satisfactory reconstruction for both homogeneous and inhomogeneous media with fewer realizations.},
+  archive      = {J_SIIMS},
+  author       = {Peijun Li and Ying Liang and Yuliang Wang},
+  doi          = {10.1137/23M1562561},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {1929-1952},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A data-assisted two-stage method for the inverse random source problem},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). <span
+class="math inline"><strong>L</strong><sub><strong>1</strong></sub> <strong>−</strong> <strong>β</strong><strong>l</strong><sub><strong>q</strong></sub></span>
+minimization for signal and image recovery. <em>SIIMS</em>,
+<em>16</em>(4), 1886–1928. (<a
+href="https://doi.org/10.1137/22M1525363">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The nonconvex optimization method has attracted increasing attention due to its excellent ability of promoting sparsity in signal processing, image restoration, and machine learning. In this paper, we consider a new minimization method and its applications in signal recovery and image reconstruction because minimization provides an effective way to solve the -ratio sparsity minimization model. Our main contributions are to establish a convex hull decomposition for and investigate RIP-based conditions for stable signal recovery and image reconstruction by minimization. For one-dimensional signal recovery, our derived RIP condition extends existing results. For two-dimensional image recovery under minimization of image gradients, we provide the error estimate of the resulting optimal solutions in terms of sparsity and noise level, which is missing in the literature. Numerical results of the limited angle problem in computed tomography imaging and image deblurring are presented to validate the efficiency and superiority of the proposed minimization method among the state-of-art image recovery methods.},
+  archive      = {J_SIIMS},
+  author       = {Limei Huo and Wengu Chen and Huanmin Ge and Michael K. Ng},
+  doi          = {10.1137/22M1525363},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {1886-1928},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {\(\boldsymbol{L_1-\beta l_q}\) minimization for signal and image recovery},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Subaperture-based digital aberration correction for optical
+coherence tomography: A novel mathematical approach. <em>SIIMS</em>,
+<em>16</em>(4), 1857–1885. (<a
+href="https://doi.org/10.1137/22M1543240">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we consider subaperture-based approaches for the digital aberration correction (DAC) of optical coherence tomography (OCT) images. In particular, we introduce a mathematical framework for describing this class of approaches, leading to new insights for the subaperture-correlation method. Furthermore, we propose a novel DAC approach requiring only minimal statistical assumptions on the spectral phase of the scanned object. Finally, we demonstrate the applicability of our novel DAC approach via numerical examples based on both simulated and experimental OCT data.},
+  archive      = {J_SIIMS},
+  author       = {Simon Hubmer and Ekaterina Sherina and Ronny Ramlau and Michael Pircher and Rainer Leitgeb},
+  doi          = {10.1137/22M1543240},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {4},
+  pages        = {1857-1885},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Subaperture-based digital aberration correction for optical coherence tomography: A novel mathematical approach},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Convergence analysis of volumetric stretch energy
+minimization and its associated optimal mass transport. <em>SIIMS</em>,
+<em>16</em>(3), 1825–1855. (<a
+href="https://doi.org/10.1137/22M1528756">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Volumetric stretch energy has been widely applied to the computation of volume-/mass-preserving parameterizations of simply connected tetrahedral mesh models . However, this approach still lacks theoretical support. In this paper, we provide a theoretical foundation for volumetric stretch energy minimization (VSEM) to show that a map is a precise volume-/mass-preserving parameterization from to a region of a specified shape if and only if its volumetric stretch energy reaches , where is the total mass of . We use VSEM to compute an -volume-/mass-preserving map from to a unit ball, where is the gap between the energy of and . In addition, we prove the efficiency of the VSEM algorithm with guaranteed asymptotic R-linear convergence. Furthermore, based on the VSEM algorithm, we propose a projected gradient method for the computation of the -volume-/mass-preserving optimal mass transport map with a guaranteed convergence rate of , and combined with Nesterov-based acceleration, the guaranteed convergence rate becomes . Numerical experiments are presented to justify the theoretical convergence behavior for various examples drawn from known benchmark models. Moreover, these numerical experiments show the effectiveness of the proposed algorithm, particularly in the processing of 3D medical MRI brain images.},
+  archive      = {J_SIIMS},
+  author       = {Tsung-Ming Huang and Wei-Hung Liao and Wen-Wei Lin and Mei-Heng Yueh and Shing-Tung Yau},
+  doi          = {10.1137/22M1528756},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1825-1855},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Convergence analysis of volumetric stretch energy minimization and its associated optimal mass transport},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). An unrolled implicit regularization network for joint image
+and sensitivity estimation in parallel MR imaging with convergence
+guarantee. <em>SIIMS</em>, <em>16</em>(3), 1791–1824. (<a
+href="https://doi.org/10.1137/22M1502094">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Parallel imaging (PI), relying on multicoils to sense -space data, is an effective technique to accelerate magnetic resonance imaging by exploiting spatial sensitivity coding of multiple coils, with an integrated compressive sensing (CS) technology to achieve higher acceleration. In this paper, we propose a novel nonconvex reconstruction model and its proximal alternating linearized minimization (PALM) algorithm for PI in a blind setting that MR image and multichannel sensitivity maps are jointly estimated, regularized by image and sensitivity regularizers. Instead of hand-crafting the image and sensitivity regularizers, we propose unrolling the PALM algorithm to be a deep network for Blind Parallel MRI, dubbed as BPMRI-Net, with two learnable subnetworks to substitute the proximal operators of the image and sensitivity regularizers. We theoretically prove the linear convergence of BPMRI-Net as an iterative algorithm, which alternately updates two variables based on the learnable proximal operators. The learned BPMRI-Net can simultaneously output the MR image and sensitivity maps from undersampled multichannel -space data even when the number of low-frequency sampling lines in the center of -space is small. Numerical results demonstrate the effectiveness of our method with state-of-the-art reconstruction accuracy.},
+  archive      = {J_SIIMS},
+  author       = {Yan Yang and Yizhou Wang and Jiazhen Wang and Jian Sun and Zongben Xu},
+  doi          = {10.1137/22M1502094},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1791-1824},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {An unrolled implicit regularization network for joint image and sensitivity estimation in parallel MR imaging with convergence guarantee},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Convexification numerical method for a coefficient inverse
+problem for the riemannian radiative transfer equation. <em>SIIMS</em>,
+<em>16</em>(3), 1762–1790. (<a
+href="https://doi.org/10.1137/23M1565449">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The first globally convergent numerical method for a coefficient inverse problem for the Riemannian radiative transfer equation (RRTE) is constructed. This is a version of the so-called convexification method, which has been pursued by this research group for a number of years for some other CIPs for PDEs. Those PDEs are significantly different from the RRTE. The presence of the Carleman weight function in the numerical scheme is the key element which insures the global convergence. Convergence analysis is presented along with the results of numerical experiments, which confirm the theory. RRTE governs the propagation of photons in the diffuse medium in the case when they propagate along geodesic lines between their collisions. Geodesic lines are generated by the spatially variable dielectric constant of the medium.},
+  archive      = {J_SIIMS},
+  author       = {Michael V. Klibanov and Jingzhi Li and Loc H. Nguyen and Vladimir Romanov and Zhipeng Yang},
+  doi          = {10.1137/23M1565449},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1762-1790},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Convexification numerical method for a coefficient inverse problem for the riemannian radiative transfer equation},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Enhanced digital halftoning via weighted sigma-delta
+modulation. <em>SIIMS</em>, <em>16</em>(3), 1727–1761. (<a
+href="https://doi.org/10.1137/22M151786X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we study error diffusion techniques for digital halftoning from the perspective of 1-bit quantization. We introduce a method to generate schemes for two-dimensional signals as a weighted combination of their one-dimensional counterparts and show that various error diffusion schemes proposed in the literature can be represented in this framework via schemes of first order. Under the model of two-dimensional bandlimited signals, which is motivated by a mathematical model of human visual perception, we derive quantitative error bounds for such weighted schemes. We see these bounds as a step towards a mathematical understanding of the good empirical performance of error diffusion, even though they are formulated in the supremum norm, which is known to not fully capture the visual similarity of images. Motivated by the correspondence between existing error diffusion algorithms and first-order schemes, we study the performance of the analogous weighted combinations of second-order schemes and show that they exhibit a superior performance in terms of guaranteed error decay for two-dimensional bandlimited signals. In extensive numerical simulations for real-world images, we demonstrate that with some modifications to enhance stability this superior performance also translates to the problem of digital halftoning. More concretely, we find that certain second-order weighted schemes exhibit competitive performance for digital halftoning of real-world images in terms of the Feature Similarity Index (FSIM), a state-of-the-art measure for image quality assessment.},
+  archive      = {J_SIIMS},
+  author       = {Felix Krahmer and Anna Veselovska},
+  doi          = {10.1137/22M151786X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1727-1761},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Enhanced digital halftoning via weighted sigma-delta modulation},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Using decoupled features for photorealistic style transfer.
+<em>SIIMS</em>, <em>16</em>(3), 1687–1726. (<a
+href="https://doi.org/10.1137/22M1512491">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this work we propose a photorealistic style transfer method for image and video that is based on vision science principles and on a recent mathematical formulation for the deterministic decoupling of sample statistics. The novel aspects of our approach include matching decoupled moments of higher order than in common style transfer approaches, and matching a descriptor of the power spectrum so as to characterize and transfer diffusion effects between source and target, which is something that has not been considered before in the literature. The results are of high visual quality, without spatio-temporal artifacts, and validation tests in the form of observer preference experiments show that our method compares very well with the state of the art. The computational complexity of the algorithm is low, and we propose a numerical implementation that is amenable for real-time video application. Finally, another contribution of our work is to point out that current deep learning approaches for photorealistic style transfer don’t really achieve photorealistic quality outside of limited examples, because the results too often show unacceptable visual artifacts.},
+  archive      = {J_SIIMS},
+  author       = {Trevor Canham and Adrián Martín Fernández and Marcelo Bertalmío and Javier Portilla},
+  doi          = {10.1137/22M1512491},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1687-1726},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Using decoupled features for photorealistic style transfer},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Bilevel imaging learning problems as mathematical programs
+with complementarity constraints: Reformulation and theory.
+<em>SIIMS</em>, <em>16</em>(3), 1655–1686. (<a
+href="https://doi.org/10.1137/21M1450744">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We investigate a family of bilevel imaging learning problems where the lower-level instance corresponds to a convex variational model involving first- and second-order nonsmooth sparsity-based regularizers. By using geometric properties of the primal-dual reformulation of the lower-level problem and introducing suitable auxiliary variables, we are able to reformulate the original bilevel problems as mathematical programs with complementarity constraints (MPCC). For the latter, we prove tight constraint qualification conditions (MPCC-RCPLD and partial MPCC-LICQ) and derive Mordukhovich (M-) and strong (S-) stationarity conditions. The stationarity systems for the MPCC turn also into stationarity conditions for the original formulation. Second-order sufficient optimality conditions are derived as well, together with a local uniqueness result for stationary points. The proposed reformulation may be extended to problems in function spaces, leading to MPCC with constraints on the gradient of the state. The MPCC reformulation also leads to the efficient use of available large-scale nonlinear programming solvers, as shown in a companion paper, where different imaging applications are studied.},
+  archive      = {J_SIIMS},
+  author       = {Juan Carlos De los Reyes},
+  doi          = {10.1137/21M1450744},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1655-1686},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Bilevel imaging learning problems as mathematical programs with complementarity constraints: Reformulation and theory},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Image denoising: The deep learning revolution and beyond—a
+survey paper. <em>SIIMS</em>, <em>16</em>(3), 1594–1654. (<a
+href="https://doi.org/10.1137/23M1545859">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Image denoising—removal of additive white Gaussian noise from an image—is one of the oldest and most studied problems in image processing. Extensive work over several decades has led to thousands of papers on this subject, and to many well-performing algorithms for this task. Indeed, 10 years ago, these achievements led some researchers to suspect that “Denoising is Dead,” in the sense that all that can be achieved in this domain has already been obtained. However, this turned out to be far from the truth, with the penetration of deep learning (DL) into the realm of image processing. The era of DL brought a revolution to image denoising, both by taking the lead in today’s ability for noise suppression in images, and by broadening the scope of denoising problems being treated. Our paper starts by describing this evolution, highlighting in particular the tension and synergy that exist between classical approaches and modern artificial intelligence (AI) alternatives in design of image denoisers. The recent transitions in the field of image denoising go far beyond the ability to design better denoisers. In the second part of this paper we focus on recently discovered abilities and prospects of image denoisers. We expose the possibility of using image denoisers for service of other problems, such as regularizing general inverse problems and serving as the prime engine in diffusion-based image synthesis. We also unveil the (strange?) idea that denoising and other inverse problems might not have a unique solution, as common algorithms would have us believe. Instead, we describe constructive ways to produce randomized and diverse high perceptual quality results for inverse problems, all fueled by the progress that DL brought to image denoising. This is a survey paper, and its prime goal is to provide a broad view of the history of the field of image denoising and closely related topics in image processing. Our aim is to give a better context to recent discoveries, and to the influence of the AI revolution in our domain.},
+  archive      = {J_SIIMS},
+  author       = {Michael Elad and Bahjat Kawar and Gregory Vaksman},
+  doi          = {10.1137/23M1545859},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1594-1654},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Image denoising: The deep learning revolution and Beyond—A survey paper},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The linear sampling method for random sources.
+<em>SIIMS</em>, <em>16</em>(3), 1572–1593. (<a
+href="https://doi.org/10.1137/22M1531336">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present an extension of the linear sampling method for solving the sound-soft inverse acoustic scattering problem with randomly distributed point sources. The theoretical justification of our sampling method is based on the Helmholtz–Kirchhoff identity, the cross-correlation between measurements, and the volume and imaginary near-field operators, which we introduce and analyze. Implementations in MATLAB using boundary elements, the SVD, Tikhonov regularization, and Morozov’s discrepancy principle are also discussed. We demonstrate the robustness and accuracy of our algorithms with several numerical experiments in two dimensions.},
+  archive      = {J_SIIMS},
+  author       = {Josselin Garnier and Houssem Haddar and Hadrien Montanelli},
+  doi          = {10.1137/22M1531336},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1572-1593},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {The linear sampling method for random sources},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Imaging a moving point source from multifrequency data
+measured at one and sparse observation directions (part i): Far-field
+case. <em>SIIMS</em>, <em>16</em>(3), 1535–1571. (<a
+href="https://doi.org/10.1137/23M1545045">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a multifrequency algorithm for recovering partial information on the trajectory of a moving point source from one and sparse far-field observation directions in the frequency domain. The starting and terminal time points of the moving source are both supposed to be known. We introduce the concept of observable directions (angles) in the far-field region and derive all observable directions (angles) for straight and circular motions. The existence of nonobservable directions makes this paper much different from inverse stationary source problems. At an observable direction, it is verified that the smallest strip containing the trajectory and perpendicular to the direction can be imaged, provided the angle between the observation direction and the velocity vector of the moving source lies in . If otherwise, one can only expect to recover a strip thinner than this smallest strip for straight and circular motions. The far-field data measured at sparse observable directions can be used to recover the -convex domain of the trajectory. Both two- and three-dimensional numerical examples are implemented to show effectiveness and feasibility of the approach.},
+  archive      = {J_SIIMS},
+  author       = {Hongxia Guo and Guanghui Hu and Guanqiu Ma},
+  doi          = {10.1137/23M1545045},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1535-1571},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Imaging a moving point source from multifrequency data measured at one and sparse observation directions (Part i): Far-field case},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Singular value decomposition of the wave forward operator
+with radial variable coefficients. <em>SIIMS</em>, <em>16</em>(3),
+1520–1534. (<a href="https://doi.org/10.1137/22M1511643">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Photoacoustic tomography (PAT) is a novel and promising technology in hybrid medical imaging that involves generating acoustic waves in the object of interest by stimulating electromagnetic energy. The acoustic wave is measured outside the object. One of the key mathematical problems in PAT is the reconstruction of the initial function that contains diagnostic information from the solution of the wave equation on the surface of the acoustic transducers. Herein, we propose a wave forward operator that assigns an initial function to obtain the solution of the wave equation on a unit sphere. Under the assumption of the radial variable speed of ultrasound, we obtain the singular value decomposition of this wave forward operator by determining the orthonormal basis of a certain Hilbert space comprising eigenfunctions. In addition, numerical simulation results obtained using the continuous Galerkin method are utilized to validate the inversion resulting from the singular value decomposition.},
+  archive      = {J_SIIMS},
+  author       = {Minam Moon and Injo Hur and Sunghwan Moon},
+  doi          = {10.1137/22M1511643},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1520-1534},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Singular value decomposition of the wave forward operator with radial variable coefficients},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Topological identification of vortical flow structures in
+the left ventricle of the heart. <em>SIIMS</em>, <em>16</em>(3),
+1491–1519. (<a href="https://doi.org/10.1137/22M1536923">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Vortical blood flow structures inside the heart’s left ventricle (LV) play a crucial role in an efficient blood supply from the heart to organs. Recent medical imaging and computational technology progress have brought us blood flow visualization tools in echocardiography and cardiac MRI. However, there are still few tools to precisely capture the vortical flow structures since the flow is highly unsteady and turbulent. Because of the importance of vortex flow power force on the prognosis of cardiac functions in heart diseases, identifying the vortex flow structure without ambiguity is essential in medical science. In this paper, we propose a mathematical method to describe the topological features of two-dimensional (2D) flows with symbolic graph expressions, called COT representations. Since the heart contracts and relaxes repeatedly in a short time range, the instantaneous blood flow pattern along this moving boundary would appear as a source/sink structure. This means that the flow does not satisfy the slip-boundary condition that is assumed in the preceding topological classification theory for 2D flows [T. Sakajo and T. Yokoyama, IMA J. Appl. Math., 83 (2018), pp. 380–411], [T. Sakajo and Y. Yokoyama, Discrete Math. Algorithms Appl., 15 (2023), 2250143]. We thus establish a new topological classification theory and an algorithm suitable for blood flow with the moving boundary condition by introducing a degenerate singular point named -bundled ss-saddle. Applying the theory to 2D blood flow patterns obtained by the visualization tools, we successfully identify vortical flow structures as topological vortex structures. This realizes a new image processing characterizing healthy blood flow patterns as well as inefficient patterns in diseased hearts.},
+  archive      = {J_SIIMS},
+  author       = {Takashi Sakajo and Keiichi Itatani},
+  doi          = {10.1137/22M1536923},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1491-1519},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Topological identification of vortical flow structures in the left ventricle of the heart},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Regularizing orientation estimation in cryogenic electron
+microscopy three-dimensional map refinement through measure-based
+lifting over riemannian manifolds. <em>SIIMS</em>, <em>16</em>(3),
+1440–1490. (<a href="https://doi.org/10.1137/22M1520773">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Motivated by the trade-off between noise robustness and data consistency for joint three-imensional (3D) map reconstruction and rotation estimation in single particle cryogenic-electron microscopy (Cryo-EM), we propose ellipsoidal support lifting (ESL), a measure-based lifting scheme for regularizing and approximating the global minimizer of a smooth function over a Riemannian manifold. Under a uniqueness assumption on the minimizer we show several theoretical results, in particular well-posedness of the method and an error bound due to the induced bias with respect to the global minimizer. Additionally, we use the developed theory to integrate the measure-based lifting scheme into an alternating update method for joint homogeneous 3D map reconstruction and rotation estimation, where typically tens of thousands of manifold-valued minimization problems have to be solved and where regularization is necessary because of the high noise levels in the data. The joint recovery method is used to test both the theoretical predictions and algorithmic performance through numerical experiments with Cryo-EM data. In particular, the induced bias due to the regularizing effect of ESL empirically estimates better rotations, i.e., rotations closer to the ground truth, than global optimization would.},
+  archive      = {J_SIIMS},
+  author       = {Willem Diepeveen and Jan Lellmann and Ozan Öktem and Carola-Bibiane Schönlieb},
+  doi          = {10.1137/22M1520773},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1440-1490},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Regularizing orientation estimation in cryogenic electron microscopy three-dimensional map refinement through measure-based lifting over riemannian manifolds},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Orthogonal matrix retrieval with spatial consensus for 3D
+unknown view tomography. <em>SIIMS</em>, <em>16</em>(3), 1398–1439. (<a
+href="https://doi.org/10.1137/22M1498218">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Unknown view tomography (UVT) reconstructs a 3D density map from its 2D projections at unknown, random orientations. A line of work starting with Kam (1980) employs the method of moments with rotation-invariant Fourier features to solve UVT in the frequency domain, assuming that the orientations are uniformly distributed. This line of work includes the recent orthogonal matrix retrieval (OMR) approaches based on matrix factorization, which, while elegant, either require side information about the density that is not available or fail to be sufficiently robust. For OMR to break free from those restrictions, we propose to jointly recover the density map and the orthogonal matrices by requiring that they be mutually consistent. We regularize the resulting nonconvex optimization problem by a denoised reference projection and a nonnegativity constraint. This is enabled by the new closed-form expressions for spatial autocorrelation features. Further, we design an easy-to-compute initial density map which effectively mitigates the nonconvexity of the reconstruction problem. Experimental results show that the proposed OMR with spatial consensus is more robust and performs significantly better than the previous state-of-the-art OMR approach in the typical low signal-to-noise-ratio scenario of 3D UVT.},
+  archive      = {J_SIIMS},
+  author       = {Shuai Huang and Mona Zehni and Ivan Dokmanić and Zhizhen Zhao},
+  doi          = {10.1137/22M1498218},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1398-1439},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Orthogonal matrix retrieval with spatial consensus for 3D unknown view tomography},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A learnable group-tube transform induced tensor nuclear norm
+and its application for tensor completion. <em>SIIMS</em>,
+<em>16</em>(3), 1370–1397. (<a
+href="https://doi.org/10.1137/22M1531907">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The transform-based tensor nuclear norm (TNN) methods have shown good recovery results for tensor completion. However, the TNN methods are based on the single-tube transforms in which transforms are applied to each tube independently. The performance of the single-tube transform-based TNN methods is not good for recovery of missing tubes in multidimensional images (e.g., all the observations are missing in a pixel location of multispectral images). The main aim of this paper is to address this issue by proposing and developing a learnable group-tube transform-based TNN (GTNN) method that can effectively explore the correlation of neighboring tubes by leveraging a learnable group-tube transform. The proposed learnable group-tube transform is a separable three-dimensional transform that consists of a one-dimensional spectral/temporal transform (i.e., single-tube transform) and a two-dimensional spatial transform. Such group-tube transform can effectively explore the correlation of neighboring tubes. Based on the elaborately designed low-rank metric GTNN, we suggest a low-rank tensor completion model. To solve this highly nonconvex model, we design an efficient multiblock proximal alternating minimization algorithm and establish the convergence guarantee. A variety of numerical experiments on real-world multidimensional imaging data including traffic speed data, color images, videos, and multispectral images collectively manifest that the GTNN method outperforms some state-of-the-art TNN methods especially when the observations along tubes are missing.},
+  archive      = {J_SIIMS},
+  author       = {Ben-Zheng Li and Xi-Le Zhao and Xiongjun Zhang and Teng-Yu Ji and Xinyu Chen and Michael K. Ng},
+  doi          = {10.1137/22M1531907},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1370-1397},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A learnable group-tube transform induced tensor nuclear norm and its application for tensor completion},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Inversion of band-limited discrete fourier transforms of
+binary images: Uniqueness and algorithms. <em>SIIMS</em>,
+<em>16</em>(3), 1338–1369. (<a
+href="https://doi.org/10.1137/22M1540442">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Conventional inversion of the discrete Fourier transform (DFT) requires all DFT coefficients to be known. When the DFT coefficients of a rasterized image (represented as a matrix) are known only within a pass band, the original matrix cannot be uniquely recovered. In many cases of practical importance, the matrix is binary and its elements can be reduced to either 0 or 1. This is the case, for example, for the commonly used QR codes. The a priori information that the matrix is binary can compensate for the missing high-frequency DFT coefficients and restore uniqueness of image recovery. This paper addresses, both theoretically and numerically, the problem of recovery of blurred images without any known structure whose high-frequency DFT coefficients have been irreversibly lost by utilizing the binarity constraint. We investigate theoretically the smallest band limit for which unique recovery of a generic binary matrix is still possible. Uniqueness results are proved for images of sizes , and , where are prime numbers and an integer. Inversion algorithms are proposed for recovering the matrix from its band-limited (blurred) version. The algorithms combine integer linear programming methods with lattice basis reduction techniques and significantly outperform naive implementations. The algorithm efficiently and reliably reconstructs severely blurred binary matrices with only DFT coefficients.},
+  archive      = {J_SIIMS},
+  author       = {Howard W. Levinson and Vadim Markel and Nicholas Triantafillou},
+  doi          = {10.1137/22M1540442},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1338-1369},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Inversion of band-limited discrete fourier transforms of binary images: Uniqueness and algorithms},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Image recovery for blind polychromatic ptychography.
+<em>SIIMS</em>, <em>16</em>(3), 1308–1337. (<a
+href="https://doi.org/10.1137/22M1527155">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Ptychography is a lensless imaging technique, which considers reconstruction from a set of far-field diffraction patterns obtained by illuminating small overlapping regions of the specimen. In many cases, the distribution of light inside the illuminated region is unknown and has to be estimated along with the object of interest. This problem is referred to as blind ptychography. While in ptychography the illumination is commonly assumed to have a point spectrum, in this paper we consider an alternative scenario with a nontrivial light spectrum known as blind polychromatic ptychography. First, we show that nonblind polychromatic ptychography can be seen as a recovery from quadratic measurements. Then, a reconstruction from such measurements can be performed by a variant of the Amplitude Flow algorithm, which has guaranteed sublinear convergence to a critical point. Second, we address recovery from blind polychromatic ptychographic measurements by devising an alternating minimization version of Amplitude Flow and showing that it converges to a critical point at a sublinear rate.},
+  archive      = {J_SIIMS},
+  author       = {Frank Filbir and Oleh Melnyk},
+  doi          = {10.1137/22M1527155},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1308-1337},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Image recovery for blind polychromatic ptychography},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Separable quaternion matrix factorization for polarization
+images. <em>SIIMS</em>, <em>16</em>(3), 1281–1307. (<a
+href="https://doi.org/10.1137/22M151248X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. A transverse wave is a wave in which the particles are displaced perpendicular to the direction of the wave’s advance. Examples of transverse waves include ripples on the surface of water and light waves. Polarization is one of the primary properties of transverse waves. Analysis of polarization states can reveal valuable information about the sources. In this paper, we propose a separable low-rank quaternion linear mixing model for polarized signals: we assume each column of the source factor matrix equals a column of the polarized data matrix and refer to the corresponding problem as separable quaternion matrix factorization (SQMF). We discuss some properties of the matrix that can be decomposed by SQMF. To determine the source factor matrix in quaternion space, we propose a heuristic algorithm called quaternion successive projection algorithm (QSPA) inspired by the successive projection algorithm. To guarantee the effectiveness of QSPA, a new normalization operator is proposed for the quaternion matrix. We use a block coordinate descent algorithm to compute nonnegative activation matrix in real number space. We test our method on the applications of polarization image representation and spectro-polarimetric imaging unmixing to verify its effectiveness.},
+  archive      = {J_SIIMS},
+  author       = {Junjun Pan and Michael K. Ng},
+  doi          = {10.1137/22M151248X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1281-1307},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Separable quaternion matrix factorization for polarization images},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A class of priors for color image restoration parameterized
+by lie groups acting on pixel values. <em>SIIMS</em>, <em>16</em>(3),
+1235–1280. (<a href="https://doi.org/10.1137/22M1504664">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In a recent paper [T. Batard, G. Haro, and C. Ballester, SIAM J. Imag. Sci., 14 (2021), pp. 1816–1847], a new prior for image restoration was introduced. It relies first on the observation that an image and a degraded version of it can share some visual content and then on the conjecture that an image restoration model can benefit from the use of an image prior encoding this invariance property. This prior considers the restored image as a parallel section of a connection (also called covariant derivative), this latter being a critical point of an energy associated to the Lie group SO(2) acting on image pixel values. In this paper, we propose a twofold generalization of this result. First, we consider other Lie groups acting on image pixels, yielding new optimal connections. Then, we derive a family of -connections from the optimal connections. The corresponding parallel sections describe new invariance properties which we use as priors encoded as penalty terms in variational models for image restoration. Experiments conducted on color image deblurring show that the proposed generalization of the work of Batard, Haro, and Ballester outperforms the original approach.},
+  archive      = {J_SIIMS},
+  author       = {Thomas Batard},
+  doi          = {10.1137/22M1504664},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1235-1280},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A class of priors for color image restoration parameterized by lie groups acting on pixel values},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Efficient bayesian computation for low-photon imaging
+problems. <em>SIIMS</em>, <em>16</em>(3), 1195–1234. (<a
+href="https://doi.org/10.1137/22M1502240">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper studies a new and highly efficient Markov chain Monte Carlo (MCMC) methodology to perform Bayesian inference in low-photon imaging problems, with particular attention given to situations involving observation noise processes that deviate significantly from Gaussian noise, such as binomial, geometric, and low-intensity Poisson noise. These problems are challenging for many reasons. From an inferential viewpoint, low-photon numbers lead to severe identifiability issues, poor stability, and high uncertainty about the solution. Moreover, low-photon models often exhibit poor regularity properties that make efficient Bayesian computation difficult, e.g., hard nonnegativity constraints, nonsmooth priors, and log-likelihood terms with exploding gradients. More precisely, the lack of suitable regularity properties hinders the use of state-of-the-art Monte Carlo methods based on numerical approximations of the Langevin stochastic differential equation (SDE), as both the SDE and its numerical approximations behave poorly. We address this difficulty by proposing an MCMC methodology based on a reflected and regularized Langevin SDE, which is shown to be well-posed and exponentially ergodic under mild and easily verifiable conditions. This then allows us to derive four reflected proximal Langevin MCMC algorithms to perform Bayesian computation in low-photon imaging problems. The proposed approach is demonstrated with a range of experiments related to image deblurring, denoising, and inpainting under binomial, geometric, and Poisson noise.},
+  archive      = {J_SIIMS},
+  author       = {Savvas Melidonis and Paul Dobson and Yoann Altmann and Marcelo Pereyra and Konstantinos Zygalakis},
+  doi          = {10.1137/22M1502240},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1195-1234},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Efficient bayesian computation for low-photon imaging problems},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Spherical image inpainting with frame transformation and
+data-driven prior deep networks. <em>SIIMS</em>, <em>16</em>(3),
+1177–1194. (<a href="https://doi.org/10.1137/22M152462X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Spherical image processing has been widely applied in many important fields, such as omnidirectional vision for autonomous cars, global climate modeling, and medical imaging. It is nontrivial to extend an algorithm developed for flat images to the spherical ones. In this work, we focus on the challenging task of spherical image inpainting with a deep learning-based regularizer. Instead of a naive application of existing models for planar images, we employ a fast directional spherical Haar framelet transform and develop a novel optimization framework based on a sparsity assumption of the framelet transform. Furthermore, by employing progressive encoder-decoder architecture, a new and better-performed deep CNN denoiser is carefully designed and works as an implicit regularizer. Finally, we use a plug-and-play method to handle the proposed optimization model, which can be implemented efficiently by training the CNN denoiser prior. Numerical experiments are conducted and show that the proposed algorithms can greatly recover damaged spherical images and achieve the best performance over purely using a deep learning denoiser and a plug-and-play model.},
+  archive      = {J_SIIMS},
+  author       = {Jianfei Li and Chaoyan Huang and Raymond Chan and Han Feng and Michael K. Ng and Tieyong Zeng},
+  doi          = {10.1137/22M152462X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1177-1194},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Spherical image inpainting with frame transformation and data-driven prior deep networks},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Theoretical foundation of the stretch energy minimization
+for area-preserving simplicial mappings. <em>SIIMS</em>, <em>16</em>(3),
+1142–1176. (<a href="https://doi.org/10.1137/22M1505062">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The stretch energy is a fully nonlinear energy functional that has been applied to the numerical computation of area-preserving mappings. However, this approach lacks theoretical support and the analysis is complicated due to the full nonlinearity of the functional. In this paper, we establish a theoretical foundation of stretch energy minimization (SEM) for the computation of area-preserving mappings: the sufficient and necessary conditions for the energy minimizers are mappings being area-preserving. In addition, we derive a neat gradient formula of the functional and develop the associated line search gradient descent method of SEM with theoretically guaranteed convergence. Also, a simple post-processing technique is developed to guarantee the bijectivity of produced mappings. Furthermore, we generalized the theoretical results to the stretch energy for arbitrary area measures and the balanced energy so that the mass-preserving and distortion-balancing mappings can also be computed by minimizing the generalized stretch energy and the balanced energy, respectively. Numerical experiments and comparisons to another state-of-the-art algorithm are demonstrated to validate the effectiveness, accuracy, and robustness of SEM for computing area-preserving mappings.},
+  archive      = {J_SIIMS},
+  author       = {Mei-Heng Yueh},
+  doi          = {10.1137/22M1505062},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1142-1176},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Theoretical foundation of the stretch energy minimization for area-preserving simplicial mappings},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Provable phase retrieval with mirror descent.
+<em>SIIMS</em>, <em>16</em>(3), 1106–1141. (<a
+href="https://doi.org/10.1137/22M1528896">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we consider the problem of phase retrieval, which consists of recovering an ‐dimensional real vector from the magnitude of its linear measurements. We propose a mirror descent (or Bregman gradient descent) algorithm based on a wisely chosen Bregman divergence, hence allowing us to remove the classical global Lipschitz continuity requirement on the gradient of the nonconvex phase retrieval objective to be minimized. We apply the mirror descent for two random measurements: the i.i.d. standard Gaussian and those obtained by multiple structured illuminations through coded diffraction patterns. For the Gaussian case, we show that when the number of measurements is large enough, then with high probability, for almost all initializers, the algorithm recovers the original vector up to a global sign change. For both measurements, the mirror descent exhibits a local linear convergence behavior with a dimension-independent convergence rate. Finally, our theoretical results are illustrated with various numerical experiments, including an application to the reconstruction of images in precision optics.},
+  archive      = {J_SIIMS},
+  author       = {Jean-Jacques Godeme and Jalal Fadili and Xavier Buet and Myriam Zerrad and Michel Lequime and Claude Amra},
+  doi          = {10.1137/22M1528896},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1106-1141},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Provable phase retrieval with mirror descent},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Matrix balancing based interior point methods for point set
+matching problems. <em>SIIMS</em>, <em>16</em>(3), 1068–1105. (<a
+href="https://doi.org/10.1137/22M1479476">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Point set matching problems can be handled by optimal transport. The mechanism behind it is that optimal transport recovers the point-to-point correspondence associated with the least curl deformation. Optimal transport is a special form of linear programming with dense constraints. Linear programming can be handled by interior point methods, provided that the involved ill-conditioned Hessians can be computed accurately. Matrix balancing has been employed to compute optimal transport under entropy regularization approaches. The solution quality relies on two factors: the accuracy of matrix balancing and the boundedness of the dual vector. High accurate matrix balancing is achieved by the application of Newton methods on a sequence of matrices along a central path. In this work, we apply sparse support constraints to matrix-balancing based interior point methods, in which the sparse set fulfilling total support is iteratively updated to truncate the domain of the transport plan. The total support condition is one crucial condition, which guarantees the existence of matrix balancing as well as the boundedness of the dual vector.},
+  archive      = {J_SIIMS},
+  author       = {Janith Wijesinghe and Pengwen Chen},
+  doi          = {10.1137/22M1479476},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1068-1105},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Matrix balancing based interior point methods for point set matching problems},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). WPPNets and WPPFlows: The power of wasserstein patch priors
+for superresolution. <em>SIIMS</em>, <em>16</em>(3), 1033–1067. (<a
+href="https://doi.org/10.1137/22M1496542">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Exploiting image patches instead of whole images has proved to be a powerful approach to tackling various problems in image processing. Recently, Wasserstein patch priors (WPPs), which are based on the comparison of the patch distributions of the unknown image and a reference image, were successfully used as data-driven regularizers in the variational formulation of superresolution. However, for each input image, this approach requires the solution of a nonconvex minimization problem which is computationally costly. In this paper, we propose to learn two kinds of neural networks in an unsupervised way based on WPP loss functions. First, we show how convolutional neural networks (CNNs) can be incorporated. Once the network, called WPPNet, is learned, it can be very efficiently applied to any input image. Second, we incorporate conditional normalizing flows to provide a tool for uncertainty quantification. Numerical examples demonstrate the very good performance of WPPNets for superresolution in various image classes, even if the forward operator is known only approximately.},
+  archive      = {J_SIIMS},
+  author       = {Fabian Altekrüger and Johannes Hertrich},
+  doi          = {10.1137/22M1496542},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {3},
+  pages        = {1033-1067},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {WPPNets and WPPFlows: The power of wasserstein patch priors for superresolution},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On assignment problems related to gromov–wasserstein
+distances on the real line. <em>SIIMS</em>, <em>16</em>(2), 1028–1032.
+(<a href="https://doi.org/10.1137/22M1497808">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Let and , be real numbers. We show by an example that the assignment problem \begin{align*} \max_{\sigma \in S_n} F_\sigma (x,y) := \frac 12 \sum_{i,k=1}^n |x_i- x_k|^\alpha \, |y_{\sigma (i)}- y_{\sigma (k)}|^\alpha, \quad \alpha \gt 0, \end{align*} is in general neither solved by the identical permutation nor the anti-identical permutation if . Indeed the above maximum can be, depending on the number of points, arbitrarily far away from and . The motivation to deal with such assignment problems came from their relation to Gromov–Wasserstein distances, which have recently received a lot of attention in imaging and shape analysis.},
+  archive      = {J_SIIMS},
+  author       = {Robert Beinert and Cosmas Heiss and Gabriele Steidl},
+  doi          = {10.1137/22M1497808},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {1028-1032},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {On assignment problems related to Gromov–Wasserstein distances on the real line},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Displacement and pressure reconstruction from magnetic
+resonance elastography images: Application to an in silico brain model.
+<em>SIIMS</em>, <em>16</em>(2), 996–1027. (<a
+href="https://doi.org/10.1137/22M149363X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Magnetic resonance elastography is a motion-sensitive image modality that allows to measure in vivo tissue displacement fields in response to mechanical excitations. This paper investigates a data assimilation approach for reconstructing tissue displacement and pressure fields in an in silico brain model from partial elastography data. The data assimilation is based on a parametrized-background data-weak methodology, in which the state of the physical system—tissue displacements and pressure fields—is reconstructed from the available data assuming an underlying poroelastic biomechanics model. For this purpose, a physics-informed manifold is built by sampling the space of parameters describing the tissue model close to their physiological ranges to simulate the corresponding poroelastic problem and computing a reduced basis via proper orthogonal decomposition. Displacements and pressure reconstruction are sought in a reduced space after solving a minimization problem that encompasses both the structure of the reduced-order model and the available measurements. The proposed pipeline is validated using synthetic data obtained after simulating the poroelastic mechanics of a physiological brain. The numerical experiments demonstrate that the framework can exhibit accurate joint reconstructions of both displacement and pressure fields. The methodology can be formulated for an arbitrary resolution of available displacement data from pertinent images. It can also inherently handle uncertainty on the physical parameters of the mechanical model by enlarging the physics-informed manifold accordingly. Moreover, the framework can be used to characterize, in silico, biomarkers for pathological conditions by appropriately training the reduced-order model. A first application for the noninvasive estimation of ventricular pressure as an indicator of abnormal intracranial pressure is shown in this contribution.},
+  archive      = {J_SIIMS},
+  author       = {Felipe Galarce and Karsten Tabelow and Jörg Polzehl and Christos Panagiotis Papanikas and Vasileios Vavourakis and Ledia Lilaj and Ingolf Sack and Alfonso Caiazzo},
+  doi          = {10.1137/22M149363X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {996-1027},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Displacement and pressure reconstruction from magnetic resonance elastography images: Application to an in silico brain model},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Inverse problem for a planar conductivity inclusion.
+<em>SIIMS</em>, <em>16</em>(2), 969–995. (<a
+href="https://doi.org/10.1137/22M1522395">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper concerns the inverse problem of determining a planar conductivity inclusion. Our aim is to analytically recover from the generalized polarization tensors (GPTs), which can be obtained from exterior measurements, a homogeneous inclusion with arbitrary constant conductivity. The primary outcome of recovering a homogeneous inclusion is an inversion formula in terms of the GPTs for conformal mapping coefficients associated with the inclusion. To prove the formula, we establish matrix factorizations for the GPTs.},
+  archive      = {J_SIIMS},
+  author       = {Doosung Choi and Johan Helsing and Sangwoo Kang and Mikyoung Lim},
+  doi          = {10.1137/22M1522395},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {969-995},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Inverse problem for a planar conductivity inclusion},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Numerical reconstruction of radiative sources from partial
+boundary measurements. <em>SIIMS</em>, <em>16</em>(2), 948–968. (<a
+href="https://doi.org/10.1137/22M1507449">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider an inverse source problem in the stationary radiative transport through an absorbing and scattering medium in two dimensions. Using the angularly resolved radiation measured on an arc of the boundary, we propose a numerical algorithm to recover the source in the convex hull of this arc. The method involves an unstable step of inverting a bounded operator whose range is not closed. We show that the continuity constant of the discretized inverse grows at most linearly with the discretization step, thus stabilizing the problem. Numerical examples presented show the effectiveness of the proposed method.},
+  archive      = {J_SIIMS},
+  author       = {Hiroshi Fujiwara and Kamran Sadiq and Alexandru Tamasan},
+  doi          = {10.1137/22M1507449},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {948-968},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Numerical reconstruction of radiative sources from partial boundary measurements},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Joint reconstruction-segmentation on graphs. <em>SIIMS</em>,
+<em>16</em>(2), 911–947. (<a
+href="https://doi.org/10.1137/22M151546X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Practical image segmentation tasks concern images which must be reconstructed from noisy, distorted, and/or incomplete observations. A recent approach for solving such tasks is to perform this reconstruction jointly with the segmentation, using each to guide the other. However, this work has so far employed relatively simple segmentation methods, such as the Chan–Vese algorithm. In this paper, we present a method for joint reconstruction-segmentation using graph-based segmentation methods, which have been seeing increasing recent interest. Complications arise due to the large size of the matrices involved, and we show how these complications can be managed. We then analyze the convergence properties of our scheme. Finally, we apply this scheme to distorted versions of “two cows” images familiar from previous graph-based segmentation literature, first to a highly noised version and second to a blurred version, achieving highly accurate segmentations in both cases. We compare these results to those obtained by sequential reconstruction-segmentation approaches, finding that our method competes with, or even outperforms, those approaches in terms of reconstruction and segmentation accuracy.},
+  archive      = {J_SIIMS},
+  author       = {Jeremy M. Budd and Yves van Gennip and Jonas Latz and Simone Parisotto and Carola-Bibiane Schönlieb},
+  doi          = {10.1137/22M151546X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {911-947},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Joint reconstruction-segmentation on graphs},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Toward single particle reconstruction without particle
+picking: Breaking the detection limit. <em>SIIMS</em>, <em>16</em>(2),
+886–910. (<a href="https://doi.org/10.1137/22M1503828">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Single-particle cryo-electron microscopy (cryo-EM) has recently joined X-ray crystallography and NMR spectroscopy as a high-resolution structural method to resolve biological macromolecules. In a cryo-EM experiment, the microscope produces images called micrographs. Projections of the molecule of interest are embedded in the micrographs at unknown locations, and under unknown viewing directions. Standard imaging techniques first locate these projections (detection) and then reconstruct the 3-D structure from them. Unfortunately, high noise levels hinder detection. When reliable detection is rendered impossible, the standard techniques fail. This is a problem, especially for small molecules. In this paper, we pursue a radically different approach: we contend that the structure could, in principle, be reconstructed directly from the micrographs, without intermediate detection. The aim is to bring small molecules within reach for cryo-EM. To this end, we design an autocorrelation analysis technique that allows one to go directly from the micrographs to the sought structures. This involves only one pass over the micrographs, allowing online, streaming processing for large experiments. We show numerical results and discuss challenges that lay ahead to turn this proof-of-concept into a complementary approach to state-of-the-art algorithms.},
+  archive      = {J_SIIMS},
+  author       = {Tamir Bendory and Nicolas Boumal and William Leeb and Eitan Levin and Amit Singer},
+  doi          = {10.1137/22M1503828},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {886-910},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Toward single particle reconstruction without particle picking: Breaking the detection limit},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Off-the-grid curve reconstruction through divergence
+regularization: An extreme point result. <em>SIIMS</em>, <em>16</em>(2),
+867–885. (<a href="https://doi.org/10.1137/22M1494373">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a new strategy for curve reconstruction in an image through an off-the-grid variational framework, inspired by spike reconstruction in the literature. We introduce a new functional CROC on the space of 2-dimensional Radon measures with finite divergence denoted , and we establish several theoretical tools through the definition of a certificate. Our main contribution lies in the sharp characterization of the extreme points of the unit ball of the -norm: there are exact measures supported on 1-rectifiable oriented simple Lipschitz curves, thus enabling a precise characterization of our functional minimizers and further opening a promising avenue for the algorithmic implementation.},
+  archive      = {J_SIIMS},
+  author       = {Bastien Laville and Laure Blanc-Féraud and Gilles Aubert},
+  doi          = {10.1137/22M1494373},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {867-885},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Off-the-grid curve reconstruction through divergence regularization: An extreme point result},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Approximate inversion of a class of generalized radon
+transforms. <em>SIIMS</em>, <em>16</em>(2), 842–866. (<a
+href="https://doi.org/10.1137/22M1512417">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Generalized Radon transforms (GRT) serve, for instance, as linear models for seismic imaging in the acoustic regime. They occur when the corresponding inverse problem is linearized about a known background compression wave speed (Born approximation). The resulting GRT is completely determined by this background velocity. In this work, we present an implementation of approximate inversion formulas for this class of GRTs proposed and analyzed in [Grathwohl et al., Inverse Problems, 34 (2018), 014002] and [Grathwohl et al., Inverse Problems, 34 (2018), 114001], where we restrict ourselves to layered background velocities in two dimensions. In a series of numerical experiments, we intensively test our implementation, reproducing theoretical predictions. Further, we drive the validity of the linearization to its limits.},
+  archive      = {J_SIIMS},
+  author       = {Kevin Ganster and Andreas Rieder},
+  doi          = {10.1137/22M1512417},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {842-866},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Approximate inversion of a class of generalized radon transforms},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A multiscale deformation representation. <em>SIIMS</em>,
+<em>16</em>(2), 802–841. (<a
+href="https://doi.org/10.1137/22M1510200">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Motivated by Tadmor, Nezzar, and Vese‘s work [30] dedicated to multiscale image representation using hierarchical decompositions, we propose transposing their approach to the case of registration, a task which consists in determining a smooth deformation aligning the salient constituents visible in an image into their counterpart in another. The underlying goal is to obtain a hierarchical decomposition of the deformation in the form of a composition of intermediate deformations: the coarser one, computed from versions of the two images capturing the essential features, encodes the main structural/geometrical deformation, while iterating the procedure and refining the versions of the two images yields more accurate deformations that faithfully map small-scale features. The proposed model falls within the framework of variational methods and hyperelasticity by viewing the shapes to be matched as Ogden materials. The material behavior is described by means of a specifically tailored strain energy density function, complemented by -penalizations ensuring that the computed deformation is a bi-Lipschitz homeomorphism. Theoretical results emphasizing the mathematical soundness of the model are provided, among which the existence of minimizers/asymptotic results, and a suitable numerical algorithm is supplied, along with numerical simulations demonstrating the ability of the model to produce accurate hierarchical representations of deformations. A very preliminary version of this work has been accepted for publication in the Eighth International Conference on Scale Space and Variational Methods in Computer Vision [Springer, Cham, Switzerland, 2021] but it does not include all the theoretical results, nor the detailed related proofs. A more complete and detailed analysis of the numerical experiments is also provided. The theoretical analysis of the numerical algorithm (introduced in section 3 and which is a result in itself) will be the subject of a separate article in preparation.},
+  archive      = {J_SIIMS},
+  author       = {Noémie Debroux and Carole Le Guyader and Luminita A. Vese},
+  doi          = {10.1137/22M1510200},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {802-841},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A multiscale deformation representation},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On learning the invisible in photoacoustic tomography with
+flat directionally sensitive detector. <em>SIIMS</em>, <em>16</em>(2),
+770–801. (<a href="https://doi.org/10.1137/22M148793X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In photoacoustic tomography (PAT) with a flat sensor, we routinely encounter two types of limited data. The first is due to using a finite sensor and is especially perceptible if the region of interest is large relative to the sensor or located farther away from the sensor. In this paper, we focus on the second type caused by a varying sensitivity of the sensor to the incoming wavefront direction, which can be modelled as binary, i.e., by a cone of sensitivity. Such visibility conditions result, in the Fourier domain, in a restriction of both the image and the data to a bowtie, akin to the one corresponding to the range of the forward operator. The visible wavefrontsets in image and data domains, are related by the wavefront direction mapping. We adapt the wedge restricted curvelet decomposition, we previously proposed for the representation of the full PAT data, to separate the visible and invisible wavefronts in the image. We optimally combine fast approximate operators with tailored deep neural network architectures into efficient learned reconstruction methods which perform reconstruction of the visible coefficients, and the invisible coefficients are learned from a training set of similar data.},
+  archive      = {J_SIIMS},
+  author       = {Bolin Pan and Marta M. Betcke},
+  doi          = {10.1137/22M148793X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {770-801},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {On learning the invisible in photoacoustic tomography with flat directionally sensitive detector},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Two-stage decolorization based on histogram equalization and
+local variance maximization. <em>SIIMS</em>, <em>16</em>(2), 740–769.
+(<a href="https://doi.org/10.1137/22M1509333">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Image decolorization is widely used in single-channel image processing, black-and-white printing, etc. Decolorization aims to generate a perceptually satisfactory gray image that preserves the contrast of the color image. It is known that histogram equalization can enhance the global image contrast by effectively spreading out the most frequent intensity values. Meanwhile, local contrast features such as salient edges and local details have large local variances, which can be enhanced by maximizing local variance. Inspired by these facts, we propose a two-stage decolorization method based on histogram equalization and local variance maximization. In the first stage, we assume that the decolorized gray image is a linear combination of the three channels of the color image, and the combination coefficients are three global weights. Then we propose a constrained variational histogram equalization model to optimize the global weights. The resulting gray image has good global contrast. To further enhance the local contrast, in the second stage, we use local weight combination to express the color image and maximize the local variance by forcing the local weights to be close to the global weights. Numerically, the global weights can be estimated by a gradient-based solver or a discrete searching solver, and the local weights are solved by an iterative solver. Theoretically, we discuss the properties of the energy functions and the convergence of the algorithm. Our proposed method better preserves global and local contrast than state-of-the-art decolorization algorithms.},
+  archive      = {J_SIIMS},
+  author       = {Jing Yu and Fang Li and Xuyue Hu},
+  doi          = {10.1137/22M1509333},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {740-769},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Two-stage decolorization based on histogram equalization and local variance maximization},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Convergence analysis of the harmonic <span
+class="math inline"><strong>B</strong><sub><strong>z</strong></sub></span>
+algorithm with single injection current in MREIT. <em>SIIMS</em>,
+<em>16</em>(2), 706–739. (<a
+href="https://doi.org/10.1137/22M1505438">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Magnetic resonance electrical impedance tomography (MREIT) aims to recover the electrical conductivity distribution of an object using partial information of magnetic flux densities inside the tissue which can be measured using a magnetic resonance imaging scanner, with the advantage that a higher spatial resolution of conductivity image can be provided than existing EIT techniques involving surface measurements. Traditional MREIT reconstruction algorithms use two data sets obtained with two linearly independent injected currents. However, injection of two currents is often not possible in applications such as transcranial electrical stimulation. Recently, we proposed an iterative conductivity reconstruction algorithm called the single-current harmonic algorithm that demonstrated satisfactory performance in numerical and phantom tests. In this paper, we provide a rigorous mathematical analysis of the convergence of the iterative sequence for realizing this algorithm. We prove that, applying some mild conditions on the exact conductivity, the iterative sequence converges to the true solution within an explicit error bound. Such theoretical results substantiate the reasonability and efficiency of the proposed algorithm. We also provide more numerical evidence to validate these theoretical results.},
+  archive      = {J_SIIMS},
+  author       = {Yizhuang Song and Rosalind Sadleir and Jijun Liu},
+  doi          = {10.1137/22M1505438},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {706-739},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Convergence analysis of the harmonic \(\boldsymbol{B_{{z}}}\) algorithm with single injection current in MREIT},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On the convergence of stochastic gradient descent for linear
+inverse problems in banach spaces. <em>SIIMS</em>, <em>16</em>(2),
+671–705. (<a href="https://doi.org/10.1137/22M1518542">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this work we consider stochastic gradient descent (SGD) for solving linear inverse problems in Banach spaces. SGD and its variants have been established as one of the most successful optimization methods in machine learning, imaging, and signal processing, to name a few. At each iteration SGD uses a single datum, or a small subset of data, resulting in highly scalable methods that are very attractive for large-scale inverse problems. Nonetheless, the theoretical analysis of SGD-based approaches for inverse problems has thus far been largely limited to Euclidean and Hilbert spaces. In this work we present a novel convergence analysis of SGD for linear inverse problems in general Banach spaces: we show the almost sure convergence of the iterates to the minimum norm solution and establish the regularizing property for suitable a priori stopping criteria. Numerical results are also presented to illustrate features of the approach.},
+  archive      = {J_SIIMS},
+  author       = {Bangti Jin and Željko Kereta},
+  doi          = {10.1137/22M1518542},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {671-705},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {On the convergence of stochastic gradient descent for linear inverse problems in banach spaces},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A fast data-driven iteratively regularized method with
+convex penalty for solving ill-posed problems. <em>SIIMS</em>,
+<em>16</em>(2), 640–670. (<a
+href="https://doi.org/10.1137/22M1506778">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a new iterative regularization method for solving inverse problems in Hilbert spaces. The iterative process of the proposed method combines classical iterative regularization format and Data-Driven approach. Data-Driven technique is based on the idea of deep learning to estimate the interior of a black box through a training set, so as to solve problems better and faster in some cases. In order to capture the special feature of solutions, convex functions are utilized to be penalty terms. Algorithmically, the two-point gradient acceleration strategy based on homotopy perturbation method is applied to the iterative scheme, which makes the method have satisfactory acceleration effect. We provide convergence analysis of the method under standard assumptions for iterative regularization methods. Finally, several numerical experiments are presented to show the effectiveness and acceleration effect of our method.},
+  archive      = {J_SIIMS},
+  author       = {Guangyu Gao and Bo Han and Zhenwu Fu and Shanshan Tong},
+  doi          = {10.1137/22M1506778},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {640-670},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A fast data-driven iteratively regularized method with convex penalty for solving ill-posed problems},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Stability and reconstruction of a special type of
+anisotropic conductivity in magneto-acoustic tomography with magnetic
+induction. <em>SIIMS</em>, <em>16</em>(2), 614–639. (<a
+href="https://doi.org/10.1137/22M1512260">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider the issues of stability and reconstruction of the electrical anisotropic conductivity of biological tissues in a domain by means of the hybrid inverse problem of magneto-acoustic tomography with magnetic induction (MAT-MI). The class of anisotropic conductivities considered here is of type in , where is a one-parameter family of matrix-valued functions which are a priori known to be , allowing us to stably reconstruct in in terms of an internal functional . Our results also extend previous results in MAT-MI where , with an a priori known matrix-valued function on to a more general anisotropic structure which depends nonlinearly on the scalar function to be reconstructed.},
+  archive      = {J_SIIMS},
+  author       = {Niall Donlon and Romina Gaburro and Shari Moskow and Isaac Woods},
+  doi          = {10.1137/22M1512260},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {614-639},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Stability and reconstruction of a special type of anisotropic conductivity in magneto-acoustic tomography with magnetic induction},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). PnP-ReG: Learned regularizing gradient for plug-and-play
+gradient descent. <em>SIIMS</em>, <em>16</em>(2), 585–613. (<a
+href="https://doi.org/10.1137/22M1490843">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The plug-and-play framework makes it possible to integrate advanced image denoising priors into optimization algorithms to efficiently solve a variety of image restoration tasks generally formulated as maximum a posteriori (MAP) estimation problems. The plug-and-play alternating direction method of multipliers (ADMM) and the regularization by denoising (RED) algorithms are two examples of such methods that made a breakthrough in image restoration. However, the former plug-and-play approach only applies to proximal algorithms. And while the explicit regularization in RED can be used in various algorithms, including gradient descent, the gradient of the regularizer computed as a denoising residual leads to several approximations of the underlying image prior in the MAP interpretation of the denoiser. We show that it is possible to train a network directly modeling the gradient of a MAP regularizer while jointly training the corresponding MAP denoiser. We use this network in gradient-based optimization methods and obtain better results compared to other generic plug-and-play approaches. We also show that the regularizer can be used as a pretrained network for unrolled gradient descent. Lastly, we show that the resulting denoiser allows for a better convergence of the plug-and-play ADMM.},
+  archive      = {J_SIIMS},
+  author       = {Rita Fermanian and Mikael Le Pendu and Christine Guillemot},
+  doi          = {10.1137/22M1490843},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {2},
+  pages        = {585-613},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {PnP-ReG: Learned regularizing gradient for plug-and-play gradient descent},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Short communication: Weak sparse superresolution is
+well-conditioned. <em>SIIMS</em>, <em>16</em>(1), SC1–SC13. (<a
+href="https://doi.org/10.1137/22M1521353">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper considers superresolution (SR) as the mapping of Fourier coefficients of a discrete measure on to its support and weights. We focus on weak SR assuming a condition on the separation of the involved measures similar to the Rayleigh criterion and prove that the reconstruction map satisfies a local Lipschitz property giving explicit estimates for the Lipschitz constant depending on the dimension and the sampling effort while improving a bound on the assumed separation from [6]. With the Wasserstein distance as the metric on the space of measures we even conclude that weak SR is globally Lipschitz continuous and hence well-conditioned.},
+  archive      = {J_SIIMS},
+  author       = {Mathias Hockmann and Stefan Kunis},
+  doi          = {10.1137/22M1521353},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {SC1-SC13},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Short communication: Weak sparse superresolution is well-conditioned},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Schwarzschild harmonic path planning and tetrahedral mesh
+smoothing. <em>SIIMS</em>, <em>16</em>(1), 568–584. (<a
+href="https://doi.org/10.1137/22M1493446">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The Laplace––Beltrami operator is a fundamental tool for analysis on manifolds. It plays a vital role in differential geometry, geometry processing, data analysis and machine learning. Here we present a Laplace–Beltrami operator in spatial Schwarzschild manifolds, denoted by SLBO. Since spatial Schwarzschild manifold has global coordinates, we derive two global approximated schemes of the SLBO in 3-dimensional grids and tetrahedral meshes: (1) We discretize the SLBO by the seven-point stencil finite difference method. This derives a small correction of the classical finite difference scheme, and we prove the convergence for this scheme; (2) we give and prove a corrected-cotan formula of the SLBO. According to the two discrete schemes, the robot path planning and tetrahedral mesh smoothing, are designed to demonstrate the effectiveness of the proposed methods using the SLBO.},
+  archive      = {J_SIIMS},
+  author       = {Xu-Qian Fan and Wenyong Gong},
+  doi          = {10.1137/22M1493446},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {568-584},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Schwarzschild harmonic path planning and tetrahedral mesh smoothing},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A nonlocal graph-PDE and higher-order geometric integration
+for image labeling. <em>SIIMS</em>, <em>16</em>(1), 501–567. (<a
+href="https://doi.org/10.1137/22M1496141">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper introduces a novel nonlocal partial difference equation (G-PDE) for labeling metric data on graphs. The G-PDE is derived as a nonlocal reparametrization of the assignment flow approach that was introduced in [J. Math. Imaging Vision, 58 (2017), pp. 211–238]. Due to this parameterization, solving the G-PDE numerically is shown to be equivalent to computing the Riemannian gradient flow with respect to a nonconvex potential. We devise an entropy-regularized difference of convex (DC) functions decomposition of this potential and show that the basic geometric Euler scheme for integrating the assignment flow is equivalent to solving the G-PDE by an established DC programming scheme. Moreover, the viewpoint of geometric integration reveals a basic way to exploit higher-order information of the vector field that drives the assignment flow, in order to devise a novel accelerated DC programming scheme. A detailed convergence analysis of both numerical schemes is provided and illustrated by numerical experiments.},
+  archive      = {J_SIIMS},
+  author       = {Dmitrij Sitenko and Bastian Boll and Christoph Schnörr},
+  doi          = {10.1137/22M1496141},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {501-567},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A nonlocal graph-PDE and higher-order geometric integration for image labeling},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Elastica models for color image regularization.
+<em>SIIMS</em>, <em>16</em>(1), 461–500. (<a
+href="https://doi.org/10.1137/22M147935X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The choice of a proper regularization measure plays an important role in the field of image processing. One classical approach treats color images as two- dimensional surfaces embedded in a five-dimensional spatial-chromatic space. In this case, a natural regularization term arises as the image surface area. Choosing the chromatic coordinates as dominating over the spatial ones, we can think of the image spatial coordinates could as a parameterization of the image surface manifold in a three-dimensional color space. Minimizing the area of the image manifold leads to the Beltrami flow or mean curvature flow of the image surface in the three-dimensional color space, while minimizing the elastica of the image surface yields an additional interesting regularization. Recently, we proposed a color elastica model, which minimizes both the surface area and the elastica of the image manifold. In this paper, we propose to modify the color elastica and introduce two new models for color image regularization. The revised measures are motivated by the relations between the color elastica model, Euler’s elastica model, and the total variation model for gray level images. Compared to our previous color elastica model, the new models are direct extensions of Euler’s elastica model to color images. The proposed models are nonlinear and challenging to minimize. To overcome this difficulty, two operator-splitting methods are suggested. Specifically, nonlinearities are decoupled by the introduction of new vector- and matrix-valued variables. Then, the minimization problems are converted to initial value problems which are time-discretized by operator splitting. Each subproblem, after splitting, either has a closed-form solution or can be solved efficiently. The effectiveness and advantages of the proposed models are demonstrated by comprehensive experiments. The benefits of incorporating the elastica of the image surface as regularization terms compared to common alternatives are empirically validated.},
+  archive      = {J_SIIMS},
+  author       = {Hao Liu and Xue-Cheng Tai and Ron Kimmel and Roland Glowinski},
+  doi          = {10.1137/22M147935X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {461-500},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Elastica models for color image regularization},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Tensor robust principal component analysis via tensor
+fibered rank and <span
+class="math inline"><strong>l</strong><sub><strong>p</strong></sub></span>
+minimization. <em>SIIMS</em>, <em>16</em>(1), 423–460. (<a
+href="https://doi.org/10.1137/22M1473236">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Tensor robust principal component analysis (TRPCA) is an important method to handle high-dimensional data and has been widely used in many areas. In this paper, we mainly focus on the TRPCA problem based on tensor fibered rank for sparse noise removal, which aims to recover the low-fibered-rank tensor from grossly corrupted observations. Usually, the -norm is used as a convex approximation of tensor rank, but it is essentially biased and fails to achieve the best estimation performance. Therefore, we first propose a novel nonconvex model named , in which the norm is adopted to approximate tensor fibered rank and measure sparsity. Then, an error bound of the estimator of is established and this error bound can be better than those of similar models based on Tucker rank or tubal rank. Further, we use the alternating direction method of multipliers to solve and provide convergence guarantee. Finally, extensive experiments on color images, videos, and hyperspectral images demonstrate the effectiveness of the proposed method.},
+  archive      = {J_SIIMS},
+  author       = {Kaixin Gao and Zheng-Hai Huang},
+  doi          = {10.1137/22M1473236},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {423-460},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Tensor robust principal component analysis via tensor fibered rank and \({\boldsymbol{{l_p}}}\) minimization},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Preconditioned plug-and-play ADMM with locally adjustable
+denoiser for image restoration. <em>SIIMS</em>, <em>16</em>(1), 393–422.
+(<a href="https://doi.org/10.1137/22M1504809">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Plug-and-Play priors recently emerged as a powerful technique for solving inverse problems by plugging a denoiser into a classical optimization algorithm. The denoiser accounts for the regularization and therefore implicitly determines the prior knowledge on the data, hence replacing typical handcrafted priors. In this paper, we extend the concept of Plug-and-Play priors to use denoisers that can be parameterized for nonconstant noise variance. In that aim, we introduce a preconditioning of the ADMM algorithm, which mathematically justifies the use of such an adjustable denoiser. We additionally propose a procedure for training a convolutional neural network for high quality nonblind image denoising that also allows for pixelwise control of the noise standard deviation. We show that our pixelwise adjustable denoiser, along with a suitable preconditioning strategy, can further improve the Plug-and-Play ADMM approach for several applications, including image completion, interpolation, demosaicing, and Poisson denoising.},
+  archive      = {J_SIIMS},
+  author       = {Mikael Le Pendu and Christine Guillemot},
+  doi          = {10.1137/22M1504809},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {393-422},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Preconditioned plug-and-play ADMM with locally adjustable denoiser for image restoration},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Nonlocal perimeters and curvature flows on graphs with
+applications in image processing and high-dimensional data
+classification. <em>SIIMS</em>, <em>16</em>(1), 368–392. (<a
+href="https://doi.org/10.1137/22M148598X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we revisit the notion of perimeter on graphs, introduced in El Chakik, Elmoataz, and Desquesnes [Signal Process., 105 (2014), pp. 449–463], and we extend it to so-called inner and outer perimeters. We will also extend the notion of total variation on graphs. Thanks to the co-area formula, we show that discrete total variations can be expressed through these perimeters. Then, we propose a novel class of curvature operators on graphs that unifies both local and nonlocal mean curvature on an Euclidean domain. This leads us to translate and adapt the notion of the mean curvature flow on graphs as well as the level set mean curvature, which can be seen as approximate schemes. Finally, we exemplify the usefulness of these methods in image processing, 3D point cloud processing, and high dimensional data classification.},
+  archive      = {J_SIIMS},
+  author       = {Imad El Bouchairi and Abderrahim Elmoataz and Jalal Fadili},
+  doi          = {10.1137/22M148598X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {368-392},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Nonlocal perimeters and curvature flows on graphs with applications in image processing and high-dimensional data classification},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Stability for finite element discretization of some inverse
+parameter problems from internal data: Application to elastography.
+<em>SIIMS</em>, <em>16</em>(1), 340–367. (<a
+href="https://doi.org/10.1137/21M1428522">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this article, we provide stability estimates for the finite element discretization of a class of inverse parameter problems of the form in a domain of . Here is the unknown parameter to recover; the matrix valued function and the vector valued distribution are known. As uniqueness is not guaranteed in general for this problem, we prove a Lipschitz-type stability estimate in a hyperplane of . This stability is obtained through an adaptation of the so-called discrete inf-sup constant or LBB constant to a large class of first order differential operators. We then provide a simple and original discretization based on hexagonal finite element that satisfies the discrete stability condition and shows corresponding numerical reconstructions. The obtained algebraic inversion method is efficient as it does not require any iterative solving of the forward problem and is very general as it only requires and to be bounded and no additional information at the boundary is needed.},
+  archive      = {J_SIIMS},
+  author       = {Elie Bretin and Pierre Millien and Laurent Seppecher},
+  doi          = {10.1137/21M1428522},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {340-367},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Stability for finite element discretization of some inverse parameter problems from internal data: Application to elastography},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Total generalized variation for piecewise constant functions
+on triangular meshes with applications in imaging. <em>SIIMS</em>,
+<em>16</em>(1), 313–339. (<a
+href="https://doi.org/10.1137/22M1505281">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a novel discrete concept for the total generalized variation (TGV), which was originally derived to reduce the staircasing effect in classical total variation regularization, in image denoising problems. We describe discrete, second-order TGV for piecewise constant functions on triangular meshes, thus allowing the TGV functional to be applied to more general data structures than pixel images, and in particular in the context of finite element discretizations. Particular attention is given to the description of the kernel of the TGV functional, which, in the continuous setting, consists of linear polynomials. We discuss how to take advantage of this kernel structure using piecewise constant functions on triangular meshes. Numerical experiments include denoising and inpainting problems for images defined on nonstandard grids, including data from a three-dimensional scanner.},
+  archive      = {J_SIIMS},
+  author       = {Lukas Baumgärtner and Ronny Bergmann and Roland Herzog and Stephan Schmidt and José Vidal-Núnez},
+  doi          = {10.1137/22M1505281},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {313-339},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Total generalized variation for piecewise constant functions on triangular meshes with applications in imaging},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Waveform inversion with a data driven estimate of the
+internal wave. <em>SIIMS</em>, <em>16</em>(1), 280–312. (<a
+href="https://doi.org/10.1137/22M1517342">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We study an inverse problem for the wave equation, concerned with estimating the wave speed from data gathered by an array of sources and receivers that emit probing signals and measure the resulting waves. The typical approach to solving this problem is a nonlinear least squares minimization of the data misfit, over a search space. There are two main impediments to this approach, which manifest as multiple local minima of the objective function: The nonlinearity of the mapping from the wave speed to the data, which accounts for multiple scattering effects, and poor knowledge of the kinematics (smooth part of the wave speed), which causes cycle skipping. We show that the nonlinearity can be mitigated using a data driven estimate of the wave field at points inside the medium, also known as the “internal wave field.” This leads to improved performance of the inversion for a reasonable initial guess of the kinematics.},
+  archive      = {J_SIIMS},
+  author       = {Liliana Borcea and Josselin Garnier and Alexander V. Mamonov and Jörn Zimmerling},
+  doi          = {10.1137/22M1517342},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {280-312},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Waveform inversion with a data driven estimate of the internal wave},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Diffeomorphic registration using sinkhorn divergences.
+<em>SIIMS</em>, <em>16</em>(1), 250–279. (<a
+href="https://doi.org/10.1137/22M1493562">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The diffeomorphic registration framework enables one to define an optimal matching function between two probability measures with respect to a data-fidelity loss function. The nonconvexity of the optimization problem renders the choice of this loss function crucial to avoid poor local minima. Recent work showed experimentally the efficiency of entropy-regularized optimal transportation costs, as they are computationally fast and differentiable while having few minima. Following this approach, we provide in this paper a new framework based on Sinkhorn divergences, unbiased entropic optimal transportation costs, and prove the statistical consistency with rate of the empirical optimal deformations.},
+  archive      = {J_SIIMS},
+  author       = {Lucas De Lara and Alberto González-Sanz and Jean-Michel Loubes},
+  doi          = {10.1137/22M1493562},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {250-279},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Diffeomorphic registration using sinkhorn divergences},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Turning grain maps into diagrams. <em>SIIMS</em>,
+<em>16</em>(1), 223–249. (<a
+href="https://doi.org/10.1137/22M1491988">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The present paper studies mathematical models for representing, imaging, and analyzing polycrystalline materials. We introduce various techniques for converting grain maps into diagram or tessellation representations that rely on constrained clustering. In particular, we show how to significantly accelerate the computation of generalized balanced power diagrams and how to extend it to allow for optimization over all relevant parameters. A comparison of the accuracy of the proposed approaches is given based on a three-dimensional real-world data set of voxels.},
+  archive      = {J_SIIMS},
+  author       = {Andreas Alpers and Maximilian Fiedler and Peter Gritzmann and Fabian Klemm},
+  doi          = {10.1137/22M1491988},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {223-249},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Turning grain maps into diagrams},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A projected nesterov–kaczmarz approach to stellar
+population-kinematic distribution reconstruction in extragalactic
+archaeology. <em>SIIMS</em>, <em>16</em>(1), 192–222. (<a
+href="https://doi.org/10.1137/22M1503002">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we consider the problem of reconstructing a galaxy’s stellar population-kinematic distribution function from optical integral field unit measurements. These quantities are connected via a high-dimensional integral equation. To solve this problem, we propose a projected Nesterov–Kaczmarz reconstruction method, which efficiently leverages the problem structure and incorporates physical prior information such as smoothness and nonnegativity constraints. To test the performance of our reconstruction approach, we apply it to a dataset simulated from a known ground truth density, and validate it by comparing our recoveries to those obtained by the widely used pPXF software.},
+  archive      = {J_SIIMS},
+  author       = {Fabian Hinterer and Simon Hubmer and Prashin Jethwa and Kirk M. Soodhalter and Glenn van de Ven and Ronny Ramlau},
+  doi          = {10.1137/22M1503002},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {192-222},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A projected Nesterov–Kaczmarz approach to stellar population-kinematic distribution reconstruction in extragalactic archaeology},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Low-rank tensor approximations for solving multimarginal
+optimal transport problems. <em>SIIMS</em>, <em>16</em>(1), 169–191. (<a
+href="https://doi.org/10.1137/22M1478355">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. By the addition of entropic regularization, multimarginal optimal transport problems can be transformed into tensor scaling problems, which can be solved numerically using the multimarginal Sinkhorn algorithm. The main computational bottleneck of this algorithm is the repeated evaluation of marginals. Recently, it has been suggested that this evaluation can be accelerated when the application features an underlying graphical model. In this work, we accelerate the computation further by combining the tensor network dual of the graphical model with additional low-rank approximations. We provide an example for the color transfer between several images, in which these additional low-rank approximations save more than of the computation time.},
+  archive      = {J_SIIMS},
+  author       = {Christoph Strössner and Daniel Kressner},
+  doi          = {10.1137/22M1478355},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {169-191},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Low-rank tensor approximations for solving multimarginal optimal transport problems},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). An active contour model with local variance force term and
+its efficient minimization solver for multiphase image segmentation.
+<em>SIIMS</em>, <em>16</em>(1), 144–168. (<a
+href="https://doi.org/10.1137/22M1483645">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we propose a general active contour model with a local variance force (LVF) term that can be applied to multiphase image segmentation problems. With the LVF, the proposed model is very effective in the segmentation of images with noise. A well-targeted minimization algorithm called ICTM-LVF is then designed to solve this model efficiently. This minimization algorithm, developed from the iterative convolution-thresholding method (ICTM), enjoys the energy-decaying property under some conditions and has highly efficient performance in the segmentation. To overcome the initialization issue of active contour models, we generalize the inhomogeneous graph Laplacian initialization method to the multiphase case and then apply it to give the initial contour of the ICTM-LVF solver. Numerical experiments are conducted on synthetic images and real images to demonstrate the capability of our initialization method, and the effectiveness of the LVF for noise robustness in the multiphase image segmentation.},
+  archive      = {J_SIIMS},
+  author       = {Chaoyu Liu and Zhonghua Qiao and Qian Zhang},
+  doi          = {10.1137/22M1483645},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {144-168},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {An active contour model with local variance force term and its efficient minimization solver for multiphase image segmentation},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). High-frequency limit of the inverse scattering problem:
+Asymptotic convergence from inverse helmholtz to inverse liouville.
+<em>SIIMS</em>, <em>16</em>(1), 111–143. (<a
+href="https://doi.org/10.1137/22M147075X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We investigate the asymptotic relation between the inverse problems relying on the Helmholtz equation and the radiative transfer equation (RTE) as physical models in the high-frequency limit. In particular, we evaluate the asymptotic convergence of a generalized version of the inverse scattering problem based on the Helmholtz equation, to the inverse scattering problem of the Liouville equation (a simplified version of RTE). The two inverse problems are connected through the Wigner transform that translates the wave-type description on the physical space to the kinetic-type description on the phase space, and the Husimi transform that models data localized both in location and direction. The finding suggests that impinging tightly concentrated monochromatic beams can indeed provide stable reconstruction of the medium, asymptotically in the high-frequency regime. This fact stands in contrast with the unstable reconstruction for the classical inverse scattering problem when the probing signals are plane waves.},
+  archive      = {J_SIIMS},
+  author       = {Shi Chen and Zhiyan Ding and Qin Li and Leonardo Zepeda-Núñez},
+  doi          = {10.1137/22M147075X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {111-143},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {High-frequency limit of the inverse scattering problem: Asymptotic convergence from inverse helmholtz to inverse liouville},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Utilizing variational autoencoders in the bayesian inverse
+problem of photoacoustic tomography. <em>SIIMS</em>, <em>16</em>(1),
+89–110. (<a href="https://doi.org/10.1137/22M1489897">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. There has been an increasing interest in utilizing machine learning methods in inverse problems and imaging. Most of the work has, however, concentrated on image reconstruction problems, and the number of studies regarding the full solution of the inverse problem is limited. In this work, we study a machine learning–based approach for the Bayesian inverse problem of photoacoustic tomography. We develop an approach for estimating the posterior distribution in photoacoustic tomography using an approach based on the variational autoencoder. The approach is evaluated with numerical simulations and compared to the solution of the inverse problem using a Bayesian approach.},
+  archive      = {J_SIIMS},
+  author       = {Teemu Sahlström and Tanja Tarvainen},
+  doi          = {10.1137/22M1489897},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {89-110},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Utilizing variational autoencoders in the bayesian inverse problem of photoacoustic tomography},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Asymptotic links between signal processing, acoustic
+metamaterials, and biology. <em>SIIMS</em>, <em>16</em>(1), 64–88. (<a
+href="https://doi.org/10.1137/22M1510352">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Biomimicry is a powerful science that takes inspiration from nature’s innovative solutions to challenging problems. In this work, we use asymptotic methods to develop the mathematical foundations for the exchange of design inspiration and features between biological hearing systems, signal processing algorithms, and acoustic metamaterials. Our starting point is a concise asymptotic analysis of high-contrast acoustic metamaterials. We are able to fine tune this graded structure to mimic the biomechanical properties of the cochlea, at the same scale. We then turn our attention to developing a biomimetic signal processing algorithm. We use the response of the cochlea-like metamaterial as an initial filtering layer and then add additional biomimetic processing stages, designed to mimic the human auditory system’s ability to recognize the global properties of natural sounds. This demonstrates the three-way exchange of ideas that, thanks to our analysis, is possible between signal processing, metamaterials and biology.},
+  archive      = {J_SIIMS},
+  author       = {Habib Ammari and Bryn Davies},
+  doi          = {10.1137/22M1510352},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {64-88},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Asymptotic links between signal processing, acoustic metamaterials, and biology},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Convexification numerical method for a coefficient inverse
+problem for the radiative transport equation. <em>SIIMS</em>,
+<em>16</em>(1), 35–63. (<a
+href="https://doi.org/10.1137/22M1509837">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. An -D coefficient inverse problem for the stationary radiative transport equation is considered for the first time. A globally convergent so-called convexification numerical method is developed and its convergence analysis is provided. The analysis is based on a Carleman estimate. Extensive numerical studies in the two-dimensional case are presented.},
+  archive      = {J_SIIMS},
+  author       = {Michael V. Klibanov and Jingzhi Li and Loc H. Nguyen and Zhipeng Yang},
+  doi          = {10.1137/22M1509837},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {35-63},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Convexification numerical method for a coefficient inverse problem for the radiative transport equation},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Convergence results for primal-dual algorithms in the
+presence of adjoint mismatch. <em>SIIMS</em>, <em>16</em>(1), 1–34. (<a
+href="https://doi.org/10.1137/22M1490223">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Most optimization problems arising in imaging science involve high-dimensional linear operators and their adjoints. In the implementations of these operators, changes may be introduced for various practical considerations (e.g., memory limitation, computational cost, convergence speed), leading to an adjoint mismatch. This occurs for the X-ray tomographic inverse problems found in computed tomography (CT), where a surrogate operator often replaces the adjoint of the measurement operator (called the projector). The resulting adjoint mismatch can jeopardize the convergence properties of iterative schemes used for image recovery. In this paper, we study the theoretical behavior of a panel of primal-dual proximal algorithms, which rely on forward-backward-(forward) splitting schemes when an adjoint mismatch occurs. We analyze these algorithms by focusing on the resolution of possibly nonsmooth convex penalized minimization problems in an infinite-dimensional setting. Using tools from fixed point theory, we show that they can solve monotone inclusions beyond minimization problems. Such findings indicate that these algorithms can be seen as a generalization of classical primal-dual formulations. The applicability of our findings is also demonstrated through two numerical experiments in the context of CT image reconstruction.},
+  archive      = {J_SIIMS},
+  author       = {Emilie Chouzenoux and Andrés Contreras and Jean-Christophe Pesquet and Marion Savanier},
+  doi          = {10.1137/22M1490223},
+  journal      = {SIAM Journal on Imaging Sciences},
+  number       = {1},
+  pages        = {1-34},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Convergence results for primal-dual algorithms in the presence of adjoint mismatch},
+  volume       = {16},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

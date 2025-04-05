@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TAAS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="taas---24">TAAS - 24</h2>
+<ul>
+<li><details>
+<summary>
+(2024). A framework for simultaneous task allocation and planning
+under uncertainty. <em>TAAS</em>, <em>19</em>(4), 1–30. (<a
+href="https://doi.org/10.1145/3665499">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present novel techniques for simultaneous task allocation and planning in multi-robot systems operating under uncertainty. By performing task allocation and planning simultaneously, allocations are informed by individual robot behaviour, creating more efficient team behaviour. We go beyond existing work by planning for task reallocation across the team given a model of partial task satisfaction under potential robot failures and uncertain action outcomes. We model the problem using Markov decision processes, with tasks encoded in co-safe linear temporal logic, and optimise for the expected number of tasks completed by the team. To avoid the inherent complexity of joint models, we propose an alternative model that simultaneously considers task allocation and planning, but in a sequential fashion. We then build a joint policy from the sequential policy obtained from our model, thus allowing for concurrent policy execution. Furthermore, to enable adaptation in the case of robot failures, we consider replanning from failure states and propose an approach to preemptively replan in an anytime fashion, replanning for more probable failure states first. Our method also allows us to quantify the performance of the team by providing an analysis of properties, such as the expected number of completed tasks under concurrent policy execution. We implement and extensively evaluate our approach on a range of scenarios. We compare its performance to a state-of-the-art baseline in decoupled task allocation and planning: sequential single-item auctions. Our approach outperforms the baseline in terms of computation time and the number of times replanning is required on robot failure.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3665499},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {11},
+  number       = {4},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {A framework for simultaneous task allocation and planning under uncertainty},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Dynamically balancing load with overload control for
+microservices. <em>TAAS</em>, <em>19</em>(4), 1–23. (<a
+href="https://doi.org/10.1145/3676167">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The microservices architecture simplifies application development by breaking monolithic applications into manageable microservices. However, this distributed microservice “service mesh” leads to new challenges due to the more complex application topology. Particularly, each service component scales up and down independently creating load imbalance problems on shared backend services accessed by multiple components. Traditional load balancing algorithms do not port over well to a distributed microservice architecture where load balancers are deployed client-side. In this article, we propose a self-managing load balancing system, BLOC, which provides consistent response times to users without using a centralized metadata store or explicit messaging between nodes. BLOC uses overload control approaches to provide feedback to the load balancers. We show that this performs significantly better in solving the incast problem in microservice architectures. A critical component of BLOC is the dynamic capacity estimation algorithm. We show that a well-tuned capacity estimate can outperform even join-the-shortest-queue, a nearly optimal algorithm, while a reasonable dynamic estimate still outperforms Least Connection, a distributed implementation of join-the-shortest-queue. Evaluating this framework, we found that BLOC improves the response time distribution range, between the 10th and 90th percentiles, by 2 –4 times and the tail, 99th percentile, latency by 2 times.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3676167},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {11},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Dynamically balancing load with overload control for microservices},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Optimizing delegation in collaborative human-AI hybrid
+teams. <em>TAAS</em>, <em>19</em>(4), 1–33. (<a
+href="https://doi.org/10.1145/3687130">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When humans and autonomous systems operate together as what we refer to as a hybrid team, we of course wish to ensure the team operates successfully and effectively. We refer to team members as agents. In our proposed framework, we address the case of hybrid teams in which, at any time, only one team member (the control agent) is authorized to act as control for the team. To determine the best selection of a control agent, we propose the addition of an AI manager (via Reinforcement Learning) which learns as an outside observer of the team. The manager learns a model of behavior linking observations of agent performance and the environment/world the team is operating in, and from these observations makes the most desirable selection of a control agent. From our review of current state of the art, we present a novel manager model for oversight of hybrid teams by our support for diverse agents and decision-maker operations across multiple time steps and decisions. In our model, we restrict the manager’s task by introducing a set of constraints. The manager constraints indicate acceptable team operation, so a violation occurs if the team enters a condition which is unacceptable and requires manager intervention. To ensure minimal added complexity or potential inefficiency for the team, the manager should attempt to minimize the number of times the team reaches a constraint violation and requires subsequent manager intervention. Therefore, our manager is optimizing its selection of authorized agents to boost overall team performance while minimizing the frequency of manager intervention. We demonstrate our manager’s performance in a simulated driving scenario representing the case of a hybrid team of agents composed of a human driver and autonomous driving system. We perform experiments for our driving scenario with interfering vehicles, indicating the need for collision avoidance and proper speed control. Our results indicate a positive impact on our manager, with some cases resulting in increased team performance up to \(\approx 187\%\) that of the best solo agent performance.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3687130},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {11},
+  number       = {4},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Optimizing delegation in collaborative human-AI hybrid teams},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Adaptive industrial control systems via IEC 61499 and
+runtime enforcement. <em>TAAS</em>, <em>19</em>(4), 1–31. (<a
+href="https://doi.org/10.1145/3691345">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work envisions industrial control systems that can reliably adapt to requirements. We rely on the international standard IEC 61499 to achieve this goal. The standard allows downtimeless system evolution such that an application can be modified at runtime to satisfy the requirements. However, an IEC 61499 application consisting of multiple Function Blocks (FBs) can be modified in many different ways, such as inserting or deleting FBs, creating new FBs with their respective internal behaviours and adjusting the connections between FBs. These changes require considerable effort and cost, and there is no guarantee to satisfy the requirements. This article applies runtime enforcement techniques for supporting adaptive IEC 61499 applications. This set of techniques can modify the runtime behaviour of a system according to specific requirements. Our approach begins with specifying the requirements as a state machine-based notation called contract automaton. This automaton is then used to synthesise an enforcer as an FB. Finally, the new FB is integrated into the application to execute according to the requirements. A tool support is developed to automate the approach. Experiments were performed to evaluate the performance of enforcers by measuring the execution time of several applications before and after the integration of enforcers.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3691345},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {11},
+  number       = {4},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Adaptive industrial control systems via IEC 61499 and runtime enforcement},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A roadmap of explainable artificial intelligence: Explain to
+whom, when, what and how? <em>TAAS</em>, <em>19</em>(4), 1–40. (<a
+href="https://doi.org/10.1145/3702004">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Explainable artificial intelligence (XAI) has gained significant attention, especially in AI-powered autonomous and adaptive systems (AASs). However, a discernible disconnect exists among research efforts across different communities. The machine learning community often overlooks “explaining to whom,” while the human-computer interaction community has examined various stakeholders with diverse explanation needs without addressing which XAI methods meet these requirements. Currently, no clear guidance exists on which XAI methods suit which specific stakeholders and their distinct needs. This hinders the achievement of the goal of XAI: providing human users with understandable interpretations. To bridge this gap, this article presents a comprehensive XAI roadmap. Based on an extensive literature review, the roadmap summarizes different stakeholders, their explanation needs at different stages of the AI system lifecycle, the questions they may pose, and existing XAI methods. Then, by utilizing stakeholders’ inquiries as a conduit, the roadmap connects their needs to prevailing XAI methods, providing a guideline to assist researchers and practitioners to determine more easily which XAI methodologies can meet the specific needs of stakeholders in AASs. Finally, the roadmap discusses the limitations of existing XAI methods and outlines directions for future research.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3702004},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {11},
+  number       = {4},
+  pages        = {1-40},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {A roadmap of explainable artificial intelligence: Explain to whom, when, what and how?},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Applying trust for operational states of ICT-enabled power
+grid services. <em>TAAS</em>, <em>19</em>(4), 1–22. (<a
+href="https://doi.org/10.1145/3654672">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Digitalization enables the automation required to operate modern cyber-physical energy systems (CPESs), leading to a shift from hierarchical to organic systems. However, digitalization increases the number of factors affecting the state of a CPES (e.g., software bugs and cyber threats). In addition to established factors like functional correctness, others like security become relevant but are yet to be integrated into an operational viewpoint, i.e., a holistic perspective on the system state. Trust in organic computing is an approach to gain a holistic view of the state of systems. It consists of several facets (e.g., functional correctness, security, and reliability), which can be used to assess the state of CPES. Therefore, a trust assessment on all levels can contribute to a coherent state assessment. This article focuses on the trust in ICT-enabled grid services in a CPES. These are essential for operating the CPES, and their performance relies on various data aspects like availability, timeliness, and correctness. This article proposes to assess the trust in involved components and data to estimate data correctness, which is crucial for grid services. The assessment is presented considering two exemplary grid services, namely state estimation and coordinated voltage control. Furthermore, the interpretation of different trust facets is also discussed.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3654672},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {10},
+  number       = {4},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Applying trust for operational states of ICT-enabled power grid services},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Self-adapting machine learning-based systems via a
+probabilistic model checking framework. <em>TAAS</em>, <em>19</em>(3),
+1–30. (<a href="https://doi.org/10.1145/3648682">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article focuses on the problem of optimizing the system utility of Machine Learning (ML)-based systems in the presence of ML mispredictions. This is achieved via the use of self-adaptive systems and through the execution of adaptation tactics, such as model retraining , which operate at the level of individual ML components. To address this problem, we propose a probabilistic modeling framework that reasons about the cost/benefit tradeoffs associated with adapting ML components. The key idea of the proposed approach is to decouple the problems of estimating (1) the expected performance improvement after adaptation and (2) the impact of ML adaptation on overall system utility. We apply the proposed framework to engineer a self-adaptive ML-based fraud detection system, which we evaluate using a publicly available, real fraud detection dataset. We initially consider a scenario in which information on the model’s quality is immediately available. Next, we relax this assumption by integrating (and extending) state-of-the-art techniques for estimating the model’s quality in the proposed framework. We show that by predicting the system utility stemming from retraining an ML component, the probabilistic model checker can generate adaptation strategies that are significantly closer to the optimal, as compared against baselines such as periodic or reactive retraining.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3648682},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Self-adapting machine learning-based systems via a probabilistic model checking framework},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Anunnaki: A modular framework for developing trusted
+artificial intelligence. <em>TAAS</em>, <em>19</em>(3), 1–34. (<a
+href="https://doi.org/10.1145/3649453">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trustworthy artificial intelligence (Trusted AI) is of utmost importance when learning-enabled components (LECs) are used in autonomous, safety-critical systems. When reliant on deep learning, these systems need to address the reliability, robustness, and interpretability of learning models. In addition to developing strategies to address these concerns, appropriate software architectures are needed to coordinate LECs and ensure they deliver acceptable behavior even under uncertain conditions. This work describes Anunnaki, a model-driven framework comprising loosely-coupled modular services designed to monitor and manage LECs with respect to Trusted AI assurance concerns when faced with different sources of uncertainty. More specifically, the Anunnaki framework supports the composition of independent, modular services to assess and improve the resilience and robustness of AI systems. The design of Annunaki was guided by several key software engineering principles (e.g., modularity, composability, and reusability) in order to facilitate its use and maintenance to support different aggregate monitoring and assurance analysis tools for LESs and their respective data sets. We demonstrate Anunnaki on two autonomous platforms, a terrestrial rover, and an unmanned aerial vehicle. Our studies show how Anunnaki can be used to manage the operations of different autonomous learning-enabled systems with vision-based LECs while exposed to uncertain environmental conditions.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3649453},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-34},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Anunnaki: A modular framework for developing trusted artificial intelligence},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Adaptation in edge computing: A review on design principles
+and research challenges. <em>TAAS</em>, <em>19</em>(3), 1–43. (<a
+href="https://doi.org/10.1145/3664200">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Edge computing places the computational services and resources closer to the user proximity, to reduce latency, and ensure the quality of service and experience. Low latency, context awareness and mobility support are the major contributors to edge-enabled smart systems. Such systems require handling new situations and change on the fly and ensuring the quality of service while only having access to constrained computation and communication resources and operating in mobile, dynamic and ever-changing environments. Hence, adaptation and self-organisation are crucial for such systems to maintain their performance, and operability while accommodating new changes in their environment. This article reviews the current literature in the field of adaptive edge computing systems. We use a widely accepted taxonomy, which describes the important aspects of adaptive behaviour implementation in computing systems. This taxonomy discusses aspects such as adaptation reasons, the various levels an adaptation strategy can be implemented, the time of reaction to a change, categories of adaptation technique and control of the adaptive behaviour. In this article, we discuss how these aspects are addressed in the literature and identify the open research challenges and future direction in adaptive edge computing systems. The results of our analysis show that most of the identified approaches target adaptation at the application level, and only a few focus on middleware, communication infrastructure and context. Adaptations that are required to address the changes in the context, changes caused by users or in the system itself are also less explored. Furthermore, most of the literature has opted for reactive adaptation, although proactive adaptation is essential to maintain the edge computing systems’ performance and interoperability by anticipating the required adaptations on the fly. Additionally, most approaches apply a centralised adaptation control, which does not perfectly fit the mostly decentralised/distributed edge computing settings.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3664200},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-43},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Adaptation in edge computing: A review on design principles and research challenges},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Self-supervised machine learning framework for online
+container security attack detection. <em>TAAS</em>, <em>19</em>(3),
+1–28. (<a href="https://doi.org/10.1145/3665795">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Container security has received much research attention recently. Previous work has proposed to apply various machine learning techniques to detect security attacks in containerized applications. On one hand, supervised machine learning schemes require sufficient labeled training data to achieve good attack detection accuracy. On the other hand, unsupervised machine learning methods are more practical by avoiding training data labeling requirements, but they often suffer from high false alarm rates. In this article, we present a generic self-supervised hybrid learning (SHIL) framework for achieving efficient online security attack detection in containerized systems. SHIL can effectively combine both unsupervised and supervised learning algorithms but does not require any manual data labeling. We have implemented a prototype of SHIL and conducted experiments over 46 real-world security attacks in 29 commonly used server applications. Our experimental results show that SHIL can reduce false alarms by 33%–93% compared to existing supervised, unsupervised, or semi-supervised machine learning schemes while achieving a higher or similar detection rate.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3665795},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Self-supervised machine learning framework for online container security attack detection},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A user study on explainable online reinforcement learning
+for adaptive systems. <em>TAAS</em>, <em>19</em>(3), 1–44. (<a
+href="https://doi.org/10.1145/3666005">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online reinforcement learning (RL) is increasingly used for realizing adaptive systems in the presence of design time uncertainty because Online RL can leverage data only available at run time. With Deep RL gaining interest, the learned knowledge is no longer represented explicitly but hidden in the parameterization of the underlying artificial neural network. For a human, it thus becomes practically impossible to understand the decision-making of Deep RL, which makes it difficult for (1) software engineers to perform debugging, (2) system providers to comply with relevant legal frameworks, and (3) system users to build trust. The explainable RL technique XRL-DINE, introduced in earlier work, provides insights into why certain decisions were made at important time steps. Here, we perform an empirical user study concerning XRL-DINE involving 73 software engineers split into treatment and control groups. The treatment group is given access to XRL-DINE, while the control group is not. We analyze (1) the participants’ performance in answering concrete questions related to the decision-making of Deep RL, (2) the participants’ self-assessed confidence in giving the right answers, (3) the perceived usefulness and ease of use of XRL-DINE, and (4) the concrete usage of the XRL-DINE dashboard.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3666005},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-44},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {A user study on explainable online reinforcement learning for adaptive systems},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Introduction to ACSOS 2022 special issue. <em>TAAS</em>,
+<em>19</em>(3), 1–3. (<a href="https://doi.org/10.1145/3676168">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TAAS},
+  doi          = {10.1145/3676168},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-3},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Introduction to ACSOS 2022 special issue},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Generative AI for self-adaptive systems: State of the art
+and research roadmap. <em>TAAS</em>, <em>19</em>(3), 1–60. (<a
+href="https://doi.org/10.1145/3686803">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Self-adaptive systems (SASs) are designed to handle changes and uncertainties through a feedback loop with four core functionalities: monitoring, analyzing, planning, and execution. Recently, generative artificial intelligence (GenAI), especially the area of large language models, has shown impressive performance in data comprehension and logical reasoning. These capabilities are highly aligned with the functionalities required in SASs, suggesting a strong potential to employ GenAI to enhance SASs. However, the specific benefits and challenges of employing GenAI in SASs remain unclear. Yet, providing a comprehensive understanding of these benefits and challenges is complex due to several reasons: limited publications in the SAS field, the technological and application diversity within SASs, and the rapid evolution of GenAI technologies. To that end, this article aims to provide researchers and practitioners a comprehensive snapshot that outlines the potential benefits and challenges of employing GenAI’s within SAS. Specifically, we gather, filter, and analyze literature from four distinct research fields and organize them into two main categories to potential benefits: (i) enhancements to the autonomy of SASs centered around the specific functions of the MAPE-K feedback loop, and (ii) improvements in the interaction between humans and SASs within human-on-the-loop settings. From our study, we outline a research roadmap that highlights the challenges of integrating GenAI into SASs. The roadmap starts with outlining key research challenges that need to be tackled to exploit the potential for applying GenAI in the field of SAS. The roadmap concludes with a practical reflection, elaborating on current shortcomings of GenAI and proposing possible mitigation strategies. †},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3686803},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-60},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Generative AI for self-adaptive systems: State of the art and research roadmap},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Self-governing hybrid societies and deception.
+<em>TAAS</em>, <em>19</em>(2), 1–24. (<a
+href="https://doi.org/10.1145/3638549">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Self-governing hybrid societies are multi-agent systems where humans and machines interact by adapting to each other’s behaviour. Advancements in Artificial Intelligence (AI) have brought an increasing hybridisation of our societies, where one particular type of behaviour has become more and more prevalent, namely deception. Deceptive behaviour as the propagation of disinformation can have negative effects on a society’s ability to govern itself. However, self-governing societies have the ability to respond to various phenomena. In this article, we explore how they respond to the phenomenon of deception from an evolutionary perspective considering that agents have limited adaptation skills. Will hybrid societies fail to govern deceptive behaviour and reach a Tragedy of The Digital Commons? Or will they manage to avoid it through cooperation? How resilient are they against large-scale deceptive attacks? We provide a tentative answer to some of these questions through the lens of evolutionary agent-based modelling, based on the scientific literature on deceptive AI and public goods games.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3638549},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {4},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Self-governing hybrid societies and deception},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Faster MIL-based subgoal identification for reinforcement
+learning by tuning fewer hyperparameters. <em>TAAS</em>, <em>19</em>(2),
+1–29. (<a href="https://doi.org/10.1145/3643852">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Various methods have been proposed in the literature for identifying subgoals in discrete reinforcement learning (RL) tasks. Once subgoals are discovered, task decomposition methods can be employed to improve the learning performance of agents. In this study, we classify prominent subgoal identification methods for discrete RL tasks in the literature into the following three categories: graph-based, statistics-based, and multi-instance learning (MIL)-based. As contributions, first, we introduce a new MIL-based subgoal identification algorithm called EMDD-RL and experimentally compare it with a previous MIL-based method. The previous approach adapts MIL’s Diverse Density (DD) algorithm, whereas our method considers Expected-Maximization Diverse Density (EMDD). The advantage of EMDD over DD is that it can yield more accurate results with less computation demand thanks to the expectation-maximization algorithm. EMDD-RL modifies some of the algorithmic steps of EMDD to identify subgoals in discrete RL problems. Second, we evaluate the methods in several RL tasks for the hyperparameter tuning overhead they incur. Third, we propose a new RL problem called key-room and compare the methods for their subgoal identification performances in this new task. Experiment results show that MIL-based subgoal identification methods could be preferred to the algorithms of the other two categories in practice.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3643852},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {4},
+  number       = {2},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Faster MIL-based subgoal identification for reinforcement learning by tuning fewer hyperparameters},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Decision making for self-adaptation based on partially
+observable satisfaction of non-functional requirements. <em>TAAS</em>,
+<em>19</em>(2), 1–44. (<a
+href="https://doi.org/10.1145/3643889">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Approaches that support the decision-making of self-adaptive and autonomous systems (SAS) often consider an idealized situation where (i) the system’s state is treated as fully observable by the monitoring infrastructure, and (ii) adaptation actions are assumed to have known, deterministic effects over the system. However, in practice, the system’s state may not be fully observable, and the adaptation actions may produce unexpected effects due to uncertain factors. This article presents a novel probabilistic approach to quantify the uncertainty associated with the effects of adaptation actions on the state of a SAS. Supported by Bayesian inference and POMDPs (Partially-Observable Markov Decision Processes), these effects are translated into the satisfaction levels of the non-functional requirements (NFRs) to, therefore, drive the decision-making. The approach has been applied to two substantial case studies from the networking and Internet of Things (IoT) domains, using two different POMDP solvers. The results show that the approach delivers statistically significant improvements in supporting decision-making for SAS.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3643889},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {4},
+  number       = {2},
+  pages        = {1-44},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Decision making for self-adaptation based on partially observable satisfaction of non-functional requirements},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A game-theoretical self-adaptation framework for securing
+software-intensive systems. <em>TAAS</em>, <em>19</em>(2), 1–49. (<a
+href="https://doi.org/10.1145/3652949">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Security attacks present unique challenges to the design of self-adaptation mechanism for software-intensive systems due to the adversarial nature of the environment. Game-theoretical approaches have been explored in security to model malicious behaviors and design reliable defense for the system in a mathematically grounded manner. However, modeling the system as a single player, as done in prior works, is insufficient for the system under partial compromise and for the design of fine-grained defensive policies where the rest of the system with autonomy can cooperate to mitigate the impact of attacks. To address such issues, we propose a new self-adaptation framework incorporating Bayesian game theory and model the defender (i.e., the system) at the granularity of components. Under security attacks, the architecture model of the system is automatically translated, by the proposed translation process with designed algorithms, into a multi-player Bayesian game. This representation allows each component to be modeled as an independent player, while security attacks are encoded as variant types for the components. By solving for pure equilibrium (i.e., adaptation response), the system’s optimal defensive strategy is dynamically computed, enhancing system resilience against security attacks by maximizing system utility. We validate the effectiveness of our framework through two sets of experiments using generic benchmark tasks tailored for the security domain. Additionally, we exemplify the practical application of our approach through a real-world implementation in the Secure Water Treatment System to demonstrate the applicability and potency in mitigating security risks.},
+  archive      = {J_TAAS},
+  doi          = {10.1145/3652949},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {4},
+  number       = {2},
+  pages        = {1-49},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {A game-theoretical self-adaptation framework for securing software-intensive systems},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). NEPTUNE: A comprehensive framework for managing serverless
+functions at the edge. <em>TAAS</em>, <em>19</em>(1), 7:1–32. (<a
+href="https://doi.org/10.1145/3634750">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Applications that are constrained by low-latency requirements can hardly be executed on cloud infrastructures, given the high network delay required to reach remote servers. Multi-access Edge Computing (MEC) is the reference architecture for executing applications on nodes that are located close to users (i.e., at the edge of the network). This way, the network overhead is reduced but new challenges emerge. The resources available on edge nodes are limited, workloads fluctuate since users can rapidly change location, and complex tasks are becoming widespread (e.g., machine learning inference). To address these issues, this article presents NEPTUNE , a serverless-based framework that automates the management of large-scale MEC infrastructures. In particular, NEPTUNE provides (i) the placement of serverless functions on MEC nodes according to users’ location, (ii) the resolution of resource contention scenarios by avoiding that single nodes be saturated, and (iii) the dynamic allocation of CPUs and GPUs to meet foreseen execution times. To assess NEPTUNE , we built a prototype based on K3S, an edge-dedicated version of Kubernetes, and executed a comprehensive set of experiments. Results show that NEPTUNE obtains a significant reduction in terms of response time, network overhead, and resource consumption compared with five state-of-the-art solutions.},
+  archive      = {J_TAAS},
+  author       = {Luciano Baresi and Davide Yi Xian Hu and Giovanni Quattrocchi and Luca Terracciano},
+  doi          = {10.1145/3634750},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {2},
+  number       = {1},
+  pages        = {7:1–32},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {NEPTUNE: A comprehensive framework for managing serverless functions at the edge},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Predicting nonfunctional requirement violations in
+autonomous systems. <em>TAAS</em>, <em>19</em>(1), 6:1–25. (<a
+href="https://doi.org/10.1145/3632405">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous systems are often used in applications where environmental and internal changes may lead to requirement violations. Adapting to these changes proactively, i.e., before the violations occur, is preferable to recovering from the failures that may be caused by such violations. However, proactive adaptation needs methods for predicting requirement violations timely, accurately, and with acceptable overheads. To address this need, we present a method that allows autonomous systems to predict violations of performance, dependability and other nonfunctional requirements, and therefore take preventative measures to avoid or otherwise mitigate them. Our method for pre dicting these autonomou s sys t em disrupti o ns (PRESTO) comprises a design time stage and a run-time stage. At design-time, we use parametric model checking to obtain algebraic expressions that formalise the relationships between the nonfunctional properties of the requirements of interest (e.g., reliability, response time, and energy use) and the parameters of the system and its environment. At run-time, we predict future changes in these parameters by applying piece-wise linear regression to online data obtained through monitoring, and we use the algebraic expressions to predict the impact of these changes on the system requirements. We demonstrate the application of PRESTO through simulation in case studies from two different domains.},
+  archive      = {J_TAAS},
+  author       = {Xinwei Fang and Sinem Getir Yaman and Radu Calinescu and Julie Wilson and Colin Paterson},
+  doi          = {10.1145/3632405},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {2},
+  number       = {1},
+  pages        = {6:1–25},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Predicting nonfunctional requirement violations in autonomous systems},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Dealing with drift of adaptation spaces in learning-based
+self-adaptive systems using lifelong self-adaptation. <em>TAAS</em>,
+<em>19</em>(1), 5:1–57. (<a
+href="https://doi.org/10.1145/3636428">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, machine learning (ML) has become a popular approach to support self-adaptation. ML has been used to deal with several problems in self-adaptation, such as maintaining an up-to-date runtime model under uncertainty and scalable decision-making. Yet, exploiting ML comes with inherent challenges. In this article, we focus on a particularly important challenge for learning-based self-adaptive systems: drift in adaptation spaces. With adaptation space, we refer to the set of adaptation options a self-adaptive system can select from to adapt at a given time based on the estimated quality properties of the adaptation options. A drift of adaptation spaces originates from uncertainties, affecting the quality properties of the adaptation options. Such drift may imply that the quality of the system may deteriorate, eventually, no adaptation option may satisfy the initial set of adaptation goals, or adaptation options may emerge that allow enhancing the adaptation goals. In ML, such a shift corresponds to a novel class appearance, a type of concept drift in target data that common ML techniques have problems dealing with. To tackle this problem, we present a novel approach to self-adaptation that enhances learning-based self-adaptive systems with a lifelong ML layer. We refer to this approach as lifelong self-adaptation . The lifelong ML layer tracks the system and its environment, associates this knowledge with the current learning tasks, identifies new tasks based on differences, and updates the learning models of the self-adaptive system accordingly. A human stakeholder may be involved to support the learning process and adjust the learning and goal models. We present a general architecture for lifelong self-adaptation and apply it to the case of drift of adaptation spaces that affects the decision-making in self-adaptation. We validate the approach for a series of scenarios with a drift of adaptation spaces using the DeltaIoT exemplar.},
+  archive      = {J_TAAS},
+  author       = {Omid Gheibi and Danny Weyns},
+  doi          = {10.1145/3636428},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {2},
+  number       = {1},
+  pages        = {5:1–57},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Dealing with drift of adaptation spaces in learning-based self-adaptive systems using lifelong self-adaptation},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Self-adaptive testing in the field. <em>TAAS</em>,
+<em>19</em>(1), 4:1–37. (<a
+href="https://doi.org/10.1145/3627163">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We are increasingly surrounded by systems connecting us with the digital world and facilitating our life by supporting our work, leisure, activities at home, health, and so on. These systems are pressed by two forces. On the one side, they operate in environments that are increasingly challenging due to uncertainty and uncontrollability. On the other side, they need to evolve, often in a continuous fashion, to meet changing needs, to offer new functionalities, or also to fix emerging failures. To make the picture even more complex, these systems rarely work in isolation and often need to collaborate with other systems, as well as humans. All such facets call for moving their validation during operation, as offered by approaches called testing in the field. In this article, we observe that even the field-based testing approaches should change over time to follow and adapt to the changes and evolution of collaborating systems or environments or users’ behaviors. We provide a taxonomy of this new category of testing that we call self-adaptive testing in the field (SATF) , together with a reference architecture for SATF approaches. To achieve this objective, we surveyed the literature and collected feedback and contributions from experts in the domain via a questionnaire and interviews.},
+  archive      = {J_TAAS},
+  author       = {Samira Silva and Patrizio Pelliccione and Antonia Bertolino},
+  doi          = {10.1145/3627163},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {2},
+  number       = {1},
+  pages        = {4:1–37},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Self-adaptive testing in the field},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Human–machine teaming with small unmanned aerial systems in
+a MAPE-k environment. <em>TAAS</em>, <em>19</em>(1), 3:1–35. (<a
+href="https://doi.org/10.1145/3618001">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Human Machine Teaming (HMT) paradigm focuses on supporting partnerships between humans and autonomous machines. HMT describes requirements for transparency, augmented cognition, and coordination that enable far richer partnerships than those found in typical human-on-the-loop and human-in-the-loop systems. Autonomous, self-adaptive systems in domains such as autonomous driving, robotics, and Cyber-Physical Systems, are often implemented using the MAPE-K feedback loop as the primary reference model. However, while MAPE-K enables fully autonomous behavior, it does not explicitly address the interactions that occur between humans and autonomous machines as intended by HMT. In this article, we, therefore, present the MAPE-K HMT framework, which utilizes runtime models to augment the monitoring, analysis, planning, and execution phases of the MAPE-K loop to support HMT despite the different operational cadences of humans and machines. We draw on examples from our own emergency response system of interactive, autonomous, small unmanned aerial systems to illustrate the application of MAPE-K HMT in both a simulated and physical environment, and we discuss how the various HMT models are connected and can be integrated into a MAPE-K solution.},
+  archive      = {J_TAAS},
+  author       = {Jane Cleland-Huang and Theodore Chambers and Sebastian Zudaire and Muhammed Tawfiq Chowdhury and Ankit Agrawal and Michael Vierhauser},
+  doi          = {10.1145/3618001},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {2},
+  number       = {1},
+  pages        = {3:1–35},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Human–machine teaming with small unmanned aerial systems in a MAPE-K environment},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Using genetic programming to build self-adaptivity into
+software-defined networks. <em>TAAS</em>, <em>19</em>(1), 2:1–35. (<a
+href="https://doi.org/10.1145/3616496">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Self-adaptation solutions need to periodically monitor, reason about, and adapt a running system. The adaptation step involves generating an adaptation strategy and applying it to the running system whenever an anomaly arises. In this article, we argue that rather than generating individual adaptation strategies, the goal should be to adapt the control logic of the running system in such a way that the system itself would learn how to steer clear of future anomalies, without triggering self-adaptation too frequently. Although the need for adaptation is never eliminated, especially noting the uncertain and evolving environment of complex systems, reducing the frequency of adaptation interventions is advantageous for various reasons, such as to increase performance and to make a running system more robust. We instantiate and empirically examine the preceding idea for software-defined networking—a key enabling technology for modern data centers and Internet of Things applications. Using genetic programming (GP), we propose a self-adaptation solution that continuously learns and updates the control constructs in the data-forwarding logic of a software-defined network. Our evaluation, performed using open source synthetic and industrial data, indicates that compared to a baseline adaptation technique that attempts to generate individual adaptations, our GP-based approach is more effective in resolving network congestion, and further, it reduces the frequency of adaptation interventions over time. In addition, we show that for networks with the same topology, reusing over larger networks the knowledge that is learned on smaller networks leads to significant improvements in the performance of our GP-based adaptation approach. Finally, we compare our approach against a standard data-forwarding algorithm from the network literature, demonstrating that our approach significantly reduces packet loss.},
+  archive      = {J_TAAS},
+  author       = {Jia Li and Shiva Nejati and Mehrdad Sabetzadeh},
+  doi          = {10.1145/3616496},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {2},
+  number       = {1},
+  pages        = {2:1–35},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Using genetic programming to build self-adaptivity into software-defined networks},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Foreword: SEAMS 2022 special issue. <em>TAAS</em>,
+<em>19</em>(1), 1:1–3. (<a
+href="https://doi.org/10.1145/3643642">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TAAS},
+  author       = {Bradley Schmerl and Javier Cámara and Martina Maggio},
+  doi          = {10.1145/3643642},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {2},
+  number       = {1},
+  pages        = {1:1–3},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Foreword: SEAMS 2022 special issue},
+  volume       = {19},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

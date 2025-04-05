@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AAMAS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="aamas---47">AAMAS - 47</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Monte carlo tree search algorithms for risk-aware and
+multi-objective reinforcement learning. <em>AAMAS</em>, <em>37</em>(2),
+1–37. (<a href="https://doi.org/10.1007/s10458-022-09596-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In many risk-aware and multi-objective reinforcement learning settings, the utility of the user is derived from a single execution of a policy. In these settings, making decisions based on the average future returns is not suitable. For example, in a medical setting a patient may only have one opportunity to treat their illness. Making decisions using just the expected future returns–known in reinforcement learning as the value–cannot account for the potential range of adverse or positive outcomes a decision may have. Therefore, we should use the distribution over expected future returns differently to represent the critical information that the agent requires at decision time by taking both the future and accrued returns into consideration. In this paper, we propose two novel Monte Carlo tree search algorithms. Firstly, we present a Monte Carlo tree search algorithm that can compute policies for nonlinear utility functions (NLU-MCTS) by optimising the utility of the different possible returns attainable from individual policy executions, resulting in good policies for both risk-aware and multi-objective settings. Secondly, we propose a distributional Monte Carlo tree search algorithm (DMCTS) which extends NLU-MCTS. DMCTS computes an approximate posterior distribution over the utility of the returns, and utilises Thompson sampling during planning to compute policies in risk-aware and multi-objective settings. Both algorithms outperform the state-of-the-art in multi-objective reinforcement learning for the expected utility of the returns.},
+  archive      = {J_AAMAS},
+  author       = {Hayes, Conor F. and Reymond, Mathieu and Roijers, Diederik M. and Howley, Enda and Mannion, Patrick},
+  doi          = {10.1007/s10458-022-09596-0},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-37},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Monte carlo tree search algorithms for risk-aware and multi-objective reinforcement learning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A novel policy-graph approach with natural language and
+counterfactual abstractions for explaining reinforcement learning
+agents. <em>AAMAS</em>, <em>37</em>(2), 1–37. (<a
+href="https://doi.org/10.1007/s10458-023-09615-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As reinforcement learning (RL) continues to improve and be applied in situations alongside humans, the need to explain the learned behaviors of RL agents to end-users becomes more important. Strategies for explaining the reasoning behind an agent’s policy, called policy-level explanations, can lead to important insights about both the task and the agent’s behaviors. Following this line of research, in this work, we propose a novel approach, named as CAPS, that summarizes an agent’s policy in the form of a directed graph with natural language descriptions. A decision tree based clustering method is utilized to abstract the state space of the task into fewer, condensed states which makes the policy graphs more digestible to end-users. We then use the user-defined predicates to enrich the abstract states with semantic meaning. To introduce counterfactual state explanations to the policy graph, we first identify the critical states in the graph then develop a novel counterfactual explanation method based on action perturbation in those critical states. We generate explanation graphs using CAPS on 5 RL tasks, using both deterministic and stochastic policies. We also evaluate the effectiveness of CAPS on human participants who are not RL experts in two user studies. When provided with our explanation graph, end-users are able to accurately interpret policies of trained RL agents 80\% of the time, compared to 10\% when provided with the next best baseline and $$68.2\%$$ of users demonstrated an increase in their confidence in understanding an agent’s behavior after provided with the counterfactual explanations.},
+  archive      = {J_AAMAS},
+  author       = {Liu, Tongtong and McCalmon, Joe and Le, Thai and Rahman, Md Asifur and Lee, Dongwon and Alqahtani, Sarra},
+  doi          = {10.1007/s10458-023-09615-8},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-37},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {A novel policy-graph approach with natural language and counterfactual abstractions for explaining reinforcement learning agents},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). ASN: Action semantics network for multiagent reinforcement
+learning. <em>AAMAS</em>, <em>37</em>(2), 1–37. (<a
+href="https://doi.org/10.1007/s10458-023-09628-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In multiagent systems (MASs), each agent makes individual decisions but all contribute globally to the system’s evolution. Learning in MASs is difficult since each agent’s selection of actions must take place in the presence of other co-learning agents. Moreover, the environmental stochasticity and uncertainties increase exponentially with the number of agents. Previous works borrow various multiagent coordination mechanisms for use in deep learning architectures to facilitate multiagent coordination. However, none of them explicitly consider that different actions can have different influence on other agents, which we call the action semantics. In this paper, we propose a novel network architecture, named Action Semantics Network (ASN), that explicitly represents such action semantics between agents. ASN characterizes different actions’ influence on other agents using neural networks based on the action semantics between them. ASN can be easily combined with existing deep reinforcement learning (DRL) algorithms to boost their performance. Experimental results on StarCraft II micromanagement and Neural MMO show that ASN significantly improves the performance of state-of-the-art DRL approaches, compared with several other network architectures. We also successfully deploy ASN to a popular online MMORPG game called Justice Online, which indicates a promising future for ASN to be applied in even more complex scenarios.},
+  archive      = {J_AAMAS},
+  author       = {Yang, Tianpei and Wang, Weixun and Hao, Jianye and Taylor, Matthew E. and Liu, Yong and Hao, Xiaotian and Hu, Yujing and Chen, Yingfeng and Fan, Changjie and Ren, Chunxu and Huang, Ye and Zhu, Jiangcheng and Gao, Yang},
+  doi          = {10.1007/s10458-023-09628-3},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-37},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {ASN: Action semantics network for multiagent reinforcement learning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Actor-critic multi-objective reinforcement learning for
+non-linear utility functions. <em>AAMAS</em>, <em>37</em>(2), 1–30. (<a
+href="https://doi.org/10.1007/s10458-023-09604-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a novel multi-objective reinforcement learning algorithm that successfully learns the optimal policy even for non-linear utility functions. Non-linear utility functions pose a challenge for SOTA approaches, both in terms of learning efficiency as well as the solution concept. A key insight is that, by proposing a critic that learns a multi-variate distribution over the returns, which is then combined with accumulated rewards, we can directly optimize on the utility function, even if it is non-linear. This allows us to vastly increase the range of problems that can be solved compared to those which can be handled by single-objective methods or multi-objective methods requiring linear utility functions, yet avoiding the need to learn the full Pareto front. We demonstrate our method on multiple multi-objective benchmarks, and show that it learns effectively where baseline approaches fail.},
+  archive      = {J_AAMAS},
+  author       = {Reymond, Mathieu and Hayes, Conor F. and Steckelmacher, Denis and Roijers, Diederik M. and Nowé, Ann},
+  doi          = {10.1007/s10458-023-09604-x},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-30},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Actor-critic multi-objective reinforcement learning for non-linear utility functions},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Teacher-apprentices RL (TARL): Leveraging complex policy
+distribution through generative adversarial hypernetwork in
+reinforcement learning. <em>AAMAS</em>, <em>37</em>(2), 1–30. (<a
+href="https://doi.org/10.1007/s10458-023-09606-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Typically, a Reinforcement Learning (RL) algorithm focuses in learning a single deployable policy as the end product. Depending on the initialization methods and seed randomization, learning a single policy could possibly leads to convergence to different local optima across different runs, especially when the algorithm is sensitive to hyper-parameter tuning. Motivated by the capability of Generative Adversarial Networks (GANs) in learning complex data manifold, the adversarial training procedure could be utilized to learn a population of good-performing policies instead. We extend the teacher-student methodology observed in the Knowledge Distillation field in typical deep neural network prediction tasks to RL paradigm. Instead of learning a single compressed student network, an adversarially-trained generative model (hypernetwork) is learned to output network weights of a population of good-performing policy networks, representing a school of apprentices. Our proposed framework, named Teacher-Apprentices RL (TARL), is modular and could be used in conjunction with many existing RL algorithms. We illustrate the performance gain and improved robustness by combining TARL with various types of RL algorithms, including direct policy search Cross-Entropy Method, Q-learning, Actor-Critic, and policy gradient-based methods.},
+  archive      = {J_AAMAS},
+  author       = {Tang, Shi Yuan and Irissappane, Athirai A. and Oliehoek, Frans A. and Zhang, Jie},
+  doi          = {10.1007/s10458-023-09606-9},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-30},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Teacher-apprentices RL (TARL): Leveraging complex policy distribution through generative adversarial hypernetwork in reinforcement learning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Symbolic knowledge injection meets intelligent agents: QoS
+metrics and experiments. <em>AAMAS</em>, <em>37</em>(2), 1–30. (<a
+href="https://doi.org/10.1007/s10458-023-09609-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bridging intelligent symbolic agents and sub-symbolic predictors is a long-standing research goal in AI. Among the recent integration efforts, symbolic knowledge injection (SKI) proposes algorithms aimed at steering sub-symbolic predictors’ learning towards compliance w.r.t. pre-existing symbolic knowledge bases. However, state-of-the-art contributions about SKI mostly tackle injection from a foundational perspective, often focussing solely on improving the predictive performance of the sub-symbolic predictors undergoing injection. Technical contributions, in turn, are tailored on individual methods/experiments and therefore poorly interoperable with agent technologies as well as among each others. Intelligent agents may exploit SKI to serve many purposes other than predictive performance alone—provided that, of course, adequate technological support exists: for instance, SKI may allow agents to tune computational, energetic, or data requirements of sub-symbolic predictors. Given that different algorithms may exist to serve all those many purposes, some criteria for algorithm selection as well as a suitable technology should be available to let agents dynamically select and exploit the most suitable algorithm for the problem at hand. Along this line, in this work we design a set of quality-of-service (QoS) metrics for SKI, and a general-purpose software API to enable their application to various SKI algorithms—namely, platform for symbolic knowledge injection (PSyKI). We provide an abstract formulation of four QoS metrics for SKI, and describe the design of PSyKI according to a software engineering perspective. Then we discuss how our QoS metrics are supported by PSyKI. Finally, we demonstrate the effectiveness of both our QoS metrics and PSyKI via a number of experiments, where SKI is both applied and assessed via our proposed API. Our empirical analysis demonstrates both the soundness of our proposed metrics and the versatility of PSyKI as the first software tool supporting the application, interchange, and numerical assessment of SKI techniques. To the best of our knowledge, our proposals represent the first attempt to introduce QoS metrics for SKI, and the software tools enabling their practical exploitation for both human and computational agents. In particular, our contributions could be exploited to automate and/or compare the manifold SKI algorithms from the state of the art. Hence moving a concrete step forward the engineering of efficient, robust, and trustworthy software applications that integrate symbolic agents and sub-symbolic predictors.},
+  archive      = {J_AAMAS},
+  author       = {Agiollo, Andrea and Rafanelli, Andrea and Magnini, Matteo and Ciatto, Giovanni and Omicini, Andrea},
+  doi          = {10.1007/s10458-023-09609-6},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-30},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Symbolic knowledge injection meets intelligent agents: QoS metrics and experiments},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Using psychological characteristics of situations for social
+situation comprehension in support agents. <em>AAMAS</em>,
+<em>37</em>(2), 1–29. (<a
+href="https://doi.org/10.1007/s10458-023-09605-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Support agents that help users in their daily lives need to take into account not only the user’s characteristics, but also the social situation of the user. Existing work on including social context uses some type of situation cue as an input to information processing techniques in order to assess the expected behavior of the user. However, research shows that it is important to also determine the meaning of a situation, a step which we refer to as social situation comprehension. We propose using psychological characteristics of situations, which have been proposed in social science for ascribing meaning to situations, as the basis for social situation comprehension. Using data from user studies, we evaluate this proposal from two perspectives. First, from a technical perspective, we show that psychological characteristics of situations can be used as input to predict the priority of social situations, and that psychological characteristics of situations can be predicted from the features of a social situation. Second, we investigate the role of the comprehension step in human–machine meaning making. We show that psychological characteristics can be successfully used as a basis for explanations given to users about the decisions of an agenda management personal assistant agent.},
+  archive      = {J_AAMAS},
+  author       = {Kola, Ilir and Jonker, Catholijn M. and Riemsdijk, M. Birna van},
+  doi          = {10.1007/s10458-023-09605-w},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-29},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Using psychological characteristics of situations for social situation comprehension in support agents},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A family of strategyproof mechanisms for activity
+scheduling. <em>AAMAS</em>, <em>37</em>(2), 1–29. (<a
+href="https://doi.org/10.1007/s10458-023-09624-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent years have seen various designs of strategyproof mechanisms in the facility location game and the obnoxious facility game, by considering the facility’s geo-location as a point in the spatial domain. In this paper, we extend this point to be a continuous interval, and study a novel activity scheduling game to schedule an activity in the normalized time domain [0, 1] based on all agents’ time reports for preferences/conflicts. The activity starts at time point y and lasts for a fixed time period of d with $$0\le d\le 1$$ . Each agent $$i\in N = {1, \cdots , n}$$ wants his preferred time interval $$[t_i,t_i+l_i]$$ to be close to or overlap with the activity interval $$[y,y+d]$$ . Since agents are heterogeneous, we consider each agent i has weight $$\alpha _i$$ or $$\beta _i$$ when the activity is scheduled after or before his time interval, respectively. Thus each agent i’s cost is his weight ( $$\alpha _i$$ or $$\beta _i$$ ) multiplied by the time difference between his time interval $$[t_i,t_i+l_i]$$ and the activity interval $$[y,y+d].$$ The social cost is the summation of all agents’ costs. In this game, agents’ preferred time intervals $$[t_i,t_i+l_i]$$ ’s are private information and they may misreport such information to the social planner. Our objective is to choose the activity starting time y so that the mechanisms are strategyproof (i.e., all agents should be truthful to report $$t_i$$ ’s and $$l_i$$ ’s) and perform well with respect to minimizing the social cost. We design a mechanism outputting an optimal solution and prove that it is group strategyproof. For the objective of minimizing the maximum cost among agents, we design another strategyproof mechanism with the approximation ratio $$1+\min {\alpha /\beta ,\beta /\alpha }$$ when $$\alpha _i=\alpha , \beta _i = \beta$$ for $$i\in N,$$ and prove it is the best strategyproof mechanism. In the obnoxious activity scheduling game, each agent prefers his conflicting time interval $$[t_i,t_i+l_i]$$ to be far away from the activity interval $$[y,y+d]$$ . We design deterministic and randomized group strategyproof mechanisms, and compare their provable approximation ratios to the lower bounds. Finally, we consider the cost/utility of each agent as a 0-1 indicator function and find group strategyproof mechanisms for minimizing the social cost and maximizing the social utility.},
+  archive      = {J_AAMAS},
+  author       = {Xu, Xinping and Zhang, Jingwen and Li, Minming and Duan, Lingjie and Xie, Lihua},
+  doi          = {10.1007/s10458-023-09624-7},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-29},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {A family of strategyproof mechanisms for activity scheduling},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Connected coordinated motion planning with bounded stretch.
+<em>AAMAS</em>, <em>37</em>(2), 1–29. (<a
+href="https://doi.org/10.1007/s10458-023-09626-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of connected coordinated motion planning for a large collective of simple, identical robots: From a given start grid configuration of robots, we need to reach a desired target configuration via a sequence of parallel, collision-free robot motions, such that the set of robots induces a connected grid graph at all integer times. The objective is to minimize the makespan of the motion schedule, i.e., to reach the new configuration in a minimum amount of time. We show that this problem is NP-complete, even for deciding whether a makespan of 2 can be achieved, while it is possible to check in polynomial time whether a makespan of 1 can be achieved. On the algorithmic side, we establish simultaneous constant-factor approximation for two fundamental parameters, by achieving constant stretch for constant scale. Scaled shapes (which arise by increasing all dimensions of a given object by the same multiplicative factor) have been considered in previous seminal work on self-assembly, often with unbounded or logarithmic scale factors; we provide methods for a generalized scale factor, bounded by a constant. Moreover, our algorithm achieves a constant stretch factor: If mapping the start configuration to the target configuration requires a maximum Manhattan distance of d, then the total duration of our overall schedule is $$\mathcal {O}(d)$$ , which is optimal up to constant factors.},
+  archive      = {J_AAMAS},
+  author       = {Fekete, Sándor P. and Keldenich, Phillip and Kosfeld, Ramin and Rieck, Christian and Scheffer, Christian},
+  doi          = {10.1007/s10458-023-09626-5},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-29},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Connected coordinated motion planning with bounded stretch},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithms for partially robust team formation.
+<em>AAMAS</em>, <em>37</em>(2), 1–45. (<a
+href="https://doi.org/10.1007/s10458-023-09608-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In one of its simplest forms, Team Formation involves deploying the least expensive team of agents while covering a set of skills. While current algorithms are reasonably successful in computing the best teams, the resilience to change of such solutions remains an important concern: Once a team has been formed, some of the agents considered at start may be finally defective and some skills may become uncovered. Two recently introduced solution concepts deal with this issue proactively: 1) form a team which is robust to changes so that after some agent losses, all skills remain covered, and 2) opt for a recoverable team, i.e., it can be &quot;repaired&quot; in the worst case by hiring new agents while keeping the overall deployment cost minimal. In this paper, we introduce the problem of partially robust team formation (PR–TF). Partial robustness is a weaker form of robustness which guarantees a certain degree of skill coverage after some agents are lost. We analyze the computational complexity of PR-TF and provide two complete algorithms for it. We compare the performance of our algorithms with the existing methods for robust and recoverable team formation on several existing and newly introduced benchmarks. Our empirical study demonstrates that partial robustness offers an interesting trade-off between (full) robustness and recoverability in terms of computational efficiency, skill coverage guaranteed after agent losses and repairability. This paper is an extended and revised version of as reported by (Schwind et al., Proceedings of the 20th International Conference on Autonomous Agents and Multiagent Systems (AAMAS’21), pp. 1154–1162, 2021).},
+  archive      = {J_AAMAS},
+  author       = {Schwind, Nicolas and Demirović, Emir and Inoue, Katsumi and Lagniez, Jean-Marie},
+  doi          = {10.1007/s10458-023-09608-7},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-45},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Algorithms for partially robust team formation},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Parameterized complexity of multiwinner determination: More
+effort towards fixed-parameter tractability. <em>AAMAS</em>,
+<em>37</em>(2), 1–35. (<a
+href="https://doi.org/10.1007/s10458-023-09610-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the parameterized complexity of winner determination problems for three prevalent k-committee selection rules, namely the minimax approval voting (MAV), the proportional approval voting (PAV), and the Chamberlin–Courant’s approval voting (CCAV). It is known that these problems are computationally hard. Although they have been studied from the parameterized complexity point of view with respect to several natural parameters, many of them turned out to be W[1]-hard or W[2]-hard. Aiming at obtaining plentiful fixed-parameter algorithms, we revisit these problems by considering more natural single parameters, combined parameters, and structural parameters.},
+  archive      = {J_AAMAS},
+  author       = {Yang, Yongjie and Wang, Jianxin},
+  doi          = {10.1007/s10458-023-09610-z},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-35},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Parameterized complexity of multiwinner determination: More effort towards fixed-parameter tractability},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A performance-impact based multi-task distributed scheduling
+algorithm with task removal inference and deadlock avoidance.
+<em>AAMAS</em>, <em>37</em>(2), 1–26. (<a
+href="https://doi.org/10.1007/s10458-023-09611-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-task distributed scheduling (MTDS) remains a challenging problem for multi-agent systems used for uncertain and dynamic real-world tasks such as search-and-rescue. The Performance Impact (PI) algorithm is an excellent solution for MTDS, but it suffers from the problem of non-convergence that it may fall into an infinite cycle of exchanging the same task. In this paper, we improve the PI algorithm through the integration of a task removal inference strategy and a deadlock avoidance mechanism. Specifically, the task removal inference strategy results in better exploration performance than the original PI, improving the suboptimal solutions caused by the heuristics for local task selection as done in PI. In addition, we design a deadlock avoidance mechanism that limits the number of times of removing the same task and isolating consecutive inclusions of the same task. Therefore, it guarantees the convergence of the MTDS algorithm. We demonstrate the advantage of the proposed algorithm over the original PI algorithm through Monte Carlo simulation of the search-and-rescue task. The results show that the proposed algorithm can obtain a lower average time cost and the highest total allocation number.},
+  archive      = {J_AAMAS},
+  author       = {Li, Jie and Chen, Runfeng and Wang, Chang and Chen, Yiting and Huang, Yuchong and Wang, Xiangke},
+  doi          = {10.1007/s10458-023-09611-y},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {A performance-impact based multi-task distributed scheduling algorithm with task removal inference and deadlock avoidance},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Non-chaotic limit sets in multi-agent learning.
+<em>AAMAS</em>, <em>37</em>(2), 1–24. (<a
+href="https://doi.org/10.1007/s10458-023-09612-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Non-convergence is an inherent aspect of adaptive multi-agent systems, and even basic learning models, such as the replicator dynamics, are not guaranteed to equilibriate. Limit cycles, and even more complicated chaotic sets are in fact possible even in rather simple games, including variants of the Rock-Paper-Scissors game. A key challenge of multi-agent learning theory lies in characterization of these limit sets, based on qualitative features of the underlying game. Although chaotic behavior in learning dynamics can be precluded by the celebrated Poincaré–Bendixson theorem, it is only applicable directly to low-dimensional settings. In this work, we attempt to find other characteristics of a game that can force regularity in the limit sets of learning. We show that behavior consistent with the Poincaré–Bendixson theorem (limit cycles, but no chaotic attractor) follows purely from the topological structure of interactions, even for high-dimensional settings with an arbitrary number of players, and arbitrary payoff matrices. We prove our result for a wide class of follow-the-regularized leader (FoReL) dynamics, which generalize replicator dynamics, for binary games characterized interaction graphs where the payoffs of each player are only affected by one other player (i.e., interaction graphs of indegree one). Moreover, for cyclic games we provide further insight into the planar structure of limit sets, and in particular limit cycles. We propose simple conditions under which learning comes with efficiency guarantees, implying that FoReL learning achieves time-averaged sum of payoffs at least as good as that of a Nash equilibrium, thereby connecting the topology of the dynamics to social-welfare analysis.},
+  archive      = {J_AAMAS},
+  author       = {Czechowski, Aleksander and Piliouras, Georgios},
+  doi          = {10.1007/s10458-023-09612-x},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Non-chaotic limit sets in multi-agent learning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Combining theory of mind and abductive reasoning in
+agent-oriented programming. <em>AAMAS</em>, <em>37</em>(2), 1–41. (<a
+href="https://doi.org/10.1007/s10458-023-09613-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a novel model, called TomAbd, that endows autonomous agents with Theory of Mind capabilities. TomAbd agents are able to simulate the perspective of the world that their peers have and reason from their perspective. Furthermore, TomAbd agents can reason from the perspective of others down to an arbitrary level of recursion, using Theory of Mind of $$n^{\text {th}}$$ order. By combining the previous capability with abductive reasoning, TomAbd agents can infer the beliefs that others were relying upon to select their actions, hence putting them in a more informed position when it comes to their own decision-making. We have tested the TomAbd model in the challenging domain of Hanabi, a game characterised by cooperation and imperfect information. Our results show that the abilities granted by the TomAbd model boost the performance of the team along a variety of metrics, including final score, efficiency of communication, and uncertainty reduction.},
+  archive      = {J_AAMAS},
+  author       = {Montes, Nieves and Luck, Michael and Osman, Nardine and Rodrigues, Odinaldo and Sierra, Carles},
+  doi          = {10.1007/s10458-023-09613-w},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-41},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Combining theory of mind and abductive reasoning in agent-oriented programming},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Deploying vaccine distribution sites for improved
+accessibility and equity to support pandemic response. <em>AAMAS</em>,
+<em>37</em>(2), 1–19. (<a
+href="https://doi.org/10.1007/s10458-023-09614-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In response to COVID-19, many countries have mandated social distancing and banned large group gatherings in order to slow down the spread of SARS-CoV-2. These social interventions along with vaccines remain the best way forward to reduce the spread of SARS CoV-2. In order to increase vaccine accessibility, states such as Virginia have deployed mobile vaccination centers to distribute vaccines across the state. When choosing where to place these sites, there are two important factors to take into account: accessibility and equity. We formulate a combinatorial problem that captures these factors and then develop efficient algorithms with theoretical guarantees on both of these aspects. Furthermore, we study the inherent hardness of the problem, and demonstrate strong impossibility results. Finally, we run computational experiments on real-world data to show the efficacy of our methods.},
+  archive      = {J_AAMAS},
+  author       = {Li, George Z. and Li, Ann and Marathe, Madhav and Srinivasan, Aravind and Tsepenekas, Leonidas and Vullikanti, Anil},
+  doi          = {10.1007/s10458-023-09614-9},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-19},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Deploying vaccine distribution sites for improved accessibility and equity to support pandemic response},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Balancing fairness and efficiency in traffic routing via
+interpolated traffic assignment. <em>AAMAS</em>, <em>37</em>(2), 1–40.
+(<a href="https://doi.org/10.1007/s10458-023-09616-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {System optimum (SO) routing, wherein the total travel time of all users is minimized, is a holy grail for transportation authorities. However, SO routing may discriminate against users who incur much larger travel times than others to achieve high system efficiency, i.e., low total travel times. To address the inherent unfairness of SO routing, we study the $${\beta }$$ -fair SO problem whose goal is to minimize the total travel time while guaranteeing a $${\beta \ge 1}$$ level of unfairness, which specifies the maximum possible ratio between the travel times of different users with shared origins and destinations. To obtain feasible solutions to the $${\beta }$$ -fair SO problem while achieving high system efficiency, we develop a new convex program, the interpolated traffic assignment problem (I-TAP), which interpolates between a fairness-promoting and an efficiency-promoting traffic-assignment objective. We evaluate the efficacy of I-TAP through theoretical bounds on the total system travel time and level of unfairness in terms of its interpolation parameter, as well as present a numerical comparison between I-TAP and a state-of-the-art algorithm on a range of transportation networks. The numerical results indicate that our approach is faster by several orders of magnitude as compared to the benchmark algorithm, while achieving higher system efficiency for all desirable levels of unfairness. We further leverage the structure of I-TAP to develop two pricing mechanisms to collectively enforce the I-TAP solution in the presence of selfish homogeneous and heterogeneous users, respectively, that independently choose routes to minimize their own travel costs. We mention that this is the first study of pricing in the context of fair routing for general road networks (as opposed to, e.g., parallel road networks).},
+  archive      = {J_AAMAS},
+  author       = {Jalota, Devansh and Solovey, Kiril and Tsao, Matthew and Zoepf, Stephen and Pavone, Marco},
+  doi          = {10.1007/s10458-023-09616-7},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-40},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Balancing fairness and efficiency in traffic routing via interpolated traffic assignment},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A normative approach for resilient multiagent systems.
+<em>AAMAS</em>, <em>37</em>(2), 1–40. (<a
+href="https://doi.org/10.1007/s10458-023-09627-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We model a multiagent system (MAS) in socio-technical terms, combining a social layer consisting of norms with a technical layer consisting of actions that the agents execute. This approach emphasizes autonomy, and makes assumptions about both the social and technical layers explicit. Autonomy means that agents may violate norms. In our approach, agents are computational entities, with each representing a different stakeholder. We express stakeholder requirements of the form that a MAS is resilient in that it can recover (sufficiently) from a failure within a (sufficiently short) duration. We present ReNo, a framework that computes probabilistic and temporal guarantees on whether the underlying requirements are met or, if failed, recovered. ReNo supports the refinement of the specification of a socio-technical system through methodological guidelines to meet the stated requirements. An important contribution of ReNo is that it shows how the social and technical layers can be modeled jointly to enable the construction of resilient systems of autonomous agents. We demonstrate ReNo using a manufacturing scenario with competing public, industrial, and environmental requirements.},
+  archive      = {J_AAMAS},
+  author       = {Mahala, Geeta and Kafalı, Özgür and Dam, Hoa and Ghose, Aditya and Singh, Munindar P.},
+  doi          = {10.1007/s10458-023-09627-4},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-40},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {A normative approach for resilient multiagent systems},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Full communication memory networks for team-level
+cooperation learning. <em>AAMAS</em>, <em>37</em>(2), 1–20. (<a
+href="https://doi.org/10.1007/s10458-023-09617-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Communication in multi-agent systems is a key driver of team-level cooperation, for instance allowing individual agents to augment their knowledge about the world in partially-observable environments. In this paper, we propose two reinforcement learning-based multi-agent models, namely FCMNet and FCMTran. The two models both allow agents to simultaneously learn a differentiable communication mechanism that connects all agents as well as a common, cooperative policy conditioned upon received information. FCMNet utilizes multiple directional Long Short-Term Memory chains to sequentially transmit and encode the current observation-based messages sent by every other agent at each timestep. FCMTran further relies on the encoder of a modified transformer to simultaneously aggregate multiple self-generated messages sent by all agents at the previous timestep into a single message that is used in the current timestep. Results from evaluating our models on a challenging set of StarCraft II micromanagement tasks with shared rewards show that FCMNet and FCMTran both outperform recent communication-based methods and value decomposition methods in almost all tested StarCraft II micromanagement tasks. We further improve the performance of our models by combining them with value decomposition techniques; there, in particular, we show that FCMTran with value decomposition significantly pushes the state-of-the-art on one of the hardest benchmark tasks without any task-specific tuning. We also investigate the robustness of FCMNet under communication disturbances (i.e., binarized messages, random message loss, and random communication order) in an asymmetric collaborative pathfinding task with individual rewards, demonstrating FMCNet’s potential applicability in real-world robotic tasks.},
+  archive      = {J_AAMAS},
+  author       = {Wang, Yutong and Wang, Yizhuo and Sartoretti, Guillaume},
+  doi          = {10.1007/s10458-023-09617-6},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-20},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Full communication memory networks for team-level cooperation learning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A multi-scenario approach to continuously learn and
+understand norm violations. <em>AAMAS</em>, <em>37</em>(2), 1–57. (<a
+href="https://doi.org/10.1007/s10458-023-09619-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Using norms to guide and coordinate interactions has gained tremendous attention in the multiagent community. However, new challenges arise as the interest moves towards dynamic socio-technical systems, where human and software agents interact, and interactions are required to adapt to changing human needs. For instance, different agents (human or software) might not have the same understanding of what it means to violate a norm (e.g., what characterizes hate speech), or their understanding of a norm might change over time (e.g., what constitutes an acceptable response time). The challenge is to address these issues by learning to detect norm violations from the limited interaction data and to explain the reasons for such violations. To do that, we propose a framework that combines Machine Learning (ML) models and incremental learning techniques. Our proposal is equipped to solve tasks in both tabular and text classification scenarios. Incremental learning is used to continuously update the base ML models as interactions unfold, ensemble learning is used to handle the imbalance class distribution of the interaction stream, Pre-trained Language Model (PLM) is used to learn from text sentences, and Integrated Gradients (IG) is the interpretability algorithm. We evaluate the proposed approach in the use case of Wikipedia article edits, where interactions revolve around editing articles, and the norm in question is prohibiting vandalism. Results show that the proposed framework can learn to detect norm violation in a setting with data imbalance and concept drift.},
+  archive      = {J_AAMAS},
+  author       = {Freitas dos Santos, Thiago and Osman, Nardine and Schorlemmer, Marco},
+  doi          = {10.1007/s10458-023-09619-4},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-57},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {A multi-scenario approach to continuously learn and understand norm violations},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Classifying ambiguous identities in hidden-role stochastic
+games with multi-agent reinforcement learning. <em>AAMAS</em>,
+<em>37</em>(2), 1–27. (<a
+href="https://doi.org/10.1007/s10458-023-09620-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-agent reinforcement learning (MARL) is a prevalent learning paradigm for solving stochastic games. In most MARL studies, agents in a game are defined as teammates or enemies beforehand, and the relationships among the agents (i.e., their identities) remain fixed throughout the game. However, in real-world problems, the agent relationships are commonly unknown in advance or dynamically changing. Many multi-party interactions start off by asking: who is on my team? This question arises whether it is the first day at the stock exchange or the kindergarten. Therefore, training policies for such situations in the face of imperfect information and ambiguous identities is an important problem that needs to be addressed. In this work, we develop a novel identity detection reinforcement learning (IDRL) framework that allows an agent to dynamically infer the identities of nearby agents and select an appropriate policy to accomplish the task. In the IDRL framework, a relation network is constructed to deduce the identities of other agents by observing the behaviors of the agents. A danger network is optimized to estimate the risk of false-positive identifications. Beyond that, we propose an intrinsic reward that balances the need to maximize external rewards and accurate identification. After identifying the cooperation-competition pattern among the agents, IDRL applies one of the off-the-shelf MARL methods to learn the policy. To evaluate the proposed method, we conduct experiments on Red-10 card-shedding game, and the results show that IDRL achieves superior performance over other state-of-the-art MARL methods. Impressively, the relation network has the par performance to identify the identities of agents with top human players; the danger network reasonably avoids the risk of imperfect identification. The code to reproduce all the reported results is available online at https://github.com/MR-BENjie/IDRL .},
+  archive      = {J_AAMAS},
+  author       = {Han, Shijie and Li, Siyuan and An, Bo and Zhao, Wei and Liu, Peng},
+  doi          = {10.1007/s10458-023-09620-x},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Classifying ambiguous identities in hidden-role stochastic games with multi-agent reinforcement learning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Hardness of candidate nomination. <em>AAMAS</em>,
+<em>37</em>(2), 1–33. (<a
+href="https://doi.org/10.1007/s10458-023-09622-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider elections where the set of candidates is split into parties and each party can nominate just one candidate. We study the computational complexity of two problems. The Possible President problem asks whether a given party candidate can become the unique winner of the election for some nominations from other parties. The Necessary President is the problem to decide whether a given candidate will be the unique winner of the election for any possible nominations from other parties. We consider several different voting rules and show that for all of them the Possible President problem is NP-complete, even if the size of each party is at most two; for some voting rules we prove that the Necessary President is coNP-complete. Further, we formulate integer programs to solve the Possible President and Necessary President problems and test them on real and artificial data.},
+  archive      = {J_AAMAS},
+  author       = {Cechlárová, Katarína and Lesca, Julien and Trellová, Diana and Hančová, Martina and Hanč, Jozef},
+  doi          = {10.1007/s10458-023-09622-9},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-33},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Hardness of candidate nomination},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023b). Fairness criteria for allocating indivisible chores:
+Connections and efficiencies. <em>AAMAS</em>, <em>37</em>(2), 1–39. (<a
+href="https://doi.org/10.1007/s10458-023-09618-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study several fairness notions in allocating indivisible chores (i.e., items with disutilities) to agents who have additive and submodular cost functions. The fairness criteria we are concerned with are envy-free up to any item, envy-free up to one item, maximin share (MMS), and pairwise maximin share (PMMS), which are proposed as relaxations of envy-freeness in the setting of additive cost functions. For allocations under each fairness criterion, we establish their approximation guarantee for other fairness criteria. Under the additive setting, our results show strong connections between these fairness criteria and, at the same time, reveal intrinsic differences between goods allocation and chores allocation. However, such strong relationships cannot be inherited by the submodular setting, under which PMMS and MMS are no longer relaxations of envy-freeness and, even worse, few non-trivial guarantees exist. We also investigate efficiency loss under these fairness constraints and establish their prices of fairness.},
+  archive      = {J_AAMAS},
+  author       = {Sun, Ankang and Chen, Bo and Doan, Xuan Vinh},
+  doi          = {10.1007/s10458-023-09618-5},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-39},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Fairness criteria for allocating indivisible chores: Connections and efficiencies},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Effect of asynchronous execution and imperfect communication
+on max-sum belief propagation. <em>AAMAS</em>, <em>37</em>(2), 1–28. (<a
+href="https://doi.org/10.1007/s10458-023-09621-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Max-sum is a version of belief propagation that was adapted for solving distributed constraint optimization problems. It has been studied theoretically and empirically, extended to versions that improve solution quality and converge rapidly, and is applicable to multiple distributed applications. The algorithm was presented both as synchronous and asynchronous algorithms. However, neither the differences in the performance of the two execution versions nor the implications of imperfect communication (i.e., massage delay and message loss) on the two versions have been investigated to the best of our knowledge. We contribute to the body of knowledge on Max-sum by: (1) Establishing the theoretical differences between the two execution versions of the algorithm, focusing on the construction of beliefs; (2) Empirically evaluating the differences between the solutions generated by the two versions of the algorithm, with and without message delay or loss; and (3) Establishing both theoretically and empirically the positive effect of damping on reducing the differences between the two versions. Our results indicate that, in contrast to recent published results indicating that message latency has a drastic (positive) effect on the performance of distributed local search algorithms, the effect of imperfect communication on Damped Max-sum (DMS) is minor. The version of Max-sum that includes both damping and splitting of function nodes converges to high quality solutions very fast, even when a large percentage of the messages sent by agents do not arrive at their destinations. Moreover, the quality of solutions in the different versions of DMS is dependent of the number of messages that were received by the agents, regardless of the amount of time they were delayed or if these messages are only a portion of the total number of messages that was sent by the agents.},
+  archive      = {J_AAMAS},
+  author       = {Zivan, Roie and Rachmut, Ben and Perry, Omer and Yeoh, William},
+  doi          = {10.1007/s10458-023-09621-w},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-28},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Effect of asynchronous execution and imperfect communication on max-sum belief propagation},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Generating and choosing organisations for multi-agent
+systems. <em>AAMAS</em>, <em>37</em>(2), 1–46. (<a
+href="https://doi.org/10.1007/s10458-023-09623-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The design of organisations is a complex and laborious task. It is the subject of recent studies, which define models to automatically perform this task. However, existing models constrain the space of possible solutions by requiring a priori definitions of organisational roles and usually are not suitable for planning resource use. This paper presents GoOrg, a model that uses as input a set of goals and a set of available agents to generate different arrangements of organisational structures made up of synthesised organisational positions. The most distinguishing characteristics of GoOrg are the use of organisational positions instead of roles and that positions are automatically synthesised rather than required as a priori defined inputs. These characteristics facilitate the parametrisation, the use for resource planning and the chance of finding feasible solutions. This paper also introduces two model extensions, which define processes and constraints that illustrate how GoOrg suits different domains. Among aspects that surround an organisation design, this paper discusses models’ input, agents’ abstractions and resource planning.},
+  archive      = {J_AAMAS},
+  author       = {Amaral, Cleber J. and Hübner, Jomi F. and Cranefield, Stephen},
+  doi          = {10.1007/s10458-023-09623-8},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-46},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Generating and choosing organisations for multi-agent systems},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Price of anarchy of traffic assignment with exponential cost
+functions. <em>AAMAS</em>, <em>37</em>(2), 1–32. (<a
+href="https://doi.org/10.1007/s10458-023-09625-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid evolution of technology in connected automated and autonomous vehicles offers immense potential for revolutionizing future intelligent traffic control and management. This potential is exemplified by the diverse range of control paradigms, ranging from self-routing to centralized control. However, the selection among these paradigms is beyond technical consideration but a delicate balance between autonomous decision-making and holistic system optimization. A pivotal quantitative parameter in navigating this balance is the concept of the “price of anarchy” (PoA) inherent in autonomous decision frameworks. This paper analyses the price of anarchy for road networks with traffic of CAV. We model a traffic network as a routing game in which vehicles are selfish agents who choose routes to travel autonomously to minimize travel delays caused by road congestion. Unlike existing research in which the latency function of road congestion was based on polynomial functions like the well-known BPR function, we focus on routing games where an exponential function can specify the latency of road traffic. We first calculate a tight upper bound for the price of anarchy for this class of games and then compare this result with the tight upper bound of the PoA for routing games with the BPR latency function. The comparison shows that as long as the traffic volume is lower than the road capacity, the tight upper bound of the PoA of the games with the exponential function is lower than the corresponding value with the BPR function. Finally, numerical results based on real-world traffic data demonstrate that the exponential function can approximate road latency as close as the BPR function with even tighter exponential parameters, which results in a relatively lower upper bound.},
+  archive      = {J_AAMAS},
+  author       = {Qiao, Jianglin and de Jonge, Dave and Zhang, Dongmo and Simoff, Simeon and Sierra, Carles and Du, Bo},
+  doi          = {10.1007/s10458-023-09625-6},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-32},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Price of anarchy of traffic assignment with exponential cost functions},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). RGS <span class="math display"><sup>⊕</sup></span>: RDF
+graph synchronization for collaborative robotics. <em>AAMAS</em>,
+<em>37</em>(2), 1–49. (<a
+href="https://doi.org/10.1007/s10458-023-09629-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the context of collaborative robotics, distributed situation awareness is essential for supporting collective intelligence in teams of robots and human agents where it can be used for both individual and collective decision support. This is particularly important in applications pertaining to emergency rescue and crisis management. During operational missions, data and knowledge is gathered incrementally and in different ways by heterogeneous robots and humans. The purpose of this paper is to describe an RDF Graph Synchronization System called RGS $$^\oplus $$ . It is assumed that a dynamic set of agents provide or retrieve knowledge stored in their local RDF Graphs which are continuously synchronized between agents. The RGS $$^\oplus $$ System was designed to handle unreliable communication and does not rely on a static centralized infrastructure. It is capable of synchronizing knowledge as timely as possible and allows agents to access knowledge while it is incrementally acquired. A deeper empirical analysis of the RGS $$^\oplus $$ System is provided that shows both its efficiency and efficacy.},
+  archive      = {J_AAMAS},
+  author       = {Berger, Cyrille and Doherty, Patrick and Rudol, Piotr and Wzorek, Mariusz},
+  doi          = {10.1007/s10458-023-09629-2},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {2},
+  pages        = {1-49},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {RGS $$^\oplus $$: RDF graph synchronization for collaborative robotics},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Unavoidable deadends in deterministic partially observable
+contingent planning. <em>AAMAS</em>, <em>37</em>(1), 1–52. (<a
+href="https://doi.org/10.1007/s10458-022-09570-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditionally, a contingent plan, branching on the observations an agent obtains throughout plan execution, must reach a goal state from every possible initial state. However, in many real world problems, no such plan exists. Yet, there are plans that reach the goal from some initial states only. From the other initial states, they eventually reach a deadend—a state from which the goal can not be achieved. Deadends that cannot be avoided by resorting to a different plan, are called unavoidable deadends. In this paper we study planning with unavoidable deadends in belief space. We distinguish between two types of such deadends, and adapt offline and online contingent planners to identify and handle unavoidable deadends, using two approaches—an active approach that begins by distinguishing between the solvable and deadend states, and a lazy approach, that plans to achieve the goal, identifying deadends as they occur. We empirically analyze how each approach performs in different cases.},
+  archive      = {J_AAMAS},
+  author       = {Shtutland, Lera and Shmaryahu, Dorin and Brafman, Ronen I. and Shani, Guy},
+  doi          = {10.1007/s10458-022-09570-w},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-52},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Unavoidable deadends in deterministic partially observable contingent planning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Interference-free walks in time: Temporally disjoint paths.
+<em>AAMAS</em>, <em>37</em>(1), 1–22. (<a
+href="https://doi.org/10.1007/s10458-022-09583-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate the computational complexity of finding temporally disjoint paths and walks in temporal graphs. There, the edge set changes over discrete time steps. Temporal paths and walks use edges that appear at monotonically increasing time steps. Two paths (or walks) are temporally disjoint if they never visit the same vertex at the same time; otherwise, they interfere. This reflects applications in robotics, traffic routing, or finding safe pathways in dynamically changing networks. At one extreme, we show that on general graphs the problem is computationally hard. The path version is NP-hard even if we want to find only two temporally disjoint paths. The walk version is W-hard (Klobas in IJCAI 4090–4096, 2021) when parameterized by the number of walks. However, it is polynomial-time solvable for any constant number of walks. At the other extreme, restricting the input temporal graph to have a path as underlying graph, quite counter-intuitively, we find NP-hardness in general but also identify natural tractable cases.},
+  archive      = {J_AAMAS},
+  author       = {Klobas, Nina and Mertzios, George B. and Molter, Hendrik and Niedermeier, Rolf and Zschoche, Philipp},
+  doi          = {10.1007/s10458-022-09583-5},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-22},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Interference-free walks in time: Temporally disjoint paths},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Preference-based multi-objective multi-agent path finding.
+<em>AAMAS</em>, <em>37</em>(1), 1–22. (<a
+href="https://doi.org/10.1007/s10458-022-09593-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-Agent Path Finding (MAPF) is a well-studied problem that aims to generate collision-free paths for multiple agents while optimizing a single objective. However, many real-world applications require the consideration of multiple objectives. In this paper, we address a novel extension of MAPF, Multi-Objective MAPF (MOMAPF), that aims to optimize multiple given objectives while computing collision-free paths for all agents. In particular, we aim to incorporate the preferences of a decision maker over multi-agent path planning. Thus, we propose to solve a scalarized MOMAPF, whereby the given preferences of a decision maker are reflected by a weight value associated to each given objective and all weighted objectives are combined into one scalar. We introduce a solver for scalarized MOMAPF based on Conflict-Based Search (CBS) that incorporates an adapted path planner based on an evolutionary algorithm, the Genetic Algorithm (GA). We also introduce three practical objectives to consider in path planning: efficiency, safety, and smoothness. We evaluate the performance of our proposed method in function of the input parameters of GA on experimental simulations and we analyze its efficiency in providing conflict-free solutions within a fixed time.},
+  archive      = {J_AAMAS},
+  author       = {Ho, Florence and Nakadai, Shinji},
+  doi          = {10.1007/s10458-022-09593-3},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-22},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Preference-based multi-objective multi-agent path finding},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Towards combining commonsense reasoning and knowledge
+acquisition to guide deep learning. <em>AAMAS</em>, <em>37</em>(1),
+1–41. (<a href="https://doi.org/10.1007/s10458-022-09584-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Algorithms based on deep network models are being used for many pattern recognition and decision-making tasks in robotics and AI. Training these models requires a large labeled dataset and considerable computational resources, which are not readily available in many domains. Also, it is difficult to explore the internal representations and reasoning mechanisms of these models. As a step towards addressing the underlying knowledge representation, reasoning, and learning challenges, the architecture described in this paper draws inspiration from research in cognitive systems. As a motivating example, we consider an assistive robot trying to reduce clutter in any given scene by reasoning about the occlusion of objects and stability of object configurations in an image of the scene. In this context, our architecture incrementally learns and revises a grounding of the spatial relations between objects and uses this grounding to extract spatial information from input images. Non-monotonic logical reasoning with this information and incomplete commonsense domain knowledge is used to make decisions about stability and occlusion. For images that cannot be processed by such reasoning, regions relevant to the tasks at hand are automatically identified and used to train deep network models to make the desired decisions. Image regions used to train the deep networks are also used to incrementally acquire previously unknown state constraints that are merged with the existing knowledge for subsequent reasoning. Experimental evaluation performed using simulated and real-world images indicates that in comparison with baselines based just on deep networks, our architecture improves reliability of decision making and reduces the effort involved in training data-driven deep network models.},
+  archive      = {J_AAMAS},
+  author       = {Sridharan, Mohan and Mota, Tiago},
+  doi          = {10.1007/s10458-022-09584-4},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-41},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Towards combining commonsense reasoning and knowledge acquisition to guide deep learning},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Emotion contagion in agent-based simulations of crowds: A
+systematic review. <em>AAMAS</em>, <em>37</em>(1), 1–41. (<a
+href="https://doi.org/10.1007/s10458-022-09589-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Emotions are known to spread among people, a process known as emotion contagion. Both positive and negative emotions are believed to be contagious, but the mass spread of negative emotions has attracted the most attention due to its danger to society. The use of agent-based techniques to simulate emotion contagion in crowds has grown over the last decade and a range of contagion mechanisms and applications have been considered. With this review we aim to give a comprehensive overview of agent-based methods to implement emotion contagion in crowd simulations. We took a systematic approach and collected studies from Web of Science, Scopus, IEEE and ACM that propose agent-based models that include a process of emotion contagion in crowds. We classify the models in three categories based on the mechanism of emotion contagion and analyse the contagion mechanism, application and findings of the studies. Additionally, a broad overview is given of other agent characteristics that are commonly considered in the models. We conclude that there are fundamental theoretical differences among the mechanisms of emotion contagion that reflect a difference in view on the contagion process and its application, although findings from comparative studies are inconclusive. Further, while large theoretical progress has been made in recent years, empirical evaluation of the proposed models is lagging behind due to the complexity of reliably measuring emotions and context in large groups. We make several suggestions on a way forward regarding validation to eventually justify the application of models of emotion contagion in society.},
+  archive      = {J_AAMAS},
+  author       = {van Haeringen, E. S. and Gerritsen, C. and Hindriks, K. V.},
+  doi          = {10.1007/s10458-022-09589-z},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-41},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Emotion contagion in agent-based simulations of crowds: A systematic review},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Emergence of norms in interactions with complex rewards.
+<em>AAMAS</em>, <em>37</em>(1), 1–38. (<a
+href="https://doi.org/10.1007/s10458-022-09585-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous agents are becoming increasingly ubiquitous and are playing an increasing role in wide range of safety-critical systems, such as driverless cars, exploration robots and unmanned aerial vehicles. These agents operate in highly dynamic and heterogeneous environments, resulting in complex behaviour and interactions. Therefore, the need arises to model and understand more complex and nuanced agent interactions than have previously been studied. In this paper, we propose a novel agent-based modelling approach to investigating norm emergence, in which such interactions can be investigated. To this end, while there may be an ideal set of optimally compatible actions there are also combinations that have positive rewards and are also compatible. Our approach provides a step towards identifying the conditions under which globally compatible norms are likely to emerge in the context of complex rewards. Our model is illustrated using the motivating example of self-driving cars, and we present the scenario of an autonomous vehicle performing a left-turn at a T-intersection.},
+  archive      = {J_AAMAS},
+  author       = {Abeywickrama, Dhaminda B. and Griffiths, Nathan and Xu, Zhou and Mouzakitis, Alex},
+  doi          = {10.1007/s10458-022-09585-3},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-38},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Emergence of norms in interactions with complex rewards},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Using soft maximin for risk averse multi-objective
+decision-making. <em>AAMAS</em>, <em>37</em>(1), 1–36. (<a
+href="https://doi.org/10.1007/s10458-022-09586-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Balancing multiple competing and conflicting objectives is an essential task for any artificial intelligence tasked with satisfying human values or preferences. Conflict arises both from misalignment between individuals with competing values, but also between conflicting value systems held by a single human. Starting with principle of loss-aversion, we designed a set of soft maximin function approaches to multi-objective decision-making. Bench-marking these functions in a set of previously-developed environments, we found that one new approach in particular, ‘split-function exp-log loss aversion’ (SFELLA), learns faster than the state of the art thresholded alignment objective method Vamplew (Engineering Applications of Artificial Intelligenceg 100:104186, 2021) on three of four tasks it was tested on, and achieved the same optimal performance after learning. SFELLA also showed relative robustness improvements against changes in objective scale, which may highlight an advantage dealing with distribution shifts in the environment dynamics. We further compared SFELLA to the multi-objective reward exponentials (MORE) approach, and found that SFELLA performs similarly to MORE in a simple previously-described foraging task, but in a modified foraging environment with a new resource that was not depleted as the agent worked, SFELLA collected more of the new resource with very little cost incurred in terms of the old resource. Overall, we found SFELLA useful for avoiding problems that sometimes occur with a thresholded approach, and more reward-responsive than MORE while retaining its conservative, loss-averse incentive structure.},
+  archive      = {J_AAMAS},
+  author       = {Smith, Benjamin J. and Klassert, Robert and Pihlakas, Roland},
+  doi          = {10.1007/s10458-022-09586-2},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-36},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Using soft maximin for risk averse multi-objective decision-making},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023a). Equitability and welfare maximization for allocating
+indivisible items. <em>AAMAS</em>, <em>37</em>(1), 1–45. (<a
+href="https://doi.org/10.1007/s10458-022-09587-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study fair allocations of indivisible goods and chores in conjunction with system efficiency, measured by two social welfare functions, namely utilitarian and egalitarian welfare. To model preference, each agent is associated with a cardinal and additive valuation function. The fairness criteria we are concerned with are equitability up to any item (EQX) and equitability up to one item (EQ1). For the trade-off between fairness and efficiency, we investigate efficiency loss under these fairness constraints and establish the price of fairness. From the computational perspective, we provide a complete picture of the computational complexity of (i) deciding the existence of an EQX/EQ1 and welfare-maximizing allocation; (ii) computing a welfare maximizer among all EQX/EQ1 allocations.},
+  archive      = {J_AAMAS},
+  author       = {Sun, Ankang and Chen, Bo and Doan, Xuan Vinh},
+  doi          = {10.1007/s10458-022-09587-1},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-45},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Equitability and welfare maximization for allocating indivisible items},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Fast approximate bi-objective pareto sets with quality
+bounds. <em>AAMAS</em>, <em>37</em>(1), 1–23. (<a
+href="https://doi.org/10.1007/s10458-022-09588-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present and empirically characterize a general, parallel, heuristic algorithm for computing small $$\epsilon $$ -Pareto sets. A primary feature of the algorithm is that it maintains and improves an upper bound on the $$\epsilon $$ value throughout the algorithm. The algorithm can be used as part of a decision support tool for settings in which computing points in objective space is computationally expensive. We use the bi-objective TSP and graph clearing problems as benchmark examples. We characterize the performance of the algorithm through $$\epsilon $$ -Pareto set size, upper bound on $$\epsilon $$ value provided, true $$\epsilon $$ value provided, and parallel speedup achieved. Our results show that the algorithm’s combination of small $$\epsilon $$ -Pareto sets and parallel speedup is sufficient to be appealing in settings requiring manual review (i.e., those that have a human in the loop) or real-time solutions.},
+  archive      = {J_AAMAS},
+  author       = {Bailey, William and Goldsmith, Judy and Harrison, Brent and Xu, Siyao},
+  doi          = {10.1007/s10458-022-09588-0},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-23},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Fast approximate bi-objective pareto sets with quality bounds},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Accountability in multi-agent organizations: From conceptual
+design to agent programming. <em>AAMAS</em>, <em>37</em>(1), 1–37. (<a
+href="https://doi.org/10.1007/s10458-022-09590-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work proposes a notion of accountability for multi-agent systems, that supports the development of robust distributed systems. Accountability is grounded on responsibility, and encompasses both a normative dimension, and a structural dimension. For realizing robust distributed systems, conceived as agent systems or organizations, it is necessary to keep a right level of situational awareness, through the introduction of the means for gathering and propagating accounts, upon which actions can be taken. This paper presents a formalization of accountability, including the accountability lifecycle, for the design of robust agent organizations. Particular attention is given to the interplay of accountability and goals, by describing typical patterns in which accountability affects the state of an agent’s goals and vice versa. We illustrate the practical aspects of the proposal by means of JaCaMo (Boissier et al. Sci Comput Program 78(6):747–761, 2013. https://doi.org/10.1016/j.scico.2011.10.004 ).},
+  archive      = {J_AAMAS},
+  author       = {Baldoni, Matteo and Baroglio, Cristina and Micalizio, Roberto and Tedeschi, Stefano},
+  doi          = {10.1007/s10458-022-09590-6},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-37},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Accountability in multi-agent organizations: From conceptual design to agent programming},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A refined complexity analysis of fair districting over
+graphs. <em>AAMAS</em>, <em>37</em>(1), 1–37. (<a
+href="https://doi.org/10.1007/s10458-022-09594-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the NP-hard Fair Connected Districting problem recently proposed by Stoica et al. [AAMAS 2020]: Partition a vertex-colored graph into k connected components (subsequently referred to as districts) so that in every district the most frequent color occurs at most a given number of times more often than the second most frequent color. Fair Connected Districting is motivated by various real-world scenarios where agents of different types, which are one-to-one represented by nodes in a network, have to be partitioned into disjoint districts. Herein, one strives for “fair districts” without any type being in a dominating majority in any of the districts. This is to e.g. prevent segregation or political domination of some political party. We conduct a fine-grained analysis of the (parameterized) computational complexity of Fair Connected Districting. In particular, we prove that it is polynomial-time solvable on paths, cycles, stars, and caterpillars, but already becomes NP-hard on trees. Motivated by the latter negative result, we perform a parameterized complexity analysis with respect to various graph parameters including treewidth, and problem-specific parameters, including, the numbers of colors and districts. We obtain a rich and diverse, close to complete picture of the corresponding parameterized complexity landscape (that is, a classification along the complexity classes FPT, XP, W[1]-hard, and para-NP-hard).},
+  archive      = {J_AAMAS},
+  author       = {Boehmer, Niclas and Koana, Tomohiro and Niedermeier, Rolf},
+  doi          = {10.1007/s10458-022-09594-2},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-37},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {A refined complexity analysis of fair districting over graphs},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Changing criteria weights to achieve fair VIKOR ranking: A
+postprocessing reranking approach. <em>AAMAS</em>, <em>37</em>(1), 1–44.
+(<a href="https://doi.org/10.1007/s10458-022-09591-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ranking is a prerequisite for making decisions, and therefore it is a very responsible and frequently applied activity. This study considers fairness issues in a multi-criteria decision-making (MCDM) method called VIKOR (in Serbian language—VIšekriterijumska optimizacija i KOmpromisno Rešenje, which means Multiple Criteria Optimization and Compromise Solution). The method is specific because of its original property to search for the first-ranked compromise solutions based on the parameter v. The VIKOR method was modified in this paper to rank all the alternatives and find compromise solutions for each rank. Then, the obtained ranks were used to satisfy fairness constraints (i.e., the desired level of disparate impact) by criteria weights optimization. We built three types of mathematical models depending on decision makers’ (DMs’) preferences regarding the definition of the compromise parameter v. Metaheuristic optimization algorithms were explored in order to minimize the differences in VIKOR ranking prior to and after optimization. The proposed postprocessing reranking approach ensures fair ranking (i.e., the ranking without discrimination). The conducted experiments involve three real-life datasets of different sizes, well-known in the literature. The comparisons of the results with popular fair ranking algorithms include a comparative examination of several rank-based metrics intended to measure accuracy and fairness that indicate a high-quality competence of the suggested approach. The most significant contributions include developing automated and adaptive optimization procedures with the possibility of further adjustments following DMs’ preferences and matching fairness metrics with traditional MCDM goals in a comprehensive full VIKOR ranking.},
+  archive      = {J_AAMAS},
+  author       = {Dodevska, Zorica and Petrović, Andrija and Radovanović, Sandro and Delibašić, Boris},
+  doi          = {10.1007/s10458-022-09591-5},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-44},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Changing criteria weights to achieve fair VIKOR ranking: A postprocessing reranking approach},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Strategyproof facility location mechanisms on discrete
+trees. <em>AAMAS</em>, <em>37</em>(1), 1–29. (<a
+href="https://doi.org/10.1007/s10458-022-09592-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We address the problem of strategyproof (SP) facility location mechanisms on discrete trees. Our main result is a full characterization of onto and SP mechanisms. In particular, we prove that when a single agent significantly affects the outcome, the trajectory of the facility is almost contained in the trajectory of the agent, and both move in the same direction along the common edges. We show tight relations of our characterization to previous results on discrete lines and on continuous trees. We then derive further implications of the main result for infinite discrete lines.},
+  archive      = {J_AAMAS},
+  author       = {Filimonov, Alina and Meir, Reshef},
+  doi          = {10.1007/s10458-022-09592-4},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-29},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Strategyproof facility location mechanisms on discrete trees},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Learning by reusing previous advice: A memory-based
+teacher–student framework. <em>AAMAS</em>, <em>37</em>(1), 1–30. (<a
+href="https://doi.org/10.1007/s10458-022-09595-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement Learning (RL) has been widely used to solve sequential decision-making problems. However, it often suffers from slow learning speed in complex scenarios. Teacher–student frameworks address this issue by enabling agents to ask for and give advice so that a student agent can leverage the knowledge of a teacher agent to facilitate its learning. In this paper, we consider the effect of reusing previous advice, and propose a novel memory-based teacher–student framework such that student agents can memorize and reuse the previous advice from teacher agents. In particular, we propose two methods to decide whether previous advice should be reused: Q-Change per Step that reuses the advice if it leads to an increase in Q-values, and Decay Reusing Probability that reuses the advice with a decaying probability. The experiments on diverse RL tasks (Mario, Predator–Prey and Half Field Offense) confirm that our proposed framework significantly outperforms the existing frameworks in which previous advice is not reused.},
+  archive      = {J_AAMAS},
+  author       = {Zhu, Changxi and Cai, Yi and Hu, Shuyue and Leung, Ho-fung and Chiu, Dickson K. W.},
+  doi          = {10.1007/s10458-022-09595-1},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-30},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Learning by reusing previous advice: A memory-based teacher–student framework},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Accelerating deep reinforcement learning via
+knowledge-guided policy network. <em>AAMAS</em>, <em>37</em>(1), 1–30.
+(<a href="https://doi.org/10.1007/s10458-023-09600-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep reinforcement learning has contributed to dramatic advances in many tasks, such as playing games, controlling robots, and navigating complex environments. However, it requires many interactions with the environment. This is different from the human learning process since humans can use prior knowledge, which can significantly speed up the learning process as it avoids unnecessary exploration. Previous works integrating knowledge in RL did not model uncertainty in human cognition, which reduces the reliability of knowledge. In this paper, we propose a knowledge-guided policy network, a novel framework that combines suboptimal human knowledge with reinforcement learning. Our framework consists of a fuzzy rule controller representing human knowledge and a refined module to fine-tune suboptimal prior knowledge. The proposed framework is end-to-end and can be combined with existing reinforcement learning algorithms such as PPO, AC, and SAC. We conduct experiments on both discrete and continuous control tasks. The empirical results show that our approach, which combines suboptimal human knowledge and RL, significantly improves the learning efficiency of basic RL algorithms, even with very low-performance human prior knowledge. Additional experiments are conducted on the number of fuzzy rules and the interpretability of the policy, which make our proposed framework more complete and reasonable. The code for this research is released under the project page of https://github.com/yuyuanq/reinforcement-learning-using-knowledge-controller .},
+  archive      = {J_AAMAS},
+  author       = {Yu, Yuanqiang and Zhang, Peng and Zhao, Kai and Zheng, Yan and Hao, Jianye},
+  doi          = {10.1007/s10458-023-09600-1},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-30},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Accelerating deep reinforcement learning via knowledge-guided policy network},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Scaling multi-agent reinforcement learning to full 11 versus
+11 simulated robotic football. <em>AAMAS</em>, <em>37</em>(1), 1–30. (<a
+href="https://doi.org/10.1007/s10458-023-09603-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic football has long been seen as a grand challenge in artificial intelligence. Despite recent success of learned policies over heuristics and handcrafted rules in general, current teams in the simulated RoboCup football leagues, where autonomous agents compete against each other, still rely on handcrafted strategies with only a few using reinforcement learning directly. This limits a learning agent’s ability to find stronger high-level strategies for the full game. In this paper, we show that it is possible for agents to learn competent football strategies on a full 22 player setting using limited computation resources (one GPU and one CPU), from tabula rasa through self-play. To do this, we build a 2D football simulator with faster simulation times than the RoboCup simulator. We propose various improvements to the standard single-agent PPO training algorithm which help it scale to our multi-agent setting. These improvements include (1) using a policy and critic network with an attention mechanism that scales linearly in the number of agents, (2) sharing networks between agents which allow for faster throughput using batching, and (3) using Polyak averaged opponents, league opponents and freezing the opponent team when necessary. We show through experimental results that stable training in the full 22 player setting is possible. Agents trained in the 22 player setting learn to defeat a variety of handcrafted strategies, and also achieve a higher win rate compared to agents trained in the 4 player setting and evaluated in the full game.},
+  archive      = {J_AAMAS},
+  author       = {Smit, Andries and Engelbrecht, Herman A. and Brink, Willie and Pretorius, Arnu},
+  doi          = {10.1007/s10458-023-09603-y},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-30},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Scaling multi-agent reinforcement learning to full 11 versus 11 simulated robotic football},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Fine-grained view on bribery for group identification.
+<em>AAMAS</em>, <em>37</em>(1), 1–32. (<a
+href="https://doi.org/10.1007/s10458-023-09597-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a set of agents qualifying or disqualifying each other, group identification is the task of identifying a socially qualified subgroup of agents. Social qualification depends on the specific rule used to aggregate individual qualifications . The classical bribery problem in this context asks how many agents need to change their qualifications in order to change the outcome in a certain way. Complementing previous results showing polynomial-time solvability or NP-hardness of bribery for various social rules in the constructive (aiming at making specific agents socially qualified) or destructive (aiming at making specific agents socially disqualified) setting, we provide a comprehensive picture of the parameterized computational complexity landscape. Conceptually, we also consider a more fine-grained concept of bribery cost, where we ask how many single qualifications need to be changed, nonunit prices for different bribery actions, and a more general bribery goal that combines the constructive and destructive setting.},
+  archive      = {J_AAMAS},
+  author       = {Boehmer, Niclas and Bredereck, Robert and Knop, Dušan and Luo, Junjie},
+  doi          = {10.1007/s10458-023-09597-7},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-32},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Fine-grained view on bribery for group identification},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Egalitarian judgment aggregation. <em>AAMAS</em>,
+<em>37</em>(1), 1–32. (<a
+href="https://doi.org/10.1007/s10458-023-09598-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Egalitarian considerations play a central role in many areas of social choice theory. Applications of egalitarian principles range from ensuring everyone gets an equal share of a cake when deciding how to divide it, to guaranteeing balance with respect to gender or ethnicity in committee elections. Yet, the egalitarian approach has received little attention in judgment aggregation—a powerful framework for aggregating logically interconnected issues. We make the first steps towards filling that gap. We introduce axioms capturing two classical interpretations of egalitarianism in judgment aggregation and situate these within the context of existing axioms in the pertinent framework of belief merging. We then explore the relationship between these axioms and several notions of strategyproofness from social choice theory at large. Finally, a novel egalitarian judgment aggregation rule stems from our analysis; we present complexity results concerning both outcome determination and strategic manipulation for that rule.},
+  archive      = {J_AAMAS},
+  author       = {Botan, Sirin and de Haan, Ronald and Slavkovik, Marija and Terzopoulou, Zoi},
+  doi          = {10.1007/s10458-023-09598-6},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-32},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Egalitarian judgment aggregation},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Online markov decision processes with non-oblivious
+strategic adversary. <em>AAMAS</em>, <em>37</em>(1), 1–32. (<a
+href="https://doi.org/10.1007/s10458-023-09599-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a novel setting in Online Markov Decision Processes (OMDPs) where the loss function is chosen by a non-oblivious strategic adversary who follows a no-external regret algorithm. In this setting, we first demonstrate that MDP-Expert, an existing algorithm that works well with oblivious adversaries can still apply and achieve a policy regret bound of $${\mathcal {O}}(\sqrt{T \log (L)}+\tau ^2\sqrt{ T \log (\vert A \vert )})$$ where L is the size of adversary’s pure strategy set and $$\vert A \vert$$ denotes the size of agent’s action space.Considering real-world games where the support size of a NE is small, we further propose a new algorithm: MDP-Online Oracle Expert (MDP-OOE), that achieves a policy regret bound of $${\mathcal {O}}(\sqrt{T\log (L)}+\tau ^2\sqrt{ T k \log (k)})$$ where k depends only on the support size of the NE. MDP-OOE leverages the key benefit of Double Oracle in game theory and thus can solve games with prohibitively large action space. Finally, to better understand the learning dynamics of no-regret methods, under the same setting of no-external regret adversary in OMDPs, we introduce an algorithm that achieves last-round convergence to a NE result. To our best knowledge, this is the first work leading to the last iteration result in OMDPs.},
+  archive      = {J_AAMAS},
+  author       = {Dinh, Le Cong and Mguni, David Henry and Tran-Thanh, Long and Wang, Jun and Yang, Yaodong},
+  doi          = {10.1007/s10458-023-09599-5},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-32},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Online markov decision processes with non-oblivious strategic adversary},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Quantifying over information change with common knowledge.
+<em>AAMAS</em>, <em>37</em>(1), 1–40. (<a
+href="https://doi.org/10.1007/s10458-023-09601-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Public announcement logic (PAL) extends multi-agent epistemic logic with dynamic operators modelling the effects of public communication. Allowing quantification over public announcements lets us reason about the existence of an announcement that reaches a certain epistemic goal. Two notable examples of logics of quantified announcements are arbitrary public announcement logic (APAL) and group announcement logic (GAL). While the notion of common knowledge plays an important role in PAL, and in particular in characterisations of epistemic states that an agent or a group of agents might make come about by performing public announcements, extensions of APAL and GAL with common knowledge still haven’t been studied in detail. That is what we do in this paper. In particular, we consider both conservative extensions, where the semantics of the quantifiers is not changed, as well as extensions where the scope of quantification also includes common knowledge formulas. We compare the expressivity of these extensions relative to each other and other connected logics, and provide sound and complete axiomatisations. Finally, we show how the completeness results can be used for other logics with quantification over information change.},
+  archive      = {J_AAMAS},
+  author       = {Ågotnes, Thomas and Galimullin, Rustam},
+  doi          = {10.1007/s10458-023-09601-0},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-40},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Quantifying over information change with common knowledge},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Electoral manipulation via influence: Probabilistic model.
+<em>AAMAS</em>, <em>37</em>(1), 1–27. (<a
+href="https://doi.org/10.1007/s10458-023-09602-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a natural generalization of the fundamental electoral manipulation problem, where a briber can change the opinion or preference of voters through influence. This is motivated by modern political campaigns where candidates try to convince voters through media such as TV, newspaper, Internet. Compared with the classical bribery problem, we do not assume the briber will directly exchange money for votes from individual voters, but rather assume that the briber has a set of potential campaign strategies. Each campaign strategy represents some way of casting influence on voters. A campaign strategy has some cost and can influence a subset of voters. If a voter belongs to the audience of a campaign strategy, then he/she will be influenced. A voter will be more likely to change his/her opinion/preference if he/she has received influence from a larger number of campaign strategies. We model this through an independent activation model which is widely adopted in social science research and study the computational complexity. In this paper, we give a full characterization by showing NP-hardness results and establishing a near-optimal fixed-parameter tractable algorithm that gives a solution arbitrarily close to the optimal solution.},
+  archive      = {J_AAMAS},
+  author       = {Tao, Liangde and Chen, Lin and Xu, Lei and Xu, Shouhuai and Gao, Zhimin and Shi, Weidong},
+  doi          = {10.1007/s10458-023-09602-z},
+  journal      = {Autonomous Agents and Multi-Agent Systems},
+  number       = {1},
+  pages        = {1-27},
+  shortjournal = {Auton. Agent. Multi-Agent. Syst.},
+  title        = {Electoral manipulation via influence: Probabilistic model},
+  volume       = {37},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

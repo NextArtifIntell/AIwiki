@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SICOMP_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sicomp---68">SICOMP - 68</h2>
+<ul>
+<li><details>
+<summary>
+(2022). Subexponential parameterized algorithms for planar and
+apex-minor-free graphs via low treewidth pattern covering.
+<em>SICOMP</em>, <em>51</em>(6), 1866–1930. (<a
+href="https://doi.org/10.1137/19M1262504">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We prove the following theorem. Given a planar graph and an integer , it is possible in polynomial time to randomly sample a subset of vertices of with the following properties: induces a subgraph of of treewidth , and for every connected subgraph of on at most vertices, the probability that covers the whole vertex set of is at least , where is the number of vertices of . Together with standard dynamic programming techniques for graphs of bounded treewidth, this result gives a versatile technique for obtaining (randomized) subexponential-time parameterized algorithms for problems on planar graphs, usually with running time bound . The technique can be applied to problems expressible as searching for a small, connected pattern with a prescribed property in a large host graph; examples of such problems include Directed -Path, Weighted -Path, Vertex Cover Local Search, and Subgraph Isomorphism, among others. Up to this point, it was open whether these problems could be solved in subexponential parameterized time on planar graphs, because they are not amenable to the classic technique of bidimensionality. Furthermore, all our results hold in fact on any class of graphs that exclude a fixed apex graph as a minor, in particular on graphs embeddable in any fixed surface.},
+  archive      = {J_SICOMP},
+  author       = {Fedor V. Fomin and Daniel Lokshtanov and Dániel Marx and Marcin Pilipczuk and Michał Pilipczuk and Saket Saurabh},
+  doi          = {10.1137/19M1262504},
+  journal      = {SIAM Journal on Computing},
+  number       = {6},
+  pages        = {1866-1930},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Subexponential parameterized algorithms for planar and apex-minor-free graphs via low treewidth pattern covering},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Relaxed locally correctable codes with nearly-linear block
+length and constant query complexity. <em>SICOMP</em>, <em>51</em>(6),
+1839–1865. (<a href="https://doi.org/10.1137/20M135515X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Locally correctable codes (LCCs) are error correcting codes which admit local algorithms that correct any individual symbol of a corrupted codeword via a minuscule number of queries. For systematic codes, this notion is stronger than that of locally decodable codes (LDCs), where the goal is to only recover individual symbols of the message. One of the central problems in algorithmic coding theory is to construct -query LCCs and LDCs with minimal block length. Alas, state-of-the-art of such codes requires super-polynomial block length to admit -query algorithms for local correction and decoding, despite much attention during the last two decades. The study of relaxed LCCs and LDCs, which allow the correction algorithm to abort (but not err) on a small fraction of the locations, provides a way to circumvent this barrier. This relaxation turned out to allow constant-query correcting and decoding algorithms for codes with polynomial block length. Focusing on local correction, Gur, Ramnarayan, and Rothblum [Proceedings of the 9th Innovations in Theoretical Computer Science Conference, ITCS’18, 2018, pp. 1–27] showed that there exist -query relaxed LCCs that achieve nearly-quartic block length , for an arbitrarily small constant . We construct an -query relaxed LCC with nearly-linear block length , for an arbitrarily small constant . This significantly narrows the gap between the lower bound which states that there are no -query relaxed LCCs with block length . In particular, our construction matches the parameters achieved by Ben-Sasson et al. [SIAM J. Comput., 36 (2006), pp. 889–974], who constructed relaxed LDCs with the same parameters. This resolves an open problem raised by Gur, Ramnarayan, and Rothblum [Proceedings of the 9th Innovations in Theoretical Computer Science Conference, ITCS’18, 2018, pp. 1–27].},
+  archive      = {J_SICOMP},
+  author       = {Alessandro Chiesa and Tom Gur and Igor Shinkar},
+  doi          = {10.1137/20M135515X},
+  journal      = {SIAM Journal on Computing},
+  number       = {6},
+  pages        = {1839-1865},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Relaxed locally correctable codes with nearly-linear block length and constant query complexity},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Multi-item nontruthful auctions achieve good revenue.
+<em>SICOMP</em>, <em>51</em>(6), 1796–1838. (<a
+href="https://doi.org/10.1137/22M1471742">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a general framework for designing approximately revenue-optimal mechanisms for multi-item additive auctions, which applies to both truthful and nontruthful auctions. Given a (not necessarily truthful) single-item auction format satisfying certain technical conditions, we run simultaneous item auctions augmented with a personalized entry fee for each bidder that must be paid before the auction can be accessed. These entry fees depend only on the prior distribution of bidder types and in particular are independent of realized bids. We bound the revenue of the resulting two-part tariff mechanism using a novel geometric technique that enables revenue guarantees for many common nontruthful auctions that previously had none. Our approach adapts and extends the duality framework of Cai, Devanur, and Weinberg [SIAM J. Comput., 50 (2021), pp. STOC16-160–STOC16-200] beyond truthful auctions. Our framework can be used with many common auction formats, such as simultaneous first-price, simultaneous second-price, and simultaneous all-pay auctions. Our results for first-price and all-pay are the first revenue guarantees of nontruthful mechanisms in multidimensional environments, addressing an open question in the literature [T. Roughgarden, V. Syrgkanis, and E. Tardos, J. Artificial Intelligence Res., 59 (2017), pp. 59–101]. If all-pay auctions are used, we prove that the resulting mechanism is also credible in the sense that the auctioneer cannot benefit by deviating from the stated mechanism after observing agent bids. This is the first static credible mechanism for multi-item additive auctions that achieves a constant factor of the optimal revenue. If second-price auctions are used, we obtain a truthful -approximate mechanism with fixed entry fees that are amenable to tuning via online learning techniques.},
+  archive      = {J_SICOMP},
+  author       = {Constantinos Daskalakis and Maxwell Fishelson and Brendan Lucier and Vasilis Syrgkanis and Santhoshini Velusamy},
+  doi          = {10.1137/22M1471742},
+  journal      = {SIAM Journal on Computing},
+  number       = {6},
+  pages        = {1796-1838},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Multi-item nontruthful auctions achieve good revenue},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). One-way functions and (im)perfect obfuscation.
+<em>SICOMP</em>, <em>51</em>(6), 1769–1795. (<a
+href="https://doi.org/10.1137/15M1048549">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. A program obfuscator takes a program and outputs a “scrambled” version of it, where the goal is that the obfuscated program will not reveal much about its structure beyond what is apparent from executing it. There are several ways of formalizing this goal. Specifically, in indistinguishability obfuscation, first defined by Barak et al. [Advances in Cryptology - CRYPTO, 2001, Lect. Notes Comput. Sci. 2139, Springer, Berlin, Heidelberg, pp. 1–18], the requirement is that the results of obfuscating any two functionally equivalent programs (circuits) will be computationally indistinguishable. In 2013, a fascinating candidate construction for indistinguishability obfuscation was proposed by Garg et al. [Proceedings of the Symposium on Theory of Computing Conference, STOC, ACM, 2013, pp. 467–476]. This has led to a flurry of discovery of intriguing constructions of primitives and protocols whose existence was not previously known (for instance, fully deniable encryption by Sahai and Waters [Proceedings of the Symposium on Theory of Computing, 2014, STOC, pp. 475–484]). Most of them explicitly rely on additional hardness assumptions, such as one-way functions. Our goal is to get rid of this extra assumption. We cannot argue that indistinguishability obfuscation of all polynomial-time circuits implies the existence of one-way functions, since if , then program obfuscation (under the indistinguishability notion) is possible. Instead, the ultimate goal is to argue that if and program obfuscation is possible, then one-way functions exist. Our main result is that if and there is an efficient (even imperfect) indistinguishability obfuscator, then there are one-way functions. In addition, we show that the existence of an indistinguishability obfuscator implies (unconditionally) the existence of SZK-arguments for . This, in turn, provides an alternative version of our main result, based on the assumption of hard-on-the-average problems. To get some of our results we need obfuscators for simple programs such as circuits.},
+  archive      = {J_SICOMP},
+  author       = {Ilan Komargodski and Tal Moran and Moni Naor and Rafael Pass and Alon Rosen and Eylon Yogev},
+  doi          = {10.1137/15M1048549},
+  journal      = {SIAM Journal on Computing},
+  number       = {6},
+  pages        = {1769-1795},
+  shortjournal = {SIAM J. Comput.},
+  title        = {One-way functions and (Im)perfect obfuscation},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Balanced allocation: Patience is not a virtue.
+<em>SICOMP</em>, <em>51</em>(6), 1743–1768. (<a
+href="https://doi.org/10.1137/17M1155375">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Load balancing is a well-studied problem, with balls-in-bins being the primary framework. The greedy algorithm of Azar et al. [SIAM J. Comput., 29 (1999), pp. 180–200] places each ball by probing random bins and placing the ball in the least loaded of them. With high probability, the maximum load under is exponentially lower than the result when balls are placed uniformly randomly. Vöcking [J. ACM, 50 (2003), pp. 568–589] showed that a slightly asymmetric variant, provides a further significant improvement. However, this improvement comes at the additional computational cost of imposing structure on the bins. Here, we present a fully decentralized and easy-to-implement algorithm called that combines the simplicity of and the improved balance of . The key idea in is to probe until a different bin size from the first observation is located and then place the ball. Although the number of probes could be quite large for some of the balls, we show that requires only at most probes on average per ball (in both the standard and the heavily loaded settings). Thus the number of probes is no greater than that of either or . More importantly, we show that closely matches the improved maximum load ensured by in both the standard and heavily loaded settings. We further provide a tight lower bound on the maximum load up to terms. We additionally give experimental data that is indeed as good as , if not better, in practice.},
+  archive      = {J_SICOMP},
+  author       = {John Augustine and William K. Moses Jr. and Amanda Redlich and Eli Upfal},
+  doi          = {10.1137/17M1155375},
+  journal      = {SIAM Journal on Computing},
+  number       = {6},
+  pages        = {1743-1768},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Balanced allocation: Patience is not a virtue},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Quantum speedup for graph sparsification, cut approximation,
+and laplacian solving. <em>SICOMP</em>, <em>51</em>(6), 1703–1742. (<a
+href="https://doi.org/10.1137/21M1391018">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Graph sparsification underlies a large number of algorithms, ranging from approximation algorithms for cut problems to solvers for linear systems in the graph Laplacian. In its strongest form, “spectral sparsification” reduces the number of edges to near-linear in the number of nodes, while approximately preserving the cut and spectral structure of the graph. In this work we demonstrate a polynomial quantum speedup for spectral sparsification and many of its applications. In particular, we give a quantum algorithm that, given a weighted graph with nodes and edges, outputs a classical description of an -spectral sparsifier in sublinear time . This contrasts with the optimal classical complexity . We also prove that our quantum algorithm is optimal up to polylog-factors. The algorithm builds on a string of existing results on sparsification, graph spanners, quantum algorithms for shortest paths, and efficient constructions for -wise independent random strings. Our algorithm implies a quantum speedup for solving Laplacian systems and for approximating a range of cut problems such as min cut and sparsest cut.},
+  archive      = {J_SICOMP},
+  author       = {Simon Apers and Ronald de Wolf},
+  doi          = {10.1137/21M1391018},
+  journal      = {SIAM Journal on Computing},
+  number       = {6},
+  pages        = {1703-1742},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Quantum speedup for graph sparsification, cut approximation, and laplacian solving},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Corrigendum: Explicit construction of a small 𝜖-net for
+linear threshold functions. <em>SICOMP</em>, <em>51</em>(5), 1692–1702.
+(<a href="https://doi.org/10.1137/20M1310321">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The purpose of this note is to correct mistakes and inaccuracies in technical claims in [Y. Rabani and A. Shpilka, Explicit Construction of a Small �� -net for Linear Threshold Functions, SIAM J. Comput., 39 (2010), pp. 3501–3520]. These have no effect on the main results in the paper.},
+  archive      = {J_SICOMP},
+  author       = {Yuval Rabani and Amir Shpilka},
+  doi          = {10.1137/20M1310321},
+  journal      = {SIAM Journal on Computing},
+  number       = {5},
+  pages        = {1692-1702},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Corrigendum: Explicit construction of a small 𝜖-net for linear threshold functions},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A <span class="math inline"><strong>ϕ</strong></span>
+-competitive algorithm for scheduling packets with deadlines.
+<em>SICOMP</em>, <em>51</em>(5), 1626–1691. (<a
+href="https://doi.org/10.1137/21M1469753">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In the online packet scheduling problem with deadlines ( , for short), the goal is to schedule transmissions of packets that arrive over time in a network switch and need to be sent across a link. Each packet has a deadline, representing its urgency, and a nonnegative weight, which represents its priority. Only one packet can be transmitted in any time slot, so if the system is overloaded, some packets will inevitably miss their deadlines and be dropped. In this scenario, the natural objective is to compute a transmission schedule that maximizes the total weight of packets that are successfully transmitted. The problem is inherently online, with the scheduling decisions made without the knowledge of future packet arrivals. The central problem concerning that has been a subject of intensive study since 2001 is to determine the optimal competitive ratio of online algorithms, namely the worst-case ratio between the optimum total weight of a schedule (computed by an offline algorithm) and the weight of a schedule computed by a (deterministic) online algorithm. We solve this open problem by presenting a -competitive online algorithm for (where is the golden ratio), matching the previously established lower bound.},
+  archive      = {J_SICOMP},
+  author       = {Pavel Veselý and Marek Chrobak and Łukasz Jeż and Jiří Sgall},
+  doi          = {10.1137/21M1469753},
+  journal      = {SIAM Journal on Computing},
+  number       = {5},
+  pages        = {1626-1691},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A \(\boldsymbol{\phi }\) -competitive algorithm for scheduling packets with deadlines},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Proximity search for maximal subgraph enumeration.
+<em>SICOMP</em>, <em>51</em>(5), 1580–1625. (<a
+href="https://doi.org/10.1137/20M1375048">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper proposes a new general technique for maximal subgraph enumeration which we call proximity search, whose aim is to design efficient enumeration algorithms for problems that could not be solved by existing frameworks. To support this claim and illustrate the technique we include output-polynomial algorithms for several problems for which output-polynomial algorithms were not known, including the enumeration of maximal bipartite subgraphs, maximal -degenerate subgraphs (for bounded ), maximal induced chordal subgraphs, and maximal induced trees. Using known techniques, such as reverse search, the space of all maximal solutions induces an implicit directed graph called “solution graph” or “supergraph,” and solutions are enumerated by traversing it; however, nodes in this graph can have exponential out-degree, thus requiring exponential time to be spent on each solution. The novelty of proximity search is a formalization that allows us to define a better solution graph, and a technique, which we call canonical reconstruction, by which we can exploit the properties of given problems to build such graphs. This results in solution graphs whose nodes have significantly smaller (i.e., polynomial) out-degree with respect to existing approaches, but that remain strongly connected, so that all solutions can be enumerated in polynomial delay by a traversal. A drawback of this approach is the space required to keep track of visited solutions, which can be exponential; we further propose a technique to induce a parent-child relationship among solutions and achieve polynomial space when suitable conditions are met.},
+  archive      = {J_SICOMP},
+  author       = {Alessio Conte and Roberto Grossi and Andrea Marino and Takeaki Uno and Luca Versari},
+  doi          = {10.1137/20M1375048},
+  journal      = {SIAM Journal on Computing},
+  number       = {5},
+  pages        = {1580-1625},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Proximity search for maximal subgraph enumeration},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Tight revenue gaps among multiunit mechanisms.
+<em>SICOMP</em>, <em>51</em>(5), 1535–1579. (<a
+href="https://doi.org/10.1137/21M1456364">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper considers Bayesian revenue maximization in the -unit setting, where a monopolist seller has copies of an indivisible item and faces unit-demand buyers (whose value distributions can be nonidentical). Four basic mechanisms among others have been widely employed in practice and widely studied in the literature: Myerson auction, sequential posted-pricing, -th price auction with anonymous reserve, and anonymous pricing. Regarding a pair of mechanisms, we investigate the largest possible ratio between the two revenues (also known as the revenue gap), over all possible value distributions of the buyers. Divide these four mechanisms into two groups: (i) the discriminating mechanism group, Myerson auction and sequential posted-pricing, and (ii) the anonymous mechanism group, anonymous reserve and anonymous pricing. Within one group, the involved two mechanisms have an asymptotically tight revenue gap of . In contrast, any two mechanisms from the different groups have an asymptotically tight revenue gap of .},
+  archive      = {J_SICOMP},
+  author       = {Yaonan Jin and Shunhua Jiang and Pinyan Lu and Hengjie Zhang},
+  doi          = {10.1137/21M1456364},
+  journal      = {SIAM Journal on Computing},
+  number       = {5},
+  pages        = {1535-1579},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Tight revenue gaps among multiunit mechanisms},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Diameter, eccentricities and distance oracle computations on
+h-minor free graphs and graphs of bounded (distance) vapnik–chervonenkis
+dimension. <em>SICOMP</em>, <em>51</em>(5), 1506–1534. (<a
+href="https://doi.org/10.1137/20M136551X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Under the strong exponential-time hypothesis, the diameter of general unweighted graphs cannot be computed in truly subquadratic time (in the size of the input), as shown by Roditty and Williams. Nevertheless there are several graph classes for which this can be done such as bounded-treewidth graphs, interval graphs, and planar graphs, to name a few. We propose to study unweighted graphs of constant distance Vapnik–Chervonenkis (VC)-dimension as a broad generalization of many such classes—where the distance VC-dimension of a graph is defined as the VC-dimension of its ball hypergraph whose hyperedges are the balls of all possible radii and centers in . In particular for any fixed , the class of -minor free graphs has distance VC-dimension at most . Our first main result is a Monte Carlo algorithm that on graphs of distance VC-dimension at most , for any fixed , either computes the diameter or concludes that it is larger than in time , where only depends on and the notation suppresses polylogarithmic factors. We thus obtain a truly subquadratic-time parameterized algorithm for computing the diameter on such graphs. Then as a byproduct of our approach, we get a truly subquadratic-time randomized algorithm for constant diameter computation on all the nowhere dense graph classes. The latter classes include all proper minor-closed graph classes, bounded-degree graphs, and graphs of bounded expansion. Before our work, the only known such algorithm was resulting from an application of Courcelle’s theorem; see Grohe, Kreutzer, and Siebertz [J. ACM, 64 (2017), pp. 1–32]. For any graph of constant distance VC-dimension, we further prove the existence of an exact distance oracle in truly subquadratic space, that answers distance queries in truly sublinear time (in the number of vertices). The latter generalizes prior results on proper minor-closed graph classes to a much larger graph class. Finally, we show how to remove the dependency on for any graph class that excludes a fixed graph as a minor. More generally, our techniques apply to any graph with constant distance VC-dimension and polynomial expansion (or equivalently having strongly sublinear balanced separators). As a result for all such graphs one obtains a truly subquadratic-time deterministic algorithm for computing all the eccentricities, and thus both the diameter and the radius. Our approach can be generalized to the -minor free graphs with bounded positive integer weights. We note that all our algorithms for the diameter problem can be adapted for computing the radius, and more generally all the eccentricities. Our approach is based on the work of Chazelle and Welzl who proved the existence of spanning paths with strongly sublinear stabbing number for every hypergraph of constant VC-dimension. We show how to compute such paths efficiently by combining known algorithms for the stabbing number problem with a clever use of -nets, region decomposition, and other partition techniques.},
+  archive      = {J_SICOMP},
+  author       = {Guillaume Ducoffe and Michel Habib and Laurent Viennot},
+  doi          = {10.1137/20M136551X},
+  journal      = {SIAM Journal on Computing},
+  number       = {5},
+  pages        = {1506-1534},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Diameter, eccentricities and distance oracle computations on H-minor free graphs and graphs of bounded (Distance) Vapnik–Chervonenkis dimension},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On the computability of continuous maximum entropy
+distributions with applications. <em>SICOMP</em>, <em>51</em>(5),
+1451–1505. (<a href="https://doi.org/10.1137/21M1440864">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We study the following problem: Given a continuous domain along with its convex hull , a point , and a measure on , find the probability density over whose marginal is and that minimizes the KL divergence to the uniform density with respect to . Several distributions in mathematics, physics, statistics, and theoretical computer science arise by different settings of the parameters of this problem. We give a polynomial bound on the norm of the optimizer of the dual problem that holds in a very general setting and relies on a “balance” property of the measure on , and exact algorithms for evaluating the dual and its gradient for several interesting settings of and . Together, along with the ellipsoid method, these results imply polynomial-time algorithms to compute such KL divergence minimizing distributions in several cases. Applications of our results include (1) an optimization characterization of the Goemans–Williamson measure [M. X. Goemans and D. P. Williamson, J ACM, 42 (1995), pp. 1115–1145] that is used to round a positive semidefinite matrix to a vector; (2) the computability of the entropic barrier for convex bodies, given a strong integration oracle, studied by [S. Bubeck and R. Eldan, Proc. Mach. Learn. Res. (PMLR), 40 (2015), p. 279], and (3) a polynomial-time algorithm to compute the barycentric quantum entropy of a density matrix that was proposed as an alternative to von Neumann entropy [W. Band and J. L. Park, Found. Phys., 6 (1976), pp. 249–262; J. L. Park and W. Band, Found. Phys., 7 (1977), pp. 233–244; P. B. Slater, Phys. Lett. A, 159 (1991), pp. 411–414]; this corresponds to the case when is the set of rank-one projection matrices and is derived from the Haar measure on the unit sphere.},
+  archive      = {J_SICOMP},
+  author       = {Jonathan Leake and Nisheeth K. Vishnoi},
+  doi          = {10.1137/21M1440864},
+  journal      = {SIAM Journal on Computing},
+  number       = {5},
+  pages        = {1451-1505},
+  shortjournal = {SIAM J. Comput.},
+  title        = {On the computability of continuous maximum entropy distributions with applications},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). QMA-hardness of consistency of local density matrices with
+applications to quantum zero-knowledge. <em>SICOMP</em>, <em>51</em>(4),
+1400–1450. (<a href="https://doi.org/10.1137/21M140729X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We provide several advances to the understanding of the class of quantum Merlin--Arthur (QMA) proof systems, the quantum analogue of NP. Our central contribution is proving a longstanding conjecture that the consistency of local density matrices (CLDM) problem is QMA-hard under Karp reductions. The input of CLDM consists of local reduced density matrices on sets of at most $k$ qubits, and the problem asks if there is an $n$-qubit global quantum state that is locally consistent with all of the $k$-qubit local density matrices. The containment of this problem in QMA and the QMA-hardness under Turing reductions were proved by Liu [in Proceeding of APPROX-RANDOM, 2006, pp. 438--449]. Liu also conjectured that CLDM is QMA-hard under Karp reductions, which is desirable for applications, and we finally prove this conjecture. We establish this result using the techniques of simulatable codes of Grilo, Slofstra, and Yuen [in Proceeding of FOCS, 2019, pp. 611--635], simplifying their proofs and tailoring them to the context of QMA. In order to develop applications of CLDM, we propose a framework that we call locally simulatable proofs for QMA: this provides QMA proofs that can be efficiently verified by probing only $k$ qubits and, furthermore, the reduced density matrix of any $k$-qubit subsystem of an accepting witness can be computed in polynomial time, independently of the witness. Within this framework, we show several advances in zero-knowledge in the quantum setting. We show for the first time a commit-and-open computational zero-knowledge proof system for all of QMA, as a quantum analogue of a “sigma” protocol. We then define a proof of quantum knowledge, which guarantees that a prover is effectively in possession of a quantum witness in an interactive proof and show that our zero-knowledge proof system satisfies this definition. Finally, we show that our proof system can be used to establish that QMA has a quantum noninteractive zero-knowledge proof system in the secret parameter setting.},
+  archive      = {J_SICOMP},
+  author       = {Anne Broadbent and Alex Bredariol Grilo},
+  doi          = {10.1137/21M140729X},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1400-1450},
+  shortjournal = {SIAM J. Comput.},
+  title        = {QMA-hardness of consistency of local density matrices with applications to quantum zero-knowledge},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On CDCL-based proof systems with the ordered decision
+strategy. <em>SICOMP</em>, <em>51</em>(4), 1368–1399. (<a
+href="https://doi.org/10.1137/20M1362528">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We prove that conflict-driven clause learning (CDCL) SAT-solvers with the ordered decision strategy and the DECISION learning scheme are equivalent to ordered resolution. We also prove that by replacing this learning scheme with its opposite, which stops after the first nonconflict clause when backtracking, they become equivalent to general resolution. To the best of our knowledge, along with [M. Vinyals, “Hard Examples for Common Variable Decision Heuristics,” in Proceedings of the 34th AAAI Conference on Artificial Intelligence, 2020, pp. 1652--1659], this is the first theoretical study of the interplay between specific decision strategies and clause learning. For both results, we allow nondeterminism in the solver&#39;s ability to perform unit propagation, conflict analysis, and restarts, in a way that is similar to previous works in the literature. To aid the presentation of our results, and possibly future research, we define a model and language for discussing CDCL-based proof systems that allow for succinct and precise theorem statements.},
+  archive      = {J_SICOMP},
+  author       = {Nathan Mull and Shuo Pang and Alexander Razborov},
+  doi          = {10.1137/20M1362528},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1368-1399},
+  shortjournal = {SIAM J. Comput.},
+  title        = {On CDCL-based proof systems with the ordered decision strategy},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Approximating longest common subsequence in linear time:
+Beating the <span class="math inline">$\sqrt{{n}}$</span> barrier.
+<em>SICOMP</em>, <em>51</em>(4), 1341–1367. (<a
+href="https://doi.org/10.1137/19M1272068">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Longest common subsequence (LCS) is one of the most fundamental problems in combinatorial optimization. Apart from theoretical importance, LCS has enormous applications in bioinformatics, revision control systems, and data comparison programs. Although a simple dynamic program computes LCS in quadratic time, it has been recently proven that the problem admits a conditional lower bound and may not be solved in truly subquadratic time [2, 18]. In addition to this, LCS is notoriously hard with respect to approximation algorithms. Apart from a trivial sampling technique that obtains an $n^{x}$ approximation solution in time $O(n^{2-2x})$ nothing else is known for LCS. This is in sharp contrast to its dual problem edit distance, for which several linear time solutions were obtained in the past two decades [5, 6, 10, 11, 19]. In this work, we present the first nontrivial algorithm for approximating LCS in linear time. Our main result is a linear time algorithm for the LCS which has an approximation factor of $O(n^{0.4991319})$ in expectation. This beats the $\sqrt{n}$ barrier for approximating LCS in linear time.},
+  archive      = {J_SICOMP},
+  author       = {MohammadTaghi HajiAghayi and Masoud Seddighin and Saeedreza Seddighin and Xiaorui Sun},
+  doi          = {10.1137/19M1272068},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1341-1367},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Approximating longest common subsequence in linear time: Beating the $\sqrt{{n}}$ barrier},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A near-optimal algorithm for shortest paths among curved
+obstacles in the plane. <em>SICOMP</em>, <em>51</em>(4), 1296–1340. (<a
+href="https://doi.org/10.1137/21M1428248">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose an algorithm for the problem of computing shortest paths among curved obstacles in the plane. If the obstacles have $O(n)$ description complexity, then the algorithm runs in $O(n\log n)$ time plus a term dependent on the properties of the boundary arcs. Specifically, if the arcs allow a certain kind of bisector intersection to be computed in constant time, or even in $O(\log n)$ time, then the running time of the overall algorithm is $O(n \log n)$. If the arcs support only constant-time tangent, intersection, and length queries, as is customarily assumed, then the algorithm computes an approximate shortest path, with relative error $\varepsilon$, in time $O(n\log n + n\log \frac{1}{\varepsilon})$. In fact, the algorithm computes an approximate shortest path map, a data structure with $O(n\log n)$ size, that allows it to report the (approximate) length of a shortest path from a fixed source point to any query point in the plane in $O(\log n)$ time. By applying an idea due to Wang [Proceedings of the $32$nd Annual ACM-SIAM Symposium on Discrete Algorithms, 2021, pp. 810--821], the algorithm&#39;s working storage and the size of the approximate shortest path map can be reduced to $O(n)$.},
+  archive      = {J_SICOMP},
+  author       = {John Hershberger and Subhash Suri and Hakan Yildiz},
+  doi          = {10.1137/21M1428248},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1296-1340},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A near-optimal algorithm for shortest paths among curved obstacles in the plane},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Perfect sampling in infinite spin systems via strong spatial
+mixing. <em>SICOMP</em>, <em>51</em>(4), 1280–1295. (<a
+href="https://doi.org/10.1137/21M1437433">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a simple algorithm that perfectly samples configurations from the unique Gibbs measure of a spin system on a potentially infinite graph $G$. The sampling algorithm assumes strong spatial mixing together with subexponential growth of $G$. It produces a finite window onto a perfect sample from the Gibbs distribution. The run-time is linear in the size of the window, in particular it is constant for each vertex.},
+  archive      = {J_SICOMP},
+  author       = {Konrad Anand and Mark Jerrum},
+  doi          = {10.1137/21M1437433},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1280-1295},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Perfect sampling in infinite spin systems via strong spatial mixing},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Testing linear-invariant properties. <em>SICOMP</em>,
+<em>51</em>(4), 1230–1279. (<a
+href="https://doi.org/10.1137/21M1397246">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the property testing of functions $\mathbb F_p^n\to[R]$ for fixed prime $p$ and positive integer $R$. We work in the natural model where we are allowed to query the function on a random subspace of constant dimension. We say that a property is testable if queries of this form can detect the property with one-sided error. Furthermore, a property is proximity oblivious-testable (PO-testable) if the test is also independent of the proximity parameter $\epsilon$. It is known that a number of natural properties such as linearity and being a low degree polynomial are PO-testable. These properties are examples of linear-invariant properties, meaning that they are preserved under linear automorphisms of the domain. Following work of Kaufman and Sudan, the study of linear-invariant properties has been an important problem in arithmetic property testing. A central conjecture in this field, proposed by Bhattacharyya, Grigorescu, and Shapira, is that a linear-invariant property is testable if and only if it is semi-subspace-hereditary. We prove two results; the first resolves this conjecture and the second classifies PO-testable properties: (1) A linear-invariant property is testable if and only if it is semi-subspace-hereditary. (2) A linear-invariant property is PO-testable if and only if it is locally characterized. Our innovations are twofold. We give a more powerful version of the compactness argument first introduced by Alon and Shapira. This relies on a new strong arithmetic regularity lemma in which one mixes different levels of Gowers uniformity. This allows us to extend the work of Bhattacharyya, Fischer, Hatami, Hatami, and Lovett by removing the bounded complexity restriction in their work. Our second innovation is a novel recoloring technique called patching that builds on earlier work by the authors and Fox. This Ramsey-theoretic technique is critical for working in the linear-invariant setting and allows us to remove the translation-invariant restriction present in previous work.},
+  archive      = {J_SICOMP},
+  author       = {Jonathan Tidor and Yufei Zhao},
+  doi          = {10.1137/21M1397246},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1230-1279},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Testing linear-invariant properties},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Classical verification of quantum computations.
+<em>SICOMP</em>, <em>51</em>(4), 1172–1229. (<a
+href="https://doi.org/10.1137/20M1371828">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the first protocol allowing a classical computer to interactively verify the result of an efficient quantum computation. We achieve this by constructing a measurement protocol, which enables a classical verifier to use a quantum prover as a trusted measurement device. The protocol forces the prover to behave as follows: the prover must construct an $n$ qubit state of his choice, measure each qubit in the Hadamard or standard basis as directed by the verifier, and report the measurement results to the verifier. The soundness of this protocol is enforced based on the assumption that the learning with errors problem is computationally intractable for efficient quantum machines.},
+  archive      = {J_SICOMP},
+  author       = {Urmila Mahadev},
+  doi          = {10.1137/20M1371828},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1172-1229},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Classical verification of quantum computations},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Tighter bounds on MultiParty coin flipping via augmented
+weak martingales and differentially private sampling. <em>SICOMP</em>,
+<em>51</em>(4), 1126–1171. (<a
+href="https://doi.org/10.1137/18M1210782">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_SICOMP},
+  author       = {Amos Beimel and Iftach Haitner and Nikolaos Makriyannis and Eran Omri},
+  doi          = {10.1137/18M1210782},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1126-1171},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Tighter bounds on MultiParty coin flipping via augmented weak martingales and differentially private sampling},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Contextual search via intrinsic volumes. <em>SICOMP</em>,
+<em>51</em>(4), 1096–1125. (<a
+href="https://doi.org/10.1137/20M1385718">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of contextual search, a multidimensional generalization of binary search that captures many problems in contextual decision-making. In contextual search, a learner is trying to learn the value of a hidden vector $v \in [0,1]^d$. Every round the learner is provided an adversarially chosen context $u_t \in \R^d$, submits a guess $p_t$ for the value of $\langle u_t, v\rangle$, learns whether $p_t &lt; \langle u_t, v\rangle$, and incurs loss $\ell(\langle u_t, v\rangle, p_t)$ (for some loss function $\ell$). The learner&#39;s goal is to minimize their total loss over the course of $T$ rounds. We present an algorithm for the contextual search problem for the symmetric loss function $\ell(\theta, p) = |\theta - p|$ that achieves $O_{d}(1)$ total loss. We present a new algorithm for the dynamic pricing problem (which can be realized as a special case of the contextual search problem) that achieves $O_{d}(\log \log T)$ total loss, improving on the previous best known upper bounds of $O_{d}(\log T)$ and matching the known lower bounds (up to a polynomial dependence on $d$). Both algorithms make significant use of ideas from the field of integral geometry, most notably the notion of intrinsic volumes of a convex set. To the best of our knowledge, this is the first application of intrinsic volumes to algorithm design.},
+  archive      = {J_SICOMP},
+  author       = {Renato Paes Leme and Jon Schneider},
+  doi          = {10.1137/20M1385718},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1096-1125},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Contextual search via intrinsic volumes},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On ray shooting for triangles in 3-space and related
+problems. <em>SICOMP</em>, <em>51</em>(4), 1065–1095. (<a
+href="https://doi.org/10.1137/21M1408245">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider several intersection searching problems that involve lines in ${\mathbb R}^3$ and present improved algorithms for solving them. The problems include (i) ray shooting amid triangles in ${\mathbb R}^3$, (ii) reporting intersections between query lines (segments, or rays) and input triangles in ${\mathbb R}^3$, as well as approximately counting the number of such intersections, (iii) computing the intersection of two nonconvex polyhedra in ${\mathbb R}^3$, (iv) detecting, counting, or reporting intersections in a set of lines in ${\mathbb R}^3$, and (v) output-sensitive construction of an arrangement of triangles in ${\mathbb R}^3$. Our approach is based on the polynomial partitioning technique. Our ray-shooting algorithm processes a set of $n$ triangles in ${\mathbb R}^3$ into a data structure for answering ray-shooting queries amid the given triangles, which uses $O(n^{3/2+{\varepsilon}})$ storage and expected preprocessing time, and answers a query in $O(n^{1/2+{\varepsilon}})$ time, for any ${\varepsilon}&gt;0$. This is a significant improvement over known results, obtained more than 25 years ago, in which, with this amount of storage, the query time bound is roughly $n^{5/8}$. The algorithms for the other problems have similar performance bounds, with similar improvements over previous results. We also derive a nontrivial improved tradeoff between storage and query time. Using it, we obtain algorithms that answer $m$ queries on $n$ objects in $\max \left{ O(m^{2/3}n^{5/6+{\varepsilon}} + n^{1+{\varepsilon}}),\; O(m^{5/6+{\varepsilon}}n^{2/3} + m^{1+{\varepsilon}}) \right}$ expected time for any ${\varepsilon}&gt;0$.},
+  archive      = {J_SICOMP},
+  author       = {Esther Ezra and Micha Sharir},
+  doi          = {10.1137/21M1408245},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1065-1095},
+  shortjournal = {SIAM J. Comput.},
+  title        = {On ray shooting for triangles in 3-space and related problems},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022b). A spectral approach to network design. <em>SICOMP</em>,
+<em>51</em>(4), 1018–1064. (<a
+href="https://doi.org/10.1137/20M1330762">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a spectral approach to design approximation algorithms for network design problems. We observe that the underlying mathematical questions are the spectral rounding problems, which were studied in spectral sparsification and in discrepancy theory. We extend these results to incorporate additional nonnegative linear constraints, and show that they can be used to significantly extend the scope of network design problems that can be solved. Our algorithm for spectral rounding is an iterative randomized rounding algorithm based on the regret minimization framework. In some settings, this provides an alternative spectral algorithm to achieve constant factor approximation for the classical survivable network design problem, and partially answers a question of Bansal about survivable network design with concentration property. We also show many other applications of the spectral rounding results, including weighted experimental design and spectral network design.},
+  archive      = {J_SICOMP},
+  author       = {Lap Chi Lau and Hong Zhou},
+  doi          = {10.1137/20M1330762},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {1018-1064},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A spectral approach to network design},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Caching with time windows and delays. <em>SICOMP</em>,
+<em>51</em>(4), 975–1017. (<a
+href="https://doi.org/10.1137/20M1346286">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider two generalizations of the classical weighted paging problem that incorporate the notion of delayed service of page requests. The first is the (weighted) paging with time windows (\sf PageTW) problem, which is like the classical weighted paging problem except that each page request only needs to be served before a given deadline. This problem arises in many practical applications of online caching, such as the “deadline” I/O scheduler in the Linux kernel and video-on-demand streaming. The second, and more general, problem is the (weighted) paging with delay (\sf PageD) problem, where the delay in serving a page request results in a penalty being added to the objective. This problem generalizes the caching problem to allow delayed service, a line of work that has recently gained traction in online algorithms (e.g., [Y. Emek, S. Kutten, and R. Wattenhofer, Proceedings of the 48th Annual ACM SIGACT Symposium on Theory of Computing, 2016, pp. 333--344; Y. Azar et al., Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing, 2017, pp. 551--563; Y. Azar and N. Touitou, Proceedings of the 60th IEEE Annual Symposium on Foundations of Computer Science, 2019, pp. 60--71]). We give $O(\log k\log n)$-competitive algorithms for both the \sf PageTW and \sf PageD problems on $n$ pages with a cache of size $k$. This significantly improves on the previous best bounds of $O(k)$ for both problems [Y. Azar et al., Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing, 2017, pp. 551--563]. We also consider the offline \sf PageTW and \sf PageD problems, for which we give $O(1)$-approximation algorithms and prove APX-hardness. These are the first results for the offline problems; even NP-hardness was not known before our work. At the heart of our algorithms is a novel “hitting-set” LP relaxation of the \sf PageTW problem that overcomes the $\Omega(k)$ integrality gap of the natural LP for the problem. To the best of our knowledge, this is the first example of an LP-based algorithm for an online problem with delays/deadlines.},
+  archive      = {J_SICOMP},
+  author       = {Anupam Gupta and Amit Kumar and Debmalya Panigrahi},
+  doi          = {10.1137/20M1346286},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {975-1017},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Caching with time windows and delays},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Differentially private learning of geometric concepts.
+<em>SICOMP</em>, <em>51</em>(4), 952–974. (<a
+href="https://doi.org/10.1137/21M1406428">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present efficient differentially private algorithms for learning unions of polygons in the plane (which are not necessarily convex). Our algorithms are $(\alpha,\beta)$--probably approximately correct and $(\varepsilon,\delta)$--differentially private using a sample of size $\tilde{O}\left(\frac{1}{\alpha\varepsilon}k\log d\right)$, where the domain is $[d]\times[d]$ and $k$ is the number of edges in the union of polygons. Our algorithms are obtained by designing a private variant of the classical (nonprivate) learner for conjunctions using the greedy algorithm for set cover.},
+  archive      = {J_SICOMP},
+  author       = {Haim Kaplan and Yishay Mansour and Yossi Matias and Uri Stemmer},
+  doi          = {10.1137/21M1406428},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {952-974},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Differentially private learning of geometric concepts},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022a). A local search framework for experimental design.
+<em>SICOMP</em>, <em>51</em>(4), 900–951. (<a
+href="https://doi.org/10.1137/20M1386542">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a local search framework to design and analyze both combinatorial algorithms and rounding algorithms for experimental design problems. This framework provides a unifying approach to match and improve all known results in D/A/E-design and to obtain new results in previously unknown settings. For combinatorial algorithms, we provide a new analysis of the classical Fedorov&#39;s exchange method. We prove that this simple local search algorithm works well as long as there exists an almost optimal solution with good condition number. Moreover, we design a new combinatorial local search algorithm for E-design using the regret minimization framework. For rounding algorithms, we provide a unified randomized exchange algorithm to match and improve previous results for D/A/E-design. Furthermore, the algorithm works in the more general setting to approximately satisfy multiple knapsack constraints, which can be used for weighted experimental design and for incorporating fairness constraints into experimental design.},
+  archive      = {J_SICOMP},
+  author       = {Lap Chi Lau and Hong Zhou},
+  doi          = {10.1137/20M1386542},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {900-951},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A local search framework for experimental design},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Approximately counting and sampling small witnesses using a
+colorful decision oracle. <em>SICOMP</em>, <em>51</em>(4), 849–899. (<a
+href="https://doi.org/10.1137/19M130604X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we design efficient algorithms to approximately count the number of edges of a given $k$-hypergraph, and to sample an approximately uniform random edge. The hypergraph is not given explicitly and can be accessed only through its colorful independence oracle: The colorful independence oracle returns yes or no depending on whether a given subset of the vertices contains an edge that is colorful with respect to a given vertex-coloring. Our results extend and/or strengthen recent results in the graph oracle literature due to Beame et al. [ACM Trans. Algorithms, 16 (2020), 52], Dell and Lapinskas [Proceedings of STOC, ACM, 2018, pp. 281--288], and Bhattacharya et al. [Proceedings of ISAAC, 2019]. Our results have consequences for approximate counting/sampling: We can turn certain kinds of decision algorithms into approximate counting/sampling algorithms without causing much overhead in the running time. We apply this approximate counting/sampling-to-decision reduction to key problems in fine-grained complexity (such as $k$-SUM, $k$-OV, and weighted $k$-Clique) and parameterized complexity (such as induced subgraphs of size $k$ or weight-$k$ solutions to constraint satisfaction problems).},
+  archive      = {J_SICOMP},
+  author       = {Holger Dell and John Lapinskas and Kitty Meeks},
+  doi          = {10.1137/19M130604X},
+  journal      = {SIAM Journal on Computing},
+  number       = {4},
+  pages        = {849-899},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Approximately counting and sampling small witnesses using a colorful decision oracle},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Reducing path TSP to TSP. <em>SICOMP</em>, <em>51</em>(3),
+STOC20-24-53. (<a href="https://doi.org/10.1137/20M135594X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a black-box reduction from the path version of the traveling salesman problem (Path TSP) to the classical tour version (TSP). More precisely, given an $\alpha$-approximation algorithm for TSP, then, for any $\epsilon &gt;0$, we obtain an $(\alpha+\epsilon)$-approximation algorithm for the more general Path TSP. This reduction implies that the approximability of Path TSP is the same as for TSP, up to an arbitrarily small error. This avoids future discrepancies between the best known approximation factors achievable for these two problems, as they have existed until very recently. A well-studied special case of TSP, Graph TSP, asks for tours in unit-weight graphs. Our reduction shows that any $\alpha$-approximation algorithm for Graph TSP implies an $(\alpha+\epsilon)$-approximation algorithm for its path version. By applying our reduction to the 1.4-approximation algorithm for Graph TSP by Sebö and Vygen, we obtain a polynomial-time $(1.4+\epsilon)$-approximation algorithm for Graph Path TSP, improving on a recent $1.497$-approximation algorithm of Traub and Vygen. We obtain our results through a variety of new techniques, including a novel way to set up a recursive dynamic program to guess significant parts of an optimal solution. At the core of our dynamic program we deal with instances of a new generalization of (Path) TSP which combines parity constraints with certain connectivity requirements. This problem, which we call $\Phi$-TSP, has a constant-factor approximation algorithm and can be reduced to TSP in certain cases when the dynamic program would not make sufficient progress.},
+  archive      = {J_SICOMP},
+  author       = {Vera Traub and Jens Vygen and Rico Zenklusen},
+  doi          = {10.1137/20M135594X},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {STOC20-24-53},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Reducing path TSP to TSP},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Explicit near-ramanujan graphs of every degree.
+<em>SICOMP</em>, <em>51</em>(3), STOC20-1-23. (<a
+href="https://doi.org/10.1137/20M1342112">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For every constant $d \geq 3$ and $\epsilon &gt; 0$, we give a deterministic $\operatorname{poly}(n)$-time algorithm that outputs a $d$-regular graph on $\Theta(n)$ vertices that is $\eps$-near-Ramanujan; i.e., its eigenvalues are bounded in magnitude by $2\sqrt{d-1} + \epsilon$ (excluding the single trivial eigenvalue of $d$).},
+  archive      = {J_SICOMP},
+  author       = {Sidhanth Mohanty and Ryan O&#39;Donnell and Pedro Paredes},
+  doi          = {10.1137/20M1342112},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {STOC20-1-23},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Explicit near-ramanujan graphs of every degree},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Nearly optimal static las vegas succinct dictionary.
+<em>SICOMP</em>, <em>51</em>(3), STOC20-174-249. (<a
+href="https://doi.org/10.1137/20M1363649">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For positive integers $U$, $n$, and $\sigma$, given a set $S$ of $n$ (distinct) keys from key space $[U]$, each associated with a value from $[\sigma]$, the static dictionary problem asks one to preprocess these (key, value) pairs into a data structure, supporting value-retrieval queries: for any given $x\in [U]$, ${valRet}(x)$ must return the value associated with $x$ if $x\in S$, or return $\bot$ if $x\notin S$. The special case where $\sigma=1$ is called the membership problem. The “textbook” solution is to use a hash table, which occupies linear space and answers each query in constant time. On the other hand, the minimum possible space to encode all (key, value) pairs is only ${OPT}:= \lceil\lg_2\binom{U}{n}+n\lg_2 \sigma\rceil$ bits, which could be much smaller than a hash table. In this paper, we design a randomized dictionary data structure using ${OPT}+{poly}\lg n+O(\lg^{(\ell)} U)$ bits of space, and it has expected constant query time, assuming the query algorithm can access an external lookup table of size $n^{\epsilon}$ for any constant $\ell$ and $\epsilon$. The lookup table depends only on $U$, $n$, and $\sigma$, and not the input. Previously, even for membership queries and $U\leq n^{O(1)}$, the best known data structure with constant query time requires ${OPT}+n/{poly}\lg n$ bits of space (Pagh [SIAM J. Comput., 31 (2001), pp. 353--363] and Pǎtraşcu [FOCS, IEEE Computer Society, Los Alamitos, CA, 2008, pp. 305--313]); the best known using ${OPT}+n^{1-\epsilon}$ space has query time $O(\lg n)$. Our new data structure answers open questions by Pǎtraşcu and Thorup [FOCS, IEEE Computer Society, Los Alamitos, CA, 2008, pp. 305--313; Bull. Eur. Assoc. Theor. Comput. Sci. EATCS, 109 (2013), pp. 7--13]. We also present a scheme that compresses a sequence $X\in[\sigma]^n$ to its zeroth order (empirical) entropy up to $\sigma\cdot{poly}\lg n$ extra bits, supporting decoding each $X_i$ in $O(\lg \sigma)$ expected time.},
+  archive      = {J_SICOMP},
+  author       = {Huacheng Yu},
+  doi          = {10.1137/20M1363649},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {STOC20-174-249},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Nearly optimal static las vegas succinct dictionary},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Strong average-case circuit lower bounds from nontrivial
+derandomization. <em>SICOMP</em>, <em>51</em>(3), STOC20-115-173. (<a
+href="https://doi.org/10.1137/20M1364886">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In a recent breakthrough, [C. Murray and R. R. Williams, STOC 2018, ACM, New York, 2018, pp. 890--901] proved that ${NQP} = {NTIME}[n^{{polylog}(n)}]$ cannot be computed by polynomial-size ${ACC}^0$ circuits (constant-depth circuits consisting of ${AND}$/${OR}$/${MOD}_m$ gates for a fixed constant $m$, a frontier class in circuit complexity). This was recently strengthened by [L. Chen, FOCS 2019, IEEE, Piscataway, NJ, 2019, pp. 1281--1304] to that ${NQP}$ cannot be $(1/2+1/{polylog}(n))$-approximated by polynomial-size ${ACC}^0$ circuits. In this work we will prove that ${NQP}$ cannot be $(1/2+1/n^{\omega(1)})$-approximated by polynomial-size ${ACC}^0$ circuits. As a straightforward application, we obtain an infinitely often nondeterministic pseudorandom generator for polysize ${ACC}^0$ circuits with sub-polynomial seed length. More generally, we establish a connection showing that, for a typical circuit class $\mathscr{C}$, nontrivial deterministic algorithms estimating the acceptance probability of $\mathscr{C}$ circuits imply strong ($1/2 + 1/n^{\omega(1)}$) average-case lower bounds against $\mathscr{C}$ circuits. We also apply this connection to prove new lower bounds against several subclasses of ${\sf TC}^0$ circuits (constant-depth circuits consisting entirely of majority gates), and show that nontrivial derandomization of ${MAJ} \circ {MAJ}$ would imply worst-case lower bounds for ${TC}^0_3$ (${MAJ} \circ{MAJ} \circ {MAJ}$), suggesting that ${TC}^0_3$ lower bounds are probably within reach. Our two new important technical ingredients are (1) techniques from cryptography in ${NC}^0$ [B. Applebaum, Y. Ishai, and E. Kushilevitz, SIAM J. Comput., 36 (2006), pp. 845--888], and (2) probabilistic checkable proofs of proximity with ${NC}^1$-computable proofs.},
+  archive      = {J_SICOMP},
+  author       = {Lijie Chen and Hanlin Ren},
+  doi          = {10.1137/20M1364886},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {STOC20-115-173},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Strong average-case circuit lower bounds from nontrivial derandomization},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Improved bounds for perfect sampling of <span
+class="math inline"><em>k</em></span>-colorings in graphs.
+<em>SICOMP</em>, <em>51</em>(3), STOC20-54-74. (<a
+href="https://doi.org/10.1137/20M1366666">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a randomized algorithm that takes as input an undirected $n$-vertex graph $G$ with maximum degree $\Delta$ and an integer $k &gt; 3\Delta$ and returns a random proper $k$-coloring of $G$. The distribution of the coloring is perfectly uniform over the set of all proper $k$-colorings; the expected running time of the algorithm is ${poly}(k,n)=\widetilde{O}(n\Delta^2\cdot \log(k))$. This improves upon a result of Huber [Proceedings of the $30$th ACM Symposium on Theory of Computing (STOC), 1998, pp. 31--40], who obtained a polynomial time perfect sampling algorithm for $k&gt;\Delta^2+2\Delta$. Prior to our work, no algorithm with expected running time ${poly}(k,n)$ was known to guarantee perfectly sampling with a subquadratic number of colors in general. Our algorithm (like several other perfect sampling algorithms including Huber&#39;s) is based on the coupling from the past method. Inspired by the bounding chain approach, pioneered independently by Huber (STOC 1998) and Häggström and Nelander [Scand. J. Stat., 26 (1999), pp. 395--411], we employ a novel bounding chain to derive our result for the graph coloring problem.},
+  archive      = {J_SICOMP},
+  author       = {Siddharth Bhandari and Sayantan Chakraborty},
+  doi          = {10.1137/20M1366666},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {STOC20-54-74},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Improved bounds for perfect sampling of $k$-colorings in graphs},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Separating the communication complexity of truthful and
+nontruthful algorithms for combinatorial auctions. <em>SICOMP</em>,
+<em>51</em>(3), STOC20-75-114. (<a
+href="https://doi.org/10.1137/20M1370021">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We provide the first separation in the approximation guarantee achievable by truthful and nontruthful algorithms for combinatorial auctions with polynomial communication. Specifically, we prove that any truthful mechanism guaranteeing a $(\nicefrac{3}{4}-\nicefrac{1}{240}+\varepsilon)$-approximation for two buyers with XOS valuations over $m$ items requires $\exp(\Omega(\varepsilon^2 \cdot m))$ communication, whereas a nontruthful algorithm by Dobzinski and Schapira [Proceedings of the Seventeenth Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), SIAM, 2006, pp. 1064--1073] and Feige [SIAM J. Comput., 39 (2009), pp. 122--142] is already known to achieve a $\nicefrac{3}{4}$-approximation in ${poly}(m)$ communication. We obtain our separation by proving that any simultaneous protocol (not necessarily truthful) which guarantees a $(\nicefrac{3}{4}-\nicefrac{1}{240}+\varepsilon)$-approximation requires communication $\exp(\Omega(\varepsilon^2 \cdot m))$. The taxation complexity framework of Dobzinski [Proceedings of the 57th Annual Symposium on Foundations of Computer Science (FOCS), IEEE, 2016, pp. 209--218] extends this lower bound to all truthful mechanisms (including interactive truthful mechanisms).},
+  archive      = {J_SICOMP},
+  author       = {Sepehr Assadi and Hrishikesh Khandeparkar and Raghuvansh R. Saxena and S. Matthew Weinberg},
+  doi          = {10.1137/20M1370021},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {STOC20-75-114},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Separating the communication complexity of truthful and nontruthful algorithms for combinatorial auctions},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Special section on the fifty-second annual ACM symposium on
+the theory of computing (STOC 2020). <em>SICOMP</em>, <em>51</em>(3),
+STOC20–i. (<a href="https://doi.org/10.1137/22N975494">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This issue of SICOMP contains six specially selected papers from STOC 2020, the Fifty-second Annual ACM Symposium on the Theory of Computing, which was held June 22--26, 2020, initially planned at Chicago, Illinois, but due to COVID-19 was an online conference in the end. The papers here were chosen to represent the range and quality of the STOC program. These papers have been revised and extended by their authors and subjected to the standard thorough reviewing process of SICOMP. The program committee for STOC 2020 consisted of an executive committee made up of Nima Anari, Boaz Barak, Sébastien Bubeck, Mark Bun, Arkadev Chattopadhyay, Chandra Chekuri, Julia Chuzhoy, Marek Cygan, Ilias Diakonikolas, Yevgeniy Dodis, Sebastian Forster, Ankit Garg, Nika Haghtalab, Prahladh Harsha, Justin Holmgren, Piotr Indyk, Rahul Jain, Sanjeev Khanna, Dakshita Khurana, Pravesh Kothari, Robert Krauthgamer, Marvin Künnemann, Tengyu Ma, Rafael Oliveira, Merav Parter, Sofya Raskhodnikova, Robert Robere, Dana Ron, Noga Ron-Zewi, Thatchaphol Saranurak, Balasubramanian Sivan, Christian Sohler, Madhur Tulsiani, Omri Weinstein, Christian Wulff-Nilsen, and Henry Yuen. The program chair was Julia Chuzhoy. Included in this issue are the following papers: ``Explicit Near-Ramanujan Graphs of Every Degree&quot; by Sidhanth Mohanty, Ryan O&#39;Donnell, and Pedro Paredes shows a deterministic poly$(n)$-time algorithm that outputs a $d$-regular graph on $\Theta(n)$ vertices that is $\epsilon$-near-Ramanujan. ``Reducing Path TSP to TSP&quot; by Vera Traub, Jens Vygen, and Rico Zenklusen presents a black-box reduction from the path version of the traveling salesman problem (Path TSP) to the classical tour version (TSP). ``Nearly Optimal Static Las Vegas Succinct Dictionary&quot; by Huacheng Yu obtains a randomized dictionary data structure using ${OPT}+{poly}\lg n+O(\lg^{(\ell)} U)$ bits of space with expected constant query time for the static dictionary problem. ``Separating the Communication Complexity of Truthful and Nontruthful Algorithms for Combinatorial Auctions&quot; by Sepehr Assadi, Hrishikesh Khandeparkar, Raghuvansh Raj Saxena, and S. Matthew Weinberg provides the first separation in the approximation guarantee achievable by truthful and nontruthful combinatorial auctions with polynomial communication. ``Strong Average-Case Circuit Lower Bounds from Nontrivial Derandomization&quot; by Lijie Chen and Hanlin Ren establish a connection between nondeterministic algorithms estimating the acceptance probability of a given circuit and average-case lower bounds for nondeterministic time classes. ``Improved Bounds for Perfect Sampling of $k$-Colorings in Graphs&quot; by Siddharth Bhandari and Sayantan Chakraborty presents a randomized algorithm that takes as input an undirected $n$-vertex graph $G$ with maximum degree $\Delta$ and an integer $k&gt;3\Delta$ and returns a random proper $k$-coloring of $G$. We thank the authors, the STOC 2020 program committee, the STOC 2020 external reviewers, and the SICOMP referees for all of their hard work. Arkadev Chattopadhyay, Marek Cygan, Noga Ron-Zewi, Christian Wulff-Nilsen - Guest editors},
+  archive      = {J_SICOMP},
+  author       = {Arkadev Chattopadhyay and Marek Cygan and Noga Ron-Zewi and Christian Wulff-Nilsen},
+  doi          = {10.1137/22N975494},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {STOC20-i},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Special section on the fifty-second annual ACM symposium on the theory of computing (STOC 2020)},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A short list of equalities induces large sign-rank.
+<em>SICOMP</em>, <em>51</em>(3), 820–848. (<a
+href="https://doi.org/10.1137/19M1271348">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We exhibit a natural function $F_n$ on $n$ variables that can be computed by just a linear-size decision list of “Equalities,” but whose sign-rank is $2^{\Omega(n^{1/4})}$. This yields the following two new unconditional complexity class separations. 1. Boolean circuit complexity. The function $F_n$ can be computed by linear-size depth-two threshold formulas when the weights of the threshold gates are unrestricted (${THR} \circ {THR}$), but any ${THR} \circ {MAJ}$ circuit (the weights of the bottom threshold gates are polynomially bounded in $n$) computing $F_n$ requires size $2^{\Omega(n^{1/4})}$. This provides the first separation between the Boolean circuit complexity classes ${THR} \circ {MAJ}$ and ${THR} \circ {THR}$. While Amano and Maruoka [Proceedings of the 30th International Symposium on Mathematical Foundations of Computer Science, 2005, pp. 107--118] and Hansen and Podolskii [Proceedings of the 25th Annual IEEE Conference on Computational Complexity, 2010, pp. 270--279] emphasized that superpolynomial separations between the two classes remained a basic open problem, our separation is in fact exponential. In contrast, Goldmann, H\aastad, and Razborov [Comput. Complexity, 2 (1992), pp. 277--300] showed more than twenty-five years ago that functions efficiently computable by ${MAJ} \circ {THR}$ circuits can also be efficiently computed by ${MAJ} \circ {MAJ}$ circuits. In view of this, it was not even clear if ${THR} \circ {THR}$ was significantly more powerful than ${THR} \circ {MAJ}$ until our work, and there was no candidate function identified for the potential separation. 2. Communication complexity. The function $F_n$ (under the natural partition of the inputs) lies in the communication complexity class ${P}^{{MA}}$. Since $F_n$ has large sign-rank, this implies ${P}^{{MA}} \nsubseteq {UPP}$, strongly resolving a recent open problem posed by Göös, Pitassi, and Watson [Comput. Complexity, 27 (2018), pp. 245--304]. In order to prove our main result, we view $F_n$ as an ${XOR}$ function and develop a technique to lower bound the sign-rank of such functions. This requires novel approximation-theoretic arguments against polynomials of unrestricted degree. Further, our work highlights for the first time the class “decision lists of exact thresholds” as a common frontier for making progress on longstanding open problems in threshold circuits and communication complexity.},
+  archive      = {J_SICOMP},
+  author       = {Arkadev Chattopadhyay and Nikhil S. Mande},
+  doi          = {10.1137/19M1271348},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {820-848},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A short list of equalities induces large sign-rank},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A framework for the secretary problem on the intersection of
+matroids. <em>SICOMP</em>, <em>51</em>(3), 766–819. (<a
+href="https://doi.org/10.1137/21M1411822">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The secretary problem became one of the most prominent online selection problems due to its numerous applications in online mechanism design. The task is to select a maximum weight subset of elements subject to given constraints, where elements arrive one-by-one in random order, revealing a weight upon arrival. The decision whether to select an element has to be taken immediately after its arrival. The different applications that map to the secretary problem ask for different constraint families to be handled. The most prominent ones are matroid constraints, which both capture many relevant settings and admit strongly competitive secretary algorithms. However, dealing with more involved constraints proved to be much more difficult, and strong algorithms are known only for a few specific settings. In this paper, we present a general framework for dealing with the secretary problem over the intersection of several matroids. This framework allows us to combine and exploit the large set of matroid secretary algorithms known in the literature. As one consequence, we get constant-competitive secretary algorithms over the intersection of any constant number of matroids whose corresponding (single-)matroid secretary problems are currently known to have a constant-competitive algorithm. Moreover, we show that our results extend to submodular objectives.},
+  archive      = {J_SICOMP},
+  author       = {Moran Feldman and Ola Svensson and Rico Zenklusen},
+  doi          = {10.1137/21M1411822},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {766-819},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A framework for the secretary problem on the intersection of matroids},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Nearly optimal planar <span
+class="math inline"><em>k</em></span> nearest neighbors queries under
+general distance functions. <em>SICOMP</em>, <em>51</em>(3), 723–765.
+(<a href="https://doi.org/10.1137/20M1388371">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the $k$ nearest neighbors problem in the plane for general, convex, pairwise disjoint sites of constant description complexity such as line segments, disks, and quadrilaterals under a general family of distance functions including the $L_p$ norms and additively weighted Euclidean distances. We compose a static data structure for this general setting with nearly optimal $O(n\log\log n)$ space, optimal $O(\log n+k)$ query time, and optimal expected $O(n\log n)$ preprocessing time. We also devise a dynamic data structure (that allows insertions and deletions of sites) with $O(n\log n)$ space, $O(\log^2n+k\log n)$ query time, and expected amortized $O(\log^2 n)$ insertion time and $O(\log^4n)$ deletion time, matching the best known time complexities for point sites in the Euclidean metric and improving many applications such as dynamic minimum spanning trees in a general planar metric and dynamic connectivity in disk intersection graphs. Our results, to some extent, indicate that for the $k$ nearest neighbors problem, general distance functions may share the same time complexities with point sites in the Euclidean metric. To achieve this progress, we design vertical shallow cuttings of linear size for general distance functions. Vertical shallow cuttings are a key technique to tackle the $k$ nearest neighbors problem for point sites in the Euclidean metric, while existing generalizations to general distance functions are either not vertical or not of linear size. Our innovation is a new random sampling technique for the analysis of geometric structures, and since this technique provides a new way to develop geometric algorithms, we believe it is of independent interest.},
+  archive      = {J_SICOMP},
+  author       = {Chih-Hung Liu},
+  doi          = {10.1137/20M1388371},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {723-765},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Nearly optimal planar $k$ nearest neighbors queries under general distance functions},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Almost tight bounds for reordering buffer management.
+<em>SICOMP</em>, <em>51</em>(3), 701–722. (<a
+href="https://doi.org/10.1137/20M1326167">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We give almost tight bounds for the online reordering buffer management problem on the uniform metric. Specifically, we present the first nontrivial lower bounds for this problem by showing that deterministic online algorithms have a competitive ratio of at least $\Omega(\sqrt{\log k/\log\log k})$ and randomized online algorithms have a competitive ratio of at least $\Omega(\log\log k)$, where $k$ denotes the size of the buffer. We complement this by presenting a deterministic online algorithm for the reordering buffer management problem that obtains a competitive ratio of $O(\sqrt{\log k})$, almost matching the lower bound. This improves upon an algorithm by Avigdor-Elgrabli and Rabani that achieves a competitive ratio of $O(\log k/\log\log k)$.},
+  archive      = {J_SICOMP},
+  author       = {Anna Adamaszek and Artur Czumaj and Matthias Englert and Harald Räcke},
+  doi          = {10.1137/20M1326167},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {701-722},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Almost tight bounds for reordering buffer management},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Matrices of optimal tree-depth and a row-invariant
+parameterized algorithm for integer programming. <em>SICOMP</em>,
+<em>51</em>(3), 664–700. (<a
+href="https://doi.org/10.1137/20M1353502">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A long line of research on fixed parameter tractability of integer programming culminated with showing that integer programs with $n$ variables and a constraint matrix with dual tree-depth $d$ and largest entry $\Delta$ are solvable in time $g(d,\Delta){poly}(n)$ for some function $g$. However, the dual tree-depth of a constraint matrix is not preserved by row operations, i.e., a given integer program can be equivalent to another with a smaller dual tree-depth, and thus does not reflect its geometric structure. We prove that the minimum dual tree-depth of a row-equivalent matrix is equal to the branch-depth of the matroid defined by the columns of the matrix. We design a fixed parameter algorithm for computing branch-depth of matroids represented over a finite field and a fixed parameter algorithm for computing a row-equivalent matrix with minimum dual tree-depth. Finally, we use these results to obtain an algorithm for integer programming running in time $g(d^*,\Delta){poly}(n)$ where $d^*$ is the branch-depth of the constraint matrix; the branch-depth cannot be replaced by the more permissive notion of branch-width.},
+  archive      = {J_SICOMP},
+  author       = {Timothy F. Chan and Jacob W. Cooper and Martin Koutecký and Daniel Král and Kristýna Pekárková},
+  doi          = {10.1137/20M1353502},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {664-700},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Matrices of optimal tree-depth and a row-invariant parameterized algorithm for integer programming},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Optimal algorithms for geometric centers and depth.
+<em>SICOMP</em>, <em>51</em>(3), 627–663. (<a
+href="https://doi.org/10.1137/21M1423324">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We develop a general randomized technique for solving implicit linear programming problems, where the collection of constraints are defined implicitly by an underlying ground set of elements. In many cases, the structure of the implicitly defined constraints can be used to obtain faster linear program solvers. We apply this technique to obtain near-optimal algorithms for a variety of fundamental problems in geometry. For a given point set $P$ of size $n$ in $\mathbb{R}^d$, we develop algorithms for computing geometric centers of a point set, including the centerpoint and the Tukey median, and several other more involved measures of centrality. For $d=2$, the new algorithms run in $O(n\log n)$ expected time, which is optimal, and for higher constant $d&gt;2$, the expected time bound is within one logarithmic factor of $O(n^{d-1})$, which is also likely near optimal for some of the problems.},
+  archive      = {J_SICOMP},
+  author       = {Timothy M. Chan and Sariel Har-Peled and Mitchell Jones},
+  doi          = {10.1137/21M1423324},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {627-663},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Optimal algorithms for geometric centers and depth},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Constraint satisfaction problems with global modular
+constraints: Algorithms and hardness via polynomial representations.
+<em>SICOMP</em>, <em>51</em>(3), 577–626. (<a
+href="https://doi.org/10.1137/19M1291054">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the complexity of Boolean constraint satisfaction problems (CSPs) when the assignment must have Hamming weight in some congruence class modulo $M$, for various choices of the modulus $M$. Due to the known classification of tractable Boolean CSPs, this mainly reduces to the study of three cases: 2-SAT, HORN-SAT, and LIN-2 (linear equations mod 2). We classify the moduli $M$ for which these respective problems are polynomial time solvable, and when they are not (assuming the exponential time hypothesis). Our study reveals that this modular constraint lends a surprising richness to these classic, well-studied problems, with interesting broader connections to complexity theory and coding theory. The HORN-SAT case is connected to the covering complexity of polynomials representing the NAND function mod $M$. The LIN-2 case is tied to the sparsity of polynomials representing the OR function mod $M$, which in turn has connections to modular weight distribution properties of linear codes and locally decodable codes. In both cases, the analysis of our algorithm as well as the hardness reduction rely on these polynomial representations, highlighting an interesting algebraic common ground between hard cases for our algorithms and the gadgets which show hardness. These new complexity measures of polynomial representations merit further study. The inspiration for our study comes from a recent work by Nägele, Sudakov, and Zenklusen on submodular minimization with a global congruence constraint. Our algorithm for HORN-SAT has strong similarities to their algorithm, and in particular identical kinds of set systems arise in both cases. Our connection to polynomial representations leads to a simpler analysis of such set systems and also sheds light on (but does not resolve) the complexity of submodular minimization with a congruency requirement modulo a composite $M$.},
+  archive      = {J_SICOMP},
+  author       = {Joshua Brakensiek and Sivakanth Gopi and Venkatesan Guruswami},
+  doi          = {10.1137/19M1291054},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {577-626},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Constraint satisfaction problems with global modular constraints: Algorithms and hardness via polynomial representations},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Elastic-degenerate string matching via fast matrix
+multiplication. <em>SICOMP</em>, <em>51</em>(3), 549–576. (<a
+href="https://doi.org/10.1137/20M1368033">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An elastic-degenerate (ED) string is a sequence of $n$ sets of strings of total length $N$ which was recently proposed to model a set of similar sequences. The ED string matching (EDSM) problem is to find all occurrences of a pattern of length $m$ in an ED text. The EDSM problem has recently received some attention in the combinatorial pattern matching community, and an $\mathcal{O}(nm^{1.5}\sqrt{\log m} + N)$-time algorithm is known [Aoyama et al., CPM 2018]. The standard assumption in the prior work on this question is that $N$ is substantially larger than both $n$ and $m$, and thus we would like to have a linear dependency on the former. Under this assumption, the natural open problem is whether we can decrease the 1.5 exponent in the time complexity, similarly as in the related (but, to the best of our knowledge, not equivalent) word break problem [Backurs and Indyk, FOCS 2016]. Our starting point is a conditional lower bound for the EDSM problem. We use the popular combinatorial Boolean matrix multiplication (BMM) conjecture stating that there is no truly subcubic combinatorial algorithm for BMM [Abboud and Williams, FOCS 2014]. By designing an appropriate reduction, we show that a combinatorial algorithm solving the EDSM problem in $\mathcal{O}(nm^{1.5-\epsilon} + N)$ time, for any $\epsilon&gt;0$, refutes this conjecture. Our reduction should be understood as an indication that decreasing the exponent requires fast matrix multiplication. String periodicity and fast Fourier transform are two standard tools in string algorithms. Our main technical contribution is that we successfully combine these tools with fast matrix multiplication to design a noncombinatorial $\tilde{\mathcal{O}}(nm^{\omega-1}+N)$-time algorithm for EDSM, where $\omega$ denotes the matrix multiplication exponent and the $\tilde{\mathcal{O}}(\cdot)$ notation suppresses polylog factors. To the best of our knowledge, we are the first to combine these tools. In particular, using the fact that $\omega&lt;2.373$ [Alman and Williams, SODA 2021; Le Gall, ISSAC 2014; Williams, STOC 2012], we obtain an $\mathcal{O}(nm^{1.373} + N)$-time algorithm for EDSM. An important building block in our solution that might find applications in other problems is a method of selecting a small set of length-$\ell$ substrings of the pattern, called anchors, so that any occurrence of a string from an ED text set contains at least one but not too many (on average) such anchors inside.},
+  archive      = {J_SICOMP},
+  author       = {Giulia Bernardini and Paweł Gawrychowski and Nadia Pisanti and Solon P. Pissis and Giovanna Rosone},
+  doi          = {10.1137/20M1368033},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {549-576},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Elastic-degenerate string matching via fast matrix multiplication},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On the complexity of optimal lottery pricing and randomized
+mechanisms for a unit-demand buyer. <em>SICOMP</em>, <em>51</em>(3),
+492–548. (<a href="https://doi.org/10.1137/17M1136481">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the optimal lottery problem and the optimal mechanism design problem in the setting of a single unit-demand buyer with item values drawn from independent distributions. Optimal solutions to both problems are characterized by a linear program with exponentially many variables. For the menu size complexity of the optimal lottery problem, we present an explicit, simple instance with distributions of support size 2, and show that exponentially many lotteries are required to achieve the optimal revenue. We also show that, when distributions have support size 2 and share the same high value, the simpler scheme of item pricing can achieve the same revenue as the optimal menu of lotteries. The same holds for the case of two items with support size 2 (but not necessarily the same high value). For the computational complexity of the optimal mechanism design problem, we show that unless the polynomial-time hierarchy collapses (more exactly, ${P}^{{NP}}={P}^{{\#P}}$), there is no efficient randomized algorithm to implement an optimal mechanism even when distributions have support size 3.},
+  archive      = {J_SICOMP},
+  author       = {Xi Chen and Ilias Diakonikolas and Anthi Orfanou and Dimitris Paparas and Xiaorui Sun and Mihalis Yannakakis},
+  doi          = {10.1137/17M1136481},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {492-548},
+  shortjournal = {SIAM J. Comput.},
+  title        = {On the complexity of optimal lottery pricing and randomized mechanisms for a unit-demand buyer},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Optimal (euclidean) metric compression. <em>SICOMP</em>,
+<em>51</em>(3), 467–491. (<a
+href="https://doi.org/10.1137/20M1371324">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of representing all distances between $n$ points in ${\mathbb R}^d$, with arbitrarily small distortion, using as few bits as possible. We give asymptotically tight bounds for this problem, for Euclidean metrics, for $\ell_1$ (also known as Manhattan)-metrics, and for general metrics. Our bounds for Euclidean metrics mark the first improvement over compression schemes based on discretizing the classical dimensionality reduction theorem of Johnson and Lindenstrauss [Contemp. Math. 26 (1984), pp. 189--206]. Since it is known that no better dimension reduction is possible, our results establish that Euclidean metric compression is possible beyond dimension reduction.},
+  archive      = {J_SICOMP},
+  author       = {Piotr Indyk and Tal Wagner},
+  doi          = {10.1137/20M1371324},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {467-491},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Optimal (Euclidean) metric compression},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Sorting short keys in circuits of size <span
+class="math inline"><em>o</em>(<em>n</em>log <em>n</em>)</span>.
+<em>SICOMP</em>, <em>51</em>(3), 424–466. (<a
+href="https://doi.org/10.1137/20M1380983">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the classical problem of sorting an input array containing $n$ elements, where each element is described with a $k$-bit comparison key and a $w$-bit payload. A long-standing open problem is whether there exist $(k + w) \cdot o(n \log n)$-sized Boolean circuits for sorting. A landmark result in this area is the work by Ajtai, Komlós, and Szemerédi (An $O(n \log n)$ sorting network, STOC&#39;83), where they showed how to achieve sorting circuits with $(k + w) \cdot O(n \log n)$ Boolean gates. The recent work of Farhadi et al. (Lower bounds for external memory integer sorting via network coding, STOC&#39;19) showed that if the famous Li-Li network coding conjecture is true, then sorting circuits of size $w \cdot o(n \log n)$ do not exist for general $k$; however, no unconditional lower bound is known (in fact proving superlinear circuit lower bounds in general is out of the reach of existing techniques). In this paper, we show that one can overcome the $n\log n$ barrier when the keys to be sorted are short. Specifically, we prove that there is a circuit with $(k + w) \cdot O(n k) \cdot (\log^*n - \log^* (w + k))^{2+\epsilon}$ Boolean gates capable of sorting any input array containing $n$ elements, each described with a $k$-bit key and a $w$-bit payload. Therefore, if the keys to be sorted are short, say, $k &lt; o(\log n)$, our result is asymptotically better than the classical Ajtai, Komlós, and Szemerédi sorting network (ignoring ${\sf poly}\log^*$ terms); and we also overcome the $n \log n$ barrier in such cases. Such a result might be surprising initially because it is long known that comparator-based techniques must incur $\Omega(n \log n)$ comparator gates even when the keys to be sorted are only 1-bit long (e.g., see Knuth&#39;s “Art of Programming” textbook). To the best of our knowledge, we are the first to achieve nontrivial results for sorting circuits using non-comparison-based techniques. We also show that if the Li-Li network coding conjecture is true, our upper bound is optimal, barring ${\sf poly}\log^*$ terms, for every $k$ as long as $k = O(\log n)$.},
+  archive      = {J_SICOMP},
+  author       = {Gilad Asharov and Wei-Kai Lin and Elaine Shi},
+  doi          = {10.1137/20M1380983},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {424-466},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Sorting short keys in circuits of size ${o(n \log n)}$},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On a combinatorial generation problem of knuth.
+<em>SICOMP</em>, <em>51</em>(3), 379–423. (<a
+href="https://doi.org/10.1137/20M1377394">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The well-known middle levels conjecture asserts that for every integer $n\geq 1$, all binary strings of length 2(n+1) with exactly n+1 many 0s and 1s can be ordered cyclically so that any two consecutive strings differ in swapping the first bit with a complementary bit at some later position. In his book The Art of Computer Programming, Knuth raised a stronger form of this conjecture (Problem 56 in section 7.2.1.3), which requires that the sequence of positions with which the first bit is swapped in each step of such an ordering has 2n+1 blocks of the same length, and each block is obtained by adding s=1 (modulo 2n+1) to the previous block. In this work, we prove Knuth&#39;s conjecture in a more general form, allowing for arbitrary shifts $s\geq 1$ that are coprime to 2n+1. We also present an algorithm to compute this ordering, generating each new bitstring in $\mathcal{O}(n)$ time, using $\mathcal{O}(n)$ memory in total.},
+  archive      = {J_SICOMP},
+  author       = {Arturo Merino and Ondřej Mička and Torsten Mütze},
+  doi          = {10.1137/20M1377394},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {379-423},
+  shortjournal = {SIAM J. Comput.},
+  title        = {On a combinatorial generation problem of knuth},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Satisfiability in MultiValued circuits. <em>SICOMP</em>,
+<em>51</em>(3), 337–378. (<a
+href="https://doi.org/10.1137/18M1220194">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The satisfiability of Boolean circuits is NP-complete in general but becomes polynomial time when restricted either to monotone gates or linear gates. We go outside the Boolean realm and consider circuits built of any fixed set of gates on an arbitrarily large finite domain. From the complexity point of view this is connected with solving equations over finite algebras. We want to characterize finite algebras A with a polynomial time algorithm deciding if an equation over A has a solution. We are also looking for a polynomial time algorithm deciding if two circuits over a finite algebra compute the same function. Although we have not managed to solve these problems in the most general setting we have obtained such a characterization (in terms of nice structural algebraic properties) for a very broad class of algebras from congruence modular varieties, including groups, rings, and lattices and their extensions.},
+  archive      = {J_SICOMP},
+  author       = {Paweł M. Idziak and Jacek Krzaczkowski},
+  doi          = {10.1137/18M1220194},
+  journal      = {SIAM Journal on Computing},
+  number       = {3},
+  pages        = {337-378},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Satisfiability in MultiValued circuits},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Holographic algorithm with matchgates is universal for
+planar #CSP over boolean domain. <em>SICOMP</em>, <em>51</em>(2),
+STOC17-50-151. (<a href="https://doi.org/10.1137/17M1131672">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We prove a complexity classification theorem that classifies all counting constraint satisfaction problems (\#CSP) over Boolean variables into exactly three classes: (1) polynomial-time solvable; (2) \#P-hard for general instances but solvable in polynomial time over planar structures; and (3) \#P-hard over planar structures. The classification applies to all finite sets of local, not necessarily symmetric, constraint functions on Boolean variables that take algebraic complex values. It is shown that Valiant&#39;s holographic algorithm with matchgates is a universal strategy for all problems in class (2).},
+  archive      = {J_SICOMP},
+  author       = {Jin-Yi Cai and Zhiguo Fu},
+  doi          = {10.1137/17M1131672},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-50-151},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Holographic algorithm with matchgates is universal for planar \#CSP over boolean domain},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An efficient reduction from two-source to nonmalleable
+extractors: Achieving near-logarithmic min-entropy. <em>SICOMP</em>,
+<em>51</em>(2), STOC17-31-49. (<a
+href="https://doi.org/10.1137/17M1133245">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The breakthrough result of Chattopadhyay and Zuckerman [Explicit two-source extractors and resilient functions, in Proceedings of the 48th Annual ACM SIGACT Symposium on Theory of Computing (STOC), ACM, 2016, pp. 670--683] gives a reduction from the construction of explicit two-source extractors to the construction of explicit nonmalleable extractors. However, even assuming the existence of optimal explicit nonmalleable extractors, we only obtain a two-source extractor for $\mathrm{poly}(\log n)$ entropy, rather than the optimal $O(\log n)$. In this paper we modify the construction to solve the above barrier. Using the currently best explicit nonmalleable extractors, we get explicit bipartite Ramsey graphs for sets of size $2^k$ for $k=O(\log n \frac{\log\log n}{\log\log\log n})$. Any further improvement in the construction of nonmalleable extractors would immediately yield a corresponding two-source extractor. Intuitively, Chattopadhyay and Zuckerman use an extractor as a sampler, and we observe that we could use a weaker object---a somewhere-random condenser with a small entropy gap and a very short seed. We also show how to explicitly construct this weaker object using the error reduction technique of Raz, Reingold, and Vadhan [Error reduction for extractors, in Proceedings of the 40th Annual IEEE Symposium on Foundations of Computer Science (FOCS), IEEE, 1999, pp. 191--201], and the constant-degree dispersers of Zuckerman [Linear degree extractors and the inapproximability of max clique and chromatic number, in Proceedings of the Thirty-Eighth Annual ACM Symposium on Theory of Computing (STOC), ACM, 2006, pp. 681--690] that also work against extremely small tests.},
+  archive      = {J_SICOMP},
+  author       = {Avraham Ben-Aroya and Dean Doron and Amnon Ta-Shma},
+  doi          = {10.1137/17M1133245},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-31-49},
+  shortjournal = {SIAM J. Comput.},
+  title        = {An efficient reduction from two-source to nonmalleable extractors: Achieving near-logarithmic min-entropy},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A weighted linear matroid parity algorithm. <em>SICOMP</em>,
+<em>51</em>(2), STOC17-238-280. (<a
+href="https://doi.org/10.1137/17M1141709">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The matroid parity (or matroid matching) problem, introduced as a common generalization of matching and matroid intersection problems, is so general that it requires an exponential number of oracle calls. Nevertheless, Lovász [Acta Sci. Math., 42 (1980), pp. 121--131] showed that this problem admits a min-max formula and a polynomial algorithm for linearly represented matroids. Since then efficient algorithms have been developed for the linear matroid parity problem. In this paper, we present a combinatorial, deterministic, polynomial-time algorithm for the weighted linear matroid parity problem. The algorithm builds on a polynomial matrix formulation using Pfaffian and adopts a primal-dual approach based on the augmenting path algorithm of Gabow and Stallmann [Combinatorica, 6 (1986), pp. 123--150] for the unweighted problem.},
+  archive      = {J_SICOMP},
+  author       = {Satoru Iwata and Yusuke Kobayashi},
+  doi          = {10.1137/17M1141709},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-238-280},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A weighted linear matroid parity algorithm},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Deciding parity games in quasi-polynomial time.
+<em>SICOMP</em>, <em>51</em>(2), STOC17-152-188. (<a
+href="https://doi.org/10.1137/17M1145288">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is shown that the parity game can be solved in quasi-polynomial time. The parameterized parity game---with $n$ nodes and $m$ distinct values (a.k.a. colors or priorities)---is proven to be in the class of fixed parameter tractable problems when parameterized over $m$. Both results improve known bounds, from runtime $n^{O(\sqrt{n})}$ to $O(n^{\log(m)+6})$ and from an XP algorithm with runtime $O(n^{\Theta(m)})$ for fixed parameter $m$ to a fixed parameter tractable algorithm with runtime $O(n^5+2^{m\log(m)+6m})$. As an application, it is proven that colored Muller games with $n$ nodes and $m$ colors can be decided in time $O((m^m \cdot n)^5)$; it is also shown that this bound cannot be improved to $2^{o(m \cdot \log(m))} \cdot n^{O(1)}$ in the case that the exponential time hypothesis is true. Further investigations deal with memoryless Muller games and multidimensional parity games.},
+  archive      = {J_SICOMP},
+  author       = {Cristian S. Calude and Sanjay Jain and Bakhadyr Khoussainov and Wei Li and Frank Stephan},
+  doi          = {10.1137/17M1145288},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-152-188},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Deciding parity games in quasi-polynomial time},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Targeted pseudorandom generators, simulation advice
+generators, and derandomizing logspace. <em>SICOMP</em>, <em>51</em>(2),
+STOC17-281-304. (<a href="https://doi.org/10.1137/17M1145707">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Assume that for every derandomization result for logspace algorithms, there is a pseudorandom generator strong enough to nearly recover the derandomization by iterating over all seeds and taking a majority vote. We prove under a precise version of this assumption that ${BPL} \subseteq \bigcap_{\alpha &gt; 0} {DSPACE}(\log^{1 + \alpha} n)$. We strengthen the theorem to an equivalence by considering two generalizations of the concept of a pseudorandom generator against logspace. A targeted pseudorandom generator against logspace takes as input a short uniform random seed and a finite automaton; it outputs a long bitstring that looks random to that particular automaton. A simulation advice generator for logspace stretches a small uniform random seed into a long advice string; the requirement is that there is some logspace algorithm that, given a finite automaton and this advice string, simulates the automaton reading a long uniform random input. We prove that $\bigcap_{\alpha &gt; 0} {promise}-{BPSPACE}(\log^{1 + \alpha} n) = \bigcap_{\alpha &gt; 0} {promise}-{DSPACE}(\log^{1 + \alpha} n)$ if and only if for every targeted pseudorandom generator against logspace, there is a simulation advice generator for logspace with similar parameters. Finally, we observe that in a certain uniform setting (namely, if we only worry about sequences of automata that can be generated in logspace), targeted pseudorandom generators against logspace can be transformed into simulation advice generators with similar parameters.},
+  archive      = {J_SICOMP},
+  author       = {William M. Hoza and Chris Umans},
+  doi          = {10.1137/17M1145707},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-281-304},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Targeted pseudorandom generators, simulation advice generators, and derandomizing logspace},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Geodesic walks in polytopes. <em>SICOMP</em>,
+<em>51</em>(2), STOC17-400-488. (<a
+href="https://doi.org/10.1137/17M1145999">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the geodesic walk for sampling Riemannian manifolds and apply it to the problem of generating uniform random points from the interior of polytopes in $\mathbb{R}^{n}$ specified by $m$ inequalities. The walk is a discrete-time simulation of a stochastic differential equation on the Riemannian manifold equipped with the metric induced by the Hessian of a convex function; each step is the solution of an ordinary differential equation (ODE). The resulting sampling algorithm for polytopes mixes in $O^{*}(mn^{\frac{3}{4}})$ steps. This is the first walk that breaks the quadratic barrier for mixing in high dimension, improving on the previous best bound of $O^{*}(mn)$ by Kannan and Narayanan for the Dikin walk. We also show that each step of the geodesic walk (solving an ODE) can be implemented efficiently, thus improving the time complexity for sampling polytopes. Our analysis of the geodesic walk for general Hessian manifolds does not assume positive curvature and might be of independent interest.},
+  archive      = {J_SICOMP},
+  author       = {Yin Tat Lee and Santosh Vempala},
+  doi          = {10.1137/17M1145999},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-400-488},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Geodesic walks in polytopes},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). New hardness results for routing on disjoint paths.
+<em>SICOMP</em>, <em>51</em>(2), STOC17-189-237. (<a
+href="https://doi.org/10.1137/17M1146580">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the classical node-disjoint paths (\sf NDP) problem, the input consists of an undirected $n$-vertex graph $G$, and a collection ${\mathcal M}={(s_1,t_1),\ldots,(s_k,t_k)}$ of pairs of its vertices, called source-destination, or demand pairs. The goal is to route the largest possible number of the demand pairs via node-disjoint paths. The best current approximation for the problem is achieved by a simple greedy algorithm, whose approximation factor is $O(\sqrt n)$, while the best previous negative result is an $\Omega(\log^{1/2-\delta}n)$-hardness of approximation for any constant $\delta$, under standard complexity assumptions. Even seemingly simple special cases of the problem are still poorly understood: when the input graph is a grid, the best current algorithm achieves an $\tilde O(n^{1/4})$-approximation, and when it is a general planar graph, the best current approximation ratio of an efficient algorithm is $\tilde O(n^{9/19})$. The best previous lower bound on the approximability of both these versions of the problem is APX-hardness. In this paper, we prove that \sf NDP is $2^{\Omega(\sqrt{\log n})}$-hard to approximate, unless all problems in \sf NP have algorithms with running time $n^{O(\log n)}$. Our result holds even when the underlying graph is a planar graph with maximum vertex degree $3$, and all source vertices lie on the boundary of a single face (but the destination vertices may lie anywhere in the graph). We extend this result to the closely related edge-disjoint paths (\sf EDP) problem, showing the same hardness of approximation ratio even for subcubic planar graphs with all sources lying on the boundary of a single face.},
+  archive      = {J_SICOMP},
+  author       = {Julia Chuzhoy and David H. K. Kim and Rachit Nimavat},
+  doi          = {10.1137/17M1146580},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-189-237},
+  shortjournal = {SIAM J. Comput.},
+  title        = {New hardness results for routing on disjoint paths},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Short presburger arithmetic is hard. <em>SICOMP</em>,
+<em>51</em>(2), STOC17-1-30. (<a
+href="https://doi.org/10.1137/17M1151146">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the computational complexity of short sentences in Presburger arithmetic (Short-PA). Here by “short” we mean sentences with a bounded number of variables, quantifiers, inequalities, and Boolean operations; the input consists only of the integer coefficients involved in the linear inequalities. We prove that satisfiability of Short-PA sentences with $m+2$ alternating quantifiers is $\Sigma^{\mathsf{P}}_m$-complete or $\Pi^{\mathsf{P}}_m$-complete when the first quantifier is $\exists$ or $\forall$, respectively. Counting versions and restricted systems are also analyzed. Further applications are given to hardness of two natural problems in integer optimization.},
+  archive      = {J_SICOMP},
+  author       = {Danny Nguyen and Igor Pak},
+  doi          = {10.1137/17M1151146},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-1-30},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Short presburger arithmetic is hard},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Equivocating yao: Constant-round adaptively secure
+multiparty computation in the plain model. <em>SICOMP</em>,
+<em>51</em>(2), STOC17-333-399. (<a
+href="https://doi.org/10.1137/17M1151602">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Yao&#39;s circuit garbling scheme is one of the basic building blocks of cryptographic protocol design. Originally designed to enable two-message, two-party secure computation, the scheme has been extended in many ways and has innumerable applications. Still, a basic question has remained open throughout the years: Can the scheme be extended to guarantee security in the face of an adversary that corrupts both parties, adaptively, as the computation proceeds? We answer this question in the affirmative. We define a new type of symmetric encryption, called functionally equivocal encryption (FEE), and show that when Yao&#39;s scheme is implemented with FEE as the underlying encryption mechanism, it becomes secure against such adaptive adversaries. We then show how to implement FEE from any one-way function. Combining our scheme with noncommitting encryption, we obtain the first two-message, two-party computation protocol, and the first constant-round multiparty computation protocol, in the plain model, that are secure against semihonest adversaries who can adaptively corrupt all parties. Using standard techniques, this protocol can be made standalone secure against malicious corruptions in the plain model and universal composability secure in the common random string model. Additional applications include the first fully leakage-tolerant general multiparty computation protocol (with preprocessing), as well as a public-key version of FEE which can serve as a replacement for noncommitting encryption with better efficiency than what is possible for the latter.},
+  archive      = {J_SICOMP},
+  author       = {Ran Canetti and Oxana Poburinnaya and Muthuramakrishnan Venkitasubramaniam},
+  doi          = {10.1137/17M1151602},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-333-399},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Equivocating yao: Constant-round adaptively secure multiparty computation in the plain model},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Approximating rectangles by juntas and weakly exponential
+lower bounds for LP relaxations of CSPs. <em>SICOMP</em>,
+<em>51</em>(2), STOC17-305-332. (<a
+href="https://doi.org/10.1137/17M1152966">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We show that for constraint satisfaction problems (CSPs), weakly exponential size linear programming relaxations are as powerful as the explicit linear program described by $n^{\Omega(1)}$-rounds of the Sherali--Adams linear programming hierarchy. Combining with the known lower bounds on the Sherali--Adams hierarchy, we obtain subexponential size lower bounds for linear programming relaxations that beat random guessing for many CSPs such as MAX-CUT and MAX-3SAT. This is a nearly exponential improvement over previous results; previously, it was only known that linear programs of size $n^{o(\log n)}$ cannot beat random guessing for such CSP Chan et al. [FOCS 2013, IEEE, Piscataway, NJ, 2013, pp. 350--359]. Our bounds are obtained by exploiting and extending the recent progress in communication complexity for “lifting&quot; query lower bounds to communication problems. The main ingredient in our results is a new structural result on “high-entropy rectangles” that may be of independent interest in communication complexity.},
+  archive      = {J_SICOMP},
+  author       = {Pravesh K. Kothari and Raghu Meka and Prasad Raghavendra},
+  doi          = {10.1137/17M1152966},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-305-332},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Approximating rectangles by juntas and weakly exponential lower bounds for LP relaxations of CSPs},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Special section on the forty-ninth annual ACM symposium on
+the theory of computing (STOC 2017). <em>SICOMP</em>, <em>51</em>(2),
+STOC17-i-ii. (<a href="https://doi.org/10.1137/22N975482">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This issue of SICOMP contains ten specially selected papers from STOC 2017, the Forty-ninth Annual ACM Symposium on the Theory of Computing, which was held June 19--23 in Montreal, Canada. The papers here were chosen to represent the range and quality of the STOC program. These papers have been revised and extended by their authors and subjected to the standard thorough reviewing process of SICOMP. The program committee for STOC 2017 consisted of Nina Balcan, Allan Borodin, Keren Censor-Hillel, Edith Cohen, Artur Czumaj, Yevgeniy Dodis, Andrew Drucker, Nick Harvey, Monika Henzinger, Russell Impagliazzo, Ken-ichi Kawarabayashi, Ravi Kumar, James R. Lee, Katrina Ligett, Aleksander Mądry, Cristopher Moore, Jelani Nelson, Eric Price, Amit Sahai, Jared Saia, Shubhangi Saraf, Alexander Sherstov, Mohit Singh, and Gábor Tardos. The program chair was Valerie King. Included in this issue are the following papers: ``Short Presburger Arithmetic Is Hard,&quot; by Danny Nguyen and Igor Pak, proves that the satisfiability of short sentences in Presburger arithmetic with $m+2$ alternating quantifiers is $\Sigma^{{P}}_m$-complete or $\Pi^{{P}}_m$-complete when the first quantifier is $\exists$ or $\forall$, respectively. ``An Efficient Reduction from Two-Source to Nonmalleable Extractors: Achieving Near-Logarithmic Min-Entropy,&quot; by Avraham Ben-Aroya, Dean Doron, and Amnon Ta-Shma, gets an explicit bipartite Ramsey graph (or a twosource extractor) for sets of size 2$k$ for $k = O(\log n \log \log n)$, using the currently best explicit nonmalleable extractors. ``Holographic Algorithm with Matchgates Is Universal for Planar \#CSP over Boolean Domain,&quot; by Jin-Yi Cai and Zhiguo Fu, classifies all counting CSPs over Boolean variables into one of three categories: polynomial-time tractable, \#P-hard for general instances but solvable in polynomial time over planar graphs, and \#P-hard over planar graphs. ``Deciding Parity Games in Quasipolynomial Time,&quot; by Cristian S. Calude, Sanjay Jain, Bakhadyr Khoussainov, Wei Li, and Frank Stephan, shows the parameterized parity game, with $n$ nodes and $m$ priorities, is in the class of fixed parameter tractable problems when parameterized over $m$. ``New Hardness Results for Routing on Disjoint Paths,&quot; by Julia Chuzhoy, David H. K. Kim, and Rachit Nimavat, proves that node-disjoint paths is $2^{\Omega(\sqrt{\log n})}$-hard to approximate, unless all problems in NP have algorithms with running time $n^{O(\log n)}$. ``A Weighted Linear Matroid Parity Algorithm,&quot; by Satoru Iwata and Yusuke Kobayashi, presents a combinatorial, deterministic, strongly polynomial-time algorithm for the weighted linear matroid parity problem. ``Targeted Pseudorandom Generators, Simulation Advice Generators, and Derandomizing Logspace,&quot; by William M. Hoza and Chris Umans, shows that $\mathbf{BPL} \subseteq \bigcap_{\alpha &gt; 0} {DSPACE}(\log^{1 + \alpha} n)$, assuming that for every derandomization result for log-space algorithms there is a pseudorandom generator strong enough to nearly recover the derandomization by iterating over all seeds and taking a majority vote. ``Approximating Rectangles by Juntas and Weakly Exponential Lower Bounds for LP Relaxations of CSPs,&quot; by Pravesh K. Kothari, Raghu Meka, and Prasad Raghavendra, shows that for CSPs, subexponential size LP relaxations are as powerful as $n^{\Omega(1)}$-rounds of the Sherali--Adams LP hierarchy. ``Equivocating Yao: Constant-Round Adaptively Secure Multiparty Computation in the Plain Model,&quot; by Ran Canetti, Oxana Poburinnaya, and Muthuramakrishnan Venkitasubramaniam, defines a new type of encryption and shows that Yao&#39;s garbling scheme, implemented with this encryption mechanism, is secure against adaptive adversaries. ``Geodesic Walks in Polytopes,&quot; by Yin Tat Lee and Santosh Vempala, introduces the geodesic walk for sampling Riemannian manifolds and applies it to the problem of generating uniform random points from the interior of polytopes in ${\mathbb{R}}^{n}$ specified by m inequalities; the resulting sampling algorithm for polytopes mixes in $O^{*}(mn^{\frac{3}{4}})$ steps. We thank the authors, the STOC 2017 program committee, the STOC 2017 external reviewers, and the SICOMP referees for all of their hard work. Andy Drucker, Ravi Kumar, Amit Sahai, Mohit Singh, Guest editors},
+  archive      = {J_SICOMP},
+  author       = {Andy Drucker and Ravi Kumar and Amit Sahai and Mohit Singh},
+  doi          = {10.1137/22N975482},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {STOC17-i-ii},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Special section on the forty-ninth annual ACM symposium on the theory of computing (STOC 2017)},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Derandomization from algebraic hardness. <em>SICOMP</em>,
+<em>51</em>(2), 315–335. (<a
+href="https://doi.org/10.1137/20M1347395">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A hitting-set generator (HSG) is a polynomial map ${{\mathsf{Gen}}}:{\mathbb{F}}^k \to {\mathbb{F}}^n$ such that for all $n$-variate polynomials $C$ of small enough circuit size and degree, if $C$ is nonzero, then $C\circ {{\mathsf{Gen}}}$ is nonzero. In this paper, we give a new construction of such an HSG assuming that we have an explicit polynomial of sufficient hardness. Formally, we prove the following result over any field ${\mathbb{F}}$ of characteristic zero: Let $k\in {\mathbb{N}}$ and $\delta &gt; 0$ be arbitrary constants. Suppose ${\left{ {P_d} \right}}_{d\in {\mathbb{N}}}$ is an explicit family of $k$-variate polynomials such that $\deg P_d = d$ and $P_d$ requires algebraic circuits of size $d^\delta$. Then, there are explicit hitting sets of polynomial size for the class ${\mathsf{VP}}$. This is the first HSG in the algebraic setting that yields a complete derandomization of polynomial identity testing (PIT) for general circuits from a suitable algebraic hardness assumption. Unlike the prior constructions of such maps [N. Nisan and A. Wigderson, J. Comput. System Sci., 49 (1994), pp. 149--167; V. Kabanets and R. Impagliazzo, Comput. Complexity, 13 (2004), pp. 1--46; M. Agrawal, S. Ghosh, and N.Saxena, Proc. Natl. Acad. Sci. USA, 116 (2019), pp. 8107--8118; M. Kumar, R. Saptharishi, and A. Tengse, Proceedings of the \textup30th Annual ACM-SIAM Symposium on Discrete Algorithms, 2019, pp. 639--646], our construction is purely algebraic and does not rely on the notion of combinatorial designs. As a direct consequence, we show that even saving a single point from the “trivial” explicit, exponential sized hitting sets for constant-variate polynomials of low individual degree which are computable by small circuits implies a deterministic polynomial time algorithm for PIT. More precisely, we show the following: Let $k\in {\mathbb{N}}$ and $\delta &gt; 0$ be arbitrary constants. Suppose for every $s$ large enough, there is an explicit hitting set of size at most $((s+1)^k - 1)$ for the class of $k$-variate polynomials of individual degree $s$ that are computable by size $s^\delta$ circuits. Then there is an explicit hitting set of size ${\operatorname{poly}}(s)$ for the class of $s$-variate polynomials, of degree $s$, that are computable by size $s$ circuits. As a consequence, we give a deterministic polynomial time construction of hitting sets for algebraic circuits, if a strengthening of the $\tau$-conjecture of Shub and Smale [M. Shub and S. Smale, Duke Math. J., 81 (1995), pp. 47--54; S. Smale, Math. Intelligencer, 20 (1998), pp. 7--15] is true.},
+  archive      = {J_SICOMP},
+  author       = {Zeyu Guo and Mrinal Kumar and Ramprasad Saptharishi and Noam Solomon},
+  doi          = {10.1137/20M1347395},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {315-335},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Derandomization from algebraic hardness},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Metric embedding via shortest path decompositions.
+<em>SICOMP</em>, <em>51</em>(2), 290–314. (<a
+href="https://doi.org/10.1137/19M1296021">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of embedding shortest-path metrics of weighted graphs into $\ell_p$ spaces. We introduce a new embedding technique based on low-depth decompositions of a graph via shortest paths. The notion of shortest path decomposition (SPD) depth is inductively defined: A (weighed) path graph has SPD depth $1$. General graph has an SPD of depth $k$ if it contains a shortest path whose deletion leads to a graph, each of whose components has SPD depth at most $k-1$. In this paper we give an $O(k^{\min{\nicefrac{1}{p},\nicefrac{1}{2}}})$-distortion embedding for graphs of SPD depth at most $k$. This result is asymptotically tight for any fixed $p&gt;1$, while for $p=1$ it is tight up to second order terms. As a corollary of this result, we show that graphs having pathwidth $k$ embed into $\ell_p$ with distortion $O(k^{\min{\nicefrac{1}{p},\nicefrac{1}{2}}})$. For $p=1$, this improves over the best previous bound of Lee and Sidiropoulos that was exponential in $k$; moreover, for other values of $p$ it gives the first embeddings whose distortion is independent of the graph size $n$. Furthermore, we use the fact that planar graphs have SPD depth $O(\log n)$ to give a new proof that any planar graph embeds into $\ell_1$ with distortion $O(\sqrt{\log n})$. Our approach also gives new results for graphs with bounded treewidth, and for graphs excluding a fixed minor.},
+  archive      = {J_SICOMP},
+  author       = {Ittai Abraham and Arnold Filtser and Anupam Gupta and Ofer Neiman},
+  doi          = {10.1137/19M1296021},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {290-314},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Metric embedding via shortest path decompositions},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A subexponential parameterized algorithm for directed subset
+traveling salesman problem on planar graphs. <em>SICOMP</em>,
+<em>51</em>(2), 254–289. (<a
+href="https://doi.org/10.1137/19M1304088">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There are numerous examples of the so-called “square root phenomenon” in the field of parameterized algorithms: many of the most fundamental graph problems, parameterized by some natural parameter $k$, become significantly simpler when restricted to planar graphs and in particular the best possible running time is exponential in $\mathcal{O}(\sqrt{k})$ instead of $\mathcal{O}(k)$ (modulo standard complexity assumptions). We consider a classic optimization problem Subset Traveling Salesman, where we are asked to visit all the terminals $T$ by a minimum-weight closed walk. We investigate the parameterized complexity of this problem in planar graphs, where the number $k=|T|$ of terminals is regarded as the parameter. We show that Subset TSP can be solved in time $2^{\mathcal{O}(\sqrt{k}\log k)}\cdot n^{\mathcal{O}(1)}$ even on edge-weighted directed planar graphs. This improves upon the algorithm of Klein and Marx [SODA 2014, SIAM, Philadelphia, 2014, pp. 1812--1830] with the same running time that worked only on undirected planar graphs with polynomially large integer weights.},
+  archive      = {J_SICOMP},
+  author       = {Dániel Marx and Marcin Pilipczuk and Michal Pilipczuk},
+  doi          = {10.1137/19M1304088},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {254-289},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A subexponential parameterized algorithm for directed subset traveling salesman problem on planar graphs},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Anchored parallel repetition for nonlocal games.
+<em>SICOMP</em>, <em>51</em>(2), 214–253. (<a
+href="https://doi.org/10.1137/21M1405927">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a simple transformation on two-player nonlocal games, called “anchoring,” and prove an exponential-decay parallel repetition theorem for all anchored games in the setting of quantum entangled players. This transformation is inspired in part by the Feige--Kilian transformation [SIAM J. Comput., 30 (2000), pp. 324--346], and has the property that if the quantum value of the original game $G$ is $v$, then the quantum value of the anchored game $G_{{\perp}}$ is $1 - (1 - \alpha)^2 \cdot (1 - v)$, where $\alpha$ is a parameter of the transformation. In particular the anchored game has quantum value 1 if and only if the original game $G$ has quantum value 1. This provides the first gap amplification technique for general two-player nonlocal games that achieves exponential decay of the quantum value.},
+  archive      = {J_SICOMP},
+  author       = {Mohammad Bavarian and Thomas Vidick and Henry Yuen},
+  doi          = {10.1137/21M1405927},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {214-253},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Anchored parallel repetition for nonlocal games},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). When symmetries are not enough: A hierarchy of hard
+constraint satisfaction problems. <em>SICOMP</em>, <em>51</em>(2),
+175–213. (<a href="https://doi.org/10.1137/20M1383471">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We produce a class of $\omega$-categorical structures with finite signature by applying a model-theoretic construction---a refinement of the Hrushovski-encoding---to $\omega$-categorical structures in a possibly infinite signature. We show that the encoded structures retain desirable algebraic properties of the original structures, but that the constraint satisfaction problems (CSPs) associated with these structures can be badly behaved in terms of computational complexity. This method allows us to systematically generate $\omega$-categorical templates whose CSPs are complete for a variety of complexity classes of arbitrarily high complexity and $\omega$-categorical templates that show that membership in any given complexity class containing AC$^0$ cannot be expressed by a set of identities on the polymorphisms. It moreover enables us to prove that recent results about the relevance of topology on polymorphism clones of $\omega$-categorical structures also apply for CSP templates, i.e., structures in a finite language. Finally, we obtain a concrete algebraic criterion which could constitute a description of the delineation between tractability and NP-hardness in the dichotomy conjecture for first-order reducts of finitely bounded homogeneous structures.},
+  archive      = {J_SICOMP},
+  author       = {Pierre Gillibert and Julius Jonušas and Michael Kompatscher and Antoine Mottet and Michael Pinsker},
+  doi          = {10.1137/20M1383471},
+  journal      = {SIAM Journal on Computing},
+  number       = {2},
+  pages        = {175-213},
+  shortjournal = {SIAM J. Comput.},
+  title        = {When symmetries are not enough: A hierarchy of hard constraint satisfaction problems},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An improved approximation algorithm for the asymmetric
+traveling salesman problem. <em>SICOMP</em>, <em>51</em>(1), 139–173.
+(<a href="https://doi.org/10.1137/20M1339313">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We revisit the constant-factor approximation algorithm for the asymmetric traveling salesman problem by Svensson, Tarnawski, and Végh [J. ACM, 67 (2020), 37]. We improve on each part of this algorithm. We avoid the reduction to irreducible instances and thus obtain a simpler and much better reduction to vertebrate pairs. We also show that a slight variant of their algorithm for vertebrate pairs has a much smaller approximation ratio. Overall we improve the approximation ratio from 506 to $22+\epsilon$ for any $\epsilon &gt; 0$. This also improves the upper bound on the integrality ratio from 319 to 22.},
+  archive      = {J_SICOMP},
+  author       = {Vera Traub and Jens Vygen},
+  doi          = {10.1137/20M1339313},
+  journal      = {SIAM Journal on Computing},
+  number       = {1},
+  pages        = {139-173},
+  shortjournal = {SIAM J. Comput.},
+  title        = {An improved approximation algorithm for the asymmetric traveling salesman problem},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Approximating minimum representations of key horn functions.
+<em>SICOMP</em>, <em>51</em>(1), 116–138. (<a
+href="https://doi.org/10.1137/19M1275681">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Horn functions form an important subclass of Boolean functions and appear in many different areas of computer science and mathematics as a general tool to describe implications and dependencies. Finding minimum sized representations for such functions with respect to most commonly used measures is a computationally hard problem admitting a $2^{\log^{1-o(1)}n}$ inapproximability bound. In this paper we consider the natural class of key Horn functions representing keys of relational databases. For this class, the minimization problems for most measures remain NP-hard. In this paper we provide logarithmic factor approximation algorithms for key Horn functions with respect to all such measures.},
+  archive      = {J_SICOMP},
+  author       = {Kristóf Bérczi and Endre Boros and Ondřej Čepek and Petr Kučera and Kazuhisa Makino},
+  doi          = {10.1137/19M1275681},
+  journal      = {SIAM Journal on Computing},
+  number       = {1},
+  pages        = {116-138},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Approximating minimum representations of key horn functions},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Distributed lower bounds for ruling sets. <em>SICOMP</em>,
+<em>51</em>(1), 70–115. (<a
+href="https://doi.org/10.1137/20M1381770">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a graph $G=(V,E)$, an $(\alpha,\beta)$-ruling set is a subset $S\subseteq V$ such that the distance between any two vertices in $S$ is at least $\alpha$, and the distance between any vertex in $V$ and the closest vertex in $S$ is at most $\beta$. We present lower bounds for distributedly computing ruling sets. More precisely, for the problem of computing a $(2,\beta)$-ruling set (and hence also any $(\alpha,\beta)$-ruling set with $\alpha &gt;2$) in the LOCAL model of distributed computing, we show the following, where $n$ denotes the number of vertices, $\Delta$ the maximum degree, and $c$ is some universal constant independent of $n$ and $\Delta$: (a) Any deterministic algorithm requires $\Omega(\min{ \tfrac{\log\Delta}{\beta\log\log\Delta},\log_\Delta n})$ rounds for all $\beta\le c \cdot\min{\sqrt{\tfrac{\log\Delta}{\log\log\Delta}},\log_\Delta n}$. By optimizing $\Delta$, this implies a deterministic lower bound of $\Omega(\sqrt{\frac{\log n}{\beta\log\log n}})$ for all $\beta\le c\,\sqrt[3]{\tfrac{\log n}{\log\log n}}$. (b) Any randomized algorithm requires $\Omega(\min{\frac{\log\Delta}{\beta\log\log\Delta},\log_\Delta\log n})$ rounds for all $\beta\le c\cdot\min{\sqrt{\tfrac{\log\Delta}{\log\log\Delta}},\log_\Delta\log n}$. By optimizing $\Delta$, this implies a randomized lower bound of $\Omega(\sqrt{\tfrac{\log \log n}{\beta\log\log\log n}})$ for all $\beta\le c\,\sqrt[3]{\tfrac{\log\log n}{\log\log\log n}}$. For $\beta &gt; 1$, this improves on the previously best lower bound of $\Omega(\log^* n)$ rounds that follows from the 30-year-old bounds of Linial [SIAM J. Comput., 21(1992), pp. 193--201] and Naor [SIAM J. Discrete Math., 4(1991), pp. 409--412] (resp., $\Omega(1)$ rounds if $\beta \in \omega(\log^* n)$). For $\beta = 1$, i.e., for the problem of computing a maximal independent set (which is nothing else than a $(2,1)$-ruling set), our results improve on the previously best lower bound of $\Omega(\log^* n)$ on trees, as our bounds already hold on trees. For the maximal independent set on general graphs, a deterministic lower bound of $\Omega(\min{\Delta, \log_{\Delta} n})$ and a randomized lower bound of $\Omega(\min{\Delta, \log_{\Delta} \log n})$ were already known due to Balliu et al. [Proceedings of FOCS, 2019, pp. 481--497].},
+  archive      = {J_SICOMP},
+  author       = {Alkida Balliu and Sebastian Brandt and Dennis Olivetti},
+  doi          = {10.1137/20M1381770},
+  journal      = {SIAM Journal on Computing},
+  number       = {1},
+  pages        = {70-115},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Distributed lower bounds for ruling sets},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). The complexity of general-valued constraint satisfaction
+problems seen from the other side. <em>SICOMP</em>, <em>51</em>(1),
+19–69. (<a href="https://doi.org/10.1137/19M1250121">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The constraint satisfaction problem (CSP) is concerned with homomorphisms between two structures. For CSPs with restricted left-hand-side structures, the results of Dalmau, Kolaitis, and Vardi [Proceedings of the 8th International Conference on Principles and Practice of Constraint Programming, Springer, New York, 2002, pp. 310--326], Grohe [J. ACM, 54 (2007), 1], and Atserias, Bulatov, and Dalmau [Proceedings of the 34th International Colloquium on Automata, Languages and Programming, Springer, New York, 2007, pp. 279--290] establish the precise borderline of polynomial-time solvability (subject to complexity-theoretic assumptions) and of solvability by bounded-consistency algorithms (unconditionally) as bounded treewidth modulo homomorphic equivalence. The general-valued constraint satisfaction problem (VCSP) is a generalization of the CSP concerned with homomorphisms between two valued structures. For VCSPs with restricted left-hand-side valued structures, we establish the precise borderline of polynomial-time solvability (subject to complexity-theoretic assumptions) and of solvability by the $k$th level of the Sherali--Adams LP hierarchy (unconditionally). We also obtain results on related problems concerned with finding a solution and recognizing the tractable cases; the latter has an application in database theory.},
+  archive      = {J_SICOMP},
+  author       = {Clément Carbonnel and Miguel Romero and Stanislav Živný},
+  doi          = {10.1137/19M1250121},
+  journal      = {SIAM Journal on Computing},
+  number       = {1},
+  pages        = {19-69},
+  shortjournal = {SIAM J. Comput.},
+  title        = {The complexity of general-valued constraint satisfaction problems seen from the other side},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An optimal bound on the solution sets of one-variable word
+equations and its consequences. <em>SICOMP</em>, <em>51</em>(1), 1–18.
+(<a href="https://doi.org/10.1137/20M1310448">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We solve two long-standing open problems on word equations. Firstly, we prove that a one-variable word equation with constants has either at most three or an infinite number of solutions. The existence of such a bound had been conjectured, and the bound three is optimal. Secondly, we consider independent systems of three-variable word equations without constants. If such a system has a nonperiodic solution, then this system has at most 17 equations. Although probably not optimal, this is the first finite bound found. However, the conjecture of that bound being actually two still remains open.},
+  archive      = {J_SICOMP},
+  author       = {Dirk Nowotka and Aleksi Saarela},
+  doi          = {10.1137/20M1310448},
+  journal      = {SIAM Journal on Computing},
+  number       = {1},
+  pages        = {1-18},
+  shortjournal = {SIAM J. Comput.},
+  title        = {An optimal bound on the solution sets of one-variable word equations and its consequences},
+  volume       = {51},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

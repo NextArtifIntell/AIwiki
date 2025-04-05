@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MPC_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mpc---21">MPC - 21</h2>
+<ul>
+<li><details>
+<summary>
+(2020). An algorithmic framework based on primitive directions and
+nonmonotone line searches for black-box optimization problems with
+integer variables. <em>MPC</em>, <em>12</em>(4), 673–702. (<a
+href="https://doi.org/10.1007/s12532-020-00182-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we develop a new algorithmic framework to solve black-box problems with integer variables. The strategy included in the framework makes use of specific search directions (so called primitive directions) and a suitably developed nonmonotone line search, thus guaranteeing a high level of freedom when exploring the integer lattice. First, we describe and analyze a version of the algorithm that tackles problems with only bound constraints on the variables. Then, we combine it with a penalty approach in order to solve problems with simulation constraints. In both cases we prove finite convergence to a suitably defined local minimum of the problem. We report extensive numerical experiments based on a test bed of both bound-constrained and generally-constrained problems. We show the effectiveness of the method when compared to other state-of-the-art solvers for black-box integer optimization.},
+  archive      = {J_MPC},
+  author       = {Liuzzi, Giampaolo and Lucidi, Stefano and Rinaldi, Francesco},
+  doi          = {10.1007/s12532-020-00182-7},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {673-702},
+  shortjournal = {Math. Program. Comput.},
+  title        = {An algorithmic framework based on primitive directions and nonmonotone line searches for black-box optimization problems with integer variables},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). OSQP: An operator splitting solver for quadratic programs.
+<em>MPC</em>, <em>12</em>(4), 637–672. (<a
+href="https://doi.org/10.1007/s12532-020-00179-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a general-purpose solver for convex quadratic programs based on the alternating direction method of multipliers, employing a novel operator splitting technique that requires the solution of a quasi-definite linear system with the same coefficient matrix at almost every iteration. Our algorithm is very robust, placing no requirements on the problem data such as positive definiteness of the objective function or linear independence of the constraint functions. It can be configured to be division-free once an initial matrix factorization is carried out, making it suitable for real-time applications in embedded systems. In addition, our technique is the first operator splitting method for quadratic programs able to reliably detect primal and dual infeasible problems from the algorithm iterates. The method also supports factorization caching and warm starting, making it particularly efficient when solving parametrized problems arising in finance, control, and machine learning. Our open-source C implementation OSQP has a small footprint, is library-free, and has been extensively tested on many problem instances from a wide variety of application areas. It is typically ten times faster than competing interior-point methods, and sometimes much more when factorization caching or warm start is used. OSQP has already shown a large impact with tens of thousands of users both in academia and in large corporations.},
+  archive      = {J_MPC},
+  author       = {Stellato, Bartolomeo and Banjac, Goran and Goulart, Paul and Bemporad, Alberto and Boyd, Stephen},
+  doi          = {10.1007/s12532-020-00179-2},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {637-672},
+  shortjournal = {Math. Program. Comput.},
+  title        = {OSQP: An operator splitting solver for quadratic programs},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Implementation of an interior point method with basis
+preconditioning. <em>MPC</em>, <em>12</em>(4), 603–635. (<a
+href="https://doi.org/10.1007/s12532-020-00181-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The implementation of a linear programming interior point solver is described that is based on iterative linear algebra. The linear systems are preconditioned by a basis matrix, which is updated from one interior point iteration to the next to bound the entries in a certain tableau matrix. The update scheme is based on simplex-type pivot operations and is implemented using linear algebra techniques from the revised simplex method. An initial basis is constructed by a crash procedure after a few interior point iterations. The basis at the end of the interior point solve provides the starting basis for a crossover method which recovers a basic solution to the linear program. Results of a computational study on a diverse set of medium to large-scale problems are discussed.},
+  archive      = {J_MPC},
+  author       = {Schork, Lukas and Gondzio, Jacek},
+  doi          = {10.1007/s12532-020-00181-8},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {603-635},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Implementation of an interior point method with basis preconditioning},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A multi-stage convex relaxation approach to noisy structured
+low-rank matrix recovery. <em>MPC</em>, <em>12</em>(4), 569–602. (<a
+href="https://doi.org/10.1007/s12532-020-00177-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper concerns with a noisy structured low-rank matrix recovery problem which can be modeled as a structured rank minimization problem. We reformulate this problem as a mathematical program with a generalized complementarity constraint (MPGCC), and show that its penalty version, yielded by moving the generalized complementarity constraint to the objective, has the same global optimal solution set as the MPGCC does whenever the penalty parameter is over a certain threshold. Then, by solving the exact penalty problem in an alternating way, we obtain a multi-stage convex relaxation approach. We provide theoretical guarantees for our approach under a mild restricted eigenvalue condition, by quantifying the reduction of the error and approximate rank bounds of the first stage convex relaxation in the subsequent stages and establishing the geometric convergence of the error sequence in a statistical sense. Numerical experiments are conducted for some structured low-rank matrix recovery examples to confirm our theoretical findings. Our code can be achieved from https://doi.org/10.5281/zenodo.3600639 .},
+  archive      = {J_MPC},
+  author       = {Bi, Shujun and Pan, Shaohua and Sun, Defeng},
+  doi          = {10.1007/s12532-020-00177-4},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {569-602},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A multi-stage convex relaxation approach to noisy structured low-rank matrix recovery},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A branch-and-cut algorithm for mixed integer bilevel linear
+optimization problems and its implementation. <em>MPC</em>,
+<em>12</em>(4), 529–568. (<a
+href="https://doi.org/10.1007/s12532-020-00183-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we describe a comprehensive algorithmic framework for solving mixed integer bilevel linear optimization problems (MIBLPs) using a generalized branch-and-cut approach. The framework presented merges features from existing algorithms (for both traditional mixed integer linear optimization and MIBLPs) with new techniques to produce a flexible and robust framework capable of solving a wide range of bilevel optimization problems. The framework has been fully implemented in the open-source solver MibS. The paper describes the algorithmic options offered by MibS and presents computational results evaluating the effectiveness of the various options for the solution of a number of classes of bilevel optimization problems from the literature.},
+  archive      = {J_MPC},
+  author       = {Tahernejad, Sahar and Ralphs, Ted K. and DeNegre, Scott T.},
+  doi          = {10.1007/s12532-020-00183-6},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {529-568},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A branch-and-cut algorithm for mixed integer bilevel linear optimization problems and its implementation},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Parsimonious formulations for low-diameter clusters.
+<em>MPC</em>, <em>12</em>(3), 493–528. (<a
+href="https://doi.org/10.1007/s12532-020-00175-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the analysis of networks, one often searches for tightly knit clusters. One property of a “good” cluster is a small diameter (say, bounded by k), which leads to the concept of a k-club. In this paper, we propose new path-like and cut-like integer programming formulations for detecting these low-diameter subgraphs. They simplify, generalize, and/or dominate several previously existing formulations. Our best-performing formulation uses only node variables (quite unlike previous formulations) and imposes the diameter-at-most-k constraints via an exponentially large class of cut-like inequalities. A relatively simple implementation of the cut-like formulation easily outperforms previous approaches, solving dozens of instances of the maximum k-club problem in a second or two that would take hours by other formulations. Moreover, the cut-like formulation is more general in the sense that it applies even when distances are not measured in terms of hops. While we consider only the k-club problem in this paper, the proposed techniques may also be useful in other applications where compact solutions are key (e.g., political districting and wildlife reserve design).},
+  archive      = {J_MPC},
+  author       = {Salemi, Hosseinali and Buchanan, Austin},
+  doi          = {10.1007/s12532-020-00175-6},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {493-528},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Parsimonious formulations for low-diameter clusters},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). An adaptive primal-dual framework for nonsmooth convex
+minimization. <em>MPC</em>, <em>12</em>(3), 451–491. (<a
+href="https://doi.org/10.1007/s12532-019-00173-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a new self-adaptive and double-loop smoothing algorithm to solve composite, nonsmooth, and constrained convex optimization problems. Our algorithm is based on Nesterov’s smoothing technique via general Bregman distance functions. It self-adaptively selects the number of iterations in the inner loop to achieve a desired complexity bound without requiring to set the accuracy a priori as in variants of augmented Lagrangian methods (ALM). We prove $$\mathcal {O}\left( \frac{1}{k}\right) $$ -convergence rate on the last iterate of the outer sequence for both unconstrained and constrained settings in contrast to ergodic rates which are common in ALM as well as alternating direction method-of-multipliers literature. Compared to existing inexact ALM or quadratic penalty methods, our analysis does not rely on the worst-case bounds of the subproblem solved by the inner loop. Therefore, our algorithm can be viewed as a restarting technique applied to the ASGARD method in Tran-Dinh et al. (SIAM J Optim 28(1):96–134, 2018) but with rigorous theoretical guarantees or as an inexact ALM with explicit inner loop termination rules and adaptive parameters. Our algorithm only requires to initialize the parameters once, and automatically updates them during the iteration process without tuning. We illustrate the superiority of our methods via several examples as compared to the state-of-the-art.},
+  archive      = {J_MPC},
+  author       = {Tran-Dinh, Quoc and Alacaoglu, Ahmet and Fercoq, Olivier and Cevher, Volkan},
+  doi          = {10.1007/s12532-019-00173-3},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {451-491},
+  shortjournal = {Math. Program. Comput.},
+  title        = {An adaptive primal-dual framework for nonsmooth convex minimization},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A rotation-based branch-and-price approach for the nurse
+scheduling problem. <em>MPC</em>, <em>12</em>(3), 417–450. (<a
+href="https://doi.org/10.1007/s12532-019-00172-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we describe an algorithm for the personalized nurse scheduling problem. We focus on the deterministic counterpart of the specific problem that has been described in the second international nurse rostering competition. One specificity of this version is that most constraints are soft, meaning that they can be violated at the price of a penalty. We model the problem as an integer program (IP) that we solve using a branch-and-price procedure. This model is, to the best of our knowledge, comparable to no other from the literature, since each column of the IP corresponds to a rotation, i.e., a sequence of consecutive worked days for a nurse. In contrast, classical models involve individual nurse schedules over the complete horizon. We tackle instances involving up to 120 nurses and 4 shifts over an 8-weeks horizon by embedding the branch-and-price in a large-neighborhood-search framework. Initial solutions of the large-neighborhood search are found by a rolling-horizon algorithm well-suited to the rotation model.},
+  archive      = {J_MPC},
+  author       = {Legrain, Antoine and Omer, Jérémy and Rosat, Samuel},
+  doi          = {10.1007/s12532-019-00172-4},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {417-450},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A rotation-based branch-and-price approach for the nurse scheduling problem},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Generation techniques for linear programming instances with
+controllable properties. <em>MPC</em>, <em>12</em>(3), 389–415. (<a
+href="https://doi.org/10.1007/s12532-019-00170-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses the problem of generating synthetic test cases for experimentation in linear programming. We propose a method which maps instance generation and instance space search to an alternative encoded space. This allows us to develop a generator for feasible bounded linear programming instances with controllable properties. We show that this method is capable of generating any feasible bounded linear program, and that parameterised generators and search algorithms using this approach generate only feasible bounded instances. Our results demonstrate that controlled generation and instance space search using this method achieves feature diversity more effectively than using a direct representation.},
+  archive      = {J_MPC},
+  author       = {Bowly, Simon and Smith-Miles, Kate and Baatar, Davaatseren and Mittelmann, Hans},
+  doi          = {10.1007/s12532-019-00170-6},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {389-415},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Generation techniques for linear programming instances with controllable properties},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Robust euclidean embedding via EDM optimization.
+<em>MPC</em>, <em>12</em>(3), 337–387. (<a
+href="https://doi.org/10.1007/s12532-019-00168-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper aims to propose an efficient numerical method for the most challenging problem known as the robust Euclidean embedding (REE) in the family of multi-dimensional scaling (MDS). The problem is notoriously known to be nonsmooth, nonconvex and its objective is non-Lipschitzian. We first explain that the semidefinite programming (SDP) relaxations and Euclidean distance matrix (EDM) approach, popular for other types of problems in the MDS family, failed to provide a viable method for this problem. We then propose a penalized REE (PREE), which can be economically majorized. We show that the majorized problem is convex provided that the penalty parameter is above certain threshold. Moreover, it has a closed-form solution, resulting in an efficient algorithm dubbed as PREEEDM (for Penalized REE via EDM optimization). We prove among others that PREEEDM converges to a stationary point of PREE, which is also an approximate critical point of REE. Finally, the efficiency of PREEEDM is compared with several state-of-the-art methods including SDP and EDM solvers on a large number of test problems from sensor network localization and molecular conformation.},
+  archive      = {J_MPC},
+  author       = {Zhou, Shenglong and Xiu, Naihua and Qi, Hou-Duo},
+  doi          = {10.1007/s12532-019-00168-0},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {337-387},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Robust euclidean embedding via EDM optimization},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Split cuts from sparse disjunctions. <em>MPC</em>,
+<em>12</em>(2), 295–335. (<a
+href="https://doi.org/10.1007/s12532-020-00180-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Split cuts are arguably the most effective class of cutting planes within a branch-and-cut framework for solving general Mixed-Integer Programs (MIP). Sparsity, on the other hand, is a common characteristic of MIP problems, and it is an important part of why the simplex method works so well inside branch-and-cut. In this work, we evaluate the strength of split cuts that exploit sparsity. In particular, we show that restricting ourselves to sparse disjunctions—and furthermore, ones that have small disjunctive coefficients—still leads to a significant portion of the total gap closed with arbitrary split cuts. We also show how to exploit sparsity structure that is implicit in the MIP formulation to produce splits that are sparse yet still effective. Our results indicate that one possibility to produce good split cuts is to try and exploit such structure.},
+  archive      = {J_MPC},
+  author       = {Fukasawa, Ricardo and Poirrier, Laurent and Yang, Shenghao},
+  doi          = {10.1007/s12532-020-00180-9},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {295-335},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Split cuts from sparse disjunctions},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Outer approximation with conic certificates for
+mixed-integer convex problems. <em>MPC</em>, <em>12</em>(2), 249–293.
+(<a href="https://doi.org/10.1007/s12532-020-00178-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A mixed-integer convex (MI-convex) optimization problem is one that becomes convex when all integrality constraints are relaxed. We present a branch-and-bound LP outer approximation algorithm for an MI-convex problem transformed to MI-conic form. The polyhedral relaxations are refined with $${{\mathcal {K}}}^*$$cuts derived from conic certificates for continuous primal-dual conic subproblems. Under the assumption that all subproblems are well-posed, the algorithm detects infeasibility or unboundedness or returns an optimal solution in finite time. Using properties of the conic certificates, we show that the $${{\mathcal {K}}}^*$$ cuts imply certain practically-relevant guarantees about the quality of the polyhedral relaxations, and demonstrate how to maintain helpful guarantees when the LP solver uses a positive feasibility tolerance. We discuss how to disaggregate$${{\mathcal {K}}}^*$$ cuts in order to tighten the polyhedral relaxations and thereby improve the speed of convergence, and propose fast heuristic methods of obtaining useful $${{\mathcal {K}}}^*$$ cuts. Our new open source MI-conic solver Pajarito (github.com/JuliaOpt/Pajarito.jl) uses an external mixed-integer linear solver to manage the search tree and an external continuous conic solver for subproblems. Benchmarking on a library of mixed-integer second-order cone (MISOCP) problems, we find that Pajarito greatly outperforms Bonmin (the leading open source alternative) and is competitive with CPLEX’s specialized MISOCP algorithm. We demonstrate the robustness of Pajarito by solving diverse MI-conic problems involving mixtures of positive semidefinite, second-order, and exponential cones, and provide evidence for the practical value of our analyses and enhancements of $${{\mathcal {K}}}^*$$ cuts.},
+  archive      = {J_MPC},
+  author       = {Coey, Chris and Lubin, Miles and Vielma, Juan Pablo},
+  doi          = {10.1007/s12532-020-00178-3},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {249-293},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Outer approximation with conic certificates for mixed-integer convex problems},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A novel matching formulation for startup costs in unit
+commitment. <em>MPC</em>, <em>12</em>(2), 225–248. (<a
+href="https://doi.org/10.1007/s12532-020-00176-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a novel formulation for startup cost computation in the unit commitment problem (UC). Both our proposed formulation and existing formulations in the literature are placed in a formal, theoretical dominance hierarchy based on their respective linear programming relaxations. Our proposed formulation is tested empirically against existing formulations on large-scale UC instances drawn from real-world data. While requiring more variables than the current state-of-the-art formulation, our proposed formulation requires fewer constraints, and is empirically demonstrated to be as tight as a perfect formulation for startup costs. This tightening can reduce the computational burden in comparison to existing formulations, especially for UC instances with large reserve margins and high penetration levels of renewables.},
+  archive      = {J_MPC},
+  author       = {Knueven, Bernard and Ostrowski, James and Watson, Jean-Paul},
+  doi          = {10.1007/s12532-020-00176-5},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {225-248},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A novel matching formulation for startup costs in unit commitment},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). K-adaptability in two-stage mixed-integer robust
+optimization. <em>MPC</em>, <em>12</em>(2), 193–224. (<a
+href="https://doi.org/10.1007/s12532-019-00174-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study two-stage robust optimization problems with mixed discrete-continuous decisions in both stages. Despite their broad range of applications, these problems pose two fundamental challenges: (i) they constitute infinite-dimensional problems that require a finite-dimensional approximation, and (ii) the presence of discrete recourse decisions typically prohibits duality-based solution schemes. We address the first challenge by studying a K-adaptability formulation that selects K candidate recourse policies before observing the realization of the uncertain parameters and that implements the best of these policies after the realization is known. We address the second challenge through a branch-and-bound scheme that enjoys asymptotic convergence in general and finite convergence under specific conditions. We illustrate the performance of our algorithm in numerical experiments involving benchmark data from several application domains.},
+  archive      = {J_MPC},
+  author       = {Subramanyam, Anirudh and Gounaris, Chrysanthos E. and Wiesemann, Wolfram},
+  doi          = {10.1007/s12532-019-00174-2},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {193-224},
+  shortjournal = {Math. Program. Comput.},
+  title        = {K-adaptability in two-stage mixed-integer robust optimization},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On the impact of running intersection inequalities for
+globally solving polynomial optimization problems. <em>MPC</em>,
+<em>12</em>(2), 165–191. (<a
+href="https://doi.org/10.1007/s12532-019-00169-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider global optimization of nonconvex problems whose factorable reformulations contain a collection of multilinear equations of the form $$z_e = \prod _{v \in e} {z_v}$$, $$e \in E$$, where E denotes a set of subsets of cardinality at least two of a ground set. Important special cases include multilinear and polynomial optimization problems. The multilinear polytope is the convex hull of the set of binary points z satisfying the system of multilinear equations given above. Recently Del Pia and Khajavirad introduced running intersection inequalities, a family of facet-defining inequalities for the multilinear polytope. In this paper we address the separation problem for this class of inequalities. We first prove that separating flower inequalities, a subclass of running intersection inequalities, is NP-hard. Subsequently, for multilinear polytopes of fixed degree, we devise an efficient polynomial-time algorithm for separating running intersection inequalities and embed the proposed cutting-plane generation scheme at every node of the branch-and-reduce global solver BARON. To evaluate the effectiveness of the proposed method we consider two test sets: randomly generated multilinear and polynomial optimization problems of degree three and four, and computer vision instances from an image restoration problem Results show that running intersection cuts significantly improve the performance of BARON and lead to an average CPU time reduction of 50\% for the random test set and of 63\% for the image restoration test set.},
+  archive      = {J_MPC},
+  author       = {Del Pia, Alberto and Khajavirad, Aida and Sahinidis, Nikolaos V.},
+  doi          = {10.1007/s12532-019-00169-z},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {165-191},
+  shortjournal = {Math. Program. Comput.},
+  title        = {On the impact of running intersection inequalities for globally solving polynomial optimization problems},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On integer and bilevel formulations for the k-vertex cut
+problem. <em>MPC</em>, <em>12</em>(2), 133–164. (<a
+href="https://doi.org/10.1007/s12532-019-00167-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The family of critical node detection problems asks for finding a subset of vertices, deletion of which minimizes or maximizes a predefined connectivity measure on the remaining network. We study a problem of this family called the k-vertex cut problem. The problem asks for determining the minimum weight subset of nodes whose removal disconnects a graph into at least k components. We provide two new integer linear programming formulations, along with families of strengthening valid inequalities. Both models involve an exponential number of constraints for which we provide poly-time separation procedures and design the respective branch-and-cut algorithms. In the first formulation one representative vertex is chosen for each of the k mutually disconnected vertex subsets of the remaining graph. In the second formulation, the model is derived from the perspective of a two-phase Stackelberg game in which a leader deletes the vertices in the first phase, and in the second phase a follower builds connected components in the remaining graph. Our computational study demonstrates that a hybrid model in which valid inequalities of both formulations are combined significantly outperforms the state-of-the-art exact methods from the literature.},
+  archive      = {J_MPC},
+  author       = {Furini, Fabio and Ljubić, Ivana and Malaguti, Enrico and Paronuzzi, Paolo},
+  doi          = {10.1007/s12532-019-00167-1},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {133-164},
+  shortjournal = {Math. Program. Comput.},
+  title        = {On integer and bilevel formulations for the k-vertex cut problem},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Special issue forward: The 2018 mixed integer programming
+workshop. <em>MPC</em>, <em>12</em>(2), 131. (<a
+href="https://doi.org/10.1007/s12532-020-00187-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_MPC},
+  author       = {Bienstock, Daniel and Nannicini, Giacomo},
+  doi          = {10.1007/s12532-020-00187-2},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {131},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Special issue forward: The 2018 mixed integer programming workshop},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Exploiting sparsity for the min k-partition problem.
+<em>MPC</em>, <em>12</em>(1), 109–130. (<a
+href="https://doi.org/10.1007/s12532-019-00165-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The minimum k-partition problem is a challenging combinatorial problem with a diverse set of applications ranging from telecommunications to sports scheduling. It generalizes the max-cut problem and has been extensively studied since the late sixties. Strong integer formulations proposed in the literature suffer from a large number of constraints and variables. In this work, we introduce two more compact integer linear and semidefinite reformulations that exploit the sparsity of the underlying graph and develop theoretical results leveraging the power of chordal decomposition. Numerical experiments show that the new formulations improve upon state-of-the-art.},
+  archive      = {J_MPC},
+  author       = {Wang, Guanglei and Hijazi, Hassan},
+  doi          = {10.1007/s12532-019-00165-3},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {109-130},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Exploiting sparsity for the min k-partition problem},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Partial hyperplane activation for generalized intersection
+cuts. <em>MPC</em>, <em>12</em>(1), 69–107. (<a
+href="https://doi.org/10.1007/s12532-019-00166-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The generalized intersection cut paradigm is a recent framework for generating cutting planes in mixed integer programming with attractive theoretical properties. We investigate this computationally unexplored paradigm and observe that a key hyperplane activation procedure embedded in it is not computationally viable. To overcome this issue, we develop a novel replacement to this procedure called partial hyperplane activation (PHA), introduce a variant of PHA based on a notion of hyperplane tilting, and prove the validity of both algorithms. We propose several implementation strategies and parameter choices for our PHA algorithms and provide supporting theoretical results. We computationally evaluate these ideas in the COIN-OR framework on MIPLIB instances. Our findings shed light on the the strengths of the PHA approach as well as suggest properties related to strong cuts that can be targeted in the future.},
+  archive      = {J_MPC},
+  author       = {Kazachkov, Aleksandr M. and Nadarajah, Selvaprabu and Balas, Egon and Margot, François},
+  doi          = {10.1007/s12532-019-00166-2},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {69-107},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Partial hyperplane activation for generalized intersection cuts},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A branch-and-price algorithm for capacitated hypergraph
+vertex separation. <em>MPC</em>, <em>12</em>(1), 39–68. (<a
+href="https://doi.org/10.1007/s12532-019-00171-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We exactly solve the $${\mathcal {NP}}$$-hard combinatorial optimization problem of finding a minimum cardinality vertex separator with k (or arbitrarily many) capacitated shores in a hypergraph. We present an exponential size integer programming formulation which we solve by branch-and-price. The pricing problem, an interesting optimization problem on its own, has a decomposable structure that we exploit in preprocessing. We perform an extensive computational study, in particular on hypergraphs coming from the application of re-arranging a matrix into single-bordered block-diagonal form. Our experimental results show that our proposal complements the previous exact approaches in terms of applicability for larger k, and significantly outperforms them in the case $$k=\infty $$.},
+  archive      = {J_MPC},
+  author       = {Bastubbe, Michael and Lübbecke, Marco E.},
+  doi          = {10.1007/s12532-019-00171-5},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {39-68},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A branch-and-price algorithm for capacitated hypergraph vertex separation},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A hybrid quasi-newton projected-gradient method with
+application to lasso and basis-pursuit denoising. <em>MPC</em>,
+<em>12</em>(1), 1–38. (<a
+href="https://doi.org/10.1007/s12532-019-00163-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a new algorithm for the optimization of convex functions over a polyhedral set in $${\mathbb {R}}^n$$. The algorithm extends the spectral projected-gradient method with limited-memory BFGS iterates restricted to the present face whenever possible. We prove convergence of the algorithm under suitable conditions and apply the algorithm to solve the Lasso problem, and consequently, the basis-pursuit denoise problem through the root-finding framework proposed by van den Berg and Friedlander (SIAM J Sci Comput 31(2):890–912, 2008). The algorithm is especially well suited to simple domains and could also be used to solve bound-constrained problems as well as problems restricted to the simplex.},
+  archive      = {J_MPC},
+  author       = {van den Berg, Ewout},
+  doi          = {10.1007/s12532-019-00163-5},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {1-38},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A hybrid quasi-newton projected-gradient method with application to lasso and basis-pursuit denoising},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

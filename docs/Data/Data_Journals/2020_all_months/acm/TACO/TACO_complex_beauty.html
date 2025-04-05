@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TACO_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="taco---52">TACO - 52</h2>
+<ul>
+<li><details>
+<summary>
+(2020). SPX64: A scratchpad memory for general-purpose
+microprocessors. <em>TACO</em>, <em>18</em>(1), 14:1–26. (<a
+href="https://doi.org/10.1145/3436730">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {General-purpose computing systems employ memory hierarchies to provide the appearance of a single large, fast, coherent memory. In special-purpose CPUs, programmers manually manage distinct, non-coherent scratchpad memories. In this article, we combine these mechanisms by adding a virtually addressed, set-associative scratchpad to a general purpose CPU. Our scratchpad exists alongside a traditional cache and is able to avoid many of the programming challenges associated with traditional scratchpads without sacrificing generality (e.g., virtualization). Furthermore, our design delivers increased security and improves performance, especially for workloads with high locality or that interact with nonvolatile memory.},
+  archive      = {J_TACO},
+  author       = {Abhishek Singh and Shail Dave and Pantea Zardoshti and Robert Brotzman and Chao Zhang and Xiaochen Guo and Aviral Shrivastava and Gang Tan and Michael Spear},
+  doi          = {10.1145/3436730},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {14:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SPX64: A scratchpad memory for general-purpose microprocessors},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Leveraging value equality prediction for value speculation.
+<em>TACO</em>, <em>18</em>(1), 13:1–20. (<a
+href="https://doi.org/10.1145/3436821">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Value Prediction (VP) has recently been gaining interest in the research community, since prior work has established practical solutions for its implementation that provide meaningful performance gains. A constant challenge of contemporary context-based value predictors is to sufficiently capture value redundancy and exploit the predictable execution paths. To do so, modern context-based VP techniques tightly associate recurring values with instructions and contexts by building confidence upon them after a plethora of repetitions. However, when execution monotony exists in the form of intervals, the potential prediction coverage is limited, since prediction confidence is reset at the beginning of each new interval. In this study, we address this challenge by introducing the notion of Equality Prediction (EP), which represents the binary facet of VP. Following a twofold decision scheme (similar to branch prediction), at fetch time, EP makes use of control-flow history to predict equality between the last committed result for this instruction and the result of the currently fetched occurrence. When equality is predicted with high confidence, the last committed value is used. Our simulation results show that this technique obtains the same level of performance as previously proposed state-of-the-art context-based value predictors. However, by virtue of exploiting equality patterns that are not captured by previous VP schemes, our design can improve the speedup of standard VP by 19\% on average, when combined with contemporary prediction models.},
+  archive      = {J_TACO},
+  author       = {Kleovoulos Kalaitzidis and André Seznec},
+  doi          = {10.1145/3436821},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {13:1–20},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Leveraging value equality prediction for value speculation},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). SGXL: Security and performance for enclaves using large
+pages. <em>TACO</em>, <em>18</em>(1), 12:1–25. (<a
+href="https://doi.org/10.1145/3433983">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intel’s SGX architecture offers clients of public cloud computing platforms the ability to create hardware-protected enclaves whose contents are protected from privileged system software. However, SGX relies on system software for enclave memory management. In a sequence of recent papers, researchers have demonstrated that this reliance allows a malicious OS/hypervisor to snoop on the page addresses being accessed from within an enclave via various channels. This page address stream can then be used to infer secrets if the enclave’s page access pattern depends upon the secret and this constitutes an important class of side-channels. We propose SG XL , a hardware-software co-designed system that significantly increases the difficulty of any page address-based side-channels through the use of large pages. A large page maps address ranges at a much larger granularity than the default page size (at least 512× larger). SG XL thus significantly lowers resolution of the leaked page address stream and could practically throttle all flavors of page-address based side-channels. We detail the modifications needed to SGX’s software stack and the (minor) hardware enhancements required for SG XL to guarantee the use of large pages in the presence of adversarial system software. We empirically show that SG XL could be one of those rare systems that enhances security with the potential of improving performance as well.},
+  archive      = {J_TACO},
+  author       = {Sujay Yadalam and Vinod Ganapathy and Arkaprava Basu},
+  doi          = {10.1145/3433983},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {12:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SGXL: Security and performance for enclaves using large pages},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Exploiting parallelism opportunities with deep learning
+frameworks. <em>TACO</em>, <em>18</em>(1), 9:1–23. (<a
+href="https://doi.org/10.1145/3431388">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {State-of-the-art machine learning frameworks support a wide variety of design features to enable a flexible machine learning programming interface and to ease the programmability burden on machine learning developers. Identifying and using a performance-optimal setting in feature-rich frameworks, however, involves a non-trivial amount of performance profiling efforts and often relies on domain-specific knowledge. This article takes a deep dive into analyzing the performance impact of key design features in a machine learning framework and quantifies the role of parallelism. The observations and insights distill into a simple set of guidelines that one can use to achieve much higher training and inference speedup. Across a diverse set of real-world deep learning models, the evaluation results show that the proposed performance tuning guidelines outperform the Intel and TensorFlow recommended settings by 1.30× and 1.38×, respectively.},
+  archive      = {J_TACO},
+  author       = {Yu Emma Wang and Carole-Jean Wu and Xiaodong Wang and Kim Hazelwood and David Brooks},
+  doi          = {10.1145/3431388},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {9:1–23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Exploiting parallelism opportunities with deep learning frameworks},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A distributed hardware monitoring system for runtime
+verification on multi-tile MPSoCs. <em>TACO</em>, <em>18</em>(1),
+8:1–25. (<a href="https://doi.org/10.1145/3430699">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Exhaustive verification techniques do not scale with the complexity of today’s multi-tile Multi-processor Systems-on-chip (MPSoCs). Hence, runtime verification (RV) has emerged as a complementary method, which verifies the correct behavior of applications executed on the MPSoC during runtime. In this article, we propose a decentralized monitoring architecture for large-scale multi-tile MPSoCs. In order to minimize performance and power overhead for RV, we propose a lightweight and non-intrusive hardware solution. It features a new specialized tracing interconnect that distributes and sorts detected events according to their timestamps. Each tile monitor has a consistent view on a globally sorted trace of events on which the behavior of the target application can be verified using logical and timing requirements. Furthermore, we propose an integer linear programming-based algorithm for the assignment of requirements to monitors to exploit the local resources best. The monitoring architecture is demonstrated for a four-tiled MPSoC with 20 cores implemented on a Virtex-7 field-programmable gate array (FPGA).},
+  archive      = {J_TACO},
+  author       = {Marcel Mettler and Daniel Mueller-Gritschneder and Ulf Schlichtmann},
+  doi          = {10.1145/3430699},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {8:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A distributed hardware monitoring system for runtime verification on multi-tile MPSoCs},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A simple model for portable and fast prediction of execution
+time and power consumption of GPU kernels. <em>TACO</em>,
+<em>18</em>(1), 7:1–25. (<a
+href="https://doi.org/10.1145/3431731">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Characterizing compute kernel execution behavior on GPUs for efficient task scheduling is a non-trivial task. We address this with a simple model enabling portable and fast predictions among different GPUs using only hardware-independent features. This model is built based on random forests using 189 individual compute kernels from benchmarks such as Parboil, Rodinia, Polybench-GPU, and SHOC. Evaluation of the model performance using cross-validation yields a median Mean Average Percentage Error (MAPE) of 8.86–52.0\% for time and 1.84–2.94\% for power prediction across five different GPUs, while latency for a single prediction varies between 15 and 108 ms.},
+  archive      = {J_TACO},
+  author       = {Lorenz Braun and Sotirios Nikas and Chen Song and Vincent Heuveline and Holger Fröning},
+  doi          = {10.1145/3431731},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {7:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A simple model for portable and fast prediction of execution time and power consumption of GPU kernels},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Efficient nearest-neighbor data sharing in GPUs.
+<em>TACO</em>, <em>18</em>(1), 6:1–26. (<a
+href="https://doi.org/10.1145/3429981">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Stencil codes (a.k.a. nearest-neighbor computations) are widely used in image processing, machine learning, and scientific applications. Stencil codes incur nearest-neighbor data exchange because the value of each point in the structured grid is calculated as a function of its value and the values of a subset of its nearest-neighbor points. When running on Graphics Processing Unit (GPUs), stencil codes exhibit a high degree of data sharing between nearest-neighbor threads. Sharing is typically implemented through shared memories, shuffle instructions, and on-chip caches and often incurs performance overheads due to the redundancy in memory accesses. In this article, we propose Neighbor Data (NeDa), a direct nearest-neighbor data sharing mechanism that uses two registers embedded in each streaming processor (SP) that can be accessed by nearest-neighbor SP cores. The registers are compiler-allocated and serve as a data exchange mechanism to eliminate nearest-neighbor shared accesses. NeDa is embedded carefully with local wires between SP cores so as to minimize the impact on density. We place and route NeDa in an open-source GPU and show a small area overhead of 1.3\%. The cycle-accurate simulation indicates an average performance improvement of 21.8\% and power reduction of up to 18.3\% for stencil codes in General-Purpose Graphics Processing Unit (GPGPU) standard benchmark suites. We show that NeDa’s performance is within 13.2\% of an ideal GPU with no overhead for nearest-neighbor data exchange.},
+  archive      = {J_TACO},
+  author       = {Negin Nematollahi and Mohammad Sadrosadati and Hajar Falahati and Marzieh Barkhordar and Mario Paulo Drumond and Hamid Sarbazi-Azad and Babak Falsafi},
+  doi          = {10.1145/3429981},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {6:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Efficient nearest-neighbor data sharing in GPUs},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Irregular register allocation for translation of
+test-pattern programs. <em>TACO</em>, <em>18</em>(1), 5:1–23. (<a
+href="https://doi.org/10.1145/3427378">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Test-pattern programs are for testing DRAM memory chips. They run on a special embedded system called automated test equipment (ATE). Each ATE manufacturer provides its own programming language, which is mostly low level, thus accessing the registers in the ATE directly. The register structure of each ATE is quite different and highly irregular. Since DRAM chipmakers are often equipped with diverse ATEs from different manufacturers, they employ automatic translation of a program developed for one ATE to a program for different ATEs. This raises an irregular register allocation problem during translation. This article proposes a solution based on partitioned Boolean quadratic programming (PBQP). PBQP has been used for a number of compiler optimizations, including paired register allocation , which our ATE register allocation also requires. Moreover, the interleaved processing in ATE incurs complex register constraints, which we could also formulate elegantly with PBQP. The original PBQP solver is not quite appropriate to use, though, since ATE register allocation does not allow spills, so we devised a more elaborate PBQP solver that trades off the allocation time and allocation search space, to find a solution in a reasonable amount of time. Our experimental results with product-level pattern programs show that the proposed register allocator successfully finds valid solutions in all cases, in the order of tenths of seconds.},
+  archive      = {J_TACO},
+  author       = {Minsu Kim and Jeong-Keun Park and Soo-Mook Moon},
+  doi          = {10.1145/3427378},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {5:1–23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Irregular register allocation for translation of test-pattern programs},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Bayesian optimization for efficient accelerator synthesis.
+<em>TACO</em>, <em>18</em>(1), 4:1–25. (<a
+href="https://doi.org/10.1145/3427377">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accelerator design is expensive due to the effort required to understand an algorithm and optimize the design. Architects have embraced two technologies to reduce costs. High-level synthesis automatically generates hardware from code. Reconfigurable fabrics instantiate accelerators while avoiding fabrication costs for custom circuits. We further reduce design effort with statistical learning. We build an automated framework, called Prospector, that uses Bayesian techniques to optimize synthesis directives, reducing execution latency and resource usage in field-programmable gate arrays. We show in a certain amount of time that designs discovered by Prospector are closer to Pareto-efficient designs compared to prior approaches. Prospector permits new studies for heterogeneous accelerators.},
+  archive      = {J_TACO},
+  author       = {Atefeh Mehrabi and Aninda Manocha and Benjamin C. Lee and Daniel J. Sorin},
+  doi          = {10.1145/3427377},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {4:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Bayesian optimization for efficient accelerator synthesis},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Performance-energy trade-off in modern CMPs. <em>TACO</em>,
+<em>18</em>(1), 3:1–26. (<a
+href="https://doi.org/10.1145/3427092">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Chip multiprocessors (CMPs) are ubiquitous in all computing systems ranging from high-end servers to mobile devices. In these systems, energy consumption is a critical design constraint as it constitutes the most significant operating cost for computing clouds. Analogous to this, longer battery life continues to be an essential user concern in mobile devices. To optimize on power consumption, modern processors are designed with Dynamic Voltage and Frequency Scaling (DVFS) support at the individual core as well as the uncore level. This allows fine-grained control of performance and energy. For an n core processor with m core and uncore frequency choices, the total DVFS configuration space is now m (n+1) (with the uncore accounting for the + 1). In addition to that, in CMPs, the performance-energy trade-off due to core/uncore frequency scaling concerning a single application cannot be determined independently as cores share critical resources like the last level cache (LLC) and the memory. Thus, unlike the uni-processor environment, the energy consumption of an application running on a CMP depends not only on its characteristics but also on those of its co-runners (applications running on other cores). The key objective of our work is to select a suitable core and uncore frequency that minimizes power consumption while limiting application performance degradation within certain pre-defined limits (can be termed as QoS requirements). The key contribution of our work is a learning-based model that is able to capture the interference due to shared cache, bus bandwidth, and memory bandwidth between applications running on multiple cores and predict near-optimal frequencies for core and uncore.},
+  archive      = {J_TACO},
+  author       = {Solomon Abera and M. Balakrishnan and Anshul Kumar},
+  doi          = {10.1145/3427092},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {3:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Performance-energy trade-off in modern CMPs},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Refresh triggered computation: Improving the energy
+efficiency of convolutional neural network accelerators. <em>TACO</em>,
+<em>18</em>(1), 2:1–29. (<a
+href="https://doi.org/10.1145/3417708">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To employ a Convolutional Neural Network (CNN) in an energy-constrained embedded system, it is critical for the CNN implementation to be highly energy efficient. Many recent studies propose CNN accelerator architectures with custom computation units that try to improve the energy efficiency and performance of CNNs by minimizing data transfers from DRAM-based main memory. However, in these architectures, DRAM is still responsible for half of the overall energy consumption of the system, on average. A key factor of the high energy consumption of DRAM is the refresh overhead , which is estimated to consume 40\% of the total DRAM energy. In this article, we propose a new mechanism, Refresh Triggered Computation (RTC) , that exploits the memory access patterns of CNN applications to reduce the number of refresh operations . RTC uses two major techniques to mitigate the refresh overhead. First, Refresh Triggered Transfer (RTT) is based on our new observation that a CNN application accesses a large portion of the DRAM in a predictable and recurring manner. Thus, the read/write accesses of the application inherently refresh the DRAM, and therefore a significant fraction of refresh operations can be skipped. Second, Partial Array Auto-Refresh (PAAR) eliminates the refresh operations to DRAM regions that do not store any data. We propose three RTC designs (min-RTC, mid-RTC, and full-RTC), each of which requires a different level of aggressiveness in terms of customization to the DRAM subsystem. All of our designs have small overhead. Even the most aggressive RTC design (i.e., full-RTC) imposes an area overhead of only 0.18\% in a 16 Gb DRAM chip and can have less overhead for denser chips. Our experimental evaluation on six well-known CNNs shows that RTC reduces average DRAM energy consumption by 24.4\% and 61.3\% for the least aggressive and the most aggressive RTC implementations, respectively. Besides CNNs, we also evaluate our RTC mechanism on three workloads from other domains. We show that RTC saves 31.9\% and 16.9\% DRAM energy for Face Recognition and Bayesian Confidence Propagation Neural Network (BCPNN) , respectively. We believe RTC can be applied to other applications whose memory access patterns remain predictable for a sufficiently long time.},
+  archive      = {J_TACO},
+  author       = {Syed M. A. H. Jafri and Hasan Hassan and Ahmed Hemani and Onur Mutlu},
+  doi          = {10.1145/3417708},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {2:1–29},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Refresh triggered computation: Improving the energy efficiency of convolutional neural network accelerators},
+  volume       = {18},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Design and evaluation of an ultra low-power human-quality
+speech recognition system. <em>TACO</em>, <em>17</em>(4), 41:1–19. (<a
+href="https://doi.org/10.1145/3425604">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatic Speech Recognition (ASR) has experienced a dramatic evolution since pioneer development of Bell Lab’s single-digit recognizer more than 50 years ago. Current ASR systems have taken advantage of the tremendous improvements in AI during the past decade by incorporating Deep Neural Networks into the system and pushing their accuracy to levels comparable to that of humans. This article describes and characterizes a representative ASR system with state-of-the-art accuracy and proposes a hardware platform capable of decoding speech in real-time with a power dissipation close to 1 Watt. The software is based on the so-called hybrid approach with a vocabulary of 200K words and RNN-based language model re-scoring, whereas the hardware consists of a commercially available low-power processor along with two accelerators used for the most compute-intensive tasks. The article shows that high performance can be obtained with very low power, enabling the deployment of these systems in extremely power-constrained environments such as mobile and IoT devices.},
+  archive      = {J_TACO},
+  author       = {Dennis Pinto and Jose-María Arnau and Antonio González},
+  doi          = {10.1145/3425604},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {41:1–19},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Design and evaluation of an ultra low-power human-quality speech recognition system},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). MemSZ: Squeezing memory traffic with lossy compression.
+<em>TACO</em>, <em>17</em>(4), 40:1–25. (<a
+href="https://doi.org/10.1145/3424668">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article describes Memory Squeeze (MemSZ), a new approach for lossy general-purpose memory compression. MemSZ introduces a low latency, parallel design of the Squeeze (SZ) algorithm offering aggressive compression ratios, up to 16:1 in our implementation. Our compressor is placed between the memory controller and the cache hierarchy of a processor to reduce the memory traffic of applications that tolerate approximations in parts of their data. Thereby, the available off-chip bandwidth is utilized more efficiently improving system performance and energy efficiency. Two alternative multi-core variants of the MemSZ system are described. The first variant has a shared last-level cache (LLC) on the processor-die, which is modified to store both compressed and uncompressed data. The second has a 3D-stacked DRAM cache with larger cache lines that match the granularity of the compressed memory blocks and stores only uncompressed data. For applications that tolerate aggressive approximation in large fractions of their data, MemSZ reduces baseline memory traffic by up to 81\%, execution time by up to 62\%, and energy costs by up to 25\% introducing up to 1.8\% error to the application output. Compared to the current state-of-the-art lossy memory compression design, MemSZ improves the execution time, energy, and memory traffic by up to 15\%, 9\%, and 64\%, respectively.},
+  archive      = {J_TACO},
+  author       = {Albin Eldstål-Ahrens and Ioannis Sourdis},
+  doi          = {10.1145/3424668},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {40:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {MemSZ: Squeezing memory traffic with lossy compression},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). SMAUG: End-to-end full-stack simulation infrastructure for
+deep learning workloads. <em>TACO</em>, <em>17</em>(4), 39:1–26. (<a
+href="https://doi.org/10.1145/3424669">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, there has been tremendous advances in hardware acceleration of deep neural networks. However, most of the research has focused on optimizing accelerator microarchitecture for higher performance and energy efficiency on a per-layer basis. We find that for overall single-batch inference latency, the accelerator may only make up 25–40\%, with the rest spent on data movement and in the deep learning software framework. Thus far, it has been very difficult to study end-to-end DNN performance during early stage design (before RTL is available), because there are no existing DNN frameworks that support end-to-end simulation with easy custom hardware accelerator integration. To address this gap in research infrastructure, we present SMAUG, the first DNN framework that is purpose-built for simulation of end-to-end deep learning applications. SMAUG offers researchers a wide range of capabilities for evaluating DNN workloads, from diverse network topologies to easy accelerator modeling and SoC integration. To demonstrate the power and value of SMAUG, we present case studies that show how we can optimize overall performance and energy efficiency for up to 1.8×–5× speedup over a baseline system, without changing any part of the accelerator microarchitecture, as well as show how SMAUG can tune an SoC for a camera-powered deep learning pipeline.},
+  archive      = {J_TACO},
+  author       = {Sam (Likun) Xi and Yuan Yao and Kshitij Bhardwaj and Paul Whatmough and Gu-Yeon Wei and David Brooks},
+  doi          = {10.1145/3424669},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {39:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SMAUG: End-to-end full-stack simulation infrastructure for deep learning workloads},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A RISC-v simulator and benchmark suite for designing and
+evaluating vector architectures. <em>TACO</em>, <em>17</em>(4), 38:1–30.
+(<a href="https://doi.org/10.1145/3422667">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vector architectures lack tools for research. Consider the gem5 simulator, which is possibly the leading platform for computer-system architecture research. Unfortunately, gem5 does not have an available distribution that includes a flexible and customizable vector architecture model. In consequence, researchers have to develop their own simulation platform to test their ideas, which consume much research time. However, once the base simulator platform is developed, another question is the following: Which applications should be tested to perform the experiments? The lack of Vectorized Benchmark Suites is another limitation. To face these problems, this work presents a set of tools for designing and evaluating vector architectures. First, the gem5 simulator was extended to support the execution of RISC-V Vector instructions by adding a parameterizable Vector Architecture model for designers to evaluate different approaches according to the target they pursue. Second, a novel Vectorized Benchmark Suite is presented: a collection composed of seven data-parallel applications from different domains that can be classified according to the modules that are stressed in the vector architecture. Finally, a study of the Vectorized Benchmark Suite executing on the gem5-based Vector Architecture model is highlighted. This suite is the first in its category that covers the different possible usage scenarios that may occur within different vector architecture designs such as embedded systems, mainly focused on short vectors, or High-Performance-Computing (HPC), usually designed for large vectors.},
+  archive      = {J_TACO},
+  author       = {Cristóbal Ramírez and César Alejandro Hernández and Oscar Palomar and Osman Unsal and Marco Antonio Ramírez and Adrián Cristal},
+  doi          = {10.1145/3422667},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {38:1–30},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A RISC-V simulator and benchmark suite for designing and evaluating vector architectures},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). FastPath_MP: Low overhead &amp; energy-efficient FPGA-based
+storage multi-paths. <em>TACO</em>, <em>17</em>(4), 37:1–23. (<a
+href="https://doi.org/10.1145/3423134">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we present FastPath_MP, a novel low-overhead and energy-efficient storage multi-path architecture that leverages FPGAs to operate transparently to the main processor and improve the performance and energy efficiency of accessing storage devices. We prototyped FastPath_MP on both Arm-FPGA Zynq 7000 SoC and Zynq UltraScale+ MPSoC and evaluated its performance against standard microbenchmarks as well as the real-world in-memory Redis database. Our results show that FastPath_MP achieves up to 82\% lower latency, up to 12× higher throughput, and up to 10× more energy efficiency against the baseline storage path of the Linux kernel.},
+  archive      = {J_TACO},
+  author       = {Athanasios Stratikopoulos and Christos Kotselidis and John Goodacre and Mikel Luján},
+  doi          = {10.1145/3423134},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {37:1–23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {FastPath_MP: Low overhead &amp; energy-efficient FPGA-based storage multi-paths},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On architectural support for instruction set randomization.
+<em>TACO</em>, <em>17</em>(4), 36:1–26. (<a
+href="https://doi.org/10.1145/3419841">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Instruction Set Randomization (ISR) is able to protect against remote code injection attacks by randomizing the instruction set of each process. Thereby, even if an attacker succeeds to inject code, it will fail to execute on the randomized processor. The majority of existing ISR implementations is based on emulators and binary instrumentation tools that unfortunately: (i) incur significant runtime performance overheads, (ii) limit the ease of deployment, (iii) cannot protect the underlying operating system kernel, and (iv) are vulnerable to evasion attempts that bypass the ISR protection itself. To address these issues, we present the design and implementation of ASIST, an architecture with both hardware and operating system support for ISR. ASIST uses our extended SPARC processor that is mapped onto a FPGA board and runs our modified Linux kernel to support the new features. In particular, before executing a new user-level process, the operating system loads its randomization key into a newly defined register, and the modified processor decodes the process’s instructions with this key. Besides that, ASIST uses a separate randomization key for the operating system to protect the base system against attacks that exploit kernel vulnerabilities to run arbitrary code with elevated privileges. Our evaluation shows that ASIST can transparently protect both user-land applications and the operating system kernel from code injection and code reuse attacks, with about 1.5\% runtime overhead when using simple encryption schemes, such as XOR and Transposition; more secure ciphers, such as AES, even though they are much more complicated for mapping them to hardware, they are still within acceptable margins,with approximately 10\% runtime overhead, when efficiently leveraging the spatial locality of code through modern instruction cache configurations.},
+  archive      = {J_TACO},
+  author       = {George Christou and Giorgos Vasiliadis and Vassilis Papaefstathiou and Antonis Papadogiannakis and Sotiris Ioannidis},
+  doi          = {10.1145/3419841},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {36:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {On architectural support for instruction set randomization},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). LLOV: A fast static data-race checker for OpenMP programs.
+<em>TACO</em>, <em>17</em>(4), 35:1â€“26. (<a
+href="https://doi.org/10.1145/3418597">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the era of Exascale computing, writing efficient parallel programs is indispensable, and, at the same time, writing sound parallel programs is very difficult. Specifying parallelism with frameworks such as OpenMP is relatively easy, but data races in these programs are an important source of bugs. In this article, we propose LLOV, a fast, lightweight, language agnostic, and static data race checker for OpenMP programs based on the LLVM compiler framework. We compare LLOV with other state-of-the-art data race checkers on a variety of well-established benchmarks. We show that the precision, accuracy, and the F1 score of LLOV is comparable to other checkers while being orders of magnitude faster. To the best of our knowledge, LLOV is the only tool among the state-of-the-art data race checkers that can verify a C/C++ or FORTRAN program to be data race free.},
+  archive      = {J_TACO},
+  author       = {Utpal Bora and Santanu Das and Pankaj Kukreja and Saurabh Joshi and Ramakrishna Upadrasta and Sanjay Rajopadhye},
+  doi          = {10.1145/3418597},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {35:1â€“26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {LLOV: A fast static data-race checker for OpenMP programs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A black-box monitoring approach to measure microservices
+runtime performance. <em>TACO</em>, <em>17</em>(4), 34:1–26. (<a
+href="https://doi.org/10.1145/3418899">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Microservices changed cloud computing by moving the applications’ complexity from one monolithic executable to thousands of network interactions between small components. Given the increasing deployment sizes, the architectural exploitation challenges, and the impact on data-centers’ power consumption, we need to efficiently track this complexity. Within this article, we propose a black-box monitoring approach to track microservices at scale, focusing on architectural metrics, power consumption, application performance, and network performance. The proposed approach is transparent w.r.t. the monitored applications, generates less overhead w.r.t. black-box approaches available in the state-of-the-art, and provides fine-grain accurate metrics.},
+  archive      = {J_TACO},
+  author       = {Rolando Brondolin and Marco D. Santambrogio},
+  doi          = {10.1145/3418899},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {34:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A black-box monitoring approach to measure microservices runtime performance},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). GEVO: GPU code optimization using evolutionary computation.
+<em>TACO</em>, <em>17</em>(4), 33:1–28. (<a
+href="https://doi.org/10.1145/3418055">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {GPUs are a key enabler of the revolution in machine learning and high-performance computing, functioning as de facto co-processors to accelerate large-scale computation. As the programming stack and tool support have matured, GPUs have also become accessible to programmers, who may lack detailed knowledge of the underlying architecture and fail to fully leverage the GPU’s computation power. GEVO (Gpu optimization using EVOlutionary computation) is a tool for automatically discovering optimization opportunities and tuning the performance of GPU kernels in the LLVM representation. GEVO uses population-based search to find edits to GPU code compiled to LLVM-IR and improves performance on desired criteria while retaining required functionality. We demonstrate that GEVO improves the execution time of general-purpose GPU programs and machine learning (ML) models on NVIDIA Tesla P100. For the Rodinia benchmarks, GEVO improves GPU kernel runtime performance by an average of 49.48\% and by as much as 412\% over the fully compiler-optimized baseline. If kernel output accuracy is relaxed to tolerate up to 1\% error, GEVO can find kernel variants that outperform the baseline by an average of 51.08\%. For the ML workloads, GEVO achieves kernel performance improvement for SVM on the MNIST handwriting recognition (3.24×) and the a9a income prediction (2.93×) datasets with no loss of model accuracy. GEVO achieves 1.79× kernel performance improvement on image classification using ResNet18/CIFAR-10, with less than 1\% model accuracy reduction.},
+  archive      = {J_TACO},
+  author       = {Jhe-Yu Liou and Xiaodong Wang and Stephanie Forrest and Carole-Jean Wu},
+  doi          = {10.1145/3418055},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {33:1–28},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {GEVO: GPU code optimization using evolutionary computation},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). IR2VEC: LLVM IR based scalable program embeddings.
+<em>TACO</em>, <em>17</em>(4), 32:1–27. (<a
+href="https://doi.org/10.1145/3418463">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose IR2V EC , a Concise and Scalable encoding infrastructure to represent programs as a distributed embedding in continuous space. This distributed embedding is obtained by combining representation learning methods with flow information to capture the syntax as well as the semantics of the input programs. As our infrastructure is based on the Intermediate Representation (IR) of the source code, obtained embeddings are both language and machine independent. The entities of the IR are modeled as relationships, and their representations are learned to form a seed embedding vocabulary . Using this infrastructure, we propose two incremental encodings: Symbolic and Flow-Aware . Symbolic encodings are obtained from the seed embedding vocabulary , and Flow-Aware encodings are obtained by augmenting the Symbolic encodings with the flow information. We show the effectiveness of our methodology on two optimization tasks (Heterogeneous device mapping and Thread coarsening). Our way of representing the programs enables us to use non-sequential models resulting in orders of magnitude of faster training time. Both the encodings generated by IR2V EC outperform the existing methods in both the tasks, even while using simple machine learning models. In particular, our results improve or match the state-of-the-art speedup in 11/14 benchmark-suites in the device mapping task across two platforms and 53/68 benchmarks in the thread coarsening task across four different platforms. When compared to the other methods, our embeddings are more scalable , is non-data-hungry , and has better Out-Of-Vocabulary (OOV) characteristics .},
+  archive      = {J_TACO},
+  author       = {S. VenkataKeerthy and Rohit Aggarwal and Shalini Jain and Maunendra Sankar Desarkar and Ramakrishna Upadrasta and Y. N. Srikant},
+  doi          = {10.1145/3418463},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {32:1–27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {IR2VEC: LLVM IR based scalable program embeddings},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). NNBench-x: A benchmarking methodology for neural network
+accelerator designs. <em>TACO</em>, <em>17</em>(4), 31:1–25. (<a
+href="https://doi.org/10.1145/3417709">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The tremendous impact of deep learning algorithms over a wide range of application domains has encouraged a surge of neural network (NN) accelerator research. Facilitating the NN accelerator design calls for guidance from an evolving benchmark suite that incorporates emerging NN models. Nevertheless, existing NN benchmarks are not suitable for guiding NN accelerator designs. These benchmarks are either selected for general-purpose processors without considering unique characteristics of NN accelerators or lack quantitative analysis to guarantee their completeness during the benchmark construction, update, and customization. In light of the shortcomings of prior benchmarks, we propose a novel benchmarking methodology for NN accelerators with a quantitative analysis of application performance features and a comprehensive awareness of software-hardware co-design. Specifically, we decouple the benchmarking process into three stages: First, we characterize the NN workloads with quantitative metrics and select the representative applications for the benchmark suite to ensure diversity and completeness. Second, we refine the selected applications according to the customized model compression techniques provided by specific software-hardware co-design. Finally, we evaluate a variety of accelerator designs on the generated benchmark suite. To demonstrate the effectiveness of our benchmarking methodology, we conduct a case study of composing an NN benchmark from the TensorFlow Model Zoo and compress these selected models with various model compression techniques. Finally, we evaluate compressed models on various architectures, including GPU, Neurocube, DianNao, and Cambricon-X.},
+  archive      = {J_TACO},
+  author       = {Xinfeng Xie and Xing Hu and Peng Gu and Shuangchen Li and Yu Ji and Yuan Xie},
+  doi          = {10.1145/3417709},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {31:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {NNBench-X: A benchmarking methodology for neural network accelerator designs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). OD-SGD: One-step delay stochastic gradient descent for
+distributed training. <em>TACO</em>, <em>17</em>(4), 30:1–26. (<a
+href="https://doi.org/10.1145/3417607">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The training of modern deep learning neural network calls for large amounts of computation, which is often provided by GPUs or other specific accelerators. To scale out to achieve faster training speed, two update algorithms are mainly applied in the distributed training process, i.e., the Synchronous SGD algorithm (SSGD) and Asynchronous SGD algorithm (ASGD). SSGD obtains good convergence point while the training speed is slowed down by the synchronous barrier. ASGD has faster training speed but the convergence point is lower when compared to SSGD. To sufficiently utilize the advantages of SSGD and ASGD, we propose a novel technology named One-step Delay SGD (OD-SGD) to combine their strengths in the training process. Therefore, we can achieve similar convergence point and training speed as SSGD and ASGD separately. To the best of our knowledge, we make the first attempt to combine the features of SSGD and ASGD to improve distributed training performance. Each iteration of OD-SGD contains a global update in the parameter server node and local updates in the worker nodes, the local update is introduced to update and compensate the delayed local weights. We evaluate our proposed algorithm on MNIST, CIFAR-10, and ImageNet datasets. Experimental results show that OD-SGD can obtain similar or even slightly better accuracy than SSGD, while its training speed is much faster, which even exceeds the training speed of ASGD.},
+  archive      = {J_TACO},
+  author       = {Yemao Xu and Dezun Dong and Yawei Zhao and Weixia Xu and Xiangke Liao},
+  doi          = {10.1145/3417607},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {30:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {OD-SGD: One-step delay stochastic gradient descent for distributed training},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). AsynGraph: Maximizing data parallelism for efficient
+iterative graph processing on GPUs. <em>TACO</em>, <em>17</em>(4),
+29:1–21. (<a href="https://doi.org/10.1145/3416495">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, iterative graph algorithms are proposed to be handled by GPU-accelerated systems. However, in iterative graph processing, the parallelism of GPU is still underutilized by existing GPU-based solutions. In fact, because of the power-law property of the natural graphs, the paths between a small set of important vertices (e.g., high-degree vertices) play a more important role in iterative graph processing’s convergence speed. Based on this fact, for faster iterative graph processing on GPUs, this article develops a novel system, called AsynGraph , to maximize its data parallelism. It first proposes an efficient structure-aware asynchronous processing way . It enables the state propagations of most vertices to be effectively conducted on the GPUs in a concurrent way to get a higher GPU utilization ratio through efficiently handling the paths between the important vertices. Specifically, a graph sketch (consisting of the paths between the important vertices) is extracted from the original graph to serve as a fast bridge for most state propagations. Through efficiently processing this sketch more times within each round of graph processing, higher parallelism of GPU can be utilized to accelerate most state propagations. In addition, a forward-backward intra-path processing way is also adopted to asynchronously handle the vertices on each path, aiming to further boost propagations along paths and also ensure smaller data access cost. In comparison with existing GPU-based systems, i.e., Gunrock, Groute, Tigr, and DiGraph, AsynGraph can speed up iterative graph processing by 3.06–11.52, 2.47–5.40, 2.23–9.65, and 1.41–4.05 times, respectively.},
+  archive      = {J_TACO},
+  author       = {Yu Zhang and Xiaofei Liao and Lin Gu and Hai Jin and Kan Hu and Haikun Liu and Bingsheng He},
+  doi          = {10.1145/3416495},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {29:1–21},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {AsynGraph: Maximizing data parallelism for efficient iterative graph processing on GPUs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). DisGCo: A compiler for distributed graph analytics.
+<em>TACO</em>, <em>17</em>(4), 28:1–26. (<a
+href="https://doi.org/10.1145/3414469">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph algorithms are widely used in various applications. Their programmability and performance have garnered a lot of interest among the researchers. Being able to run these graph analytics programs on distributed systems is an important requirement. Green-Marl is a popular Domain Specific Language (DSL) for coding graph algorithms and is known for its simplicity. However, the existing Green-Marl compiler for distributed systems (Green-Marl to Pregel) can only compile limited types of Green-Marl programs (in Pregel canonical form). This severely restricts the types of parallel Green-Marl programs that can be executed on distributed systems. We present DisGCo , the first compiler to translate any general Green-Marl program to equivalent MPI program that can run on distributed systems. Translating Green-Marl programs to MPI (SPMD/MPMD style of computation, distributed memory) presents many other exciting challenges, besides the issues related to differences in syntax, as Green-Marl gives the programmer a unified view of the whole memory and allows the parallel and serial code to be inter-mixed. We first present the set of challenges involved in translating Green-Marl programs to MPI and then present a systematic approach to do the translation. We also present a few optimization techniques to improve the performance of our generated programs. DisGCo is the first graph DSL compiler that can handle all syntactic capabilities of a practical graph DSL like Green-Marl and generate code that can run on distributed systems. Our preliminary evaluation of DisGCo shows that our generated programs are scalable. Further, compared to the state-of-the-art DH-Falcon compiler that translates a subset of Falcon programs to MPI, our generated codes exhibit a geomean speedup of 17.32×.},
+  archive      = {J_TACO},
+  author       = {Anchu Rajendran and V. Krishna Nandivada},
+  doi          = {10.1145/3414469},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {28:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {DisGCo: A compiler for distributed graph analytics},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). ECOTLB: Eventually consistent TLBs. <em>TACO</em>,
+<em>17</em>(4), 27:1–24. (<a
+href="https://doi.org/10.1145/3409454">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose ecoTLB —software-based eventual translation lookaside buffer (TLB) coherence—which eliminates the overhead of the synchronous TLB shootdown mechanism in operating systems that use address space identifiers (ASIDs). With an eventual TLB coherence, ecoTLB improves the performance of free and page swap operations by removing the inter-processor interrupt (IPI) overheads incurred to invalidate TLB entries. We show that the TLB shootdown has implications for page swapping in particular in emerging, disaggregated data centers and demonstrate that ecoTLB can improve both the performance and the specific swapping policy decisions using ecoTLB ’s asynchronous mechanism. We demonstrate that ecoTLB improves the performance of real-world applications, such as Memcached and Make, that perform page swapping using Infiniswap , a solution for next generation data centers that use disaggregated memory, by up to 17.2\%. Moreover, ecoTLB improves the 99th percentile tail latency of Memcached by up to 70.8\% due to its asynchronous scheme and improved policy decisions. Furthermore, we show that recent features to improve security in the Linux kernel, like kernel page table isolation (KPTI), can result in significant performance overheads on architectures without support for specific instructions to clear single entries in tagged TLBs, falling back to full TLB flushes. In this scenario, ecoTLB is able to recover the performance lost for supporting KPTI due to its asynchronous shootdown scheme and its support for tagged TLBs. Finally, we demonstrate that ecoTLB improves the performance of free operations by up to 59.1\% on a 120-core machine and improves the performance of Apache on a 16-core machine by up to 13.7\% compared to baseline Linux, and by up to 48.2\% compared to ABIS, a recent state-of-the-art research prototype that reduces the number of IPIs.},
+  archive      = {J_TACO},
+  author       = {Steffen Maass and Mohan Kumar Kumar and Taesoo Kim and Tushar Krishna and Abhishek Bhattacharjee},
+  doi          = {10.1145/3409454},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {27:1–24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {ECOTLB: Eventually consistent TLBs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Effective loop fusion in polyhedral compilation using fusion
+conflict graphs. <em>TACO</em>, <em>17</em>(4), 26:1–26. (<a
+href="https://doi.org/10.1145/3416510">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Polyhedral auto-transformation frameworks are known to find efficient loop transformations that maximize locality and parallelism and minimize synchronization. While complex loop transformations are routinely modeled in these frameworks, they tend to rely on ad hoc heuristics for loop fusion. Although there exist multiple loop fusion models with cost functions to maximize locality and parallelism, these models involve separate optimization steps rather than seamlessly integrating with other loop transformations like loop permutation, scaling, and shifting. Incorporating parallelism-preserving loop fusion heuristics into existing affine transformation frameworks like Pluto, LLVM-Polly, PPCG, and PoCC requires solving a large number of Integer Linear Programming formulations, which increase auto-transformation times significantly. In this work, we incorporate polynomial time loop fusion heuristics into the Pluto-lp-dfp framework. We present a data structure called the fusion conflict graph (FCG), which enables us to efficiently model loop fusion in the presence of other affine loop transformations. We propose a clustering heuristic to group the vertices of the FCG, which further enables us to provide three different polynomial time greedy fusion heuristics, namely, maximal fusion , typed fusion , and hybrid fusion , while maintaining the compile time improvements of Pluto-lp-dfp over Pluto. Our experiments reveal that the hybrid fusion model, in conjunction with Pluto’s cost function, finds efficient transformations that outperform PoCC and Pluto by mean factors of 1.8× and 1.07×, respectively, with a maximum performance improvement of 14× over PoCC and 2.6× over Pluto.},
+  archive      = {J_TACO},
+  author       = {Aravind Acharya and Uday Bondhugula and Albert Cohen},
+  doi          = {10.1145/3416510},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {26:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Effective loop fusion in polyhedral compilation using fusion conflict graphs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). SHASTA: Synergic HW-SW architecture for spatio-temporal
+approximation. <em>TACO</em>, <em>17</em>(4), 25:1–26. (<a
+href="https://doi.org/10.1145/3412375">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A key requirement for efficient general purpose approximate computing is an amalgamation of flexible hardware design and intelligent application tuning, which together can leverage the appropriate amount of approximation that the applications engender and reap the best efficiency gains from them. To achieve this, we have identified three important features to build better general-purpose cross-layer approximation systems: ① individual per-operation (“spatio-temporally fine-grained”) approximation, ② hardware-cognizant application tuning for approximation, ③ systemwide approximation-synergy. We build an efficient general purpose approximation system called SHASTA: Synergic HW-SW Architecture for Spatio-Temporal Approximation, to achieve these goals. 1 First, in terms of hardware, SHASTA approximates both compute and memory—SHASTA proposes (a) a form of timing approximation called Slack-control Approximation, which controls the computation timing of each approximation operation and (b) a Dynamic Pre-L1 Load Approximation mechanism to approximate loads prior to cache access. These hardware mechanisms are designed to achieve fine-grained spatio-temporally diverse approximation. Next, SHASTA proposes a Hardware-cognizant Approximation Tuning mechanism to tune an application’s approximation to achieve the optimum execution efficiency under the prescribed error tolerance. The tuning mechanism is implemented atop a gradient descent algorithm and, thus, the application’s approximation is tuned along the steepest error vs. execution efficiency gradient. Finally, SHASTA is designed with a full-system perspective, which achieves Synergic benefits across its optimizations, building a closer-to-ideal general purpose approximation system. SHASTA is implemented on top of an OOO core and achieves mean speedups/energy savings of 20\%–40\% over a non-approximate baseline for greater than 90\% accuracy—these benefits are substantial for applications executing on a traditional general purpose processing system. SHASTA can be tuned to specific accuracy constraints and execution metrics and is quantitatively shown to achieve 2–15× higher benefits, in terms of performance and energy, compared to prior work.},
+  archive      = {J_TACO},
+  author       = {Gokul Subramanian Ravi and Joshua San Miguel and Mikko Lipasti},
+  doi          = {10.1145/3412375},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {4},
+  pages        = {25:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SHASTA: Synergic HW-SW architecture for spatio-temporal approximation},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Inter-kernel reuse-aware thread block scheduling.
+<em>TACO</em>, <em>17</em>(3), 24:1–27. (<a
+href="https://doi.org/10.1145/3406538">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As GPUs have become more programmable, their performance and energy benefits have made them increasingly popular. However, while GPU compute units continue to improve in performance, on-chip memories lag behind and data accesses are becoming increasingly expensive in performance and energy. Emerging GPU coherence protocols can mitigate this bottleneck by exploiting data reuse in GPU caches across kernel boundaries. Unfortunately, current GPU thread block schedulers are typically not designed to expose such reuse. This article proposes new hardware thread block schedulers that optimize inter-kernel reuse while using work stealing to preserve load balance. Our schedulers are simple, decentralized, and have extremely low overhead. Compared to a baseline round-robin scheduler, the best performing scheduler reduces average execution time and energy by 19\% and 11\%, respectively, in regular applications, and 10\% and 8\%, respectively, in irregular applications.},
+  archive      = {J_TACO},
+  author       = {Muhammad Huzaifa and Johnathan Alsop and Abdulrahman Mahmoud and Giordano Salvador and Matthew D. Sinclair and Sarita V. Adve},
+  doi          = {10.1145/3406538},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {24:1–27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Inter-kernel reuse-aware thread block scheduling},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Schedule synthesis for halide pipelines on GPUs.
+<em>TACO</em>, <em>17</em>(3), 23:1–25. (<a
+href="https://doi.org/10.1145/3406117">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Halide DSL and compiler have enabled high-performance code generation for image processing pipelines targeting heterogeneous architectures through the separation of algorithmic description and optimization schedule. However, automatic schedule generation is currently only possible for multi-core CPU architectures. As a result, expert knowledge is still required when optimizing for platforms with GPU capabilities. In this work, we extend the current Halide Autoscheduler with novel optimization passes to efficiently generate schedules for CUDA-based GPU architectures. We evaluate our proposed method across a variety of applications and show that it can achieve performance competitive with that of manually tuned Halide schedules, or in many cases even better performance. Experimental results show that our schedules are on average 10\% faster than manual schedules and over 2× faster than previous autoscheduling attempts.},
+  archive      = {J_TACO},
+  author       = {Savvas Sioutas and Sander Stuijk and Twan Basten and Henk Corporaal and Lou Somers},
+  doi          = {10.1145/3406117},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {23:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Schedule synthesis for halide pipelines on GPUs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). EchoBay: Design and optimization of echo state networks
+under memory and time constraints. <em>TACO</em>, <em>17</em>(3),
+22:1–24. (<a href="https://doi.org/10.1145/3404993">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increase in computational power of embedded devices and the latency demands of novel applications brought a paradigm shift on how and where the computation is performed. Although AI inference is slowly moving from the cloud to end-devices with limited resources, time-centric recurrent networks like Long-Short Term Memory remain too complex to be transferred on embedded devices without extreme simplifications and limiting the performance of many notable applications. To solve this issue, the Reservoir Computing paradigm proposes sparse, untrained non-linear networks, the Reservoir, that can embed temporal relations without some of the hindrances of Recurrent Neural Networks training, and with a lower memory occupation. Echo State Networks (ESN) and Liquid State Machines are the most notable examples. In this scenario, we propose EchoBay , a comprehensive C++ library for ESN design and training. EchoBay is architecture-agnostic to guarantee maximum performance on different devices (whether embedded or not), and it offers the possibility to optimize and tailor an ESN on a particular case study, reducing at the minimum the effort required on the user side. This can be done thanks to the Bayesian Optimization (BO) process, which efficiently and automatically searches hyper-parameters that maximize a fitness function. Additionally, we designed different optimization techniques that take in consideration resource constraints of the device to minimize memory footprint and inference time. Our results in different scenarios show an average speed-up in training time of 119x compared to Grid and Random search of hyper-parameters, a decrease of 94\% of trained models size and 95\% in inference time, maintaining comparable performance for the given task. The EchoBay library is Open Source and publicly available at https://github.com/necst/Echobay.},
+  archive      = {J_TACO},
+  author       = {L. Cerina and M. D. Santambrogio and G. Franco and C. Gallicchio and A. Micheli},
+  doi          = {10.1145/3404993},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {22:1–24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {EchoBay: Design and optimization of echo state networks under memory and time constraints},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Securing branch predictors with two-level encryption.
+<em>TACO</em>, <em>17</em>(3), 21:1–25. (<a
+href="https://doi.org/10.1145/3404189">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern processors rely on various speculative mechanisms to meet performance demand. Branch predictors are one of the most important micro-architecture components to deliver performance. However, they have been under heavy scrutiny because of recent side-channel attacks. Branch predictors are indexed using the PC and recent branch histories. An adversary can manipulate these parameters to access and control the same branch predictor entry that a victim uses. Recent Spectre attacks exploit this to set up speculative-execution-based security attacks. In this article, we aim to mitigate branch predictor side-channels using two-level encryption. At the first level, we randomize the set-index by encrypting the PC using a per-context secret key. At the second level, we encrypt the data in each branch predictor entry. While periodic key changes make the branch predictor more secure, performance degradation can be significant. To alleviate performance degradation, we propose a practical set update mechanism that also considers parallelism in multi-banked branch predictors. We show that our mechanism exhibits only 1.0\% and 0.2\% performance degradation while changing keys every 10K and 50K cycles, respectively, which is much lower than other state-of-the-art approaches.},
+  archive      = {J_TACO},
+  author       = {Jaekyu Lee and Yasuo Ishii and Dam Sunwoo},
+  doi          = {10.1145/3404189},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {21:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Securing branch predictors with two-level encryption},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Cooperative software-hardware acceleration of k-means on a
+tightly coupled CPU-FPGA system. <em>TACO</em>, <em>17</em>(3), 20:1–24.
+(<a href="https://doi.org/10.1145/3406114">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider software-hardware acceleration of K-means clustering on the Intel Xeon+FPGA platform. We design a pipelined accelerator for K-means and combine it with CPU threads to assess performance benefits of (1) acceleration when data are only accessed from system memory and (2) cooperative CPU-FPGA acceleration. Our evaluation shows that the accelerator is up to 12.7×/2.4× faster than a single CPU thread for the assignment/update step of K-means. The cooperative use of threads and FPGA is roughly 1.9× faster than CPU threads alone or the FPGA by itself. Our approach delivers 4×–5× higher throughput compared to existing offload processing approaches.},
+  archive      = {J_TACO},
+  author       = {Tarek S. Abdelrahman},
+  doi          = {10.1145/3406114},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {20:1–24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Cooperative software-hardware acceleration of K-means on a tightly coupled CPU-FPGA system},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). FPDetect: Efficient reasoning about stencil programs using
+selective direct evaluation. <em>TACO</em>, <em>17</em>(3), 19:1–27. (<a
+href="https://doi.org/10.1145/3402451">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present FPD etect , a low-overhead approach for detecting logical errors and soft errors affecting stencil computations without generating false positives. We develop an offline analysis that tightly estimates the number of floating-point bits preserved across stencil applications. This estimate rigorously bounds the values expected in the data space of the computation. Violations of this bound can be attributed with certainty to errors. FPD etect helps synthesize error detectors customized for user-specified levels of accuracy and coverage. FPD etect also enables overhead reduction techniques based on deploying these detectors coarsely in space and time. Experimental evaluations demonstrate the practicality of our approach.},
+  archive      = {J_TACO},
+  author       = {Arnab Das and Sriram Krishnamoorthy and Ian Briggs and Ganesh Gopalakrishnan and Ramakrishna Tipireddy},
+  doi          = {10.1145/3402451},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {19:1–27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {FPDetect: Efficient reasoning about stencil programs using selective direct evaluation},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). GPU fast convolution via the overlap-and-save method in
+shared memory. <em>TACO</em>, <em>17</em>(3), 18:1–20. (<a
+href="https://doi.org/10.1145/3394116">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present an implementation of the overlap-and-save method, a method for the convolution of very long signals with short response functions, which is tailored to GPUs. We have implemented several FFT algorithms (using the CUDA programming language), which exploit GPU shared memory, allowing for GPU accelerated convolution. We compare our implementation with an implementation of the overlap-and-save algorithm utilizing the NVIDIA FFT library (cuFFT). We demonstrate that by using a shared-memory-based FFT, we can achieved significant speed-ups for certain problem sizes and lower the memory requirements of the overlap-and-save method on GPUs.},
+  archive      = {J_TACO},
+  author       = {Karel Adámek and Sofia Dimoudi and Mike Giles and Wesley Armour},
+  doi          = {10.1145/3394116},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {18:1–20},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {GPU fast convolution via the overlap-and-save method in shared memory},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Zeroploit: Exploiting zero valued operands in interactive
+gaming applications. <em>TACO</em>, <em>17</em>(3), 17:1–26. (<a
+href="https://doi.org/10.1145/3394284">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we first characterize register operand value locality in shader programs of modern gaming applications and observe that there is a high likelihood of one of the register operands of several multiply, logical-and, and similar operations being zero, dynamically. We provide intuition, examples, and a quantitative characterization for how zeros originate dynamically in these programs. Next, we show that this dynamic behavior can be gainfully exploited with a profile-guided code optimization called Zeroploit that transforms targeted code regions into a zero-(value-)specialized fast path and a default slow path. The fast path benefits from zero-specialization in two ways, namely: (a) the backward slice of the other operand of a given multiply or logical-and can be skipped dynamically, provided the only use of that other operand is in the given instruction, and (b) the forward slice of instructions originating at the given instruction can be zero-specialized, potentially triggering further backward slice specializations from operations of that forward slice as well. Such specialization helps the fast path avoid redundant dynamic computations as well as memory fetches, while the fast-slow versioning transform helps preserve functional correctness. With an offline value profiler and manually optimized shader programs, we demonstrate that Zeroploit is able to achieve an average speedup of 35.8\% for targeted shader programs, amounting to an average frame-rate speedup of 2.8\% across a collection of modern gaming applications on an NVIDIA® GeForce RTX™ 2080 GPU.},
+  archive      = {J_TACO},
+  author       = {Ram Rangan and Mark W. Stephenson and Aditya Ukarande and Shyam Murthy and Virat Agarwal and Marc Blackstein},
+  doi          = {10.1145/3394284},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {17:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Zeroploit: Exploiting zero valued operands in interactive gaming applications},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Editorial: A message from the editor-in-chief.
+<em>TACO</em>, <em>17</em>(3), 16:1–2. (<a
+href="https://doi.org/10.1145/3409369">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {No abstract available.},
+  archive      = {J_TACO},
+  author       = {Dave Kaeli},
+  doi          = {10.1145/3409369},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {3},
+  pages        = {16:1–2},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Editorial: A message from the editor-in-chief},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). SIMT-x: Extending single-instruction multi-threading to
+out-of-order cores. <em>TACO</em>, <em>17</em>(2), 15:1–23. (<a
+href="https://doi.org/10.1145/3392032">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work introduces Single Instruction Multi-Thread Express (SIMT-X), a general-purpose Central Processing Unit (CPU) microarchitecture that enables Graphics Processing Units (GPUs)-style SIMT execution across multiple threads of the same program for high throughput, while retaining the latency benefits of out-of-order execution, and the programming convenience of homogeneous multi-thread processors. SIMT-X leverages the existing Single Instruction Multiple Data (SIMD) back-end to provide CPU/GPU-like processing on a single core with minimal overhead. We demonstrate that although SIMT-X invokes a restricted form of Out-of-Order (OoO), the microarchitecture successfully captures a majority of the benefits of aggressive OoO execution using at most two concurrent register mappings per architectural register, while addressing issues of partial dependencies and supporting a general-purpose Instruction Set Architecture (ISA).},
+  archive      = {J_TACO},
+  author       = {Anita Tino and Caroline Collange and André Seznec},
+  doi          = {10.1145/3392032},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {2},
+  pages        = {15:1–23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SIMT-X: Extending single-instruction multi-threading to out-of-order cores},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A conflict-free scheduler for high-performance graph
+processing on multi-pipeline FPGAs. <em>TACO</em>, <em>17</em>(2),
+14:1–26. (<a href="https://doi.org/10.1145/3390523">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {FPGA-based graph processing accelerators are nowadays equipped with multiple pipelines for hardware acceleration of graph computations. However, their multi-pipeline efficiency can suffer greatly from the considerable overheads caused by the read/write conflicts in their on-chip BRAM from different pipelines, leading to significant performance degradation and poor scalability. In this article, we investigate the underlying causes behind such inter-pipeline read/write conflicts by focusing on multi-pipeline FPGAs for accelerating Sparse Matrix Vector Multiplication (SpMV) arising in graph processing. We exploit our key insight that the problem of eliminating inter-pipeline read/write conflicts for SpMV can be formulated as one of solving a row- and column-wise tiling problem for its associated adjacency matrix. However, how to partition a sparse adjacency matrix obtained from any graph with respect to a set of pipelines by both eliminating all the inter-pipeline read/write conflicts and keeping all the pipelines reasonably load-balanced is challenging. We present a conflict-free scheduler, WaveScheduler, that can dispatch different sub-matrix tiles to different pipelines without any read/write conflict. We also introduce two optimizations that are specifically tailored for graph processing, “degree-aware vertex index renaming” for improving load balancing and “data re-organization” for enabling sequential off-chip memory access, for all the pipelines. Our evaluation on Xilinx®Alveo™ U250 accelerator card with 16 pipelines shows that WaveScheduler can achieve up to 3.57 GTEPS, running much faster than native scheduling and two state-of-the-art FPGA-based graph accelerators (by 6.48× for “native,” 2.54× for HEGP, and 2.11× for ForeGraph), on average. In particular, these performance gains also scale up significantly as the number of pipelines increases.},
+  archive      = {J_TACO},
+  author       = {Qinggang Wang and Long Zheng and Jieshan Zhao and Xiaofei Liao and Hai Jin and Jingling Xue},
+  doi          = {10.1145/3390523},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {2},
+  pages        = {14:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A conflict-free scheduler for high-performance graph processing on multi-pipeline FPGAs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Network interface architecture for remote indirect memory
+access (RIMA) in datacenters. <em>TACO</em>, <em>17</em>(2), 13:1–22.
+(<a href="https://doi.org/10.1145/3374215">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Remote Direct Memory Access (RDMA) fabrics such as InfiniBand and Converged Ethernet report latency shorter by a factor of 50 than TCP. As such, RDMA is a potential replacement for TCP in datacenters (DCs) running low-latency applications, such as Web search and memcached. InfiniBand’s Shared Receive Queues (SRQs), which use two-sided send/recv verbs (i.e., channel semantics ), reduce the amount of pre-allocated, pinned memory (despite optimizations such as InfiniBand’s on-demand paging (ODP)) for message buffers. However, SRQs are limited fundamentally to a single message size per queue, which incurs either memory wastage or significant programmer burden for typical DC traffic of an arbitrary number (level of burstiness) of messages of arbitrary size. We propose remote indirect memory access (RIMA) , which avoids these pitfalls by providing (1) network interface card (NIC) microarchitecture support for novel queue semantics and (2) a new “verb” called append . To append a sender’s message to a shared queue, the receiver NIC atomically increments the queue’s tail pointer by the incoming message’s size and places the message in the newly created space. As in traditional RDMA, the NIC is responsible for pointer lookup, address translation, and enforcing virtual memory protections. This indirection of specifying a queue (and not its tail pointer, which remains hidden from senders) handles the typical DC traffic of an arbitrary sender sending an arbitrary number of messages of arbitrary size. Because RIMA’s simple hardware adds only 1--2 ns to the multi-\mu s message latency, RIMA achieves the same message latency and throughput as InfiniBand SRQ with unlimited buffering. Running memcached traffic on a 30-node InfiniBand cluster, we show that at similar, low programmer effort, RIMA achieves significantly smaller memory footprint than SRQ. However, while SRQ can be crafted to minimize memory footprint by expending significant programming effort, RIMA provides those benefits with little programmer effort. For memcached traffic, a high-performance key-value cache ( FastKV ) using RIMA achieves either 3× lower 96 th-percentile latency or significantly better throughput or memory footprint than FastKV using RDMA.},
+  archive      = {J_TACO},
+  author       = {Jiachen Xue and T. N. Vijaykumar and Mithuna Thottethodi},
+  doi          = {10.1145/3374215},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {2},
+  pages        = {13:1–22},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Network interface architecture for remote indirect memory access (RIMA) in datacenters},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Reliability analysis for unreliable FSM computations.
+<em>TACO</em>, <em>17</em>(2), 12:1–23. (<a
+href="https://doi.org/10.1145/3377456">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Finite State Machines (FSMs) are fundamental in both hardware design and software development. However, the reliability of FSM computations remains poorly understood. Existing reliability analyses are mainly designed for generic computations and are unaware of the special error tolerance characteristics in FSM computations. This work introduces RelyFSM -- a state-level reliability analysis framework for FSM computations. By modeling the behaviors of unreliable FSM executions and qualitatively reasoning about the transition structures, RelyFSM can precisely capture the inherent error tolerance in FSM computations. Our evaluation with real-world FSM benchmarks confirms both the accuracy and efficiency of RelyFSM.},
+  archive      = {J_TACO},
+  author       = {Amir Hossein Nodehi Sabet and Junqiao Qiu and Zhijia Zhao and Sriram Krishnamoorthy},
+  doi          = {10.1145/3377456},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {2},
+  pages        = {12:1–23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Reliability analysis for unreliable FSM computations},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Runtime design space exploration and mapping of DCNNs for
+the ultra-low-power orlando SoC. <em>TACO</em>, <em>17</em>(2), 11:1–25.
+(<a href="https://doi.org/10.1145/3379933">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent trends in deep convolutional neural networks (DCNNs) impose hardware accelerators as a viable solution for computer vision and speech recognition. The Orlando SoC architecture from STMicroelectronics targets exactly this class of problems by integrating hardware-accelerated convolutional blocks together with DSPs and on-chip memory resources to enable energy-efficient designs of DCNNs. The main advantage of the Orlando platform is to have runtime configurable convolutional accelerators that can adapt to different DCNN workloads. This opens new challenges for mapping the computation to the accelerators and for managing the on-chip resources efficiently. In this work, we propose a runtime design space exploration and mapping methodology for runtime resource management in terms of on-chip memory, convolutional accelerators, and external bandwidth. Experimental results are reported in terms of power/performance scalability, Pareto analysis, mapping adaptivity, and accelerator utilization for the Orlando architecture mapping the VGG-16, Tiny-Yolo(v2), and MobileNet topologies.},
+  archive      = {J_TACO},
+  author       = {Ahmet Erdem and Cristina Silvano and Thomas Boesch and Andrea Carlo Ornstein and Surinder-Pal Singh and Giuseppe Desoli},
+  doi          = {10.1145/3379933},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {2},
+  pages        = {11:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Runtime design space exploration and mapping of DCNNs for the ultra-low-power orlando SoC},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Dynamic precision autotuning with TAFFO. <em>TACO</em>,
+<em>17</em>(2), 10:1–26. (<a
+href="https://doi.org/10.1145/3388785">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many classes of applications, both in the embedded and high performance domains, can trade off the accuracy of the computed results for computation performance. One way to achieve such a trade-off is precision tuning—that is, to modify the data types used for the computation by reducing the bit width, or by changing the representation from floating point to fixed point. We present a methodology for high-accuracy dynamic precision tuning based on the identification of input classes (i.e., classes of input datasets that benefit from similar optimizations). When a new input region is detected, the application kernels are re-compiled on the fly with the appropriate selection of parameters. In this way, we obtain a continuous optimization approach that enables the exploitation of the reduced precision computation while progressively exploring the solution space, thus reducing the time required by compilation overheads. We provide tools to support the automation of the runtime part of the solution, leaving to the user only the task of identifying the input classes. Our approach provides a significant performance boost (up to 320\%) on the typical approximate computing benchmarks, without meaningfully affecting the accuracy of the result, since the error remains always below 3\%.},
+  archive      = {J_TACO},
+  author       = {Stefano Cherubin and Daniele Cattaneo and Michele Chiari and Giovanni Agosta},
+  doi          = {10.1145/3388785},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {2},
+  pages        = {10:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Dynamic precision autotuning with TAFFO},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). ArmorAll: Compiler-based resilience targeting GPU
+applications. <em>TACO</em>, <em>17</em>(2), 9:1–24. (<a
+href="https://doi.org/10.1145/3382132">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The vulnerability of GPUs to soft errors has become a first-class design concern as they are increasingly being used in accuracy-sensitive and safety-critical domains. Existing solutions used to enhance the reliability of GPUs come with significant overhead in terms of area, power, and/or performance. In this article, we propose ArmorAll, a light-weight, adaptive, selective, and portable software solution to protect GPUs against soft errors. ArmorAll consists of a set of purely compiler-based redundancy schemes designed to optimize instruction duplication on GPUs, thereby enabling much more reliable execution. The choice of the scheme determines the subset of instructions that must be duplicated in an application, allowing adaptable fault coverage for different applications. ArmorAll can intelligently select a redundancy scheme that provides the best coverage to an application with an accuracy of 91.7\%. The high coverage provided by ArmorAll comes at an average improvement of 64.5\% in runtime when using the selected redundancy scheme as compared to the state-of-the-art.},
+  archive      = {J_TACO},
+  author       = {Charu Kalra and Fritz Previlon and Norm Rubin and David Kaeli},
+  doi          = {10.1145/3382132},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {2},
+  pages        = {9:1–24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {ArmorAll: Compiler-based resilience targeting GPU applications},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Optimizing the SSD burst buffer by traffic detection.
+<em>TACO</em>, <em>17</em>(1), 8:1â€“26. (<a
+href="https://doi.org/10.1145/3377705">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Currently, HPC storage systems still use hard disk drive (HDD) as their dominant storage device. Solid state drive (SSD) is widely deployed as the buffer to HDDs. Burst buffer has also been proposed to manage the SSD buffering of bursty write requests. Although burst buffer can improve I/O performance in many cases, we find that it has some limitations such as requiring large SSD capacity and harmonious overlapping between computation phase and data flushing phase. In this article, we propose a scheme, called SSDUP+. 1 SSDUP+ aims to improve the burst buffer by addressing the above limitations. First, to reduce the demand for the SSD capacity, we develop a novel method to detect and quantify the data randomness in the write traffic. Further, an adaptive algorithm is proposed to classify the random writes dynamically. By doing so, much less SSD capacity is required to achieve the similar performance as other burst buffer schemes. Next, to overcome the difficulty of perfectly overlapping the computation phase and the flushing phase, we propose a pipeline mechanism for the SSD buffer, in which data buffering and flushing are performed in pipeline. In addition, to improve the I/O throughput, we adopt a traffic-aware flushing strategy to reduce the I/O interference in HDD. Finally, to further improve the performance of buffering random writes in SSD, SSDUP+ transforms the random writes to sequential writes in SSD by storing the data with a log structure. Further, SSDUP+ uses the AVL tree structure to store the sequence information of the data. We have implemented a prototype of SSDUP+ based on OrangeFS and conducted extensive experiments. The experimental results show that our proposed SSDUP+ can save an average of 50\% SSD space while delivering almost the same performance as other common burst buffer schemes. In addition, SSDUP+ can save about 20\% SSD space compared with the previous version of this work, SSDUP, while achieving 20â€“30\% higher I/O throughput than SSDUP.},
+  archive      = {J_TACO},
+  author       = {Xuanhua Shi and Wei Liu and Ligang He and Hai Jin and Ming Li and Yong Chen},
+  doi          = {10.1145/3377705},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {8:1â€“26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Optimizing the SSD burst buffer by traffic detection},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A model-based software solution for simultaneous multiple
+kernels on GPUs. <em>TACO</em>, <em>17</em>(1), 7:1–26. (<a
+href="https://doi.org/10.1145/3377138">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a critical computing resource in multiuser systems such as supercomputers, data centers, and cloud services, a GPU contains multiple compute units (CUs). GPU Multitasking is an intuitive solution to underutilization in GPGPU computing. Recently proposed solutions of multitasking GPUs can be classified into two categories: (1) spatially partitioned sharing (SPS), which coexecutes different kernels on disjointed sets of compute units (CU), and (2) simultaneous multikernel (SMK), which runs multiple kernels simultaneously within a CU. Compared to SPS, SMK can improve resource utilization even further due to the interleaving of instructions from kernels with low dynamic resource contentions. However, it is hard to implement SMK on current GPU architecture, because (1) techniques for applying SMK on top of GPU hardware scheduling policy are scarce and (2) finding an efficient SMK scheme is difficult due to the complex interferences of concurrently executed kernels. In this article, we propose a lightweight and effective performance model to evaluate the complex interferences of SMK. Based on the probability of independent events, our performance model is built from a totally new angle and contains limited parameters. Then, we propose a metric, symbiotic factor , which can evaluate an SMK scheme so that kernels with complementary resource utilization can corun within a CU. Also, we analyze the advantages and disadvantages of kernel slicing and kernel stretching techniques and integrate them to apply SMK on GPUs instead of simulators. We validate our model on 18 benchmarks. Compared to the optimized hardware-based concurrent kernel execution whose kernel launching order brings fast execution time, the results of corunning kernel pairs show 11\%, 18\%, and 12\% speedup on AMD R9 290X, RX 480, and Vega 64, respectively, on average. Compared to the Warped-Slicer, the results show 29\%, 18\%, and 51\% speedup on AMD R9 290X, RX 480, and Vega 64, respectively, on average.},
+  archive      = {J_TACO},
+  author       = {Hao Wu and Weizhi Liu and Huanxin Lin and Cho-Li Wang},
+  doi          = {10.1145/3377138},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {7:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A model-based software solution for simultaneous multiple kernels on GPUs},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Improving memory efficiency in heterogeneous MPSoCs through
+row-buffer locality-aware forwarding. <em>TACO</em>, <em>17</em>(1),
+6:1–26. (<a href="https://doi.org/10.1145/3377149">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In heterogeneous multicore systems, the memory subsystem plays a critical role, since most core-to-core communications are conducted through the main memory. Memory efficiency has a substantial impact on system performance. Although memory traffic from multimedia cores generally manifests high row-buffer locality, which is beneficial to memory efficiency, the locality is often lost as memory streams are forwarded through networks-on-chip (NoC). Previous studies have discussed the techniques that improve memory visibility to reveal scattered row-buffer hit opportunities to the memory scheduler. However, extending local memory visibility introduces little benefit after the locality has been severely diluted. As the alternative approach, preserving row-buffer locality in the NoC has not been well explored. What is worse, it remains to be studied how to perform network traffic scheduling with the awareness of both memory efficiency and quality-of-service (QoS). In this article, we propose a router design with embedded row-index caches to enable locality-aware packet forwarding. The proposed design requires minor modifications to existing router microarchitecture and can be easily implemented with priority arbiters to integrate QoS support. Extensive evaluations show that the proposed design achieves higher memory efficiency than prior memory-aware routers, in addition to providing QoS support. On basis of extant QoS-aware routers, locality-aware forwarding helps to increase row-buffer hits by 58.32\% and reduce memory latency by 14.45\% on average. It also introduces a net reduction in DRAM and NoC energy cost by 27.82\%.},
+  archive      = {J_TACO},
+  author       = {Yang Song and Bill Lin},
+  doi          = {10.1145/3377149},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {6:1–26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Improving memory efficiency in heterogeneous MPSoCs through row-buffer locality-aware forwarding},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Application-specific arithmetic in high-level synthesis
+tools. <em>TACO</em>, <em>17</em>(1), 5:1–23. (<a
+href="https://doi.org/10.1145/3377403">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work studies hardware-specific optimization opportunities currently unexploited by high-level synthesis compilers. Some of these optimizations are specializations of floating-point operations that respect the usual semantics of the input program without changing the numerical result. Some other optimizations, locally triggered by the programmer thanks to a pragma, assume a different semantics, where floating-point code is interpreted as the specification of computation with real numbers. The compiler is then in charge to ensure an application-level accuracy constraint expressed in the pragma and has the freedom to use non-standard arithmetic hardware when more efficient. These two classes of optimizations are prototyped in the GeCoS source-to-source compiler and evaluated on the Polybench and EEMBC benchmark suites. Latency is reduced by up to 93\%, and resource usage is reduced by up to 58\%.},
+  archive      = {J_TACO},
+  author       = {Yohann Uguen and Florent De Dinechin and Victor Lezaud and Steven Derrien},
+  doi          = {10.1145/3377403},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {5:1–23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Application-specific arithmetic in high-level synthesis tools},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Informed prefetching for indirect memory accesses.
+<em>TACO</em>, <em>17</em>(1), 4:1–29. (<a
+href="https://doi.org/10.1145/3374216">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Indirect memory accesses have irregular access patterns that limit the performance of conventional software and hardware-based prefetchers. To address this problem, we propose the Array Tracking Prefetcher (ATP), which tracks array-based indirect memory accesses using a novel combination of software and hardware. ATP is first configured by special metadata instructions, which are inserted by programmer or compiler to pass data structure traversal knowledge. It then calculates and issues prefetches based on this information. ATP also employs a novel mechanism for dynamically adjusting prefetching distance to reduce early or late prefetches. ATP yields average speedup of 2.17 as compared to a single-core without prefetching. By contrast, the speedup for conventional software and hardware-based prefetching is 1.84 and 1.32, respectively. For four cores, the average speedup for ATP is 1.85, while the corresponding speedups for software and hardware-based prefetching are 1.60 and 1.25, respectively.},
+  archive      = {J_TACO},
+  author       = {Mustafa Cavus and Resit Sendag and Joshua J. Yi},
+  doi          = {10.1145/3374216},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {4:1–29},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Informed prefetching for indirect memory accesses},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Enabling highly efficient batched matrix multiplications on
+SW26010 many-core processor. <em>TACO</em>, <em>17</em>(1), 3:1–23. (<a
+href="https://doi.org/10.1145/3378176">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a systematic methodology for optimizing batched matrix multiplications on SW26010 many-core processor of the Sunway TaihuLight supercomputer. Five surrogate algorithms and a machine learning–based algorithm selector are proposed to fully exploit the computing capability of SW26010 and cope with the sophisticated algorithm characteristics of batched matrix multiplications. Experiment results show that the algorithm selector is able to adaptively choose the appropriate algorithm for various matrix shapes and batch sizes with low overhead and high accuracy. In particular, the optimized batched matrix multiplications can substantially outperform the non-batched version and reach around 84.8\% of the performance upper bound.},
+  archive      = {J_TACO},
+  author       = {Lijuan Jiang and Chao Yang and Wenjing Ma},
+  doi          = {10.1145/3378176},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {3:1–23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Enabling highly efficient batched matrix multiplications on SW26010 many-core processor},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A novel, highly integrated simulator for parallel and
+distributed systems. <em>TACO</em>, <em>17</em>(1), 2:1–28. (<a
+href="https://doi.org/10.1145/3378934">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In an era of complex networked parallel heterogeneous systems, simulating independently only parts, components, or attributes of a system-under-design is a cumbersome, inaccurate, and inefficient approach. Moreover, by considering each part of a system in an isolated manner, and due to the numerous and highly complicated interactions between the different components, the system optimization capabilities are severely limited. The presented fully-distributed simulation framework (called as COSSIM) is the first known open-source, high-performance simulator that can handle holistically system-of-systems including processors, peripherals and networks; such an approach is very appealing to both Cyber Physical Systems (CPS) and Highly Parallel Heterogeneous Systems designers and application developers. Our highly integrated approach is further augmented with accurate power estimation and security sub-tools that can tap on all system components and perform security and robustness analysis of the overall system under design—something that was unfeasible up to now. Additionally, a sophisticated Eclipse-based Graphical User Interface (GUI) has been developed to provide easy simulation setup, execution, and visualization of results. COSSIM has been evaluated when executing the widely used Netperf benchmark suite as well as a number of real-world applications. Final results demonstrate that the presented approach has up to 99\% accuracy (when compared with the performance of the real system), while the overall simulation time can be accelerated almost linearly with the number of CPUs utilized by the simulator.},
+  archive      = {J_TACO},
+  author       = {Nikolaos Tampouratzis and Ioannis Papaefstathiou and Antonios Nikitakis and Andreas Brokalakis and Stamatis Andrianakis and Apostolos Dollas and Marco Marcon and Emanuele Plebani},
+  doi          = {10.1145/3378934},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {2:1–28},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A novel, highly integrated simulator for parallel and distributed systems},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Dynamic colocation policies with reinforcement learning.
+<em>TACO</em>, <em>17</em>(1), 1:1–25. (<a
+href="https://doi.org/10.1145/3375714">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We draw on reinforcement learning frameworks to design and implement an adaptive controller for managing resource contention. During runtime, the controller observes the dynamic system conditions and optimizes control policies that satisfy latency targets yet improve server utilization. We evaluate a physical prototype that guarantees 95th percentile latencies for a search engine and improves server utilization by up to 70\%, compared to exclusively reserving servers for interactive services, for varied batch workloads in machine learning.},
+  archive      = {J_TACO},
+  author       = {Yuhao Li and Dan Sun and Benjamin C. Lee},
+  doi          = {10.1145/3375714},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  number       = {1},
+  pages        = {1:1–25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Dynamic colocation policies with reinforcement learning},
+  volume       = {17},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

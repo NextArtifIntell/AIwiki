@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AIC_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="aic---24">AIC - 24</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Conflagration-YOLO: A lightweight object detection
+architecture for conflagration. <em>AIC</em>, <em>36</em>(4), 361–376.
+(<a href="https://doi.org/10.3233/AIC-230094">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fire monitoring of fire-prone areas is essential, and in order to meet the requirements of edge deployment and the balance of fire recognition accuracy and speed, we design a lightweight fire recognition network, Conflagration-YOLO. Conflagration-YOLO is constructed by depthwise separable convolution and more attention to fire feature information extraction from a three-dimensional(3D) perspective, which improves the network feature extraction capability, achieves a balance of accuracy and speed, and reduces model parameters. In addition, a new activation function is used to improve the accuracy of fire recognition while minimizing the inference time of the network. All models are trained and validated on a custom fire dataset and fire inference is performed on the CPU. The mean Average Precision(mAP) of the proposed model reaches 80.92%, which has a great advantage compared with Faster R-CNN. Compared with YOLOv3-Tiny, the proposed model decreases the number of parameters by 5.71 M and improves the mAP by 6.67%. Compared with YOLOv4-Tiny, the number of parameters decreases by 3.54 M, mAP increases by 8.47%, and inference time decreases by 62.59 ms. Compared with YOLOv5s, the difference in the number of parameters is nearly twice reduced by 4.45 M and the inference time is reduced by 41.87 ms. Compared with YOLOX-Tiny, the number of parameters decreases by 2.5 M, mAP increases by 0.7%, and inference time decreases by 102.49 ms. Compared with YOLOv7, the number of parameters decreases significantly and the balance of accuracy and speed is achieved. Compared with YOLOv7-Tiny, the number of parameters decreases by 3.64 M, mAP increases by 0.5%, and inference time decreases by 15.65 ms. The experiment verifies the superiority and effectiveness of Conflagration-YOLO compared to the state-of-the-art (SOTA) network model. Furthermore, our proposed model and its dimensional variants can be applied to computer vision downstream target detection tasks in other scenarios as required.},
+  archive      = {J_AIC},
+  author       = {Sun, Ning and Shen, Pengfei and Ye, Xiaoling and Chen, Yifei and Cheng, Xiping and Wang, Pingping and Min, Jie},
+  doi          = {10.3233/AIC-230094},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {361-376},
+  shortjournal = {AI Commun.},
+  title        = {Conflagration-YOLO: A lightweight object detection architecture for conflagration},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Dual cross-domain session-based recommendation with
+multi-channel integration. <em>AIC</em>, <em>36</em>(4), 341–359. (<a
+href="https://doi.org/10.3233/AIC-230084">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Session-based recommendation aims at predicting the next behavior when the current interaction sequence is given. Recent advances evaluate the effectiveness of dual cross-domain information for the session-based recommendation. However, we discover that accurately modeling the session representations is still a challenging problem due to the complexity of preference interactions in the cross-domain, and various methods are proposed to only model the common features of cross-domain, while ignoring the specific features and enhanced features for the dual cross-domain. Without modeling the complete features, the existing methods suffer from poor recommendation accuracy. Therefore, we propose an end-to-end dual cross-domain with multi-channel interaction model (DCMI), which utilizes dual cross-domain session information and multiple preference interaction encoders, for session-based recommendation. In DCMI, we apply a graph neural network to generate the session global preference and local preference. Then, we design a cross-preference interaction module to capture the common, specific, and enhanced features for cross-domain sessions with local preferences and global preferences. Finally, we combine multiple preferences with a bilinear fusion mechanism to characterize and make recommendations. Experimental results on the Amazon dataset demonstrate the superiority of the DCMI model over the state-of-the-art methods.},
+  archive      = {J_AIC},
+  author       = {Zhang, Jinjin and Hua, Xiang and Zhao, Peng and Kang, Kai},
+  doi          = {10.3233/AIC-230084},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {341-359},
+  shortjournal = {AI Commun.},
+  title        = {Dual cross-domain session-based recommendation with multi-channel integration},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). TMTrans: Texture mixed transformers for medical image
+segmentation. <em>AIC</em>, <em>36</em>(4), 325–340. (<a
+href="https://doi.org/10.3233/AIC-230089">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate segmentation of skin cancer is crucial for doctors to identify and treat lesions. Researchers are increasingly using auxiliary modules with Transformers to optimize the model’s ability to process global context information and reduce detail loss. Additionally, diseased skin texture differs from normal skin, and pre-processed texture images can reflect the shape and edge information of the diseased area. We propose TMTrans (Texture Mixed Transformers). We have innovatively designed a dual axis attention mechanism (IEDA-Trans) that considers both global context and local information, as well as a multi-scale fusion (MSF) module that associates surface shape information with deep semantics. Additionally, we utilize TE(Texture Enhance) and SK(Skip connection) modules to bridge the semantic gap between encoders and decoders and enhance texture features. Our model was evaluated on multiple skin datasets, including ISIC 2016/2017/2018 and PH 2 , and outperformed other convolution and Transformer-based models. Furthermore, we conducted a generalization test on the 2018 DSB dataset, which resulted in a nearly 2% improvement in the Dice index, demonstrating the effectiveness of our proposed model.},
+  archive      = {J_AIC},
+  author       = {Chen, Lifang and Wang, Tao and Ge, Hongze},
+  doi          = {10.3233/AIC-230089},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {325-340},
+  shortjournal = {AI Commun.},
+  title        = {TMTrans: Texture mixed transformers for medical image segmentation},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Dynamic finegrained structured pruning sensitive to filter
+texture distribution. <em>AIC</em>, <em>36</em>(4), 311–323. (<a
+href="https://doi.org/10.3233/AIC-230046">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pruning of neural networks is undoubtedly a popular approach to cope with the current compression of large-scale, high-cost network models. However, most of the existing methods require a high level of human-regulated pruning criteria, which requires a lot of human effort to figure out a reasonable pruning strength. One of the main reasons is that there are different levels of sensitivity distribution in the network. Our main goal is to discover compression methods that adapt to this distribution to avoid deep architectural damage to the network due to unnecessary pruning. In this paper, we propose a filter texture distribution that affects the training of the network. We also analyze the sensitivity of each of the diverse states of this distribution. To do so, we first use a multidimensional penalty method that can analyze the potential sensitivity based on this texture distribution to obtain a pruning-friendly sparse environment. Then, we set up a lightweight dynamic threshold container in order to prune the sparse network. By providing each filter with a suitable threshold for that filter at a low cost, a massive reduction in the number of parameters is achieved without affecting the contribution of certain pruning-sensitive layers to the network as a whole. In the final experiments, our two methods adapted to texture distribution were applied to ResNet Deep Neural Network (DNN) and VGG-16, which were deployed on the classical CIFAR-10/100 and ImageNet datasets with excellent results in order to facilitate comparison with good cutting-edge pruning methods. Code is available at https://github.com/wangyuzhe27/CDP-and-DTC .},
+  archive      = {J_AIC},
+  author       = {Li, Ping and Wang, Yuzhe and Wu, Cong and Kang, Xiatao},
+  doi          = {10.3233/AIC-230046},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {311-323},
+  shortjournal = {AI Commun.},
+  title        = {Dynamic finegrained structured pruning sensitive to filter texture distribution},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Multi-scale spatio-temporal network for skeleton-based gait
+recognition. <em>AIC</em>, <em>36</em>(4), 297–310. (<a
+href="https://doi.org/10.3233/AIC-230033">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gait has unique physiological characteristics and supports long-distance recognition, so gait recognition is ideal for areas such as home security and identity detection. Methods using graph convolutional networks usually extract features in the spatial and temporal dimensions by stacking GCNs and TCNs, but different joints are interconnected at different moments, so splitting the spatial and temporal dimensions can cause the loss of gait information. Focus on this problem, we propose a gait recognition network, Multi-scale Spatio-Temporal Gait (MST-Gait), which can learn multi-scale gait information simultaneously from spatial and temporal dimensions. We design a multi-scale spatio-temporal groups Transformer (MSTGT) to model the correlation of intra-frame and inter-frame joints simultaneously. And a multi-scale segmentation strategy is designed to capture the periodic and local features of the gait. To fully exploit the temporal information of gait motion, we design a fusion temporal convolution (FTC) to aggregate temporal information at different scales and motion information. Experiments on the popular CASIA-B gait dataset and OUMVLP-Pose dataset show that our method outperforms most existing skeleton-based methods, verifying the effectiveness of the proposed modules.},
+  archive      = {J_AIC},
+  author       = {He, Dongzhi and Xue, Yongle and Li, Yunyu and Sun, Zhijie and Xiao, Xingmei and Wang, Jin},
+  doi          = {10.3233/AIC-230033},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {297-310},
+  shortjournal = {AI Commun.},
+  title        = {Multi-scale spatio-temporal network for skeleton-based gait recognition},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). DW: Detected weight for 3D object detection. <em>AIC</em>,
+<em>36</em>(4), 285–295. (<a
+href="https://doi.org/10.3233/AIC-230008">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is a generic paradigm to treat all samples equally in 3D object detection. Although some works focus on discriminating samples in the training process of object detectors, the issue of whether a sample detects its target GT (Ground Truth) during training process has never been studied. In this work, we first point out that discriminating the samples that detect their target GT and the samples that don’t detect their target GT is beneficial to improve the performance measured in terms of mAP (mean Average Precision). Then we propose a novel approach name as DW (Detected Weight). The proposed approach dynamically calculates and assigns different weights to detected and undetected samples, which suppresses the former and promotes the latter. The approach is simple, low-calculation and can be integrated with available weight approaches. Further, it can be applied to almost 3D detectors, even 2D detectors because it is nothing to do with network structures. We evaluate the proposed approach with six state-of-the-art 3D detectors on two datasets. The experiment results show that the proposed approach improves mAP significantly.},
+  archive      = {J_AIC},
+  author       = {Huang, Zhi},
+  doi          = {10.3233/AIC-230008},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {285-295},
+  shortjournal = {AI Commun.},
+  title        = {DW: Detected weight for 3D object detection},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Fully automated neural network framework for pulmonary
+nodules detection and segmentation. <em>AIC</em>, <em>36</em>(4),
+269–284. (<a href="https://doi.org/10.3233/AIC-220318">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lung cancer is the leading cause of cancer death worldwide, and most patients are diagnosed with advanced stages for lack of symptoms in the early stages of the disease, leading to poor prognosis. It is thus of great importance to detect lung cancer in the early stages which can reduce mortality an d improve patient survival significantly. Although there are many computer aided diagnosis (CAD) systems used for detecting pulmonary nodules, there are still few CAD systems for detection and segmentation, and their performance on small nodules is not ideal. Thus, in this paper, we propose a deep cascaded multitask framework called mobilenet split-attention Yolo unet, the mobilenet split-attention Yolo(Msa-yolo) greatly enhance the feature of small nodules and boost up their performance, the overall result shows that the mean accuracy precision (mAP) of our Msa-Yolo compared to Yolox has increased from 85.10% to 86.64% on LUNA16 dataset, and from 90.13% to 94.15% on LCS dataset compared to YoloX. Besides, we get only 8.35 average number of candidates per scan with 96.32% sensitivity on LUNA16 dataset, which greatly outperforms other existing systems. At the segmentation stage, the mean intersection over union (mIOU) of our CAD system has increased from 71.66% to 76.84% on LCS dataset comparing to baseline. Conclusion: A fast, accurate and robust CAD system for nodule detection, segmentation and classification is proposed in this paper. And it is confirmed by the experimental results that the proposed system possesses the ability to detect and segment small nodules.},
+  archive      = {J_AIC},
+  author       = {Xiong, Yixin and Zhou, Yongcheng and Wang, Yujuan and Liu, Quanxing and Deng, Lei},
+  doi          = {10.3233/AIC-220318},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {269-284},
+  shortjournal = {AI Commun.},
+  title        = {Fully automated neural network framework for pulmonary nodules detection and segmentation},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Classifying falls using out-of-distribution detection in
+human activity recognition. <em>AIC</em>, <em>36</em>(4), 251–267. (<a
+href="https://doi.org/10.3233/AIC-220205">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the research community focuses on improving the reliability of deep learning, identifying out-of-distribution (OOD) data has become crucial. Detecting OOD inputs during test/prediction allows the model to account for discriminative features unknown to the model. This capability increases the model’s reliability since this model provides a class prediction solely at incoming data similar to the training one. Although OOD detection is well-established in computer vision, it is relatively unexplored in other areas, like time series-based human activity recognition (HAR). Since uncertainty has been a critical driver for OOD in vision-based models, the same component has proven effective in time-series applications. In this work, we propose an ensemble-based temporal learning framework to address the OOD detection problem in HAR with time-series data. First, we define different types of OOD for HAR that arise from realistic scenarios. Then we apply our ensemble-based temporal learning framework incorporating uncertainty to detect OODs for the defined HAR workloads. This particular formulation also allows a novel approach to fall detection. We train our model on non-fall activities and detect falls as OOD. Our method shows state-of-the-art performance in a fall detection task using much lesser data. Furthermore, the ensemble framework outperformed the traditional deep-learning method (our baseline) on the OOD detection task across all the other chosen datasets.},
+  archive      = {J_AIC},
+  author       = {Roy, Debaditya and Komini, Vangjush and Girdzijauskas, Sarunas},
+  doi          = {10.3233/AIC-220205},
+  journal      = {AI Communications},
+  month        = {10},
+  number       = {4},
+  pages        = {251-267},
+  shortjournal = {AI Commun.},
+  title        = {Classifying falls using out-of-distribution detection in human activity recognition},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). DL-PCN: Differential learning and parallel convolutional
+network for action recognition. <em>AIC</em>, <em>36</em>(3), 235–249.
+(<a href="https://doi.org/10.3233/AIC-220268">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Convolution Network (GCN) algorithms have greatly improved the accuracy of skeleton-based human action recognition. GCN can utilize the spatial information between skeletal joints in subsequent frames better than other deep learning algorithms, which is beneficial for achieving high accuracy. However, the traditional GCN algorithms consume lots of computation for the stack of multiple primary GCN layers. Aiming at solving the problem, we introduce a lightweight network, a Differential Learning and Parallel Convolutional Networks (DL-PCN), whose key modules are Differential Learning (DLM) and the Parallel Convolutional Network (PCN). DLM features a feedforward connection, which carries the error information of GCN modules with the same structure, where GCN and CNN modules directly extract the original information from the input data, making the spatiotemporal information extracted by these modules more complete than that of GCN and CNN tandem structure. PCN comprises GCN and Convolution Neural Network (CNN) in parallel. Our network achieves comparable performance on the NTU RGB+D 60 dataset, the NTU RGB+D 120 dataset and the Northwestern-UCLA dataset while considering both accuracy and calculation parameters.},
+  archive      = {J_AIC},
+  author       = {Zeng, Qinyang and Dang, Ronghao and Fang, Qin and Liu, Chengju and Chen, Qijun},
+  doi          = {10.3233/AIC-220268},
+  journal      = {AI Communications},
+  month        = {8},
+  number       = {3},
+  pages        = {235-249},
+  shortjournal = {AI Commun.},
+  title        = {DL-PCN: Differential learning and parallel convolutional network for action recognition},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A heterogeneous two-stream network for human action
+recognition. <em>AIC</em>, <em>36</em>(3), 219–233. (<a
+href="https://doi.org/10.3233/AIC-220188">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The most widely used two-stream architectures and building blocks for human action recognition in videos generally consist of 2D or 3D convolution neural networks. 3D convolution can abstract motion messages between video frames, which is essential for video classification. 3D convolution neural networks usually obtain good performance compared with 2D cases, however it also increases computational cost. In this paper, we propose a heterogeneous two-stream architecture which incorporates two convolutional networks. One uses a mixed convolution network (MCN), which combines some 3D convolutions in the middle of 2D convolutions to train RGB frames, another one adopts BN-Inception network to train Optical Flow frames. Considering the redundancy of neighborhood video frames, we adopt a sparse sampling strategy to decrease the computational cost. Our architecture is trained and evaluated on the standard video actions benchmarks of HMDB51 and UCF101. Experimental results show our approach obtains the state-of-the-art performance on the datasets of HMDB51 (73.04%) and UCF101 (95.27%).},
+  archive      = {J_AIC},
+  author       = {Liao, Shengbin and Wang, Xiaofeng and Yang, ZongKai},
+  doi          = {10.3233/AIC-220188},
+  journal      = {AI Communications},
+  month        = {8},
+  number       = {3},
+  pages        = {219-233},
+  shortjournal = {AI Commun.},
+  title        = {A heterogeneous two-stream network for human action recognition},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Multi-branch selection fusion fine-grained classification
+algorithm based on coordinate attention localization. <em>AIC</em>,
+<em>36</em>(3), 205–217. (<a
+href="https://doi.org/10.3233/AIC-220187">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object localization has been the focus of research in Fine-Grained Visual Categorization (FGVC). With the aim of improving the accuracy and precision of object localization in multi-branch networks, as well as the robustness and universality of object localization methods, our study mainly focus on how to combine coordinate attention and feature activation map for target localization. The model in this paper is a three-branch model including raw branch, object branch and part branch. The images are fed directly into the raw branch. Coordinate Attention Object Localization Module (CAOLM) is used to localize and crop objects in the image to generate the input for the object branch. Attention Partial Proposal Module (APPM) is used to propose part regions at different scales. The three classes of input images undergo end-to-end weakly supervised learning through different branches of the network. The model expands the receptive field to capture multi-scale features by Selective Branch Atrous Spatial Pooling Pyramid (SB-ASPP). It can fuse the feature maps obtained from the raw branch and the object branch with Selective Branch Block (SBBlock), and the complete features of the raw branch are used to supplement the missing information of the object branch. Extensive experimental results on CUB-200-2011, FGVC-Aircraft and Stanford Cars datasets show that our method has the best classification performance on FGVC-Aircraft and also has competitive performance on other datasets. Few parameters and fast inference speed are also the advantages of our model.},
+  archive      = {J_AIC},
+  author       = {Zhang, Feng and Wang, Gaocai and Wu, Man and Huang, Shuqiang},
+  doi          = {10.3233/AIC-220187},
+  journal      = {AI Communications},
+  month        = {8},
+  number       = {3},
+  pages        = {205-217},
+  shortjournal = {AI Commun.},
+  title        = {Multi-branch selection fusion fine-grained classification algorithm based on coordinate attention localization},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). FI-FPN: Feature-integration feature pyramid network for
+object detection. <em>AIC</em>, <em>36</em>(3), 191–203. (<a
+href="https://doi.org/10.3233/AIC-220183">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The multi-layer feature pyramid structure, represented by FPN, is widely used in object detection. However, due to the aliasing effect brought by up-sampling, the current feature pyramid structure still has defects, such as loss of high-level feature information and weakening of low-level small object features. In this paper, we propose FI-FPN to solve these problems, which is mainly composed of a multi-receptive field fusion (MRF) module, contextual information filtering (CIF) module, and efficient semantic information fusion (ESF) module. Particularly, MRF stacks dilated convolutional layers and max-pooling layers to obtain receptive fields of different scales, reducing the information loss of high-level features; CIF introduces a channel attention mechanism, and the channel attention weights are reassigned; ESF introduces channel concatenation instead of element-wise operation for bottom-up feature fusion and alleviating aliasing effects, facilitating efficient information flow. Experiments show that under the ResNet50 backbone, our method improves the performance of Faster RCNN and RetinaNet by 3.5 and 4.6 mAP, respectively. Our method has competitive performance compared to other advanced methods.},
+  archive      = {J_AIC},
+  author       = {Su, Qichen and Zhang, Guangjian and Wu, Shuang and Yin, Yiming},
+  doi          = {10.3233/AIC-220183},
+  journal      = {AI Communications},
+  month        = {8},
+  number       = {3},
+  pages        = {191-203},
+  shortjournal = {AI Commun.},
+  title        = {FI-FPN: Feature-integration feature pyramid network for object detection},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Factoring textual reviews into user preferences in
+multi-criteria based content boosted hybrid filtering (MCCBHF)
+recommendation system. <em>AIC</em>, <em>36</em>(3), 175–190. (<a
+href="https://doi.org/10.3233/AIC-220122">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recommendation systems help customers to find interesting and valuable resources in the internet services. Their priority is to create and examine users’ individual profiles, which contain their preferences, and then update their profile content with additional features to finally increase the users’ satisfaction. Specific characteristics or descriptions and reviews of the items to recommend also play a significant part in identifying the preferences. However, inferring the user’s interest from his activities is a challenging task. Hence it is crucial to identify the interests of the user without the intervention of the user. This work elucidates the effectiveness of textual content together with metadata and explicit ratings in boosting collaborative techniques. In order to infer user’s preferences, metadata content information is boosted with user-features and item-features extracted from the text reviews using sentiment analysis by Vader lexicon-based approach. Before doing sentiment analysis, ironic and sarcastic reviews are removed for better performance since those reviews inverse the polarity of sentiments. Amazon product dataset is used for the analysis. From the text reviews, we identified the reasons that would have led the user to the overall rating given by him, referred to as features of interest (FoI). FoI are formulated as multi-criteria and the ratings for multiple criteria are computed from the single rating given by the user. Multi-Criteria-based Content Boosted Hybrid Filtering techniques (MCCBHF) are devised to analyze the user preferences from their review texts and the ratings. This technique is used to enhance various collaborative filtering methods and the enhanced proposed MCKNN, MCEMF, MCTFM, MCFM techniques provide better personalized product recommendations to users. In the proposed MCCBHF algorithms, MCFM yields better results with the least RMSE value of 1.03 when compared to other algorithms.},
+  archive      = {J_AIC},
+  author       = {Rajalakshmi, Sivanaiah and Sakaya Milton, R. and Mirnalinee, T.T.},
+  doi          = {10.3233/AIC-220122},
+  journal      = {AI Communications},
+  month        = {8},
+  number       = {3},
+  pages        = {175-190},
+  shortjournal = {AI Commun.},
+  title        = {Factoring textual reviews into user preferences in multi-criteria based content boosted hybrid filtering (MCCBHF) recommendation system},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Predicting the success of transfer learning for genetic
+programming using DeepInsight feature space alignment. <em>AIC</em>,
+<em>36</em>(3), 159–173. (<a
+href="https://doi.org/10.3233/AIC-230104">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In Transfer Learning (TL) a model that is trained on one problem is used to simplify the learning process on a second problem. TL has achieved impressive results for Deep Learning, but has been scarcely studied in genetic programming (GP). Moreover, predicting when, or why, TL might succeed is an open question. This work presents an approach to determine when two problems might be compatible for TL. This question is studied for TL with GP for the first time, focusing on multiclass classification. Using a set of reference problems, each problem pair is categorized into one of two groups. TL compatible problems are problem pairs where TL was successful, while TL non-compatible problems are problem pairs where TL was unsuccessful, relative to baseline methods. DeepInsight is used to extract a 2D projection of the feature space of each problem, and a similarity measure is computed by registering the feature space representation of both problems. Results show that it is possible to distinguish between both groups with statistical significant results. The proposal does not require model training or inference, and can be applied to problems from different domains, with a different a number of samples, features and classes.},
+  archive      = {J_AIC},
+  author       = {Trujillo, Leonardo and Nation, Joel and Muñoz, Luis and Galván, Edgar},
+  doi          = {10.3233/AIC-230104},
+  journal      = {AI Communications},
+  month        = {8},
+  number       = {3},
+  pages        = {159-173},
+  shortjournal = {AI Commun.},
+  title        = {Predicting the success of transfer learning for genetic programming using DeepInsight feature space alignment},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Sound event localization and detection using element-wise
+attention gate and asymmetric convolutional recurrent neural networks.
+<em>AIC</em>, <em>36</em>(2), 147–157. (<a
+href="https://doi.org/10.3233/AIC-220125">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There are problems that standard square convolution kernel has insufficient representation ability and recurrent neural network usually ignores the importance of different elements within an input vector in sound event localization and detection. This paper proposes an element-wise attention gate-asymmetric convolutional recurrent neural network (EleAttG-ACRNN), to improve the performance of sound event localization and detection. First, a convolutional neural network with context gating and asymmetric squeeze excitation residual is constructed, where asymmetric convolution enhances the capability of the square convolution kernel; squeeze excitation can improve the interdependence between channels; context gating can weight the important features and suppress the irrelevant features. Next, in order to improve the expressiveness of the model, we integrate the element-wise attention gate into the bidirectional gated recurrent network, which is to highlight the importance of different elements within an input vector, and further learn the temporal context information. Evaluation results using the TAU Spatial Sound Events 2019-Ambisonic dataset show the effectiveness of the proposed method, and it improves SELD performance up to 0.05 in error rate, 1.7% in F-score, 0.7° in DOA error, and 4.5% in Frame recall compared to a CRNN method.},
+  archive      = {J_AIC},
+  author       = {Yan, Lean and Guo, Min and Li, Zhiqiang},
+  doi          = {10.3233/AIC-220125},
+  journal      = {AI Communications},
+  month        = {5},
+  number       = {2},
+  pages        = {147-157},
+  shortjournal = {AI Commun.},
+  title        = {Sound event localization and detection using element-wise attention gate and asymmetric convolutional recurrent neural networks},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). AdapTrack: An adaptive FairMOT tracking method applicable to
+marine ship targets. <em>AIC</em>, <em>36</em>(2), 127–145. (<a
+href="https://doi.org/10.3233/AIC-220277">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ship tracking at sea is faced with the disadvantages of complex sea conditions and the large influence of ship occlusion on the tracker. Therefore, we propose a method called AdapTrack based on On the Fairness of Detection and Re-Identification in Multiple Object Tracking (FairMOT) which is suitable for marine targets. The search strategy of trivial augmentation is used to randomly select suitable data augmentation methods and strengths. Then, based on the FairMOT tracking framework, we change the sampling selection method of positive and negative samples from a two-dimensional Gaussian distribution with the same variances to a two-dimensional Gaussian distribution with different variances. It is limited by the bounding box (bbox) of ground truth. This method can improve the detection algorithm’s fitness to the ship target. At the same time, we use Multi-Object Tracking by Associating Every Detection Box (ByteTrack)’s double-threshold strategy to divide detection bboxes, which improves the matching and inference speed. In the first stage of data association, the high-scoring bbox calculates the cost matrix of data association through the Re-identification (Re-ID) model. In the second stage, the Intersection over Union(IOU) cost matrix is calculated after merging low-scoring detection bboxes and unmatched detection bboxes of the first stage. The method achieves Multiple Object Tracking Accuracy ( MOTA ) of 36.1, Identification F-Score ( IDF 1) of 47.3, and Frames Per Second ( FPS ) of 28.79 on the Singapore-Marine-dataset. Experiments show that this method can better alleviate Identification Switch (ID-switch) and ensure the real-time tracking of complex and changeable ship target tracking at sea.},
+  archive      = {J_AIC},
+  author       = {Chen, Yantong and Chen, Zekun and Zhang, Zhongling and Bian, Shichang},
+  doi          = {10.3233/AIC-220277},
+  journal      = {AI Communications},
+  month        = {5},
+  number       = {2},
+  pages        = {127-145},
+  shortjournal = {AI Commun.},
+  title        = {AdapTrack: An adaptive FairMOT tracking method applicable to marine ship targets},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). PairTraining: A method for training convolutional neural
+networks with image pairs. <em>AIC</em>, <em>36</em>(2), 111–126. (<a
+href="https://doi.org/10.3233/AIC-220145">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of image classification, the Convolutional Neural Networks (CNNs) are effective. Most of the work focuses on improving and innovating CNN’s network structure. However, using labeled data more effectively for training has also been an essential part of CNN’s research. Combining image disturbance and consistency regularization theory, this paper proposes a model training method (PairTraining) that takes image pairs as input and dynamically modify the training difficulty according to the accuracy of the model in the training set. According to the accuracy of the model in the training set, the training process will be divided into three stages: the qualitative stage, the fine learning stage and the strengthening learning stage. Contrastive learning images are formed using a progressively enhanced image disturbance strategy at different training stages. The input image and contrast learning image are combined into image pairs for model training. The experiments are tested on four public datasets using eleven CNN models. These models have different degrees of improvement in accuracy on the four datasets. PairTraining can adapt to a variety of CNN models for image classification training. This method can better improve the effectiveness of training and improve the degree of generalization of classification models after training. The classification model obtained by PairTraining has better performance in practical application.},
+  archive      = {J_AIC},
+  author       = {Shi, Yuhong and Zhao, Yan and Yao, Chunlong},
+  doi          = {10.3233/AIC-220145},
+  journal      = {AI Communications},
+  month        = {5},
+  number       = {2},
+  pages        = {111-126},
+  shortjournal = {AI Commun.},
+  title        = {PairTraining: A method for training convolutional neural networks with image pairs},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Automatic chinese knowledge-based question answering by the
+MGBA-LSTM-CNN model. <em>AIC</em>, <em>36</em>(2), 93–110. (<a
+href="https://doi.org/10.3233/AIC-210003">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The purpose of knowledge-based question answering (KBQA) is to accurately answer the questions raised by users through knowledge triples. Traditional Chinese KBQA methods rely heavily on artificial features, resulting in unsatisfactory QA results. To solve the above problems, this paper divides Chinese KBQA into two parts: entity extraction and attribute mapping. In the entity extraction stage, the improved Bi-LSTM-CNN-CRF model is used to identify the entity of questions and the Levenshtein distance method is used to resolve the entity link error. In the attribute mapping stage, according to the characteristics of questions and candidate attributes, the MGBA-LSTM-CNN model is proposed to encode questions and candidate attributes from the semantic level and word level, respectively, and splice them into new semantic vectors. Finally, the cosine distance is used to measure the similarity of the two vectors to find candidate attributes most similar to questions. The experimental results show that the system achieves good results in the Chinese question and answer data set.},
+  archive      = {J_AIC},
+  author       = {Liu, Wenyuan and Fan, Mingliang and Feng, Kai and Guo, Dingding},
+  doi          = {10.3233/AIC-210003},
+  journal      = {AI Communications},
+  month        = {5},
+  number       = {2},
+  pages        = {93-110},
+  shortjournal = {AI Commun.},
+  title        = {Automatic chinese knowledge-based question answering by the MGBA-LSTM-CNN model},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The 11th IJCAR automated theorem proving system
+competition – CASC-j11. <em>AIC</em>, <em>36</em>(2), 73–91. (<a
+href="https://doi.org/10.3233/AIC-220244">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The CADE ATP System Competition (CASC) is the annual evaluation of fully automatic, classical logic, Automated Theorem Proving (ATP) systems. CASC-J11 was the twenty-seventh competition in the CASC series. Twenty-four ATP systems competed in the various competition divisions. This paper presents an outline of the competition design and a commentated summary of the results.},
+  archive      = {J_AIC},
+  author       = {Sutcliffe, Geoff and Desharnais, Martin},
+  doi          = {10.3233/AIC-220244},
+  journal      = {AI Communications},
+  month        = {5},
+  number       = {2},
+  pages        = {73-91},
+  shortjournal = {AI Commun.},
+  title        = {The 11th IJCAR automated theorem proving system competition&amp;nbsp;– CASC-j11},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Automatic prediction of epileptic seizure using hybrid deep
+ResNet-LSTM model. <em>AIC</em>, <em>36</em>(1), 57–72. (<a
+href="https://doi.org/10.3233/AIC-220177">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Numerous advanced data processing and machine learning techniques for identifying epileptic seizures have been developed in the last two decades. Nonetheless, many of these solutions need massive data sets and intricate computations. Our approach transforms electroencephalogram (EEG) data into the time-frequency domain by utilizing a short-time fourier transform (STFT) and the spectrogram (t-f) images as the input stage of the deep learning model. Using EEG data, we have constructed a hybrid model comprising of a Deep Convolution Network (ResNet50) and a Long Short-Term Memory (LSTM) for predicting epileptic seizures. Spectrogram images are used to train the proposed hybrid model for feature extraction and classification. We analyzed the CHB-MIT scalp EEG dataset. For each preictal period of 5, 15, and 30 minutes, experiments are conducted to evaluate the performance of the proposed model. The experimental results indicate that the proposed model produced the optimum performance with a 5-minute preictal duration. We achieved an average accuracy of 94.5%, the average sensitivity of 93.7%, the f1-score of 0.9376, and the average false positive rate (FPR) of 0.055. Our proposed technique surpassed the random predictor and other current algorithms used for seizure prediction for all patients’ data in the dataset. One can use the effectiveness of our proposed model to help in the early diagnosis of epilepsy and provide early treatment.},
+  archive      = {J_AIC},
+  author       = {Singh, Yajuvendra Pratap and Lobiyal, Daya Krishan},
+  doi          = {10.3233/AIC-220177},
+  journal      = {AI Communications},
+  month        = {2},
+  number       = {1},
+  pages        = {57-72},
+  shortjournal = {AI Commun.},
+  title        = {Automatic prediction of epileptic seizure using hybrid deep ResNet-LSTM model},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Multimodal interaction aware embedding for location-based
+social networks. <em>AIC</em>, <em>36</em>(1), 41–55. (<a
+href="https://doi.org/10.3233/AIC-220161">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Location-based social networks (LBSNs) have greatly promoted the development of the field of human mobility mining. However, the sparsity, multimodality and heterogeneity nature of the user check-in data remains a great concern for learning high-quality user or other entity representations, especia lly in the downstream application tasks, such as point-of-interest (POI) recommendation. Most existing methods focus on user preference modeling based on sequential POI tags without exploring the interaction between different modalities (e.g., user-user interactions, user-timestamp interactions, user-POI interactions, etc.). To this end, we introduce a multimodal interaction aware embedding framework to generate reliable entity embeddings on the heterogeneous socio-spatial network. At its core, first, multi-modal interaction sub-graph sampling techniques are designed to capture the heterogeneous contexts; then, a self-supervised contrastive learning technique is leveraged to extract intra-modality and inter-modality interactions in a light way. We conduct experiments on the next-POI recommendation tasks based on three real-world datasets. Experimental results demonstrate the superiority of our model over the state-of-the-art embedding learning algorithms.},
+  archive      = {J_AIC},
+  author       = {Yu, Ruiyun and Yang, Kang and Wang, Zhihong and Zhen, Shi},
+  doi          = {10.3233/AIC-220161},
+  journal      = {AI Communications},
+  month        = {2},
+  number       = {1},
+  pages        = {41-55},
+  shortjournal = {AI Commun.},
+  title        = {Multimodal interaction aware embedding for location-based social networks},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Defending against adversarial attacks on graph neural
+networks via similarity property. <em>AIC</em>, <em>36</em>(1), 27–39.
+(<a href="https://doi.org/10.3233/AIC-220120">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Neural Networks (GNNs) are powerful tools in graph application areas. However, recent studies indicate that GNNs are vulnerable to adversarial attacks, which can lead GNNs to easily make wrong predictions for downstream tasks. A number of works aim to solve this problem but what criteria we s hould follow to clean the perturbed graph is still a challenge. In this paper, we propose GSP-GNN, a general framework to defend against massive poisoning attacks that can perturb graphs. The vital principle of GSP-GNN is to explore the similarity property to mitigate negative effects on graphs. Specifically, this method prunes adversarial edges by the similarity of node feature and graph structure to eliminate adversarial perturbations. In order to stabilize and enhance GNNs training process, previous layer information is adopted in case a large number of edges are pruned in one layer. Extensive experiments on three real-world graphs demonstrate that GSP-GNN achieves significantly better performance compared with the representative baselines and has favorable generalization ability simultaneously.},
+  archive      = {J_AIC},
+  author       = {Yao, Minghong and Yu, Haizheng and Bian, Hong},
+  doi          = {10.3233/AIC-220120},
+  journal      = {AI Communications},
+  month        = {2},
+  number       = {1},
+  pages        = {27-39},
+  shortjournal = {AI Commun.},
+  title        = {Defending against adversarial attacks on graph neural networks via similarity property},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Learning invariant representation using synthetic imagery
+for object detection. <em>AIC</em>, <em>36</em>(1), 13–25. (<a
+href="https://doi.org/10.3233/AIC-220039">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent years have witnessed a rapid advance in training and testing synthetic data through deep learning networks for the annotation of synthetic data that can be automatically marked. However, a domain discrepancy still exists between synthetic data and real data. In this paper, we address the dom ain discrepancy issue from three aspects: 1) We design a synthetic image generator with automatically labeled based on 3D scenes. 2) A novel adversarial domain adaptation model is proposed to learn robust intermediate representation free of distractors to improve the transfer performance. 3) We construct a distractor-invariant network and adopt the sample transferability strategy on global-local levels, respectively, to mitigate the cross-domain gap. Additional exploratory experiments demonstrate that the proposed model achieves large performance margins, which show significant advance over the other state-of-the-art models, performing a promotion of 10%–15% mAP on various domain adaptation scenarios.},
+  archive      = {J_AIC},
+  author       = {Jiang, Ning and Fang, Jinglong and Shao, Yanli},
+  doi          = {10.3233/AIC-220039},
+  journal      = {AI Communications},
+  month        = {2},
+  number       = {1},
+  pages        = {13-25},
+  shortjournal = {AI Commun.},
+  title        = {Learning invariant representation using synthetic imagery for object detection},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). SECL: Sampling enhanced contrastive learning. <em>AIC</em>,
+<em>36</em>(1), 1–12. (<a
+href="https://doi.org/10.3233/AIC-210234">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Instance-level contrastive learning such as SimCLR has been successful as a powerful method for representation learning. However, SimCLR suffers from problems of sampling bias, feature bias and model collapse. A set-level based Sampling Enhanced Contrastive Learning (SECL) method based on SimCLR is proposed in this paper. We use the proposed super-sampling method to expand the augmented samples into a contrastive-positive set, which can learn class features of the target sample to reduce the bias. The contrastive-positive set includes Augmentations (the original augmented samples) and Neighbors (the super-sampled samples). We also introduce a samples-correlation strategy to prevent model collapse, where a positive correlation loss or a negative correlation loss is computed to adjust the balance of model’s Alignment and Uniformity. SECL reaches 94.14% classification precision on SST-2 dataset and 89.25% on ARSC dataset. For the multi-class classification task, SECL achieves 90.99% on AGNews dataset. They are all about 1% higher than the precision of SimCLR. Experiments show that the training convergence of SECL is faster, and SECL reduces the risk of bias and model collapse.},
+  archive      = {J_AIC},
+  author       = {Tang, Yixin and Cheng, Hua and Fang, Yiquan and Cheng, Tao},
+  doi          = {10.3233/AIC-210234},
+  journal      = {AI Communications},
+  month        = {2},
+  number       = {1},
+  pages        = {1-12},
+  shortjournal = {AI Commun.},
+  title        = {SECL: Sampling enhanced contrastive learning},
+  volume       = {36},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

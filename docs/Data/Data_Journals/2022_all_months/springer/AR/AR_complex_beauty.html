@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AR_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ar---52">AR - 52</h2>
+<ul>
+<li><details>
+<summary>
+(2022). A feasibility-driven approach to control-limited DDP.
+<em>AR</em>, <em>46</em>(8), 985–1005. (<a
+href="https://doi.org/10.1007/s10514-022-10061-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Differential dynamic programming (DDP) is a direct single shooting method for trajectory optimization. Its efficiency derives from the exploitation of temporal structure (inherent to optimal control problems) and explicit roll-out/integration of the system dynamics. However, it suffers from numerical instability and, when compared to direct multiple shooting methods, it has limited initialization options (allows initialization of controls, but not of states) and lacks proper handling of control constraints. In this work, we tackle these issues with a feasibility-driven approach that regulates the dynamic feasibility during the numerical optimization and ensures control limits. Our feasibility search emulates the numerical resolution of a direct multiple shooting problem with only dynamics constraints. We show that our approach (named Box-FDDP) has better numerical convergence than Box-DDP $$^+$$ (a single shooting method), and that its convergence rate and runtime performance are competitive with state-of-the-art direct transcription formulations solved using the interior point and active set algorithms available in Knitro. We further show that Box-FDDP decreases the dynamic feasibility error monotonically—as in state-of-the-art nonlinear programming algorithms. We demonstrate the benefits of our approach by generating complex and athletic motions for quadruped and humanoid robots. Finally, we highlight that Box-FDDP is suitable for model predictive control in legged robots.},
+  archive      = {J_AR},
+  author       = {Mastalli, Carlos and Merkt, Wolfgang and Marti-Saumell, Josep and Ferrolho, Henrique and Solà, Joan and Mansard, Nicolas and Vijayakumar, Sethu},
+  doi          = {10.1007/s10514-022-10061-w},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {8},
+  pages        = {985-1005},
+  shortjournal = {Auton. Robot.},
+  title        = {A feasibility-driven approach to control-limited DDP},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Multi-criteria metric to evaluate motion planners for
+underwater intervention. <em>AR</em>, <em>46</em>(8), 971–983. (<a
+href="https://doi.org/10.1007/s10514-022-10060-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Underwater autonomous manipulation is the capability of a mobile robot to perform intervention tasks that require physical contact with unstructured environments without continuous human supervision. Being difficult to assess the behaviour of existing motion planner algorithms, this research proposes a new planner evaluation metric to identify well-behaved planners for specialized tasks of inspection and monitoring of man-made underwater structures. This metric is named NEMU and combines three different performance indicators: effectiveness, safety and adaptability. NEMU deals with the randomization of sampling-based motion planners. Moreover, this article presents a benchmark of multiple planners applied to a 6 DoF manipulator operating underwater. Results conducted in real scenarios show that different planners are better suited for different tasks. Experiments demonstrate that the NEMU metric can be used to distinguish the performance of planners for particular movement conditions. Moreover, it identifies the most promising planner for collision-free motion planning, being a valuable contribution for the inspection of maritime structures, as well as for the manipulation procedures of autonomous underwater vehicles during close range operations.},
+  archive      = {J_AR},
+  author       = {Silva, Renato and Matos, Aníbal and Pinto, Andry Maykol},
+  doi          = {10.1007/s10514-022-10060-x},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {8},
+  pages        = {971-983},
+  shortjournal = {Auton. Robot.},
+  title        = {Multi-criteria metric to evaluate motion planners for underwater intervention},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Expanding human visual field: Online learning of assistive
+camera views by an aerial co-robot. <em>AR</em>, <em>46</em>(8),
+949–970. (<a href="https://doi.org/10.1007/s10514-022-10059-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a novel method by which an aerial robot can learn sequences of task-relevant camera views within a multitasking environment. The robot learns these views by tracking the visual gaze of a human collaborator wearing an augmented reality headset. The spatial footprint of the human’s visual field is integrated in time and then fit to a Gaussian mixture model via expectation maximization. The modes of this model represent the visual-interest regions of the environment with each visual-interest region containing one human task. Using Q-learning, the robot is trained as to which visual-interest region it should photograph given the human’s most recent sequence of K tasks. This sequence of K tasks forms one state of a Markov Decision Process whose entry triggers an action—the robot’s selection of visual-interest region. The robot’s camera view is continuously streamed to the human’s augmented reality headset in order to artificially expand the human’s visual field-of-view. The intent is to increase the human’s multitasking performance and decrease their physical and mental effort. An experimental study is presented in which 24 humans were asked to complete toy construction tasks in parallel with spatially separated persistent monitoring tasks (e.g., buttons which would flash at random times to request input). Subjects participated in four 2-h sessions over multiple days. The efficacy of the autonomous view selection system is compared against control trials containing no assistance as well as supervised trials in which the subjects could directly command the robot to switch between views. The merits of this system were evaluated through both subjective measures, e.g., System Usability Scale and NASA Task Load Index, as well as objective measures, e.g., task completion time, reflex time, and head angular velocity. This algorithm is applicable to multitasking environments that require persistent monitoring of regions outside of a human’s (possibly restricted) field of view, e.g., spacecraft extravehicular activity.},
+  archive      = {J_AR},
+  author       = {Bentz, William and Qian, Long and Panagou, Dimitra},
+  doi          = {10.1007/s10514-022-10059-4},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {8},
+  pages        = {949-970},
+  shortjournal = {Auton. Robot.},
+  title        = {Expanding human visual field: Online learning of assistive camera views by an aerial co-robot},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Method of evolving junction on optimal path planning in
+flows fields. <em>AR</em>, <em>46</em>(8), 929–947. (<a
+href="https://doi.org/10.1007/s10514-022-10058-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose an algorithm using method of evolving junctions to solve the optimal path planning problems with piece-wise constant flow fields. In such flow fields, we prove that the optimal trajectories, with respect to a convex Lagrangian in the objective function, must be formed by piece-wise constant velocity motions. Taking advantage of this property, we transform the infinite dimensional optimal control problem into a finite dimensional optimization and use intermittent diffusion to solve the problems. The algorithm is proven to be complete. At last, we demonstrate the performance of the algorithm with various simulation examples.},
+  archive      = {J_AR},
+  author       = {Zhai, Haoyan and Hou, Mengxue and Zhang, Fumin and Zhou, Haomin},
+  doi          = {10.1007/s10514-022-10058-5},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {8},
+  pages        = {929-947},
+  shortjournal = {Auton. Robot.},
+  title        = {Method of evolving junction on optimal path planning in flows fields},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An anytime visibility–voronoi graph-search algorithm for
+generating robust and feasible unmanned surface vehicle paths.
+<em>AR</em>, <em>46</em>(8), 911–927. (<a
+href="https://doi.org/10.1007/s10514-022-10056-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While path planning for Unmanned Surface Vehicles (USVs) is in many ways similar to path planning for ground vehicles, the lack of reliable USV models and significant maritime environmental uncertainties requires an increased focus on robustness and safety. This paper presents a novel graph construction method based on Visibility–Voronoi diagrams that allow users to tune path optimality and path safety while considering vehicle dynamics and model uncertainty. The vehicle state is defined as both a 2D location and heading. The method is based on a roadmap generated from a Visibility–Voronoi diagram, and uses motion curves and path smoothing to ensure path feasibility. The roadmap can then be searched using any graph-search algorithm to return optimal paths subject to a cost function. This paper also shows how to generate and search this roadmap in an anytime fashion, which makes the method suitable for local planning where sensors are used to build a map of the environment in real-time. This approach is demonstrated effectively on underactuated systems, with empirical results from USV docking and obstacle field navigation scenarios. These case studies show the path maintains feasibility subject to a simplified vehicle model, and is able to maximize safety when navigating close to obstacles. Simulation results are also used to analyze algorithm complexity, prove suitability for local planning, and demonstrate the benefits of anytime roadmap generation.},
+  archive      = {J_AR},
+  author       = {Schoener, Marco and Coyle, Eric and Thompson, David},
+  doi          = {10.1007/s10514-022-10056-7},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {8},
+  pages        = {911-927},
+  shortjournal = {Auton. Robot.},
+  title        = {An anytime Visibility–Voronoi graph-search algorithm for generating robust and feasible unmanned surface vehicle paths},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Compiling CNNs with cain: Focal-plane processing for robot
+navigation. <em>AR</em>, <em>46</em>(8), 893–910. (<a
+href="https://doi.org/10.1007/s10514-022-10053-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Focal-plane Sensor-processors (FPSPs) are a camera technology that enables low power, high frame rate computation in the image sensor itself, making them suitable for edge computation. To fit into the sensor array, FPSPs are highly resource-constrained, with limited instruction set and few registers - which makes developing complex algorithms difficult. In this work, we present Cain, a compiler for convolutional filters that targets SCAMP-5, a general-purpose FPSP. Cain generates code to evaluate multiple convolutional kernels at the same time. It generates code that avoids the need for hardware multipliers, while orchestrating the exploitation of common sub-terms—leading to a large reduction in instruction count compared to both straightforward and prior optimized approaches. We demonstrate the capability enabled by Cain on SCAMP-5 with robotic navigation for near-sensor high-speed and low-power computation, by using Cain to implement a neural network on the focal plane.},
+  archive      = {J_AR},
+  author       = {Stow, Edward and Ahsan, Abrar and Li, Yingying and Babaei, Ali and Murai, Riku and Saeedi, Sajad and Kelly, Paul H. J.},
+  doi          = {10.1007/s10514-022-10053-w},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {8},
+  pages        = {893-910},
+  shortjournal = {Auton. Robot.},
+  title        = {Compiling CNNs with cain: Focal-plane processing for robot navigation},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). ASAP: Adaptive transmission scheme for online processing of
+event-based algorithms. <em>AR</em>, <em>46</em>(8), 879–892. (<a
+href="https://doi.org/10.1007/s10514-022-10051-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online event-based perception techniques on board robots navigating in complex, unstructured, and dynamic environments can suffer unpredictable changes in the incoming event rates and their processing times, which can cause computational overflow or loss of responsiveness. This paper presents ASAP: a novel event handling framework that dynamically adapts the transmission of events to the processing algorithm, keeping the system responsiveness and preventing overflows. ASAP is composed of two adaptive mechanisms. The first one prevents event processing overflows by discarding an adaptive percentage of the incoming events. The second mechanism dynamically adapts the size of the event packages to reduce the delay between event generation and processing. ASAP has guaranteed convergence and is flexible to the processing algorithm. It has been validated on board a quadrotor and an ornithopter robot in challenging conditions.},
+  archive      = {J_AR},
+  author       = {Tapia, R. and Martínez-de Dios, J. R. and Gómez Eguíluz, A. and Ollero, A.},
+  doi          = {10.1007/s10514-022-10051-y},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {8},
+  pages        = {879-892},
+  shortjournal = {Auton. Robot.},
+  title        = {ASAP: Adaptive transmission scheme for online processing of event-based algorithms},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Power generation performance of a spherical robot with a
+pendulum in an amphibious environment. <em>AR</em>, <em>46</em>(7),
+861–877. (<a href="https://doi.org/10.1007/s10514-022-10057-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The energy requirements of robots have received extensive attention, and the lack of energy will seriously limit the working ability of robots. This paper proposes a method of capturing energy from an amphibious environment for a spherical robot using a pendulum. The pendulum movement is analyzed during amphibious movement, and a feasible scheme is proposed to use this pendulum to capture environmental energy and convert mechanical energy into electrical energy. A mathematical model of swing power generation is established based on the pendulum dynamic equation and voltage balance equation. A physics experiment platform and virtual experimental platform are built to analyze the power generation performance. Furthermore, power generation mathematical models are established for a spherical robot rolling on a slope and floating in water, and the power generation performance is analyzed and summarized under different conditions. The results show that the proposed power generation method and scheme can effectively supply energy to a spherical robot, enhance the endurance of movement in an amphibious environment and provide theoretical guidance for the development of a physical prototype of the new generation of amphibious spherical robots.},
+  archive      = {J_AR},
+  author       = {Li, Yansheng and Yang, Meimei and Wei, Bo and Zhang, Yi},
+  doi          = {10.1007/s10514-022-10057-6},
+  journal      = {Autonomous Robots},
+  month        = {10},
+  number       = {7},
+  pages        = {861-877},
+  shortjournal = {Auton. Robot.},
+  title        = {Power generation performance of a spherical robot with a pendulum in an amphibious environment},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Calibration method for a breast intervention robot based on
+four-dimensional ultrasound image guidance. <em>AR</em>, <em>46</em>(7),
+851–859. (<a href="https://doi.org/10.1007/s10514-022-10055-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In breast interventional ultrasound therapy, it is difficult to directly diagnose the location of a tumor in 2-D ultrasound images. To assist surgeons in treatment more intuitively, a four-dimensional ultrasound image-guided breast intervention robot is proposed. The calibration approach of the ultrasonic image for the robot is one of the main contents of the research. This method is based on the establishment of a complete coordinate system conversion model, and it uses the ORB (oriented FAST and rotated BRIEF) feature extraction method to obtain and record the real-time image marker pixel positions, calculate the unknown parameters of the coordinate system conversion matrix, and establish a complete calibration system. This article demonstrates the feasibility of the calibration approach through experiments in our developed US-guided robotic system. Additional experimental and parametrical comparisons of the proposed method with state-of-the-art methods were conducted to thoroughly evaluate the outperformance of the proposed method.},
+  archive      = {J_AR},
+  author       = {Yanjun, Guo and Xingguang, Duan and Chengyi, Wang and Haicheng, Zhang and Huiqin, Guo},
+  doi          = {10.1007/s10514-022-10055-8},
+  journal      = {Autonomous Robots},
+  month        = {10},
+  number       = {7},
+  pages        = {851-859},
+  shortjournal = {Auton. Robot.},
+  title        = {Calibration method for a breast intervention robot based on four-dimensional ultrasound image guidance},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A unified framework for measuring interplane and intraplane
+coupling in spatial biped robots. <em>AR</em>, <em>46</em>(7), 831–849.
+(<a href="https://doi.org/10.1007/s10514-022-10054-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While fully actuated biped robots can control each degree of freedom independently, coupling must be used during phases of underactuation to maintain dynamic stability. The amount of coupling can be quantified via velocity decomposition, which partitions the system’s velocities into controlled and uncontrolled directions. Used previously on planar mechanical systems with one degree of underactuation, the decomposition becomes non-unique with multiple degrees of underactuation. This paper extends the velocity decomposition formulation to mechanical systems with several degrees of underactuation, applying it to a spatial biped robot for the first time. Two measures of dynamic coupling are introduced: intraplane coupling between the controlled and uncontrolled directions in the same plane and interplane coupling between the controlled directions in the sagittal/frontal plane and uncontrolled direction in the frontal/sagittal plane. Comparative studies show that the dynamic coupling of planar and spatial gaits of five-link biped models is very different at slow speeds, suggesting that the mechanisms of slow walking are fundamentally different and that planar models are not adequate to analyze slow-speed walking. Also, weak interplane coupling in slower gaits suggests that the 3D dynamics of the spatial biped are largely decoupled at slow speeds, such that distinct control strategies may be adequate to stabilize the sagittal and frontal planes separately. Strong interplane coupling at faster speeds suggests that the full 3D dynamics must be considered together for stabilization.},
+  archive      = {J_AR},
+  author       = {Fevre, Martin and Goodwine, Bill and Schmiedeler, James P.},
+  doi          = {10.1007/s10514-022-10054-9},
+  journal      = {Autonomous Robots},
+  month        = {10},
+  number       = {7},
+  pages        = {831-849},
+  shortjournal = {Auton. Robot.},
+  title        = {A unified framework for measuring interplane and intraplane coupling in spatial biped robots},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Scalable multirobot planning for informed spatial sampling.
+<em>AR</em>, <em>46</em>(7), 817–829. (<a
+href="https://doi.org/10.1007/s10514-022-10048-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a distributed scalable multi-robot planning algorithm for informed sampling of quasistatic spatials fields. We address the problem of efficient data collection using multiple autonomous vehicles and consider the effects of communication between multiple robots, acting independently, on the overall sampling performance of the team. We focus on the distributed sampling problem where the robots operate independent of their teammates, but have the ability to communicate their current state to other neighbors within a fixed communication range. Our proposed approach is scalable and adaptive to various environmental scenarios, changing robot team configurations, and runs in real-time, which are important features for many real-world applications. We compare the performance of our proposed algorithm to baseline strategies through simulated experiments that utilize models derived from both synthetic and field deployment data. The results show that our sampling algorithm is efficient even when robots in the team are operating with a limited communication range, thus demonstrating the scalability of our method in sampling large-scale environments.},
+  archive      = {J_AR},
+  author       = {Manjanna, Sandeep and Hsieh, M. Ani and Dudek, Greogory},
+  doi          = {10.1007/s10514-022-10048-7},
+  journal      = {Autonomous Robots},
+  month        = {10},
+  number       = {7},
+  pages        = {817-829},
+  shortjournal = {Auton. Robot.},
+  title        = {Scalable multirobot planning for informed spatial sampling},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Bayesian incremental inference update by re-using
+calculations from belief space planning: A new paradigm. <em>AR</em>,
+<em>46</em>(7), 783–816. (<a
+href="https://doi.org/10.1007/s10514-022-10045-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Inference and decision making under uncertainty are key processes in every autonomous system and numerous robotic problems. In recent years, the similarities between inference and decision making triggered much work, from developing unified computational frameworks to pondering about the duality between the two. In spite of these efforts, inference and control, as well as inference and belief space planning (BSP) are still treated as two separate processes. In this paper we propose a paradigm shift, a novel approach which deviates from conventional Bayesian inference and utilizes the similarities between inference and BSP. We make the key observation that inference can be efficiently updated using predictions made during the decision making stage, even in light of inconsistent data association between the two. We developed a two staged process that implements our novel approach and updates inference using calculations from the precursory planning phase. Using autonomous navigation in an unknown environment along with iSAM2 efficient methodologies as a test case, we benchmarked our novel approach against standard Bayesian inference, both with synthetic and real-world data (KITTI dataset). Results indicate that not only our approach improves running time by at least a factor of two while providing the same estimation accuracy, but it also alleviates the computational burden of state dimensionality and loop closures.},
+  archive      = {J_AR},
+  author       = {Farhi, Elad I. and Indelman, Vadim},
+  doi          = {10.1007/s10514-022-10045-w},
+  journal      = {Autonomous Robots},
+  month        = {10},
+  number       = {7},
+  pages        = {783-816},
+  shortjournal = {Auton. Robot.},
+  title        = {Bayesian incremental inference update by re-using calculations from belief space planning: A new paradigm},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Manipulation at optimum locations for maximum force
+transmission with mobile robots under environmental disturbances.
+<em>AR</em>, <em>46</em>(6), 769–782. (<a
+href="https://doi.org/10.1007/s10514-022-10050-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Remote manipulation plays a key role for applications in hazardous conditions, yet designing a robust controller enabling safe interaction with unknown environment and under the influence of disturbances is a challenge. In this study, we propose effective control and optimization methods for mobile robotic manipulator systems that can increase effort transmission to a task in desired directions. The vehicle position is optimized by utilizing constrained particle swarm optimization where the objective is to enhance directional manipulability of the robotic arm within the system. A forward dynamic controller is implemented to eliminate undesired excessive motions near singular joint configurations. A reset control algorithm along with an admittance type controller are developed for stable interaction with an unknown object under environmental disturbances. The experimentally validated results show that the proposed method phase out undesired position disturbances and increase the directional manipulability for the required task enabling augmented effort transmission for the task execution.},
+  archive      = {J_AR},
+  author       = {Tugal, Harun and Cetin, Kamil and Petillot, Yvan and Dunnigan, Matthew and Erden, Mustafa Suphi},
+  doi          = {10.1007/s10514-022-10050-z},
+  journal      = {Autonomous Robots},
+  month        = {8},
+  number       = {6},
+  pages        = {769-782},
+  shortjournal = {Auton. Robot.},
+  title        = {Manipulation at optimum locations for maximum force transmission with mobile robots under environmental disturbances},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Efficiently finding poses for multiple grasp types with
+partial point clouds by uncoupling grasp shape and scale. <em>AR</em>,
+<em>46</em>(6), 749–767. (<a
+href="https://doi.org/10.1007/s10514-022-10049-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present an algorithm that discovers grasp pose solutions for multiple grasp types for a multi-fingered mechanical gripper using partially-sensed point clouds of unknown objects. The algorithm introduces two key ideas: (1) a histogram of finger contact normals is used to represent a grasp “shape” to guide a gripper orientation search in a histogram of object(s) surface normals, and (2) voxel grid representations of gripper contacts and object(s) are cross-correlated to match finger contact points, i.e. grasp “scale`”, to discover a grasp pose. Collision constraints are incorporated in the cross-correlation computation. We show via simulations and preliminary experiments that (1) grasp poses for three grasp types (i.e. lateral, power, and tripodal) are found quickly without interrupting the robot’s motion, (2) the quality of grasp pose solutions is consistent with respect to voxel resolution changes for both partial and complete point cloud scans, (3) grasp type definitions are scalable for n-contacts and can incorporate constraints for collision checks in one integrated step, and (4) planned grasp poses are successfully executed with a mechanical gripper demonstrating the robustness of grasp pose solutions.},
+  archive      = {J_AR},
+  author       = {Hegedus, Michael and Gupta, Kamal and Mehrandezh, Mehran},
+  doi          = {10.1007/s10514-022-10049-6},
+  journal      = {Autonomous Robots},
+  month        = {8},
+  number       = {6},
+  pages        = {749-767},
+  shortjournal = {Auton. Robot.},
+  title        = {Efficiently finding poses for multiple grasp types with partial point clouds by uncoupling grasp shape and scale},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A penalized batch-bayesian approach to informative path
+planning for decentralized swarm robotic search. <em>AR</em>,
+<em>46</em>(6), 725–747. (<a
+href="https://doi.org/10.1007/s10514-022-10047-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Swarm-robotic approaches to search and target localization, where target sources emit a spatially varying signal, promise unparalleled time efficiency and robustness. With most existing swarm search methods, it remains challenging to simultaneously preserve search efficiency and mathematical insight along with scalability and computational tractability. Our recently developed decentralized method, Bayes-Swarm-O, a model-based approach founded on batch Bayesian Optimization, has been shown to outperform state-of-the-art swarm heuristics in terms of search efficiency. However, this original Bayes-Swarm-O method did not account for the interactions between robots’ decisions (aka samples in a batch) and was found to be sensitive to the prescribed balance between exploration and exploration. These limitations are alleviated in this paper, leading to significantly improved search efficiency and convergence, by respectively using a new marginalization penalization approach to embodied batch sampling and a dynamic adaptation of the exploration/exploitation balance during mission. In addition, this paper presents a systematic set of experiments executed through a new Pybullet-based distributed swarm search simulator, that analyzes the impact of increasing swarm size, partial peer observation, and choice of optimizer, on this updated algorithm, now called Bayes-Swarm-P. The advanced Bayes-Swarm-P method is also found to be clearly superior in terms of search efficiency and robustness when compared to three standard swarm search methods (namely Glowworm search, Levy walk, and exhaustive search) over simulated multimodal signal distributions and a skier/avalanche search and rescue problem.},
+  archive      = {J_AR},
+  author       = {Ghassemi, Payam and Balazon, Mark and Chowdhury, Souma},
+  doi          = {10.1007/s10514-022-10047-8},
+  journal      = {Autonomous Robots},
+  month        = {8},
+  number       = {6},
+  pages        = {725-747},
+  shortjournal = {Auton. Robot.},
+  title        = {A penalized batch-bayesian approach to informative path planning for decentralized swarm robotic search},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Deep introspective SLAM: Deep reinforcement learning based
+approach to avoid tracking failure in visual SLAM. <em>AR</em>,
+<em>46</em>(6), 705–724. (<a
+href="https://doi.org/10.1007/s10514-022-10046-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reliable and consistent tracking is essential to realize the dream of power-on-and-go autonomy in mobile robots. Our investigation with state-of-the-art visual navigation and mapping tools (e.g. ORB-SLAM) reveals that these tools suffer from frequent and unexpected tracking failures, especially when tested in the wild. This hinders the ability of robots to reach a goal position less than 10 meters away, without tracking failure, thereby limiting the prospects of real autonomy. We present an introspection-based approach (Introspective-SLAM) that enables SLAM to evaluate safety of navigation steps with respect to tracking failure, before the steps are actually taken. Navigation steps that appear unsafe are thereby avoided, and an alternative path to the goal is planned. We propose a novel deep reinforcement learning (DQN) based network to evaluate safety of future navigation steps using a single image only. Surprisingly, training of our DQN completes in a short amount of time (&lt; 60 h). Even then, this network outperforms several handcrafted and Q-learning based pipelines to achieve state-of-the-art performance. Interestingly, training the DQN in realistic simulators (MINOS), consisting of reconstructed interiors, shows good generalization across real world indoor-outdoor settings. Finally, extensive testing of visual SLAM, equipped with our DQN, shows that tracking failures occur frequently and are a major hindrance in reaching the goal. Currently, there is no standard benchmark to evaluate active visual SLAM approaches. We have released a benchmark of 50 episodes with this work. We hope these findings/benchmark will encourage progress for power-on-and-go visual SLAM without any manual supervision.},
+  archive      = {J_AR},
+  author       = {Naveed, Kanwal and Anjum, Muhammad Latif and Hussain, Wajahat and Lee, Donghwan},
+  doi          = {10.1007/s10514-022-10046-9},
+  journal      = {Autonomous Robots},
+  month        = {8},
+  number       = {6},
+  pages        = {705-724},
+  shortjournal = {Auton. Robot.},
+  title        = {Deep introspective SLAM: Deep reinforcement learning based approach to avoid tracking failure in visual SLAM},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). AEB-RRT*: An adaptive extension bidirectional RRT*
+algorithm. <em>AR</em>, <em>46</em>(6), 685–704. (<a
+href="https://doi.org/10.1007/s10514-022-10044-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the probabilistic completeness and asymptotic optimality, the RRT* algorithm can find sub-optimal solutions and solve path planning problems effectively compared with other strategies. The B-RRT* algorithm introduces the bidirectional search to obtain faster convergence and shorter paths. To solve the problems of path planning in complex environments with concavities, convexities, narrow channels, mazes and multiple obstacles, an adaptive extension bidirectional RRT* (AEB-RRT*) algorithm is proposed. The AEB-RRT* algorithm simultaneously extends from both the starting point and the ending point, and adaptively adjusts the sampling probability and different expansion methods according to the number of collision detection failures. After acquiring a feasible path, it is then post-processed by interpolation and the principle of triangular inequality to obtain a shorter collision-free path. And the Manhattan distance replaces the Euclidean distance to calculate the distances between nodes in order to achieve higher computational efficiency. The experimental results show that the AEB-RRT* algorithm outperforms other path planning algorithms in stronger search ability, obtaining near-optimal or best paths with high efficiency and better robustness. Furthermore, it is successfully applied to solve the 6-DOF arc welding robot path planning problem.},
+  archive      = {J_AR},
+  author       = {Wang, Xuewu and Wei, Jianbin and Zhou, Xin and Xia, Zelong and Gu, Xingsheng},
+  doi          = {10.1007/s10514-022-10044-x},
+  journal      = {Autonomous Robots},
+  month        = {8},
+  number       = {6},
+  pages        = {685-704},
+  shortjournal = {Auton. Robot.},
+  title        = {AEB-RRT*: An adaptive extension bidirectional RRT* algorithm},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Hierarchical planning with state abstractions for temporal
+task specifications. <em>AR</em>, <em>46</em>(6), 667–683. (<a
+href="https://doi.org/10.1007/s10514-022-10043-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We often specify tasks for a robot using temporal language that can include different levels of abstraction. For example, the command “go to the kitchen before going to the second floor” contains spatial abstraction, given that “floor” consists of individual rooms that can also be referred to in isolation (“kitchen”, for example). There is also a temporal ordering of events, defined by the word “before”. Previous works have used syntactically co-safe Linear Temporal Logic (sc-LTL) to interpret temporal language (such as “before”), and Abstract Markov Decision Processes (AMDPs) to interpret hierarchical abstractions (such as “kitchen” and “second floor”), separately. To handle both types of commands at once, we introduce the Abstract Product Markov Decision Process (AP-MDP), a novel approach capable of representing non-Markovian reward functions at different levels of abstractions. The AP-MDP framework translates LTL into its corresponding automata, creates a product Markov Decision Process (MDP) of the LTL specification and the environment MDP, and decomposes the problem into subproblems to enable efficient planning with abstractions. AP-MDP performs faster than a non-hierarchical method of solving LTL problems in over $$95 \%$$ of path planning tasks, and this number only increases as the size of the environment domain increases. In a cleanup world domain, AP-MDP performs faster in over $$98\%$$ of tasks. We also present a neural sequence-to-sequence model trained to translate language commands into LTL expression, and a new corpus of non-Markovian language commands spanning different levels of abstraction. We test our framework with the collected language commands on two drones, demonstrating that our approach enables robots to efficiently solve temporal commands at different levels of abstraction in both indoor and outdoor environments.},
+  archive      = {J_AR},
+  author       = {Oh, Yoonseon and Patel, Roma and Nguyen, Thao and Huang, Baichuan and Berg, Matthew and Pavlick, Ellie and Tellex, Stefanie},
+  doi          = {10.1007/s10514-022-10043-y},
+  journal      = {Autonomous Robots},
+  month        = {8},
+  number       = {6},
+  pages        = {667-683},
+  shortjournal = {Auton. Robot.},
+  title        = {Hierarchical planning with state abstractions for temporal task specifications},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A hybrid inductive learning-based and deductive
+reasoning-based 3-d path planning method in complex environments.
+<em>AR</em>, <em>46</em>(5), 645–666. (<a
+href="https://doi.org/10.1007/s10514-022-10042-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional path planning methods, such as sampling-based and iterative approaches, allow for optimal path’s computation in complex environments. Nonetheless, environment exploration is subject to rules which can be obtained by domain experts and could be used for improving the search. The present work aims at integrating inductive techniques that generate path candidates with deductive techniques that choose the preferred ones. In particular, an inductive learning model is trained with expert demonstrations and with rules translated into a reward function, while logic programming is used to choose the starting point according to some domain expert’s suggestions. We discuss, as use case, 3-D path planning for neurosurgical steerable needles. Results show that the proposed method computes optimal paths in terms of obstacle clearance and kinematic constraints compliance, and is able to outperform state-of-the-art approaches in terms of safety distance-from-obstacles respect, smoothness, and computational time.},
+  archive      = {J_AR},
+  author       = {Segato, Alice and Calimeri, Francesco and Testa, Irene and Corbetta, Valentina and Riva, Marco and De Momi, Elena},
+  doi          = {10.1007/s10514-022-10042-z},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {5},
+  pages        = {645-666},
+  shortjournal = {Auton. Robot.},
+  title        = {A hybrid inductive learning-based and deductive reasoning-based 3-D path planning method in complex environments},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Decentralised coverage of a large structure using flocking
+of autonomous agents having a dynamic hierarchy model. <em>AR</em>,
+<em>46</em>(5), 617–643. (<a
+href="https://doi.org/10.1007/s10514-022-10041-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a decentralised algorithm to form a coverage around a large structure using autonomous sensor agents. Forming a coverage around a structure is defined using a set of objectives. Structures are formally categorised into objects and obstacles, and defined based on the application. We use the notion of a multi-species flocking algorithm for achieving a proper coverage formation. We modify the basic algorithm substantially by introducing a new virtual agent that aids in positioning of the flocking agents along with stability analysis, incorporating a dynamic hierarchy among the flocking agents, and defining novel controls based on shearing and screwing actions to spread the agents uniformly around the structure. Each species of agents is defined and their roles in the algorithm justified. We discuss special cases and challenging scenarios that can potentially hinder smooth implementation of the algorithm and suggest approaches to overcome them. The method is applied to both convex and non-convex objects in 2D, as well as, 3D. Time of convergence and coverage energy are used as metrics to assess the performance of the system and are studied through extensive simulations.},
+  archive      = {J_AR},
+  author       = {Nath, Suryadeep and Baishya, Manoj and Ghose, Debasish},
+  doi          = {10.1007/s10514-022-10041-0},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {5},
+  pages        = {617-643},
+  shortjournal = {Auton. Robot.},
+  title        = {Decentralised coverage of a large structure using flocking of autonomous agents having a dynamic hierarchy model},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Analysis and acceleration of TORM: Optimization-based
+planning for path-wise inverse kinematics. <em>AR</em>, <em>46</em>(5),
+599–615. (<a href="https://doi.org/10.1007/s10514-022-10040-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A redundant manipulator can have many trajectories for joints that follow a given end-effector path in the Cartesian space, since it has multiple inverse kinematics solutions per end-effector pose. While maintaining accuracy with the given end-effector path, it is challenging to quickly synthesize a feasible trajectory that satisfies robot-specific constraints and is collision-free against obstacles, especially when the given end-effector path passes around obstacles. In this paper, we present a trajectory optimization of a redundant manipulator to synthesize a trajectory that follows a given end-effector path accurately, while achieving smoothness and collision-free manipulation. Our method holistically incorporates three desired properties into the trajectory optimization process by integrating the Jacobian-based inverse kinematics solving method and an optimization-based motion planning approach. Specifically, we optimize a trajectory using two-stage gradient descent to reduce potential competition between different properties during the update. To avoid falling into local minima, we iteratively explore different candidate trajectories with our local update. We also accelerate our optimizer by adaptively determining the stop of the current exploration based on the observation of optimization results. We compare our method with five prior methods in test scenes, including external obstacles and two non-obstacle problems. Furthermore, we analyze our optimizer performance by experimenting with three different configurations of robots. Our method robustly minimizes the pose error in a progressive manner while satisfying various desirable properties.},
+  archive      = {J_AR},
+  author       = {Kang, Mincheul and Yoon, Sung-Eui},
+  doi          = {10.1007/s10514-022-10040-1},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {5},
+  pages        = {599-615},
+  shortjournal = {Auton. Robot.},
+  title        = {Analysis and acceleration of TORM: Optimization-based planning for path-wise inverse kinematics},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Motion planning and control for mobile robot navigation
+using machine learning: A survey. <em>AR</em>, <em>46</em>(5), 569–597.
+(<a href="https://doi.org/10.1007/s10514-022-10039-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Moving in complex environments is an essential capability of intelligent mobile robots. Decades of research and engineering have been dedicated to developing sophisticated navigation systems to move mobile robots from one point to another. Despite their overall success, a recently emerging research thrust is devoted to developing machine learning techniques to address the same problem, based in large part on the success of deep learning. However, to date, there has not been much direct comparison between the classical and emerging paradigms to this problem. In this article, we survey recent works that apply machine learning for motion planning and control in mobile robot navigation, within the context of classical navigation systems. The surveyed works are classified into different categories, which delineate the relationship of the learning approaches to classical methods. Based on this classification, we identify common challenges and promising future directions.},
+  archive      = {J_AR},
+  author       = {Xiao, Xuesu and Liu, Bo and Warnell, Garrett and Stone, Peter},
+  doi          = {10.1007/s10514-022-10039-8},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {5},
+  pages        = {569-597},
+  shortjournal = {Auton. Robot.},
+  title        = {Motion planning and control for mobile robot navigation using machine learning: A survey},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). External force observer aided push recovery for
+torque-controlled biped robots. <em>AR</em>, <em>46</em>(5), 553–568.
+(<a href="https://doi.org/10.1007/s10514-022-10038-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Push recovery is of vital importance for biped robots due to the complexity of the non-experimental environment. This paper proposes an external force observer aided push recovery control framework for the inexpensive biped robot. Initially, a linear external force observer is designed. This observer used centroid dynamics as filter model, thus the effect of the rate of angular momentum is considered. The linear process model guarantees the observer is easy to run in real-time with low computational resources. The force/torque (F/T) sensor which is difficult to integrate on small or inexpensive robots due to the size and cost is not necessary. Moreover, the estimated external force is fed back to the whole-body torque controller, and it is compensated by the foot contact force. Compared to the pure error-based controller, the response speed of the robot to external force is improved. This framework is verified on the defensor biped robot model developed by our team and compared to the existing approaches. The accuracy of the external force estimation and the omnidirectional push recovery ability of the biped robot are improved.},
+  archive      = {J_AR},
+  author       = {Li, Jingchao and Yuan, Zhaohui and Dong, Sheng and Zhang, Jingqin and Sang, Xiaoyue},
+  doi          = {10.1007/s10514-022-10038-9},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {5},
+  pages        = {553-568},
+  shortjournal = {Auton. Robot.},
+  title        = {External force observer aided push recovery for torque-controlled biped robots},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Semantic scan context: A novel semantic-based loop-closure
+method for LiDAR SLAM. <em>AR</em>, <em>46</em>(4), 535–551. (<a
+href="https://doi.org/10.1007/s10514-022-10037-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As one of the key technologies of SLAM, loop-closure detection can help eliminate the cumulative errors of the odometry. Many of the current LiDAR-based SLAM systems do not integrate a loop-closure detection module, so they will inevitably suffer from cumulative errors. This paper proposes a semantic-based place recognition method called Semantic Scan Context (SSC), which consists of the two-step global ICP and the semantic-based descriptor. Thanks to the use of high-level semantic features, our descriptor can effectively encode scene information. The proposed two-step global ICP can help eliminate the influence of rotation and translation on descriptor matching and provide a good initial value for geometric verification. Further, we built a complete loop-closure detection module based on SSC and combined it with the famous LOAM to form a full LiDAR SLAM system. Exhaustive experiments on the KITTI and KITTI-360 datasets show that our approach is competitive to the state-of-the-art methods, robust to the environment, and has good generalization ability. Our code is available at: https://github.com/lilin-hitcrt/SSC.},
+  archive      = {J_AR},
+  author       = {Li, Lin and Kong, Xin and Zhao, Xiangrui and Huang, Tianxin and Liu, Yong},
+  doi          = {10.1007/s10514-022-10037-w},
+  journal      = {Autonomous Robots},
+  month        = {4},
+  number       = {4},
+  pages        = {535-551},
+  shortjournal = {Auton. Robot.},
+  title        = {Semantic scan context: A novel semantic-based loop-closure method for LiDAR SLAM},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Automated camera-exposure control for robust localization in
+varying illumination environments. <em>AR</em>, <em>46</em>(4), 515–534.
+(<a href="https://doi.org/10.1007/s10514-022-10036-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The vision-based localization of robots operating in complex environments is challenging due to the varying dynamic illumination. This study aims to develop a novel automated camera-exposure control algorithm for illumination robust localization. First, a lightweight photometric calibration method is designed to model camera optical imaging. Based on the calibrated imaging, a photometric-sensitive image quality metric is developed for the robust estimation of image information. Then, a novel automated exposure control algorithm is designed to respond to environmental illumination variation rapidly and avoid visual degradation by utilizing a coarse-to-fine strategy to adjust the camera exposure time to optimum in real-time. Furthermore, a photometric compensation algorithm is introduced to fix the problem of the brightness inconsistency derived from the change of exposure time. Finally, several experiments are performed on the public datasets and our field robot. Results demonstrate that the proposed framework effectively improves the localization performance in varying illumination environments.},
+  archive      = {J_AR},
+  author       = {Wang, Yu and Chen, Haoyao and Zhang, Shiwu and Lu, Wencan},
+  doi          = {10.1007/s10514-022-10036-x},
+  journal      = {Autonomous Robots},
+  month        = {4},
+  number       = {4},
+  pages        = {515-534},
+  shortjournal = {Auton. Robot.},
+  title        = {Automated camera-exposure control for robust localization in varying illumination environments},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Aggressive maneuvers for a quadrotor-slung-load system
+through fast trajectory generation and tracking. <em>AR</em>,
+<em>46</em>(4), 499–513. (<a
+href="https://doi.org/10.1007/s10514-022-10035-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ability for a quadrotor with a slung load to perform agile and accurate maneuvers expands the variety of scenarios where load transportation can be applied and enhances its efficiency. Due to the complexity of the system dynamics, slung-load transportation remains a challenging problem, which also causes trajectory generation a time-consuming task. We propose a framework to efficiently generate aggressive load-swing trajectories. Trajectory generation for the load aims to minimize the fifth order time derivative of the load position which, indirectly, minimizes the quadrotor angular velocity actuation. Aggressive load-swing trajectories are obtained by having the constraints for load cable direction embedded into the trajectory generation via constraints on the load acceleration. The trajectory generation, together with an accurate trajectory tracking controller, allows the aggressive maneuvers to be easily performed on the quadrotor with a slung-load. Simulation and experimental results of three dimensional aggressive maneuvers are presented to validate the proposed trajectory generation methodology, including the quadrotor slung-load traversing a window by tilting the cable, and also going through an environment with obstacles that must avoided.},
+  archive      = {J_AR},
+  author       = {Yu, Gan and Cabecinhas, David and Cunha, Rita and Silvestre, Carlos},
+  doi          = {10.1007/s10514-022-10035-y},
+  journal      = {Autonomous Robots},
+  month        = {4},
+  number       = {4},
+  pages        = {499-513},
+  shortjournal = {Auton. Robot.},
+  title        = {Aggressive maneuvers for a quadrotor-slung-load system through fast trajectory generation and tracking},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Continuous control actions learning and adaptation for
+robotic manipulation through reinforcement learning. <em>AR</em>,
+<em>46</em>(3), 483–498. (<a
+href="https://doi.org/10.1007/s10514-022-10034-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a learning-based method that uses simulation data to learn an object manipulation task using two model-free reinforcement learning (RL) algorithms. The learning performance is compared across on-policy and off-policy algorithms: Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC). In order to accelerate the learning process, the fine-tuning procedure is proposed that demonstrates the continuous adaptation of on-policy RL to new environments, allowing the learned policy to adapt and execute the (partially) modified task. A dense reward function is designed for the task to enable an efficient learning of the agent. A grasping task involving a Franka Emika Panda manipulator is considered as the reference task to be learned. The learned control policy is demonstrated to be generalizable across multiple object geometries and initial robot/parts configurations. The approach is finally tested on a real Franka Emika Panda robot, showing the possibility to transfer the learned behavior from simulation. Experimental results show 100% of successful grasping tasks, making the proposed approach applicable to real applications.},
+  archive      = {J_AR},
+  author       = {Shahid, Asad Ali and Piga, Dario and Braghin, Francesco and Roveda, Loris},
+  doi          = {10.1007/s10514-022-10034-z},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {3},
+  pages        = {483-498},
+  shortjournal = {Auton. Robot.},
+  title        = {Continuous control actions learning and adaptation for robotic manipulation through reinforcement learning},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Herding stochastic autonomous agents via local control rules
+and online target selection strategies. <em>AR</em>, <em>46</em>(3),
+469–481. (<a href="https://doi.org/10.1007/s10514-021-10033-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a simple yet effective set of local control rules to make a small group of “herder agents” collect and contain in a desired region a large ensemble of non-cooperative, non-flocking stochastic “target agents” in the plane. We investigate the robustness of the proposed strategies to variations of the number of target agents and the strength of the repulsive force they feel when in proximity of the herders. The effectiveness of the proposed approach is confirmed in both simulations in ROS and experiments on real robots.},
+  archive      = {J_AR},
+  author       = {Auletta, Fabrizia and Fiore, Davide and Richardson, Michael J. and di Bernardo, Mario},
+  doi          = {10.1007/s10514-021-10033-6},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {3},
+  pages        = {469-481},
+  shortjournal = {Auton. Robot.},
+  title        = {Herding stochastic autonomous agents via local control rules and online target selection strategies},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Appearance-based loop closure detection combining lines and
+learned points for low-textured environments. <em>AR</em>,
+<em>46</em>(3), 451–467. (<a
+href="https://doi.org/10.1007/s10514-021-10032-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hand-crafted point descriptors have been traditionally used for visual loop closure detection. However, in low-textured environments, it is usually difficult to find enough point features and, hence, the performance of such algorithms degrade. Under this context, this paper proposes a loop closure detection method that combines lines and learned points to work, particularly, in scenarios where hand-crafted points fail. To index previous images, we adopt separate incremental binary Bag-of-Words (BoW) schemes for points and lines. Moreover, we adopt a binarization procedure for features’ descriptors to benefit from the advantages of learned features into a binary BoW model. Furthermore, image candidates from each BoW instance are merged using a novel query-adaptive late fusion approach. Finally, a spatial verification stage, which integrates appearance and geometry perspectives, allows us to enhance the global performance of the method. Our approach is validated using several public datasets, outperforming other state-of-the-art solutions in most cases, especially in low-textured scenarios.},
+  archive      = {J_AR},
+  author       = {Company-Corcoles, Joan P. and Garcia-Fidalgo, Emilio and Ortiz, Alberto},
+  doi          = {10.1007/s10514-021-10032-7},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {3},
+  pages        = {451-467},
+  shortjournal = {Auton. Robot.},
+  title        = {Appearance-based loop closure detection combining lines and learned points for low-textured environments},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Image based localization under large perspective difference
+between sfm and SLAM using split sim(3) optimization. <em>AR</em>,
+<em>46</em>(3), 437–449. (<a
+href="https://doi.org/10.1007/s10514-021-10031-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image based Localization (IbL) uses both Structure from Motion (SfM) and Simultaneous Localization and Mapping (SLAM) data for accurate pose estimation. However, under conditions where there is a large perspective difference between the SfM images and SLAM keyframes, the SfM-SLAM co-visibility graph becomes sparse. As a result, the scale drift can increase especially when using monocular SLAM as part of the IbL framework. The drift rarely gets corrected at loop closure due to its large magnitude. We propose a split affine transformation approach that uses SfM-SLAM information along with Sim(3) optimization to minimize the scale drift. Experiments are performed using an image dataset collected in a campus environment with different trajectories, showing the improvement in scale drift correction with the proposed method. The SLAM data was collected close to plainly textured structures like buildings while SfM images were captured from a larger distance from the building facade which leads to a challenging navigation scenario in the context of IbL. Localizing mobile platforms moving close to buildings is an example of such a case. The paper positively impacts the widespread use of small autonomous robotic platforms, which is to perform an accurate outdoor localization under urban conditions using only a monocular camera.},
+  archive      = {J_AR},
+  author       = {Rajamohan, Deepak and Kim, Jonghyuk and Garratt, Matt and Pickering, Mark},
+  doi          = {10.1007/s10514-021-10031-8},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {3},
+  pages        = {437-449},
+  shortjournal = {Auton. Robot.},
+  title        = {Image based localization under large perspective difference between sfm and SLAM using split sim(3) optimization},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). User intent estimation during robot learning using physical
+human robot interaction primitives. <em>AR</em>, <em>46</em>(2),
+421–436. (<a href="https://doi.org/10.1007/s10514-021-10030-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As robotic systems transition from traditional setups to collaborative work spaces, the prevalence of physical Human Robot Interaction has risen in both industrial and domestic environments. A popular representation for robot behavior is movement primitives which learn, imitate, and generalize from expert demonstrations. While there are existing works in context-aware movement primitives, they are usually limited to contact-free human robot interactions. This paper presents physical Human Robot Interaction Primitives (pHRIP), which utilize only the interaction forces between the human user and robot to estimate user intent and generate the appropriate robot response during physical human robot interactions. The efficacy of pHRIP is evaluated through multiple experiments based on target-directed reaching and obstacle avoidance tasks using a real seven degree of freedom robot arm. The results are validated against Interaction Primitives which use observations of robotic trajectories, with discussions of future pHRI applications utilizing pHRIP.},
+  archive      = {J_AR},
+  author       = {Lai, Yujun and Paul, Gavin and Cui, Yunduan and Matsubara, Takamitsu},
+  doi          = {10.1007/s10514-021-10030-9},
+  journal      = {Autonomous Robots},
+  month        = {2},
+  number       = {2},
+  pages        = {421-436},
+  shortjournal = {Auton. Robot.},
+  title        = {User intent estimation during robot learning using physical human robot interaction primitives},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Decentralized probabilistic multi-robot collision avoidance
+using buffered uncertainty-aware voronoi cells. <em>AR</em>,
+<em>46</em>(2), 401–420. (<a
+href="https://doi.org/10.1007/s10514-021-10029-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a decentralized and communication-free collision avoidance approach for multi-robot systems that accounts for both robot localization and sensing uncertainties. The approach relies on the computation of an uncertainty-aware safe region for each robot to navigate among other robots and static obstacles in the environment, under the assumption of Gaussian-distributed uncertainty. In particular, at each time step, we construct a chance-constrained buffered uncertainty-aware Voronoi cell (B-UAVC) for each robot given a specified collision probability threshold. Probabilistic collision avoidance is achieved by constraining the motion of each robot to be within its corresponding B-UAVC, i.e. the collision probability between the robots and obstacles remains below the specified threshold. The proposed approach is decentralized, communication-free, scalable with the number of robots and robust to robots’ localization and sensing uncertainties. We applied the approach to single-integrator, double-integrator, differential-drive robots, and robots with general nonlinear dynamics. Extensive simulations and experiments with a team of ground vehicles, quadrotors, and heterogeneous robot teams are performed to analyze and validate the proposed approach.},
+  archive      = {J_AR},
+  author       = {Zhu, Hai and Brito, Bruno and Alonso-Mora, Javier},
+  doi          = {10.1007/s10514-021-10029-2},
+  journal      = {Autonomous Robots},
+  month        = {2},
+  number       = {2},
+  pages        = {401-420},
+  shortjournal = {Auton. Robot.},
+  title        = {Decentralized probabilistic multi-robot collision avoidance using buffered uncertainty-aware voronoi cells},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Cooperative multi-UAV coverage mission planning platform for
+remote sensing applications. <em>AR</em>, <em>46</em>(2), 373–400. (<a
+href="https://doi.org/10.1007/s10514-021-10028-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a novel mission planning platform, capable of efficiently deploying a team of UAVs to cover complex-shaped areas, in various remote sensing applications. Under the hood lies a novel optimization scheme for grid-based methods, utilizing Simulated Annealing algorithm, that significantly increases the achieved percentage of coverage and improves the qualitative features of the generated paths. Extensive simulated evaluation in comparison with a state-of-the-art alternative methodology, for coverage path planning (CPP) operations, establishes the performance gains in terms of achieved coverage and overall duration of the generated missions. On top of that, DARP algorithm is employed to allocate sub-tasks to each member of the swarm, taking into account each UAV’s sensing and operational capabilities, their initial positions and any no-fly-zones possibly defined inside the operational area. This feature is of paramount importance in real-life applications, as it has the potential to achieve tremendous performance improvements in terms of time demanded to complete a mission, while at the same time it unlocks a wide new range of applications, that was previously not feasible due to the limited battery life of UAVs. In order to investigate the actual efficiency gains that are introduced by the multi-UAV utilization, a simulated study is performed as well. All of these capabilities are packed inside an end-to-end platform that eases the utilization of UAVs’ swarms in remote sensing applications. Its versatility is demonstrated via two different real-life applications: (i) a photogrametry for precision agriculture and (ii) an indicative search and rescue for first responders missions, that were performed utilizing a swarm of commercial UAVs. An implementation of the the mCPP methodology introduced in this work, as well as a link for a demonstrative video and a link for a fully functional, on-line hosted instance of the presented platform can be found here: https://github.com/savvas-ap/mCPP-optimized-DARP .},
+  archive      = {J_AR},
+  author       = {Apostolidis, Savvas D. and Kapoutsis, Pavlos Ch. and Kapoutsis, Athanasios Ch. and Kosmatopoulos, Elias B.},
+  doi          = {10.1007/s10514-021-10028-3},
+  journal      = {Autonomous Robots},
+  month        = {2},
+  number       = {2},
+  pages        = {373-400},
+  shortjournal = {Auton. Robot.},
+  title        = {Cooperative multi-UAV coverage mission planning platform for remote sensing applications},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A visibility-based pursuit-evasion game between two
+nonholonomic robots in environments with obstacles. <em>AR</em>,
+<em>46</em>(2), 349–371. (<a
+href="https://doi.org/10.1007/s10514-021-10026-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, a visibility-based pursuit-evasion game in an environment with obstacles is addressed. A pursuer wants to maintain the visibility of an evader at all times. Both players are nonholonomic robots shaped like discs. To determine the players’ motion policies and their trajectories–subject to differential constraints–, an RRT* approach that minimizes the time traveled is utilized. The proposed formulation presents an alternative for computing a strategy of persistent surveillance of the evader, difficult to model from a classical differential games perspective given that there is no clear termination condition when the pursuer can maintain the evader’s visibility forever. A sufficient condition to keep evader surveillance is also provided. Additionally, the proposed approach is general because it can be adapted to address a variety of scenarios. To illustrate such flexibility, we address different aspects of the problem: (1) Knowledge of the environment (availability of a global map vs. a local representation). (2) Strategies of the players (execution of optimal strategies vs. deviations from the optimal ones to deceive the opponent). (3) Sensor capabilities (limited vs. unlimited sensor range).},
+  archive      = {J_AR},
+  author       = {Lozano, Eliezer and Becerra, Israel and Ruiz, Ubaldo and Bravo, Luis and Murrieta-Cid, Rafael},
+  doi          = {10.1007/s10514-021-10026-5},
+  journal      = {Autonomous Robots},
+  month        = {2},
+  number       = {2},
+  pages        = {349-371},
+  shortjournal = {Auton. Robot.},
+  title        = {A visibility-based pursuit-evasion game between two nonholonomic robots in environments with obstacles},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Adaptive submodular inverse reinforcement learning for
+spatial search and map exploration. <em>AR</em>, <em>46</em>(2),
+321–347. (<a href="https://doi.org/10.1007/s10514-021-10025-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Finding optimal paths for spatial search and map exploration problems are NP-hard. Since spatial search and environmental exploration are parts of human central activities, learning human behavior from data is a way to solve these problems. Utilizing the adaptive submodularity of two problems, this research proposes an adaptive submodular inverse reinforcement learning (ASIRL) algorithm to learn human behavior. The ASIRL approach is to learn the reward functions in the Fourier domain and then recover it in the spatial domain. The near-optimal path can be computed through learned reward functions. The experiments demonstrate that the ASIRL outperforms state of the art approaches (e.g., REWARDAGG and QVALAGG).},
+  archive      = {J_AR},
+  author       = {Wu, Ji-Jie and Tseng, Kuo-Shih},
+  doi          = {10.1007/s10514-021-10025-6},
+  journal      = {Autonomous Robots},
+  month        = {2},
+  number       = {2},
+  pages        = {321-347},
+  shortjournal = {Auton. Robot.},
+  title        = {Adaptive submodular inverse reinforcement learning for spatial search and map exploration},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). AlphaPilot: Autonomous drone racing. <em>AR</em>,
+<em>46</em>(1), 307–320. (<a
+href="https://doi.org/10.1007/s10514-021-10011-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a novel system for autonomous, vision-based drone racing combining learned data abstraction, nonlinear filtering, and time-optimal trajectory planning. The system has successfully been deployed at the first autonomous drone racing world championship: the 2019 AlphaPilot Challenge. Contrary to traditional drone racing systems, which only detect the next gate, our approach makes use of any visible gate and takes advantage of multiple, simultaneous gate detections to compensate for drift in the state estimate and build a global map of the gates. The global map and drift-compensated state estimate allow the drone to navigate through the race course even when the gates are not immediately visible and further enable to plan a near time-optimal path through the race course in real time based on approximate drone dynamics. The proposed system has been demonstrated to successfully guide the drone through tight race courses reaching speeds up to $${8}\,{\hbox {m}/\hbox {s}}$$ and ranked second at the 2019 AlphaPilot Challenge.},
+  archive      = {J_AR},
+  author       = {Foehn, Philipp and Brescianini, Dario and Kaufmann, Elia and Cieslewski, Titus and Gehrig, Mathias and Muglikar, Manasi and Scaramuzza, Davide},
+  doi          = {10.1007/s10514-021-10011-y},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {307-320},
+  shortjournal = {Auton. Robot.},
+  title        = {AlphaPilot: Autonomous drone racing},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Stochastic spatio-temporal optimization for control and
+co-design of systems in robotics and applied physics. <em>AR</em>,
+<em>46</em>(1), 283–306. (<a
+href="https://doi.org/10.1007/s10514-021-10003-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Correlated with the trend of increasing degrees of freedom in robotic systems is a similar trend of rising interest in spatio-temporal systems described by partial differential equations (PDEs) among the robotics and control communities. These systems often exhibit dramatic under-actuation, high dimensionality, bifurcations, and multimodal instabilities. Their control represents many of the current-day challenges facing the robotics and automation communities. Not only are these systems challenging to control, but the design of their actuation is an NP-hard problem on its own. Recent methods either discretize the space before optimization, or apply tools from linear systems theory under restrictive linearity assumptions in order to arrive at a control solution. This manuscript provides a novel sampling-based stochastic optimization framework based entirely in Hilbert spaces suitable for the general class of semi-linear SPDEs which describes many systems in robotics and applied physics. This framework is utilized for simultaneous policy optimization and actuator co-design optimization. The resulting algorithm is based on variational optimization, and performs joint episodic optimization of the feedback control law and the actuation design over episodes. We study first and second order systems, and in doing so, extend several results to the case of second order SPDEs. Finally, we demonstrate the efficacy of the proposed approach with several simulated experiments on a variety of SPDEs in robotics and applied physics including an infinite degree-of-freedom soft robotic manipulator.},
+  archive      = {J_AR},
+  author       = {Evans, Ethan N. and Kendall, Andrew P. and Theodorou, Evangelos A.},
+  doi          = {10.1007/s10514-021-10003-y},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {283-306},
+  shortjournal = {Auton. Robot.},
+  title        = {Stochastic spatio-temporal optimization for control and co-design of systems in robotics and applied physics},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Fast nonlinear risk assessment for autonomous vehicles using
+learned conditional probabilistic models of agent futures. <em>AR</em>,
+<em>46</em>(1), 269–282. (<a
+href="https://doi.org/10.1007/s10514-021-10000-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents fast non-sampling based methods to assess the risk for trajectories of autonomous vehicles when probabilistic predictions of other agents’ futures are generated by deep neural networks (DNNs). The presented methods address a wide range of representations for uncertain predictions including both Gaussian and non-Gaussian mixture models to predict both agent positions and control inputs conditioned on the scene contexts. We show that the problem of risk assessment when Gaussian mixture models of agent positions are learned can be solved rapidly to arbitrary levels of accuracy with existing numerical methods. To address the problem of risk assessment for non-Gaussian mixture models of agent position, we propose finding upper bounds on risk using nonlinear Chebyshev’s Inequality and sums-of-squares programming; they are both of interest as the former is much faster while the latter can be arbitrarily tight. These approaches only require higher order statistical moments of agent positions to determine upper bounds on risk. To perform risk assessment when models are learned for agent control inputs as opposed to positions, we propagate the moments of uncertain control inputs through the nonlinear motion dynamics to obtain the exact moments of uncertain position over the planning horizon. To this end, we construct deterministic linear dynamical systems that govern the exact time evolution of the moments of uncertain position in the presence of uncertain control inputs. The presented methods are demonstrated on realistic predictions from DNNs trained on the Argoverse and CARLA datasets and are shown to be effective for rapidly assessing the probability of low probability events.},
+  archive      = {J_AR},
+  author       = {Jasour, Ashkan and Huang, Xin and Wang, Allen and Williams, Brian C.},
+  doi          = {10.1007/s10514-021-10000-1},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {269-282},
+  shortjournal = {Auton. Robot.},
+  title        = {Fast nonlinear risk assessment for autonomous vehicles using learned conditional probabilistic models of agent futures},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Heterogeneous graph attention networks for scalable
+multi-robot scheduling with temporospatial constraints. <em>AR</em>,
+<em>46</em>(1), 249–268. (<a
+href="https://doi.org/10.1007/s10514-021-09997-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robot teams are increasingly being deployed in environments, such as manufacturing facilities and warehouses, to save cost and improve productivity. To efficiently coordinate multi-robot teams, fast, high-quality scheduling algorithms are essential to satisfy the temporal and spatial constraints imposed by dynamic task specification and part and robot availability. Traditional solutions include exact methods, which are intractable for large-scale problems, or application-specific heuristics, which require expert domain knowledge to develop. In this paper, we propose a novel heterogeneous graph attention network model, called ScheduleNet, to learn scheduling policies that overcome the limitations of conventional approaches. By introducing robot- and proximity-specific nodes into the simple temporal network encoding temporal constraints, we obtain a heterogeneous graph structure that is nonparametric in the number of tasks, robots and task resources or locations. We show that our model is end-to-end trainable via imitation learning on small-scale problems, and generalizes to large, unseen problems. Empirically, our method outperforms the existing state-of-the-art methods in a variety of testing scenarios involving both homogeneous and heterogeneous robot teams.},
+  archive      = {J_AR},
+  author       = {Wang, Zheyuan and Liu, Chen and Gombolay, Matthew},
+  doi          = {10.1007/s10514-021-09997-2},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {249-268},
+  shortjournal = {Auton. Robot.},
+  title        = {Heterogeneous graph attention networks for scalable multi-robot scheduling with temporospatial constraints},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Dynamic multi-robot task allocation under uncertainty and
+temporal constraints. <em>AR</em>, <em>46</em>(1), 231–247. (<a
+href="https://doi.org/10.1007/s10514-021-10022-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of dynamically allocating tasks to multiple agents under time window constraints and task completion uncertainty. Our objective is to minimize the number of unsuccessful tasks at the end of the operation horizon. We present a multi-robot allocation algorithm that decouples the key computational challenges of sequential decision-making under uncertainty and multi-agent coordination, and addresses them in a hierarchical manner. The lower layer computes policies for individual agents using dynamic programming with tree search, and the upper layer resolves conflicts in individual plans to obtain a valid multi-agent allocation. Our algorithm, Stochastic Conflict-Based Allocation (SCoBA), is optimal in expectation and complete under some reasonable assumptions. In practice, SCoBA is computationally efficient enough to interleave planning and execution online. On the metric of successful task completion, SCoBA consistently outperforms a number of baseline methods and shows strong competitive performance against an oracle with complete lookahead. It also scales well with the number of tasks and agents. We validate our results over a wide range of simulations on two distinct domains: multi-arm conveyor belt pick-and-place and multi-drone delivery dispatch in a city.},
+  archive      = {J_AR},
+  author       = {Choudhury, Shushman and Gupta, Jayesh K. and Kochenderfer, Mykel J. and Sadigh, Dorsa and Bohg, Jeannette},
+  doi          = {10.1007/s10514-021-10022-9},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {231-247},
+  shortjournal = {Auton. Robot.},
+  title        = {Dynamic multi-robot task allocation under uncertainty and temporal constraints},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Bayes–nash: Bayesian inference for nash equilibrium
+selection in human-robot parallel play. <em>AR</em>, <em>46</em>(1),
+217–230. (<a href="https://doi.org/10.1007/s10514-021-10023-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider shared workspace scenarios with humans and robots acting to achieve independent goals, termed as parallel play. We model these as general-sum games and construct a framework that utilizes the Nash equilibrium solution concept to consider the interactive effect of both agents while planning. We find multiple Pareto-optimal equilibria in these tasks. We hypothesize that people act by choosing an equilibrium based on social norms and their personalities. To enable coordination, we infer the equilibrium online using a probabilistic model that includes these two factors and use it to select the robot’s action. We apply our approach to a close-proximity pick-and-place task involving a robot and a simulated human with three potential behaviors—defensive, selfish, and norm-following. We showed that using a Bayesian approach to infer the equilibrium enables the robot to complete the task with less than half the number of collisions while also reducing the task execution time as compared to the best baseline. We also performed a study with human participants interacting either with other humans or with different robot agents and observed that our proposed approach performs similar to human-human parallel play interactions.},
+  archive      = {J_AR},
+  author       = {Bansal, Shray and Xu, Jin and Howard, Ayanna and Isbell, Charles},
+  doi          = {10.1007/s10514-021-10023-8},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {217-230},
+  shortjournal = {Auton. Robot.},
+  title        = {Bayes–Nash: Bayesian inference for nash equilibrium selection in human-robot parallel play},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). ALGAMES: A fast augmented lagrangian solver for constrained
+dynamic games. <em>AR</em>, <em>46</em>(1), 201–215. (<a
+href="https://doi.org/10.1007/s10514-021-10024-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic games are an effective paradigm for dealing with the control of multiple interacting actors. This paper introduces augmented Lagrangian GAME-theoretic solver (ALGAMES), a solver that handles trajectory-optimization problems with multiple actors and general nonlinear state and input constraints. Its novelty resides in satisfying the first-order optimality conditions with a quasi-Newton root-finding algorithm and rigorously enforcing constraints using an augmented Lagrangian method. We evaluate our solver in the context of autonomous driving on scenarios with a strong level of interactions between the vehicles. We assess the robustness of the solver using Monte Carlo simulations. It is able to reliably solve complex problems like ramp merging with three vehicles three times faster than a state-of-the-art DDP-based approach. A model-predictive control (MPC) implementation of the algorithm, running at more than 60 Hz, demonstrates ALGAMES’ ability to mitigate the “frozen robot” problem on complex autonomous driving scenarios like merging onto a crowded highway.},
+  archive      = {J_AR},
+  author       = {Le Cleac’h, Simon and Schwager, Mac and Manchester, Zachary},
+  doi          = {10.1007/s10514-021-10024-7},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {201-215},
+  shortjournal = {Auton. Robot.},
+  title        = {ALGAMES: A fast augmented lagrangian solver for constrained dynamic games},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). VisuoSpatial foresight for physical sequential fabric
+manipulation. <em>AR</em>, <em>46</em>(1), 175–199. (<a
+href="https://doi.org/10.1007/s10514-021-10001-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic fabric manipulation has applications in home robotics, textiles, senior care and surgery. Existing fabric manipulation techniques, however, are designed for specific tasks, making it difficult to generalize across different but related tasks. We build upon the Visual Foresight framework to learn fabric dynamics that can be efficiently reused to accomplish different sequential fabric manipulation tasks with a single goal-conditioned policy. We extend our earlier work on VisuoSpatial Foresight (VSF), which learns visual dynamics on domain randomized RGB images and depth maps simultaneously and completely in simulation. In this earlier work, we evaluated VSF on multi-step fabric smoothing and folding tasks against 5 baseline methods in simulation and on the da Vinci Research Kit surgical robot without any demonstrations at train or test time. A key finding was that depth sensing significantly improves performance: RGBD data yields an $$\mathbf{80 \%}$$ improvement in fabric folding success rate in simulation over pure RGB data. In this work, we vary 4 components of VSF, including data generation, visual dynamics model, cost function, and optimization procedure. Results suggest that training visual dynamics models using longer, corner-based actions can improve the efficiency of fabric folding by 76% and enable a physical sequential fabric folding task that VSF could not previously perform with 90% reliability. Code, data, videos, and supplementary material are available at https://sites.google.com/view/fabric-vsf/ .},
+  archive      = {J_AR},
+  author       = {Hoque, Ryan and Seita, Daniel and Balakrishna, Ashwin and Ganapathi, Aditya and Tanwani, Ajay Kumar and Jamali, Nawid and Yamane, Katsu and Iba, Soshi and Goldberg, Ken},
+  doi          = {10.1007/s10514-021-10001-0},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {175-199},
+  shortjournal = {Auton. Robot.},
+  title        = {VisuoSpatial foresight for physical sequential fabric manipulation},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Learning temporal logic formulas from suboptimal
+demonstrations: Theory and experiments. <em>AR</em>, <em>46</em>(1),
+149–174. (<a href="https://doi.org/10.1007/s10514-021-10004-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a method for learning multi-stage tasks from demonstrations by learning the logical structure and atomic propositions of a consistent linear temporal logic (LTL) formula. The learner is given successful but potentially suboptimal demonstrations, where the demonstrator is optimizing a cost function while satisfying the LTL formula, and the cost function is uncertain to the learner. Our algorithm uses the Karush-Kuhn-Tucker (KKT) optimality conditions of the demonstrations together with a counterexample-guided falsification strategy to learn the atomic proposition parameters and logical structure of the LTL formula, respectively. We provide theoretical guarantees on the conservativeness of the recovered atomic proposition sets, as well as completeness in the search for finding an LTL formula consistent with the demonstrations. We evaluate our method on high-dimensional nonlinear systems by learning LTL formulas explaining multi-stage tasks on a simulated 7-DOF arm and a quadrotor, and show that it outperforms competing methods for learning LTL formulas from positive examples. Finally, we demonstrate that our approach can learn a real-world multi-stage tabletop manipulation task on a physical 7-DOF Kuka iiwa arm.},
+  archive      = {J_AR},
+  author       = {Chou, Glen and Ozay, Necmiye and Berenson, Dmitry},
+  doi          = {10.1007/s10514-021-10004-x},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {149-174},
+  shortjournal = {Auton. Robot.},
+  title        = {Learning temporal logic formulas from suboptimal demonstrations: Theory and experiments},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Learning latent actions to control assistive robots.
+<em>AR</em>, <em>46</em>(1), 115–147. (<a
+href="https://doi.org/10.1007/s10514-021-10005-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Assistive robot arms enable people with disabilities to conduct everyday tasks on their own. These arms are dexterous and high-dimensional; however, the interfaces people must use to control their robots are low-dimensional. Consider teleoperating a 7-DoF robot arm with a 2-DoF joystick. The robot is helping you eat dinner, and currently you want to cut a piece of tofu. Today’s robots assume a pre-defined mapping between joystick inputs and robot actions: in one mode the joystick controls the robot’s motion in the x–y plane, in another mode the joystick controls the robot’s z–yaw motion, and so on. But this mapping misses out on the task you are trying to perform! Ideally, one joystick axis should control how the robot stabs the tofu, and the other axis should control different cutting motions. Our insight is that we can achieve intuitive, user-friendly control of assistive robots by embedding the robot’s high-dimensional actions into low-dimensional and human-controllable latent actions. We divide this process into three parts. First, we explore models for learning latent actions from offline task demonstrations, and formalize the properties that latent actions should satisfy. Next, we combine learned latent actions with autonomous robot assistance to help the user reach and maintain their high-level goals. Finally, we learn a personalized alignment model between joystick inputs and latent actions. We evaluate our resulting approach in four user studies where non-disabled participants reach marshmallows, cook apple pie, cut tofu, and assemble dessert. We then test our approach with two disabled adults who leverage assistive devices on a daily basis.},
+  archive      = {J_AR},
+  author       = {Losey, Dylan P. and Jeon, Hong Jun and Li, Mengxi and Srinivasan, Krishnan and Mandlekar, Ajay and Garg, Animesh and Bohg, Jeannette and Sadigh, Dorsa},
+  doi          = {10.1007/s10514-021-10005-w},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {115-147},
+  shortjournal = {Auton. Robot.},
+  title        = {Learning latent actions to control assistive robots},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Expert intervention learning. <em>AR</em>, <em>46</em>(1),
+99–113. (<a href="https://doi.org/10.1007/s10514-021-10006-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Scalable robot learning from human-robot interaction is critical if robots are to solve a multitude of tasks in the real world. Current approaches to imitation learning suffer from one of two drawbacks. On the one hand, they rely solely on off-policy human demonstration, which in some cases leads to a mismatch in train-test distribution. On the other, they burden the human to label every state the learner visits, rendering it impractical in many applications. We argue that learning interactively from expert interventions enjoys the best of both worlds. Our key insight is that any amount of expert feedback, whether by intervention or non-intervention, provides information about the quality of the current state, the quality of the action, or both. We formalize this as a constraint on the learner’s value function, which we can efficiently learn using no regret, online learning techniques. We call our approach Expert Intervention Learning (EIL), and evaluate it on a real and simulated driving task with a human expert, where it learns collision avoidance from scratch with just a few hundred samples (about one minute) of expert control.},
+  archive      = {J_AR},
+  author       = {Spencer, Jonathan and Choudhury, Sanjiban and Barnes, Matthew and Schmittle, Matthew and Chiang, Mung and Ramadge, Peter and Srinivasa, Sidd},
+  doi          = {10.1007/s10514-021-10006-9},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {99-113},
+  shortjournal = {Auton. Robot.},
+  title        = {Expert intervention learning},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Affordance-based robot object retrieval. <em>AR</em>,
+<em>46</em>(1), 83–98. (<a
+href="https://doi.org/10.1007/s10514-021-10008-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Natural language object retrieval is a highly useful yet challenging task for robots in human-centric environments. Previous work has primarily focused on commands specifying the desired object’s type such as “scissors” and/or visual attributes such as “red,” thus limiting the robot to only known object classes. We develop a model to retrieve objects based on descriptions of their usage. The model takes in a language command containing a verb, for example “Hand me something to cut,” and RGB images of candidate objects; and outputs the object that best satisfies the task specified by the verb. Our model directly predicts an object’s appearance from the object’s use specified by a verb phrase, without needing an object’s class label. Based on contextual information present in the language commands, our model can generalize to unseen object classes and unknown nouns in the commands. Our model correctly selects objects out of sets of five candidates to fulfill natural language commands, and achieves a mean reciprocal rank of 77.4% on a held-out test set of unseen ImageNet object classes and 69.1% on unseen object classes and unknown nouns. Our model also achieves a mean reciprocal rank of 71.8% on unseen YCB object classes, which have a different image distribution from ImageNet. We demonstrate our model on a KUKA LBR iiwa robot arm, enabling the robot to retrieve objects based on natural language descriptions of their usage (Video recordings of the robot demonstrations can be found at https://youtu.be/WMAdGhMmXEQ ). We also present a new dataset of 655 verb-object pairs denoting object usage over 50 verbs and 216 object classes (The dataset and code for the project can be found at https://github.com/Thaonguyen3095/affordance-language ).},
+  archive      = {J_AR},
+  author       = {Nguyen, Thao and Gopalan, Nakul and Patel, Roma and Corsaro, Matt and Pavlick, Ellie and Tellex, Stefanie},
+  doi          = {10.1007/s10514-021-10008-7},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {83-98},
+  shortjournal = {Auton. Robot.},
+  title        = {Affordance-based robot object retrieval},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). OverlapNet: A siamese network for computing LiDAR scan
+similarity with applications to loop closing and localization.
+<em>AR</em>, <em>46</em>(1), 61–81. (<a
+href="https://doi.org/10.1007/s10514-021-09999-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Localization and mapping are key capabilities of autonomous systems. In this paper, we propose a modified Siamese network to estimate the similarity between pairs of LiDAR scans recorded by autonomous cars. This can be used to address both, loop closing for SLAM and global localization. Our approach utilizes a deep neural network exploiting different cues generated from LiDAR data. It estimates the similarity between pairs of scans using the concept of image overlap generalized to range images and furthermore provides a relative yaw angle estimate. Based on such predictions, our method is able to detect loop closures in a SLAM system or to globally localize in a given map. For loop closure detection, we use the overlap prediction as the similarity measurement to find loop closure candidates and integrate the candidate selection into an existing SLAM system to improve the mapping performance. For global localization, we propose a novel observation model using the predictions provided by OverlapNet and integrate it into a Monte-Carlo localization framework. We evaluate our approach on multiple datasets collected using different LiDAR scanners in various environments. The experimental results show that our method can effectively detect loop closures surpassing the detection performance of state-of-the-art methods and that it generalizes well to different environments. Furthermore, our method reliably localizes a vehicle in typical urban environments globally using LiDAR data collected in different seasons.},
+  archive      = {J_AR},
+  author       = {Chen, Xieyuanli and Läbe, Thomas and Milioto, Andres and Röhling, Timo and Behley, Jens and Stachniss, Cyrill},
+  doi          = {10.1007/s10514-021-09999-0},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {61-81},
+  shortjournal = {Auton. Robot.},
+  title        = {OverlapNet: A siamese network for computing LiDAR scan similarity with applications to loop closing and localization},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). LatticeNet: Fast spatio-temporal point cloud segmentation
+using permutohedral lattices. <em>AR</em>, <em>46</em>(1), 45–60. (<a
+href="https://doi.org/10.1007/s10514-021-09998-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep convolutional neural networks have shown outstanding performance in the task of semantically segmenting images. Applying the same methods on 3D data still poses challenges due to the heavy memory requirements and the lack of structured data. Here, we propose LatticeNet, a novel approach for 3D semantic segmentation, which takes raw point clouds as input. A PointNet describes the local geometry which we embed into a sparse permutohedral lattice. The lattice allows for fast convolutions while keeping a low memory footprint. Further, we introduce DeformSlice, a novel learned data-dependent interpolation for projecting lattice features back onto the point cloud. We present results of 3D segmentation on multiple datasets where our method achieves state-of-the-art performance. We also extend and evaluate our network for instance and dynamic object segmentation.},
+  archive      = {J_AR},
+  author       = {Rosu, Radu Alexandru and Schütt, Peer and Quenzel, Jan and Behnke, Sven},
+  doi          = {10.1007/s10514-021-09998-1},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {45-60},
+  shortjournal = {Auton. Robot.},
+  title        = {LatticeNet: Fast spatio-temporal point cloud segmentation using permutohedral lattices},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Embodied scene description. <em>AR</em>, <em>46</em>(1),
+21–43. (<a href="https://doi.org/10.1007/s10514-021-10014-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Embodiment is an important characteristic for all intelligent agents, while existing scene description tasks mainly focus on analyzing images passively and the semantic understanding of the scenario is separated from the interaction between the agent and the environment. In this work, we propose the Embodied Scene Description, which exploits the embodiment ability of the agent to find an optimal viewpoint in its environment for scene description tasks. A learning framework with the paradigms of imitation learning and reinforcement learning is established to teach the intelligent agent to generate corresponding sensorimotor activities. The proposed framework is tested on both the AI2Thor dataset and a real-world robotic platform for different scene description tasks, demonstrating the effectiveness and scalability of the developed method. Also, a mobile application is developed, which can be used to assist visually-impaired people to better understand their surroundings.},
+  archive      = {J_AR},
+  author       = {Tan, Sinan and Guo, Di and Liu, Huaping and Zhang, Xinyu and Sun, Fuchun},
+  doi          = {10.1007/s10514-021-10014-9},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {21-43},
+  shortjournal = {Auton. Robot.},
+  title        = {Embodied scene description},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Correspondence identification for collaborative multi-robot
+perception under uncertainty. <em>AR</em>, <em>46</em>(1), 5–20. (<a
+href="https://doi.org/10.1007/s10514-021-10009-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Correspondence identification is a critical capability for multi-robot collaborative perception, which allows a group of robots to consistently refer to the same objects in their own fields of view. Correspondence identification is challenging due to the existence of non-covisible objects that cannot be observed by all robots, and due to uncertainty in robot perception. In this paper, we introduce a novel principled approach that formulates correspondence identification as a graph matching problem under the mathematical framework of regularized constrained optimization. We develop a regularization term to explicitly address perception uncertainties by penalizing the object correspondences with a high uncertainty. We also introduce a second regularization term to explicitly address non-covisible objects by penalizing the correspondences built by the non-covisible objects. Our approach is evaluated in robotic simulations and real physical robots. Experimental results show that our method is able to address correspondence identification under uncertainty and non-covisibility, and achieves the state-of-the-art performance.},
+  archive      = {J_AR},
+  author       = {Gao, Peng and Guo, Rui and Lu, Hongsheng and Zhang, Hao},
+  doi          = {10.1007/s10514-021-10009-6},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {5-20},
+  shortjournal = {Auton. Robot.},
+  title        = {Correspondence identification for collaborative multi-robot perception under uncertainty},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Special issue on the 2020 “robotics: Science and systems”
+conference. <em>AR</em>, <em>46</em>(1), 1–3. (<a
+href="https://doi.org/10.1007/s10514-021-10027-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_AR},
+  author       = {Behnke, Sven},
+  doi          = {10.1007/s10514-021-10027-4},
+  journal      = {Autonomous Robots},
+  month        = {1},
+  number       = {1},
+  pages        = {1-3},
+  shortjournal = {Auton. Robot.},
+  title        = {Special issue on the 2020 “Robotics: Science and systems” conference},
+  volume       = {46},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

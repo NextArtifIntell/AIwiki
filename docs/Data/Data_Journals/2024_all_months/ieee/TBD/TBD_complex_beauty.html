@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TBD_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tbd---83">TBD - 83</h2>
+<ul>
+<li><details>
+<summary>
+(2024). Adaptive client clustering for efficient federated learning
+over non-IID and imbalanced data. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 1051–1065. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3167994">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated learning (FL) is an emerging distributed and privacy-preserving machine learning framework. However, the performance of traditional FL methods is seriously impaired by the real-world data, which appear to be non-independent and identically distributed (non-IID). The recent clustered federated learning (CFL) methods eliminate the impact of non-IID data by grouping clients with similar data distribution into the same cluster. Unfortunately, existing CFL methods heavily rely on the pre-setting of the cluster number, failing to achieve adaptive client clustering. Even worse, we experimentally observe that imbalanced data across clients largely degrade their correctness of client clustering. In this paper, we present a novel CFL method without manual intervention, named AutoCFL, which can eliminate both effects of non-IID and imbalanced data simultaneously. To deal with imbalanced data, the local training adjustment strategy adaptively adjusts the number of local training epochs for each client. To further improve the clustering correctness and adaptability, the weighted voting-based client clustering strategy automatically groups each client into an appropriate cluster. Extensive experiments are conducted to evaluate the design of AutoCFL with three popular datasets under various data settings. Experimental results demonstrate that AutoCFL outperforms the state-of-the-art methods under non-IID and imbalanced data settings, e.g., on average improving the model accuracy by $9.24\%$ when compared to the standard FL method, i.e., FedAvg , while significantly reducing communication costs by $4.67\times$ in an adaptive client clustering manner.},
+  archive  = {J},
+  author   = {Biyao Gong and Tianzhang Xing and Zhidan Liu and Wei Xi and Xiaojiang Chen},
+  doi      = {10.1109/TBDATA.2022.3167994},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {1051-1065},
+  title    = {Adaptive client clustering for efficient federated learning over non-IID and imbalanced data},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). FedFAIM: A model performance-based fair incentive mechanism
+for federated learning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 1038–1050. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3183614">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated Learning (FL) has emerged as a privacy-preserving distributed machine learning paradigm. To motivate data owners to contribute towards FL, research on FL incentive mechanisms is gaining great interest. Existing monetary incentive mechanisms generally share the same FL model with all participants regardless of their contributions. Such an assumption can be unfair towards participants who contributed more and promote undesirable free-riding, especially when the final model is of great utility value to participants. In this paper, we propose a Fairness-Aware Incentive Mechanism for federated learning (FedFAIM) to address such problem. It satisfies two types of fairness notion: 1) aggregation fairness, which determines aggregation results according to data quality; 2) reward fairness, which assigns each participant a unique model with performance reflecting his contribution. Aggregation fairness is achieved through efficient gradient aggregation which examines local gradient quality and aggregates them based on data quality. Reward fairness is achieved through an efficient Shapley value-based contribution assessment method and a novel reward allocation method based on reputation and distribution of local and global gradients. We further prove reward fairness is theoretically guaranteed. Extensive experiments show that FedFAIM provides stronger incentives than similar non-monetary FL incentive mechanisms while achieving a high level of fairness.},
+  archive  = {J},
+  author   = {Zhuan Shi and Lan Zhang and Zhenyu Yao and Lingjuan Lyu and Cen Chen and Li Wang and Junhao Wang and Xiang-Yang Li},
+  doi      = {10.1109/TBDATA.2022.3183614},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {1038-1050},
+  title    = {FedFAIM: A model performance-based fair incentive mechanism for federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). WTDP-shapley: Efficient and effective incentive mechanism in
+federated learning for intelligent safety inspection. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(6), 1028–1037. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3198733">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Artificial Intelligence (AI) has been widely applied for Safety Inspection in a number of industrial domains. However, individual company usually could not provide sufficient data to support well-trained AI models. Federated Learning, as a new AI paradigm, enables a number of participants to contribute training data to co-create high-performance models without compromising data privacy. However, an effective incentive mechanism is essential to encourage participants to contribute high-quality data, and the fundamental of the incentive mechanism is to evaluate participants’ contribution fairly. Shapley Value (SV) is a well-known approach to evaluate marginal contribution of individuals in a coalition, but the canonical SV calculation and its available variants are very costly. In this paper, we proposed an FL framework to enable a number of natural gas companies from different cities to jointly train an object detection computer vision deep learning model for the purpose of identifying potential hazards, without sharing their confidential inspection photos directly. We improve state-of-the-art SV algorithm by proposing Weighted Truncation (WT) for unnecessary computations, and go further with Dynamic Programming (WTDP), achieving better trade-off between efficiency and accuracy. Based on our proposed WTDP-Shapley participant contribution evaluation approach, an effective end-to-end incentive mechanism is designed by leveraging knowledge of both data scientists and domain experts. According to our experiments, it could encourage participants to contribute scarce photos with potential hazards, and thus co-create a high-performance AI model to identify various hazards accurately for residential natural gas installation safety inspection.},
+  archive  = {J},
+  author   = {Chengyi Yang and Jia Liu and Hao Sun and Tongzhi Li and Zengxiang Li},
+  doi      = {10.1109/TBDATA.2022.3198733},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {1028-1037},
+  title    = {WTDP-shapley: Efficient and effective incentive mechanism in federated learning for intelligent safety inspection},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Defending batch-level label inference and replacement
+attacks in vertical federated learning. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 1016–1027. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3192121">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In a vertical federated learning (VFL) scenario where features and models are split into different parties, it has been shown that sample-level gradient information can be exploited to deduce crucial label information that should be kept secret. An immediate defense strategy is to protect sample-level messages communicated with Homomorphic Encryption (HE), exposing only batch-averaged local gradients to each party. In this paper, we show that even with HE-protected communication, private labels can still be reconstructed with high accuracy by gradient inversion attack, contrary to the common belief that batch-averaged information is safe to share under encryption. We then show that backdoor attack can also be conducted by directly replacing encrypted communicated messages without decryption. To tackle these attacks, we propose a novel defense method, Confusional AutoEncoder (termed CAE ), which is based on autoencoder and entropy regularization to disguise true labels. To further defend attackers with sufficient prior label knowledge, we introduce DiscreteSGD-enhanced CAE (termed DCAE ), and show that DCAE significantly boosts the main task accuracy than other known methods when defending various label inference attacks.},
+  archive  = {J},
+  author   = {Tianyuan Zou and Yang Liu and Yan Kang and Wenhan Liu and Yuanqin He and Zhihao Yi and Qiang Yang and Ya-Qin Zhang},
+  doi      = {10.1109/TBDATA.2022.3192121},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {1016-1027},
+  title    = {Defending batch-level label inference and replacement attacks in vertical federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). FEVERLESS: Fast and secure vertical federated learning based
+on XGBoost for decentralized labels. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 1001–1015. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3227326">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Vertical Federated Learning (VFL) enables multiple clients to collaboratively train a global model over vertically partitioned data without leaking private local information. Tree-based models, like XGBoost and LightGBM, have been widely used in VFL to enhance the interpretation and efficiency of training. However, there is a fundamental lack of research on how to conduct VFL securely over distributed labels. This work is the first to fill this gap by designing a novel protocol, called FEVERLESS, based on XGBoost. FEVERLESS leverages secure aggregation via information masking technique and global differential privacy provided by a fairly and randomly selected noise leader to prevent private information from being leaked in the training process. Furthermore, it provides label and data privacy against honest-but-curious adversaries even in the case of collusion of $n- 2$ out of $n$ clients. We present a comprehensive security and efficiency analysis for our design, and the empirical results from our experiments demonstrate that FEVERLESS is fast and secure. In particular, it outperforms the solution based on additive homomorphic encryption in runtime cost and provides better accuracy than the local differential privacy approach.},
+  archive  = {J},
+  author   = {Rui Wang and Oğuzhan Ersoy and Hangyu Zhu and Yaochu Jin and Kaitai Liang},
+  doi      = {10.1109/TBDATA.2022.3227326},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {1001-1015},
+  title    = {FEVERLESS: Fast and secure vertical federated learning based on XGBoost for decentralized labels},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Research of federated learning application methods and
+social responsibility. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 989–1000. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3225688">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated learning is a multi-party distributed machine learning system that allows each participant to complete the training task without their data out of the locality. The real meaning of the realization of data availability is invisible to protect personal privacy and data security. Although some institutions need to obtain their data&#39;s benefit by sharing their own data sets, the potential trust risks lead to the data not being better utilized cooperatively. In addition,regulatory requirements on data computing and sharing are different in various countries. These contribute to enormous challenges in the actual application of federated learning. In this research, we make a comprehensive review of the application patterns of federated learning in different fields. Then, we illustrate the social responsibilities of federated learning from four dimensions, including compliance application, system security mechanism, the trust mechanism, and ethical security. Finally, based on the current characteristics and regulatory requirements of federated learning, we discuss the future research directions for federated learning.},
+  archive  = {J},
+  author   = {Shaojie Yang and Wei Zheng and Meiyun Xie and Xueyang Zhang},
+  doi      = {10.1109/TBDATA.2022.3225688},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {989-1000},
+  title    = {Research of federated learning application methods and social responsibility},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An experimental study of byzantine-robust aggregation
+schemes in federated learning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 975–988. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3237397">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Byzantine-robust federated learning aims at mitigating Byzantine failures during the federated training process, where malicious participants (known as Byzantine clients) may upload arbitrary local updates to the central server in order to degrade the performance of the global model. In recent years, several robust aggregation schemes have been proposed to defend against malicious updates from Byzantine clients and improve the robustness of federated learning. These solutions were claimed to be Byzantine-robust, under certain assumptions. Other than that, new attack strategies are emerging, striving to circumvent the defense schemes. However, there is a lack of systematical comparison and empirical study thereof. In this paper, we conduct an experimental study of Byzantine-robust aggregation schemes under different attacks using two popular algorithms in federated learning, FedSGD and FedAvg . We first survey existing Byzantine attack strategies, as well as Byzantine-robust aggregation schemes that aim to defend against Byzantine attacks. We also propose a new scheme, ClippedClustering , to enhance the robustness of a clustering-based scheme by automatically clipping the updates. Then we provide an experimental evaluation of eight aggregation schemes in the scenario of five different Byzantine attacks. Our experimental results show that these aggregation schemes sustain relatively high accuracy in some cases, but they are not effective in all cases. In particular, our proposed ClippedClustering successfully defends against most attacks under independent and identically distributed (IID) local datasets. However, when the local datasets are Non-IID, the performance of all the aggregation schemes significantly decreases. With Non-IID data, some of these aggregation schemes fail even in the complete absence of Byzantine clients. Based on our experimental study, we conclude that the robustness of all the aggregation schemes is limited, highlighting the need for new defense strategies, in particular for Non-IID datasets.},
+  archive  = {J},
+  author   = {Shenghui Li and Edith C.-H. Ngai and Thiemo Voigt},
+  doi      = {10.1109/TBDATA.2023.3237397},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {975-988},
+  title    = {An experimental study of byzantine-robust aggregation schemes in federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). FedGE: Break the scalability limitation of graph neural
+network with federated graph embedding. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 965–974. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3216747">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Neighborhood aggregation algorithms, represented as graph convolutional networks, have attained non-negligible success in numerous topological structure-based scenarios with the assumption that the topological structure of the given graph is pre-defined and relatively small. However, a real-world graph generally is a super large graph consisting of many small graphs that are interconnected and overlapping. Which makes graph embedding in real-life industries, by nature, fall into the federated learning scheme. While current graph-based algorithms are only able to capture the individual topology of each natural graph, learning the complete structural information of the merged large graph remains challenging due to the unsustainable computational cost of graph convolutional operations. We propose a tailored federated graph embedding framework to learn the intact structural information of the numerous inherently linked small-scale graphs and the embedding of each node. We leverage graphs with around two and a half million nodes to validate the effectiveness and the correctness of the proposed framework.},
+  archive  = {J},
+  author   = {Fengwen Chen and Guodong Long},
+  doi      = {10.1109/TBDATA.2022.3216747},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {965-974},
+  title    = {FedGE: Break the scalability limitation of graph neural network with federated graph embedding},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Reputation-aware federated learning client selection based
+on stochastic integer programming. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 953–964. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3191332">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated Learning(FL) has attracted wide research interest due to its potential in building machine learning models while preserving users’ data privacy. However, due to the distributive nature of FL, it is vulnerable to misbehavior from participating worker nodes. Thus, it is important to select clients to participate in FL. Recent studies on FL client selection focus on the perspective of improving model training efficiency and performance, without holistically considering potential misbehavior and the cost of hiring. To bridge this gap, we propose a first-of-its-kind reputation-aware S tochastic integer programming-based FL C lient S election method (SCS). It can optimally select and compensate clients with different reputation profiles. Extensive experiments show that SCS achieves the most advantageous performance-cost trade-off compared to other existing state-of-the-art approaches.},
+  archive  = {J},
+  author   = {Xavier Tan and Wei Chong Ng and Wei Yang Bryan Lim and Zehui Xiong and Dusit Niyato and Han Yu},
+  doi      = {10.1109/TBDATA.2022.3191332},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {953-964},
+  title    = {Reputation-aware federated learning client selection based on stochastic integer programming},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Efficient asynchronous multi-participant vertical federated
+learning. <em>IEEE Transactions on Big Data</em>, <em>10</em>(6),
+940–952. (<a href="https://doi.org/10.1109/TBDATA.2022.3201729">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Vertical Federated Learning (VFL) is a private-preserving distributed machine learning paradigm that collaboratively trains machine learning models with participants whose local data overlap largely in the sample space, but not so in the feature space. Existing VFL methods are mainly based on synchronous computation and homomorphic encryption (HE). Due to the differences in the communication and computation resources of the participants, straggling participants can cause delays during synchronous VFL model training, resulting in low computational efficiency. In addition, HE incurs high computation and communication costs. Moreover, it is difficult to establish a VFL coordinator (a.k.a. server) that all participants can trust. To address these problems, we propose an efficient Asynchronous Multi-participant Vertical Federated Learning method (AMVFL). AMVFL leverages asynchronous training which reduces waiting time. At the same time, secret sharing is used instead of HE for privacy protection, which further reduces the computational cost. In addition, AMVFL does not require a trusted entity to serve as the VFL coordinator. Experimental results based on real-world and synthetic datasets demonstrate that AMVFL can significantly reduce computational cost and improve the accuracy of the model compared to five state-of-the-art VFL methods.},
+  archive  = {J},
+  author   = {Haoran Shi and Yonghui Xu and Yali Jiang and Han Yu and Lizhen Cui},
+  doi      = {10.1109/TBDATA.2022.3201729},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {940-952},
+  title    = {Efficient asynchronous multi-participant vertical federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Cascade vertical federated learning towards straggler
+mitigation and label privacy over distributed labels. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(6), 926–939. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3231277">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Vertical federated learning (VFL) enables collaborative machine learning on vertically partitioned data with privacy-preservation. Most VFL methods face three daunting challenges in real-world applications. First, most existing VFL methods assume that at least one party holds the complete set of labels of all data samples. However, this assumption often violates the nature of many practical scenarios, where the parties only have partial labels. Second, the heterogeneity and dynamic of computational and communication resources in participated parties may cause the straggler problem and slow down training convergence. Third, the confidential label information could be exposed through malicious parties during VFL. To address these challenges, we propose a novel VFL algorithm named Cascade Vertical Federated Learning (CVFL), in which partitioned labels can be fully utilized to train neural networks with privacy-preservation. To mitigate the straggler problem, we design a novel optimization objective to increase straggler&#39;s contribution to the trained models. To mitigate the label privacy risks, we design a novel defense approach to protect the label privacy of CVFL. We conduct comprehensive experiments and the results demonstrate the effectiveness and efficiency of CVFL. Further, the proposed defense approach can achieve a better tradeoff between label privacy and model utility than two widely-used defense approaches.},
+  archive  = {J},
+  author   = {Wensheng Xia and Ying Li and Lan Zhang and Zhonghai Wu and Xiaoyong Yuan},
+  doi      = {10.1109/TBDATA.2022.3231277},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {926-939},
+  title    = {Cascade vertical federated learning towards straggler mitigation and label privacy over distributed labels},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Personalized federated learning with adaptive batchnorm for
+healthcare. <em>IEEE Transactions on Big Data</em>, <em>10</em>(6),
+915–925. (<a href="https://doi.org/10.1109/TBDATA.2022.3177197">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {There is a growing interest in applying machine learning techniques to healthcare. Recently, federated learning (FL) is gaining popularity since it allows researchers to train powerful models without compromising data privacy and security. However, the performance of existing FL approaches often deteriorates when encountering non-iid situations where there exist distribution gaps among clients, and few previous efforts focus on personalization in healthcare. In this article, we propose FedAP to tackle domain shifts and then obtain personalized models for local clients. FedAP learns the similarity between clients based on the statistics of the batch normalization layers while preserving the specificity of each client with different local batch normalization. Comprehensive experiments on five healthcare benchmarks demonstrate that FedAP achieves better accuracy compared to state-of-the-art methods (e.g., 10 %+ accuracy improvement for PAMAP2) with faster convergence speed.},
+  archive  = {J},
+  author   = {Wang Lu and Jindong Wang and Yiqiang Chen and Xin Qin and Renjun Xu and Dimitrios Dimitriadis and Tao Qin},
+  doi      = {10.1109/TBDATA.2022.3177197},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {915-925},
+  title    = {Personalized federated learning with adaptive batchnorm for healthcare},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). BiG-fed: Bilevel optimization enhanced graph-aided federated
+learning. <em>IEEE Transactions on Big Data</em>, <em>10</em>(6),
+903–914. (<a href="https://doi.org/10.1109/TBDATA.2022.3191439">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In federated learning (FL), due to the non-i.i.d. nature of distributedly owned local datasets, personalization is an important design goal. In this paper, we investigate FL scenarios in which data owners are related by a network topology (e.g., traffic prediction based on sensor networks). Existing personalized FL approaches cannot take this information into account. To address this limitation, we propose the Bilevel Optimization enhanced Graph-aided Federated Learning (BiG-Fed) approach. The inner weights enable local tasks to evolve towards personalization, and the outer shared weights on the server side target the non-i.i.d problem enabling individual tasks to evolve towards a global constraint space. To the best of our knowledge, BiG-Fed is the first bilevel optimization technique to enable FL approaches to cope with two nested optimization tasks at the FL server and FL clients simultaneously. Theoretical analysis shows that BiG-Fed is guaranteed to converge in an efficient manner. Extensive experiments on both synthetic and real-world data demonstrate significant superior performance of BiG-Fed over seven state-of-the-art methods.},
+  archive  = {J},
+  author   = {Pengwei Xing and Songtao Lu and Lingfei Wu and Han Yu},
+  doi      = {10.1109/TBDATA.2022.3191439},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {903-914},
+  title    = {BiG-fed: Bilevel optimization enhanced graph-aided federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Federated meta embedding concept stock recommendation.
+<em>IEEE Transactions on Big Data</em>, <em>10</em>(6), 891–902. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3214622">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Mining relevant stocks given a trending topic/concept in capital markets is an application with significant economic and societal impacts. Previous concept stock recommendation system mines concept stocks only from public social media like financial news. On stock forums, investors discuss emerging concepts and stocks by using forum comments, which are unneglectable resources to capture trending concept stocks accurately and timely. However, the comment data from a single forum is insufficient to build a high-quality recommendation system. The forums are data silos protected by privacy regulations, and their comments are still underutwct 2ilized. In this article, we propose a federated concept stock recommendation baseline and an optimized method that both leverage the private forum comments and public social media without compromising privacy regulations. Our baseline, i.e. , Federated Meta Embedding (FedME), is built upon the federated learning framework and learns a concept-stock embedding jointly from private and public data. Our optimized method, Federated Graph Meta Embedding (FedGME), improves FedME by using a graph to combine two sources of embeddings and additional human experts’ concept-stock knowledge. Empirically, the experiments on two concept stock datasets show that FedME and FedGME substantially improve the performance of recommendation. Our methods provide practical guidance on privacy-preserving FinTech applications.},
+  archive  = {J},
+  author   = {Zhuoyi Peng and Yi Yang and Liu Yang and Kai Chen},
+  doi      = {10.1109/TBDATA.2022.3214622},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {891-902},
+  title    = {Federated meta embedding concept stock recommendation},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Privacy-preserving federated adversarial domain adaptation
+over feature groups for interpretability. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 879–890. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3188292">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a novel privacy-preserving federated adversarial domain adaptation approach ( $\mathbf{PrADA}$ ) to address an under-studied but practical cross-silo federated domain adaptation problem, in which the party of the target domain is insufficient in both samples and features. We handle the lack-of-feature issue by extending the feature space through vertical federated learning with a feature-rich party and tackle the sample-scarce issue by performing adversarial domain adaptation from the sample-rich source party to the target party. In this work, we focus on financial applications where interpretability is critical. However, existing adversarial domain adaptation methods typically apply a single feature extractor to learn low-interpretable feature representations with respect to the target task. To improve interpretability, we exploit domain expertise to categorize the feature space into multiple groups that each group holds tightly relevant features, and we learn a semantically meaningful high-order feature from each feature group. In addition, we apply a fine-grained domain adaptation to each feature group to improve transferability. We design a privacy-preserving vertical federated learning framework that enables performing the PrADA securely and efficiently. We evaluate our approach based on two tabular datasets. Experiments demonstrate both the effectiveness and practicality of our approach.},
+  archive  = {J},
+  author   = {Yan Kang and Yuanqin He and Jiahuan Luo and Tao Fan and Yang Liu and Qiang Yang},
+  doi      = {10.1109/TBDATA.2022.3188292},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {879-890},
+  title    = {Privacy-preserving federated adversarial domain adaptation over feature groups for interpretability},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Practical vertical federated learning with unsupervised
+representation learning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 864–878. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3180117">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {As societal concerns on data privacy recently increase, we have witnessed data silos among multiple parties in various applications. Federated learning emerges as a new learning paradigm that enables multiple parties to collaboratively train a machine learning model without sharing their raw data. Vertical federated learning , where each party owns different features of the same set of samples and only a single party has the label, is an important and challenging topic in federated learning. Communication costs among different parties have been a major hurdle for practical vertical learning systems. In this paper, we propose a novel communication-efficient vertical federated learning algorithm named FedOnce , which requires only one-shot communication among parties. To improve model accuracy and provide privacy guarantee, FedOnce features unsupervised learning representations in the federated setting and privacy-preserving techniques based on moments accountant. The comprehensive experiments on 10 datasets demonstrate that FedOnce achieves close performance compared to state-of-the-art vertical federated learning algorithms with much lower communication costs. Meanwhile, our privacy-preserving technique significantly outperforms the state-of-the-art approaches under the same privacy budget.},
+  archive  = {J},
+  author   = {Zhaomin Wu and Qinbin Li and Bingsheng He},
+  doi      = {10.1109/TBDATA.2022.3180117},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {864-878},
+  title    = {Practical vertical federated learning with unsupervised representation learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Practical attribute reconstruction attack against federated
+learning. <em>IEEE Transactions on Big Data</em>, <em>10</em>(6),
+851–863. (<a href="https://doi.org/10.1109/TBDATA.2022.3159236">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Existing federated learning (FL) designs have been shown to exhibit vulnerabilities which can be exploited by adversaries to compromise data privacy. However, most current works conduct attacks by leveraging gradients calculated on a small batch of data. This setting is not realistic as gradients are normally shared after at least 1 epoch of local training on each participant&#39;s local data in FL for communication efficiency. In this work, we conduct a unique systematic evaluation of attribute reconstruction attack (ARA) launched by the malicious server in the FL, and empirically demonstrate that the shared local model gradients after 1 epoch of local training can still reveal sensitive attributes of local training data. To demonstrate this leakage, we develop a more effective and efficient gradient matching based method called cos-matching to reconstruct the sensitive attributes of any victim participant&#39;s training data. Based on the reconstructed training data attributes, we further show that an attacker can even reconstruct the sensitive attributes of any records that are not included in any participant&#39;s training data, thus opening a new attack surface in FL. Extensive experiments show that the proposed method achieves better attribute attack performance than existing state-of-the-art methods.},
+  archive  = {J},
+  author   = {Chen Chen and Lingjuan Lyu and Han Yu and Gang Chen},
+  doi      = {10.1109/TBDATA.2022.3159236},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {851-863},
+  title    = {Practical attribute reconstruction attack against federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Improved gradient inversion attacks and defenses in
+federated learning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 839–850. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3239116">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Gradient inversion attacks can reconstruct the victim&#39;s private data once they have access to the victim&#39;s model and gradient. However, existing research is still immature, and many attacks are conducted in ideal conditions. It is unclear how damaging such attacks really are and how they can be effectively defended. In this article, we first summarize the current relevant researches and their limitations. Then we design a general gradient inversion attack framework, which can attack both FedSGD and FedAVG. We propose approaches to enhance the label inference and image restoration, respectively. Our approach surpasses the SOTA attacks, by successfully attacking the batches from ImageNet while other methods fail to attack. Finally, we suggest several defense strategies without any utility loss from extensive experiments. We are confirmed that our work makes people aware of the privacy issues and can actively avoid the potential risks.},
+  archive  = {J},
+  author   = {Jiahui Geng and Yongli Mou and Qing Li and Feifei Li and Oya Beyan and Stefan Decker and Chunming Rong},
+  doi      = {10.1109/TBDATA.2023.3239116},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {839-850},
+  title    = {Improved gradient inversion attacks and defenses in federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). SBPA: Sybil-based backdoor poisoning attacks for distributed
+big data in AIoT-based federated learning system. <em>IEEE Transactions
+on Big Data</em>, <em>10</em>(6), 827–838. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3224392">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated learning (FL) enables a great deal of distributed independent participants to collaborate in training without sharing data. Malicious adversary can poison the local model by backdoor poisoning attacks and utilize the characteristic that server cannot trace original data to make the poisoned model directly aggregated. Especially in the AIoT-FL network that generates large amounts of data in real-time, such an attack is more powerful. In this article, we design a sybil-based backdoor poisoning attacks (SBPA) against the above vulnerability. Malicious participants inject backdoor triggers into distributed Big Data to covertly complete data poisoning. During subsequent iterative aggregation, the joint model activates the backdoor during testing to achieve misclassification for the backdoor images. Besides, malicious participants create some sybil nodes to join the aggregation by taking advantage of the vulnerability of system devices to be easily disconnected. They are committed to making the poisoned local models aggregated with higher probability. Their goal works on making the final global model misclassify backdoor images while keeping high classification accuracy on the other non-backdoor samples. We conduct extensive experiments on multiple datasets and exhibit more robust performance than the state-of-the-art in various metrics under both data distribution including i.i.d. and non-i.i.d. scenarios.},
+  archive  = {J},
+  author   = {Xiong Xiao and Zhuo Tang and Chuanying Li and Bingting Jiang and Kenli Li},
+  doi      = {10.1109/TBDATA.2022.3224392},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {827-838},
+  title    = {SBPA: Sybil-based backdoor poisoning attacks for distributed big data in AIoT-based federated learning system},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Towards effective clustered federated learning: A
+peer-to-peer framework with adaptive neighbor matching. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(6), 812–826. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3222971">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In federated learning (FL), clients may have diverse objectives, and merging all clients’ knowledge into one global model will cause negative transfer to local performance. Thus, clustered FL is proposed to group similar clients into clusters and maintain several global models. In the literature, centralized clustered FL algorithms require the assumption of the number of clusters and hence are not effective enough to explore the latent relationships among clients. In this article, without assuming the number of clusters, we propose a peer-to-peer (P2P) FL algorithm named PANM . In PANM , clients communicate with peers to adaptively form an effective clustered topology. Specifically, we present two novel metrics for measuring client similarity and a two-stage neighbor matching algorithm based Monte Carlo method and Expectation Maximization under the Gaussian Mixture Model assumption. We have conducted theoretical analyses of PANM on the probability of neighbor estimation and the error gap to the clustered optimum. We have also implemented extensive experiments under both synthetic and real-world clustered heterogeneity. Theoretical analysis and empirical experiments show that the proposed algorithm is superior to the P2P FL counterparts, and it achieves better performance than the centralized cluster FL method. PANM is effective even under extremely low communication budgets.},
+  archive  = {J},
+  author   = {Zexi Li and Jiaxun Lu and Shuang Luo and Didi Zhu and Yunfeng Shao and Yinchuan Li and Zhimeng Zhang and Yongheng Wang and Chao Wu},
+  doi      = {10.1109/TBDATA.2022.3222971},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {812-826},
+  title    = {Towards effective clustered federated learning: A peer-to-peer framework with adaptive neighbor matching},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). MarS-FL: Enabling competitors to collaborate in federated
+learning. <em>IEEE Transactions on Big Data</em>, <em>10</em>(6),
+801–811. (<a href="https://doi.org/10.1109/TBDATA.2022.3186991">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated learning (FL) is rapidly gaining popularity and enables multiple data owners ( a.k.a. FL participants) to collaboratively train machine learning models in a privacy-preserving way. A key unaddressed scenario is that these FL participants are in a competitive market, where market shares represent their competitiveness. Although they are interested to enhance the performance of their respective models through FL, market leaders (who are often data owners who can contribute significantly to building high performance FL models) want to avoid losing their market shares by enhancing their competitors’ models. Currently, there is no modeling tool to analyze such scenarios and support informed decision-making. In this paper, we bridge this gap by proposing the mar ket s hare-based decision support framework for participation in FL (MarS-FL). We introduce two notions of $\delta$&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:mi&gt;δ&lt;/mml:mi&gt;&lt;/mml:math&gt;-stable market and friendliness to measure the viability of FL and the market acceptability of FL. The FL participants’ behaviours can then be predicted using game theoretic tools (i.e., their optimal strategies concerning participation in FL). If the market $\delta$ -stability is achievable, the final model performance improvement of each FL-PT shall be bounded, which relates to the market conditions of FL applications. We provide tight bounds and quantify the friendliness, $\kappa$ , of given market conditions to FL. Experimental results show the viability of FL in a wide range of market conditions. Our results are useful for identifying the market conditions under which collaborative FL model training is viable among competitors, and the requirements that have to be imposed while applying FL under these conditions.},
+  archive  = {J},
+  author   = {Xiaohu Wu and Han Yu},
+  doi      = {10.1109/TBDATA.2022.3186991},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {801-811},
+  title    = {MarS-FL: Enabling competitors to collaborate in federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Learning critically: Selective self-distillation in
+federated learning on non-IID data. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 789–800. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3189703">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated learning (FL) enables multiple clients to collaboratively train a global model while keeping local data decentralized. Data heterogeneity (non-IID) across clients has imposed significant challenges to FL, which makes local models re-optimize towards their own local optima and forget the global knowledge, resulting in performance degradation and convergence slowdown. Many existing works have attempted to address the non-IID issue by adding an extra global-model-based regularizing item to the local training but without an adaption scheme, which is not efficient enough to achieve high performance with deep learning models. In this paper, we propose a Selective Self-Distillation method for Federated learning (FedSSD), which imposes adaptive constraints on the local updates by self-distilling the global model&#39;s knowledge and selectively weighting it by evaluating the credibility at both the class and sample level. The convergence guarantee of FedSSD is theoretically analyzed and extensive experiments are conducted on three public benchmark datasets, which demonstrates that FedSSD achieves better generalization and robustness in fewer communication rounds, compared with other state-of-the-art FL methods.},
+  archive  = {J},
+  author   = {Yuting He and Yiqiang Chen and XiaoDong Yang and Hanchao Yu and Yi-Hua Huang and Yang Gu},
+  doi      = {10.1109/TBDATA.2022.3189703},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {789-800},
+  title    = {Learning critically: Selective self-distillation in federated learning on non-IID data},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). PKDGAN: Private knowledge distillation with generative
+adversarial networks. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 775–788. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3216566">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The deployment of deep learning applications has to address the increasing privacy concerns when using private and sensitive data for training. A conventional deep learning model is prone to privacy attacks that can recover the sensitive information from either model parameters or accesses to the inference model. Recently, differential privacy (DP) has been proposed to offer provable privacy guarantees by randomizing the training process of neural networks. However, many approaches tend to provide the worst case privacy protection for model publishing, inevitably impairing the accuracy of the trained models. Thus, we present a novel private knowledge transfer strategy, where the private teacher trained on sensitive data is not publicly accessible but the student models can be released with privacy guarantees. In this paper, a three-player (teacher-student-discriminator) learning framework, Private Knowledge Distillation with Generative Adversarial Networks (PKDGAN), is proposed, where the student acquires the distilled knowledge from the teacher and is trained with the discriminator to generate similar outputs as the teacher. Moreover, a cooperative learning strategy is also suggested to support the collective training of multiple students against the discriminator when each student is with insufficient unlabelled training data. To enforce rigorous privacy guarantees, PKDGAN applies a Rényi differential privacy mechanism throughout the training process, and use it with a moment accountant technique to track the privacy cost. PKDGAN allows students to be trained with unlabelled public data and very few epochs, which avoids the exposure of training data while ensuring model performance. In the experiments, PKDGAN is found to have consistently good performance on various datasets (MNIST, SVHN, CIFAR-10, and Market-1501). When compared to prior works Papernot et al., 2016, Wang et al. 2019, PKDGAN exhibits 5-82% accuracy loss improvement without compromising any privacy guarantee.},
+  archive  = {J},
+  author   = {Cheng Zhuo and Di Gao and Liangwei Liu},
+  doi      = {10.1109/TBDATA.2022.3216566},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {775-788},
+  title    = {PKDGAN: Private knowledge distillation with generative adversarial networks},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). ESB-FL: Efficient and secure blockchain-based federated
+learning with fair payment. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 761–774. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3177170">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated learning (FL) is a technique that enables multiple parties to collaboratively train a model without sharing raw private data, and it is ideal for smart healthcare. However, it raises new privacy concerns due to the risk of privacy-sensitive medical data leakage. It is not until recently that the privacy-preserving FL (PPFL) has been introduced as a solution to ensure the privacy of training processes. Unfortunately, most existing PPFL schemes are highly dependent on complex cryptographic mechanisms or fail to guarantee the accuracy of training models. Besides, there has been little research on the fairness of the payment procedure in the PPFL with incentive mechanisms. To address the above concerns, we first construct an efficient non-interactive designated decryptor function encryption (NDD-FE) scheme to protect the privacy of training data while maintaining high communication performance. We then propose a blockchain-based PPFL framework with fair payment for medical image detection, namely ESB-FL, by combining the NDD-FE and an elaborately designed blockchain. ESB-FL not only inherits the characteristics of the NDD-FE scheme, but it also ensures the interests of each participant. We finally conduct extensive security analysis and experiments to show that our new framework has enhanced security, good accuracy, and high efficiency.},
+  archive  = {J},
+  author   = {Biwen Chen and Honghong Zeng and Tao Xiang and Shangwei Guo and Tianwei Zhang and Yang Liu},
+  doi      = {10.1109/TBDATA.2022.3177170},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {761-774},
+  title    = {ESB-FL: Efficient and secure blockchain-based federated learning with fair payment},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Accelerating vertical federated learning. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(6), 752–760. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3192898">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Privacy, security and data governance constraints rule out a brute force process in the integration of cross-silo data, which inherits the development of the Internet of Things. Federated learning is proposed to ensure that all parties can collaboratively complete the training task while the data is not out of the local. Vertical federated learning is a specialization of federated learning for distributed features. To preserve privacy, homomorphic encryption is applied to enable encrypted operations without decryption. Nevertheless, together with a robust security guarantee, homomorphic encryption brings extra communication and computation overhead. In this paper, we analyze the current bottlenecks of vertical federated learning under homomorphic encryption comprehensively and numerically. We propose a straggler-resilient and computation-efficient accelerating system that reduces the communication overhead in heterogeneous scenarios by 65.26% at most and reduces the computation overhead caused by homomorphic encryption by 40.66% at most. Our system can improve the robustness and efficiency of the current vertical federated learning framework without loss of security.},
+  archive  = {J},
+  author   = {Dongqi Cai and Tao Fan and Yan Kang and Lixin Fan and Mengwei Xu and Shangguang Wang and Qiang Yang},
+  doi      = {10.1109/TBDATA.2022.3192898},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {752-760},
+  title    = {Accelerating vertical federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Augmented multi-party computation against gradient leakage
+in federated learning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 742–751. (<a
+href="https://doi.org/10.1109/TBDATA.2022.3208736">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Multi-Party Computation (MPC) provides an effective cryptographic solution for distributed computing systems so that local models with sensitive information are encrypted before sending to the centralized servers for aggregation. Though direct local knowledge leakages are eliminated in MPC-based algorithms, we observe the server can still obtain the local information indirectly in many scenarios, or even reveal the groundtruth images through methods like Deep Leakage from Gradients (DLG). To eliminate such possibilities and provide stronger protections, we propose an augmented MPC approach by encrypting local models with two rounds of decomposition before transmitting to the server. The proposed solution allows us to remove the constraint that servers must be honest in the general federated learning settings since the true global model is hidden from the servers. Specifically, the augmented MPC algorithm encodes local models into multiple secret shares in the first round, then each share is furthermore split into a public share and a private share. Consequences of such a two-round decomposition are that the augmented algorithm fully inherits the advantages of standard MPC by providing lossless encryption and decryption while simultaneously rendering the global model invisible to the central server. Both theoretical analysis and experimental verification demonstrate that such an augmented solution can provide stronger protections for the security and privacy of the training data, with minimal extra communication and computation costs incurred.},
+  archive  = {J},
+  author   = {Chi Zhang and Sotthiwat Ekanut and Liangli Zhen and Zengxiang Li},
+  doi      = {10.1109/TBDATA.2022.3208736},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {742-751},
+  title    = {Augmented multi-party computation against gradient leakage in federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Higher-order smoothness enhanced graph collaborative
+filtering. <em>IEEE Transactions on Big Data</em>, <em>10</em>(6),
+731–741. (<a href="https://doi.org/10.1109/TBDATA.2024.3453758">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Graph Neural Networks (GNNs) based recommendations have shown significant performance improvement by explicitly modeling the user-item interactions as a bipartite graph. However, the existing GNNs-based recommendation methods suffer from the over-smoothing problem caused by utilizing the uniform distance of the reception field. To address this issue, we propose to explicitly incorporate the higher-order smoothness information into the node representation learning, and propose a new GNNs-based recommendation model named H igher-order S moothness enhanced G raph C ollaborative F iltering (HS-GCF). The proposed model is mainly composed of two parts, namely lower-order module and higher-order module. The lower-order module guarantees that the lower-order smoothness is well obtained by using the user-item interactions. The higher-order module uses the latent group assumption to restrict too much noise introduced by the uniform distance property, which we call the higher-order smoothness information. Experiments are conducted on three real-world public datasets, and the experimental results show the performance improvements compared with several state-of-the-art methods and verify the importance of explicitly incorporating the higher-order smoothness information into the node representation learning.},
+  archive  = {J},
+  author   = {Ling Huang and Zhi-Yuan Li and Zhen-Yu He and Yuefang Gao},
+  doi      = {10.1109/TBDATA.2024.3453758},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {731-741},
+  title    = {Higher-order smoothness enhanced graph collaborative filtering},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). AKGNN: Attribute knowledge graph neural networks
+recommendation for corporate volunteer activities. <em>IEEE Transactions
+on Big Data</em>, <em>10</em>(6), 720–730. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3453761">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Due to the collective decision-making nature of enterprises, the process of accepting recommendations is predominantly characterized by an analytical synthesis of objective requirements and cost-effectiveness, rather than being rooted in individual interests. This distinguishes enterprise recommendation scenarios from those tailored for individuals or groups formed by similar individuals, rendering traditional recommendation algorithms less applicable in the corporate context. To overcome the challenges, by taking the corporate volunteer as an example, which aims to recommend volunteer activities to enterprises, we propose a novel recommendation model called A ttribute K nowledge G raph N eural N etworks (AKGNN). Specifically, a novel comprehensive attribute knowledge graph is constructed for enterprises and volunteer activities, based on which we obtain the feature representation. Then we utilize an e xtended V ariational A uto- E ncoder (eVAE) model to learn the preferences representation and then we utilize a GNN model to learn the comprehensive representation with representation of the similar nodes. Finally, all the comprehensive representations are input to the prediction layer. Extensive experiments have been conducted on real datasets, confirming the advantages of the AKGNN model. We delineate the challenges faced by recommendation algorithms in Business-to-Business (B2B) platforms and introduces a novel research approach utilizing attribute knowledge graphs.},
+  archive  = {J},
+  author   = {Dan Du and Pei-Yuan Lai and Yan-Fei Wang and De-Zhang Liao and Min Chen},
+  doi      = {10.1109/TBDATA.2024.3453761},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {720-730},
+  title    = {AKGNN: Attribute knowledge graph neural networks recommendation for corporate volunteer activities},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). EduGraph: Learning path-based hypergraph neural networks for
+MOOC course recommendation. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 706–719. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3453757">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In online learning, personalized course recommendations that align with learners’ preferences and future needs are essential. Thus, the development of efficient recommender systems is crucial to guide learners to appropriate courses. Graph learning in recommender systems has been extensively studied, yet many models focus on low-frequency information, underscoring similar learner preferences and overlooking high-frequency data that indicates varied learning trajectories. Furthermore, course co-occurrence and sequential relationships are often insufficiently investigated. In this paper, we introduce EduGraph , a novel framework developed specifically for MOOC course recommendation systems. EduGraph is characterized by its incorporation of a learning path-based hypergraph, a unique perspective wherein learners are represented as hyperedges, and courses are delineated as vertices. The framework incorporates a framelet-based hypergraph convolution, integrating low-pass filters to highlight similarities and high-pass filters to underscore distinct learning paths among learners. Furthermore, EduGraph features a dual hypergraph learning model, with channels designated for vertex and hyperedge encoding, fostering a collaborative information exchange that refines the learners’ preference embeddings. The empirical assessment of EduGraph is conducted through a comprehensive comparison with many existing baselines, utilizing two distinct MOOC datasets. Our experimental studies not only emphasize the enhanced recommendation performance of EduGraph but also elucidate the significant contributions of its individual components, such as the integration of low-pass and high-pass filters and the framelet-wise collaborative strategy that effectively bridges hyperedge-level and vertex-level representations, augmenting the overall efficacy of the course recommendation system.},
+  archive  = {J},
+  author   = {Ming Li and Zhao Li and Changqin Huang and Yunliang Jiang and Xindong Wu},
+  doi      = {10.1109/TBDATA.2024.3453757},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {706-719},
+  title    = {EduGraph: Learning path-based hypergraph neural networks for MOOC course recommendation},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Reliable data augmented contrastive learning for sequential
+recommendation. <em>IEEE Transactions on Big Data</em>, <em>10</em>(6),
+694–705. (<a href="https://doi.org/10.1109/TBDATA.2024.3453752">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Sequential recommendation aims to capture users’ dynamic preferences. Due to the limited information in the sequence and the uncertain user behavior, data sparsity has always been a key problem. Although data augmentation methods can alleviate this issue, unreliable data can affect the performance of such models. To solve the above problems, we propose a new framework, namely R eliable D ata Augmented C ontrastive Learning Rec ommender (RDCRec). Specifically, in order to generate more high-quality reliable items for data augmentation, we design a multi-attributes oriented sequence generator. It moves auxiliary information from the input layer to the attention layer for learning a better attention distribution. Then, we replace a percentage of items in the original sequence with reliable items generated by the generator as the augmented sequence, for creating a high-quality view for contrastive learning. In this way, RDCRec can extract more meaningful user patterns by using the self-supervised signals of the reliable items, thereby improving recommendation performance. Finally, we train a discriminator to identify unreplaced items in the augmented sequence thus we can update item embeddings selectively in order to increase the exposure of more reliable items and improve the accuracy of recommendation results. The discriminator, as an auxiliary model, is jointly trained with the generative task and the contrastive learning task. Large experiments on four popular datasets that are commonly used demonstrate the effectiveness of our new method for sequential recommendation.},
+  archive  = {J},
+  author   = {Mankun Zhao and Aitong Sun and Jian Yu and Xuewei Li and Dongxiao He and Ruiguo Yu and Mei Yu},
+  doi      = {10.1109/TBDATA.2024.3453752},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {694-705},
+  title    = {Reliable data augmented contrastive learning for sequential recommendation},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Denoised graph collaborative filtering via neighborhood
+similarity and dynamic thresholding. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(6), 683–693. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3453765">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Graph collaborative filtering (GCF) has achieved great success in recommender systems due to its ability in mining high-order collaborative signals from historical user-item interactions. However, GCF&#39;s performance could be severely affected by the intrinsic noise within the user-item interactions. To this end, several denoised GCF frameworks have been proposed, whose heart is to estimate and handle the reliability of existing interactions. However, most of them suffer from two limitations: 1) the reliability computation itself is noisy, and 2) the reliability threshold is difficult to determine. To address the two limitations, in this paper, we propose a new N eighborhood- i nformed Den oising framework NiDen for GCF. Specifically, for an existing user-item interaction, NiDen first estimates its reliability by employing the neighborhood information of the user and the item, and then determines whether the interaction is noisy or not via a dynamic thresholding strategy. After that, NiDen mitigates the negative impact of noise by both structure denoising and sample re-weighting. We instantiate NiDen on two representative GCF models and conduct extensive experiments on four widely-used datasets. The results show that NiDen achieves the best performance compared to the existing denoising methods, especially on datasets with heavy noise.},
+  archive  = {J},
+  author   = {Haibo Ye and Lijun Zhang and Yuan Yao and Sheng-Jun Huang},
+  doi      = {10.1109/TBDATA.2024.3453765},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {12},
+  number   = {6},
+  pages    = {683-693},
+  title    = {Denoised graph collaborative filtering via neighborhood similarity and dynamic thresholding},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Guest editorial TBD special issue on graph machine learning
+for recommender systems. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(6), 682. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3452328">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J},
+  author  = {Senzhang Wang and Changdong Wang and Di Jin and Shirui Pan and Philip S. Yu},
+  doi     = {10.1109/TBDATA.2024.3452328},
+  journal = {IEEE Transactions on Big Data},
+  month   = {12},
+  number  = {6},
+  pages   = {682},
+  title   = {Guest editorial TBD special issue on graph machine learning for recommender systems},
+  volume  = {10},
+  year    = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A fast and robust attention-free heterogeneous graph
+convolutional network. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(5), 669–681. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3375152">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Due to the widespread applications of heterogeneous graphs in the real world, heterogeneous graph neural networks (HGNNs) have developed rapidly and made a great success in recent years. To effectively capture the complex interactions in heterogeneous graphs, various attention mechanisms are widely used in designing HGNNs. However, the employment of these attention mechanisms brings two key problems: high computational complexity and poor robustness. To address these problems, we propose a Fast and Ro bust attention-free H eterogeneous G raph C onvolutional N etwork (FastRo-HGCN) without any attention mechanisms. Specifically, we first construct virtual links based on the topology similarity and feature similarity of the nodes to strengthen the connections between the target nodes. Then, we design type normalization to aggregate and transfer the intra-type and inter-type node information. The above methods are used to reduce the interference of noisy information. Finally, we further enhance the robustness and relieve the negative effects of oversmoothing with the self-loops of nodes. Extensive experimental results on three real-world datasets fully demonstrate that the proposed FastRo-HGCN significantly outperforms the state-of-the-art models.},
+  archive  = {J},
+  author   = {Yeyu Yan and Zhongying Zhao and Zhan Yang and Yanwei Yu and Chao Li},
+  doi      = {10.1109/TBDATA.2024.3375152},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {669-681},
+  title    = {A fast and robust attention-free heterogeneous graph convolutional network},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). FAER: Fairness-aware event-participant recommendation in
+event-based social networks. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(5), 655–668. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3372409">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The e vent- b ased s ocial n etwork (EBSN) is a new type of social network that combines online and offline networks. In recent years, an important task in EBSN recommendation systems has been to design better and more reasonable recommendation algorithms to improve the accuracy of recommendation and enhance user satisfaction. However, the current research seldom considers how to coordinate fairness among individual users and reduce the impact of individual unreasonable feedback in group event recommendation. In addition, when considering the fairness to individuals, the accuracy of recommendation is not greatly improved by fully incorporating the key context information. To solve these problems, we propose a prefiltering algorithm to filter the candidate event set, a multidimensional context recommendation method to provide personalized event recommendations for each user in the group, and a group consensus function fusion strategy to fuse the recommendation results of the members of the group. To improve overall satisfaction with the recommendations, we propose a ranking adjustment strategy for the key context. Finally, we verify the effectiveness of our proposed algorithm on real data sets and find that FAER is superior to the latest algorithms in terms of global satisfaction, distance satisfaction and user fairness.},
+  archive  = {J},
+  author   = {Yuan Liang},
+  doi      = {10.1109/TBDATA.2024.3372409},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {655-668},
+  title    = {FAER: Fairness-aware event-participant recommendation in event-based social networks},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An end-to-end approach for graph-based multi-view data
+clustering. <em>IEEE Transactions on Big Data</em>, <em>10</em>(5),
+644–654. (<a href="https://doi.org/10.1109/TBDATA.2024.3371357">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Clustering data from different sources or views is a key challenge in real-world applications. While traditional graph-based methods are effective at capturing data structures, they often require separate steps to estimate graphs of views or a consensus graph from the raw data. This reliance on intermediate steps can make these clustering methods susceptible to noisy graphs, which affects the overall performance of clustering. In response to this limitation, and with an emphasis on advocating end-to-end solutions for multi-view clustering, two comprehensive approaches are presented in this paper. Each approach starts from either the raw data or its kernelized features. The first proposal introduces a unified objective function that enables the simultaneous recovery of the graph for each view, the unified graph, the spectral projection matrices for all views, the soft cluster assignments, and the scores assigned to each view. The second proposal uses a global criterion that integrates regularization and constraints for the soft cluster assignment matrix based on the consensus graph matrix and the consensus data representation. Both proposed methods enable direct and straightforward clustering of the data without the need for additional steps. Extensive tests with various real-world image and text datasets confirm the superior performance of the two proposed methods.},
+  archive  = {J},
+  author   = {Fadi Dornaika and Sally El Hajjar},
+  doi      = {10.1109/TBDATA.2024.3371357},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {644-654},
+  title    = {An end-to-end approach for graph-based multi-view data clustering},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Using app usage data from mobile devices to improve
+activity-based travel demand models. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(5), 633–643. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3366088">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In the last years we have seen several studies showing the potential of mobile network data to reconstruct activity and mobility patterns of the population. These data sources allow continuous monitoring of the population with a higher degree of spatial and temporal resolution and at a lower cost compared with traditional methods. However, for certain applications, the spatial resolution of these data sources is still not enough since it typically provides a spatial resolution of hundreds of meters in urban areas and of few kilometers in rural areas. In this article, we fill this gap by proposing a methodology that utilises GPS data from the usage of different applications in mobile devices. This approach improves the spatial precision in the location of activities, previously identified with the mobile network data.},
+  archive  = {J},
+  author   = {Ana Belén Rodríguez González and Javier Burrieza-Galán and Juan José Vinagre Díaz and Inés Peirats de Castro and Mark Richard Wilby and Oliva Garcia Cantú-Ros},
+  doi      = {10.1109/TBDATA.2024.3366088},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {633-643},
+  title    = {Using app usage data from mobile devices to improve activity-based travel demand models},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). HGN2T: A simple but plug-and-play framework extending HGNNs
+on heterogeneous temporal graphs. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(5), 620–632. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3366085">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Heterogeneous graphs (HGs) with multiple entity and relation types are common in real-world networks. Heterogeneous graph neural networks (HGNNs) have shown promise for learning HG representations. However, most HGNNs are designed for static HGs and are not compatible with heterogeneous temporal graphs (HTGs). A few existing works have focused on HTG representation learning but they care more about how to capture the dynamic evolutions and less about their compatibility with those well-designed static HGNNs. They also handle graph structure and temporal dependency learning separately, ignoring that HTG evolutions are influenced by both nodes and relationships. To address this, we propose HGN2T, a simple and general framework that makes static HGNNs compatible with HTGs. HGN2T is plug-and-play, enabling static HGNNs to leverage their graph structure learning strengths. To capture the relationship-influenced evolutions, we design a special mechanism coupling both the HGNN and sequential model. Finally, through joint optimization by both detection and prediction tasks, the learned representations can fully capture temporal dependencies from historical information. We conduct several empirical evaluation tasks, and the results show our HGN2T can adapt static HGNNs to HTGs and overperform existing methods for HTGs.},
+  archive  = {J},
+  author   = {Huan Liu and Pengfei Jiao and Xuan Guo and Huaming Wu and Mengzhou Gao and Jilin Zhang},
+  doi      = {10.1109/TBDATA.2024.3366085},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {620-632},
+  title    = {HGN2T: A simple but plug-and-play framework extending HGNNs on heterogeneous temporal graphs},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Unsupervised cross-view subspace clustering via adaptive
+contrastive learning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(5), 609–619. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3366084">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Cross-view subspace clustering has become a popular unsupervised method for cross-view data analysis because it can extract both the consistent and complementary features of data for different views. Nonetheless, existing methods usually ignore the discriminative features due to a lack of label supervision, which limits its further improvement in clustering performance. To address this issue, we design a novel model that leverages the self-supervision information embedded in the data itself by combining contrastive learning and self-expression learning, i.e., unsupervised cross-view subspace clustering via adaptive contrastive learning (CVCL). Specifically, CVCL employs an encoder to learn a latent subspace from the cross-view data and convert it to a consistent subspace with a self-expression layer. In this way, contrastive learning helps to provide more discriminative features for the self-expression learning layer, and the self-expression learning layer in turn supervises contrastive learning. Besides, CVCL adaptively chooses positive and negative samples for contrastive learning to reduce the noisy impact of improper negative sample pairs. Ultimately, the decoder is designed for reconstruction tasks, operating on the output of the self-expressive layer, and strives to faithfully restore the original data as much as possible, ensuring that the encoded features are potentially effective. Extensive experiments conducted across multiple cross-view datasets showcase the exceptional performance and superiority of our model.},
+  archive  = {J},
+  author   = {Zihao Zhang and Qianqian Wang and Quanxue Gao and Chengquan Pei and Wei Feng},
+  doi      = {10.1109/TBDATA.2024.3366084},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {609-619},
+  title    = {Unsupervised cross-view subspace clustering via adaptive contrastive learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Core maintenance on dynamic graphs: A distributed approach
+built on h-index. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(5), 595–608. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3352973">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Core number is an essential tool for analyzing graph structure. Graphs in the real world are typically large and dynamic, requiring the development of distributed algorithms to refrain from expensive I/O operations and the maintenance algorithms to address dynamism. Core maintenance updates the core number of each vertex upon the insertion/deletion of vertices/edges. Although the state-of-the-art distributed maintenance algorithm (Weng et al.~2022) can handle multiple edge insertions/deletions simultaneously, it still has two aspects to improve. (I) Parallel processing is not allowed when inserting/removing edges with the same core number, reducing the degree of parallelism and raising the number of rounds. (II) During the implementation phase, only one thread is assigned to the vertices with the same core number, leading to the inability to fully utilize the distributed computing power. Furthermore, the h-index (Lü, et al. 2016) based distributed core decomposition algorithm (Montresor et al. 2013) can fully utilize the distributed computing power where all vertices can be processed in parallel. However, it requires all vertices to recompute their core numbers upon graph changes. In this article, we propose a distributed core maintenance algorithm based on h-index, which circumvents the issues of algorithm (Weng et al.~2022). In addition, our algorithm avoids core numbers recalculation where the numbers do not change. In comparison to the state-of-the-art distributed maintenance algorithm (Weng et al.~2022), the time speedup ratio is at least 100 in the scenarios of both insertion and deletion. Compared to the distributed core decomposition algorithm (Montresor et al. 2013), the average time speedup ratios are 2 and 8 for the cases of insertion and deletion, respectively.},
+  archive  = {J},
+  author   = {Qiang-Sheng Hua and Hongen Wang and Hai Jin and Xuanhua Shi},
+  doi      = {10.1109/TBDATA.2024.3352973},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {595-608},
+  title    = {Core maintenance on dynamic graphs: A distributed approach built on H-index},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Natural language processing for arabic sentiment analysis: A
+systematic literature review. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(5), 576–594. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3366083">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Sentiment analysis involves using computational methods to identify and classify opinions expressed in text, with the goal of determining whether the writer&#39;s stance towards a particular topic, product, or idea is positive, negative, or neutral. However, sentiment analysis in Arabic presents unique challenges due to the complexity of Arabic morphology and the variety of dialects, which make language classification even more difficult. To address these challenges, we conducted to investigation and overview the techniques used in the last five years for embedding and classification of Arabic sentiment analysis (ASA). We collected data from 100 publications, resulting in a representative dataset of 2,300 detailed records that included attributes related to the dataset, feature extraction, approach, parameters, and performance measures. Our study aimed to identify the most powerful approaches and best model settings by analyzing the collected data to identify the significant parameters influencing performance. The results showed that Deep Learning and Machine Learning were the most commonly used techniques, followed by lexicon and transformer-based techniques. However, Deep Learning models were found to be more accurate for sentiment classification than other Machine Learning models. Furthermore, multi-level embedding was found to be a significant step in improving model accuracy.},
+  archive  = {J},
+  author   = {Souha Al Katat and Chamseddine Zaki and Hussein Hazimeh and Ibrahim El Bitar and Rafael Angarita and Lionel Trojman},
+  doi      = {10.1109/TBDATA.2024.3366083},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {10},
+  number   = {5},
+  pages    = {576-594},
+  title    = {Natural language processing for arabic sentiment analysis: A systematic literature review},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). ALTRUIST: A python package to emulate a virtual digital
+cohort study using social media data. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(4), 568–575. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3362193">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Epidemiological cohort studies play a crucial role in identifying risk factors for various outcomes among participants. These studies are often time-consuming and costly due to recruitment and long-term follow-up. Social media (SM) data has emerged as a valuable complementary source for digital epidemiology and health research, as online communities of patients regularly share information about their illnesses. Unlike traditional clinical questionnaires, SM offer unstructured but insightful information about patients’ disease burden. Yet, there is limited guidance on analyzing SM data as a prospective cohort. We presented the concept of virtual digital cohort studies (VDCS) as an approach to replicate cohort studies using SM data. In this paper, we introduce ALTRUIST, an open-source Python package enabling standardized generation of VDCS on SM. ALTRUIST facilitates data collection, preprocessing, and analysis steps that mimic a traditional cohort study. We provide a practical use case focusing on diabetes to illustrate the methodology. By leveraging SM data, which offers large-scale and cost-effective information on users’ health, we demonstrate the potential of VDCS as an essential tool for specific research questions. ALTRUIST is customizable and can be applied to data from various online communities of patients, complementing traditional epidemiological methods and promoting minimally disruptive health research.},
+  archive  = {J},
+  author   = {Charline Bour and Abir Elbeji and Luigi De Giovanni and Adrian Ahne and Guy Fagherazzi},
+  doi      = {10.1109/TBDATA.2024.3362193},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {568-575},
+  title    = {ALTRUIST: A python package to emulate a virtual digital cohort study using social media data},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Dynamic hypergraph structure learning for multivariate time
+series forecasting. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 556–567. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3362188">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Multivariate time series forecasting plays an important role in many domain applications, such as air pollution forecasting and traffic forecasting. Modeling the complex dependencies among time series is a key challenging task in multivariate time series forecasting. Many previous works have used graph structures to learn inter-series correlations, which have achieved remarkable performance. However, graph networks can only capture spatio-temporal dependencies between pairs of nodes, which cannot handle high-order correlations among time series. We propose a Dynamic Hypergraph Structure Learning model (DHSL) to solve the above problems. We generate dynamic hypergraph structures from time series data using the K-Nearest Neighbors method. Then a dynamic hypergraph structure learning module is used to optimize the hypergraph structure to obtain more accurate high-order correlations among nodes. Finally, the hypergraph structures dynamically learned are used in the spatio-temporal hypergraph neural network. We conduct experiments on six real-world datasets. The prediction performance of our model surpasses existing graph network-based prediction models. The experimental results demonstrate the effectiveness and competitiveness of the DHSL model for multivariate time series forecasting.},
+  archive  = {J},
+  author   = {Shun Wang and Yong Zhang and Xuanqi Lin and Yongli Hu and Qingming Huang and Baocai Yin},
+  doi      = {10.1109/TBDATA.2024.3362188},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {556-567},
+  title    = {Dynamic hypergraph structure learning for multivariate time series forecasting},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). LGRL: Local-global representation learning for on-the-fly
+FG-SBIR. <em>IEEE Transactions on Big Data</em>, <em>10</em>(4),
+543–555. (<a href="https://doi.org/10.1109/TBDATA.2024.3356393">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {On-the-fly Fine-grained sketch-based image retrieval (On-the-fly FG-SBIR) framework aim to break the barriers that sketch drawing requires excellent skills and is time-consuming. Considering such problems, a partial sketch with fewer strokes contains only the little local information, and the drawing process may show great difference among users, resulting in poor performance at the early retrieval. In this study, we developed a local-global representation learning (LGRL) method, in which we learn the representations for both the local and global regions of the partial sketch and its target photos. Specifically, we first designed a triplet network to learn the joint embedding space shared between the local and global regions of the entire sketch and its corresponding region of the photo. Then, we divided each partial sketch in the sketch-drawing episode into several local regions; Another learnable module following the triplet network was designed to learn the representations for the local regions of the partial sketch. Finally, by combining both the local and global regions of the sketches and photos, the final distance was determined. In the experiments, our method outperformed state-of-the-art baseline methods in terms of early retrieval efficiency on two publicly sketch-retrieval datasets and the practice test.},
+  archive  = {J},
+  author   = {Dawei Dai and Yingge Liu and Yutang Li and Shiyu Fu and Shuyin Xia and Guoyin Wang},
+  doi      = {10.1109/TBDATA.2024.3356393},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {543-555},
+  title    = {LGRL: Local-global representation learning for on-the-fly FG-SBIR},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). GAT-COBO: Cost-sensitive graph neural network for telecom
+fraud detection. <em>IEEE Transactions on Big Data</em>, <em>10</em>(4),
+528–542. (<a href="https://doi.org/10.1109/TBDATA.2024.3352978">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Along with the rapid evolution of mobile communication technologies, such as 5G, there has been a significant increase in telecom fraud, which severely dissipates individual fortune and social wealth. In recent years, graph mining techniques are gradually becoming a mainstream solution for detecting telecom fraud. However, the graph imbalance problem, caused by the Pareto principle, brings severe challenges to graph data mining. This emerging and complex issue has received limited attention in prior research. In this paper, we propose a G raph AT tention network with CO st-sensitive BO osting (GAT-COBO) for the graph imbalance problem. First, we design a GAT-based base classifier to learn the embeddings of all nodes in the graph. Then, we feed the embeddings into a well-designed cost-sensitive learner for imbalanced learning. Next, we update the weights according to the misclassification cost to make the model focus more on the minority class. Finally, we sum the node embeddings obtained by multiple cost-sensitive learners to obtain a comprehensive node representation, which is used for the downstream anomaly detection task. Extensive experiments on two real-world telecom fraud detection datasets demonstrate that our proposed method is effective for the graph imbalance problem, outperforming the state-of-the-art GNNs and GNN-based fraud detectors. In addition, our model is also helpful for solving the widespread over-smoothing problem in GNNs.},
+  archive  = {J},
+  author   = {Xinxin Hu and Haotian Chen and Junjie Zhang and Hongchang Chen and Shuxin Liu and Xing Li and Yahui Wang and Xiangyang Xue},
+  doi      = {10.1109/TBDATA.2024.3352978},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {528-542},
+  title    = {GAT-COBO: Cost-sensitive graph neural network for telecom fraud detection},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Scalable unsupervised hashing via exploiting robust
+cross-modal consistency. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 514–527. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3350541">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Unsupervised cross-modal hashing has received increasing attention because of its efficiency and scalability for large-scale data retrieval and analysis. However, existing unsupervised cross-modal hashing methods primarily focus on learning shared feature embedding, ignoring robustness and consistency across different modalities. To this end, this study proposes a novel method called scalable unsupervised hashing (SUH) for large-scale cross-modal retrieval. In the proposed method, latent semantic information and common semantic embedding within heterogeneous data are simultaneously exploited using multimodal clustering and collective matrix factorization, respectively. Furthermore, the robust norm is seamlessly integrated into the two processes, making SUH insensitive to outliers. Based on the robust consistency exploited from the latent semantic information and feature embedding, hash codes can be learned discretely to avoid cumulative quantitation loss. The experimental results on five benchmark datasets demonstrate the effectiveness of the proposed method under various scenarios.},
+  archive  = {J},
+  author   = {Xingbo Liu and Jiamin Li and Xiushan Nie and Xuening Zhang and Shaohua Wang and Yilong Yin},
+  doi      = {10.1109/TBDATA.2024.3350541},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {514-527},
+  title    = {Scalable unsupervised hashing via exploiting robust cross-modal consistency},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Enhanced multi-scale features mutual mapping fusion based on
+reverse knowledge distillation for industrial anomaly detection and
+localization. <em>IEEE Transactions on Big Data</em>, <em>10</em>(4),
+498–513. (<a href="https://doi.org/10.1109/TBDATA.2024.3350539">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Unsupervised anomaly detection methods based on knowledge distillation have exhibited promising results. However, there is still room for improvement in the differential characterization of anomalous samples. In this article, a novel anomaly detection and localization model based on reverse knowledge distillation is proposed, where an enhanced multi-scale feature mutual mapping feature fusion module is proposed to greatly extract discrepant features at different scales. This module helps enhance the difference in anomaly region representation in the teacher-student structure by inhomogeneously fusing features at different levels. Then, the coordinate attention mechanism is introduced in the reverse distillation structure to pay special attention to dominant issues, facilitating nice direction guidance and position encoding. Furthermore, an innovative single-category embedding memory bank, inspired by human memory mechanisms, is developed to normalize single-category embedding to encourage high-quality model reconstruction. Finally, in several categories of the well-known MVTec dataset, our model achieves better results than state-of-the-art models in terms of AUROC and PRO, with an overall average of 98.1%, 98.3%, and 95.0% for detection AUROC scores, localization AUROC scores, and localization PRO scores, respectively, across 15 categories. Extensive experiments are conducted on the ablation study to validate the contribution of each component of the model.},
+  archive  = {J},
+  author   = {Guoxiang Tong and Quanquan Li and Yan Song},
+  doi      = {10.1109/TBDATA.2024.3350539},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {498-513},
+  title    = {Enhanced multi-scale features mutual mapping fusion based on reverse knowledge distillation for industrial anomaly detection and localization},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Few-shot learning with multi-granularity knowledge fusion
+and decision-making. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 486–497. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3350542">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Few-shot learning (FSL) is a challenging task in classifying new classes from few labelled examples. Many existing models embed class structural knowledge as prior knowledge to enhance FSL against data scarcity. However, they fall short of connecting the class structural knowledge with the limited visual information which plays a decisive role in FSL model performance. In this paper, we propose a unified FSL framework with multi-granularity knowledge fusion and decision-making (MGKFD) to overcome the limitation. We aim to simultaneously explore the visual information and structural knowledge, working in a mutual way to enhance FSL. On the one hand, we strongly connect global and local visual information with multi-granularity class knowledge to explore intra-image and inter-class relationships, generating specific multi-granularity class representations with limited images. On the other hand, a weight fusion strategy is introduced to integrate multi-granularity knowledge and visual information to make the classification decision of FSL. It enables models to learn more effectively from limited labelled examples and allows generalization to new classes. Moreover, considering varying erroneous predictions, a hierarchical loss is established by structural knowledge to minimize the classification loss, where greater degree of misclassification is penalized more. Experimental results on three benchmark datasets show the advantages of MGKFD over several advanced models.},
+  archive  = {J},
+  author   = {Yuling Su and Hong Zhao and Yifeng Zheng and Yu Wang},
+  doi      = {10.1109/TBDATA.2024.3350542},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {486-497},
+  title    = {Few-shot learning with multi-granularity knowledge fusion and decision-making},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Online heterogeneous streaming feature selection without
+feature type information. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 470–485. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3350630">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Feature selection aims to select an optimal minimal feature subset from the original datasets and has become an indispensable preprocessing component before data mining and machine learning, especially in the era of Big Data. However, features may be generated dynamically and arrive individually over time in practice, which we call streaming features. Most existing streaming feature selection methods assume that all dynamically generated features are the same type or assume we can know the feature type for each new arriving feature in advance, but this is unreasonable and unrealistic. Therefore, this paper first studies a practical issue of Online Heterogeneous Streaming Feature Selection without the feature type information before learning, named OHSFS. Specifically, we first model the streaming feature selection issue as a minimax problem. Then, in terms of MIC (Maximal Information Coefficient), we derive a new metric $MIC_{Gain}$ to determine whether a new streaming feature should be selected. To speed up the efficiency of OHSFS, we present the metric $MIC_{Cor}$ that can directly discard low correlation features. Finally, extensive experimental results indicate the effectiveness of OHSFS. Moreover, OHSFS is nonparametric and does not need to know the feature type before learning, which aligns with practical application needs.},
+  archive  = {J},
+  author   = {Peng Zhou and Yunyun Zhang and Zhaolong Ling and Yuanting Yan and Shu Zhao and Xindong Wu},
+  doi      = {10.1109/TBDATA.2024.3350630},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {470-485},
+  title    = {Online heterogeneous streaming feature selection without feature type information},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Cascaded knowledge-level fusion network for online course
+recommendation system. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 457–469. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3346711">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In light of the global proliferation of the COVID-19 pandemic, there is a notable surge in public interest towards Massive Open Online Courses (MOOCs) recently. Within the realm of personalized course-learning services, large amounts of online course recommendation systems have been developed to cater to the diverse needs of learners. However, despite these advancements, there still exist three unsolved challenges: 1) how to effectively utilize the course information spanning from the title-level to the more granular keyword-level; 2) how to well capture the sequential information among learning courses; 3) how to identify the high-correlated courses in the course corpora. To address these challenges, we propose a novel solution known as C ascaded K nowledge-level F usion N etwork (CKFN) for online course recommendation with incorporating a three-fold approach to maximize the utilization of course information: 1) two knowledge graphs spanning from the keyword-level to title-level; 2) a two-stage attention fusion mechanism; 3) a novel knowledge-aware negative sampling method. Experimental results on a real dataset of XuetangX demonstrate that CKFN surpasses existing baseline models by a substantial margin, thereby achieving the state-of-the-art recommendation performance. It means that CKFN can be potentially deployed into MOOCs platforms as a pivotal component to provide personalized course recommendation service.},
+  archive  = {J},
+  author   = {Wenjun Ma and Yibing Zhao and Xiaomao Fan},
+  doi      = {10.1109/TBDATA.2023.3346711},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {457-469},
+  title    = {Cascaded knowledge-level fusion network for online course recommendation system},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Learning causal chain graph structure via alternate learning
+and double pruning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 442–456. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3346712">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Causal chain graphs model the dependency structure between individuals when the assumption of individual independence in causal inference is violated. However, causal chain graphs are often unknown in practice and require learning from data. Existing learning algorithms have certain limitations. Specifically, learning local information requires multiple subset searches, building the skeleton requires additional conditional independence testing, and directing the edges requires obtaining local information from the skeleton again. To remedy these problems, we propose a novel algorithm for learning causal chain graph structure. The algorithm alternately learns the adjacencies and spouses of each variable as local information and doubly prunes them to obtain more accurate local information, which reduces subset searches, improves its accuracy, and facilitates subsequent learning. It then directly constructs the chain graphs skeleton using the learned adjacencies without conditional independence testing. Finally, it directs the edges of complexes using the learned adjacencies and spouses to learn chain graphs without reacquiring local information, further improving its efficiency. We conduct theoretical analysis to prove the correctness of our algorithm and compare it with the state-of-the-art algorithms on synthetic and real-world datasets. The experimental results demonstrate our algorithm is more reliable than its rivals.},
+  archive  = {J},
+  author   = {Shujing Yang and Fuyuan Cao and Kui Yu and Jiye Liang},
+  doi      = {10.1109/TBDATA.2023.3346712},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {442-456},
+  title    = {Learning causal chain graph structure via alternate learning and double pruning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Graph contrastive learning for clustering of multi-layer
+networks. <em>IEEE Transactions on Big Data</em>, <em>10</em>(4),
+429–441. (<a href="https://doi.org/10.1109/TBDATA.2023.3343349">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Multi-layer networks precisely model complex systems in society and nature with various types of interactions, and identifying conserved modules that are well-connected in all layers is of great significance for revealing their structure-function relationships. Current algorithms are criticized for either ignoring the intrinsic relations among various layers, or failing to learn discriminative features. To attack these limitations, a novel graph contrastive learning framework for clustering of multi-layer networks is proposed by joining nonnegative matrix factorization and graph contrastive learning (called jNMF-GCL), where the intrinsic structure and discriminative of features are simultaneously addressed. Specifically, features of vertices are first learned by preserving the conserved structure in multi-layer networks with matrix factorization, and then jNMF-GCL learns an affinity structure of vertices by manipulating features of various layers. To enhance quality of features, contrastive learning is executed by selecting the positive and negative samples from the constructed affinity graph, which significantly improves discriminative of features. Finally, jNMF-GCL incorporates feature learning, construction of affinity graph, contrastive learning and clustering into an overall objective, where global and local structural information are seamlessly fused, providing a more effective way to describe structure of multi-layer networks. Extensive experiments conducted on both artificial and real-world networks have shown the superior performance of jNMF-GCL over state-of-the-art models across various metrics.},
+  archive  = {J},
+  author   = {Yifei Yang and Xiaoke Ma},
+  doi      = {10.1109/TBDATA.2023.3343349},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {429-441},
+  title    = {Graph contrastive learning for clustering of multi-layer networks},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Bi-selection of instances and features based on neighborhood
+importance degree. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 415–428. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3342643">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {As one of the most important concepts for classification learning, neighborhood granules obtained by dividing adjacent objects or instances can be regarded as the minimal elements to simulate human cognition. At present, neighborhood granules have been successfully applied to knowledge acquisition. Nevertheless, little work has been devoted to the simultaneous selection of features and instances by the use of neighborhood granules. To fill this gap, we investigate in this paper the issue of bi-selection of instances and features based on neighborhood importance degree (NID). First, the conditional neighborhood entropy is defined to measure decision uncertainty of a neighborhood granule. Considering both decision uncertainty and coverage ability of a neighborhood granule, we propose the concept of NID. Then, an instance selection algorithm is formulated to select representative instances based on NID. Furthermore, an NID-based feature selection algorithm is provided for a neighborhood decision system. By integrating the instance selection and feature selection methods, a bi-selection approach based on NID (BSNID) is finally proposed to select instances and features. Lastly, some numerical experiments are conducted to evaluate the performance of BSNID. The results demonstrate that BSNID can take account of both reduction ratio and classification accuracy and, therefore, performs satisfactorily in effectiveness.},
+  archive  = {J},
+  author   = {Xiao Zhang and Zhaoqian He and Jinhai Li and Changlin Mei and Yanyan Yang},
+  doi      = {10.1109/TBDATA.2023.3342643},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {415-428},
+  title    = {Bi-selection of instances and features based on neighborhood importance degree},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). FIG: Feature-weighted information granules with high
+consistency rate. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 400–414. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3343348">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Information granules are effective in revealing the structure of data. Therefore, it is a common practice in data mining to use information granules for classifying datasets. In the existing granular classifiers, the information granules are often classified according to the standard membership function only without considering the influence of different feature weights on the quality of granules and label classification results. In this article, we utilize the feature weighting of data to produce the information granules with high consistency rate called FIG. First, we use consistency rate and contribution scores to generate information granules. Then, we propose a granular two-stage classifier GTC based on FIG. GTC divides the data into fuzzy and fixed points and then calculates the interval matching degree to assign data points to the most suitable cluster in the second step. Finally, we compare FIG with two state-of-the-art granular models (T-GrM and FGC-rule), and classification accuracy is also compared with other classification algorithms. The extensive experiments on synthetic datasets and public datasets from UCI show that FIG has sufficient performance to describe the data structure and excellent capability under the constructed granular classifier GTC. Compared with T-GrM and FGC-rule, the time overhead required for FIG to obtain information granules is reduced by an average of 51.07%, the per unit quality of the granules is also increased by more than 14.74%. Compared with other classification algorithms, an average of 5.04% improves GTC accuracy.},
+  archive  = {J},
+  author   = {Jianghe Cai and Yuhui Deng and Yi Zhou and Jiande Huang and Geyong Min},
+  doi      = {10.1109/TBDATA.2023.3343348},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {400-414},
+  title    = {FIG: Feature-weighted information granules with high consistency rate},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Multi-dimensional data recovery via feature-based
+fully-connected tensor network decomposition. <em>IEEE Transactions on
+Big Data</em>, <em>10</em>(4), 386–399. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3342611">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Multi-dimensional data are inevitably corrupted, which hinders subsequent applications (e.g., image segmentation and classification). Recently, due to the powerful ability to characterize the correlation between any two modes of tensors, fully-connected tensor network (FCTN) decomposition has received increasing attention in multi-dimensional data recovery. However, the expressive power of FCTN decomposition in the original pixel domain has yet to be fully leveraged, which can not provide satisfactory results in the recovery of details and textures, especially for low-sampling rates or heavy noise scenarios. In this work, we suggest a feature-based FCTN decomposition model (termed as F-FCTN) for multi-dimensional data recovery, which can faithfully capture the relationship between the spatial-temporal/spectral-feature modes. Compared with the original FCTN decomposition, F-FCTN can more effectively recover the details and textures and be more suitable for the subsequent high-level applications. However, F-FCTN leads to a larger-scale feature tensor as compared with the original tensor, which brings challenges in designing the solving algorithm. To harness the resulting large-scale optimization problem, we develop an efficient leverage score sampling-based proximal alternating minimization (S-PAM) algorithm and theoretically establish its relative error guarantee. Extensive numerical experiments on real-world data illustrate that the proposed method performs favorably against compared methods in data recovery and facilitates subsequent image classification.},
+  archive  = {J},
+  author   = {Zhi-Long Han and Ting-Zhu Huang and Xi-Le Zhao and Hao Zhang and Yun-Yang Liu},
+  doi      = {10.1109/TBDATA.2023.3342611},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {386-399},
+  title    = {Multi-dimensional data recovery via feature-based fully-connected tensor network decomposition},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Proxy-based graph convolutional hashing for cross-modal
+retrieval. <em>IEEE Transactions on Big Data</em>, <em>10</em>(4),
+371–385. (<a href="https://doi.org/10.1109/TBDATA.2023.3338951">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Cross-modal hashing retrieval approaches have received extensive attention owing to their storage superiority and retrieval efficiency. To achieve better retrieval performances, hashing methods seek to embed more semantic information of multi-modal data into hash codes. Existing deep cross-modal hashing methods typically learn hash functions from the similarity of paired data to generate hash codes. However, such locally-oriented learning methods often suffer from low efficiency and incomplete acquisition of semantic information. To address these challenges, this paper presents a novel deep hashing approach, called Proxy-based Graph Convolutional Hashing (PGCH), for cross-modal retrieval. Specifically, we use global similarity to construct proxy hash codes for two different modalities. This strategy of these proxy hash codes ensures that they include data points with significant distribution differences. It helps to match data from different modalities to different proxy hash codes, which can capture the global similarity of multi-modal hash codes and improve the efficiency of hash code learning. Subsequently, we employ a multi-modal contrastive loss to learn the global similarity. Furthermore, by constructing a proxy hash matrix from the proxy hash codes, we apply graph convolution to efficiently narrow the gap between different modalities, leading to a substantial improvement in retrieval performance for cross-modal retrieval tasks. The comprehensive experiments on four benchmark multimedia datasets demonstrate that our PGCH approach achieves better retrieval performances than a bundle of state-of-the-art hashing approaches.},
+  archive  = {J},
+  author   = {Yibing Bai and Zhenqiu Shu and Jun Yu and Zhengtao Yu and Xiao-Jun Wu},
+  doi      = {10.1109/TBDATA.2023.3338951},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {371-385},
+  title    = {Proxy-based graph convolutional hashing for cross-modal retrieval},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Multi-party federated recommendation based on
+semi-supervised learning. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(4), 356–370. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3338009">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Leveraging multi-party data to provide recommendations remains a challenge, particularly when the party in need of recommendation services possesses only positive samples while other parties just have unlabeled data. To address UDD-PU learning problem, this paper proposes an algorithm VFPU, Vertical Federated learning with Positive and Unlabeled data. VFPU conducts random sampling repeatedly from the multi-party unlabeled data, treating sampled data as negative ones. It hence forms multiple training datasets with balanced positive and negative samples, and multiple testing datasets with those unsampled data. For each training dataset, VFPU trains a base estimator adapted for the vertical federated learning framework iteratively. We use the trained base estimator to generate forecast scores for each sample in the testing dataset. Based on the sum of scores and their frequency of occurrence in the testing datasets, we calculate the probability of being positive for each unlabeled sample. Those with top probabilities are regarded as reliable positive samples. They are then added to the positive samples and subsequently removed from the unlabeled data. This process of sampling, training, and selecting positive samples is iterated repeatedly. Experimental results demonstrated that VFPU performed comparably to its non-federated counterparts and outperformed other federated semi-supervised learning methods.},
+  archive  = {J},
+  author   = {Xin Liu and Jiuluan Lv and Feng Chen and Qingjie Wei and Hangxuan He and Ying Qian},
+  doi      = {10.1109/TBDATA.2023.3338009},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {356-370},
+  title    = {Multi-party federated recommendation based on semi-supervised learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). FRC-GIF: Frame ranking-based personalized artistic media
+generation method for resource constrained devices. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(4), 343–355. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3338012">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Generating video highlights in the form of animated graphics interchange formats (GIFs) has significantly simplified the process of video browsing. Animated GIFs have paved the way for applications concerning streaming platforms and emerging technologies. Existing studies have led to large computational complexity without considering user personalization. This paper proposes lightweight method to attract users and increase views of videos through personalized artistic media, i.e., static thumbnails and animated GIF generation. The proposed method analyzes lightweight thumbnail containers (LTC) using the computational resources of the client device to recognize personalized events from feature-length sports videos. Next, the thumbnails are then ranked through the frame rank pooling method for their selection. Subsequently, the proposed method processes small video segments rather than considering the whole video for generating artistic media. This makes our approach more computationally efficient compared to existing methods that use the entire video data; thus, the proposed method complies with sustainable development goals. Furthermore, the proposed method retrieves and uses thumbnail containers and video segments, which reduces the required transmission bandwidth as well as the amount of locally stored data. Experiments reveal that the computational complexity of our method is 3.73 times lower than that of the state-of-the-art method.},
+  archive  = {J},
+  author   = {Ghulam Mujtaba and Sunder Ali Khowaja and Muhammad Aslam Jarwar and Jaehyuk Choi and Eun-Seok Ryu},
+  doi      = {10.1109/TBDATA.2023.3338012},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {343-355},
+  title    = {FRC-GIF: Frame ranking-based personalized artistic media generation method for resource constrained devices},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Learning balanced bayesian classifiers from labeled and
+unlabeled data. <em>IEEE Transactions on Big Data</em>, <em>10</em>(4),
+330–342. (<a href="https://doi.org/10.1109/TBDATA.2023.3338019">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {How to train learners over unbalanced data with asymmetric costs has been recognized as one of the most significant challenges in data mining. Bayesian network classifier (BNC) provides a powerful probabilistic tool to encode the probabilistic dependencies among random variables in directed acyclic graph (DAG), whereas unbalanced data will result in unbalanced network topology. This will lead to a biased estimate of the conditional or joint probability distribution, and finally a reduction in the classification accuracy. To address this issue, we propose to redefine the information-theoretic metrics to uniformly represent the balanced dependencies between attributes or that between attribute values. Then heuristic search strategy and thresholding operation are introduced to respectively learn refined DAGs from labeled and unlabeled data. The experimental results on 32 benchmark datasets reveal that the proposed highly scalable algorithm is competitive with or superior to a number of state-of-the-art single and ensemble learners.},
+  archive  = {J},
+  author   = {Lu Guo and Limin Wang and Qilong Li and Kuo Li},
+  doi      = {10.1109/TBDATA.2023.3338019},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {330-342},
+  title    = {Learning balanced bayesian classifiers from labeled and unlabeled data},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). AMDECDA: Attention mechanism combined with data ensemble
+strategy for predicting CircRNA-disease association. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(4), 320–329. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3334673">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Accumulating evidence from recent research reveals that circRNA is tightly bound to human complex disease and plays an important regulatory role in disease progression. Identifying disease-associated circRNA occupies a key role in the research of disease pathogenesis. In this study, we propose a new model AMDECDA for predicting circRNA-disease association (CDA) by combining attention mechanism and data ensemble strategy. Firstly, we fuse the heterogeneous information including circRNA Gaussian interaction profile (GIP), disease semantics and disease GIP, and then use the attention mechanism of Graph Attention Network (GAT) to focus on the critical information of data, reasonably allocate resources and extract their essential features. Finally, the ensemble deep RVFL network (edRVFL) is utilized to quickly and accurately predict CDA in the non-iterative manner of closed-form solutions. In the five-fold cross-validation experiment on the benchmark data set, AMDECDA achieves an accuracy of 93.10% with a sensitivity of 97.56% in 0.9235 AUC. In comparison with previous models, AMDECDA exhibits highly competitiveness. Furthermore, 26 of the top 30 unknown CDAs of AMDECDA predicted scores are proved by the related literature. These results indicate that AMDECDA can effectively anticipate latent CDA and provide help for further biological wet experiments.},
+  archive  = {J},
+  author   = {Lei Wang and Leon Wong and Zhu-Hong You and De-Shuang Huang},
+  doi      = {10.1109/TBDATA.2023.3334673},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {8},
+  number   = {4},
+  pages    = {320-329},
+  title    = {AMDECDA: Attention mechanism combined with data ensemble strategy for predicting CircRNA-disease association},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Fine-tuned personality federated learning for graph data.
+<em>IEEE Transactions on Big Data</em>, <em>10</em>(3), 313–319. (<a
+href="https://doi.org/10.1109/TBDATA.2024.3356388">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated Learning (FL) empowers multiple clients to collaboratively learn a global generalization model without the need to share their local data, thus reducing privacy risks and expanding the scope of AI applications. However, current works focus less on data in a highly nonidentically distributed manner such as graph data which are common in reality, and ignore the problem of model personalization between clients for graph data training in federated learning. In this paper, we propose a novel personality graph federated learning framework based on variational graph autoencoders that incorporates model contrastive learning and local fine-tuning to achieve personalized federated training on graph data for each client, which is called FedVGAE. Then we introduce an encoder-sharing strategy to the proposed framework that shares the parameters of the encoder layer to further improve personality performance. The node classification and link prediction experiments demonstrate that our method achieves better performance than other federated learning methods on most graph datasets in the non-iid setting. Finally, we conduct ablation experiments, the result demonstrates the effectiveness of our proposed method.},
+  archive  = {J},
+  author   = {Meiting Xue and Zian Zhou and Pengfei Jiao and Huijun Tang},
+  doi      = {10.1109/TBDATA.2024.3356388},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {313-319},
+  title    = {Fine-tuned personality federated learning for graph data},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). SCOREH+: A high-order node proximity spectral clustering on
+ratios-of-eigenvectors algorithm for community detection. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(3), 301–312. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3346715">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The research on complex networks has achieved significant progress in revealing the mesoscopic features of networks. Community detection is an important aspect of understanding real-world complex systems. We present in this paper a High-order node proximity Spectral Clustering on Ratios-of-Eigenvectors (SCOREH+) algorithm for locating communities in complex networks. The algorithm improves SCORE and SCORE+ and preserves high-order transitivity information of the network affinity matrix. We optimize the high-order proximity matrix from the initial affinity matrix using the Radial Basis Functions (RBFs) and Katz index. In addition to the optimization of the Laplacian matrix, we implement a procedure that joins an additional eigenvector (the $(k+1){\rm th}$ leading eigenvector) to the spectrum domain for clustering if the network is considered to be a “weak signal” graph. The algorithm has been successfully applied to both real-world and synthetic data sets. The proposed algorithm is compared with state-of-art algorithms, such as ASE, Louvain, Fast-Greedy, Spectral Clustering (SC), SCORE, and SCORE+. To demonstrate the high efficacy of the proposed method, we conducted comparison experiments on eleven real-world networks and a number of synthetic networks with noise. The experimental results in most of these networks demonstrate that SCOREH+ outperforms the baseline methods. Moreover, by tuning the RBFs and their shaping parameters, we may generate state-of-the-art community structures on all real-world networks and even on noisy synthetic networks.},
+  archive  = {J},
+  author   = {Yanhui Zhu and Fang Hu and Lei Hsin Kuo and Jia Liu},
+  doi      = {10.1109/TBDATA.2023.3346715},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {301-312},
+  title    = {SCOREH+: A high-order node proximity spectral clustering on ratios-of-eigenvectors algorithm for community detection},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Hierarchical deep reinforcement learning for VWAP strategy
+optimization. <em>IEEE Transactions on Big Data</em>, <em>10</em>(3),
+288–300. (<a href="https://doi.org/10.1109/TBDATA.2023.3338011">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Designing algorithmic trading strategies targeting volume-weighted average price (VWAP) for long-duration orders is a critical concern for brokers. Traditional rule-based strategies are explicitly predetermined, lacking effective adaptability to achieve lower transaction costs in dynamic markets. Numerous studies have attempted to minimize transaction costs through reinforcement learning. However, the improvement for long-duration order trading strategies, such as VWAP strategy, remains limited due to intraday liquidity pattern changes and sparse reward signals. To address this issue, we propose a jointed model called Macro-Meta-Micro Trader, which combines deep learning and hierarchical reinforcement learning. This model aims to optimize parent order allocation and child order execution in the VWAP strategy, thereby reducing transaction costs for long-duration orders. It effectively captures market patterns and executes orders across different temporal scales. Our experiments on stocks listed on the Shanghai Stock Exchange demonstrated that our approach outperforms optimal baselines in terms of VWAP slippage by saving up to 2.22 base points, verifying that further splitting tranches into several subgoals can effectively reduce transaction costs.},
+  archive  = {J},
+  author   = {Xiaodong Li and Pangjing Wu and Chenxin Zou and Qing Li},
+  doi      = {10.1109/TBDATA.2023.3338011},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {288-300},
+  title    = {Hierarchical deep reinforcement learning for VWAP strategy optimization},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Label distribution learning based on horizontal and vertical
+mining of label correlations. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(3), 275–287. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3338023">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Label distribution learning (LDL) is a novel approach that outputs labels with varying degrees of description. To enhance the performance of LDL algorithms, researchers have developed different algorithms with mining label correlations globally, locally, and both globally and locally. However, existing LDL algorithms for mining local label correlations roughly assume that samples within a cluster share same label correlations, which may not be applicable to all samples. Moreover, existing LDL algorithms apply global and local label correlations to the same parameter matrix, which cannot fully exploit their respective advantages. To address these issues, a novel LDL method based on horizontal and vertical mining of label correlations (LDL-HVLC) is proposed in this paper. The method first encodes a unique local influence vector for each sample through the label distribution of its neighbor samples. Then, this vector is extended as additional features to assist in predicting unknown instances, and a penalty term is designed to correct wrong local influence vector (horizontal mining). Finally, to capture both local and global correlations of label, a new regularization term is constructed to constrain the global label correlations on the output results (vertical mining). Extensive experiments on real datasets demonstrate that the proposed method effectively solves the label distribution problem and outperforms the current state-of-the-art methods.},
+  archive  = {J},
+  author   = {Yaojin Lin and Yulin Li and Chenxi Wang and Lei Guo and Jinkun Chen},
+  doi      = {10.1109/TBDATA.2023.3338023},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {275-287},
+  title    = {Label distribution learning based on horizontal and vertical mining of label correlations},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Graph structure aware contrastive multi-view clustering.
+<em>IEEE Transactions on Big Data</em>, <em>10</em>(3), 260–274. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3334674">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Multi-view clustering has become a research hotspot in recent decades because of its effectiveness in heterogeneous data fusion. Although a large number of related studies have been developed one after another, most of them usually only concern with the characteristics of the data themselves and overlook the inherent connection among samples, hindering them from exploring structural knowledge of graph space. Moreover, many current works tend to highlight the compactness of one cluster without taking the differences between clusters into account. To track these two drawbacks, in this article, we propose a graph structure aware contrastive multi-view clustering (namely, GCMC) approach. Specifically, we incorporate the well-designed graph autoencoder with conventional multi-layer perception autoencoder to extract the structural and high-level representation of multi-view data, so that the underlying correlation of samples can be effectively squeezed for model learning. Then the contrastive learning paradigm is performed on multiple pseudo-label distributions to ensure that the positive pairs of pseudo-label representations share the complementarity across views while the divergence between negative pairs is sufficiently large. This makes each semantic cluster more discriminative, i.e., jointly satisfying intra-cluster compactness and inter-cluster exclusiveness. Through comprehensive experiments on eight widely-known datasets, we prove that the proposed approach can perform better than the state-of-the-art opponents.},
+  archive  = {J},
+  author   = {Rui Chen and Yongqiang Tang and Xiangrui Cai and Xiaojie Yuan and Wenlong Feng and Wensheng Zhang},
+  doi      = {10.1109/TBDATA.2023.3334674},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {260-274},
+  title    = {Graph structure aware contrastive multi-view clustering},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Don’t be misled by emotion! Disentangle emotions and
+semantics for cross-language and cross-domain rumor detection. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(3), 249–259. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3334634">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Cross-language and cross-domain rumor detection is a crucial research topic for maintaining a healthy social media environment. Previous studies reveal that the emotions expressed in posts are important features for rumor detection. However, existing studies typically leverage the entangled representation of semantics and emotions, ignoring the fact that different languages and domains have different emotions toward rumors. Therefore, it inevitably leads to a biased adaptation of the features learned from the source to the target language and domain. To address this issue, this paper proposes a novel approach to adapt the knowledge obtained from the source to the target dataset by disentangling the emotional and semantic features of the datasets. Specifically, the proposed method mainly consists of three steps: (1) disentanglement, which encodes rumors into two separate semantic and emotional spaces to prevent emotional interference; (2) adaptation, merging semantics with the emotions from another language and domain for contrastive alignment to ensure effective adaptation; (3) joint training strategy, which enables the above two steps to work in synergy and mutually promote each other. Extensive experimental results demonstrate that the proposed method outperforms state-of-the-art baselines.},
+  archive  = {J},
+  author   = {Yu Shi and Xi Zhang and Yuming Shang and Ning Yu},
+  doi      = {10.1109/TBDATA.2023.3334634},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {249-259},
+  title    = {Don’t be misled by emotion! disentangle emotions and semantics for cross-language and cross-domain rumor detection},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Mix2SFL: Two-way mixup for scalable, accurate, and
+communication-efficient split federated learning. <em>IEEE Transactions
+on Big Data</em>, <em>10</em>(3), 238–248. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3328424">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In recent years, split learning (SL) has emerged as a promising distributed learning framework that can utilize Big Data in parallel without privacy leakage while reducing client-side computing resources. In the initial implementation of SL, however, the server serves multiple clients sequentially incurring high latency. Parallel implementation of SL can alleviate this latency problem, but existing Parallel SL algorithms compromise scalability due to its fundamental structural problem. To this end, our previous works have proposed two scalable Parallel SL algorithms, dubbed SGLR and LocFedMix-SL, by solving the aforementioned fundamental problem of the Parallel SL structure. In this article, we propose a novel Parallel SL framework, coined Mix2SFL, that can ameliorate both accuracy and communication-efficiency while still ensuring scalability. Mix2SFL first supplies more samples to the server through a manifold mixup between the smashed data uploaded to the server as in SmashMix of LocFedMix-SL, and then averages the split-layer gradient as in GradMix of SGLR, followed by local model aggregation as in SFL. Numerical evaluation corroborates that Mix2SFL achieves improved performance in both accuracy and latency compared to the state-of-the-art SL algorithm with scalability guarantees. Moreover, its convergence speed as well as privacy guarantee are validated through the experimental results.},
+  archive  = {J},
+  author   = {Seungeun Oh and Hyelin Nam and Jihong Park and Praneeth Vepakomma and Ramesh Raskar and Mehdi Bennis and Seong-Lyun Kim},
+  doi      = {10.1109/TBDATA.2023.3328424},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {238-248},
+  title    = {Mix2SFL: Two-way mixup for scalable, accurate, and communication-efficient split federated learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Scalable evidential k-nearest neighbor classification on big
+data. <em>IEEE Transactions on Big Data</em>, <em>10</em>(3), 226–237.
+(<a href="https://doi.org/10.1109/TBDATA.2023.3327220">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The K -Nearest Neighbor (K-NN) algorithm has garnered widespread utilization in real-world scenarios, due to its exceptional interpretability that other classification algorithms may not have. The evidential K-NN (EK-NN) algorithm builds upon the same nearest neighbor search procedure as K-NN, and provides more informative classification outcomes. However, EK-NN is not practical for Big Data because it is computationally complex. First, the search for K nearest neighbors of test samples from $n$ training samples requires $O(n^{2})$ operations. Additionally, estimating parameters involves performing complicated matrix calculations that increase in scale as the dataset becomes larger. To address these issues, we propose two scalable EK-NN classifiers, Global Exact EK-NN and Local Approximate EK-NN, under the distributed Spark framework. Along with the Local Approximate EK-NN, a new distributed gradient descent algorithm is developed to learn parameters. Data parallelism is used to reduce negative impacts caused by data distribution differences. Experimental results show that Our algorithms are able to achieve state-of-the-art scaling efficiency and accuracy on large datasets with more than 10 million samples.},
+  archive  = {J},
+  author   = {Chaoyu Gong and Jim Demmel and Yang You},
+  doi      = {10.1109/TBDATA.2023.3327220},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {226-237},
+  title    = {Scalable evidential K-nearest neighbor classification on big data},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A federated convolution transformer for fake news detection.
+<em>IEEE Transactions on Big Data</em>, <em>10</em>(3), 214–225. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3325746">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a novel approach to detect fake news in Internet of Things (IoT) applications. By investigating federated learning and trusted authority methods, we address the issue of data security during training. Simultaneously, by investigating convolution transformers and user clustering, we deal with multi-modality issues in fake news data. First, we use dense embedding and the k-means algorithm to cluster users into groups that are similar to one another. We then develop a local model for each user using their local data. The server then receives the local models of users along with clustering information, and a trusted authority verifies their integrity there. We use two different types of aggregation in place of conventional federated learning systems. The initial step is to combine all users’ models to create a single global model. The second step entails compiling each user&#39;s model into a local model of comparable users. Both models are supplied to users, who then select the most suitable model for identifying fake news. By conducting extensive experiments using Twitter data, we demonstrate that the proposed method outperforms various baselines, where it achieves an average accuracy of 0.85 in comparison to others that do not exceed 0.81.},
+  archive  = {J},
+  author   = {Youcef Djenouri and Ahmed Nabil Belbachir and Tomasz Michalak and Gautam Srivastava},
+  doi      = {10.1109/TBDATA.2023.3325746},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {6},
+  number   = {3},
+  pages    = {214-225},
+  title    = {A federated convolution transformer for fake news detection},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Decentralized federated learning: A survey on security and
+privacy. <em>IEEE Transactions on Big Data</em>, <em>10</em>(2),
+194–213. (<a href="https://doi.org/10.1109/TBDATA.2024.3362191">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Federated learning has been rapidly evolving and gaining popularity in recent years due to its privacy-preserving features, among other advantages. Nevertheless, the exchange of model updates and gradients in this architecture provides new attack surfaces for malicious users of the network which may jeopardize the model performance and user and data privacy. For this reason, one of the main motivations for decentralized federated learning is to eliminate server-related threats by removing the server from the network and compensating for it through technologies such as blockchain. However, this advantage comes at the cost of challenging the system with new privacy threats. Thus, performing a thorough security analysis in this new paradigm is necessary. This survey studies possible variations of threats and adversaries in decentralized federated learning and overviews the potential defense mechanisms. Trustability and verifiability of decentralized federated learning are also considered in this study.},
+  archive  = {J},
+  author   = {Ehsan Hallaji and Roozbeh Razavi-Far and Mehrdad Saif and Boyu Wang and Qiang Yang},
+  doi      = {10.1109/TBDATA.2024.3362191},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {4},
+  number   = {2},
+  pages    = {194-213},
+  title    = {Decentralized federated learning: A survey on security and privacy},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A survey on spatio-temporal big data analytics ecosystem:
+Resource management, processing platform, and applications. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(2), 174–193. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3342619">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {With the rapid evolution of the Internet, Internet of Things (IoT), and geographic information systems (GIS), spatio-temporal Big Data (STBD) is experiencing exponential growth, marking the onset of the STBD era. Recent studies have concentrated on developing algorithms and techniques for the collection, management, storage, processing, analysis, and visualization of STBD. Researchers have made significant advancements by enhancing STBD handling techniques, creating novel systems, and integrating spatio-temporal support into existing systems. However, these studies often neglect resource management and system optimization, crucial factors for enhancing the efficiency of STBD processing and applications. Additionally, the transition of STBD to the innovative Cloud-Edge-End unified computing system needs to be noticed. In this survey, we comprehensively explore the entire ecosystem of STBD analytics systems. We delineate the STBD analytics ecosystem and categorize the technologies used to process GIS data into five modules: STBD, computation resources, processing platform, resource management, and applications. Specifically, we subdivide STBD and its applications into geoscience-oriented and human-social activity-oriented. Within the processing platform module, we further categorize it into the data management layer (DBMS-GIS), data processing layer (BigData-GIS), data analysis layer (AI-GIS), and cloud native layer (Cloud-GIS). The resource management module and each layer in the processing platform are classified into three categories: task-oriented, resource-oriented, and cloud-based. Finally, we propose research agendas for potential future developments.},
+  archive  = {J},
+  author   = {Huanghuang Liang and Zheng Zhang and Chuang Hu and Yili Gong and Dazhao Cheng},
+  doi      = {10.1109/TBDATA.2023.3342619},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {4},
+  number   = {2},
+  pages    = {174-193},
+  title    = {A survey on spatio-temporal big data analytics ecosystem: Resource management, processing platform, and applications},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). TgStore: An efficient storage system for large time-evolving
+graphs. <em>IEEE Transactions on Big Data</em>, <em>10</em>(2), 158–173.
+(<a href="https://doi.org/10.1109/TBDATA.2024.3366087">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Existing graph systems focus mainly on the execution efficiency of the graph analysis tasks, often ignoring the importance and efficiency of time-evolving graph storage. However, to effectively mine the potential application values, an efficient storage system is important for time-evolving graphs whose storage requirement scales with the increasing number of snapshots. Storage cost and snapshot access speed are the two most important performance indicators for a time-evolving graph storage system, which are challenging for designers of such systems because they are conflicting goals. In this article, we address these challenges by proposing an efficient storage scheme for the large time-evolving graphs. We first design a Snapshot-level Data Deduplication (SLDD) strategy to eliminate the large number of repeated vertices and edges among the snapshots, and then a Structure-Changing Graph Representation (SCGR) to significantly improve the snapshot access speed. We implement an efficient time-evolving graph storage system, TgStore, based on this scheme to effectively store large-scale time-evolving graphs, aiming to efficiently support the time-evolving graph analysis tasks. Experimental results show that TgStore can obtain a high compression ratio of 43.03:1 when storing 100 snapshots of Twitter, while with an average snapshot access speedup of 16×. Efficient storage scheme enables TgStore to efficiently support time-evolving graph algorithms. For example, when executing the Pagerank algorithm on the time-evolving graph of Twitter, TgStore outperforms Graphone, a state-of-the-art time-evolving graph storage system, by 15.9× in algorithm execution speed and 1.45× in memory usage.},
+  archive  = {J},
+  author   = {Yongli Cheng and Yan Ma and Hong Jiang and Lingfang Zeng and Fang Wang and Xianghao Xu and Yuhang Wu},
+  doi      = {10.1109/TBDATA.2024.3366087},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {4},
+  number   = {2},
+  pages    = {158-173},
+  title    = {TgStore: An efficient storage system for large time-evolving graphs},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Efficient and privacy-preserving aggregate query over public
+property graphs. <em>IEEE Transactions on Big Data</em>, <em>10</em>(2),
+146–157. (<a href="https://doi.org/10.1109/TBDATA.2023.3342623">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Graph data structures’ ability of representing vertex relationships has made them increasingly popular in recent years. Amid this trend, many property graph datasets have been collected and made public to facilitate a variant of queries such as the aggregate queries that will be extensively exploited in this paper. While cloud deployment of both the datasets and query services is intriguing, it could raise privacy concerns related to user queries and results. In past years, many works on graph privacy have been put forth, however they either do not consider query privacy or cannot be adapted for aggregate queries. Some others consider queries over encrypted graphs but cannot protect access pattern privacy. In particular, when deploying them to handle queries over public graph datasets, the cloud server can infer additional information related to user queries. Aiming at this challenge, we propose a privacy-preserving property graph aggregate query scheme in this paper. Specifically, we first design new privacy-preserving vertex matching and matching update techniques, which securely initialize and update the mapping between vertices in the dataset and the user-specified patterns, respectively. Based on them, we construct our proposed scheme to achieve aggregate queries over public property graphs. Rigid security analysis shows that our proposed scheme can protect the privacy of user queries and results as well as achieve access pattern privacy. In addition, extensive experiments also demonstrate the efficiency of our scheme in terms of computational overheads.},
+  archive  = {J},
+  author   = {Yunguo Guan and Rongxing Lu and Songnian Zhang and Yandong Zheng and Jun Shao and Guiyi Wei},
+  doi      = {10.1109/TBDATA.2023.3342623},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {4},
+  number   = {2},
+  pages    = {146-157},
+  title    = {Efficient and privacy-preserving aggregate query over public property graphs},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). FATS: Feature distribution analysis-based test selection for
+deep learning enhancement. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(2), 132–145. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3334648">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Deep Learning has been applied to many applications across different domains. However, the distribution shift between the test data and training data is a major factor impacting the quality of deep neural networks (DNNs). To address this issue, existing research mainly focuses on enhancing DNN models by retraining them using labeled test data. However, labeling test data is costly, which seriously reduces the efficiency of DNN testing. To solve this problem, test selection strategically selected a small set of tests to label. Unfortunately, existing test selection methods seldom focus on the data distribution shift. To address the issue, this paper proposes an approach for test selection named Feature Distribution Analysis-Based Test Selection (FATS). FATS analyzes the distributions of test data and training data and then adopts learning to rank (a kind of supervised machine learning to solve ranking tasks) to intelligently combine the results of analysis for test selection. We conduct an empirical study on popular datasets and DNN models, and then compare FATS with seven test selection methods. Experiment results show that FATS effectively alleviates the impact of distribution shifts and outperforms the compared methods with the average accuracy improvement of 19.6% $\sim$ 69.7% for DNN model enhancement.},
+  archive  = {J},
+  author   = {Li Li and Chuanqi Tao and Hongjing Guo and Jingxuan Zhang and Xiaobing Sun},
+  doi      = {10.1109/TBDATA.2023.3334648},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {4},
+  number   = {2},
+  pages    = {132-145},
+  title    = {FATS: Feature distribution analysis-based test selection for deep learning enhancement},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Multilevel stochastic optimization for imputation in massive
+medical data records. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(2), 122–131. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3328433">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {It has long been a recognized problem that many datasets contain significant levels of missing numerical data. A potentially critical predicate for application of machine learning methods to datasets involves addressing this problem. However, this is a challenging task. In this article, we apply a recently developed multi-level stochastic optimization approach to the problem of imputation in massive medical records. The approach is based on computational applied mathematics techniques and is highly accurate. In particular, for the Best Linear Unbiased Predictor (BLUP) this multi-level formulation is exact , and is significantly faster and more numerically stable. This permits practical application of Kriging methods to data imputation problems for massive datasets. We test this approach on data from the National Inpatient Sample (NIS) data records, Healthcare Cost and Utilization Project (HCUP), Agency for Healthcare Research and Quality. Numerical results show that the multi-level method significantly outperforms current approaches and is numerically robust. It has superior accuracy as compared with methods recommended in the recent report from HCUP. Benchmark tests show up to 75% reductions in error. Furthermore, the results are also superior to recent state of the art methods such as discriminative deep learning.},
+  archive  = {J},
+  author   = {Wenrui Li and Xiaoyu Wang and Yuetian Sun and Snezana Milanovic and Mark Kon and Julio Enrique Castrillón-Candás},
+  doi      = {10.1109/TBDATA.2023.3328433},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {4},
+  number   = {2},
+  pages    = {122-131},
+  title    = {Multilevel stochastic optimization for imputation in massive medical data records},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). BL: An efficient index for reachability queries on large
+graphs. <em>IEEE Transactions on Big Data</em>, <em>10</em>(2), 108–121.
+(<a href="https://doi.org/10.1109/TBDATA.2023.3327215">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Reachability query has important applications in many fields such as social networks, Semantic Web, and biological information networks. How to improve the query efficiency in directed acyclic graph ( DAG ) has always been the main problem of reachability query research. Existing methods either can&#39;t prune unreachable pairs enough or can&#39;t perform well on both index size and query time. In this paper, we propose BL ( Bridging Label ), a general index framework for reachability queries in large graphs. First, we summarize the relationships between BL and existing label indices. Second, we propose a kind of specific index, named minBL, which can avoid redundant labels. Moreover, we propose TFD-minBL and CTFD-minBL, which generate minBL under the TFD-based permutation single-pass and in incremental, respectively. Finally, we conduct a large number of extensive experiments on real and synthetic datasets. The experimental results show that our methods are much faster and use less storage overhead than the existing reachability query methods.},
+  archive  = {J},
+  author   = {Changyong Yu and Tianmei Ren and Wenyu Li and Huimin Liu and Haitao Ma and Yuhai Zhao},
+  doi      = {10.1109/TBDATA.2023.3327215},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {4},
+  number   = {2},
+  pages    = {108-121},
+  title    = {BL: An efficient index for reachability queries on large graphs},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Adaptively-accelerated parallel stochastic gradient descent
+for high-dimensional and incomplete data representation learning.
+<em>IEEE Transactions on Big Data</em>, <em>10</em>(1), 92–107. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3326304">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {High-dimensional and incomplete (HDI) interactions among numerous nodes are commonly encountered in a Big Data-related application, like user-item interactions in a recommender system. Owing to its high efficiency and flexibility, a stochastic gradient descent (SGD) algorithm can enable efficient latent feature analysis (LFA) of HDI data for its precise representation, thereby enabling efficient solutions to knowledge acquisition issues like missing data estimation. However, LFA on HDI data involves a bilinear issue, making SGD-based LFA a sequential process, i.e., the update on a feature can impact the results on the others. Intervening the sequence of SGD-based LFA on HDI data can affect the training results. Therefore, a parallel SGD algorithm to LFA should be designed with care. Existing parallel SGD-based LFA models suffer from a) low parallelization degree, and b) slow convergence, which significantly restrict their scalability. Aiming at addressing these vital issues, this paper presents an A daptively-accelerated P arallel S tochastic G radient D escent (AP-SGD) algorithm to LFA by: a) establishing a novel local minimum-based data splitting and scheduling scheme to reduce the scheduling cost among threads, thereby achieving high parallelization degree; and b) incorporating the adaptive momentum method into the learning scheme, thereby accelerating the convergence rate by making the learning rate and acceleration coefficient self-adaptive. The convergence of the achieved AP-SGD-based LFA model is theoretically proved. Experimental results on three HDI matrices generated by real industrial applications demonstrate that the AP-SGD-based LFA model outperforms state-of-the-art parallel SGD-based LFA models in both estimation accuracy for missing data and parallelization degree. Hence, it has the potential for efficient representation of HDI data in industrial scenes.},
+  archive  = {J},
+  author   = {Wen Qin and Xin Luo and MengChu Zhou},
+  doi      = {10.1109/TBDATA.2023.3326304},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {92-107},
+  title    = {Adaptively-accelerated parallel stochastic gradient descent for high-dimensional and incomplete data representation learning},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Towards scalable multi-view clustering via joint learning of
+many bipartite graphs. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(1), 77–91. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3325045">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper focuses on two limitations to previous multi-view clustering approaches. First, they frequently suffer from quadratic or cubic computational complexity, which restricts their feasibility for large-scale datasets. Second, they often rely on a single graph on each view, yet lack the ability to jointly explore many versatile graph structures for enhanced multi-view information exploration. In light of this, this paper presents a new Scalable Multi-view Clustering via Many Bipartite graphs (SMCMB) approach, which is capable of jointly learning and fusing many bipartite graphs from multiple views while maintaining high efficiency for very large-scale datasets. Different from the one-anchor-set-per-view paradigm, we first produce multiple diversified anchor sets on each view and thus obtain many anchor sets on multiple views, based on which the anchor-based subspace representation learning is enforced and many bipartite graphs are simultaneously learned. Then these bipartite graphs are efficiently partitioned to produce the base clusterings, which are further re-formulated into a unified bipartite graph for the final clustering. Note that SMCMB has almost linear time and space complexity. Extensive experiments on twenty general-scale and large-scale multi-view datasets confirm its superiority in scalability and robustness over the state-of-the-art.},
+  archive  = {J},
+  author   = {Jinghuan Lao and Dong Huang and Chang-Dong Wang and Jian-Huang Lai},
+  doi      = {10.1109/TBDATA.2023.3325045},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {77-91},
+  title    = {Towards scalable multi-view clustering via joint learning of many bipartite graphs},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Legal transition sequence recognition of a bounded petri net
+using a gate recurrent unit. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(1), 66–76. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3319252">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The Gate Recurrent Unit (GRU) has a large blank in the application of legal transition sequences for bounded Petri nets. A GRU-based method is proposed for the recognition of bounded Petri net legal transition sequences. First, in a Petri net, legal and non-legal transition sequences are generated according to a certain noise ratio. Then, the legal and non-legal transition sequences are inputted into GRU to recognize the legal transition sequences by encoding the maximum variation sequence length with a uniform length. The proposed method is validated with different Petri nets at different noise ratios and compared with seven widely-known baselines. The results show that the proposed method achieves excellent recognition accuracy and robustness in most situations. Solving the problem that the existing methods cannot recognize the legal transition sequences of Petri nets in real time.},
+  archive  = {J},
+  author   = {Qingtian Zeng and Shuai Guo and Rui Cao and Ziqi Zhao and Hua Duan},
+  doi      = {10.1109/TBDATA.2023.3319252},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {66-76},
+  title    = {Legal transition sequence recognition of a bounded petri net using a gate recurrent unit},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Label-weighted graph-based learning for semi-supervised
+classification under label noise. <em>IEEE Transactions on Big
+Data</em>, <em>10</em>(1), 55–65. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3319249">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Graph-based semi-supervised learning (GSSL) is a quite important technology due to its effectiveness in practice. Existing GSSL works often treat the given labels equally and ignore the unbalance importance of labels. In some inaccurate systems, the collected labels usually contain noise (noisy labels) and the methods treating labels equally suffer from the label noise. In this article, we propose a novel label-weighted learning method on graph for semi-supervised classification under label noise, which allows considering the contribution differences of labels. In particular, the label dependency of data is revealed by graph constraints. With the help of this label dependency, the proposed method develops the strategy of adaptive label weight, where label weights are assigned to labels adaptively. Accordingly, an efficient algorithm is developed to solve the proposed optimization objective, where each subproblem has a closed-form solution. Experimental results on a synthetic dataset and several real-world datasets show the advantage of the proposed method, compared to the state-of-the-art methods.},
+  archive  = {J},
+  author   = {Naiyao Liang and Zuyuan Yang and Junhang Chen and Zhenni Li and Shengli Xie},
+  doi      = {10.1109/TBDATA.2023.3319249},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {55-65},
+  title    = {Label-weighted graph-based learning for semi-supervised classification under label noise},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A multi-aspect neural tensor factorization framework for
+patent litigation prediction. <em>IEEE Transactions on Big Data</em>,
+<em>10</em>(1), 35–54. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3313030">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Patent litigation is an expensive and time-consuming legal process. To reduce costs, companies can proactively manage patents using predictive analysis to identify potential plaintiffs, defendants, and patents that may lead to litigation. However, there has been limited progress in predicting patent litigation due to the scarcity of lawsuits, the complexities of intentions, and the diversity of litigation characteristics. To this end, in this paper, we summarize the major causes of patent litigation into multiple aspects: the complex relations among plaintiffs, defendants and patents as well as the diverse content information from them. Along this line, we propose a Multi-aspect Neural Tensor Factorization (MANTF) framework for patent litigation prediction. First, a Pair-wise Tensor Factorization (PTF) module is designed to capture the complex relations among plaintiffs, defendants and patents inherent in a three-dimensional tensor, which will produce factorized latent vectors for companies and patents with pair-wise ranking estimators. Then, to better represent the patents and companies as an aid for PTF, we design a Patent Embedding Network (PEN) module and a Mask Company Embedding Network (MCEN) module to generate content-aware embedding for them, where PEN represents patents based on their meta, textual and graphical features, and MCEN represents companies by integrating their intrinsic features and competitions. Next, to integrate these three modules together, we leverage a Gaussian prior on the difference between factorized representations and content-aware embedding, and train MANTF in an end-to-end way. In the end, final predictions for patent litigation, i.e., the potentially litigated plaintiffs, defendants and patents, can be made with the well-trained model. We conduct extensive experiments on two real-world datasets, whose results prove that MANTF not only helps predict potential patent litigation but also shows robustness under various data sparse situations.},
+  archive  = {J},
+  author   = {Han Wu and Guanqi Zhu and Qi Liu and Hengshu Zhu and Hao Wang and Hongke Zhao and Chuanren Liu and Enhong Chen and Hui Xiong},
+  doi      = {10.1109/TBDATA.2023.3313030},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {35-54},
+  title    = {A multi-aspect neural tensor factorization framework for patent litigation prediction},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). PHAED: A speaker-aware parallel hierarchical attentive
+encoder-decoder model for multi-turn dialogue generation. <em>IEEE
+Transactions on Big Data</em>, <em>10</em>(1), 23–34. (<a
+href="https://doi.org/10.1109/TBDATA.2023.3316472">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article presents a novel open-domain dialogue generation model emphasizing the differentiation of speakers in multi-turn conversations. Differing from prior work that treats the conversation history as a long text, we argue that capturing relative social relations among utterances (i.e., generated by either the same speaker or different persons) benefits the machine capturing fine-grained context information from a conversation history to improve context coherence in the generated response. Given that, we propose a Parallel Hierarchical Attentive Encoder-Decoder (PHAED) model that can effectively leverage conversation history by modeling each utterance with the awareness of its speaker and contextual associations with the same speaker&#39;s previous messages. Specifically, to distinguish the speaker roles over a multi-turn conversation (involving two speakers), we regard the utterances from one speaker as responses and those from the other as queries. After understanding queries via hierarchical encoder with inner-query and inter-query encodings, transformer-xl style decoder reuses the hidden states of previously generated responses to generate a new response. Our empirical results with three large-scale benchmarks show that PHAED significantly outperforms baseline models on both automatic and human evaluations. Furthermore, our ablation study shows that dialogue models with speaker tokens can generally decrease the possibility of generating non-coherent responses.},
+  archive  = {J},
+  author   = {Zihao Wang and Ming Jiang and Junli Wang},
+  doi      = {10.1109/TBDATA.2023.3316472},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {23-34},
+  title    = {PHAED: A speaker-aware parallel hierarchical attentive encoder-decoder model for multi-turn dialogue generation},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Streaming local community detection through approximate
+conductance. <em>IEEE Transactions on Big Data</em>, <em>10</em>(1),
+12–22. (<a href="https://doi.org/10.1109/TBDATA.2023.3310251">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Community is a universal structure in various complex networks, and community detection is a fundamental task for network analysis. With the rapid growth of network scale, networks are massive, changing rapidly, and could naturally be modeled as graph streams. Due to the limited memory and access constraint in graph streams, existing non-streaming community detection methods are no longer applicable. This raises an emerging need for online approaches. In this work, we consider the problem of uncovering the local community containing a few query nodes in graph streams, termed streaming local community detection. This new problem raised recently is more challenging for community detection, and only a few works address this online setting. Correspondingly, we design an online single-pass streaming local community detection approach. Inspired by the local property of communities, our method samples the local structure around the query nodes in graph streams and extracts the target community on the sampled subgraph using our proposed metric called approximate conductance. Comprehensive experiments show that our method remarkably outperforms the streaming baseline on both effectiveness and efficiency, and even achieves similar accuracy compared to the state-of-the-art non-streaming local community detection methods that use static and complete graphs.},
+  archive  = {J},
+  author   = {Meng Wang and Yanhao Yang and David Bindel and Kun He},
+  doi      = {10.1109/TBDATA.2023.3310251},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {12-22},
+  title    = {Streaming local community detection through approximate conductance},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). TS-RTPM-net: Data-driven tensor sketching for efficient CP
+decomposition. <em>IEEE Transactions on Big Data</em>, <em>10</em>(1),
+1–11. (<a href="https://doi.org/10.1109/TBDATA.2023.3310254">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Tensor decomposition is widely used in feature extraction, data analysis, and other fields. As a means of tensor decomposition, the robust tensor power method based on tensor sketch (TS-RTPM) can quickly mine the potential features of tensor, but in some cases, its approximation performance is limited. In this paper, we propose a data-driven framework called TS-RTPM-Net, which improves the estimation accuracy of TS-RTPM by jointly training the TS value matrices with the RTPM initial matrices. It also uses two greedy initialization algorithms to optimize the TS location matrices. In addition, TS-RTPM-Net accelerates TS-RTPM by using fast power iteration modules. Comparative experiments on real-world datasets verify that TS-RTPM-Net outperforms TS-RTPM in terms of estimation accuracy, running speed, and memory consumption.},
+  archive  = {J},
+  author   = {Xingyu Cao and Xiangtao Zhang and Ce Zhu and Jiani Liu and Yipeng Liu},
+  doi      = {10.1109/TBDATA.2023.3310254},
+  journal  = {IEEE Transactions on Big Data},
+  month    = {2},
+  number   = {1},
+  pages    = {1-11},
+  title    = {TS-RTPM-net: Data-driven tensor sketching for efficient CP decomposition},
+  volume   = {10},
+  year     = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

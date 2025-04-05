@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TODAES_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="todaes---62">TODAES - 62</h2>
+<ul>
+<li><details>
+<summary>
+(2022). Application mapping and control-system design for
+microfluidic biochips with distributed channel storage. <em>TODAES</em>,
+<em>28</em>(2), 29:1–30. (<a
+href="https://doi.org/10.1145/3564288">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuous-flow microfluidic biochips have emerged as a potential low-cost and fast-responsive lab-on-chip platform. They have attracted much attention due to their capability of performing various biochemical applications concurrently and automatically within a coin-sized chip area. To improve execution efficiency and reduce fabrication cost, a distributed channel-storage architecture can be implemented in which the same channels can be switched between the roles of transportation and storage. Accordingly, fluid transportation, caching, and fetch can be performed simultaneously through different flow paths. Such a flow-path planning needs to be considered carefully in the mapping procedure from a biochemical application to a given biochip architecture. Moreover, all the on-chip valves should be actuated correctly and promptly to temporally block the fluid transportation in unwanted directions and seal the fluids in caching channels. Such an exact control of the valves needs to be considered systematically in control-system design to support the mapping scheme for bioassay execution. In this article, we formulate the practical mapping-control co-design problem for microfluidic biochips with distributed channel storage, considering application mapping, valve synchronization, and control-system design simultaneously, and present an efficient synthesis flow to solve this problem systematically. Given the protocol of a biochemical application and the corresponding chip layout in the flow layer, our goal is to map the biochemical application onto the chip with short execution time. Meanwhile, a practical control system considering the real valve-switching requirements can be constructed efficiently with low fabrication cost. Experimental results on multiple real-life bioassays and synthetic benchmarks demonstrate the effectiveness of the proposed design flow.},
+  archive      = {J_TODAES},
+  author       = {Zhisheng Chen and Wenzhong Guo and Genggeng Liu and Xing Huang},
+  doi          = {10.1145/3564288},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {29:1–30},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Application mapping and control-system design for microfluidic biochips with distributed channel storage},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A symbolic approach to detecting hardware trojans triggered
+by don’t care transitions. <em>TODAES</em>, <em>28</em>(2), 28:1–31. (<a
+href="https://doi.org/10.1145/3558392">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the globalization of Integrated Circuit supply chain, hardware Trojans and the attacks that can trigger them have become an important security issue. One type of hardware Trojans leverages the “don’t care transitions” in Finite-state Machines (FSMs) of hardware designs. In this article, we present a symbolic approach to detecting don’t care transitions and the hidden Trojans. Our detection approach works at both register-transfer level (RTL) and gate level, does not require a golden design, and works in three stages. In the first stage, it explores the reachable states. In the second stage, it performs an approximate analysis to find the don’t care transitions and any discrepancies in the register values or output lines due to don’t care transitions. The second stage can be used for both predicting don’t care triggered Trojans and for guiding don’t care aware reachability analysis. In the third stage, it performs a state-space exploration from reachable states that have incoming don’t care transitions to explore the Trojan payload and to find behavioral discrepancies with respect to what has been observed in the first stage. We also present a pruning technique based on the reachability of FSM states. We present a methodology that leverages both RTL and gate-level for soundness and efficiency. Specifically, we show that don’t care transitions and Trojans that leverage them must be detected at the gate-level, i.e., after synthesis has been performed, for soundness. However, under specific conditions, Trojan payload exploration can be performed more efficiently at RTL. Additionally, the modular design of our approach also provides a fast Trojan prediction method even at the gate level when the reachable states of the FSM is known a priori . Evaluation of our approach on a set of benchmarks from OpenCores and TrustHub and using gate-level representation generated by two synthesis tools, YOSYS and Synopsis Design Compiler (SDC), shows that our approach is both efficient (up to 10× speedup w.r.t. no pruning) and precise (0\% false positives both at RTL and gate-level netlist) in detecting don’t care transitions and the Trojans that leverage them. Additionally, the total analysis time can achieve up to 1.62× (using YOSYS) and 1.92× (using SDC) speedup when synthesis preserves the FSM structure, the foundry is trusted, and the Trojan detection is performed at RTL.},
+  archive      = {J_TODAES},
+  author       = {Ruochen Dai and Tuba Yavuz},
+  doi          = {10.1145/3558392},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {28:1–31},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A symbolic approach to detecting hardware trojans triggered by don’t care transitions},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). BoA-PTA: A bayesian optimization accelerated PTA solver for
+SPICE simulation. <em>TODAES</em>, <em>28</em>(2), 27:1–26. (<a
+href="https://doi.org/10.1145/3555805">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One of the greatest challenges in integrated circuit design is the repeated executions of computationally expensive SPICE simulations, particularly when highly complex chip testing/verification is involved. Recently, pseudo-transient analysis (PTA) has shown to be one of the most promising continuation SPICE solvers. However, the PTA efficiency is highly influenced by the inserted pseudo-parameters. In this work, we proposed BoA-PTA, a Bayesian optimization accelerated PTA that can substantially accelerate simulations and improve convergence performance without introducing extra errors. Furthermore, our method does not require any pre-computation data or offline training. The acceleration framework can either speed up ongoing, repeated simulations (e.g., Monte-Carlo simulations) immediately or improve new simulations of completely different circuits. BoA-PTA is equipped with cutting-edge machine learning techniques, such as deep learning, Gaussian process, Bayesian optimization, non-stationary monotonic transformation, and variational inference via reparameterization. We assess BoA-PTA in 43 benchmark circuits and real industrial circuits against other SOTA methods and demonstrate an average of 1.5x (maximum 3.5x) for the benchmark circuits and up to 250x speedup for the industrial circuit designs over the original CEPTA without sacrificing any accuracy.},
+  archive      = {J_TODAES},
+  author       = {Wei W. Xing and Xiang Jin and Tian Feng and Dan Niu and Weisheng Zhao and Zhou Jin},
+  doi          = {10.1145/3555805},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {27:1–26},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {BoA-PTA: A bayesian optimization accelerated PTA solver for SPICE simulation},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Training PPA models for embedded memories on a low-data
+diet. <em>TODAES</em>, <em>28</em>(2), 26:1–24. (<a
+href="https://doi.org/10.1145/3556539">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Supervised machine learning requires large amounts of labeled data for training. In power, performance, and area (PPA) estimation of embedded memories, every new memory compiler version is considered independently of previous compiler versions. Since the data of different memory compilers originate from similar domains, transfer learning may reduce the amount of supervised data required by pre-training PPA estimation neural networks on related domains. We show that provisioning times of PPA models for new compiler versions can be reduced significantly by exploiting similarities among different compilers, versions, and technology nodes. Through transfer learning, we shorten the time to provision PPA models for new compiler versions, which speeds up time-critical periods of the design cycle. Using only 901 training samples (10\%) is sufficient to achieve an almost worst-case (98th percentile) estimation error of 2.67\% and allows us to shorten model provisioning times from 40 days to less than one week without sacrificing accuracy. To enable a diverse set of source domains for transfer learning, we devise a new, application-independent method for overcoming structural domain differences through domain equalization that attains competitive results when compared to domain-free transfer. A high degree of automation necessitates the efficient assessment of the best source domains. We propose using various metrics to accurately identify four of the five best among 45 datasets with low computational effort.},
+  archive      = {J_TODAES},
+  author       = {Felix Last and Ulf Schlichtmann},
+  doi          = {10.1145/3556539},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {26:1–24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Training PPA models for embedded memories on a low-data diet},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Graph neural networks for high-level synthesis design space
+exploration. <em>TODAES</em>, <em>28</em>(2), 25:1–20. (<a
+href="https://doi.org/10.1145/3570925">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-level Synthesis (HLS) Design-Space Exploration (DSE) aims at identifying Pareto-optimal synthesis configurations whose exhaustive search is unfeasible due to the design-space dimensionality and the prohibitive computational cost of the synthesis process. Within this framework, we address the design automation problem by proposing graph neural networks that jointly predict acceleration performance and hardware costs of a synthesized behavioral specification given optimization directives. Learned models can be used to rapidly approach the Pareto curve by guiding the DSE, taking into account performance and cost estimates. The proposed method outperforms traditional HLS-driven DSE approaches, by accounting for the arbitrary length of computer programs and the invariant properties of the input. We propose a novel hybrid control and dataflow graph representation that enables training the graph neural network on specifications of different hardware accelerators. Our approach achieves prediction accuracy comparable with that of state-of-the-art simulators without having access to analytical models of the HLS compiler. Finally, the learned representation can be exploited for DSE in unexplored configuration spaces by fine-tuning on a small number of samples from the new target domain. The outcome of the empirical evaluation of this transfer learning shows strong results against state-of-the-art baselines in relevant benchmarks.},
+  archive      = {J_TODAES},
+  author       = {Lorenzo Ferretti and Andrea Cini and Georgios Zacharopoulos and Cesare Alippi and Laura Pozzi},
+  doi          = {10.1145/3570925},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {25:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Graph neural networks for high-level synthesis design space exploration},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Machine learning based framework for fast resource
+estimation of RTL designs targeting FPGAs. <em>TODAES</em>,
+<em>28</em>(2), 24:1–16. (<a
+href="https://doi.org/10.1145/3555047">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Field-programmable gate arrays (FPGAs) have grown to be an important platform for integrated circuit design and hardware emulation. However, with the dramatic increase in design scale, it has become a key challenge to partition very large scale integration into multi-FPGA systems. Fast estimation of FPGA on-chip resource usage for individual sub-circuit blocks early in the circuit design flow will provide an essential basis for reasonable circuit partition. It will also help FPGA designers to tune the circuits in hardware description language. In this article, we propose a framework for fast estimation of the on-chip resources consumed by register transfer level (RTL) designs with machine learning methods. We extensively collect RTL designs as a dataset, extract features from the result of a parser tool and analyze their roles, and train a targeted three-stage ensemble learning model. A 5,513× speedup is achieved while having 27\% relative absolute error. Although the effect is sufficient to support RTL circuit partition, we discuss how the estimation quality continues to be improved.},
+  archive      = {J_TODAES},
+  author       = {Benzheng Li and Xi Zhang and Hailong You and Zhongdong Qi and Yuming Zhang},
+  doi          = {10.1145/3555047},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {24:1–16},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Machine learning based framework for fast resource estimation of RTL designs targeting FPGAs},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Learning-based phase-aware multi-core CPU workload
+forecasting. <em>TODAES</em>, <em>28</em>(2), 23:1–27. (<a
+href="https://doi.org/10.1145/3564929">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Predicting workload behavior during workload execution is essential for dynamic resource optimization in multi-processor systems. Recent studies have proposed advanced machine learning techniques for dynamic workload prediction. Workload prediction can be cast as a time series forecasting problem. However, traditional forecasting models struggle to predict abrupt workload changes. These changes occur because workloads are known to go through phases. Prior work has investigated machine-learning-based approaches for phase detection and prediction, but such approaches have not been studied in the context of dynamic workload forecasting. In this article, we propose phase-aware CPU workload forecasting as a novel approach that applies long-term phase prediction to improve the accuracy of short-term workload forecasting. Phase-aware forecasting requires machine learning models for phase classification, phase prediction, and phase-based forecasting that have not been explored in this combination before. Furthermore, existing prediction approaches have only been studied in single-core settings. This work explores phase-aware workload forecasting with multi-threaded workloads running on multi-core systems. We propose different multi-core settings differentiated by the number of cores they access and whether they produce specialized or global outputs per core. We study various advanced machine learning models for phase classification, phase prediction, and phase-based forecasting in isolation and different combinations for each setting. We apply our approach to forecasting of multi-threaded Parsec and SPEC workloads running on an eight-core Intel Core-i9 platform. Our results show that combining GMM clustering with LSTMs for phase prediction and phase-based forecasting yields the best phase-aware forecasting results. An approach that uses specialized models per core achieves an average error of 23\% with up to 22\% improvement in prediction accuracy compared to a phase-unaware setup.},
+  archive      = {J_TODAES},
+  author       = {Erika Susana Alcorta Lozano and Andreas Gerstlauer},
+  doi          = {10.1145/3564929},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {23:1–27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Learning-based phase-aware multi-core CPU workload forecasting},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). GraphPlanner: Floorplanning with graph neural network.
+<em>TODAES</em>, <em>28</em>(2), 21:1–24. (<a
+href="https://doi.org/10.1145/3555804">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Chip floorplanning has long been a critical task with high computation complexity in the physical implementation of VLSI chips. Its key objective is to determine the initial locations of large chip modules with minimized wirelength while adhering to the density constraint, which in essence is a process of constructing an optimized mapping from circuit connectivity to physical locations. Proven to be an NP-hard problem, chip floorplanning is difficult to be solved efficiently using algorithmic approaches. This article presents GraphPlanner, a variational graph-convolutional-network-based deep learning technique for chip floorplanning. GraphPlanner is able to learn an optimized and generalized mapping between circuit connectivity and physical wirelength and produce a chip floorplan using efficient model inference. GraphPlanner is further equipped with an efficient clustering method, a unification of hyperedge coarsening with graph spectral clustering, to partition a large-scale netlist into high-quality clusters with minimized inter-cluster weighted connectivity. GraphPlanner has been integrated with two state-of-the-art mixed-size placers. Experimental studies using both academic benchmarks and industrial designs demonstrate that compared to state-of-the-art mixed-size placers alone, GraphPlanner improves placement runtime by 25\% with 4\% wirelength reduction on average.},
+  archive      = {J_TODAES},
+  author       = {Yiting Liu and Ziyi Ju and Zhengming Li and Mingzhi Dong and Hai Zhou and Jia Wang and Fan Yang and Xuan Zeng and Li Shang},
+  doi          = {10.1145/3555804},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {21:1–24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {GraphPlanner: Floorplanning with graph neural network},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Performance-driven wire sizing for analog integrated
+circuits. <em>TODAES</em>, <em>28</em>(2), 19:1–23. (<a
+href="https://doi.org/10.1145/3559542">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Analog IC performance has a strong dependence on interconnect RC parasitics, which are significantly affected by wire sizes in recent technologies, where minimum-width wires have high resistance. However, performance-driven wire sizing for analog ICs has received very little research attention. In order to fill this void, we develop several techniques to facilitate an end-to-end automatic wire sizing approach. They include a circuit performance model based on customized graph neural network (GNN) and two optimization techniques: one using Bayesian optimization accelerated by the GNN model, and the other based on TensorFlow training. Experimental results show that our technique can achieve 11\% circuit performance improvement or 8.7× speedup compared to a conventional Bayesian optimization method.},
+  archive      = {J_TODAES},
+  author       = {Yaguang Li and Yishuang Lin and Meghna Madhusudan and Arvind Sharma and Sachin Sapatnekar and Ramesh Harjani and Jiang Hu},
+  doi          = {10.1145/3559542},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {19:1–23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Performance-driven wire sizing for analog integrated circuits},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Machine learning assisted circuit sizing approach for
+low-voltage analog circuits with efficient variation-aware optimization.
+<em>TODAES</em>, <em>28</em>(2), 18:1–22. (<a
+href="https://doi.org/10.1145/3567422">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Low-power analog design is a hot topic for various power efficient applications. Sizing low-power analog circuits is not easy because the increasing uncertainties from low-voltage techniques magnify process variation effects on the design yield. Simulation-based approaches are often adopted for analog circuit sizing because of its high accuracy and adaptability in different cases. However, if process variation is also considered, the huge number of simulations becomes almost infeasible for large circuits. Although there are some recent works that adopt machine learning (ML) techniques to speed up the optimization process, the process variation effects are still hard to be considered in those approaches. Using the popular evolutionary algorithm (EA) as an example, this paper proposes an ML-assisted prediction model to speed up the variation-aware circuit sizing technique for low-voltage analog circuits. By predicting the likelihood for a design that has worse performance, the enhanced EA process is able to skip many unnecessary simulations to reduce the convergence time. Moreover, a novel force-directed model is proposed to guide the optimization toward better yield. Based on the performance of prior circuit samples in the EA optimization, the proposed force model is able to predict the likelihood of a design that has better yield without time-consuming Monte Carlo simulations. Compared with prior works, the proposed approach significantly reduces the number of simulations in the yield-aware EA optimization, which helps to generate practical low-voltage designs with high reliability and low cost.},
+  archive      = {J_TODAES},
+  author       = {Ling-Yen Song and Chih-Yun Chou and Tung-Chieh Kuo and Chien-Nan Liu and Juinn-Dar Huang},
+  doi          = {10.1145/3567422},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {18:1–22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Machine learning assisted circuit sizing approach for low-voltage analog circuits with efficient variation-aware optimization},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Power converter circuit design automation using parallel
+monte carlo tree search. <em>TODAES</em>, <em>28</em>(2), 17:1–33. (<a
+href="https://doi.org/10.1145/3549538">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The tidal waves of modern electronic/electrical devices have led to increasing demands for ubiquitous application-specific power converters. A conventional manual design procedure of such power converters is computation- and labor-intensive, which involves selecting and connecting component devices, tuning component-wise parameters and control schemes, and iteratively evaluating and optimizing the design. To automate and speed up this design process, we propose an automatic framework that designs custom power converters from design specifications using Monte Carlo Tree Search. Specifically, the framework embraces the upper-confidence-bound-tree (UCT), a variant of Monte Carlo Tree Search, to automate topology space exploration with circuit design specification-encoded reward signals. Moreover, our UCT-based approach can exploit small offline data via the specially designed default policy and can run in parallel to accelerate topology space exploration. Further, it utilizes a hybrid circuit evaluation strategy to substantially reduce design evaluation costs. Empirically, we demonstrated that our framework could generate energy-efficient circuit topologies for various target voltage conversion ratios. Compared to existing automatic topology optimization strategies, the proposed method is much more computationally efficient—the sequential version can generate topologies with the same quality while being up to 67\% faster. The parallelization schemes can further achieve high speedups compared to the sequential version.},
+  archive      = {J_TODAES},
+  author       = {Shaoze Fan and Shun Zhang and Jianbo Liu and Ningyuan Cao and Xiaoxiao Guo and Jing Li and Xin Zhang},
+  doi          = {10.1145/3549538},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {17:1–33},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Power converter circuit design automation using parallel monte carlo tree search},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Accuracy configurable adders with negligible delay overhead
+in exact operating mode. <em>TODAES</em>, <em>28</em>(1), 13:1–14. (<a
+href="https://doi.org/10.1145/3549936">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, two accuracy configurable adders capable of operating in approximate and exact modes are proposed. In the adders, which include a block-based carry propagate and a parallel prefix structure, the carry chains are cut off in the approximate mode limiting the carry chain depth to two blocks. In the case of parallel prefix adder, we propose a special carry generate tree equipped with a power gating means. In both of the proposed structures, the critical paths of the adders are not increased in the exact operating mode. Thus, the main objective of proposing these approximate adder structures is to present an accuracy configurable adder structure whose delay in the exact mode is almost the same as an exact adder. The efficacies of the proposed accuracy configurable adders are compared with some state-of-the-art adder structures using a 15nm CMOS technology. In addition, their efficacies are evaluated in two error-resilient applications. These studies show that the proposed carry-propagate adder has 22\% (51\%) lower energy consumption (error rate) compared to the best prior works. Also, the proposed parallel prefix adder provides, on average, 20\% lower energy consumption compared to the exact parallel prefix adders.},
+  archive      = {J_TODAES},
+  author       = {Farhad Ebrahimi-Azandaryani and Omid Akbari and Mehdi Kamal and Ali Afzali-Kusha and Massoud Pedram},
+  doi          = {10.1145/3549936},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {13:1–14},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Accuracy configurable adders with negligible delay overhead in exact operating mode},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A multilevel spectral framework for scalable vectorless
+power/thermal integrity verification. <em>TODAES</em>, <em>28</em>(1),
+11:1–25. (<a href="https://doi.org/10.1145/3529534">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vectorless integrity verification is becoming increasingly critical to the robust design of nanoscale integrated circuits. This article introduces a general vectorless integrity verification framework that allows computing the worst-case voltage drops or temperature (gradient) distributions across the entire chip under a set of local and global workload (power density) constraints. To address the computational challenges introduced by the large power grids and three-dimensional mesh-structured thermal grids, we propose a novel spectral approach for highly scalable vectorless verification of large chip designs by leveraging a hierarchy of almost linear-sized spectral sparsifiers of input grids that can well retain effective resistances between nodes. As a result, the vectorless integrity verification solution obtained on coarse-level problems can effectively help compute the solution of the original problem. Our approach is based on emerging spectral graph theory and graph signal processing techniques, which consists of a graph topology sparsification and graph coarsening phase, an edge weight scaling phase, as well as a solution refinement procedure. Extensive experimental results show that the proposed vectorless verification framework can efficiently and accurately obtain worst-case scenarios in even very large designs.},
+  archive      = {J_TODAES},
+  author       = {Zhiqiang Zhao and Zhuo Feng},
+  doi          = {10.1145/3529534},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {11:1–25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A multilevel spectral framework for scalable vectorless Power/Thermal integrity verification},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). E2-VOR: An end-to-end en/decoder architecture for efficient
+video object recognition. <em>TODAES</em>, <em>28</em>(1), 10:1–21. (<a
+href="https://doi.org/10.1145/3543852">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-resolution video object recognition (VOR) evolves so fast but is very compute-intensive. This is because VOR leverages compute-intensive deep neural network (DNN) for better accuracy. Although many works have been proposed for speedup, they mostly focus on DNN algorithm and hardware acceleration on the edge side. We observe that most video streams need to be losslessly compressed before going online and an encoder should have all the video information. Moreover, as the cloud should have abundant computing power to handle sophisticated VOR algorithms, we propose to take a one-shot effort for a modified VOR algorithm at the encoding stage in cloud and integrate the full VOR regeneration into a slightly extended decoder on the device. The scheme can enable lightweight VOR with server-class accuracy by simply leveraging the classic and economic video decoder universal to any mobile device. Meanwhile, the scheme can save massive computing power for not repetitively processing the same video on different user devices that makes it extremely sustainable for green computing across the whole network. We propose E 2 -VOR, an end-to-end encoder and decoder architecture for efficient VOR. We carefully design the scheme to have minimum impact on the video bitstream transmitted. In the cloud, the VOR extended video encoder tracks on a macro-block basis and packs intelligent information into the video stream for increased VOR accuracy and fast regenerating process. On the edge device, we extend the traditional video decoder with a small piece of dedicated hardware to enable the efficient VOR regeneration. Our experiment shows that E 2 -VOR can achieve 5.0× performance improvement with less than 0.4\% VOR accuracy loss compared to the state-of-the-art FAVOS scheme. On average, E 2 -VOR can run over 54 frames-per-second (FPS) for 480P videos on an edge device.},
+  archive      = {J_TODAES},
+  author       = {Zhuoran Song and Naifeng Jing and Xiaoyao Liang},
+  doi          = {10.1145/3543852},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {10:1–21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {E2-VOR: An end-to-end En/Decoder architecture for efficient video object recognition},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). CoVerPlan: A comprehensive verification planning framework
+leveraging PSS specifications. <em>TODAES</em>, <em>28</em>(1), 9:1–32.
+(<a href="https://doi.org/10.1145/3543175">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With increasing design complexity, the portability of tests across different designs and platforms becomes a key criterion for accelerating verification closure. The Portable Test and Stimulus Standard (PSS) is an emerging industry standard prepared by Accellera for system-on-chip verification and testing. It provides language constructs to create a target-agnostic representation of stimulus and test scenarios reused by various users across many levels of integration. In this article, we present CoVerPlan , a comprehensive verification framework built to explore the power of action inferencing on test models written in PSS. The proposed verification framework leverages a Boolean satisfiability problem planner to unwind the actual verification flow from the PSS specifications and automatically synthesizes target-specific constraint-random testbenches and formal assertions. CoVerPlan also carries out assertion-based verification of the synthesized properties. We demonstrate the efficacy of our proposed framework over several case studies, like the Advanced Microcontroller Bus Architecture advanced peripheral bus protocol, a simple Reduced Instruction Set Computer processor, and a cache coherence protocol.},
+  archive      = {J_TODAES},
+  author       = {Sourav Das and Sayandeep Sanyal and Aritra Hazra and Pallab Dasgupta},
+  doi          = {10.1145/3543175},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {9:1–32},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {CoVerPlan: A comprehensive verification planning framework leveraging PSS specifications},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). AIMCU-MESO: An in-memory computing unit constructed by MESO
+device. <em>TODAES</em>, <em>28</em>(1), 8:1–16. (<a
+href="https://doi.org/10.1145/3539575">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional CMOS-based von-Neumann computer architecture faces the issue of memory wall that the limitation of bus-bandwidth and the speed mismatch between processor and memory restrict the efficiency of data processing along with an irreducible energy consumption conducted by data movement, especially in some data-intensive applications. Recently, some novel in-memory computing (IMC) paradigms developed by utilizing the characteristics of different non-volatile memories provide promising ways to overcome the bottleneck of memory wall. Here, we propose a new IMC unit based on a memory array with the core element of magnetoelectric spin-orbit logic (MESO) device (AIMCU-MESO), in which the characteristics of the MESO device are exploited to achieve several in-memory logic operations with the functions of NAND, NOR, and XOR in the MESO-based memory array. With the aid of some transistor-based switches, these logic operations can be achieved between any two MESOs in the array. Furthermore, the computing process of a 1-bit full adder (FA) is achieved in AIMCU-MESO by the in-memory logic manner to demonstrate the ability of logic cascading. The result of SPICE simulation for achieving the 1-bit FA using MESO devices is demonstrated, and the performances are compared with other designs of spintronics-based devices. Compared to multilevel voltage-controlled spin-orbit torque–based magnetic memory, the proposed design demonstrates 71.4\% and 49.2\% reductions in terms of storage delay and logic delay, respectively.},
+  archive      = {J_TODAES},
+  author       = {Junwei Zeng and Nuo Xu and Yabo Chen and Chenglong Huang and Zhiwei Li and Liang Fang},
+  doi          = {10.1145/3539575},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {8:1–16},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {AIMCU-MESO: An in-memory computing unit constructed by MESO device},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Rescuing ReRAM-based neural computing systems from device
+variation. <em>TODAES</em>, <em>28</em>(1), 6:1–17. (<a
+href="https://doi.org/10.1145/3533706">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Resistive random-access memory (ReRAM)-based crossbar array (RCA) is a promising platform to accelerate vector-matrix multiplication in deep neural networks (DNNs). There are, however, some practical issues, especially device variation, that hinder the versatile development of ReRAM in neural computing systems. The device variations include device-to-device variation (DDV) and cycle-to-cycle variation (CCV) that deviate the devise resistance in the RCA from their target state. Such resistance deviation seriously degrades the inference accuracy of DNNs. To address this issue, we propose a software-hardware compensation solution that includes compensation training based on scale factors (CTSF) and variation-aware compensation training based on scale factors (VACTSF) to protect the ReRAM-based DNN accelerator against device variation. The scale factors in CTSF can be flexibly set for reducing accuracy loss due to device variation when the weights programmed into RCA are determined. For effectively handling CCV, the scale factors are introduced into the training process for obtaining variation-tolerant weights by leveraging the inherent self-healing ability of DNNs. Simulation results based on our method confirm that the accuracy losses due to device variation on LeNet-5, ResNet, and VGG16 with different datasets are less than 5\% under a large device variation by CTSF. More robust weights for conquering CCV are also obtained by VACTSF. The simulation results present that our method is competitive in comparison to other variation-tolerant methods.},
+  archive      = {J_TODAES},
+  author       = {Chenglong Huang and Nuo Xu and Junwei Zeng and Wenqing Wang and Yihong Hu and Liang Fang and Desheng Ma and Yanting Chen},
+  doi          = {10.1145/3533706},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {6:1–17},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Rescuing ReRAM-based neural computing systems from device variation},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). ESPSim: An efficient scalable power grid simulator based on
+parallel algebraic multigrid. <em>TODAES</em>, <em>28</em>(1), 5:1–31.
+(<a href="https://doi.org/10.1145/3529533">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fast verification for the extremely large-scale power grid is demanding as CMOS technology advances consistently. In this work, we propose ESPSim, an efficient scalable power grid simulator based on a parallel smoothed aggregation-based algebraic multigrid technique. ESPSim has the ability to do fast DC and transient analysis through MPI and adaptive timestep control mechanism. Thanks to the smoother applied on the prolongation operator, ESPSim copes well with the convergence rate on extremely large-scale power grid transient analysis. Extensive experiments are conducted with a variety of serial/parallel solvers. The runtime of ESPSim is linear with case size. With 16 processors, 1,000 timesteps transient analysis of 63.4M nodes can be completed in 22.1 min. Over 22× speedup compared to the well-known direct solver Cholmod is observed.},
+  archive      = {J_TODAES},
+  author       = {Chunqiao Li and Chengtao An and Fan Yang and Xuan Zeng},
+  doi          = {10.1145/3529533},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {5:1–31},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ESPSim: An efficient scalable power grid simulator based on parallel algebraic multigrid},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A learning-based methodology for scenario-aware mapping of
+soft real-time applications onto heterogeneous MPSoCs. <em>TODAES</em>,
+<em>28</em>(1), 4:1–40. (<a
+href="https://doi.org/10.1145/3529230">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft real-time streaming applications often process input data that evoke varying workloads for their tasks. This may lead to high energy consumption or deadline misses in case their mapping onto a heterogeneous MPSoC target architecture is not adapted, e.g., when tasks with high execution times for the current input are assigned to resources of low computational power. To handle the vast variety of different input data, we propose to cluster data with similar execution characteristics into so-called data scenarios for which we determine specialized mappings by performing a scenario-aware design space exploration (DSE). A runtime manager (RTM) uses these mappings to adapt the execution of the running applications to their upcoming input by first identifying their best-suited scenarios. Subsequently, the RTM selects mappings considering their identified scenarios, which minimize the total number of deadline misses and the consumed energy. We embed the RTM into hybrid application mapping (HAM); ergo, performing time-consuming optimizations offline. In this article, we propose a novel data-scenario-aware HAM methodology that can cope with multiple applications and comprises two novel scenario-based mapping selection algorithms: Inter-Application Resource Mediation Mapping introduces barely any runtime overhead. Adaptive multi-app mapping selection is highly adaptive to changes in the application workload but imposes a small runtime overhead. Our HAM approach is fully automated and uses machine-learning techniques to learn the selection of suitable mappings from training data sequences at design time. Experiments on three differently complex target architectures show that our proposed approach consistently outperforms existing state-of-the-art solutions regarding the number of deadline misses and consumed energy.},
+  archive      = {J_TODAES},
+  author       = {Jan Spieck and Stefan Wildermann and Jürgen Teich},
+  doi          = {10.1145/3529230},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {4:1–40},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A learning-based methodology for scenario-aware mapping of soft real-time applications onto heterogeneous MPSoCs},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Encoder-decoder networks for analyzing thermal and power
+delivery networks. <em>TODAES</em>, <em>28</em>(1), 3:1–27. (<a
+href="https://doi.org/10.1145/3526115">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Power delivery network (PDN) analysis and thermal analysis are computationally expensive tasks that are essential for successful integrated circuit (IC) design. Algorithmically, both these analyses have similar computational structure and complexity as they involve the solution to a partial differential equation of the same form. This article converts these analyses into image-to-image and sequence-to-sequence translation tasks, which allows leveraging a class of machine learning models with an encoder-decoder–based generative (EDGe) architecture to address the time-intensive nature of these tasks. For PDN analysis, we propose two networks: (i) IREDGe: a full-chip static and dynamic IR drop predictor and (ii) EMEDGe: electromigration (EM) hotspot classifier based on input power, power grid distribution, and power pad distribution patterns. For thermal analysis, we propose ThermEDGe, a full-chip static and dynamic temperature estimator based on input power distribution patterns for thermal analysis. These networks are transferable across designs synthesized within the same technology and packing solution. The networks predict on-chip IR drop, EM hotspot locations, and temperature in milliseconds with negligibly small errors against commercial tools requiring several hours.},
+  archive      = {J_TODAES},
+  author       = {Vidya A. Chhabria and Vipul Ahuja and Ashwath Prabhu and Nikhil Patil and Palkesh Jain and Sachin S. Sapatnekar},
+  doi          = {10.1145/3526115},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {3:1–27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Encoder-decoder networks for analyzing thermal and power delivery networks},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Memory-throughput trade-off for CNN-based applications at
+the edge. <em>TODAES</em>, <em>28</em>(1), 2:1–26. (<a
+href="https://doi.org/10.1145/3527457">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many modern applications require execution of Convolutional Neural Networks (CNNs) on edge devices, such as mobile phones or embedded platforms. This can be challenging, as the state-of-the art CNNs are memory costly, whereas the memory budget of edge devices is highly limited. To address this challenge, a variety of CNN memory reduction methodologies have been proposed. Typically, the memory of a CNN is reduced using methodologies such as pruning and quantization. These methodologies reduce the number or precision of CNN parameters, thereby reducing the CNN memory cost. When more aggressive CNN memory reduction is required, the pruning and quantization methodologies can be combined with CNN memory reuse methodologies. The latter methodologies reuse device memory allocated for storage of CNN intermediate computational results, thereby further reducing the CNN memory cost. However, the existing memory reuse methodologies are unfit for CNN-based applications that exploit pipeline parallelism available within the CNNs or use multiple CNNs to perform their functionality. In this article, we therefore propose a novel CNN memory reuse methodology. In our methodology, we significantly extend and combine two existing CNN memory reuse methodologies to offer efficient memory reuse for a wide range of CNN-based applications.},
+  archive      = {J_TODAES},
+  author       = {Svetlana Minakova and Todor Stefanov},
+  doi          = {10.1145/3527457},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {1},
+  pages        = {2:1–26},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Memory-throughput trade-off for CNN-based applications at the edge},
+  volume       = {28},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). RASCv2: Enabling remote access to side-channels for mission
+critical and IoT systems. <em>TODAES</em>, <em>27</em>(6), 65:1–25. (<a
+href="https://doi.org/10.1145/3524123">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Internet of Things (IoT) and smart devices are currently being deployed in systems such as autonomous vehicles and medical monitoring devices. The introduction of IoT devices into these systems enables network connectivity for data transfer, cloud support, and more, but can also lead to malware injection. Since many IoT devices operate in remote environments, it is also difficult to protect them from physical tampering. Conventional protection approaches rely on software. However, these can be circumvented by the moving target nature of malware or through hardware attacks. Alternatively, insertion of the internal monitoring circuits into IoT chips requires a design trade-off, balancing the requirements of the monitoring circuit and the main circuit. A very promising approach to detecting anomalous behavior in the IoT and other embedded systems is side-channel analysis. To date, however, this can be performed only before deployment due to the cost and size of side-channel setups (e.g., and oscilloscopes, probes) or by internal performance counters. Here, we introduce an external monitoring printed circuit board (PCB) named RASC to provide r emote a ccess to s ide- c hannels. RASC reduces the complete side-channel analysis system into two small PCBs (2 \( \times \) 2 cm), providing the ability to monitor power and electromagnetic (EM) traces of the target device. Additionally, RASC can transmit data and/or alerts of anomalous activities detected to a remote host through Bluetooth. To demonstrate RASCs capabilities, we extract keys from encryption modules such as AES implemented on Arduino and FPGA boards. To illustrate RASC’s defensive capabilities, we also use it to perform malware detection. RASC’s success in power analysis is comparable to an oscilloscope/probe setup but is lightweight and two orders of magnitude cheaper.},
+  archive      = {J_TODAES},
+  author       = {Yunkai Bai and Andrew Stern and Jungmin Park and Mark Tehranipoor and Domenic Forte},
+  doi          = {10.1145/3524123},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {65:1–25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {RASCv2: Enabling remote access to side-channels for mission critical and IoT systems},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Degraded mode-benefited i/o scheduling to ensure i/o
+responsiveness in RAID-enabled SSDs. <em>TODAES</em>, <em>27</em>(6),
+64:1–24. (<a href="https://doi.org/10.1145/3522755">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {RAID-enabled SSDs commonly have unbalanced I/O workloads on their components (e.g., SSD channels), as the data/parity chunks in the same stripe may have varied access frequency, which greatly impacts I/O responsiveness. This article proposes a I/O scheduling scheme by resorting to the degraded read mode and the read-modify-write mode to reduce the long-tail latency of I/O requests in RAID-enabled SSDs. The basic idea is to avoid scheduling read or update requests to the heavily congested but targeted RAID components. Such requests are satisfied by accessing other relevant RAID components by certain XOR computations (we call the degraded modes ). Specially, we build a queuing overhead assessment model on the top of factors of data redundancy and the current blocked I/O traffics on SSD channels to precisely dispatch incoming I/O requests to be fulfilled with the degraded mode or not. The trace-driven experiments illustrate that the proposed scheme can reduce the long-tail latency of read requests by 23.1\% on average at the 99.99th percentile, in contrast to state-of-the-art scheduling methods.},
+  archive      = {J_TODAES},
+  author       = {Zhibing Sha and Jun Li and Zhigang Cai and Min Huang and Jianwei Liao and Francois Trahay},
+  doi          = {10.1145/3522755},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {64:1–24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Degraded mode-benefited I/O scheduling to ensure I/O responsiveness in RAID-enabled SSDs},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). FUBOCO: Structure synthesis of basic op-amps by FUnctional
+BlOck COmposition. <em>TODAES</em>, <em>27</em>(6), 63:1–27. (<a
+href="https://doi.org/10.1145/3522738">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents a method to automatically synthesize the structure and initial sizing of an operational amplifier. It is positioned between approaches with fixed design plans and a small search space of structures and approaches with generic structural production rules and a large search space with technically impractical structures. The presented approach develops a hierarchical composition graph based on functional blocks that spans a search space of thousands of technically meaningful structure variants for single-output, fully differential, and complementary operational amplifiers. The search algorithm is a combined heuristic and enumerative process. The evaluation is based on circuit sizing with a library of behavioral equations of functional blocks. Formalizing the knowledge of functional blocks in op-amps for structural synthesis and sizing inherently reduces the search space and lessens the number of created topologies not fulfilling the specifications. Experimental results for the three op-amp classes are presented. An outlook how this method can be extended to multi-stage op-amps is given.},
+  archive      = {J_TODAES},
+  author       = {Inga Abel and Helmut Graeb},
+  doi          = {10.1145/3522738},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {63:1–27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {FUBOCO: Structure synthesis of basic op-amps by FUnctional BlOck COmposition},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Efficient layout hotspot detection via neural architecture
+search. <em>TODAES</em>, <em>27</em>(6), 62:1–16. (<a
+href="https://doi.org/10.1145/3517130">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Layout hotspot detection is of great importance in the physical verification flow. Deep neural network models have been applied to hotspot detection and achieved great success. Despite their success, high-performance neural networks are still quite difficult to design. In this article, we propose a bayesian optimization-based neural architecture search scheme to automatically do this time-consuming and fiddly job. Experimental results on ICCAD 2012 and ICCAD 2019 Contest benchmarks show that the architectures designed by our proposed scheme achieve higher performance on hotspot detection task compared with state-of-the-art manually designed neural networks.},
+  archive      = {J_TODAES},
+  author       = {Yiyang Jiang and Fan Yang and Bei Yu and Dian Zhou and Xuan Zeng},
+  doi          = {10.1145/3517130},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {62:1–16},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Efficient layout hotspot detection via neural architecture search},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Software/hardware co-design of 3D NoC-based GPU
+architectures for accelerated graph computations. <em>TODAES</em>,
+<em>27</em>(6), 61:1–22. (<a
+href="https://doi.org/10.1145/3514354">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Manycore GPU architectures have become the mainstay for accelerating graph computations. One of the primary bottlenecks to performance of graph computations on manycore architectures is the data movement. Since most of the accesses in graph processing are due to vertex neighborhood lookups, locality in graph data structures plays a key role in dictating the degree of data movement. Vertex reordering is a widely used technique to improve data locality within graph data structures. However, these reordering schemes alone are not sufficient as they need to be complemented with efficient task allocation on manycore GPU architectures to reduce latency due to local cache misses. Consequently, in this article, we introduce a software/hardware co-design framework for accelerating graph computations. Our approach couples an architecture-aware vertex reordering with a priority-based task allocation technique. As the task allocation aims to reduce on-chip latency and associated energy, the choice of Network-on-Chip (NoC) as the communication backbone in the manycore platform is an important parameter. By leveraging emerging three-dimensional (3D) integration technology, we propose design of a small-world NoC (SWNoC)-enabled manycore GPU architecture, where the placement of the links connecting the streaming multiprocessors (SMs) and the memory controllers (MCs) follow a power-law distribution. The proposed 3D SWNoC-enabled software/hardware co-design framework achieves 11.1\% to 22.9\% performance improvement and 16.4\% to 32.6\% less energy consumption depending on the dataset and the graph application, when compared to the default order of dataset running on a conventional planar mesh architecture.},
+  archive      = {J_TODAES},
+  author       = {Dwaipayan Choudhury and Reet Barik and Aravind Sukumaran Rajam and Ananth Kalyanaraman and Partha Pratim Pande},
+  doi          = {10.1145/3514354},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {61:1–22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Software/Hardware co-design of 3D NoC-based GPU architectures for accelerated graph computations},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A tensor network based decision diagram for representation
+of quantum circuits. <em>TODAES</em>, <em>27</em>(6), 60:1–30. (<a
+href="https://doi.org/10.1145/3514355">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tensor networks have been successfully applied in simulation of quantum physical systems for decades. Recently, they have also been employed in classical simulation of quantum computing, in particular, random quantum circuits. This article proposes a decision diagram style data structure, called Tensor Decision Diagram (TDD), for more principled and convenient applications of tensor networks. This new data structure provides a compact and canonical representation for quantum circuits. By exploiting circuit partition, the TDD of a quantum circuit can be computed efficiently. Furthermore, we show that the operations of tensor networks essential in their applications (e.g., addition and contraction) can also be implemented efficiently in TDDs. A proof-of-concept implementation of TDDs is presented and its efficiency is evaluated on a set of benchmark quantum circuits. It is expected that TDDs will play an important role in various design automation tasks related to quantum circuits, including but not limited to equivalence checking, error detection, synthesis, simulation, and verification.},
+  archive      = {J_TODAES},
+  author       = {Xin Hong and Xiangzhen Zhou and Sanjiang Li and Yuan Feng and Mingsheng Ying},
+  doi          = {10.1145/3514355},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {60:1–30},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A tensor network based decision diagram for representation of quantum circuits},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Quantum circuit transformation: A monte carlo tree search
+framework. <em>TODAES</em>, <em>27</em>(6), 59:1–27. (<a
+href="https://doi.org/10.1145/3514239">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the noisy intermediate-scale quantum era, quantum processing units suffer from, among others, highly limited connectivity between physical qubits. To make a quantum circuit effectively executable, a circuit transformation process is necessary to transform it, with overhead cost the smaller the better, into a functionally equivalent one so that the connectivity constraints imposed by the quantum processing unit are satisfied. Although several algorithms have been proposed for this goal, the overhead costs are often very high, which degenerates the fidelity of the obtained circuits sharply. One major reason for this lies in that, due to the high branching factor and vast search space, almost all of these algorithms only search very shallowly, and thus, very often, only (at most) locally optimal solutions can be reached. In this article, we propose a Monte Carlo Tree Search (MCTS) framework to tackle the circuit transformation problem, which enables the search process to go much deeper. The general framework supports implementations aiming to reduce either the size or depth of the output circuit through introducing SWAP or remote CNOT gates. The algorithms, called MCTS-Size and MCTS-Depth , are polynomial in all relevant parameters. Empirical results on extensive realistic circuits and IBM Q Tokyo show that the MCTS-based algorithms can reduce the size (respectively, depth) overhead by, on average, 66\% (respectively, 84\%) when compared with t \( \left| {\mathrm{ket}} \right\rangle \), an industrial-level compiler.},
+  archive      = {J_TODAES},
+  author       = {Xiangzhen Zhou and Yuan Feng and Sanjiang Li},
+  doi          = {10.1145/3514239},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {59:1–27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Quantum circuit transformation: A monte carlo tree search framework},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Toward a human-readable state machine extraction.
+<em>TODAES</em>, <em>27</em>(6), 58:1–31. (<a
+href="https://doi.org/10.1145/3513086">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The target of sequential reverse engineering is to extract the state machine of a design. Sequential reverse engineering of a gate-level netlist consists of the identification of so-called state flip-flops (sFFs), as well as the extraction of the state machine. The second step can be solved with an exact approach if the correct sFFs and the correct reset state are provided. For the first step, several more or less heuristic approaches exist. This work investigates sequential reverse engineering with the objective of a human-readable state machine extraction. A human-readable state machine reflects the original state machine and is not overloaded by additional design information. For this purpose, the work derives a systematic categorization of sFF sets, based on properties of single sFFs and their sets. These properties are determined by analyzing the degrees of freedom in describing state machines as the well-known Moore and Mealy machines. Based on the systematic categorization, this work presents an sFF set definition for a human-readable state machine, categorizes existing sFF identification strategies, and develops four post-processing methods. The results show that post-processing predominantly improves the outcome of several existing sFF identification algorithms.},
+  archive      = {J_TODAES},
+  author       = {Michaela Brunner and Alexander Hepp and Johanna Baehr and Georg Sigl},
+  doi          = {10.1145/3513086},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {58:1–31},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Toward a human-readable state machine extraction},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A novel architecture design for output significance aligned
+flow with adaptive control in ReRAM-based neural network accelerator.
+<em>TODAES</em>, <em>27</em>(6), 57:1–22. (<a
+href="https://doi.org/10.1145/3510819">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Resistive-RAM-based (ReRAM-based) computing shows great potential on accelerating DNN inference by its highly parallel structure. Regrettably, computing accuracy in practical is much lower than expected due to the non-ideal ReRAM device. Conventional computing flow with fixed wordline activation scheme can effectively protect computing accuracy but at the cost of significant performance and energy savings reduction. For such embarrassment of accuracy, performance and energy, this article proposes a new Adaptive-Wordline-Activation control scheme ( AWA-control ) and combines it with a theoretical Output-Significance-Aligned computing flow ( OSA-flow ) to enable fine-grained control on output significance with distinct impact on final result. We demonstrate AWA-control -supported OSA-flow architecture with maximal compatibility to conventional crossbar by input retiming and weight remapping using shifting registers to enable the new flow. However, in contrast to the conventional computing architecture, the OSA-flow architecture shows the better capability to exploit data sparsity commonly seen in DNN models. So we also design a sparsity-aware OSA-flow architecture for further DNN speedup. Evaluation results show that OSA-flow architecture can provide significant performance improvement of 21.6×, and energy savings of 96.2\% over conventional computing architecture with similar DNN accuracy.},
+  archive      = {J_TODAES},
+  author       = {Taozhong Li and Naifeng Jing and Jianfei Jiang and Qin Wang and Zhigang Mao and Yiran Chen},
+  doi          = {10.1145/3510819},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {57:1–22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A novel architecture design for output significance aligned flow with adaptive control in ReRAM-based neural network accelerator},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Breaking the design and security trade-off of
+look-up-table–based obfuscation. <em>TODAES</em>, <em>27</em>(6),
+56:1–29. (<a href="https://doi.org/10.1145/3510421">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Logic locking and Integrated Circuit (IC) camouflaging are the most prevalent protection schemes that can thwart most hardware security threats. However, the state-of-the-art attacks, including Boolean Satisfiability (SAT) and approximation-based attacks, question the efficacy of the existing defense schemes. Recent obfuscation schemes have employed reconfigurable logic to secure designs against various hardware security threats. However, they have focused on specific design elements such as SAT hardness. Despite meeting the focused criterion such as security, obfuscation incurs additional overheads, which are not evaluated in the present works. This work provides an extensive analysis of Look-up-table (LUT)–based obfuscation by exploring several factors such as LUT technology, size, number of LUTs, and replacement strategy as they have a substantial influence on Power-Performance-Area (PPA) and Security (PPA/S) of the design. We show that using large LUT makes LUT-based obfuscation resilient to hardware security threats. However, it also results in enormous design overheads beyond practical limits. To make the reconfigurable logic obfuscation efficient in terms of design overheads, this work proposes a novel LUT architecture where the security provided by the proposed primitive is superior to that of the traditional LUT-based obfuscation. Moreover, we leverage the security-driven design flow, which uses off-the-shelf industrial EDA tools to mitigate the design overheads further while being non-disruptive to the current industrial physical design flow. We empirically evaluate the security of the LUTs against state-of-the-art obfuscation techniques in terms of design overheads and SAT-attack resiliency. Our findings show that the proposed primitive significantly reduces both area and power by a factor of 8 \( \times \) and 2 \( \times \), respectively, without compromising security.},
+  archive      = {J_TODAES},
+  author       = {Gaurav Kolhe and Tyler David Sheaves and Sai Manoj P. D. and Hamid Mahmoodi and Setareh Rafatirad and Avesta Sasan and Houman Homayoun},
+  doi          = {10.1145/3510421},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {56:1–29},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Breaking the design and security trade-off of look-up-table–based obfuscation},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). NoC application mapping optimization using reinforcement
+learning. <em>TODAES</em>, <em>27</em>(6), 55:1–16. (<a
+href="https://doi.org/10.1145/3510381">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Application mapping is one of the early stage design processes aimed to improve the performance of Network-on-Chip. Mapping is an NP-hard problem. A massive amount of high-quality supervised data is required to solve the application mapping problem using traditional neural networks. In this article, a reinforcement learning–based neural framework is proposed to learn the heuristics of the application mapping problem. The proposed reinforcement learning–based mapping algorithm (RL-MAP) has actor and critic networks. The actor is a policy network, which provides mapping sequences. The critic network estimates the communication cost of these mapping sequences. The actor network updates the policy distribution in the direction suggested by the critic. The proposed RL-MAP is trained with unsupervised data to predict the permutations of the cores to minimize the overall communication cost. Further, the solutions are improved using the 2-opt local search algorithm. The performance of RL-MAP is compared with a few well-known heuristic algorithms, the Neural Mapping Algorithm (NMA) and message-passing neural network-pointer network-based genetic algorithm (MPN-GA). Results show that the communication cost and runtime of the RL-MAP improved considerably in comparison with the heuristic algorithms. The communication cost of the solutions generated by RL-MAP is nearly equal to MPN-GA and improved by 4.2\% over NMA, while consuming less runtime.},
+  archive      = {J_TODAES},
+  author       = {Samala Jagadheesh and P. Veda Bhanu and Soumya J.},
+  doi          = {10.1145/3510381},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {55:1–16},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {NoC application mapping optimization using reinforcement learning},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Increasing the fault coverage of a truncated test set.
+<em>TODAES</em>, <em>27</em>(6), 54:1–16. (<a
+href="https://doi.org/10.1145/3508459">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Defect-aware, cell-aware, and gate-exhaustive faults are described by input patterns of subcircuits or cells that are expected to activate defects. Even with single-cycle faults, an \( n \)-input subcircuit can have up to \( 2^n \) faults with unique fault detection conditions, resulting in a large test set. Such a test set may have to be truncated to fit in the tester memory or satisfy constraints on test application time. In this case, a loss of fault coverage is inevitable. This article considers the test set denoted by \( T_1 \) obtained after truncating a larger test set denoted by \( T_0 \). Suppose that the truncation reduces the set of detected faults from the set denoted by \( D_0 \) to the set denoted by \( D_1 \). The procedure described in this article modifies the tests in \( T_1 \) to gain the detection of faults from \( D_0 \) \( \setminus \) \( D_1 \), even at the cost of losing the detection of faults from \( D_1 \). The goal is to reduce the fault coverage loss by computing a test set denoted by \( T_2 \) that detects a set of faults denoted by \( D_2 \) such that \( |T_2| = |T_1| \) and \( |D_2| \gt |D_1| \). Experimental results for benchmark circuits demonstrate the ability of the procedure to increase the coverage of gate-exhaustive faults over several iterations.},
+  archive      = {J_TODAES},
+  author       = {Irith Pomeranz},
+  doi          = {10.1145/3508459},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {6},
+  pages        = {54:1–16},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Increasing the fault coverage of a truncated test set},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Design automation algorithms for the NP-separate VLSI design
+methodology. <em>TODAES</em>, <em>27</em>(5), 53:1–20. (<a
+href="https://doi.org/10.1145/3508375">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The NP-Separate design methodology for very-large-scale integration (VLSI) design fine-controls the sizes of transistors, thereby achieving significant power, performance, and area improvement compared to the conventional standard-cell-based design methodology. NP-Separate uses NP cells formed by merging and routing N and P cells having only NFETs and PFETs, respectively. The NP cell formation, however, should be automated to design large circuits using the NP-Separate design methodology. In this paper, we propose design automation algorithms to create NP cells automatically. Simulation results show that the automated NP-Separate reduces the design time significantly, decreases the coupling capacitance by 13\%, the critical path delay by 6\%, and the power consumption by 10\% on average compared to the manual NP-Separate designs. We also propose a detailed placement algorithm to generate more compact VLSI layouts with a little wirelength overhead. The combined effect reduces the coupling capacitance by 10\%, the critical path delay by 5\%, and the power consumption by 10\% on average compared to the manual NP-Separate designs.},
+  archive      = {J_TODAES},
+  author       = {Monzurul Islam Dewan and Dae Hyun Kim},
+  doi          = {10.1145/3508375},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {53:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Design automation algorithms for the NP-separate VLSI design methodology},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Magnetic core TSV-inductor design and optimization for
+on-chip DC-DC converter. <em>TODAES</em>, <em>27</em>(5), 52:1–23. (<a
+href="https://doi.org/10.1145/3507700">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The conventional on-chip spiral inductor consumes a significant top-metal routing area, thereby preventing its popularity in many on-chip applications. Recently through-silicon-via– (TSV) based inductor (also known as a TSV-inductor) with a magnetic core has been proved to be a viable option for the on-chip DC-DC converter. The operating conditions of these inductors play a major role in maximizing the performance and efficiency of the DC-DC converter. However, there is a critical need to study the design and optimization details of magnetic core TSV-inductors with the unique three-dimensional structure embedding magnetic core. This article aims to provide a clear understanding of the modeling details of a magnetic core TSV-inductor and a design and optimization methodology to assist efficient inductor design. Moreover, a machine learning–assisted model combining physical details and artificial neural network is also proposed to extract the equivalent circuit to further facilitate DC-DC converter design. Experimental results show that the optimized TSV-inductor with the magnetic core and air-gap can achieve inductance density improvement of up to 7.7 \( \times \) and quality factor improvements of up to 1.6 \( \times \) for the same footprint compared with the TSV-inductor without a magnetic core. For on-chip DC-DC converter applications, the converter efficiency can be improved by up to 15.9\% and 6.8\% compared with the conventional spiral and TSV-inductor without magnetic core, respectively.},
+  archive      = {J_TODAES},
+  author       = {Chenyi Wen and Xiao Dong and Baixin Chen and Umamaheswara Rao Tida and Yiyu Shi and Cheng Zhuo},
+  doi          = {10.1145/3507700},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {52:1–23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Magnetic core TSV-inductor design and optimization for on-chip DC-DC converter},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A low-power programmable machine learning hardware
+accelerator design for intelligent edge devices. <em>TODAES</em>,
+<em>27</em>(5), 51:1–13. (<a
+href="https://doi.org/10.1145/3531479">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the advent of the machine learning and IoT, many low-power edge devices, such as wearable devices with various sensors, are used for machine learning–based intelligent applications, such as healthcare or motion recognition. While these applications are becoming more complex to provide high-quality services, the performance of conventional low-power edge devices with extremely limited hardware resources is insufficient to support the emerging intelligent applications. We designed a hardware accelerator, called an Intelligence Boost Engine (IBE), for low-power smart edge devices to enable the real-time processing of emerging intelligent applications with energy efficiency and limited programmability. The measurement results confirm that the proposed IBE can reduce the power consumption of the edge node device by 75\% and achieve performance improvement in processing the kernel operations of applications such as motion recognition by 69.9 times.},
+  archive      = {J_TODAES},
+  author       = {Minkwan Kee and Gi-Ho Park},
+  doi          = {10.1145/3531479},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {51:1–13},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A low-power programmable machine learning hardware accelerator design for intelligent edge devices},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). DANCE: DAta-network co-optimization for efficient
+segmentation model training and inference. <em>TODAES</em>,
+<em>27</em>(5), 50:1–20. (<a
+href="https://doi.org/10.1145/3510835">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic segmentation for scene understanding is nowadays widely demanded, raising significant challenges for the algorithm efficiency, especially its applications on resource-limited platforms. Current segmentation models are trained and evaluated on massive high-resolution scene images (“data-level”) and suffer from the expensive computation arising from the required multi-scale aggregation (“network level”). In both folds, the computational and energy costs in training and inference are notable due to the often desired large input resolutions and heavy computational burden of segmentation models. To this end, we propose DANCE, general automated DA ta- N etwork C o-optimization for E fficient segmentation model training and inference . Distinct from existing efficient segmentation approaches that focus merely on light-weight network design, DANCE distinguishes itself as an automated simultaneous data-network co-optimization via both input data manipulation and network architecture slimming. Specifically, DANCE integrates automated data slimming which adaptively downsamples/drops input images and controls their corresponding contribution to the training loss guided by the images’ spatial complexity. Such a downsampling operation, in addition to slimming down the cost associated with the input size directly, also shrinks the dynamic range of input object and context scales, therefore motivating us to also adaptively slim the network to match the downsampled data. Extensive experiments and ablating studies (on four SOTA segmentation models with three popular segmentation datasets under two training settings) demonstrate that DANCE can achieve “all-win” towards efficient segmentation (reduced training cost, less expensive inference, and better mean Intersection-over-Union (mIoU)). Specifically, DANCE can reduce ↓25\%–↓77\% energy consumption in training, ↓31\%–↓56\% in inference, while boosting the mIoU by ↓0.71\%–↑ 13.34\%.},
+  archive      = {J_TODAES},
+  author       = {Chaojian Li and Wuyang Chen and Yuchen Gu and Tianlong Chen and Yonggan Fu and Zhangyang Wang and Yingyan Lin},
+  doi          = {10.1145/3510835},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {50:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {DANCE: DAta-network co-optimization for efficient segmentation model training and inference},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). EF-train: Enable efficient on-device CNN training on FPGA
+through data reshaping for online adaptation or personalization.
+<em>TODAES</em>, <em>27</em>(5), 49:1–36. (<a
+href="https://doi.org/10.1145/3505633">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conventionally, DNN models are trained once in the cloud and deployed in edge devices such as cars, robots, or unmanned aerial vehicles (UAVs) for real-time inference. However, there are many cases that require the models to adapt to new environments, domains, or users. In order to realize such domain adaption or personalization, the models on devices need to be continuously trained on the device. In this work, we design EF-Train, an efficient DNN training accelerator with a unified channel-level parallelism-based convolution kernel that can achieve end-to-end training on resource-limited low-power edge-level FPGAs. It is challenging to implement on-device training on resource-limited FPGAs due to the low efficiency caused by different memory access patterns among forward and backward propagation and weight update. Therefore, we developed a data reshaping approach with intra-tile continuous memory allocation and weight reuse. An analytical model is established to automatically schedule computation and memory resources to achieve high energy efficiency on edge FPGAs. The experimental results show that our design achieves 46.99 GFLOPS and 6.09 GFLOPS/W in terms of throughput and energy efficiency, respectively.},
+  archive      = {J_TODAES},
+  author       = {Yue Tang and Xinyi Zhang and Peipei Zhou and Jingtong Hu},
+  doi          = {10.1145/3505633},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {49:1–36},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {EF-train: Enable efficient on-device CNN training on FPGA through data reshaping for online adaptation or personalization},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Implication of optimizing NPU dataflows on neural
+architecture search for mobile devices. <em>TODAES</em>, <em>27</em>(5),
+48:1–24. (<a href="https://doi.org/10.1145/3513085">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in deep learning have made it possible to implement artificial intelligence in mobile devices. Many studies have put a lot of effort into developing lightweight deep learning models optimized for mobile devices. To overcome the performance limitations of manually designed deep learning models, an automated search algorithm, called neural architecture search ( NAS ), has been proposed. However, studies on the effect of hardware architecture of the mobile device on the performance of NAS have been less explored. In this article, we show the importance of optimizing a hardware architecture, namely, NPU dataflow, when searching for a more accurate yet fast deep learning model. To do so, we first implement an optimization framework, named FlowOptimizer, for generating a best possible NPU dataflow for a given deep learning operator. Then, we utilize this framework during the latency-aware NAS to find the model with the highest accuracy satisfying the latency constraint. As a result, we show that the searched model with FlowOptimizer outperforms the performance by 87.1\% and 92.3\% on average compared to the searched model with NVDLA and Eyeriss, respectively, with better accuracy on a proxy dataset. We also show that the searched model can be transferred to a larger model to classify a more complex image dataset, i.e., ImageNet, achieving 0.2\%/5.4\% higher Top-1/Top-5 accuracy compared to MobileNetV2-1.0 with 3.6 \( \times \) lower latency.},
+  archive      = {J_TODAES},
+  author       = {Jooyeon Lee and Junsang Park and Seunghyun Lee and Jaeha Kung},
+  doi          = {10.1145/3513085},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {48:1–24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Implication of optimizing NPU dataflows on neural architecture search for mobile devices},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Automatic mapping of the best-suited DNN pruning schemes for
+real-time mobile acceleration. <em>TODAES</em>, <em>27</em>(5), 47:1–26.
+(<a href="https://doi.org/10.1145/3495532">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Weight pruning is an effective model compression technique to tackle the challenges of achieving real-time deep neural network (DNN) inference on mobile devices. However, prior pruning schemes have limited application scenarios due to accuracy degradation, difficulty in leveraging hardware acceleration, and/or restriction on certain types of DNN layers. In this article, we propose a general, fine-grained structured pruning scheme and corresponding compiler optimizations that are applicable to any type of DNN layer while achieving high accuracy and hardware inference performance. With the flexibility of applying different pruning schemes to different layers enabled by our compiler optimizations, we further probe into the new problem of determining the best-suited pruning scheme considering the different acceleration and accuracy performance of various pruning schemes. Two pruning scheme mapping methods—one -search based and the other is rule based—are proposed to automatically derive the best-suited pruning regularity and block size for each layer of any given DNN. Experimental results demonstrate that our pruning scheme mapping methods, together with the general fine-grained structured pruning scheme, outperform the state-of-the-art DNN optimization framework with up to 2.48 \( \times \) and 1.73 \( \times \) DNN inference acceleration on CIFAR-10 and ImageNet datasets without accuracy loss.},
+  archive      = {J_TODAES},
+  author       = {Yifan Gong and Geng Yuan and Zheng Zhan and Wei Niu and Zhengang Li and Pu Zhao and Yuxuan Cai and Sijia Liu and Bin Ren and Xue Lin and Xulong Tang and Yanzhi Wang},
+  doi          = {10.1145/3495532},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {47:1–26},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Automatic mapping of the best-suited DNN pruning schemes for real-time mobile acceleration},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Dynamic quantization range control for analog-in-memory
+neural networks acceleration. <em>TODAES</em>, <em>27</em>(5), 46:1–21.
+(<a href="https://doi.org/10.1145/3498328">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Analog in Memory Computing (AiMC) based neural network acceleration is a promising solution to increase the energy efficiency of deep neural networks deployment. However, the quantization requirements of these analog systems are not compatible with state-of-the-art neural network quantization techniques. Indeed, while the quantization of the weights and activations is considered by modern deep neural network quantization techniques, AiMC accelerators also impose the quantization of each Matrix Vector Multiplication (MVM) result. In most demonstrated AiMC implementations, the quantization range of MVM results is considered a fixed parameter of the accelerator. This work demonstrates that dynamic control over this quantization range is possible but also desirable for analog neural networks acceleration. An AiMC compatible quantization flow coupled with a hardware aware quantization range driving technique is introduced to fully exploit these dynamic ranges. Using CIFAR-10 and ImageNet as benchmarks, the proposed solution results in networks that are both more accurate and more robust to the inherent vulnerability of analog circuits than fixed quantization range based approaches.},
+  archive      = {J_TODAES},
+  author       = {Nathan Laubeuf and Jonas Doevenspeck and Ioannis A. Papistas and Michele Caselli and Stefan Cosemans and Peter Vrancx and Debjyoti Bhattacharjee and Arindam Mallik and Peter Debacker and Diederik Verkest and Francky Catthoor and Rudy Lauwereins},
+  doi          = {10.1145/3498328},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {46:1–21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Dynamic quantization range control for analog-in-memory neural networks acceleration},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). E2HRL: An energy-efficient hardware accelerator for
+hierarchical deep reinforcement learning. <em>TODAES</em>,
+<em>27</em>(5), 45:1–19. (<a
+href="https://doi.org/10.1145/3498327">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, Reinforcement Learning (RL) has shown great performance in solving sequential decision-making and control in dynamic environment problems. Despite its achievements, deploying Deep Neural Network (DNN)-based RL is expensive in terms of time and power due to the large number of episodes required to train agents with high dimensional image representations. Additionally, at the interference the large energy footprint of deep neural networks can be a major drawback. Embedded edge devices as the main platform for deploying RL applications are intrinsically resource-constrained and deploying deep neural network-based RL on them is a challenging task. As a result, reducing the number of actions taken by the RL agent to learn desired policy, along with the energy-efficient deployment of RL, is crucial. In this article, we propose Energy Efficient Hierarchical Reinforcement Learning (E2HRL), which is a scalable hardware architecture for RL applications. E2HRL utilizes a cross-layer design methodology for achieving better energy efficiency, smaller model size, higher accuracy, and system integration at the software and hardware layers. Our proposed model for RL agent is designed based on the learning hierarchical policies, which makes the network architecture more efficient for implementation on mobile devices. We evaluated our model in three different RL environments with different level of complexity. Simulation results with our analysis illustrate that hierarchical policy learning with several levels of control improves RL agents training efficiency and the agent learns the desired policy faster compared to a non-hierarchical model. This improvement is specifically more observable as the environment or the task becomes more complex with multiple objective subgoals. We tested our model with different hyperparameters to achieve the maximum reward by the RL agent while minimizing the model size, parameters, and required number of operations. E2HRL model enables efficient deployment of RL agent on resource-constraint-embedded devices with the proposed custom hardware architecture that is scalable and fully parameterized with respect to the number of input channels, filter size, and depth. The number of processing engines (PE) in the proposed hardware can vary between 1 to 8, which provides the flexibility of tradeoff of different factors such as latency, throughput, power, and energy efficiency. By performing a systematic hardware parameter analysis and design space exploration, we implemented the most energy-efficient hardware architectures of E2HRL on Xilinx Artix-7 FPGA and NVIDIA Jetson TX2. Comparing the implementation results shows Jetson TX2 boards achieve 0.1 ∼ 1.3 GOP/S/W energy efficiency while Artix-7 FPGA achieves 1.1 ∼ 11.4 GOP/S/W, which denotes 8.8× ∼ 11× better energy efficiency of E2HRL when model is implemented on FPGA. Additionally, compared to similar works our design shows better performance and energy efficiency.},
+  archive      = {J_TODAES},
+  author       = {Aidin Shiri and Uttej Kallakuri and Hasib-Al Rashid and Bharat Prakash and Nicholas R. Waytowich and Tim Oates and Tinoosh Mohsenin},
+  doi          = {10.1145/3498327},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {45:1–19},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {E2HRL: An energy-efficient hardware accelerator for hierarchical deep reinforcement learning},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Energy-efficient LSTM inference accelerator for real-time
+causal prediction. <em>TODAES</em>, <em>27</em>(5), 44:1–19. (<a
+href="https://doi.org/10.1145/3495006">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ever-growing edge applications often require short processing latency and high energy efficiency to meet strict timing and power budget. In this work, we propose that the compact long short-term memory (LSTM) model can approximate conventional acausal algorithms with reduced latency and improved efficiency for real-time causal prediction, especially for the neural signal processing in closed-loop feedback applications. We design an LSTM inference accelerator by taking advantage of the fine-grained parallelism and pipelined feedforward and recurrent updates. We also propose a bit-sparse quantization method that can reduce the circuit area and power consumption by replacing the multipliers with the bit-shift operators. We explore different combinations of pruning and quantization methods for energy-efficient LSTM inference on datasets collected from the electroencephalogram (EEG) and calcium image processing applications. Evaluation results show that our proposed LSTM inference accelerator can achieve 1.19 GOPS/mW energy efficiency. The LSTM accelerator with 2-sbit/16-bit sparse quantization and 60\% sparsity can reduce the circuit area and power consumption by 54.1\% and 56.3\%, respectively, compared with a 16-bit baseline implementation.},
+  archive      = {J_TODAES},
+  author       = {Zhe Chen and Hugh T. Blair and Jason Cong},
+  doi          = {10.1145/3495006},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {44:1–19},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Energy-efficient LSTM inference accelerator for real-time causal prediction},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Energy efficient boosting of GEMM accelerators for DNN via
+reuse. <em>TODAES</em>, <em>27</em>(5), 43:1–26. (<a
+href="https://doi.org/10.1145/3503469">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reuse-centric convolutional neural networks (CNN) acceleration speeds up CNN inference by reusing computations for similar neuron vectors in CNN’s input layer or activation maps. This new paradigm of optimizations is, however, largely limited by the overheads in neuron vector similarity detection, an important step in reuse-centric CNN. This article presents an in-depth exploration of architectural support for reuse-centric CNN. It addresses some major limitations of the state-of-the-art design and proposes a novel hardware accelerator that improves neuron vector similarity detection and reduces the energy consumption of reuse-centric CNN inference. The accelerator is implemented to support a wide variety of neural network settings with a banked memory subsystem. Design exploration is performed through RTL simulation and synthesis on an FPGA platform. When integrated into Eyeriss, the accelerator can potentially provide improvements up to 7.75 \( \times \) in performance. Furthermore, it can reduce the energy used for similarity detection up to 95.46\%, and it can accelerate the convolutional layer up to 3.63 \( \times \) compared to the software-based implementation running on the CPU.},
+  archive      = {J_TODAES},
+  author       = {Nihat Mert Cicek and Xipeng Shen and Ozcan Ozturk},
+  doi          = {10.1145/3503469},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {43:1–26},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Energy efficient boosting of GEMM accelerators for DNN via reuse},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). MVP: An efficient CNN accelerator with matrix, vector, and
+processing-near-memory units. <em>TODAES</em>, <em>27</em>(5), 42:1–25.
+(<a href="https://doi.org/10.1145/3497745">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mobile and edge devices become common platforms for inferring convolutional neural networks (CNNs) due to superior privacy and service quality. To reduce the computational costs of convolution (CONV) , recent CNN models adopt depth-wise CONV (DW-CONV) and Squeeze-and-Excitation (SE) . However, existing area-efficient CNN accelerators are sub-optimal for these latest CNN models because they were mainly optimized for compute-intensive standard CONV layers with abundant data reuse that can be pipelined with activation and normalization operations. In contrast, DW-CONV and SE are memory-intensive with limited data reuse. The latter also strongly depends on the nearby CONV layers, making an effective pipelining a daunting task. Therefore, DW-CONV and SE only occupy 10\% of entire operations but become memory bandwidth bound, spending more than 60\% of the processing time in systolic-array-based accelerators. We propose a CNN acceleration architecture called MVP, which efficiently processes both compute- and memory-intensive operations with a small area overhead on top of the baseline systolic-array-based architecture. We suggest a specialized vector unit tailored for processing DW-CONV, including multipliers, adder trees, and multi-banked buffers to meet the high memory bandwidth requirement. We augment the unified buffer with tiny processing elements to smoothly pipeline SE with the subsequent CONV, enabling concurrent processing of DW-CONV with standard CONV, thereby achieving the maximum utilization of arithmetic units. Our evaluation shows that MVP improves performance by 2.6 \( \times \) and reduces energy by 47\% on average for EfficientNet-B0/B4/B7, MnasNet, and MobileNet-V1/V2 with only a 9\% area overhead compared to the baseline.},
+  archive      = {J_TODAES},
+  author       = {Sunjung Lee and Jaewan Choi and Wonkyung Jung and Byeongho Kim and Jaehyun Park and Hweesoo Kim and Jung Ho Ahn},
+  doi          = {10.1145/3497745},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {42:1–25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {MVP: An efficient CNN accelerator with matrix, vector, and processing-near-memory units},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Introduction to the special section on energy-efficient AI
+chips. <em>TODAES</em>, <em>27</em>(5), 41:1–2. (<a
+href="https://doi.org/10.1145/3538502">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TODAES},
+  author       = {Vikas Chandra and Yiran Chen and Sungjoo Yoo},
+  doi          = {10.1145/3538502},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {5},
+  pages        = {41:1–2},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Introduction to the special section on energy-efficient AI chips},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A survey on security of digital microfluidic biochips:
+Technology, attack, and defense. <em>TODAES</em>, <em>27</em>(4),
+40:1–33. (<a href="https://doi.org/10.1145/3494697">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As an emerging lab-on-a-chip technology platform, digital microfluidic biochips (DMFBs) have been widely used for executing various laboratory procedures in biochemistry and biomedicine such as gene sequencing and near-patient diagnosis, with the advantages of low reagent consumption, high precision, and miniaturization and integration. With the ongoing rapid deployment of DMFBs, however, these devices are now facing serious and complicated security challenges that not only damage their functional integrity but also affect their system reliability. In this article, we present a systematic review of DMFB security, focusing on both the state-of-the-art attack and defense techniques. First, the overall security situation, the working principle, and the corresponding fabrication technology of DMFBs are introduced. Afterwards, existing attack approaches are divided into several categories and discussed in detail, including denial of service, intellectual property piracy, bioassay tampering, layout modification, actuation sequence tampering, concentration altering, parameter modification, reading forgery, and information leakage. To prevent biochips from being damaged by these attack behaviors, a number of defense measures have been proposed in recent years. Accordingly, we further classify these techniques into three categories according to their respective defense purposes, including confidentiality protection, integrity protection, and availability protection. These measures, to varying degrees, can provide effective protection for DMFBs. Finally, key trends and directions for future research that are related to the security of DMFBs are discussed from several aspects, e.g., manufacturing materials, biochip structure, and usage environment, thus providing new ideas for future biochip protection.},
+  archive      = {J_TODAES},
+  author       = {Wenzhong Guo and Sihuang Lian and Chen Dong and Zhenyi Chen and Xing Huang},
+  doi          = {10.1145/3494697},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {40:1–33},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A survey on security of digital microfluidic biochips: Technology, attack, and defense},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Fault localization scheme for missing gate faults in
+reversible circuits. <em>TODAES</em>, <em>27</em>(4), 39:1–29. (<a
+href="https://doi.org/10.1145/3503539">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces a fault localization method to extract the exact location of single and multiple missing gate faults in reversible \( k \)-CNOT -based circuits. The primary target of the proposed method is to obtain the complete test set for localizing faults in \( k \)-CNOT circuits. We propose a fault localization algorithm to construct a fault localization tree that can be used to find equivalent and non-equivalent faults. For the non-equivalent faults, the test sequences can be obtained from the fault localization tree that uniquely localizes the non-equivalent faults. Finally, this article presents the experimental results and comparative analysis with existing works.},
+  archive      = {J_TODAES},
+  author       = {Mousum Handique and Jantindra Kumar Deka and Santosh Biswas},
+  doi          = {10.1145/3503539},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {39:1–29},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Fault localization scheme for missing gate faults in reversible circuits},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Synthesis of clock networks with a mode-reconfigurable
+topology. <em>TODAES</em>, <em>27</em>(4), 38:1–22. (<a
+href="https://doi.org/10.1145/3503538">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern digital circuits are often required to operate in multiple modes to cater to variable frequency and power requirements. Consequently, the clock networks for such circuits must be synthesized, meeting different timing constraints in different operational modes. The overall power consumption and robustness to variations of a clock network are determined by the topology. However, state-of-the-art clock networks use the same topology in every mode, despite that timing constraints in low- and high-performance modes can be very different. In this article, we propose a clock network with a mode-reconfigurable topology (MRT) for circuits with positive-edge-triggered sequential elements. In high-performance modes, the MRT structure is reconfigured into a near-tree to provide the required robustness to variations. In low-performance modes, the MRT structure is reconfigured into a tree to save power. Non-tree (or near-tree) structures provide robustness to variations by appropriately constructing multiple alternative paths from the clock source to the clock sinks, which neutralizes the negative impact of variations. In MRT structures, OR-gates are used to join multiple alternative paths into a single path. Hence, the MRT structures consume no short-circuit power because there is only one gate driving each net. Moreover, it is straightforward to reconfigure an MRT structure into a tree topology using a single clock gate. In high-performance modes, the experimental results demonstrate that MRT structures have \( 25\% \) lower power consumption than state-of-the-art near-tree structures. In low-performance modes, the power consumption of the MRT structure is similar to the power consumption of a clock tree.},
+  archive      = {J_TODAES},
+  author       = {Necati Uysal and Rickard Ewetz},
+  doi          = {10.1145/3503538},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {38:1–22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Synthesis of clock networks with a mode-reconfigurable topology},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Achieving high in situ training accuracy and energy
+efficiency with analog non-volatile synaptic devices. <em>TODAES</em>,
+<em>27</em>(4), 37:1–19. (<a
+href="https://doi.org/10.1145/3500929">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {On-device embedded artificial intelligence prefers the adaptive learning capability when deployed in the field, and thus in situ training is required. The compute-in-memory approach, which exploits the analog computation within the memory array, is a promising solution for deep neural network (DNN) on-chip acceleration. Emerging non-volatile memories are of great interest, serving as analog synapses due to their multilevel programmability. However, the asymmetry and nonlinearity in the conductance tuning remain grand challenges for achieving high in situ training accuracy. In addition, analog-to-digital converters at the edge of the memory array introduce quantization errors. In this work, we present an algorithm-hardware co-optimization to overcome these challenges. We incorporate the device/circuit non-ideal effects into the DNN propagation and weight update steps. By introducing the adaptive “momentum” in the weight update rule, in situ training accuracy on CIFAR-10 could approach its software baseline even under severe asymmetry/nonlinearity and analog-to-digital converter quantization error. The hardware performance of the on-chip training architecture and the overhead for adding “momentum” are also evaluated. By optimizing the backpropagation dataflow, 23.59 TOPS/W training energy efficiency (12× improvement compared to naïve dataflow) is achieved. The circuits that handle “momentum” introduce only 4.2\% energy overhead. Our results show great potential and more relaxed requirements that enable emerging non-volatile memories for DNN acceleration on the embedded artificial intelligence platforms.},
+  archive      = {J_TODAES},
+  author       = {Shanshi Huang and Xiaoyu Sun and Xiaochen Peng and Hongwu Jiang and Shimeng Yu},
+  doi          = {10.1145/3500929},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {37:1–19},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Achieving high in situ training accuracy and energy efficiency with analog non-volatile synaptic devices},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A low-overhead and high-security cryptographic circuit
+design utilizing the TIGFET-based three-phase single-rail pulse register
+against side-channel attacks. <em>TODAES</em>, <em>27</em>(4), 36:1–13.
+(<a href="https://doi.org/10.1145/3498339">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Side-channel attack (SCA) reveals confidential information by statistically analyzing physical manifestations, which is the serious threat to cryptographic circuits. Various SCA circuit-level countermeasures have been proposed as fundamental solutions to reduce the side-channel vulnerabilities of cryptographic implementations; however, such approaches introduce non-negligible power and area overheads. Among all of the circuit components, flip-flops are the main source of information leakage. This article proposes a three-phase single-rail pulse register (TSPR) based on the three-independent-gate field effect transistor (TIGFET) to achieve all desired properties with improved metrics of area and security. TIGFET-based TSPR consumes a constant power (MCV is 0.25\%), has a low delay (12 ps), and employs only 10 TIGFET devices, which is applicable for the low-overhead and high-security cryptographic circuit design compared to the existing flip-flops. In addition, a set of TIGFET-based combinational basic gates are designed to reduce the area occupation and power consumption as much as possible. As a proof of concept, a simplified advanced encryption algorithm (AES), SM4 block cipher algorithm (SM4), and light-weight cryptographic algorithm (PRESENT) are built with the TIGFET-based library. SCA is implemented on the cryptographic implementations to prove its SCA resilience, and the SCA results show that the correct key of cryptographic circuits with TIGFET-based TSPRs is not guessed within 2,000 power traces.},
+  archive      = {J_TODAES},
+  author       = {Yanjiang Liu and Tongzhou Qu and Zibin Dai},
+  doi          = {10.1145/3498339},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {36:1–13},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A low-overhead and high-security cryptographic circuit design utilizing the TIGFET-based three-phase single-rail pulse register against side-channel attacks},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). High-level synthesis implementation of an embedded real-time
+HEVC intra encoder on FPGA for media applications. <em>TODAES</em>,
+<em>27</em>(4), 35:1–34. (<a
+href="https://doi.org/10.1145/3491215">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High Efficiency Video Coding (HEVC) is the key enabling technology for numerous modern media applications. Overcoming its computational complexity and customizing its rich features for real-time HEVC encoder implementations, calls for automated design methodologies. This article introduces the first complete High-Level Synthesis (HLS) implementation for HEVC intra encoder on FPGA. The C source code of our open-source Kvazaar HEVC encoder is used as a design entry point for HLS that is applied throughout the whole encoder design process, from data-intensive coding tools like intra prediction and discrete transforms to more control-oriented tools such as context-adaptive binary arithmetic coding (CABAC). Our prototype is run on Nokia AirFrame Cloud Server equipped with 2.4 GHz dual 14-core Intel Xeon processors and two Intel Arria 10 PCIe FPGA accelerator cards with 40 Gigabit Ethernet. This proof-of-concept system is designed for hardware-accelerated HEVC encoding and it achieves real-time 4K coding speed up to 120 fps. The coding performance can be easily scaled up by adding practically any number of network-connected FPGA cards to the system. These results indicate that our HLS proposal not only boosts development time, but also provides previously unseen design scalability with competitive performance over the existing FPGA and ASIC encoder implementations.},
+  archive      = {J_TODAES},
+  author       = {Panu Sjövall and Ari Lemmetti and Jarno Vanne and Sakari Lahti and Timo D. Hämäläinen},
+  doi          = {10.1145/3491215},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {35:1–34},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {High-level synthesis implementation of an embedded real-time HEVC intra encoder on FPGA for media applications},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Learning from the past: Efficient high-level synthesis
+design space exploration for FPGAs. <em>TODAES</em>, <em>27</em>(4),
+34:1–23. (<a href="https://doi.org/10.1145/3495531">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The quest to democratize the use of Field-Programmable Gate Arrays (FPGAs) has given High-Level Synthesis (HLS) the final push to be widely accepted with FPGA vendors strongly supporting this VLSI design methodology to expand the FPGA user base. HLS takes as input an untimed behavioral description and generates efficient RTL (Verilog or VHDL). One major advantage of HLS is that it allows us to generate a variety of different micro-architectures from the same behavioral description by simply specifying different combination of synthesis options. In particular, commercial HLS tools make extensive use of synthesize directives in the form pragmas. This strength is also a weakness as it forces HLS users to fully understand how these synthesis options work and how they interact to efficiently set them to get a hardware implementation with the desired characteristics. Luckily, this process can be automated. Unfortunately, the search space grows supra-linearly with the number of synthesis options. To address this, this work proposes an automatic synthesis option tuner dedicated for FPGAs. We have explored a larger number of behavioral descriptions targeting ASICs and FPGAs and found out that due to the internal structure of the FPGA a large number of synthesis options combinations never lead to a Pareto-optimal design and, hence, the search space can be drastically reduced. Moreover, we make use of large database of DSE results that we have generated since we started working in this field to further accelerate the exploration process. For this, we use a technique based on perceptual hashing that allows our proposed explorer to recognize similar program structures in the new description to be explored and match them with structures in our database. This allows us to directly retrieve the pragma settings that lead to Pareto-optimal configurations. Experimental results show that the search space can be accelerated substantially while leading to finding most of the Pareto-optimal designs.},
+  archive      = {J_TODAES},
+  author       = {Zi Wang and Benjamin Carrion Schafer},
+  doi          = {10.1145/3495531},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {34:1–23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Learning from the past: Efficient high-level synthesis design space exploration for FPGAs},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Sherlock: A multi-objective design space exploration
+framework. <em>TODAES</em>, <em>27</em>(4), 33:1–20. (<a
+href="https://doi.org/10.1145/3511472">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Design space exploration (DSE) provides intelligent methods to tune the large number of optimization parameters present in modern FPGA high-level synthesis tools. High-level synthesis parameter tuning is a time-consuming process due to lengthy hardware compilation times—synthesizing an FPGA design can take tens of hours. DSE helps find an optimal solution faster than brute-force methods without relying on designer intuition to achieve high-quality results. Sherlock is a DSE framework that can handle multiple conflicting optimization objectives and aggressively focuses on finding Pareto-optimal solutions. Sherlock integrates a model selection process to choose the regression model that helps reach the optimal solution faster. Sherlock designs a strategy based around the multi-armed bandit problem, opting to balance exploration and exploitation based on the learned and expected results. Sherlock can decrease the importance of models that do not provide correct estimates, reaching the optimal design faster. Sherlock is capable of tailoring its choice of regression models to the problem at hand, leading to a model that best reflects the application design space. We have tested the framework on a large dataset of FPGA design problems and found that Sherlock converges toward the set of optimal designs faster than similar frameworks.},
+  archive      = {J_TODAES},
+  author       = {Quentin Gautier and Alric Althoff and Christopher L. Crutchfield and Ryan Kastner},
+  doi          = {10.1145/3511472},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {33:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Sherlock: A multi-objective design space exploration framework},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). AutoDSE: Enabling software programmers to design efficient
+FPGA accelerators. <em>TODAES</em>, <em>27</em>(4), 32:1–27. (<a
+href="https://doi.org/10.1145/3494534">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Adopting FPGA as an accelerator in datacenters is becoming mainstream for customized computing, but the fact that FPGAs are hard to program creates a steep learning curve for software programmers. Even with the help of high-level synthesis (HLS) , accelerator designers still have to manually perform code reconstruction and cumbersome parameter tuning to achieve optimal performance. While many learning models have been leveraged by existing work to automate the design of efficient accelerators, the unpredictability of modern HLS tools becomes a major obstacle for them to maintain high accuracy. To address this problem, we propose an automated DSE framework— AutoDSE —that leverages a bottleneck-guided coordinate optimizer to systematically find a better design point. AutoDSE detects the bottleneck of the design in each step and focuses on high-impact parameters to overcome it. The experimental results show that AutoDSE is able to identify the design point that achieves, on the geometric mean, 19.9× speedup over one CPU core for MachSuite and Rodinia benchmarks. Compared to the manually optimized HLS vision kernels in Xilinx Vitis libraries, AutoDSE can reduce their optimization pragmas by 26.38× while achieving similar performance. With less than one optimization pragma per design on average, we are making progress towards democratizing customizable computing by enabling software programmers to design efficient FPGA accelerators.},
+  archive      = {J_TODAES},
+  author       = {Atefeh Sohrabizadeh and Cody Hao Yu and Min Gao and Jason Cong},
+  doi          = {10.1145/3494534},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {32:1–27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {AutoDSE: Enabling software programmers to design efficient FPGA accelerators},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Correlated multi-objective multi-fidelity optimization for
+HLS directives design. <em>TODAES</em>, <em>27</em>(4), 31:1–27. (<a
+href="https://doi.org/10.1145/3503540">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-level synthesis (HLS) tools have gained great attention in recent years because it emancipates engineers from the complicated and heavy hardware description language writing and facilitates the implementations of modern applications (e.g., deep learning models) on Field-programmable Gate Array (FPGA) , by using high-level languages and HLS directives. However, finding good HLS directives is challenging, due to the time-consuming design processes, the balances among different design objectives, and the diverse fidelities (accuracies of data) of the performance values between the consecutive FPGA design stages. To find good HLS directives, a novel automatic optimization algorithm is proposed to explore the Pareto designs of the multiple objectives while making full use of the data with different fidelities from different FPGA design stages. Firstly, a non-linear Gaussian process (GP) is proposed to model the relationships among the different FPGA design stages. Secondly, for the first time, the GP model is enhanced as correlated GP (CGP) by considering the correlations between the multiple design objectives, to find better Pareto designs. Furthermore, we extend our model to be a deep version deep CGP (DCGP) by using the deep neural network to improve the kernel functions in Gaussian process models, to improve the characterization capability of the models, and learn better feature representations. We test our design method on some public benchmarks (including general matrix multiplication and sparse matrix-vector multiplication) and deep learning-based object detection model iSmart2 on FPGA. Experimental results show that our methods outperform the baselines significantly and facilitate the deep learning designs on FPGA.},
+  archive      = {J_TODAES},
+  author       = {Qi Sun and Tinghuan Chen and Siting Liu and Jianli Chen and Hao Yu and Bei Yu},
+  doi          = {10.1145/3503540},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {31:1–27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Correlated multi-objective multi-fidelity optimization for HLS directives design},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A case for precise, fine-grained pointer synthesis in
+high-level synthesis. <em>TODAES</em>, <em>27</em>(4), 30:1–26. (<a
+href="https://doi.org/10.1145/3491430">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article combines two practical approaches to improve pointer synthesis within HLS tools. Both approaches focus on inefficiencies in how HLS tools treat the points-to graph— a mapping that connects each instruction to the memory locations that it might access at runtime. HLS pointer synthesis first computes the points-to graph via pointer analysis and then implements its connections in hardware, which gives rise to two inefficiencies. First, HLS tools typically favour pointer analysis that is fast, sacrificing precision. Second, they also favour centralising memory connections in hardware for instructions that can point to more than one location. In this article, we demonstrate that a more precise pointer analysis coupled with decentralised memory connections in hardware can substantially reduce the unnecessary sharing of memory resources. We implement both flow- and context-sensitive pointer analysis and fine-grained memory connections in two modern HLS tools, LegUp and Vitis HLS. An evaluation on three benchmark suites, ranging from non-trivial pointer use to standard HLS benchmarks, indicates that when we improve both precision and granularity of pointer synthesis, on average, we can reduce area and latency by around 42\% and 37\%, respectively.},
+  archive      = {J_TODAES},
+  author       = {Nadesh Ramanathan and George A. Constantinides and John Wickerson},
+  doi          = {10.1145/3491430},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {30:1–26},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A case for precise, fine-grained pointer synthesis in high-level synthesis},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Introduction to the special section on high-level synthesis
+for FPGA: Next-generation technologies and applications.
+<em>TODAES</em>, <em>27</em>(4), 29:1–2. (<a
+href="https://doi.org/10.1145/3519279">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TODAES},
+  author       = {Christian Pilato and Zhenman Fang and Yuko Hara-Azumi and Jim Hwang},
+  doi          = {10.1145/3519279},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {4},
+  pages        = {29:1–2},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Introduction to the special section on high-level synthesis for FPGA: Next-generation technologies and applications},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Ax-BxP: Approximate blocked computation for
+precision-reconfigurable deep neural network acceleration.
+<em>TODAES</em>, <em>27</em>(3), 28:1–20. (<a
+href="https://doi.org/10.1145/3492733">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Precision scaling has emerged as a popular technique to optimize the compute and storage requirements of Deep Neural Networks (DNNs). Efforts toward creating ultra-low-precision (sub-8-bit) DNNs for efficient inference suggest that the minimum precision required to achieve a given network-level accuracy varies considerably across networks, and even across layers within a network. This translates to a need to support variable precision computation in DNN hardware. Previous proposals for precision-reconfigurable hardware, such as bit-serial architectures, incur high overheads, significantly diminishing the benefits of lower precision. We propose Ax-BxP, a method for approximate blocked computation wherein each multiply-accumulate operation is performed block-wise (a block is a group of bits), facilitating re-configurability at the granularity of blocks. Further, approximations are introduced by only performing a subset of the required block-wise computations to realize precision re-configurability with high efficiency. We design a DNN accelerator that embodies approximate blocked computation and propose a method to determine a suitable approximation configuration for any given DNN. For the AlexNet, ResNet50, and MobileNetV2 DNNs, Ax-BxP achieves improvement in system energy and performance, respectively, over an 8-bit fixed-point (FxP8) baseline, with minimal loss (&lt;1\% on average) in classification accuracy. Further, by varying the approximation configurations at a finer granularity across layers and data-structures within a DNN, we achieve improvement in system energy and performance, respectively.},
+  archive      = {J_TODAES},
+  author       = {Reena Elangovan and Shubham Jain and Anand Raghunathan},
+  doi          = {10.1145/3492733},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {3},
+  pages        = {28:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Ax-BxP: Approximate blocked computation for precision-reconfigurable deep neural network acceleration},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). CeMux: Maximizing the accuracy of stochastic mux adders and
+an application to filter design. <em>TODAES</em>, <em>27</em>(3),
+27:1–26. (<a href="https://doi.org/10.1145/3491213">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Stochastic computing (SC) is a low-cost computational paradigm that has promising applications in digital filter design, image processing, and neural networks. Fundamental to these applications is the weighted addition operation, which is most often implemented by a multiplexer (mux) tree. Mux-based adders have very low area but typically require long bitstreams to reach practical accuracy thresholds when the number of summands is large. In this work, we first identify the main contributors to mux adder error. We then demonstrate with analysis and experiment that two new techniques, precise sampling and full correlation, can target and mitigate these error sources. Implementing these techniques in hardware leads to the design of CeMux (Correlation-enhanced Multiplexer), a stochastic mux adder that is significantly more accurate and uses much less area than traditional weighted adders. We compare CeMux to other SC and hybrid designs for an electrocardiogram filtering case study that employs a large digital filter. One major result is that CeMux is shown to be accurate even for large input sizes. CeMux&#39;s higher accuracy leads to a latency reduction of 4× to 16× over other designs. Furthermore, CeMux uses about 35\% less area than existing designs, and we demonstrate that a small amount of accuracy can be traded for a further 50\% reduction in area. Finally, we compare CeMux to a conventional binary design and we show that CeMux can achieve a 50\% to 73\% area reduction for similar power and latency as the conventional design but at a slightly higher level of error.},
+  archive      = {J_TODAES},
+  author       = {Timothy J. Baker and John P. Hayes},
+  doi          = {10.1145/3491213},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {3},
+  pages        = {27:1–26},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {CeMux: Maximizing the accuracy of stochastic mux adders and an application to filter design},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Enable deep learning on mobile devices: Methods, systems,
+and applications. <em>TODAES</em>, <em>27</em>(3), 20:1–50. (<a
+href="https://doi.org/10.1145/3486618">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep neural networks (DNNs) have achieved unprecedented success in the field of artificial intelligence (AI), including computer vision, natural language processing, and speech recognition. However, their superior performance comes at the considerable cost of computational complexity, which greatly hinders their applications in many resource-constrained devices, such as mobile phones and Internet of Things (IoT) devices. Therefore, methods and techniques that are able to lift the efficiency bottleneck while preserving the high accuracy of DNNs are in great demand to enable numerous edge AI applications. This article provides an overview of efficient deep learning methods, systems, and applications. We start from introducing popular model compression methods, including pruning, factorization, quantization, as well as compact model design. To reduce the large design cost of these manual solutions, we discuss the AutoML framework for each of them, such as neural architecture search (NAS) and automated pruning and quantization. We then cover efficient on-device training to enable user customization based on the local data on mobile devices. Apart from general acceleration techniques, we also showcase several task-specific accelerations for point cloud, video, and natural language processing by exploiting their spatial sparsity and temporal/token redundancy. Finally, to support all these algorithmic advancements, we introduce the efficient deep learning system design from both software and hardware perspectives.},
+  archive      = {J_TODAES},
+  author       = {Han Cai and Ji Lin and Yujun Lin and Zhijian Liu and Haotian Tang and Hanrui Wang and Ligeng Zhu and Song Han},
+  doi          = {10.1145/3486618},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {3},
+  pages        = {20:1–50},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Enable deep learning on mobile devices: Methods, systems, and applications},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Introduction to the special issue on approximate systems.
+<em>TODAES</em>, <em>27</em>(2), 10:1–2. (<a
+href="https://doi.org/10.1145/3488726">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TODAES},
+  author       = {Armin Alaghi and Eva Darulova and Andreas Gerstlauer and Phillip Stanley-Marbell},
+  doi          = {10.1145/3488726},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  number       = {2},
+  pages        = {10:1–2},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Introduction to the special issue on approximate systems},
+  volume       = {27},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

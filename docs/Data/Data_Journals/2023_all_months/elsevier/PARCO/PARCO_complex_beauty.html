@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PARCO_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="parco---34">PARCO - 34</h2>
+<ul>
+<li><details>
+<summary>
+(2023). OF-WFBP: A near-optimal communication mechanism for tensor
+fusion in distributed deep learning. <em>PARCO</em>, <em>118</em>,
+103053. (<a href="https://doi.org/10.1016/j.parco.2023.103053">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The communication bottleneck has severely restricted the scalability of distributed deep learning . Tensor fusion improves the scalability of data parallelism by overlapping computation and communication tasks. However, existing tensor fusion schemes only result in suboptimal training performance. In this paper, we propose an efficient communication mechanism (OF-WFBP) to find the optimal tensor fusion scheme for synchronous data parallelism. We present the mathematical model of OF-WFBP and prove it is an NP-hard problem. We mathematically solve the mathematical model of OF-WFBP in two cases. We propose an improved sparrow search algorithm (GradSSA) to find the near-optimal tensor fusion scheme efficiently in other cases. Experimental results on two different GPU clusters show that OF-WFBP achieves up to 1.43x speedup compared to the state-of-the-art tensor fusion mechanisms.},
+  archive      = {J_PARCO},
+  author       = {Yunqi Gao and Zechao Zhang and Bing Hu and A-Long Jin and Chunming Wu},
+  doi          = {10.1016/j.parco.2023.103053},
+  journal      = {Parallel Computing},
+  pages        = {103053},
+  shortjournal = {Parallel Comput.},
+  title        = {OF-WFBP: A near-optimal communication mechanism for tensor fusion in distributed deep learning},
+  volume       = {118},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Low consumption automatic discovery protocol for DDS-based
+large-scale distributed parallel computing. <em>PARCO</em>,
+<em>118</em>, 103052. (<a
+href="https://doi.org/10.1016/j.parco.2023.103052">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {DDS (Data Distribution Service) is an efficient communication specification for distributed parallel computing . However, as the scale of computation expands, high network load and memory consumption consistently limit its performance. This paper proposes a low consumption automatic discovery protocol to improve DDS in large-scale distributed parallel computing. Firstly, an improved Bloom Filter called TBF (Threshold Bloom Filter) is presented to compress the data topic. Then it is combined with the SDP(Simple Discovery Protocol) to reduce the consumption of the automatic discovery process in DDS. On this basis, data publication and subscription between the distributed computing nodes are matched using binarization threshold θ θ and decision threshold T T , which can be obtained through iterative optimization algorithms . Experiment results show that the SDPTBF can guarantee higher transmission accuracy while reducing network load and memory consumption, and therefore improve the performance of DDS-based large-scale distributed parallel computing.},
+  archive      = {J_PARCO},
+  author       = {Zhexu Liu and Shaofeng Liu and Zhiyong Fan and Zhen Zhao},
+  doi          = {10.1016/j.parco.2023.103052},
+  journal      = {Parallel Computing},
+  pages        = {103052},
+  shortjournal = {Parallel Comput.},
+  title        = {Low consumption automatic discovery protocol for DDS-based large-scale distributed parallel computing},
+  volume       = {118},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Targeting performance and user-friendliness: GPU-accelerated
+finite element computation with automated code generation in FEniCS.
+<em>PARCO</em>, <em>118</em>, 103051. (<a
+href="https://doi.org/10.1016/j.parco.2023.103051">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the use of automated code generation to provide user-friendly GPU acceleration for solving partial differential equations (PDEs) with finite element methods . By extending the FEniCS framework and its automated compiler, we have achieved that a high-level description of finite element computations written in the Unified Form Language is auto-translated to parallelised CUDA C++ code. The auto-generated code provides GPU offloading for the finite element assembly of linear equation systems which are then solved by a GPU-supported linear algebra backend. Specifically, we explore several auto-generated optimisations of the resulting CUDA C++ code. Numerical experiments show that GPU-based linear system assembly for a typical PDE with first-order elements can benefit from using a lookup table to avoid repeatedly carrying out numerous binary searches, and that further performance gains can be obtained by assembling a sparse matrix row by row. More importantly, the extended FEniCS compiler is able to seamlessly couple the assembly and solution phases for GPU acceleration, so that all unnecessary CPU–GPU data transfers are eliminated. Detailed experiments are used to quantify the negative impact of these data transfers, which can entirely destroy the potential of GPU acceleration if the assembly and solution phases are offloaded to GPU separately. Finally, a complete, auto-generated GPU-based PDE solver for a nonlinear solid mechanics application is used to demonstrate a substantial speedup over running on dual-socket multi-core CPUs, including GPU acceleration of algebraic multigrid as the preconditioner .},
+  archive      = {J_PARCO},
+  author       = {James D. Trotter and Johannes Langguth and Xing Cai},
+  doi          = {10.1016/j.parco.2023.103051},
+  journal      = {Parallel Computing},
+  pages        = {103051},
+  shortjournal = {Parallel Comput.},
+  title        = {Targeting performance and user-friendliness: GPU-accelerated finite element computation with automated code generation in FEniCS},
+  volume       = {118},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Task graph-based performance analysis of parallel-in-time
+methods. <em>PARCO</em>, <em>118</em>, 103050. (<a
+href="https://doi.org/10.1016/j.parco.2023.103050">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a performance model based on task graphs for various iterative parallel-in-time (PinT) methods. PinT methods have been developed to speed up the simulation time of time-dependent problems using modern parallel supercomputers . The performance model is based on a data-driven notation of the methods, from which a task graph is generated. Based on this task graph and a distribution of time points across processes typical for PinT methods, a theoretical lower runtime bound for the method can be obtained, as well as a prediction of the runtime for a given number of processes. In particular, the model is able to cover the large parameter space of PinT methods and make predictions for arbitrary parameter settings. Here, we describe a general procedure for generating task graphs based on three iterative PinT methods, namely, Parareal, multigrid-reduction-in-time (MGRIT), and the parallel full approximation scheme in space and time (PFASST). Furthermore, we discuss how these task graphs can be used to analyze the performance of the methods. In addition, we compare the predictions of the model with parallel simulation times using five different PinT libraries.},
+  archive      = {J_PARCO},
+  author       = {Matthias Bolten and Stephanie Friedhoff and Jens Hahne},
+  doi          = {10.1016/j.parco.2023.103050},
+  journal      = {Parallel Computing},
+  pages        = {103050},
+  shortjournal = {Parallel Comput.},
+  title        = {Task graph-based performance analysis of parallel-in-time methods},
+  volume       = {118},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). ESA: An efficient sequence alignment algorithm for
+biological database search on sunway TaihuLight. <em>PARCO</em>,
+<em>117</em>, 103043. (<a
+href="https://doi.org/10.1016/j.parco.2023.103043">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In computational biology, biological database search has been playing a very important role. Since the COVID-19 outbreak, it has provided significant help in identifying common characteristics of viruses and developing vaccines and drugs. Sequence alignment , a method finding similarity, homology and other information between gene/protein sequences, is the usual tool in the database search. With the explosive growth of biological databases, the search process has become extremely time-consuming. However, existing parallel sequence alignment algorithms cannot deliver efficient database search due to low utilization of the resources such as cache memory and performance issues such as load imbalance and high communication overhead . In this paper, we propose an efficient sequence alignment algorithm on Sunway TaihuLight, called ESA, for biological database search. ESA adopts a novel hybrid alignment algorithm combining local and global alignments, which has higher accuracy than other sequence alignment algorithms. Further, ESA has several optimizations including cache-aware sequence alignment, capacity-aware load balancing and bandwidth-aware data transfer. They are implemented in a heterogeneous processor SW26010 adopted in the world’s 6th fastest supercomputer , Sunway TaihuLight. The implementation of ESA is evaluated with the Swiss-Prot database on Sunway TaihuLight and other platforms. Our experimental results show that ESA has a speedup of 34.5 on a single core group (with 65 cores) of Sunway TaihuLight. The strong and weak scalabilities of ESA are tested with 1 to 1024 core groups of Sunway TaihuLight. The results show that ESA has linear weak scalability and very impressive strong scalability. For strong scalability, ESA achieves a speedup of 338.04 with 1024 core groups compared with a single core group. We also show that our proposed optimizations are also applicable to GPU , Intel multicore processors , and heterogeneous computing platforms.},
+  archive      = {J_PARCO},
+  author       = {Hao Zhang and Zhiyi Huang and Yawen Chen and Jianguo Liang and Xiran Gao},
+  doi          = {10.1016/j.parco.2023.103043},
+  journal      = {Parallel Computing},
+  pages        = {103043},
+  shortjournal = {Parallel Comput.},
+  title        = {ESA: An efficient sequence alignment algorithm for biological database search on sunway TaihuLight},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Finding inputs that trigger floating-point exceptions in
+heterogeneous computing via bayesian optimization. <em>PARCO</em>,
+<em>117</em>, 103042. (<a
+href="https://doi.org/10.1016/j.parco.2023.103042">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Testing code for floating-point exceptions is crucial as exceptions can quickly propagate and produce unreliable numerical answers. The state-of-the-art to test for floating-point exceptions in heterogeneous systems is quite limited and solutions require the application’s source code , which precludes their use in accelerated libraries where the source is not publicly available. We present an approach to find inputs that trigger floating-point exceptions in black-box CPU or GPU functions, i.e., functions where the source code and information about input bounds are unavailable. Our approach is the first to use Bayesian optimization (BO) to identify such inputs and uses novel strategies to overcome the challenges that arise in applying BO to this problem. We implement our approach in the Xscope framework and demonstrate it on 58 functions from the CUDA Math Library and 81 functions from the Intel Math Library. Xscope is able to identify inputs that trigger exceptions in about 73\% of the tested functions.},
+  archive      = {J_PARCO},
+  author       = {Ignacio Laguna and Anh Tran and Ganesh Gopalakrishnan},
+  doi          = {10.1016/j.parco.2023.103042},
+  journal      = {Parallel Computing},
+  pages        = {103042},
+  shortjournal = {Parallel Comput.},
+  title        = {Finding inputs that trigger floating-point exceptions in heterogeneous computing via bayesian optimization},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). An optimal scheduling algorithm considering the transactions
+worst-case delay for multi-channel hyperledger fabric network.
+<em>PARCO</em>, <em>117</em>, 103041. (<a
+href="https://doi.org/10.1016/j.parco.2023.103041">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the most popular consortium blockchain platform, Hyperledger Fabric (Fabric for short) has released multiple versions that support different consensus protocols to address the risks faced in current and future network transactions. For example, Fabric v1.4 and v2.0 use Kafka and Raft mechanisms to complete consensus and ensure that the system can withstand failures such as crashes, network partitions , or network shutdowns. In a multi-channel Fabric network architecture , the system structure cannot guarantee the behavior of malicious nodes. Complex cooperation between peer groups on different channels can greatly affect the security and efficiency of the entire network architecture, which is challenging to estimate and optimize. To address this challenge, we designed a Drift Plus Penalty Algorithm (DPPA) and a Transaction Worst-case Delay Algorithm (TWDA) based on peer node random scheduling using the Lyapunov optimization framework. The DPPA ensures the stability of the system and provides the maximum transaction processing rate under the minimum safety probability. The numerical results show that this algorithm can achieve a good balance between system security probability and queue accumulation. The TWDA considers discarding transactions with excessively long delay time by setting a worst-case transaction delay threshold. When considering both the security probability and queue accumulation of the Fabric system, the optimal scheduling of peer nodes is given. Numerical simulations were conducted on two types of algorithms, and the results showed that the security of the TWDA was slightly worse than that of the DPPA, but the system queue accumulation was significantly smaller. Therefore, the simulation results not only validate the effectiveness of the two types of algorithms but also provide operators with operational strategies that consider different factors.},
+  archive      = {J_PARCO},
+  author       = {Ou Wu and Shanshan Li and He Zhang and Liwen Liu and Haoming Li and Yanze Wang and Ziyi Zhang},
+  doi          = {10.1016/j.parco.2023.103041},
+  journal      = {Parallel Computing},
+  pages        = {103041},
+  shortjournal = {Parallel Comput.},
+  title        = {An optimal scheduling algorithm considering the transactions worst-case delay for multi-channel hyperledger fabric network},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Distributed software defined network-based fog to fog
+collaboration scheme. <em>PARCO</em>, <em>117</em>, 103040. (<a
+href="https://doi.org/10.1016/j.parco.2023.103040">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fog computing was created to supplement the cloud in bridging the communication delay gap by deploying fog nodes nearer to Internet of Things (IoT) devices. Depending on the geographical location, computational resource and rate of IoT requests, fog nodes can be idle or saturated. The latter requires special mechanism to enable collaboration with other nodes through service offloading to improve resource utilization. Software Defined Network (SDN) comes with improved bandwidth, latency and understanding of network topology , which recently attracted researchers attention and delivers promising results in service offloading. In this study, a Hierarchical Distributed Software Defined Network-based (DSDN) fog to fog collaboration model is proposed; the scheme considers computational resources such as available CPU and network resources such as communication hops of a prospective offloading node. Fog nodes having limited resources coupled with the projected high demand for fog services in the near future, the model also accounts for extreme cases in which all nearby nodes in a fog domain are saturated, employing a supervisor controller to scale the collaboration to other domains. The results of the simulations carried out on Mininet shows that the proposed multi-controller DSDN solution outperforms the traditional single controller SDN solution, it also further demonstrate that increase in the number of fog nodes does not affect service offloading performance significantly when multiple controllers are used.},
+  archive      = {J_PARCO},
+  author       = {Muhammad Kabeer and Ibrahim Yusuf and Nasir Ahmad Sufi},
+  doi          = {10.1016/j.parco.2023.103040},
+  journal      = {Parallel Computing},
+  pages        = {103040},
+  shortjournal = {Parallel Comput.},
+  title        = {Distributed software defined network-based fog to fog collaboration scheme},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A flexible sparse matrix data format and parallel algorithms
+for the assembly of finite element matrices on shared memory systems.
+<em>PARCO</em>, <em>117</em>, 103039. (<a
+href="https://doi.org/10.1016/j.parco.2023.103039">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Finite element methods require the composition of the global stiffness matrix from local finite element contributions. The composition process combines the computation of element stiffness matrices and their assembly into the global stiffness matrix , which is commonly sparse. In this paper we focus on the assembly process of the global stiffness matrix and explore different algorithms and their efficiency on shared memory systems using C ++ . A key aspect of our investigation is the use of atomic synchronization primitives for the derivation of data-race free algorithms and data structures . Furthermore, we propose a new flexible storage format for sparse matrices and compare its performance with the compressed row storage format using abstract benchmarks based on common characteristics of finite element problems.},
+  archive      = {J_PARCO},
+  author       = {Adam Sky and César Polindara and Ingo Muench and Carolin Birk},
+  doi          = {10.1016/j.parco.2023.103039},
+  journal      = {Parallel Computing},
+  pages        = {103039},
+  shortjournal = {Parallel Comput.},
+  title        = {A flexible sparse matrix data format and parallel algorithms for the assembly of finite element matrices on shared memory systems},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). New YARN sharing GPU based on graphics memory granularity
+scheduling. <em>PARCO</em>, <em>117</em>, 103038. (<a
+href="https://doi.org/10.1016/j.parco.2023.103038">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As one of the most widely used cluster scheduling frameworks, Hadoop YARN only supported CPU and memory scheduling in the past. Furthermore, due to the widespread use of AI , the demand for GPU is also increasing. So Hadoop YARN V3.0 adds GPU scheduling, but the granularity is on the whole card yet, rather than finer-grained graphics memory scheduling. However, during daily training, although the graphics memory required by tasks may be much smaller than the whole GPU card, they will occupy the whole card, which results in wasted resources. To address this issue, Tensorflow provides the API for graphics memory control. Therefore, we propose to introduce this feature into Hadoop YARN so that it can support the heterogeneous scheduling: CPU, memory and graphics memory. Then we take HadoopV2.7 source code as the underlying architecture and design a new scheduler GSHARE. Compared with previous scheduling strategies, with 3 nodes, 3 GPU cards per node, and 12G graphics memory per card, GSHARE improves efficiency by up to 74\% for Tensorflow tasks with 2G of graphics memory. Meanwhile, it minimizes the problem of wasted graphics memory caused by the inability to control graphics memory proportionally by the API of Tensorflow for multiple-card.},
+  archive      = {J_PARCO},
+  author       = {Jinliang Shi and Dewu Chen and Jiabi Liang and Lin Li and Yue Lin and Jianjiang Li},
+  doi          = {10.1016/j.parco.2023.103038},
+  journal      = {Parallel Computing},
+  pages        = {103038},
+  shortjournal = {Parallel Comput.},
+  title        = {New YARN sharing GPU based on graphics memory granularity scheduling},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Editorial on advances in high performance programming.
+<em>PARCO</em>, <em>117</em>, 103037. (<a
+href="https://doi.org/10.1016/j.parco.2023.103037">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_PARCO},
+  author       = {Ami Marowka and Przemysław Stpiczyński},
+  doi          = {10.1016/j.parco.2023.103037},
+  journal      = {Parallel Computing},
+  pages        = {103037},
+  shortjournal = {Parallel Comput.},
+  title        = {Editorial on advances in high performance programming},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Parallelizable efficient large order multiple recursive
+generators. <em>PARCO</em>, <em>117</em>, 103036. (<a
+href="https://doi.org/10.1016/j.parco.2023.103036">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The general multiple recursive generator (MRG) of maximum period has been thought of as an excellent source of pseudo random numbers. Based on a k k th order linear recurrence modulo p p , this generator produces the next pseudo random number based on a linear combination of the previous k k numbers. General maximum period MRGs of order k k have excellent empirical performance, and their strong mathematical foundations have been studied extensively. For computing efficiency, it is common to consider special MRGs with some simple structure with few non-zero terms which requires fewer costly multiplications. However, such MRGs will not have a good “spectral test” property when compared with general MRGs with many non-zero terms. On the other hand, there are two potential problems of using general MRGs with many non-zero terms: (1) its efficient implementation (2) its efficient scheme for its parallelization . Efficient implementation of general MRGs of larger order k k can be difficult because the k k th order linear recurrence requires many costly multiplications to produce the next number. For its parallelization scheme, for a large k k , the traditional scheme like “jump-ahead parallelization method” for general MRGs becomes highly computationally inefficient. We proposed implementing maximum period MRGs with many nonzero terms efficiently and in parallel by using a MCG constructed from the MRG. In particular, we propose a special class of large order MRGs with many nonzero terms that also have an efficient and parallel implementation.},
+  archive      = {J_PARCO},
+  author       = {Lih-Yuan Deng and Bryan R. Winter and Jyh-Jen Horng Shiau and Henry Horng-Shing Lu and Nirman Kumar and Ching-Chi Yang},
+  doi          = {10.1016/j.parco.2023.103036},
+  journal      = {Parallel Computing},
+  pages        = {103036},
+  shortjournal = {Parallel Comput.},
+  title        = {Parallelizable efficient large order multiple recursive generators},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Optimizing massively parallel sparse matrix computing on ARM
+many-core processor. <em>PARCO</em>, <em>117</em>, 103035. (<a
+href="https://doi.org/10.1016/j.parco.2023.103035">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse matrix multiplication is ubiquitous in many applications such as graph processing and numerical simulation. In recent years, numerous efficient sparse matrix multiplication algorithms and computational libraries have been proposed. However, most of them are oriented to x86 or GPU platforms, while the optimization on ARM many-core platforms has not been well investigated. Our experiments show that existing sparse matrix multiplication libraries for ARM many-core CPU cannot achieve expected parallel performance. Compared with traditional multi-core CPU, ARM many-core CPU has far more cores and often adopts NUMA techniques to scale the memory bandwidth . Its parallel efficiency tends to be restricted by NUMA configuration, memory bandwidth cache contention, etc. In this paper, we propose optimized implementations for sparse matrix computing on ARM many-core CPU. We propose various optimization techniques for several routines of sparse matrix multiplication to ensure coalesced access of matrix elements in the memory. In detail, the optimization techniques include a fine-tuned CSR-based format for ARM architecture, co-optimization of Gustavson’s algorithm with hierarchical cache and dense array strategy to mitigate performance loss caused by handling compressed storage formats. We exploit the coarse-grained NUMA-aware strategy for inter-node parallelism and the fine-grained cache-aware strategy for intra-node parallelism to improve the parallel efficiency of sparse matrix multiplication. The evaluation shows that our implementation consistently outperforms the existing library on ARM many-core processor.},
+  archive      = {J_PARCO},
+  author       = {Jiang Zheng and Jiazhi Jiang and Jiangsu Du and Dan Huang and Yutong Lu},
+  doi          = {10.1016/j.parco.2023.103035},
+  journal      = {Parallel Computing},
+  pages        = {103035},
+  shortjournal = {Parallel Comput.},
+  title        = {Optimizing massively parallel sparse matrix computing on ARM many-core processor},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Adaptively parallel runtime verification based on
+distributed network for temporal properties. <em>PARCO</em>,
+<em>117</em>, 103034. (<a
+href="https://doi.org/10.1016/j.parco.2023.103034">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Runtime verification is a lightweight verification technique that verifies whether a monitored program execution satisfies a desired property. Online runtime verification faces challenges regarding efficiency and property expressiveness, which limit its widespread adoption. However, there is a lack of research that addresses both of these issues. With the basis of a distributed network, we propose an adaptively parallel approach to verify full regular temporal properties of C programs in an online manner. During program execution, segments of the generated state sequence are verified by distributed machines concurrently, while each segment is also verified in each multi-core machine with an adaptive number of threads. Experimental results demonstrate that, with supporting more expressive properties, our approach has a speedup of 2.5X–5.0X compared with other runtime verification approaches.},
+  archive      = {J_PARCO},
+  author       = {Bin Yu and Xu Lu and Cong Tian and Meng Wang and Chu Chen and Ming Lei and Zhenhua Duan},
+  doi          = {10.1016/j.parco.2023.103034},
+  journal      = {Parallel Computing},
+  pages        = {103034},
+  shortjournal = {Parallel Comput.},
+  title        = {Adaptively parallel runtime verification based on distributed network for temporal properties},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Using heterogeneous GPU nodes with a cabana-based
+implementation of MPCD. <em>PARCO</em>, <em>117</em>, 103033. (<a
+href="https://doi.org/10.1016/j.parco.2023.103033">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Kokkos based library Cabana, which has been developed in the Co-design Center for Particle Applications (CoPA), is used for the implementation of Multi-Particle Collision Dynamics (MPCD), a particle-based description of hydrodynamic interactions . Cabana allows for a function portable implementation, which has been used to study the interplay between CPU and GPU usage on a multi-node system as well as analysis of said interplay with performance analysis tools. As a result, we see most advantages in a homogeneous GPU usage, but we also discuss the extent to which heterogeneous applications might be more performant, using both CPU and GPU concurrently.},
+  archive      = {J_PARCO},
+  author       = {Rene Halver and Christoph Junghans and Godehard Sutmann},
+  doi          = {10.1016/j.parco.2023.103033},
+  journal      = {Parallel Computing},
+  pages        = {103033},
+  shortjournal = {Parallel Comput.},
+  title        = {Using heterogeneous GPU nodes with a cabana-based implementation of MPCD},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Big data BPMN workflow resource optimization in the cloud.
+<em>PARCO</em>, <em>117</em>, 103025. (<a
+href="https://doi.org/10.1016/j.parco.2023.103025">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud computing is one of the critical technologies that meet the demand of various businesses for the high-capacity computational processing power needed to gain knowledge from their ever-growing business data. When utilizing cloud computing resources to deal with Big Data processing, companies face the challenge of determining the optimal use of resources within their business processes. The miscalculation of the necessary resources directly affects their budget and can cause delays in the cycle time of their key processes. This study investigates the simulation of cloud resource optimization for Big Data workflows modeled with the Business Process Modeling Notation (BPMN). To this end, a BPMN performance evaluation framework was developed. The framework’s capabilities were presented using real-world data science workflow and later evaluated on workflows consisting of 13, 52, and 104 tasks. The results show that the developed framework is adequate for estimating the overall run-time distribution and optimizing the cloud resource deployment and that the BPMN can be utilized for Big Data processing workflows. Therefore, this study contributes to BPMN practitioners by providing a tool to apply BPMN for their Big Data workflows and decision-makers by giving them critical insights into their key business processes. The framework source code is available at https://github.com/ntankovic/python-bpmn-engine .},
+  archive      = {J_PARCO},
+  author       = {Srđan Daniel Simić and Nikola Tanković and Darko Etinger},
+  doi          = {10.1016/j.parco.2023.103025},
+  journal      = {Parallel Computing},
+  pages        = {103025},
+  shortjournal = {Parallel Comput.},
+  title        = {Big data BPMN workflow resource optimization in the cloud},
+  volume       = {117},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A lightweight semi-centralized strategy for the massive
+parallelization of branching algorithms. <em>PARCO</em>, <em>116</em>,
+103024. (<a href="https://doi.org/10.1016/j.parco.2023.103024">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Several NP-hard problems are solved exactly using exponential-time branching strategies, whether it be branch-and-bound algorithms, or bounded search trees in fixed-parameter algorithms. The number of tractable instances that can be handled by sequential algorithms is usually small, whereas massive parallelization has been shown to significantly increase the space of instances that can be solved exactly. However, previous centralized approaches require too much communication to be efficient, whereas decentralized approaches are more efficient but have difficulty keeping track of the global state of the exploration. In this work, we propose to revisit the centralized paradigm while avoiding previous bottlenecks. In our strategy, the center has lightweight responsibilities, requires only a few bits for every communication, but is still able to keep track of the progress of every worker. In particular, the center never holds any task but is able to guarantee that a process with no work always receives the highest priority task globally. Our strategy was implemented in a generic C++ library called GemPBA, which allows a programmer to convert a sequential branching algorithm into a parallel version by changing only a few lines of code. An experimental case study on the vertex cover problem demonstrates that some of the toughest instances from the DIMACS challenge graphs that would take months to solve sequentially can be handled within two hours with our approach.},
+  archive      = {J_PARCO},
+  author       = {Andres Pastrana-Cruz and Manuel Lafond},
+  doi          = {10.1016/j.parco.2023.103024},
+  journal      = {Parallel Computing},
+  pages        = {103024},
+  shortjournal = {Parallel Comput.},
+  title        = {A lightweight semi-centralized strategy for the massive parallelization of branching algorithms},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A survey of software techniques to emulate heterogeneous
+memory systems in high-performance computing. <em>PARCO</em>,
+<em>116</em>, 103023. (<a
+href="https://doi.org/10.1016/j.parco.2023.103023">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Heterogeneous memory will be involved in several upcoming platforms on the way to exascale. Combining technologies such as HBM , DRAM and/or NVDIMM allows to tackle the needs of different applications in terms of bandwidth, latency or capacity. And new memory interconnects such as CXL bring easy ways to attach these technologies to the processors. High-performance computing developers must prepare their runtimes and applications for these architectures, even before they are actually available. Hence, we survey software solutions for emulating them. First, we list many ways to modify the performance of platforms so that developers may test their code under different memory performance profiles. This is required to identify kernels and data buffers that are sensitive to memory performance. Then, we present several techniques for exposing fake heterogeneous memory information to the software stack. This is useful for adapting runtimes and applications to heterogeneous memory so that different kinds of memory are detected at runtime and so that buffers are allocated in the appropriate one.},
+  archive      = {J_PARCO},
+  author       = {Clément Foyer and Brice Goglin and Andrès Rubio Proaño},
+  doi          = {10.1016/j.parco.2023.103023},
+  journal      = {Parallel Computing},
+  pages        = {103023},
+  shortjournal = {Parallel Comput.},
+  title        = {A survey of software techniques to emulate heterogeneous memory systems in high-performance computing},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Segment based power-efficient scheduling for real-time DAG
+tasks on edge devices. <em>PARCO</em>, <em>116</em>, 103022. (<a
+href="https://doi.org/10.1016/j.parco.2023.103022">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smart Mobile Devices (SMDs) are crucial for the edge computing paradigm’s real-world sensing. Real-time applications, which are computationally intensive and periodic with strict time constraints, can typically be used to replicate real-world sensing. Such applications call for increased processing speed, memory capacity, and battery life on SMDs, which are typically resource-constrained due to physical size restrictions. As a result, scheduling real-time applications for SMDs that are power efficient is crucial for the regular operation of edge computing platforms, and downstream decision-making tasks like computation offloading require the prediction of power consumption using power-saving approaches like DVFS. The main question is how to swiftly develop a better solution to the NP-Hard power efficient scheduling problem with DVFS. Thus, by segmenting the aligned tasks on an SMD, we present a segment-based analysis approach. Additionally, we offer a segment-based scheduling algorithm (SEDF) that draws inspiration from the segment-based analysis approach to achieve power-efficient scheduling for these real-time workloads. This segment-based approach yields a power consumption bound (PB), and a computation offloading use case is developed to demonstrate the application of PB in the subsequent decision-making processes. Both simulations and actual device tests are used to confirm the PB, SEDF, and the effectiveness of offloading decision-making. We demonstrate empirically that PB can be utilized to make approximative optimal decisions in decision-making problems involving computation offloading. SEDF is a straightforward and effective scheduling approach that can cut the power consumption of a multi-core SMD by roughly 30\%.},
+  archive      = {J_PARCO},
+  author       = {Lei Yu and Tianqi Zhong and Peng Bi and Lan Wang and Fei Teng},
+  doi          = {10.1016/j.parco.2023.103022},
+  journal      = {Parallel Computing},
+  pages        = {103022},
+  shortjournal = {Parallel Comput.},
+  title        = {Segment based power-efficient scheduling for real-time DAG tasks on edge devices},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Characterizing the performance of node-aware strategies for
+irregular point-to-point communication on heterogeneous architectures.
+<em>PARCO</em>, <em>116</em>, 103021. (<a
+href="https://doi.org/10.1016/j.parco.2023.103021">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Supercomputer architectures are trending toward higher computational throughput due to the inclusion of heterogeneous compute nodes. These multi-GPU nodes increase on-node computational efficiency, while also increasing the amount of data to be communicated and the number of potential data flow paths. In this work, we characterize the performance of irregular point-to-point communication with MPI on heterogeneous compute environments through performance modeling, demonstrating the limitations of standard communication strategies for both device-aware and staging-through-host communication techniques. Presented models suggest staging communicated data through host processes then using node-aware communication strategies for high inter-node message counts. Notably, the models also predict that node-aware communication utilizing all available CPU cores to communicate inter-node data leads to the most performant strategy when communicating with a high number of nodes. Model validation is provided via a case study of irregular point-to-point communication patterns in distributed sparse matrix–vector products. Importantly, we include a discussion on the implications model predictions have on communication strategy design for emerging supercomputer architectures.},
+  archive      = {J_PARCO},
+  author       = {Shelby Lockhart and Amanda Bienz and William D. Gropp and Luke N. Olson},
+  doi          = {10.1016/j.parco.2023.103021},
+  journal      = {Parallel Computing},
+  pages        = {103021},
+  shortjournal = {Parallel Comput.},
+  title        = {Characterizing the performance of node-aware strategies for irregular point-to-point communication on heterogeneous architectures},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Lifeline-based load balancing schemes for asynchronous
+many-task runtimes in clusters. <em>PARCO</em>, <em>116</em>, 103020.
+(<a href="https://doi.org/10.1016/j.parco.2023.103020">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A popular approach to program scalable irregular applications is Asynchronous Many-Task (AMT) Programming. Here, programs define tasks according to task models such as dynamic independent tasks (DIT) or nested fork-join (NFJ). We consider cluster AMTs, in which a runtime system maps the tasks to worker threads in multiple processes. Thereby, dynamic load balancing can be achieved via cooperative work stealing, coordinated work stealing, or work sharing. A well-performing cooperative work stealing variant is the lifeline scheme. While previous implementations of this scheme are restricted to single-worker processes, a recent hybrid extension combines it with intra-process work sharing between multiple workers. The hybrid scheme, which was proposed for both DIT and NFJ, comes at the price of a higher complexity. This paper investigates whether this complexity is indispensable for multi-worker processes by contrasting the hybrid scheme with a novel pure work stealing extension of the lifeline scheme to multiple workers. We independently implemented the extension for DIT and NFJ. In experiments based on four benchmarks, we observed the pure scheme to be on a par or even outperform the hybrid one by up to 18\% for DIT and up to 5\% for NFJ. Building on this main result, we studied a modification of the pure scheme, which prefers local over global victims, and more heavily loaded over less loaded ones. The modification improves the performance of the pure scheme by up to 15\%. Finally, we explored whether the lifeline scheme can profit from a change to coordinated work stealing. We developed a coordinated multi-worker implementation for DIT and observed a performance improvement over the cooperative scheme by up to 17\%.},
+  archive      = {J_PARCO},
+  author       = {Lukas Reitz and Kai Hardenbicker and Tobias Werner and Claudia Fohry},
+  doi          = {10.1016/j.parco.2023.103020},
+  journal      = {Parallel Computing},
+  pages        = {103020},
+  shortjournal = {Parallel Comput.},
+  title        = {Lifeline-based load balancing schemes for asynchronous many-task runtimes in clusters},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). GPU acceleration of levenshtein distance computation between
+long strings. <em>PARCO</em>, <em>116</em>, 103019. (<a
+href="https://doi.org/10.1016/j.parco.2023.103019">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Computing edit distance for very long strings has been hampered by quadratic time complexity with respect to string length. The WFA algorithm reduces the time complexity to a quadratic factor with respect to the edit distance between the strings. This work presents a GPU implementation of the WFA algorithm and a new optimization that can halve the elements to be computed, providing additional performance gains. The implementation allows to address the computation of the edit distance between strings having hundreds of millions of characters. The performance of the algorithm depends on the similarity between the strings. For strings longer than million characters, the performance is the best ever reported, which is above TCUPS for strings with similarities greater than 70\% and above one hundred TCUPS for 99.9\% similarity.},
+  archive      = {J_PARCO},
+  author       = {David Castells-Rufas},
+  doi          = {10.1016/j.parco.2023.103019},
+  journal      = {Parallel Computing},
+  pages        = {103019},
+  shortjournal = {Parallel Comput.},
+  title        = {GPU acceleration of levenshtein distance computation between long strings},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Efficient checkpoint/restart of CUDA applications.
+<em>PARCO</em>, <em>116</em>, 103018. (<a
+href="https://doi.org/10.1016/j.parco.2023.103018">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present NVCR which enables transparent checkpoint and restart of CUDA applications. NVCR, works as an extension of major system-level checkpoint software such as BLCR and DMTCP, employs proxy-process and application accesses GPU devices via the proxy-process to improve the compatibility with latest CUDA runtime software. To reduce the overhead of inter-process communications, NVCR efficiently uses SYSV IPC shared memory as CUDA pinned memory. Performance evaluations using micro benchmarks and Amber as a real application show that NVCR’ overhead is acceptably low.},
+  archive      = {J_PARCO},
+  author       = {Akira Nukada and Taichiro Suzuki and Satoshi Matsuoka},
+  doi          = {10.1016/j.parco.2023.103018},
+  journal      = {Parallel Computing},
+  pages        = {103018},
+  shortjournal = {Parallel Comput.},
+  title        = {Efficient checkpoint/Restart of CUDA applications},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A heterogeneous processing-in-memory approach to accelerate
+quantum chemistry simulation. <em>PARCO</em>, <em>116</em>, 103017. (<a
+href="https://doi.org/10.1016/j.parco.2023.103017">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The “memory wall” is an architectural property introducing high memory access latency that can manifest application performance, and this wall becomes even taller in the context of big data. Although the use of GPU-based systems could achieve high performance, it is difficult to improve the utilization of GPU systems due to the “memory wall”. The intensive data exchange and computation remains a challenge when confronting applications with a massive memory footprint . Quantum-mechanics-based ab initio calculations, which leverage high-performance computing to investigate multi-electron systems, have been widely used in computational chemistry. However, ab initio calculations are labor-intensive and can easily consume more than hundreds of gigabytes of memory. Previous efforts on heterogeneous accelerators via GPU and CPU suffer from high-latency off-device memory access. In this paper, we introduce heterogeneous processing-in-memory (PIM) to mitigate the overhead of data movement between CPUs and GPUs, and deeply analyze two of the most memory-intensive parts of the quantum chemistry, for example, the FFT and time-consuming loops. Specifically, we exploit runtime systems and programming models to improve hardware utilization and simplify programming efforts by moving computation close to the data and eliminating hardware idling. We take a widely used software, the QUANTUM ESPRESSO (opEn-Source Package for Research in Electronic Structure, Simulation, and Optimization), to perform our experiments, and our results show that our design provides up to 4 . 09 × 4.09× and 2 . 60 × 2.60× of performance improvement and 71\% and 88\% energy reduction over CPU and GPU (NVIDIA P100), respectively.},
+  archive      = {J_PARCO},
+  author       = {Zeshi Liu and Zhen Xie and Wenqian Dong and Mengting Yuan and Haihang You and Dong Li},
+  doi          = {10.1016/j.parco.2023.103017},
+  journal      = {Parallel Computing},
+  pages        = {103017},
+  shortjournal = {Parallel Comput.},
+  title        = {A heterogeneous processing-in-memory approach to accelerate quantum chemistry simulation},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). NPDP benchmark suite for the evaluation of the effectiveness
+of automatic optimizing compilers. <em>PARCO</em>, <em>116</em>, 103016.
+(<a href="https://doi.org/10.1016/j.parco.2023.103016">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The paper presents a benchmark suite of ten non-serial polyadic dynamic programming (NPDP) kernels, which are designed to test the efficiency of tiled code generated by polyhedral optimization compilers . These kernels are mainly derived from bioinformatics algorithms, which pose a significant challenge for automatic loop nest tiling transformations. The paper describes algorithms implemented with examined kernels and unifies them in the form of loop nests presented in the C language. The purpose is to reconsider the execution and monitoring of codes, typically used in past and current publications. For carrying out experiments with introduced benchmarks, we applied the two source-to-source compilers, PLuTo and TRACO, to generate cache-efficient codes and analyzed their performance on four multi-core machines. We discuss the limitations of well-known tiling approaches and outline future tiling strategies to generate effective tiled code by means of optimizing compilers for introduced benchmarks.},
+  archive      = {J_PARCO},
+  author       = {Marek Palkowski and Wlodzimierz Bielecki},
+  doi          = {10.1016/j.parco.2023.103016},
+  journal      = {Parallel Computing},
+  pages        = {103016},
+  shortjournal = {Parallel Comput.},
+  title        = {NPDP benchmark suite for the evaluation of the effectiveness of automatic optimizing compilers},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A parallel non-convex approximation framework for risk
+parity portfolio design. <em>PARCO</em>, <em>116</em>, 102999. (<a
+href="https://doi.org/10.1016/j.parco.2023.102999">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a parallel non-convex approximation framework (NCAQ) for optimization problems whose objective is to minimize a convex function plus the sum of non-convex functions. Based on the structure of the objective function, our framework transforms the non-convex constraints to the logarithmic barrier function and approximates the non-convex problem by a parallel quadratic approximation scheme , which will allow the original problem to be solved by accelerated inexact gradient descent in the parallel environment. Moreover, we give a detailed convergence analysis for the proposed framework. The numerical experiments show that our framework outperforms the state-of-art approaches in terms of accuracy and computation time on the high dimension non-convex Rosenbrock test functions and the risk parity problems. In particular, we implement the proposed framework on CUDA, showing a more than 25 times speed-up ratio and removing the computational bottleneck for non-convex risk-parity portfolio design. Finally, we construct the high dimension risk parity portfolio which can consistently outperform the equal weight portfolio in the application of Chinese stock markets.},
+  archive      = {J_PARCO},
+  author       = {Yidong Chen and Chen Li and Yonghong Hu and Zhonghua Lu},
+  doi          = {10.1016/j.parco.2023.102999},
+  journal      = {Parallel Computing},
+  pages        = {102999},
+  shortjournal = {Parallel Comput.},
+  title        = {A parallel non-convex approximation framework for risk parity portfolio design},
+  volume       = {116},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Reviewer acknowledgment. <em>PARCO</em>, <em>115</em>,
+103004. (<a
+href="https://doi.org/10.1016/S0167-8191(23)00010-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_PARCO},
+  doi          = {10.1016/S0167-8191(23)00010-8},
+  journal      = {Parallel Computing},
+  pages        = {103004},
+  shortjournal = {Parallel Comput.},
+  title        = {Reviewer acknowledgment},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Efficient parallel reduction of bandwidth for symmetric
+matrices. <em>PARCO</em>, <em>115</em>, 102998. (<a
+href="https://doi.org/10.1016/j.parco.2023.102998">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bandwidth reduction can be a first step in the computation of eigenvalues and eigenvectors for a wide-banded complex Hermitian (or real symmetric) matrix. We present algorithms for this reduction and the corresponding back-transformation of the eigenvectors. These algorithms rely on blocked Householder transformations, thus enabling level 3 BLAS performance, and they feature two levels of parallelism . The efficiency of our approach is demonstrated with numerical experiments.},
+  archive      = {J_PARCO},
+  author       = {Valeriy Manin and Bruno Lang},
+  doi          = {10.1016/j.parco.2023.102998},
+  journal      = {Parallel Computing},
+  pages        = {102998},
+  shortjournal = {Parallel Comput.},
+  title        = {Efficient parallel reduction of bandwidth for symmetric matrices},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Heterogeneous sparse matrix–vector multiplication via
+compressed sparse row format. <em>PARCO</em>, <em>115</em>, 102997. (<a
+href="https://doi.org/10.1016/j.parco.2023.102997">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse matrix–vector multiplication (SpMV) is one of the most important kernels in high-performance computing (HPC), yet SpMV normally suffers from ill performance on many devices. Due to ill performance, SpMV normally requires special care to store and tune for a given device. Moreover, HPC is facing heterogeneous hardware containing multiple different compute units, e.g., many-core CPUs and GPUs . Therefore, an emerging goal has been to produce heterogeneous formats and methods that allow critical kernels , e.g., SpMV, to be executed on different devices with portable performance and minimal changes to format and method. This paper presents a heterogeneous format based on CSR, named CSR- k k , that can be tuned quickly and outperforms the average performance of Intel MKL on Intel Xeon Platinum 838 and AMD Epyc 7742 CPUs while still outperforming NVIDIA’s cuSPARSE and Sandia National Laboratories’ KokkosKernels on NVIDIA A100 and V100 for regular sparse matrices, i.e., sparse matrices where the number of nonzeros per row has a variance ≤ ≤ 10, such as those commonly generated from two and three-dimensional finite difference and element problems. In particular, CSR- k k achieves this with reordering and by grouping rows into a hierarchical structure of super-rows and super–super-rows that are represented by just a few extra arrays of pointers. Due to its simplicity, a model can be tuned for a device, and this model can be used to select super-row and super–super-rows sizes in constant time.},
+  archive      = {J_PARCO},
+  author       = {Phillip Allen Lane and Joshua Dennis Booth},
+  doi          = {10.1016/j.parco.2023.102997},
+  journal      = {Parallel Computing},
+  pages        = {102997},
+  shortjournal = {Parallel Comput.},
+  title        = {Heterogeneous sparse matrix–vector multiplication via compressed sparse row format},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Multi-level parallel multi-layer block reproducible
+summation algorithm. <em>PARCO</em>, <em>115</em>, 102996. (<a
+href="https://doi.org/10.1016/j.parco.2023.102996">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reproducibility means getting the bitwise identical floating point results from multiple runs of the same program, which plays an essential role in debugging and correctness checking in many codes (Villa et al., 2009). However, in parallel computing environments, the combination of dynamic scheduling of parallel computing resources. Moreover, floating point nonassociativity leads to non-reproducible results. Demmel and Nguyen proposed a floating-point summation algorithm that is reproducible independent of the order of summation (Demmel and Nguye, 2013; 2015) and accurate by using the 1-Reduction technique. Our work combines their work with the multi-layer block technology proposed by Castaldo et al. (2009), designs the multi-level parallel multi-layer block reproducible summation algorithm (MLP_rsum), including SIMD, OpenMP, and MPI based on each layer of blocks, and then attains reproducible and expected accurate results with high performance. Numerical experiments show that our algorithm is more efficient than the reproducible summation function in ReproBLAS (2018). With SIMD optimization, our algorithm is 2.41, 2.85, and 3.44 times faster than ReproBLAS on the three ARM platforms. With OpenMP optimization, our algorithm obtains linear speedup , showing that our method applies to multi-core processors. Finally, with reproducible MPI reduction, our algorithm’s parallel efficiency is 76\% at 32 nodes with 4 threads and 32 processes.},
+  archive      = {J_PARCO},
+  author       = {Kuan Li and Kang He and Stef Graillat and Hao Jiang and Tongxiang Gu and Jie Liu},
+  doi          = {10.1016/j.parco.2023.102996},
+  journal      = {Parallel Computing},
+  pages        = {102996},
+  shortjournal = {Parallel Comput.},
+  title        = {Multi-level parallel multi-layer block reproducible summation algorithm},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). ParVoro++: A scalable parallel algorithm for constructing 3D
+voronoi tessellations based on kd-tree decomposition. <em>PARCO</em>,
+<em>115</em>, 102995. (<a
+href="https://doi.org/10.1016/j.parco.2023.102995">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Voronoi tessellation is a fundamental geometric data structure which has numerous applications in various scientific and technological fields. For large particle datasets, computing Voronoi tessellations must be conducted in parallel on a distributed-memory supercomputer in order to satisfy time and memory-size constraints. However, due to load balance and communication, the parallelization of the Voronoi tessellation renders a challenge. In this paper, we present a scalable parallel algorithm for constructing 3D Voronoi tessellations, which evenly distributes the input particles between blocks through kd-tree decomposition. In order to construct the correct global Voronoi topology, we investigate both parametric and non-parametric methods for particle communication among the blocks of a spatial decomposition. The algorithm is implemented exploiting process-level and thread-level parallelization and can be used in a diverse architectural landscape. Using datasets containing up to 330 million particles, we show that our algorithm achieves parallel efficiency up to 57\% using 4096 cores on a distributed-memory computer. Moreover, we compare our algorithm with previous attempts to parallelize Voronoi tessellations showing encouraging improvements in terms of computation time.},
+  archive      = {J_PARCO},
+  author       = {Guoqing Wu and Hongyun Tian and Guo Lu and Wei Wang},
+  doi          = {10.1016/j.parco.2023.102995},
+  journal      = {Parallel Computing},
+  pages        = {102995},
+  shortjournal = {Parallel Comput.},
+  title        = {ParVoro++: A scalable parallel algorithm for constructing 3D voronoi tessellations based on kd-tree decomposition},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Uphill resampling for particle filter and its implementation
+on graphics processing unit. <em>PARCO</em>, <em>115</em>, 102994. (<a
+href="https://doi.org/10.1016/j.parco.2022.102994">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a new resampling method, named Uphill, that is free from numerical instability and suitable for parallel implementation on graphics processing unit (GPU). Common resampling algorithms such as Systematic suffer from numerical instability when single precision floating point numbers are used. This is due to cumulative summation over the weights of particles when the weights differ widely or the number of particles is large. The Metropolis and Rejection resampling algorithms do not suffer from numerical instability as they only calculate the ratios of weights pairwise rather than perform collective operations over the weights. They are more suitable for the GPU implementation of the particle filter. However, they undergo non-coalesced global memory access patterns which cause their speed deteriorate rapidly as the number of particles gets large. Uphill also does not suffer from numerical instability but, experiences the same non-coalesced global memory access problem with Metropolis and Rejection. We introduce its faster version named Uphill-Fast which eliminates this problem. We make comparisons of Uphill and Uphill-Fast with the Systematic, Metropolis, Metropolis-C2 and Rejection resampling methods with respect to quality and speed. We also compare them on a highly non-linear system. Uphill-Fast runs faster and attains similar quality, in terms of RMSE , in comparison with Metropolis and Rejection when the number of particles is very large. Uphill-Fast runs with roughly same speed as Metropolis-C2 with better variance and MSE when the number of particles is very large.},
+  archive      = {J_PARCO},
+  author       = {Özcan Dülger and Halit Oğuztüzün and Mübeccel Demirekler},
+  doi          = {10.1016/j.parco.2022.102994},
+  journal      = {Parallel Computing},
+  pages        = {102994},
+  shortjournal = {Parallel Comput.},
+  title        = {Uphill resampling for particle filter and its implementation on graphics processing unit},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Accelerating the scheduling of the network resources of the
+next-generation optical data centers. <em>PARCO</em>, <em>115</em>,
+102993. (<a href="https://doi.org/10.1016/j.parco.2022.102993">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data centers (DCs) play a key role in the evolving IT applications and they rely heavily on the optical interconnects to improve their performance and scalability. Optically switched DCs most often exploit the slotted Time Division Multiplexing Access (TDMA) operation and the Wavelength Division Multiplexing (WDM) technology and rely on the effective scheduling of the TDMA frames to decide in real time the end-to-end connections that include the network links, switches and ports. This task becomes computationally intensive as the communication requests increase. The current paper builds on a greedy scheduling algorithm to introduce a parallel technique that accelerates the scheduling process and improves optical DC’s performance. The proposed technique handles efficiently the scheduler’s data structures , minimizes the communication among the scheduler’s processors and it is scalable. Moreover, this work presents the technique’s performance results for a variety of scheduling scenarios and DC sizes executed on an algorithm-specific Single Instruction Multiple Data (SIMD) accelerator architecture and on a Graphics Processing Unit (GPU). The performance of the GPU and the SIMD accelerator implemented on FPGA validate the parallel scheduler technique.},
+  archive      = {J_PARCO},
+  author       = {G. Patronas and N. Vlassopoulos and Ph. Bellos and D. Reisis},
+  doi          = {10.1016/j.parco.2022.102993},
+  journal      = {Parallel Computing},
+  pages        = {102993},
+  shortjournal = {Parallel Comput.},
+  title        = {Accelerating the scheduling of the network resources of the next-generation optical data centers},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Spatial-aware data partition for distributed memory
+parallelization of ANN search in multimedia retrieval. <em>PARCO</em>,
+<em>115</em>, 102992. (<a
+href="https://doi.org/10.1016/j.parco.2022.102992">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Content-based multimedia retrieval (CBMR) applications are becoming very popular in several online services which handles large volumes of data and are submitted to high query rates. While these applications may be complex, finding the nearest neighboring objects (multimedia descriptors) is typically their most time consuming operation. In order to address this problem, several recent works have proposed distributed memory parallelization of approximate nearest neighbors (ANN) search. These solutions employ a variety of ANN algorithms and different parallelization strategies. In this paper, we have identified the currently used parallelization strategies (Data Equal Split (DES) and Bucket Equal Split (BES)) and systematically evaluated their performance. We have also developed a framework to simplify the deployment of ANN algorithms in distributed memory machines with customized parallelization or data partition strategies. We further proposed a novel class of data partition/parallelization strategies that takes into account the data spatial proximity . Our approaches (SABES and SABES++) improves data locality and the system efficiency as compared to DES and BES. For instance, SABES++ achieved speedups of 4.2 × × and 1.8 × × on top of DES and BES, respectively, in the baseline case (40 nodes). Further, SABES and SABES++ also attained higher multi-node scalability and the gains vs DES and BES increase a larger number of nodes. SABES++ is 14.5 × × faster than DES when 160 nodes are used.},
+  archive      = {J_PARCO},
+  author       = {Guilherme Andrade and Renato Ferreira and George Teodoro},
+  doi          = {10.1016/j.parco.2022.102992},
+  journal      = {Parallel Computing},
+  pages        = {102992},
+  shortjournal = {Parallel Comput.},
+  title        = {Spatial-aware data partition for distributed memory parallelization of ANN search in multimedia retrieval},
+  volume       = {115},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

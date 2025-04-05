@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JACM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jacm---44">JACM - 44</h2>
+<ul>
+<li><details>
+<summary>
+(2022). The complexity of gradient descent: CLS = PPAD ∩ PLS.
+<em>JACM</em>, <em>70</em>(1), 7:1–74. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We study search problems that can be solved by performing Gradient Descent on a bounded convex polytopal domain and show that this class is equal to the intersection of two well-known classes: PPAD and PLS. As our main underlying technical contribution, we show that computing a Karush-Kuhn-Tucker (KKT) point of a continuously differentiable function over the domain [0,1]2 is PPAD&amp;nbsp;∩&amp;nbsp;PLS-complete. This is the first non-artificial problem to be shown complete for this class. Our results also imply that the class CLS (Continuous Local Search) – which was defined by Daskalakis and Papadimitriou as a more “natural” counterpart to PPAD&amp;nbsp;∩&amp;nbsp;PLS and contains many interesting problems – is itself equal to PPAD&amp;nbsp;∩&amp;nbsp;PLS.},
+  archive  = {J_JACM},
+  author   = {Fearnley, John and Goldberg, Paul and Hollender, Alexandros and Savani, Rahul},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {7:1-74},
+  title    = {The complexity of gradient descent: CLS = PPAD ∩ PLS},
+  volume   = {70},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Minimizing convex functions with rational minimizers.
+<em>JACM</em>, <em>70</em>(1), 5:1–27. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Given a separation oracle SO for a convex function f defined on ℝn that has an integral minimizer inside a box with radius R, we show how to find an exact minimizer of f using at most O(n (n log log (n)/log (n) + log (R))) calls to SO and poly (n, log (R)) arithmetic operations, orO(n log (nR) calls to SO and exp (O(n)) ⋅ poly (log (R)) arithmetic operations.When the set of minimizers of f has integral extreme points, our algorithm outputs an integral minimizer of f. This improves upon the previously best oracle complexity of O(n2 (n + log (R))) for polynomial time algorithms and O(n2 log (nR) for exponential time algorithms obtained by [Gr\&quot;{o}tschel, Lov\&#39;{a}sz and Schrijver, Prog. Comb. Opt. 1984, Springer 1988] over thirty years ago. Our improvement on Gr\&quot;{o}tschel, Lov\&#39;{a}sz and Schrijver’s result generalizes to the setting where the set of minimizers of f is a rational polyhedron with bounded vertex complexity.For the Submodular Function Minimization problem, our result immediately implies a strongly polynomial algorithm that makes at most O(n3 log log (n)/log (n)) calls to an evaluation oracle, and an exponential time algorithm that makes at most O(n2 log (n)) calls to an evaluation oracle. These improve upon the previously best O(n3 log2(n)) oracle complexity for strongly polynomial algorithms given in [Lee, Sidford and Wong, FOCS 2015] and [Dadush, V\&#39;{e}gh and Zambelli, SODA 2018], and an exponential time algorithm with oracle complexity O(n3 log (n)) given in the former work.Our result is achieved via a reduction to the Shortest Vector Problem in lattices. We show how an approximately shortest vector of an auxiliary lattice can be used to effectively reduce the dimension of the problem. Our analysis of the oracle complexity is based on a potential function that simultaneously captures the size of the search set and the density of the lattice, which we analyze via tools from convex geometry and lattice theory.},
+  archive  = {J_JACM},
+  author   = {Jiang, Haotian},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {5:1-27},
+  title    = {Minimizing convex functions with rational minimizers},
+  volume   = {70},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). OptORAMa: Optimal oblivious RAM. <em>JACM</em>,
+<em>70</em>(1), 4:1–70. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Oblivious RAM (ORAM), first introduced in the ground-breaking work of Goldreich and Ostrovsky (STOC&amp;nbsp;’87 and J. ACM ’96) is a technique for provably obfuscating programs’ access patterns, such that the access patterns leak no information about the programs’ secret inputs. To compile a general program to an oblivious counterpart, it is well-known that Ω (log N) amortized blowup in memory accesses is necessary, where N is the size of the logical memory. This was shown in Goldreich and Ostrovksy’s original ORAM work for statistical security and in a somewhat restricted model (the so-called balls-and-bins model), and recently by Larsen and Nielsen (CRYPTO&amp;nbsp;’18) for computational security.A long-standing open question is whether there exists an optimal ORAM construction that matches the aforementioned logarithmic lower bounds (without making large memory word assumptions, and assuming a constant number of CPU registers). In this article, we resolve this problem and present the first secure ORAM with O(log N) amortized blowup, assuming one-way functions. Our result is inspired by and non-trivially improves on the recent beautiful work of Patel et&amp;nbsp;al. (FOCS ’18) who gave a construction with O(log N⋅ log log N) amortized blowup, assuming one-way functions. One of our building blocks of independent interest is a linear-time deterministic oblivious algorithm for tight compaction: Given an array of n elements where some elements are marked, we permute the elements in the array so that all marked elements end up in the front of the array. Our O(n) algorithm improves the previously best-known deterministic or randomized algorithms whose running time is O(n ⋅ log n) or O(n ⋅ log log n), respectively.},
+  archive  = {J_JACM},
+  author   = {Asharov, Gilad and Komargodski, Ilan and Lin, Wei-Kai and Nayak, Kartik and Peserico, Enoch and Shi, Elaine},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {4:1-70},
+  title    = {OptORAMa: Optimal oblivious RAM},
+  volume   = {70},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Directed shortest paths via approximate cost balancing.
+<em>JACM</em>, <em>70</em>(1), 3:1–33. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present an O(nm) algorithm for all-pairs shortest paths computations in a directed graph with n nodes, m arcs, and nonnegative integer arc costs. This matches the complexity bound attained by Thorup [31] for the all-pairs problems in undirected graphs. The main insight is that shortest paths problems with approximately balanced directed cost functions can be solved similarly to the undirected case. The algorithm finds an approximately balanced reduced cost function in an O(m√ n log n) preprocessing step. Using these reduced costs, every shortest path query can be solved in O(m) time using an adaptation of Thorup’s component hierarchy method. The balancing result can also be applied to the ℓ∞-matrix balancing problem.},
+  archive  = {J_JACM},
+  author   = {Orlin, James B. and V\&#39;{e}gh, L\&#39;{a}szl\&#39;{o}},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {3:1-33},
+  title    = {Directed shortest paths via approximate cost balancing},
+  volume   = {70},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On the descriptive complexity of temporal constraint
+satisfaction problems. <em>JACM</em>, <em>70</em>(1), 2:1–58. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Finite-domain constraint satisfaction problems are either solvable by Datalog or not even expressible in fixed-point logic with counting. The border between the two regimes can be described by a universal-algebraic minor condition. For infinite-domain constraint satisfaction problems (CSPs), the situation is more complicated even if the template structure of the CSP is model-theoretically tame. We prove that there is no Maltsev condition that characterizes Datalog already for the CSPs of first-order reducts of (ℚ;&amp;lt;); such CSPs are called temporal CSPs and are of fundamental importance in infinite-domain constraint satisfaction. Our main result is a complete classification of temporal CSPs that can be expressed in one of the following logical formalisms: Datalog, fixed-point logic (with or without counting), or fixed-point logic with the mod-2 rank operator. The classification shows that many of the equivalent conditions in the finite fail to capture expressibility in Datalog or fixed-point logic already for temporal CSPs.},
+  archive  = {J_JACM},
+  author   = {Bodirsky, Manuel and Rydval, Jakub},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {2:1-58},
+  title    = {On the descriptive complexity of temporal constraint satisfaction problems},
+  volume   = {70},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Whole-grain petri nets and processes. <em>JACM</em>,
+<em>70</em>(1), 1:1–58. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a formalism for Petri nets based on polynomial-style finite-set configurations and etale maps. The formalism supports both a geometric semantics in the style of Goltz and Reisig (processes are etale maps from graphs) and an algebraic semantics in the style of Meseguer and Montanari, in terms of free coloured props, and allows the following unification: for P a Petri net, the Segal space of P-processes is shown to be the free coloured prop-in-groupoids on P. There is also an unfolding semantics \`{a} la Winskel, which bypasses the classical symmetry problems: with the new formalism, every Petri net admits a universal unfolding, which in turn has associated an event structure and a Scott domain. Since everything is encoded with explicit sets, Petri nets and their processes have elements. In particular, individual-token semantics is native. (Collective-token semantics emerges from rather drastic quotient constructions \`{a} la Best–Devillers, involving taking π0 of the groupoids of states.)},
+  archive  = {J_JACM},
+  author   = {Kock, Joachim},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {1:1-58},
+  title    = {Whole-grain petri nets and processes},
+  volume   = {70},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Generative datalog with continuous distributions.
+<em>JACM</em>, <em>69</em>(6), 46:1–52. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Arguing for the need to combine declarative and probabilistic programming, B\&#39;{a}r\&#39;{a}ny et&amp;nbsp;al. (TODS 2017) recently introduced a probabilistic extension of Datalog as a “purely declarative probabilistic programming language.” We revisit this language and propose a more principled approach towards defining its semantics based on stochastic kernels and Markov processes—standard notions from probability theory. This allows us to extend the semantics to continuous probability distributions, thereby settling an open problem posed by B\&#39;{a}r\&#39;{a}ny et&amp;nbsp;al.We show that our semantics is fairly robust, allowing both parallel execution and arbitrary chase orders when evaluating a program. We cast our semantics in the framework of infinite probabilistic databases (Grohe and Lindner, LMCS 2022) and show that the semantics remains meaningful even when the input of a probabilistic Datalog program is an arbitrary probabilistic database.},
+  archive  = {J_JACM},
+  author   = {Grohe, Martin and Kaminski, Benjamin Lucien and Katoen, Joost-pieter and Lindner, Peter},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {46:1-52},
+  title    = {Generative datalog with continuous distributions},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Edge-weighted online bipartite matching. <em>JACM</em>,
+<em>69</em>(6), 45:1–35. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Online bipartite matching is one of the most fundamental problems in the online algorithms literature. Karp, Vazirani, and Vazirani (STOC 1990) gave an elegant algorithm for unweighted bipartite matching that achieves an optimal competitive ratio of 1-1/e . Aggarwal et&amp;nbsp;al.&amp;nbsp;(SODA 2011) later generalized their algorithm and analysis to the vertex-weighted case. Little is known, however, about the most general edge-weighted problem aside from the trivial 1/2-competitive greedy algorithm. In this article, we present the first online algorithm that breaks the long-standing 1/2 barrier and achieves a competitive ratio of at least&amp;nbsp;0.5086. In light of the hardness result of Kapralov, Post, and Vondr\&#39;{a}k&amp;nbsp;(SODA 2013), which restricts beating a&amp;nbsp; 1/2 competitive ratio for the more general monotone submodular welfare maximization problem, our result can be seen as strong evidence that edge-weighted bipartite matching is strictly easier than submodular welfare maximization in an online setting.The main ingredient in our online matching algorithm is a novel subroutine called online correlated selection&amp;nbsp;(OCS), which takes a sequence of pairs of vertices as input and selects one vertex from each pair. Instead of using a fresh random bit to choose a vertex from each pair, the OCS negatively correlates decisions across different pairs and provides a quantitative measure on the level of correlation. We believe our OCS technique is of independent interest and will find further applications in other online optimization problems.},
+  archive  = {J_JACM},
+  author   = {Fahrbach, Matthew and Huang, Zhiyi and Tao, Runzhou and Zadimoghaddam, Morteza},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {45:1-35},
+  title    = {Edge-weighted online bipartite matching},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Deterministic document exchange protocols and almost optimal
+binary codes for edit errors. <em>JACM</em>, <em>69</em>(6), 44:1–39.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We study two basic problems regarding edit errors, document exchange and error correcting codes. Here, two parties try to exchange two strings with length roughly n and edit distance at most k, or one party tries to send a string of length n to another party through a channel that can introduce at most k edit errors. The goal is to use the least amount of communication or redundancy possible. Both problems have been extensively studied for decades, and in this article, we focus on deterministic document exchange protocols and binary codes for insertions and deletions (insdel codes). It is known that for small k (e.g., k ≤ n/4 ), in both problems the optimal communication or redundancy size is Θ (k log n/k). In particular, this implies the existence of binary codes that can correct ε fraction of edit errors with rate 1-Θ (ε log 1/ε )). However, known constructions are far from achieving these bounds.In this article, we significantly improve previous results on both problems. For document exchange, we give an efficient deterministic protocol with communication complexity O(k log2 n/k. This significantly improves the previous best-known deterministic protocol, which has communication complexity O(k2 + k log2 n) [4]. For binary insdel codes, we obtain the following results: (1)An explicit binary insdel code with redundancy O(k log2 n/k). In particular this implies an explicit family of binary insdel codes that can correct ε fraction of insertions and deletions with rate 1-O(ε log2 (1/ε))=1-\~{O}(ε). This significantly improves the previous best-known result, which only achieves rate 1-\~{O}(√ ε) [14], [15], and is optimal up to a log (1/ε factor.(2)An explicit binary insdel code with redundancy O(k log n). This significantly improves the previous best-known result of Reference [6], which only works for constant k and has redundancy O(k2 log k log n); and that of Reference [4], which has redundancy O(k2 + k log2 n). Our code has optimal redundancy for k ≤ n1-α, any constant 0&amp;lt; α &amp;lt; 1. This is the first explicit construction of binary insdel codes that has optimal redundancy for a wide range of error parameters k.In obtaining our results, we introduce several new techniques. Most notably, we introduce the notion of ε-self-matching hash functions and ε-synchronization hash functions. We believe our techniques can have further applications in the literature.},
+  archive  = {J_JACM},
+  author   = {Cheng, Kuan and Jin, Zhengzhong and Li, Xin and Wu, Ke},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {44:1-39},
+  title    = {Deterministic document exchange protocols and almost optimal binary codes for edit errors},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Nearly optimal pseudorandomness from hardness.
+<em>JACM</em>, <em>69</em>(6), 43:1–55. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Existing proofs that deduce BPP = P from circuit lower bounds convert randomized algorithms into deterministic algorithms with a large polynomial slowdown. We convert randomized algorithms into deterministic ones with little slowdown. Specifically, assuming exponential lower bounds against randomized NP ∩ coNP circuits, formally known as randomized SVN circuits, we convert any randomized algorithm over inputs of length n running in time t ≥ n into a deterministic one running in time t2+α for an arbitrarily small constant α &amp;gt; 0. Such a slowdown is nearly optimal for t close to n, since under standard complexity-theoretic assumptions, there are problems with an inherent quadratic derandomization slowdown. We also convert any randomized algorithm that errs rarely into a deterministic algorithm having a similar running time (with pre-processing). The latter derandomization result holds under weaker assumptions, of exponential lower bounds against deterministic SVN circuits.Our results follow from a new, nearly optimal, explicit pseudorandom generator fooling circuits of size s with seed length (1+α)log s, under the assumption that there exists a function f ∈ E that requires randomized SVN circuits of size at least 2(1-α′)n, where α = O(α)′. The construction uses, among other ideas, a new connection between pseudoentropy generators and locally list recoverable codes.},
+  archive  = {J_JACM},
+  author   = {Doron, Dean and Moshkovitz, Dana and Oh, Justin and Zuckerman, David},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {43:1-55},
+  title    = {Nearly optimal pseudorandomness from hardness},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Adversarially robust streaming algorithms via differential
+privacy. <em>JACM</em>, <em>69</em>(6), 42:1–14. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A streaming algorithm is said to be adversarially robust if its accuracy guarantees are maintained even when the data stream is chosen maliciously, by an adaptive adversary. We establish a connection between adversarial robustness of streaming algorithms and the notion of differential privacy. This connection allows us to design new adversarially robust streaming algorithms that outperform the current state-of-the-art constructions for many interesting regimes of parameters.},
+  archive  = {J_JACM},
+  author   = {Hassidim, Avinatan and Kaplan, Haim and Mansour, Yishay and Matias, Yossi and Stemmer, Uri},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {42:1-14},
+  title    = {Adversarially robust streaming algorithms via differential privacy},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Simple uncoupled no-regret learning dynamics for
+extensive-form correlated equilibrium. <em>JACM</em>, <em>69</em>(6),
+41:1–41. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The existence of simple uncoupled no-regret learning dynamics that converge to correlated equilibria in normal-form games is a celebrated result in the theory of multi-agent systems. Specifically, it has been known for more than 20 years that when all players seek to minimize their internal regret in a repeated normal-form game, the empirical frequency of play converges to a normal-form correlated equilibrium. Extensive-form (that is, tree-form) games generalize normal-form games by modeling both sequential and simultaneous moves, as well as imperfect information. Because of the sequential nature and presence of private information in the game, correlation in extensive-form games possesses significantly different properties than in normal-form games, many of which are still open research directions. Extensive-form correlated equilibrium (EFCE) has been proposed as the natural extensive-form counterpart to the classical notion of correlated equilibrium in normal-form games. Compared to the latter, the constraints that define the set of EFCEs are significantly more complex, as the correlation device (a.k.a. mediator) must take into account the evolution of beliefs of each player as they make observations throughout the game. Due to that significant added complexity, the existence of uncoupled learning dynamics leading to an EFCE has remained a challenging open research question for a long time. In this article, we settle that question by giving the first uncoupled no-regret dynamics that converge to the set of EFCEs in n-player general-sum extensive-form games with perfect recall. We show that each iterate can be computed in time polynomial in the size of the game tree, and that, when all players play repeatedly according to our learning dynamics, the empirical frequency of play after T game repetitions is proven to be a ( O(1/sqrt {T}) ) -approximate EFCE with high probability, and an EFCE almost surely in the limit.},
+  archive  = {J_JACM},
+  author   = {Farina, Gabriele and Celli, Andrea and Marchesi, Alberto and Gatti, Nicola},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {41:1-41},
+  title    = {Simple uncoupled no-regret learning dynamics for extensive-form correlated equilibrium},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Adversarial bandits with knapsacks. <em>JACM</em>,
+<em>69</em>(6), 40:1–47. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider Bandits with Knapsacks (henceforth, BwK), a general model for multi-armed bandits under supply/budget constraints. In particular, a bandit algorithm needs to solve a well-known knapsack problem: find an optimal packing of items into a limited-size knapsack. The BwK problem is a common generalization of numerous motivating examples, which range from dynamic pricing to repeated auctions to dynamic ad allocation to network routing and scheduling. While the prior work on BwK focused on the stochastic version, we pioneer the other extreme in which the outcomes can be chosen adversarially. This is a considerably harder problem, compared to both the stochastic version and the “classic” adversarial bandits, in that regret minimization is no longer feasible. Instead, the objective is to minimize the competitive ratio: the ratio of the benchmark reward to algorithm’s reward.We design an algorithm with competitive ratio O(log T) relative to the best fixed distribution over actions, where T is the time horizon; we also prove a matching lower bound. The key conceptual contribution is a new perspective on the stochastic version of the problem. We suggest a new algorithm for the stochastic version, which builds on the framework of regret minimization in repeated games and admits a substantially simpler analysis compared to prior work. We then analyze this algorithm for the adversarial version, and use it as a subroutine to solve the latter.Our algorithm is the first “black-box reduction” from bandits to BwK: it takes an arbitrary bandit algorithm and uses it as a subroutine. We use this reduction to derive several extensions.},
+  archive  = {J_JACM},
+  author   = {Immorlica, Nicole and Sankararaman, Karthik and Schapire, Robert and Slivkins, Aleksandrs},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {40:1-47},
+  title    = {Adversarial bandits with knapsacks},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Properly learning decision trees in almost polynomial time.
+<em>JACM</em>, <em>69</em>(6), 39:1–19. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We give an nO(log log n)-time membership query algorithm for properly and agnostically learning decision trees under the uniform distribution over { ± 1}n. Even in the realizable setting, the previous fastest runtime was nO(log n), a consequence of a classic algorithm of Ehrenfeucht and Haussler.Our algorithm shares similarities with practical heuristics for learning decision trees, which we augment with additional ideas to circumvent known lower bounds against these heuristics. To analyze our algorithm, we prove a new structural result for decision trees that strengthens a theorem of O’Donnell, Saks, Schramm, and Servedio. While the OSSS theorem says that every decision tree has an influential variable, we show how every decision tree can be “pruned” so that every variable in the resulting tree is influential.},
+  archive  = {J_JACM},
+  author   = {Blanc, Guy and Lange, Jane and Qiao, Mingda and Tan, Li-Yang},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {39:1-19},
+  title    = {Properly learning decision trees in almost polynomial time},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Gradual system f. <em>JACM</em>, <em>69</em>(5), 38:1–78.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Bringing the benefits of gradual typing to a language with parametric polymorphism like System F, while preserving relational parametricity, has proven extremely challenging: first attempts were formulated a decade ago, and several designs have been recently proposed, with varying syntax, behavior, and properties. Starting from a detailed review of the challenges and tensions that affect the design of gradual parametric languages, this work presents an extensive account of the semantics and metatheory of GSF, a gradual counterpart of System&amp;nbsp;F. In doing so, we also report on the extent to which the Abstracting Gradual Typing methodology can help us derive such a language. Among gradual parametric languages that follow the syntax of System&amp;nbsp;F, GSF achieves a unique combination of properties. We clearly establish the benefits and limitations of the language, and discuss several extensions of GSF towards a practical programming language.},
+  archive  = {J_JACM},
+  author   = {Labrada, Elizabeth and Toro, Mat\&#39;{\i}as and Tanter, \&#39;{E}ric},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {38:1-78},
+  title    = {Gradual system f},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Independence in infinite probabilistic databases.
+<em>JACM</em>, <em>69</em>(5), 37:1–42. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Probabilistic databases (PDBs) model uncertainty in data. The current standard is to view PDBs as finite probability spaces over relational database instances. Since many attributes in typical databases have infinite domains, such as integers, strings, or real numbers, it is often more natural to view PDBs as infinite probability spaces over database instances. In this article, we lay the mathematical foundations of infinite probabilistic databases. Our focus then is on independence assumptions. Tuple-independent PDBs play a central role in theory and practice of PDBs. Here we study infinite tuple-independent PDBs as well as related models such as infinite block-independent disjoint PDBs. While the standard model of PDBs focuses on a set-based semantics, we also study tuple-independent PDBs with a bag semantics and independence in PDBs over uncountable fact spaces.We also propose a new approach to PDBs with an open-world assumption, addressing issues raised by Ceylan et&amp;nbsp;al.&amp;nbsp;(Proc. KR 2016) and generalizing their work, which is still rooted in finite tuple-independent PDBs.Moreover, for countable PDBs we propose an approximate query answering algorithm.},
+  archive  = {J_JACM},
+  author   = {Grohe, Martin and Lindner, Peter},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {37:1-42},
+  title    = {Independence in infinite probabilistic databases},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Two-round multiparty secure computation from minimal
+assumptions. <em>JACM</em>, <em>69</em>(5), 36:1–30. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We provide new two-round multiparty secure computation (MPC) protocols in the dishonest majority setting assuming the minimal assumption that two-round oblivious transfer (OT) exists. If the assumed two-round OT protocol is secure against semi-honest adversaries (in the plain model) then so is our two-round MPC protocol. Similarly, if the assumed two-round OT protocol is secure against malicious adversaries (in the common random/reference string model) then so is our two-round MPC protocol. Previously, two-round MPC protocols were only known under relatively stronger computational assumptions.},
+  archive  = {J_JACM},
+  author   = {Garg, Sanjam and Srinivasan, Akshayaram},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {36:1-30},
+  title    = {Two-round multiparty secure computation from minimal assumptions},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). QCSP monsters and the demise of the chen conjecture.
+<em>JACM</em>, <em>69</em>(5), 35:1–44. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We give a surprising classification for the computational complexity of the Quantified Constraint Satisfaction Problem over a constraint language Γ, QCSP(Γ), where Γ is a finite language over three elements that contains all constants. In particular, such problems are in P, NP-complete, co-NP-complete, or PSpace-complete. Our classification refutes the hitherto widely believed Chen Conjecture.Additionally, we show that already on a 4-element domain there exists a constraint language Γ such that QCSP(Γ) is DP-complete (from Boolean Hierarchy), and on a 10-element domain there exists a constraint language giving the complexity class ΘP2.Meanwhile, we prove the Chen Conjecture for finite conservative languages Γ. If the polymorphism clone of such Γ has the polynomially generated powers property, then QCSP(Γ) is in NP. Otherwise, the polymorphism clone of Γ has the exponentially generated powers property and QCSP(Γ) is PSpace-complete.1},
+  archive  = {J_JACM},
+  author   = {Zhuk, Dmitriy and Martin, Barnaby},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {35:1-44},
+  title    = {QCSP monsters and the demise of the chen conjecture},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Decentralized asynchronous crash-resilient runtime
+verification. <em>JACM</em>, <em>69</em>(5), 34:1–31. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Runtime verification is a lightweight method for monitoring the formal specification of a system during its execution. It has recently been shown that a given state predicate can be monitored consistently by a set of crash-prone asynchronous distributed monitors observing the system, only if each monitor can emit verdicts taken from a large enough finite set. We revisit this impossibility result in the concrete context of linear-time logic (ltl) semantics for runtime verification, that is, when the correctness of the system is specified by an ltl formula on its execution traces. First, we show that monitors synthesized based on the 4-valued semantics of ltl (rv-ltl) may result in inconsistent distributed monitoring, even for some simple ltl formulas. More generally, given any ltl formula&amp;nbsp;φ, we relate the number of different verdicts required by the monitors for consistently monitoring&amp;nbsp;φ, with a specific structural characteristic of&amp;nbsp;φ called its alternation number. Specifically, we show that, for every k ≥ 0, there is an ltl formula&amp;nbsp;φ with alternation number&amp;nbsp;k that cannot be verified at runtime by distributed monitors emitting verdicts from a set of cardinality smaller than k + 1. On the positive side, we define a family of logics, called distributed ltl (abbreviated as dltl), parameterized by k ≥ 0, which refines rv-ltl by incorporating 2k + 4 truth values. Our main contribution is to show that, for every k ≥ 0, every ltl formula&amp;nbsp;φ with alternation number&amp;nbsp;k can be consistently monitored by distributed monitors, each running an automaton based on a (2 ⌈ k/2 ⌉ +4)-valued logic taken from the dltl family.},
+  archive  = {J_JACM},
+  author   = {Bonakdarpour, Borzoo and Fraigniaud, Pierre and Rajsbaum, Sergio and Rosenblueth, David and Travers, Corentin},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {34:1-31},
+  title    = {Decentralized asynchronous crash-resilient runtime verification},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Sampling-based sublinear low-rank matrix arithmetic
+framework for dequantizing quantum machine learning. <em>JACM</em>,
+<em>69</em>(5), 33:1–72. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present an algorithmic framework for quantum-inspired classical algorithms on close-to-low-rank matrices, generalizing the series of results started by Tang’s breakthrough quantum-inspired algorithm for recommendation systems [STOC’19]. Motivated by quantum linear algebra algorithms and the quantum singular value transformation (SVT) framework of Gily\&#39;{e}n et&amp;nbsp;al.&amp;nbsp;[STOC’19], we develop classical algorithms for SVT that run in time independent of input dimension, under suitable quantum-inspired sampling assumptions. Our results give compelling evidence that in the corresponding QRAM data structure input model, quantum SVT does not yield exponential quantum speedups. Since the quantum SVT framework generalizes essentially all known techniques for quantum linear algebra, our results, combined with sampling lemmas from previous work, suffice to generalize all prior results about dequantizing quantum machine learning algorithms. In particular, our classical SVT framework recovers and often improves the dequantization results on recommendation systems, principal component analysis, supervised clustering, support vector machines, low-rank regression, and semidefinite program solving. We also give additional dequantization results on low-rank Hamiltonian simulation and discriminant analysis. Our improvements come from identifying the key feature of the quantum-inspired input model that is at the core of all prior quantum-inspired results: ℓ2-norm sampling can approximate matrix products in time independent of their dimension. We reduce all our main results to this fact, making our exposition concise, self-contained, and intuitive.},
+  archive  = {J_JACM},
+  author   = {Chia, Nai-Hui and Gily\&#39;{e}n, Andr\&#39;{a}s Pal and Li, Tongyang and Lin, Han-Hsuan and Tang, Ewin and Wang, Chunhao},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {33:1-72},
+  title    = {Sampling-based sublinear low-rank matrix arithmetic framework for dequantizing quantum machine learning},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An improved bound for weak epsilon-nets in the plane.
+<em>JACM</em>, <em>69</em>(5), 32:1–35. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We show that for any finite point set P in the plane and ϵ &amp;gt; 0 there exist ( O(tfrac{1}{{epsilon }^{3/2+gamma }}) ) points in ℝ2, for arbitrary small γ &amp;gt; 0, that pierce every convex set K with |K∩ P|&amp;gt; ϵ |P|. This is the first improvement of the bound of ( O(tfrac{1}{{epsilon }^2}) ) that was obtained in 1992 by Alon, B\&#39;{a}r\&#39;{a}ny, F\&quot;{u}redi, and Kleitman for general point sets in the plane.},
+  archive  = {J_JACM},
+  author   = {Rubin, Natan},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {32:1-35},
+  title    = {An improved bound for weak epsilon-nets in the plane},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). SPARKs: Succinct parallelizable arguments of knowledge.
+<em>JACM</em>, <em>69</em>(5), 31:1–88. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We introduce the notion of a Succinct Parallelizable Argument of Knowledge (SPARK). This is an argument of knowledge with the following three efficiency properties for computing and proving a (non-deterministic, polynomial time) parallel RAM computation that can be computed in parallel time T with at most p processors: —The prover’s (parallel) running time is ( T + mathrm{poly}hspace{-2.0pt}log (T cdot p) ) . (In other words, the prover’s running time is essentially T for large computation times!)—The prover uses at most ( p cdot mathrm{poly}hspace{-2.0pt}log (T cdot p) ) processors.—The communication and verifier complexity are both ( mathrm{poly}hspace{-2.0pt}log (T cdot p) ) . The combination of all three is desirable, as it gives a way to leverage a moderate increase in parallelism in favor of near-optimal running time. We emphasize that even a factor two overhead in the prover’s parallel running time is not allowed. Our main contribution is a generic construction of SPARKs from any succinct argument of knowledge where the prover’s parallel running time is ( T cdot mathrm{poly}hspace{-2.0pt}log (T cdot p) ) when using p processors, assuming collision-resistant hash functions. When suitably instantiating our construction, we achieve a four-round SPARK for any parallel RAM computation assuming only collision resistance. Additionally assuming the existence of a succinct non-interactive argument of knowledge (SNARK), we construct a non-interactive SPARK that also preserves the space complexity of the underlying computation up to ( mathrm{poly}hspace{-2.0pt}log (Tcdot p) ) factors. We also show the following applications of non-interactive SPARKs. First, they immediately imply delegation protocols with near optimal prover (parallel) running time. This, in turn, gives a way to construct verifiable delay functions (VDFs) from any sequential function. When the sequential function is also memory-hard, this yields the first construction of a memory-hard VDF.},
+  archive  = {J_JACM},
+  author   = {Ephraim, Naomi and Freitag, Cody and Komargodski, Ilan and Pass, Rafael},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {31:1-88},
+  title    = {SPARKs: Succinct parallelizable arguments of knowledge},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Oracle separation of BQP and PH. <em>JACM</em>,
+<em>69</em>(4), 30:1–21. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a distribution 𝓓 over inputs in {± 1}2N, such that: (1)There exists a quantum algorithm that makes one (quantum) query to the input, and runs in time O(log N), that distinguishes between 𝓓 and the uniform distribution with advantage Ω (1/log N).(2)No Boolean circuit of quasi-polynomial size and constant depth distinguishes between 𝓓 and the uniform distribution with advantage better than polylog(N)/√N.By well-known reductions, this gives a separation of the classes Promise-BQP and Promise-PH in the black-box model and implies an oracle relative to which BQP is not contained in PH.},
+  archive  = {J_JACM},
+  author   = {Raz, Ran and Tal, Avishay},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {30:1-21},
+  title    = {Oracle separation of BQP and PH},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Exponentially faster shortest paths in the congested clique.
+<em>JACM</em>, <em>69</em>(4), 29:1–42. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present improved deterministic algorithms for approximating shortest paths in the Congested Clique model of distributed computing. We obtain poly(log log n)-round algorithms for the following problems in unweighted undirected n-vertex graphs: ( 1 + ϵ)-approximation of multi-source shortest paths (MSSP) from O(√ n) sources.(2 + ϵ)-approximation of all pairs shortest paths (APSP).(1 + ϵ, β)-approximation of APSP where β = O (log log n/ϵ)log log n. These bounds improve exponentially over the state-of-the-art poly-logarithmic bounds due to [Censor-Hillel et&amp;nbsp;al., PODC19]. It also provides the first nearly-additive bounds for the APSP problem in sub-polynomial time. Our approach is based on distinguishing between short and long distances based on some distance threshold t = O(β/ϵ) where β = O (log log n/ϵ)log log n. Handling the long distances is done by devising a new algorithm for computing a sparse (1 + ϵ, β) emulator with O (n log log n) edges. For the short distances, we provide distance-sensitive variants for the distance tool-kit of [Censor-Hillel et&amp;nbsp;al., PODC19]. By exploiting the fact that this tool-kit should be applied only on local balls of radius t, their round complexities get improved from poly (log n) to poly (log t).Finally, our deterministic solutions for these problems are based on a derandomization scheme of a novel variant of the hitting set problem, which might be of independent interest.},
+  archive  = {J_JACM},
+  author   = {Dory, Michal and Parter, Merav},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {29:1-42},
+  title    = {Exponentially faster shortest paths in the congested clique},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Private and online learnability are equivalent.
+<em>JACM</em>, <em>69</em>(4), 28:1–34. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Let H be a binary-labeled concept class. We prove that H can be PAC learned by an (approximate) differentially private algorithm if and only if it has a finite Littlestone dimension. This implies a qualitative equivalence between online learnability and private PAC learnability.},
+  archive  = {J_JACM},
+  author   = {Alon, Noga and Bun, Mark and Livni, Roi and Malliaris, Maryanthe and Moran, Shay},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {28:1-34},
+  title    = {Private and online learnability are equivalent},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Foundations of differentially oblivious algorithms.
+<em>JACM</em>, <em>69</em>(4), 27:1–49. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {It is well-known that a program’s memory access pattern can leak information about its input. To thwart such leakage, most existing works adopt the technique of oblivious RAM (ORAM) simulation. Such an obliviousness notion has stimulated much debate. Although ORAM techniques have significantly improved over the past few years, the concrete overheads are arguably still undesirable for real-world systems — part of this overhead is in fact inherent due to a well-known logarithmic ORAM lower bound by Goldreich and Ostrovsky. To make matters worse, when the program’s runtime or output length depend on secret inputs, it may be necessary to perform worst-case padding to achieve full obliviousness and thus incur possibly super-linear overheads.Inspired by the elegant notion of differential privacy, we initiate the study of a new notion of access pattern privacy, which we call “ (ϵ , δ) -differential obliviousness”. We separate the notion of (ϵ , δ) -differential obliviousness from classical obliviousness by considering several fundamental algorithmic abstractions including sorting small-length keys, merging two sorted lists, and range query data structures (akin to binary search trees). We show that by adopting differential obliviousness with reasonable choices of ϵ and δ , not only can one circumvent several impossibilities pertaining to full obliviousness, one can also, in several cases, obtain meaningful privacy with little overhead relative to the non-private baselines (i.e., having privacy “with little extra overhead”). On the other hand, we show that for very demanding choices of ϵ and δ , the same lower bounds for oblivious algorithms would be preserved for (ϵ, δ) -differential obliviousness.},
+  archive  = {J_JACM},
+  author   = {Chan, T.-H. Hubert and Chung, Kai-Min and Maggs, Bruce and Shi, Elaine},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {27:1-49},
+  title    = {Foundations of differentially oblivious algorithms},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Optimal short-circuit resilient formulas. <em>JACM</em>,
+<em>69</em>(4), 26:1–37. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider fault-tolerant boolean formulas in which the output of a faulty gate is short-circuited to one of the gate’s inputs. A recent result by Kalai et&amp;nbsp;al. [FOCS 2012] converts any boolean formula into a resilient formula of polynomial size that works correctly if less than 1/6 of the gates (on every input-to-output path) are faulty. We improve the result of Kalai et&amp;nbsp;al., and show how to efficiently fortify any boolean formula against a fraction of 1/5 of short-circuit gates per path, with only a polynomial blowup in size. We additionally show that it is impossible to obtain formulas with higher resilience and sub-exponential growth in size.Towards our results, we consider interactive coding schemes when noiseless feedback is present; these produce resilient boolean formulas via a Karchmer-Wigderson relation. We develop a coding scheme that resists corruptions in up to a fraction of 1/5 of the transmissions in each direction of the interactive channel. We further show that such a level of noise is maximal for coding schemes whose communication blowup is sub-exponential. Our coding scheme has taken a surprising inspiration from Blockchain technology.},
+  archive  = {J_JACM},
+  author   = {Braverman, Mark and Efremenko, Klim and Gelles, Ran and Yitayew, Michael},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {26:1-37},
+  title    = {Optimal short-circuit resilient formulas},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Beyond natural proofs: Hardness magnification and locality.
+<em>JACM</em>, <em>69</em>(4), 25:1–49. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Hardness magnification reduces major complexity separations (such as EXP ⊈ NC1) to proving lower bounds for some natural problem Q against weak circuit models. Several recent works&amp;nbsp;[11, 13, 14, 40, 42, 43, 46] have established results of this form. In the most intriguing cases, the required lower bound is known for problems that appear to be significantly easier than Q, while Q itself is susceptible to lower bounds, but these are not yet sufficient for magnification.In this work, we provide more examples of this phenomenon and investigate the prospects of proving new lower bounds using this approach. In particular, we consider the following essential questions associated with the hardness magnification program: –Does hardness magnification avoid the natural proofs barrier of Razborov and Rudich [51]?–Can we adapt known lower-bound techniques to establish the desired lower bound for Q?We establish that some instantiations of hardness magnification overcome the natural proofs barrier in the following sense: slightly superlinear-size circuit lower bounds for certain versions of the minimum circuit-size problem imply the non-existence of natural proofs. As the non-existence of natural proofs implies the non-existence of efficient learning algorithms, we show that certain magnification theorems not only imply strong worst-case circuit lower bounds but also rule out the existence of efficient learning algorithms.Hardness magnification might sidestep natural proofs, but we identify a source of difficulty when trying to adapt existing lower-bound techniques to prove strong lower bounds via magnification. This is captured by a locality barrier: existing magnification theorems unconditionally show that the problems Q considered above admit highly efficient circuits extended with small fan-in oracle gates, while lower-bound techniques against weak circuit models quite often easily extend to circuits containing such oracles. This explains why direct adaptations of certain lower bounds are unlikely to yield strong complexity separations via hardness magnification.},
+  archive  = {J_JACM},
+  author   = {Chen, Lijie and Hirahara, Shuichi and Oliveira, Igor Carboni and Pich, J\&#39;{a}n and Rajgopal, Ninad and Santhanam, Rahul},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {25:1-49},
+  title    = {Beyond natural proofs: Hardness magnification and locality},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Anonymous shared memory. <em>JACM</em>, <em>69</em>(4),
+24:1–30. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Assuming that there is an a priori agreement between processes on the names of shared memory locations, as is done in almost all the publications on concurrent shared memory algorithms, is tantamount to assuming that agreement has already been solved at a lower level. It is intriguing to figure out how coordination can be achieved without relying on such lower-level agreement. To better understand the new model, we first design new algorithms for several important problems, such as mutual exclusion, consensus, election, and renaming. Then, we prove space lower bounds, impossibility results, and resolve two foundational long-standing open problems in the context of anonymous memory systems.Using these results, we identify fundamental differences between the standard shared memory model and the strictly weaker anonymous shared memory model. Besides enabling us to understand better the intrinsic limits for coordinating the actions of asynchronous processes, the new model has been shown to be useful in modeling biologically inspired distributed computing methods, especially those based on ideas from molecular biology.},
+  archive  = {J_JACM},
+  author   = {Taubenfeld, Gadi},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {24:1-30},
+  title    = {Anonymous shared memory},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Counting subgraphs in degenerate graphs. <em>JACM</em>,
+<em>69</em>(3), 23:1–21. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider the problem of counting the number of copies of a fixed graph H within an input graph G. This is one of the most well-studied algorithmic graph problems, with many theoretical and practical applications. We focus on solving this problem when the input G has bounded degeneracy. This is a rich family of graphs, containing all graphs without a fixed minor (e.g., planar graphs), as well as graphs generated by various random processes (e.g., preferential attachment graphs). We say that H is easy if there is a linear-time algorithm for counting the number of copies of H in an input G of bounded degeneracy. A seminal result of Chiba and Nishizeki from ’85 states that every H on at most 4 vertices is easy. Bera, Pashanasangi, and Seshadhri recently extended this to all H on 5 vertices and further proved that for every ( k gt 5 ) there is a k-vertex H which is not easy. They left open the natural problem of characterizing all easy graphs H.Bressan has recently introduced a framework for counting subgraphs in degenerate graphs, from which one can extract a sufficient condition for a graph H to be easy. Here, we show that this sufficient condition is also necessary, thus fully answering the Bera–Pashanasangi–Seshadhri problem. We further resolve two closely related problems; namely characterizing the graphs that are easy with respect to counting induced copies, and with respect to counting homomorphisms.},
+  archive  = {J_JACM},
+  author   = {Bera, Suman K. and Gishboliner, Lior and Levanzov, Yevgeny and Seshadhri, C. and Shapira, Asaf},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {23:1-21},
+  title    = {Counting subgraphs in degenerate graphs},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Enumeration for FO queries over nowhere dense graphs.
+<em>JACM</em>, <em>69</em>(3), 22:1–37. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider the evaluation of first-order queries over classes of databases that are nowhere dense. The notion of nowhere dense classes was introduced by Ne\v{s}et\v{r}il and Ossona de Mendez as a formalization of classes of “sparse” graphs and generalizes many well-known classes of graphs, such as classes of bounded degree, bounded tree-width, or bounded expansion.It has recently been shown by Grohe, Kreutzer, and Siebertz that over nowhere dense classes of databases, first-order sentences can be evaluated in pseudo-linear time (pseudo-linear time means that for all ( epsilon ) there exists an algorithm working in time ( O(n^{1+epsilon }) ) , where ( n ) is the size of the database).For first-order queries of higher arities, we show that over any nowhere dense class of databases, the set of their solutions can be enumerated with constant delay after a pseudo-linear time preprocessing. In the same context, we also show that after a pseudo-linear time preprocessing we can, on input of a tuple, test in constant time whether it is a solution to the query.},
+  archive  = {J_JACM},
+  author   = {Schweikardt, Nicole and Segoufin, Luc and Vigny, Alexandre},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {22:1-37},
+  title    = {Enumeration for FO queries over nowhere dense graphs},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). The limitations of optimization from samples. <em>JACM</em>,
+<em>69</em>(3), 21:1–33. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this article, we consider the following question: Can we optimize objective functions from the training data we use to learn them? We formalize this question through a novel framework we call optimization from samples (OPS). In OPS, we are given sampled values of a function drawn from some distribution and the objective is to optimize the function under some constraint.While there are interesting classes of functions that can be optimized from samples, our main result is an impossibility. We show that there are classes of functions that are statistically learnable and optimizable, but for which no reasonable approximation for optimization from samples is achievable. In particular, our main result shows that there is no constant factor approximation for maximizing coverage functions under a cardinality constraint using polynomially-many samples drawn from any distribution.We also show tight approximation guarantees for maximization under a cardinality constraint of several interesting classes of functions including unit-demand, additive, and general monotone submodular functions, as well as a constant factor approximation for monotone submodular functions with bounded curvature.},
+  archive  = {J_JACM},
+  author   = {Balkanski, Eric and Rubinstein, Aviad and Singer, Yaron},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {21:1-33},
+  title    = {The limitations of optimization from samples},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Information acquisition under resource limitations in a
+noisy environment. <em>JACM</em>, <em>69</em>(3), 20:1–37. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We introduce a theoretical model of information acquisition under resource limitations in a noisy environment. An agent must guess the truth value of a given Boolean formula ( varphi ) after performing a bounded number of noisy tests of the truth values of variables in the formula. We observe that, in general, the problem of finding an optimal testing strategy for ( varphi ) is hard, but we suggest a useful heuristic. The techniques we use also give insight into two apparently unrelated but well-studied problems: (1) rational inattention, that is, when it is rational to ignore pertinent information (the optimal strategy may involve hardly ever testing variables that are clearly relevant to ( varphi ) ), and (2) what makes a formula hard to learn/remember.},
+  archive  = {J_JACM},
+  author   = {Soloviev, Matvey and Halpern, Joseph Y.},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {20:1-37},
+  title    = {Information acquisition under resource limitations in a noisy environment},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Random <span
+class="math inline"><em>Θ</em>(log <em>n</em>)</span> -CNFs are hard for
+cutting planes. <em>JACM</em>, <em>69</em>(3), 19:1–32. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The random k-SAT model is one of the most important and well-studied distributions over k-SAT instances. It is closely connected to statistical physics and is a benchmark for satisfiability algorithms. We show that when ( k = Theta (log n) ) , any Cutting Planes refutation for random k-SAT requires exponential length in the regime where the number of clauses guarantees that the formula is unsatisfiable with high probability.},
+  archive  = {J_JACM},
+  author   = {Fleming, Noah and Pankratov, Denis and Pitassi, Toniann and Robere, Robert},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {19:1-32},
+  title    = {Random \( \Theta (\log n) \) -CNFs are hard for cutting planes},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Discovering the roots: Uniform closure results for algebraic
+classes under factoring. <em>JACM</em>, <em>69</em>(3), 18:1–39. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Newton iteration is an almost 350-year-old recursive formula that approximates a simple root of a polynomial quite rapidly. We generalize it to a matrix recurrence (allRootsNI) that approximates all roots simultaneously. In this form, the process yields better circuit complexity in the case when the number of roots r is small but the multiplicities are exponentially large. Our method sets up a linear system in r unknowns and iteratively builds the roots as formal power series. For an algebraic circuit ( f(x_1,ldots ,x_n) ) of size s, we prove that each factor has size at most a polynomial ins and the degree of the squarefree part of f. Consequently, if ( f_1 ) is a ( 2^{Omega (n)} ) -hard polynomial, then any nonzero multiple ( prod _{i} f_i^{e_i} ) is equally hard for arbitrary positive ( e_i ) ’s, assuming that ( sum _ideg (f_i) ) is at most ( 2^{O(n)} ) .It is an old open question whether the class of poly(n) size formulas (respectively, algebraic branching programs) is closed under factoring. We show that given a polynomial f of degree ( n^{O(1)} ) and formula (respectively, algebraic branching program) size ( n^{O(log n)} ) , we can find a similar-size formula (respectively, algebraic branching program) factor in randomized poly( ( n^{log n} ) ) time. Consequently, if the determinant requires an ( n^{Omega (log n)} ) size formula, then the same can be said about any of its nonzero multiples.In all of our proofs, we exploit the following property of multivariate polynomial factorization. Under a random linear transformation ( tau ) , the polynomial ( f(tau overline{x}) ) completely factors via power series roots. Moreover, the factorization adapts well to circuit complexity analysis. Therefore, with the help of the strong mathematical characterizations and the ‘allRootsNI’ technique, we make significant progress towards the old open problems; supplementing the vast body of classical results and concepts in algebraic circuit factorization (e.g., [17, 51, 54, 111]).},
+  archive  = {J_JACM},
+  author   = {Dutta, Pranjal and Saxena, Nitin and Sinhababu, Amit},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {18:1-39},
+  title    = {Discovering the roots: Uniform closure results for algebraic classes under factoring},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A framework for adversarially robust streaming algorithms.
+<em>JACM</em>, <em>69</em>(2), 17:1–33. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We investigate the adversarial robustness of streaming algorithms. In this context, an algorithm is considered robust if its performance guarantees hold even if the stream is chosen adaptively by an adversary that observes the outputs of the algorithm along the stream and can react in an online manner. While deterministic streaming algorithms are inherently robust, many central problems in the streaming literature do not admit sublinear-space deterministic algorithms; on the other hand, classical space-efficient randomized algorithms for these problems are generally not adversarially robust. This raises the natural question of whether there exist efficient adversarially robust (randomized) streaming algorithms for these problems.In this work, we show that the answer is positive for various important streaming problems in the insertion-only model, including distinct elements and more generally Fp-estimation, Fp-heavy hitters, entropy estimation, and others. For all of these problems, we develop adversarially robust (1+ε)-approximation algorithms whose required space matches that of the best known non-robust algorithms up to a poly(log n, 1/ε) multiplicative factor (and in some cases even up to a constant factor). Towards this end, we develop several generic tools allowing one to efficiently transform a non-robust streaming algorithm into a robust one in various scenarios.},
+  archive  = {J_JACM},
+  author   = {Ben-Eliezer, Omri and Jayaram, Rajesh and Woodruff, David P. and Yogev, Eylon},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {17:1-33},
+  title    = {A framework for adversarially robust streaming algorithms},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Invited article foreword. <em>JACM</em>, <em>69</em>(2),
+16:1–2. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J_JACM},
+  author  = {Tardos, Eva},
+  doi     = {10.1145/3372419},
+  journal = {J. ACM},
+  number  = {2},
+  pages   = {16:1-2},
+  title   = {Invited article foreword},
+  volume  = {69},
+  year    = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Spatial isolation implies zero knowledge even in a quantum
+world. <em>JACM</em>, <em>69</em>(2), 15:1–44. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Zero knowledge plays a central role in cryptography and complexity. The seminal work of Ben-Or et&amp;nbsp;al. (STOC 1988) shows that zero knowledge can be achieved unconditionally for any language in NEXP, as long as one is willing to make a suitable physical assumption: if the provers are spatially isolated, then they can be assumed to be playing independent strategies.Quantum mechanics, however, tells us that this assumption is unrealistic, because spatially-isolated provers could share a quantum entangled state and realize a non-local correlated strategy. The MIP* model captures this setting.In this work, we study the following question: Does spatial isolation still suffice to unconditionally achieve zero knowledge even in the presence of quantum entanglement?We answer this question in the affirmative: we prove that every language in NEXP has a 2-prover zero knowledge interactive proof that is sound against entangled provers; that is, NEXP ⊆ ZK-MIP*.Our proof consists of constructing a zero knowledge interactive probabilistically checkable proof with a strong algebraic structure, and then lifting it to the MIP* model. This lifting relies on a new framework that builds on recent advances in low-degree testing against entangled strategies, and clearly separates classical and quantum tools.Our main technical contribution is the development of new algebraic techniques for obtaining unconditional zero knowledge; this includes a zero knowledge variant of the celebrated sumcheck protocol, a key building block in many probabilistic proof systems. A core component of our sumcheck protocol is a new algebraic commitment scheme, whose analysis relies on algebraic complexity theory.},
+  archive  = {J_JACM},
+  author   = {Chiesa, Alessandro and Forbes, Michael A. and Gur, Tom and Spooner, Nicholas},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {15:1-44},
+  title    = {Spatial isolation implies zero knowledge even in a quantum world},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). String diagram rewrite theory i: Rewriting with frobenius
+structure. <em>JACM</em>, <em>69</em>(2), 14:1–58. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {String diagrams are a powerful and intuitive graphical syntax, originating in theoretical physics and later formalised in the context of symmetric monoidal categories. In recent years, they have found application in the modelling of various computational structures, in fields as diverse as Computer Science, Physics, Control Theory, Linguistics, and Biology.In several of these proposals, transformations of systems are modelled as rewrite rules of diagrams. These developments require a mathematical foundation for string diagram rewriting: whereas rewrite theory for terms is well-understood, the two-dimensional nature of string diagrams poses quite a few additional challenges.This work systematises and expands a series of recent conference papers, laying down such a foundation. As a first step, we focus on the case of rewrite systems for string diagrammatic theories that feature a Frobenius algebra. This common structure provides a more permissive notion of composition than the usual one available in monoidal categories, and has found many applications in areas such as concurrency, quantum theory, and electrical circuits. Notably, this structure provides an exact correspondence between the syntactic notion of string diagrams modulo Frobenius structure and the combinatorial structure of hypergraphs.Our work introduces a combinatorial interpretation of string diagram rewriting modulo Frobenius structures in terms of double-pushout hypergraph rewriting. We prove this interpretation to be sound and complete and we also show that the approach can be generalised to rewriting modulo multiple Frobenius structures. As a proof of concept, we show how to derive from these results a termination strategy for Interacting Bialgebras, an important rewrite theory in the study of quantum circuits and signal flow graphs.},
+  archive  = {J_JACM},
+  author   = {Bonchi, Filippo and Gadducci, Fabio and Kissinger, Aleks and Sobocinski, Pawel and Zanasi, Fabio},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {14:1-58},
+  title    = {String diagram rewrite theory i: Rewriting with frobenius structure},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Atomic embeddability, clustered planarity, and
+thickenability. <em>JACM</em>, <em>69</em>(2), 13:1–34. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We study the atomic embeddability testing problem, which is a common generalization of clustered planarity (c-planarity, for short) and thickenability testing, and present a polynomial-time algorithm for this problem, thereby giving the first polynomial-time algorithm for c-planarity.C-planarity was introduced in 1995 by Feng, Cohen, and Eades as a variant of graph planarity, in which the vertex set of the input graph is endowed with a hierarchical clustering and we seek an embedding (crossing free drawing) of the graph in the plane that respects the clustering in a certain natural sense. Until now, it has been an open problem whether c-planarity can be tested efficiently. The thickenability problem for simplicial complexes emerged in the topology of manifolds in the 1960s. A 2-dimensional simplicial complex is thickenable if it embeds in some orientable 3-dimensional manifold. Recently, Carmesin announced that thickenability can be tested in polynomial time.Our algorithm for atomic embeddability combines ideas from Carmesin’s work with algorithmic tools previously developed for weak embeddability testing. We express our results purely in terms of graphs on surfaces, and rely on the machinery of topological graph theory.Finally, we give a polynomial-time reduction from atomic embeddability to thickenability thereby showing that both problems are polynomially equivalent, and show that a slight generalization of atomic embeddability to the setting in which clusters are toroidal graphs is NP-complete.},
+  archive  = {J_JACM},
+  author   = {Fulek, Radoslav and T\&#39;{o}th, Csaba D.},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {13:1-34},
+  title    = {Atomic embeddability, clustered planarity, and thickenability},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Polynomial multiplication over finite fields in time <span
+class="math inline"><em>o</em>(<em>n</em>log <em>n</em></span>.
+<em>JACM</em>, <em>69</em>(2), 12:1–40. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Assuming a widely believed hypothesis concerning the least prime in an arithmetic progression, we show that polynomials of degree less than&amp;nbsp; ( n ) over a finite field ( mathbb {F}_q ) with&amp;nbsp; ( q ) elements can be multiplied in time ( O (n log q log (n log q)) ) , uniformly in ( q ) . Under the same hypothesis, we show how to multiply two ( n ) -bit integers in time ( O (n log n) ) ; this algorithm is somewhat simpler than the unconditional algorithm from the companion paper&amp;nbsp;[22]. Our results hold in the Turing machine model with a finite number&amp;nbsp;of&amp;nbsp;tapes.},
+  archive  = {J_JACM},
+  author   = {Harvey, David and van der Hoeven, Joris},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {12:1-40},
+  title    = {Polynomial multiplication over finite fields in time \( o(n \log n \)},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). General strong polarization. <em>JACM</em>, <em>69</em>(2),
+11:1–67. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Ar\i{}kan’s exciting discovery of polar codes has provided an altogether new way to efficiently achieve Shannon capacity. Given a (constant-sized) invertible matrix M, a family of polar codes can be associated with this matrix and its ability to approach capacity follows from the polarization of an associated [0, 1]-bounded martingale, namely its convergence in the limit to either 0 or 1 with probability 1. Ar\i{}kan showed appropriate polarization of the martingale associated with the matrix (G2 = ( 1 1 0 1) to get capacity achieving codes. His analysis was later extended to all matrices M that satisfy an obvious necessary condition for polarization.While Ar\i{}kan’s theorem does not guarantee that the codes achieve capacity at small blocklengths (specifically in length, which is a polynomial in ( 1ε ) where (ε) is the difference between the capacity of a channel and the rate of the code), it turns out that a “strong” analysis of the polarization of the underlying martingale would lead to such constructions. Indeed for the martingale associated with (G2) such a strong polarization was shown in two independent works (Guruswami and Xia (IEEE IT’15) and Hassani et&amp;nbsp;al. (IEEE IT’14)), thereby resolving a major theoretical challenge associated with the efficient attainment of Shannon capacity.In this work we extend the result above to cover martingales associated with all matrices that satisfy the necessary condition for (weak) polarization. In addition to being vastly more general, our proofs of strong polarization are (in our view) also much simpler and modular. Key to our proof is a notion of local polarization that only depends on the evolution of the martingale in a single time step. We show that local polarization always implies strong polarization. We then apply relatively simple reasoning about conditional entropies to prove local polarization in very general settings. Specifically, our result shows strong polarization over all prime fields and leads to efficient capacity-achieving source codes for compressing arbitrary i.i.d. sources, and capacity-achieving channel codes for arbitrary symmetric memoryless channels. We show how to use our analyses to achieve exponentially small error probabilities at lengths inverse polynomial in the gap to capacity. Indeed we show that we can essentially match any error probability while maintaining lengths that are only inverse polynomial in the gap to capacity.},
+  archive  = {J_JACM},
+  author   = {B\l{}asiok, Jaros\l{}aw and Guruswami, Venkatesan and Nakkiran, Preetum and Rudra, Atri and Sudan, Madhu},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {11:1-67},
+  title    = {General strong polarization},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Optimal rate list decoding over bounded alphabets using
+algebraic-geometric codes. <em>JACM</em>, <em>69</em>(2), 10:1–48. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We give new constructions of two classes of algebraic code families that are efficiently list decodable with small output list size from a fraction 1-R-ε of adversarial errors, where R is the rate of the code, for any desired positive constant ε. The alphabet size depends only ε and is nearly optimal.The first class of codes are obtained by folding algebraic-geometric codes using automorphisms of the underlying function field. The second class of codes are obtained by restricting evaluation points of an algebraic-geometric code to rational points from a subfield. In both cases, we develop a linear-algebraic approach to perform list decoding, which pins down the candidate messages to a subspace with a nice “periodic” structure.To prune this subspace and obtain a good bound on the list size, we pick subcodes of these codes by pre-coding into certain subspace-evasive sets that are guaranteed to have small intersection with the sort of periodic subspaces that arise in our list decoding. We develop two approaches for constructing such subspace-evasive sets. The first is a Monte Carlo construction of hierearchical subspace-evasive (h.s.e.) sets that leads to excellent list size but is not explicit. The second approach exploits a further ultra-periodicity of our subspaces and uses a novel construct called subspace designs, which were subsequently constructed explicitly and also found further applications in pseudorandomness.To get a family of codes over a fixed alphabet size, we instantiate our approach with algebraic-geometric codes based on the Garcia–Stichtenoth tower of function fields. Combining this with pruning via h.s.e. sets yields codes list-decodable up to a 1-R-ε error fraction with list size bounded by O(1/ε), matching the existential bound for random codes up to constant factors. Further, the alphabet size can be made exp (\~{O}(1/ε 2)), which is not much worse than the lower bound of exp (Ω (1/ε)). The parameters we achieve are thus quite close to the existential bounds in all three aspects (error-correction radius, alphabet size, and list size) simultaneously. This construction is, however, Monte Carlo and the claimed list-decoding property only holds with high probability. Once the code is (efficiently) sampled, the encoding/decoding algorithms are deterministic with a running time O_ε (Nc) for an absolute constant c, where N is the code’s block length.Using subspace designs instead for the pruning, our approach yields the first deterministic construction of an algebraic code family of rate R with efficient list decoding from 1-R-ε fraction of errors over an alphabet of constant size exp (\~{O}(1/ε 2)). The list-size bound is upper bounded by a very slowly growing function of the block length N; in particular, it is at most O(log (r) N) (the rth iterated logarithm) for any fixed integer r. The explicit construction avoids the shortcoming of the Monte Carlo sampling at the expense of a slightly worse list size.},
+  archive  = {J_JACM},
+  author   = {Guruswami, Venkatesan and Xing, Chaoping},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {10:1-48},
+  title    = {Optimal rate list decoding over bounded alphabets using algebraic-geometric codes},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Fooling polytopes. <em>JACM</em>, <em>69</em>(2), 9:1–37.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We give a pseudorandom generator that fools m-facet polytopes over {0, 1}n with seed length polylog(m) · log n. The previous best seed length had superlinear dependence on m.},
+  archive  = {J_JACM},
+  author   = {O’Donnell, Ryan and Servedio, Rocco A. and Tan, Li-Yang},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {9:1-37},
+  title    = {Fooling polytopes},
+  volume   = {69},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

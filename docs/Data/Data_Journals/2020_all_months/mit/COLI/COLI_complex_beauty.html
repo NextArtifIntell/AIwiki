@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>COLI_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="coli---26">COLI - 26</h2>
+<ul>
+<li><details>
+<summary>
+(2020). Statistical significance testing for natural language
+processing. <em>COLI</em>, <em>46</em>(4), 905–908. (<a
+href="https://doi.org/10.1162/coli_r_00388">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Like any other science, research in natural language processing (NLP) depends on the ability to draw correct conclusions from experiments. A key tool for this is statistical significance testing: We use it to judge whether a result provides meaningful, generalizable findings or should be taken with a pinch of salt. When comparing new methods against others, performance metrics often differ by only small amounts, so researchers turn to significance tests to show that improved models are genuinely better. Unfortunately, this reasoning often fails because we choose inappropriate significance tests or carry them out incorrectly, making their outcomes meaningless. Or, the test we use may fail to indicate a significant result when a more appropriate test would find one. NLP researchers must avoid these pitfalls to ensure that their evaluations are sound and ultimately avoid wasting time and money through incorrect conclusions.This book guides NLP researchers through the whole process of significance testing, making it easy to select the right kind of test by matching canonical NLP tasks to specific significance testing procedures. As well as being a handbook for researchers, the book provides theoretical background on significance testing, includes new methods that solve problems with significance tests in the world of deep learning and multidataset benchmarks, and describes the open research problems of significance testing for NLP.The book focuses on the task of comparing one algorithm with another. At the core of this is the p-value, the probability that a difference at least as extreme as the one we observed could occur by chance. If the p-value falls below a predetermined threshold, the result is declared significant. Leaving aside the fundamental limitation of turning the validity of results into a binary question with an arbitrary threshold, to be a valid statistical significance test, the p-value must be computed in the right way. The book describes the two crucial properties of an appropriate significance test: The test must be both valid and powerful. Validity refers to the avoidance of type 1 errors, in which the result is incorrectly declared significant. Common mistakes that lead to type 1 errors include deploying tests that make incorrect assumptions, such as independence between data points. The power of a test refers to its ability to detect a significant result and therefore to avoid type 2 errors. Here, knowledge of the data and experiment must be used to choose a test that makes the correct assumptions. There is a trade-off between validity and power, but for the most common NLP tasks (language modeling, sequence labeling, translation, etc.), there are clear choices of tests that provide a good balance.Beginning with a detailed background on significance testing, the book then shows the reader how to carry out tests for specific NLP tasks. There is a mix of styles, with the first four chapters providing reference material that will be extremely useful to both new and experienced researchers. Here, it is easy to find the material related to a given NLP task. The next two chapters discuss more recent research into the application of significance tests to deep neural networks and for testing across multiple datasets. Alongside open research questions, these later chapters provide clear guidelines on how to apply the proposed methods. It is this mix of background material and reference guidelines that I believe makes this book so compelling and nicely self-contained.The introduction in Chapter 1 motivates the need for a comprehensive textbook and outlines challenges that the later chapters address more deeply. The theoretical background material begins in Chapter 2, which introduces core concepts, including hypothesis testing, type 1 and type 2 errors, validity and power, and p-values. The reader does not need to have any prior knowledge of statistical significance tests to follow this part. However, experienced readers could still benefit from reading this chapter, as concepts such as p-values are widely misunderstood and misused (Amrhein, Greenland, and McShane 2019).The significance tests themselves are introduced in Chapter 3, categorized into parametric and nonparametric tests. The chapter begins with the intuitively simple paired z-test, then builds up to more commonly-applied techniques, showing the connections and assumptions that each test makes. Step-by-step algorithms help the reader to implement each test. Although the chapter does cite uses of tests in NLP research, the main purpose is to present the theory behind each test and point out their differences.Chapter 4 provides perhaps the most handy part of the book for reference: a correspondence between common NLP tasks and statistical tests. Each task is discussed in terms of the evaluation metrics used, then a decision tree is introduced to guide the reader toward a choice between a parametric test, bootstrap or randomization test, or sampling-free nonparametric test. Section 4.3 then links each NLP evaluation measure to a specific significance test, presenting a large table that helps readers identify which test they need for a specific task. Particular considerations for each task are also pointed out to provide more detail about the appropriate options. The final part of this chapter describes the issue of p-hacking, in which dataset sizes are increased until a significance threshold is reached without consideration for biases in the data (discussed, for example, in Hofmann [2015]). The chapter proposes a simple solution to ensure robust significance testing with large datasets.Where Chapter 4 presents well-established methods, Chapter 5 introduces the current research question of how best to apply statistical significance testing to deep learning. Non-convex loss functions, stochastic optimization, random initialization, and a multitude of hyperparameters limit the conclusions we can draw from a single test run of a deep neural network (DNN). This chapter, which is based on the authors’ ACL paper (Dror, Shlomov, and Reichart 2019), explains how the comparison process can be overhauled to provide more meaningful evaluations. Beginning by explaining the difficulties of evaluating DNNs, the chapter then introduces criteria for a comparison framework, then discusses the limitations of current methods. Reimers and Gurevych (2018) have previously tackled this problem, but their approach has limited power and does not provide a confidence score. Other works, such as Clark et al. (2011), compare DNNs using a collection of statistics, such as the mean or standard deviation of performance across runs. This book shows how such an approach violates the assumptions of the significance tests. The authors propose almost stochastic dominance as the basis for a better alternative. The chapter explains how to use the proposed method, evaluates it in an empirical case study, and finally analyzes the errors made by each testing approach.Large NLP models are often tested across a range of datasets, which presents another problem for standard significance testing. Chapter 6 discusses the challenges of assessing two questions: (1) On how many datasets does algorithm A outperform algorithm B? (2) On which datasets does A outperform B? Applying standard significance tests individually to each dataset and counting the number of significant results is likely to overestimate the total number of significant results, as this chapter explains. The authors then present a new framework for replicability analysis, based on partial conjunction testing, and discuss two variants (Bonferroni and Fisher) for when the datasets are independent or dependent. They introduce a method based on Benjamini and Heller (2008) to count the number of datasets where one method outperforms another, then show how to use the Holm procedure (Holm 1979) to identify which datasets these are. Chapter 6 provides a lot of detailed background on the proposed replicability analysis framework, and the later sections again link the process to specific NLP case studies, and step-by-step summaries help the reader to apply the methodology. Extensive empirical results illustrate the very substantial differences in outcomes between the proposed approach and standard procedures.The final two chapters present open problems and conclude, showing that the topic has many interesting research questions of its own, such as problems when performing cross-validation, and the limited statistical power of replicability analysis.Overall, I highly recommend this book to a wide range of NLP researchers, from new students to seasoned experts who wish to ensure that they compare methods effectively. The book is excellent as both an introduction to the topic of significance testing and as a reference to use when evaluating your results. For anyone with further interest in the topic, it also points the way to future work. If one could level any criticism at this book at all, it is that it does not deeply discuss the basic flaws of significance testing or what the alternatives might be. For now, though, significance testing is an integral part of NLP research and this book provides a great resource for researchers who wish to perform it correctly and painlessly.},
+  archive      = {J_COLI},
+  author       = {Simpson, Edwin D.},
+  doi          = {10.1162/coli_r_00388},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {905-908},
+  shortjournal = {Comput. Lingu.},
+  title        = {Statistical significance testing for natural language processing},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Deep learning approaches to text production. <em>COLI</em>,
+<em>46</em>(4), 899–903. (<a
+href="https://doi.org/10.1162/coli_r_00389">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Text production (Reiter and Dale 2000; Gatt and Krahmer 2018) is also referred to as natural language generation (NLG). It is a subtask of natural language processing focusing on the generation of natural language text. Although as important as natural language understanding for communication, NLG had received relatively less research attention. Recently, the rise of deep learning techniques has led to a surge of research interest in text production, both in general and for specific applications such as text summarization and dialogue systems. Deep learning allows NLG models to be constructed based on neural representations, thereby enabling end-to-end NLG systems to replace traditional pipeline approaches, which frees us from tedious engineering efforts and improves the output quality. In particular, a neural encoder-decoder structure (Cho et al. 2014; Sutskever, Vinyals, and Le 2014) has been widely used as a basic framework, which computes input representations using a neural encoder, according to which a text sequence is generated token by token using a neural decoder. Very recently, pre-training techniques (Broscheit et al. 2010; Radford 2018; Devlin et al. 2019) have further allowed neural models to collect knowledge from large raw text data, further improving the quality of both encoding and decoding.This book introduces the fundamentals of neural text production, discussing both the mostly investigated tasks and the foundational neural methods. NLG tasks with different types of inputs are introduced, and benchmark datasets are discussed in detail. The encoder-decoder architecture is introduced together with basic neural network components such as convolutional neural network (CNN) (Kim 2014) and recurrent neural network (RNN) (Cho et al. 2014). Elaborations are given on the encoder, the decoder, and task-specific optimization techniques. A contrast is made between the neural solution and traditional solutions to the task. Toward the end of the book, more recent techniques such as self-attention networks (Vaswani et al. 2017) and pre-training are briefly discussed. Throughout the book, figures are given to facilitate understanding and references are provided to enable further reading.Chapter 1 introduces the task of text production, discussing three typical input settings, namely, generation from meaning representations (MR; i.e., realization), generation from data (i.e., data-to-text), and generation from text (i.e., text-to-text). At the end of the chapter, a book outline is given, and the scope, coverage, and notation convention are briefly discussed. I enjoyed the examples and figures demonstrating the typical NLG tasks such as abstract meaning representation (AMR) to text generation (May and Priyadarshi 2017), the E2E dialogue task (Li et al. 2018), and the data-to-text examples. It would have been useful if more examples had been given for some other typical tasks such as summarization and sentence compression, despite the fact that they are intuitively understandable without examples and are discussed later in the book. I find Section 1.3 particularly useful for understanding the scope of the book.Chapter 2 briefly summarizes pre-neural approaches to text production. It begins with data-to-text generation, where important components for a traditional pipeline, such as content selection, document planning, lexicalization, and surface realization, are discussed. Then it moves on to discuss the MR-to-text generation, for which two major approaches are discussed. The first approach is grammar-centric, where rules are used as a basis and much care is taken for pruning a large search space. The second approach is statistical, where features are used to score candidate outputs. Finally, the chapter discusses text-to-text generation, introducing major techniques for sentence simplification, sentence compression, sentence paraphrasing, and document summarization. This chapter presents a rich literature review on text-to-text methods, which can be helpful. It would have been useful if more references had been given to data-to-text methods, such as modular approaches and integrated approaches for implementing the pipeline.Chapter 3 discusses the foundational neural model—a basic encoder-decoder framework for text generation. It consists of three main sections. The first section introduces the basic elements of deep learning, discussing feed-forward neural networks, CNNs, RNNs, and their variants LSTM (Hochreiter and Schmidhuber 1997) and GRU (Cho et al. 2014). It also briefly discusses word embeddings (i.e., word2vec [Mikolov et al. 2013] and GloVe [Pennington, Socher, and Manning 2014]) and contextualized embeddings (i.e., ELMo [Peters et al. 2018], BERT [Devlin et al. 2019], and GPT [Radford 2018]). The second section introduces the encoder-decoder framework using a bidirectional RNN encoder and a simple RNN decoder. Training and decoding issues are also discussed, including training techniques for neural networks in general. The final section makes a comparison between pre-neural approaches and neural approaches, highlighting robustness and freedom from feature engineering as two major advantages of the latter, while also discussing their potential limitations. This chapter is rich in figures and references, which helps the reader understand the big picture. On the other hand, it can be difficult for beginners to fully absorb, and they should refer to the reference materials such as the Goodfellow book on deep learning (Goodfellow, Bengio, and Courville 2016) cited at the beginning of Section 3.1 for further reading.Chapters 4 to 6 form the central part of this book. They discuss major techniques for improving the decoding module, the encoding module, and for integrating task-specific objectives, respectively. Chapter 4 begins with a survey of seminal work using encoder-decoder modeling for text-to-text (i.e., machine translation and summarization), MR-to-text, and data-to-text tasks, and then lays out four main issues, namely, accuracy, repetitions, coverage, and rare/unknown words. It devotes three sections to introducing major solutions to these issues, which include attention (Bahdanau, Cho, and Bengio 2015), copy (Vinyals, Fortunato, and Jaitly 2015), and coverage (Tu et al. 2016) mechanisms. For each method, similar or alternative approaches are also discussed. The chapter gives a concise introduction to these techniques, which are essential to know in the neural NLG literature. Though using RNN as a base model, these techniques are also useful for self-attention networks.Chapter 5 discusses how to deal with long text and graph-structured data. It begins with a review of methods using the standard encoder-decoder structure for encoding documents and linearized graphs (e.g., AMR, RDF triples, dialogue moves, and Infoboxes in Wikipedia), showing the main limitation: lack of structural information and weakness in capturing long-range dependencies. It then spends a section discussing typical models for long-text structures, which include hierarchical network structures using RNNs and CNNs for modeling both word-sentence structures and sentence-document structures, and collaborative modeling of paragraphs for representing documents. The final section of the chapter discusses the modeling of graph structures using graph LSTMs (Song et al. 2018) and GCNs (Bastings et al. 2017). Techniques discussed in this section receive much more attention in current NLG research.Chapter 6 discusses techniques for integrating task-specific communication goals such as summarizing a text and generating a user-specific response in dialogue. To this end, two types of methods are introduced. The first focuses on augmenting the encoder-decoder architecture with task-specific features, and the second focuses on augmenting the training objective with task-specific metrics. The chapter consists of three main sections. The first section discusses content selection in the encoder module for summarization. Several representative models are detailed while a range of other models are surveyed briefly. The second section discusses reinforcement learning, describing a general algorithm of policy gradient and its applications in many tasks with different reward functions. The third section discusses user modeling in neural conversational models. I find the reinforcement learning section particularly informative. For example, the case study demonstrating the disadvantage of cross-entropy loss for extractive summarization is insightful.Chapter 7 describes the most prominent datasets used in neural text production research. It is organized in three main sections, which focus on data-to-text generation, MR-to-text generation, and text-to-text generation, respectively. The origin, size, data source, format, and other characteristics are given for each dataset, and examples are shown in figures. This chapter covers a range of datasets, including most benchmarks that I am aware of and also some I am unfamiliar with. It can be highly useful for researchers and students as a reference, adding much to the value of the book.Chapter 8 summarizes the book, reviewing the main techniques and discussing the remaining issues and challenges, before mentioning recent trends. In particular, the authors identify semantic adequacy and explainability as two major issues with neural NLG, highlighting the limitation of existing evaluation methods. Additionally, they raise three main challenges, namely, long inputs and outputs, cross-domain and cross-lingual transfer learning, and knowledge integration. Finally, Transformer (Vaswani et al. 2017) and pre-training are briefly discussed as recent trends.Overall, this book presents a succinct review of the most prominent techniques in foundational neural NLG. It can serve as a great introductory book to the field for the NLP research community and NLP engineers with basic relevant background. It features rich reference materials and figures. Although I enjoyed reading its content, I feel that it would have been more valuable if Transformer and pre-training had been elaborated in more detail, with relevant literature surveys being included, since they are the dominant methods in the current literature. Given the fast-moving pace of the research field, maybe subsequent editions will meet such expectations.},
+  archive      = {J_COLI},
+  author       = {Zhang, Yue},
+  doi          = {10.1162/coli_r_00389},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {899-903},
+  shortjournal = {Comput. Lingu.},
+  title        = {Deep learning approaches to text production},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Multi-SimLex: A large-scale evaluation of multilingual and
+crosslingual lexical semantic similarity. <em>COLI</em>, <em>46</em>(4),
+847–897. (<a href="https://doi.org/10.1162/coli_a_00391">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We introduce Multi-SimLex, a large-scale lexical resource and evaluation benchmark covering data sets for 12 typologically diverse languages, including major languages (e.g., Mandarin Chinese, Spanish, Russian) as well as less-resourced ones (e.g., Welsh, Kiswahili). Each language data set is annotated for the lexical relation of semantic similarity and contains 1,888 semantically aligned concept pairs, providing a representative coverage of word classes (nouns, verbs, adjectives, adverbs), frequency ranks, similarity intervals, lexical fields, and concreteness levels. Additionally, owing to the alignment of concepts across languages, we provide a suite of 66 crosslingual semantic similarity data sets. Because of its extensive size and language coverage, Multi-SimLex provides entirely novel opportunities for experimental evaluation and analysis. On its monolingual and crosslingual benchmarks, we evaluate and analyze a wide array of recent state-of-the-art monolingual and crosslingual representation models, including static and contextualized word embeddings (such as fastText, monolingual and multilingual BERT, XLM), externally informed lexical representations, as well as fully unsupervised and (weakly) supervised crosslingual word embeddings. We also present a step-by-step data set creation protocol for creating consistent, Multi-Simlex–style resources for additional languages. We make these contributions—the public release of Multi-SimLex data sets, their creation protocol, strong baseline results, and in-depth analyses which can be helpful in guiding future developments in multilingual lexical semantics and representation learning—available via a Web site that will encourage community effort in further expansion of Multi-Simlex to many more languages. Such a large-scale semantic resource could inspire significant further advances in NLP across languages.},
+  archive      = {J_COLI},
+  author       = {Vulić, Ivan and Baker, Simon and Ponti, Edoardo Maria and Petti, Ulla and Leviant, Ira and Wing, Kelly and Majewska, Olga and Bar, Eden and Malone, Matt and Poibeau, Thierry and Reichart, Roi and Korhonen, Anna},
+  doi          = {10.1162/coli_a_00391},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {847-897},
+  shortjournal = {Comput. Lingu.},
+  title        = {Multi-SimLex: A large-scale evaluation of multilingual and crosslingual lexical semantic similarity},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A graph-based framework for structured prediction tasks in
+sanskrit. <em>COLI</em>, <em>46</em>(4), 785–845. (<a
+href="https://doi.org/10.1162/coli_a_00390">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a framework using energy-based models for multiple structured prediction tasks in Sanskrit. Ours is an arc-factored model, similar to the graph-based parsing approaches, and we consider the tasks of word segmentation, morphological parsing, dependency parsing, syntactic linearization, and prosodification, a “prosody-level” task we introduce in this work. Ours is a search-based structured prediction framework, which expects a graph as input, where relevant linguistic information is encoded in the nodes, and the edges are then used to indicate the association between these nodes. Typically, the state-of-the-art models for morphosyntactic tasks in morphologically rich languages still rely on hand-crafted features for their performance. But here, we automate the learning of the feature function. The feature function so learned, along with the search space we construct, encode relevant linguistic information for the tasks we consider. This enables us to substantially reduce the training data requirements to as low as 10\%, as compared to the data requirements for the neural state-of-the-art models. Our experiments in Czech and Sanskrit show the language-agnostic nature of the framework, where we train highly competitive models for both the languages. Moreover, our framework enables us to incorporate language-specific constraints to prune the search space and to filter the candidates during inference. We obtain significant improvements in morphosyntactic tasks for Sanskrit by incorporating language-specific constraints into the model. In all the tasks we discuss for Sanskrit, we either achieve state-of-the-art results or ours is the only data-driven solution for those tasks.},
+  archive      = {J_COLI},
+  author       = {Krishna, Amrith and Santra, Bishal and Gupta, Ashim and Satuluri, Pavankumar and Goyal, Pawan},
+  doi          = {10.1162/coli_a_00390},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {785-845},
+  shortjournal = {Comput. Lingu.},
+  title        = {A graph-based framework for structured prediction tasks in sanskrit},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). What should/do/can LSTMs learn when parsing auxiliary verb
+constructions? <em>COLI</em>, <em>46</em>(4), 763–784. (<a
+href="https://doi.org/10.1162/coli_a_00392">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. There is a growing interest in investigating what neural NLP models learn about language. A prominent open question is the question of whether or not it is necessary to model hierarchical structure. We present a linguistic investigation of a neural parser adding insights to this question. We look at transitivity and agreement information of auxiliary verb constructions (AVCs) in comparison to finite main verbs (FMVs). This comparison is motivated by theoretical work in dependency grammar and in particular the work of Tesnière (1959), where AVCs and FMVs are both instances of a nucleus, the basic unit of syntax. An AVC is a dissociated nucleus; it consists of at least two words, and an FMV is its non-dissociated counterpart, consisting of exactly one word. We suggest that the representation of AVCs and FMVs should capture similar information. We use diagnostic classifiers to probe agreement and transitivity information in vectors learned by a transition-based neural parser in four typologically different languages. We find that the parser learns different information about AVCs and FMVs if only sequential models (BiLSTMs) are used in the architecture but similar information when a recursive layer is used. We find explanations for why this is the case by looking closely at how information is learned in the network and looking at what happens with different dependency representations of AVCs. We conclude that there may be benefits to using a recursive layer in dependency parsing and that we have not yet found the best way to integrate it in our parsers.},
+  archive      = {J_COLI},
+  author       = {de Lhoneux, Miryam and Stymne, Sara and Nivre, Joakim},
+  doi          = {10.1162/coli_a_00392},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {763-784},
+  shortjournal = {Comput. Lingu.},
+  title        = {What Should/Do/Can LSTMs learn when parsing auxiliary verb constructions?},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Efficient outside computation. <em>COLI</em>,
+<em>46</em>(4), 745–762. (<a
+href="https://doi.org/10.1162/coli_a_00386">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Weighted deduction systems provide a framework for describing parsing algorithms that can be used with a variety of operations for combining the values of partial derivations. For some operations, inside values can be computed efficiently, but outside values cannot. We view out-side values as functions from inside values to the total value of all derivations, and we analyze outside computation in terms of function composition. This viewpoint helps explain why efficient outside computation is possible in many settings, despite the lack of a general outside algorithm for semiring operations.},
+  archive      = {J_COLI},
+  author       = {Gildea, Daniel},
+  doi          = {10.1162/coli_a_00386},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {745-762},
+  shortjournal = {Comput. Lingu.},
+  title        = {Efficient outside computation},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Sparse transcription. <em>COLI</em>, <em>46</em>(4),
+713–744. (<a href="https://doi.org/10.1162/coli_a_00387">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The transcription bottleneck is often cited as a major obstacle for efforts to document the world’s endangered languages and supply them with language technologies. One solution is to extend methods from automatic speech recognition and machine translation, and recruit linguists to provide narrow phonetic transcriptions and sentence-aligned translations. However, I believe that these approaches are not a good fit with the available data and skills, or with long-established practices that are essentially word-based. In seeking a more effective approach, I consider a century of transcription practice and a wide range of computational approaches, before proposing a computational model based on spoken term detection that I call “sparse transcription.” This represents a shift away from current assumptions that we transcribe phones, transcribe fully, and transcribe first. Instead, sparse transcription combines the older practice of word-level transcription with interpretive, iterative, and interactive processes that are amenable to wider participation and that open the way to new methods for processing oral languages.},
+  archive      = {J_COLI},
+  author       = {Bird, Steven},
+  doi          = {10.1162/coli_a_00387},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {713-744},
+  shortjournal = {Comput. Lingu.},
+  title        = {Sparse transcription},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Predicting in-game actions from interviews of NBA players.
+<em>COLI</em>, <em>46</em>(3), 667–712. (<a
+href="https://doi.org/10.1162/coli_a_00383">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Sports competitions are widely researched in computer and social science, with the goal of understanding how players act under uncertainty. Although there is an abundance of computational work on player metrics prediction based on past performance, very few attempts to incorporate out-of-game signals have been made. Specifically, it was previously unclear whether linguistic signals gathered from players’ interviews can add information that does not appear in performance metrics. To bridge that gap, we define text classification tasks of predicting deviations from mean in NBA players’ in-game actions, which are associated with strategic choices, player behavior, and risk, using their choice of language prior to the game. We collected a data set of transcripts from key NBA players’ pre-game interviews and their in-game performance metrics, totalling 5,226 interview-metric pairs. We design neural models for players’ action prediction based on increasingly more complex aspects of the language signals in their open-ended interviews. Our models can make their predictions based on the textual signal alone, or on a combination of that signal with signals from past-performance metrics. Our text-based models outperform strong baselines trained on performance metrics only, demonstrating the importance of language usage for action prediction. Moreover, the models that utilize both textual input and past-performance metrics produced the best results. Finally, as neural networks are notoriously difficult to interpret, we propose a method for gaining further insight into what our models have learned. Particularly, we present a latent Dirichlet allocation–based analysis, where we interpret model predictions in terms of correlated topics. We find that our best performing textual model is most associated with topics that are intuitively related to each prediction task and that better models yield higher correlation with more informative topics.1},
+  archive      = {J_COLI},
+  author       = {Oved, Nadav and Feder, Amir and Reichart, Roi},
+  doi          = {10.1162/coli_a_00383},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {667-712},
+  shortjournal = {Comput. Lingu.},
+  title        = {Predicting in-game actions from interviews of NBA players},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Sentence meaning representations across languages: What can
+we learn from existing frameworks? <em>COLI</em>, <em>46</em>(3),
+605–665. (<a href="https://doi.org/10.1162/coli_a_00385">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This article gives an overview of how sentence meaning is represented in eleven deep-syntactic frameworks, ranging from those based on linguistic theories elaborated for decades to rather lightweight NLP-motivated approaches. We outline the most important characteristics of each framework and then discuss how particular language phenomena are treated across those frameworks, while trying to shed light on commonalities as well as differences.},
+  archive      = {J_COLI},
+  author       = {Žabokrtský, Zdeněk and Zeman, Daniel and Ševčíková, Magda},
+  doi          = {10.1162/coli_a_00385},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {605-665},
+  shortjournal = {Comput. Lingu.},
+  title        = {Sentence meaning representations across languages: What can we learn from existing frameworks?},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Semantic drift in multilingual representations.
+<em>COLI</em>, <em>46</em>(3), 571–603. (<a
+href="https://doi.org/10.1162/coli_a_00382">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Multilingual representations have mostly been evaluated based on their performance on specific tasks. In this article, we look beyond engineering goals and analyze the relations between languages in computational representations. We introduce a methodology for comparing languages based on their organization of semantic concepts. We propose to conduct an adapted version of representational similarity analysis of a selected set of concepts in computational multilingual representations. Using this analysis method, we can reconstruct a phylogenetic tree that closely resembles those assumed by linguistic experts. These results indicate that multilingual distributional representations that are only trained on monolingual text and bilingual dictionaries preserve relations between languages without the need for any etymological information. In addition, we propose a measure to identify semantic drift between language families. We perform experiments on word-based and sentence-based multilingual models and provide both quantitative results and qualitative examples. Analyses of semantic drift in multilingual representations can serve two purposes: They can indicate unwanted characteristics of the computational models and they provide a quantitative means to study linguistic phenomena across languages.},
+  archive      = {J_COLI},
+  author       = {Beinborn, Lisa and Choenni, Rochelle},
+  doi          = {10.1162/coli_a_00382},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {571-603},
+  shortjournal = {Comput. Lingu.},
+  title        = {Semantic drift in multilingual representations},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Tractable lexical-functional grammar. <em>COLI</em>,
+<em>46</em>(3), 515–569. (<a
+href="https://doi.org/10.1162/coli_a_00384">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The formalism for Lexical-Functional Grammar (LFG) was introduced in the 1980s as one of the first constraint-based grammatical formalisms for natural language. It has led to substantial contributions to the linguistic literature and to the construction of large-scale descriptions of particular languages. Investigations of its mathematical properties have shown that, without further restrictions, the recognition, emptiness, and generation problems are undecidable, and that they are intractable in the worst case even with commonly applied restrictions. However, grammars of real languages appear not to invoke the full expressive power of the formalism, as indicated by the fact that algorithms and implementations for recognition and generation have been developed that run—even for broad-coverage grammars—in typically polynomial time. This article formalizes some restrictions on the notation and its interpretation that are compatible with conventions and principles that have been implicit or informally stated in linguistic theory. We show that LFG grammars that respect these restrictions, while still suitable for the description of natural languages, are equivalent to linear context-free rewriting systems and allow for tractable computation.},
+  archive      = {J_COLI},
+  author       = {Wedekind, Jürgen and Kaplan, Ronald M.},
+  doi          = {10.1162/coli_a_00384},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {515-569},
+  shortjournal = {Comput. Lingu.},
+  title        = {Tractable lexical-functional grammar},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Linguistic fundamentals for natural language processing II:
+100 essentials from semantics and pragmatics. <em>COLI</em>,
+<em>46</em>(2), 511–514. (<a
+href="https://doi.org/10.1162/coli_r_00381">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantics is commonly defined as “the study of meaning” and pragmatics is generally referred to as “the study of meaning in context.” In other words, semantics deal with the sentence meaning (e.g., literal meaning of “How are you?”), whereas pragmatics is more concerned with the speaker/utterance meaning (e.g., the greeting meaning of “How are you?”). Both fields interact with each other and with other lower layers of language such as phonology, morphology, and syntax in many ways. Semantics and pragmatics have been established as research fields a long time ago and been widely studied ever since, as also evidenced by a number of introductory text books dating from the 1980s to today (Levinson 1983; Cruse 2000; Kadmon 2001; Birner 2012/2013; Kroeger 2018).Previous introductory books are remarkably rich with linguistic theorems and provide a comprehensive introduction to the topic. However, the majority offer a linguistic perspective that may be hard to understand for young generations of NLP researchers because of the changing dynamics of the NLP field. As the field has been dominated with end-to-end data driven models, the linguistic phenomena that may help NLP researchers in various ways (e.g., more insightful analysis, more sensible evaluation techniques, more informed model designs, more diverse data collection/annotation schemes) have been mostly neglected. This book, authored by Emily Bender and Alex Lascarides, aims to fill this gap and intends to create a common language between linguists and today’s NLP researchers to ease collaboration. The book covers most of the key issues in semantics and pragmatics, ranging from “meaning of words” to “meaning of utterances in dialogue,” including the discourse structure and coherence relations for which not many resources were available. The book contains 14 chapters and 101 essentials/sections. Each chapter is organized as a collection of self-explanatory sections with sentence headers like “#10 There is ambiguity at all levels,”1 such that a summary of the book can easily be generated by concatenating the headers. The book is organized cleverly: Even though the chapters are kept connected throughout the book, most sections can still be grasped when read separately. Plenty of examples are provided in a variety of languages for each concept, leaving the reader with a feeling of appreciation and an increased level of awareness for linguistic diversity. The examples are chosen intelligently: They either emphasize the complexity or the predictability of the linguistic phenomena. Sections mostly provide hints for NLP researchers on how and when to use the linguistic property, or the specific cases that NLP researchers should be aware of. The book is written elegantly, however it would greatly benefit from using simpler language. I believe the following cases may complicate the understanding process in some parts of the book: (1) dense information in one single section, (2) long sentences that sometimes span four lines, and (3) undefined linguistic terminology. The audience of the book is broad, ranging from advanced undergraduate to graduate level readers who have a basic linguistic background and a genuine interest in natural language processing. As an NLP researcher with a computer science background, I really enjoyed reading the book and found it informative.Chapter 1 introduces the concepts of semantics and pragmatics; and guides the readers on how semantics and pragmatics can help NLP researchers to build better Natural Language Understanding (NLU) and Natural Language Generation (NLG) systems. Chapter 2 starts with how “meaning” can be modeled with formal semantics, then introduces the three layers of “meaning.” The first layer is denoted as a layer purely derivable from the linguistic form (i.e., relying only on lexical and syntactic tools). The second layer contains discourse coherence and commonsense reasoning, namely, positioning the sentence in the given context via (1) resolving its discourse relation to previous utterances and (2) performing reasoning with commonsense knowledge. The final layer takes the cognitive states of the speaker and the interlocutor into account. Chapter 2 extends this definition of linguistic meaning to include emotional and social content and draws attention to the complex interactions between non-linguistics perception such as posture and linguistic meaning.Chapter 3 starts with an overview of the field lexical semantics, which deals with the meaning of open class, that is, non-logic words that cannot be exploited by formal semantics. The subfields of lexical semantics—word senses, semantic roles, and multiword expressions—are further investigated in Chapters 4, 5, and 6 accordingly. Chapter 4 gives an overall picture of word senses and various ways they interact with each other, such as regular polysemy (e.g., fish as animal and food; book as the physical object and the content) and homonymy (e.g., bank as institution or mound of earth). It discusses a wide range of challenges that are raised by word senses such as sense changes through time, extensions via metaphors, and blocking of predictable changes by high frequency words (e.g., pig vs. pork). The chapter further introduces two not so commonly known but important linguistic processes: meaning transfer and defeasible dimensions of word senses. First is the shift in meaning due to the relation between semantic arguments of the predicate (e.g., we referring to people instead of cars in We are parked out back); second is the default interpretation for the arguments such as alcohol in I drank all night. Finally, the chapter argues the impacts of the phenomena on distributional semantics such as antonyms not being distinguished, confusion caused by high frequency words, and noise introduced by meaning transfer. Chapter 5 briefly introduces semantic roles and some of the available schemes that define them with different granularity such as VerbNet, FrameNet, and PropBank. The realization of semantic roles such as soft constraints (e.g., dance takes an animate argument) and implicit realization (e.g., marking the predicate with person information via inflection) are then discussed. Chapter 6 provides definitions for collocations and Multi Word Expressions (MWEs) along with some key properties such as being dependent on word forms (e.g., strong tea but not powerful tea) and being less ambiguous than individual word forms. Then, the authors make the connection to Chapter 4, since MWEs inherit many of the properties of individual words, such as having multiple senses and predictable patterns of new MWEs and meaning shift. Some of the challenges are then listed such as varying syntactic flexibility (i.e., some have fixed word order, some not) and representing the relation between the idiom and its parts.Chapter 7 starts by defining the area of compositional semantics around predicate–argument structures and their derivational mechanisms using Boolean formulae, exemplifying how it helps resolve some of the syntactic ambiguities. The chapter discusses the challenges posed by quantifiers and other scopal operators like negation or adverbs, such as the difficulties inherent in resolving scope ambiguity and the variety of ways they are encoded in different languages. Furthermore, the authors elaborate on comparatives and coordinate structures, which are central to the “sentence meaning,” and discusses whether syntax provides enough clues to solve the issues they raise. Throughout the chapter, the links to previous chapters on lexical semantics are provided to explain how these two fields interact. The final subsection is dedicated to the relatively recent literature on distributional semantics approaches to “composing meaning,” ranging from the studies that solely rely on lexical information to works that make use of grammar theory.Chapter 8 discusses how compositional semantics is not just made up of predicate–argument structures, but contains concepts that are realized within the grammar such as Tense, Aspect, Evidentiality, and Politeness. The authors provide plenty of examples in a variety of languages for each concept, with a historical overview when necessary. One learns about verbal inflections to denote the “habitual aspect” in Wambaya, an extensive evidentiality system in Foe language (different inflections for visual, non-visual, and four other evidence types) and the Japanese politeness markers that encode the social distance between the speaker and the addressee.Chapter 9 goes beyond the sentences, and starts with challenges and the necessary elements of extracting meaning in discourse. The authors discuss how coherence relations structure the discourse and how lexical semantics interferes with discourse (e.g., an explanation sentence is expected after a psych verb such as annoy). Finally, the need for dynamic interpretation of discourse semantics (e.g., in cases when commonsense knowledge or logical deduction is required) is emphasized.Chapter 10 starts with a general definition for reference resolution, that is, extending the common co-reference pronoun resolution definition to other types like reflexives and events and widening the range of relation between the expression and the referent from identical to semantically related (e.g., meal-salmon, car-engine). The authors demonstrate how and why reference resolution is crucial for NLP applications such as machine translation, information extraction, and dialogue systems. The challenges of reference resolution are discussed in detail: how the type of the referent, grammatical features of the expression, the logical form of the sentence, or the discourse structure affect the process. Chapter 11 introduces “presuppositions” by clearly defining their relation to entailment, another type of implied information, and they introduce a test to identify presuppositions. The chapter continues with various types of “presupposition triggers,” namely, linguistic phrases that commonly introduce presuppositions such as implicative verbs (e.g., to lie presupposes a saying event), proper names (e.g., Kim slept presupposes the existence of Kim), and many more. It then discusses the specific cases of complex sentences such as the situations when a presupposition is completely or partially shared or not shared at all among sub-sentences. Finally, the strong ties between presupposition and anaphora as well as presupposition and discourse coherence are discussed in detail.Chapter 12 tackles the topic of “information status,” which can be defined in simpler terms as the ratio of “newness” of the information. The authors discuss the variety of ways the “information status” is reflected by means of morphology and syntax among a diverse set of languages. The chapter then introduces the term “information structure,” and how it distinguishes itself from “information status,” that is, status deals with referents (e.g., a dog-the dog) whereas the structure handles propositional content (e.g., who gave the talk-a professor from Darmstadt). They then dive deeper into the “information structure” and describe its basic components such as topic, background, focus, and contrast. Similar to previous chapters, the authors draw attention to the various ways the structure is marked in different languages such as lexical markers, syntactic positioning, and intonation. The chapter ends with links to formal semantics.Chapter 13 goes beyond the explicit expressions, that is, “sentence meaning,” and starts tackling the underlying implied meaning, that is, “speaker meaning.” The authors then define the gap between the speaker and the sentence meaning as an “implicature” and later elaborate on two types of implicatures: conversational and conventional. They then discuss the role of the speaker’s cognitive state in recognizing implicatures (i.e., when it interferes) by providing a historical background on the topic. The authors then emphasize that the ability to construct valid semantic representations does not guarantee entailment, that is, these representations require consistency checks in some particular cases. The authors discuss that implicatures can be rejected or accepted, and the rejections and agreements can be explicit or implicit (e.g., via silence, intonation, or other implicatures).Chapter 14 introduces a wide range of multilingual resources available in literature on the covered topics, such as lexical resources for word senses and semantic roles, as well as resources with sentence-level semantic annotations and various corpora with discourse information. The chapter not only provides references to these resources, but also discusses their similarities and differences in a chronological order. Furthermore, the authors introduce some of the available tools and software packages for semantic parsing.To summarize, the book by Bender and Lascarides is a one-of-a-kind reference book for NLP researchers, containing most of the fundamental phenomena in semantics and pragmatics. It serves a purpose of raising linguistic awareness and providing entry points to complex topics for NLP researchers. It is also worth noting that the book contains valuable references for further reading. I share the same hope with the authors that this book will “facilitate the collaboration between linguists and NLP researchers.”},
+  archive      = {J_COLI},
+  author       = {Şahin, Gözde Gül},
+  doi          = {10.1162/coli_r_00381},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {511-514},
+  shortjournal = {Comput. Lingu.},
+  title        = {Linguistic fundamentals for natural language processing II: 100 essentials from semantics and pragmatics},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). The limitations of stylometry for detecting
+machine-generated fake news. <em>COLI</em>, <em>46</em>(2), 499–510. (<a
+href="https://doi.org/10.1162/coli_a_00380">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Recent developments in neural language models (LMs) have raised concerns about their potential misuse for automatically spreading misinformation. In light of these concerns, several studies have proposed to detect machine-generated fake news by capturing their stylistic differences from human-written text. These approaches, broadly termed stylometry, have found success in source attribution and misinformation detection in human-written texts. However, in this work, we show that stylometry is limited against machine-generated misinformation. Whereas humans speak differently when trying to deceive, LMs generate stylistically consistent text, regardless of underlying motive. Thus, though stylometry can successfully prevent impersonation by identifying text provenance, it fails to distinguish legitimate LM applications from those that introduce false information. We create two benchmarks demonstrating the stylistic similarity between malicious and legitimate uses of LMs, utilized in auto-completion and editing-assistance settings.1 Our findings highlight the need for non-stylometry approaches in detecting machine-generated misinformation, and open up the discussion on the desired evaluation benchmarks.},
+  archive      = {J_COLI},
+  author       = {Schuster, Tal and Schuster, Roei and Shah, Darsh J. and Barzilay, Regina},
+  doi          = {10.1162/coli_a_00380},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {499-510},
+  shortjournal = {Comput. Lingu.},
+  title        = {The limitations of stylometry for detecting machine-generated fake news},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Fair is better than sensational: Man is to doctor as woman
+is to doctor. <em>COLI</em>, <em>46</em>(2), 487–497. (<a
+href="https://doi.org/10.1162/coli_a_00379">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Analogies such as man is to king as woman is to X are often used to illustrate the amazing power of word embeddings. Concurrently, they have also been used to expose how strongly human biases are encoded in vector spaces trained on natural language, with examples like man is to computer programmer as woman is to homemaker. Recent work has shown that analogies are in fact not an accurate diagnostic for bias, but this does not mean that they are not used anymore, or that their legacy is fading. Instead of focusing on the intrinsic problems of the analogy task as a bias detection tool, we discuss a series of issues involving implementation as well as subjective choices that might have yielded a distorted picture of bias in word embeddings. We stand by the truth that human biases are present in word embeddings, and, of course, the need to address them. But analogies are not an accurate tool to do so, and the way they have been most often used has exacerbated some possibly non-existing biases and perhaps hidden others. Because they are still widely popular, and some of them have become classics within and outside the NLP community, we deem it important to provide a series of clarifications that should put well-known, and potentially new analogies, into the right perspective.},
+  archive      = {J_COLI},
+  author       = {Nissim, Malvina and van Noord, Rik and van der Goot, Rob},
+  doi          = {10.1162/coli_a_00379},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {487-497},
+  shortjournal = {Comput. Lingu.},
+  title        = {Fair is better than sensational: Man is to doctor as woman is to doctor},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Abstract syntax as interlingua: Scaling up the grammatical
+framework from controlled languages to robust pipelines. <em>COLI</em>,
+<em>46</em>(2), 425–486. (<a
+href="https://doi.org/10.1162/coli_a_00378">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Abstract syntax is an interlingual representation used in compilers. Grammatical Framework (GF) applies the abstract syntax idea to natural languages. The development of GF started in 1998, first as a tool for controlled language implementations, where it has gained an established position in both academic and commercial projects. GF provides grammar resources for over 40 languages, enabling accurate generation and translation, as well as grammar engineering tools and components for mobile and Web applications. On the research side, the focus in the last ten years has been on scaling up GF to wide-coverage language processing. The concept of abstract syntax offers a unified view on many other approaches: Universal Dependencies, WordNets, FrameNets, Construction Grammars, and Abstract Meaning Representations. This makes it possible for GF to utilize data from the other approaches and to build robust pipelines. In return, GF can contribute to data-driven approaches by methods to transfer resources from one language to others, to augment data by rule-based generation, to check the consistency of hand-annotated corpora, and to pipe analyses into high-precision semantic back ends. This article gives an overview of the use of abstract syntax as interlingua through both established and emerging NLP applications involving GF.},
+  archive      = {J_COLI},
+  author       = {Ranta, Aarne and Angelov, Krasimir and Gruzitis, Normunds and Kolachina, Prasanth},
+  doi          = {10.1162/coli_a_00378},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {425-486},
+  shortjournal = {Comput. Lingu.},
+  title        = {Abstract syntax as interlingua: Scaling up the grammatical framework from controlled languages to robust pipelines},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A systematic study of inner-attention-based sentence
+representations in multilingual neural machine translation.
+<em>COLI</em>, <em>46</em>(2), 387–424. (<a
+href="https://doi.org/10.1162/coli_a_00377">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Neural machine translation has considerably improved the quality of automatic translations by learning good representations of input sentences. In this article, we explore a multilingual translation model capable of producing fixed-size sentence representations by incorporating an intermediate crosslingual shared layer, which we refer to as attention bridge. This layer exploits the semantics from each language and develops into a language-agnostic meaning representation that can be efficiently used for transfer learning. We systematically study the impact of the size of the attention bridge and the effect of including additional languages in the model. In contrast to related previous work, we demonstrate that there is no conflict between translation performance and the use of sentence representations in downstream tasks. In particular, we show that larger intermediate layers not only improve translation quality, especially for long sentences, but also push the accuracy of trainable classification tasks. Nevertheless, shorter representations lead to increased compression that is beneficial in non-trainable similarity tasks. Similarly, we show that trainable downstream tasks benefit from multilingual models, whereas additional language signals do not improve performance in non-trainable benchmarks. This is an important insight that helps to properly design models for specific applications. Finally, we also include an in-depth analysis of the proposed attention bridge and its ability to encode linguistic properties. We carefully analyze the information that is captured by individual attention heads and identify interesting patterns that explain the performance of specific settings in linguistic probing tasks.},
+  archive      = {J_COLI},
+  author       = {Vázquez, Raúl and Raganato, Alessandro and Creutz, Mathias and Tiedemann, Jörg},
+  doi          = {10.1162/coli_a_00377},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {387-424},
+  shortjournal = {Comput. Lingu.},
+  title        = {A systematic study of inner-attention-based sentence representations in multilingual neural machine translation},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). LINSPECTOR: Multilingual probing tasks for word
+representations. <em>COLI</em>, <em>46</em>(2), 335–385. (<a
+href="https://doi.org/10.1162/coli_a_00376">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Despite an ever-growing number of word representation models introduced for a large number of languages, there is a lack of a standardized technique to provide insights into what is captured by these models. Such insights would help the community to get an estimate of the downstream task performance, as well as to design more informed neural architectures, while avoiding extensive experimentation that requires substantial computational resources not all researchers have access to. A recent development in NLP is to use simple classification tasks, also called probing tasks, that test for a single linguistic feature such as part-of-speech. Existing studies mostly focus on exploring the linguistic information encoded by the continuous representations of English text. However, from a typological perspective the morphologically poor English is rather an outlier: The information encoded by the word order and function words in English is often stored on a subword, morphological level in other languages. To address this, we introduce 15 type-level probing tasks such as case marking, possession, word length, morphological tag count, and pseudoword identification for 24 languages. We present a reusable methodology for creation and evaluation of such tests in a multilingual setting, which is challenging because of a lack of resources, lower quality of tools, and differences among languages. We then present experiments on several diverse multilingual word embedding models, in which we relate the probing task performance for a diverse set of languages to a range of five classic NLP tasks: POS-tagging, dependency parsing, semantic role labeling, named entity recognition, and natural language inference. We find that a number of probing tests have significantly high positive correlation to the downstream tasks, especially for morphologically rich languages. We show that our tests can be used to explore word embeddings or black-box neural models for linguistic cues in a multilingual setting. We release the probing data sets and the evaluation suite LINSPECTOR with https://github.com/UKPLab/linspector.},
+  archive      = {J_COLI},
+  author       = {Şahin, Gözde Gül and Vania, Clara and Kuznetsov, Ilia and Gurevych, Iryna},
+  doi          = {10.1162/coli_a_00376},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {335-385},
+  shortjournal = {Comput. Lingu.},
+  title        = {LINSPECTOR: Multilingual probing tasks for word representations},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). LessLex: Linking multilingual embeddings to SenSe
+representations of LEXical items. <em>COLI</em>, <em>46</em>(2),
+289–333. (<a href="https://doi.org/10.1162/coli_a_00375">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present LESSLEX, a novel multilingual lexical resource. Different from the vast majority of existing approaches, we ground our embeddings on a sense inventory made available from the BabelNet semantic network. In this setting, multilingual access is governed by the mapping of terms onto their underlying sense descriptions, such that all vectors co-exist in the same semantic space. As a result, for each term we have thus the “blended” terminological vector along with those describing all senses associated to that term. LESSLEX has been tested on three tasks relevant to lexical semantics: conceptual similarity, contextual similarity, and semantic text similarity. We experimented over the principal data sets for such tasks in their multilingual and crosslingual variants, improving on or closely approaching state-of-the-art results. We conclude by arguing that LESSLEX vectors may be relevant for practical applications and for research on conceptual and lexical access and competence.},
+  archive      = {J_COLI},
+  author       = {Colla, Davide and Mensa, Enrico and Radicioni, Daniele P.},
+  doi          = {10.1162/coli_a_00375},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {289-333},
+  shortjournal = {Comput. Lingu.},
+  title        = {LessLex: Linking multilingual embeddings to SenSe representations of LEXical items},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Unsupervised word translation with adversarial autoencoder.
+<em>COLI</em>, <em>46</em>(2), 257–288. (<a
+href="https://doi.org/10.1162/coli_a_00374">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Crosslingual word embeddings learned from monolingual embeddings have a crucial role in many downstream tasks, ranging from machine translation to transfer learning. Adversarial training has shown impressive success in learning crosslingual embeddings and the associated word translation task without any parallel data by mapping monolingual embeddings to a shared space. However, recent work has shown superior performance for non-adversarial methods in more challenging language pairs. In this article, we investigate adversarial autoencoder for unsupervised word translation and propose two novel extensions to it that yield more stable training and improved results. Our method includes regularization terms to enforce cycle consistency and input reconstruction, and puts the target encoders as an adversary against the corresponding discriminator. We use two types of refinement procedures sequentially after obtaining the trained encoders and mappings from the adversarial training, namely, refinement with Procrustes solution and refinement with symmetric re-weighting. Extensive experimentations with high- and low-resource languages from two different data sets show that our method achieves better performance than existing adversarial and non-adversarial approaches and is also competitive with the supervised system. Along with performing comprehensive ablation studies to understand the contribution of different components of our adversarial model, we also conduct a thorough analysis of the refinement procedures to understand their effects.},
+  archive      = {J_COLI},
+  author       = {Mohiuddin, Tasnim and Joty, Shafiq},
+  doi          = {10.1162/coli_a_00374},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {257-288},
+  shortjournal = {Comput. Lingu.},
+  title        = {Unsupervised word translation with adversarial autoencoder},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Multilingual and interlingual semantic representations for
+natural language processing: A brief introduction. <em>COLI</em>,
+<em>46</em>(2), 249–255. (<a
+href="https://doi.org/10.1162/coli_a_00373">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We introduce the Computational Linguistics special issue on Multilingual and Interlingual Semantic Representations for Natural Language Processing. We situate the special issue’s five articles in the context of our fast-changing field, explaining our motivation for this project. We offer a brief summary of the work in the issue, which includes developments on lexical and sentential semantic representations, from symbolic and neural perspectives.},
+  archive      = {J_COLI},
+  author       = {Costa-jussà, Marta R. and España-Bonet, Cristina and Fung, Pascale and Smith, Noah A.},
+  doi          = {10.1162/coli_a_00373},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {249-255},
+  shortjournal = {Comput. Lingu.},
+  title        = {Multilingual and interlingual semantic representations for natural language processing: A brief introduction},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Cross-lingual word embeddings. <em>COLI</em>,
+<em>46</em>(1), 245–248. (<a
+href="https://doi.org/10.1162/coli_r_00372">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The representation of words across languages is of interest since the early days of interlingual machine translation, as it allows us to connect the meaning of words in different languages and to generalize lexical semantic properties and relations across languages (Hutchins 2000). Structured representations such as multilingual lexical knowledge bases represent polysemy, as well as language internal and cross-lingual relations, but they require costly manual construction and maintenance (Vossen 1998). Alternatively, corpus-based methods have been used to automatically induce monolingual word representations like word embeddings with great success (Mikolov et al. 2013). Word embeddings represent the words in the vocabulary of a language as vectors in n-dimensional space, where words that are similar being located close to each other. Cross-lingual word embeddings (CLWE for short) extend the idea, and represent translation-equivalent words from two (or more) languages close to each other in a common, cross-lingual space.The interest in cross-lingual word embeddings has grown in recent years. This is partly because of their success in cross-lingual transfer, where NLP tools trained in a resource-rich language such as English are transferred to another language with smaller or no annotated data. For instance, given training data for a text-classification task in English, a model using CLWE can classify foreign language documents. Beyond language pairs, CLWE allows us to represent words of several languages in a common space, and thus pave the way to build multilingual NLP tools that use the same model to process text in different languages.This comprehensive and, at the same time, dense book has been written by Anders Søgaard, Ivan Vulić, Sebastian Ruder, and Manaal Faruqui. It covers all key issues as well as the most relevant work in CLWE, including the most recent research (up to May 2019) in this vibrant research area. It does a great job of organizing different approaches in a typology, according to the kind of bilingual resources needed, and differentiating word-level, sentence-level, and document-level models. The book also covers extensions to CLWE that are able to represent multiple languages in the same space, as well as unsupervised learning, where the systems only use monolingual resources to build the cross-lingual space. The book is structured in 12 chapters.Chapter 1 is a brief introduction, which includes an explanation of the notation used in the book. The book tries to establish a formal relation between several word-level alignment models, and it does a thorough job of describing the methods using a consistent mathematical formalization. This consistency allows the authors to describe methods in a more compact way and helps to better see the common patterns across seemingly different approaches. In this sense, introducing the notation in the first chapter makes life easier for later. The formulas are quite dense and demanding, but although a mathematically naive reader might have a hard time following them, casual readers can also get value from a higher level read of the book.Chapter 2 makes a brief introduction of the main monolingual word embedding models, focusing on the formalization of the loss function being optimized by each of the models.Chapter 3 introduces a typology of supervised CLWE models, that is, methods that use some kind of bilingual signal. The typology leaves aside multilingual and unsupervised methods, which are covered in later chapters. The typology is based on data requirements along two dimensions: the type of bilingual signal (at the level of words, sentences, or documents), and whether the method requires parallel resources, or comparable resources suffice.Chapter 4 introduces work on cross-lingual word representations that pre-dates the introduction of word embeddings. The chapter covers work on cross-lingual clusters, delexicalization strategies for cross-lingual transfer, earlier use of seed dictionaries, together with distributional vector space models, cross-lingual word alignment in machine translation, and latent cross-lingual concepts. This chapter draws connections with earlier work, and is a must-read for anyone wanting to take a step back from current techniques, to look at the big picture and draw inspiration in the larger picture of (non-embbeding-related) NLP methods.The book then follows with three chapters organized according to typology. Chapter 5 covers the most popular family of models, those based on word-level information. The models that require parallel data in the form of bilingual dictionaries (or word alignments induced from parallel corpora) are further classified into those that learn separate monolingual spaces for each language to then learn a mapping, or those that learn the cross-lingual space for the two languages jointly, as well as mixed approaches. The authors make an effort to show that some methods coming from mapping, joint, and mixed approaches are very similar. In addition, the chapter also covers methods that ground words into images or image features. Most of the space in the chapter is taken by mapping methods, as they take the bulk of recent publications.Chapter 6 introduces sentence-level information, usually in the form of sentence-aligned parallel translations. The additional supervision is used to learn either shared sentence representations, bilingual encoders, or a bilingual version of the monolingual skip-gram loss.Chapter 7 introduces methods that use information from comparable documents only, which offers less supervision compared with the methods in the previous two chapters. These methods typically use Wikipedia articles from different languages as comparable documents.Chapter 8 introduces multilingual CLWE, where more than two languages are involved. Apart from the practical interest, some works show that the use of multiple languages improves the quality of word embeddings. Most works use bilingual CLWE learning methods taking a pivot language (e.g., English).Chapter 9 is devoted to unsupervised methods, that is, those that learn the CLWE space without any bilingual information. At the core, unsupervised methods apply one of the supervised methods (e.g., a word-level mapping method from Chapter 5). An initial small or low-quality seed lexicon is produced using some method, and iteratively, better dictionaries are obtained and used as seed lexicons.Chapter 10 gathers a wide array of applications and intrinsic evaluation tasks that have been used across the literature. Arguably, bilingual dictionary induction is the reference evaluation task for word-level mapping algorithms, but other methods have chosen to evaluate on other tasks, making comparison across methods in the same family difficult, and comparison across types of methods unfeasible. Note that the book does not provide information about the experimental performance of the methods, which is understandable, given the lack of an agreed-upon evaluation task or data set that covers all methods in the typology. That said, some experimental evaluation information, although limited, would have been of interest to the reader, as it would allow one to have a grasp of the relative standing of some relevant methods introduced in the book.On the practical side, Chapter 11 introduces a comprehensive list of monolingual corpora and embeddings, bilingual dictionaries, parallel corpora, and CLWE open source models. It also lists some relevant evaluation data sets and applications.The book finishes in Chapter 12 with general challenges and future direction, where the authors outline some of the current challenges in this field, alongside some specific open problems.In summary, this book provides a comprehensive and in-depth overview to cross-lingual word embeddings, covering the breadth of techniques and resources used. This book is recommended not only to researchers, students, and practitioners who work on the area of cross-lingual and multilingual word embeddings, but also to a wider range of readers who have interest in cross-lingual and multilingual processing.Note that the book is very similar to a contemporaneous journal survey (Ruder, Vulić, and Søgaard 2019), written by three of the authors. The book is more detailed and contains a separate section on unsupervised methods and another section with useful data and software. On the other hand, the journal survey contains a handful of newer references, up through ACL 2019. The field is moving forward fast, and seeing the latest developments (at the time of writing this review), it seems the authors chose a very good time to publish the book. The irruption of contextual word embedding models, where the representation of a word depends on the context of occurrence, has put on the table a new family of alternative methods that learn cross-lingual word representations. It is good to see that one of the authors has already started to cover some of the newer methods in an excellent blog.1},
+  archive      = {J_COLI},
+  author       = {Agirre, Eneko},
+  doi          = {10.1162/coli_r_00372},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {245-248},
+  shortjournal = {Comput. Lingu.},
+  title        = {Cross-lingual word embeddings},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Data-driven sentence simplification: Survey and benchmark.
+<em>COLI</em>, <em>46</em>(1), 135–187. (<a
+href="https://doi.org/10.1162/coli_a_00370">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Sentence Simplification (SS) aims to modify a sentence in order to make it easier to read and understand. In order to do so, several rewriting transformations can be performed such as replacement, reordering, and splitting. Executing these transformations while keeping sentences grammatical, preserving their main idea, and generating simpler output, is a challenging and still far from solved problem. In this article, we survey research on SS, focusing on approaches that attempt to learn how to simplify using corpora of aligned original-simplified sentence pairs in English, which is the dominant paradigm nowadays. We also include a benchmark of different approaches on common data sets so as to compare them and highlight their strengths and limitations. We expect that this survey will serve as a starting point for researchers interested in the task and help spark new ideas for future developments.},
+  archive      = {J_COLI},
+  author       = {Alva-Manchego, Fernando and Scarton, Carolina and Specia, Lucia},
+  doi          = {10.1162/coli_a_00370},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {135-187},
+  shortjournal = {Comput. Lingu.},
+  title        = {Data-driven sentence simplification: Survey and benchmark},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). An empirical study on crosslingual transfer in probabilistic
+topic models. <em>COLI</em>, <em>46</em>(1), 95–134. (<a
+href="https://doi.org/10.1162/coli_a_00369">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Probabilistic topic modeling is a common first step in crosslingual tasks to enable knowledge transfer and extract multilingual features. Although many multilingual topic models have been developed, their assumptions about the training corpus are quite varied, and it is not clear how well the different models can be utilized under various training conditions. In this article, the knowledge transfer mechanisms behind different multilingual topic models are systematically studied, and through a broad set of experiments with four models on ten languages, we provide empirical insights that can inform the selection and future development of multilingual topic models.},
+  archive      = {J_COLI},
+  author       = {Hao, Shudong and Paul, Michael J.},
+  doi          = {10.1162/coli_a_00369},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {95-134},
+  shortjournal = {Comput. Lingu.},
+  title        = {An empirical study on crosslingual transfer in probabilistic topic models},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). The design and implementation of XiaoIce, an empathetic
+social chatbot. <em>COLI</em>, <em>46</em>(1), 53–93. (<a
+href="https://doi.org/10.1162/coli_a_00368">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This article describes the development of Microsoft XiaoIce, the most popular social chatbot in the world. XiaoIce is uniquely designed as an artifical intelligence companion with an emotional connection to satisfy the human need for communication, affection, and social belonging. We take into account both intelligent quotient and emotional quotient in system design, cast human–machine social chat as decision-making over Markov Decision Processes, and optimize XiaoIce for long-term user engagement, measured in expected Conversation-turns Per Session (CPS). We detail the system architecture and key components, including dialogue manager, core chat, skills, and an empathetic computing module. We show how XiaoIce dynamically recognizes human feelings and states, understands user intent, and responds to user needs throughout long conversations. Since the release in 2014, XiaoIce has communicated with over 660 million active users and succeeded in establishing long-term relationships with many of them. Analysis of large-scale online logs shows that XiaoIce has achieved an average CPS of 23, which is significantly higher than that of other chatbots and even human conversations.},
+  archive      = {J_COLI},
+  author       = {Zhou, Li and Gao, Jianfeng and Li, Di and Shum, Heung-Yeung},
+  doi          = {10.1162/coli_a_00368},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {53-93},
+  shortjournal = {Comput. Lingu.},
+  title        = {The design and implementation of XiaoIce, an empathetic social chatbot},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On the linguistic representational power of neural machine
+translation models. <em>COLI</em>, <em>46</em>(1), 1–52. (<a
+href="https://doi.org/10.1162/coli_a_00367">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Despite the recent success of deep neural networks in natural language processing and other spheres of artificial intelligence, their interpretability remains a challenge. We analyze the representations learned by neural machine translation (NMT) models at various levels of granularity and evaluate their quality through relevant extrinsic properties. In particular, we seek answers to the following questions: (i) How accurately is word structure captured within the learned representations, which is an important aspect in translating morphologically rich languages? (ii) Do the representations capture long-range dependencies, and effectively handle syntactically divergent languages? (iii) Do the representations capture lexical semantics? We conduct a thorough investigation along several parameters: (i) Which layers in the architecture capture each of these linguistic phenomena; (ii) How does the choice of translation unit (word, character, or subword unit) impact the linguistic properties captured by the underlying representations? (iii) Do the encoder and decoder learn differently and independently? (iv) Do the representations learned by multilingual NMT models capture the same amount of linguistic information as their bilingual counterparts? Our data-driven, quantitative evaluation illuminates important aspects in NMT models and their ability to capture various linguistic phenomena. We show that deep NMT models trained in an end-to-end fashion, without being provided any direct supervision during the training process, learn a non-trivial amount of linguistic information. Notable findings include the following observations: (i) Word morphology and part-of-speech information are captured at the lower layers of the model; (ii) In contrast, lexical semantics or non-local syntactic and semantic dependencies are better represented at the higher layers of the model; (iii) Representations learned using characters are more informed about word-morphology compared to those learned using subword units; and (iv) Representations learned by multilingual models are richer compared to bilingual models.},
+  archive      = {J_COLI},
+  author       = {Belinkov, Yonatan and Durrani, Nadir and Dalvi, Fahim and Sajjad, Hassan and Glass, James},
+  doi          = {10.1162/coli_a_00367},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {1-52},
+  shortjournal = {Comput. Lingu.},
+  title        = {On the linguistic representational power of neural machine translation models},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Corpora annotated with negation: An overview. <em>COLI</em>,
+<em>46</em>(1), 1–52. (<a
+href="https://doi.org/10.1162/coli_a_00371">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Negation is a universal linguistic phenomenon with a great qualitative impact on natural language processing applications. The availability of corpora annotated with negation is essential to training negation processing systems. Currently, most corpora have been annotated for English, but the presence of languages other than English on the Internet, such as Chinese or Spanish, is greater every day. In this study, we present a review of the corpora annotated with negation information in several languages with the goal of evaluating what aspects of negation have been annotated and how compatible the corpora are. We conclude that it is very difficult to merge the existing corpora because we found differences in the annotation schemes used, and most importantly, in the annotation guidelines: the way in which each corpus was tokenized and the negation elements that have been annotated. Differently than for other well established tasks like semantic role labeling or parsing, for negation there is no standard annotation scheme nor guidelines, which hampers progress in its treatment.},
+  archive      = {J_COLI},
+  author       = {Jiménez-Zafra, Salud María and Morante, Roser and Teresa Martín-Valdivia, María and Ureña-López, L. Alfonso},
+  doi          = {10.1162/coli_a_00371},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {1-52},
+  shortjournal = {Comput. Lingu.},
+  title        = {Corpora annotated with negation: An overview},
+  volume       = {46},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

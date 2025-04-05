@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GPEM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="gpem---24">GPEM - 24</h2>
+<ul>
+<li><details>
+<summary>
+(2024). “The physics of evolution” by michael w. Roth, crc press,
+2023. <em>GPEM</em>, <em>25</em>(2), 1–3. (<a
+href="https://doi.org/10.1007/s10710-024-09489-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Banzhaf, Wolfgang},
+  doi          = {10.1007/s10710-024-09489-z},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-3},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {“The physics of evolution” by michael w. roth, crc press, 2023},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Geometric semantic GP with linear scaling: Darwinian versus
+lamarckian evolution. <em>GPEM</em>, <em>25</em>(2), 1–24. (<a
+href="https://doi.org/10.1007/s10710-024-09488-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Geometric Semantic Genetic Programming (GSGP) has shown notable success in symbolic regression with the introduction of Linear Scaling (LS). This achievement stems from the synergy of the geometric semantic genetic operators of GSGP with the scaling of the individuals for computing their fitness, which favours programs with a promising behaviour. However, the initial combination of GSGP and LS (GSGP-LS) underutilised the potential of LS, scaling individuals only for fitness evaluation, neglecting to incorporate improvements into their genetic material. In this paper we propose an advancement, GSGP with Lamarckian LS (GSGP-LLS), wherein we update the individuals in the population with their scaling coefficients in a Lamarckian fashion, i.e., by inheritance of acquired traits. We assess GSGP-LS and GSGP-LLS against standard GSGP for the task of symbolic regression on five hand-tailored benchmarks and six real-life problems. On the former ones, GSGP-LS and GSGP-LLS both consistently improve GSGP, though with no clear global superiority between them. On the real-world problems, instead, GSGP-LLS steadily outperforms GSGP-LS, achieving faster convergence and superior final performance. Notably, even in cases where LS induces overfitting on challenging problems, GSGP-LLS surpasses GSGP-LS, due to its slower and more localised optimisation steps.},
+  archive      = {J_GPEM},
+  author       = {Nadizar, Giorgia and Sakallioglu, Berfin and Garrow, Fraser and Silva, Sara and Vanneschi, Leonardo},
+  doi          = {10.1007/s10710-024-09488-0},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Geometric semantic GP with linear scaling: Darwinian versus lamarckian evolution},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Benjamin doerr and frank neumann (editors): Theory of
+evolutionary computation. <em>GPEM</em>, <em>25</em>(2), 1–2. (<a
+href="https://doi.org/10.1007/s10710-024-09490-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Rowe, Jonathan E.},
+  doi          = {10.1007/s10710-024-09490-6},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-2},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Benjamin doerr and frank neumann (editors): Theory of evolutionary computation},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). GSGP-hardware: Instantaneous symbolic regression with an
+FPGA implementation of geometric semantic genetic programming.
+<em>GPEM</em>, <em>25</em>(2), 1–43. (<a
+href="https://doi.org/10.1007/s10710-024-09491-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Geometric Semantic Genetic Programming (GSGP) proposed an important enhancement to GP-based learning, incorporating search operators that operate directly on the semantics of the parents with bounded effects on the semantics of the offspring. This approach posed any symbolic regression fitness landscape as a unimodal function, allowing for more directed search. Moreover, it became evident that the search could be implemented in a much more efficient manner, that does not require the execution, evaluation or manipulation of variable length syntactic models. Hence, efficient implementations of this algorithm have been developed using both CPU and GPU processing. However, current implementations are still ill-suited for real-time learning, or learning on devices with limited resources, scenarios that are becoming more prevalent with the continued development of the Internet-of-Things and the increased need for efficient and distributed learning on the Edge. This paper presents GSGP-Hardware, a fully pipelined and parallel design of GSGP developed fully using VHDL, for implementation on FPGA devices. Using Vivado AMD-Xilinx for synthesis and simulation, GSGP-Hardware achieves an approximate improvement in efficiency, in terms of run time and Gpops/s, of three and four orders of magnitude, respectively, compared with the state-of-the-art GPU implementation. This is a performance increase that has not been achieved by other FPGA-based implementations of genetic programming. This is possible due to the manner in which GSGP evolves a model, and competitive accuracy is achieved by incorporating simple but powerful enhancements to the original GSGP algorithm. GSGP-Hardware allows for instantaneous symbolic regression, opening up new application domains for this powerful variant of genetic programming.},
+  archive      = {J_GPEM},
+  author       = {Maldonado, Yazmin and Salas, Ruben and Quevedo, Joel A. and Valdez, Rogelio and Trujillo, Leonardo},
+  doi          = {10.1007/s10710-024-09491-5},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-43},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {GSGP-hardware: Instantaneous symbolic regression with an FPGA implementation of geometric semantic genetic programming},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A survey on dynamic populations in bio-inspired algorithms.
+<em>GPEM</em>, <em>25</em>(2), 1–32. (<a
+href="https://doi.org/10.1007/s10710-024-09492-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Population-Based Bio-Inspired Algorithms (PBBIAs) are computational methods that simulate natural biological processes, such as evolution or social behaviors, to solve optimization problems. Traditionally, PBBIAs use a population of static size, set beforehand through a specific parameter. Nevertheless, for several decades now, the idea of employing populations of dynamic size, capable of adjusting during the course of a single run, has gained ground. Various methods have been introduced, ranging from simpler ones that use a predefined function to determine the population size variation, to more sophisticated methods where the population size in different phases of the evolutionary process depends on the dynamics of the evolution itself and events occurring within the population during the run. The common underlying idea in many of these approaches, is similar: to save a significant amount of computational effort in phases where the evolution is functioning well, and therefore a large population is not needed. This allows for reusing the previously saved computational effort when optimization becomes more challenging, and hence a greater computational effort is required. Numerous past contributions have demonstrated a notable advantage of using dynamically sized populations, often resulting in comparable results to those obtained by the standard PBBIAs but with a significant saving of computational effort. However, despite the numerous successes that have been presented, to date, there is still no comprehensive collection of past contributions on the use of dynamic populations that allows for their categorization and critical analysis. This article aims to bridge this gap by presenting a systematic literature review regarding the use of dynamic populations in PBBIAs, as well as identifying gaps in the research that can lead the path to future works.},
+  archive      = {J_GPEM},
+  author       = {Farinati, Davide and Vanneschi, Leonardo},
+  doi          = {10.1007/s10710-024-09492-4},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-32},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {A survey on dynamic populations in bio-inspired algorithms},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Hga-lstm: LSTM architecture and hyperparameter search by
+hybrid GA for air pollution prediction. <em>GPEM</em>, <em>25</em>(2),
+1–25. (<a href="https://doi.org/10.1007/s10710-024-09493-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Air pollution prediction is a process of predicting the levels of air pollutants in a specific area over a given period. Since LSTM (Long Short-Term Memory) networks are particularly effective in capturing long-term dependencies and patterns in sequential data, they are widely-used for air pollution prediction. However, designing appropriate LSTM architectures and hyperparameters for given tasks can be challenging, which are normally determined by users in existing LSTM-based methods. Note that Genetic Algorithm (GA) is an effective optimization technique, and local search in augmenting the global search ability of GA has been proved, which is rarely considered by existing GA-optimzied LSTM methods. In this work, simultaneous LSTM architecture and hyperparameter search based on GA and local search techniques is investigated for air pollution prediction. Specifically, a new LSTM model search method is designed, termed as HGA-LSTM. HGA is a hybrid GA, which is proposed by integrating GA with local search adaptively. Based on HGA, HGA-LSTM is developed to search for LSTM models with simultaneous LSTM architecture and hyperparameter optimization. In HGA-LSTM, a new crossover is designed to be adaptive to the variable-length representation of LSTM models. The proposed HGA-LSTM is compared with widely-used LSTM-based and nonLSTM-based prediction methods on UCI (University of California Irvine) datasets for air pollution prediction. Results show that HGA-LSTM is generally better than both types of reference methods with its evolved LSTM models achieving lower mean square/absolute errors. Moreover, compared with a baseline method (a GA without local search), HGA-LSTM converges to lower error values, which reflects that HGA has better search ability than GA.},
+  archive      = {J_GPEM},
+  author       = {Liang, Jiayu and Lu, Yaxin and Su, Mingming},
+  doi          = {10.1007/s10710-024-09493-3},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Hga-lstm: LSTM architecture and hyperparameter search by hybrid GA for air pollution prediction},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Evolving code with a large language model. <em>GPEM</em>,
+<em>25</em>(2), 1–36. (<a
+href="https://doi.org/10.1007/s10710-024-09494-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Algorithms that use Large Language Models (LLMs) to evolve code arrived on the Genetic Programming (GP) scene very recently. We present LLM_GP, a general LLM-based evolutionary algorithm designed to evolve code. Like GP, it uses evolutionary operators, but its designs and implementations of those operators significantly differ from GP’s because they enlist an LLM, using prompting and the LLM’s pre-trained pattern matching and sequence completion capability. We also present a demonstration-level variant of LLM_GP and share its code. By presentations that range from formal to hands-on, we cover design and LLM-usage considerations as well as the scientific challenges that arise when using an LLM for genetic programming.},
+  archive      = {J_GPEM},
+  author       = {Hemberg, Erik and Moskal, Stephen and O’Reilly, Una-May},
+  doi          = {10.1007/s10710-024-09494-2},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-36},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Evolving code with a large language model},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Leonardo vanneschi and sara silva: Lectures on intelligent
+systems. <em>GPEM</em>, <em>25</em>(2), 1–3. (<a
+href="https://doi.org/10.1007/s10710-024-09495-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Ombuki-Berman, Beatrice M.},
+  doi          = {10.1007/s10710-024-09495-1},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-3},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Leonardo vanneschi and sara silva: Lectures on intelligent systems},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Chief editorship transition. <em>GPEM</em>, <em>25</em>(2),
+1–2. (<a href="https://doi.org/10.1007/s10710-024-09496-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Spector, Lee and Trujillo, Leonardo},
+  doi          = {10.1007/s10710-024-09496-0},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-2},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Chief editorship transition},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An investigation into structured grammatical evolution
+initialisation. <em>GPEM</em>, <em>25</em>(2), 1–20. (<a
+href="https://doi.org/10.1007/s10710-024-09498-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A key ingredient in any successful genetic programming is robust initialisation. Many successful initialisation methods used in genetic programming have been adapted to use with grammatical evolution, to varying levels success. This paper examines the effectiveness of some of the most popular of these initialisation techniques on structured grammatical evolution. Namely, we investigate Sensible Initialisation and Probabilistic Tree Creation 2, as well as the standard initialisation procedure used in structured grammatical evolution, Grow. We also propose a novel procedure called Local Optimised Probabilistic Tree Creation 2, which runs a quick greedy optimisation on the trees created. We do this using using two different grammar specifications, both with and without protected operators, and using an error based and correlation based fitness function. We examine their performance, as well as the diversity of solutions they create, on 8 well-known benchmarks. We observe that Local Optimised Probabilistic Tree Creation 2 created the fittest, or joint fittest, initialisation populations on every benchmark considered, bar one. Local Optimised Probabilistic Tree Creation 2 remained the best initialisation procedure when the grammar specification was changed, confirming it’s robustness. This did not necessarily result in overall better runs, however, and SGE runs with below average initialisation performance were seen to overcome their “bad start”. The diversity of solutions, particularly fitness diversity, at the end of the run was lower for Local Optimised Probabilistic Tree Creation 2 and Probabilistic Tree Creation 2 than for both sensible initialisation and grow. Local Optimised Probabilistic Tree Creation 2 was seen to take between 8 and 20 times longer to create the initial population than the other methods. This article is an extension of a paper which originally appeared at the Grammatical Evolution Workshop held as part of GECCO 2023.},
+  archive      = {J_GPEM},
+  author       = {Murphy, Aidan and Mahdinejad, Mahsa and Ventresque, Anthony and Lourenço, Nuno},
+  doi          = {10.1007/s10710-024-09498-y},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {12},
+  number       = {2},
+  pages        = {1-20},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {An investigation into structured grammatical evolution initialisation},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Geometric semantic genetic programming with normalized and
+standardized random programs. <em>GPEM</em>, <em>25</em>(1), 1–29. (<a
+href="https://doi.org/10.1007/s10710-024-09479-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Geometric semantic genetic programming (GSGP) represents one of the most promising developments in the area of evolutionary computation (EC) in the last decade. The results achieved by incorporating semantic awareness in the evolutionary process demonstrate the impact that geometric semantic operators have brought to the field of EC. An improvement to the geometric semantic mutation (GSM) operator is proposed, inspired by the results achieved by batch normalization in deep learning. While, in one of its most used versions, GSM relies on the use of the sigmoid function to constrain the semantics of two random programs responsible for perturbing the parent’s semantics, here a different approach is followed, which allows reducing the size of the resulting programs and overcoming the issues associated with the use of the sigmoid function, as commonly done in deep learning. The idea is to consider a single random program and use it to perturb the parent’s semantics only after standardization or normalization. The experimental results demonstrate the suitability of the proposed approach: despite its simplicity, the presented GSM variants outperform standard GSGP on the studied benchmarks, with a difference in terms of performance that is statistically significant. Furthermore, the individuals generated by the new GSM variants are easier to simplify, allowing us to create accurate but significantly smaller solutions.},
+  archive      = {J_GPEM},
+  author       = {Bakurov, Illya and Muñoz Contreras, José Manuel and Castelli, Mauro and Rodrigues, Nuno and Silva, Sara and Trujillo, Leonardo and Vanneschi, Leonardo},
+  doi          = {10.1007/s10710-024-09479-1},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-29},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Geometric semantic genetic programming with normalized and standardized random programs},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Cellular geometric semantic genetic programming.
+<em>GPEM</em>, <em>25</em>(1), 1–32. (<a
+href="https://doi.org/10.1007/s10710-024-09480-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Among the different variants of Genetic Programming (GP), Geometric Semantic GP (GSGP) has proved to be both efficient and effective in finding good solutions. The fact that the operators of GSGP operate on the semantics of the individuals in a clear way provides guarantees on the way the search is performed. GSGP is not, however, free from limitations like the premature convergence of the population to a small–and possibly sub-optimal–area of the search space. One reason for this issue could be the fact that good individuals can quickly “spread” in the population suppressing the emergence of competition. To mitigate this problem, we impose a cellular automata (CA) inspired communication topology over GSGP. In CAs a collection of agents (as finite state automata) are positioned in a n-dimensional periodic grid and communicates only locally with the automata in their neighbourhoods. Similarly, we assign a location to each individual on an n-dimensional grid and the entire evolution for an individual will happen locally by considering, for each individual, only the individuals in its neighbourhood. Specifically, we present an algorithm in which, for each generation, a subset of the neighbourhood of each individual is sampled and the selection for the given cell in the grid is performed by extracting the two best individuals of this subset, which are employed as parents for the Geometric Semantic Crossover. We compare this cellular GSGP (cGSGP) approach with standard GSGP on eight regression problems, showing that it can provide better solutions than GSGP. Moreover, by analyzing convergence rates, we show that the improvement is observable regardless of the number of executed generations. As a side effect, we additionally show that combining a small-neighbourhood-based cellular spatial structure with GSGP helps in producing smaller solutions. Finally, we measure the spatial autocorrelation of the population by adopting the Moran’s I coefficient to provide an overview of the diversity, showing that our cellular spatial structure helps in providing better diversity during the early stages of the evolution.},
+  archive      = {J_GPEM},
+  author       = {Bonin, Lorenzo and Rovito, Luigi and De Lorenzo, Andrea and Manzoni, Luca},
+  doi          = {10.1007/s10710-024-09480-8},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-32},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Cellular geometric semantic genetic programming},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A new representation in 3D VLSI floorplan: 3D o-tree.
+<em>GPEM</em>, <em>25</em>(1), 1–32. (<a
+href="https://doi.org/10.1007/s10710-024-09485-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The size of the implemented circuit plays a vital role in maximizing the performance of the chip. Hence, researchers are looking to utilize the extra dimension to improve performance, which requires the development of new methods and techniques for efficient implementation. This paper proposes a new, simple, efficient representation in 3D VLSI Floorplan named 3D O-Tree representation for Electronic Design Automation (EDA). Since the 3D floorplan packing problem is NP-hard (Nondeterministic Polynomial time), the novel representation is accompanied with an adaptive modified Memetic Algorithm with a kill strategy for fast performance. The tool presented in this paper employs Genetic Algorithm for global exploration, and an improved compatible local technique is used to exploit promising search regions for an improved solution. This representation has been found to be effective in obtaining an efficient packed 3D floorplan. In the case of okp benchmarks, the proposed algorithm has achieved the best stated minimum volume yet for okp1 and okp3 benchmarks with 4.62% and 1.87% improvement respectively. The rest of the okp benchmarks have achieved near-to-best previous results. When checked on four standard Beasley benchmarks, better floorplans have been achieved with the proposed representation. They are found to be more effective and efficient than the current state-of-the-art research, with a range of 1.6% to 9.29% improvement as compared to the volume of the previous best-reported results. Beasley 7 retains the previous best solution in terms of volume, improving significantly in time to achieve the solution. Also, the required optimization time is reduced substantially to achieve the best previous results. The statistical analysis also shows the efficacy of the proposed technique.},
+  archive      = {J_GPEM},
+  author       = {Gupta, Rohin and Gill, Sandeep Singh},
+  doi          = {10.1007/s10710-024-09485-3},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-32},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {A new representation in 3D VLSI floorplan: 3D O-tree},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Semantic mutation operator for a fast and efficient design
+of bent boolean functions. <em>GPEM</em>, <em>25</em>(1), 1–32. (<a
+href="https://doi.org/10.1007/s10710-023-09476-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Boolean functions are important cryptographic primitives with extensive use in symmetric cryptography. These functions need to possess various properties, such as nonlinearity to be useful. The main limiting factor of the quality of a Boolean function is the number of its input variables, which has to be sufficiently large. The contemporary design methods either scale poorly or are able to create only a small subset of all functions with the desired properties. This necessitates the development of new and more efficient ways of Boolean function design. In this paper, we propose a new semantic mutation operator for the design of bent Boolean functions via genetic programming. The principle of the proposed operator lies in evaluating the function’s nonlinearity in detail to purposely avoid mutations that could be disruptive and taking advantage of the fact that the nonlinearity of a Boolean function is invariant under all affine transformations. To assess the efficiency of this operator, we experiment with three distinct variants of genetic programming and compare its performance to three other commonly used non-semantic mutation operators. The detailed experimental evaluation proved that the proposed semantic mutation operator is not only significantly more efficient in terms of evaluations required by genetic programming but also nearly three times faster than the second-best operator when designing bent functions with 12 inputs and almost six times faster for functions with 20 inputs.},
+  archive      = {J_GPEM},
+  author       = {Husa, Jakub and Sekanina, Lukáš},
+  doi          = {10.1007/s10710-023-09476-w},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-32},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Semantic mutation operator for a fast and efficient design of bent boolean functions},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A genetic algorithm for rule extraction in fuzzy adaptive
+learning control networks. <em>GPEM</em>, <em>25</em>(1), 1–31. (<a
+href="https://doi.org/10.1007/s10710-024-09486-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a novel approach, dubbed Falcon-GA, for rule extraction in a Fuzzy Adaptive Learning Control Network (FALCON) using a Genetic Algorithm (GA). The FALCON-GA combines multiple techniques to establish the relationships and connections among fuzzy rules, including the use of a GA for rule extraction and a Gradient-based method for fine-tuning the membership function parameters. The learning algorithm of FALCON-GA incorporates three key components: the ART (Adaptive Resonance Theory) clustering algorithm for initial membership function identification, the Genetic Algorithm for rule extraction, and the Gradient method for adjusting membership function parameters. Moreover, FALCON-GA offers flexibility by allowing the incorporation of different rule types within the FALCON architecture, making it flexible and expansible. The proposed model has been evaluated in various forecasting problems reported in the literature and compared to alternative models. Computational experiments demonstrate the effectiveness of FALCON-GA in forecasting tasks and reveal significant performance improvements compared to the original FALCON. These results indicate that Genetic Algorithms efficiently extract rules for Fuzzy Adaptive Learning Control Networks.},
+  archive      = {J_GPEM},
+  author       = {Brás, Glender and Silva, Alisson Marques and Wanner, Elizabeth F.},
+  doi          = {10.1007/s10710-024-09486-2},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-31},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {A genetic algorithm for rule extraction in fuzzy adaptive learning control networks},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Hierarchical non-dominated sort: Analysis and improvement.
+<em>GPEM</em>, <em>25</em>(1), 1–31. (<a
+href="https://doi.org/10.1007/s10710-024-09487-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pareto dominance-based multiobjective evolutionary algorithms use non-dominated sorting to rank their solutions. In the last few decades, various approaches have been proposed for non-dominated sorting. However, the running time analysis of some of the approaches has some issues and they are imprecise. In this paper, we focus on one such algorithm namely hierarchical non-dominated sort (HNDS), where the running time is imprecise and obtain the generic equations that show the number of dominance comparisons in the worst and the best case. Based on the equation for the worst case, we obtain the worst-case running time as well as the scenario where the worst case occurs. Based on the equation for the best case, we identify a scenario where HNDS performs less number of dominance comparisons than that presented in the original paper, making the best-case analysis of the original paper unrigorous. In the end, we present an improved version of HNDS which guarantees the claimed worst-case time complexity by the authors of HNDS which is $${\mathcal {O}}(MN^2)$$ .},
+  archive      = {J_GPEM},
+  author       = {Prakash, Ved and Mishra, Sumit},
+  doi          = {10.1007/s10710-024-09487-1},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-31},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Hierarchical non-dominated sort: Analysis and improvement},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An ensemble learning interpretation of geometric semantic
+genetic programming. <em>GPEM</em>, <em>25</em>(1), 1–26. (<a
+href="https://doi.org/10.1007/s10710-024-09482-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Geometric semantic genetic programming (GSGP) is a variant of genetic programming (GP) that directly searches the semantic space of programs to produce candidate solutions. GSGP has shown considerable success in improving the performance of GP in terms of program correctness, however this comes at the expense of exponential program growth. Subsequent attempts to address this growth have not fully-exploited the fact that GSGP searches by producing linear combinations of existing solutions. This paper examines this property of GSGP and frames the method as an ensemble learning approach by redefining mutation and crossover as examples of boosting and stacking, respectively. The ensemble interpretation allows for simple integration of regularisation techniques that significantly reduce the size of the resultant programs. Additionally, this paper examines the quality of parse tree base learners within this ensemble learning interpretation of GSGP and suggests that future research could substantially improve the quality of GSGP by examining more effective initialisation techniques. The resulting ensemble learning interpretation leads to variants of GSGP that substantially improve upon the performance of traditional GSGP in regression contexts, and produce a method that frequently outperforms gradient boosting.},
+  archive      = {J_GPEM},
+  author       = {Dick, Grant},
+  doi          = {10.1007/s10710-024-09482-6},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-26},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {An ensemble learning interpretation of geometric semantic genetic programming},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Bridging directed acyclic graphs to linear representations
+in linear genetic programming: A case study of dynamic scheduling.
+<em>GPEM</em>, <em>25</em>(1), 1–33. (<a
+href="https://doi.org/10.1007/s10710-023-09478-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Linear genetic programming (LGP) is a genetic programming paradigm based on a linear sequence of instructions being executed. An LGP individual can be decoded into a directed acyclic graph. The graph intuitively reflects the primitives and their connection. However, existing studies on LGP miss an important aspect when seeing LGP individuals as graphs, that is, the reverse transformation from graph to LGP genotype. Such reverse transformation is an essential step if one wants to use other graph-based techniques and applications with LGP. Transforming graphs into LGP genotypes is nontrivial since graph information normally does not convey register information, a crucial element in LGP individuals. Here we investigate the effectiveness of four possible transformation methods based on different graph information including frequency of graph primitives, adjacency matrices, adjacency lists, and LGP instructions for sub-graphs. For each transformation method, we design a corresponding graph-based genetic operator to explicitly transform LGP parent’s instructions to graph information, then to the instructions of offspring resulting from breeding on graphs. We hypothesize that the effectiveness of the graph-based operators in evolution reflects the effectiveness of different graph-to-LGP genotype transformations. We conduct the investigation by a case study that applies LGP to design heuristics for dynamic scheduling problems. The results show that highlighting graph information improves LGP average performance for solving dynamic scheduling problems. This shows that reversely transforming graphs into LGP instructions based on adjacency lists is an effective way to maintain both primitive frequency and topological structures of graphs.},
+  archive      = {J_GPEM},
+  author       = {Huang, Zhixing and Mei, Yi and Zhang, Fangfang and Zhang, Mengjie and Banzhaf, Wolfgang},
+  doi          = {10.1007/s10710-023-09478-8},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-33},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Bridging directed acyclic graphs to linear representations in linear genetic programming: A case study of dynamic scheduling},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Introduction to special issue on highlights of genetic
+programming 2022 events. <em>GPEM</em>, <em>25</em>(1), 1–3. (<a
+href="https://doi.org/10.1007/s10710-023-09475-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Jakobović, Domagoj and Medvet, Eric and Pappa, Gisele L. and Trujillo, Leonardo},
+  doi          = {10.1007/s10710-023-09475-x},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-3},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Introduction to special issue on highlights of genetic programming 2022 events},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A genetic programming approach to the automated design of
+CNN models for image classification and video shorts creation.
+<em>GPEM</em>, <em>25</em>(1), 1–27. (<a
+href="https://doi.org/10.1007/s10710-024-09483-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural architecture search (NAS) is a rapidly growing field which focuses on the automated design of neural network architectures. Genetic algorithms (GAs) have been predominantly used for evolving neural network architectures. Genetic programming (GP), a variation of GAs that work in the program space rather than a solution space, has not been as well researched for NAS. This paper aims to contribute to the research into GP for NAS. Previous research in this field can be divided into two categories. In the first each program represents neural networks directly or components and parameters of neural networks. In the second category each program is a set of instructions, which when executed, produces a neural network. This study focuses on this second category which has not been well researched. Previous work has used grammatical evolution for generating these programs. This study examines canonical GP for neural network design (GPNND) for this purpose. It also evaluates a variation of GP, iterative structure-based GP (ISBGP) for evolving these programs. The study compares the performance of GAs, GPNND and ISBGP for image classification and video shorts creation. Both GPNND and ISBGP were found to outperform GAs, with ISBGP producing better results than GPNND for both applications. Both GPNND and ISBGP produced better results than previous studies employing grammatical evolution on the CIFAR-10 dataset.},
+  archive      = {J_GPEM},
+  author       = {Kapoor, Rahul and Pillay, Nelishia},
+  doi          = {10.1007/s10710-024-09483-5},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-27},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {A genetic programming approach to the automated design of CNN models for image classification and video shorts creation},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Architecture search of accurate and lightweight CNNs using
+genetic algorithm. <em>GPEM</em>, <em>25</em>(1), 1–19. (<a
+href="https://doi.org/10.1007/s10710-024-09484-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolutional neural networks (CNNs) are popularly-used in various AI fields, yet the design of CNN architectures heavily depends on domain expertise. Evolutionary neural architecture search (ENAS) methods can search for neural architectures automatically using evolutionary computation algorithms, e.g. genetic algorithm. However, most existing ENAS methods solely focus on the network accuracy, which leads to large-sized networks to be evolved and huge cost in computation resources and search time. Even though there are ENAS works using multi-objective techniques to optimize both the accuracy and size of CNNs, they are complex and time/resource-consuming. In this work, two new ENAS methods are designed, which aim to evolve both accurate and lightweight CNN architectures efficiently using genetic algorithm (GA). They are termed as GACNN_WS (GA CNN Weighted Sum) and GACNN_LE (GA CNN Local Elitism) respectively. Specifically, GACNN_WS designs a weighted-sum fitness of two items (i.e. accuracy and size) to evaluate candidate networks. GACNN_LE sets the accuracy as its fitness like most other ENAS methods, and designs a local elitism strategy to consider the network size. Thus, GACNN_WS and GACNN_LE can search for both accurate and lightweight CNNs without using multi-objective techniques. Results show that the proposed methods have better search ability than state-of-the-art NAS methods, which consume less time and generate better CNNs with lower error rates and parameter numbers for classification on CIFAR-10. Moreover, the evolved CNNs of the proposed methods generally perform better than eleven hand-designed CNNs.},
+  archive      = {J_GPEM},
+  author       = {Liang, Jiayu and Cao, Hanqi and Lu, Yaxin and Su, Mingming},
+  doi          = {10.1007/s10710-024-09484-4},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-19},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Architecture search of accurate and lightweight CNNs using genetic algorithm},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Neural network crossover in genetic algorithms using genetic
+programming. <em>GPEM</em>, <em>25</em>(1), 1–30. (<a
+href="https://doi.org/10.1007/s10710-024-09481-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The use of genetic algorithms (GAs) to evolve neural network (NN) weights has risen in popularity in recent years, particularly when used together with gradient descent as a mutation operator. However, crossover operators are often omitted from such GAs as they are seen as being highly destructive and detrimental to the performance of the GA. Designing crossover operators that can effectively be applied to NNs has been an active area of research with success limited to specific problem domains. The focus of this study is to use genetic programming (GP) to automatically evolve crossover operators that can be applied to NN weights and used in GAs. A novel GP is proposed and used to evolve both reusable and disposable crossover operators to compare their efficiency. Experiments are conducted to compare the performance of GAs using no crossover operator or a commonly used human designed crossover operator to GAs using GP evolved crossover operators. Results from experiments conducted show that using GP to evolve disposable crossover operators leads to highly effectively crossover operators that significantly improve the results obtained from the GA.},
+  archive      = {J_GPEM},
+  author       = {Pretorius, Kyle and Pillay, Nelishia},
+  doi          = {10.1007/s10710-024-09481-7},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-30},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Neural network crossover in genetic algorithms using genetic programming},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Creative collaboration with interactive evolutionary
+algorithms: A reflective exploratory design study. <em>GPEM</em>,
+<em>25</em>(1), 1–23. (<a
+href="https://doi.org/10.1007/s10710-023-09477-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Progress in AI has brought new approaches for designing products via co-creative human–computer interaction. In architecture, interior design, and industrial design, computational methods such as evolutionary algorithms support the designer’s creative process by revealing populations of computer-generated design solutions in a parametric design space. Because the benefits and shortcomings of such algorithms’ use in design processes are not yet fully understood, the authors studied the intricate interactions of an industrial designer employing an interactive evolutionary algorithm for a non-trivial creative product design task. In an in-depth report on the in-situ longitudinal experiences arising between the algorithm, human designer, and environment, from ideation to fabrication, they reflect on the algorithm’s role in inspiring design, its relationship to fixation, and the stages of the creative process in which it yielded perceived value. The paper concludes with proposals for future research into co-creative AI in design exploration and creative practice.},
+  archive      = {J_GPEM},
+  author       = {Uusitalo, Severi and Kantosalo, Anna and Salovaara, Antti and Takala, Tapio and Guckelsberger, Christian},
+  doi          = {10.1007/s10710-023-09477-9},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-23},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Creative collaboration with interactive evolutionary algorithms: A reflective exploratory design study},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A geometric semantic macro-crossover operator for
+evolutionary feature construction in regression. <em>GPEM</em>,
+<em>25</em>(1), 1–23. (<a
+href="https://doi.org/10.1007/s10710-023-09465-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evolutionary feature construction has been successfully applied to various scenarios. In particular, multi-tree genetic programming-based feature construction methods have demonstrated promising results. However, existing crossover operators in multi-tree genetic programming mainly focus on exchanging genetic materials between two trees, neglecting the interaction between multi-trees within an individual. To increase search effectiveness, we take inspiration from the geometric semantic crossover operator used in single-tree genetic programming and propose a macro geometric semantic crossover operator for multi-tree genetic programming. This operator is designed for feature construction, with the goal of generating offspring containing informative and complementary features. Our experiments on 98 regression datasets show that the proposed geometric semantic macro-crossover operator significantly improves the predictive performance of the constructed features. Moreover, experiments conducted on a state-of-the-art regression benchmark demonstrate that multi-tree genetic programming with the geometric semantic macro-crossover operator can significantly outperform all 22 machine learning algorithms on the benchmark.},
+  archive      = {J_GPEM},
+  author       = {Zhang, Hengzhe and Chen, Qi and Xue, Bing and Banzhaf, Wolfgang and Zhang, Mengjie},
+  doi          = {10.1007/s10710-023-09465-z},
+  journal      = {Genetic Programming and Evolvable Machines},
+  month        = {6},
+  number       = {1},
+  pages        = {1-23},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {A geometric semantic macro-crossover operator for evolutionary feature construction in regression},
+  volume       = {25},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

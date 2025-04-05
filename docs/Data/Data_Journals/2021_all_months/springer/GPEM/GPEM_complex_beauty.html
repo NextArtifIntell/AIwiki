@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GPEM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="gpem---27">GPEM - 27</h2>
+<ul>
+<li><details>
+<summary>
+(2021). Graph representations in genetic programming. <em>GPEM</em>,
+<em>22</em>(4), 607–636. (<a
+href="https://doi.org/10.1007/s10710-021-09413-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph representations promise several desirable properties for genetic programming (GP); multiple-output programs, natural representations of code reuse and, in many cases, an innate mechanism for neutral drift. Each graph GP technique provides a program representation, genetic operators and overarching evolutionary algorithm. This makes it difficult to identify the individual causes of empirical differences, both between these methods and in comparison to traditional GP. In this work, we empirically study the behaviour of Cartesian genetic programming (CGP), linear genetic programming (LGP), evolving graphs by graph programming and traditional GP. By fixing some aspects of the configurations, we study the performance of each graph GP method and GP in combination with three different EAs: generational, steady-state and $$(1+\lambda )$$ . In general, we find that the best choice of representation, genetic operator and evolutionary algorithm depends on the problem domain. Further, we find that graph GP methods can increase search performance on complex real-world regression problems and, particularly in combination with the ( $$1 + \lambda$$ ) EA, are significantly better on digital circuit synthesis tasks. We further show that the reuse of intermediate results by tuning LGP’s number of registers and CGP’s levels back parameter is of utmost importance and contributes significantly to better convergence of an optimization algorithm when solving complex problems that benefit from code reuse.},
+  archive      = {J_GPEM},
+  author       = {Françoso Dal Piccol Sotto, Léo and Kaufmann, Paul and Atkinson, Timothy and Kalkreuth, Roman and Porto Basgalupp, Márcio},
+  doi          = {10.1007/s10710-021-09413-9},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {607-636},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Graph representations in genetic programming},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Evolving hierarchical memory-prediction machines in
+multi-task reinforcement learning. <em>GPEM</em>, <em>22</em>(4),
+573–605. (<a href="https://doi.org/10.1007/s10710-021-09418-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A fundamental aspect of intelligent agent behaviour is the ability to encode salient features of experience in memory and use these memories, in combination with current sensory information, to predict the best action for each situation such that long-term objectives are maximized. The world is highly dynamic, and behavioural agents must generalize across a variety of environments and objectives over time. This scenario can be modeled as a partially-observable multi-task reinforcement learning problem. We use genetic programming to evolve highly-generalized agents capable of operating in six unique environments from the control literature, including OpenAI’s entire Classic Control suite. This requires the agent to support discrete and continuous actions simultaneously. No task-identification sensor inputs are provided, thus agents must identify tasks from the dynamics of state variables alone and define control policies for each task. We show that emergent hierarchical structure in the evolving programs leads to multi-task agents that succeed by performing a temporal decomposition and encoding of the problem environments in memory. The resulting agents are competitive with task-specific agents in all six environments. Furthermore, the hierarchical structure of programs allows for dynamic run-time complexity, which results in relatively efficient operation.},
+  archive      = {J_GPEM},
+  author       = {Kelly, Stephen and Voegerl, Tatiana and Banzhaf, Wolfgang and Gondro, Cedric},
+  doi          = {10.1007/s10710-021-09418-4},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {573-605},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Evolving hierarchical memory-prediction machines in multi-task reinforcement learning},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Semantically-oriented mutation operator in cartesian genetic
+programming for evolutionary circuit design. <em>GPEM</em>,
+<em>22</em>(4), 539–572. (<a
+href="https://doi.org/10.1007/s10710-021-09416-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cartesian genetic programming (CGP) represents the most efficient method for the evolution of digital circuits. Despite many successful applications, however, CGP suffers from limited scalability, especially when used for evolutionary circuit design, i.e. design of circuits from a randomly initialized population. Considering the multiplier design problem, for example, the 5 $$\times$$ 5-bit multiplier represents the most complex circuit designed by the evolution from scratch. The efficiency of CGP highly depends on the performance of the point mutation operator, however, this operator is purely stochastic. This contrasts with the recent developments in genetic programming (GP), where advanced informed approaches such as semantic-aware operators are incorporated to improve the search space exploration capability of GP. In this paper, we propose a semantically-oriented mutation operator ( $$\mathrm {SOMO}^k$$ ) suitable for the evolutionary design of combinational circuits. In contrast to standard point mutation modifying the values of the mutated genes randomly, the proposed operator uses semantics to determine the best value for each mutated gene. Compared to the common CGP and its variants, the proposed method converges on common Boolean benchmarks substantially faster while keeping the phenotype size relatively small. The successfully evolved instances presented in this paper include 10-bit parity, 10 + 10-bit adder and 5 $$\times$$ 5-bit multiplier. The most complex circuits were evolved in less than one hour with a single-thread implementation running on a common CPU.},
+  archive      = {J_GPEM},
+  author       = {Hodan, David and Mrazek, Vojtech and Vasicek, Zdenek},
+  doi          = {10.1007/s10710-021-09416-6},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {539-572},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Semantically-oriented mutation operator in cartesian genetic programming for evolutionary circuit design},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). EvoStencils: A grammar-based genetic programming approach
+for constructing efficient geometric multigrid methods. <em>GPEM</em>,
+<em>22</em>(4), 511–537. (<a
+href="https://doi.org/10.1007/s10710-021-09412-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For many systems of linear equations that arise from the discretization of partial differential equations, the construction of an efficient multigrid solver is challenging. Here we present EvoStencils, a novel approach for optimizing geometric multigrid methods with grammar-guided genetic programming, a stochastic program optimization technique inspired by the principle of natural evolution. A multigrid solver is represented as a tree of mathematical expressions that we generate based on a formal grammar. The quality of each solver is evaluated in terms of convergence and compute performance by automatically generating an optimized implementation using code generation that is then executed on the target platform to measure all relevant performance metrics. Based on this, a multi-objective optimization is performed using a non-dominated sorting-based selection. To evaluate a large number of solvers in parallel, they are distributed to multiple compute nodes. We demonstrate the effectiveness of our implementation by constructing geometric multigrid solvers that are able to outperform hand-crafted methods for Poisson’s equation and a linear elastic boundary value problem with up to 16 million unknowns on multi-core processors with Ivy Bridge and Broadwell microarchitecture.},
+  archive      = {J_GPEM},
+  author       = {Schmitt, Jonas and Kuckuk, Sebastian and Köstler, Harald},
+  doi          = {10.1007/s10710-021-09412-w},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {511-537},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {EvoStencils: A grammar-based genetic programming approach for constructing efficient geometric multigrid methods},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Relationships between parent selection methods, looping
+constructs, and success rate in genetic programming. <em>GPEM</em>,
+<em>22</em>(4), 495–509. (<a
+href="https://doi.org/10.1007/s10710-021-09417-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In genetic programming, parent selection methods are employed to select promising candidate individuals from the current generation that can be used as parents for the next generation. These algorithms can affect, sometimes indirectly, whether or not individuals containing certain programming constructs, such as loops, are selected and propagated in the population. This in turn can affect the chances that the population will produce a solution to the problem. In this paper, we present the results of the experiments using three different parent selection methods on four benchmark program synthesis problems. We analyze the relationships between the selection methods, the numbers of individuals in the population that make use of loops, and success rates. The results show that the support for the selection of specialists is associated both with the use of loops in evolving populations and with higher success rates.},
+  archive      = {J_GPEM},
+  author       = {Saini, Anil Kumar and Spector, Lee},
+  doi          = {10.1007/s10710-021-09417-5},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {495-509},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Relationships between parent selection methods, looping constructs, and success rate in genetic programming},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A semantic genetic programming framework based on dynamic
+targets. <em>GPEM</em>, <em>22</em>(4), 463–493. (<a
+href="https://doi.org/10.1007/s10710-021-09419-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic GP is a promising branch of GP that introduces semantic awareness during genetic evolution to improve various aspects of GP. This paper presents a new Semantic GP approach based on Dynamic Target (SGP-DT) that divides the search problem into multiple GP runs. The evolution in each run is guided by a new (dynamic) target based on the residual errors of previous runs. To obtain the final solution, SGP-DT combines the solutions of each run using linear scaling. SGP-DT presents a new methodology to produce the offspring that does not rely on the classic crossover. The synergy between such a methodology and linear scaling yields final solutions with low approximation error and computational cost. We evaluate SGP-DT on eleven well-known data sets and compare with $$\epsilon$$ -lexicase, a state-of-the-art evolutionary technique, and seven Machine Learning techniques. SGP-DT achieves small RMSE values, on average 23.19\% smaller than the one of $$\epsilon$$ -lexicase. Tuning SGP-DT ’s configuration greatly reduces the computational cost while still obtaining competitive results.},
+  archive      = {J_GPEM},
+  author       = {Ruberto, Stefano and Terragni, Valerio and Moore, Jason H.},
+  doi          = {10.1007/s10710-021-09419-3},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {463-493},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {A semantic genetic programming framework based on dynamic targets},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Evolutionary algorithms for designing reversible cellular
+automata. <em>GPEM</em>, <em>22</em>(4), 429–461. (<a
+href="https://doi.org/10.1007/s10710-021-09415-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reversible Cellular Automata (RCA) are a particular kind of shift-invariant transformations characterized by dynamics composed only of disjoint cycles. They have many applications in the simulation of physical systems, cryptography, and reversible computing. In this work, we formulate the search of a specific class of RCA – namely, those whose local update rules are defined by conserved landscapes – as an optimization problem to be tackled with Genetic Algorithms (GA) and Genetic Programming (GP). In particular, our experimental investigation revolves around three different research questions, which we address through a single-objective, a multi-objective, and a lexicographic approach. In the single-objective approach, we observe that GP can already find an optimal solution in the initial population. This indicates that evolutionary algorithms are not needed when evolving only the reversibility of such CA, and a more efficient method is to generate at random syntactic trees that define the local update rule. On the other hand, GA and GP proved to be quite effective in the multi-objective and lexicographic approach to (1) discover a trade-off between the reversibility and the Hamming weight of conserved landscape rules, and (2) observe that conserved landscape CA cannot be used in symmetric cryptography because their Hamming weight (and thus their nonlinearity) is too low.},
+  archive      = {J_GPEM},
+  author       = {Mariot, Luca and Picek, Stjepan and Jakobovic, Domagoj and Leporati, Alberto},
+  doi          = {10.1007/s10710-021-09415-7},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {429-461},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Evolutionary algorithms for designing reversible cellular automata},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Evolving continuous optimisers from scratch. <em>GPEM</em>,
+<em>22</em>(4), 395–428. (<a
+href="https://doi.org/10.1007/s10710-021-09414-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work uses genetic programming to explore the space of continuous optimisers, with the goal of discovering novel ways of doing optimisation. In order to keep the search space broad, the optimisers are evolved from scratch using Push, a Turing-complete, general-purpose, language. The resulting optimisers are found to be diverse, and explore their optimisation landscapes using a variety of interesting, and sometimes unusual, strategies. Significantly, when applied to problems that were not seen during training, many of the evolved optimisers generalise well, and often outperform existing optimisers. This supports the idea that novel and effective forms of optimisation can be discovered in an automated manner. This paper also shows that pools of evolved optimisers can be hybridised to further increase their generality, leading to optimisers that perform robustly over a broad variety of problem types and sizes.},
+  archive      = {J_GPEM},
+  author       = {Lones, Michael A.},
+  doi          = {10.1007/s10710-021-09414-8},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {395-428},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Evolving continuous optimisers from scratch},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Highlights of genetic programming 2020 events.
+<em>GPEM</em>, <em>22</em>(4), 391–393. (<a
+href="https://doi.org/10.1007/s10710-021-09421-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Nicolau, Miguel},
+  doi          = {10.1007/s10710-021-09421-9},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {4},
+  pages        = {391-393},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Highlights of genetic programming 2020 events},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Introducing design automation for quantum computing, alwin
+zulehner and robert wille. ISBN 978-3-030-41753-6, 2020, springer
+international publishing. 222 pages, 51 b/w illustrations, 14
+illustrations in colour. <em>GPEM</em>, <em>22</em>(3), 387–389. (<a
+href="https://doi.org/10.1007/s10710-021-09407-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Harper, Robin},
+  doi          = {10.1007/s10710-021-09407-7},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {3},
+  pages        = {387-389},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Introducing design automation for quantum computing, alwin zulehner and robert wille. ISBN 978-3-030-41753-6, 2020, springer international publishing. 222 pages, 51 b/w illustrations, 14 illustrations in colour},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Software review: Pony GE2. <em>GPEM</em>, <em>22</em>(3),
+383–385. (<a href="https://doi.org/10.1007/s10710-021-09409-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Vu, Tuong Manh},
+  doi          = {10.1007/s10710-021-09409-5},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {3},
+  pages        = {383-385},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Software review: Pony GE2},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Symbolic-regression boosting. <em>GPEM</em>, <em>22</em>(3),
+357–381. (<a href="https://doi.org/10.1007/s10710-021-09400-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modifying standard gradient boosting by replacing the embedded weak learner in favor of a strong(er) one, we present SyRBo: symbolic-regression boosting. Experiments over 98 regression datasets show that by adding a small number of boosting stages—between 2 and 5—to a symbolic regressor, statistically significant improvements can often be attained. We note that coding SyRBo on top of any symbolic regressor is straightforward, and the added cost is simply a few more evolutionary rounds. SyRBo is essentially a simple add-on that can be readily added to an extant symbolic regressor, often with beneficial results.},
+  archive      = {J_GPEM},
+  author       = {Sipper, Moshe and Moore, Jason H.},
+  doi          = {10.1007/s10710-021-09400-0},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {3},
+  pages        = {357-381},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Symbolic-regression boosting},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Tag-based regulation of modules in genetic programming
+improves context-dependent problem solving. <em>GPEM</em>,
+<em>22</em>(3), 325–355. (<a
+href="https://doi.org/10.1007/s10710-021-09406-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce and experimentally demonstrate the utility of tag-based genetic regulation, a new genetic programming (GP) technique that allows programs to dynamically adjust which code modules to express.Tags are evolvable labels that provide a flexible mechanism for referencing code modules. Tag-based genetic regulation extends existing tag-based naming schemes to allow programs to “promote” and “repress” code modules in order to alter expression patterns. This extension allows evolution to structure a program as a gene regulatory network where modules are regulated based on instruction executions. We demonstrate the functionality of tag-based regulation on a range of program synthesis problems. We find that tag-based regulation improves problem-solving performance on context-dependent problems; that is, problems where programs must adjust how they respond to current inputs based on prior inputs. Indeed, the system could not evolve solutions to some context-dependent problems until regulation was added. Our implementation of tag-based genetic regulation is not universally beneficial, however. We identify scenarios where the correct response to a particular input never changes, rendering tag-based regulation an unneeded functionality that can sometimes impede adaptive evolution. Tag-based genetic regulation broadens our repertoire of techniques for evolving more dynamic genetic programs and can easily be incorporated into existing tag-enabled GP systems.},
+  archive      = {J_GPEM},
+  author       = {Lalejini, Alexander and Moreno, Matthew Andres and Ofria, Charles},
+  doi          = {10.1007/s10710-021-09406-8},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {3},
+  pages        = {325-355},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Tag-based regulation of modules in genetic programming improves context-dependent problem solving},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Genetic programming-based regression for temporal data.
+<em>GPEM</em>, <em>22</em>(3), 297–324. (<a
+href="https://doi.org/10.1007/s10710-021-09404-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Various machine learning techniques exist to perform regression on temporal data with concept drift occurring. However, there are numerous nonstationary environments where these techniques may fail to either track or detect the changes. This study develops a genetic programming-based predictive model for temporal data with a numerical target that tracks changes in a dataset due to concept drift. When an environmental change is evident, the proposed algorithm reacts to the change by clustering the data and then inducing nonlinear models that describe generated clusters. Nonlinear models become terminal nodes of genetic programming model trees. Experiments were carried out using seven nonstationary datasets and the obtained results suggest that the proposed model yields high adaptation rates and accuracy to several types of concept drifts. Future work will consider strengthening the adaptation to concept drift and the fast implementation of genetic programming on GPUs to provide fast learning for high-speed temporal data.},
+  archive      = {J_GPEM},
+  author       = {Kuranga, Cry and Pillay, Nelishia},
+  doi          = {10.1007/s10710-021-09404-w},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {3},
+  pages        = {297-324},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Genetic programming-based regression for temporal data},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Feature extraction by grammatical evolution for one-class
+time series classification. <em>GPEM</em>, <em>22</em>(3), 267–295. (<a
+href="https://doi.org/10.1007/s10710-021-09403-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When dealing with a new time series classification problem, modellers do not know in advance which features could enable the best classification performance. We propose an evolutionary algorithm based on grammatical evolution to attain a data-driven feature-based representation of time series with minimal human intervention. The proposed algorithm can select both the features to extract and the sub-sequences from which to extract them. These choices not only impact classification performance but also allow understanding of the problem at hand. The algorithm is tested on 30 problems outperforming several benchmarks. Finally, in a case study related to subject authentication, we show how features learned for a given subject are able to generalise to subjects unseen during the extraction phase.},
+  archive      = {J_GPEM},
+  author       = {Mauceri, Stefano and Sweeney, James and Nicolau, Miguel and McDermott, James},
+  doi          = {10.1007/s10710-021-09403-x},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {3},
+  pages        = {267-295},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Feature extraction by grammatical evolution for one-class time series classification},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Efficiency improvement of genetic network programming by
+tasks decomposition in different types of environments. <em>GPEM</em>,
+<em>22</em>(2), 229–266. (<a
+href="https://doi.org/10.1007/s10710-021-09402-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Genetic Network Programming (GNP) is a relatively recently proposed evolutionary algorithm which is an extension of Genetic Programming (GP). However, individuals in GNP have graph structures. This algorithm is mainly used in decision making process of agent control problems. It uses a graph to make a flowchart and use this flowchart as a decision making strategy that an agent must follow to achieve the goal. One of the most important weaknesses of this algorithm is that crossover and mutation break the structures of individuals during the evolution process. Although it can lead to better structures, this may break suitable ones and increase the time needed to achieve optimal solutions. Meanwhile, all the researches in this field are dedicated to test GNP in deterministic environments. However, most of the real-world problems are stochastic and this is another issue that should be addressed. In this research, we try to find a mechanism that GNP shows better performance in stochastic environments. In order to achieve this goal, the evolution process of GNP was modified. In the proposed method, the experience of promising individuals was saved in consecutive generations. Then, to generate offspring in some predefined number of generations, the saved experiences were used instead of crossover and mutation. The experimental results of the proposed method were compared with GNP and some of its versions in both deterministic and stochastic environments. The results demonstrate the superiority of our proposed method in both deterministic and stochastic environments.},
+  archive      = {J_GPEM},
+  author       = {Roshanzamir, Mohamad and Palhang, Maziar and Mirzaei, Abdolreza},
+  doi          = {10.1007/s10710-021-09402-y},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {2},
+  pages        = {229-266},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Efficiency improvement of genetic network programming by tasks decomposition in different types of environments},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). TPOT-NN: Augmenting tree-based automated machine learning
+with neural network estimators. <em>GPEM</em>, <em>22</em>(2), 207–227.
+(<a href="https://doi.org/10.1007/s10710-021-09401-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automated machine learning (AutoML) and artificial neural networks (ANNs) have revolutionized the field of artificial intelligence by yielding incredibly high-performing models to solve a myriad of inductive learning tasks. In spite of their successes, little guidance exists on when to use one versus the other. Furthermore, relatively few tools exist that allow the integration of both AutoML and ANNs in the same analysis to yield results combining both of their strengths. Here, we present TPOT-NN—a new extension to the tree-based AutoML software TPOT—and use it to explore the behavior of automated machine learning augmented with neural network estimators (AutoML+NN), particularly when compared to non-NN AutoML in the context of simple binary classification on a number of public benchmark datasets. Our observations suggest that TPOT-NN is an effective tool that achieves greater classification accuracy than standard tree-based AutoML on some datasets, with no loss in accuracy on others. We also provide preliminary guidelines for performing AutoML+NN analyses, and recommend possible future directions for AutoML+NN methods research, especially in the context of TPOT.},
+  archive      = {J_GPEM},
+  author       = {Romano, Joseph D. and Le, Trang T. and Fu, Weixuan and Moore, Jason H.},
+  doi          = {10.1007/s10710-021-09401-z},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {2},
+  pages        = {207-227},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {TPOT-NN: Augmenting tree-based automated machine learning with neural network estimators},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). An enhanced huffman-PSO based image optimization algorithm
+for image steganography. <em>GPEM</em>, <em>22</em>(2), 189–205. (<a
+href="https://doi.org/10.1007/s10710-020-09396-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is crucial in the field of image steganography to find an algorithm for hiding information by using various combinations of compression techniques. The primary factors in this research are maximizing the capacity and improving the quality of the image. The image quality cannot be compromised up to a certain level as it breaks the concept of steganography by getting distorted visibly. The second primary factor is maximizing the data-carrying/embedding capacity, which makes the use of this technique more efficient. In this paper, we are proposing an image steganography tool by using Huffman Encoding and Particle Swarm Optimization, which will improve the performance of the information hiding scheme and improve overall efficiency. The combinational technique of Huffman PSO not only offers higher information embedment capabilities but also maintains the image quality. The experimental analysis and results on cover images along with different sizes of secret messages validate that the proposed HPSO scheme has superior results using parameters Peak-Signal-to-Noise-Ratio, Mean Square Error, Bit Error Rate, and Structural Similarity Index. It is also robust against statistical attacks.},
+  archive      = {J_GPEM},
+  author       = {Sharma, Neha and Batra, Usha},
+  doi          = {10.1007/s10710-020-09396-z},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {2},
+  pages        = {189-205},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {An enhanced huffman-PSO based image optimization algorithm for image steganography},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Discovering novel memory cell designs for sentiment analysis
+on tweets. <em>GPEM</em>, <em>22</em>(2), 147–187. (<a
+href="https://doi.org/10.1007/s10710-020-09395-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Designing a Recurrent Neural Network to extract sentiment from tweets is a very hard task. When using memory cells in their design, the task becomes even harder due to the large number of design alternatives and the costly process of finding a performant design. In this paper we propose an original evolutionary algorithm to address the hard challenge of discovering novel Recurrent Neural Network memory cell designs for sentiment analysis on tweets. We used three different tasks to discover and evaluate the designs. We conducted experiments and the results show that the best obtained designs surpass the baselines—which are the most popular cells, LSTM and GRU. During the discovery process we evaluated roughly 17,000 cell designs. The selected winning candidate outperformed the others for the overall sentiment analysis problem, hence showing generality. We made the winner selection by using the cumulated accuracies on all three considered tasks.},
+  archive      = {J_GPEM},
+  author       = {Nistor, Sergiu Cosmin and Moca, Mircea and Nistor, Răzvan Liviu},
+  doi          = {10.1007/s10710-020-09395-0},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {2},
+  pages        = {147-187},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Discovering novel memory cell designs for sentiment analysis on tweets},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Tim taylor and alan dorin: Rise of the
+self-replicators—early visions of machines, AI and robots that can
+reproduce and evolve. <em>GPEM</em>, <em>22</em>(1), 141–145. (<a
+href="https://doi.org/10.1007/s10710-021-09398-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Nichele, Stefano},
+  doi          = {10.1007/s10710-021-09398-5},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {141-145},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Tim taylor and alan dorin: Rise of the self-replicators—early visions of machines, AI and robots that can reproduce and evolve},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Virginia dignum: Responsible artificial intelligence: How to
+develop and use AI in a responsible way. <em>GPEM</em>, <em>22</em>(1),
+137–139. (<a href="https://doi.org/10.1007/s10710-020-09394-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Gold, Nicolas E.},
+  doi          = {10.1007/s10710-020-09394-1},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {137-139},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Virginia dignum: responsible artificial intelligence: how to develop and use AI in a responsible way},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Fuzzy cognitive maps for decision-making in dynamic
+environments. <em>GPEM</em>, <em>22</em>(1), 101–135. (<a
+href="https://doi.org/10.1007/s10710-020-09393-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper describes a new modification of fuzzy cognitive maps (FCMs) for the modeling of autonomous entities that make decisions in a dynamic environment. The paper offers a general design for an FCM adjusted for the decision-making of autonomous agents through the categorization of its concepts into three different classes according to their purpose in the map: Needs, Activities, and States (FCM-NAS). The classification enables features supporting decision-making, such as the easy processing of input from sensors, faster system reactions, the modeling of inner needs, the adjustable frequency of computations in a simulation, and self-evaluation of the FCM-NAS that supports unsupervised evolutionary learning. This paper presents two use cases of the proposed extension to demonstrate its abilities. It was implemented into an agent-based artificial life model, where it took advantage of all the above features in the competition for resources, natural selection, and evolution. Then, it was used as decision-making for human activity simulation in an ambient intelligence model, where it is combined with scenario-oriented mechanism proving its modularity.},
+  archive      = {J_GPEM},
+  author       = {Nachazel, Tomas},
+  doi          = {10.1007/s10710-020-09393-2},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {101-135},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Fuzzy cognitive maps for decision-making in dynamic environments},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Choosing function sets with better generalisation
+performance for symbolic regression models. <em>GPEM</em>,
+<em>22</em>(1), 73–100. (<a
+href="https://doi.org/10.1007/s10710-020-09391-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Supervised learning by means of Genetic Programming (GP) aims at the evolutionary synthesis of a model that achieves a balance between approximating the target function on the training data and generalising on new data. The model space searched by the Evolutionary Algorithm is populated by compositions of primitive functions defined in a function set. Since the target function is unknown, the choice of function set’s constituent elements is primarily guided by the makeup of function sets traditionally used in the GP literature. Our work builds upon previous research of the effects of protected arithmetic operators (i.e. division, logarithm, power) on the output value of an evolved model for input data points not encountered during training. The scope is to benchmark the approximation/generalisation of models evolved using different function set choices across a range of 43 symbolic regression problems. The salient outcomes are as follows. Firstly, Koza’s protected operators of division and exponentiation have a detrimental effect on generalisation, and should therefore be avoided. This result is invariant of the use of moderately sized validation sets for model selection. Secondly, the performance of the recently introduced analytic quotient operator is comparable to that of the sinusoidal operator on average, with their combination being advantageous to both approximation and generalisation. These findings are consistent across two different system implementations, those of standard expression-tree GP and linear Grammatical Evolution. We highlight that this study employed very large test sets, which create confidence when benchmarking the effect of different combinations of primitive functions on model generalisation. Our aim is to encourage GP researchers and practitioners to use similar stringent means of assessing generalisation of evolved models where possible, and also to avoid certain primitive functions that are known to be inappropriate.},
+  archive      = {J_GPEM},
+  author       = {Nicolau, Miguel and Agapitos, Alexandros},
+  doi          = {10.1007/s10710-020-09391-4},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {73-100},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Choosing function sets with better generalisation performance for symbolic regression models},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Stock selection heuristics for performing frequent intraday
+trading with genetic programming. <em>GPEM</em>, <em>22</em>(1), 35–72.
+(<a href="https://doi.org/10.1007/s10710-020-09390-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intraday trading attempts to obtain a profit from the microstructure implicit in price data. Intraday trading implies many more transactions per stock compared to long term buy-and-hold strategies. As a consequence, transaction costs will have a more significant impact on the profitability. Furthermore, the application of existing long term portfolio selection algorithms for intraday trading cannot guarantee optimal stock selection. This implies that intraday trading strategies may require a different approach to stock selection for daily portfolios. In this work, we assume a symbiotic genetic programming framework that simultaneously coevolves the decision trees and technical indicators to generate trading signals. We generalize this approach to identify specific stocks for intraday trading using stock ranking heuristics: Moving Sharpe ratio and a Moving Average of Daily Returns. Specifically, the trading scenario adopted by this work assumes that a bag of available stocks exist. Our agent then has to both identify which subset of stocks to trade in the next trading day, and the specific buy-hold-sell decisions for each selected stock during real-time trading for the duration of the intraday period. A benchmarking comparison of the proposed ranking heuristics with stock selection performed using the well known Kelly Criterion is conducted and a strong preference for the proposed Moving Sharpe ratio demonstrated. Moreover, portfolios ranked by both the Moving Sharpe ratio and a Moving Average of Daily Returns perform significantly better than any of the comparator methods (buy-and-hold strategy, investment in the full set of 86 stocks, portfolios built from random stock selection and Kelly Criterion).},
+  archive      = {J_GPEM},
+  author       = {Loginov, Alexander and Heywood, Malcolm and Wilson, Garnett},
+  doi          = {10.1007/s10710-020-09390-5},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {35-72},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Stock selection heuristics for performing frequent intraday trading with genetic programming},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Benchmarking state-of-the-art symbolic regression
+algorithms. <em>GPEM</em>, <em>22</em>(1), 5–33. (<a
+href="https://doi.org/10.1007/s10710-020-09387-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Symbolic regression (SR) is a powerful method for building predictive models from data without assuming any model structure. Traditionally, genetic programming (GP) was used as the SR engine. However, for these purely evolutionary methods it was quite hard to even accommodate the function to the range of the data and the training was consequently inefficient and slow. Recently, several SR algorithms emerged which employ multiple linear regression. This allows the algorithms to create models with relatively small error right from the beginning of the search. Such algorithms are claimed to be by orders of magnitude faster than SR algorithms based on classic GP. However, a systematic comparison of these algorithms on a common set of problems is still missing and there is no basis on which to decide which algorithm to use. In this paper we conceptually and experimentally compare several representatives of such algorithms: GPTIPS, FFX, and EFS. We also include GSGP-Red, which is an enhanced version of geometric semantic genetic programming, an important algorithm in the field of SR. They are applied as off-the-shelf, ready-to-use techniques, mostly using their default settings. The methods are compared on several synthetic SR benchmark problems as well as real-world ones ranging from civil engineering to aerodynamics and acoustics. Their performance is also related to the performance of three conventional machine learning algorithms: multiple regression, random forests and support vector regression. The results suggest that across all the problems, the algorithms have comparable performance. We provide basic recommendations to the user regarding the choice of the algorithm.},
+  archive      = {J_GPEM},
+  author       = {Žegklitz, Jan and Pošík, Petr},
+  doi          = {10.1007/s10710-020-09387-0},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {5-33},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Benchmarking state-of-the-art symbolic regression algorithms},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021a). Acknowledgement to reviewers (2020). <em>GPEM</em>,
+<em>22</em>(1), 3. (<a
+href="https://doi.org/10.1007/s10710-021-09397-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Spector, Lee},
+  doi          = {10.1007/s10710-021-09397-6},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {3},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Acknowledgement to reviewers (2020)},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021b). Editorial introduction. <em>GPEM</em>, <em>22</em>(1), 1–2.
+(<a href="https://doi.org/10.1007/s10710-021-09399-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_GPEM},
+  author       = {Spector, Lee},
+  doi          = {10.1007/s10710-021-09399-4},
+  journal      = {Genetic Programming and Evolvable Machines},
+  number       = {1},
+  pages        = {1-2},
+  shortjournal = {Genet. Program. Evol. Mach.},
+  title        = {Editorial introduction},
+  volume       = {22},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

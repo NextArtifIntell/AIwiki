@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Constr_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="constr---13">Constr - 13</h2>
+<ul>
+<li><details>
+<summary>
+(2020). A new constraint programming model and solving for the
+cyclic hoist scheduling problem. <em>Constr</em>, <em>25</em>(3),
+319–337. (<a href="https://doi.org/10.1007/s10601-020-09316-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The cyclic hoist scheduling problem (CHSP) is a well-studied optimisation problem due to its importance in industry. Despite the wide range of solving techniques applied to the CHSP and its variants, the models have remained complicated and inflexible, or have failed to scale up with larger problem instances. This article re-examines modelling of the CHSP and proposes a new simple, flexible constraint programming formulation. We compare current state-of-the-art solving technologies on this formulation, and show that modelling in a high-level constraint language, MiniZinc, leads to both a simple, generic model and to computational results that outperform the state of the art. We further demonstrate that combining integer programming and lazy clause generation, using the multiple cores of modern processors, has potential to improve over either solving approach alone.},
+  archive      = {J_Constr},
+  author       = {Wallace, Mark and Yorke-Smith, Neil},
+  doi          = {10.1007/s10601-020-09316-z},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {319-337},
+  shortjournal = {Constraints},
+  title        = {A new constraint programming model and solving for the cyclic hoist scheduling problem},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Power of pre-processing: Production scheduling with variable
+energy pricing and power-saving states. <em>Constr</em>, <em>25</em>(3),
+300–318. (<a href="https://doi.org/10.1007/s10601-020-09317-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses a single machine scheduling problem with non-preemptive jobs to minimize the total electricity cost. Two latest trends in the area of the energy-aware scheduling are considered, namely the variable energy pricing and the power-saving states of a machine. Scheduling of the jobs and the machine states are considered jointly to achieve the highest possible savings. Although this problem has been previously addressed in the literature, the reported results of the state-of-the-art method show that the optimal solutions can be found only for instances with up to 35 jobs and 209 intervals within 3 hours of computation. We propose an elegant pre-processing technique called SPACES for computing the optimal switching of the machine states with respect to the energy costs. The optimal switchings are associated with the shortest paths in an interval-state graph that describes all possible transitions between the machine states in time. This idea allows us to implement efficient integer linear programming and constraint programming models of the problem while preserving the optimality. The efficiency of the models lies in the simplification of the optimal switching representation. The results of the experiments show that our approach outperforms the existing state-of-the-art exact method. On a set of benchmark instances with varying sizes and different state transition graphs, the proposed approach finds the optimal solutions even for the large instances with up to 190 jobs and 1277 intervals within an hour of computation.},
+  archive      = {J_Constr},
+  author       = {Benedikt, Ondřej and Módos, István and Hanzálek, Zdeněk},
+  doi          = {10.1007/s10601-020-09317-y},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {300-318},
+  shortjournal = {Constraints},
+  title        = {Power of pre-processing: Production scheduling with variable energy pricing and power-saving states},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Introduction to the CPAIOR 2020 fast track issue.
+<em>Constr</em>, <em>25</em>(3), 298–299. (<a
+href="https://doi.org/10.1007/s10601-020-09319-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_Constr},
+  author       = {Hebrard, Emmanuel and Musliu, Nysret},
+  doi          = {10.1007/s10601-020-09319-w},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {298-299},
+  shortjournal = {Constraints},
+  title        = {Introduction to the CPAIOR 2020 fast track issue},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Exact and flexible solution approach to a critical chain
+project management problem. <em>Constr</em>, <em>25</em>(3), 280–297.
+(<a href="https://doi.org/10.1007/s10601-020-09314-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An important component in critical chain project management is a scheduling methodology to support resource constraints. Given task duration estimates and precedence relations along with resource designation for each task, one seeks to adhere to a target due date as well as to shorten the estimated makespan. Key are two types of time buffers to absorb potential delays accumulated from preceding tasks, and this makes the problem complex and hard to solve. The “good enough” strategy has been prevalent in research, focusing on the development of heuristic solution methods. There has been only one attempt to minimize estimated makespan, wherein discrete algebra is utilized. The method is, however, inflexible as you must compose a search space. Even the slightest extension requires a major recast of the approach. Hence, we develop a new approach to find an exact optimal solution in an efficient manner. Given a project instance, an optimization problem is constructed as a mixed-integer linear-program, for which an exact solution can be found using an off-the-shelf solver. While the problem is NP hard, larger-scale project instances, including up to 30 tasks, can be solved within a practical time standard. Extension with respect to resource assignment is easily accomplished. Experimental results highlight the significance of the developed framework.},
+  archive      = {J_Constr},
+  author       = {Goto, Hiroyuki and Murray, Alan T.},
+  doi          = {10.1007/s10601-020-09314-1},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {280-297},
+  shortjournal = {Constraints},
+  title        = {Exact and flexible solution approach to a critical chain project management problem},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On certifying the UNSAT result of dynamic
+symmetry-handling-based SAT solvers. <em>Constr</em>, <em>25</em>(3),
+251–279. (<a href="https://doi.org/10.1007/s10601-020-09313-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {SAT solvers are nowadays used in many applications where the UNSAT result has a special meaning that is at time critical. SAT instances sometimes exhibit symmetries which can be exploited to produce short proofs that would have been exponential for resolution alone. However, current unsatisfiability proof formats do not support symmetrical learning on which dynamic symmetry handling is based. We present in this paper a new proof format called DSRUP (Delete Symmetry Reverse Unit Propagation) which is an extension of DRUP (Delete Reverse Unit Propagation) and that is devised to certify UNSAT claims of SAT solvers implementing symmetrical learning. We first show that the problem of verifying symmetries of a CNF formula is Turing NP-hard. This led us to the definition of a new type of symmetry called RUP-symmetry, a class of symmetries more general than syntactic symmetries that can be efficiently checked. The DSRUP proof format is formally described and a verification algorithm is provided to validate DSRUP certificates. Finally, we provide experimental results obtained with the state-of-the-art dynamic symmetry-handling-based SAT solvers on unsatisfiable symmetric benchmarks drawn from SAT competitions, using an implementation of the DSRUP checking algorithm.},
+  archive      = {J_Constr},
+  author       = {Tchinda, Rodrigue Konan and Djamegni, Clémentin Tayou},
+  doi          = {10.1007/s10601-020-09313-2},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {251-279},
+  shortjournal = {Constraints},
+  title        = {On certifying the UNSAT result of dynamic symmetry-handling-based SAT solvers},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Learning optimal decision trees using constraint
+programming. <em>Constr</em>, <em>25</em>(3), 226–250. (<a
+href="https://doi.org/10.1007/s10601-020-09312-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decision trees are among the most popular classification models in machine learning. Traditionally, they are learned using greedy algorithms. However, such algorithms pose several disadvantages: it is difficult to limit the size of the decision trees while maintaining a good classification accuracy, and it is hard to impose additional constraints on the models that are learned. For these reasons, there has been a recent interest in exact and flexible algorithms for learning decision trees. In this paper, we introduce a new approach to learn decision trees using constraint programming. Compared to earlier approaches, we show that our approach obtains better performance, while still being sufficiently flexible to allow for the inclusion of constraints. Our approach builds on three key building blocks: (1) the use of AND/OR search, (2) the use of caching, (3) the use of the CoverSize global constraint proposed recently for the problem of itemset mining. This allows our constraint programming approach to deal in a much more efficient way with the decompositions in the learning problem.},
+  archive      = {J_Constr},
+  author       = {Verhaeghe, Hélène and Nijssen, Siegfried and Pesant, Gilles and Quimper, Claude-Guy and Schaus, Pierre},
+  doi          = {10.1007/s10601-020-09312-3},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {226-250},
+  shortjournal = {Constraints},
+  title        = {Learning optimal decision trees using constraint programming},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Efficient multiple constraint acquisition. <em>Constr</em>,
+<em>25</em>(3), 180–225. (<a
+href="https://doi.org/10.1007/s10601-020-09311-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Constraint acquisition systems such as QuAcq and MultiAcq can assist non-expert users to model their problems as constraint networks by classifying (partial) examples as positive or negative. For each negative example, the former focuses on one constraint of the target network, while the latter can learn a maximum number of constraints. Two bottlenecks of the acquisition process where both these algorithms encounter problems are the large number of queries required to reach convergence, and the high cpu times needed to generate queries, especially near convergence. In this paper we propose algorithmic and heuristic methods to deal with both these issues. We first describe an algorithm, called MQuAcq, that blends the main idea of MultiAcq into QuAcq resulting in a method that learns as many constraints as MultiAcq does after a negative example, but with a lower complexity. A detailed theoretical analysis of the proposed algorithm is also presented. Then we turn our attention to query generation which is a significant but rather overlooked part of the acquisition process. We describe how query generation in a typical constraint acquisition system operates, and we propose heuristics for improving its efficiency. Experiments from various domains demonstrate that our resulting algorithm that integrates all the new techniques does not only generate considerably fewer queries than QuAcq and MultiAcq, but it is also by far faster than both of them, in average query generation time as well as in total run time, and also largely alleviates the premature convergence problem.},
+  archive      = {J_Constr},
+  author       = {Tsouros, Dimosthenis C. and Stergiou, Kostas},
+  doi          = {10.1007/s10601-020-09311-4},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {180-225},
+  shortjournal = {Constraints},
+  title        = {Efficient multiple constraint acquisition},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). The flexible and real-time commute trip sharing problems.
+<em>Constr</em>, <em>25</em>(3), 160–179. (<a
+href="https://doi.org/10.1007/s10601-020-09310-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Commute Trip Sharing Problem (CTSP) was introduced to remove parking pressure on cities, as well as corporate and university campuses. Its goal is to reduce the number of vehicles being used for daily commuting activities. Given a set of inbound and outbound requests, which consists of origin and destination pairs and their departure and return times, the CTSP assigns riders and a driver, as well as inbound and outbound routes, to each vehicle in order to satisfy time-window, capacity, and ride-duration constraints. The CTSP guarantees a ride back for each rider, which is a critical aspect of such a ride-sharing system. This paper generalizes the CTSP to account for uncertainties about the return trip. Each rider is assumed to have a return time specified by a distribution (learned from historical data) and, each day, a percentage of riders will want to preprone or postpone their return trip to accommodate some schedule changes. The paper proposes two generalizations of the CTSP: the Flexible CTSP (FCTSP) and the Real-Time CTSP (RT-CTSP). In the FCTSP, riders must confirm their final return times by a fixed deadline. In the RT-CTSP, riders confirm their new return times in real time with some prior notice. The paper proposes a two-step approach to address the FCTSP and the RT-CTSP. The first step uses a scenario-based stochastic program to choose the drivers and the morning routes in order to maximize the robustness of the driver assignment. The second step reoptimizes the plan at the fixed deadline or in real time once the return times are confirmed. Experiments on a real-world dataset of commute trips demonstrate the effectiveness of the algorithm in generating robust plans and reveal a trade-off between vehicle reduction and plan robustness as the robust plans tend to be conservative. A method is then proposed to evaluate this trade-off using the per-unit price ratio of vehicle increase to uncovered riders.},
+  archive      = {J_Constr},
+  author       = {Hasan, Mohd. Hafiz and Van Hentenryck, Pascal},
+  doi          = {10.1007/s10601-020-09310-5},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {160-179},
+  shortjournal = {Constraints},
+  title        = {The flexible and real-time commute trip sharing problems},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Non-local configuration of component interfaces by
+constraint satisfaction. <em>Constr</em>, <em>25</em>(3), 121–159. (<a
+href="https://doi.org/10.1007/s10601-020-09309-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Service-oriented computing is the paradigm that utilises services as fundamental elements for developing applications. Service composition, where data consistency becomes especially important, is still a key challenge for service-oriented computing. We maintain that there is one aspect of Web service communication on the data conformance side that has so far escaped the researchers attention. Aggregation of networked services gives rise to long pipelines, or quasi-pipeline structures, where there is a profitable form of inheritance called flow inheritance. In its presence, interface reconciliation ceases to be a local procedure, and hence it requires distributed constraint satisfaction of a special kind. We propose a constraint language for this, and present a solver which implements it. In addition, our approach provides a binding between the language and C++, whereby the assignment to the variables found by the solver is automatically translated into a transformation of C++ code. This makes the C++ Web service context compliant without any further communication. Besides, it uniquely permits a very high degree of flexibility of a C++ coded Web service without making public any part of its source code.},
+  archive      = {J_Constr},
+  author       = {Tveretina, Olga and Zaichenkov, Pavel and Shafarenko, Alex},
+  doi          = {10.1007/s10601-020-09309-y},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {121-159},
+  shortjournal = {Constraints},
+  title        = {Non-local configuration of component interfaces by constraint satisfaction},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Invariants for time-series constraints. <em>Constr</em>,
+<em>25</em>(3), 71–120. (<a
+href="https://doi.org/10.1007/s10601-020-09308-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many constraints restricting the result of some computations over an integer sequence can be compactly represented by counter automata. We improve the propagation of the conjunction of such constraints on the same sequence by synthesising a database of linear and non-linear invariants using their counter-automaton representation. The obtained invariants are formulae parameterised by the sequence length and proven to be true for any long enough sequence. To assess the quality of such linear invariants, we developed a method to verify whether a generated linear invariant is a facet of the convex hull of the feasible points. This method, as well as the proof of non-linear invariants, are based on the systematic generation of constant-size deterministic finite automata that accept all integer sequences whose result verifies some simple condition. We apply such methodology to a set of 44 time-series constraints and obtain 1400 linear invariants from which 70% are facet defining, and 600 non-linear invariants, which were tested on short-term electricity production problems.},
+  archive      = {J_Constr},
+  author       = {Arafailova, Ekaterina and Beldiceanu, Nicolas and Simonis, Helmut},
+  doi          = {10.1007/s10601-020-09308-z},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {3},
+  pages        = {71-120},
+  shortjournal = {Constraints},
+  title        = {Invariants for time-series constraints},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). XCSP3 and its ecosystem. <em>Constr</em>, <em>25</em>(1),
+47–69. (<a href="https://doi.org/10.1007/s10601-019-09307-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a summary of XCSP3, together with its ecosystem. XCSP3 is a format used to build integrated representations of combinatorial constrained problems. Interestingly, XCSP3 preserves the structure of models, by handling arrays of variables and groups/blocks of constraints, which makes it rather unique in the literature. Furthermore, the ecosystem of XCSP3 is well supplied: it includes companion tools (parsers and checkers), a website with a search engine for selecting and downloading instances, and competitions of solvers. The Java-based modeling API, called JvCSP3, is the last developed piece of this complete production chain.},
+  archive      = {J_Constr},
+  author       = {Audemard, Gilles and Boussemart, Frédéric and Lecoutre, Christophe and Piette, Cédric and Roussel, Olivier},
+  doi          = {10.1007/s10601-019-09307-9},
+  journal      = {Constraints},
+  month        = {4},
+  number       = {1},
+  pages        = {47-69},
+  shortjournal = {Constraints},
+  title        = {XCSP3 and its ecosystem},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Integrated integer programming and decision diagram search
+tree with an application to the maximum independent set problem.
+<em>Constr</em>, <em>25</em>(1), 23–46. (<a
+href="https://doi.org/10.1007/s10601-019-09306-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose an optimization framework which integrates decision diagrams (DDs) and integer linear programming (ILP) to solve combinatorial optimization problems. The hybrid DD-ILP approach explores the solution space based on a recursive compilation of relaxed DDs and incorporates ILP calls to solve subproblems associated with DD nodes. The selection of DD nodes to be explored by ILP technology is a significant component of the approach. We show how supervised machine learning can be useful to detect, on-the-fly, a subproblem structure for ILP technology. We use the maximum independent set problem as a case study. Computational experiments show that, in presence of suitable problem structure, the integrated DD-ILP approach can exploit complementary strengths and improve upon the performance of both a stand-alone DD solver and an ILP solver in terms of solution time and number of solved instances.},
+  archive      = {J_Constr},
+  author       = {González, Jaime E. and Cire, Andre A. and Lodi, Andrea and Rousseau, Louis-Martin},
+  doi          = {10.1007/s10601-019-09306-w},
+  journal      = {Constraints},
+  month        = {4},
+  number       = {1},
+  pages        = {23-46},
+  shortjournal = {Constraints},
+  title        = {Integrated integer programming and decision diagram search tree with an application to the maximum independent set problem},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Constraints for generating graphs with imposed and forbidden
+patterns: An application to molecular graphs. <em>Constr</em>,
+<em>25</em>(1), 1–22. (<a
+href="https://doi.org/10.1007/s10601-019-09305-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although graphs are widely used to encode and solve various computational problems, little research exists on constrained graph construction. The current research was carried out to shed light on the problem of generating graphs, where the construction process is guided by various structural restrictions, like vertex degrees, proximity among vertices, and imposed and forbidden patterns. The main contribution of this paper is an encoding of the constrained graph generation problem in terms of a constraint satisfaction problem (CSP). This approach is motivated by the flurry of efficient solution algorithms available within the constraint programming (CP) framework. The obtained encoding has given rise to the CP-MolGen program, a new open source program dedicated to the generation of molecular graphs with imposed and forbidden fragments. Experimental results on several real-world molecular graph generation instances have shown the effectiveness and efficiency of the proposed program, especially the benefits of forbidding cyclic patterns as induced subgraphs.},
+  archive      = {J_Constr},
+  author       = {Omrani, Mohamed Amine and Naanaa, Wady},
+  doi          = {10.1007/s10601-019-09305-x},
+  journal      = {Constraints},
+  month        = {4},
+  number       = {1},
+  pages        = {1-22},
+  shortjournal = {Constraints},
+  title        = {Constraints for generating graphs with imposed and forbidden patterns: An application to molecular graphs},
+  volume       = {25},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOMS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="toms---29">TOMS - 29</h2>
+<ul>
+<li><details>
+<summary>
+(2024). Generalizing random butterfly transforms to arbitrary matrix
+sizes. <em>TOMS</em>, <em>50</em>(4), 1–23. (<a
+href="https://doi.org/10.1145/3699714">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Parker and Lê introduced random butterfly transforms (RBTs) as a preprocessing technique to replace pivoting in dense LU factorization. Unfortunately, their FFT-like recursive structure restricts the dimensions of the matrix. Furthermore, on multinode systems, efficient management of the communication overheads restricts the matrix’s distribution even more. To remove these limitations, we have generalized the RBT to arbitrary matrix sizes by truncating the dimensions of each layer in the transform. We expanded Parker’s theoretical analysis to generalized RBT, specifically that in exact arithmetic, Gaussian elimination with no pivoting will succeed with probability 1 after transforming a matrix with full-depth RBTs. Furthermore, we experimentally show that these generalized transforms improve performance over Parker’s formulation by up to 62% while retaining the ability to replace pivoting. This generalized RBT is available in the SLATE numerical software library.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3699714},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {12},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Generalizing random butterfly transforms to arbitrary matrix sizes},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1053: SOLNP+: A derivative-free solver for
+constrained nonlinear optimization. <em>TOMS</em>, <em>50</em>(4), 1–24.
+(<a href="https://doi.org/10.1145/3699956">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {SOLNP \(+\) is a derivative-free solver for constrained nonlinear optimization. It starts from SOLve Nonlinear Programming (SOLNP) proposed in 1989 by Ye. The main ideas are to use finite difference to approximate the gradient of the objective function and constraints, and use augmented Lagrangian method and sequential quadratic programming to deal with nonlinear constraints. We incorporate the techniques of implicit filtering, a new restart mechanism, and a modern quadratic programming solver into this new version with an ANSI C implementation. The algorithm exhibits a great advantage in running time and robustness under noise compared with the old version implemented in MATLAB. The numerical experiments show that SOLNP \(+\) is comparable with two widely used solvers, COBYLA and NOMAD. SOLNP \(+\) is available at https://github.com/COPT-Public/SOLNP_plus .},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3699956},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {12},
+  number       = {4},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1053: SOLNP+: a derivative-free solver for constrained nonlinear optimization},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1052: Evaluating a boolean polynomial on all
+possible inputs. <em>TOMS</em>, <em>50</em>(4), 1–37. (<a
+href="https://doi.org/10.1145/3699957">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evaluating a Boolean polynomial on all possible inputs (i.e., building the truth table of the corresponding Boolean function) is a simple computational problem that sometimes appears inside broader applications, for instance in cryptanalysis or in the implementation of more sophisticated algorithms to solve Boolean polynomial systems. Two techniques share the crown to perform this task: the Fast Exhaustive Search (FES) algorithm from 2010 (which is based on Gray Codes) and the space-efficient Moebius transform from 2021 (which is reminiscent of the FFT). Both require \(\mathcal{O}(d2^{n})\) operations for a degree- \(d\) Boolean polynomial on \(n\) variables and operate mostly in-place, but have other slightly different characteristics. They both provide an efficient iterator over the full truth table. This article describes BoolEAN POLynomial Evaluation (BeanPolE), a concise and flexible C library that implements both algorithms, as well as many other functions to deal with Boolean multivariate polynomials in dense representation.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3699957},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {12},
+  number       = {4},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1052: Evaluating a boolean polynomial on all possible inputs},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1051: UltimateKalman, flexible kalman filtering
+and smoothing using orthogonal transformations. <em>TOMS</em>,
+<em>50</em>(4), 1–19. (<a
+href="https://doi.org/10.1145/3699958">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {UltimateKalman is a flexible linear Kalman filter and smoother implemented in three popular programming languages: MATLAB, C, and Java. UltimateKalman is a slight simplification and slight generalization of an elegant Kalman filter and smoother that was proposed in 1977 by Paige and Saunders. Their algorithm appears to be numerically superior and more flexible than other Kalman filters and smoothers, but curiously has never been implemented or used before. UltimateKalman is flexible: it can easily handle time-dependent problems, problems with state vectors whose dimensions vary from step to step, problems with varying numbers of observations in different steps (or no observations at all in some steps), and problems in which the expectation of the initial state is unknown. The programming interface of UltimateKalman is broken into simple building blocks that can be used to construct filters, single or multi-step predictors, multi-step or whole-track smoothers, and combinations. The article describes the algorithm and its implementation as well as a test suite of examples and tests.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3699958},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {12},
+  number       = {4},
+  pages        = {1-19},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1051: UltimateKalman, flexible kalman filtering and smoothing using orthogonal transformations},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1049: The delaunay density diagnostic.
+<em>TOMS</em>, <em>50</em>(4), 1–21. (<a
+href="https://doi.org/10.1145/3700134">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate approximation of a real-valued function depends on two aspects of the available data: the density of inputs within the domain of interest and the variation of the outputs over that domain. There are few methods for assessing whether the density of inputs is sufficient to identify the relevant variations in outputs—i.e., the “geometric scale” of the function—despite the fact that sampling density is closely tied to the success or failure of an approximation method. In this article, we introduce a general purpose, computational approach to detecting the geometric scale of real-valued functions over a fixed domain using a deterministic interpolation technique from computational geometry. The algorithm is intended to work on scalar data in moderate dimensions (2–10). Our algorithm is based on the observation that a sequence of piecewise linear interpolants will converge to a continuous function at a quadratic rate (in \(L^{2}\) norm) if and only if the data are sampled densely enough to distinguish the feature from noise (assuming sufficiently regular sampling). We present numerical experiments demonstrating how our method can identify feature scale, estimate uncertainty in feature scale, and assess the sampling density for fixed (i.e., static) datasets of input–output pairs. We include analytical results in support of our numerical findings and have released lightweight code that can be adapted for use in a variety of data science settings.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3700134},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {12},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1049: The delaunay density diagnostic},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1050: SPEX cholesky, LDL, and backslash for
+exactly solving sparse linear systems. <em>TOMS</em>, <em>50</em>(4),
+1–29. (<a href="https://doi.org/10.1145/3700592">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {SPEX Cholesky, SPEX LDL, and SPEX Backslash are software packages for exactly solving sparse linear systems, \(A\mathbf{x}=\mathbf{b}\) . SPEX Cholesky, used for symmetric positive definite (SPD) systems, computes an integral Cholesky factorization to solve the system \(A\mathbf{x}=\mathbf{b}\) in time proportional to arithmetic work—to date the only algorithm for SPD linear systems with this property. SPEX LDL extends SPEX Cholesky for symmetric negative definite and symmetric indefinite matrices with exclusively non-zero leading principal minors. SPEX Backslash is a general-purpose exact solver that automatically determines the best ordering and factorization to exactly solve the system \(A\mathbf{x}=\mathbf{b}\) . Computationally, we test the accuracy of MATLAB sparse backslash, the state-of-the-art collection of sparse matrix solvers, revealing it is near perfect for 87% of the tested instances. In addition, we show that SPEX Cholesky outperforms alternate exact solvers in runtime; specifically, SPEX Cholesky outperforms the exact solver Linbox and exact LU factorization on 70% and 92% of tested instances, respectively. Each of SPEX Cholesky, SPEX LDL, and SPEX Backslash is implemented in C and is accompanied by easy-to-use Python and MATLAB interfaces. They are distributed via GitHub, as a component of the SPEX software package, and as component of SuiteSparse.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3700592},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {12},
+  number       = {4},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1050: SPEX cholesky, LDL, and backslash for exactly solving sparse linear systems},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Efficient matching in large DAE models. <em>TOMS</em>,
+<em>50</em>(3), 1–25. (<a
+href="https://doi.org/10.1145/3674831">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents a matching algorithm for bipartite graphs containing repetitive structures and represented by intension as Set-Based Graphs . Under certain conditions on the structure of the graphs, the computational cost of this novel algorithm is not affected by the cardinality of the sets of vertices and edges. The main application of the algorithm is that of matching large Equation-Based Models where provided that most equations are defined using for loop statements that iterate over vectors of unknown variables, the computational cost becomes independent of the growth of the vectors involved. Besides introducing the algorithm, the article describes its implementation in a Modelica compiler and studies its performance over different test models.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3674831},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {10},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Efficient matching in large DAE models},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Empi: GPU-accelerated matching pursuit with continuous
+dictionaries. <em>TOMS</em>, <em>50</em>(3), 1–17. (<a
+href="https://doi.org/10.1145/3674832">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces an effective approach to performing matching pursuit calculations with continuous (quasi-infinite) dictionaries. Simulating continuous parameter space is accomplished by combining optimal dictionary construction as introduced previously with local parameter optimization. At the same time, the calculations can be performed not only with Gabor atoms, but with any type of oscillating atoms, or even multiple types of atoms at once. The proposed method is confirmed by introducing a first stable version of a high-performance implementation empi , supporting calculations with continuous as well as discrete dictionaries, further accelerated by the use of multi-threading and GPU support.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3674832},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {10},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Empi: GPU-accelerated matching pursuit with continuous dictionaries},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Remark on algorithm 1010: Boosting efficiency in solving
+quartic equations with no compromise in accuracy. <em>TOMS</em>,
+<em>50</em>(3), 1–3. (<a href="https://doi.org/10.1145/3674833">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this second remark, we present a revised correction to Algorithm 1010 [A. Orellana and C. De Michele 2020] with respect to the one already proposed in the remark on Algorithm 1010 [C. De Michele 2022].},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3674833},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {10},
+  number       = {3},
+  pages        = {1-3},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Remark on algorithm 1010: Boosting efficiency in solving quartic equations with no compromise in accuracy},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1047: FdeSolver, a julia package for solving
+fractional differential equations. <em>TOMS</em>, <em>50</em>(3), 1–23.
+(<a href="https://doi.org/10.1145/3680280">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce FdeSolver, an open-source Julia package designed to solve fractional-order differential equations efficiently. The available solutions are based on product-integration rules, predictor–corrector algorithms, and the Newton-Raphson method. The package covers solutions for one-dimensional equations with orders of positive real numbers. For higher-dimensional systems, it supports orders up to one. Incommensurate derivatives are allowed and defined in the Caputo sense. Here, we summarize the implementation for a representative class of problems and compare it with available alternatives in Julia and MATLAB. Moreover, FdeSolver leverages the power and flexibility of the Julia environment to offer enhanced computational performance, and our development emphasizes adherence to the best practices of open research software. To highlight its practical utility, we demonstrate its capability in simulating microbial community dynamics and modeling the spread of COVID-19. This latter application involves fitting the order of derivatives grounded on real-world epidemiological data. Overall, these results highlight the efficiency, reliability, and practicality of the FdeSolver Julia package.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3680280},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {10},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1047: FdeSolver, a julia package for solving fractional differential equations},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1048: A c++ class for robust linear barycentric
+rational interpolation. <em>TOMS</em>, <em>50</em>(3), 1–17. (<a
+href="https://doi.org/10.1145/3681781">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Barycentric rational interpolation is a recent interpolation method with several favourable properties. In this article, we present the BRI class, which features a new C++ class template that contains all variables and functions related to linear barycentric rational interpolation. While several methods exist to evaluate a barycentric rational interpolant, the class is designed to autonomously select the best method to use on a case-by-case basis, as it takes into account the latest results regarding the efficiency and numerical stability of barycentric rational interpolation [ 15 ]. Moreover, we describe a new technique that makes the code robust and less prone to overflow and underflow errors. In addition to the standard C++ data types, the BRI template variables can also be defined with arbitrary precision because the BRI class is compatible with the Multiple Precision Floating-Point Reliable (MPFR) library [ 14 ].},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3681781},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {10},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1048: A c++ class for robust linear barycentric rational interpolation},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1046: An improved recurrence method for the scaled
+complex error function. <em>TOMS</em>, <em>50</em>(3), 1–18. (<a
+href="https://doi.org/10.1145/3688799">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Calculation of the scaled complex error function \(w(z)\) by recurrence is discussed, and a new method for determining the number of steps required to achieve a given accuracy is introduced. This method is found to work throughout the complex plane, except for a short section of the real line, centred at the origin. An algorithm based on this analysis is implemented; Taylor series with stored coefficients are used to compute \(w(z)\) in a small region where recurrence is not efficient. The new algorithm is tested extensively and found to outperform earlier recurrence-based codes. It also performs favourably against recent codes based on other methods.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3688799},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {10},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1046: An improved recurrence method for the scaled complex error function},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A sparse smoothing newton method for solving discrete
+optimal transport problems. <em>TOMS</em>, <em>50</em>(3), 1–26. (<a
+href="https://doi.org/10.1145/3688800">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The discrete optimal transport (OT) problem, which offers an effective computational tool for comparing two discrete probability distributions, has recently attracted much attention and played essential roles in many modern applications. This paper proposes to solve the discrete OT problem by applying a squared smoothing Newton method via the Huber smoothing function for solving the corresponding KKT system directly. The proposed algorithm admits appealing convergence properties and is able to take advantage of the solution sparsity to greatly reduce computational costs. Moreover, the algorithm can be extended to solve problems with similar structures, including the Wasserstein barycenter (WB) problem with fixed supports. To verify the practical performance of the proposed method, we conduct extensive numerical experiments to solve a large set of discrete OT and WB benchmark problems. Our numerical results show that the proposed method is efficient compared to state-of-the-art linear programming (LP) solvers. Moreover, the proposed method consumes less memory than existing LP solvers, which demonstrates the potential usage of our algorithm for solving large-scale OT and WB problems.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3688800},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {10},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {A sparse smoothing newton method for solving discrete optimal transport problems},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Optimal re-materialization strategies for heterogeneous
+chains: How to train deep neural networks with limited memory.
+<em>TOMS</em>, <em>50</em>(2), 1–38. (<a
+href="https://doi.org/10.1145/3648633">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Training in Feed Forward Deep Neural Networks is a memory-intensive operation which is usually performed on GPUs with limited memory capacities. This may force data scientists to limit the depth of the models or the resolution of the input data if data does not fit in the GPU memory. The re-materialization technique, whose idea comes from the checkpointing strategies developed in the Automatic Differentiation literature, allows data scientists to limit the memory requirements related to the storage of intermediate data (activations), at the cost of an increase in the computational cost. This paper introduces a new strategy of re-materialization of activations that significantly reduces memory usage. It consists in selecting which activations are saved and which activations are deleted during the forward phase and then recomputing the deleted activations when they are needed during the backward phase. We propose an original computation model that combines two types of activation savings: either only storing the layer inputs or recording the complete history of operations that produced the outputs. This paper focuses on the fully heterogeneous case, where the computation time and the memory requirement of each layer is different. We prove that finding the optimal solution is NP-hard and that classical techniques from Automatic Differentiation literature do not apply. Moreover, the classical assumption of memory persistence of materialized activations, used to simplify the search of optimal solutions, does not hold anymore. Thus, we propose a weak memory persistence property and provide a dynamic program to compute the optimal sequence of computations. This algorithm is made available through the Rotor software, a PyTorch plug-in dealing with any network consisting of a sequence of layers, each of them having an arbitrarily complex structure. Through extensive experiments, we show that our implementation consistently outperforms existing re-materialization approaches for a large class of networks, image sizes, and batch sizes.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3648633},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-38},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Optimal re-materialization strategies for heterogeneous chains: How to train deep neural networks with limited memory},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1042: Sparse precision matrix estimation with
+SQUIC. <em>TOMS</em>, <em>50</em>(2), 1–18. (<a
+href="https://doi.org/10.1145/3650108">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present SQUIC , a fast and scalable package for sparse precision matrix estimation. The algorithm employs a second-order method to solve the \(\ell_{1}\) -regularized maximum likelihood problem, utilizing highly optimized linear algebra subroutines. In comparative tests using synthetic datasets, we demonstrate that SQUIC not only scales to datasets of up to a million random variables but also consistently delivers runtimes that are significantly faster than other well-established sparse precision matrix estimation packages. Furthermore, we showcase the application of the introduced package in classifying microarray gene expressions. We demonstrate that by utilizing a matrix form of the tuning parameter (also known as the regularization parameter), SQUIC can effectively incorporate prior information into the estimation procedure, resulting in improved application results with minimal computational overhead.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3650108},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-18},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1042: Sparse precision matrix estimation with SQUIC},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Avoiding breakdown in incomplete factorizations in low
+precision arithmetic. <em>TOMS</em>, <em>50</em>(2), 1–25. (<a
+href="https://doi.org/10.1145/3651155">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The emergence of low precision floating-point arithmetic in computer hardware has led to a resurgence of interest in the use of mixed precision numerical linear algebra. For linear systems of equations, there has been renewed enthusiasm for mixed precision variants of iterative refinement. We consider the iterative solution of large sparse systems using incomplete factorization preconditioners. The focus is on the robust computation of such preconditioners in half precision arithmetic and employing them to solve symmetric positive definite systems to higher precision accuracy; however, the proposed ideas can be applied more generally. Even for well-conditioned problems, incomplete factorizations can break down when small entries occur on the diagonal during the factorization. When using half precision arithmetic, overflows are an additional possible source of breakdown. We examine how breakdowns can be avoided and implement our strategies within new half precision Fortran sparse incomplete Cholesky factorization software. Results are reported for a range of problems from practical applications. These demonstrate that, even for highly ill-conditioned problems, half precision preconditioners can potentially replace double precision preconditioners, although unsurprisingly this may be at the cost of additional iterations of a Krylov solver.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3651155},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Avoiding breakdown in incomplete factorizations in low precision arithmetic},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1044: PyGenStability, a multiscale community
+detection framework with generalized markov stability. <em>TOMS</em>,
+<em>50</em>(2), 1–8. (<a href="https://doi.org/10.1145/3651225">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present PyGenStability, a general-use Python software package that provides a suite of analysis and visualization tools for unsupervised multiscale community detection in graphs. PyGenStability finds optimized partitions of a graph at different levels of resolution by maximizing the generalized Markov Stability quality function with the Louvain or Leiden algorithm. The package includes automatic detection of robust graph partitions and allows the flexibility to choose quality functions for weighted undirected, directed, and signed graphs and to include other user-defined quality functions.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3651225},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-8},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1044: PyGenStability, a multiscale community detection framework with generalized markov stability},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). PyOED: An extensible suite for data assimilation and
+model-constrained optimal design of experiments. <em>TOMS</em>,
+<em>50</em>(2), 1–22. (<a
+href="https://doi.org/10.1145/3653071">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article describes PyOED, a highly extensible scientific package that enables developing and testing model-constrained optimal experimental design (OED) for inverse problems. Specifically, PyOED aims to be a comprehensive Python toolkit for model-constrained OED . The package targets scientists and researchers interested in understanding the details of OED formulations and approaches. It is also meant to enable researchers to experiment with standard and innovative OED technologies with a wide range of test problems (e.g., simulation models). OED, inverse problems (e.g., Bayesian inversion), and data assimilation (DA) are closely related research fields, and their formulations overlap significantly. Thus, PyOED is continuously being expanded with a plethora of Bayesian inversion, DA, and OED methods as well as new scientific simulation models, observation error models, and observation operators. These pieces are added such that they can be permuted to enable testing OED methods in various settings of varying complexities. The PyOED core is completely written in Python and utilizes the inherent object-oriented capabilities; however, the current version of PyOED is meant to be extensible rather than scalable. Specifically, PyOED is developed to “enable rapid development and benchmarking of OED methods with minimal coding effort and to maximize code reutilization.” This article provides a brief description of the PyOED layout and philosophy and provides a set of exemplary test cases and tutorials to demonstrate the potential of the package.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3653071},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {PyOED: An extensible suite for data assimilation and model-constrained optimal design of experiments},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Remark on algorithm 1012: Computing projections with large
+datasets. <em>TOMS</em>, <em>50</em>(2), 1–8. (<a
+href="https://doi.org/10.1145/3656581">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In ACM TOMS Algorithm 1012, the DELAUNAYSPARSE software is given for performing Delaunay interpolation in medium to high dimensions. When extrapolating outside the convex hull of the training set, DELAUNAYSPARSE calls the nonnegative least squares solver DWNNLS to compute projections onto the convex hull. However, DWNNLS and many other available sum-of-squares optimization solvers were not intended for usage with many variable problems, which result from the large training sets that are typical in machine learning applications. Thus, a new PROJECT subroutine is given, based on the highly customizable quadratic program solver BQPD . This solution is shown to be as robust as DELAUNAYSPARSE for projection onto both synthetic and real-world datasets, where other available solvers frequently fail. Although it is intended as an update for DELAUNAYSPARSE , due to the difficulty and prevalence of the problem, this solution is likely to be of external interest as well.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3656581},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-8},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Remark on algorithm 1012: Computing projections with large datasets},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1045: A covariate-dependent approach to gaussian
+graphical modeling in r. <em>TOMS</em>, <em>50</em>(2), 1–32. (<a
+href="https://doi.org/10.1145/3659206">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graphical models are used to capture complex multivariate relationships and have applications in diverse disciplines such as biology, physics, and economics. Within this field, Gaussian graphical models aim to identify the pairs of variables whose dependence is maintained even after conditioning on the remaining variables in the data, known as the conditional dependence structure of the data. There are many existing software packages for Gaussian graphical modeling, however, they often make restrictive assumptions that reduce their flexibility for modeling data that are not identically distributed. Conversely, covdepGE is an R implementation of a variational weighted pseudo-likelihood algorithm for modeling the conditional dependence structure as a continuous function of an extraneous covariate. To build on the efficiency of this algorithm, covdepGE leverages parallelism and C++ integration with R. Additionally, covdepGE provides fully-automated and data-driven hyperparameter specification while maintaining flexibility for the user to decide key components of the estimation procedure. Through an extensive simulation study spanning diverse settings, covdepGE is demonstrated to be top of its class in recovering the ground truth conditional dependence structure while efficiently managing computational overhead.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3659206},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-32},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1045: A covariate-dependent approach to gaussian graphical modeling in r},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1043: Faster randomized SVD with dynamic shifts.
+<em>TOMS</em>, <em>50</em>(2), 1–27. (<a
+href="https://doi.org/10.1145/3660629">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aiming to provide a faster and convenient truncated SVD algorithm for large sparse matrices from real applications (i.e., for computing a few of the largest singular values and the corresponding singular vectors), a dynamically shifted power iteration technique is applied to improve the accuracy of the randomized SVD method. This results in a d yn a mic sh ifts-based randomized SVD (dashSVD) algorithm, which also collaborates with the skills for handling sparse matrices. An accuracy-control mechanism is included in the dashSVD algorithm to approximately monitor the per vector error bound of computed singular vectors with negligible overhead. Experiments on real-world data validate that the dashSVD algorithm largely improves the accuracy of a randomized SVD algorithm or attains the same accuracy with fewer passes over the matrix, and provides an efficient accuracy-control mechanism to the randomized SVD computation, while demonstrating the advantages on runtime and parallel efficiency. A bound of the approximation error of the randomized SVD with the shifted power iteration is also proved.},
+  archive      = {J_TOMS},
+  doi          = {10.1145/3660629},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1043: Faster randomized SVD with dynamic shifts},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1041: HiPPIS—a high-order positivity-preserving
+mapping software for structured meshes. <em>TOMS</em>, <em>50</em>(1),
+8:1–31. (<a href="https://doi.org/10.1145/3632291">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Polynomial interpolation is an important component of many computational problems. In several of these computational problems, failure to preserve positivity when using polynomials to approximate or map data values between meshes can lead to negative unphysical quantities. Currently, most polynomial-based methods for enforcing positivity are based on splines and polynomial rescaling. The spline-based approaches build interpolants that are positive over the intervals in which they are defined and may require solving a minimization problem and/or system of equations. The linear polynomial rescaling methods allow for high-degree polynomials but enforce positivity only at limited locations (e.g., quadrature nodes). This work introduces open-source software (HiPPIS) for high-order data-bounded interpolation (DBI) and positivity-preserving interpolation (PPI) that addresses the limitations of both the spline and polynomial rescaling methods. HiPPIS is suitable for approximating and mapping physical quantities such as mass, density, and concentration between meshes while preserving positivity. This work provides Fortran and Matlab implementations of the DBI and PPI methods, presents an analysis of the mapping error in the context of PDEs, and uses several 1D and 2D numerical examples to demonstrate the benefits and limitations of HiPPIS.},
+  archive      = {J_TOMS},
+  author       = {Timbwoga A. J. Ouermi and Robert M. Kirby and Martin Berzins},
+  doi          = {10.1145/3632291},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {8:1–31},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1041: HiPPIS—A high-order positivity-preserving mapping software for structured meshes},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1040: The sparse grids matlab kit - a matlab
+implementation of sparse grids for high-dimensional function
+approximation and uncertainty quantification. <em>TOMS</em>,
+<em>50</em>(1), 7:1–22. (<a
+href="https://doi.org/10.1145/3630023">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Sparse Grids Matlab Kit provides a Matlab implementation of sparse grids, and can be used for approximating high-dimensional functions and, in particular, for surrogate-model-based uncertainty quantification. It is lightweight, high-level and easy to use, good for quick prototyping and teaching; however, it is equipped with some features that allow its use also in realistic applications. The goal of this paper is to provide an overview of the data structure and of the mathematical aspects forming the basis of the software, as well as comparing the current release of our package to similar available software.},
+  archive      = {J_TOMS},
+  author       = {Chiara Piazzola and Lorenzo Tamellini},
+  doi          = {10.1145/3630023},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {7:1–22},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1040: The sparse grids matlab kit - a matlab implementation of sparse grids for high-dimensional function approximation and uncertainty quantification},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Algorithm 1039: Automatic generators for a family of matrix
+multiplication routines with apache TVM. <em>TOMS</em>, <em>50</em>(1),
+6:1–34. (<a href="https://doi.org/10.1145/3638532">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We explore the utilization of the Apache TVM open source framework to automatically generate a family of algorithms that follow the approach taken by popular linear algebra libraries, such as GotoBLAS2, BLIS, and OpenBLAS, to obtain high-performance blocked formulations of the general matrix multiplication ( gemm ). In addition, we fully automatize the generation process by also leveraging the Apache TVM framework to derive a complete variety of the processor-specific micro-kernels for gemm . This is in contrast with the convention in high-performance libraries, which hand-encode a single micro-kernel per architecture using Assembly code. In global, the combination of our TVM-generated blocked algorithms and micro-kernels for gemm (1) improves portability, maintainability, and, globally, streamlines the software life cycle; (2) provides high flexibility to easily tailor and optimize the solution to different data types, processor architectures, and matrix operand shapes, yielding performance on a par (or even superior for specific matrix shapes) with that of hand-tuned libraries; and (3) features a small memory footprint.},
+  archive      = {J_TOMS},
+  author       = {Guillermo Alaejos and Adrián Castelló and Pedro Alonso-Jordá and Francisco D. Igual and Héctor Martínez and Enrique S. Quintana-Ortí},
+  doi          = {10.1145/3638532},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {6:1–34},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1039: Automatic generators for a family of matrix multiplication routines with apache TVM},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An interface-preserving moving mesh in multiple space
+dimensions. <em>TOMS</em>, <em>50</em>(1), 5:1–28. (<a
+href="https://doi.org/10.1145/3630000">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An interface-preserving moving mesh algorithm in two or higher dimensions is presented. It resolves a moving ( d -1)-dimensional manifold directly within the d -dimensional mesh, which means that the interface is represented by a subset of moving mesh cell-surfaces. The underlying mesh is a conforming simplicial partition that fulfills the Delaunay property. The local remeshing algorithms allow for strong interface deformations. We give a proof that the given algorithms preserve the interface after interface deformation and remeshing steps. Originating from various numerical methods, data is attached cell-wise to the mesh. After each remeshing operation, the interface-preserving moving mesh retains valid data by projecting the data to the new mesh cells. An open source implementation of the moving mesh algorithm is available at Reference [ 1 ].},
+  archive      = {J_TOMS},
+  author       = {Maria Alkämper and Jim Magiera and Christian Rohde},
+  doi          = {10.1145/3630000},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {5:1–28},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {An interface-preserving moving mesh in multiple space dimensions},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Efficient and validated numerical evaluation of abelian
+integrals. <em>TOMS</em>, <em>50</em>(1), 4:1–38. (<a
+href="https://doi.org/10.1145/3637550">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abelian integrals play a key role in the infinitesimal version of Hilbert’s 16th problem. Being able to evaluate such integrals—with guaranteed error bounds—is a fundamental step in computer-aided proofs aimed at this problem. Using interpolation by trigonometric polynomials and quasi-Newton-Kantorovitch validation, we develop a validated numerics method for computing Abelian integrals in a quasi-linear number of arithmetic operations. Our approach is both effective, as exemplified on two practical perturbed integrable systems, and amenable to an implementation in a formal proof assistant, which is key to provide fully reliable computer-aided proofs.},
+  archive      = {J_TOMS},
+  author       = {Florent Bréhard and Nicolas Brisebarre and Mioara Joldes and Warwick Tucker},
+  doi          = {10.1145/3637550},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {4:1–38},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Efficient and validated numerical evaluation of abelian integrals},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Data-flow reversal and garbage collection. <em>TOMS</em>,
+<em>50</em>(1), 3:1–20. (<a
+href="https://doi.org/10.1145/3627537">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data-flow reversal is at the heart of source-transformation reverse algorithmic differentiation (reverse ST-AD), arguably the most efficient way to obtain gradients of numerical models. However, when the model implementation language uses garbage collection (GC), for instance, in Java or Python, the notion of address that is needed for data-flow reversal disappears. Moreover, GC is asynchronous and does not appear explicitly in the source. This article presents an extension to the model of reverse ST-AD suitable for a language with GC. The approach is validated on a Java implementation of a simple Navier-Stokes solver. Performance is compared with existing AD tools ADOL-C and Tapenade on an equivalent implementation in C and Fortran.},
+  archive      = {J_TOMS},
+  author       = {Laurent Hascoët},
+  doi          = {10.1145/3627537},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {3:1–20},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Data-flow reversal and garbage collection},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024b). Hermitian dynamic mode decomposition - numerical analysis
+and software solution. <em>TOMS</em>, <em>50</em>(1), 2:1–23. (<a
+href="https://doi.org/10.1145/3641884">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Dynamic Mode Decomposition (DMD) is a versatile and increasingly popular method for data driven analysis of dynamical systems that arise in a variety of applications in, e.g., computational fluid dynamics, robotics or machine learning. In the framework of numerical linear algebra, it is a data driven Rayleigh-Ritz procedure applied to a DMD matrix that is derived from the supplied data. In some applications, the physics of the underlying problem implies hermiticity of the DMD matrix, so the general DMD procedure is not computationally optimal. Furthermore, it does not guarantee important structural properties of the Hermitian eigenvalue problem and may return non-physical solutions. This paper proposes a software solution to the Hermitian (including the real symmetric) DMD matrices, accompanied with a numerical analysis that contains several fine and instructive numerical details. The eigenpairs are computed together with their residuals, and perturbation theory provides error bounds for the eigenvalues and eigenvectors. The software is developed and tested using the LAPACK package.},
+  archive      = {J_TOMS},
+  author       = {Zlatko Drmač},
+  doi          = {10.1145/3641884},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {2:1–23},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Hermitian dynamic mode decomposition - numerical analysis and software solution},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024a). A LAPACK implementation of the dynamic mode decomposition.
+<em>TOMS</em>, <em>50</em>(1), 1:1–32. (<a
+href="https://doi.org/10.1145/3640012">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Dynamic Mode Decomposition (DMD) is a method for computational analysis of nonlinear dynamical systems in data driven scenarios. Based on high fidelity numerical simulations or experimental data, the DMD can be used to reveal the latent structures in the dynamics or as a forecasting or a model order reduction tool. The theoretical underpinning of the DMD is the Koopman operator on a Hilbert space of observables of the dynamics under study. This paper describes a numerically robust and versatile variant of the DMD and its implementation using the state-of-the-art dense numerical linear algebra software package LAPACK . The features of the proposed software solution include residual bounds for the computed eigenpairs of the DMD matrix, eigenvectors refinements and computation of the eigenvectors of the Exact DMD, compressed DMD for efficient analysis of high dimensional problems that can be easily adapted for fast updates in a streaming DMD. Numerical analysis is the bedrock of numerical robustness and reliability of the software, that is tested following the highest standards and practices of LAPACK . Important numerical topics are discussed in detail and illustrated using numerous numerical examples.},
+  archive      = {J_TOMS},
+  author       = {Zlatko Drmač},
+  doi          = {10.1145/3640012},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {1:1–32},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {A LAPACK implementation of the dynamic mode decomposition},
+  volume       = {50},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

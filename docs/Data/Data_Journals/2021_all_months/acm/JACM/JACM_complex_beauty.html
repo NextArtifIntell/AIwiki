@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JACM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jacm---48">JACM - 48</h2>
+<ul>
+<li><details>
+<summary>
+(2021). Smooth approximation of lipschitz maps and their
+subgradients. <em>JACM</em>, <em>69</em>(1), 8:1–32. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We derive new representations for the generalised Jacobian of a locally Lipschitz map between finite dimensional real Euclidean spaces as the lower limit (i.e., limit inferior) of the classical derivative of the map where it exists. The new representations lead to significantly shorter proofs for the basic properties of the subgradient and the generalised Jacobian including the chain rule. We establish that a sequence of locally Lipschitz maps between finite dimensional Euclidean spaces converges to a given locally Lipschitz map in the L-topology—that is, the weakest refinement of the sup norm topology on the space of locally Lipschitz maps that makes the generalised Jacobian a continuous functional—if and only if the limit superior of the sequence of directional derivatives of the maps in a given vector direction coincides with the generalised directional derivative of the given map in that direction, with the convergence to the limit superior being uniform for all unit vectors. We then prove our main result that the subspace of Lipschitz C∞ maps between finite dimensional Euclidean spaces is dense in the space of Lipschitz maps equipped with the L-topology, and, for a given Lipschitz map, we explicitly construct a sequence of Lipschitz C∞ maps converging to it in the L-topology, allowing global smooth approximation of a Lipschitz map and its differential properties. As an application, we obtain a short proof of the extension of Green’s theorem to interval-valued vector fields. For infinite dimensions, we show that the subgradient of a Lipschitz map on a Banach space is upper continuous, and, for a given real-valued Lipschitz map on a separable Banach space, we construct a sequence of Gateaux differentiable functions that converges to the map in the sup norm topology such that the limit superior of the directional derivatives in any direction coincides with the generalised directional derivative of the Lipschitz map in that direction.},
+  archive  = {J_JACM},
+  author   = {Edalat, Abbas},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {8:1-32},
+  title    = {Smooth approximation of lipschitz maps and their subgradients},
+  volume   = {69},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The complexity and expressive power of limit datalog.
+<em>JACM</em>, <em>69</em>(1), 6:1–83. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Motivated by applications in declarative data analysis, in this article, we study DatalogZ—an extension of Datalog with stratified negation and arithmetic functions over integers. This language is known to be undecidable, so we present the fragment of limit DatalogZ programs, which is powerful enough to naturally capture many important data analysis tasks. In limit DatalogZ, all intensional predicates with a numeric argument are limit predicates that keep maximal or minimal bounds on numeric values. We show that reasoning in limit DatalogZ is decidable if a linearity condition restricting the use of multiplication is satisfied. In particular, limit-linear DatalogZ is complete for Δ2EXP and captures Δ2P over ordered datasets in the sense of descriptive complexity. We also provide a comprehensive study of several fragments of limit-linear DatalogZ. We show that semi-positive limit-linear programs (i.e., programs where negation is allowed only in front of extensional atoms) capture coNP over ordered datasets; furthermore, reasoning becomes coNEXP-complete in combined and coNP-complete in data complexity, where the lower bounds hold already for negation-free programs. In order to satisfy the requirements of data-intensive applications, we also propose an additional stability requirement, which causes the complexity of reasoning to drop to EXP in combined and to P in data complexity, thus obtaining the same bounds as for usual Datalog. Finally, we compare our formalisms with the languages underpinning existing Datalog-based approaches for data analysis and show that core fragments of these languages can be encoded as limit programs; this allows us to transfer decidability and complexity upper bounds from limit programs to other formalisms. Therefore, our article provides a unified logical framework for declarative data analysis which can be used as a basis for understanding the impact on expressive power and computational complexity of the key constructs available in existing languages.},
+  archive  = {J_JACM},
+  author   = {Kaminski, Mark and Kostylev, Egor V. and Grau, Bernardo Cuenca and Motik, Boris and Horrocks, Ian},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {6:1-83},
+  title    = {The complexity and expressive power of limit datalog},
+  volume   = {69},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Locally-iterative distributed (δ + 1)-coloring and
+applications. <em>JACM</em>, <em>69</em>(1), 5:1–26. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider graph coloring and related problems in the distributed message-passing model. Locally-iterative algorithms are especially important in this setting. These are algorithms in which each vertex decides about its next color only as a function of the current colors in its 1-hop-neighborhood. In STOC’93 Szegedy and Vishwanathan showed that any locally-iterative Δ + 1-coloring algorithm requires Ω (Δ log Δ + log * n) rounds, unless there exists “a very special type of coloring that can be very efficiently reduced” [44]. No such special coloring has been found since then. This led researchers to believe that Szegedy-Vishwanathan barrier is an inherent limitation for locally-iterative algorithms and to explore other approaches to the coloring problem [2, 3, 19, 32]. The latter gave rise to faster algorithms, but their heavy machinery that is of non-locally-iterative nature made them far less suitable to various settings. In this article, we obtain the aforementioned special type of coloring. Specifically, we devise a locally-iterative Δ + 1-coloring algorithm with running time O(Δ + log * n), i.e., below Szegedy-Vishwanathan barrier. This demonstrates that this barrier is not an inherent limitation for locally-iterative algorithms. As a result, we also achieve significant improvements for dynamic, self-stabilizing, and bandwidth-restricted settings. This includes the following results: We obtain self-stabilizing distributed algorithms for Δ + 1-vertex-coloring, (2Δ - 1)-edge-coloring, maximal independent set, and maximal matching with O(Δ + log * n) time. This significantly improves previously known results that have O(n) or larger running times [23]. We devise a (2Δ - 1)-edge-coloring algorithm in the CONGEST model with O(Δ + log * n) time and O(Δ)-edge-coloring in the Bit-Round model with O(Δ + log n) time. The factors of log * n and log n are unavoidable in the CONGEST and Bit-Round models, respectively. Previously known algorithms had superlinear dependency on Δ for (2Δ - 1)-edge-coloring in these models. We obtain an arbdefective coloring algorithm with running time O(√ Δ + log * n). Such a coloring is not necessarily proper, but has certain helpful properties. We employ it to compute a proper (1 + ε)Δ-coloring within O(√ Δ + log * n) time and Δ + 1-coloring within O(√ Δ log Δ log * Δ + log * n) time. This improves the recent state-of-the-art bounds of Barenboim from PODC’15 [2] and Fraigniaud et&amp;nbsp;al. from FOCS’16 [19] by polylogarithmic factors. Our algorithms are applicable to the SET-LOCAL model [25] (also known as the weak LOCAL model). In this model a relatively strong lower bound of Ω (Δ 1/3) is known for Δ + 1-coloring. However, most of the coloring algorithms do not work in this model. (In Reference [25] only Linial’s O(Δ 2)-time algorithm and Kuhn-Wattenhofer O(Δ log Δ)-time algorithms are shown to work in it.) We obtain the first linear-in-Δ Δ + 1-coloring algorithms that work also in this model.},
+  archive  = {J_JACM},
+  author   = {Barenboim, Leonid and Elkin, Michael and Goldenberg, Uri},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {5:1-26},
+  title    = {Locally-iterative distributed (Δ + 1)-coloring and applications},
+  volume   = {69},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The art gallery problem is ∃ℝ-complete. <em>JACM</em>,
+<em>69</em>(1), 4:1–70. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The Art Gallery Problem (AGP) is a classic problem in computational geometry, introduced in 1973 by Victor Klee. Given a simple polygon 풫 and an integer k, the goal is to decide if there exists a set G of k guards within 풫 such that every point p∈ 풫 is seen by at least one guard g∈ G. Each guard corresponds to a point in the polygon 풫, and we say that a guard g sees a point p if the line segment pg is contained in 풫.We prove that the AGP is ∃ ℝ-complete, implying that (1) any system of polynomial equations over the real numbers can be encoded as an instance of the AGP, and (2) the AGP is not in the complexity class NP unless NP = ∃ ℝ. As a corollary of our construction, we prove that for any real algebraic number α, there is an instance of the AGP where one of the coordinates of the guards equals α in any guard set of minimum cardinality. That rules out many natural geometric approaches to the problem, as it shows that any approach based on constructing a finite set of candidate points for placing guards has to include points with coordinates being roots of polynomials with arbitrary degree. As an illustration of our techniques, we show that for every compact semi-algebraic set S⊆ [0, 1]2, there exists a polygon with corners at rational coordinates such that for every p∈ [0, 1]2, there is a set of guards of minimum cardinality containing p if and only if p∈ S.In the ∃ ℝ-hardness proof for the AGP, we introduce a new ∃ ℝ-complete problem ETR-INV. We believe that this problem is of independent interest, as it has already been used to obtain ∃ ℝ-hardness proofs for other problems.},
+  archive  = {J_JACM},
+  author   = {Abrahamsen, Mikkel and Adamaszek, Anna and Miltzow, Tillmann},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {4:1-70},
+  title    = {The art gallery problem is ∃ℝ-complete},
+  volume   = {69},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Twin-width i: Tractable FO model checking. <em>JACM</em>,
+<em>69</em>(1), 3:1–46. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Inspired by a width invariant defined on permutations by Guillemot and Marx [SODA’14], we introduce the notion of twin-width on graphs and on matrices. Proper minor-closed classes, bounded rank-width graphs, map graphs, Kt-free unit d-dimensional ball graphs, posets with antichains of bounded size, and proper subclasses of dimension-2 posets all have bounded twin-width. On all these classes (except map graphs without geometric embedding) we show how to compute in polynomial time a sequence of d-contractions, witness that the twin-width is at most d. We show that FO model checking, that is deciding if a given first-order formula ϕ evaluates to true for a given binary structure G on a domain D, is FPT in |ϕ| on classes of bounded twin-width, provided the witness is given. More precisely, being given a d-contraction sequence for G, our algorithm runs in time f(d,|ϕ |) · |D| where f is a computable but non-elementary function. We also prove that bounded twin-width is preserved under FO interpretations and transductions (allowing operations such as squaring or complementing a graph). This unifies and significantly extends the knowledge on fixed-parameter tractability of FO model checking on non-monotone classes, such as the FPT algorithm on bounded-width posets by Gajarsk\&#39;{y} et al. [FOCS’15].},
+  archive  = {J_JACM},
+  author   = {Bonnet, \&#39;{E}douard and Kim, Eun Jung and Thomass\&#39;{e}, St\&#39;{e}phan and Watrigant, R\&#39;{e}mi},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {3:1-46},
+  title    = {Twin-width i: Tractable FO model checking},
+  volume   = {69},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Optimal bounds for the k-cut problem. <em>JACM</em>,
+<em>69</em>(1), 2:1–18. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In the k-cut problem, we want to find the lowest-weight set of edges whose deletion breaks a given (multi)graph into k connected components. Algorithms of Karger and Stein can solve this in roughly O(n2k) time. However, lower bounds from conjectures about the k-clique problem imply that Ω (n(1-o(1))k) time is likely needed. Recent results of Gupta, Lee, and Li have given new algorithms for general k-cut in n1.98k + O(1) time, as well as specialized algorithms with better performance for certain classes of graphs (e.g., for small integer edge weights).In this work, we resolve the problem for general graphs. We show that the Contraction Algorithm of Karger outputs any fixed k-cut of weight α λ k with probability Ωk(n-α k), where λ k denotes the minimum k-cut weight. This also gives an extremal bound of Ok(nk) on the number of minimum k-cuts and an algorithm to compute λ k with roughly nk polylog(n) runtime. Both are tight up to lower-order factors, with the algorithmic lower bound assuming hardness of max-weight k-clique.The first main ingredient in our result is an extremal bound on the number of cuts of weight less than 2 λk/k, using the Sunflower lemma. The second ingredient is a fine-grained analysis of how the graph shrinks—and how the average degree evolves—in the Karger process.},
+  archive  = {J_JACM},
+  author   = {Gupta, Anupam and Harris, David G. and Lee, Euiwoong and Li, Jason},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {2:1-18},
+  title    = {Optimal bounds for the K-cut problem},
+  volume   = {69},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). How to delegate computations: The power of no-signaling
+proofs. <em>JACM</em>, <em>69</em>(1), 1:1–82. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We construct a 1-round delegation scheme (i.e., argument-system) for every language computable in time t = t(n), where the running time of the prover is poly(t) and the running time of the verifier is n · polylog(t). In particular, for every language in P we obtain a delegation scheme with almost linear time verification. Our construction relies on the existence of a computational sub-exponentially secure private information retrieval (PIR) scheme.The proof exploits a curious connection between the problem of computation delegation and the model of multi-prover interactive proofs that are sound against no-signaling (cheating) strategies, a model that was studied in the context of multi-prover interactive proofs with provers that share quantum entanglement, and is motivated by the physical principle that information cannot travel faster than light.For any language computable in time t = t(n), we construct a multi-prover interactive proof (MIP), that is, sound against no-signaling strategies, where the running time of the provers is poly(t), the number of provers is polylog(t), and the running time of the verifier is n · polylog(t).In particular, this shows that the class of languages that have polynomial-time MIPs that are sound against no-signaling strategies, is exactly EXP. Previously, this class was only known to contain PSPACE.To convert our MIP into a 1-round delegation scheme, we use the method suggested by Aiello et al. (ICALP, 2000), which makes use of a PIR scheme. This method lacked a proof of security. We prove that this method is secure assuming the underlying MIP is secure against no-signaling provers.},
+  archive  = {J_JACM},
+  author   = {Kalai, Yael Tauman and Raz, Ran and Rothblum, Ron D.},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {1:1-82},
+  title    = {How to delegate computations: The power of no-signaling proofs},
+  volume   = {69},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). #NFA admits an FPRAS: Efficient enumeration, counting, and
+uniform generation for logspace classes. <em>JACM</em>, <em>68</em>(6),
+48:1–40. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this work, we study two simple yet general complexity classes, based on logspace Turing machines, that provide a unifying framework for efficient query evaluation in areas such as information extraction and graph databases, among others. We investigate the complexity of three fundamental algorithmic problems for these classes: enumeration, counting, and uniform generation of solutions, and show that they have several desirable properties in this respect.Both complexity classes are defined in terms of non-deterministic logspace transducers (NL-transducers). For the first class, we consider the case of unambiguous NL-transducers, and we prove constant delay enumeration and both counting and uniform generation of solutions in polynomial time. For the second class, we consider unrestricted NL-transducers, and we obtain polynomial delay enumeration, approximate counting in polynomial time, and polynomial-time randomized algorithms for uniform generation. More specifically, we show that each problem in this second class admits a fully polynomial-time randomized approximation scheme (FPRAS) and a polynomial-time Las Vegas algorithm (with preprocessing) for uniform generation. Remarkably, the key idea to prove these results is to show that the fundamental problem # NFA admits an FPRAS, where # NFA is the problem of counting the number of strings of length n (given in unary) accepted by a non-deterministic finite automaton (NFA). While this problem is known to be P-complete and, more precisely, SpanL-complete, it was open whether this problem admits an FPRAS. In this work, we solve this open problem and obtain as a welcome corollary that every function in SpanL admits an FPRAS.},
+  archive  = {J_JACM},
+  author   = {Arenas, Marcelo and Croquevielle, Luis Alberto and Jayaram, Rajesh and Riveros, Cristian},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {48:1-40},
+  title    = {#NFA admits an FPRAS: Efficient enumeration, counting, and uniform generation for logspace classes},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Tight bounds for asymptotic and approximate consensus.
+<em>JACM</em>, <em>68</em>(6), 46:1–35. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Agreeing on a common value among a set of agents is a fundamental problem in distributed computing, which occurs in several variants: In contrast to exact consensus, approximate variants are studied in systems where exact agreement is not possible or required, e.g., in human-made distributed control systems and in the analysis of natural distributed systems, such as bird flocking and opinion dynamics.We study the time complexity of two classical agreement problems: non-terminating asymptotic consensus and terminating approximate consensus. Asymptotic consensus, requires agents to repeatedly set their outputs such that the outputs converge to a common value within the convex hull of initial values; approximate consensus requires agents to eventually stop setting their outputs, which must then lie within a predefined distance of each other.We prove tight lower bounds on the contraction ratios of asymptotic consensus algorithms subject to oblivious message adversaries, from which we deduce bounds on the time complexity of approximate consensus algorithms. In particular, the obtained bounds show optimality of asymptotic and approximate consensus algorithms presented by Charron-Bost et&amp;nbsp;al. (ICALP’16) for certain systems, including the strongest oblivious message adversary in which asymptotic and approximate consensus are solvable. As a corollary we also obtain asymptotically tight bounds for asymptotic consensus in the classical asynchronous model with crashes.Central to the lower-bound proofs is an extended notion of valency, the set of reachable limits of an asymptotic consensus algorithm starting from a given configuration. We further relate topological properties of valencies to the solvability of exact consensus, shedding some light on the relation of these three fundamental problems in dynamic networks.},
+  archive  = {J_JACM},
+  author   = {F\&quot;{u}gger, Matthias and Nowak, Thomas and Schwarz, Manfred},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {46:1-35},
+  title    = {Tight bounds for asymptotic and approximate consensus},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Decision list compression by mild random restrictions.
+<em>JACM</em>, <em>68</em>(6), 45:1–17. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A decision list is an ordered list of rules. Each rule is specified by a term, which is a conjunction of literals, and a value. Given an input, the output of a decision list is the value corresponding to the first rule whose term is satisfied by the input. Decision lists generalize both CNFs and DNFs and have been studied both in complexity theory and in learning theory.The size of a decision list is the number of rules, and its width is the maximal number of variables in a term. We prove that decision lists of small width can always be approximated by decision lists of small size, where we obtain sharp bounds for such approximation. This also resolves a conjecture of Gopalan, Meka, and Reingold (Computational Complexity, 2013) on DNF sparsification.An ingredient in our proof is a new random restriction lemma, which allows to analyze how DNFs (and more generally, decision lists) simplify if a small fraction of the variables are fixed. This is in contrast to the more commonly used switching lemma, which requires most of the variables to be fixed.},
+  archive  = {J_JACM},
+  author   = {Lovett, Shachar and Wu, Kewen and Zhang, Jiapeng},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {45:1-17},
+  title    = {Decision list compression by mild random restrictions},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Near-linear time approximation schemes for clustering in
+doubling metrics. <em>JACM</em>, <em>68</em>(6), 44:1–34. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider the classic Facility Location, k-Median, and k-Means problems in metric spaces of doubling dimension d. We give nearly linear-time approximation schemes for each problem. The complexity of our algorithms is \~{O}(2(1/ε)O(d2) n), making a significant improvement over the state-of-the-art algorithms that run in time n(d/ε)O(d).Moreover, we show how to extend the techniques used to get the first efficient approximation schemes for the problems of prize-collecting k-Median and k-Means and efficient bicriteria approximation schemes for k-Median with outliers, k-Means with outliers and k-Center.},
+  archive  = {J_JACM},
+  author   = {Cohen-Addad, Vincent and Feldmann, Andreas Emil and Saulpic, David},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {44:1-34},
+  title    = {Near-linear time approximation schemes for clustering in doubling metrics},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Distribution-free, risk-controlling prediction sets.
+<em>JACM</em>, <em>68</em>(6), 43:1–34. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {While improving prediction accuracy has been the focus of machine learning in recent years, this alone does not suffice for reliable decision-making. Deploying learning systems in consequential settings also requires calibrating and communicating the uncertainty of predictions. To convey instance-wise uncertainty for prediction tasks, we show how to generate set-valued predictions from a black-box predictor that controls the expected loss on future test points at a user-specified level. Our approach provides explicit finite-sample guarantees for any dataset by using a holdout set to calibrate the size of the prediction sets. This framework enables simple, distribution-free, rigorous error control for many tasks, and we demonstrate it in five large-scale machine learning problems: (1) classification problems where some mistakes are more costly than others; (2) multi-label classification, where each observation has multiple associated labels; (3) classification problems where the labels have a hierarchical structure; (4) image segmentation, where we wish to predict a set of pixels containing an object of interest; and (5) protein structure prediction. Last, we discuss extensions to uncertainty quantification for ranking, metric learning, and distributionally robust learning.},
+  archive  = {J_JACM},
+  author   = {Bates, Stephen and Angelopoulos, Anastasios and Lei, Lihua and Malik, Jitendra and Jordan, Michael},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {43:1-34},
+  title    = {Distribution-free, risk-controlling prediction sets},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Adjacency labelling for planar graphs (and beyond).
+<em>JACM</em>, <em>68</em>(6), 42:1–33. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We show that there exists an adjacency labelling scheme for planar graphs where each vertex of an n-vertex planar graph G is assigned a (1 + o(1)) log 2 n-bit label and the labels of two vertices u and v are sufficient to determine if uv is an edge of G. This is optimal up to the lower order term and is the first such asymptotically optimal result. An alternative, but equivalent, interpretation of this result is that, for every positive integer n, there exists a graph Un with n 1+o(1) vertices such that every n-vertex planar graph is an induced subgraph of Un. These results generalize to a number of other graph classes, including bounded genus graphs, apex-minor-free graphs, bounded-degree graphs from minor closed families, and k-planar graphs.},
+  archive  = {J_JACM},
+  author   = {Dujmovi\&#39;{c}, Vida and Esperet, Louis and Gavoille, Cyril and Joret, Gwena\&quot;{e}l and Micek, Piotr and Morin, Pat},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {42:1-33},
+  title    = {Adjacency labelling for planar graphs (and beyond)},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Logical relations as types: Proof-relevant parametricity for
+program modules. <em>JACM</em>, <em>68</em>(6), 41:1–47. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The theory of program modules is of interest to language designers not only for its practical importance to programming, but also because it lies at the nexus of three fundamental concerns in language design: the phase distinction, computational effects, and type abstraction. We contribute a fresh “synthetic” take on program modules that treats modules as the fundamental constructs, in which the usual suspects of prior module calculi (kinds, constructors, dynamic programs) are rendered as derived notions in terms of a modal type-theoretic account of the phase distinction. We simplify the account of type abstraction (embodied in the generativity of module functors) through a lax modality that encapsulates computational effects, placing projectibility of module expressions on a type-theoretic basis. Our main result is a (significant) proof-relevant and phase-sensitive generalization of the Reynolds abstraction theorem for a calculus of program modules, based on a new kind of logical relation called a parametricity structure. Parametricity structures generalize the proof-irrelevant relations of classical parametricity to proof-relevant families, where there may be non-trivial evidence witnessing the relatedness of two programs—simplifying the metatheory of strong sums over the collection of types, for although there can be no “relation classifying relations,” one easily accommodates a “family classifying small families.” Using the insight that logical relations/parametricity is itself a form of phase distinction between the syntactic and the semantic, we contribute a new synthetic approach to phase separated parametricity based on the slogan logical relations as types, by iterating our modal account of the phase distinction. We axiomatize a dependent type theory of parametricity structures using two pairs of complementary modalities (syntactic, semantic) and (static, dynamic), substantiated using the topos theoretic Artin gluing construction. Then, to construct a simulation between two implementations of an abstract type, one simply programs a third implementation whose type component carries the representation invariant.},
+  archive  = {J_JACM},
+  author   = {Sterling, Jonathan and Harper, Robert},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {41:1-47},
+  title    = {Logical relations as types: Proof-relevant parametricity for program modules},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Fast sampling and counting k-SAT solutions in the local
+lemma regime. <em>JACM</em>, <em>68</em>(6), 40:1–42. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We give new algorithms based on Markov chains to sample and approximately count satisfying assignments to k-uniform CNF formulas where each variable appears at most d times. For any k and d satisfying kd &amp;lt; no(1) and k ≥ 20 log k + 20 log d + 60, the new sampling algorithm runs in close to linear time, and the counting algorithm runs in close to quadratic time.Our approach is inspired by Moitra (JACM, 2019), which remarkably utilizes the Lov\&#39;{a}sz local lemma in approximate counting. Our main technical contribution is to use the local lemma to bypass the connectivity barrier in traditional Markov chain approaches, which makes the well-developed MCMC method applicable on disconnected state spaces such as SAT solutions. The benefit of our approach is to avoid the enumeration of local structures and obtain fixed polynomial running times, even if k = ω (1) or d = ω (1).},
+  archive  = {J_JACM},
+  author   = {Feng, Weiming and Guo, Heng and Yin, Yitong and Zhang, Chihao},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {6},
+  pages    = {40:1-42},
+  title    = {Fast sampling and counting K-SAT solutions in the local lemma regime},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Lower bounds for maximal matchings and maximal independent
+sets. <em>JACM</em>, <em>68</em>(5), 39:1–30. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {There are distributed graph algorithms for finding maximal matchings and maximal independent sets in O(Δ + log* n) communication rounds; here, n is the number of nodes and Δ is the maximum degree. The lower bound by Linial (1987, 1992) shows that the dependency on n is optimal: These problems cannot be solved in o(log* n) rounds even if Δ = 2. However, the dependency on Δ is a long-standing open question, and there is currently an exponential gap between the upper and lower bounds.We prove that the upper bounds are tight. We show that any algorithm that finds a maximal matching or maximal independent set with probability at least 1-1/n requires Ω (min { Δ, log log n / log log log n}) rounds in the LOCAL model of distributed computing. As a corollary, it follows that any deterministic algorithm that finds a maximal matching or maximal independent set requires Ω (min {Δ, log n / log log n}) rounds; this is an improvement over prior lower bounds also as a function of&amp;nbsp;n.},
+  archive  = {J_JACM},
+  author   = {Balliu, Alkida and Brandt, Sebastian and Hirvonen, Juho and Olivetti, Dennis and Rabie, Mika\&quot;{e}l and Suomela, Jukka},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {39:1-30},
+  title    = {Lower bounds for maximal matchings and maximal independent sets},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Complexity analysis of generalized and fractional hypertree
+decompositions. <em>JACM</em>, <em>68</em>(5), 38:1–50. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Hypertree decompositions (HDs), as well as the more powerful generalized hypertree decompositions (GHDs), and the yet more general fractional hypertree decompositions (FHDs) are hypergraph decomposition methods successfully used for answering conjunctive queries and for solving constraint satisfaction problems. Every hypergraph H has a width relative to each of these methods: its hypertree width hw(H), its generalized hypertree width ghw(H), and its fractional hypertree width fhw(H), respectively. It is known that hw(H)≤ k can be checked in polynomial time for fixed k, while checking ghw(H)≤ k is NP-complete for k ≥ 3. The complexity of checking fhw(H)≤ k for a fixed k has been open for over a decade.We settle this open problem by showing that checking fhw(H)≤ k is NP-complete, even for k=2. The same construction allows us to prove also the NP-completeness of checking ghw(H)≤ k for k=2. After that, we identify meaningful restrictions that make checking for bounded ghw or fhw tractable or allow for an efficient approximation of the fhw.},
+  archive  = {J_JACM},
+  author   = {Gottlob, Georg and Lanzinger, Matthias and Pichler, Reinhard and Razgon, Igor},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {38:1-50},
+  title    = {Complexity analysis of generalized and fractional hypertree decompositions},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Synchronization strings: Codes for insertions and deletions
+approaching the singleton bound. <em>JACM</em>, <em>68</em>(5), 36:1–39.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We introduce synchronization strings, which provide a novel way to efficiently deal with synchronization errors, i.e., insertions and deletions. Synchronization errors are strictly more general and much harder to cope with than more commonly considered Hamming-type errors, i.e., symbol substitutions and erasures. For every ε &amp;gt; 0, synchronization strings allow us to index a sequence with an ε-O(1)-size alphabet, such that one can efficiently transform k synchronization errors into (1 + ε)k Hamming-type errors. This powerful new technique has many applications. In this article, we focus on designing insdel codes, i.e., error correcting block codes (ECCs) for insertion-deletion channels.While ECCs for both Hamming-type errors and synchronization errors have been intensely studied, the latter has largely resisted progress. As Mitzenmacher puts it in his 2009 survey [30]: “Channels with synchronization errors...are simply not adequately understood by current theory. Given the near-complete knowledge, we have for channels with erasures and errors...our lack of understanding about channels with synchronization errors is truly remarkable.” Indeed, it took until 1999 for the first insdel codes with constant rate, constant distance, and constant alphabet size to be constructed and only since 2016 are there constructions of constant rate insdel codes for asymptotically large noise rates. Even in the asymptotically large or small noise regimes, these codes are polynomially far from the optimal rate-distance tradeoff. This makes the understanding of insdel codes up to this work equivalent to what was known for regular ECCs after Forney introduced concatenated codes in his doctoral thesis 50 years ago.A straightforward application of our synchronization strings-based indexing method gives a simple black-box construction that transforms any ECC into an equally efficient insdel code with only a small increase in the alphabet size. This instantly transfers much of the highly developed understanding for regular ECCs into the realm of insdel codes. Most notably, for the complete noise spectrum, we obtain efficient “near-MDS” insdel codes, which get arbitrarily close to the optimal rate-distance tradeoff given by the Singleton bound. In particular, for any δ ∈ (0,1) and ε &amp;gt; 0, we give a family of insdel codes achieving a rate of 1 - δ - ε over a constant-size alphabet that efficiently corrects a δ fraction of insertions or deletions.},
+  archive  = {J_JACM},
+  author   = {Haeupler, Bernhard and Shahrasbi, Amirbehshad},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {36:1-39},
+  title    = {Synchronization strings: Codes for insertions and deletions approaching the singleton bound},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Stable model semantics for guarded existential rules and
+description logics: Decidability and complexity. <em>JACM</em>,
+<em>68</em>(5), 35:1–87. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This work investigates the decidability and complexity of database query answering under guarded existential rules with nonmonotonic negation according to the classical stable model semantics. In this setting, existential quantification is interpreted via Skolem functions, and the unique name assumption is adopted. As a first result, we show the decidability of answering first-order queries based on such rules by a translation into the satisfiability problem for guarded second-order formulas having the tree-model property. To obtain precise complexity results for unions of conjunctive queries, we transform the original problem in polynomial time into an intermediate problem that is easier to analyze: query answering for guarded disjunctive existential rules with stratified negation. We obtain precise bounds for the general setting and for various restricted settings. We also consider extensions of the original formalism with negative constraints, keys, and the possibility of negated atoms in queries. Finally, we show how the above results can be used to provide decidability and complexity results for a natural adaptation of the stable model semantics to description logics such as&amp;nbsp;ELHI and the DL-Lite&amp;nbsp;family.},
+  archive  = {J_JACM},
+  author   = {Gottlob, Georg and Hernich, Andr\&#39;{e} and Kupke, Clemens and Lukasiewicz, Thomas},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {35:1-87},
+  title    = {Stable model semantics for guarded existential rules and description logics: Decidability and complexity},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The reachability problem for two-dimensional vector addition
+systems with states. <em>JACM</em>, <em>68</em>(5), 34:1–43. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We prove that the reachability problem for two-dimensional vector addition systems with states is NL-complete or PSPACE-complete, depending on whether the numbers in the input are encoded in unary or binary. As a key underlying technical result, we show that, if a configuration is reachable, then there exists a witnessing path whose sequence of transitions is contained in a bounded language defined by a regular expression of pseudo-polynomially bounded length. This, in turn, enables us to prove that the lengths of minimal reachability witnesses are pseudo-polynomially bounded.},
+  archive  = {J_JACM},
+  author   = {Blondin, Michael and Englert, Matthias and Finkel, Alain and G\&quot;{O}ller, Stefan and Haase, Christoph and Lazi\&#39;{c}, Ranko and Mckenzie, Pierre and Totzke, Patrick},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {34:1-43},
+  title    = {The reachability problem for two-dimensional vector addition systems with states},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). How to construct quantum random functions. <em>JACM</em>,
+<em>68</em>(5), 33:1–43. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Pseudorandom functions (PRFs) are one of the foundational concepts in theoretical computer science, with numerous applications in complexity theory and cryptography. In this work, we study the security of PRFs when evaluated on quantum superpositions of inputs. The classical techniques for arguing the security of PRFs do not carry over to this setting, even if the underlying building blocks are quantum resistant. We therefore develop a new proof technique to show that many of the classical PRF constructions remain secure when evaluated on superpositions.},
+  archive  = {J_JACM},
+  author   = {Zhandry, Mark},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {33:1-43},
+  title    = {How to construct quantum random functions},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Chasing convex bodies with linear competitive ratio.
+<em>JACM</em>, <em>68</em>(5), 32:1–10. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We study the problem of chasing convex bodies online: given a sequence of convex bodies the algorithm must respond with points in an online fashion (i.e., is chosen before is revealed). The objective is to minimize the sum of distances between successive points in this sequence. Bubeck et&amp;nbsp;al. (STOC 2019) gave a -competitive algorithm for this problem. We give an algorithm that is -competitive for any sequence of length .},
+  archive  = {J_JACM},
+  author   = {Argue, C. J. and Gupta, Anupam and Tang, Ziye and Guruganesh, Guru},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {32:1-10},
+  title    = {Chasing convex bodies with linear competitive ratio},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A cryptographic test of quantumness and certifiable
+randomness from a single quantum device. <em>JACM</em>, <em>68</em>(5),
+31:1–47. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider a new model for the testing of untrusted quantum devices, consisting of a single polynomial time bounded quantum device interacting with a classical polynomial time verifier. In this model, we propose solutions to two tasks—a protocol for efficient classical verification that the untrusted device is “truly quantum” and a protocol for producing certifiable randomness from a single untrusted quantum device. Our solution relies on the existence of a new cryptographic primitive for constraining the power of an untrusted quantum device: post-quantum secure trapdoor claw-free functions that must satisfy an adaptive hardcore bit property. We show how to construct this primitive based on the hardness of the learning with errors (LWE) problem.},
+  archive  = {J_JACM},
+  author   = {Brakerski, Zvika and Christiano, Paul and Mahadev, Urmila and Vazirani, Umesh and Vidick, Thomas},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {5},
+  pages    = {31:1-47},
+  title    = {A cryptographic test of quantumness and certifiable randomness from a single quantum device},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Almost tight lower bounds for hard cutting problems in
+embedded graphs. <em>JACM</em>, <em>68</em>(4), 30:1–26. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We prove essentially tight lower bounds, conditionally to the Exponential Time Hypothesis, for two fundamental but seemingly very different cutting problems on surface-embedded graphs: the Shortest Cut Graph problem and the Multiway Cut problem. A cut graph of a graph&amp;nbsp;G embedded on a surface&amp;nbsp;S is a subgraph of&amp;nbsp;G whose removal from&amp;nbsp;S leaves a disk. We consider the problem of deciding whether an unweighted graph embedded on a surface of genus&amp;nbsp;G has a cut graph of length at most a given value. We prove a time lower bound for this problem of nΩ(g log g) conditionally to the ETH. In other words, the first nO(g)-time algorithm by Erickson and Har-Peled [SoCG 2002, Discr. Comput. Geom. 2004] is essentially optimal. We also prove that the problem is W[1]-hard when parameterized by the genus, answering a 17-year-old question of these authors. A multiway cut of an undirected graph&amp;nbsp;G with t distinguished vertices, called terminals, is a set of edges whose removal disconnects all pairs of terminals. We consider the problem of deciding whether an unweighted graph&amp;nbsp;G has a multiway cut of weight at most a given value. We prove a time lower bound for this problem of nΩ(gt+ g2+tlog (g+t)), conditionally to the ETH, for any choice of the genus&amp;nbsp;g ≥ 0 of the graph and the number of terminals&amp;nbsp;t≥ 4. In other words, the algorithm by the second author [Algorithmica 2017] (for the more general multicut problem) is essentially optimal; this extends the lower bound by the third author [ICALP 2012] (for the planar case). Reductions to planar problems usually involve a gridlike structure. The main novel idea for our results is to understand what structures instead of grids are needed if we want to exploit optimally a certain value&amp;nbsp;G of the genus.},
+  archive  = {J_JACM},
+  author   = {Cohen-Addad, Vincent and de Verdi\`{e}re, \&#39;{E}ric Colin and Marx, D\&#39;{a}niel and de Mesmay, Arnaud},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {30:1-26},
+  title    = {Almost tight lower bounds for hard cutting problems in embedded graphs},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Algebraic approach to promise constraint satisfaction.
+<em>JACM</em>, <em>68</em>(4), 28:1–66. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The complexity and approximability of the constraint satisfaction problem (CSP) has been actively studied over the past 20 years. A new version of the CSP, the promise CSP (PCSP), has recently been proposed, motivated by open questions about the approximability of variants of satisfiability and graph colouring. The PCSP significantly extends the standard decision CSP. The complexity of CSPs with a&amp;nbsp;fixed constraint language on a&amp;nbsp;finite domain has recently been fully classified, greatly guided by the algebraic approach, which uses polymorphisms—high-dimensional symmetries of solution spaces—to analyse the complexity of problems. The corresponding classification for PCSPs is wide open and includes some long-standing open questions, such as the complexity of approximate graph colouring, as special cases. The basic algebraic approach to PCSP was initiated by Brakensiek and Guruswami, and in this article, we significantly extend it and lift it from concrete properties of polymorphisms to their abstract properties. We introduce a&amp;nbsp;new class of problems that can be viewed as algebraic versions of the (Gap) Label Cover problem and show that every PCSP with a&amp;nbsp;fixed constraint language is equivalent to a&amp;nbsp;problem of this form. This allows us to identify a&amp;nbsp;“measure of symmetry” that is well suited for comparing and relating the complexity of different PCSPs via the algebraic approach. We demonstrate how our theory can be applied by giving both general and specific hardness/tractability results. Among other things, we improve the state-of-the-art in approximate graph colouring by showing that, for any k≥ 3, it is NP-hard to find a&amp;nbsp;(2k-1)-colouring of a&amp;nbsp;given k-colourable graph.},
+  archive  = {J_JACM},
+  author   = {Barto, Libor and Bul\&#39;{\i}n, Jakub and Krokhin, Andrei and Opr\v{s}al, Jakub},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {28:1-66},
+  title    = {Algebraic approach to promise constraint satisfaction},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Balancing straight-line programs. <em>JACM</em>,
+<em>68</em>(4), 27:1–40. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We show that a context-free grammar of size that produces a single string of length (such a grammar is also called a string straight-line program) can be transformed in linear time into a context-free grammar for of size , whose unique derivation tree has depth . This solves an open problem in the area of grammar-based compression, improves many results in this area, and greatly simplifies many existing constructions. Similar results are shown for two formalisms for grammar-based tree compression: top dags and forest straight-line programs. These balancing results can be all deduced from a single meta-theorem stating that the depth of an algebraic circuit over an algebra with a certain finite base property can be reduced to with the cost of a constant multiplicative size increase. Here, refers to the size of the unfolding (or unravelling) of the circuit. In particular, this results applies to standard arithmetic circuits over (noncommutative) semirings.},
+  archive  = {J_JACM},
+  author   = {Ganardi, Moses and Je\.{z}, Artur and Lohrey, Markus},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {27:1-40},
+  title    = {Balancing straight-line programs},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). On the power of symmetric linear programs. <em>JACM</em>,
+<em>68</em>(4), 26:1–35. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider families of symmetric linear programs (LPs) that decide a property of graphs (or other relational structures) in the sense that, for each size of graph, there is an LP defining a polyhedral lift that separates the integer points corresponding to graphs with the property from those corresponding to graphs without the property. We show that this is equivalent, with at most polynomial blow-up in size, to families of symmetric Boolean circuits with threshold gates. In particular, when we consider polynomial-size LPs, the model is equivalent to definability in a non-uniform version of fixed-point logic with counting (FPC). Known upper and lower bounds for FPC apply to the non-uniform version. In particular, this implies that the class of graphs with perfect matchings has polynomial-size symmetric LPs, while we obtain an exponential lower bound for symmetric LPs for the class of Hamiltonian graphs. We compare and contrast this with previous results (Yannakakis 1991), showing that any symmetric LPs for the matching and TSP polytopes have exponential size. As an application, we establish that for random, uniformly distributed graphs, polynomial-size symmetric LPs are as powerful as general Boolean circuits. We illustrate the effect of this on the well-studied planted-clique problem.},
+  archive  = {J_JACM},
+  author   = {Atserias, Albert and Dawar, Anuj and Ochremiak, Joanna},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {26:1-35},
+  title    = {On the power of symmetric linear programs},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Kernel-based methods for bandit convex optimization.
+<em>JACM</em>, <em>68</em>(4), 25:1–35. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider the adversarial convex bandit problem and we build the first poly(T)-time algorithm with poly(n) √T-regret for this problem. To do so, we introduce three new ideas in the derivative-free optimization literature: (i) kernel methods, (ii) a generalization of Bernoulli convolutions, and (iii) a new annealing schedule for exponential weights (with increasing learning rate). The basic version of our algorithm achieves \~{O}(n9.5 √T)-regret, and we show that a simple variant of this algorithm can be run in poly(n log (T))-time per step (for polytopes with polynomially many constraints) at the cost of an additional poly(n) To(1) factor in the regret. These results improve upon the \~{O}(n11 √T-regret and exp (poly(T))-time result of the first two authors and the log (T)poly(n) √T-regret and log(T)poly(n)-time result of Hazan and Li. Furthermore, we conjecture that another variant of the algorithm could achieve \~{O}(n1.5 √T)-regret, and moreover that this regret is unimprovable (the current best lower bound being Ω (n √T) and it is achieved with linear functions). For the simpler situation of zeroth order stochastic convex optimization this corresponds to the conjecture that the optimal query complexity is of order n3 / ɛ2.},
+  archive  = {J_JACM},
+  author   = {Bubeck, S\&#39;{e}bastien and Eldan, Ronen and Lee, Yin Tat},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {25:1-35},
+  title    = {Kernel-based methods for bandit convex optimization},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Competitive caching with machine learned advice.
+<em>JACM</em>, <em>68</em>(4), 24:1–25. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Traditional online algorithms encapsulate decision making under uncertainty, and give ways to hedge against all possible future events, while guaranteeing a nearly optimal solution, as compared to an offline optimum. On the other hand, machine learning algorithms are in the business of extrapolating patterns found in the data to predict the future, and usually come with strong guarantees on the expected generalization error.In this work, we develop a framework for augmenting online algorithms with a machine learned predictor to achieve competitive ratios that provably improve upon unconditional worst-case lower bounds when the predictor has low error. Our approach treats the predictor as a complete black box and is not dependent on its inner workings or the exact distribution of its errors.We apply this framework to the traditional caching problem—creating an eviction strategy for a cache of size k. We demonstrate that naively following the oracle’s recommendations may lead to very poor performance, even when the average error is quite low. Instead, we show how to modify the Marker algorithm to take into account the predictions and prove that this combined approach achieves a competitive ratio that both (i) decreases as the predictor’s error decreases and (ii) is always capped by O(log k), which can be achieved without any assistance from the predictor. We complement our results with an empirical evaluation of our algorithm on real-world datasets and show that it performs well empirically even when using simple off-the-shelf predictions.},
+  archive  = {J_JACM},
+  author   = {Lykouris, Thodoris and Vassilvitskii, Sergei},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {24:1-25},
+  title    = {Competitive caching with machine learned advice},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Clique is hard on average for regular resolution.
+<em>JACM</em>, <em>68</em>(4), 23:1–26. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We prove that for k ≪ 4√n regular resolution requires length nΩ(k) to establish that an Erd\H{o}s–R\&#39;{e}nyi graph with appropriately chosen edge density does not contain a k-clique. This lower bound is optimal up to the multiplicative constant in the exponent and also implies unconditional nΩ(k) lower bounds on running time for several state-of-the-art algorithms for finding maximum cliques in graphs.},
+  archive  = {J_JACM},
+  author   = {Atserias, Albert and Bonacina, Ilario and De Rezende, Susanna F. and Lauria, Massimo and Nordstr\&quot;{o}m, Jakob and Razborov, Alexander},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {23:1-26},
+  title    = {Clique is hard on average for regular resolution},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Response time distribution in a tandem pair of queues with
+batch processing. <em>JACM</em>, <em>68</em>(4), 22:1–41. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Response time density is obtained in a tandem pair of Markovian queues with both batch arrivals and batch departures. The method uses conditional forward and reversed node sojourn times and derives the Laplace transform of the response time probability density function in the case that batch sizes are finite. The result is derived by a generating function method that takes into account that the path is not overtake-free in the sense that the tagged task being tracked is affected by later arrivals at the second queue. A novel aspect of the method is that a vector of generating functions is solved for, rather than a single scalar-valued function, which requires investigation of the singularities of a certain matrix. A recurrence formula is derived to obtain arbitrary moments of response time by differentiation of the Laplace transform at the origin, and these can be computed rapidly by iteration. Numerical results for the first four moments of response time are displayed for some sample networks that have product-form solutions for their equilibrium queue length probabilities, along with the densities themselves by numerical inversion of the Laplace transform. Corresponding approximations are also obtained for (non-product-form) pairs of “raw” batch-queues—with no special arrivals—and validated against regenerative simulation, which indicates good accuracy. The methods are appropriate for modeling bursty internet and cloud traffic and a possible role in energy-saving is considered.},
+  archive  = {J_JACM},
+  author   = {Harrison, P. G. and Bor, J.},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {4},
+  pages    = {22:1-41},
+  title    = {Response time distribution in a tandem pair of queues with batch processing},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Near-optimal distributed triangle enumeration via expander
+decompositions. <em>JACM</em>, <em>68</em>(3), 21:1–36. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present improved distributed algorithms for variants of the triangle finding problem in the model. We show that triangle detection, counting, and enumeration can be solved in rounds using expander decompositions. This matches the triangle enumeration lower bound of by Izumi and Le&amp;nbsp;Gall [PODC’17] and Pandurangan, Robinson, and Scquizzato [SPAA’18], which holds even in the model. The previous upper bounds for triangle detection and enumeration in were and , respectively, due to Izumi and Le&amp;nbsp;Gall [PODC’17]. An -expander decomposition of a graph is a clustering of the vertices such that (i) each cluster induces a subgraph with conductance at least and (ii) the number of inter-cluster edges is at most . We show that an -expander decomposition with can be constructed in rounds for any and positive integer . For example, a -expander decomposition only requires rounds to compute, which is optimal up to subpolynomial factors, and a -expander decomposition can be computed in rounds, for any arbitrarily small constant .Our triangle finding algorithms are based on the following generic framework using expander decompositions, which is of independent interest. We first construct an expander decomposition. For each cluster, we simulate algorithms with small overhead by applying the expander routing algorithm due to Ghaffari, Kuhn, and Su [PODC’17] Finally, we deal with inter-cluster edges using recursive calls.},
+  archive  = {J_JACM},
+  author   = {Chang, Yi-Jun and Pettie, Seth and Saranurak, Thatchaphol and Zhang, Hengjie},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {21:1-36},
+  title    = {Near-optimal distributed triangle enumeration via expander decompositions},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Approximating edit distance in truly subquadratic time:
+Quantum and MapReduce. <em>JACM</em>, <em>68</em>(3), 19:1–41. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The edit distance between two strings is defined as the smallest number of insertions, deletions, and substitutions that need to be made to transform one of the strings to another one. Approximating edit distance in subquadratic time is “one of the biggest unsolved problems in the field of combinatorial pattern matching”&amp;nbsp;[37]. Our main result is a quantum constant approximation algorithm for computing the edit distance in truly subquadratic time. More precisely, we give an quantum algorithm that approximates the edit distance within a factor of 3. We further extend this result to an quantum algorithm that approximates the edit distance within a larger constant factor. Our solutions are based on a framework for approximating edit distance in parallel settings. This framework requires as black box an algorithm that computes the distances of several smaller strings all at once. For a quantum algorithm, we reduce the black box to metric estimation and provide efficient algorithms for approximating it. We further show that this framework enables us to approximate edit distance in distributed settings. To this end, we provide a MapReduce algorithm to approximate edit distance within a factor of , with sublinearly many machines and sublinear memory. Also, our algorithm runs in a logarithmic number of rounds.},
+  archive  = {J_JACM},
+  author   = {Boroujeni, Mahdi and Ehsani, Soheil and Ghodsi, Mohammad and Hajiaghayi, Mohammadtaghi and Seddighin, Saeed},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {19:1-41},
+  title    = {Approximating edit distance in truly subquadratic time: Quantum and MapReduce},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The frobenius and factor universality problems of the kleene
+star of a finite set of words. <em>JACM</em>, <em>68</em>(3), 18:1–22.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We solve open problems concerning the Kleene star of a finite set of words over an alphabet . The Frobenius monoid problem is the question for a given finite set of words , whether the language is cofinite. We show that it is PSPACE-complete. We also exhibit an infinite family of sets such that the length of the longest words not in (when is cofinite) is exponential in the length of the longest words in and subexponential in the sum of the lengths of words in . The factor universality problem is the question for a given finite set of words , whether every word over is a factor (substring) of some word from . We show that it is also PSPACE-complete. Besides that, we exhibit an infinite family of sets such that the length of the shortest words not being a factor of any word in is exponential in the length of the longest words in and subexponential in the sum of the lengths of words in . This essentially settles in the negative the longstanding Restivo’s conjecture (1981) and its weak variations. All our solutions are based on one shared construction, and as an auxiliary general tool, we introduce the concept of set rewriting systems. Finally, we complement the results with upper bounds.},
+  archive  = {J_JACM},
+  author   = {Mika, Maksymilian and Szyku\l{}a, Marek},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {18:1-22},
+  title    = {The frobenius and factor universality problems of the kleene star of a finite set of words},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Fork and join queueing networks with heavy tails: Scaling
+dimension and throughput limit. <em>JACM</em>, <em>68</em>(3), 17:1–30.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Parallel and distributed computing systems are foundational to the success of cloud computing and big data analytics. These systems process computational workflows in a way that can be mathematically modeled by a fork-and-join queueing network with blocking (FJQN/B). While engineering solutions have long been made to build and scale such systems, it is challenging to rigorously characterize their throughput performance at scale theoretically. What further complicates the study is the presence of heavy-tailed delays that have been widely documented therein. In this article, we utilize an infinite sequence of FJQN/Bs to study the throughput limit and focus on an important class of heavy-tailed service times that are regularly varying with index . The throughput is said to be scalable if the throughput limit infimum of the sequence is strictly positive as the network size grows to infinity. We introduce two novel geometric concepts—scaling dimension and extended metric dimension—and show that an infinite sequence of FJQN/Bs is throughput scalable if the extended metric dimension and only if the scaling dimension . We also show that for the cases where buffer sizes are scaling in an order of , the scalability conditions are relaxed by a factor of&amp;nbsp;. The results provide new insights on the scalability of a rich class of FJQN/Bs with various structures, including tandem, lattice, hexagon, pyramid, tree, and fractals.},
+  archive  = {J_JACM},
+  author   = {Zeng, Yun and Tan, Jian and Xia, Cathy H.},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {17:1-30},
+  title    = {Fork and join queueing networks with heavy tails: Scaling dimension and throughput limit},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Parameterized intractability of even set and shortest vector
+problem. <em>JACM</em>, <em>68</em>(3), 16:1–40. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The -Even Set problem is a parameterized variant of the Minimum Distance Problem of linear codes over , which can be stated as follows: given a generator matrix and an integer , determine whether the code generated by has distance at most , or, in other words, whether there is a nonzero vector such that has at most nonzero coordinates. The question of whether -Even Set is fixed parameter tractable (FPT) parameterized by the distance has been repeatedly raised in the literature; in fact, it is one of the few remaining open questions from the seminal book of Downey and Fellows [1999]. In this work, we show that -Even Set is W[1]-hard under randomized reductions. We also consider the parameterized -Shortest Vector Problem (SVP), in which we are given a lattice whose basis vectors are integral and an integer , and the goal is to determine whether the norm of the shortest vector (in the norm for some fixed ) is at most . Similar to -Even Set, understanding the complexity of this problem is also a long-standing open question in the field of Parameterized Complexity. We show that, for any , -SVP is W[1]-hard to approximate (under randomized reductions) to some constant factor.},
+  archive  = {J_JACM},
+  author   = {Bhattacharyya, Arnab and Bonnet, \&#39;{E}douard and Egri, L\&#39;{a}szl\&#39;{o} and Ghoshal, Suprovat and S., Karthik C. and Lin, Bingkai and Manurangsi, Pasin and Marx, D\&#39;{a}niel},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {16:1-40},
+  title    = {Parameterized intractability of even set and shortest vector problem},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The sample complexity of up-to-ε multi-dimensional revenue
+maximization. <em>JACM</em>, <em>68</em>(3), 15:1–28. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider the sample complexity of revenue maximization for multiple bidders in unrestricted multi-dimensional settings. Specifically, we study the standard model of additive bidders whose values for heterogeneous items are drawn independently. For any such instance and any , we show that it is possible to learn an -Bayesian Incentive Compatible auction whose expected revenue is within of the optimal -BIC auction from only polynomially many samples. Our fully nonparametric approach is based on ideas that hold quite generally and completely sidestep the difficulty of characterizing optimal (or near-optimal) auctions for these settings. Therefore, our results easily extend to general multi-dimensional settings, including valuations that are not necessarily even subadditive, and arbitrary allocation constraints. For the cases of a single bidder and many goods, or a single parameter (good) and many bidders, our analysis yields exact incentive compatibility (and for the latter also computational efficiency). Although the single-parameter case is already well understood, our corollary for this case extends slightly the state of the art.},
+  archive  = {J_JACM},
+  author   = {Gonczarowski, Yannai A. and Weinberg, S. Matthew},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {15:1-28},
+  title    = {The sample complexity of up-to-ε multi-dimensional revenue maximization},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Identity-based encryption from the diffie-hellman
+assumption. <em>JACM</em>, <em>68</em>(3), 14:1–46. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We provide the first constructions of identity-based encryption and hierarchical identity-based encryption based on the hardness of the (Computational) Diffie-Hellman Problem (without use of groups with pairings) or Factoring. Our construction achieves the standard notion of identity-based encryption as considered by Boneh and Franklin [CRYPTO 2001]. We bypass known impossibility results using garbled circuits that make a non-black-box use of the underlying cryptographic primitives.},
+  archive  = {J_JACM},
+  author   = {D\&quot;{o}ttling, Nico and Garg, Sanjam},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {3},
+  pages    = {14:1-46},
+  title    = {Identity-based encryption from the diffie-hellman assumption},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Exploiting spontaneous transmissions for broadcasting and
+leader election in radio networks. <em>JACM</em>, <em>68</em>(2),
+13:1–22. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We study two fundamental communication primitives: broadcasting and leader election in the classical model of multi-hop radio networks with unknown topology and without collision detection mechanisms. It has been known for almost 20 years that in undirected networks with n nodes and diameter D, randomized broadcasting requires Ω(D log n/D + log2 n) rounds, assuming that uninformed nodes are not allowed to communicate (until they are informed). Only very recently, Haeupler and Wajc (PODC&#39;2016) showed that this bound can be improved for the model with spontaneous transmissions, providing an O(D log n log log n/log D + logO(1) n)-time broadcasting algorithm. In this article, we give a new and faster algorithm that completes broadcasting in O(D log n/log D + logO(1) n) time, succeeding with high probability. This yields the first optimal O(D)-time broadcasting algorithm whenever n is polynomial in D.Furthermore, our approach can be applied to design a new leader election algorithm that matches the performance of our broadcasting algorithm. Previously, all fast randomized leader election algorithms have used broadcasting as a subroutine and their complexity has been asymptotically strictly larger than the complexity of broadcasting. In particular, the fastest previously known randomized leader election algorithm of Ghaffari and Haeupler (SODA&#39;2013) requires O(D log n/D min {log log n, log n/D} + logO(1) n)-time, succeeding with high probability. Our new algorithm again requires O(D log n/log D + logO(1) n) time, also succeeding with high probability.},
+  archive  = {J_JACM},
+  author   = {Czumaj, Artur and Davies, Peter},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {13:1-22},
+  title    = {Exploiting spontaneous transmissions for broadcasting and leader election in radio networks},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021b). Invited articles foreword. <em>JACM</em>, <em>68</em>(2),
+12e:1–1. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J_JACM},
+  author  = {Tardos, Eva},
+  doi     = {10.1145/3372419},
+  journal = {J. ACM},
+  number  = {2},
+  pages   = {12e:1-1},
+  title   = {Invited articles foreword},
+  volume  = {68},
+  year    = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Uniform, integral, and feasible proofs for the determinant
+identities. <em>JACM</em>, <em>68</em>(2), 12:1–80. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Aiming to provide weak as possible axiomatic assumptions in which one can develop basic linear algebra, we give a uniform and integral version of the short propositional proofs for the determinant identities demonstrated over GF(2) in Hrube\v{s}-Tzameret [15]. Specifically, we show that the multiplicativity of the determinant function and the Cayley-Hamilton theorem over the integers are provable in the bounded arithmetic theory VNC2; the latter is a first-order theory corresponding to the complexity class NC2 consisting of problems solvable by uniform families of polynomial-size circuits and O(log2 n)-depth. This also establishes the existence of uniform polynomial-size propositional proofs operating with NC2-circuits of the basic determinant identities over the integers (previous propositional proofs hold only over the two-element field).},
+  archive  = {J_JACM},
+  author   = {Tzameret, Iddo and Cook, Stephen A.},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {12:1-80},
+  title    = {Uniform, integral, and feasible proofs for the determinant identities},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). On nonconvex optimization for machine learning: Gradients,
+stochasticity, and saddle points. <em>JACM</em>, <em>68</em>(2),
+11:1–29. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Gradient descent (GD) and stochastic gradient descent (SGD) are the workhorses of large-scale machine learning. While classical theory focused on analyzing the performance of these methods in convex optimization problems, the most notable successes in machine learning have involved nonconvex optimization, and a gap has arisen between theory and practice. Indeed, traditional analyses of GD and SGD show that both algorithms converge to stationary points efficiently. But these analyses do not take into account the possibility of converging to saddle points. More recent theory has shown that GD and SGD can avoid saddle points, but the dependence on dimension in these analyses is polynomial. For modern machine learning, where the dimension can be in the millions, such dependence would be catastrophic. We analyze perturbed versions of GD and SGD and show that they are truly efficient—their dimension dependence is only polylogarithmic. Indeed, these algorithms converge to second-order stationary points in essentially the same time as they take to converge to classical first-order stationary points.},
+  archive  = {J_JACM},
+  author   = {Jin, Chi and Netrapalli, Praneeth and Ge, Rong and Kakade, Sham M. and Jordan, Michael I.},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {11:1-29},
+  title    = {On nonconvex optimization for machine learning: Gradients, stochasticity, and saddle points},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Bernoulli factories and black-box reductions in mechanism
+design. <em>JACM</em>, <em>68</em>(2), 10:1–30. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We provide a polynomial time reduction from Bayesian incentive compatible mechanism design to Bayesian algorithm design for welfare maximization problems. Unlike prior results, our reduction achieves exact incentive compatibility for problems with multi-dimensional and continuous type spaces. The key technical barrier preventing exact incentive compatibility in prior black-box reductions is that repairing violations of incentive constraints requires understanding the distribution of the mechanism’s output, which is typically #P-hard to compute. Reductions that instead estimate the output distribution by sampling inevitably suffer from sampling error, which typically precludes exact incentive compatibility. We overcome this barrier by employing and generalizing the computational model in the literature on Bernoulli Factories. In a Bernoulli factory problem, one is given a function mapping the bias of an “input coin” to that of an “output coin,” and the challenge is to efficiently simulate the output coin given only sample access to the input coin. This is the key ingredient in designing an incentive compatible mechanism for bipartite matching, which can be used to make the approximately incentive compatible reduction of Hartline et&amp;nbsp;al. [18] exactly incentive compatible.},
+  archive  = {J_JACM},
+  author   = {Dughmi, Shaddin and Hartline, Jason and Kleinberg, Robert D. and Niazadeh, Rad},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {10:1-30},
+  title    = {Bernoulli factories and black-box reductions in mechanism design},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). EPTAS and subexponential algorithm for maximum clique on
+disk and unit ball graphs. <em>JACM</em>, <em>68</em>(2), 9:1–38. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A (unit) disk graph is the intersection graph of closed (unit) disks in the plane. Almost three decades ago, an elegant polynomial-time algorithm was found for MAXIMUM CLIQUE on unit disk graphs [Clark, Colbourn, Johnson; Discrete Mathematics ’90]. Since then, it has been an intriguing open question whether or not tractability can be extended to general disk graphs. We show that the disjoint union of two odd cycles is never the complement of a disk graph nor of a unit (3-dimensional) ball graph. From that fact and existing results, we derive a simple QPTAS and a subexponential algorithm running in time 2\~{O}(n2/3) for MAXIMUM CLIQUE on disk and unit ball graphs. We then obtain a randomized EPTAS for computing the independence number on graphs having no disjoint union of two odd cycles as an induced subgraph, bounded VC-dimension, and linear independence number. This, in combination with our structural results, yields a randomized EPTAS for MAX CLIQUE on disk and unit ball graphs. MAX CLIQUE on unit ball graphs is equivalent to finding, given a collection of points in R3, a maximum subset of points with diameter at most some fixed value.In stark contrast, MAXIMUM CLIQUE on ball graphs and unit 4-dimensional ball graphs, as well as intersection graphs of filled ellipses (even close to unit disks) or filled triangles is unlikely to have such algorithms. Indeed, we show that, for all those problems, there is a constant ratio of approximation that cannot be attained even in time 2n1−ɛ, unless the Exponential Time Hypothesis fails.},
+  archive  = {J_JACM},
+  author   = {Bonamy, Marthe and Bonnet, \&#39;{E}douard and Bousquet, Nicolas and Charbit, Pierre and Giannopoulos, Panos and Kim, Eun Jung and Rz\k{a}\.{z}ewski, Pawe\l{} and Sikora, Florian and Thomass\&#39;{e}, St\&#39;{e}phan},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {9:1-38},
+  title    = {EPTAS and subexponential algorithm for maximum clique on disk and unit ball graphs},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Mildly short vectors in cyclotomic ideal lattices in quantum
+polynomial time. <em>JACM</em>, <em>68</em>(2), 8:1–26. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this article, we study the geometry of units and ideals of cyclotomic rings and derive an algorithm to find a mildly short vector in any given cyclotomic ideal lattice in quantum polynomial time, under some plausible number-theoretic assumptions. More precisely, given an ideal lattice of the cyclotomic ring of conductor m, the algorithm finds an approximation of the shortest vector by a factor exp (\~{O}(√ m)). This result exposes an unexpected hardness gap between these structured lattices and general lattices: The best known polynomial time generic lattice algorithms can only reach an approximation factor exp (\~{O}(m)). Following a recent series of attacks, these results call into question the hardness of various problems over structured lattices, such as Ideal-SVP and Ring-LWE, upon which relies the security of a number of cryptographic schemes.NOTE. This article is an extended version of a conference paper&amp;nbsp;[11]. The results are generalized to arbitrary cyclotomic fields. In particular, we also extend some results of Reference&amp;nbsp;[10] to arbitrary cyclotomic fields. In addition, we prove the numerical stability of the method of Reference&amp;nbsp;[10]. These extended results appeared in the Ph.D. dissertation of the third author&amp;nbsp;[46].},
+  archive  = {J_JACM},
+  author   = {Cramer, Ronald and Ducas, L\&#39;{e}o and Wesolowski, Benjamin},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {2},
+  pages    = {8:1-26},
+  title    = {Mildly short vectors in cyclotomic ideal lattices in quantum polynomial time},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021a). Invited article foreword. <em>JACM</em>, <em>68</em>(1),
+6:1–1. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J_JACM},
+  author  = {Tardos, Eva},
+  doi     = {10.1145/3372419},
+  journal = {J. ACM},
+  number  = {1},
+  pages   = {6:1-1},
+  title   = {Invited article foreword},
+  volume  = {68},
+  year    = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The marriage of univalence and parametricity. <em>JACM</em>,
+<em>68</em>(1), 5:1–44. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Reasoning modulo equivalences is natural for everyone, including mathematicians. Unfortunately, in proof assistants based on type theory, which are frequently used to mechanize mathematical results and carry out program verification efforts, equality is appallingly syntactic, and as a result, exploiting equivalences is cumbersome at best. Parametricity and univalence are two major concepts that have been explored in the literature to transport programs and proofs across type equivalences, but they fall short of achieving seamless, automatic transport. This work first clarifies the limitations of these two concepts when considered in isolation and then devises a fruitful marriage between both. The resulting concept, called univalent parametricity, is an extension of parametricity strengthened with univalence that fully realizes programming and proving modulo equivalences. Our approach handles both type and term dependency, as well as type-level computation. In addition to the theory of univalent parametricity, we present a lightweight framework implemented in the Coq proof assistant that allows the user to transparently transfer definitions and theorems for a type to an equivalent one, as if they were equal. For instance, this makes it possible to conveniently switch between an easy-to-reason-about representation and a computationally efficient representation as soon as they are proven equivalent. The combination of parametricity and univalence supports transport \`{a} la carte: basic univalent transport, which stems from a type equivalence, can be complemented with additional proofs of equivalences between functions over these types, in order to be able to transport more programs and proofs, as well as to yield more efficient terms. We illustrate the use of univalent parametricity on several examples, including a recent integration of native integers in Coq. This work paves the way to easier-to-use proof assistants by supporting seamless programming and proving modulo equivalences.},
+  archive  = {J_JACM},
+  author   = {Tabareau, Nicolas and Tanter, \&#39;{E}ric and Sozeau, Matthieu},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {5:1-44},
+  title    = {The marriage of univalence and parametricity},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Solving linear programs in the current matrix multiplication
+time. <em>JACM</em>, <em>68</em>(1), 3:1–39. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article shows how to solve linear programs of the form minAx=b,x≥ 0 c⊤ x with n variables in timeO*((nω+n2.5−α/2+n2+1/6) log (n/δ)), where ω is the exponent of matrix multiplication, α is the dual exponent of matrix multiplication, and δ is the relative accuracy. For the current value of ω δ 2.37 and α δ 0.31, our algorithm takes O*(nω log (n/δ)) time. When ω = 2, our algorithm takes O*(n2+1/6 log (n/δ)) time. Our algorithm utilizes several new concepts that we believe may be of independent interest:• We define a stochastic central path method.• We show how to maintain a projection matrix √ WA⊤ (AWA⊤)−1A√ W in sub-quadratic time under ell2 multiplicative changes in the diagonal matrix W.},
+  archive  = {J_JACM},
+  author   = {Cohen, Michael B. and Lee, Yin Tat and Song, Zhao},
+  doi      = {10.1145/3372419},
+  journal  = {J. ACM},
+  number   = {1},
+  pages    = {3:1-39},
+  title    = {Solving linear programs in the current matrix multiplication time},
+  volume   = {68},
+  year     = {2021},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

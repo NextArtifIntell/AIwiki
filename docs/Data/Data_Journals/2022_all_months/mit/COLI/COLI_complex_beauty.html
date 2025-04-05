@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>COLI_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="coli---40">COLI - 40</h2>
+<ul>
+<li><details>
+<summary>
+(2022b). Erratum: Annotation curricula to implicitly train
+non-expert annotators. <em>COLI</em>, <em>48</em>(4), 1141. (<a
+href="https://doi.org/10.1162/coli_x_00469">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The authors of this work (“Annotation Curricula to Implicitly Train Non-Expert Annotators” by Ji-Ung Lee, Jan-Christoph Klie, and Iryna Gurevych in Computational Linguistics 48:2 https://doi.org/10.1162/coli_a_00436) discovered an incorrect inequality symbol in section 5.3 (page 360). The paper stated that the differences in the annotation times for the control instances result in a p-value of 0.200 which is smaller than 0.05 (p = 0.200 &amp;lt; 0.05). As 0.200 is of course larger than 0.05, the correct inequality symbol is p = 0.200 &amp;gt; 0.05, which is in line with the conclusion that follows in the text. The paper has been updated accordingly.},
+  archive      = {J_COLI},
+  author       = {Lee, Ji-Ung and Klie, Jan-Christoph and Gurevych, Iryna},
+  doi          = {10.1162/coli_x_00469},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {1141},
+  shortjournal = {Comput. Lingu.},
+  title        = {Erratum: Annotation curricula to implicitly train non-expert annotators},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Explainable natural language processing. <em>COLI</em>,
+<em>48</em>(4), 1137–1139. (<a
+href="https://doi.org/10.1162/coli_r_00460">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Explainable Natural Language Processing (NLP) is an emerging field, which has received significant attention from the NLP community in the last few years. At its core is the need to explain the predictions of machine learning models, now more frequently deployed and used in sensitive areas such as healthcare and law. The rapid developments in the area of explainable NLP have led to somewhat disconnected groups of studies working on these areas. This disconnect results in researchers adopting various definitions for similar problems, while also in certain cases enabling the re-creation of previous research, highlighting the need for a unified framework for explainable NLP.Written by Anders Søgaard, this book provides the author’s convincing view of how we should first define explanations, and, secondly, how we should categorize explanations and the approaches that generate them, creating first and foremost a taxonomy and a unified framework for explainable NLP. As per the author, this will make it easier to relate studies and explanation methodologies in this field, with the aim of accelerating research. It is a brilliant book for both researchers starting to explore explainable NLP, but also for researchers with experience in this area, as it provides a holistic up-to-date view of the explainable NLP at the local and global level. The author conveniently and logically presents each chapter as a “problem” of explainable NLP, as such providing also a taxonomy of explainable NLP problem areas and current approaches to tackle them. Under each chapter, explanation methods are described in detail, beginning initially with “foundational” approaches (e.g., vanilla gradients) and building toward more complex ones (e.g., integrated gradients). To complement the theory and make this into a complete guide to explainable NLP, the author also describes evaluation approaches and provides a list of datasets and code repositories. As such, although the book requires some basic knowledge of NLP and Machine Learning to get started, it is nevertheless accessible to a large audience.This book is organized into thirteen chapters. In the first chapter the author introduces the problems associated with previously proposed taxonomies for explainable NLP. Chapter 2 follows by introducing popular machine learning architectures used in NLP, while also introducing the explanation taxonomy proposed in the book. Chapters 3 and 4 describe explanation methodologies for extracting local and global explanations, respectively, that require performing a backward pass through the model. Chapters 5–10 are focused on local and global explanation methods, that require only a forward pass through the model for different types of output: (a) intermediate representations; (b) continuous output; and (c) discrete output. Chapter 11 then describes how we can evaluate these explanation methods, and Chapter 12 provides perspectives on the proposed taxonomy and concludes this work. Finally, Chapter 13 provides resources for explainable NLP.Chapter 1 introduces explainable NLP and the problems associated with the lack of a unified framework. It then continues to justify the importance of taxonomies, while briefly describing the two high-level categories for the proposed taxonomy: (a) local and global, (b) forward and backward. For the former category, a method is considered local when it can provide explanations for individual instances, otherwise it is considered global. The latter distinguishes between methods that rely on forward passes over the parameters and those that rely on backward passes. A large part of this chapter is then dedicated to describing previous efforts in creating taxonomies, while also highlighting their problems.Chapter 2 begins by giving a brief overview of popular machine learning models used in NLP, such as the transformers, followed by other popular NLP applications. It then follows by proposing further low-level categories that operate through the forward pass on (a) intermediate representations; (b) continuous output; and (c) discrete output, providing a clearer structure and categorization to explanation methods. The sections that follow then justify the importance of the previously described high-and-low-level categories, by providing examples of their uses and links to future chapters.Chapter 3 focuses on local-backward explanation methods that use training signals to explain model predictions, without additional parameters. This includes and describes mathematically popular explanation approaches starting from simple methods, such as vanilla gradients, building up to DeepLift. A pleasant addition is the use of open problems, where the authors, after the description of an explanation method, pose logical questions that make the reader think and that motivate good research directions. The following chapter (Chapter 4) describes popular global-backward explanation methods such as post-hoc unstructured pruning and binary networks. A commendable inclusion is the discussion around computational cost of some of the methods.Chapter 5 is the first of the chapters focusing on the forward distinction, describing local-forward explanation methods for intermediate representations. A popular explanation method belonging in this category is attention weights, although more recent methods such as attention flow are also described. Under each explanation method, where applicable, the author also includes comments from previous studies on their efficacy. Additionally, the author demonstrates that two methods developed concurrently in literature are the same, reinforcing their initial claim that the lack of taxonomy and a unified framework often leads to duplicated work. Chapter 6 then follows with global-forward explanation methods for intermediate representations, such as attention head pruning.Describing local-forward explanation methods on continuous output vectors, Chapter 7 highlights three different approaches. As continuous output vectors (e.g., word representations) are used typically in downstream tasks, the author describes three valid explanation methods: word association norms, word analogies, and time-step dynamics. Chapter 8 then describes forward explanation methods that operate at the global-level for continuous outputs, such as probing classifiers, clustering, and finding the most influential training examples.Chapter 9 continues with forward explanation methods, focusing on those that operate at the local level illustrating methods that can explain a model’s decision based on its discrete output. Methods include creating challenge datasets, a set of examples to test the hypothesis, for example, that certain inputs affect the model’s predictions, finding influential examples at the local level, and uptraining methods such as LIME. Chapter 10 then extends on discrete outputs, describing explanation methods that operate at the global level, such as understanding how good models are using downstream evaluation or using simpler models such as linear regression to obtain sparser, more interpretable explanations.Chapter 11 introduces the reader to how to evaluate explanations, a widely discussed topic in the explainable NLP research community. The author conveniently discretizes first explanations into four distinct categories: extractive rationales (e.g., heatmaps); abstractive rationales (e.g., concepts); training instances (e.g., examples); and model visualizations. This discretization also continues over to evaluation methods, splitting them into three categories: heuristics; human annotations; and human experiments, where each explanation category is associated with different evaluation method categories. Following these distinctions, the chapter then describes, under each evaluation method category, popular evaluation methods and the types of explanations they cover. Each subsection logically includes the limitations and open-problems associated with each of the evaluation categories, allowing the reader to follow research directions based on these open-problems, while maintaining order within this framework and taxonomy.Chapter 12 concludes the previous chapters by providing a set of observations gathered from this taxonomy. Following these, it then describes concepts that are not covered by this taxonomy, such as contrastive and comparative explanations. At the end of this chapter the author discusses the ethical and moral foundations of explanations, presenting arguments from literature and critiquing the basic assumption that human decision making is fully transparent, when in fact it is not. The final part of Chapter 12 in particular is extremely interesting for the reader, as it helps put in perspective what we as researchers expect out of explainable NLP when in fact human decision making is non-trivial to explain. Finally, to help researchers delve into explainable NLP and expand their knowledge, the author conveniently provides a list of resources (i.e., data, benchmarks, and code) in Chapter 13.},
+  archive      = {J_COLI},
+  author       = {Chrysostomou, George},
+  doi          = {10.1162/coli_r_00460},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {1137-1139},
+  shortjournal = {Comput. Lingu.},
+  title        = {Explainable natural language processing},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A metrological perspective on reproducibility in NLP*.
+<em>COLI</em>, <em>48</em>(4), 1125–1135. (<a
+href="https://doi.org/10.1162/coli_a_00448">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Reproducibility has become an increasingly debated topic in NLP and ML over recent years, but so far, no commonly accepted definitions of even basic terms or concepts have emerged. The range of different definitions proposed within NLP/ML not only do not agree with each other, they are also not aligned with standard scientific definitions. This article examines the standard definitions of repeatability and reproducibility provided by the meta-science of metrology, and explores what they imply in terms of how to assess reproducibility, and what adopting them would mean for reproducibility assessment in NLP/ML. It turns out the standard definitions lead directly to a method for assessing reproducibility in quantified terms that renders results from reproduction studies comparable across multiple reproductions of the same original study, as well as reproductions of different original studies. The article considers where this method sits in relation to other aspects of NLP work one might wish to assess in the context of reproducibility.},
+  archive      = {J_COLI},
+  author       = {Belz, Anya},
+  doi          = {10.1162/coli_a_00448},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {1125-1135},
+  shortjournal = {Comput. Lingu.},
+  title        = {A metrological perspective on reproducibility in NLP*},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). How much does lookahead matter for disambiguation? Partial
+arabic diacritization case study. <em>COLI</em>, <em>48</em>(4),
+1103–1123. (<a href="https://doi.org/10.1162/coli_a_00456">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We suggest a model for partial diacritization of deep orthographies. We focus on Arabic, where the optional indication of selected vowels by means of diacritics can resolve ambiguity and improve readability. Our partial diacritizer restores short vowels only when they contribute to the ease of understandability during reading a given running text. The idea is to identify those uncertainties of absent vowels that require the reader to look ahead to disambiguate. To achieve this, two independent neural networks are used for predicting diacritics, one that takes the entire sentence as input and another that considers only the text that has been read thus far. Partial diacritization is then determined by retaining precisely those vowels on which the two networks disagree, preferring the reading based on consideration of the whole sentence over the more naïve reading-order diacritization.For evaluation, we prepared a new dataset of Arabic texts with both full and partial vowelization. In addition to facilitating readability, we find that our partial diacritizer improves translation quality compared either to their total absence or to random selection. Lastly, we study the benefit of knowing the text that follows the word in focus toward the restoration of short vowels during reading, and we measure the degree to which lookahead contributes to resolving ambiguities encountered while reading.L’Herbelot had asserted, that the most ancient Korans, written in the Cufic character, had no vowel points; and that these were first invented by Jahia–ben Jamer, who died in the 127th year of the Hegira.“Toderini’s History of Turkish Literature,” Analytical Review (1789)},
+  archive      = {J_COLI},
+  author       = {Esmail, Saeed and Bar, Kfir and Dershowitz, Nachum},
+  doi          = {10.1162/coli_a_00456},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {1103-1123},
+  shortjournal = {Comput. Lingu.},
+  title        = {How much does lookahead matter for disambiguation? partial arabic diacritization case study},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). The text anonymization benchmark (TAB): A dedicated corpus
+and evaluation framework for text anonymization. <em>COLI</em>,
+<em>48</em>(4), 1053–1101. (<a
+href="https://doi.org/10.1162/coli_a_00458">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a novel benchmark and associated evaluation metrics for assessing the performance of text anonymization methods. Text anonymization, defined as the task of editing a text document to prevent the disclosure of personal information, currently suffers from a shortage of privacy-oriented annotated text resources, making it difficult to properly evaluate the level of privacy protection offered by various anonymization methods. This paper presents TAB (Text Anonymization Benchmark), a new, open-source annotated corpus developed to address this shortage. The corpus comprises 1,268 English-language court cases from the European Court of Human Rights (ECHR) enriched with comprehensive annotations about the personal information appearing in each document, including their semantic category, identifier type, confidential attributes, and co-reference relations. Compared with previous work, the TAB corpus is designed to go beyond traditional de-identification (which is limited to the detection of predefined semantic categories), and explicitly marks which text spans ought to be masked in order to conceal the identity of the person to be protected.Along with presenting the corpus and its annotation layers, we also propose a set of evaluation metrics that are specifically tailored toward measuring the performance of text anonymization, both in terms of privacy protection and utility preservation. We illustrate the use of the benchmark and the proposed metrics by assessing the empirical performance of several baseline text anonymization models. The full corpus along with its privacy-oriented annotation guidelines, evaluation scripts, and baseline models are available on: https://github.com/NorskRegnesentral/text-anonymization-benchmark.},
+  archive      = {J_COLI},
+  author       = {Pilán, Ildikó and Lison, Pierre and Øvrelid, Lilja and Papadopoulou, Anthi and Sánchez, David and Batet, Montserrat},
+  doi          = {10.1162/coli_a_00458},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {1053-1101},
+  shortjournal = {Comput. Lingu.},
+  title        = {The text anonymization benchmark (TAB): A dedicated corpus and evaluation framework for text anonymization},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Neural embedding allocation: Distributed representations of
+topic models. <em>COLI</em>, <em>48</em>(4), 1021–1052. (<a
+href="https://doi.org/10.1162/coli_a_00457">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a method that uses neural embeddings to improve the performance of any given LDA-style topic model. Our method, called neural embedding allocation (NEA), deconstructs topic models (LDA or otherwise) into interpretable vector-space embeddings of words, topics, documents, authors, and so on, by learning neural embeddings to mimic the topic model. We demonstrate that NEA improves coherence scores of the original topic model by smoothing out the noisy topics when the number of topics is large. Furthermore, we show NEA’s effectiveness and generality in deconstructing and smoothing LDA, author-topic models, and the recent mixed membership skip-gram topic model and achieve better performance with the embeddings compared to several state-of-the-art models.},
+  archive      = {J_COLI},
+  author       = {Keya, Kamrun Naher and Papanikolaou, Yannis and Foulds, James R.},
+  doi          = {10.1162/coli_a_00457},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {1021-1052},
+  shortjournal = {Comput. Lingu.},
+  title        = {Neural embedding allocation: Distributed representations of topic models},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Hierarchical interpretation of neural text classification.
+<em>COLI</em>, <em>48</em>(4), 987–1020. (<a
+href="https://doi.org/10.1162/coli_a_00459">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Recent years have witnessed increasing interest in developing interpretable models in Natural Language Processing (NLP). Most existing models aim at identifying input features such as words or phrases important for model predictions. Neural models developed in NLP, however, often compose word semantics in a hierarchical manner. As such, interpretation by words or phrases only cannot faithfully explain model decisions in text classification. This article proposes a novel Hierarchical Interpretable Neural Text classifier, called HINT, which can automatically generate explanations of model predictions in the form of label-associated topics in a hierarchical manner. Model interpretation is no longer at the word level, but built on topics as the basic semantic unit. Experimental results on both review datasets and news datasets show that our proposed approach achieves text classification results on par with existing state-of-the-art text classifiers, and generates interpretations more faithful to model predictions and better understood by humans than other interpretable neural text classifiers.1},
+  archive      = {J_COLI},
+  author       = {Yan, Hanqi and Gui, Lin and He, Yulan},
+  doi          = {10.1162/coli_a_00459},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {987-1020},
+  shortjournal = {Comput. Lingu.},
+  title        = {Hierarchical interpretation of neural text classification},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Revise and resubmit: An intertextual model of text-based
+collaboration in peer review. <em>COLI</em>, <em>48</em>(4), 949–986.
+(<a href="https://doi.org/10.1162/coli_a_00455">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Peer review is a key component of the publishing process in most fields of science. Increasing submission rates put a strain on reviewing quality and efficiency, motivating the development of applications to support the reviewing and editorial work. While existing NLP studies focus on the analysis of individual texts, editorial assistance often requires modeling interactions between pairs of texts—yet general frameworks and datasets to support this scenario are missing. Relationships between texts are the core object of the intertextuality theory—a family of approaches in literary studies not yet operationalized in NLP. Inspired by prior theoretical work, we propose the first intertextual model of text-based collaboration, which encompasses three major phenomena that make up a full iteration of the review–revise–and–resubmit cycle: pragmatic tagging, linking, and long-document version alignment. While peer review is used across the fields of science and publication formats, existing datasets solely focus on conference-style review in computer science. Addressing this, we instantiate our proposed model in the first annotated multidomain corpus in journal-style post-publication open peer review, and provide detailed insights into the practical aspects of intertextual annotation. Our resource is a major step toward multidomain, fine-grained applications of NLP in editorial support for peer review, and our intertextual framework paves the path for general-purpose modeling of text-based collaboration. We make our corpus, detailed annotation guidelines, and accompanying code publicly available.1},
+  archive      = {J_COLI},
+  author       = {Kuznetsov, Ilia and Buchmann, Jan and Eichler, Max and Gurevych, Iryna},
+  doi          = {10.1162/coli_a_00455},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {949-986},
+  shortjournal = {Comput. Lingu.},
+  title        = {Revise and resubmit: An intertextual model of text-based collaboration in peer review},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Information theory–based compositional distributional
+semantics. <em>COLI</em>, <em>48</em>(4), 907–948. (<a
+href="https://doi.org/10.1162/coli_a_00454">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In the context of text representation, Compositional Distributional Semantics models aim to fuse the Distributional Hypothesis and the Principle of Compositionality. Text embedding is based on co-ocurrence distributions and the representations are in turn combined by compositional functions taking into account the text structure. However, the theoretical basis of compositional functions is still an open issue. In this article we define and study the notion of Information Theory–based Compositional Distributional Semantics (ICDS): (i) We first establish formal properties for embedding, composition, and similarity functions based on Shannon’s Information Theory; (ii) we analyze the existing approaches under this prism, checking whether or not they comply with the established desirable properties; (iii) we propose two parameterizable composition and similarity functions that generalize traditional approaches while fulfilling the formal properties; and finally (iv) we perform an empirical study on several textual similarity datasets that include sentences with a high and low lexical overlap, and on the similarity between words and their description. Our theoretical analysis and empirical results show that fulfilling formal properties affects positively the accuracy of text representation models in terms of correspondence (isometry) between the embedding and meaning spaces.},
+  archive      = {J_COLI},
+  author       = {Amigó, Enrique and Ariza-Casabona, Alejandro and Fresno, Victor and Martí, M. Antònia},
+  doi          = {10.1162/coli_a_00454},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {907-948},
+  shortjournal = {Comput. Lingu.},
+  title        = {Information theory–based compositional distributional semantics},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Effective approaches to neural query language
+identification. <em>COLI</em>, <em>48</em>(4), 887–906. (<a
+href="https://doi.org/10.1162/coli_a_00451">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Query language identification (Q-LID) plays a crucial role in a cross-lingual search engine. There exist two main challenges in Q-LID: (1) insufficient contextual information in queries for disambiguation; and (2) the lack of query-style training examples for low-resource languages. In this article, we propose a neural Q-LID model by alleviating the above problems from both model architecture and data augmentation perspectives. Concretely, we build our model upon the advanced Transformer model. In order to enhance the discrimination of queries, a variety of external features (e.g., character, word, as well as script) are fed into the model and fused by a multi-scale attention mechanism. Moreover, to remedy the low resource challenge in this task, a novel machine translation–based strategy is proposed to automatically generate synthetic query-style data for low-resource languages. We contribute the first Q-LID test set called QID-21, which consists of search queries in 21 languages. Experimental results reveal that our model yields better classification accuracy than strong baselines and existing LID systems on both query and traditional LID tasks.1},
+  archive      = {J_COLI},
+  author       = {Ren, Xingzhang and Yang, Baosong and Liu, Dayiheng and Zhang, Haibo and Lv, Xiaoyu and Yao, Liang and Xie, Jun},
+  doi          = {10.1162/coli_a_00451},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {887-906},
+  shortjournal = {Comput. Lingu.},
+  title        = {Effective approaches to neural query language identification},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Nucleus composition in transition-based dependency parsing.
+<em>COLI</em>, <em>48</em>(4), 849–886. (<a
+href="https://doi.org/10.1162/coli_a_00450">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Dependency-based approaches to syntactic analysis assume that syntactic structure can be analyzed in terms of binary asymmetric dependency relations holding between elementary syntactic units. Computational models for dependency parsing almost universally assume that an elementary syntactic unit is a word, while the influential theory of Lucien Tesnière instead posits a more abstract notion of nucleus, which may be realized as one or more words. In this article, we investigate the effect of enriching computational parsing models with a concept of nucleus inspired by Tesnière. We begin by reviewing how the concept of nucleus can be defined in the framework of Universal Dependencies, which has become the de facto standard for training and evaluating supervised dependency parsers, and explaining how composition functions can be used to make neural transition-based dependency parsers aware of the nuclei thus defined. We then perform an extensive experimental study, using data from 20 languages to assess the impact of nucleus composition across languages with different typological characteristics, and utilizing a variety of analytical tools including ablation, linear mixed-effects models, diagnostic classifiers, and dimensionality reduction. The analysis reveals that nucleus composition gives small but consistent improvements in parsing accuracy for most languages, and that the improvement mainly concerns the analysis of main predicates, nominal dependents, clausal dependents, and coordination structures. Significant factors explaining the rate of improvement across languages include entropy in coordination structures and frequency of certain function words, in particular determiners. Analysis using dimensionality reduction and diagnostic classifiers suggests that nucleus composition increases the similarity of vectors representing nuclei of the same syntactic type.},
+  archive      = {J_COLI},
+  author       = {Nivre, Joakim and Basirat, Ali and Dürlich, Luise and Moss, Adam},
+  doi          = {10.1162/coli_a_00450},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {849-886},
+  shortjournal = {Comput. Lingu.},
+  title        = {Nucleus composition in transition-based dependency parsing},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Enhancing lifelong language learning by improving
+pseudo-sample generation. <em>COLI</em>, <em>48</em>(4), 819–848. (<a
+href="https://doi.org/10.1162/coli_a_00449">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. To achieve lifelong language learning, pseudo-rehearsal methods leverage samples generated from a language model to refresh the knowledge of previously learned tasks. Without proper controls, however, these methods could fail to retain the knowledge of complex tasks with longer texts since most of the generated samples are low in quality. To overcome the problem, we propose three specific contributions. First, we utilize double language models, each of which specializes in a specific part of the input, to produce high-quality pseudo samples. Second, we reduce the number of parameters used by applying adapter modules to enhance training efficiency. Third, we further improve the overall quality of pseudo samples using temporal ensembling and sample regeneration. The results show that our framework achieves significant improvement over baselines on multiple task sequences. Also, our pseudo sample analysis reveals helpful insights for designing even better pseudo-rehearsal methods in the future.},
+  archive      = {J_COLI},
+  author       = {Kanwatchara, Kasidis and Horsuwan, Thanapapas and Lertvittayakumjorn, Piyawat and Kijsirikul, Boonserm and Vateekul, Peerapon},
+  doi          = {10.1162/coli_a_00449},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {819-848},
+  shortjournal = {Comput. Lingu.},
+  title        = {Enhancing lifelong language learning by improving pseudo-sample generation},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Noun2Verb: Probabilistic frame semantics for word class
+conversion. <em>COLI</em>, <em>48</em>(4), 783–818. (<a
+href="https://doi.org/10.1162/coli_a_00447">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Humans can flexibly extend word usages across different grammatical classes, a phenomenon known as word class conversion. Noun-to-verb conversion, or denominal verb (e.g., to Google a cheap flight), is one of the most prevalent forms of word class conversion. However, existing natural language processing systems are impoverished in interpreting and generating novel denominal verb usages. Previous work has suggested that novel denominal verb usages are comprehensible if the listener can compute the intended meaning based on shared knowledge with the speaker. Here we explore a computational formalism for this proposal couched in frame semantics. We present a formal framework, Noun2Verb, that simulates the production and comprehension of novel denominal verb usages by modeling shared knowledge of speaker and listener in semantic frames. We evaluate an incremental set of probabilistic models that learn to interpret and generate novel denominal verb usages via paraphrasing. We show that a model where the speaker and listener cooperatively learn the joint distribution over semantic frame elements better explains the empirical denominal verb usages than state-of-the-art language models, evaluated against data from (1) contemporary English in both adult and child speech, (2) contemporary Mandarin Chinese, and (3) the historical development of English. Our work grounds word class conversion in probabilistic frame semantics and bridges the gap between natural language processing systems and humans in lexical creativity.},
+  archive      = {J_COLI},
+  author       = {Yu, Lei and Xu, Yang},
+  doi          = {10.1162/coli_a_00447},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {783-818},
+  shortjournal = {Comput. Lingu.},
+  title        = {Noun2Verb: Probabilistic frame semantics for word class conversion},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022a). Martha evens, brief autobiography. <em>COLI</em>,
+<em>48</em>(4), 775–782. (<a
+href="https://doi.org/10.1162/coli_a_00452">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The most common question that I have been asked recently is “How did you get started in what was classified as a man’s job?” First, I tell people that I started early enough that computer science was not yet really classified as a man’s job and, second, that there were quite a lot of women in the field in the beginning. My family already had a tradition of ignoring the limits on “proper jobs for women.” My parents met in graduate school in Cambridge, Massachusetts. My father, C. Russell Walton, was a student at Harvard Law School. My mother, Virgene Dupka, was studying architecture at the Cambridge School of Architecture, which was bought by Harvard several years later and renamed the Harvard School of Design. They were married in the summer of 1933 and I was born on January 1, 1935.My father wanted to have several more children. What’s more, he wanted to bring us up to learn to grow fruits and vegetables and care for farm animals, so when I was two and a half, he bought a recently abandoned old inn with a big barn and a couple of acres of land and an apple orchard. My mother started repairing and repainting the walls of the inn and my father started work on a huge garden. Of course, he disappeared every weekday to lawyer away in Boston, taking a train to work and back, but as soon as he got home he changed into gardening clothes and took me outside to work with him, while my mother made dinner.In 1939 my mother, after several miscarriages, produced a baby boy named Russell, but always called Rusty. In the fall of 1940 I was old enough to start in first grade in the little school around the corner. It had two classrooms, one for the first and second grades and the other for the third and fourth grades. In the first classroom the first grade sat in the front of the room and the second grade sat behind them. Since I could already read, the teacher had me sit with the second graders. After two summers with my mother’s father, an accounting expert, I also knew first grade arithmetic, so I could learn second grade arithmetic with the second graders very comfortably. It turned out that I could not see or hear very well, which led to some awkward moments, but all in all I got along pretty well. However, my teacher insisted that my parents take me to have my eyes and hearing tested toward the end of that first school year. I came away with my first pair of glasses. The doctor said my hearing was indeed poor, but he felt that I was too young for hearing aids and maybe I would improve with time.During the next summer (1941) my parents decided to move back to Cambridge. They found a really nice house to rent. The only problem was that we would have to wait until December to move in. My father found a live-in assistant at the prison in Framingham for my mother, and my mother began to drive me to Cambridge every weekday morning so that I could start at the Cambridge School. Sometimes she stayed in Cambridge for an hour or two to meet some of her old friends and tell them that we would be coming back. The Cambridge School discovered that I could read fairly well and handle second grade arithmetic problems and put me in the third grade. I found it rather scary to go into a class where everyone was about a year older than I was, but the work was interesting and I found people to play with during breaks. I stayed there until I finished seventh grade, when that school came to an end. Our new house was on Buckingham Street, so my parents decided to send me to the Buckingham School. The Buckingham School served both boys and girls in kindergarten through fifth grade, but after that it was for girls only. Also, beginning at the sixth grade all the students started to learn French. My parents asked around and discovered that down the street in a building with four apartments there lived a retired school principal who had also taught French for many years. My parents hired her to teach me French after my first two summers at Buckingham, and we kept on being friends after that for more than twenty years.My class at Buckingham had only eight girls and they were very kind and welcoming. We had a lot of fun together. In the ninth grade we started to learn Latin, too. We also learned a lot of English and American history and literature. In the tenth grade we had a year of history of Asia. In the eleventh grade I wound up taking an “advanced” mathematics course with four twelfth-graders. In the twelfth grade I tried not to forget it all, while I tried to figure out where I should apply to college.I finally decided to go to Bryn Mawr, which was where several people I admired had gone and where I did not know anyone else. I was 16 and rather scared when I got there in September of 1951, but my first calculus course contained a lot of friendly, smart people. When I finished registering I was called in by the dean, who started out by telling me she thought I was going to be bored silly. I had registered for the beginning courses in Calculus, Greek, German, and English—two beginning language courses—and did I really need to learn more math (which she hated). I would be doing nothing in my freshman year but memorizing things, she argued. I wasn’t sure what to say, but I told her that I was interested in learning about language and how language worked and I loved mathematics. I went back to my dormitory room and I thought about the response that the dean had elicited from me. I decided that I meant what I said and I refused to change my courses. How did this fit with my plan to major in Mathematics, I wondered. I enjoyed all my courses. My favorite professor was a mathematician, Professor Marguerite Lehr. I had a long-term friendship with her and with several students: Anne Haywood, whom I first met in that first year calculus course (she was pre-med), and Nancy Degenhart, who was in my first Greek course, and who spent most of her life digging up classical archeology sites with her archeologist husband. Clarissa Dillon was in the same dormitory as I was. She wound up eventually helping create a park that taught people around Philadelphia about life in the 1700s and writing books about it. I also became quite close to Clarissa’s roommate, Caroline Warren.Nancy and I both graduated in 1955 with “summa” on our undergraduate degree documents and tied for the top GPA in the class. She spent the next year (academic year 1955–1956) digging in Greece and I spent it in Paris on a Fulbright Fellowship learning more mathematics, improving my French, and learning about new developments in informatics, but I went off to find Nancy and see Greece during my spring break.In the summer of 1956, I came home to Cambridge, Massachusetts, and applied to the graduate program in Mathematics at Harvard/Radcliffe. On my first visit to the Mathematics building, a man named Leonard Evens was sitting on the front steps—he had offered to show new students around the building. He told me that everyone called him “Len” and showed me around the building, with emphasis on the library, which was filled with books in French and German, and then deposited me at my advisor’s office. As we got to know each other better during the semester, he told me about MIT’s Lincoln Laboratory. He had worked there himself the previous summer and was planning to go back in the summer of 1957. He suggested that I apply, too, for the coming summer. I was hired as a mathematician and I was lucky enough to get hired to work for Oliver Selfridge, who was starting to be known as one of the first experts in natural language processing. He told me to learn Fortran programming (MIT had just received the first Fortran compiler to leave IBM). Then he asked me to write a spelling correction program for the Morse code messages that the Navy was getting from ships and islands all over the Pacific. Everyone who sends Morse code has a different style and these examples were full of errors, as well, mostly from people who were just learning Morse code themselves. Several years later our program became the first widely available spelling program.At the end of the school year I was awarded an M.S. in Mathematics from Radcliffe and admitted to the Ph.D. program. Anne Haywood had been admitted to Harvard Medical School straight from Bryn Mawr and for the year 1956–1957—we shared an apartment in Roxbury just a block away from her classes and not far from Len’s apartment in Brookline where he lived with his mother. (His father had died during his last year at Cornell.) Anne and I also lived together for the 1957–1958 academic year. My parents’ next-door neighbors invited Anne and me to house-sit free of charge for a year as they went to Europe on a sabbatical. I went back to Lincoln Laboratory for the next two summers, with Len driving me to classes in Cambridge and during the summers to work at Lincoln Laboratory.Len and I got married in my parents’ living room in September 1958, with Anne Haywood as bridesmaid. We moved into an apartment within walking distance of the Mathematics building, but just over the Cambridge border in Somerville. It was several weeks before we discovered that Len’s thesis advisor, John Tate, lived on an upper floor of the same building, with his wife and a very new baby. By March I was pregnant myself and miserably sick to my stomach and fainting at the most inconvenient moments. Later that spring I washed out of the Ph.D. program. In October I produced a daughter, named Sarah Helen Evens, but always called Sally by us. Sally was named for a great aunt of Len and a great aunt of mine. By then Len was writing a very exciting thesis proving that the cohomology ring of a finite group is finitely generated. During the spring of 1960 he was invited to spend the next year at the University of Chicago, which was planning to hold a Group Theory year in 1960–1961. Len’s mother insisted that he go to Commencement and get his Ph.D. diploma in person. She came back from New York for the occasion and we sat together and cheered at appropriate moments. The next month Len and I took Sally with us to Chicago and found an apartment in Hyde Park close to the campus.Len and I both enjoyed our first experience of the midwest. Len had a wonderful time meeting the rest of the Group Theory world and teaching a class. I graded papers for an abstract algebra course, took our new baby to meet other mathematical wives/mothers and their babies, and got pregnant again. I found Chicago Lying-in Hospital much more comfortable than Boston Lying-in Hospital, maybe because I felt so much better during my second pregnancy than the first. In May, I produced a son whom we named Samuel Robert Evens, Samuel for Len’s deceased father and Robert for several of my ancestors. By this time Len received an invitation from the Mathematics Department at the University of California at Berkeley to come for a three-year stint as an Assistant Professor. When our son Sam was three weeks old, we put Sally and Sam in the car and set out for California.After a year in a rented house south of the campus, in the summer of 1962 we bought an old and tired house in the Berkeley hills with four bedrooms and beautiful views. Among other major problems, it needed completely new electrical wiring all through the house. Len bought a book and did it himself. When the city inspector came to inspect Len’s work and give us legal permission to use it, he was amazed because it looked so professional. “It looks like a page in a textbook,” he said. He was even more amazed when Len pulled out the textbook in question. The next summer Len replaced the old tiles on two sides of the house. I did a lot of work on the garden and helped with the indoor painting but he did most of it. His work on the house was just recreational, he claimed. He needed to take some time off from thinking about mathematics and his students. With a lot of encouragement from Len, I called the branch of the California State University in Hayward, and got a job teaching Differential Equations one evening a week. I also discovered that Berkeley had one of the earliest and best linguistics departments in the country and so I started going to their colloquia and reading some of their textbooks. After Oliver Selfridge came to give a talk and insisted on taking me out to tea afterwards, one of their best Ph.D. students—who was making a start at applying to Mandarin Chinese (her native language) some of the techniques developed for English to Chinese—invited me to write a parser for her. I learned a lot in this process. Len babysat while I taught and I went to meetings on campus. John Tate and his wife Karin and their children came to Berkeley for a year-long sabbatical in the spring of 1963 and rented a house just a block away, and Karin and the Tates’ two children came to play with me and our children and go swimming with us almost every day, while Len and John did mathematics together. Not long after they went back to Cambridge, I produced another daughter, whom we named Anne Chaia Evens, but called Nancy. (Chaia was the name of Len’s maternal grandmother, whom he and his parents had lived with early in their marriage, but who died before I met Len.) In the spring of 1964, Len got some very bad news. Berkeley decided not to renew his contract. Once he told the Group Theory world that he was available, he got a number of offers and took the one from Northwestern.Over the telephone with various members of the department, we found a row house in Evanston, about half a mile south of campus, which we rented from a Northwestern faculty member who was planning a year away. He told us that the row houses were full of friendly people with children about the same age as ours. This turned out to be true. The Birchfields lived in the row house right next to ours. Our landlord had told us that the father, Ed, was teaching in the Engineering School at Northwestern. Ed’s wife Marilyn rang our doorbell an hour or so after we arrived in Evanston and said “I hear that you just got here from California. You must have lots of dirty laundry if you have just traveled two thousand miles in a car with three small children. If you could let me have it right now, I could bring it back clean and dry later today.” I couldn’t resist, invited her in, told her I didn’t even know yet whether we had a washing machine and handed her two big bags of dirty laundry. When she brought it back clean and folded, she also brought her two children. They started playing together with Sally and Sam immediately, while I nursed Nancy. This was her first birthday, but there was no celebration of any kind. Her sister and brother never permitted such a thing to happen again, while they were all growing up.After we had lived in the row house for four years, our landlord’s family decided to stay at their new university and offered to sell the row house to us. By this time all three of our children were going to a new school, the Evanston Laboratory School, which was available to students all over the city of Evanston. Len and I were both impressed with it and felt that since we could move without uprooting our children from school again, we should look for a house nearer the university. We told all our friends at Northwestern that we were looking for a house and we got a tip—a law school faculty member named Victor Rosenblum and his family were leaving town. Their house was on Orrington and only a short block away from the Mathematics Department. We bought it as soon as we saw it and moved in at the beginning of August 1968.Len encouraged me to go back to graduate school in computer science when our youngest child started school. Although I had been going to listen to some people at the University of Chicago talk about computer science, we decided it would be cheaper and more manageable for me to go to Northwestern. Northwestern did not yet have a Department of Computer Science, but I knew I wanted to work with Gilbert Krulee, who was then chair of the Engineering Management Department, so I filled out an application for Engineering Management and started that program part-time in 1969. In 1971, Northwestern created a Department of Computer Science with Krulee as department chair, and I moved over along with him. At the time, Northwestern had a policy of not supporting married female graduate students, but I worked at the campus computer center for two years and then taught courses in computer science there and was able to pay my tuition that way. For my Ph.D. thesis, I wrote a program that was able to read and interpret children’s stories, and could answer multiple choice test questions about the stories correctly. The program also could tell students whether their answers to the test were correct, and, if their answers were incorrect, it could explain to them why the right answer was correct.A week after I defended my thesis in August 1975, I started teaching in the Computer Science Department at Illinois Institute of Technology (IIT), which like the department at Northwestern had been created in 1971. I was hired to teach courses in Computer Science at IIT, developed by Robert Dewar (still the most famous computer scientist ever at IIT), who was just about to take off for New York City to become Chair of Computer Science at New York University. That first year I spent most of my time trying to learn enough to say something sensible in class the next day, but I still made sure to get to the Northwestern linguistics seminar for a couple of hours every week. The Linguistics Department and the Mathematics Department were only a block away from our home in Evanston and my wonderful husband came home early some afternoons to meet our three children when they came home from school and take care of them for several hours until I got home and made us all some dinner. The participants in the seminar included my advisor Gilbert Krulee (who had now become head of the Linguistics Department at Northwestern) and Oswald Werner and Raoul Smith, who were both on my dissertation committee. At the seminar, the other participants kept asking me when I was going to publish my thesis. After several months they got tired of my lack of answers to this question, and one day when the expected speaker did not show up, they together outlined a book and told me to write the first section and they divided the rest of it between themselves. Eventually two good friends of mine, Judith Markowitz and Bonnie Litowitz, who often came to this same seminar, also volunteered to add relevant pieces. It took until 1980 to get it all assembled and organized for publication.1In the fall of 1976, early in my second year at IIT, I got a telephone call from a cardiologist at Michael Reese Hospital, which was about four blocks from my office at IIT. He told me that he was a cardiologist and his name was Daniel Hier and that he was looking for someone who could program a computer system to take a list of patient symptoms and come back with a list of possible cardiac diseases that could be responsible for these symptoms. It seemed to me that this task was doable (but not quickly), probably useful, and perhaps publishable. I said I think we could do that, my students and I, but we would need a lot of information from him beginning with a list of symptoms, a list of diseases, and a list of relationships between them. Do you have a favorite textbook that you could lend us? Or a pile of patient records that would help us learn some of this? He laughed and said that part of his job was teaching some of this to first-year residents. But he was worried because they often forgot some of the rarer symptoms and, of course, we occasionally get new information about symptoms and diseases. He told me to call him Dan, and assured me he would produce any lists I wanted, and we made an appointment to get together the next week. This was the beginning of a series of collaborations that lasted until we had both retired. He gave a very kind speech at my retirement party in 2002. About five years after we first met, Michael Reese had to close for financial reasons, and Dan moved to Illinois Medical School. His first step at Illinois Medical School was to hire Johnson Jao, one of a series of excellent students in Computer Science at IIT from Taiwan, whose thesis project was developing another system for Dan. After Dan retired, Johnson went to work for the National Science Foundation.David Trace, a physician teaching at Chicago Medical School, read a couple of papers written by Dan and me and called Dan to find out more. Dan suggested that he talk to me and gave him my number. David invited me to come to the medical school, which is now called Rosalind Franklin Medical College, and is located in the far north suburbs of Chicago. It was a long way, but certainly worth the drive. David had collected half a dozen people, including several from the computing center, to talk about possible projects in medical informatics. The man in charge of the computing center was Frank Naeymi-Rad, whose family had immigrated from Iran when he was in his early teens. He was writing an M.S. thesis to finish a degree in Computer Science at Southern Illinois University. His most recent hire was Timothy Koschman, who had just finished an M.S. program in Milwaukee. They asked me a lot of intelligent questions about what Dan and I had been doing. At the end of the meeting, David Trace asked me if Dan and I were thinking about expanding our program to other medical areas aside from cardiology. Dan called me that evening to tell me that David had asked him the same question, and Dan had told him, “No, I was interested in computerizing paperwork for cardiologists.” In addition, Dan complained that my students were trying to push him to do more in AI. Around this time, Frank asked me to read the draft of his M.S. thesis and make suggestions. He’d asked Tim the same thing but Tim was too polite to make critical comments. The happy result of this interaction was that both Tim and Frank decided to do Ph.D.s with me. Frank focused on designing the patient database while Tim focused on interviewing doctors to discover what services we needed to include in the medical information system we were developing in collaboration with David Trace, which we eventually called MEDAS. The system was designed to build a database for each patient that included contact information, symptoms, diseases, and generated discharge instructions. David stayed at Chicago Medical School and we continued our productive collaboration for many years, and he took the lead in further developments in MEDAS. At some point after Frank got his Ph.D., Frank started his own medical informatics company, which has done extremely well. After Tim got his Ph.D. he taught and did research at Southern Illinois Medical School and recently retired.Around 1986, I got another life-changing telephone call, this time from Rush Medical College. Two professors of physiology, Joel Michael and Allen Rovick, called me to tell me about CIRCSIM, their plan for one-on-one tutoring to help first-year medical students do medical problem-solving, something that many first-year students find very difficult. So many students had found CIRCSIM very helpful that a large percentage of the 150 students in their physiology course were asking for it, and they found the effort of handling this load exhausting. They asked if we could figure out a way to put CIRCSIM onto a computer. I wrote a proposal to a naval research fund with the blessing of both Joel and Allen, and we got funding that eventually lasted for 12 years. Michael Glass did most of the parsing and language generation. Reva Freedman did a lot of work that improved the planning and wrote a very good paper on the subject. She was a Ph.D. student in Computer Science at Northwestern at the time. Her research on planning for CIRCSIM-Tutor was the basis for her thesis. Altogether, about 25 of my students worked on CIRCSIM-Tutor for their theses. After I retired from teaching at IIT in 2001, Joel and I eventually wrote a book about CIRCSIM and CIRCSIM-Tutor.2All three of these projects in medical informatics involved building a lexicon. I found the problems involved absolutely fascinating and I continued to work on them throughout my years at IIT. I was very fortunate to get to know several professional lexicographers from England, Canada, France, Germany, Italy, as well as the United States, who invited me to their conferences, which were mainly held in Canada near Toronto, in the Province of Ontario. After more conferences and a lot of time reading journals and writing code, almost ten years later, I edited another book about lexical problems.3Our children went away to college in the early 1980s, and Len and I took pleasure in seeing them find productive careers. At that time, Len became an active runner and qualified for the Boston Marathon. He was also involved in measuring courses for local running clubs in the Chicago area. He set up and maintained our home computer system, and was always supportive of my research activities. Although each of our children lived far away at various times, by 1998, they were all back in Chicago. In 1991, our first grandchild Michael was born, and Len and I enjoyed being part of his life, and the lives of our other grandchildren, who we got to see on a regular basis. In 2016, Len was diagnosed with Parkinson disease, and developed progressive dementia, and we moved to an assisted living place so I could get more help taking care of him. We were fortunate to be able to stay in downtown Evanston, and be able to walk to do errands in our neighborhood, and to live in a wonderful community.Len died suddenly on the morning of November 12, 2020. I miss him constantly, but I feel very lucky to have been married to him for 62 years. Our three children all live in the Chicago area and they all come to see me often and offer help when I need it to get to doctor’s appointments. I have five grandchildren aged 21 to 31, and I am hoping for great grandchildren.At this point, I find the current progress in natural language processing, including machine learning tutoring systems and medical informatics, tremendously exciting. I hope these advances will lead to material progress in making health care more broadly available. I look forward to seeing what the next generation of researchers will manage to accomplish.},
+  archive      = {J_COLI},
+  author       = {Evens, Martha},
+  doi          = {10.1162/coli_a_00452},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {775-782},
+  shortjournal = {Comput. Lingu.},
+  title        = {Martha evens, brief autobiography},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022b). Martha palmer and barbara di eugenio interview martha
+evens. <em>COLI</em>, <em>48</em>(4), 765–773. (<a
+href="https://doi.org/10.1162/coli_a_00453">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Martha Palmer preamble: Several of us can remember Martha Evens clearly as a calm, smiling presence at ACL conferences in the 1990s and early 2000s. We knew she was an expert on lexicons and lexical databases—and some of us knew she had been a long serving SIGLEX officer from 1992 to 2004 in various capacities and that she was doing something in the esoteric area of medical informatics, which was pretty much uncharted territory in those days. But mostly we knew she was always interested in what we were doing, asking us about what we were presenting, complimenting us on recent publications, inquiring about our families, and making us feel welcomed and part of the community. Few of us knew that when she graduated Bryn Mawr summa cum laude with a degree in Mathematics in 1955 along with three other women, she had also added German and Greek to the Latin and French she had learned in high school. She was clearly destined for computational linguistics, although the first ACL conference was still 7 years away. After studying more mathematics in Paris as a Fulbright Scholar, she enrolled in a master’s program in Mathematics at Harvard/ Radcliffe and graduated in 1957. Her eventual husband Len Evens pointed her to an opening as a programmer working with Oliver Selfridge at MIT Lincoln Labs. There she found herself contributing to the first spelling correction program and was immediately hooked on the challenges of using computers to process language. She drove the two boxes of cards containing the first LISP interpreter from MIT to Lincoln Labs as a favor to a friend, not realizing that she would later use LISP extensively herself. She still speaks reverently of her time there with Oliver Selfridge and his continuing influence. Eleven years of marriage and three children later, with her husband settled in a tenured position at Northwestern, she decided to go back to graduate school to study Computer Science at Northwestern. When she received her Ph.D. in 1975, she joined the Illinois Institute of Technology. She had already worked on a Mandarin Chinese parser at Berkeley in the 1960s, so her commitment to natural language processing was long established. In addition to her work on lexicons, she pioneered the development of intelligent tutoring systems for medical topics, and her tutoring system focusing on the circulatory system, called CIRCSIM-Tutor, was used by hundreds of medical students over several years at three different medical schools. She was a co-editor of the precursor of Computational Linguistics from 1981 to 1984, president of ACL in 1984, and on the Cambridge University Press editorial board for the NLP series from 1982 to 1990. Yet at conferences, she never referred to her professional roles or in any way threw her weight around. She just stayed focused on how best to teach and serve her students and the community. She organized a number of conferences in artificial intelligence and went along to many others with her students, to ensure that as many of them as possible could present papers—and she had a lot of students. In her 25 plus years at IIT, she supervised over 100 Ph.D. students and taught every computer science course on the books except for hardware. In the words of the former Illinois Tech Computer Science chair Eunice Santos, “Martha is very well-known as someone who put her heart into being there to help students. She is very much loved. She is also an incredibly humble person. You’ll learn more about what Martha has done from everybody else than you will from her.” Today we have a rare opportunity to learn a little bit from her. Enjoy.InterviewMartha Palmer (MP): This is so richly deserved and definitely should have happened sooner but we are really glad we are still able to talk to you about your research and your whole career and the experiences you have had.Martha Evens (MWE): Thank you for the opportunity. I am so delighted to receive this award. I never thought this would happen, especially since I’ve been out of research for so long.Barbara Di Eugenio (BDE): Martha, we would really like to know how you got started in natural language processing.MWE: Right. I majored in Mathematics at Bryn Mawr and graduated in 1955. I got a Fulbright and spent a year in Paris learning more mathematics and went home to study even more mathematics at Harvard. I got a Master’s in Mathematics from Radcliffe. My first day at Harvard, a man named Leonard Evens was sitting on the front steps, greeting the new Mathematics graduate students and showing them around the department. Over that year, we saw each other a lot, and he suggested I try to get a summer job at MIT Lincoln Laboratory, where he had worked in the summer of 1956. I was hired there as a mathematician and, by incredible luck, my supervisor for the summer was Oliver Selfridge. That was the summer when the first copy of the Fortran compiler that left IBM arrived at MIT, so he had me learn to program. He asked me to write a spelling correction program for the Morse code messages, which were full of errors, that the Navy was getting from all over the Pacific. Several years later our program became the first widely available spelling program. Oliver hired me for the next few summers, too. He was very supportive and helpful when I finally applied to graduate school in Computer Science. In the meantime, I got married to Len Evens in 1958 and we produced three wonderful children, and my husband became a tenured Professor of Mathematics at Northwestern after spending some time at University of Chicago and Berkeley. Berkeley was one of the first universities to have a strong Linguistics Department, and while we lived there, I went to their colloquia and read some of the textbooks they used in their courses. Len encouraged me to go back to graduate school in computer science when our youngest child started school. Although I’d been going to listen to some people at the University of Chicago talk about computer science, we thought it would be cheaper and more manageable for me to go to Northwestern. Northwestern did not yet have a Department of Computer Science, but I knew I wanted to work with Gilbert Krulee, who was then chair of the Engineering Management Department, so I filled out an application for Engineering Management and started that program part-time in 1969. In 1971, Northwestern created a Department of Computer Science with Krulee as department chair, and I moved over along with him. At the time, Northwestern had a policy of not supporting married female graduate students, but I taught courses in computer science for Northwestern and was able to pay my tuition that way. For my Ph.D. thesis, I wrote a program that was able to read and interpret children’s stories, and could answer multiple choice test questions about the stories correctly. The program also could tell students whether their answers to the test were correct, and if their answers were incorrect, it could explain to them why the right answer was correct. Based on this work, I got my Ph.D. at Northwestern in Computer Science in 1975. Robert Dewar was leaving the Illinois Institute of Technology (IIT) to chair the NYU Department of Computer Science that year, and I applied for a position at IIT and was hired. Computer Science was also relatively new at IIT, and I was the first professor hired at IIT with a Ph.D. in Computer Science. Around 1973, Krulee had moved to head Northwestern’s new Department of Linguistics, and this led me to start talking more to people in linguistics, in particular, Professors Raoul Smith and Oswald Werner (who was also in Anthropology) but also Judith Markowitz and Bonnie Litowitz, who were graduate students in Linguistics. The five of us wrote a book together,1 published in 1980, and I wrote other papers in NLP with members of this group. This research group helped me develop as a researcher in the years immediately after my Ph.D. My wonderful husband was always very supportive of my work, and he came home early to watch our children so I could go to seminars in the Department of Linguistics at Northwestern. I ended up staying at IIT until I retired in 2001, but they let me keep my laboratory until 2010, and I continued to work with students until then.BDE: I’m really interested in asking you about CIRCSIM-Tutor, but I also want to point out to the NLP/ACL crowd that you have been a pioneer in AI in education as well and in using natural language processing in that context of education. You were certainly one of the main movers behind CIRCSIM-Tutor, which is one of the first, if not the first, intelligent tutoring system that modeled conversations between the teacher and the students, and tried to look at various features like the student taking the initiative, and what kinds of questions they asked, and so on. So I wanted to ask you how you started on that project, and what challenges you faced. These days AI is widely accepted, especially in health care. Now they want people in NLP to make progress, but when you started this work in the late 1980s and early 1990s, this was not the state of research. So we’d like to hear what you have to say about how you got started on CIRCSIM-Tutor, the challenges you faced, and the satisfactions you found.[CIRCSIM-Tutor was a pioneer Intelligent Tutoring System to teach cardiovascular physiology; most relevant, it conducted a natural language interaction with the student, using tutoring strategies employed by expert human tutors.2Evens and her group collected and carefully analyzed human–human tutoring interactions in this domain, and investigated a variety of tutoring strategies and student behaviors, including differences between face-to-face and computer-mediated tutoring sessions; the usage of hinting and of analogies on the part of the tutor; taking initiative on the part of the students; and several domain-based teaching techniques, for example, at which level of knowledge to teach. All of these strategies were implemented, and several were evaluated in careful experiments. CIRCSIM-Tutor was shown to engender significant learning gains, and was used in actual classes, which is even more striking since the NLP technologies available at the time were severely limited. For further details, please see Di Eugenio et al.3]MWE: Yes, in 1976 a cardiologist named Daniel Hier, who was working at Michael Reese Hospital a few blocks from the IIT campus, called me to ask if there was some way we could write a program that would input a patient’s cardiac symptoms and suggest diagnoses; we did that, and wrote several papers based on that program. After Michael Reese closed down, Dan moved to University of Illinois Medical Center and hired one of my students to work there. Some doctors at Chicago Medical School including David Trace contacted Daniel and asked him about using computers in medicine, and he suggested they talk to me. My students and I collaborated with David Trace and others at Chicago Medical School to write a software system called MEDAS that explained diagnoses to a patient and suggested possible treatments, gave discharge instructions, and created a patient database. Chicago Medical School is now called Rosalind Franklin University of Medicine, and is in the far northern suburbs of Chicago, so it was a bit of a drive to go there, but well worth it. When I went there, I met Frank Naeymi-Rad, who was their head computer administrator, and Tim Koschman, a computer scientist there. Frank and Tim got interested in the work we were doing and later got Ph.D.s at IIT working with me. Tim played a key role in developing MEDAS and Frank got doctors interested in medical informatics and later started a company in this field that has done very well. I wrote a number of programs with Frank and Tim and with other students to expand and improve MEDAS, and I think of MEDAS as a kind of great grandmother to the EPIC medical informatics system.MP: And I understand you had a lot of Ph.D. students—a hundred? How did you manage that? You must have been supervising 10 students at a time or 15, or even 20 all at once. How in the world did you do that?MWE: Yes, how did I manage? Remember that these students were spread out over 30 years or more. I had several group meetings every week, and when I went home, I often took a thesis draft or a paper home to edit, and spent the evening making comments or suggesting changes. You know, just teaching computer science has been a lot of fun because the students are so excited. In the 1960s, I spent several years teaching mathematics at National College of Education (now Lewis University) to students training to be elementary school teachers, many of whom really hated mathematics. I enjoyed that, but in a very different way. In contrast, my computer science students were full of enthusiasm and very talented. They did excellent work and figured out how to talk to doctors and did most of the real work, and I got to put my name on their papers.MP: A lot of your students got their Ph.D.s in things other than natural language processing or medical applications of natural language processing.MWE: My first few Ph.D. students were students left behind by Robert Dewar, and their theses were related to compilers or databases. However, almost all the rest wrote their theses on natural language processing or lexical databases. In fact, I had 17 students write theses adapting some of what we had learned about natural language processing in English to Arabic. I learned a little Arabic in the process, but not at all well. We learned a lot about Arabic linguistics, and then the same thing happened in Korean and Chinese. So we would have CIRCSIM-Tutor meetings once a week and Arabic and Korean meetings also.MP: Yeah, I know what that’s like. I’ve done that too. You seemed to go to a lot of conferences. For conferences that were not too far away, did you drive? Did you take a bunch of students together to the conferences? Did you have a van?MWE: No, but one of my students did. In fact, one of my students drove a taxi to make ends meet.MP: But I think none of them are taxi drivers now! A lot of your students are professors at universities, or CEOs of companies, or deans, or even one I think is the president of a university. Is that right?MWE: Yes, they worked hard and did good work. They learned a lot and were very excited about their research. It was just a whole lot of fun.MP: So, how many of them worked on CIRCSIM-Tutor?MWE: Oh, dear. I’m not sure.MP: Just roughly, 25 or 50?MWE: Well, Michael Glass did a lot of that work. Michael is now teaching and helping to run computer science at Valparaiso University. He played a key role in building the Computer Science department there. Frank Naeymi-Rad added a lot of the medical vocabulary.BDE: Can I say something about Michael? He was my postdoc for two years, and my most cited paper is a joint paper with Michael, about the squib on the intercoder agreement on Kappa.4 Sorry about bringing up my own work but it’s to Martha’s credit that her graduate students were so good.MWE: Well, Michael was an undergraduate student at the University of Chicago and he started doing computational linguistics there, so he knew a lot before he came to me. Since then, he has been experimenting with mathematics tutoring programs and has done a lot of good work along with Jung Hee Kim, who is now a Professor at North Carolina State.MP: So you’ve also done a lot of work with lexical databases. You wrote a book on this subject that just got reprinted not that long ago.5 Did you find that the work with lexical databases was useful for the intelligent tutoring systems like CIRCSIM-Tutor?MWE: Actually, I edited two books on lexical databases and wrote parts of them also. Yes, an intelligent tutoring system needs to know a lot about language. It needs to understand a lot of words to handle questions that students ask and to try to encourage them to keep going, or whatever is needed, and that takes a lot of vocabulary. CIRCSIM was actually invented not by me but by two professors at Rush School of Medicine, Joel Michael and Allen Rovick. Joel and Allen had difficulties teaching medical students in a required first year physiology course how to solve problems in medicine, and it took a lot of time to help each student individually, so they asked me if we could write a tutoring system which would help students work through these difficulties. We took recordings of a lot of one-on-one tutoring sessions between Joel and Allen and their students. Based on these, we did a lot of complicated planning to address communication problems between students and the tutoring system, and we tried a number of different ways to address these issues. In the process, we learned that usually having two medical students work together with the tutoring system worked best in practice. Reva Freedman, who is now a Computer Science Professor at Northern Illinois University, did a lot of the planning and Michael Glass did most of the parsing.MP: And the system was actually used at Rush Medical School? For how long?MWE: Well, as long as Joel and Allen were still teaching there at least. There were others at Rush who started using CIRCSIM-Tutor after Joel and Allen retired, too. One of my students, Tim Koschman, taught at Southern Illinois Medical School using CIRCSIM-Tutor, so it was used some there, but I don’t know for how long, or how many students used it. After I retired from teaching at IIT, Joel and I wrote a book about the system.MP: But at Rush, though, there must have been hundreds of students who used the system over several years? That’s quite a record for a natural language processing system, especially a tutoring system. Barbara, do you know of any comparable applications?BDE: The only ones that come to mind are the database tutoring systems from the Tanya Mitrovic group in New Zealand, but they came much later; likewise for the AutoTutor series of ITSs on introductory Computer Science (University of Memphis) or the Atlas-Andes ITS on physics (University of Pittsburgh)—interestingly, Reva Freedman contributed to the NLP component of the latter. So that’s why I think CIRCSIM-Tutor was really the first tutoring system that took natural language processing seriously.MP: And that was actually used successfully over a long period of time.MWE: Yes, we also used it for summer students studying physiology.MP: Were there any moments when you were working on that system or another system when things just seemed to go horribly wrong, and you despaired of whether or not you’d ever be able to get it to work?MWE: Yes, indeed. However, thanks largely to Frank Naeymi-Rad, we knew that the systems we had written earlier worked. Joel and Allen’s students got really interested in the program and helped us by telling us about problems and making suggestions about adding vocabulary and plans.MP: So they helped you beta test?MWE: Yes, they told us when there were bugs in the program, so yes, it was very helpful.MP: Yes, that’s right. Getting somebody to use a tutor is always a big advantage.MWE: Well, the students who used the system liked it and that helped. A lot.MP: It sounded like you’ve really enjoyed your Ph.D. students. Was that the most satisfying part of being a computer science professor?MWE: Oh, well, I don’t know whether it’s still true but at that point the people who were studying computer science were really excited about it. I enjoyed teaching compiler courses especially.MP: Yes, you seemed to teach just about everything. I mean a lot of us teach artificial intelligence and natural language processing, but you also taught compilers and programming languages, and I think algorithms. Was there anything you didn’t teach? Did you just teach most of the computer science curriculum?MWE: Oh, I didn’t teach any hardware courses. My husband knew hardware and played a major role in setting up the computer network at the Northwestern Department of Mathematics. My husband handled all the hardware at home until he died a year and a half ago.MP: It’s very handy to have a built-in hardware tech at the house. Everybody in my house keeps thinking I’m supposed to do that. So, let’s go back to lexical databases. One of the issues with using pre-existing lexical databases is that quite often the system users will come up with new terminology or new phrases for something and it’s hard to match those with the existing entries. Do you have any ideas about that? How did you handle that issue in your tutoring system?MWE: Sometimes we had to ask the students what unfamiliar words meant.MP: Get the users to repeat what they said or phrase it a little differently? And then did you continually try to update the system? Were you constantly putting in new phrases, taking phrases that initially the system had not understood and then adding them in?MWE: Well, yes, and some dictionaries try to do that, too. We would buy a new edition of Webster’s and the Cambridge dictionaries every time they were available. If we could get them to send us something before it was printed, that was great, because they were starting to build their dictionaries on the computer, too, so they were interested in what we were doing.MP: So then while your system was being used, were you and your students in a constant state of updating and maintaining it?MWE: I was very fortunate to get to know several professional lexicographers from around the world, and they invited me to their conferences, which were mostly held in the area around Toronto or in other places in Canada, and that was great for helping us update our systems. These interactions led me to edit the book Relational Models of the Lexicon: Representing Knowledge in Semantic Networks.BDE: Martha, you were a pioneer as a woman in mathematics and computer science. You already told us a little bit at the beginning how you got started in the field. But as one of the very few women in the field, especially at the beginning, do you have any thoughts on the experience? What was the most frustrating part for you? What was the funniest moment that you encountered in the 1980s?MWE: In the 1980s in the IIT Department of Computer Science we had at one time as many women taking the master’s exam in computer science as men. The exact same numbers, as it happened. It only happened once, but I think at that point a lot of early work on compiling lists and building databases was done by women, and IIT encouraged me to have programs every semester for women who might want to do computer science. The Department of Computer Science was in Engineering some of the time and at other times in Arts and Sciences. Computer science was a kind of engineering that people could do without needing much physical strength or doing something dangerous, and I think that attracted a lot of women to computer science. Fortunately, at the time there was a broad push to get more women into computer science.MP: What was the hardest part? Did you ever have a moment when you felt like a door was shut in your face because you were a woman instead of a man?MWE: In the other engineering departments, it happened sometimes and mechanical engineering people were particularly unenthusiastic, I think. They actively told women students interested in mechanical engineering to go away and the administration complained when they heard about it.MP: I bet they did.MWE: I just kept telling the people in that department that they were losing a lot of good students that way.MP: That’s a good response. Did anything funny ever happen, like somebody knew you were Professor Evens but they didn’t realize you were a woman?MWE: Oh, yes, that certainly happened. People often assumed that I was a secretary and then there were people who had to be told several times that I had a Ph.D. When I was hired, I was the only woman faculty member in the Department of Computer Science at IIT, but after about five years happily there were more. In the 1980s, we persuaded a lot of women to study computer science, but unfortunately since then the percentage of women students in computer science at IIT has declined to some degree.MP: What makes you happiest about your career and the work you’ve done?MWE: Happiest? Well, all the students from all over the world, getting to know them, and seeing their excitement, and helping them develop their ideas. Their excitement made me feel good and helped keep me going.BDE: OK, Martha, as a final question for you, would you have words of wisdom for young researchers in natural language processing today?MWE: I had a lot of luck. When I was starting, a lot of people were excited about what they were doing and passed some of that excitement on to me. I have learned a lot from linguists as well as from computer scientists. I’ve had a lot of luck, beginning with getting connected to Oliver Selfridge.MP: That was a good start.MWE: When my husband was teaching at Berkeley, Oliver visited several times to give talks in linguistics, and I was able to talk to him during these visits. That helped me connect to linguistics research there, and the same thing happened later in the Chicago area. Oliver made a point of getting coffee with me when he came, and that was really encouraging.MP: So maybe your advice would be to find a great mentor.BDE: And always be enthusiastic and excited about your research.MWE: Find something that you can get excited about and then think about ways to communicate that excitement to others.MP: Well, Martha, thank you so much. Thank you for spending time with us today. But thank you even more for your long illustrious career, including your 100 Ph.D. students, your fielded systems, your 300-odd publications and all of the contributions you’ve made to the field, both as a researcher and also as a sterling example of what it means to dedicate your life to your teaching and your students.BDE: I couldn’t say it better.MWE: Thank you so much. Thank you both.},
+  archive      = {J_COLI},
+  author       = {Evens, Martha},
+  doi          = {10.1162/coli_a_00453},
+  journal      = {Computational Linguistics},
+  number       = {4},
+  pages        = {765-773},
+  shortjournal = {Comput. Lingu.},
+  title        = {Martha palmer and barbara di eugenio interview martha evens},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Position information in transformers: An overview.
+<em>COLI</em>, <em>48</em>(3), 733–763. (<a
+href="https://doi.org/10.1162/coli_a_00445">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Transformers are arguably the main workhorse in recent natural language processing research. By definition, a Transformer is invariant with respect to reordering of the input. However, language is inherently sequential and word order is essential to the semantics and syntax of an utterance. In this article, we provide an overview and theoretical comparison of existing methods to incorporate position information into Transformer models. The objectives of this survey are to (1) showcase that position information in Transformer is a vibrant and extensive research area; (2) enable the reader to compare existing methods by providing a unified notation and systematization of different approaches along important model dimensions; (3) indicate what characteristics of an application should be taken into account when selecting a position encoding; and (4) provide stimuli for future research.},
+  archive      = {J_COLI},
+  author       = {Dufter, Philipp and Schmitt, Martin and Schütze, Hinrich},
+  doi          = {10.1162/coli_a_00445},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {733-763},
+  shortjournal = {Comput. Lingu.},
+  title        = {Position information in transformers: An overview},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Survey of low-resource machine translation. <em>COLI</em>,
+<em>48</em>(3), 673–732. (<a
+href="https://doi.org/10.1162/coli_a_00446">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a survey covering the state of the art in low-resource machine translation (MT) research. There are currently around 7,000 languages spoken in the world and almost all language pairs lack significant resources for training machine translation models. There has been increasing interest in research addressing the challenge of producing useful translation models when very little translated training data is available. We present a summary of this topical research field and provide a description of the techniques evaluated by researchers in several recent shared tasks in low-resource MT.},
+  archive      = {J_COLI},
+  author       = {Haddow, Barry and Bawden, Rachel and Barone, Antonio Valerio Miceli and Helcl, Jindřich and Birch, Alexandra},
+  doi          = {10.1162/coli_a_00446},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {673-732},
+  shortjournal = {Comput. Lingu.},
+  title        = {Survey of low-resource machine translation},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Investigating language relationships in multilingual
+sentence encoders through the lens of linguistic typology.
+<em>COLI</em>, <em>48</em>(3), 635–672. (<a
+href="https://doi.org/10.1162/coli_a_00444">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Multilingual sentence encoders have seen much success in cross-lingual model transfer for downstream NLP tasks. The success of this transfer is, however, dependent on the model’s ability to encode the patterns of cross-lingual similarity and variation. Yet, we know relatively little about the properties of individual languages or the general patterns of linguistic variation that the models encode. In this article, we investigate these questions by leveraging knowledge from the field of linguistic typology, which studies and documents structural and semantic variation across languages. We propose methods for separating language-specific subspaces within state-of-the-art multilingual sentence encoders (LASER, M-BERT, XLM, and XLM-R) with respect to a range of typological properties pertaining to lexical, morphological, and syntactic structure. Moreover, we investigate how typological information about languages is distributed across all layers of the models. Our results show interesting differences in encoding linguistic variation associated with different pretraining strategies. In addition, we propose a simple method to study how shared typological properties of languages are encoded in two state-of-the-art multilingual models—M-BERT and XLM-R. The results provide insight into their information-sharing mechanisms and suggest that these linguistic properties are encoded jointly across typologically similar languages in these models.},
+  archive      = {J_COLI},
+  author       = {Choenni, Rochelle and Shutova, Ekaterina},
+  doi          = {10.1162/coli_a_00444},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {635-672},
+  shortjournal = {Comput. Lingu.},
+  title        = {Investigating language relationships in multilingual sentence encoders through the lens of linguistic typology},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Tractable parsing for CCGs of bounded degree. <em>COLI</em>,
+<em>48</em>(3), 593–633. (<a
+href="https://doi.org/10.1162/coli_a_00441">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Unlike other mildly context-sensitive formalisms, Combinatory Categorial Grammar (CCG) cannot be parsed in polynomial time when the size of the grammar is taken into account. Refining this result, we show that the parsing complexity of CCG is exponential only in the maximum degree of composition. When that degree is fixed, parsing can be carried out in polynomial time. Our finding is interesting from a linguistic perspective because a bounded degree of composition has been suggested as a universal constraint on natural language grammar. Moreover, ours is the first complexity result for a version of CCG that includes substitution rules, which are used in practical grammars but have been ignored in theoretical work.},
+  archive      = {J_COLI},
+  author       = {Schiffer, Lena Katharina and Kuhlmann, Marco and Satta, Giorgio},
+  doi          = {10.1162/coli_a_00441},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {593-633},
+  shortjournal = {Comput. Lingu.},
+  title        = {Tractable parsing for CCGs of bounded degree},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). UDapter: Typology-based language adapters for multilingual
+dependency parsing and sequence labeling. <em>COLI</em>, <em>48</em>(3),
+555–592. (<a href="https://doi.org/10.1162/coli_a_00443">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Recent advances in multilingual language modeling have brought the idea of a truly universal parser closer to reality. However, such models are still not immune to the “curse of multilinguality”: Cross-language interference and restrained model capacity remain major obstacles. To address this, we propose a novel language adaptation approach by introducing contextual language adapters to a multilingual parser. Contextual language adapters make it possible to learn adapters via language embeddings while sharing model parameters across languages based on contextual parameter generation. Moreover, our method allows for an easy but effective integration of existing linguistic typology features into the parsing model. Because not all typological features are available for every language, we further combine typological feature prediction with parsing in a multi-task model that achieves very competitive parsing performance without the need for an external prediction system for missing features.The resulting parser, UDapter, can be used for dependency parsing as well as sequence labeling tasks such as POS tagging, morphological tagging, and NER. In dependency parsing, it outperforms strong monolingual and multilingual baselines on the majority of both high-resource and low-resource (zero-shot) languages, showing the success of the proposed adaptation approach. In sequence labeling tasks, our parser surpasses the baseline on high resource languages, and performs very competitively in a zero-shot setting. Our in-depth analyses show that adapter generation via typological features of languages is key to this success.1},
+  archive      = {J_COLI},
+  author       = {Üstün, Ahmet and Bisazza, Arianna and Bouma, Gosse and Noord, Gertjan van},
+  doi          = {10.1162/coli_a_00443},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {555-592},
+  shortjournal = {Comput. Lingu.},
+  title        = {UDapter: Typology-based language adapters for multilingual dependency parsing and sequence labeling},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). The impact of edge displacement vaserstein distance on UD
+parsing performance. <em>COLI</em>, <em>48</em>(3), 517–554. (<a
+href="https://doi.org/10.1162/coli_a_00440">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We contribute to the discussion on parsing performance in NLP by introducing a measurement that evaluates the differences between the distributions of edge displacement (the directed distance of edges) seen in training and test data. We hypothesize that this measurement will be related to differences observed in parsing performance across treebanks. We motivate this by building upon previous work and then attempt to falsify this hypothesis by using a number of statistical methods. We establish that there is a statistical correlation between this measurement and parsing performance even when controlling for potential covariants. We then use this to establish a sampling technique that gives us an adversarial and complementary split. This gives an idea of the lower and upper bounds of parsing systems for a given treebank in lieu of freshly sampled data. In a broader sense, the methodology presented here can act as a reference for future correlation-based exploratory work in NLP.},
+  archive      = {J_COLI},
+  author       = {Anderson, Mark and Gómez-Rodríguez, Carlos},
+  doi          = {10.1162/coli_a_00440},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {517-554},
+  shortjournal = {Comput. Lingu.},
+  title        = {The impact of edge displacement vaserstein distance on UD parsing performance},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Linear-time calculation of the expected sum of edge lengths
+in random projective linearizations of trees. <em>COLI</em>,
+<em>48</em>(3), 491–516. (<a
+href="https://doi.org/10.1162/coli_a_00442">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The syntactic structure of a sentence is often represented using syntactic dependency trees. The sum of the distances between syntactically related words has been in the limelight for the past decades. Research on dependency distances led to the formulation of the principle of dependency distance minimization whereby words in sentences are ordered so as to minimize that sum. Numerous random baselines have been defined to carry out related quantitative studies on lan- guages. The simplest random baseline is the expected value of the sum in unconstrained random permutations of the words in the sentence, namely, when all the shufflings of the words of a sentence are allowed and equally likely. Here we focus on a popular baseline: random projective per- mutations of the words of the sentence, that is, permutations where the syntactic dependency structure is projective, a formal constraint that sentences satisfy often in languages. Thus far, the expectation of the sum of dependency distances in random projective shufflings of a sentence has been estimated approximately with a Monte Carlo procedure whose cost is of the order of Rn, where n is the number of words of the sentence and R is the number of samples; it is well known that the larger R is, the lower the error of the estimation but the larger the time cost. Here we pre- sent formulae to compute that expectation without error in time of the order of n. Furthermore, we show that star trees maximize it, and provide an algorithm to retrieve the trees that minimize it.},
+  archive      = {J_COLI},
+  author       = {Alemany-Puig, Lluís and Ferrer-i-Cancho, Ramon},
+  doi          = {10.1162/coli_a_00442},
+  journal      = {Computational Linguistics},
+  number       = {3},
+  pages        = {491-516},
+  shortjournal = {Comput. Lingu.},
+  title        = {Linear-time calculation of the expected sum of edge lengths in random projective linearizations of trees},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Boring problems are sometimes the most interesting.
+<em>COLI</em>, <em>48</em>(2), 483–490. (<a
+href="https://doi.org/10.1162/coli_a_00439">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In a recent position paper, Turing Award Winners Yoshua Bengio, Geoffrey Hinton, and Yann LeCun make the case that symbolic methods are not needed in AI and that, while there are still many issues to be resolved, AI will be solved using purely neural methods. In this piece I issue a challenge: Demonstrate that a purely neural approach to the problem of text normalization is possible. Various groups have tried, but so far nobody has eliminated the problem of unrecoverable errors, errors where, due to insufficient training data or faulty generalization, the system substitutes some other reading for the correct one. Solutions have been proposed that involve a marriage of traditional finite-state methods with neural models, but thus far nobody has shown that the problem can be solved using neural methods alone. Though text normalization is hardly an “exciting” problem, I argue that until one can solve “boring” problems like that using purely AI methods, one cannot claim that AI is a success.},
+  archive      = {J_COLI},
+  author       = {Sproat, Richard},
+  doi          = {10.1162/coli_a_00439},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {483-490},
+  shortjournal = {Comput. Lingu.},
+  title        = {Boring problems are sometimes the most interesting},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On learning interpreted languages with recurrent models.
+<em>COLI</em>, <em>48</em>(2), 471–482. (<a
+href="https://doi.org/10.1162/coli_a_00431">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Can recurrent neural nets, inspired by human sequential data processing, learn to understand language? We construct simplified data sets reflecting core properties of natural language as modeled in formal syntax and semantics: recursive syntactic structure and compositionality. We find LSTM and GRU networks to generalize to compositional interpretation well, but only in the most favorable learning settings, with a well-paced curriculum, extensive training data, and left-to-right (but not right-to-left) composition.},
+  archive      = {J_COLI},
+  author       = {Paperno, Denis},
+  doi          = {10.1162/coli_a_00431},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {471-482},
+  shortjournal = {Comput. Lingu.},
+  title        = {On learning interpreted languages with recurrent models},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Dual attention model for citation recommendation with
+analyses on explainability of attention mechanisms and qualitative
+experiments. <em>COLI</em>, <em>48</em>(2), 403–470. (<a
+href="https://doi.org/10.1162/coli_a_00438">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Based on an exponentially increasing number of academic articles, discovering and citing comprehensive and appropriate resources have become non-trivial tasks. Conventional citation recommendation methods suffer from severe information losses. For example, they do not consider the section header of the paper that the author is writing and for which they need to find a citation, the relatedness between the words in the local context (the text span that describes a citation), or the importance of each word from the local context. These shortcomings make such methods insufficient for recommending adequate citations to academic manuscripts. In this study, we propose a novel embedding-based neural network called dual attention model for citation recommendation (DACR) to recommend citations during manuscript preparation. Our method adapts the embedding of three semantic pieces of information: words in the local context, structural contexts,1 and the section on which the author is working. A neural network model is designed to maximize the similarity between the embedding of the three inputs (local context words, section headers, and structural contexts) and the target citation appearing in the context. The core of the neural network model comprises self-attention and additive attention; the former aims to capture the relatedness between the contextual words and structural context, and the latter aims to learn their importance. Recommendation experiments on real-world datasets demonstrate the effectiveness of the proposed approach. To seek explainability on DACR, particularly the two attention mechanisms, the learned weights from them are investigated to determine how the attention mechanisms interpret “relatedness” and “importance” through the learned weights. In addition, qualitative analyses were conducted to testify that DACR could find necessary citations that were not noticed by the authors in the past due to the limitations of the keyword-based searching.},
+  archive      = {J_COLI},
+  author       = {Zhang, Yang and Ma, Qiang},
+  doi          = {10.1162/coli_a_00438},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {403-470},
+  shortjournal = {Comput. Lingu.},
+  title        = {Dual attention model for citation recommendation with analyses on explainability of attention mechanisms and qualitative experiments},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Assessing corpus evidence for formal and psycholinguistic
+constraints on nonprojectivity. <em>COLI</em>, <em>48</em>(2), 375–401.
+(<a href="https://doi.org/10.1162/coli_a_00437">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Formal constraints on crossing dependencies have played a large role in research on the formal complexity of natural language grammars and parsing. Here we ask whether the apparent evidence for constraints on crossing dependencies in treebanks might arise because of independent constraints on trees, such as low arity and dependency length minimization. We address this question using two sets of experiments. In Experiment 1, we compare the distribution of formal properties of crossing dependencies, such as gap degree, between real trees and baseline trees matched for rate of crossing dependencies and various other properties. In Experiment 2, we model whether two dependencies cross, given certain psycholinguistic properties of the dependencies. We find surprisingly weak evidence for constraints originating from the mild context-sensitivity literature (gap degree and well-nestedness) beyond what can be explained by constraints on rate of crossing dependencies, topological properties of the trees, and dependency length. However, measures that have emerged from the parsing literature (e.g., edge degree, end-point crossings, and heads’ depth difference) differ strongly between real and random trees. Modeling results show that cognitive metrics relating to information locality and working-memory limitations affect whether two dependencies cross or not, but they do not fully explain the distribution of crossing dependencies in natural languages. Together these results suggest that crossing constraints are better characterized by processing pressures than by mildly context-sensitive constraints.},
+  archive      = {J_COLI},
+  author       = {Yadav, Himanshu and Husain, Samar and Futrell, Richard},
+  doi          = {10.1162/coli_a_00437},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {375-401},
+  shortjournal = {Comput. Lingu.},
+  title        = {Assessing corpus evidence for formal and psycholinguistic constraints on nonprojectivity},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022a). Annotation curricula to implicitly train non-expert
+annotators. <em>COLI</em>, <em>48</em>(2), 343–373. (<a
+href="https://doi.org/10.1162/coli_a_00436">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Annotation studies often require annotators to familiarize themselves with the task, its annotation scheme, and the data domain. This can be overwhelming in the beginning, mentally taxing, and induce errors into the resulting annotations; especially in citizen science or crowdsourcing scenarios where domain expertise is not required. To alleviate these issues, this work proposes annotation curricula, a novel approach to implicitly train annotators. The goal is to gradually introduce annotators into the task by ordering instances to be annotated according to a learning curriculum. To do so, this work formalizes annotation curricula for sentence- and paragraph-level annotation tasks, defines an ordering strategy, and identifies well-performing heuristics and interactively trained models on three existing English datasets. Finally, we provide a proof of concept for annotation curricula in a carefully designed user study with 40 voluntary participants who are asked to identify the most fitting misconception for English tweets about the Covid-19 pandemic. The results indicate that using a simple heuristic to order instances can already significantly reduce the total annotation time while preserving a high annotation quality. Annotation curricula thus can be a promising research direction to improve data collection. To facilitate future research—for instance, to adapt annotation curricula to specific tasks and expert annotation scenarios—all code and data from the user study consisting of 2,400 annotations is made available.1},
+  archive      = {J_COLI},
+  author       = {Lee, Ji-Ung and Klie, Jan-Christoph and Gurevych, Iryna},
+  doi          = {10.1162/coli_a_00436},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {343-373},
+  shortjournal = {Comput. Lingu.},
+  title        = {Annotation curricula to implicitly train non-expert annotators},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Challenges of neural machine translation for short texts.
+<em>COLI</em>, <em>48</em>(2), 321–342. (<a
+href="https://doi.org/10.1162/coli_a_00435">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Short texts (STs) present in a variety of scenarios, including query, dialog, and entity names. Most of the exciting studies in neural machine translation (NMT) are focused on tackling open problems concerning long sentences rather than short ones. The intuition behind is that, with respect to human learning and processing, short sequences are generally regarded as easy examples. In this article, we first dispel this speculation via conducting preliminary experiments, showing that the conventional state-of-the-art NMT approach, namely, Transformer (Vaswani et al. 2017), still suffers from over-translation and mistranslation errors over STs. After empirically investigating the rationale behind this, we summarize two challenges in NMT for STs associated with translation error types above, respectively: (1) the imbalanced length distribution in training set intensifies model inference calibration over STs, leading to more over-translation cases on STs; and (2) the lack of contextual information forces NMT to have higher data uncertainty on short sentences, and thus NMT model is troubled by considerable mistranslation errors. Some existing approaches, like balancing data distribution for training (e.g., data upsampling) and complementing contextual information (e.g., introducing translation memory) can alleviate the translation issues in NMT for STs. We encourage researchers to investigate other challenges in NMT for STs, thus reducing ST translation errors and enhancing translation quality.},
+  archive      = {J_COLI},
+  author       = {Wan, Yu and Yang, Baosong and Wong, Derek Fai and Chao, Lidia Sam and Yao, Liang and Zhang, Haibo and Chen, Boxing},
+  doi          = {10.1162/coli_a_00435},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {321-342},
+  shortjournal = {Comput. Lingu.},
+  title        = {Challenges of neural machine translation for short texts},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Domain adaptation with pre-trained transformers for
+query-focused abstractive text summarization. <em>COLI</em>,
+<em>48</em>(2), 279–320. (<a
+href="https://doi.org/10.1162/coli_a_00434">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The Query-Focused Text Summarization (QFTS) task aims at building systems that generate the summary of the text document(s) based on the given query. A key challenge in addressing this task is the lack of large labeled data for training the summarization model. In this article, we address this challenge by exploring a series of domain adaptation techniques. Given the recent success of pre-trained transformer models in a wide range of natural language processing tasks, we utilize such models to generate abstractive summaries for the QFTS task for both single-document and multi-document scenarios. For domain adaptation, we apply a variety of techniques using pre-trained transformer-based summarization models including transfer learning, weakly supervised learning, and distant supervision. Extensive experiments on six datasets show that our proposed approach is very effective in generating abstractive summaries for the QFTS task while setting a new state-of-the-art result in several datasets across a set of automatic and human evaluation metrics.},
+  archive      = {J_COLI},
+  author       = {Laskar, Md Tahmid Rahman and Hoque, Enamul and Huang, Jimmy Xiangji},
+  doi          = {10.1162/coli_a_00434},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {279-320},
+  shortjournal = {Comput. Lingu.},
+  title        = {Domain adaptation with pre-trained transformers for query-focused abstractive text summarization},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Ethics sheet for automatic emotion recognition and sentiment
+analysis. <em>COLI</em>, <em>48</em>(2), 239–278. (<a
+href="https://doi.org/10.1162/coli_a_00433">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The importance and pervasiveness of emotions in our lives makes affective computing a tremendously important and vibrant line of work. Systems for automatic emotion recognition (AER) and sentiment analysis can be facilitators of enormous progress (e.g., in improving public health and commerce) but also enablers of great harm (e.g., for suppressing dissidents and manipulating voters). Thus, it is imperative that the affective computing community actively engage with the ethical ramifications of their creations. In this article, I have synthesized and organized information from AI Ethics and Emotion Recognition literature to present fifty ethical considerations relevant to AER. Notably, this ethics sheet fleshes out assumptions hidden in how AER is commonly framed, and in the choices often made regarding the data, method, and evaluation. Special attention is paid to the implications of AER on privacy and social groups. Along the way, key recommendations are made for responsible AER. The objective of the ethics sheet is to facilitate and encourage more thoughtfulness on why to automate, how to automate, and how to judge success well before the building of AER systems. Additionally, the ethics sheet acts as a useful introductory document on emotion recognition (complementing survey articles).},
+  archive      = {J_COLI},
+  author       = {Mohammad, Saif M.},
+  doi          = {10.1162/coli_a_00433},
+  journal      = {Computational Linguistics},
+  number       = {2},
+  pages        = {239-278},
+  shortjournal = {Comput. Lingu.},
+  title        = {Ethics sheet for automatic emotion recognition and sentiment analysis},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Erratum for “formal basis of a language universal.”
+<em>COLI</em>, <em>48</em>(1), 237. (<a
+href="https://doi.org/10.1162/coli_x_00432">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the paper “Formal Basis of a Language Universal” by Miloš Stanojević and Mark Steedman in Computational Linguistics 47:1 (https://doi.org/10.1162/coli_a_00394), there is an error in example (12) on page 17.The two occurrences of the notation ∖W should appear as |W. The paper has been updated so that the paragraph reads:In the full theory, these rules are generalized to “second level” cases, in which the secondary function is of the form (Y|Z)|W such as the following “forward crossing” instance, in which — matches either / or ∖ in both input and output:(12) The Forward Crossing Level Two Composition Rule X/×Y (Y∖Z)|W ⇒B× (X∖Z)|W (B×2)},
+  archive      = {J_COLI},
+  author       = {Stanojević, Miloš and Steedman, Mark},
+  doi          = {10.1162/coli_x_00432},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {237},
+  shortjournal = {Comput. Lingu.},
+  title        = {Erratum for “Formal basis of a language universal”},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Natural language processing: A machine learning perspective
+by yue zhang and zhiyang teng. <em>COLI</em>, <em>48</em>(1), 233–235.
+(<a href="https://doi.org/10.1162/coli_r_00423">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Natural Language Processing (NLP) is a discipline at the crossroads of Artificial Intelligence (Machine Learning [ML] as its part), Linguistics, Cognitive Science, and Computer Science that enables machines to analyze and generate natural language data. The multi-disciplinary nature of NLP attracts specialists of various backgrounds, mostly with the knowledge of Linguistics and ML. As the discipline is largely practice-oriented, traditionally NLP textbooks are focused on concrete tasks and tend to elaborate on the linguistic peculiarities of ML approaches to NLP. They also often introduce predominantly either traditional ML or deep learning methods. This textbook introduces NLP from the ML standpoint, elaborating on fundamental approaches and algorithms used in the field such as statistical and deep learning models, generative and discriminative models, supervised and unsupervised models, and so on. In spite of the density of the material, the book is very easy to follow. The complexity of the introduced topics is built up gradually with references to previously introduced concepts while relying on a carefully observed unified notation system. The textbook is oriented to prepare the final-year undergraduate, as well as graduate students of relevant disciplines, for the NLP course and stimulate related research activities. Considering the comprehensiveness of the topics covered in an accessible way, the textbook is also suitable for NLP engineers, non-ML specialists, and a broad range of readers interested in the topic.The book comprises 18 chapters organized in three parts. Part I, “Basics,” discusses the fundamental ML and NLP concepts necessary for further comprehension using the example of classification tasks. Part II, “Structures,” covers the principles of mathematical modeling for structured prediction, namely, for such structures as sequences and trees. Part III, “Deep Learning,” describes the basics of deep learning modeling for classification and structured prediction tasks. The part ends with the basics of sequence-to-sequence modeling. The textbook thus emphasizes the close connection and inheritance between the traditional and deep-learning methods.Following clear logic, generative models are introduced before discriminative ones (e.g., Chapter 7 from Part II introduces generative sequence labeling and Chapter 8 introduces discriminative sequence labeling), while modeling with hidden variables is presented at the end. Within each chapter, model descriptions are followed by their training and inference details. Finally, chapters are concluded with a summary, chapter notes, and exercises. The exercises are carefully designed to not only support and deepen comprehension but also stimulate further independent investigation on the topic. Some example questions include: advantages of the variational dropout versus naïve dropout, or how sequence-to-sequence models could be used for sequence labeling.In the following paragraphs I will cover the content of each chapter in more detail.Chapter 1 opens Part I and gives an introduction to NLP and its tasks, as well as the motivation to focus on the ML techniques behind them as a uniting factor.Chapter 2 gives a primer on probabilistic modeling, generative classification models, and Maximum Likelihood Estimation (MLE) training.Chapter 3 explains representing documents with high-dimensional vectors, their clustering and classification with discriminative models, for both binary and multi-class settings using non-probabilistic algorithms (SVMs and Perceptron). The explanation of the differences between the generative and discriminative models using the concept of overlapping features is very helpful and succinct.Chapter 4 focuses on the log-linear model and introduces probabilistic discriminative linear classifiers. The chapter details the training procedure with Stochastic Gradient Descent (SGD), as well as a range of popular loss functions.Chapter 5 explains the basics of probabilistic modeling from the perspective of Information Theory and introduces such fundamental concepts as entropy, cross-entropy, and KL-divergence.Chapter 6 introduces learning with hidden variables; more specifically, it focuses on the Expectation-Maximization (EM) algorithm and its applications in NLP (e.g., IBM Model 1 for Machine Translation). The algorithm is introduced gradually based on the earlier introduced k-means clustering.Overall, I found the chapters of Part I to be a very good succinct introduction to a complex set of concepts.Chapter 7 opens Part II and provides a guide into generative supervised (using MLE) and unsupervised (Baum-Welch algorithm) structured prediction using Hidden Markov Models (HMMs) for the sequence labeling task. It also explains such key algorithms as the Viterbi algorithm for decoding and the Forward-Backward Algorithm for marginal probabilities.Chapter 8 complements Chapter 7 with the description of discriminative models for the sequence labeling task. The chapter starts with the local maximum entropy Markov models (MEMMs) and then provides the details of Conditional Random Fields (CRFs) with global training, as well as structured versions of Perceptron and SVMs. Chapter 9 explains how the previously seen sequence labeling models could be adapted to the sequence segmentation tasks using semi-Markov CRFs and beam search with Perceptron training.Chapters 10 and 11 explain structured prediction for syntactic trees in constituent and dependency parsing. Chapter 10 starts with the generative MLE approach for constituent parsing, describing the CKY algorithm for decoding and the inside-outside algorithm for marginal probabilities. Then discriminative models and reranking are elaborated on.Chapter 11 presents the advantages of addressing the structured prediction task (again for parsing) with transition-based modeling using non-local features and explains the shift-reduce constituent parsing.Chapter 12 introduces the basics of Bayesian networks with the emphasis on training and inference methods building on previously introduced concepts, such as conditional independence and MLE. Bayesian learning is illustrated with the Latent Dirichlet Allocation (LDA) topic model and the Bayesian IBM Model 1 for alignment in statistical Machine Translation. I found this chapter to be slightly detached from the rest of the chapters in Part II and wish the Bayesian learning had been illustrated with any of the structured prediction models introduced earlier in this part (e.g., HMMs).Chapter 13 opens Part III and introduces the basics of neural modeling for text classification, deriving from the generalized Perceptron model. Dense low-dimensional feature representations are presented as the main paradigm shift.Chapters 14 and 15 follow the logic of Part II. Chapter 14 explains how neural network structures could be used to represent sequences of natural language. The chapter gives an in-depth overview of Recurrent Neural Networks (RNNs) as the principal architecture to represent sequences, as well as of an overview of attention mechanisms. Then, a range of networks is described that could be used to represent trees (e.g., Child-Sum Tree Long Short Term Memory networks [LSTMs]) and graphs (e.g., Graph Recurrent Neural Networks [GRNs]). The chapter is finalized with useful practical suggestions on how to analyze representations.Chapter 15 details how local and global graph- and transition-based models for sequence labeling and parsing tasks could be built using neural networks. For a reader already familiar with neural networks, I suggest reading those chapters right after Chapter 11.Chapter 16 elaborates on working with text in the input and output. The chapter starts with sequence-to-sequence modeling using LSTMs, then the authors show how this architecture could be augmented with attention and copying mechanisms. Finally, sequence-to-sequence models based on self-attention networks are explained. The last section of the chapter addresses the topical issue of semantic matching and presents a range of relevant models: Siamese networks, attention matching networks, and so forth.Chapter 17 provides insights into pre-training and transfer learning. The chapter gives the details of neural language modeling and presents the non-contextualized embedding techniques as a by-product of this modeling, which I found to be very intuitive. Contextualized word embeddings are progressively introduced, starting with the RNN-based ones. Then the authors present how these embeddings could be built with self-attention networks. The chapter also explains such transfer learning techniques as pre-training, multitask learning, choice of parameters for sharing, and so on.Chapter 18 culminates the book, focusing on deep learning with latent (hidden) variables. It opens with the modeling using categorical and structured latent variables, followed by the introduction of approximate variational inference for continuous latent variables. The chapter builds up on the knowledge of the EM algorithm. Particular attention is also paid to Variational Autoencoders (VAEs) and their usage for topic and text modeling.In summary, this textbook provides a valuable introduction to Machine Learning approaches and methods applied in Natural Language Processing across paradigms. I strongly recommended it not only to students and NLP engineers, but also to a wider audience of specialists interested in NLP.},
+  archive      = {J_COLI},
+  author       = {Ive, Julia},
+  doi          = {10.1162/coli_r_00423},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {233-235},
+  shortjournal = {Comput. Lingu.},
+  title        = {Natural language processing: A machine learning perspective by yue zhang and zhiyang teng},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Revisiting the boundary between ASR and NLU in the age of
+conversational dialog systems. <em>COLI</em>, <em>48</em>(1), 221–232.
+(<a href="https://doi.org/10.1162/coli_a_00430">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. As more users across the world are interacting with dialog agents in their daily life, there is a need for better speech understanding that calls for renewed attention to the dynamics between research in automatic speech recognition (ASR) and natural language understanding (NLU). We briefly review these research areas and lay out the current relationship between them. In light of the observations we make in this article, we argue that (1) NLU should be cognizant of the presence of ASR models being used upstream in a dialog system’s pipeline, (2) ASR should be able to learn from errors found in NLU, (3) there is a need for end-to-end data sets that provide semantic annotations on spoken input, (4) there should be stronger collaboration between ASR and NLU research communities.},
+  archive      = {J_COLI},
+  author       = {Faruqui, Manaal and Hakkani-Tür, Dilek},
+  doi          = {10.1162/coli_a_00430},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {221-232},
+  shortjournal = {Comput. Lingu.},
+  title        = {Revisiting the boundary between ASR and NLU in the age of conversational dialog systems},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Probing classifiers: Promises, shortcomings, and advances.
+<em>COLI</em>, <em>48</em>(1), 207–219. (<a
+href="https://doi.org/10.1162/coli_a_00422">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Probing classifiers have emerged as one of the prominent methodologies for interpreting and analyzing deep neural network models of natural language processing. The basic idea is simple—a classifier is trained to predict some linguistic property from a model’s representations—and has been used to examine a wide variety of models and properties. However, recent studies have demonstrated various methodological limitations of this approach. This squib critically reviews the probing classifiers framework, highlighting their promises, shortcomings, and advances.},
+  archive      = {J_COLI},
+  author       = {Belinkov, Yonatan},
+  doi          = {10.1162/coli_a_00422},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {207-219},
+  shortjournal = {Comput. Lingu.},
+  title        = {Probing classifiers: Promises, shortcomings, and advances},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Deep learning for text style transfer: A survey.
+<em>COLI</em>, <em>48</em>(1), 155–205. (<a
+href="https://doi.org/10.1162/coli_a_00426">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Text style transfer is an important task in natural language generation, which aims to control certain attributes in the generated text, such as politeness, emotion, humor, and many others. It has a long history in the field of natural language processing, and recently has re-gained significant attention thanks to the promising performance brought by deep neural models. In this article, we present a systematic survey of the research on neural text style transfer, spanning over 100 representative articles since the first neural text style transfer work in 2017. We discuss the task formulation, existing datasets and subtasks, evaluation, as well as the rich methodologies in the presence of parallel and non-parallel data. We also provide discussions on a variety of important topics regarding the future development of this task.1},
+  archive      = {J_COLI},
+  author       = {Jin, Di and Jin, Zhijing and Hu, Zhiting and Vechtomova, Olga and Mihalcea, Rada},
+  doi          = {10.1162/coli_a_00426},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {155-205},
+  shortjournal = {Comput. Lingu.},
+  title        = {Deep learning for text style transfer: A survey},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Linguistic parameters of spontaneous speech for identifying
+mild cognitive impairment and alzheimer disease. <em>COLI</em>,
+<em>48</em>(1), 119–153. (<a
+href="https://doi.org/10.1162/coli_a_00428">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this article, we seek to automatically identify Hungarian patients suffering from mild cognitive impairment (MCI) or mild Alzheimer disease (mAD) based on their speech transcripts, focusing only on linguistic features. In addition to the features examined in our earlier study, we introduce syntactic, semantic, and pragmatic features of spontaneous speech that might affect the detection of dementia. In order to ascertain the most useful features for distinguishing healthy controls, MCI patients, and mAD patients, we carry out a statistical analysis of the data and investigate the significance level of the extracted features among various speaker group pairs and for various speaking tasks. In the second part of the article, we use this rich feature set as a basis for an effective discrimination among the three speaker groups. In our machine learning experiments, we analyze the efficacy of each feature group separately. Our model that uses all the features achieves competitive scores, either with or without demographic information (3-class accuracy values: 68\%–70\%, 2-class accuracy values: 77.3\%–80\%). We also analyze how different data recording scenarios affect linguistic features and how they can be productively used when distinguishing MCI patients from healthy controls.},
+  archive      = {J_COLI},
+  author       = {Vincze, Veronika and Szabó, Martina Katalin and Hoffmann, Ildikó and Tóth, László and Pákáski, Magdolna and Kálmán, János and Gosztolya, Gábor},
+  doi          = {10.1162/coli_a_00428},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {119-153},
+  shortjournal = {Comput. Lingu.},
+  title        = {Linguistic parameters of spontaneous speech for identifying mild cognitive impairment and alzheimer disease},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Improved n-best extraction with an evaluation on language
+data. <em>COLI</em>, <em>48</em>(1), 119–153. (<a
+href="https://doi.org/10.1162/coli_a_00427">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We show that a previously proposed algorithm for the N-best trees problem can be made more efficient by changing how it arranges and explores the search space. Given an integer N and a weighted tree automaton (wta) M over the tropical semiring, the algorithm computes N trees of minimal weight with respect to M. Compared with the original algorithm, the modifications increase the laziness of the evaluation strategy, which makes the new algorithm asymptotically more efficient than its predecessor. The algorithm is implemented in the software Betty, and compared to the state-of-the-art algorithm for extracting the N best runs, implemented in the software toolkit Tiburon. The data sets used in the experiments are wtas resulting from real-world natural language processing tasks, as well as artificially created wtas with varying degrees of nondeterminism. We find that Betty outperforms Tiburon on all tested data sets with respect to running time, while Tiburon seems to be the more memory-efficient choice.},
+  archive      = {J_COLI},
+  author       = {Björklund, Johanna and Drewes, Frank and Jonsson, Anna},
+  doi          = {10.1162/coli_a_00427},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {119-153},
+  shortjournal = {Comput. Lingu.},
+  title        = {Improved N-best extraction with an evaluation on language data},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Novelty detection: A perspective from natural language
+processing. <em>COLI</em>, <em>48</em>(1), 77–117. (<a
+href="https://doi.org/10.1162/coli_a_00429">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The quest for new information is an inborn human trait and has always been quintessential for human survival and progress. Novelty drives curiosity, which in turn drives innovation. In Natural Language Processing (NLP), Novelty Detection refers to finding text that has some new information to offer with respect to whatever is earlier seen or known. With the exponential growth of information all across the Web, there is an accompanying menace of redundancy. A considerable portion of the Web contents are duplicates, and we need efficient mechanisms to retain new information and filter out redundant information. However, detecting redundancy at the semantic level and identifying novel text is not straightforward because the text may have less lexical overlap yet convey the same information. On top of that, non-novel/redundant information in a document may have assimilated from multiple source documents, not just one. The problem surmounts when the subject of the discourse is documents, and numerous prior documents need to be processed to ascertain the novelty/non-novelty of the current one in concern. In this work, we build upon our earlier investigations for document-level novelty detection and present a comprehensive account of our efforts toward the problem. We explore the role of pre-trained Textual Entailment (TE) models to deal with multiple source contexts and present the outcome of our current investigations. We argue that a multipremise entailment task is one close approximation toward identifying semantic-level non-novelty. Our recent approach either performs comparably or achieves significant improvement over the latest reported results on several datasets and across several related tasks (paraphrasing, plagiarism, rewrite). We critically analyze our performance with respect to the existing state of the art and show the superiority and promise of our approach for future investigations. We also present our enhanced dataset TAP-DLND 2.0 and several baselines to the community for further research on document-level novelty detection.},
+  archive      = {J_COLI},
+  author       = {Ghosal, Tirthankar and Saikh, Tanik and Biswas, Tameesh and Ekbal, Asif and Bhattacharyya, Pushpak},
+  doi          = {10.1162/coli_a_00429},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {77-117},
+  shortjournal = {Comput. Lingu.},
+  title        = {Novelty detection: A perspective from natural language processing},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). To augment or not to augment? A comparative study on text
+augmentation techniques for low-resource NLP. <em>COLI</em>,
+<em>48</em>(1), 5–42. (<a
+href="https://doi.org/10.1162/coli_a_00425">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Data-hungry deep neural networks have established themselves as the de facto standard for many NLP tasks, including the traditional sequence tagging ones. Despite their state-of-the-art performance on high-resource languages, they still fall behind their statistical counterparts in low-resource scenarios. One methodology to counterattack this problem is text augmentation, that is, generating new synthetic training data points from existing data. Although NLP has recently witnessed several new textual augmentation techniques, the field still lacks a systematic performance analysis on a diverse set of languages and sequence tagging tasks. To fill this gap, we investigate three categories of text augmentation methodologies that perform changes on the syntax (e.g., cropping sub-sentences), token (e.g., random word insertion), and character (e.g., character swapping) levels. We systematically compare the methods on part-of-speech tagging, dependency parsing, and semantic role labeling for a diverse set of language families using various models, including the architectures that rely on pretrained multilingual contextualized language models such as mBERT. Augmentation most significantly improves dependency parsing, followed by part-of-speech tagging and semantic role labeling. We find the experimented techniques to be effective on morphologically rich languages in general rather than analytic languages such as Vietnamese. Our results suggest that the augmentation techniques can further improve over strong baselines based on mBERT, especially for dependency parsing. We identify the character-level methods as the most consistent performers, while synonym replacement and syntactic augmenters provide inconsistent improvements. Finally, we discuss that the results most heavily depend on the task, language pair (e.g., syntactic-level techniques mostly benefit higher-level tasks and morphologically richer languages), and model type (e.g., token-level augmentation provides significant improvements for BPE, while character-level ones give generally higher scores for char and mBERT based models).},
+  archive      = {J_COLI},
+  author       = {Şahin, Gözde Gül},
+  doi          = {10.1162/coli_a_00425},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {5-42},
+  shortjournal = {Comput. Lingu.},
+  title        = {To augment or not to augment? a comparative study on text augmentation techniques for low-resource NLP},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Obituary: Martin kay. <em>COLI</em>, <em>48</em>(1), 1–3.
+(<a href="https://doi.org/10.1162/coli_a_00424">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is with great sadness that we report the passing of Martin Kay in August 2021. Martin was a pioneer and intellectual trailblazer in computational linguistics. He was also a close friend and colleague of many years.Martin was a polyglot undergraduate student of modern and medieval languages at Cambridge University, with a particular interest in translation. He was not (yet) a mathematician or engineer, but idle speculation in 1958 about the possibilities of automating the translation process led him to Margaret Masterman at the Cambridge Language Research Unit, and a shift to a long and productive career.In 1960 he was offered an internship with Dave Hays and the Linguistics Project at The RAND Corporation in California, another early center of research in our emerging discipline. He stayed at RAND for more than a decade, working on basic technologies that are needed for machine processing of natural language. Among his contributions during that period was the development of the first so-called chart parser (Kay 1967), a computationally effective mechanism for dealing systematically with linguistic dependencies that cannot be expressed in context-free grammars. The chart architecture could be deployed for language generation as well as parsing, an important property for Martin’s continuing interest in translation.It was during the years at RAND that Martin found his second calling, as a teacher of computational linguistics, initially at UCLA and then in many other settings. He was a gifted and entertaining speaker and lecturer, able to present complex material with clarity and precision. He took great pleasure in the interactions with his students and the role that he played in helping to advance their careers. He left RAND in 1972 to become a full-time professor and chair of the Computer Science Department at the University of California at Irvine.His time at Irvine was short-lived, as he was attracted back to an open-ended research environment. In 1974 he joined with Danny Bobrow, Ron Kaplan, and Terry Winograd to form the Language Understander project at the recently created Palo Alto Research Center (PARC) of the Xerox Corporation. The group took as a first goal the construction of a mixed-initiative dialog system using state-of-the-art components for knowledge representation and reasoning, language understanding, language production, and dialog management (Bobrow et al. 1977). Martin took responsibility for the language production module, which was initially based on the quite rudimentary technology of the time.That was the beginning of his focus on “reversible grammars,” grammatical rules and representations that could be applied to parse strings into their underlying syntactic representations but also convert underlying representations back to the strings that express them. He and his colleagues at PARC developed the idea of hierarchical attribute-value structures (feature/functional structures) as underlying representations that could be characterized by the primitive predicates of equality and unification. This insight took form in his Functional Unification Grammar (Kay 1979) and in Lexical Functional Grammar (Kaplan and Bresnan 1982), and it also surfaced in the design of Head Driven Phrase Structure Grammar (Pollard and Sag 1987).Reversibility, for translation as well as dialog, was also the motivation at PARC for developing the mathematical, linguistic, and computational concepts that led to the use of bi-directional finite-state transducers for phonological and morphological description (Kaplan and Kay 1994). This technology is still being applied to a wide variety of language processing problems. But for Martin translation was always a central theme, bracketed by his early article “The Proper Place of Men and Machines in Language Translation” (which circulated in research for quite some time before it was finally published [Kay 1997]) and his most recent book (Kay 2017).In 1985 Martin struck a new balance between his commitment to research and his love of teaching by officially dividing his time between his prestigious role as a Research Fellow at PARC and a professorship in the Linguistics Department at Stanford. In addition to his Stanford professorship, he also taught (1998–2014) as an Honorary Professor at Saarland University, offering one or two courses every year. During his stays in Germany, he also advised on ongoing research, and his lectures and discussions helped in the gradual integration of programs in linguistics, computational linguistics, and translation studies.Martin contributed in many other ways to international progress in computational linguistics. In the 1970s and later he was a mainstay lecturer in the International Summer Schools in Computational Linguistics in Italy, and the Nordic summer schools in Scandinavia (actually, he and his wife Iris hosted one Nordic summer school at their home in Menlo Park). He advised research organizations and projects in several countries. He was a specialist advisor to the German Ministry of Education and Research, a reviewer for the two largest European projects in automatic translation, Eurotra and Verbmobil, and a valued advisor for projects at the German Research Center for Artificial Intelligence (DFKI). He also served for many years as chairman of the International Committee for Computational Linguistics (ICCL).Martin received many honors during his lifetime. He is a past President of the Association for Computational Linguistics (ACL). In 2005 he received the ACL Lifetime Achievement Award (Kay 2006). He was awarded honorary doctorate degrees from the University of Gothenburg (1982) and the University of Geneva (2008). He was the recipient of the Okawa Prize in 2019.Martin’s quiet and modest style of personal interaction stood only in apparent contrast to his widely recognized fame as an intellectual leader. His impressive expertise in several disciplines and his diverse intellectual interests made him a wonderful conversation partner for colleagues and friends who were lucky enough to be able to spend time with him. All students and colleagues remember him as a gifted speaker who was able to captivate and convince his audience with excellent didactics, rhetorical sharpness, and his very own sense of humor.We also remember Martin’s wife, Iris Kay, who predeceased him by a few months. Iris was a warm and psychologically insightful figure who played a prominent role in the early social history of computational linguistics, when personal relationships were more immediate and so important. They will both be sorely missed.},
+  archive      = {J_COLI},
+  author       = {Kaplan, Ronald M. and Uszkoreit, Hans},
+  doi          = {10.1162/coli_a_00424},
+  journal      = {Computational Linguistics},
+  number       = {1},
+  pages        = {1-3},
+  shortjournal = {Comput. Lingu.},
+  title        = {Obituary: Martin kay},
+  volume       = {48},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

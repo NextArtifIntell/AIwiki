@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AIL_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ail---30">AIL - 30</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Legal document assembly system for introducing law students
+with legal drafting. <em>AIL</em>, <em>31</em>(4), 829–863. (<a
+href="https://doi.org/10.1007/s10506-022-09339-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a method for introducing law students to the writing of legal documents. The method uses a machine-readable representation of the legal knowledge to support document assembly and to help the students to understand how the assembly is performed. The knowledge base consists of enacted legislation, document templates, and assembly instructions. We propose a system called LEDAS (LEgal Document Assembly System) for the interactive assembly of legal documents. It guides users through the assembly process and provides explanations of the interconnection between input data and claims stated in the document. The system acts as a platform for practicing drafting skills and has great potential as an education tool. It allows teachers to configure the system for the assembly of some particular type of legal document and then enables students to draft the documents by investigating which information is relevant for these documents and how the input data shape the final document. The generated legal document is complemented by a graphical representation of legal arguments expressed in the document. The system is based on existing legal standards to facilitate its introduction in the legal domain. Applicability of the system in the education of future lawyers is positively evaluated by the group of law students and their TA.},
+  archive      = {J_AIL},
+  author       = {Marković, Marko and Gostojić, Stevan},
+  doi          = {10.1007/s10506-022-09339-2},
+  journal      = {Artificial Intelligence and Law},
+  month        = {12},
+  number       = {4},
+  pages        = {829-863},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Legal document assembly system for introducing law students with legal drafting},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Towards a simple mathematical model for the legal concept of
+balancing of interests. <em>AIL</em>, <em>31</em>(4), 807–827. (<a
+href="https://doi.org/10.1007/s10506-022-09338-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose simple nonlinear mathematical models for the legal concept of balancing of interests. Our aim is to bridge the gap between an abstract formalisation of a balancing decision while assuring consistency and ultimately legal certainty across cases. We focus on the conflict between the rights to privacy and to the protection of personal data in Art. 7 and Art. 8 of the EU Charter of Fundamental Rights (EUCh) against the right of access to information derived from Art. 11 EUCh. These competing rights are denoted by ( $$i_1$$ ) right to privacy and ( $$i_2$$ ) access to information; mathematically, their indices are respectively assigned by $$u_1\in [0,1]$$ and $$u_2\in [0,1]$$ subject to the constraint $$u_1+u_2=1$$ . This constraint allows us to use one single index u to resolve the conflict through balancing. The outcome will be concluded by comparing the index u with a prior given threshold $$u_0$$ . For simplicity, we assume that the balancing depends on only selected legal criteria such as the social status of affected person, and the sphere from which the information originated, which are represented as inputs of the models, called legal parameters. Additionally, we take “time” into consideration as a legal criterion, building on the European Court of Justice’s ruling on the right to be forgotten: by considering time as a legal parameter, we model how the outcome of the balancing changes over the passage of time. To catch the dependence of the outcome u by these criteria as legal parameters, data were created by a fully-qualified lawyer. By comparison to other approaches based on machine learning, especially neural networks, this approach requires significantly less data. This might come at the price of higher abstraction and simplification, but also provides for higher transparency and explainability. Two mathematical models for u, a time-independent model and a time-dependent model, are proposed, that are fitted by using the data.},
+  archive      = {J_AIL},
+  author       = {Zufall, Frederike and Kimura, Rampei and Peng, Linyu},
+  doi          = {10.1007/s10506-022-09338-3},
+  journal      = {Artificial Intelligence and Law},
+  month        = {12},
+  number       = {4},
+  pages        = {807-827},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Towards a simple mathematical model for the legal concept of balancing of interests},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Judicial knowledge-enhanced magnitude-aware reasoning for
+numerical legal judgment prediction. <em>AIL</em>, <em>31</em>(4),
+773–806. (<a href="https://doi.org/10.1007/s10506-022-09337-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Legal Judgment Prediction (LJP) is an essential component of legal assistant systems, which aims to automatically predict judgment results from a given criminal fact description. As a vital subtask of LJP, researchers have paid little attention to the numerical LJP, i.e., the prediction of imprisonment and penalty. Existing methods ignore numerical information in the criminal facts, making their performances far from satisfactory. For instance, the amount of theft varies, as do the prison terms and penalties. The major challenge is how the model can obtain the ability of numerical comparison and magnitude perception, e.g., 400 &lt; 500 &lt; 800, 500 is closer to 400 than to 800. To this end, we propose a judicial knowledge-enhanced magnitude-aware reasoning architecture, called NumLJP, for the numerical LJP task. Specifically, we first implement a contrastive learning-based judicial knowledge selector to distinguish confusing criminal cases efficiently. Unlike previous approaches that employ the law article as external knowledge, judicial knowledge is a quantitative guideline in real scenarios. It contains many numerals (called anchors) that can construct a reference frame. Then we design a masked numeral prediction task to help the model remember these anchors to acquire legal numerical commonsense from the selected judicial knowledge. We construct a scale-based numerical graph using the anchors and numerals in facts to perform magnitude-aware numerical reasoning. Finally, the representations of fact description, judicial knowledge, and numerals are fused to make decisions. We conduct extensive experiments on three real-world datasets and select several competitive baselines. The results demonstrate that the macro-F1 of NumLJP improves by at least 9.53% and 11.57% on the prediction of penalty and imprisonment, respectively.},
+  archive      = {J_AIL},
+  author       = {Bi, Sheng and Zhou, Zhiyao and Pan, Lu and Qi, Guilin},
+  doi          = {10.1007/s10506-022-09337-4},
+  journal      = {Artificial Intelligence and Law},
+  month        = {12},
+  number       = {4},
+  pages        = {773-806},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Judicial knowledge-enhanced magnitude-aware reasoning for numerical legal judgment prediction},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Masked prediction and interdependence network of the law
+using data from large-scale japanese court judgments. <em>AIL</em>,
+<em>31</em>(4), 739–771. (<a
+href="https://doi.org/10.1007/s10506-022-09336-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Court judgments contain valuable information on how statutory laws and past court precedents are interpreted and how the interdependence structure among them evolves in the courtroom. Data-mining the evolving structure of such customs and norms that reflect myriad social values from a large-scale court judgment corpus is an essential task from both the academic and industrial perspectives. In this paper, using data from approximately 110,000 court judgments from Japan spanning the period 1998–2018 from the district to the supreme court level, we propose two tasks that grasp such a structure from court judgments and highlight the strengths and weaknesses of major machine learning models. One is a prediction task based on masked language modeling that connects textual information to legal codes and past court precedents. Another is a dynamic link prediction task where we predict the hidden interdependence structure in the law. We make quantitative and qualitative comparisons among major machine learning models to obtain insights for future developments.},
+  archive      = {J_AIL},
+  author       = {Kondo, Ryoma and Yoshida, Takahiro and Hisano, Ryohei},
+  doi          = {10.1007/s10506-022-09336-5},
+  journal      = {Artificial Intelligence and Law},
+  month        = {12},
+  number       = {4},
+  pages        = {739-771},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Masked prediction and interdependence network of the law using data from large-scale japanese court judgments},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Two factor-based models of precedential constraint: A
+comparison and proposal. <em>AIL</em>, <em>31</em>(4), 703–738. (<a
+href="https://doi.org/10.1007/s10506-022-09335-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The article considers two different interpretations of the reason model of precedent pioneered by John Horty. On a plausible interpretation of the reason model, past cases provide reasons to prioritize reasons favouring the same outcome as a past case over reasons favouring the opposing outcome. Here I consider the merits of this approach to the role of precedent in legal reasoning in comparison with a closely related view favoured by some legal theorists, according to which past cases provide reasons for undercutting (or ‘excluding’) reasons favouring the opposing outcome. After embedding both accounts within a general default logic, I note some important differences between the two approaches that emerge as a result of plausible distinctions between rebutting and undercutting defeat in formal models of legal reasoning. These differences stem from the ‘preference independence’ of undercutting defeat . Undercutting reasons succeed in defeating opposing reasons irrespective of their relative strength. As a result, the two accounts differ in their account of the way in which precedents constrain judicial reasoning. I conclude by suggesting that the two approaches can be integrated within a single model, in which the distinction between undercutting and rebutting defeat is used to account for the distinction between strict and persuasive forms of precedential constraint.},
+  archive      = {J_AIL},
+  author       = {Mullins, Robert},
+  doi          = {10.1007/s10506-022-09335-6},
+  journal      = {Artificial Intelligence and Law},
+  month        = {12},
+  number       = {4},
+  pages        = {703-738},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Two factor-based models of precedential constraint: A comparison and proposal},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Knowledge mining and social dangerousness assessment in
+criminal justice: Metaheuristic integration of machine learning and
+graph-based inference. <em>AIL</em>, <em>31</em>(4), 653–702. (<a
+href="https://doi.org/10.1007/s10506-022-09334-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One of the main challenges for computational legal research is drawing up innovative heuristics to derive actionable knowledge from legal documents. While a large part of the research has been so far devoted to the extraction of purely legal information, less attention has been paid to seeking out in the texts the clues of more complex entities: legally relevant facts whose detection requires to link and interpret, as a unified whole, legal information and results of empirical analyses. This paper presents an ongoing research that points in this direction, trying to devise new ways to support public prosecutors in assessing the dangerousness of individuals and groups under investigation, an activity that precisely relies on the cross-sectional evaluation of legal and empirical data. A knowledge mining strategy will be outlined that lines up, into a single metaheuristic model, information extraction, network-based inference, machine learning and visual analytics. We will focus, in particular, on the integration of graph-based inference and machine learning methods used both to support classification tasks and to explore new forms of man-machine cooperation. Experiments made involving public prosecutors from the Italian Anti-Mafia Investigation Directorate and using data from real investigations have not only shown the potentialities of our approach but also offered an opportunity to reflect on the role we could assign to AI when thinking about the future of legal science and practice.},
+  archive      = {J_AIL},
+  author       = {Lettieri, Nicola and Guarino, Alfonso and Malandrino, Delfina and Zaccagnino, Rocco},
+  doi          = {10.1007/s10506-022-09334-7},
+  journal      = {Artificial Intelligence and Law},
+  month        = {12},
+  number       = {4},
+  pages        = {653-702},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Knowledge mining and social dangerousness assessment in criminal justice: Metaheuristic integration of machine learning and graph-based inference},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Analogical lightweight ontology of EU criminal procedural
+rights in judicial cooperation. <em>AIL</em>, <em>31</em>(3), 629–652.
+(<a href="https://doi.org/10.1007/s10506-022-09332-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article describes the creation of a lightweight ontology of European Union (EU) criminal procedural rights in judicial cooperation. The ontology is intended to help legal practitioners understand the precise contextual meaning of terms as well as helping to inform the creation of a rule ontology of criminal procedural rights in judicial cooperation. In particular, we started from the problem that directives sometimes do not contain articles dedicated to definitions. This issue provided us with an opportunity to explore a phenomenon typically neglected in the construction of domain-specific legal ontologies. Whether classical definitions are present or absent, laws and legal sources in general are typically peppered with a number of hidden definitions (in the sense that they are not clearly marked out as such) as well as incomplete definitions, which may nevertheless help legal practitioners (and legal reasoning systems) to reason on the basis of analogy or teleology. In this article we describe the theoretical basis for building an analogical lightweight ontology in the framework of an EU project called CrossJustice. We present our methodology for collecting the data, extracting the data fields and creating the ontology with WebProtégé, followed by our conclusions and ideas for future work.},
+  archive      = {J_AIL},
+  author       = {Audrito, Davide and Sulis, Emilio and Humphreys, Llio and Di Caro, Luigi},
+  doi          = {10.1007/s10506-022-09332-9},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {629-652},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Analogical lightweight ontology of EU criminal procedural rights in judicial cooperation},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). SM-BERT-CR: A deep learning approach for case law retrieval
+with supporting model. <em>AIL</em>, <em>31</em>(3), 601–628. (<a
+href="https://doi.org/10.1007/s10506-022-09319-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Case law retrieval is the task of locating truly relevant legal cases given an input query case. Unlike information retrieval for general texts, this task is more complex with two phases (legal case retrieval and legal case entailment) and much harder due to a number of reasons. First, both the query and candidate cases are long documents consisting of several paragraphs. This makes it difficult to model with representation learning that usually has restriction on input length. Second, the concept of relevancy in this domain is defined based on the legal relation that goes beyond the lexical or topical relevance. This is a real challenge because normal text matching will not work. Third, building a large and accurate legal case dataset requires a lot of effort and expertise. This is obviously an obstacle to creating enough data for training deep retrieval models. In this paper, we propose a novel approach called supporting model that can deal with both phases. The underlying idea is the case–case supporting relation and the paragraph–paragraph as well as the decision-paragraph matching strategy. In addition, we propose a method to automatically create a large weak-labeling dataset to overcome the lack of data. The experiments showed that our solution has achieved the state-of-the-art results for both case retrieval and case entailment phases.},
+  archive      = {J_AIL},
+  author       = {Vuong, Yen Thi-Hai and Bui, Quan Minh and Nguyen, Ha-Thanh and Nguyen, Thi-Thu-Trang and Tran, Vu and Phan, Xuan-Hieu and Satoh, Ken and Nguyen, Le-Minh},
+  doi          = {10.1007/s10506-022-09319-6},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {601-628},
+  shortjournal = {Artif. Intell. Law},
+  title        = {SM-BERT-CR: A deep learning approach for case law retrieval with supporting model},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Mapping the issues of automated legal systems: Why worry
+about automatically processable regulation? <em>AIL</em>,
+<em>31</em>(3), 571–599. (<a
+href="https://doi.org/10.1007/s10506-022-09323-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The field of computational law has increasingly moved into the focus of the scientific community, with recent research analysing its issues and risks. In this article, we seek to draw a structured and comprehensive list of societal issues that the deployment of automatically processable regulation could entail. We do this by systematically exploring attributes of the law that are being challenged through its encoding and by taking stock of what issues current projects in this field raise. This article adds to the current literature not only by providing a needed framework to structure arising issues of computational law but also by bridging the gap between theoretical literature and practical implementation. Key findings of this article are: (1) The primary benefit (efficiency vs. accessibility) sought after when encoding law matters with respect to the issues such an endeavor triggers; (2) Specific characteristics of a project—project type, degree of mediation by computers, and potential for divergence of interests—each impact the overall number of societal issues arising from the implementation of automatically processable regulation.},
+  archive      = {J_AIL},
+  author       = {Guitton, Clement and Tamò-Larrieux, Aurelia and Mayer, Simon},
+  doi          = {10.1007/s10506-022-09323-w},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {571-599},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Mapping the issues of automated legal systems: Why worry about automatically processable regulation?},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A user-centered approach to developing an AI system
+analyzing u.s. Federal court data. <em>AIL</em>, <em>31</em>(3),
+547–570. (<a href="https://doi.org/10.1007/s10506-022-09320-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We implemented a user-centered approach to the design of an artificial intelligence (AI) system that provides users with access to information about the workings of the United States federal court system regardless of their technical background. Presently, most of the records associated with the federal judiciary are provided through a federal system that does not support exploration aimed at discovering systematic patterns about court activities. In addition, many users lack the data analytical skills necessary to conduct their own analyses and convert data into information. We conducted interviews, observations, and surveys to uncover the needs of our users and discuss the development of an intuitive platform informed from these needs that makes it possible for legal scholars, lawyers, and journalists to discover answers to more advanced questions about the federal court system. We report on results from usability testing and discuss design implications for AI and law practitioners and researchers.},
+  archive      = {J_AIL},
+  author       = {Adler, Rachel F. and Paley, Andrew and Li Zhao, Andong L. and Pack, Harper and Servantez, Sergio and Pah, Adam R. and Hammond, Kristian and Consortium, SCALES OKN},
+  doi          = {10.1007/s10506-022-09320-z},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {547-570},
+  shortjournal = {Artif. Intell. Law},
+  title        = {A user-centered approach to developing an AI system analyzing U.S. federal court data},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Definitions of intent suitable for algorithms. <em>AIL</em>,
+<em>31</em>(3), 515–546. (<a
+href="https://doi.org/10.1007/s10506-022-09322-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces definitions for direct, means-end, oblique (or indirect) and ulterior intent which can be used to test for intent in an algorithmic actor. These definitions of intent are informed by legal theory from common law jurisdictions. Certain crimes exist where the harm caused is dependent on the reason it was done so. Here the actus reus or performative element of the crime is dependent on the mental state or mens rea of the actor. The ability to prosecute these crimes is dependent on the ability to identify and diagnose intentional states in the accused. A certain class of auto didactic algorithmic actor can be given broad objectives without being told how to meet them. Without a definition of intent, they cannot be told not to engage in certain law breaking behaviour nor can they ever be identified as having done it. This ambiguity is neither positive for the owner of the algorithm or for society. The problem exists over and above more familiar debates concerning the eligibility of algorithms for culpability judgements that mens rea is usually associated with. Aside from inchoate offences, many economic crimes with elements of fraud or deceit fall into this category of crime. Algorithms operate in areas where these crimes could be plausibly undertaken depending on whether the intent existed in the algorithm or not.},
+  archive      = {J_AIL},
+  author       = {Ashton, Hal},
+  doi          = {10.1007/s10506-022-09322-x},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {515-546},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Definitions of intent suitable for algorithms},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The potential of an artificial intelligence (AI) application
+for the tax administration system’s modernization: The case of
+indonesia. <em>AIL</em>, <em>31</em>(3), 491–514. (<a
+href="https://doi.org/10.1007/s10506-022-09321-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {From 2010 to 2020, Indonesia’s tax-to-gross domestic product (GDP) ratio has been declining. A tax-to-GDP ratio trend of this magnitude indicates that the tax authority lacks the capacity to collect taxes. The tax administration system’s modernization utilizing information technology is thus deemed necessary. Artificial intelligence (AI) technology may serve as a solution to this issue. Using the theoretical frameworks of innovations in tax compliance, the cost of taxation, success factors for information technology governance (SFITG), and AI readiness, this study aims to analyze the costs and benefits, the enablers and inhibitors, and the readiness of the government and related parties to apply AI to modernize the tax administration system in Indonesia. This study used qualitative approaches for the data’s collection and analysis. The data were obtained through a literature study and in-depth interviews. The findings show that AI application in the field of taxation can assist tax authorities in enforcing the law, provide taxpayers with convenience in fulfilling their tax obligations, improve justice for all taxpayers, and reduce tax compliance costs. The openness of Indonesia to technological developments, as evidenced by the AI National Strategy, is a supporting factor in the application of AI in Indonesia, particularly for the modernization of the tax administration system. The absence of specific regulations governing AI adoption, as well as a lack of human resources that can help the tax administration process, data, and infrastructure already support, are the impediments to implementing AI for the modernization of the tax administration system in Indonesia.},
+  archive      = {J_AIL},
+  author       = {Saragih, Arfah Habib and Reyhani, Qaumy and Setyowati, Milla Sepliana and Hendrawan, Adang},
+  doi          = {10.1007/s10506-022-09321-y},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {491-514},
+  shortjournal = {Artif. Intell. Law},
+  title        = {The potential of an artificial intelligence (AI) application for the tax administration system’s modernization: The case of indonesia},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A computational model of facilitation in online dispute
+resolution. <em>AIL</em>, <em>31</em>(3), 465–490. (<a
+href="https://doi.org/10.1007/s10506-022-09318-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online dispute resolution (ODR) is an alternative to traditional litigation that can both significantly reduce the disadvantages suffered by litigants unable to afford an attorney and greatly improve court efficiency and economy. An important aspect of many ODR systems is a facilitator, a neutral party who guides the disputants through the steps of reaching an agreement. However, insufficient availability of facilitators impedes broad adoption of ODR systems. This paper describes a novel model of facilitation that integrates two distinct but complementary knowledge sources: cognitive task analysis of facilitator behavior and corpus analysis of ODR session transcripts. This model is implemented in a decision-support system that (1) monitors cases to detect situations requiring immediate attention and (2) automates selection of standard text messages appropriate to the current state of the negotiations. This facilitation model has the potential to compensate for shortages of facilitators by improving the efficiency of experienced facilitators, assisting novice facilitators, and providing autonomous facilitation.},
+  archive      = {J_AIL},
+  author       = {Branting, Karl and McLeod, Sarah and Howell, Sarah and Weiss, Brandy and Profitt, Brett and Tanner, James and Gross, Ian and Shin, David},
+  doi          = {10.1007/s10506-022-09318-7},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {465-490},
+  shortjournal = {Artif. Intell. Law},
+  title        = {A computational model of facilitation in online dispute resolution},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Patterns for legal compliance checking in a decidable
+framework of linked open data. <em>AIL</em>, <em>31</em>(3), 445–464.
+(<a href="https://doi.org/10.1007/s10506-022-09317-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents an approach for legal compliance checking in the Semantic Web which can be effectively applied for applications in the Linked Open Data environment. It is based on modeling deontic norms in terms of ontology classes and ontology property restrictions. It is also shown how this approach can handle norm defeasibility. Such methodology is implemented by decidable fragments of OWL 2, while legal reasoning is carried out by available decidable reasoners. The approach is generalised by presenting patterns for modeling deontic norms and norms compliance checking.},
+  archive      = {J_AIL},
+  author       = {Francesconi, Enrico and Governatori, Guido},
+  doi          = {10.1007/s10506-022-09317-8},
+  journal      = {Artificial Intelligence and Law},
+  month        = {9},
+  number       = {3},
+  pages        = {445-464},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Patterns for legal compliance checking in a decidable framework of linked open data},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Policing based on automatic facial recognition.
+<em>AIL</em>, <em>31</em>(2), 397–443. (<a
+href="https://doi.org/10.1007/s10506-022-09330-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advances in technology have transformed and expanded the ways in which policing is run. One new manifestation is the mass acquisition and processing of private facial images via automatic facial recognition by the police: what we conceptualise as AFR-based policing. However, there is still a lack of clarity on the manner and extent to which this largely-unregulated technology is used by law enforcement agencies and on its impact on fundamental rights. Social understanding and involvement are still insufficient in the context of AFR technologies, which in turn affects social trust in and legitimacy and effectiveness of intelligent governance. This article delineates the function creep of this new concept, identifying the individual and collective harms it engenders. A technological, contextual perspective of the function creep of AFR in policing will evidence the comprehensive creep of training datasets and learning algorithms, which have by-passed an ignorant public. We thus argue individual harms to dignity, privacy and autonomy, combine to constitute a form of cultural harm, impacting directly on individuals and society as a whole. While recognising the limitations of what the law can achieve, we conclude by considering options for redress and the creation of an enhanced regulatory and oversight framework model, or Code of Conduct, as a means of encouraging cultural change from prevailing police indifference to enforcing respect for the human rights violations potentially engaged. The imperative will be to strengthen the top-level design and technical support of AFR policing, imbuing it with the values implicit in the rule of law, democratisation and scientisation-to enhance public confidence and trust in AFR social governance, and to promote civilised social governance in AFR policing.},
+  archive      = {J_AIL},
+  author       = {Guo, Zhilong and Kennedy, Lewis},
+  doi          = {10.1007/s10506-022-09330-x},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {397-443},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Policing based on automatic facial recognition},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Measuring coherence with bayesian networks. <em>AIL</em>,
+<em>31</em>(2), 369–395. (<a
+href="https://doi.org/10.1007/s10506-022-09316-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When we talk about the coherence of a story, we seem to think of how well its individual pieces fit together—how to explicate this notion formally, though? We develop a Bayesian network based coherence measure with implementation in R, which performs better than its purely probabilistic predecessors. The novelty is that by paying attention to the network structure, we avoid simply taking mean confirmation scores between all possible pairs of subsets of a narration. Moreover, we assign special importance to the weakest links in a narration, to improve on the other measures’ results for logically inconsistent scenarios. We illustrate and investigate the performance of the measures in relation to a few philosophically motivated examples, and (more extensively) using the real-life example of the Sally Clark case.},
+  archive      = {J_AIL},
+  author       = {Kowalewska, Alicja and Urbaniak, Rafal},
+  doi          = {10.1007/s10506-022-09316-9},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {369-395},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Measuring coherence with bayesian networks},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Law smells. <em>AIL</em>, <em>31</em>(2), 335–368. (<a
+href="https://doi.org/10.1007/s10506-022-09315-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Building on the computer science concept of code smells, we initiate the study of law smells, i.e., patterns in legal texts that pose threats to the comprehensibility and maintainability of the law. With five intuitive law smells as running examples—namely, duplicated phrase, long element, large reference tree, ambiguous syntax, and natural language obsession—, we develop a comprehensive law smell taxonomy. This taxonomy classifies law smells by when they can be detected, which aspects of law they relate to, and how they can be discovered. We introduce text-based and graph-based methods to identify instances of law smells, confirming their utility in practice using the United States Code as a test case. Our work demonstrates how ideas from software engineering can be leveraged to assess and improve the quality of legal code, thus drawing attention to an understudied area in the intersection of law and computer science and highlighting the potential of computational legal drafting.},
+  archive      = {J_AIL},
+  author       = {Coupette, Corinna and Hartung, Dirk and Beckedorf, Janis and Böther, Maximilian and Katz, Daniel Martin},
+  doi          = {10.1007/s10506-022-09315-w},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {335-368},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Law smells},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A collaboration between judge and machine to reduce legal
+uncertainty in disputes concerning ex aequo et bono compensations.
+<em>AIL</em>, <em>31</em>(2), 325–333. (<a
+href="https://doi.org/10.1007/s10506-022-09314-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ex aequo et bono compensations refer to tribunal’s compensations that cannot be determined exactly according to the rule of law, in which case the judge relies on an estimate that seems fair for the case at hand. Such cases are prone to legal uncertainty, given the subjectivity that is inherent to the concept of fairness. We show how basic principles from statistics and machine learning may be used to reduce legal uncertainty in ex aequo et bono judicial decisions. For a given type of ex aequo et bono dispute, we consider two general stages in estimating the compensation. First, the stage where there is significant disagreement among judges as to which compensation is fair. In that case, we let judges rule on such disputes, while a machine tracks a certain measure of the relative differences of the granted compensations. In the second stage that measure, which expresses the degree of legal uncertainty, has dropped below a predefined threshold. From then on legal decisions on the quantity of the ex aequo et bono compensation for the considered type of dispute may be replaced by the average of previous compensations. The main consequence is that this type of dispute is, from this stage on, free of legal uncertainty.},
+  archive      = {J_AIL},
+  author       = {De Mulder, Wim and Valcke, Peggy and Baeck, Joke},
+  doi          = {10.1007/s10506-022-09314-x},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {325-333},
+  shortjournal = {Artif. Intell. Law},
+  title        = {A collaboration between judge and machine to reduce legal uncertainty in disputes concerning ex aequo et bono compensations},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Using machine learning to create a repository of judgments
+concerning a new practice area: A case study in animal protection law.
+<em>AIL</em>, <em>31</em>(2), 293–324. (<a
+href="https://doi.org/10.1007/s10506-022-09313-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Judgments concerning animals have arisen across a variety of established practice areas. There is, however, no publicly available repository of judgments concerning the emerging practice area of animal protection law. This has hindered the identification of individual animal protection law judgments and comprehension of the scale of animal protection law made by courts. Thus, we detail the creation of an initial animal protection law repository using natural language processing and machine learning techniques. This involved domain expert classification of 500 judgments according to whether or not they were concerned with animal protection law. 400 of these judgments were used to train various models, each of which was used to predict the classification of the remaining 100 judgments. The predictions of each model were superior to a baseline measure intended to mimic current searching practice, with the best performing model being a support vector machine (SVM) approach that classified judgments according to term frequency—inverse document frequency (TF-IDF) values. Investigation of this model consisted of considering its most influential features and conducting an error analysis of all incorrectly predicted judgments. This showed the features indicative of animal protection law judgments to include terms such as ‘welfare’, ‘hunt’ and ‘cull’, and that incorrectly predicted judgments were often deemed marginal decisions by the domain expert. The TF-IDF SVM was then used to classify non-labelled judgments, resulting in an initial animal protection law repository. Inspection of this repository suggested that there were 175 animal protection judgments between January 2000 and December 2020 from the Privy Council, House of Lords, Supreme Court and upper England and Wales courts.},
+  archive      = {J_AIL},
+  author       = {Watson, Joe and Aglionby, Guy and March, Samuel},
+  doi          = {10.1007/s10506-022-09313-y},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {293-324},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Using machine learning to create a repository of judgments concerning a new practice area: A case study in animal protection law},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Perceptions of justice by algorithms. <em>AIL</em>,
+<em>31</em>(2), 269–292. (<a
+href="https://doi.org/10.1007/s10506-022-09312-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Artificial Intelligence and algorithms are increasingly able to replace human workers in cognitively sophisticated tasks, including ones related to justice. Many governments and international organizations are discussing policies related to the application of algorithmic judges in courts. In this paper, we investigate the public perceptions of algorithmic judges. Across two experiments (N = 1,822), and an internal meta-analysis (N = 3,039), our results show that even though court users acknowledge several advantages of algorithms (i.e., cost and speed), they trust human judges more and have greater intentions to go to the court when a human (vs. an algorithmic) judge adjudicates. Additionally, we demonstrate that the extent that individuals trust algorithmic and human judges depends on the nature of the case: trust for algorithmic judges is especially low when legal cases involve emotional complexities (vs. technically complex or uncomplicated cases).},
+  archive      = {J_AIL},
+  author       = {Yalcin, Gizem and Themeli, Erlis and Stamhuis, Evert and Philipsen, Stefan and Puntoni, Stefano},
+  doi          = {10.1007/s10506-022-09312-z},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {269-292},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Perceptions of justice by algorithms},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). How to justify a backing’s eligibility for a warrant: The
+justification of a legal interpretation in a hard case. <em>AIL</em>,
+<em>31</em>(2), 239–268. (<a
+href="https://doi.org/10.1007/s10506-022-09311-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Toulmin model has been proved useful in law and argumentation theory. This model describes the basic process in justifying a claim, which comprises six elements, i.e., claim (C), data (D), warrant (W), backing (B), qualifier (Q), and rebuttal (R). Specifically, in justifying a claim, one must put forward ‘data’ and a ‘warrant’, whereas the latter is authorized by ‘backing’. The force of the ‘claim’ being justified is represented by the ‘qualifier’, and the condition under which the claim cannot be justified is represented as the ‘rebuttal’. To further improve the model, (Goodnight, Informal Logic 15:41–52, 1993) points out that the selection of a backing needs justification, which he calls legitimation justification. However, how such justification is constituted has not yet been clarified. To identify legitimation justification, we separate it into two parts. One justifies a backing’s eligibility (legitimation justification1; LJ1); the other justifies its superiority over other eligible backings (legitimation justification2; LJ2). In this paper, we focus on LJ1 and apply it to the legal justification (of judgements) in hard cases for illustration purposes. We submit that LJ1 refers to the justification of the legal interpretation of a norm by its backing, which can be further separated into several orderable subjustifications. Taking the subjustification of a norm’s existence as an example, we show how it would be influenced by different positions in the philosophy of law. Taking the position of the theory of natural law, such subjustification is presented and evaluated. This paper aims not only to inform ongoing theoretical efforts to apply the Toulmin model in the legal field, but it also seeks to clarify the process in the justification of legal judgments in hard cases. It also offers background information for the possible construction of related AI systems. In our future work, LJ2 and other subjustifications of LJ1 will be discussed.},
+  archive      = {J_AIL},
+  author       = {Yu, Shiyang and Chen, Xi},
+  doi          = {10.1007/s10506-022-09311-0},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {239-268},
+  shortjournal = {Artif. Intell. Law},
+  title        = {How to justify a backing’s eligibility for a warrant: The justification of a legal interpretation in a hard case},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Smart criminal justice: Exploring the use of algorithms in
+the swiss criminal justice system. <em>AIL</em>, <em>31</em>(2),
+213–237. (<a href="https://doi.org/10.1007/s10506-022-09310-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the digital age, the use of advanced technology is becoming a new paradigm in police work, criminal justice, and the penal system. Algorithms promise to predict delinquent behaviour, identify potentially dangerous persons, and support crime investigation. Algorithm-based applications are often deployed in this context, laying the groundwork for a ‘smart criminal justice’. In this qualitative study based on 32 interviews with criminal justice and police officials, we explore the reasons why and extent to which such a smart criminal justice system has already been established in Switzerland, and the benefits perceived by users. Drawing upon this research, we address the spread, application, technical background, institutional implementation, and psychological aspects of the use of algorithms in the criminal justice system. We find that the Swiss criminal justice system is already significantly shaped by algorithms, a change motivated by political expectations and demands for efficiency. Until now, algorithms have only been used at a low level of automation and technical complexity and the levels of benefit perceived vary. This study also identifies the need for critical evaluation and research-based optimization of the implementation of advanced technology. Societal implications, as well as the legal foundations of the use of algorithms, are often insufficiently taken into account. By discussing the main challenges to and issues with algorithm use in this field, this work lays the foundation for further research and debate regarding how to guarantee that ‘smart’ criminal justice is actually carried out smartly.},
+  archive      = {J_AIL},
+  author       = {Simmler, Monika and Brunner, Simone and Canova, Giulia and Schedler, Kuno},
+  doi          = {10.1007/s10506-022-09310-1},
+  journal      = {Artificial Intelligence and Law},
+  month        = {6},
+  number       = {2},
+  pages        = {213-237},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Smart criminal justice: Exploring the use of algorithms in the swiss criminal justice system},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Rethinking the field of automatic prediction of court
+decisions. <em>AIL</em>, <em>31</em>(1), 195–212. (<a
+href="https://doi.org/10.1007/s10506-021-09306-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we discuss previous research in automatic prediction of court decisions. We define the difference between outcome identification, outcome-based judgement categorisation and outcome forecasting, and review how various studies fall into these categories. We discuss how important it is to understand the legal data that one works with in order to determine which task can be performed. Finally, we reflect on the needs of the legal discipline regarding the analysis of court judgements.},
+  archive      = {J_AIL},
+  author       = {Medvedeva, Masha and Wieling, Martijn and Vols, Michel},
+  doi          = {10.1007/s10506-021-09306-3},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {195-212},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Rethinking the field of automatic prediction of court decisions},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Lawmaps: Enabling legal AI development through visualisation
+of the implicit structure of legislation and lawyerly process.
+<em>AIL</em>, <em>31</em>(1), 169–194. (<a
+href="https://doi.org/10.1007/s10506-021-09298-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modelling that exploits visual elements and information visualisation are important areas that have contributed immensely to understanding and the computerisation advancements in many domains and yet remain unexplored for the benefit of the law and legal practice. This paper investigates the challenge of modelling and expressing structures and processes in legislation and the law by using visual modelling and information visualisation (InfoVis) to assist accessibility of legal knowledge, practice and knowledge formalisation as a basis for legal AI. The paper uses a subset of the well-defined Unified Modelling Language (UML) to visually express the structure and process of the legislation and the law to create visual flow diagrams called lawmaps, which form the basis of further formalisation. A lawmap development methodology is presented and evaluated by creating a set of lawmaps for the practice of conveyancing and the Landlords and Tenants Act 1954 of the United Kingdom. This paper is the first of a new breed of preliminary solutions capable of application across all aspects, from legislation to practice; and capable of accelerating development of legal AI.},
+  archive      = {J_AIL},
+  author       = {McLachlan, Scott and Kyrimi, Evangelia and Dube, Kudakwashe and Fenton, Norman and Webley, Lisa C.},
+  doi          = {10.1007/s10506-021-09298-0},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {169-194},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Lawmaps: Enabling legal AI development through visualisation of the implicit structure of legislation and lawyerly process},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Black is the new orange: How to determine AI liability.
+<em>AIL</em>, <em>31</em>(1), 133–167. (<a
+href="https://doi.org/10.1007/s10506-022-09308-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous artificial intelligence (AI) systems can lead to unpredictable behavior causing loss or damage to individuals. Intricate questions must be resolved to establish how courts determine liability. Until recently, understanding the inner workings of “black boxes” has been exceedingly difficult; however, the use of Explainable Artificial Intelligence (XAI) would help simplify the complex problems that can occur with autonomous AI systems. In this context, this article seeks to provide technical explanations that can be given by XAI, and to show how suitable explanations for liability can be reached in court. It provides an analysis of whether existing liability frameworks, in both civil and common law tort systems, with the support of XAI, can address legal concerns related to AI. Lastly, it claims their further development and adoption should allow AI liability cases to be decided under current legal and regulatory rules until new liability regimes for AI are enacted.},
+  archive      = {J_AIL},
+  author       = {Padovan, Paulo Henrique and Martins, Clarice Marinho and Reed, Chris},
+  doi          = {10.1007/s10506-022-09308-9},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {133-167},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Black is the new orange: How to determine AI liability},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Counterfactuals for causal responsibility in legal contexts.
+<em>AIL</em>, <em>31</em>(1), 115–132. (<a
+href="https://doi.org/10.1007/s10506-021-09307-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We define a formal semantics of conditionals based on normatively ideal worlds. Such worlds are described informally by Armgardt (Gabbay D, Magnani L, Park W, Pietarinen A-V (eds) Natural arguments: a tribute to john woods, College Publications, London, pp 699–708, 2018) to address well-known problems of the counterfactual approach to causation. Drawing on Armgardt’s proposal, we use iterated conditionals in order to analyse causal relations in scenarios of multi-agent interaction. This results in a refined counterfactual approach to causal responsibility in legal contexts, which solves overdetermination problems in an intuitively accessible manner.},
+  archive      = {J_AIL},
+  author       = {Andreas, Holger and Armgardt, Matthias and Gunther, Mario},
+  doi          = {10.1007/s10506-021-09307-2},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {115-132},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Counterfactuals for causal responsibility in legal contexts},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Improving abstractive summarization of legal rulings through
+textual entailment. <em>AIL</em>, <em>31</em>(1), 91–113. (<a
+href="https://doi.org/10.1007/s10506-021-09305-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The standard approach for abstractive text summarization is to use an encoder-decoder architecture. The encoder is responsible for capturing the general meaning from the source text, and the decoder is in charge of generating the final text summary. While this approach can compose summaries that resemble human writing, some may contain unrelated or unfaithful information. This problem is called “hallucination” and it represents a serious issue in legal texts as legal practitioners rely on these summaries when looking for precedents, used to support legal arguments. Another concern is that legal documents tend to be very long and may not be fed entirely to the encoder. We propose our method called LegalSumm for addressing these issues by creating different “views” over the source text, training summarization models to generate independent versions of summaries, and applying entailment module to judge how faithful these candidate summaries are with respect to the source text. We show that the proposed approach can select candidate summaries that improve ROUGE scores in all metrics evaluated.},
+  archive      = {J_AIL},
+  author       = {Feijo, Diego de Vargas and Moreira, Viviane P.},
+  doi          = {10.1007/s10506-021-09305-4},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {91-113},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Improving abstractive summarization of legal rulings through textual entailment},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). DeepRhole: Deep learning for rhetorical role labeling of
+sentences in legal case documents. <em>AIL</em>, <em>31</em>(1), 53–90.
+(<a href="https://doi.org/10.1007/s10506-021-09304-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The task of rhetorical role labeling is to assign labels (such as Fact, Argument, Final Judgement, etc.) to sentences of a court case document. Rhetorical role labeling is an important problem in the field of Legal Analytics, since it can aid in various downstream tasks as well as enhances the readability of lengthy case documents. The task is challenging as case documents are highly various in structure and the rhetorical labels are often subjective. Previous works for automatic rhetorical role identification (i) mainly used Conditional Random Fields over manually handcrafted features, and (ii) focused on certain law domains only (e.g., Immigration cases, Rent law), and a particular jurisdiction/country (e.g., US, Canada, India). In this work, we improve upon the prior works on rhetorical role identification by proposing novel Deep Learning models for automatically identifying rhetorical roles, which substantially outperform the prior methods. Additionally, we show the effectiveness of the proposed models over documents from five different law domains, and from two different jurisdictions—the Supreme Court of India and the Supreme Court of the UK. Through extensive experiments over different variations of the Deep Learning models, including Transformer models based on BERT and LegalBERT, we show the robustness of the methods for the task. We also perform an extensive inter-annotator study and analyse the agreement of the predictions of the proposed model with the annotations by domain experts. We find that some rhetorical labels are inherently hard/subjective and both law experts and neural models frequently get confused in predicting them correctly.},
+  archive      = {J_AIL},
+  author       = {Bhattacharya, Paheli and Paul, Shounak and Ghosh, Kripabandhu and Ghosh, Saptarshi and Wyner, Adam},
+  doi          = {10.1007/s10506-021-09304-5},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {53-90},
+  shortjournal = {Artif. Intell. Law},
+  title        = {DeepRhole: Deep learning for rhetorical role labeling of sentences in legal case documents},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Algorithmic disclosure rules. <em>AIL</em>, <em>31</em>(1),
+13–51. (<a href="https://doi.org/10.1007/s10506-021-09302-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {During the past decade, a small but rapidly growing number of Law&amp;Tech scholars have been applying algorithmic methods in their legal research. This Article does it too, for the sake of saving disclosure regulation failure: a normative strategy that has long been considered dead by legal scholars, but conspicuously abused by rule-makers. Existing proposals to revive disclosure duties, however, either focus on the industry policies (e.g. seeking to reduce consumers’ costs of reading) or on rulemaking (e.g. by simplifying linguistic intricacies). But failure may well depend on both. Therefore, this Article develops a `comprehensive approach&#39;, suggesting to use computational tools to cope with linguistic and behavioral failures at both the enactment and implementation phases of disclosure duties, thus filling a void in the Law &amp; Tech scholarship. Specifically, it outlines how algorithmic tools can be used in a holistic manner to address the many failures of disclosures from the rulemaking in parliament to consumer screens. It suggests a multi-layered design where lawmakers deploy three tools in order to produce optimal disclosure rules: machine learning, natural language processing, and behavioral experimentation through regulatory sandboxes. To clarify how and why these tasks should be performed, disclosures in the contexts of online contract terms and privacy online are taken as examples. Because algorithmic rulemaking is frequently met with well-justified skepticism, problems of its compatibility with legitimacy, efficacy and proportionality are also discussed.},
+  archive      = {J_AIL},
+  author       = {Di Porto, Fabiana},
+  doi          = {10.1007/s10506-021-09302-7},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {13-51},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Algorithmic disclosure rules},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Towards a machine understanding of malawi legal text.
+<em>AIL</em>, <em>31</em>(1), 1–11. (<a
+href="https://doi.org/10.1007/s10506-021-09303-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Legal professionals in Malawi rely on a limited number of textbooks, outdated law reports and inadequate library services. Most documents available are in image form, are un-structured, i.e. contain no useful legal meta-data, summaries, keynotes, and do not support a system of citation that is essential to legal research. While advances in document processing and machine learning have benefited many fields, legal research is still only marginally affected. In this interdisciplinary research, the authors build semi-automatic tools for creating a corpus of Malawi criminal law decisions annotated with legal meta-data, case and law citations. We used this corpus to extract legal meta-data, including law and case citations as used in Malawi by employing machine learning tools, spaCy and Gensim LDA. We set the foundation for a new methodology for classifying Malawi criminal case law according to the recently introduced International Classification of Crime for Statistical Purposes (ICCS).},
+  archive      = {J_AIL},
+  author       = {Taylor, Amelia V. and Mfutso-Bengo, Eva},
+  doi          = {10.1007/s10506-021-09303-6},
+  journal      = {Artificial Intelligence and Law},
+  month        = {3},
+  number       = {1},
+  pages        = {1-11},
+  shortjournal = {Artif. Intell. Law},
+  title        = {Towards a machine understanding of malawi legal text},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

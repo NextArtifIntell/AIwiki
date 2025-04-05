@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ECJ_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ecj---17">ECJ - 17</h2>
+<ul>
+<li><details>
+<summary>
+(2023). A data stream ensemble assisted multifactorial evolutionary
+algorithm for offline data-driven dynamic optimization. <em>ECJ</em>,
+<em>31</em>(4), 433–458. (<a
+href="https://doi.org/10.1162/evco_a_00332">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing work on offline data-driven optimization mainly focuses on problems in static environments, and little attention has been paid to problems in dynamic environments. Offline data-driven optimization in dynamic environments is a challenging problem because the distribution of collected data varies over time, requiring surrogate models and optimal solutions tracking with time. This paper proposes a knowledge-transfer-based data-driven optimization algorithm to address these issues. First, an ensemble learning method is adopted to train surrogate models to leverage the knowledge of data in historical environments as well as adapt to new environments. Specifically, given data in a new environment, a model is constructed with the new data, and the preserved models of historical environments are further trained with the new data. Then, these models are considered to be base learners and combined as an ensemble surrogate model. After that, all base learners and the ensemble surrogate model are simultaneously optimized in a multitask environment for finding optimal solutions for real fitness functions. In this way, the optimization tasks in the previous environments can be used to accelerate the tracking of the optimum in the current environment. Since the ensemble model is the most accurate surrogate, we assign more individuals to the ensemble surrogate than its base learners. Empirical results on six dynamic optimization benchmark problems demonstrate the effectiveness of the proposed algorithm compared with four state-of-the-art offline data-driven optimization algorithms. Code is available at https://github.com/Peacefulyang/DSE_MFS.git .},
+  archive      = {J_ECJ},
+  author       = {Yang, Cuie and Ding, Jinliang and Jin, Yaochu and Chai, Tianyou},
+  doi          = {10.1162/evco_a_00332},
+  journal      = {Evolutionary Computation},
+  number       = {4},
+  pages        = {433-458},
+  shortjournal = {Evol. Comput.},
+  title        = {A data stream ensemble assisted multifactorial evolutionary algorithm for offline data-driven dynamic optimization},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Upgrades of genetic programming for data-driven modeling of
+time series. <em>ECJ</em>, <em>31</em>(4), 401–432. (<a
+href="https://doi.org/10.1162/evco_a_00330">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In many engineering fields and scientific disciplines, the results of experiments are in the form of time series, which can be quite problematic to interpret and model. Genetic programming tools are quite powerful in extracting knowledge from data. In this work, several upgrades and refinements are proposed and tested to improve the explorative capabilities of symbolic regression (SR) via genetic programming (GP) for the investigation of time series, with the objective of extracting mathematical models directly from the available signals. The main task is not simply prediction but consists of identifying interpretable equations, reflecting the nature of the mechanisms generating the signals. The implemented improvements involve almost all aspects of GP, from the knowledge representation and the genetic operators to the fitness function. The unique capabilities of genetic programming, to accommodate prior information and knowledge, are also leveraged effectively. The proposed upgrades cover the most important applications of empirical modeling of time series, ranging from the identification of autoregressive systems and partial differential equations to the search of models in terms of dimensionless quantities and appropriate physical units. Particularly delicate systems to identify, such as those showing hysteretic behavior or governed by delayed differential equations, are also addressed. The potential of the developed tools is substantiated with both a battery of systematic numerical tests with synthetic signals and with applications to experimental data.},
+  archive      = {J_ECJ},
+  author       = {Murari, A. and Peluso, E. and Spolladore, L. and Rossi, R. and Gelfusa, M.},
+  doi          = {10.1162/evco_a_00330},
+  journal      = {Evolutionary Computation},
+  number       = {4},
+  pages        = {401-432},
+  shortjournal = {Evol. Comput.},
+  title        = {Upgrades of genetic programming for data-driven modeling of time series},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Treed gaussian process regression for solving offline
+data-driven continuous multiobjective optimization problems.
+<em>ECJ</em>, <em>31</em>(4), 375–399. (<a
+href="https://doi.org/10.1162/evco_a_00329">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For offline data-driven multiobjective optimization problems (MOPs), no new data is available during the optimization process. Approximation models (or surrogates) are first built using the provided offline data, and an optimizer, for example, a multiobjective evolutionary algorithm, can then be utilized to find Pareto optimal solutions to the problem with surrogates as objective functions. In contrast to online data-driven MOPs, these surrogates cannot be updated with new data and, hence, the approximation accuracy cannot be improved by considering new data during the optimization process. Gaussian process regression (GPR) models are widely used as surrogates because of their ability to provide uncertainty information. However, building GPRs becomes computationally expensive when the size of the dataset is large. Using sparse GPRs reduces the computational cost of building the surrogates. However, sparse GPRs are not tailored to solve offline data-driven MOPs, where good accuracy of the surrogates is needed near Pareto optimal solutions. Treed GPR (TGPR-MO) surrogates for offline data-driven MOPs with continuous decision variables are proposed in this paper. The proposed surrogates first split the decision space into subregions using regression trees and build GPRs sequentially in regions close to Pareto optimal solutions in the decision space to accurately approximate tradeoffs between the objective functions. TGPR-MO surrogates are computationally inexpensive because GPRs are built only in a smaller region of the decision space utilizing a subset of the data. The TGPR-MO surrogates were tested on distance-based visualizable problems with various data sizes, sampling strategies, numbers of objective functions, and decision variables. Experimental results showed that the TGPR-MO surrogates are computationally cheaper and can handle datasets of large size. Furthermore, TGPR-MO surrogates produced solutions closer to Pareto optimal solutions compared to full GPRs and sparse GPRs.},
+  archive      = {J_ECJ},
+  author       = {Mazumdar, Atanu and López-Ibáñez, Manuel and Chugh, Tinkle and Hakanen, Jussi and Miettinen, Kaisa},
+  doi          = {10.1162/evco_a_00329},
+  journal      = {Evolutionary Computation},
+  number       = {4},
+  pages        = {375-399},
+  shortjournal = {Evol. Comput.},
+  title        = {Treed gaussian process regression for solving offline data-driven continuous multiobjective optimization problems},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Theoretical analyses of multiobjective evolutionary
+algorithms on multimodal objectives*. <em>ECJ</em>, <em>31</em>(4),
+337–373. (<a href="https://doi.org/10.1162/evco_a_00328">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multiobjective evolutionary algorithms are successfully applied in many real-world multiobjective optimization problems. As for many other AI methods, the theoretical understanding of these algorithms is lagging far behind their success in practice. In particular, previous theory work considers mostly easy problems that are composed of unimodal objectives. As a first step towards a deeper understanding of how evolutionary algorithms solve multimodal multiobjective problems, we propose the O n e J u m p Z e r o J u m p problem, a bi-objective problem composed of two objectives isomorphic to the classic jump function benchmark. We prove that the simple evolutionary multiobjective optimizer (SEMO) with probability one does not compute the full Pareto front, regardless of the runtime. In contrast, for all problem sizes n and all jump sizes k ∈ [ 4 . . n 2 - 1 ] ⁠ , the global SEMO (GSEMO) covers the Pareto front in an expected number of Θ ( ( n - 2 k ) n k ) iterations. For k = o ( n ) ⁠ , we also show the tighter bound 3 2 e n k + 1 ± o ( n k + 1 ) ⁠ , which might be the first runtime bound for an MOEA that is tight apart from lower-order terms. We also combine the GSEMO with two approaches that showed advantages in single-objective multimodal problems. When using the GSEMO with a heavy-tailed mutation operator, the expected runtime improves by a factor of at least k Ω ( k ) ⁠ . When adapting the recent stagnation-detection strategy of Rajabi and Witt ( 2022 ) to the GSEMO, the expected runtime also improves by a factor of at least k Ω ( k ) and surpasses the heavy-tailed GSEMO by a small polynomial factor in k ⁠ . Via an experimental analysis, we show that these asymptotic differences are visible already for small problem sizes: A factor-5 speed-up from heavy-tailed mutation and a factor-10 speed-up from stagnation detection can be observed already for jump size 4 and problem sizes between 10 and 50. Overall, our results show that the ideas recently developed to aid single-objective evolutionary algorithms to cope with local optima can be effectively employed also in multiobjective optimization.},
+  archive      = {J_ECJ},
+  author       = {Zheng, Weijie and Doerr, Benjamin},
+  doi          = {10.1162/evco_a_00328},
+  journal      = {Evolutionary Computation},
+  number       = {4},
+  pages        = {337-373},
+  shortjournal = {Evol. Comput.},
+  title        = {Theoretical analyses of multiobjective evolutionary algorithms on multimodal objectives*},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Symmetry breaking for voting mechanisms*. <em>ECJ</em>,
+<em>31</em>(3), 309–335. (<a
+href="https://doi.org/10.1162/evco_a_00327">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, Rowe and Aishwaryaprajna (2019) introduced a simple majority vote technique that efficiently solves Jump with large gaps, OneMax with large noise, and any monotone function with a polynomial-size image. In this paper, we identify a pathological condition for this algorithm: the presence of spin-flip symmetry in the problem instance. Spin-flip symmetry is the invariance of a pseudo-Boolean function to complementation. Many important combinatorial optimization problems admit objective functions that exhibit this pathology, such as graph problems, Ising models, and variants of propositional satisfiability. We prove that no population size exists that allows the majority vote technique to solve spin-flip symmetric functions of unitation with reasonable probability. To remedy this, we introduce a symmetry-breaking technique that allows the majority vote algorithm to overcome this issue for many landscapes. This technique requires only a minor modification to the original majority vote algorithm to force it to sample strings in { 0 , 1 } n from a dimension n - 1 hyperplane. We prove a sufficient condition for a spin-flip symmetric function to possess in order for the symmetry-breaking voting algorithm to succeed, and prove its efficiency on generalized TwoMax , a spin-flip symmetric variant of Jump , and families of constructed 3-NAE-SAT and 2-XOR-SAT formulas. We also prove that the algorithm fails on the one-dimensional Ising model, and suggest different techniques for overcoming this. Finally, we present empirical results that explore the tightness of the runtime bounds and the performance of the technique on randomized satisfiability variants.},
+  archive      = {J_ECJ},
+  author       = {Sankineni, Preethi and Sutton, Andrew M.},
+  doi          = {10.1162/evco_a_00327},
+  journal      = {Evolutionary Computation},
+  number       = {3},
+  pages        = {309-335},
+  shortjournal = {Evol. Comput.},
+  title        = {Symmetry breaking for voting mechanisms*},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Efficient quality diversity optimization of 3D buildings
+through 2D pre-optimization. <em>ECJ</em>, <em>31</em>(3), 287–307. (<a
+href="https://doi.org/10.1162/evco_a_00326">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quality diversity algorithms can be used to efficiently create a diverse set of solutions to inform engineers&#39; intuition. But quality diversity is not efficient in very expensive problems, needing hundreds of thousands of evaluations. Even with the assistance of surrogate models, quality diversity needs hundreds or even thousands of evaluations, which can make its use infeasible. In this study, we try to tackle this problem by using a pre-optimization strategy on a lower-dimensional optimization problem and then map the solutions to a higher-dimensional case. For a use case to design buildings that minimize wind nuisance, we show that we can predict flow features around 3D buildings from 2D flow features around building footprints. For a diverse set of building designs, by sampling the space of 2D footprints with a quality diversity algorithm, a predictive model can be trained that is more accurate than when trained on a set of footprints that were selected with a space-filling algorithm like the Sobol sequence. Simulating only 16 buildings in 3D, a set of 1,024 building designs with low predicted wind nuisance is created. We show that we can produce better machine learning models by producing training data with quality diversity instead of using common sampling techniques. The method can bootstrap generative design in a computationally expensive 3D domain and allow engineers to sweep the design space, understanding wind nuisance in early design phases.},
+  archive      = {J_ECJ},
+  author       = {Hagg, Alexander and Kliemank, Martin L. and Asteroth, Alexander and Wilde, Dominik and Bedrunka, Mario C. and Foysi, Holger and Reith, Dirk},
+  doi          = {10.1162/evco_a_00326},
+  journal      = {Evolutionary Computation},
+  number       = {3},
+  pages        = {287-307},
+  shortjournal = {Evol. Comput.},
+  title        = {Efficient quality diversity optimization of 3D buildings through 2D pre-optimization},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Evolutionary and estimation of distribution algorithms for
+unconstrained, constrained, and multiobjective noisy combinatorial
+optimisation problems. <em>ECJ</em>, <em>31</em>(3), 259–285. (<a
+href="https://doi.org/10.1162/evco_a_00320">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present an empirical study of a range of evolutionary algorithms applied to various noisy combinatorial optimisation problems. There are three sets of experiments. The first looks at several toy problems, such as OneMax and other linear problems. We find that UMDA and the Paired-Crossover Evolutionary Algorithm (PCEA) are the only ones able to cope robustly with noise, within a reasonable fixed time budget. In the second stage, UMDA and PCEA are then tested on more complex noisy problems: SubsetSum , Knapsack , and SetCover . Both perform well under increasing levels of noise, with UMDA being the better of the two. In the third stage, we consider two noisy multiobjective problems ( CountingOnesCountingZeros and a multiobjective formulation of SetCover ). We compare several adaptations of UMDA for multiobjective problems with the Simple Evolutionary Multiobjective Optimiser (SEMO) and NSGA-II. We conclude that UMDA, and its variants, can be highly effective on a variety of noisy combinatorial optimisation, outperforming many other evolutionary algorithms.},
+  archive      = {J_ECJ},
+  author       = {Aishwaryaprajna, Aishwaryaprajna and Rowe, Jonathan E.},
+  doi          = {10.1162/evco_a_00320},
+  journal      = {Evolutionary Computation},
+  number       = {3},
+  pages        = {259-285},
+  shortjournal = {Evol. Comput.},
+  title        = {Evolutionary and estimation of distribution algorithms for unconstrained, constrained, and multiobjective noisy combinatorial optimisation problems},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Approaching the traveling tournament problem with randomized
+beam search. <em>ECJ</em>, <em>31</em>(3), 233–257. (<a
+href="https://doi.org/10.1162/evco_a_00319">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The traveling tournament problem is a well-known sports league scheduling problem famous for its practical hardness. Given an even number of teams with symmetric distances between their venues, a double round-robin tournament has to be scheduled minimizing the total travel distances over all teams. We consider the most common constrained variant without repeaters and a streak limit of three, for which we study a beam search approach based on a state-space formulation guided by heuristics derived from different lower bound variants. We solve the arising capacitated vehicle routing subproblems either exactly for small- to medium-sized instances up to 18 teams or heuristically also for larger instances up to 24 teams. In a randomized variant of the search, we employ random team ordering and add small amounts of Gaussian noise to the nodes&#39; guidance for diversification when multiple runs are performed. This allows for a simple yet effective parallelization of the beam search. A final comparison is done on the NL, CIRC, NFL, and GALAXY benchmark instances with 12 to 24 teams, for which we report a mean gap difference to the best known feasible solutions of 1 . 2\% and five new best feasible solutions.},
+  archive      = {J_ECJ},
+  author       = {Frohner, Nikolaus and Neumann, Bernhard and Pace, Giulio and Raidl, Günther R.},
+  doi          = {10.1162/evco_a_00319},
+  journal      = {Evolutionary Computation},
+  number       = {3},
+  pages        = {233-257},
+  shortjournal = {Evol. Comput.},
+  title        = {Approaching the traveling tournament problem with randomized beam search},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Contributions to dynamic analysis of differential evolution
+algorithms. <em>ECJ</em>, <em>31</em>(3), 201–232. (<a
+href="https://doi.org/10.1162/evco_a_00318">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Differential Evolution (DE) algorithm is one of the most successful evolutionary computation techniques. However, its structure is not trivially translatable in terms of mathematical transformations that describe its population dynamics. In this work, analytical expressions are developed for the probability of enhancement of individuals after each application of a mutation operator followed by a crossover operation, assuming a population distributed radially around the optimum for the sphere objective function, considering the DE/rand/1/bin and the DE/rand/1/exp algorithm versions. These expressions are validated by numerical experiments. Considering quadratic functions given by f ( x ) = x T D T D x and populations distributed according to the linear transformation D - 1 of a radially distributed population, it is also shown that the expressions still hold in the cases when f ( x ) is separable ( ⁠ D is diagonal) and when D is any nonsingular matrix and the crossover rate is C r = 1 . 0 ⁠ . The expressions are employed for the analysis of DE population dynamics. The analysis is extended to more complex situations, reaching rather precise predictions of the effect of problem dimension and of the choice of algorithm parameters.},
+  archive      = {J_ECJ},
+  author       = {Resende, Lucas and Takahashi, Ricardo H. C.},
+  doi          = {10.1162/evco_a_00318},
+  journal      = {Evolutionary Computation},
+  number       = {3},
+  pages        = {201-232},
+  shortjournal = {Evol. Comput.},
+  title        = {Contributions to dynamic analysis of differential evolution algorithms},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Characterizing permutation-based combinatorial optimization
+problems in fourier space. <em>ECJ</em>, <em>31</em>(3), 163–199. (<a
+href="https://doi.org/10.1162/evco_a_00315">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Comparing combinatorial optimization problems is a difficult task. They are defined using different criteria and terms: weights, flows, distances, etc. In spite of this apparent discrepancy, on many occasions, they tend to produce problem instances with similar properties. One avenue to compare different problems is to project them onto the same space, in order to have homogeneous representations. Expressing the problems in a unified framework could also lead to the discovery of theoretical properties or the design of new algorithms. This article proposes the use of the Fourier transform over the symmetric group as the tool to project different permutation-based combinatorial optimization problems onto the same space. Based on a previous study (Kondor, 2010 ), which characterized the Fourier coefficients of the quadratic assignment problem, we describe the Fourier coefficients of three other well-known problems: the symmetric and nonsymmetric traveling salesperson problem and the linear ordering problem. This transformation allows us to gain a better understanding of the intersection between the problems, as well as to bound their intrinsic dimension.},
+  archive      = {J_ECJ},
+  author       = {Elorza, Anne and Hernando, Leticia and Lozano, Jose A.},
+  doi          = {10.1162/evco_a_00315},
+  journal      = {Evolutionary Computation},
+  number       = {3},
+  pages        = {163-199},
+  shortjournal = {Evol. Comput.},
+  title        = {Characterizing permutation-based combinatorial optimization problems in fourier space},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Personal reflections on some early work in evolving
+strategies in the iterated prisoner’s dilemma. <em>ECJ</em>,
+<em>31</em>(2), 157–161. (<a
+href="https://doi.org/10.1162/evco_a_00322">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {On the occasion of the 30-year anniversary of the Evolutionary Computation journal, I was invited by Professor Hart to offer some reflections on the article on evolving behaviors in the iterated prisoner&#39;s dilemma that I contributed to its first issue in 1993. It&#39;s an honor to do so. I would like to thank Professor Ken De Jong, the journal&#39;s first editor-in-chief, for his vision in creating the journal, and the editors who have followed and maintained that vision. This article contains some personal reflections on the topic and the field as a whole.},
+  archive      = {J_ECJ},
+  author       = {Fogel, David B.},
+  doi          = {10.1162/evco_a_00322},
+  journal      = {Evolutionary Computation},
+  number       = {2},
+  pages        = {157-161},
+  shortjournal = {Evol. Comput.},
+  title        = {Personal reflections on some early work in evolving strategies in the iterated prisoner&#39;s dilemma},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A personal perspective on evolutionary computation: A
+35-year journey. <em>ECJ</em>, <em>31</em>(2), 123–155. (<a
+href="https://doi.org/10.1162/evco_a_00323">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a personal account of the author&#39;s 35 years “adventure” with Evolutionary Computation—from the first encounter in 1988 and many years of academic research through to working full-time in business—successfully implementing evolutionary algorithms for some of the world&#39;s largest corporations. The paper concludes with some observations and insights.},
+  archive      = {J_ECJ},
+  author       = {Michalewicz, Zbigniew},
+  doi          = {10.1162/evco_a_00323},
+  journal      = {Evolutionary Computation},
+  number       = {2},
+  pages        = {123-155},
+  shortjournal = {Evol. Comput.},
+  title        = {A personal perspective on evolutionary computation: A 35-year journey},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Evolutionary algorithms for parameter optimization—thirty
+years later. <em>ECJ</em>, <em>31</em>(2), 81–122. (<a
+href="https://doi.org/10.1162/evco_a_00325">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thirty years, 1993–2023, is a huge time frame in science. We address some major developments in the field of evolutionary algorithms, with applications in parameter optimization, over these 30 years. These include the covariance matrix adaptation evolution strategy and some fast-growing fields such as multimodal optimization, surrogate-assisted optimization, multiobjective optimization, and automated algorithm design. Moreover, we also discuss particle swarm optimization and differential evolution, which did not exist 30 years ago, either. One of the key arguments made in the paper is that we need fewer algorithms, not more, which, however, is the current trend through continuously claiming paradigms from nature that are suggested to be useful as new optimization algorithms. Moreover, we argue that we need proper benchmarking procedures to sort out whether a newly proposed algorithm is useful or not. We also briefly discuss automated algorithm design approaches, including configurable algorithm design frameworks, as the proposed next step toward designing optimization algorithms automatically, rather than by hand.},
+  archive      = {J_ECJ},
+  author       = {Bäck, Thomas H. W. and Kononova, Anna V. and van Stein, Bas and Wang, Hao and Antonov, Kirill A. and Kalkreuth, Roman T. and de Nobel, Jacob and Vermetten, Diederick and de Winter, Roy and Ye, Furong},
+  doi          = {10.1162/evco_a_00325},
+  journal      = {Evolutionary Computation},
+  number       = {2},
+  pages        = {81-122},
+  shortjournal = {Evol. Comput.},
+  title        = {Evolutionary algorithms for parameter Optimization—Thirty years later},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Editorial: Reflecting on thirty years of ECJ. <em>ECJ</em>,
+<em>31</em>(2), 73–79. (<a
+href="https://doi.org/10.1162/evco_e_00324">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We reflect on 30 years of the journal Evolutionary Computation . Taking the papers published in the first volume in 1993 as a springboard, as the founding and current Editors-in-Chief, we comment on the beginnings of the field, evaluate the extent to which the field has both grown and itself evolved, and provide our own perpectives on where the future lies.},
+  archive      = {J_ECJ},
+  author       = {De Jong, Kenneth and Hart, Emma},
+  doi          = {10.1162/evco_e_00324},
+  journal      = {Evolutionary Computation},
+  number       = {2},
+  pages        = {73-79},
+  shortjournal = {Evol. Comput.},
+  title        = {Editorial: Reflecting on thirty years of ECJ},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). An uncertainty measure for prediction of non-gaussian
+process surrogates. <em>ECJ</em>, <em>31</em>(1), 53–71. (<a
+href="https://doi.org/10.1162/evco_a_00316">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model management is an essential component in data-driven surrogate-assisted evolutionary optimization. In model management, the solutions with a large degree of uncertainty in approximation play an important role. They can strengthen the exploration ability of algorithms and improve the accuracy of surrogates. However, there is no theoretical method to measure the uncertainty of prediction of Non-Gaussian process surrogates. To address this issue, this article proposes a method to measure the uncertainty. In this method, a stationary random field with a known zero mean is used to measure the uncertainty of prediction of Non-Gaussian process surrogates. Based on experimental analyses, this method is able to measure the uncertainty of prediction of Non-Gaussian process surrogates. The method&#39;s effectiveness is demonstrated on a set of benchmark problems in single surrogate and ensemble surrogates cases.},
+  archive      = {J_ECJ},
+  author       = {Hu, Caie and Zeng, Sanyou and Li, Changhe},
+  doi          = {10.1162/evco_a_00316},
+  journal      = {Evolutionary Computation},
+  number       = {1},
+  pages        = {53-71},
+  shortjournal = {Evol. Comput.},
+  title        = {An uncertainty measure for prediction of non-gaussian process surrogates},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Hybridization of evolutionary operators with elitist
+iterated racing for the simulation optimization of traffic lights
+programs. <em>ECJ</em>, <em>31</em>(1), 31–51. (<a
+href="https://doi.org/10.1162/evco_a_00314">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the traffic light scheduling problem, the evaluation of candidate solutions requires the simulation of a process under various (traffic) scenarios. Thus, good solutions should not only achieve good objective function values, but they must be robust (low variance) across all different scenarios. Previous work has shown that combining IRACE with evolutionary operators is effective for this task due to the power of evolutionary operators in numerical optimization. In this article, we further explore the hybridization of evolutionary operators and the elitist iterated racing of IRACE for the simulation–optimization of traffic light programs. We review previous works from the literature to find the evolutionary operators performing the best when facing this problem to propose new hybrid algorithms. We evaluate our approach over a realistic case study derived from the traffic network of Málaga (Spain) with 275 traffic lights that should be scheduled optimally. The experimental analysis reveals that the hybrid algorithm comprising IRACE plus differential evolution offers statistically better results than the other algorithms when the budget of simulations is low. In contrast, IRACE performs better than the hybrids for a high simulations budget, although the optimization time is much longer.},
+  archive      = {J_ECJ},
+  author       = {Cintrano, Christian and Ferrer, Javier and López-Ibáñez, Manuel and Alba, Enrique},
+  doi          = {10.1162/evco_a_00314},
+  journal      = {Evolutionary Computation},
+  number       = {1},
+  pages        = {31-51},
+  shortjournal = {Evol. Comput.},
+  title        = {Hybridization of evolutionary operators with elitist iterated racing for the simulation optimization of traffic lights programs},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Stagnation detection with randomized local search*.
+<em>ECJ</em>, <em>31</em>(1), 1–29. (<a
+href="https://doi.org/10.1162/evco_a_00313">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently a mechanism called stagnation detection was proposed that automatically adjusts the mutation rate of evolutionary algorithms when they encounter local optima. The so-called SD-(1 + 1) EA introduced by Rajabi and Witt (2022) adds stagnation detection to the classical (1 + 1) EA with standard bit mutation. This algorithm flips each bit independently with some mutation rate, and stagnation detection raises the rate when the algorithm is likely to have encountered a local optimum. In this article, we investigate stagnation detection in the context of the k -bit flip operator of randomized local search that flips k bits chosen uniformly at random and let stagnation detection adjust the parameter k ⁠ . We obtain improved runtime results compared with the SD-(1 + 1) EA amounting to a speedup of at least ( 1 - o ( 1 ) ) 2 π m ⁠ , where m is the so-called gap size, that is, the distance to the next improvement. Moreover, we propose additional schemes that prevent infinite optimization times even if the algorithm misses a working choice of k due to unlucky events. Finally, we present an example where standard bit mutation still outperforms the k -bit flip operator with stagnation detection.},
+  archive      = {J_ECJ},
+  author       = {Rajabi, Amirhossein and Witt, Carsten},
+  doi          = {10.1162/evco_a_00313},
+  journal      = {Evolutionary Computation},
+  number       = {1},
+  pages        = {1-29},
+  shortjournal = {Evol. Comput.},
+  title        = {Stagnation detection with randomized local search*},
+  volume       = {31},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

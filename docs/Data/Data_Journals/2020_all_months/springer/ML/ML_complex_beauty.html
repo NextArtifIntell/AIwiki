@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ML_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ml---87">ML - 87</h2>
+<ul>
+<li><details>
+<summary>
+(2020). Binary classification with ambiguous training data.
+<em>ML</em>, <em>109</em>(12), 2369–2388. (<a
+href="https://doi.org/10.1007/s10994-020-05915-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In supervised learning, we often face with ambiguous (A) samples that are difficult to label even by domain experts. In this paper, we consider a binary classification problem in the presence of such A samples. This problem is substantially different from semi-supervised learning since unlabeled samples are not necessarily difficult samples. Also, it is different from 3-class classification with the positive (P), negative (N), and A classes since we do not want to classify test samples into the A class. Our proposed method extends binary classification with reject option, which trains a classifier and a rejector simultaneously using P and N samples based on the 0-1-c loss with rejection cost c. More specifically, we propose to train a classifier and a rejector under the 0-1-c-d loss using P, N, and A samples, where d is the misclassification penalty for ambiguous samples. In our practical implementation, we use a convex upper bound of the 0-1-c-d loss for computational tractability. Numerical experiments demonstrate that our method can successfully utilize the additional information brought by such A training data.},
+  archive      = {J_ML},
+  author       = {Otani, Naoya and Otsubo, Yosuke and Koike, Tetsuya and Sugiyama, Masashi},
+  doi          = {10.1007/s10994-020-05915-2},
+  journal      = {Machine Learning},
+  number       = {12},
+  pages        = {2369-2388},
+  shortjournal = {Mach. Learn.},
+  title        = {Binary classification with ambiguous training data},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Spanning attack: Reinforce black-box attacks with unlabeled
+data. <em>ML</em>, <em>109</em>(12), 2349–2368. (<a
+href="https://doi.org/10.1007/s10994-020-05916-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Adversarial black-box attacks aim to craft adversarial perturbations by querying input–output pairs of machine learning models. They are widely used to evaluate the robustness of pre-trained models. However, black-box attacks often suffer from the issue of query inefficiency due to the high dimensionality of the input space, and therefore incur a false sense of model robustness. In this paper, we relax the conditions of the black-box threat model, and propose a novel technique called the spanning attack. By constraining adversarial perturbations in a low-dimensional subspace via spanning an auxiliary unlabeled dataset, the spanning attack significantly improves the query efficiency of a wide variety of existing black-box attacks. Extensive experiments show that the proposed method works favorably in both soft-label and hard-label black-box attacks.},
+  archive      = {J_ML},
+  author       = {Wang, Lu and Zhang, Huan and Yi, Jinfeng and Hsieh, Cho-Jui and Jiang, Yuan},
+  doi          = {10.1007/s10994-020-05916-1},
+  journal      = {Machine Learning},
+  number       = {12},
+  pages        = {2349-2368},
+  shortjournal = {Mach. Learn.},
+  title        = {Spanning attack: Reinforce black-box attacks with unlabeled data},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Fast and accurate pseudoinverse with sparse matrix
+reordering and incremental approach. <em>ML</em>, <em>109</em>(12),
+2333–2347. (<a
+href="https://doi.org/10.1007/s10994-020-05920-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {How can we compute the pseudoinverse of a sparse feature matrix efficiently and accurately for solving optimization problems? A pseudoinverse is a generalization of a matrix inverse, which has been extensively utilized as a fundamental building block for solving linear systems in machine learning. However, an approximate computation, let alone an exact computation, of pseudoinverse is very time-consuming due to its demanding time complexity, which limits it from being applied to large data. In this paper, we propose FastPI (Fast PseudoInverse), a novel incremental singular value decomposition (SVD) based pseudoinverse method for sparse matrices. Based on the observation that many real-world feature matrices are sparse and highly skewed, FastPI reorders and divides the feature matrix and incrementally computes low-rank SVD from the divided components. To show the efficacy of proposed FastPI, we apply them in real-world multi-label linear regression problems. Through extensive experiments, we demonstrate that FastPI computes the pseudoinverse faster than other approximate methods without loss of accuracy. Results imply that our method efficiently computes the low-rank pseudoinverse of a large and sparse matrix that other existing methods cannot handle with limited time and space.},
+  archive      = {J_ML},
+  author       = {Jung, Jinhong and Sael, Lee},
+  doi          = {10.1007/s10994-020-05920-5},
+  journal      = {Machine Learning},
+  number       = {12},
+  pages        = {2333-2347},
+  shortjournal = {Mach. Learn.},
+  title        = {Fast and accurate pseudoinverse with sparse matrix reordering and incremental approach},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Boost image captioning with knowledge reasoning.
+<em>ML</em>, <em>109</em>(12), 2313–2332. (<a
+href="https://doi.org/10.1007/s10994-020-05919-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatically generating a human-like description for a given image is a potential research in artificial intelligence, which has attracted a great of attention recently. Most of the existing attention methods explore the mapping relationships between words in sentence and regions in image, such unpredictable matching manner sometimes causes inharmonious alignments that may reduce the quality of generated captions. In this paper, we make our efforts to reason about more accurate and meaningful captions. We first propose word attention to improve the correctness of visual attention when generating sequential descriptions word-by-word. The special word attention emphasizes on word importance when focusing on different regions of the input image, and makes full use of the internal annotation knowledge to assist the calculation of visual attention. Then, in order to reveal those incomprehensible intentions that cannot be expressed straightforwardly by machines, we introduce a new strategy to inject external knowledge extracted from knowledge graph into the encoder-decoder framework to facilitate meaningful captioning. Finally, we validate our model on two freely available captioning benchmarks: Microsoft COCO dataset and Flickr30k dataset. The results demonstrate that our approach achieves state-of-the-art performance and outperforms many of the existing approaches.},
+  archive      = {J_ML},
+  author       = {Huang, Feicheng and Li, Zhixin and Wei, Haiyang and Zhang, Canlong and Ma, Huifang},
+  doi          = {10.1007/s10994-020-05919-y},
+  journal      = {Machine Learning},
+  number       = {12},
+  pages        = {2313-2332},
+  shortjournal = {Mach. Learn.},
+  title        = {Boost image captioning with knowledge reasoning},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Robust high dimensional expectation maximization algorithm
+via trimmed hard thresholding. <em>ML</em>, <em>109</em>(12), 2283–2311.
+(<a href="https://doi.org/10.1007/s10994-020-05926-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we study the problem of estimating latent variable models with arbitrarily corrupted samples in high dimensional space (i.e., $$d\gg n$$ ) where the underlying parameter is assumed to be sparse. Specifically, we propose a method called Trimmed (Gradient) Expectation Maximization which adds a trimming gradients step and a hard thresholding step to the Expectation step (E-step) and the Maximization step (M-step), respectively. We show that under some mild assumptions and with an appropriate initialization, the algorithm is corruption-proofing and converges to the (near) optimal statistical rate geometrically when the fraction of the corrupted samples $$\epsilon$$ is bounded by $${\tilde{O}}\bigg (\frac{1}{\sqrt{n}}\bigg )$$ . Moreover, we apply our general framework to three canonical models: mixture of Gaussians, mixture of regressions and linear regression with missing covariates. Our theory is supported by thorough numerical results.},
+  archive      = {J_ML},
+  author       = {Wang, Di and Guo, Xiangyu and Li, Shi and Xu, Jinhui},
+  doi          = {10.1007/s10994-020-05926-z},
+  journal      = {Machine Learning},
+  number       = {12},
+  pages        = {2283-2311},
+  shortjournal = {Mach. Learn.},
+  title        = {Robust high dimensional expectation maximization algorithm via trimmed hard thresholding},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Learning with mitigating random consistency from the
+accuracy measure. <em>ML</em>, <em>109</em>(12), 2247–2281. (<a
+href="https://doi.org/10.1007/s10994-020-05914-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human beings may make random guesses in decision-making. Occasionally, their guesses may generate consistency with the real situation. This kind of consistency is termed random consistency. In the area of machine leaning, the randomness is unavoidable and ubiquitous in learning algorithms. However, the accuracy (A), which is a fundamental performance measure for machine learning, does not recognize the random consistency. This causes that the classifiers learnt by A contain the random consistency. The random consistency may cause an unreliable evaluation and harm the generalization performance. To solve this problem, the pure accuracy (PA) is defined to eliminate the random consistency from the A. In this paper, we mainly study the necessity, learning consistency and leaning method of the PA. We show that the PA is insensitive to the class distribution of classifier and is more fair to the majority and the minority than A. Subsequently, some novel generalization bounds on the PA and A are given. Furthermore, we show that the PA is Bayes-risk consistent in finite and infinite hypothesis space. We design a plug-in rule that maximizes the PA, and the experiments on twenty benchmark data sets demonstrate that the proposed method performs statistically better than the kernel logistic regression in terms of PA and comparable performance in terms of A. Compared with the other plug-in rules, the proposed method obtains much better performance.},
+  archive      = {J_ML},
+  author       = {Wang, Jieting and Qian, Yuhua and Li, Feijiang},
+  doi          = {10.1007/s10994-020-05914-3},
+  journal      = {Machine Learning},
+  number       = {12},
+  pages        = {2247-2281},
+  shortjournal = {Mach. Learn.},
+  title        = {Learning with mitigating random consistency from the accuracy measure},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Foreword: Special issue for the journal track of the 12th
+asian conference on machine learning (ACML 2020). <em>ML</em>,
+<em>109</em>(12), 2243–2245. (<a
+href="https://doi.org/10.1007/s10994-020-05925-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Kim, Kee-Eung and Balasubramanian, Vineeth N.},
+  doi          = {10.1007/s10994-020-05925-0},
+  journal      = {Machine Learning},
+  number       = {12},
+  pages        = {2243-2245},
+  shortjournal = {Mach. Learn.},
+  title        = {Foreword: Special issue for the journal track of the 12th asian conference on machine learning (ACML 2020)},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Ensembles of extremely randomized predictive clustering
+trees for predicting structured outputs. <em>ML</em>, <em>109</em>(11),
+2213–2241. (<a
+href="https://doi.org/10.1007/s10994-020-05894-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We address the task of learning ensembles of predictive models for structured output prediction (SOP). We focus on three SOP tasks: multi-target regression (MTR), multi-label classification (MLC) and hierarchical multi-label classification (HMC). In contrast to standard classification and regression, where the output is a single (discrete or continuous) variable, in SOP the output is a data structure—a tuple of continuous variables MTR, a tuple of binary variables MLC or a tuple of binary variables with hierarchical dependencies (HMC). SOP is gaining increasing interest in the research community due to its applicability in a variety of practically relevant domains. In this context, we consider the Extra-Tree ensemble learning method—the overall top performer in the DREAM4 and DREAM5 challenges for gene network reconstruction. We extend this method for SOP tasks and call the extension Extra-PCTs ensembles. As base predictive models we propose using predictive clustering trees (PCTs)–a generalization of decision trees for predicting structured outputs. We conduct a comprehensive experimental evaluation of the proposed method on a collection of 41 benchmark datasets: 21 for MTR, 10 for MLC and 10 for HMC. We first investigate the influence of the size of the ensemble and the size of the feature subset considered at each node. We then compare the performance of Extra-PCTs to other ensemble methods (random forests and bagging), as well as to single PCTs. The experimental evaluation reveals that the Extra-PCTs achieve optimal performance in terms of predictive power and computational cost, with 50 base predictive models across the three tasks. The recommended values for feature subset sizes vary across the tasks, and also depend on whether the dataset contains only binary and/or sparse attributes. The Extra-PCTs give better predictive performance than a single tree (the differences are typically statistically significant). Moreover, the Extra-PCTs are the best performing ensemble method (except for the MLC task, where performances are similar to those of random forests), and Extra-PCTs can be used to learn good feature rankings for all of the tasks considered here.},
+  archive      = {J_ML},
+  author       = {Kocev, Dragi and Ceci, Michelangelo and Stepišnik, Tomaž},
+  doi          = {10.1007/s10994-020-05894-4},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2213-2241},
+  shortjournal = {Mach. Learn.},
+  title        = {Ensembles of extremely randomized predictive clustering trees for predicting structured outputs},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Predicting rice phenotypes with meta and multi-target
+learning. <em>ML</em>, <em>109</em>(11), 2195–2212. (<a
+href="https://doi.org/10.1007/s10994-020-05881-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The features in some machine learning datasets can naturally be divided into groups. This is the case with genomic data, where features can be grouped by chromosome. In many applications it is common for these groupings to be ignored, as interactions may exist between features belonging to different groups. However, including a group that does not influence a response introduces noise when fitting a model, leading to suboptimal predictive accuracy. Here we present two general frameworks for the generation and combination of meta-features when feature groupings are present. Furthermore, we make comparisons to multi-target learning, given that one is typically interested in predicting multiple phenotypes. We evaluated the frameworks and multi-target learning approaches on a genomic rice dataset where the regression task is to predict plant phenotype. Our results demonstrate that there are use cases for both the meta and multi-target approaches, given that overall, they significantly outperform the base case.},
+  archive      = {J_ML},
+  author       = {Orhobor, Oghenejokpeme I. and Alexandrov, Nickolai N. and King, Ross D.},
+  doi          = {10.1007/s10994-020-05881-9},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2195-2212},
+  shortjournal = {Mach. Learn.},
+  title        = {Predicting rice phenotypes with meta and multi-target learning},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Embedding-based silhouette community detection. <em>ML</em>,
+<em>109</em>(11), 2161–2193. (<a
+href="https://doi.org/10.1007/s10994-020-05882-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mining complex data in the form of networks is of increasing interest in many scientific disciplines. Network communities correspond to densely connected subnetworks, and often represent key functional parts of real-world systems. This paper proposes the embedding-based Silhouette community detection (SCD), an approach for detecting communities, based on clustering of network node embeddings, i.e. real valued representations of nodes derived from their neighborhoods. We investigate the performance of the proposed SCD approach on 234 synthetic networks, as well as on a real-life social network. Even though SCD is not based on any form of modularity optimization, it performs comparably or better than state-of-the-art community detection algorithms, such as the InfoMap and Louvain. Further, we demonstrate that SCD’s outputs can be used along with domain ontologies in semantic subgroup discovery, yielding human-understandable explanations of communities detected in a real-life protein interaction network. Being embedding-based, SCD is widely applicable and can be tested out-of-the-box as part of many existing network learning and exploration pipelines.},
+  archive      = {J_ML},
+  author       = {Škrlj, Blaž and Kralj, Jan and Lavrač, Nada},
+  doi          = {10.1007/s10994-020-05882-8},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2161-2193},
+  shortjournal = {Mach. Learn.},
+  title        = {Embedding-based silhouette community detection},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Multi-label feature ranking with ensemble methods.
+<em>ML</em>, <em>109</em>(11), 2141–2159. (<a
+href="https://doi.org/10.1007/s10994-020-05908-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose three ensemble-based feature ranking scores for multi-label classification (MLC), which is a generalisation of multi-class classification where the classes are not mutually exclusive. Each of the scores (Symbolic, Genie3 and Random forest) can be computed from three different ensembles of predictive clustering trees: Bagging, Random forest and Extra trees. We extensively evaluate the proposed scores on 24 benchmark MLC problems, using 15 standard MLC evaluation measures. We determine the ranking quality saturation points in terms of the ensemble sizes, for each ranking-ensemble pair, and show that quality rankings can be computed really efficiently (typically 10 or 50 trees suffice). We also show that the proposed feature rankings are relevant and determine the most appropriate ensemble method for every feature ranking score. We empirically prove that the proposed feature ranking scores outperform current state-of-the-art methods in the quality of the rankings (for the majority of the evaluation measures), and in time efficiency. Finally, we determine the best performing feature ranking scores. Taking into account the quality of the rankings first and—in the case of ties—time efficiency, we identify the Genie3 feature ranking score as the optimal one.},
+  archive      = {J_ML},
+  author       = {Petković, Matej and Džeroski, Sašo and Kocev, Dragi},
+  doi          = {10.1007/s10994-020-05908-1},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2141-2159},
+  shortjournal = {Mach. Learn.},
+  title        = {Multi-label feature ranking with ensemble methods},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Incremental predictive clustering trees for online
+semi-supervised multi-target regression. <em>ML</em>, <em>109</em>(11),
+2121–2139. (<a
+href="https://doi.org/10.1007/s10994-020-05918-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In many application settings, labeling data examples is a costly endeavor, while unlabeled examples are abundant and cheap to produce. Labeling examples can be particularly problematic in an online setting, where there can be arbitrarily many examples that arrive at high frequencies. It is also problematic when we need to predict complex values (e.g., multiple real values), a task that has started receiving considerable attention, but mostly in the batch setting. In this paper, we propose a method for online semi-supervised multi-target regression. It is based on incremental trees for multi-target regression and the predictive clustering framework. Furthermore, it utilizes unlabeled examples to improve its predictive performance as compared to using just the labeled examples. We compare the proposed iSOUP-PCT method with supervised tree methods, which do not use unlabeled examples, and to an oracle method, which uses unlabeled examples as though they were labeled. Additionally, we compare the proposed method to the available state-of-the-art methods. The method achieves good predictive performance on account of increased consumption of computational resources as compared to its supervised variant. The proposed method also beats the state-of-the-art in the case of very few labeled examples in terms of performance, while achieving comparable performance when the labeled examples are more common.},
+  archive      = {J_ML},
+  author       = {Osojnik, Aljaž and Panov, Panče and Džeroski, Sašo},
+  doi          = {10.1007/s10994-020-05918-z},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2121-2139},
+  shortjournal = {Mach. Learn.},
+  title        = {Incremental predictive clustering trees for online semi-supervised multi-target regression},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Bonsai: Diverse and shallow trees for extreme multi-label
+classification. <em>ML</em>, <em>109</em>(11), 2099–2119. (<a
+href="https://doi.org/10.1007/s10994-020-05888-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Extreme multi-label classification (XMC) refers to supervised multi-label learning involving hundreds of thousands or even millions of labels. In this paper, we develop a suite of algorithms, called Bonsai, which generalizes the notion of label representation in XMC, and partitions the labels in the representation space to learn shallow trees. We show three concrete realizations of this label representation space including: (i) the input space which is spanned by the input features, (ii) the output space spanned by label vectors based on their co-occurrence with other labels, and (iii) the joint space by combining the input and output representations. Furthermore, the constraint-free multi-way partitions learnt iteratively in these spaces lead to shallow trees. By combining the effect of shallow trees and generalized label representation, Bonsai achieves the best of both worlds—fast training which is comparable to state-of-the-art tree-based methods in XMC, and much better prediction accuracy, particularly on tail-labels. On a benchmark Amazon-3M dataset with 3 million labels, Bonsai outperforms a state-of-the-art one-vs-rest method in terms of prediction accuracy, while being approximately 200 times faster to train. The code for Bonsai is available at https://github.com/xmc-aalto/bonsai .},
+  archive      = {J_ML},
+  author       = {Khandagale, Sujay and Xiao, Han and Babbar, Rohit},
+  doi          = {10.1007/s10994-020-05888-2},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2099-2119},
+  shortjournal = {Mach. Learn.},
+  title        = {Bonsai: Diverse and shallow trees for extreme multi-label classification},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Unsupervised representation learning with minimax distance
+measures. <em>ML</em>, <em>109</em>(11), 2063–2097. (<a
+href="https://doi.org/10.1007/s10994-020-05886-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate the use of Minimax distances to extract in a nonparametric way the features that capture the unknown underlying patterns and structures in the data. We develop a general-purpose and computationally efficient framework to employ Minimax distances with many machine learning methods that perform on numerical data. We study both computing the pairwise Minimax distances for all pairs of objects and as well as computing the Minimax distances of all the objects to/from a fixed (test) object. We first efficiently compute the pairwise Minimax distances between the objects, using the equivalence of Minimax distances over a graph and over a minimum spanning tree constructed on that. Then, we perform an embedding of the pairwise Minimax distances into a new vector space, such that their squared Euclidean distances in the new space equal to the pairwise Minimax distances in the original space. We also study the case of having multiple pairwise Minimax matrices, instead of a single one. Thereby, we propose an embedding via first summing up the centered matrices and then performing an eigenvalue decomposition to obtain the relevant features. In the following, we study computing Minimax distances from a fixed (test) object which can be used for instance in K-nearest neighbor search. Similar to the case of all-pair pairwise Minimax distances, we develop an efficient and general-purpose algorithm that is applicable with any arbitrary base distance measure. Moreover, we investigate in detail the edges selected by the Minimax distances and thereby explore the ability of Minimax distances in detecting outlier objects. Finally, for each setting, we perform several experiments to demonstrate the effectiveness of our framework.},
+  archive      = {J_ML},
+  author       = {Haghir Chehreghani, Morteza},
+  doi          = {10.1007/s10994-020-05886-4},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2063-2097},
+  shortjournal = {Mach. Learn.},
+  title        = {Unsupervised representation learning with minimax distance measures},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Co-eye: A multi-resolution ensemble classifier for
+symbolically approximated time series. <em>ML</em>, <em>109</em>(11),
+2029–2061. (<a
+href="https://doi.org/10.1007/s10994-020-05887-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Time series classification (TSC) is a challenging task that attracted many researchers in the last few years. One main challenge in TSC is the diversity of domains where time series data come from. Thus, there is no “one model that fits all” in TSC. Some algorithms are very accurate in classifying a specific type of time series when the whole series is considered, while some only target the existence/non-existence of specific patterns/shapelets. Yet other techniques focus on the frequency of occurrences of discriminating patterns/features. This paper presents a new classification technique that addresses the inherent diversity problem in TSC using a nature-inspired method. The technique is stimulated by how flies look at the world through “compound eyes” that are made up of thousands of lenses, called ommatidia. Each ommatidium is an eye with its own lens, and thousands of them together create a broad field of vision. The developed technique similarly uses different lenses and representations to look at the time series, and then combines them for broader visibility. These lenses have been created through hyper-parameterisation of symbolic representations (Piecewise Aggregate and Fourier approximations). The algorithm builds a random forest for each lens, then performs soft dynamic voting for classifying new instances using the most confident eyes, i.e., forests. We evaluate the new technique, coined Co-eye, using the recently released extended version of UCR archive, containing more than 100 datasets across a wide range of domains. The results show the benefits of bringing together different perspectives reflecting on the accuracy and robustness of Co-eye in comparison to other state-of-the-art techniques.},
+  archive      = {J_ML},
+  author       = {Abdallah, Zahraa S. and Gaber, Mohamed Medhat},
+  doi          = {10.1007/s10994-020-05887-3},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {2029-2061},
+  shortjournal = {Mach. Learn.},
+  title        = {Co-eye: A multi-resolution ensemble classifier for symbolically approximated time series},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Evaluating time series forecasting models: An empirical
+study on performance estimation methods. <em>ML</em>, <em>109</em>(11),
+1997–2028. (<a
+href="https://doi.org/10.1007/s10994-020-05910-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Performance estimation aims at estimating the loss that a predictive model will incur on unseen data. This process is a fundamental stage in any machine learning project. In this paper we study the application of these methods to time series forecasting tasks. For independent and identically distributed data the most common approach is cross-validation. However, the dependency among observations in time series raises some caveats about the most appropriate way to estimate performance in this type of data. Currently, there is no consensual approach. We contribute to the literature by presenting an extensive empirical study which compares different performance estimation methods for time series forecasting tasks. These methods include variants of cross-validation, out-of-sample (holdout), and prequential approaches. Two case studies are analysed: One with 174 real-world time series and another with three synthetic time series. Results show noticeable differences in the performance estimation methods in the two scenarios. In particular, empirical experiments suggest that blocked cross-validation can be applied to stationary time series. However, when the time series are non-stationary, the most accurate estimates are produced by out-of-sample methods, particularly the holdout approach repeated in multiple testing periods.},
+  archive      = {J_ML},
+  author       = {Cerqueira, Vitor and Torgo, Luis and Mozetič, Igor},
+  doi          = {10.1007/s10994-020-05910-7},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {1997-2028},
+  shortjournal = {Mach. Learn.},
+  title        = {Evaluating time series forecasting models: An empirical study on performance estimation methods},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Guest editors’ introduction to the special issue on
+discovery science. <em>ML</em>, <em>109</em>(11), 1993–1995. (<a
+href="https://doi.org/10.1007/s10994-020-05922-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Soldatova, Larisa and Vanschoren, Joaquin},
+  doi          = {10.1007/s10994-020-05922-3},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {1993-1995},
+  shortjournal = {Mach. Learn.},
+  title        = {Guest editors’ introduction to the special issue on discovery science},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). In memory of tom fawcett. <em>ML</em>, <em>109</em>(11),
+1987–1992. (<a
+href="https://doi.org/10.1007/s10994-020-05909-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Provost, Foster},
+  doi          = {10.1007/s10994-020-05909-0},
+  journal      = {Machine Learning},
+  number       = {11},
+  pages        = {1987-1992},
+  shortjournal = {Mach. Learn.},
+  title        = {In memory of tom fawcett},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Fast greedy <span class="math display">𝒞</span> -bound
+minimization with guarantees. <em>ML</em>, <em>109</em>(9), 1945–1986.
+(<a href="https://doi.org/10.1007/s10994-020-05902-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The $$\mathcal {C}$$ -bound is a tight bound on the true risk of a majority vote classifier that relies on the individual quality and pairwise disagreement of the voters and provides PAC-Bayesian generalization guarantees. Based on this bound, MinCq is a classification algorithm that returns a dense distribution on a finite set of voters by minimizing it. Introduced later and inspired by boosting, CqBoost uses a column generation approach to build a sparse $$\mathcal {C}$$ -bound optimal distribution on a possibly infinite set of voters. However, both approaches have a high computational learning time because they minimize the $$\mathcal {C}$$ -bound by solving a quadratic program. Yet, one advantage of CqBoost is its experimental ability to provide sparse solutions. In this work, we address the problem of accelerating the $$\mathcal {C}$$ -bound minimization process while keeping the sparsity of the solution and without losing accuracy. We present CB-Boost, a computationally efficient classification algorithm relying on a greedy–boosting-based– $$\mathcal {C}$$ -bound optimization. An in-depth analysis proves the optimality of the greedy minimization process and quantifies the decrease of the $$\mathcal {C}$$ -bound operated by the algorithm. Generalization guarantees are then drawn based on already existing PAC-Bayesian theorems. In addition, we experimentally evaluate the relevance of CB-Boost in terms of the three main properties we expect about it: accuracy, sparsity, and computational efficiency compared to MinCq, CqBoost, Adaboost and other ensemble methods. As observed in these experiments, CB-Boost not only achieves results comparable to the state of the art, but also provides $$\mathcal {C}$$ -bound sub-optimal weights with very few computational demand while keeping the sparsity property of CqBoost.},
+  archive      = {J_ML},
+  author       = {Bauvin, Baptiste and Capponi, Cécile and Roy, Jean-Francis and Laviolette, François},
+  doi          = {10.1007/s10994-020-05902-7},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1945-1986},
+  shortjournal = {Mach. Learn.},
+  title        = {Fast greedy $$\mathcal {C}$$ -bound minimization with guarantees},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). High-dimensional bayesian optimization using low-dimensional
+feature spaces. <em>ML</em>, <em>109</em>(9), 1925–1943. (<a
+href="https://doi.org/10.1007/s10994-020-05899-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bayesian optimization (BO) is a powerful approach for seeking the global optimum of expensive black-box functions and has proven successful for fine tuning hyper-parameters of machine learning models. However, BO is practically limited to optimizing 10–20 parameters. To scale BO to high dimensions, we usually make structural assumptions on the decomposition of the objective and/or exploit the intrinsic lower dimensionality of the problem, e.g. by using linear projections. We could achieve a higher compression rate with nonlinear projections, but learning these nonlinear embeddings typically requires much data. This contradicts the BO objective of a relatively small evaluation budget. To address this challenge, we propose to learn a low-dimensional feature space jointly with (a) the response surface and (b) a reconstruction mapping. Our approach allows for optimization of BO’s acquisition function in the lower-dimensional subspace, which significantly simplifies the optimization problem. We reconstruct the original parameter space from the lower-dimensional subspace for evaluating the black-box function. For meaningful exploration, we solve a constrained optimization problem.},
+  archive      = {J_ML},
+  author       = {Moriconi, Riccardo and Deisenroth, Marc Peter and Sesh Kumar, K. S.},
+  doi          = {10.1007/s10994-020-05899-z},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1925-1943},
+  shortjournal = {Mach. Learn.},
+  title        = {High-dimensional bayesian optimization using low-dimensional feature spaces},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Weak approximation of transformed stochastic gradient MCMC.
+<em>ML</em>, <em>109</em>(9), 1903–1923. (<a
+href="https://doi.org/10.1007/s10994-020-05904-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Stochastic gradient Langevin dynamics (SGLD) is a computationally efficient sampler for Bayesian posterior inference given a large scale dataset and a complex model. Although SGLD is designed for unbounded random variables, practical models often incorporate variables within a bounded domain, such as non-negative or a finite interval. The use of variable transformation is a typical way to handle such a bounded variable. This paper reveals that several mapping approaches commonly used in the literature produce erroneous samples from theoretical and empirical perspectives. We show that the change of random variable in discretization using an invertible Lipschitz mapping function overcomes the pitfall as well as attains the weak convergence, while the other methods are numerically unstable or cannot be justified theoretically. Experiments demonstrate its efficacy for widely-used models with bounded latent variables, including Bayesian non-negative matrix factorization and binary neural networks.},
+  archive      = {J_ML},
+  author       = {Yokoi, Soma and Otsuka, Takuma and Sato, Issei},
+  doi          = {10.1007/s10994-020-05904-5},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1903-1923},
+  shortjournal = {Mach. Learn.},
+  title        = {Weak approximation of transformed stochastic gradient MCMC},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Skew gaussian processes for classification. <em>ML</em>,
+<em>109</em>(9), 1877–1902. (<a
+href="https://doi.org/10.1007/s10994-020-05906-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gaussian processes (GPs) are distributions over functions, which provide a Bayesian nonparametric approach to regression and classification. In spite of their success, GPs have limited use in some applications, for example, in some cases a symmetric distribution with respect to its mean is an unreasonable model. This implies, for instance, that the mean and the median coincide, while the mean and median in an asymmetric (skewed) distribution can be different numbers. In this paper, we propose skew-Gaussian processes (SkewGPs) as a non-parametric prior over functions. A SkewGP extends the multivariate unified skew-normal distribution over finite dimensional vectors to a stochastic processes. The SkewGP class of distributions includes GPs and, therefore, SkewGPs inherit all good properties of GPs and increase their flexibility by allowing asymmetry in the probabilistic model. By exploiting the fact that SkewGP and probit likelihood are conjugate model, we derive closed form expressions for the marginal likelihood and predictive distribution of this new nonparametric classifier. We verify empirically that the proposed SkewGP classifier provides a better performance than a GP classifier based on either Laplace’s method or expectation propagation.},
+  archive      = {J_ML},
+  author       = {Benavoli, Alessio and Azzimonti, Dario and Piga, Dario},
+  doi          = {10.1007/s10994-020-05906-3},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1877-1902},
+  shortjournal = {Mach. Learn.},
+  title        = {Skew gaussian processes for classification},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A decision-theoretic approach for model interpretability in
+bayesian framework. <em>ML</em>, <em>109</em>(9), 1855–1876. (<a
+href="https://doi.org/10.1007/s10994-020-05901-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A salient approach to interpretable machine learning is to restrict modeling to simple models. In the Bayesian framework, this can be pursued by restricting the model structure and prior to favor interpretable models. Fundamentally, however, interpretability is about users’ preferences, not the data generation mechanism; it is more natural to formulate interpretability as a utility function. In this work, we propose an interpretability utility, which explicates the trade-off between explanation fidelity and interpretability in the Bayesian framework. The method consists of two steps. First, a reference model, possibly a black-box Bayesian predictive model which does not compromise accuracy, is fitted to the training data. Second, a proxy model from an interpretable model family that best mimics the predictive behaviour of the reference model is found by optimizing the interpretability utility function. The approach is model agnostic—neither the interpretable model nor the reference model are restricted to a certain class of models—and the optimization problem can be solved using standard tools. Through experiments on real-word data sets, using decision trees as interpretable models and Bayesian additive regression models as reference models, we show that for the same level of interpretability, our approach generates more accurate models than the alternative of restricting the prior. We also propose a systematic way to measure stability of interpretabile models constructed by different interpretability approaches and show that our proposed approach generates more stable models.},
+  archive      = {J_ML},
+  author       = {Afrabandpey, Homayun and Peltola, Tomi and Piironen, Juho and Vehtari, Aki and Kaski, Samuel},
+  doi          = {10.1007/s10994-020-05901-8},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1855-1876},
+  shortjournal = {Mach. Learn.},
+  title        = {A decision-theoretic approach for model interpretability in bayesian framework},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Ada-boundary: Accelerating DNN training via adaptive
+boundary batch selection. <em>ML</em>, <em>109</em>(9), 1837–1853. (<a
+href="https://doi.org/10.1007/s10994-020-05903-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural networks converge faster with help from a smart batch selection strategy. In this regard, we propose Ada-Boundary, a novel and simple adaptive batch selection algorithm that constructs an effective mini-batch according to the learning progress of the model. Our key idea is to exploit confusing samples for which the model cannot predict labels with high confidence. Thus, samples near the current decision boundary are considered to be the most effective for expediting convergence. Taking advantage of this design, Ada-Boundary maintained its dominance for various degrees of training difficulty. We demonstrate the advantage of Ada-Boundary by extensive experimentation using CNNs with five benchmark data sets. Ada-Boundary was shown to produce a relative improvement in test errors by up to 31.80\% compared with the baseline for a fixed wall-clock training time, thereby achieving a faster convergence speed.},
+  archive      = {J_ML},
+  author       = {Song, Hwanjun and Kim, Sundong and Kim, Minseok and Lee, Jae-Gil},
+  doi          = {10.1007/s10994-020-05903-6},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1837-1853},
+  shortjournal = {Mach. Learn.},
+  title        = {Ada-boundary: Accelerating DNN training via adaptive boundary batch selection},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Imbalanced regression and extreme value prediction.
+<em>ML</em>, <em>109</em>(9), 1803–1835. (<a
+href="https://doi.org/10.1007/s10994-020-05900-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Research in imbalanced domain learning has almost exclusively focused on solving classification tasks for accurate prediction of cases labelled with a rare class. Approaches for addressing such problems in regression tasks are still scarce due to two main factors. First, standard regression tasks assume each domain value as equally important. Second, standard evaluation metrics focus on assessing the performance of models on the most common values of data distributions. In this paper, we present an approach to tackle imbalanced regression tasks where the objective is to predict extreme (rare) values. We propose an approach to formalise such tasks and to optimise/evaluate predictive models, overcoming the factors mentioned and issues in related work. We present an automatic and non-parametric method to obtain relevance functions, building on the concept of relevance as the mapping of target values into non-uniform domain preferences. Then, we propose SERA, a new evaluation metric capable of assessing the effectiveness and of optimising models towards the prediction of extreme values while penalising severe model bias. An experimental study demonstrates how SERA provides valid and useful insights into the performance of models in imbalanced regression tasks.},
+  archive      = {J_ML},
+  author       = {Ribeiro, Rita P. and Moniz, Nuno},
+  doi          = {10.1007/s10994-020-05900-9},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1803-1835},
+  shortjournal = {Mach. Learn.},
+  title        = {Imbalanced regression and extreme value prediction},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Learning representations from dendrograms. <em>ML</em>,
+<em>109</em>(9), 1779–1802. (<a
+href="https://doi.org/10.1007/s10994-020-05895-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose unsupervised representation learning and feature extraction from dendrograms. The commonly used Minimax distance measures correspond to building a dendrogram with single linkage criterion, with defining specific forms of a level function and a distance function over that. Therefore, we extend this method to arbitrary dendrograms. We develop a generalized framework wherein different distance measures and representations can be inferred from different types of dendrograms, level functions and distance functions. Via an appropriate embedding, we compute a vector-based representation of the inferred distances, in order to enable many numerical machine learning algorithms to employ such distances. Then, to address the model selection problem, we study the aggregation of different dendrogram-based distances respectively in solution space and in representation space in the spirit of deep representations. In the first approach, for example for the clustering problem, we build a graph with positive and negative edge weights according to the consistency of the clustering labels of different objects among different solutions, in the context of ensemble methods. Then, we use an efficient variant of correlation clustering to produce the final clusters. In the second approach, we investigate the combination of different distances and features sequentially in the spirit of multi-layered architectures to obtain the final features. Finally, we demonstrate the effectiveness of our approach via several numerical studies.},
+  archive      = {J_ML},
+  author       = {Haghir Chehreghani, Morteza and Haghir Chehreghani, Mostafa},
+  doi          = {10.1007/s10994-020-05895-3},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1779-1802},
+  shortjournal = {Mach. Learn.},
+  title        = {Learning representations from dendrograms},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Using error decay prediction to overcome practical issues of
+deep active learning for named entity recognition. <em>ML</em>,
+<em>109</em>(9), 1749–1778. (<a
+href="https://doi.org/10.1007/s10994-020-05897-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing deep active learning algorithms achieve impressive sampling efficiency on natural language processing tasks. However, they exhibit several weaknesses in practice, including (a) inability to use uncertainty sampling with black-box models, (b) lack of robustness to labeling noise, and (c) lack of transparency. In response, we propose a transparent batch active sampling framework by estimating the error decay curves of multiple feature-defined subsets of the data. Experiments on four named entity recognition (NER) tasks demonstrate that the proposed methods significantly outperform diversification-based methods for black-box NER taggers, and can make the sampling process more robust to labeling noise when combined with uncertainty-based methods. Furthermore, the analysis of experimental results sheds light on the weaknesses of different active sampling strategies, and when traditional uncertainty-based or diversification-based methods can be expected to work well.},
+  archive      = {J_ML},
+  author       = {Chang, Haw-Shiuan and Vembu, Shankar and Mohan, Sunil and Uppaal, Rheeya and McCallum, Andrew},
+  doi          = {10.1007/s10994-020-05897-1},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1749-1778},
+  shortjournal = {Mach. Learn.},
+  title        = {Using error decay prediction to overcome practical issues of deep active learning for named entity recognition},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Improving coordination in small-scale multi-agent deep
+reinforcement learning through memory-driven communication. <em>ML</em>,
+<em>109</em>(9), 1727–1747. (<a
+href="https://doi.org/10.1007/s10994-019-05864-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep reinforcement learning algorithms have recently been used to train multiple interacting agents in a centralised manner whilst keeping their execution decentralised. When the agents can only acquire partial observations and are faced with tasks requiring coordination and synchronisation skills, inter-agent communication plays an essential role. In this work, we propose a framework for multi-agent training using deep deterministic policy gradients that enables concurrent, end-to-end learning of an explicit communication protocol through a memory device. During training, the agents learn to perform read and write operations enabling them to infer a shared representation of the world. We empirically demonstrate that concurrent learning of the communication device and individual policies can improve inter-agent coordination and performance in small-scale systems. Our experimental results show that the proposed method achieves superior performance in scenarios with up to six agents. We illustrate how different communication patterns can emerge on six different tasks of increasing complexity. Furthermore, we study the effects of corrupting the communication channel, provide a visualisation of the time-varying memory content as the underlying task is being solved and validate the building blocks of the proposed memory device through ablation studies.},
+  archive      = {J_ML},
+  author       = {Pesce, Emanuele and Montana, Giovanni},
+  doi          = {10.1007/s10994-019-05864-5},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1727-1747},
+  shortjournal = {Mach. Learn.},
+  title        = {Improving coordination in small-scale multi-agent deep reinforcement learning through memory-driven communication},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Active deep q-learning with demonstration. <em>ML</em>,
+<em>109</em>(9), 1699–1725. (<a
+href="https://doi.org/10.1007/s10994-019-05849-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning (RL) is a machine learning technique aiming to learn how to take actions in an environment to maximize some kind of reward. Recent research has shown that although the learning efficiency of RL can be improved with expert demonstration, it usually takes considerable efforts to obtain enough demonstration. The efforts prevent training decent RL agents with expert demonstration in practice. In this work, we propose Active Reinforcement Learning with Demonstration, a new framework to streamline RL in terms of demonstration efforts by allowing the RL agent to query for demonstration actively during training. Under the framework, we propose Active deep Q-Network, a novel query strategy based on a classical RL algorithm called deep Q-network (DQN). The proposed algorithm dynamically estimates the uncertainty of recent states and utilizes the queried demonstration data by optimizing a supervised loss in addition to the usual DQN loss. We propose two methods of estimating the uncertainty based on two state-of-the-art DQN models, namely the divergence of bootstrapped DQN and the variance of noisy DQN. The empirical results validate that both methods not only learn faster than other passive expert demonstration methods with the same amount of demonstration and but also reach super-expert level of performance across four different tasks.},
+  archive      = {J_ML},
+  author       = {Chen, Si-An and Tangkaratt, Voot and Lin, Hsuan-Tien and Sugiyama, Masashi},
+  doi          = {10.1007/s10994-019-05849-4},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1699-1725},
+  shortjournal = {Mach. Learn.},
+  title        = {Active deep Q-learning with demonstration},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Introduction to the special issue of the ECML PKDD 2020
+journal track. <em>ML</em>, <em>109</em>(9), 1697–1698. (<a
+href="https://doi.org/10.1007/s10994-020-05907-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Assent, Ira and Domeniconi, Carlotta and Gionis, Aristides and Hüllermeier, Eyke},
+  doi          = {10.1007/s10994-020-05907-2},
+  journal      = {Machine Learning},
+  number       = {9},
+  pages        = {1697-1698},
+  shortjournal = {Mach. Learn.},
+  title        = {Introduction to the special issue of the ECML PKDD 2020 journal track},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Discovering subjectively interesting multigraph patterns.
+<em>ML</em>, <em>109</em>(8), 1669–1696. (<a
+href="https://doi.org/10.1007/s10994-020-05873-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the past decade, network analysis has attracted substantial interest because of its potential to solve many real-world problems. This paper lays the conceptual foundation for an application in aviation, through focusing on the discovery of patterns in multigraphs (graphs in which multiple edges can be present between vertices). Our main contributions are twofold. Firstly, we propose a novel subjective interestingness measure for patterns in both undirected and directed multigraphs. Though this proposal is inspired by our previous related research for simple graphs (having only single edges), the properties of multigraphs make this transition challenging. Secondly, we propose a greedy algorithm for subjectively interesting pattern mining, and demonstrate its efficacy through several experiments on synthetic and real-world examples. We conclude with a case study in aviation, which demonstrates how the departure from an analyst’s prior beliefs captured as subjectively interesting patterns could help improve an analyst’s understanding of the data and problem at hand.},
+  archive      = {J_ML},
+  author       = {Kapoor, Sarang and Saxena, Dhish Kumar and van Leeuwen, Matthijs},
+  doi          = {10.1007/s10994-020-05873-9},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1669-1696},
+  shortjournal = {Mach. Learn.},
+  title        = {Discovering subjectively interesting multigraph patterns},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020a). Correction to: Robust classification via MOM minimization.
+<em>ML</em>, <em>109</em>(8), 1667. (<a
+href="https://doi.org/10.1007/s10994-020-05885-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There is a mistake in one of the authors’ names (in both online and print versions of the article): it should be Timothée Mathieu instead of Timlothée Mathieu.},
+  archive      = {J_ML},
+  author       = {Lecué, Guillaume and Lerasle, Matthieu and Mathieu, Timothée},
+  doi          = {10.1007/s10994-020-05885-5},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1667},
+  shortjournal = {Mach. Learn.},
+  title        = {Correction to: Robust classification via MOM minimization},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020b). Robust classification via MOM minimization. <em>ML</em>,
+<em>109</em>(8), 1635–1665. (<a
+href="https://doi.org/10.1007/s10994-019-05863-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present an extension of Chervonenkis and Vapnik’s classical empirical risk minimization (ERM) where the empirical risk is replaced by a median-of-means (MOM) estimator of the risk. The resulting new estimators are called MOM minimizers. While ERM is sensitive to corruption of the dataset for many classical loss functions used in classification, we show that MOM minimizers behave well in theory, in the sense that it achieves Vapnik’s (slow) rates of convergence under weak assumptions: the functions in the hypothesis class are only required to have a finite second moment and some outliers may also have corrupted the dataset. We propose algorithms, inspired by MOM minimizers, which may be interpreted as MOM version of block stochastic gradient descent (BSGD). The key point of these algorithms is that the block of data onto which a descent step is performed is chosen according to its “ centrality” among the other blocks. This choice of “ descent block” makes these algorithms robust to outliers; also, this is the only extra step added to classical BSGD algorithms. As a consequence, classical BSGD algorithms can be easily turn into robust MOM versions. Moreover, MOM algorithms perform a smart subsampling which may help to reduce substantially time computations and memory resources when applied to non linear algorithms. These empirical performances are illustrated on both simulated and real datasets.},
+  archive      = {J_ML},
+  author       = {Lecué, Guillaume and Lerasle, Matthieu and Mathieu, Timlothée},
+  doi          = {10.1007/s10994-019-05863-6},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1635-1665},
+  shortjournal = {Mach. Learn.},
+  title        = {Robust classification via MOM minimization},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Anomaly detection with inexact labels. <em>ML</em>,
+<em>109</em>(8), 1617–1633. (<a
+href="https://doi.org/10.1007/s10994-020-05880-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a supervised anomaly detection method for data with inexact anomaly labels, where each label, which is assigned to a set of instances, indicates that at least one instance in the set is anomalous. Although many anomaly detection methods have been proposed, they cannot handle inexact anomaly labels. To measure the performance with inexact anomaly labels, we define the inexact AUC, which is our extension of the area under the ROC curve (AUC) for inexact labels. The proposed method trains an anomaly score function so that the smooth approximation of the inexact AUC increases while anomaly scores for non-anomalous instances become low. We model the anomaly score function by a neural network-based unsupervised anomaly detection method, e.g., autoencoders. The proposed method performs well even when only a small number of inexact labels are available by incorporating an unsupervised anomaly detection mechanism with inexact AUC maximization. Using various datasets, we experimentally demonstrate that our proposed method improves the anomaly detection performance with inexact anomaly labels, and outperforms existing unsupervised and supervised anomaly detection and multiple instance learning methods.},
+  archive      = {J_ML},
+  author       = {Iwata, Tomoharu and Toyoda, Machiko and Tora, Shotaro and Ueda, Naonori},
+  doi          = {10.1007/s10994-020-05880-w},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1617-1633},
+  shortjournal = {Mach. Learn.},
+  title        = {Anomaly detection with inexact labels},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Classification with costly features as a sequential
+decision-making problem. <em>ML</em>, <em>109</em>(8), 1587–1615. (<a
+href="https://doi.org/10.1007/s10994-020-05874-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work focuses on a specific classification problem, where the information about a sample is not readily available, but has to be acquired for a cost, and there is a per-sample budget. Inspired by real-world use-cases, we analyze average and hard variations of a directly specified budget. We postulate the problem in its explicit formulation and then convert it into an equivalent MDP, that can be solved with deep reinforcement learning. Also, we evaluate a real-world inspired setting with sparse training datasets with missing features. The presented method performs robustly well in all settings across several distinct datasets, outperforming other prior-art algorithms. The method is flexible, as showcased with all mentioned modifications and can be improved with any domain independent advancement in RL.},
+  archive      = {J_ML},
+  author       = {Janisch, Jaromír and Pevný, Tomáš and Lisý, Viliam},
+  doi          = {10.1007/s10994-020-05874-8},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1587-1615},
+  shortjournal = {Mach. Learn.},
+  title        = {Classification with costly features as a sequential decision-making problem},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Double random forest. <em>ML</em>, <em>109</em>(8),
+1569–1586. (<a
+href="https://doi.org/10.1007/s10994-020-05889-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Random forest (RF) is one of the most popular parallel ensemble methods, using decision trees as classifiers. One of the hyper-parameters to choose from for RF fitting is the nodesize, which determines the individual tree size. In this paper, we begin with the observation that for many data sets (34 out of 58), the best RF prediction accuracy is achieved when the trees are grown fully by minimizing the nodesize parameter. This observation leads to the idea that prediction accuracy could be further improved if we find a way to generate even bigger trees than the ones with a minimum nodesize. In other words, the largest tree created with the minimum nodesize parameter may not be sufficiently large for the best performance of RF. To produce bigger trees than those by RF, we propose a new classification ensemble method called double random forest (DRF). The new method uses bootstrap on each node during the tree creation process, instead of just bootstrapping once on the root node as in RF. This method, in turn, provides an ensemble of more diverse trees, allowing for more accurate predictions. Finally, for data where RF does not produce trees of sufficient size, we have successfully demonstrated that DRF provides more accurate predictions than RF.},
+  archive      = {J_ML},
+  author       = {Han, Sunwoo and Kim, Hyunjoong and Lee, Yung-Seop},
+  doi          = {10.1007/s10994-020-05889-1},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1569-1586},
+  shortjournal = {Mach. Learn.},
+  title        = {Double random forest},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Correction to: Efficient feature selection using shrinkage
+estimators. <em>ML</em>, <em>109</em>(8), 1565–1567. (<a
+href="https://doi.org/10.1007/s10994-020-05884-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There was a mistake in the proof of the optimal shrinkage intensity for our estimator presented in Section 3.1.},
+  archive      = {J_ML},
+  author       = {Sechidis, Konstantinos and Azzimonti, Laura and Pocock, Adam and Corani, Giorgio and Weatherall, James and Brown, Gavin},
+  doi          = {10.1007/s10994-020-05884-6},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1565-1567},
+  shortjournal = {Mach. Learn.},
+  title        = {Correction to: Efficient feature selection using shrinkage estimators},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). An empirical analysis of binary transformation strategies
+and base algorithms for multi-label learning. <em>ML</em>,
+<em>109</em>(8), 1509–1563. (<a
+href="https://doi.org/10.1007/s10994-020-05879-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Investigating strategies that are able to efficiently deal with multi-label classification tasks is a current research topic in machine learning. Many methods have been proposed, making the selection of the most suitable strategy a challenging issue. From this premise, this paper presents an extensive empirical analysis of the binary transformation strategies and base algorithms for multi-label learning. This subset of strategies uses the one-versus-all approach to transform the original data, generating one binary data set per label, upon which any binary base algorithm can be applied. Considering that the influence of the base algorithm on the predictive performance obtained by the strategies has not been considered in depth by many empirical studies, we investigated the influence of distinct base algorithms on the performance of several strategies. Thus, this study covers a family of multi-label strategies using a diversified range of base algorithms, exploring their relationship over different perspectives. This finding has significant implications concerning the methodology of evaluation adopted in multi-label experiments containing binary transformation strategies, given that multiple base algorithms should be considered. Despite these improvements in strategy and base algorithms, for many data sets, a large number of labels, mainly those less frequent, were either never predicted, or always misclassified. We conclude the experimental analysis by recommending strategies and base algorithms in accordance with different performance criteria.},
+  archive      = {J_ML},
+  author       = {Rivolli, Adriano and Read, Jesse and Soares, Carlos and Pfahringer, Bernhard and de Carvalho, André C. P. L. F.},
+  doi          = {10.1007/s10994-020-05879-3},
+  journal      = {Machine Learning},
+  number       = {8},
+  pages        = {1509-1563},
+  shortjournal = {Mach. Learn.},
+  title        = {An empirical analysis of binary transformation strategies and base algorithms for multi-label learning},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Propositionalization and embeddings: Two sides of the same
+coin. <em>ML</em>, <em>109</em>(7), 1465–1507. (<a
+href="https://doi.org/10.1007/s10994-020-05890-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data preprocessing is an important component of machine learning pipelines, which requires ample time and resources. An integral part of preprocessing is data transformation into the format required by a given learning algorithm. This paper outlines some of the modern data processing techniques used in relational learning that enable data fusion from different input data types and formats into a single table data representation, focusing on the propositionalization and embedding data transformation approaches. While both approaches aim at transforming data into tabular data format, they use different terminology and task definitions, are perceived to address different goals, and are used in different contexts. This paper contributes a unifying framework that allows for improved understanding of these two data transformation techniques by presenting their unified definitions, and by explaining the similarities and differences between the two approaches as variants of a unified complex data transformation task. In addition to the unifying framework, the novelty of this paper is a unifying methodology combining propositionalization and embeddings, which benefits from the advantages of both in solving complex data transformation and learning tasks. We present two efficient implementations of the unifying methodology: an instance-based PropDRM approach, and a feature-based PropStar approach to data transformation and learning, together with their empirical evaluation on several relational problems. The results show that the new algorithms can outperform existing relational learners and can solve much larger problems.},
+  archive      = {J_ML},
+  author       = {Lavrač, Nada and Škrlj, Blaž and Robnik-Šikonja, Marko},
+  doi          = {10.1007/s10994-020-05890-8},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1465-1507},
+  shortjournal = {Mach. Learn.},
+  title        = {Propositionalization and embeddings: Two sides of the same coin},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Transfer learning by mapping and revising boosted relational
+dependency networks. <em>ML</em>, <em>109</em>(7), 1435–1463. (<a
+href="https://doi.org/10.1007/s10994-020-05871-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Statistical machine learning algorithms usually assume the availability of data of considerable size to train the models. However, they would fail in addressing domains where data is difficult or expensive to obtain. Transfer learning has emerged to address this problem of learning from scarce data by relying on a model learned in a source domain where data is easy to obtain to be a starting point for the target domain. On the other hand, real-world data contains objects and their relations, usually gathered from noisy environments. Finding patterns through such uncertain relational data has been the focus of the Statistical Relational Learning (SRL) area. Thus, to address domains with scarce, relational, and uncertain data, in this paper, we propose TreeBoostler, an algorithm that transfers the SRL state-of-the-art Boosted Relational Dependency Networks learned in a source domain to the target domain. TreeBoostler first finds a mapping between pairs of predicates to accommodate the additive trees into the target vocabulary. After, it employs two theory revision operators devised to handle incorrect relational regression trees aiming at improving the performance of the mapped trees. In the experiments presented in this paper, TreeBoostler has successfully transferred knowledge between several distinct domains. Moreover, it performs comparably or better than learning from scratch methods in terms of accuracy and outperforms a transfer learning approach in terms of accuracy and runtime.},
+  archive      = {J_ML},
+  author       = {Azevedo Santos, Rodrigo and Paes, Aline and Zaverucha, Gerson},
+  doi          = {10.1007/s10994-020-05871-x},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1435-1463},
+  shortjournal = {Mach. Learn.},
+  title        = {Transfer learning by mapping and revising boosted relational dependency networks},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Inductive general game playing. <em>ML</em>,
+<em>109</em>(7), 1393–1434. (<a
+href="https://doi.org/10.1007/s10994-019-05843-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {General game playing (GGP) is a framework for evaluating an agent’s general intelligence across a wide range of tasks. In the GGP competition, an agent is given the rules of a game (described as a logic program) that it has never seen before. The task is for the agent to play the game, thus generating game traces. The winner of the GGP competition is the agent that gets the best total score over all the games. In this paper, we invert this task: a learner is given game traces and the task is to learn the rules that could produce the traces. This problem is central to inductive general game playing (IGGP). We introduce a technique that automatically generates IGGP tasks from GGP games. We introduce an IGGP dataset which contains traces from 50 diverse games, such as Sudoku, Sokoban, and Checkers. We claim that IGGP is difficult for existing inductive logic programming (ILP) approaches. To support this claim, we evaluate existing ILP systems on our dataset. Our empirical results show that most of the games cannot be correctly learned by existing systems. The best performing system solves only 40\% of the tasks perfectly. Our results suggest that IGGP poses many challenges to existing approaches. Furthermore, because we can automatically generate IGGP tasks from GGP games, our dataset will continue to grow with the GGP competition, as new games are added every year. We therefore think that the IGGP problem and dataset will be valuable for motivating and evaluating future research.},
+  archive      = {J_ML},
+  author       = {Cropper, Andrew and Evans, Richard and Law, Mark},
+  doi          = {10.1007/s10994-019-05843-w},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1393-1434},
+  shortjournal = {Mach. Learn.},
+  title        = {Inductive general game playing},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Constructing generative logical models for optimisation
+problems using domain knowledge. <em>ML</em>, <em>109</em>(7),
+1371–1392. (<a
+href="https://doi.org/10.1007/s10994-019-05842-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we seek to identify data instances with a low value of some objective (or cost) function. Normally posed as optimisation problems, our interest is in problems that have the following characteristics: (a) optimal, or even near-optimal solutions are very rare; (b) it is expensive to obtain the value of the objective function for large numbers of data instances; and (c) there is domain knowledge in the form of experience, rules-of-thumb, constraints and the like, which is difficult to translate into the usual constraints for numerical optimisation procedures. Here we investigate the use of Inductive Logic Programming (ILP) to construct models within a procedure that progressively attempts to increase the number of near-optimal solutions. Using ILP in this manner requires a change in focus from discriminatory models (the usual staple for ILP) to generative models. Using controlled datasets, we investigate the use of probability-sampling of solutions based on the estimated cost of clauses found using ILP. Specifically, we compare the results obtained against: (a) simple random sampling; and (b) generative deep network models that use a low-level encoding and automatically construct higher-level features. Our results suggest: (1) Against each of the alternatives, probability-sampling from ILP-constructed models contain more near-optimal solutions; (2) The key to the effectiveness of ILP-constructed models is the availability of domain knowledge. We also demonstrate the use of ILP in this manner on two real-world problems from the area of drug-design (predicting solubility and binding affinity), using domain knowledge of chemical ring structures and functional groups. Taken together, our results suggest that generative modelling using ILP can be very effective for optimisation problems where: (a) the number of training instances to be used is restricted, and (b) there is domain knowledge relevant to low-cost solutions.},
+  archive      = {J_ML},
+  author       = {Srinivasan, Ashwin and Vig, Lovekesh and Shroff, Gautam},
+  doi          = {10.1007/s10994-019-05842-x},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1371-1392},
+  shortjournal = {Mach. Learn.},
+  title        = {Constructing generative logical models for optimisation problems using domain knowledge},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Logical reduction of metarules. <em>ML</em>,
+<em>109</em>(7), 1323–1369. (<a
+href="https://doi.org/10.1007/s10994-019-05834-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many forms of inductive logic programming (ILP) use metarules, second-order Horn clauses, to define the structure of learnable programs and thus the hypothesis space. Deciding which metarules to use for a given learning task is a major open problem and is a trade-off between efficiency and expressivity: the hypothesis space grows given more metarules, so we wish to use fewer metarules, but if we use too few metarules then we lose expressivity. In this paper, we study whether fragments of metarules can be logically reduced to minimal finite subsets. We consider two traditional forms of logical reduction: subsumption and entailment. We also consider a new reduction technique called derivation reduction, which is based on SLD-resolution. We compute reduced sets of metarules for fragments relevant to ILP and theoretically show whether these reduced sets are reductions for more general infinite fragments. We experimentally compare learning with reduced sets of metarules on three domains: Michalski trains, string transformations, and game rules. In general, derivation reduced sets of metarules outperform subsumption and entailment reduced sets, both in terms of predictive accuracies and learning times.},
+  archive      = {J_ML},
+  author       = {Cropper, Andrew and Tourret, Sophie},
+  doi          = {10.1007/s10994-019-05834-x},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1323-1369},
+  shortjournal = {Mach. Learn.},
+  title        = {Logical reduction of metarules},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Learning higher-order logic programs. <em>ML</em>,
+<em>109</em>(7), 1289–1322. (<a
+href="https://doi.org/10.1007/s10994-019-05862-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A key feature of inductive logic programming is its ability to learn first-order programs, which are intrinsically more expressive than propositional programs. In this paper, we introduce techniques to learn higher-order programs. Specifically, we extend meta-interpretive learning (MIL) to support learning higher-order programs by allowing for higher-order definitions to be used as background knowledge. Our theoretical results show that learning higher-order programs, rather than first-order programs, can reduce the textual complexity required to express programs, which in turn reduces the size of the hypothesis space and sample complexity. We implement our idea in two new MIL systems: the Prolog system $$\text {Metagol}_{ho}$$ and the ASP system $$\text {HEXMIL}_{ho}$$ . Both systems support learning higher-order programs and higher-order predicate invention, such as inventing functions for map/3 and conditions for filter/3. We conduct experiments on four domains (robot strategies, chess playing, list transformations, and string decryption) that compare learning first-order and higher-order programs. Our experimental results support our theoretical claims and show that, compared to learning first-order programs, learning higher-order programs can significantly improve predictive accuracies and reduce learning times.},
+  archive      = {J_ML},
+  author       = {Cropper, Andrew and Morel, Rolf and Muggleton, Stephen},
+  doi          = {10.1007/s10994-019-05862-7},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1289-1322},
+  shortjournal = {Mach. Learn.},
+  title        = {Learning higher-order logic programs},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Guest editors’ introduction: Special issue on inductive
+logic programming (ILP 2019). <em>ML</em>, <em>109</em>(7), 1287–1288.
+(<a href="https://doi.org/10.1007/s10994-020-05891-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Kazakov, Dimitar and Železný, Filip},
+  doi          = {10.1007/s10994-020-05891-7},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1287-1288},
+  shortjournal = {Mach. Learn.},
+  title        = {Guest editors’ introduction: Special issue on inductive logic programming (ILP 2019)},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Reflections on reciprocity in research. <em>ML</em>,
+<em>109</em>(7), 1281–1285. (<a
+href="https://doi.org/10.1007/s10994-020-05892-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Flach, Peter A.},
+  doi          = {10.1007/s10994-020-05892-6},
+  journal      = {Machine Learning},
+  number       = {7},
+  pages        = {1281-1285},
+  shortjournal = {Mach. Learn.},
+  title        = {Reflections on reciprocity in research},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Exploiting causality in gene network reconstruction based on
+graph embedding. <em>ML</em>, <em>109</em>(6), 1231–1279. (<a
+href="https://doi.org/10.1007/s10994-019-05861-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gene network reconstruction is a bioinformatics task that aims at modelling the complex regulatory activities that may occur among genes. This task is typically solved by means of link prediction methods that analyze gene expression data. However, the reconstructed networks often suffer from a high amount of false positive edges, which are actually the result of indirect regulation activities due to the presence of common cause and common effect phenomena or, in other terms, due to the fact that the adopted inductive methods do not take into account possible causality phenomena. This issue is accentuated even more by the inherent presence of a high amount of noise in gene expression data. Existing methods for the identification of a transitive reduction of a network or for the removal of (possibly) redundant edges suffer from limitations in the structure of the network or in the nature/length of the indirect regulation, and often require additional pre-processing steps to handle specific peculiarities of the networks (e.g., cycles). Moreover, they are not able to consider possible community structures and possible similar roles of the genes in the network (e.g. hub nodes), which may change the tendency of nodes to be highly connected (and with which nodes) in the network. In this paper, we propose the method INLOCANDA, which learns an inductive predictive model for gene network reconstruction and overcomes all the mentioned limitations. In particular, INLOCANDA is able to (i) identify and exploit indirect relationships of arbitrary length to remove edges due to common cause and common effect phenomena; (ii) take into account possible community structures and possible similar roles by means of graph embedding. Experiments performed along multiple dimensions of analysis on benchmark, real networks of two organisms (E. coli and S. cerevisiae) show a higher accuracy with respect to the competitors, as well as a higher robustness to the presence of noise in the data, also when a huge amount of (possibly false positive) interactions is removed. Availability: http://www.di.uniba.it/~gianvitopio/systems/inlocanda/},
+  archive      = {J_ML},
+  author       = {Pio, Gianvito and Ceci, Michelangelo and Prisciandaro, Francesca and Malerba, Donato},
+  doi          = {10.1007/s10994-019-05861-8},
+  journal      = {Machine Learning},
+  number       = {6},
+  pages        = {1231-1279},
+  shortjournal = {Mach. Learn.},
+  title        = {Exploiting causality in gene network reconstruction based on graph embedding},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Ranking by inspiration: A network science approach.
+<em>ML</em>, <em>109</em>(6), 1205–1229. (<a
+href="https://doi.org/10.1007/s10994-019-05828-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contagion processes have been widely studied in epidemiology and life science in general, but their implications are largely tangible in other research areas, such as in network science and computational social science. Contagion models, in particular, have proven helpful in the study of information diffusion, a very topical issue thanks to its applications to social media/network analysis, viral marketing campaigns, influence maximization and prediction. In bibliographic networks, for instance, an information diffusion process takes place when some authors, that publish papers in a given topic, influence some of their neighbors (coauthors, citing authors, collaborators) to publish papers in the same topic, and the latter influence their neighbors in their turn. This well-accepted definition, however, does not consider that influence in bibliographic networks is a complex phenomenon involving several scientific and cultural aspects. In fact, in scientific citation networks, influential topics are usually considered those ones that spread most rapidly in the network. Although this is generally a fact, this semantics does not consider that topics in bibliographic networks evolve continuously. In fact, knowledge, information and ideas are dynamic entities that acquire different meanings when passing from one person to another. Thus, in this paper, we propose a new definition of influence that captures the diffusion of inspiration within the network. We call it inspiration score, and show its effectiveness in detecting the most inspiring topics, authors, papers and venues in a citation network built upon two large bibliographic datasets. We show that the inspiration score can be used as an alternative or complementary bibliographic index in academic ranking applications.},
+  archive      = {J_ML},
+  author       = {Bioglio, Livio and Rho, Valentina and Pensa, Ruggero G.},
+  doi          = {10.1007/s10994-019-05828-9},
+  journal      = {Machine Learning},
+  number       = {6},
+  pages        = {1205-1229},
+  shortjournal = {Mach. Learn.},
+  title        = {Ranking by inspiration: A network science approach},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Feature ranking for multi-target regression. <em>ML</em>,
+<em>109</em>(6), 1179–1204. (<a
+href="https://doi.org/10.1007/s10994-019-05829-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we address the task of feature ranking for multi-target regression (MTR). The task of MTR concerns problems with multiple continuous dependent/target variables, where the goal is to learn a model for predicting all of them simultaneously. This task is receiving an increasing attention from the research community, but performing feature ranking in the context of MTR has not been studied thus far. Here, we study two groups of feature ranking scores for MTR: scores (Symbolic, Genie3 and Random Forest score) based on ensembles (bagging, random forests, extra trees) of predictive clustering trees, and a score derived as an extension of the RReliefF method. We also propose a generic data-transformation approach to MTR feature ranking and thus have two versions of each score. For both groups of feature ranking scores, we analyze their theoretical computational complexity. For the extension of the RReliefF method, we additionally derive some theoretical properties of the scores. Next, we extensively evaluate the scores on 24 benchmark MTR datasets, in terms of the quality of the ranking and the computational complexity of producing it. The results identify the parameters that influence the quality of the rankings, reveal that both groups of methods produce relevant feature rankings, and show that the Symbolic and Genie3 score, coupled with random forest ensembles, yield the best rankings.},
+  archive      = {J_ML},
+  author       = {Petković, Matej and Kocev, Dragi and Džeroski, Sašo},
+  doi          = {10.1007/s10994-019-05829-8},
+  journal      = {Machine Learning},
+  number       = {6},
+  pages        = {1179-1204},
+  shortjournal = {Mach. Learn.},
+  title        = {Feature ranking for multi-target regression},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Effective approximation of parametrized closure systems over
+transactional data streams. <em>ML</em>, <em>109</em>(6), 1147–1177. (<a
+href="https://doi.org/10.1007/s10994-019-05827-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Strongly closed itemsets, defined by a parameterized closure operator, are a generalization of ordinary closed itemsets. Depending on the strength of closedness, the family of strongly closed itemsets typically forms a tiny subfamily of ordinary closed itemsets that is stable against changes in the input. In this paper we consider the problem of mining strongly closed itemsets from transactional data streams. Utilizing their algebraic and algorithmic properties, we propose an algorithm based on reservoir sampling for approximating this type of itemsets in the landmark streaming setting, prove its correctness, and show empirically that it yields a considerable speed-up over a straightforward naive algorithm without any significant loss in precision and recall. We motivate the problem setting considered by two practical applications. In particular, we first experimentally demonstrate that the above properties, i.e., compactness and stability, make strongly closed itemsets an excellent indicator of certain types of concept drifts in transactional data streams. As a second application we consider computer-aided product configuration, a real-world problem raised by an industrial project. For this problem, which is essentially exact concept identification, we propose a learning algorithm based on a certain type of subset queries formed by strongly closed itemsets and show on real-world datasets that it requires significantly less query evaluations than a naive algorithm based on membership queries.},
+  archive      = {J_ML},
+  author       = {Trabold, Daniel and Horváth, Tamás and Wrobel, Stefan},
+  doi          = {10.1007/s10994-019-05827-w},
+  journal      = {Machine Learning},
+  number       = {6},
+  pages        = {1147-1177},
+  shortjournal = {Mach. Learn.},
+  title        = {Effective approximation of parametrized closure systems over transactional data streams},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Guest editorial: Special issue on discovery science.
+<em>ML</em>, <em>109</em>(6), 1145–1146. (<a
+href="https://doi.org/10.1007/s10994-020-05883-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Kida, Takuya and Kuboyama, Tetsuji and Uno, Takeaki and Yamamoto, Akihiro},
+  doi          = {10.1007/s10994-020-05883-7},
+  journal      = {Machine Learning},
+  number       = {6},
+  pages        = {1145-1146},
+  shortjournal = {Mach. Learn.},
+  title        = {Guest editorial: Special issue on discovery science},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Detecting anomalous packets in network transfers:
+Investigations using PCA, autoencoder and isolation forest in TCP.
+<em>ML</em>, <em>109</em>(5), 1127–1143. (<a
+href="https://doi.org/10.1007/s10994-020-05870-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale scientific workflows rely heavily on high-performance file transfers. These transfers require strict quality parameters such as guaranteed bandwidth, no packet loss or data duplication. To have successful file transfers, methods such as predetermined thresholds and statistical analysis need to be done to determine abnormal patterns. Network administrators routinely monitor and analyze network data for diagnosing and alleviating these, making decisions based on their experience. However, as networks grow and become complex, monitoring large data files and quickly processing them, makes it improbable to identify errors and rectify these. Abnormal file transfers have been classified by simply setting alert thresholds, via tools such as PerfSonar and TCP statistics (Tstat). This paper investigates the feasibility of unsupervised feature extraction methods for identifying network anomaly patterns with three unsupervised classification methods—principal component analysis, autoencoder and isolation forest. We collect file transfer statistics from two experiment sets—synthetic iPerf generated traffic and 1000 Genome workflow runs, with synthetically introduced anomalies. Our results show that while PCA and a simple autoencoder finds it difficult to detect clusters, the tree-variant isolation forest is able to identify anomalous packets by breaking down TCP traces into tree classes early.},
+  archive      = {J_ML},
+  author       = {Kiran, Mariam and Wang, Cong and Papadimitriou, George and Mandal, Anirban and Deelman, Ewa},
+  doi          = {10.1007/s10994-020-05870-y},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {1127-1143},
+  shortjournal = {Mach. Learn.},
+  title        = {Detecting anomalous packets in network transfers: Investigations using PCA, autoencoder and isolation forest in TCP},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Engineering problems in machine learning systems.
+<em>ML</em>, <em>109</em>(5), 1103–1126. (<a
+href="https://doi.org/10.1007/s10994-020-05872-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fatal accidents are a major issue hindering the wide acceptance of safety-critical systems that employ machine learning and deep learning models, such as automated driving vehicles. In order to use machine learning in a safety-critical system, it is necessary to demonstrate the safety and security of the system through engineering processes. However, thus far, no such widely accepted engineering concepts or frameworks have been established for these systems. The key to using a machine learning model in a deductively engineered system is decomposing the data-driven training of machine learning models into requirement, design, and verification, particularly for machine learning models used in safety-critical systems. Simultaneously, open problems and relevant technical fields are not organized in a manner that enables researchers to select a theme and work on it. In this study, we identify, classify, and explore the open problems in engineering (safety-critical) machine learning systems—that is, in terms of requirement, design, and verification of machine learning models and systems—as well as discuss related works and research directions, using automated driving vehicles as an example. Our results show that machine learning models are characterized by a lack of requirements specification, lack of design specification, lack of interpretability, and lack of robustness. We also perform a gap analysis on a conventional system quality standard SQuaRE with the characteristics of machine learning models to study quality models for machine learning systems. We find that a lack of requirements specification and lack of robustness have the greatest impact on conventional quality models.},
+  archive      = {J_ML},
+  author       = {Kuwajima, Hiroshi and Yasuoka, Hirotoshi and Nakae, Toshihiro},
+  doi          = {10.1007/s10994-020-05872-w},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {1103-1126},
+  shortjournal = {Mach. Learn.},
+  title        = {Engineering problems in machine learning systems},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Editorial: Machine learning for safety–critical applications
+in engineering. <em>ML</em>, <em>109</em>(5), 1101–1102. (<a
+href="https://doi.org/10.1007/s10994-020-05876-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Kiran, Mariam and Khan, Samir},
+  doi          = {10.1007/s10994-020-05876-6},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {1101-1102},
+  shortjournal = {Mach. Learn.},
+  title        = {Editorial: Machine learning for safety–critical applications in engineering},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Joint maximization of accuracy and information for learning
+the structure of a bayesian network classifier. <em>ML</em>,
+<em>109</em>(5), 1039–1099. (<a
+href="https://doi.org/10.1007/s10994-020-05869-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although recent studies have shown that a Bayesian network classifier (BNC) that maximizes the classification accuracy (i.e., minimizes the 0/1 loss function) is a powerful tool in both knowledge representation and classification, this classifier: (1) focuses on the majority class and, therefore, misclassifies minority classes; (2) is usually uninformative about the distribution of misclassifications; and (3) is insensitive to error severity (making no distinction between misclassification types). In this study, we propose to learn the structure of a BNC using an information measure (IM) that jointly maximizes the classification accuracy and information, motivate this measure theoretically, and evaluate it compared with six common measures using various datasets. Using synthesized confusion matrices, twenty-three artificial datasets, seventeen UCI datasets, and different performance measures, we show that an IM-based BNC is superior to BNCs learned using the other measures—especially for ordinal classification (for which accounting for the error severity is important) and/or imbalanced problems (which are most real-life classification problems)—and that it does not fall behind state-of-the-art classifiers with respect to accuracy and amount of information provided. To further demonstrate its ability, we tested the IM-based BNC in predicting the severity of motorcycle accidents of young drivers and the disease state of ALS patients—two class-imbalance ordinal classification problems—and show that the IM-based BNC is accurate also for the minority classes (fatal accidents and severe patients) and not only for the majority class (mild accidents and mild patients) as are other classifiers, providing more informative and practical classification results. Based on the many experiments we report on here, we expect these advantages to exist for other problems in which both accuracy and information should be maximized, the data is imbalanced, and/or the problem is ordinal, whether the classifier is a BNC or not. Our code, datasets, and results are publicly available http://www.ee.bgu.ac.il/~boaz/software .},
+  archive      = {J_ML},
+  author       = {Halbersberg, Dan and Wienreb, Maydan and Lerner, Boaz},
+  doi          = {10.1007/s10994-020-05869-5},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {1039-1099},
+  shortjournal = {Mach. Learn.},
+  title        = {Joint maximization of accuracy and information for learning the structure of a bayesian network classifier},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Improved graph-based SFA: Information preservation
+complements the slowness principle. <em>ML</em>, <em>109</em>(5),
+999–1037. (<a href="https://doi.org/10.1007/s10994-019-05860-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Slow feature analysis (SFA) is an unsupervised learning algorithm that extracts slowly varying features from a multi-dimensional time series. SFA has been extended to supervised learning (classification and regression) by an algorithm called graph-based SFA (GSFA). GSFA relies on a particular graph structure to extract features that preserve label similarities. Processing of high dimensional input data (e.g., images) is feasible via hierarchical GSFA (HGSFA), resulting in a multi-layer neural network. Although HGSFA has useful properties, in this work we identify a shortcoming, namely, that HGSFA networks prematurely discard quickly varying but useful features before they reach higher layers, resulting in suboptimal global slowness and an under-exploited feature space. To counteract this shortcoming, which we call unnecessary information loss, we propose an extension called hierarchical information-preserving GSFA (HiGSFA), where some features fulfill a slowness objective and other features fulfill an information preservation objective. The efficacy of the extension is verified in three experiments: (1) an unsupervised setup where the input data is the visual stimuli of a simulated rat, (2) the localization of faces in image patches, and (3) the estimation of human age from facial photographs of the MORPH-II database. Both HiGSFA and HGSFA can learn multiple labels and offer a rich feature space, feed-forward training, and linear complexity in the number of samples and dimensions. However, the proposed algorithm, HiGSFA, outperforms HGSFA in terms of feature slowness, estimation accuracy, and input reconstruction, giving rise to a promising hierarchical supervised-learning approach. Moreover, for age estimation, HiGSFA achieves a mean absolute error of 3.41 years, which is a competitive performance for this challenging problem.},
+  archive      = {J_ML},
+  author       = {Escalante-B., Alberto N. and Wiskott, Laurenz},
+  doi          = {10.1007/s10994-019-05860-9},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {999-1037},
+  shortjournal = {Mach. Learn.},
+  title        = {Improved graph-based SFA: Information preservation complements the slowness principle},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Sparse hierarchical regression with polynomials.
+<em>ML</em>, <em>109</em>(5), 973–997. (<a
+href="https://doi.org/10.1007/s10994-020-05868-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a novel method for sparse polynomial regression. We are interested in that degree r polynomial which depends on at most k inputs, counting at most $$\ell$$ monomial terms, and minimizes the sum of the squares of its prediction errors. Such highly structured sparse regression was denoted by Bach (Advances in neural information processing systems, pp 105–112, 2009) as sparse hierarchical regression in the context of kernel learning. Hierarchical sparse specification aligns well with modern big data settings where many inputs are not relevant for prediction purposes and the functional complexity of the regressor needs to be controlled as to avoid overfitting. We propose an efficient two-step approach to this hierarchical sparse regression problem. First, we discard irrelevant inputs using an extremely fast input ranking heuristic. Secondly, we take advantage of modern cutting plane methods for integer optimization to solve the remaining reduced hierarchical $$(k, \ell )$$-sparse problem exactly. The ability of our method to identify all k relevant inputs and all $$\ell$$ monomial terms is shown empirically to experience a phase transition. Crucially, the same transition also presents itself in our ability to reject all irrelevant features and monomials as well. In the regime where our method is statistically powerful, its computational complexity is interestingly on par with Lasso based heuristics. Hierarchical sparsity can retain the flexibility of general nonparametric methods such as nearest neighbors or regression trees (CART), without sacrificing much statistical power. The presented work hence fills a void in terms of a lack of powerful disciplined nonlinear sparse regression methods in high-dimensional settings. Our method is shown empirically to scale to regression problems with $$n\approx 10{,}000$$ observations for input dimension $$p\approx 1000$$.},
+  archive      = {J_ML},
+  author       = {Bertsimas, Dimitris and Van Parys, Bart},
+  doi          = {10.1007/s10994-020-05868-6},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {973-997},
+  shortjournal = {Mach. Learn.},
+  title        = {Sparse hierarchical regression with polynomials},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Model-based kernel sum rule: Kernel bayesian inference with
+probabilistic models. <em>ML</em>, <em>109</em>(5), 939–972. (<a
+href="https://doi.org/10.1007/s10994-019-05852-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Kernel Bayesian inference is a principled approach to nonparametric inference in probabilistic graphical models, where probabilistic relationships between variables are learned from data in a nonparametric manner. Various algorithms of kernel Bayesian inference have been developed by combining kernelized basic probabilistic operations such as the kernel sum rule and kernel Bayes’ rule. However, the current framework is fully nonparametric, and it does not allow a user to flexibly combine nonparametric and model-based inferences. This is inefficient when there are good probabilistic models (or simulation models) available for some parts of a graphical model; this is in particular true in scientific fields where “models” are the central topic of study. Our contribution in this paper is to introduce a novel approach, termed the model-based kernel sum rule (Mb-KSR), to combine a probabilistic model and kernel Bayesian inference. By combining the Mb-KSR with the existing kernelized probabilistic rules, one can develop various algorithms for hybrid (i.e., nonparametric and model-based) inferences. As an illustrative example, we consider Bayesian filtering in a state space model, where typically there exists an accurate probabilistic model for the state transition process. We propose a novel filtering method that combines model-based inference for the state transition process and data-driven, nonparametric inference for the observation generating process. We empirically validate our approach with synthetic and real-data experiments, the latter being the problem of vision-based mobile robot localization in robotics, which illustrates the effectiveness of the proposed hybrid approach.},
+  archive      = {J_ML},
+  author       = {Nishiyama, Yu and Kanagawa, Motonobu and Gretton, Arthur and Fukumizu, Kenji},
+  doi          = {10.1007/s10994-019-05852-9},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {939-972},
+  shortjournal = {Mach. Learn.},
+  title        = {Model-based kernel sum rule: Kernel bayesian inference with probabilistic models},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). High-dimensional model recovery from random sketched data by
+exploring intrinsic sparsity. <em>ML</em>, <em>109</em>(5), 899–938. (<a
+href="https://doi.org/10.1007/s10994-019-05865-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning from large-scale and high-dimensional data still remains a computationally challenging problem, though it has received increasing interest recently. To address this issue, randomized reduction methods have been developed by either reducing the dimensionality or reducing the number of training instances to obtain a small sketch of the original data. In this paper, we focus on recovering a high-dimensional classification/regression model from random sketched data. We propose to exploit the intrinsic sparsity of optimal solutions and develop novel methods by increasing the regularization parameter before the sparse regularizer. In particular, (i) for high-dimensional classification problems, we leverage randomized reduction methods to reduce the dimensionality of data and solve a dual formulation on the random sketched data with an introduced sparse regularizer on the dual solution; (ii) for high-dimensional sparse least-squares regression problems, we employ randomized reduction methods to reduce the scale of data and solve a formulation on the random sketched data with an increased regularization parameter before the sparse regularizer. For both classes of problems, by exploiting the intrinsic sparsity of the optimal dual solution or the optimal primal solution we provide formal theoretical guarantee on the recovery error of learned models in comparison with the optimal models that are learned from the original data. Compared with previous studies on randomized reduction for machine learning, the present work enjoy several advantages: (i) the proposed formulations enjoys intuitive geometric explanations; (ii) the theoretical guarantee does not rely on any stringent assumptions about the original data (e.g., low-rankness of the data matrix or the data are linearly separable); (iii) the theory covers both smooth and non-smooth loss functions for classification; (iv) the analysis is applicable to a broad class of randomized reduction methods as long as the reduction matrices admit the Johnson–Lindenstrauss type of lemma. We also present empirical studies to support the proposed methods and the presented theory.},
+  archive      = {J_ML},
+  author       = {Yang, Tianbao and Zhang, Lijun and Lin, Qihang and Zhu, Shenghuo and Jin, Rong},
+  doi          = {10.1007/s10994-019-05865-4},
+  journal      = {Machine Learning},
+  number       = {5},
+  pages        = {899-938},
+  shortjournal = {Mach. Learn.},
+  title        = {High-dimensional model recovery from random sketched data by exploring intrinsic sparsity},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On cognitive preferences and the plausibility of rule-based
+models. <em>ML</em>, <em>109</em>(4), 853–898. (<a
+href="https://doi.org/10.1007/s10994-019-05856-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is conventional wisdom in machine learning and data mining that logical models such as rule sets are more interpretable than other models, and that among such rule-based models, simpler models are more interpretable than more complex ones. In this position paper, we question this latter assumption by focusing on one particular aspect of interpretability, namely the plausibility of models. Roughly speaking, we equate the plausibility of a model with the likeliness that a user accepts it as an explanation for a prediction. In particular, we argue that—all other things being equal—longer explanations may be more convincing than shorter ones, and that the predominant bias for shorter models, which is typically necessary for learning powerful discriminative models, may not be suitable when it comes to user acceptance of the learned models. To that end, we first recapitulate evidence for and against this postulate, and then report the results of an evaluation in a crowdsourcing study based on about 3000 judgments. The results do not reveal a strong preference for simple rules, whereas we can observe a weak preference for longer rules in some domains. We then relate these results to well-known cognitive biases such as the conjunction fallacy, the representative heuristic, or the recognition heuristic, and investigate their relation to rule length and plausibility.},
+  archive      = {J_ML},
+  author       = {Fürnkranz, Johannes and Kliegr, Tomáš and Paulheim, Heiko},
+  doi          = {10.1007/s10994-019-05856-5},
+  journal      = {Machine Learning},
+  number       = {4},
+  pages        = {853-898},
+  shortjournal = {Mach. Learn.},
+  title        = {On cognitive preferences and the plausibility of rule-based models},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Distributed block-diagonal approximation methods for
+regularized empirical risk minimization. <em>ML</em>, <em>109</em>(4),
+813–852. (<a href="https://doi.org/10.1007/s10994-019-05859-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, there is a growing need to train machine learning models on a huge volume of data. Therefore, designing efficient distributed optimization algorithms for empirical risk minimization (ERM) has become an active and challenging research topic. In this paper, we propose a flexible framework for distributed ERM training through solving the dual problem, which provides a unified description and comparison of existing methods. Our approach requires only approximate solutions of the sub-problems involved in the optimization process, and is versatile to be applied on many large-scale machine learning problems including classification, regression, and structured prediction. We show that our framework enjoys global linear convergence for a broad class of non-strongly-convex problems, and some specific choices of the sub-problems can even achieve much faster convergence than existing approaches by a refined analysis. This improved convergence rate is also reflected in the superior empirical performance of our method.},
+  archive      = {J_ML},
+  author       = {Lee, Ching-pei and Chang, Kai-Wei},
+  doi          = {10.1007/s10994-019-05859-2},
+  journal      = {Machine Learning},
+  number       = {4},
+  pages        = {813-852},
+  shortjournal = {Mach. Learn.},
+  title        = {Distributed block-diagonal approximation methods for regularized empirical risk minimization},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Classification using proximity catch digraphs. <em>ML</em>,
+<em>109</em>(4), 761–811. (<a
+href="https://doi.org/10.1007/s10994-020-05878-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We employ random geometric digraphs to construct semi-parametric classifiers. These data-random digraphs belong to parameterized random digraph families called proximity catch digraphs (PCDs). A related geometric digraph family, class cover catch digraph (CCCD), has been used to solve the class cover problem by using its approximate minimum dominating set and showed relatively good performance in the classification of imbalanced data sets. Although CCCDs have a convenient construction in $${\mathbb {R}}^d$$, finding their minimum dominating sets is NP-hard and their probabilistic behaviour is not mathematically tractable except for $$d=1$$. On the other hand, a particular family of PCDs, called proportional-edge PCDs (PE-PCDs), has mathematically tractable minimum dominating sets in $${\mathbb {R}}^d$$; however their construction in higher dimensions may be computationally demanding. More specifically, we show that the classifiers based on PE-PCDs are prototype-based classifiers such that the exact minimum number of prototypes (equivalent to minimum dominating sets) is found in polynomial time on the number of observations. We construct two types of classifiers based on PE-PCDs. One is a family of hybrid classifiers that depends on the location of the points of the training data set, and another type is a family of classifiers solely based on class covers. We assess the classification performance of our PE-PCD based classifiers by extensive Monte Carlo simulations, and compare them with that of other commonly used classifiers. We also show that, similar to CCCD classifiers, our classifiers tend to be robust to the class imbalance in classification as well.},
+  archive      = {J_ML},
+  author       = {Manukyan, Artür and Ceyhan, Elvan},
+  doi          = {10.1007/s10994-020-05878-4},
+  journal      = {Machine Learning},
+  number       = {4},
+  pages        = {761-811},
+  shortjournal = {Mach. Learn.},
+  title        = {Classification using proximity catch digraphs},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Learning from positive and unlabeled data: A survey.
+<em>ML</em>, <em>109</em>(4), 719–760. (<a
+href="https://doi.org/10.1007/s10994-020-05877-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning from positive and unlabeled data or PU learning is the setting where a learner only has access to positive examples and unlabeled data. The assumption is that the unlabeled data can contain both positive and negative examples. This setting has attracted increasing interest within the machine learning literature as this type of data naturally arises in applications such as medical diagnosis and knowledge base completion. This article provides a survey of the current state of the art in PU learning. It proposes seven key research questions that commonly arise in this field and provides a broad overview of how the field has tried to address them.},
+  archive      = {J_ML},
+  author       = {Bekker, Jessa and Davis, Jesse},
+  doi          = {10.1007/s10994-020-05877-5},
+  journal      = {Machine Learning},
+  number       = {4},
+  pages        = {719-760},
+  shortjournal = {Mach. Learn.},
+  title        = {Learning from positive and unlabeled data: A survey},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Scalable bayesian preference learning for crowds.
+<em>ML</em>, <em>109</em>(4), 689–718. (<a
+href="https://doi.org/10.1007/s10994-019-05867-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a scalable Bayesian preference learning method for jointly predicting the preferences of individuals as well as the consensus of a crowd from pairwise labels. Peoples’ opinions often differ greatly, making it difficult to predict their preferences from small amounts of personal data. Individual biases also make it harder to infer the consensus of a crowd when there are few labels per item. We address these challenges by combining matrix factorisation with Gaussian processes, using a Bayesian approach to account for uncertainty arising from noisy and sparse data. Our method exploits input features, such as text embeddings and user metadata, to predict preferences for new items and users that are not in the training set. As previous solutions based on Gaussian processes do not scale to large numbers of users, items or pairwise labels, we propose a stochastic variational inference approach that limits computational and memory costs. Our experiments on a recommendation task show that our method is competitive with previous approaches despite our scalable inference approximation. We demonstrate the method’s scalability on a natural language processing task with thousands of users and items, and show improvements over the state of the art on this task. We make our software publicly available for future work (https://github.com/UKPLab/tacl2018-preference-convincing/tree/crowdGPPL).},
+  archive      = {J_ML},
+  author       = {Simpson, Edwin and Gurevych, Iryna},
+  doi          = {10.1007/s10994-019-05867-2},
+  journal      = {Machine Learning},
+  number       = {4},
+  pages        = {689-718},
+  shortjournal = {Mach. Learn.},
+  title        = {Scalable bayesian preference learning for crowds},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Conditional density estimation and simulation through
+optimal transport. <em>ML</em>, <em>109</em>(4), 665–688. (<a
+href="https://doi.org/10.1007/s10994-019-05866-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A methodology to estimate from samples the probability density of a random variable x conditional to the values of a set of covariates $${z_{l}}$$ is proposed. The methodology relies on a data-driven formulation of the Wasserstein barycenter, posed as a minimax problem in terms of the conditional map carrying each sample point to the barycenter and a potential characterizing the inverse of this map. This minimax problem is solved through the alternation of a flow developing the map in time and the maximization of the potential through an alternate projection procedure. The dependence on the covariates $${z_{l}}$$ is formulated in terms of convex combinations, so that it can be applied to variables of nearly any type, including real, categorical and distributional. The methodology is illustrated through numerical examples on synthetic and real data. The real-world example chosen is meteorological, forecasting the temperature distribution at a given location as a function of time, and estimating the joint distribution at a location of the highest and lowest daily temperatures as a function of the date.},
+  archive      = {J_ML},
+  author       = {Tabak, Esteban G. and Trigila, Giulio and Zhao, Wenjun},
+  doi          = {10.1007/s10994-019-05866-3},
+  journal      = {Machine Learning},
+  number       = {4},
+  pages        = {665-688},
+  shortjournal = {Mach. Learn.},
+  title        = {Conditional density estimation and simulation through optimal transport},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Few-shot learning with adaptively initialized task
+optimizer: A practical meta-learning approach. <em>ML</em>,
+<em>109</em>(3), 643–664. (<a
+href="https://doi.org/10.1007/s10994-019-05838-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Considering the data collection and labeling cost in real-world applications, training a model with limited examples is an essential problem in machine learning, visual recognition, etc. Directly training a model on such few-shot learning (FSL) tasks falls into the over-fitting dilemma, which would turn to an effective task-level inductive bias as a key supervision. By treating the few-shot task as an entirety, extracting task-level pattern, and learning a task-agnostic model initialization, the model-agnostic meta-learning (MAML) framework enables the applications of various models on the FSL tasks. Given a training set with a few examples, MAML optimizes a model via fixed gradient descent steps from an initial point chosen beforehand. Although this general framework possesses empirically satisfactory results, its initialization neglects the task-specific characteristics and aggravates the computational burden as well. In this manuscript, we propose our AdaptiVely InitiAlized Task OptimizeR (Aviator) approach for few-shot learning, which incorporates task context into the determination of the model initialization. This task-specific initialization facilitates the model optimization process so that it obtains high-quality model solutions efficiently. To this end, we decouple the model and apply a set transformation over the training set to determine the initial top-layer classifier. Re-parameterization of the first-order gradient descent approximation promotes the gradient back-propagation. Experiments on synthetic and benchmark data sets validate that our Aviator approach achieves the state-of-the-art performance, and visualization results demonstrate the task-adaptive features of our proposed Aviator method.},
+  archive      = {J_ML},
+  author       = {Ye, Han-Jia and Sheng, Xiang-Rong and Zhan, De-Chuan},
+  doi          = {10.1007/s10994-019-05838-7},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {643-664},
+  shortjournal = {Mach. Learn.},
+  title        = {Few-shot learning with adaptively initialized task optimizer: A practical meta-learning approach},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Multi-label optimal margin distribution machine.
+<em>ML</em>, <em>109</em>(3), 623–642. (<a
+href="https://doi.org/10.1007/s10994-019-05837-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-label support vector machine (Rank-SVM) is a classic and effective algorithm for multi-label classification. The pivotal idea is to maximize the minimum margin of label pairs, which is extended from SVM. However, recent studies disclosed that maximizing the minimum margin does not necessarily lead to better generalization performance, and instead, it is more crucial to optimize the margin distribution. Inspired by this idea, in this paper, we first introduce margin distribution to multi-label learning and propose multi-label Optimal margin Distribution Machine (mlODM), which optimizes the margin mean and variance of all label pairs efficiently. Extensive experiments in multiple multi-label evaluation metrics illustrate that mlODM outperforms SVM-style multi-label methods. Moreover, empirical study presents the best margin distribution and verifies the fast convergence of our method.},
+  archive      = {J_ML},
+  author       = {Tan, Zhi-Hao and Tan, Peng and Jiang, Yuan and Zhou, Zhi-Hua},
+  doi          = {10.1007/s10994-019-05837-8},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {623-642},
+  shortjournal = {Mach. Learn.},
+  title        = {Multi-label optimal margin distribution machine},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Rank minimization on tensor ring: An efficient approach for
+tensor decomposition and completion. <em>ML</em>, <em>109</em>(3),
+603–622. (<a href="https://doi.org/10.1007/s10994-019-05846-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent studies, tensor ring decomposition (TRD) has become a promising model for tensor completion. However, TRD suffers from the rank selection problem due to the undetermined multilinear rank. For tensor decomposition with missing entries, the sub-optimal rank selection of traditional methods leads to the overfitting/underfitting problem. In this paper, we first explore the latent space of the TRD and theoretically prove the relationship between the TR-rank and the rank of the tensor unfoldings. Then, we propose two tensor completion models by imposing the different low-rank regularizations on the TR-factors, by which the TR-rank of the underlying tensor is minimized and the low-rank structures of the underlying tensor are exploited. By employing the alternating direction method of multipliers scheme, our algorithms obtain the TR factors and the underlying tensor simultaneously. In experiments of tensor completion tasks, our algorithms show robustness to rank selection and high computation efficiency, in comparison to traditional low-rank approximation algorithms.},
+  archive      = {J_ML},
+  author       = {Yuan, Longhao and Li, Chao and Cao, Jianting and Zhao, Qibin},
+  doi          = {10.1007/s10994-019-05846-7},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {603-622},
+  shortjournal = {Mach. Learn.},
+  title        = {Rank minimization on tensor ring: An efficient approach for tensor decomposition and completion},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Communication-efficient distributed multi-task learning with
+matrix sparsity regularization. <em>ML</em>, <em>109</em>(3), 569–601.
+(<a href="https://doi.org/10.1007/s10994-019-05847-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work focuses on distributed optimization for multi-task learning with matrix sparsity regularization. We propose a fast communication-efficient distributed optimization method for solving the problem. With the proposed method, training data of different tasks can be geo-distributed over different local machines, and the tasks can be learned jointly through the matrix sparsity regularization without a need to centralize the data. We theoretically prove that our proposed method enjoys a fast convergence rate for different types of loss functions in the distributed environment. To further reduce the communication cost during the distributed optimization procedure, we propose a data screening approach to safely filter inactive features or variables. Finally, we conduct extensive experiments on both synthetic and real-world datasets to demonstrate the effectiveness of our proposed method.},
+  archive      = {J_ML},
+  author       = {Zhou, Qiang and Chen, Yu and Pan, Sinno Jialin},
+  doi          = {10.1007/s10994-019-05847-6},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {569-601},
+  shortjournal = {Mach. Learn.},
+  title        = {Communication-efficient distributed multi-task learning with matrix sparsity regularization},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Handling concept drift via model reuse. <em>ML</em>,
+<em>109</em>(3), 533–568. (<a
+href="https://doi.org/10.1007/s10994-019-05835-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In many real-world applications, data are often collected in the form of a stream, and thus the distribution usually changes in nature, which is referred to as concept drift in the literature. We propose a novel and effective approach to handle concept drift via model reuse, that is, reusing models trained on previous data to tackle the changes. Each model is associated with a weight representing its reusability towards current data, and the weight is adaptively adjusted according to the performance of the model. We provide both generalization and regret analysis to justify the superiority of our approach. Experimental results also validate its efficacy on both synthetic and real-world datasets.},
+  archive      = {J_ML},
+  author       = {Zhao, Peng and Cai, Le-Wen and Zhou, Zhi-Hua},
+  doi          = {10.1007/s10994-019-05835-w},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {533-568},
+  shortjournal = {Mach. Learn.},
+  title        = {Handling concept drift via model reuse},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Principled analytic classifier for positive-unlabeled
+learning via weighted integral probability metric. <em>ML</em>,
+<em>109</em>(3), 513–532. (<a
+href="https://doi.org/10.1007/s10994-019-05836-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of learning a binary classifier from only positive and unlabeled observations (called PU learning). Recent studies in PU learning have shown superior performance theoretically and empirically. However, most existing algorithms may not be suitable for large-scale datasets because they face repeated computations of a large Gram matrix or require massive hyperparameter optimization. In this paper, we propose a computationally efficient and theoretically grounded PU learning algorithm. The proposed PU learning algorithm produces a closed-form classifier when the hypothesis space is a closed ball in reproducing kernel Hilbert space. In addition, we establish upper bounds of the estimation error and the excess risk. The obtained estimation error bound is sharper than existing results and the derived excess risk bound has an explicit form, which vanishes as sample sizes increase. Finally, we conduct extensive numerical experiments using both synthetic and real datasets, demonstrating improved accuracy, scalability, and robustness of the proposed algorithm.},
+  archive      = {J_ML},
+  author       = {Kwon, Yongchan and Kim, Wonyoung and Sugiyama, Masashi and Paik, Myunghee Cho},
+  doi          = {10.1007/s10994-019-05836-9},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {513-532},
+  shortjournal = {Mach. Learn.},
+  title        = {Principled analytic classifier for positive-unlabeled learning via weighted integral probability metric},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Skill-based curiosity for intrinsically motivated
+reinforcement learning. <em>ML</em>, <em>109</em>(3), 493–512. (<a
+href="https://doi.org/10.1007/s10994-019-05845-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning methods rely on rewards provided by the environment that are extrinsic to the agent. However, many real-world scenarios involve sparse or delayed rewards. In such cases, the agent can develop its own intrinsic reward function called curiosity to enable the agent to explore its environment in the quest of new skills. We propose a novel end-to-end curiosity mechanism for deep reinforcement learning methods, that allows an agent to gradually acquire new skills. Our method scales to high-dimensional problems, avoids the need of directly predicting the future, and, can perform in sequential decision scenarios. We formulate the curiosity as the ability of the agent to predict its own knowledge about the task. We base the prediction on the idea of skill learning to incentivize the discovery of new skills, and guide exploration towards promising solutions. To further improve data efficiency and generalization of the agent, we propose to learn a latent representation of the skills. We present a variety of sparse reward tasks in MiniGrid, MuJoCo, and Atari games. We compare the performance of an augmented agent that uses our curiosity reward to state-of-the-art learners. Experimental evaluation exhibits higher performance compared to reinforcement learning models that only learn by maximizing extrinsic rewards.},
+  archive      = {J_ML},
+  author       = {Bougie, Nicolas and Ichise, Ryutaro},
+  doi          = {10.1007/s10994-019-05845-8},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {493-512},
+  shortjournal = {Mach. Learn.},
+  title        = {Skill-based curiosity for intrinsically motivated reinforcement learning},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Gradient descent optimizes over-parameterized deep ReLU
+networks. <em>ML</em>, <em>109</em>(3), 467–492. (<a
+href="https://doi.org/10.1007/s10994-019-05839-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of training deep fully connected neural networks with Rectified Linear Unit (ReLU) activation function and cross entropy loss function for binary classification using gradient descent. We show that with proper random weight initialization, gradient descent can find the global minima of the training loss for an over-parameterized deep ReLU network, under certain assumption on the training data. The key idea of our proof is that Gaussian random initialization followed by gradient descent produces a sequence of iterates that stay inside a small perturbation region centered at the initial weights, in which the training loss function of the deep ReLU networks enjoys nice local curvature properties that ensure the global convergence of gradient descent. At the core of our proof technique is (1) a milder assumption on the training data; (2) a sharp analysis of the trajectory length for gradient descent; and (3) a finer characterization of the size of the perturbation region. Compared with the concurrent work (Allen-Zhu et al. in A convergence theory for deep learning via over-parameterization, 2018a; Du et al. in Gradient descent finds global minima of deep neural networks, 2018a) along this line, our result relies on milder over-parameterization condition on the neural network width, and enjoys faster global convergence rate of gradient descent for training deep neural networks.},
+  archive      = {J_ML},
+  author       = {Zou, Difan and Cao, Yuan and Zhou, Dongruo and Gu, Quanquan},
+  doi          = {10.1007/s10994-019-05839-6},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {467-492},
+  shortjournal = {Mach. Learn.},
+  title        = {Gradient descent optimizes over-parameterized deep ReLU networks},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Joint consensus and diversity for multi-view semi-supervised
+classification. <em>ML</em>, <em>109</em>(3), 445–465. (<a
+href="https://doi.org/10.1007/s10994-019-05844-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As data can be acquired in an ever-increasing number of ways, multi-view data is becoming more and more available. Considering the high price of labeling data in many machine learning applications, we focus on multi-view semi-supervised classification problem. To address this problem, in this paper, we propose a method called joint consensus and diversity for multi-view semi-supervised classification, which learns a common label matrix for all training samples and view-specific classifiers simultaneously. A novel classification loss named probabilistic square hinge loss is proposed, which avoids the incorrect penalization problem and characterizes the contribution of training samples according to its uncertainty. Power mean is introduced to incorporate the losses of different views, which contains the auto-weighted strategy as a special case and distinguishes the importance of various views. To solve the non-convex minimization problem, we prove that its solution can be obtained from another problem with introduced variables. And an efficient algorithm with proved convergence is developed for optimization. Extensive experimental results on nine datasets demonstrate the effectiveness of the proposed algorithm.},
+  archive      = {J_ML},
+  author       = {Zhuge, Wenzhang and Hou, Chenping and Peng, Shaoliang and Yi, Dongyun},
+  doi          = {10.1007/s10994-019-05844-9},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {445-465},
+  shortjournal = {Mach. Learn.},
+  title        = {Joint consensus and diversity for multi-view semi-supervised classification},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Foreword: Special issue for the journal track of the 11th
+asian conference on machine learning (ACML 2019). <em>ML</em>,
+<em>109</em>(3), 441–443. (<a
+href="https://doi.org/10.1007/s10994-020-05875-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_ML},
+  author       = {Kim, Kee-Eung and Zhu, Jun},
+  doi          = {10.1007/s10994-020-05875-7},
+  journal      = {Machine Learning},
+  number       = {3},
+  pages        = {441-443},
+  shortjournal = {Mach. Learn.},
+  title        = {Foreword: Special issue for the journal track of the 11th asian conference on machine learning (ACML 2019)},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A survey on semi-supervised learning. <em>ML</em>,
+<em>109</em>(2), 373–440. (<a
+href="https://doi.org/10.1007/s10994-019-05855-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semi-supervised learning is the branch of machine learning concerned with using labelled as well as unlabelled data to perform certain learning tasks. Conceptually situated between supervised and unsupervised learning, it permits harnessing the large amounts of unlabelled data available in many use cases in combination with typically smaller sets of labelled data. In recent years, research in this area has followed the general trends observed in machine learning, with much attention directed at neural network-based models and generative learning. The literature on the topic has also expanded in volume and scope, now encompassing a broad spectrum of theory, algorithms and applications. However, no recent surveys exist to collect and organize this knowledge, impeding the ability of researchers and engineers alike to utilize it. Filling this void, we present an up-to-date overview of semi-supervised learning methods, covering earlier work as well as more recent advances. We focus primarily on semi-supervised classification, where the large majority of semi-supervised learning research takes place. Our survey aims to provide researchers and practitioners new to the field as well as more advanced readers with a solid understanding of the main approaches and algorithms developed over the past two decades, with an emphasis on the most prominent and currently relevant work. Furthermore, we propose a new taxonomy of semi-supervised classification algorithms, which sheds light on the different conceptual and methodological approaches for incorporating unlabelled data into the training process. Lastly, we show how the fundamental assumptions underlying most semi-supervised learning algorithms are closely connected to each other, and how they relate to the well-known semi-supervised clustering assumption.},
+  archive      = {J_ML},
+  author       = {van Engelen, Jesper E. and Hoos, Holger H.},
+  doi          = {10.1007/s10994-019-05855-6},
+  journal      = {Machine Learning},
+  number       = {2},
+  pages        = {373-440},
+  shortjournal = {Mach. Learn.},
+  title        = {A survey on semi-supervised learning},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A bad arm existence checking problem: How to utilize
+asymmetric problem structure? <em>ML</em>, <em>109</em>(2), 327–372. (<a
+href="https://doi.org/10.1007/s10994-019-05854-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a bad arm existence checking problem in a stochastic K-armed bandit setting, in which a player’s task is to judge whether a positive arm exists or all the arms are negative among given K arms by drawing as small number of arms as possible. Here, an arm is positive if its expected loss suffered by drawing the arm is at least a given threshold $$\theta _U$$, and it is negative if that is less than another given threshold $$\theta _L(\le \theta _U)$$. This problem is a formalization of diagnosis of disease or machine failure. An interesting structure of this problem is the asymmetry of positive and negative arms’ roles; finding one positive arm is enough to judge positive existence while all the arms must be discriminated as negative to judge whole negativity. In the case with $$\varDelta =\theta _U-\theta _L&gt;0$$, we propose elimination algorithms with arm selection policy (policy to determine the next arm to draw) and decision condition (condition to conclude positive arm’s existence or the drawn arm’s negativity) utilizing this asymmetric problem structure and prove its effectiveness theoretically and empirically.},
+  archive      = {J_ML},
+  author       = {Tabata, Koji and Nakamura, Atsuyoshi and Honda, Junya and Komatsuzaki, Tamiki},
+  doi          = {10.1007/s10994-019-05854-7},
+  journal      = {Machine Learning},
+  number       = {2},
+  pages        = {327-372},
+  shortjournal = {Mach. Learn.},
+  title        = {A bad arm existence checking problem: How to utilize asymmetric problem structure?},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Predictive spreadsheet autocompletion with constraints.
+<em>ML</em>, <em>109</em>(2), 307–325. (<a
+href="https://doi.org/10.1007/s10994-019-05841-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spreadsheets are arguably the most accessible data-analysis tool and are used by millions of people. Despite the fact that they lie at the core of most business practices, working with spreadsheets can be error prone, usage of formulas requires training and, crucially, spreadsheet users do not have access to state-of-the-art analysis techniques offered by machine learning. To tackle these issues, we introduce the novel task of predictive spreadsheet autocompletion, where the goal is to automatically predict the missing entries in the spreadsheets. This task is highly non-trivial: cells can hold heterogeneous data types and there might be unobserved relationships between their values, such as constraints or probabilistic dependencies. Critically, the exact prediction task itself is not given. We consider a simplified, yet non-trivial, setting and propose a principled probabilistic model to solve it. Our approach combines black-box predictive models specialized for different predictive tasks (e.g., classification, regression) and constraints and formulas detected by a constraint learner, and produces a maximally likely prediction for all target cells that is consistent with the constraints. Overall, our approach brings us one step closer to allowing end users to leverage machine learning in their workflows without writing a single line of code.},
+  archive      = {J_ML},
+  author       = {Kolb, Samuel and Teso, Stefano and Dries, Anton and De Raedt, Luc},
+  doi          = {10.1007/s10994-019-05841-y},
+  journal      = {Machine Learning},
+  number       = {2},
+  pages        = {307-325},
+  shortjournal = {Mach. Learn.},
+  title        = {Predictive spreadsheet autocompletion with constraints},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On some graph-based two-sample tests for high dimension, low
+sample size data. <em>ML</em>, <em>109</em>(2), 279–306. (<a
+href="https://doi.org/10.1007/s10994-019-05857-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Testing for equality of two high-dimensional distributions is a challenging problem, and this becomes even more challenging when the sample size is small. Over the last few decades, several graph-based two-sample tests have been proposed in the literature, which can be used for data of arbitrary dimensions. Most of these test statistics are computed using pairwise Euclidean distances among the observations. But, due to concentration of pairwise Euclidean distances, these tests have poor performance in many high-dimensional problems. Some of them can have powers even below the nominal level when the scale-difference between two distributions dominates the location-difference. To overcome these limitations, we introduce some new dissimilarity indices and use them to modify some popular graph-based tests. These modified tests use the distance concentration phenomenon to their advantage, and as a result, they outperform the corresponding tests based on the Euclidean distance in a wide variety of examples. We establish the high-dimensional consistency of these modified tests under fairly general conditions. Analyzing several simulated as well as real data sets, we demonstrate their usefulness in high dimension, low sample size situations.},
+  archive      = {J_ML},
+  author       = {Sarkar, Soham and Biswas, Rahul and Ghosh, Anil K.},
+  doi          = {10.1007/s10994-019-05857-4},
+  journal      = {Machine Learning},
+  number       = {2},
+  pages        = {279-306},
+  shortjournal = {Mach. Learn.},
+  title        = {On some graph-based two-sample tests for high dimension, low sample size data},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). An evaluation of machine-learning for predicting phenotype:
+Studies in yeast, rice, and wheat. <em>ML</em>, <em>109</em>(2),
+251–277. (<a href="https://doi.org/10.1007/s10994-019-05848-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In phenotype prediction the physical characteristics of an organism are predicted from knowledge of its genotype and environment. Such studies, often called genome-wide association studies, are of the highest societal importance, as they are of central importance to medicine, crop-breeding, etc. We investigated three phenotype prediction problems: one simple and clean (yeast), and the other two complex and real-world (rice and wheat). We compared standard machine learning methods; elastic net, ridge regression, lasso regression, random forest, gradient boosting machines (GBM), and support vector machines (SVM), with two state-of-the-art classical statistical genetics methods; genomic BLUP and a two-step sequential method based on linear regression. Additionally, using the clean yeast data, we investigated how performance varied with the complexity of the biological mechanism, the amount of observational noise, the number of examples, the amount of missing data, and the use of different data representations. We found that for almost all the phenotypes considered, standard machine learning methods outperformed the methods from classical statistical genetics. On the yeast problem, the most successful method was GBM, followed by lasso regression, and the two statistical genetics methods; with greater mechanistic complexity GBM was best, while in simpler cases lasso was superior. In the wheat and rice studies the best two methods were SVM and BLUP. The most robust method in the presence of noise, missing data, etc. was random forests. The classical statistical genetics method of genomic BLUP was found to perform well on problems where there was population structure. This suggests that standard machine learning methods need to be refined to include population structure information when this is present. We conclude that the application of machine learning methods to phenotype prediction problems holds great promise, but that determining which methods is likely to perform well on any given problem is elusive and non-trivial.},
+  archive      = {J_ML},
+  author       = {Grinberg, Nastasiya F. and Orhobor, Oghenejokpeme I. and King, Ross D.},
+  doi          = {10.1007/s10994-019-05848-5},
+  journal      = {Machine Learning},
+  number       = {2},
+  pages        = {251-277},
+  shortjournal = {Mach. Learn.},
+  title        = {An evaluation of machine-learning for predicting phenotype: Studies in yeast, rice, and wheat},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Online bayesian max-margin subspace learning for multi-view
+classification and regression. <em>ML</em>, <em>109</em>(2), 219–249.
+(<a href="https://doi.org/10.1007/s10994-019-05853-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-view data have become increasingly popular in many real-world applications where data are generated from different information channels or different views such as image + text, audio + video, and webpage + link data. Last decades have witnessed a number of studies devoted to multi-view learning algorithms, especially the predictive latent subspace learning approaches which aim at obtaining a subspace shared by multiple views and then learning models in the shared subspace. However, few efforts have been made to handle online multi-view learning scenarios. In this paper, we propose an online Bayesian multi-view learning algorithm which learns predictive subspace with the max-margin principle. Specifically, we first define the latent margin loss for classification or regression in the subspace, and then cast the learning problem into a variational Bayesian framework by exploiting the pseudo-likelihood and data augmentation idea. With the variational approximate posterior inferred from the past samples, we can naturally combine historical knowledge with new arrival data, in a Bayesian passive-aggressive style. Finally, we extensively evaluate our model on several real-world data sets and the experimental results show that our models can achieve superior performance, compared with a number of state-of-the-art competitors.},
+  archive      = {J_ML},
+  author       = {He, Jia and Du, Changying and Zhuang, Fuzhen and Yin, Xin and He, Qing and Long, Guoping},
+  doi          = {10.1007/s10994-019-05853-8},
+  journal      = {Machine Learning},
+  number       = {2},
+  pages        = {219-249},
+  shortjournal = {Mach. Learn.},
+  title        = {Online bayesian max-margin subspace learning for multi-view classification and regression},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Kappa updated ensemble for drifting data stream mining.
+<em>ML</em>, <em>109</em>(1), 175–218. (<a
+href="https://doi.org/10.1007/s10994-019-05840-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning from data streams in the presence of concept drift is among the biggest challenges of contemporary machine learning. Algorithms designed for such scenarios must take into an account the potentially unbounded size of data, its constantly changing nature, and the requirement for real-time processing. Ensemble approaches for data stream mining have gained significant popularity, due to their high predictive capabilities and effective mechanisms for alleviating concept drift. In this paper, we propose a new ensemble method named Kappa Updated Ensemble (KUE). It is a combination of online and block-based ensemble approaches that uses Kappa statistic for dynamic weighting and selection of base classifiers. In order to achieve a higher diversity among base learners, each of them is trained using a different subset of features and updated with new instances with given probability following a Poisson distribution. Furthermore, we update the ensemble with new classifiers only when they contribute positively to the improvement of the quality of the ensemble. Finally, each base classifier in KUE is capable of abstaining itself for taking a part in voting, thus increasing the overall robustness of KUE. An extensive experimental study shows that KUE is capable of outperforming state-of-the-art ensembles on standard and imbalanced drifting data streams while having a low computational complexity. Moreover, we analyze the use of Kappa versus accuracy to drive the criterion to select and update the classifiers, the contribution of the abstaining mechanism, the contribution of the diversification of classifiers, and the contribution of the hybrid architecture to update the classifiers in an online manner.},
+  archive      = {J_ML},
+  author       = {Cano, Alberto and Krawczyk, Bartosz},
+  doi          = {10.1007/s10994-019-05840-z},
+  journal      = {Machine Learning},
+  number       = {1},
+  pages        = {175-218},
+  shortjournal = {Mach. Learn.},
+  title        = {Kappa updated ensemble for drifting data stream mining},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Sum–product graphical models. <em>ML</em>, <em>109</em>(1),
+135–173. (<a href="https://doi.org/10.1007/s10994-019-05813-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a probabilistic architecture called sum–product graphical model (SPGM). SPGMs represent a class of probability distributions that combines, for the first time, the semantics of probabilistic graphical models (GMs) with the evaluation efficiency of sum–product networks (SPNs): Like SPNs, SPGMs always enable tractable inference using a class of models that incorporate context specific independence. Like GMs, SPGMs provide a high-level model interpretation in terms of conditional independence assumptions and corresponding factorizations. Thus, this approach provides new connections between the fields of SPNs and GMs, and enables a high-level interpretation of the family of distributions encoded by SPNs. We provide two applications of SPGMs in density estimation with empirical results close to or surpassing state-of-the-art models. The theoretical and practical results demonstrate that jointly exploiting properties of SPNs and GMs is an interesting direction of future research.},
+  archive      = {J_ML},
+  author       = {Desana, Mattia and Schnörr, Christoph},
+  doi          = {10.1007/s10994-019-05813-2},
+  journal      = {Machine Learning},
+  number       = {1},
+  pages        = {135-173},
+  shortjournal = {Mach. Learn.},
+  title        = {Sum–product graphical models},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Provable accelerated gradient method for nonconvex low rank
+optimization. <em>ML</em>, <em>109</em>(1), 103–134. (<a
+href="https://doi.org/10.1007/s10994-019-05819-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimization over low rank matrices has broad applications in machine learning. For large-scale problems, an attractive heuristic is to factorize the low rank matrix to a product of two much smaller matrices. In this paper, we study the nonconvex problem $$\min _{\mathbf {U}\in \mathbb {R}^{n\times r}} g(\mathbf {U})=f(\mathbf {U}\mathbf {U}^T)$$ under the assumptions that $$f(\mathbf {X})$$ is restricted $$\mu $$ -strongly convex and L-smooth on the set $${\mathbf {X}:\mathbf {X}\succeq 0,\text{ rank }(\mathbf {X})\le r}$$ . We propose an accelerated gradient method with alternating constraint that operates directly on the $$\mathbf {U}$$ factors and show that the method has local linear convergence rate with the optimal dependence on the condition number of $$\sqrt{L/\mu }$$ . Globally, our method converges to the critical point with zero gradient from any initializer. Our method also applies to the problem with the asymmetric factorization of $$\mathbf {X}={\widetilde{\mathbf {U}}}{\widetilde{\mathbf {V}}}^T$$ and the same convergence result can be obtained. Extensive experimental results verify the advantage of our method.},
+  archive      = {J_ML},
+  author       = {Li, Huan and Lin, Zhouchen},
+  doi          = {10.1007/s10994-019-05819-w},
+  journal      = {Machine Learning},
+  number       = {1},
+  pages        = {103-134},
+  shortjournal = {Mach. Learn.},
+  title        = {Provable accelerated gradient method for nonconvex low rank optimization},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Combining bayesian optimization and lipschitz optimization.
+<em>ML</em>, <em>109</em>(1), 79–102. (<a
+href="https://doi.org/10.1007/s10994-019-05833-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bayesian optimization and Lipschitz optimization have developed alternative techniques for optimizing black-box functions. They each exploit a different form of prior about the function. In this work, we explore strategies to combine these techniques for better global optimization. In particular, we propose ways to use the Lipschitz continuity assumption within traditional BO algorithms, which we call Lipschitz Bayesian optimization (LBO). This approach does not increase the asymptotic runtime and in some cases drastically improves the performance (while in the worst case the performance is similar). Indeed, in a particular setting, we prove that using the Lipschitz information yields the same or a better bound on the regret compared to using Bayesian optimization on its own. Moreover, we propose a simple heuristics to estimate the Lipschitz constant, and prove that a growing estimate of the Lipschitz constant is in some sense “harmless”. Our experiments on 15 datasets with 4 acquisition functions show that in the worst case LBO performs similar to the underlying BO method while in some cases it performs substantially better. Thompson sampling in particular typically saw drastic improvements (as the Lipschitz information corrected for its well-known “over-exploration” pheonemon) and its LBO variant often outperformed other acquisition functions.},
+  archive      = {J_ML},
+  author       = {Ahmed, Mohamed Osama and Vaswani, Sharan and Schmidt, Mark},
+  doi          = {10.1007/s10994-019-05833-y},
+  journal      = {Machine Learning},
+  number       = {1},
+  pages        = {79-102},
+  shortjournal = {Mach. Learn.},
+  title        = {Combining bayesian optimization and lipschitz optimization},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Rankboost <span class="math display">+</span>: An
+improvement to rankboost. <em>ML</em>, <em>109</em>(1), 51–78. (<a
+href="https://doi.org/10.1007/s10994-019-05826-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Rankboost is a well-known algorithm that iteratively creates and aggregates a collection of “weak rankers” to build an effective ranking procedure. Initial work on Rankboost proposed two variants. One variant, that we call Rb-d and which is designed for the scenario where all weak rankers have the binary range $${0,1}$$ , has good theoretical properties, but does not perform well in practice. The other, that we call Rb-c, has good empirical behavior and is the recommended variation for this binary weak ranker scenario but lacks a theoretical grounding. In this paper, we rectify this situation by proposing an improved Rankboost algorithm for the binary weak ranker scenario that we call Rankboost $$+$$ . We prove that this approach is theoretically sound and also show empirically that it outperforms both Rankboost variants in practice. Further, the theory behind Rankboost $$+$$ helps us to explain why Rb-d may not perform well in practice, and why Rb-c is better behaved in the binary weak ranker scenario, as has been observed in prior work.},
+  archive      = {J_ML},
+  author       = {Connamacher, Harold and Pancha, Nikil and Liu, Rui and Ray, Soumya},
+  doi          = {10.1007/s10994-019-05826-x},
+  journal      = {Machine Learning},
+  number       = {1},
+  pages        = {51-78},
+  shortjournal = {Mach. Learn.},
+  title        = {Rankboost $$+$$: An improvement to rankboost},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Analysis of hannan consistent selection for monte carlo tree
+search in simultaneous move games. <em>ML</em>, <em>109</em>(1), 1–50.
+(<a href="https://doi.org/10.1007/s10994-019-05832-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hannan consistency, or no external regret, is a key concept for learning in games. An action selection algorithm is Hannan consistent (HC) if its performance is eventually as good as selecting the best fixed action in hindsight. If both players in a zero-sum normal form game use a Hannan consistent algorithm, their average behavior converges to a Nash equilibrium of the game. A similar result is known about extensive form games, but the played strategies need to be Hannan consistent with respect to the counterfactual values, which are often difficult to obtain. We study zero-sum extensive form games with simultaneous moves, but otherwise perfect information. These games generalize normal form games and they are a special case of extensive form games. We study whether applying HC algorithms in each decision point of these games directly to the observed payoffs leads to convergence to a Nash equilibrium. This learning process corresponds to a class of Monte Carlo Tree Search algorithms, which are popular for playing simultaneous-move games but do not have any known performance guarantees. We show that using HC algorithms directly on the observed payoffs is not sufficient to guarantee the convergence. With an additional averaging over joint actions, the convergence is guaranteed, but empirically slower. We further define an additional property of HC algorithms, which is sufficient to guarantee the convergence without the averaging and we empirically show that commonly used HC algorithms have this property.},
+  archive      = {J_ML},
+  author       = {Kovařík, Vojtěch and Lisý, Viliam},
+  doi          = {10.1007/s10994-019-05832-z},
+  journal      = {Machine Learning},
+  number       = {1},
+  pages        = {1-50},
+  shortjournal = {Mach. Learn.},
+  title        = {Analysis of hannan consistent selection for monte carlo tree search in simultaneous move games},
+  volume       = {109},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JAR_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jar---60">JAR - 60</h2>
+<ul>
+<li><details>
+<summary>
+(2020). System-level non-interference of constant-time cryptography.
+Part II: Verified static analysis and stealth memory. <em>JAR</em>,
+<em>64</em>(8), 1685–1729. (<a
+href="https://doi.org/10.1007/s10817-020-09548-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper constitutes the second part of a paper published in Barthe et al. (J Autom Reason, 2017. https://doi.org/10.1007/s10817-017-9441-5 ). Cache-based attacks are a class of side-channel attacks that are particularly effective in virtualized or cloud-based environments, where they have been used to recover secret keys from cryptographic implementations. One common approach to thwart cache-based attacks is to use constant-time implementations, i.e.  those which do not branch on secrets and do not perform memory accesses that depend on secrets. However, there is no rigorous proof that constant-time implementations are protected against concurrent cache-attacks in virtualization platforms with shared cache. We propose a new information-flow analysis that checks if an x86 application executes in constant-time, and show that constant-time programs do not leak confidential information through the cache to other operating systems executing concurrently on virtualization platforms. Our static analysis targets the pre-assembly language of the CompCert verified compiler. Its soundness proof is based on a connection between CompCert semantics and our idealized model of virtualization, and uses isolation theorems presented in Part I. We then extend our model of virtualization platform and our static analysis to accommodate stealth memory, a countermeasure which provisions a small amount of private cache for programs to carry potentially leaking computations securely. Stealth memory induces a weak form of constant-time, called S-constant-time, which encompasses some widely used cryptographic implementations. Our results provide the first rigorous analysis of stealth memory and S-constant-time, and the first tool support for checking if applications are S-constant-time. We formalize our results using the Coq proof assistant and we demonstrate the effectiveness of our analyses on cryptographic implementations, including PolarSSL AES, DES and RC4, SHA256 and Salsa20.},
+  archive      = {J_JAR},
+  author       = {Barthe, Gilles and Betarte, Gustavo and Campo, Juan Diego and Luna, Carlos and Pichardie, David},
+  doi          = {10.1007/s10817-020-09548-x},
+  journal      = {Journal of Automated Reasoning},
+  number       = {8},
+  pages        = {1685-1729},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {System-level non-interference of constant-time cryptography. part II: Verified static analysis and stealth memory},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Loop-type sequent calculi for temporal logic. <em>JAR</em>,
+<em>64</em>(8), 1663–1684. (<a
+href="https://doi.org/10.1007/s10817-020-09544-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Various types of calculi (Hilbert, Gentzen sequent, resolution calculi, tableaux) for propositional linear temporal logic (PLTL) have been invented. In this paper, a sound and complete loop-type sequent calculus $$\mathbf{G} _\text {L}{} \mathbf{T} $$ for PLTL with the temporal operators “next” and “henceforth always” ( $${\mathbf{PLTL}}^{n,a}$$ ) is considered at first. We prove that all rules of $$\mathbf{G} _\text {L}{} \mathbf{T} $$ are invertible and that the structural rules of weakening and contraction, as well as the rule of cut, are admissible in $$\mathbf{G} _\text {L}{} \mathbf{T} $$ . We describe a decision procedure for $${\mathbf{PLTL}}^{n,a}$$ based on the introduced calculus $$\mathbf{G} _\text {L}{} \mathbf{T} $$ . Afterwards, we introduce a sound and complete sequent calculus $$\mathbf{G} _\text {L}{} \mathbf{T} ^\mathcal {U}$$ for PLTL with the temporal operators “next” and “until”.},
+  archive      = {J_JAR},
+  author       = {Alonderis, R. and Pliuškevičius, R. and Pliuškevičienė, A. and Giedra, H.},
+  doi          = {10.1007/s10817-020-09544-1},
+  journal      = {Journal of Automated Reasoning},
+  number       = {8},
+  pages        = {1663-1684},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Loop-type sequent calculi for temporal logic},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). The 2D dependency pair framework for conditional rewrite
+systems—part II: Advanced processors and implementation techniques.
+<em>JAR</em>, <em>64</em>(8), 1611–1662. (<a
+href="https://doi.org/10.1007/s10817-020-09542-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Proving termination of programs in ‘real-life’ rewriting-based languages like CafeOBJ, Haskell, Maude, etc., is an important subject of research. To advance this goal, faithfully capturing the impact in the termination behavior of the main language features (e.g., conditions in program rules) is essential. In Part I of this work, we have introduced a 2D Dependency Pair Framework for automatically proving termination properties of Conditional Term Rewriting Systems. Our framework relies on the notion of processor as the main practical device to deal with proofs of termination properties of conditional rewrite systems. Processors are used to decompose and simplify the proofs in a divide and conquer approach. With the basic proof framework defined in Part I, here we introduce new processors to further improve the ability of the 2D Dependency Pair Framework to deal with proofs of termination properties of conditional rewrite systems. We also discuss relevant implementation techniques to use such processors in practice.},
+  archive      = {J_JAR},
+  author       = {Lucas, Salvador and Meseguer, José and Gutiérrez, Raúl},
+  doi          = {10.1007/s10817-020-09542-3},
+  journal      = {Journal of Automated Reasoning},
+  number       = {8},
+  pages        = {1611-1662},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {The 2D dependency pair framework for conditional rewrite Systems—Part II: Advanced processors and implementation techniques},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Theorem proving for pointwise metric temporal logic over the
+naturals via translations. <em>JAR</em>, <em>64</em>(8), 1553–1610. (<a
+href="https://doi.org/10.1007/s10817-020-09541-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study translations from metric temporal logic (MTL) over the natural numbers to linear temporal logic (LTL). In particular, we present two approaches for translating from MTL to LTL which preserve the ExpSpace complexity of the satisfiability problem for MTL. In each of these approaches we consider the case where the mapping between states and time points is given by (i) a strict monotonic function and by (ii) a non-strict monotonic function (which allows multiple states to be mapped to the same time point). We use this logic to model examples from robotics, traffic management, and scheduling, discussing the effects of different modelling choices. Our translations allow us to utilise LTL solvers to solve satisfiability and we empirically compare the translations, showing in which cases one performs better than the other. We also define a branching-time version of the logic and provide translations into computation tree logic.},
+  archive      = {J_JAR},
+  author       = {Hustadt, Ullrich and Ozaki, Ana and Dixon, Clare},
+  doi          = {10.1007/s10817-020-09541-4},
+  journal      = {Journal of Automated Reasoning},
+  number       = {8},
+  pages        = {1553-1610},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Theorem proving for pointwise metric temporal logic over the naturals via translations},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A learning-based approach to synthesizing invariants for
+incomplete verification engines. <em>JAR</em>, <em>64</em>(7),
+1523–1552. (<a
+href="https://doi.org/10.1007/s10817-020-09570-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a framework for synthesizing inductive invariants for incomplete verification engines, which soundly reduce logical problems in undecidable theories to decidable theories. Our framework is based on the counterexample guided inductive synthesis principle and allows verification engines to communicate non-provability information to guide invariant synthesis. We show precisely how the verification engine can compute such non-provability information and how to build effective learning algorithms when invariants are expressed as Boolean combinations of a fixed set of predicates. Moreover, we evaluate our framework in two verification settings, one in which verification engines need to handle quantified formulas and one in which verification engines have to reason about heap properties expressed in an expressive but undecidable separation logic. Our experiments show that our invariant synthesis framework based on non-provability information can both effectively synthesize inductive invariants and adequately strengthen contracts across a large suite of programs. This work is an extended version of a conference paper titled “Invariant Synthesis for Incomplete Verification Engines”.},
+  archive      = {J_JAR},
+  author       = {Neider, Daniel and Madhusudan, P. and Saha, Shambwaditya and Garg, Pranav and Park, Daejun},
+  doi          = {10.1007/s10817-020-09570-z},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1523-1552},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A learning-based approach to synthesizing invariants for incomplete verification engines},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Multi-cost bounded tradeoff analysis in MDP. <em>JAR</em>,
+<em>64</em>(7), 1483–1522. (<a
+href="https://doi.org/10.1007/s10817-020-09574-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We provide a memory-efficient algorithm for multi-objective model checking problems on Markov decision processes (MDPs) with multiple cost structures. The key problem at hand is to check whether there exists a scheduler for a given MDP such that all objectives over cost vectors are fulfilled. We cover multi-objective reachability and expected cost objectives, and combinations thereof. We further transfer approaches for computing quantiles over single cost bounds to the multi-cost case and highlight the ensuing challenges. An empirical evaluation shows the scalability of our new approach both in terms of memory consumption and runtime. We discuss the need for more detailed visual presentations of results beyond Pareto curves and present a first visualisation approach that exploits all the available information from the algorithm to support decision makers.},
+  archive      = {J_JAR},
+  author       = {Hartmanns, Arnd and Junges, Sebastian and Katoen, Joost-Pieter and Quatmann, Tim},
+  doi          = {10.1007/s10817-020-09574-9},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1483-1522},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Multi-cost bounded tradeoff analysis in MDP},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Natural projection as partial model checking. <em>JAR</em>,
+<em>64</em>(7), 1445–1481. (<a
+href="https://doi.org/10.1007/s10817-020-09568-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Verifying the correctness of a system as a whole requires establishing that it satisfies a global specification. When it does not, it would be helpful to determine which modules are incorrect. As a consequence, specification decomposition is a relevant problem from both a theoretical and practical point of view. Until now, specification decomposition has been independently addressed by the control theory and verification communities through natural projection and partial model checking, respectively. We prove that natural projection reduces to partial model checking and, when cast in a common setting, the two are equivalent. Apart from their foundational interest, our results build a bridge whereby the control theory community can reuse algorithms and results developed by the verification community. Furthermore, we extend the notions of natural projection and partial model checking from finite-state to symbolic transition systems and we show that the equivalence still holds. Symbolic transition systems are more expressive than traditional finite-state transition systems, as they can model large systems, whose behavior depends on the data handled, and not only on the control flow. Finally, we present an algorithm for the partial model checking of both kinds of systems that can be used as an alternative to natural projection.},
+  archive      = {J_JAR},
+  author       = {Costa, Gabriele and Galletta, Letterio and Degano, Pierpaolo and Basin, David and Bodei, Chiara},
+  doi          = {10.1007/s10817-020-09568-7},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1445-1481},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Natural projection as partial model checking},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Fine-grained complexity of safety verification.
+<em>JAR</em>, <em>64</em>(7), 1419–1444. (<a
+href="https://doi.org/10.1007/s10817-020-09572-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the fine-grained complexity of Leader Contributor Reachability ( $${\textsf {LCR}} $$ ) and Bounded-Stage Reachability ( $${\textsf {BSR}} $$ ), two variants of the safety verification problem for shared memory concurrent programs. For both problems, the memory is a single variable over a finite data domain. Our contributions are new verification algorithms and lower bounds. The latter are based on the Exponential Time Hypothesis ( $${\textsf {ETH}} $$ ), the problem $${\textsf {Set~Cover}} $$ , and cross-compositions. $${\textsf {LCR}} $$ is the question whether a designated leader thread can reach an unsafe state when interacting with a certain number of equal contributor threads. We suggest two parameterizations: (1) By the size of the data domain $${\texttt {D}}$$ and the size of the leader $${\texttt {L}}$$ , and (2) by the size of the contributors $${\texttt {C}}$$ . We present algorithms for both cases. The key techniques are compact witnesses and dynamic programming. The algorithms run in $${\mathcal {O}}^*(({\texttt {L}}\cdot ({\texttt {D}}+1))^{{\texttt {L}}\cdot {\texttt {D}}} \cdot {\texttt {D}}^{{\texttt {D}}})$$ and $${\mathcal {O}}^*(2^{{\texttt {C}}})$$ time, showing that both parameterizations are fixed-parameter tractable. We complement the upper bounds by (matching) lower bounds based on $${\textsf {ETH}} $$ and $${\textsf {Set~Cover}} $$ . Moreover, we prove the absence of polynomial kernels. For $${\textsf {BSR}} $$ , we consider programs involving $${\texttt {t}}$$ different threads. We restrict the analysis to computations where the write permission changes $${\texttt {s}}$$ times between the threads. $${\textsf {BSR}} $$ asks whether a given configuration is reachable via such an $${\texttt {s}}$$ -stage computation. When parameterized by $${\texttt {P}}$$ , the maximum size of a thread, and $${\texttt {t}}$$ , the interesting observation is that the problem has a large number of difficult instances. Formally, we show that there is no polynomial kernel, no compression algorithm that reduces the size of the data domain $${\texttt {D}}$$ or the number of stages $${\texttt {s}}$$ to a polynomial dependence on $${\texttt {P}}$$ and $${\texttt {t}}$$ . This indicates that symbolic methods may be harder to find for this problem.},
+  archive      = {J_JAR},
+  author       = {Chini, Peter and Meyer, Roland and Saivasan, Prakash},
+  doi          = {10.1007/s10817-020-09572-x},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1419-1444},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Fine-grained complexity of safety verification},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). ICE-based refinement type discovery for higher-order
+functional programs. <em>JAR</em>, <em>64</em>(7), 1393–1418. (<a
+href="https://doi.org/10.1007/s10817-020-09571-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a method for automatically finding refinement types of higher-order function programs. Our method is an extension of the Ice framework of Garg et al. for finding invariants. In addition to the usual positive and negative samples in machine learning, their Ice framework uses implication constraints, which consist of pairs (x, y) such that if x satisfies an invariant, so does y. From these constraints, Ice infers inductive invariants effectively. We observe that the implication constraints in the original Ice framework are not suitable for finding invariants of recursive functions with multiple function calls. We thus generalize the implication constraints to those of the form $$({x_1,\dots ,x_k}, y)$$ , which means that if all of $$x_1,\dots ,x_k$$ satisfy an invariant, so does y. We extend their algorithms for inferring likely invariants from samples, verifying the inferred invariants, and generating new samples. We have implemented our method and confirmed its effectiveness through experiments.},
+  archive      = {J_JAR},
+  author       = {Champion, Adrien and Chiba, Tomoya and Kobayashi, Naoki and Sato, Ryosuke},
+  doi          = {10.1007/s10817-020-09571-y},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1393-1418},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {ICE-based refinement type discovery for higher-order functional programs},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Chain reduction for binary and zero-suppressed decision
+diagrams. <em>JAR</em>, <em>64</em>(7), 1361–1391. (<a
+href="https://doi.org/10.1007/s10817-020-09569-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Chain reduction enables reduced ordered binary decision diagrams (BDDs) and zero-suppressed binary decision diagrams (ZDDs) to each take advantage of the other’s ability to symbolically represent Boolean functions in compact form. For any Boolean function, its chain-reduced ZDD (CZDD) representation will be no larger than its ZDD representation, and at most twice the size of its BDD representation. The chain-reduced BDD (CBDD) of a function will be no larger than its BDD representation, and at most three times the size of its CZDD representation. Extensions to the standard algorithms for operating on BDDs and ZDDs enable them to operate on the chain-reduced versions. Experimental evaluations on representative benchmarks for encoding word lists, solving combinatorial problems, and operating on digital circuits indicate that chain reduction can provide significant benefits in terms of both memory and execution time. The experimental results are further validated by a quantitative model of how decision diagrams scale when encoding sets of sequences. This model explains why the combination of a one-hot encoding of the symbols in the sequences, plus a CBDD, CZDD, or ZDD representation of the set, yields the most compact form.},
+  archive      = {J_JAR},
+  author       = {Bryant, Randal E.},
+  doi          = {10.1007/s10817-020-09569-6},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1361-1391},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Chain reduction for binary and zero-suppressed decision diagrams},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Synthesizing precise and useful commutativity conditions.
+<em>JAR</em>, <em>64</em>(7), 1333–1359. (<a
+href="https://doi.org/10.1007/s10817-020-09573-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reasoning about commutativity between data-structure operations is an important problem with many applications. In the sequential setting, commutativity can be used to reason about the correctness of refactoring, compiler transformations, and identify instances of non-determinism. In parallel contexts, commutativity dates back to the database (Weihl in IEEE Trans Comput 37(12):1488–1505, 1988) and compilers (Rinard and Diniz in ACM Trans Program Lang Syst 19(6):942–991, 1997) communities and, more recently, appears in optimistic parallelization (Herlihy and Koskinen in Proceedings of the 13th ACM SIGPLAN symposium on principles and practice of parallel programming, 2008), dynamic concurrency (Tripp et al. in Proceedings of the 33rd ACM SIGPLAN conference on programming language design and implementation, PLDI ’12, New York, NY, USA, ACM, pp 145–156, 2012; Dimitrov et al. in Proceedings of the 35th ACM SIGPLAN conference on programming language design and implementation, 2014), scalable systems (Clements et al. in ACM Trans Comput Syst 32(4):10, 2015) and even smart contracts (Dickerson et al. in Proceedings of the ACM symposium on principles of distributed computing, PODC ’17, New York, NY, USA, ACM, pp 303–312, 2017). There have been research results on automatic generation of commutativity conditions, yet we are unaware of any fully automated technique to generate conditions that are both sound and effective. We have designed such a technique, driven by an algorithm that iteratively refines a conservative approximation of the commutativity (and non-commutativity) condition for a pair of methods into an increasingly precise version. The algorithm terminates if/when the entire state space has been considered, and can be aborted at any time to obtain a partial yet sound commutativity condition. We have generalized our work to left-/right-movers (Lipton in Commun ACM 8(12):717–721, 1975) and proved relative completeness. We describe aspects of our technique that lead to useful commutativity conditions, including how predicates are selected during refinement and heuristics that impact the output shape of the condition. We have implemented our technique in a prototype open-source tool Servois. Our algorithm produces quantifier-free queries that are dispatched to a back-end SMT solver. We evaluate Servois first by synthesizing commutativity conditions for a range of data structures including Set, HashTable, Accumulator, Counter, and Stack. We then show several applications of our work including reasoning about memories and locks, finding vulnerabilities in Ethereum smart contracts, improving transactional memory performance, distributed applications, code refactoring, verification, and synthesis.},
+  archive      = {J_JAR},
+  author       = {Bansal, Kshitij and Koskinen, Eric and Tripp, Omer},
+  doi          = {10.1007/s10817-020-09573-w},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1333-1359},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Synthesizing precise and useful commutativity conditions},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Selected and extended papers from TACAS 2018: preface.
+<em>JAR</em>, <em>64</em>(7), 1331–1332. (<a
+href="https://doi.org/10.1007/s10817-020-09575-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_JAR},
+  author       = {Beyer, Dirk and Huisman, Marieke},
+  doi          = {10.1007/s10817-020-09575-8},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1331-1332},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Selected and extended papers from TACAS 2018: Preface},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Parameterized model checking on the TSO weak memory model.
+<em>JAR</em>, <em>64</em>(7), 1307–1330. (<a
+href="https://doi.org/10.1007/s10817-020-09565-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present an extended version of the model checking modulo theories framework for verifying parameterized systems under the TSO weak memory model. Our extension relies on three main ingredients: (1) an axiomatic theory of the TSO memory model based on relations over (read, write) events, (2) a TSO-specific backward reachability algorithm and (3) an SMT solver for reasoning about TSO formulas. One of the main originality of our work is a partial order reduction technique that exploits specificities of the TSO memory model. We have implemented this framework in a new version of the Cubicle model checker called Cubicle- $$\mathscr {W}$$ . Our experiments show that Cubicle- $$\mathscr {W}$$ is expressive and efficient enough to automatically prove safety of concurrent algorithms, for an arbitrary number of processes, ranging from mutual exclusion to synchronization barriers translated from actual x86-TSO implementations.},
+  archive      = {J_JAR},
+  author       = {Conchon, Sylvain and Declerck, David and Zaïdi, Fatiha},
+  doi          = {10.1007/s10817-020-09565-w},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1307-1330},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Parameterized model checking on the TSO weak memory model},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Proof-producing synthesis of CakeML from monadic HOL
+functions. <em>JAR</em>, <em>64</em>(7), 1287–1306. (<a
+href="https://doi.org/10.1007/s10817-020-09559-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce an automatic method for producing stateful ML programs together with proofs of correctness from monadic functions in HOL. Our mechanism supports references, exceptions, and I/O operations, and can generate functions manipulating local state, which can then be encapsulated for use in a pure context. We apply this approach to several non-trivial examples, including the instruction encoder and register allocator of the otherwise pure CakeML compiler, which now benefits from better runtime performance. This development has been carried out in the HOL4 theorem prover.},
+  archive      = {J_JAR},
+  author       = {Abrahamsson, Oskar and Ho, Son and Kanabar, Hrutvik and Kumar, Ramana and Myreen, Magnus O. and Norrish, Michael and Tan, Yong Kiam},
+  doi          = {10.1007/s10817-020-09559-8},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1287-1306},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Proof-producing synthesis of CakeML from monadic HOL functions},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Probably partially true: Satisfiability for łukasiewicz
+infinitely-valued probabilistic logic and related topics. <em>JAR</em>,
+<em>64</em>(7), 1269–1286. (<a
+href="https://doi.org/10.1007/s10817-020-09558-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study probabilistic-logic reasoning in a context that allows for “partial truths”, focusing on computational and algorithmic properties of non-classical Łukasiewicz Infinitely-valued Probabilistic Logic. In particular, we study the satisfiability of joint probabilistic assignments, which we call ŁIPSAT. Although the search space is initially infinite, we provide linear algebraic methods that guarantee polynomial size witnesses, placing ŁIPSAT complexity in the NP-complete class. An exact satisfiability decision algorithm is presented which employs, as a subroutine, the decision problem for Łukasiewicz Infinitely-valued (non probabilistic) logic, that is also an NP-complete problem. We investigate efficient representation of rational McNaughton functions in Łukasiewicz Infinitely-valued Logic modulo satisfiability.},
+  archive      = {J_JAR},
+  author       = {Finger, Marcelo and Preto, Sandro},
+  doi          = {10.1007/s10817-020-09558-9},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1269-1286},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Probably partially true: Satisfiability for Łukasiewicz infinitely-valued probabilistic logic and related topics},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Simulating strong practical proof systems with extended
+resolution. <em>JAR</em>, <em>64</em>(7), 1247–1267. (<a
+href="https://doi.org/10.1007/s10817-020-09554-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Proof systems for propositional logic provide the basis for decision procedures that determine the satisfiability status of logical formulas. While the well-known proof system of extended resolution—introduced by Tseitin in the sixties—allows for the compact representation of proofs, modern SAT solvers (i.e., tools for deciding propositional logic) are based on different proof systems that capture practical solving techniques in an elegant way. The most popular of these proof systems is likely DRAT, which is considered the de-facto standard in SAT solving. Moreover, just recently, the proof system DPR has been proposed as a generalization of DRAT that allows for short proofs without the need of new variables. Since every extended-resolution proof can be regarded as a DRAT proof and since every DRAT proof is also a DPR proof, it was clear that both DRAT and DPR generalize extended resolution. In this paper, we show that—from the viewpoint of proof complexity—these two systems are no stronger than extended resolution. We do so by showing that (1) extended resolution polynomially simulates DRAT and (2) DRAT polynomially simulates DPR. We implemented our simulations as proof-transformation tools and evaluated them to observe their behavior in practice. Finally, as a side note, we show how Kullmann’s proof system based on blocked clauses (another generalization of extended resolution) is related to the other systems.},
+  archive      = {J_JAR},
+  author       = {Kiesl, Benjamin and Rebola-Pardo, Adrián and Heule, Marijn J. H. and Biere, Armin},
+  doi          = {10.1007/s10817-020-09554-z},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1247-1267},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Simulating strong practical proof systems with extended resolution},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). From QBFs to MALL and back via focussing. <em>JAR</em>,
+<em>64</em>(7), 1221–1245. (<a
+href="https://doi.org/10.1007/s10817-020-09564-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work we investigate how to extract alternating time bounds from ‘focussed’ proof systems. Our main result is the obtention of fragments of $$\mathsf {MALL} {\mathsf {w} }$$ ( $$\mathsf {MALL} $$ with weakening) complete for each level of the polynomial hierarchy. In one direction we encode QBF satisfiability and in the other we encode focussed proof search, and we show that the composition of the two encodings preserves quantifier alternation, yielding the required result. By carefully composing with well-known embeddings of $$\mathsf {MALL} {\mathsf {w} }$$ into $$\mathsf {MALL} $$ , we obtain a similar delineation of $$\mathsf {MALL} $$ formulas, again carving out fragments complete for each level of the polynomial hierarchy. This refines the well-known results that both $$\mathsf {MALL} {\mathsf {w} }$$ and $$\mathsf {MALL} $$ are $$\mathbf {PSPACE}$$ -complete. A key insight is that we have to refine the usual presentation of focussing to account for deterministic computations in proof search, which correspond to invertible rules that do not branch. This is so that we may more faithfully associate phases of focussed proof search to their alternating time complexity. This presentation seems to uncover further dualities, at the level of proof search, than usual presentations, so could be of proof theoretic interest in its own right.},
+  archive      = {J_JAR},
+  author       = {Das, Anupam},
+  doi          = {10.1007/s10817-020-09564-x},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1221-1245},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {From QBFs to MALL and back via focussing},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Constructive decision via redundancy-free proof-search.
+<em>JAR</em>, <em>64</em>(7), 1197–1219. (<a
+href="https://doi.org/10.1007/s10817-020-09555-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We give a constructive account of Kripke–Curry’s method which was used to establish the decidability of implicational relevance logic ( $$\mathbf{R}_{{\rightarrow }}$$ ). To sustain our approach, we mechanize this method in axiom-free Coq, abstracting away from the specific features of $$\mathbf{R}_{{\rightarrow }}$$ to keep only the essential ingredients of the technique. In particular we show how to replace Kripke/Dickson’s lemma by a constructive form of Ramsey’s theorem based on the notion of almost full relation. We also explain how to replace König’s lemma with an inductive form of Brouwer’s Fan theorem. We instantiate our abstract proof to get a constructive decision procedure for $$\mathbf{R}_{{\rightarrow }}$$ and discuss potential applications to other logical decidability problems.},
+  archive      = {J_JAR},
+  author       = {Larchey-Wendling, Dominique},
+  doi          = {10.1007/s10817-020-09555-y},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1197-1219},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Constructive decision via redundancy-free proof-search},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Formalizing bachmair and ganzinger’s ordered resolution
+prover. <em>JAR</em>, <em>64</em>(7), 1169–1195. (<a
+href="https://doi.org/10.1007/s10817-020-09561-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present an Isabelle/HOL formalization of the first half of Bachmair and Ganzinger’s chapter on resolution theorem proving, culminating with a refutationally complete first-order prover based on ordered resolution with literal selection. We developed general infrastructure and methodology that can form the basis of completeness proofs for related calculi, including superposition. Our work clarifies fine points in the chapter, emphasizing the value of formal proofs in the field of automated reasoning.},
+  archive      = {J_JAR},
+  author       = {Schlichtkrull, Anders and Blanchette, Jasmin and Traytel, Dmitriy and Waldmann, Uwe},
+  doi          = {10.1007/s10817-020-09561-0},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1169-1195},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Formalizing bachmair and ganzinger’s ordered resolution prover},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Preface: Special issue of selected extended papers from
+IJCAR 2018. <em>JAR</em>, <em>64</em>(7), 1165–1167. (<a
+href="https://doi.org/10.1007/s10817-020-09556-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_JAR},
+  author       = {Galmiche, Didier and Schulz, Stephan and Sebastiani, Roberto},
+  doi          = {10.1007/s10817-020-09556-x},
+  journal      = {Journal of Automated Reasoning},
+  number       = {7},
+  pages        = {1165-1167},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Preface: Special issue of selected extended papers from IJCAR 2018},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A library for formalization of linear error-correcting
+codes. <em>JAR</em>, <em>64</em>(6), 1123–1164. (<a
+href="https://doi.org/10.1007/s10817-019-09538-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Error-correcting codes add redundancy to transmitted data to ensure reliable communication over noisy channels. Since they form the foundations of digital communication, their correctness is a matter of concern. To enable trustful verification of linear error-correcting codes, we have been carrying out a systematic formalization in the Coq proof-assistant. This formalization includes the material that one can expect of a university class on the topic: the formalization of well-known codes (Hamming, Reed–Solomon, Bose–Chaudhuri–Hocquenghem) and also a glimpse at modern coding theory. We demonstrate the usefulness of our formalization by extracting a verified decoder for low-density parity-check codes based on the sum-product algorithm. To achieve this formalization, we needed to develop a number of libraries on top of Coq’s Mathematical Components. Special care was taken to make them as reusable as possible so as to help implementers and researchers dealing with error-correcting codes in the future.},
+  archive      = {J_JAR},
+  author       = {Affeldt, Reynald and Garrigue, Jacques and Saikawa, Takafumi},
+  doi          = {10.1007/s10817-019-09538-8},
+  journal      = {Journal of Automated Reasoning},
+  number       = {6},
+  pages        = {1123-1164},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A library for formalization of linear error-correcting codes},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Exploring the structure of an algebra text with locales.
+<em>JAR</em>, <em>64</em>(6), 1093–1121. (<a
+href="https://doi.org/10.1007/s10817-019-09537-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Locales, the module system of the theorem prover Isabelle, were designed so that developments in abstract algebra could be represented faithfully and concisely. Whether these goals were met is assessed through a case study. Parts of an algebra textbook, Jacobson’s Basic Algebra, that are challenging structurally were formalised. Key parts of the formalisation are presented in greater detail. An analysis of the work from both qualitative and quantitative perspectives substantiates that the design goals were met. In particular, the size ratio of formal to “pen and paper” text does not increase when going further into the book. The analysis also yields guidance on locales including patterns of use, which are identified and described.},
+  archive      = {J_JAR},
+  author       = {Ballarin, Clemens},
+  doi          = {10.1007/s10817-019-09537-9},
+  journal      = {Journal of Automated Reasoning},
+  number       = {6},
+  pages        = {1093-1121},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Exploring the structure of an algebra text with locales},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Efficient strategies for CEGAR-based model checking.
+<em>JAR</em>, <em>64</em>(6), 1051–1091. (<a
+href="https://doi.org/10.1007/s10817-019-09535-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automated formal verification is often based on the Counterexample-Guided Abstraction Refinement (CEGAR) approach. Many variants of CEGAR have been developed over the years as different problem domains usually require different strategies for efficient verification. This has lead to generic and configurable CEGAR frameworks, which can incorporate various algorithms. In our paper we propose six novel improvements to different aspects of the CEGAR approach, including both abstraction and refinement. We implement our new contributions in the Theta framework allowing us to compare them with state-of-the-art algorithms. We conduct an experiment on a diverse set of models to address research questions related to the effectiveness and efficiency of our new strategies. Results show that our new contributions perform well in general. Moreover, we highlight certain cases where performance could not be increased or where a remarkable improvement is achieved.},
+  archive      = {J_JAR},
+  author       = {Hajdu, Ákos and Micskei, Zoltán},
+  doi          = {10.1007/s10817-019-09535-x},
+  journal      = {Journal of Automated Reasoning},
+  number       = {6},
+  pages        = {1051-1091},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Efficient strategies for CEGAR-based model checking},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). First-order automated reasoning with theories: When
+deduction modulo theory meets practice. <em>JAR</em>, <em>64</em>(6),
+1001–1050. (<a
+href="https://doi.org/10.1007/s10817-019-09533-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We discuss the practical results obtained by the first generation of automated theorem provers based on Deduction modulo theory. In particular, we demonstrate the concrete improvements such a framework can bring to first-order theorem provers with the introduction of a rewrite feature. Deduction modulo theory is an extension of predicate calculus with rewriting both on terms and propositions. It is well suited for proof search in theories because it turns many axioms into rewrite rules. We introduce two automated reasoning systems that have been built to extend other provers with Deduction modulo theory. The first one is Zenon Modulo, a tableau-based tool able to deal with polymorphic first-order logic with equality, while the second one is iProverModulo, a resolution-based system dealing with first-order logic with equality. We also provide some experimental results run on benchmarks that show the beneficial impact of the extension on these two tools and their underlying proof search methods. Finally, we describe the two backends of these systems to the Dedukti universal proof checker, which also relies on Deduction modulo theory, and which allows us to verify the proofs produced by these tools.},
+  archive      = {J_JAR},
+  author       = {Burel, Guillaume and Bury, Guillaume and Cauderlier, Raphaël and Delahaye, David and Halmagrand, Pierre and Hermant, Olivier},
+  doi          = {10.1007/s10817-019-09533-z},
+  journal      = {Journal of Automated Reasoning},
+  number       = {6},
+  pages        = {1001-1050},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {First-order automated reasoning with theories: When deduction modulo theory meets practice},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). The MetaCoq project. <em>JAR</em>, <em>64</em>(5), 947–999.
+(<a href="https://doi.org/10.1007/s10817-019-09540-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The MetaCoq project aims to provide a certified meta-programming environment in Coq. It builds on Template-Coq, a plugin for Coq originally implemented by Malecha (Extensible proof engineering in intensional type theory, Harvard University, http://gmalecha.github.io/publication/2015/02/01/extensible-proof-engineering-in-intensional-type-theory.html , 2014), which provided a reifier for Coq terms and global declarations, as represented in the Coq kernel, as well as a denotation command. Recently, it was used in the CertiCoq certified compiler project (Anand et al., in: CoqPL, Paris, France, http://conf.researchr.org/event/CoqPL-2017/main-certicoq-a-verified-compiler-for-coq , 2017), as its front-end language, to derive parametricity properties (Anand and Morrisett, in: CoqPL’18, Los Angeles, CA, USA, 2018). However, the syntax lacked semantics, be it typing semantics or operational semantics, which should reflect, as formal specifications in Coq, the semantics of Coq ’s type theory itself. The tool was also rather bare bones, providing only rudimentary quoting and unquoting commands. We generalize it to handle the entire polymorphic calculus of cumulative inductive constructions, as implemented by Coq, including the kernel’s declaration structures for definitions and inductives, and implement a monad for general manipulation of Coq ’s logical environment. We demonstrate how this setup allows Coq users to define many kinds of general purpose plugins, whose correctness can be readily proved in the system itself, and that can be run efficiently after extraction. We give a few examples of implemented plugins, including a parametricity translation and a certified extraction to call-by-value $$\lambda $$ -calculus. We also advocate the use of MetaCoq as a foundation for higher-level tools.},
+  archive      = {J_JAR},
+  author       = {Sozeau, Matthieu and Anand, Abhishek and Boulier, Simon and Cohen, Cyril and Forster, Yannick and Kunze, Fabian and Malecha, Gregory and Tabareau, Nicolas and Winterhalter, Théo},
+  doi          = {10.1007/s10817-019-09540-0},
+  journal      = {Journal of Automated Reasoning},
+  number       = {5},
+  pages        = {947-999},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {The MetaCoq project},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Formal reasoning under cached address translation.
+<em>JAR</em>, <em>64</em>(5), 911–945. (<a
+href="https://doi.org/10.1007/s10817-019-09539-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Operating system (OS) kernels achieve isolation between user-level processes using hardware features such as multi-level page tables and translation lookaside buffers (TLBs). The TLB caches address translation, and therefore correctly controlling the TLB is a fundamental security property of OS kernels—yet all large-scale formal OS verification projects we are aware of leave the correct functionality of TLB as an assumption. In this paper, we present a verified sound abstraction of a detailed concrete model of the memory management unit (MMU) of the ARMv7-A architecture. This MMU abstraction revamps our previous address space specific MMU abstraction to include new software-visible TLB features such as caching of globally-mapped and partial translation entries in a two-stage TLB. We use this abstraction as the underlying model to develop a logic for reasoning about low-level programs in the presence of cached address translation. We extract invariants and necessary conditions for correct TLB operation that mirrors the informal reasoning of OS engineers. We systematically show how these invariants adapt to global and partial translation entries. We show that our program logic reduces to a standard logic for user-level reasoning, reduces to side-condition checks for kernel-level reasoning, and can handle typical OS kernel tasks such as context switching.},
+  archive      = {J_JAR},
+  author       = {Syeda, Hira Taqdees and Klein, Gerwin},
+  doi          = {10.1007/s10817-019-09539-7},
+  journal      = {Journal of Automated Reasoning},
+  number       = {5},
+  pages        = {911-945},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Formal reasoning under cached address translation},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Verified analysis of random binary tree structures.
+<em>JAR</em>, <em>64</em>(5), 879–910. (<a
+href="https://doi.org/10.1007/s10817-020-09545-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work is a case study of the formal verification and complexity analysis of some famous probabilistic algorithms and data structures in the proof assistant Isabelle/HOL. In particular, we consider the expected number of comparisons in randomised quicksort, the relationship between randomised quicksort and average-case deterministic quicksort, the expected shape of an unbalanced random Binary Search Tree, the randomised binary search trees described by Martínez and Roura, and the expected shape of a randomised treap. The last three have, to our knowledge, not been analysed using a theorem prover before and the last one is of particular interest because it involves continuous distributions.},
+  archive      = {J_JAR},
+  author       = {Eberl, Manuel and Haslbeck, Max W. and Nipkow, Tobias},
+  doi          = {10.1007/s10817-020-09545-0},
+  journal      = {Journal of Automated Reasoning},
+  number       = {5},
+  pages        = {879-910},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Verified analysis of random binary tree structures},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A relaxation of üresin and dubois’ asynchronous fixed-point
+theory in agda. <em>JAR</em>, <em>64</em>(5), 857–877. (<a
+href="https://doi.org/10.1007/s10817-019-09536-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Üresin and Dubois’ paper “Parallel Asynchronous Algorithms for Discrete Data” shows how a class of synchronous iterative algorithms may be transformed into asynchronous iterative algorithms. They then prove that the correctness of the resulting asynchronous algorithm can be guaranteed by reasoning about the synchronous algorithm alone. These results have been used to prove the correctness of various distributed algorithms, including in the fields of routing, numerical analysis and peer-to-peer protocols. In this paper we demonstrate several ways in which the assumptions that underlie this theory may be relaxed. Amongst others, we (i) expand the set of schedules for which the asynchronous iterative algorithm is known to converge and (ii) weaken the conditions that users must prove to hold to guarantee convergence. Furthermore, we demonstrate that two of the auxiliary results in the original paper are incorrect, and explicitly construct a counter-example. Finally, we also relax the alternative convergence conditions proposed by Gurney based on ultrametrics. Many of these relaxations and errors were uncovered after formalising the work in the proof assistant Agda. This paper describes the Agda code and the library that has resulted from this work. It is hoped that the library will be of use to others wishing to formally verify the correctness of asynchronous iterative algorithms.},
+  archive      = {J_JAR},
+  author       = {Daggitt, Matthew L. and Zmigrod, Ran and Griffin, Timothy G.},
+  doi          = {10.1007/s10817-019-09536-w},
+  journal      = {Journal of Automated Reasoning},
+  number       = {5},
+  pages        = {857-877},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A relaxation of Üresin and dubois’ asynchronous fixed-point theory in agda},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Formalizing the LLL basis reduction algorithm and the LLL
+factorization algorithm in isabelle/HOL. <em>JAR</em>, <em>64</em>(5),
+827–856. (<a href="https://doi.org/10.1007/s10817-020-09552-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The LLL basis reduction algorithm was the first polynomial-time algorithm to compute a reduced basis of a given lattice, and hence also a short vector in the lattice. It approximates an NP-hard problem where the approximation quality solely depends on the dimension of the lattice, but not the lattice itself. The algorithm has applications in number theory, computer algebra and cryptography. In this paper, we provide an implementation of the LLL algorithm. Both its soundness and its polynomial running-time have been verified using Isabelle/HOL. Our implementation is nearly as fast as an implementation in a commercial computer algebra system, and its efficiency can be further increased by connecting it with fast untrusted lattice reduction algorithms and certifying their output. We additionally integrate one application of LLL, namely a verified factorization algorithm for univariate integer polynomials which runs in polynomial time.},
+  archive      = {J_JAR},
+  author       = {Thiemann, René and Bottesch, Ralph and Divasón, Jose and Haslbeck, Max W. and Joosten, Sebastiaan J. C. and Yamada, Akihisa},
+  doi          = {10.1007/s10817-020-09552-1},
+  journal      = {Journal of Automated Reasoning},
+  number       = {5},
+  pages        = {827-856},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Formalizing the LLL basis reduction algorithm and the LLL factorization algorithm in Isabelle/HOL},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Graph theory in coq: Minors, treewidth, and isomorphisms.
+<em>JAR</em>, <em>64</em>(5), 795–825. (<a
+href="https://doi.org/10.1007/s10817-020-09543-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a library for graph theory in Coq/Ssreflect. This library covers various notions on simple graphs, directed graphs, and multigraphs. We use it to formalize several results from the literature: Menger’s theorem, the excluded-minor characterization of treewidth-two graphs, and a correspondence between multigraphs of treewidth at most two and terms of certain algebras.},
+  archive      = {J_JAR},
+  author       = {Doczkal, Christian and Pous, Damien},
+  doi          = {10.1007/s10817-020-09543-2},
+  journal      = {Journal of Automated Reasoning},
+  number       = {5},
+  pages        = {795-825},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Graph theory in coq: Minors, treewidth, and isomorphisms},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Preface: Selected extended papers from interactive theorem
+proving 2018. <em>JAR</em>, <em>64</em>(5), 793–794. (<a
+href="https://doi.org/10.1007/s10817-020-09557-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_JAR},
+  author       = {Avigad, Jeremy and Mahboubi, Assia},
+  doi          = {10.1007/s10817-020-09557-w},
+  journal      = {Journal of Automated Reasoning},
+  number       = {5},
+  pages        = {793-794},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Preface: Selected extended papers from interactive theorem proving 2018},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). An assertional proof of red–black trees using dafny.
+<em>JAR</em>, <em>64</em>(4), 767–791. (<a
+href="https://doi.org/10.1007/s10817-019-09534-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Red–black trees are convenient data structures for inserting, searching, and deleting keys with logarithmic costs. However, keeping them balanced requires careful programming, and sometimes to deal with a high number of cases. In this paper, we present a functional version of a red–black tree variant called left-leaning, due to R. Sedgewick, which reduces the number of cases to be dealt with to a few ones. The code is rather concise, but reasoning about its correctness requires a rather large effort. We provide formal preconditions and postconditions for all the functions, prove their termination, and that the code satisfies its specifications. The proof is assertional, and consists of interspersing enough assertions among the code in order to help the verification tool to discharge the proof obligations. We have used the Dafny verification platform, which provides the programming language, the assertion language, and the verifier. To our knowledge, this is the first assertional proof of this data structure, and also one of the few ones including deletion.},
+  archive      = {J_JAR},
+  author       = {Peña, Ricardo},
+  doi          = {10.1007/s10817-019-09534-y},
+  journal      = {Journal of Automated Reasoning},
+  number       = {4},
+  pages        = {767-791},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {An assertional proof of Red–Black trees using dafny},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Formalizing the cox–ross–rubinstein pricing of european
+derivatives in isabelle/HOL. <em>JAR</em>, <em>64</em>(4), 737–765. (<a
+href="https://doi.org/10.1007/s10817-019-09528-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We formalize in the proof assistant Isabelle essential basic notions and results in financial mathematics. We provide generic formal definitions of concepts such as markets, portfolios, derivative products, arbitrages or fair prices, and we show that, under the usual no-arbitrage condition, the existence of a replicating portfolio for a derivative implies that the latter admits a unique fair price. Then, we provide a formalization of the Cox–Rubinstein model and we show that the market is complete in this model, i.e., that every derivative product admits a replicating portfolio. This entails that in this model, every derivative product admits a unique fair price. In addition, we provide Isabelle functions to compute the fair price of some derivative products.},
+  archive      = {J_JAR},
+  author       = {Echenim, Mnacho and Guiol, Hervé and Peltier, Nicolas},
+  doi          = {10.1007/s10817-019-09528-w},
+  journal      = {Journal of Automated Reasoning},
+  number       = {4},
+  pages        = {737-765},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Formalizing the Cox–Ross–Rubinstein pricing of european derivatives in Isabelle/HOL},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A verified implementation of the berlekamp–zassenhaus
+factorization algorithm. <em>JAR</em>, <em>64</em>(4), 699–735. (<a
+href="https://doi.org/10.1007/s10817-019-09526-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We formally verify the Berlekamp–Zassenhaus algorithm for factoring square-free integer polynomials in Isabelle/HOL. We further adapt an existing formalization of Yun’s square-free factorization algorithm to integer polynomials, and thus provide an efficient and certified factorization algorithm for arbitrary univariate polynomials. The algorithm first performs factorization in the prime field $$\mathrm {GF}(p){}$$ and then performs computations in the ring of integers modulo $$p^k$$, where both p and k are determined at runtime. Since a natural modeling of these structures via dependent types is not possible in Isabelle/HOL, we formalize the whole algorithm using locales and local type definitions. Through experiments we verify that our algorithm factors polynomials of degree up to 500 within seconds.},
+  archive      = {J_JAR},
+  author       = {Divasón, Jose and Joosten, Sebastiaan J. C. and Thiemann, René and Yamada, Akihisa},
+  doi          = {10.1007/s10817-019-09526-y},
+  journal      = {Journal of Automated Reasoning},
+  number       = {4},
+  pages        = {699-735},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A verified implementation of the Berlekamp–Zassenhaus factorization algorithm},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Automated reasoning with power maps. <em>JAR</em>,
+<em>64</em>(4), 689–697. (<a
+href="https://doi.org/10.1007/s10817-019-09524-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we employ automated deduction techniques to prove and generalize some well-known theorems in group theory that involve power maps $$ x^n$$. The difficulty lies in the fact that the term $$x^n$$ cannot be expressed in the syntax of first-order logic when n is an integer variable. Here we employ a new concept of “power-like functions” by extracting relevant equational properties valid for all power functions and implement these equational rules in Prover9, a first-order theorem prover. We recast the original theorems and prove them in this new context of power-like functions. Consequently these first-order proofs remain valid for all n but the length and complexity of the proofs remain constant independent of the value of n. To give an example, it is well-known (Baer in Proc Am Math Soc 4:15–26, 1953, Alperin in Can J Math 21:1238–1244 1969) that every torsion-free group in which the power map $$f(x) = x^n$$ is an endomorphism is abelian. Here we show that every torsion-free group in which a power-like map is an endomorphism is, indeed, abelian. Also, we generalize similar theorems from groups to a class of cancellative semigroups, and once again, Prover9 happily proves all these new generalizations as well.},
+  archive      = {J_JAR},
+  author       = {Moghaddam, G. I. and Padmanabhan, R. and Zhang, Yang},
+  doi          = {10.1007/s10817-019-09524-0},
+  journal      = {Journal of Automated Reasoning},
+  number       = {4},
+  pages        = {689-697},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Automated reasoning with power maps},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Homogeneous length functions on groups: Intertwined computer
+and human proofs. <em>JAR</em>, <em>64</em>(4), 677–688. (<a
+href="https://doi.org/10.1007/s10817-019-09523-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We describe a case of an interplay between human and computer proving which played a role in the discovery of an interesting mathematical result (Fritz et al. in Algebra Number Theory 12:1773–1786, 2018). The unusual feature of the use of computers here was that a computer generated but human readable proof was read, understood, generalized and abstracted by mathematicians to obtain the key lemma in an interesting mathematical result.},
+  archive      = {J_JAR},
+  author       = {Gadgil, Siddhartha},
+  doi          = {10.1007/s10817-019-09523-1},
+  journal      = {Journal of Automated Reasoning},
+  number       = {4},
+  pages        = {677-688},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Homogeneous length functions on groups: Intertwined computer and human proofs},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A formalized general theory of syntax with bindings:
+Extended version. <em>JAR</em>, <em>64</em>(4), 641–675. (<a
+href="https://doi.org/10.1007/s10817-019-09522-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the formalization of a theory of syntax with bindings that has been developed and refined over the last decade to support several large formalization efforts. Terms are defined for an arbitrary number of constructors of varying numbers of inputs, quotiented to alpha-equivalence and sorted according to a binding signature. The theory contains a rich collection of properties of the standard operators on terms, including substitution, swapping and freshness—namely, there are lemmas showing how each of the operators interacts with all the others and with the syntactic constructors. The theory also features induction and recursion principles and support for semantic interpretation, all tailored for smooth interaction with the bindings and the standard operators.},
+  archive      = {J_JAR},
+  author       = {Gheri, Lorenzo and Popescu, Andrei},
+  doi          = {10.1007/s10817-019-09522-2},
+  journal      = {Journal of Automated Reasoning},
+  number       = {4},
+  pages        = {641-675},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A formalized general theory of syntax with bindings: Extended version},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). SPASS-AR: A first-order theorem prover based on
+approximation-refinement into the monadic shallow linear fragment.
+<em>JAR</em>, <em>64</em>(3), 611–640. (<a
+href="https://doi.org/10.1007/s10817-020-09546-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce FO-AR, an approximation-refinement approach for first-order theorem proving based on counterexample-guided abstraction refinement. A given first-order clause set N is transformed into an over-approximation $$N^{\prime }$$ in a decidable first-order fragment. That means if $$N^{\prime }$$ is satisfiable so is N. However, if $$N^{\prime }$$ is unsatisfiable, then the approximation provides a lifting terminology for the found refutation which is step-wise transformed into a proof of unsatisfiability for N. If this fails, the cause is analyzed to refine the original clause set such that the found refutation is ruled out for the future and the procedure repeats. The target fragment of the transformation is the monadic shallow linear fragment with straight dismatching constraints, which we prove to be decidable via ordered resolution with selection. We further discuss practical aspects of SPASS-AR, a first-order theorem prover implementing FO-AR. We focus in particularly on effective algorithms for lifting and refinement.},
+  archive      = {J_JAR},
+  author       = {Teucke, Andreas and Weidenbach, Christoph},
+  doi          = {10.1007/s10817-020-09546-z},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {611-640},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {SPASS-AR: A first-order theorem prover based on approximation-refinement into the monadic shallow linear fragment},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Conflict-driven satisfiability for theory combination:
+Transition system and completeness. <em>JAR</em>, <em>64</em>(3),
+579–609. (<a href="https://doi.org/10.1007/s10817-018-09510-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many applications depend on solving the satisfiability of formulæ involving propositional logic and first-order theories, a problem known as Satisfiability Modulo Theory. This article presents a new method for satisfiability modulo a combination of theories, named CDSAT, for Conflict-Driven SATisfiability. CDSAT also solves Satisfiability Modulo Assignment problems that may include assignments to first-order terms. A conflict-driven procedure assigns values to variables to build a model, and performs inferences on demand in order to solve conflicts between assignments and formulæ. CDSAT extends this paradigm to generic combinations of disjoint theories, each characterized by a collection of inference rules called theory module. CDSAT coordinates the theory modules in such a way that the conflict-driven reasoning happens in the union of the theories, not only in propositional logic. As there is no fixed hierarchy with propositional logic at the center and the other theories as satellites, CDSAT offers a flexible framework for model search. We prove the soundness, completeness, and termination of CDSAT, identifying sufficient requirements on theories and modules that ensure these properties.},
+  archive      = {J_JAR},
+  author       = {Bonacina, Maria Paola and Graham-Lengrand, Stéphane and Shankar, Natarajan},
+  doi          = {10.1007/s10817-018-09510-y},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {579-609},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Conflict-driven satisfiability for theory combination: Transition system and completeness},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Automatically verifying temporal properties of pointer
+programs with cyclic proof. <em>JAR</em>, <em>64</em>(3), 555–578. (<a
+href="https://doi.org/10.1007/s10817-019-09532-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we investigate the automated verification of temporal properties of heap-aware programs. We propose a deductive reasoning approach based on cyclic proof. Judgements in our proof system assert that a program has a certain temporal property over memory state assertions, written in separation logic with user-defined inductive predicates, while the proof rules of the system unfold temporal modalities and predicate definitions as well as symbolically executing programs. Cyclic proofs in our system are, as usual, finite proof graphs subject to a natural, decidable soundness condition, encoding a form of proof by infinite descent. We present a proof system tailored to proving CTL properties of nondeterministic pointer programs, and then adapt this system to handle fair execution conditions. We show both versions of the system to be sound, and provide an implementation of each in the Cyclist theorem prover, yielding an automated tool that is capable of automatically discovering proofs of (fair) temporal properties of pointer programs. Experimental evaluation of our tool indicates that our approach is viable, and offers an interesting alternative to traditional model checking techniques.},
+  archive      = {J_JAR},
+  author       = {Tellez, Gadi and Brotherston, James},
+  doi          = {10.1007/s10817-019-09532-0},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {555-578},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Automatically verifying temporal properties of pointer programs with cyclic proof},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Strong extension-free proof systems. <em>JAR</em>,
+<em>64</em>(3), 533–554. (<a
+href="https://doi.org/10.1007/s10817-019-09516-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce proof systems for propositional logic that admit short proofs of hard formulas as well as the succinct expression of most techniques used by modern SAT solvers. Our proof systems allow the derivation of clauses that are not necessarily implied, but which are redundant in the sense that their addition preserves satisfiability. To guarantee that these added clauses are redundant, we consider various efficiently decidable redundancy criteria which we obtain by first characterizing clause redundancy in terms of a semantic implication relationship and then restricting this relationship so that it becomes decidable in polynomial time. As the restricted implication relation is based on unit propagation—a core technique of SAT solvers—it allows efficient proof checking too. The resulting proof systems are surprisingly strong, even without the introduction of new variables—a key feature of short proofs presented in the proof-complexity literature. We demonstrate the strength of our proof systems on the famous pigeon hole formulas by providing short clausal proofs without new variables.},
+  archive      = {J_JAR},
+  author       = {Heule, Marijn J. H. and Kiesl, Benjamin and Biere, Armin},
+  doi          = {10.1007/s10817-019-09516-0},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {533-554},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Strong extension-free proof systems},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Efficient verified (UN)SAT certificate checking.
+<em>JAR</em>, <em>64</em>(3), 513–532. (<a
+href="https://doi.org/10.1007/s10817-019-09525-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {SAT solvers decide the satisfiability of Boolean formulas in conjunctive normal form. They are commonly used for software and hardware verification. Modern SAT solvers are highly complex and optimized programs. As a single bug in the solver may invalidate the verification of many systems, SAT solvers output certificates for their answer, which are then checked independently. However, even certificate checking requires highly optimized non-trivial programs. This paper presents the first SAT solver certificate checker that is formally verified down to the integer sequence representing the formula. Our tool supports the full DRAT standard, and is even faster than the unverified state-of-the-art tool drat-trim, on a realistic set of benchmarks drawn from the 2016 and 2017 SAT competitions. An optional multi-threaded mode further reduces the runtime, in particular for big certificates.},
+  archive      = {J_JAR},
+  author       = {Lammich, Peter},
+  doi          = {10.1007/s10817-019-09525-z},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {513-532},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Efficient verified (UN)SAT certificate checking},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Preface: Selected extended papers of CADE 2017.
+<em>JAR</em>, <em>64</em>(3), 511. (<a
+href="https://doi.org/10.1007/s10817-020-09547-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_JAR},
+  author       = {de Moura, Leonardo},
+  doi          = {10.1007/s10817-020-09547-y},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {511},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Preface: Selected extended papers of CADE 2017},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Scalable fine-grained proofs for formula processing.
+<em>JAR</em>, <em>64</em>(3), 485–510. (<a
+href="https://doi.org/10.1007/s10817-018-09502-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a framework for processing formulas in automatic theorem provers, with generation of detailed proofs. The main components are a generic contextual recursion algorithm and an extensible set of inference rules. Clausification, skolemization, theory-specific simplifications, and expansion of ‘let’ expressions are instances of this framework. With suitable data structures, proof generation adds only a linear-time overhead, and proofs can be checked in linear time. We implemented the approach in the SMT solver veriT. This allowed us to dramatically simplify the code base while increasing the number of problems for which detailed proofs can be produced, which is important for independent checking and reconstruction in proof assistants. To validate the framework, we implemented proof reconstruction in Isabelle/HOL.},
+  archive      = {J_JAR},
+  author       = {Barbosa, Haniel and Blanchette, Jasmin Christian and Fleury, Mathias and Fontaine, Pascal},
+  doi          = {10.1007/s10817-018-09502-y},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {485-510},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Scalable fine-grained proofs for formula processing},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A resolution-based theorem prover for <span
+class="math display">K<sub><em>n</em></sub><sup></sup></span>:
+Architecture, refinements, strategies and experiments. <em>JAR</em>,
+<em>64</em>(3), 461–484. (<a
+href="https://doi.org/10.1007/s10817-018-09503-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we describe the implementation of , a resolution-based prover for the basic multimodal logic $${\textsf {K}}_{n}^{}$$. The prover implements a resolution-based calculus for both local and global reasoning. The user can choose different normal forms, refinements of the basic resolution calculus, and strategies. We describe these options in detail and discuss their implications. We provide experiments comparing some of these options and comparing the prover with other provers for this logic.},
+  archive      = {J_JAR},
+  author       = {Nalon, Cláudia and Hustadt, Ullrich and Dixon, Clare},
+  doi          = {10.1007/s10817-018-09503-x},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {461-484},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A resolution-based theorem prover for $${\textsf {K}}_{n}^{}$$: Architecture, refinements, strategies and experiments},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). OptiMathSAT: A tool for optimization modulo theories.
+<em>JAR</em>, <em>64</em>(3), 423–460. (<a
+href="https://doi.org/10.1007/s10817-018-09508-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimization Modulo Theories ($$\text {OMT}$$) is an extension of SMT which allows for finding models that optimize given objectives. OptiMathSAT is an OMT solver which allows for solving a list of optimization problems on SMT formulas with linear objective functions—on the Boolean, the rational and the integer domains, and on their combination thereof—including (partial weighted) MaxSMT . Multiple and heterogeneous objective functions can be combined together and handled either independently, or lexicographically, or in linear or min–max /max–min combinations. OptiMathSAT provides an incremental interface, it supports both an extended version of the SMT-LIBv2 language and a subset of the FlatZinc language, and can be interfaced via an API. In this paper we describe OptiMathSAT and its usage in full detail.},
+  archive      = {J_JAR},
+  author       = {Sebastiani, Roberto and Trentin, Patrick},
+  doi          = {10.1007/s10817-018-09508-6},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {423-460},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {OptiMathSAT: A tool for optimization modulo theories},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Limited second-order functionality in a first-order setting.
+<em>JAR</em>, <em>64</em>(3), 391–422. (<a
+href="https://doi.org/10.1007/s10817-018-09505-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We describe how we have defined in ACL2 a weak version of the Common Lisp functional apply, which takes a function and list of actuals and applies the function to the actuals. Our version, called apply$, does not operate on functions but on ordinary objects—symbols and lists representing lambda expressions—some of which are interpreted as functions. We define a syntactic notion of “tameness” to identify the interpretable objects. This makes our apply$ weaker than a true second-order functional but we believe apply$ is powerful enough for many uses in ACL2. To maintain soundness and the conservativity of our Definitional Principle we require that certain hypotheses, called “warrants”, be present in any theorem relying on the behavior of apply$ on non-primitives. Within these constraints we can define “functionals” such as sum and foldr which map tame “functions” over lists and accumulate the results. This allows the ACL2 user to avoid defining specialized recursive functions for each such application. We can prove and use general-purpose lemmas about these “functionals.” We describe the formalization, explain how we keep the Definitional Principle conservative, show examples of useful functions using apply$ and theorems about them, sketch the proof that there is a model of any extension of the system using the new primitives, discuss issues arising in making these functions executable, and show some preliminary performance results.},
+  archive      = {J_JAR},
+  author       = {Kaufmann, Matt and Moore, J Strother},
+  doi          = {10.1007/s10817-018-09505-9},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {391-422},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Limited second-order functionality in a first-order setting},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A verified implementation of algebraic numbers in
+isabelle/HOL. <em>JAR</em>, <em>64</em>(3), 363–389. (<a
+href="https://doi.org/10.1007/s10817-018-09504-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We formalize algebraic numbers in Isabelle/HOL. Our development serves as a verified implementation of algebraic operations on real and complex numbers. We moreover provide algorithms that can identify all the real or complex roots of rational polynomials, and two implementations to display algebraic numbers, an approximative version and an injective precise one. We obtain verified Haskell code for these operations via Isabelle’s code generator. The development combines various existing formalizations such as matrices, Sturm’s theorem, and polynomial factorization, and it includes new formalizations about bivariate polynomials, unique factorization domains, resultants and subresultants.},
+  archive      = {J_JAR},
+  author       = {Joosten, Sebastiaan J. C. and Thiemann, René and Yamada, Akihisa},
+  doi          = {10.1007/s10817-018-09504-w},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {363-389},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A verified implementation of algebraic numbers in Isabelle/HOL},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Preface to the special issue on automated reasoning systems.
+<em>JAR</em>, <em>64</em>(3), 361–362. (<a
+href="https://doi.org/10.1007/s10817-019-09531-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_JAR},
+  author       = {Biere, Armin and Tinelli, Cesare and Weidenbach, Christoph},
+  doi          = {10.1007/s10817-019-09531-1},
+  journal      = {Journal of Automated Reasoning},
+  number       = {3},
+  pages        = {361-362},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Preface to the special issue on automated reasoning systems},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Evaluating winding numbers and counting complex roots
+through cauchy indices in isabelle/HOL. <em>JAR</em>, <em>64</em>(2),
+331–360. (<a href="https://doi.org/10.1007/s10817-019-09521-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In complex analysis, the winding number measures the number of times a path (counter-clockwise) winds around a point, while the Cauchy index can approximate how the path winds. We formalise this approximation in the Isabelle theorem prover, and provide a tactic to evaluate winding numbers through Cauchy indices. By further combining this approximation with the argument principle, we are able to make use of remainder sequences to effectively count the number of complex roots of a polynomial within some domains, such as a rectangular box and a half-plane.},
+  archive      = {J_JAR},
+  author       = {Li, Wenda and Paulson, Lawrence C.},
+  doi          = {10.1007/s10817-019-09521-3},
+  journal      = {Journal of Automated Reasoning},
+  number       = {2},
+  pages        = {331-360},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Evaluating winding numbers and counting complex roots through cauchy indices in Isabelle/HOL},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Solving quantifier-free first-order constraints over finite
+sets and binary relations. <em>JAR</em>, <em>64</em>(2), 295–330. (<a
+href="https://doi.org/10.1007/s10817-019-09520-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we present a solver for a first-order logic language where sets and binary relations can be freely and naturally combined. The language can express, at least, any full set relation algebra on finite sets. It provides untyped, hereditarily finite sets, whose elements can be variables, and basically all the classic set and relational operators used in formal languages such as B and Z. Sets are first-class entities in the language, thus they are not encoded in lower level theories. Relations are just sets of ordered pairs. The solver exploits set unification and set constraint solving as primitive features. The solver is proved to be a sound semi-decision procedure for the accepted language. A Prolog implementation is presented and an extensive empirical evaluation provides evidence of its usefulness.},
+  archive      = {J_JAR},
+  author       = {Cristiá, Maximiliano and Rossi, Gianfranco},
+  doi          = {10.1007/s10817-019-09520-4},
+  journal      = {Journal of Automated Reasoning},
+  number       = {2},
+  pages        = {295-330},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Solving quantifier-free first-order constraints over finite sets and binary relations},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Combining induction and saturation-based theorem proving.
+<em>JAR</em>, <em>64</em>(2), 253–294. (<a
+href="https://doi.org/10.1007/s10817-019-09519-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A method is devised to integrate reasoning by mathematical induction into saturation-based proof procedures based on resolution or superposition. The obtained calculi are capable of handling formulas in which some of the quantified variables range over inductively defined domains (which, as is well-known, cannot be expressed in first-order logic). The procedure is defined as a set of inference rules that generate inductive invariants incrementally and prove their validity. Although the considered logic itself is incomplete, it is shown that the invariant generation rules are complete, in the sense that if an invariant (of some specific form) is deducible from the considered clauses, then it is eventually generated.},
+  archive      = {J_JAR},
+  author       = {Echenim, M. and Peltier, N.},
+  doi          = {10.1007/s10817-019-09519-x},
+  journal      = {Journal of Automated Reasoning},
+  number       = {2},
+  pages        = {253-294},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Combining induction and saturation-based theorem proving},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Blocking and other enhancements for bottom-up model
+generation methods. <em>JAR</em>, <em>64</em>(2), 197–251. (<a
+href="https://doi.org/10.1007/s10817-019-09515-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model generation is a problem complementary to theorem proving and is important for fault analysis and debugging of formal specifications of security protocols, programs and terminological definitions, for example. This paper discusses several ways of enhancing the paradigm of bottom-up model generation, with the two main contributions being a new range-restriction transformation and generalized blocking techniques. The range-restriction transformation refines existing transformations to range-restricted clauses by carefully limiting the creation of domain terms. The blocking techniques are based on simple transformations of the input set together with standard equality reasoning and redundancy elimination techniques, and allow for finding small, finite models. All possible combinations of the introduced techniques and a classical range-restriction technique were tested on the clausal problems of the TPTP Version 6.0.0 with an implementation based on the SPASS theorem prover using a hyperresolution-like refinement. Unrestricted domain blocking gave best results for satisfiable problems, showing that it is an indispensable technique for bottom-up model generation methods, that yields good results in combination with both new and classical range-restricting transformations. Limiting the creation of terms during the inference process by using the new range-restricting transformation has paid off, especially when using it together with a shifting transformation. The experimental results also show that classical range restriction with unrestricted blocking provides a useful complementary method. Overall, the results show bottom-up model generation methods are good for disproving theorems and generating models for satisfiable problems, but less efficient for unsatisfiable problems.},
+  archive      = {J_JAR},
+  author       = {Baumgartner, Peter and Schmidt, Renate A.},
+  doi          = {10.1007/s10817-019-09515-1},
+  journal      = {Journal of Automated Reasoning},
+  number       = {2},
+  pages        = {197-251},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Blocking and other enhancements for bottom-up model generation methods},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Using well-founded relations for proving operational
+termination. <em>JAR</em>, <em>64</em>(2), 167–195. (<a
+href="https://doi.org/10.1007/s10817-019-09514-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we study operational termination, a proof theoretical notion for capturing the termination behavior of computational systems. We prove that operational termination can be characterized at different levels by means of well-founded relations on specific formulas which can be obtained from the considered system. We show how to obtain such well-founded relations from logical models which can be automatically generated using existing tools.},
+  archive      = {J_JAR},
+  author       = {Lucas, Salvador},
+  doi          = {10.1007/s10817-019-09514-2},
+  journal      = {Journal of Automated Reasoning},
+  number       = {2},
+  pages        = {167-195},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Using well-founded relations for proving operational termination},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A prover dealing with nominals, binders, transitivity and
+relation hierarchies. <em>JAR</em>, <em>64</em>(1), 135–165. (<a
+href="https://doi.org/10.1007/s10817-019-09513-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work describes the Sibyl prover, an implementation of a tableau based proof procedure for multi-modal hybrid logic with the converse, graded and global modalities, and enriched with features largely used in description logics: transitivity and relation hierarchies. The proof procedure is provably terminating when the input problem belongs to an expressive decidable fragment of hybrid logic. After a description of the implemented proof procedure, the way how the implementation deals with the most delicate aspects of the calculus is explained. Some experimental results, run on sets of randomly generated problems as well as some hand-tailored ones, show only a moderate deterioration in the performances of the prover when the number of transitivity and inclusion axioms increase. Sibyl is compared with other provers (HTab, the hybrid logic prover whose expressive power is closer to Sibyl’s one, and the first-order prover SPASS). The obtained results show that Sibyl has reasonable performances.},
+  archive      = {J_JAR},
+  author       = {Cialdea Mayer, Marta},
+  doi          = {10.1007/s10817-019-09513-3},
+  journal      = {Journal of Automated Reasoning},
+  number       = {1},
+  pages        = {135-165},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A prover dealing with nominals, binders, transitivity and relation hierarchies},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Politeness and combination methods for theories with
+bridging functions. <em>JAR</em>, <em>64</em>(1), 97–134. (<a
+href="https://doi.org/10.1007/s10817-019-09512-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Nelson–Oppen combination method is ubiquitous in Satisfiability Modulo Theories solvers. However, one of its major drawbacks is to be restricted to disjoint unions of theories. We investigate the problem of extending this combination method to particular non-disjoint unions of theories defined by connecting disjoint theories via bridging functions. A possible application is to solve verification problems expressed in a combination of data structures connected to arithmetic with bridging functions such as the length of lists and the size of trees. We present a sound and complete combination method à la Nelson–Oppen for the theory of absolutely free data structures, including lists and trees. This combination procedure is then refined for standard interpretations. The resulting theory has a nice politeness property, enabling combinations with arbitrary decidable theories of elements. In addition, we have identified a class of polite data structure theories for which the combination method remains sound and complete. This class includes all the subtheories of absolutely free data structures (e.g, the empty theory, injectivity, projection). Again, the politeness property holds for any theory in this class, which can thus be combined with bridging functions and arbitrary decidable theories of elements. This illustrates the significance of politeness in the context of non-disjoint combinations of theories.},
+  archive      = {J_JAR},
+  author       = {Chocron, Paula and Fontaine, Pascal and Ringeissen, Christophe},
+  doi          = {10.1007/s10817-019-09512-4},
+  journal      = {Journal of Automated Reasoning},
+  number       = {1},
+  pages        = {97-134},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Politeness and combination methods for theories with bridging functions},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Priority inheritance protocol proved correct. <em>JAR</em>,
+<em>64</em>(1), 73–95. (<a
+href="https://doi.org/10.1007/s10817-019-09511-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In real-time systems with threads, resource locking and priority scheduling, one faces the problem of Priority Inversion. This problem can make the behaviour of threads unpredictable and the resulting bugs can be hard to find. The Priority Inheritance Protocol is one solution implemented in many systems for solving this problem, but the correctness of this solution has never been formally verified in a theorem prover. As already pointed out in the literature, the original informal investigation of the Property Inheritance Protocol presents a correctness “proof” for an incorrect algorithm. In this paper we fix the problem of this proof by making all notions precise and implementing a variant of a solution proposed earlier. We also generalise the scheduling problem to the practically relevant case where critical sections can overlap. Our formalisation in Isabelle/HOL is based on Paulson’s inductive approach to protocol verification. The formalisation not only uncovers facts overlooked in the literature, but also helps with an efficient implementation of this protocol. Earlier implementations were criticised as too inefficient. Our implementation builds on top of the small PINTOS operating system used for teaching.},
+  archive      = {J_JAR},
+  author       = {Zhang, Xingyuan and Urban, Christian and Wu, Chunhan},
+  doi          = {10.1007/s10817-019-09511-5},
+  journal      = {Journal of Automated Reasoning},
+  number       = {1},
+  pages        = {73-95},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Priority inheritance protocol proved correct},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Automating free logic in HOL, with an experimental
+application in category theory. <em>JAR</em>, <em>64</em>(1), 53–72. (<a
+href="https://doi.org/10.1007/s10817-018-09507-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A shallow semantical embedding of free logic in classical higher-order logic is presented, which enables the off-the-shelf application of higher-order interactive and automated theorem provers for the formalisation and verification of free logic theories. Subsequently, this approach is applied to a selected domain of mathematics: starting from a generalization of the standard axioms for a monoid we present a stepwise development of various, mutually equivalent foundational axiom systems for category theory. As a side-effect of this work some (minor) issues in a prominent category theory textbook have been revealed. The purpose of this article is not to claim any novel results in category theory, but to demonstrate an elegant way to “implement” and utilize interactive and automated reasoning in free logic, and to present illustrative experiments.},
+  archive      = {J_JAR},
+  author       = {Benzmüller, Christoph and Scott, Dana S.},
+  doi          = {10.1007/s10817-018-09507-7},
+  journal      = {Journal of Automated Reasoning},
+  number       = {1},
+  pages        = {53-72},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {Automating free logic in HOL, with an experimental application in category theory},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). ExpTime tableaux with global caching for hybrid PDL.
+<em>JAR</em>, <em>64</em>(1), 21–52. (<a
+href="https://doi.org/10.1007/s10817-018-09506-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the first direct tableau decision procedure with the ExpTime complexity for HPDL (Hybrid Propositional Dynamic Logic). It checks whether a given ABox (a finite set of assertions) in HPDL is satisfiable. Technically, it combines global caching with checking fulfillment of eventualities and dealing with nominals. Our procedure contains enough details for direct implementation and has been implemented for the TGC2 (Tableaux with Global Caching) system. As HPDL can be used as a description logic for representing and reasoning about terminological knowledge, our procedure is useful for practical applications.},
+  archive      = {J_JAR},
+  author       = {Nguyen, Linh Anh},
+  doi          = {10.1007/s10817-018-09506-8},
+  journal      = {Journal of Automated Reasoning},
+  number       = {1},
+  pages        = {21-52},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {ExpTime tableaux with global caching for hybrid PDL},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A conflict-driven solving procedure for poly-power
+constraints. <em>JAR</em>, <em>64</em>(1), 1–20. (<a
+href="https://doi.org/10.1007/s10817-018-09501-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the satisfiability problem of poly-power constraints (conjunctions of poly-power equations and inequalities), in which poly-powers are univariate nonlinear functions that extend integer exponents of polynomials to real algebraic exponents. To solve the poly-power constraint, we present a sound and complete procedure that incorporates conflict-driven learning with the exclusion algorithm for isolating positive roots of poly-powers. Furthermore, we introduce a kind of optimal interval-splitting, based on the Stern–Brocot tree and on binary rational numbers respectively, so that the operands occurring in the execution are chosen to be as simple as possible. The solving procedure, thereby, turns out to be promisingly efficient on randomly generated examples.},
+  archive      = {J_JAR},
+  author       = {Huang, Cheng-Chao and Xu, Ming and Li, Zhi-Bin},
+  doi          = {10.1007/s10817-018-09501-z},
+  journal      = {Journal of Automated Reasoning},
+  number       = {1},
+  pages        = {1-20},
+  shortjournal = {J. Auto. Reasoning},
+  title        = {A conflict-driven solving procedure for poly-power constraints},
+  volume       = {64},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

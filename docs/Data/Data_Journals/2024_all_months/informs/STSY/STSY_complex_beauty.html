@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>STSY_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="stsy---15">STSY - 15</h2>
+<ul>
+<li><details>
+<summary>
+(2024). Sharp waiting-time bounds for multiserver jobs.
+<em>STSY</em>, <em>14</em>(4), 455–478. (<a
+href="https://doi.org/10.1287/stsy.2023.0006">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multiserver jobs, which are jobs that occupy multiple servers simultaneously during service, are prevalent in today’s computing clusters. But, little is known about the delay performance of systems with multiserver jobs. We consider queueing models for multiserver jobs in scaling regimes where the system load becomes heavy and meanwhile, the total number of servers in the system and the number of servers that a job needs become large. Prior work has derived upper bounds on the queueing probability in this scaling regime. However, without proper lower bounds, the existing results cannot be used to differentiate between policies. In this paper, we study the delay performance by establishing sharp bounds on the steady-state mean waiting time of multiserver jobs, where the waiting time of a job is the time spent in queueing rather than in service. We first characterize the exact order of the mean waiting time under the first come, first serve (FCFS) policy. Then, we prove a lower bound on the mean waiting time of all policies, which has an order gap with the mean waiting time under FCFS. We show that the lower bound is achievable by a priority policy that we call smallest need first (SNF). Funding: This research was supported in part by the National Science Foundation [Grant ECCS-2145713]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/stsy.2023.0006 .},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2023.0006},
+  journal      = {Stochastic Systems},
+  month        = {12},
+  number       = {4},
+  pages        = {455-478},
+  shortjournal = {Stoch. Syst.},
+  title        = {Sharp waiting-time bounds for multiserver jobs},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Asymptotic optimality of switched control policies in a
+simple parallel server system under an extended heavy traffic condition.
+<em>STSY</em>, <em>14</em>(4), 403–454. (<a
+href="https://doi.org/10.1287/stsy.2022.0022">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies a two-class, two-server parallel server system under the recently introduced extended heavy traffic condition, which states that the underlying “static allocation” linear program (LP) is critical, but does not require that it has a unique solution. The main result is the construction of policies that asymptotically achieve previously proved a lower bound, on an expected discounted linear combination of diffusion-scaled queue lengths and are therefore asymptotically optimal (AO). Each extreme point solution to the LP determines a control mode—that is, a set of activities (class-server pairs) that are operational. When there are multiple solutions, these modes can be selected dynamically. It is shown that the number of modes required for AO is either one or two. In the latter case, there is a switching point in the (normalized) workload domain, characterized in terms of a free boundary problem. Our policies are defined by identifying pairs of elementary policies and switching between them at this switching point. They provide the first example in the heavy traffic literature where weak limits under an AO policy are given by a diffusion process where both the drift and diffusion coefficients are discontinuous. Funding: R. Atar is supported by the Israel Science Foundation [Grant 1035/20].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0022},
+  journal      = {Stochastic Systems},
+  month        = {12},
+  number       = {4},
+  pages        = {403-454},
+  shortjournal = {Stoch. Syst.},
+  title        = {Asymptotic optimality of switched control policies in a simple parallel server system under an extended heavy traffic condition},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Gradient-based empirical risk minimization using local
+polynomial regression. <em>STSY</em>, <em>14</em>(4), 363–402. (<a
+href="https://doi.org/10.1287/stsy.2022.0003">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we consider the widely studied problem of empirical risk minimization (ERM) of strongly convex and smooth loss functions using iterative gradient-based methods. A major goal of the existing literature has been to compare different prototypical algorithms, such as batch gradient descent (GD) or stochastic gradient descent (SGD), by analyzing their rates of convergence to ϵ -approximate solutions with respect to the number of gradient computations, which is also known as the oracle complexity. For example, the oracle complexity of GD is O ( n log ( p ϵ − 1 ) ) , where n is the number of training samples and p is the parameter space dimension. When n is large, this can be prohibitively expensive in practice, and SGD is preferred due to its oracle complexity of O ( p ϵ − 1 ) . Such standard analyses only utilize the smoothness of the loss function in the parameter being optimized. In contrast, we demonstrate that when the loss function is smooth in the data, we can learn the oracle at every iteration and beat the oracle complexities of GD, SGD, and their variants in important regimes. Specifically, at every iteration, our proposed algorithm, Local Polynomial Interpolation-based Gradient Descent (LPI-GD), first performs local polynomial regression with a virtual batch of data points to learn the gradient of the loss function and then estimates the true gradient of the ERM objective function. We establish that the oracle complexity of LPI-GD is O ˜ ( ( p ϵ − 1 ) d / ( 2 η ) ) , where d is the data space dimension, and the gradient of the loss function is assumed to belong to an η -Hölder class with respect to the data. Our proof extends the analysis of local polynomial regression in nonparametric statistics to provide supremum norm guarantees for interpolation in multivariate settings and also exploits tools from the inexact GD literature. Unlike the complexities of GD and SGD, the complexity of our method depends on d . However, our algorithm outperforms GD, SGD, and their variants in oracle complexity for a broad range of settings where d is small relative to n . For example, with typical loss functions (such as squared or cross-entropy loss), when p = O ( n β ) for any β &gt; 0 and ϵ = Θ ( n − 1 / 2 ) is at the statistical limit, our method can be made to require O ( n δ ) oracle calls for any δ &gt; 0 , while SGD and GD require O ( n β + ( 1 / 2 ) ) and O ( n log ( n ) ) oracle calls, respectively. Funding: This work was supported in part by the Office of Naval Research [Grant N000142012394], in part by the Army Research Office [Multidisciplinary University Research Initiative Grant W911NF-19-1-0217], and in part by the National Science Foundation [Transdisciplinary Research In Principles Of Data Science, Foundations of Data Science].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0003},
+  journal      = {Stochastic Systems},
+  month        = {12},
+  number       = {4},
+  pages        = {363-402},
+  shortjournal = {Stoch. Syst.},
+  title        = {Gradient-based empirical risk minimization using local polynomial regression},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Distributionally robust observable strategic queues.
+<em>STSY</em>, <em>14</em>(3), 337–361. (<a
+href="https://doi.org/10.1287/stsy.2022.0009">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents an extension of Naor’s analysis on the join-or-balk problem in observable M / M /1 queues. Although all other Markovian assumptions still hold, we explore this problem assuming uncertain arrival rates under the distributionally robust settings. We first study the problem with the classical moment ambiguity set, where the support, mean, and mean-absolute deviation of the underlying distribution are known. Next, we extend the model to the data-driven setting, where decision makers only have access to a finite set of samples. We develop three optimal joining threshold strategies from the perspectives of an individual customer, a social optimizer, and a revenue maximizer such that their respective worst-case expected benefit rates are maximized. Finally, we compare our findings with Naor’s original results and the traditional sample average approximation scheme. Funding: This research was supported by the National Science Foundation [Grants 2342505 and 2343869].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0009},
+  journal      = {Stochastic Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {337-361},
+  shortjournal = {Stoch. Syst.},
+  title        = {Distributionally robust observable strategic queues},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Ergodic control of bipartite matching queues with class
+change and matching failure. <em>STSY</em>, <em>14</em>(3), 296–336. (<a
+href="https://doi.org/10.1287/stsy.2022.0008">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Motivated by transplant applications, we study a bipartite matching queue with multiclass customers and multitype resources. Customers may change their classes or abandon the system while waiting in queue, and they may decline the offered resource units which results in matching failure. We are interested in designing efficient instantaneous matching policies that allocate resources upon arrival to waiting customers. Our objective is bicriteria and formulated as a cost functional that linearly combines the long-run average expected reward due to successful matches and the long-run average expected cost from customer waiting and abandonment. We first develop a stability condition on the class change and abandonment rates, which requires at least one customer queue with abandonment and that any queue without abandonment have a class transition path to a queue with abandonment. Under this condition, we construct a simple linear program, referred to as the fluid control problem (FCP), which serves as a lower bound for the original stochastic control problem under any admissible policy. We then propose a randomized matching policy based on the solution of the FCP and show that the proposed policy is asymptotically optimal under both the long-run average and ergodic cost criteria. In addition, we apply our method to study two X matching models with two customer classes and two resource types to provide insights on how the class change and matching failure impact the optimal policies.},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0008},
+  journal      = {Stochastic Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {296-336},
+  shortjournal = {Stoch. Syst.},
+  title        = {Ergodic control of bipartite matching queues with class change and matching failure},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Appointment requests from multiple channels: Characterizing
+optimal set of appointment days to offer with patient preferences.
+<em>STSY</em>, <em>14</em>(3), 273–295. (<a
+href="https://doi.org/10.1287/stsy.2022.0029">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the appointment scheduling for a physician in a healthcare facility. Patients, of two types differentiated by their revenues and day preferences, contact the facility through either a call center to be scheduled immediately or a website to be scheduled the following morning. The facility aims to maximize the long-run average revenue, while ensuring that a certain service level is satisfied for patients generating lower revenue. The facility has two decisions: offering a set of appointment days and choosing the patient type to prioritize while contacting the website patients. Model 1 is a periodic Markov Decision Process (MDP) model without the service-level constraint. We establish certain structural properties of Model 1, while providing sufficient conditions for the existence of a preferred patient type and for the nonoptimality of the commonly used offer-all policy. We also demonstrate the importance of patient preference in determining the preferred type. Model 2 is the constrained MDP model that accommodates the service-level constraint and has an optimal randomized policy with a special structure. This allows developing an efficient method to identify a well-performing policy. We illustrate the performance of this policy through numerical experiments, for systems with and without no-shows. Supplemental Material: The online appendix is available at https://doi.org/10.1287/stsy.2022.0029 .},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0029},
+  journal      = {Stochastic Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {273-295},
+  shortjournal = {Stoch. Syst.},
+  title        = {Appointment requests from multiple channels: Characterizing optimal set of appointment days to offer with patient preferences},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Exploiting data locality to improve performance of
+heterogeneous server clusters. <em>STSY</em>, <em>14</em>(3), 229–272.
+(<a href="https://doi.org/10.1287/stsy.2022.0040">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider load balancing in large-scale heterogeneous server systems in the presence of data locality that imposes constraints on which tasks can be assigned to which servers. The constraints are naturally captured by a bipartite graph between the servers and the dispatchers handling assignments of various arrival flows. When a task arrives, the corresponding dispatcher assigns it to a server with the shortest queue among d ≥ 2 randomly selected servers obeying these constraints. Server processing speeds are heterogeneous, and they depend on the server type. For a broad class of bipartite graphs, we characterize the limit of the appropriately scaled occupancy process, both on the process level and in steady state, as the system size becomes large. Using such a characterization, we show that imposing data locality constraints can significantly improve the performance of heterogeneous systems. This is in stark contrast to either heterogeneous servers in a full flexible system or data locality constraints in systems with homogeneous servers, both of which have been observed to degrade the system performance. Extensive numerical experiments corroborate the theoretical results. Funding: This work was partially supported by the National Science Foundation [CCF. 07/2021–06/2024].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0040},
+  journal      = {Stochastic Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {229-272},
+  shortjournal = {Stoch. Syst.},
+  title        = {Exploiting data locality to improve performance of heterogeneous server clusters},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Large-system insensitivity of zero-waiting load balancing
+algorithms. <em>STSY</em>, <em>14</em>(2), 191–228. (<a
+href="https://doi.org/10.1287/stsy.2022.0023">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the sensitivity (or insensitivity) of a class of load balancing algorithms that achieve asymptotic zero-waiting in the sub-Halfin-Whitt regime, named LB-zero. Most existing results on zero-waiting load balancing algorithms assume the service time distribution is exponential. This paper establishes the large-system insensitivity of LB-zero for jobs whose service time follows a Coxian distribution with a finite number of phases. This result justifies that LB-zero achieves asymptotic zero-waiting for a large class of service time distributions as the Coxian family is dense in the class of positive-valued distributions. To prove this result, this paper develops a new technique, called “iterative state-space peeling” (ISSP). ISSP first identifies an iterative relation between the upper and lower bounds on the queue states and then proves that the system lives near the fixed point of the iterative bounds with a high probability. Based on ISSP, the steady-state distribution of the queue length is further analyzed by applying Stein’s method in the neighborhood of the fixed point. ISSP, like state-space collapse in heavy-traffic analysis, is a general approach that may be used to study other complex stochastic systems.},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0023},
+  journal      = {Stochastic Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {191-228},
+  shortjournal = {Stoch. Syst.},
+  title        = {Large-system insensitivity of zero-waiting load balancing algorithms},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Managing queues with reentrant customers in support of
+hybrid healthcare. <em>STSY</em>, <em>14</em>(2), 167–190. (<a
+href="https://doi.org/10.1287/stsy.2022.0105">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The COVID-19 pandemic has profoundly boosted the use of hybrid healthcare settings, which orchestrate face-to-face services together with virtual ones. The advantages of virtual healthcare services are clear: they are less costly and less disruptive for patients who can receive the service in the comfort of their home and reduce patients’ exposure to illnesses prevalent in healthcare facilities. Nevertheless, there is evidence that patients are likely to require a supplementary in-person service upon completion of their virtual service. Motivated by such settings, we study a multiservice queueing system with face-to-face, virtual, and supplementary service channels. The service operator needs to allocate service capacity among the three classes and decide how to prioritize the patients when a service provider becomes available. The strong dependency between virtual and supplementary visits makes the problem challenging. Based on a fluid relaxation, we develop an index-based policy, the R − c μ / θ rule (or the R rule in short), which, in addition to the holding cost, service time, abandonment rate, and service reward, also carefully balances the return probability and associated penalty. The theoretical results along with numerical experiments demonstrate the effectiveness of the proposed policy and the importance of capacity coordination when managing hybrid service settings. Our work provides insights on the trade-off between convenience and the value of care when offering virtual healthcare services. History: This paper has been accepted for the Service Science / Stochastic Systems Joint Special Issue. Funding: The author was supported in part by an Israel Science Foundation [Grant 277/21] and the Israel National Institute for Health Policy Research [Grant 2021/160/R].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0105},
+  journal      = {Stochastic Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {167-190},
+  shortjournal = {Stoch. Syst.},
+  title        = {Managing queues with reentrant customers in support of hybrid healthcare},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Optimization of inventory and capacity in large-scale
+assembly systems using extreme-value theory. <em>STSY</em>,
+<em>14</em>(2), 131–166. (<a
+href="https://doi.org/10.1287/stsy.2022.0014">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-tech systems are typically produced in two stages: (1) production of components using specialized equipment and staff and (2) system assembly/integration. Component production capacity is subject to fluctuations, causing a high risk of shortages of at least one component, which results in costly delays. Companies hedge this risk by strategic investments in excess production capacity and in buffer inventories of components. To optimize these, it is crucial to characterize the relation between component shortage risk and capacity and inventory investments. We suppose that component production capacity and produce demand are normally distributed over finite time intervals, and we accordingly model the production system as a symmetric fork-join queueing network with N statistically identical queues with a common arrival process and independent service processes. Assuming a symmetric cost structure, we subsequently apply extreme value theory to gain analytic insights into this optimization problem. We derive several new results for this queueing network, notably that the scaled maximum of N steady-state queue lengths converges in distribution to a Gaussian random variable. These results translate into asymptotically optimal methods to dimension the system. Tests on a range of problems reveal that these methods typically work well for systems of moderate size. History: This paper has been accepted for the Service Science / Stochastic Systems Joint Special Issue. Funding: This work is part of the research program Complexity in High-Tech Manufacturing, (partly) financed by the Dutch Research Council (NWO) [Grant 438.16.121]. The research is also supported by the NWO programs MEERVOUD to M. Vlasiou [Grant 632.003.002] and Talent VICI to B. Zwart [Grant 639.033.413].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0014},
+  journal      = {Stochastic Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {131-166},
+  shortjournal = {Stoch. Syst.},
+  title        = {Optimization of inventory and capacity in large-scale assembly systems using extreme-value theory},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Interpretable prediction rules for congestion risk in
+intensive care units. <em>STSY</em>, <em>14</em>(2), 111–130. (<a
+href="https://doi.org/10.1287/stsy.2022.0018">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of predicting congestion risk in intensive care units (ICUs). Congestion is associated with poor service experience, high costs, and poor health outcomes. By predicting future congestion, decision makers can initiate preventive measures, such as rescheduling activities or increasing short-term capacity, to mitigate the effects of congestion. To this end, we consider well-established queueing models of ICUs and define “high-risk states” as system states that are likely to lead to congestion in the near future. We strive to formulate rules for determining whether a given system state is high risk. We design the rules to be interpretable (informally, easy to understand) for their practical appeal to stakeholders. We show that for simple Markovian queueing systems, such as the M / M / ∞ queue with multiple patient classes, our rules take the form of linear and quadratic functions on the state space. For more general queueing systems, we employ methods from queueing theory, simulation, and machine learning (ML) to devise interpretable prediction rules, and we demonstrate their effectiveness through an extensive computational study, which includes a large-scale ICU model validated using data. Our study shows that congestion risk can be effectively and transparently predicted using linear ML models and interpretable features engineered from the queueing model representation of the system. History: This paper has been accepted for the Service Science / Stochastic Systems Joint Special Issue. Supplemental Material: The online appendix is available at https://doi.org/10.1287/stsy.2022.0018 .},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0018},
+  journal      = {Stochastic Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {111-130},
+  shortjournal = {Stoch. Syst.},
+  title        = {Interpretable prediction rules for congestion risk in intensive care units},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Learning-based optimal admission control in a single-server
+queuing system. <em>STSY</em>, <em>14</em>(1), 69–107. (<a
+href="https://doi.org/10.1287/stsy.2022.0042">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a long-term average profit–maximizing admission control problem in an M/M/1 queuing system with unknown service and arrival rates. With a fixed reward collected upon service completion and a cost per unit of time enforced on customers waiting in the queue, a dispatcher decides upon arrivals whether to admit the arriving customer or not based on the full history of observations of the queue length of the system. Naor [Naor P (1969) The regulation of queue size by levying tolls. Econometrica 37(1):15–24] shows that, if all the parameters of the model are known, then it is optimal to use a static threshold policy: admit if the queue length is less than a predetermined threshold and otherwise not. We propose a learning-based dispatching algorithm and characterize its regret with respect to optimal dispatch policies for the full-information model of Naor [Naor P (1969) The regulation of queue size by levying tolls. Econometrica 37(1):15–24]. We show that the algorithm achieves an O (1) regret when all optimal thresholds with full information are nonzero and achieves an O ( ln 1 + ϵ ( N ) ) regret for any specified ϵ &gt; 0 in the case that an optimal threshold with full information is 0 (i.e., an optimal policy is to reject all arrivals), where N is the number of arrivals. Funding: A. Cohen is partially supported by the National Science Foundation [Grant DMS-2006305]. V. Subramanian is supported in part by the NSF [Grants CCF-2008130, ECCS-2038416, CNS-1955777, and CMMI-2240981].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0042},
+  journal      = {Stochastic Systems},
+  month        = {3},
+  number       = {1},
+  pages        = {69-107},
+  shortjournal = {Stoch. Syst.},
+  title        = {Learning-based optimal admission control in a single-server queuing system},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Solution representations for poisson’s equation, martingale
+structure, and the markov chain central limit theorem. <em>STSY</em>,
+<em>14</em>(1), 47–68. (<a
+href="https://doi.org/10.1287/stsy.2022.0001">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The solution of Poisson’s equation plays a key role in constructing the martingale through which sums of Markov correlated random variables can be analyzed. In this paper, we study three different representations for the solution for countable state space irreducible Markov chains, two based on entry time expectations, and the other based on a potential kernel. Our consideration of null recurrent chains allows us to extend our theory to positive recurrent nonexplosive Markov jump processes. We also develop the martingale structure induced by these solutions to Poisson’s equation, under minimal conditions, and establish verifiable Lyapunov conditions to support our theory. Finally, we provide a central limit theorem for Markov dependent sums, under conditions weaker than have previously appeared in the literature.},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0001},
+  journal      = {Stochastic Systems},
+  month        = {3},
+  number       = {1},
+  pages        = {47-68},
+  shortjournal = {Stoch. Syst.},
+  title        = {Solution representations for poisson’s equation, martingale structure, and the markov chain central limit theorem},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Efficient scenario generation for heavy-tailed chance
+constrained optimization. <em>STSY</em>, <em>14</em>(1), 22–46. (<a
+href="https://doi.org/10.1287/stsy.2021.0021">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a generic class of chance-constrained optimization problems with heavy-tailed (i.e., power-law type) risk factors. As the most popular generic method for solving chance constrained optimization, the scenario approach generates sampled optimization problem as a precise approximation with provable reliability, but the computational complexity becomes intractable when the risk tolerance parameter is small. To reduce the complexity, we sample the risk factors from a conditional distribution given that the risk factors are in an analytically tractable event that encompasses all the plausible events of constraints violation. Our approximation is proven to have optimal value within a constant factor to the optimal value of the original chance constraint problem with high probability, uniformly in the risk tolerance parameter. To the best of our knowledge, our result is the first uniform performance guarantee of this type. We additionally demonstrate the efficiency of our algorithm in the context of solvency in portfolio optimization and insurance networks. Funding: The research of B. Zwart is supported by the NWO (Dutch Research Council) [Grant 639.033.413]. The research of J. Blanchet is supported by the Air Force Office of Scientific Research [Award FA9550-20-1-0397], the National Science Foundation [Grants 1820942, 1838576, 1915967, and 2118199], Defense Advanced Research Projects Agency [Award N660011824028], and China Merchants Bank.},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2021.0021},
+  journal      = {Stochastic Systems},
+  month        = {3},
+  number       = {1},
+  pages        = {22-46},
+  shortjournal = {Stoch. Syst.},
+  title        = {Efficient scenario generation for heavy-tailed chance constrained optimization},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Externalities in queues as stochastic processes: The case of
+FCFS m/g/1. <em>STSY</em>, <em>14</em>(1), 1–21. (<a
+href="https://doi.org/10.1287/stsy.2022.0021">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Externalities are the costs that a user of a common resource imposes on others. In the context of an FCFS M/G/1 queue, where a customer with service demand x ≥ 0 arrives when the workload level is v ≥ 0 , the externality E v ( x ) is the total waiting time that could be saved if this customer gave up on their service demand. In this work, we analyze the externalities process E v ( · ) = { E v ( x ) : x ≥ 0 } . It is shown that this process can be represented by an integral of a (shifted in time by v ) compound Poisson process with a positive discrete jump distribution, so that E v ( · ) is convex. Furthermore, we compute the Laplace-Stieltjes transform of the finite-dimensional distributions of E v ( · ) and its mean and auto-covariance functions. We also identify conditions under which a sequence of normalized externalities processes admits a weak convergence on D [ 0 , ∞ ) equipped with the uniform metric to an integral of a (shifted in time by v ) standard Wiener process. Finally, we also consider the extended framework when v is a general nonnegative random variable which is independent from the arrival process and the service demands. Our analysis leads to substantial generalizations of the results presented in the existing literature. Funding: This research was supported by the European Union’s Horizon 2020 research and innovation programme [Marie Skłodowska-Curie Grant Agreement 945045] and the NWO Gravitation project NETWORKS [Grant 024.002.003].},
+  archive      = {J_STSY},
+  doi          = {10.1287/stsy.2022.0021},
+  journal      = {Stochastic Systems},
+  month        = {3},
+  number       = {1},
+  pages        = {1-21},
+  shortjournal = {Stoch. Syst.},
+  title        = {Externalities in queues as stochastic processes: The case of FCFS M/G/1},
+  volume       = {14},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

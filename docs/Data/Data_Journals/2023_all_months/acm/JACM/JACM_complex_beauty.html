@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JACM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jacm---36">JACM - 36</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Fast, algebraic multivariate multipoint evaluation in small
+characteristic and applications. <em>JACM</em>, <em>70</em>(6), 42:1–46.
+(<a href="https://doi.org/10.1145/3625226">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multipoint evaluation is the computational task of evaluating a polynomial given as a list of coefficients at a given set of inputs. Besides being a natural and fundamental question in computer algebra on its own, fast algorithms for this problem are also closely related to fast algorithms for other natural algebraic questions such as polynomial factorization and modular composition. And while nearly linear time algorithms have been known for the univariate instance of multipoint evaluation for close to five decades due to a work of Borodin and Moenck [ 7 ], fast algorithms for the multivariate version have been much harder to come by. In a significant improvement to the state-of-the-art for this problem, Umans [ 25 ] and Kedlaya &amp; Umans [ 16 ] gave nearly linear time algorithms for this problem over field of small characteristic and over all finite fields, respectively, provided that the number of variables n is at most \(d^{o(1)}\) where the degree of the input polynomial in every variable is less than d . They also stated the question of designing fast algorithms for the large variable case (i.e., \(n \notin d^{o(1)}\)) as an open problem. In this work, we show that there is a deterministic algorithm for multivariate multipoint evaluation over a field \(\mathbb {F}_{q}\) of characteristic p , which evaluates an n -variate polynomial of degree less than d in each variable on N inputs in time \(\begin{equation*} \left((N + d^n)^{1 + o(1)}\text{poly}(\log q, d, n, p)\right), \end{equation*}\) provided that p is at most d o (1) , and q is at most (exp (exp (exp (...(exp ( d ))))), where the height of this tower of exponentials is fixed. When the number of variables is large (e.g., n ∉ d o (1) ), this is the first nearly linear time algorithm for this problem over any (large enough) field. Our algorithm is based on elementary algebraic ideas, and this algebraic structure naturally leads to the following two independently interesting applications: — We show that there is an algebraic data structure for univariate polynomial evaluation with nearly linear space complexity and sublinear time complexity over finite fields of small characteristic and quasipolynomially bounded size. This provides a counterexample to a conjecture of Miltersen [ 21 ] who conjectured that over small finite fields, any algebraic data structure for polynomial evaluation using polynomial space must have linear query complexity. — We also show that over finite fields of small characteristic and quasipolynomially bounded size, Vandermonde matrices are not rigid enough to yield size-depth tradeoffs for linear circuits via the current quantitative bounds in Valiant’s program [ 26 ]. More precisely, for every fixed prime p , we show that for every constant ɛ &gt; 0, and large enough n , the rank of any \(n \times n\) Vandermonde matrix V over the field \(\mathbb {F}_{p^a}\) can be reduced to ( n /exp (Ω (poly(ɛ)log 0.53 n ))) by changing at most n Θ (ɛ) entries in every row of V , provided a ≤ poly(log n ). Prior to this work, similar upper bounds on rigidity were known only for special Vandermonde matrices. For instance, the Discrete Fourier Transform matrices and Vandermonde matrices with generators in a geometric progression [ 9 ].},
+  archive      = {J_JACM},
+  author       = {Vishwas Bhargava and Sumanta Ghosh and Mrinal Kumar and Chandra Kanta Mohapatra},
+  doi          = {10.1145/3625226},
+  journal      = {Journal of the ACM},
+  number       = {6},
+  pages        = {42:1–46},
+  shortjournal = {J. ACM},
+  title        = {Fast, algebraic multivariate multipoint evaluation in small characteristic and applications},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Pliability and approximating max-CSPs. <em>JACM</em>,
+<em>70</em>(6), 41:1–43. (<a
+href="https://doi.org/10.1145/3626515">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We identify a sufficient condition, treewidth-pliability , that gives a polynomial-time algorithm for an arbitrarily good approximation of the optimal value in a large class of Max-2-CSPs parameterised by the class of allowed constraint graphs (with arbitrary constraints on an unbounded alphabet). Our result applies more generally to the maximum homomorphism problem between two rational-valued structures. The condition unifies the two main approaches for designing a polynomial-time approximation scheme. One is Baker’s layering technique, which applies to sparse graphs such as planar or excluded-minor graphs. The other is based on Szemerédi’s regularity lemma and applies to dense graphs. We extend the applicability of both techniques to new classes of Max-CSPs. However, we prove that the condition cannot be used to find solutions (as opposed to approximating the optimal value) in general. Treewidth-pliability turns out to be a robust notion that can be defined in several equivalent ways, including characterisations via size, treedepth, or the Hadwiger number. We show connections to the notions of fractional-treewidth-fragility from structural graph theory, hyperfiniteness from the area of property testing, and regularity partitions from the theory of dense graph limits. These may be of independent interest. In particular, we show that a monotone class of graphs is hyperfinite if and only if it is fractionally-treewidth-fragile and has bounded degree.},
+  archive      = {J_JACM},
+  author       = {Miguel Romero and Marcin Wrochna and Stanislav Živný},
+  doi          = {10.1145/3626515},
+  journal      = {Journal of the ACM},
+  number       = {6},
+  pages        = {41:1–43},
+  shortjournal = {J. ACM},
+  title        = {Pliability and approximating max-CSPs},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Iceberg hashing: Optimizing many hash-table criteria at
+once. <em>JACM</em>, <em>70</em>(6), 40:1–51. (<a
+href="https://doi.org/10.1145/3625817">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite being one of the oldest data structures in computer science, hash tables continue to be the focus of a great deal of both theoretical and empirical research. A central reason for this is that many of the fundamental properties that one desires from a hash table are difficult to achieve simultaneously; thus many variants offering different trade-offs have been proposed. This article introduces Iceberg hashing, a hash table that simultaneously offers the strongest known guarantees on a large number of core properties. Iceberg hashing supports constant-time operations while improving on the state of the art for space efficiency, cache efficiency, and low failure probability. Iceberg hashing is also the first hash table to support a load factor of up to 1 - o(1) while being stable, meaning that the position where an element is stored only ever changes when resizes occur. In fact, in the setting where keys are Θ (log n ) bits, the space guarantees that Iceberg hashing offers, namely that it uses at most \(\log \binom{|U|}{n} + O(n \log \ \text{log} n)\) bits to store n items from a universe U , matches a lower bound by Demaine et al. that applies to any stable hash table. Iceberg hashing introduces new general-purpose techniques for some of the most basic aspects of hash-table design. Notably, our indirection-free technique for dynamic resizing, which we call waterfall addressing, and our techniques for achieving stability and very-high probability guarantees, can be applied to any hash table that makes use of the front-yard/backyard paradigm for hash table design.},
+  archive      = {J_JACM},
+  author       = {Michael A. Bender and Alex Conway and Martín Farach-Colton and William Kuszmaul and Guido Tagliavini},
+  doi          = {10.1145/3625817},
+  journal      = {Journal of the ACM},
+  number       = {6},
+  pages        = {40:1–51},
+  shortjournal = {J. ACM},
+  title        = {Iceberg hashing: Optimizing many hash-table criteria at once},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Toward a better understanding of randomized greedy matching.
+<em>JACM</em>, <em>70</em>(6), 39:1–32. (<a
+href="https://doi.org/10.1145/3614318">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There has been a long history of studying randomized greedy matching algorithms since the work by Dyer and Frieze [ 9 ]. We follow this trend and consider the problem formulated in the oblivious setting, in which the vertex set of a graph is known to the algorithm but not the edge set. The algorithm can make queries for the existence of the edge between any pair of vertices but must include the edge into the matching if it exists, i.e., as in the query-commit model by Gamlath et al. [ 12 ]. We revisit the Modified Randomized Greedy (MRG) algorithm by Aronson et al. [ 1 ] that is proved to achieve a (0.5+ε)-approximation. In each step of the algorithm, an unmatched vertex is chosen uniformly at random and matched to a randomly chosen neighbor (if exists). We study a weaker version of the algorithm named Random Decision Order (RDO) that, in each step, randomly picks an unmatched vertex and matches it to an arbitrary neighbor (if exists). We prove that the RDO algorithm provides a 0.639-approximation for bipartite graphs and 0.531-approximation for general graphs. As a corollary, we substantially improve the approximation ratio of MRG . Furthermore, we generalize the RDO algorithm to the edge-weighted case and prove that it achieves a 0.501-approximation ratio. This result solves the open question by Chan et al. [ 4 ] and Gamlath et al. [ 12 ] about the existence of an algorithm that beats greedy in edge-weighted general graphs, where the greedy algorithm probes the edges in descending order of edge-weights. We also present a variant of the algorithm that achieves a (1-1/ e )-approximation for edge-weighted bipartite graphs, which generalizes the (1-1/ e )-approximation ratio of Gamlath et al. [ 12 ] for the stochastic setting to the case when the realizations of edges are arbitrarily correlated, where in the stochastic setting, there is a known probability associated with each pair of vertices that indicates the probability that an edge exists between the two vertices, when the pair is probed.},
+  archive      = {J_JACM},
+  author       = {Zhihao Gavin Tang and Xiaowei Wu and Yuhao Zhang},
+  doi          = {10.1145/3614318},
+  journal      = {Journal of the ACM},
+  number       = {6},
+  pages        = {39:1–32},
+  shortjournal = {J. ACM},
+  title        = {Toward a better understanding of randomized greedy matching},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A new minimax theorem for randomized algorithms.
+<em>JACM</em>, <em>70</em>(6), 38:1–58. (<a
+href="https://doi.org/10.1145/3626514">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The celebrated minimax principle of Yao says that for any Boolean-valued function f with finite domain, there is a distribution μ over the domain of f such that computing f to error ε against inputs from μ is just as hard as computing f to error ε on worst-case inputs. Notably, however, the distribution μ depends on the target error level ε: the hard distribution which is tight for bounded error might be trivial to solve to small bias, and the hard distribution which is tight for a small bias level might be far from tight for bounded error levels. In this work, we introduce a new type of minimax theorem which can provide a hard distribution μ that works for all bias levels at once. We show that this works for randomized query complexity, randomized communication complexity, some randomized circuit models, quantum query and communication complexities, approximate polynomial degree, and approximate logrank. We also prove an improved version of Impagliazzo’s hardcore lemma. Our proofs rely on two innovations over the classical approach of using Von Neumann’s minimax theorem or linear programming duality. First, we use Sion’s minimax theorem to prove a minimax theorem for ratios of bilinear functions representing the cost and score of algorithms. Second, we introduce a new way to analyze low-bias randomized algorithms by viewing them as “forecasting algorithms” evaluated by a certain proper scoring rule. The expected score of the forecasting version of a randomized algorithm appears to be a more fine-grained way of analyzing the bias of the algorithm. We show that such expected scores have many elegant mathematical properties—for example, they can be amplified linearly instead of quadratically. We anticipate forecasting algorithms will find use in future work in which a fine-grained analysis of small-bias algorithms is required.},
+  archive      = {J_JACM},
+  author       = {Shalev Ben-David and Eric Blais},
+  doi          = {10.1145/3626514},
+  journal      = {Journal of the ACM},
+  number       = {6},
+  pages        = {38:1–58},
+  shortjournal = {J. ACM},
+  title        = {A new minimax theorem for randomized algorithms},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Balanced allocations with the choice of noise.
+<em>JACM</em>, <em>70</em>(6), 37:1–84. (<a
+href="https://doi.org/10.1145/3625386">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the allocation of m balls (jobs) into n bins (servers). In the standard Two-Choice process, at each step t =1,2,... ,m we first sample two randomly chosen bins, compare their two loads and then place a ball in the least loaded bin. It is well-known that for any m ⩾ n , this results in a gap (difference between the maximum and average load) of log 2 log n + Θ (1) (with high probability). In this work, we consider Two-Choice in different settings with noisy load comparisons. One key setting involves an adaptive adversary whose power is limited by some threshold \(g \in \mathbb {N}\). In each step, such adversary can determine the result of any load comparison between two bins whose loads differ by at most g , while if the load difference is greater than g , the comparison is correct. For this adversarial setting, we first prove that for any m ⩾ n the gap is \(\mathcal {O}(g+\log n)\) with high probability. Then through a refined analysis we prove that if g ⩽ log n , then for any m ⩾ n the gap is \(\mathcal {O}(\frac{g}{\log g} \cdot \log \log n)\). For constant values of g , this generalizes the heavily loaded analysis of [ 19 , 61 ] for the Two-Choice process, and establishes that asymptotically the same gap bound holds even if load comparisons among “similarly loaded” bins are wrong. Finally, we complement these upper bounds with tight lower bounds, which establish an interesting phase transition on how the parameter g impacts the gap. The analysis also applies to settings with outdated and delayed information. For example, for the setting of [ 18 ] where balls are allocated in consecutive batches of size \(b = n\), we present an improved and tight gap bound of \(\Theta (\frac{\log n}{\log \log n})\). This bound also extends for a range of values of b and applies to a relaxed setting where the reported load of a bin can be any load value from the last b steps.},
+  archive      = {J_JACM},
+  author       = {Dimitrios Los and Thomas Sauerwald},
+  doi          = {10.1145/3625386},
+  journal      = {Journal of the ACM},
+  number       = {6},
+  pages        = {37:1–84},
+  shortjournal = {J. ACM},
+  title        = {Balanced allocations with the choice of noise},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). First price auction is 1-1/e2 efficient. <em>JACM</em>,
+<em>70</em>(5), 36:1–86. (<a
+href="https://doi.org/10.1145/3617902">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We prove that the PoA of First Price Auctions is 1-1/ e 2 ≈ 0.8647, closing the gap between the best known bounds [0.7430, 0.8689].},
+  archive      = {J_JACM},
+  author       = {Yaonan Jin and Pinyan Lu},
+  doi          = {10.1145/3617902},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {36:1–86},
+  shortjournal = {J. ACM},
+  title        = {First price auction is 1-1/e2 efficient},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A domain-theoretic approach to statistical programming
+languages. <em>JACM</em>, <em>70</em>(5), 35:1–63. (<a
+href="https://doi.org/10.1145/3611660">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We give a domain-theoretic semantics to a statistical programming language, using the plain old category of dcpos, in contrast to some more sophisticated recent proposals. Remarkably, our monad of minimal valuations is commutative, which allows for program transformations that permute the order of independent random draws, as one would expect. A similar property is not known for Jones and Plotkin’s monad of continuous valuations. Instead of working with true real numbers, we work with exact real arithmetic, providing a bridge towards possible implementations (implementations by themselves are not addressed here). Rather remarkably, we show that restricting ourselves to minimal valuations does not restrict us much: All measures on the real line can be modeled by minimal valuations on the domain I ℝ ⊥ of exact real arithmetic. We give three operational semantics for our language, and we show that they are all adequate with respect to the denotational semantics. We also explore quite a few examples to demonstrate that our semantics computes exactly as one would expect and to debunk the myth that a semantics based on continuous maps would not be expressive enough to encode measures with non-compact support using only measures with compact support, or to encode measures via non-continuous density functions, for instance. Our examples also include some useful, non-trivial cases of distributions on higher-order objects.},
+  archive      = {J_JACM},
+  author       = {Jean Goubault-Larrecq and Xiaodong Jia and Clément Théron},
+  doi          = {10.1145/3611660},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {35:1–63},
+  shortjournal = {J. ACM},
+  title        = {A domain-theoretic approach to statistical programming languages},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Exponentially faster massively parallel maximal matching.
+<em>JACM</em>, <em>70</em>(5), 34:1–18. (<a
+href="https://doi.org/10.1145/3617360">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The study of approximate matching in the Massively Parallel Computations (MPC) model has recently seen a burst of breakthroughs. Despite this progress, we still have a limited understanding of maximal matching which is one of the central problems of parallel and distributed computing. All known MPC algorithms for maximal matching either take polylogarithmic time which is considered inefficient, or require a strictly super-linear space of n 1+Ω (1) per machine. In this work, we close this gap by providing a novel analysis of an extremely simple algorithm, which is a variant of an algorithm conjectured to work by Czumaj, Lacki, Madry, Mitrovic, Onak, and Sankowski [ 15 ]. The algorithm edge-samples the graph, randomly partitions the vertices, and finds a random greedy maximal matching within each partition. We show that this algorithm drastically reduces the vertex degrees. This, among other results, leads to an O (log log Δ) round algorithm for maximal matching with O(n) space (or even mildly sublinear in n using standard techniques). As an immediate corollary, we get a 2 approximate minimum vertex cover in essentially the same rounds and space, which is the optimal approximation factor under standard assumptions. We also get an improved O (log log Δ) round algorithm for 1 + ε approximate matching. All these results can also be implemented in the congested clique model in the same number of rounds.},
+  archive      = {J_JACM},
+  author       = {Soheil Behnezhad and Mohammadtaghi Hajiaghayi and David G. Harris},
+  doi          = {10.1145/3617360},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {34:1–18},
+  shortjournal = {J. ACM},
+  title        = {Exponentially faster massively parallel maximal matching},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The topological mu-calculus: Completeness and decidability.
+<em>JACM</em>, <em>70</em>(5), 33:1–38. (<a
+href="https://doi.org/10.1145/3623268">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the topological μ-calculus, based on both Cantor derivative and closure modalities, proving completeness, decidability, and finite model property over general topological spaces, as well as over T 0 and T D spaces. We also investigate the relational μ-calculus, providing general completeness results for all natural fragments of the μ-calculus over many different classes of relational frames. Unlike most other such proofs for μ-calculi, ours is model theoretic, making an innovative use of a known method from modal logic (the ‘final’ submodel of the canonical model), which has the twin advantages of great generality and essential simplicity.},
+  archive      = {J_JACM},
+  author       = {Alexandru Baltag and Nick Bezhanishvili and David Fernández-Duque},
+  doi          = {10.1145/3623268},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {33:1–38},
+  shortjournal = {J. ACM},
+  title        = {The topological mu-calculus: Completeness and decidability},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Near-optimal lower bounds on quantifier depth and
+weisfeiler–leman refinement steps. <em>JACM</em>, <em>70</em>(5),
+32:1–32. (<a href="https://doi.org/10.1145/3195257">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We prove near-optimal tradeoffs for quantifier depth (also called quantifier rank) versus number of variables in first-order logic by exhibiting pairs of n -element structures that can be distinguished by a k -variable first-order sentence but where every such sentence requires quantifier depth at least n Ω ( k /log k ) . Our tradeoffs also apply to first-order counting logic and, by the known connection to the k -dimensional Weisfeiler–Leman algorithm, imply near-optimal lower bounds on the number of refinement iterations. A key component in our proof is the hardness condensation technique introduced by Razborov in the context of proof complexity. We apply this method to reduce the domain size of relational structures while maintaining the minimal quantifier depth needed to distinguish them in finite variable logics.},
+  archive      = {J_JACM},
+  author       = {Christoph Berkholz and Jakob Nordström},
+  doi          = {10.1145/3195257},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {32:1–32},
+  shortjournal = {J. ACM},
+  title        = {Near-optimal lower bounds on quantifier depth and Weisfeiler–Leman refinement steps},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Proximity gaps for reed–solomon codes. <em>JACM</em>,
+<em>70</em>(5), 31:1–57. (<a
+href="https://doi.org/10.1145/3614423">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A collection of sets displays a proximity gap with respect to some property if for every set in the collection, either (i) all members are δ-close to the property in relative Hamming distance or (ii) only a tiny fraction of members are δ-close to the property. In particular, no set in the collection has roughly half of its members δ-close to the property and the others δ-far from it. We show that the collection of affine spaces displays a proximity gap with respect to Reed–Solomon (RS) codes, even over small fields, of size polynomial in the dimension of the code, and the gap applies to any δ smaller than the Johnson/Guruswami–Sudan list-decoding bound of the RS code. We also show near-optimal gap results, over fields of (at least) linear size in the RS code dimension, for δ smaller than the unique decoding radius. Concretely, if δ is smaller than half the minimal distance of an RS code V ⊂ 𝔽 q n , then every affine space is either entirely δ-close to the code or, alternatively, at most an ( n/q )-fraction of it is δ-close to the code. Finally, we discuss several applications of our proximity gap results to distributed storage, multi-party cryptographic protocols, and concretely efficient proof systems. We prove the proximity gap results by analyzing the execution of classical algebraic decoding algorithms for Reed–Solomon codes (due to Berlekamp–Welch and Guruswami–Sudan) on a formal element of an affine space. This involves working with Reed–Solomon codes whose base field is an (infinite) rational function field. Our proofs are obtained by developing an extension (to function fields) of a strategy of Arora and Sudan for analyzing low-degree tests.},
+  archive      = {J_JACM},
+  author       = {Eli Ben-Sasson and Dan Carmon and Yuval Ishai and Swastik Kopparty and Shubhangi Saraf},
+  doi          = {10.1145/3614423},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {31:1–57},
+  shortjournal = {J. ACM},
+  title        = {Proximity gaps for Reed–Solomon codes},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Relative error streaming quantiles. <em>JACM</em>,
+<em>70</em>(5), 30:1–48. (<a
+href="https://doi.org/10.1145/3617891">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Estimating ranks, quantiles, and distributions over streaming data is a central task in data analysis and monitoring. Given a stream of n items from a data universe equipped with a total order, the task is to compute a sketch (data structure) of size polylogarithmic in n . Given the sketch and a query item y , one should be able to approximate its rank in the stream, i.e., the number of stream elements smaller than or equal to y . Most works to date focused on additive ε n error approximation, culminating in the KLL sketch that achieved optimal asymptotic behavior. This article investigates multiplicative (1± ε)-error approximations to the rank. Practical motivation for multiplicative error stems from demands to understand the tails of distributions, and hence for sketches to be more accurate near extreme values. The most space-efficient algorithms due to prior work store either O(log (ε 2 n )/ε 2 ) or O (log 3 (ε n )/ε) universe items. We present a randomized sketch storing O (log 1.5 (ε n )/ε) items that can (1± ε)-approximate the rank of each universe item with high constant probability; this space bound is within an \(O(\sqrt {\log (\varepsilon n)})\) factor of optimal. Our algorithm does not require prior knowledge of the stream length and is fully mergeable, rendering it suitable for parallel and distributed computing environments.},
+  archive      = {J_JACM},
+  author       = {Graham Cormode and Zohar Karnin and Edo Liberty and Justin Thaler and Pavel Veselý},
+  doi          = {10.1145/3617891},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {30:1–48},
+  shortjournal = {J. ACM},
+  title        = {Relative error streaming quantiles},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On strongest algebraic program invariants. <em>JACM</em>,
+<em>70</em>(5), 29:1–22. (<a
+href="https://doi.org/10.1145/3614319">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A polynomial program is one in which all assignments are given by polynomial expressions and in which all branching is nondeterministic (as opposed to conditional). Given such a program, an algebraic invariant is one that is defined by polynomial equations over the program variables at each program location. Müller-Olm and Seidl have posed the question of whether one can compute the strongest algebraic invariant of a given polynomial program. In this article, we show that, while strongest algebraic invariants are not computable in general, they can be computed in the special case of affine programs, that is, programs with exclusively linear assignments. For the latter result, our main tool is an algebraic result of independent interest: Given a finite set of rational square matrices of the same dimension, we show how to compute the Zariski closure of the semigroup that they generate.},
+  archive      = {J_JACM},
+  author       = {Ehud Hrushovski and Joël Ouaknine and Amaury Pouly and James Worrell},
+  doi          = {10.1145/3614319},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {29:1–22},
+  shortjournal = {J. ACM},
+  title        = {On strongest algebraic program invariants},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Restorable shortest path tiebreaking for edge-faulty graphs.
+<em>JACM</em>, <em>70</em>(5), 28:1–24. (<a
+href="https://doi.org/10.1145/3603542">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The restoration lemma by Afek et al. [ 3 ] proves that, in an undirected unweighted graph, any replacement shortest path avoiding a failing edge can be expressed as the concatenation of two original shortest paths. However, the lemma is tiebreaking-sensitive : if one selects a particular canonical shortest path for each node pair, it is no longer guaranteed that one can build replacement paths by concatenating two selected shortest paths. They left as an open problem whether a method of shortest path tiebreaking with this desirable property is generally possible. We settle this question affirmatively with the first general construction of restorable tiebreaking schemes . We then show applications to various problems in fault-tolerant network design. These include a faster algorithm for subset replacement paths, more efficient fault-tolerant (exact) distance labeling schemes, fault-tolerant subset distance preservers and + 4 additive spanners with improved sparsity, and fast distributed algorithms that construct these objects. For example, an almost immediate corollary of our restorable tiebreaking scheme is the first nontrivial distributed construction of sparse fault-tolerant distance preservers resilient to three faults.},
+  archive      = {J_JACM},
+  author       = {Greg Bodwin and Merav Parter},
+  doi          = {10.1145/3603542},
+  journal      = {Journal of the ACM},
+  number       = {5},
+  pages        = {28:1–24},
+  shortjournal = {J. ACM},
+  title        = {Restorable shortest path tiebreaking for edge-faulty graphs},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Co-lexicographically ordering automata and regular languages
+- part i. <em>JACM</em>, <em>70</em>(4), 27:1–73. (<a
+href="https://doi.org/10.1145/3607471">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The states of a finite-state automaton 𝒩 can be identified with collections of words in the prefix closure of the regular language accepted by 𝒩. But words can be ordered, and among the many possible orders a very natural one is the co-lexicographic order. Such naturalness stems from the fact that it suggests a transfer of the order from words to the automaton’s states. This suggestion is, in fact, concrete and in a number of articles automata admitting a total co-lexicographic ( co-lex for brevity) ordering of states have been proposed and studied. Such class of ordered automata — Wheeler automata — turned out to require just a constant number of bits per transition to be represented and enable regular expression matching queries in constant time per matched character. Unfortunately, not all automata can be totally ordered as previously outlined. In the present work, we lay out a new theory showing that all automata can always be partially ordered, and an intrinsic measure of their complexity can be defined and effectively determined, namely, the minimum width p of one of their admissible co-lex partial orders –dubbed here the automaton’s co-lex width . We first show that this new measure captures at once the complexity of several seemingly-unrelated hard problems on automata. Any NFA of co-lex width p : (i) has an equivalent powerset DFA whose size is exponential in p rather than (as a classic analysis shows) in the NFA’s size; (ii) can be encoded using just Θ(log p ) bits per transition; (iii) admits a linear-space data structure solving regular expression matching queries in time proportional to p 2 per matched character. Some consequences of this new parameterization of automata are that PSPACE-hard problems such as NFA equivalence are FPT in p , and quadratic lower bounds for the regular expression matching problem do not hold for sufficiently small p . Having established that the co-lex width of an automaton is a fundamental complexity measure, we proceed by (i) determining its computational complexity and (ii) extending this notion from automata to regular languages by studying their smallest-width accepting NFAs and DFAs. In this work we focus on the deterministic case and prove that a canonical minimum-width DFA accepting a language ℒ–dubbed the Hasse automaton ℋ of ℒ–can be exhibited. ℋ provides, in a precise sense, the best possible way to (partially) order the states of any DFA accepting ℒ, as long as we want to maintain an operational link with the (co-lexicographic) order of ℒ’s prefixes. Finally, we explore the relationship between two conflicting objectives: minimizing the width and minimizing the number of states of a DFA. In this context, we provide an analogue of the Myhill-Nerode Theorem for co-lexicographically ordered regular languages.},
+  archive      = {J_JACM},
+  author       = {Nicola Cotumaccio and Giovanna D’Agostino and Alberto Policriti and Nicola Prezza},
+  doi          = {10.1145/3607471},
+  journal      = {Journal of the ACM},
+  number       = {4},
+  pages        = {27:1–73},
+  shortjournal = {J. ACM},
+  title        = {Co-lexicographically ordering automata and regular languages - part i},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On the zeros of exponential polynomials. <em>JACM</em>,
+<em>70</em>(4), 26:1–26. (<a
+href="https://doi.org/10.1145/3603543">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of deciding the existence of real roots of real-valued exponential polynomials with algebraic coefficients. Such functions arise as solutions of linear differential equations with real algebraic coefficients. We focus on two problems: the Zero Problem , which asks whether an exponential polynomial has a real root, and the Infinite Zeros Problem , which asks whether such a function has infinitely many real roots. Our main result is that for differential equations of order at most 8 the Zero Problem is decidable, subject to Schanuel’s Conjecture, while the Infinite Zeros Problem is decidable unconditionally. We show moreover that a decision procedure for the Infinite Zeros Problem at order 9 would yield an algorithm for computing the Lagrange constant of any given real algebraic number to arbitrary precision, indicating that it will be very difficult to extend our decidability results to higher orders.},
+  archive      = {J_JACM},
+  author       = {Ventsislav Chonev and Joel Ouaknine and James Worrell},
+  doi          = {10.1145/3603543},
+  journal      = {Journal of the ACM},
+  number       = {4},
+  pages        = {26:1–26},
+  shortjournal = {J. ACM},
+  title        = {On the zeros of exponential polynomials},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On exponential-time hypotheses, derandomization, and circuit
+lower bounds. <em>JACM</em>, <em>70</em>(4), 25:1–62. (<a
+href="https://doi.org/10.1145/3593581">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Exponential-Time Hypothesis (ETH) is a strengthening of the 𝒫 ≠ 𝒩𝒫 conjecture, stating that 3- SAT on n variables cannot be solved in (uniform) time 2 εċ n , for some ε &gt; 0. In recent years, analogous hypotheses that are “exponentially strong” forms of other classical complexity conjectures (such as 𝒩𝒫⊈ ℬ𝒫𝒫 or co 𝒩𝒫⊈𝒩𝒫) have also been introduced and have become widely influential. In this work, we focus on the interaction of exponential-time hypotheses with the fundamental and closely related questions of derandomization and circuit lower bounds . We show that even relatively mild variants of exponential-time hypotheses have far-reaching implications to derandomization, circuit lower bounds, and the connections between the two. Specifically, we prove that: (1) The Randomized Exponential-Time Hypothesis (rETH) implies that ℬ𝒫𝒫 can be simulated on “average-case” in deterministic (nearly-)polynomial-time (i.e., in time 2 Õ(log( n )) = n loglog( n ) O(1) ). The derandomization relies on a conditional construction of a pseudorandom generator with near-exponential stretch (i.e., with seed length Õ(log ( n ))); this significantly improves the state-of-the-art in uniform “hardness-to-randomness” results, which previously only yielded pseudorandom generators with sub-exponential stretch from such hypotheses. (2) The Non-Deterministic Exponential-Time Hypothesis (NETH) implies that derandomization of ℬ𝒫𝒫 is completely equivalent to circuit lower bounds against ℰ, and in particular that pseudorandom generators are necessary for derandomization. In fact, we show that the foregoing equivalence follows from a very weak version of NETH, and we also show that this very weak version is necessary to prove a slightly stronger conclusion that we deduce from it. Last, we show that disproving certain exponential-time hypotheses requires proving breakthrough circuit lower bounds. In particular, if CircuitSAT for circuits over n bits of size poly(n) can be solved by probabilistic algorithms in time 2 n /polylog(n) , then ℬ𝒫ℰ does not have circuits of quasilinear size.},
+  archive      = {J_JACM},
+  author       = {Lijie Chen and Ron D. Rothblum and Roei Tell and Eylon Yogev},
+  doi          = {10.1145/3593581},
+  journal      = {Journal of the ACM},
+  number       = {4},
+  pages        = {25:1–62},
+  shortjournal = {J. ACM},
+  title        = {On exponential-time hypotheses, derandomization, and circuit lower bounds},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The one-way communication complexity of submodular
+maximization with applications to streaming and robustness.
+<em>JACM</em>, <em>70</em>(4), 24:1–52. (<a
+href="https://doi.org/10.1145/3588564">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the classical problem of maximizing a monotone submodular function subject to a cardinality constraint, which, due to its numerous applications, has recently been studied in various computational models. We consider a clean multiplayer model that lies between the offline and streaming model, and study it under the aspect of one-way communication complexity. Our model captures the streaming setting (by considering a large number of players), and, in addition, two-player approximation results for it translate into the robust setting. We present tight one-way communication complexity results for our model, which, due to the connections mentioned previously, have multiple implications in the data stream and robust setting. Even for just two players, a prior information-theoretic hardness result implies that no approximation factor above 1/2 can be achieved in our model, if only queries to feasible sets (i.e., sets respecting the cardinality constraint) are allowed. We show that the possibility of querying infeasible sets can actually be exploited to beat this bound, by presenting a tight 2/3-approximation taking exponential time, and an efficient 0.514-approximation. To the best of our knowledge, this is the first example where querying a submodular function on infeasible sets leads to provably better results. Through the link to the (non-streaming) robust setting mentioned previously, both of these algorithms improve on the current state of the art for robust submodular maximization, showing that approximation factors beyond 1/2 are possible. Moreover, exploiting the link of our model to streaming, we settle the approximability for streaming algorithms by presenting a tight 1/2+ɛ hardness result, based on the construction of a new family of coverage functions. This improves on a prior 0.586 hardness and matches, up to an arbitrarily small margin, the best-known approximation algorithm.},
+  archive      = {J_JACM},
+  author       = {Moran Feldman and Ashkan Norouzi-Fard and Ola Svensson and Rico Zenklusen},
+  doi          = {10.1145/3588564},
+  journal      = {Journal of the ACM},
+  number       = {4},
+  pages        = {24:1–52},
+  shortjournal = {J. ACM},
+  title        = {The one-way communication complexity of submodular maximization with applications to streaming and robustness},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Stochastic games with synchronization objectives.
+<em>JACM</em>, <em>70</em>(3), 23:1–35. (<a
+href="https://doi.org/10.1145/3588866">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider two-player stochastic games played on a finite graph for infinitely many rounds. Stochastic games generalize both Markov decision processes (MDP) by adding an adversary player, and two-player deterministic games by adding stochasticity. The outcome of the game is a sequence of distributions over the graph states, representing the evolution of a population consisting of a continuum number of identical copies of a process modeled by the game graph. We consider synchronization objectives, which require the probability mass to accumulate in a set of target states, either always, once, infinitely often, or always after some point in the outcome sequence; and the winning modes of sure winning (if the accumulated probability is equal to 1) and almost-sure winning (if the accumulated probability is arbitrarily close to 1). We present algorithms to compute the set of winning distributions for each of these synchronization modes, showing that the corresponding decision problem is PSPACE-complete for synchronizing once and infinitely often and PTIME-complete for synchronizing always and always after some point. These bounds are remarkably in line with the special case of MDPs, while the algorithmic solution and proof technique are considerably more involved, even for deterministic games. This is because those games have a flavor of imperfect information, in particular they are not determined and randomized strategies need to be considered, even if there is no stochastic choice in the game graph. Moreover, in combination with stochasticity in the game graph, finite-memory strategies are not sufficient in general.},
+  archive      = {J_JACM},
+  author       = {Laurent Doyen},
+  doi          = {10.1145/3588866},
+  journal      = {Journal of the ACM},
+  number       = {3},
+  pages        = {23:1–35},
+  shortjournal = {J. ACM},
+  title        = {Stochastic games with synchronization objectives},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Rate-independent computation in continuous chemical reaction
+networks. <em>JACM</em>, <em>70</em>(3), 22:1–61. (<a
+href="https://doi.org/10.1145/3590776">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding the algorithmic behaviors that are in principle realizable in a chemical system is necessary for a rigorous understanding of the design principles of biological regulatory networks. Further, advances in synthetic biology herald the time when we will be able to rationally engineer complex chemical systems and when idealized formal models will become blueprints for engineering. Coupled chemical interactions in a well-mixed solution are commonly formalized as chemical reaction networks (CRNs). However, despite the widespread use of CRNs in the natural sciences, the range of computational behaviors exhibited by CRNs is not well understood. Here, we study the following problem: What functions f : ℝ k → ℝ can be computed by a CRN, in which the CRN eventually produces the correct amount of the “output” molecule, no matter the rate at which reactions proceed? This captures a previously unexplored but very natural class of computations: For example, the reaction X 1 + X 2 → Y can be thought to compute the function y = min ( x 1 , x 2 ). Such a CRN is robust in the sense that it is correct whether its evolution is governed by the standard model of mass-action kinetics, alternatives such as Hill-function or Michaelis-Menten kinetics, or other arbitrary models of chemistry that respect the (fundamentally digital) stoichiometric constraints (what are the reactants and products?). We develop a reachability relation based on a broad notion of “what could happen” if reaction rates can vary arbitrarily over time. Using reachability, we define stable computation analogously to probability 1 computation in distributed computing and connect it with a seemingly stronger notion of rate-independent computation based on convergence in the limit t → ∞ under a wide class of generalized rate laws. Besides the direct mapping of a concentration to a nonnegative analog value, we also consider the “dual-rail representation” that can represent negative values as the difference of two concentrations and allows the composition of CRN modules. We prove that a function is rate-independently computable if and only if it is piecewise linear (with rational coefficients) and continuous (dual-rail representation), or non-negative with discontinuities occurring only when some inputs switch from zero to positive (direct representation). The many contexts where continuous piecewise linear functions are powerful targets for implementation, combined with the systematic construction we develop for computing these functions, demonstrate the potential of rate-independent chemical computation.},
+  archive      = {J_JACM},
+  author       = {Ho-Lin Chen and David Doty and Wyatt Reeves and David Soloveichik},
+  doi          = {10.1145/3590776},
+  journal      = {Journal of the ACM},
+  number       = {3},
+  pages        = {22:1–61},
+  shortjournal = {J. ACM},
+  title        = {Rate-independent computation in continuous chemical reaction networks},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Robustly learning general mixtures of gaussians.
+<em>JACM</em>, <em>70</em>(3), 21:1–53. (<a
+href="https://doi.org/10.1145/3583680">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work represents a natural coalescence of two important lines of work — learning mixtures of Gaussians and algorithmic robust statistics. In particular, we give the first provably robust algorithm for learning mixtures of any constant number of Gaussians. We require only mild assumptions on the mixing weights and that the total variation distance between components is bounded away from zero. At the heart of our algorithm is a new method for proving a type of dimension-independent polynomial identifiability — which we call robust identifiability — through applying a carefully chosen sequence of differential operations to certain generating functions that not only encode the parameters we would like to learn but also the system of polynomial equations we would like to solve. We show how the symbolic identities we derive can be directly used to analyze a natural sum-of-squares relaxation.},
+  archive      = {J_JACM},
+  author       = {Allen Liu and Ankur Moitra},
+  doi          = {10.1145/3583680},
+  journal      = {Journal of the ACM},
+  number       = {3},
+  pages        = {21:1–53},
+  shortjournal = {J. ACM},
+  title        = {Robustly learning general mixtures of gaussians},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The price of anarchy of strategic queuing systems.
+<em>JACM</em>, <em>70</em>(3), 20:1–63. (<a
+href="https://doi.org/10.1145/3587250">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bounding the price of anarchy, which quantifies the damage to social welfare due to selfish behavior of the participants, has been an important area of research in algorithmic game theory. Classical work on such bounds in repeated games makes the strong assumption that the subsequent rounds of the repeated games are independent beyond any influence on play from past history. This work studies such bounds in environments that themselves change due to the actions of the agents. Concretely, we consider this problem in discrete-time queuing systems, where competitive queues try to get their packets served. In this model, a queue gets to send a packet at each step to one of the servers, which will attempt to serve the oldest arriving packet, and unprocessed packets are returned to each queue. We model this as a repeated game where queues compete for the capacity of the servers, but where the state of the game evolves as the length of each queue varies. We analyze this queuing system from multiple perspectives. As a baseline measure, we first establish precise conditions on the queuing arrival rates and service capacities that ensure all packets clear efficiently under centralized coordination. We then show that if queues strategically choose servers according to independent and stationary distributions, the system remains stable provided it would be stable under coordination with arrival rates scaled up by a factor of just \(\frac{e}{e-1}\). Finally, we extend these results to no-regret learning dynamics: if queues use learning algorithms satisfying the no-regret property to choose servers, then the requisite factor increases to 2, and both of these bounds are tight. Both of these results require new probabilistic techniques compared to the classical price of anarchy literature and show that in such settings, no-regret learning can exhibit efficiency loss due to myopia.},
+  archive      = {J_JACM},
+  author       = {Jason Gaitonde and Éva Tardos},
+  doi          = {10.1145/3587250},
+  journal      = {Journal of the ACM},
+  number       = {3},
+  pages        = {20:1–63},
+  shortjournal = {J. ACM},
+  title        = {The price of anarchy of strategic queuing systems},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Learning equilibria in matching markets with bandit
+feedback. <em>JACM</em>, <em>70</em>(3), 19:1–46. (<a
+href="https://doi.org/10.1145/3583681">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale, two-sided matching platforms must find market outcomes that align with user preferences while simultaneously learning these preferences from data. Classical notions of stability (Gale and Shapley, 1962; Shapley and Shubik, 1971) are, unfortunately, of limited value in the learning setting, given that preferences are inherently uncertain and destabilizing while they are being learned. To bridge this gap, we develop a framework and algorithms for learning stable market outcomes under uncertainty. Our primary setting is matching with transferable utilities, where the platform both matches agents and sets monetary transfers between them. We design an incentive-aware learning objective that captures the distance of a market outcome from equilibrium. Using this objective, we analyze the complexity of learning as a function of preference structure, casting learning as a stochastic multi-armed bandit problem. Algorithmically, we show that “optimism in the face of uncertainty,” the principle underlying many bandit algorithms, applies to a primal-dual formulation of matching with transfers and leads to near-optimal regret bounds. Our work takes a first step toward elucidating when and how stable matchings arise in large, data-driven marketplaces.},
+  archive      = {J_JACM},
+  author       = {Meena Jagadeesan and Alexander Wei and Yixin Wang and Michael I. Jordan and Jacob Steinhardt},
+  doi          = {10.1145/3583681},
+  journal      = {Journal of the ACM},
+  number       = {3},
+  pages        = {19:1–46},
+  shortjournal = {J. ACM},
+  title        = {Learning equilibria in matching markets with bandit feedback},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Chains, koch chains, and point sets with many
+triangulations. <em>JACM</em>, <em>70</em>(3), 18:1–26. (<a
+href="https://doi.org/10.1145/3585535">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the abstract notion of a chain, which is a sequence of n points in the plane, ordered by x -coordinates, so that the edge between any two consecutive points is unavoidable as far as triangulations are concerned. A general theory of the structural properties of chains is developed, alongside a general understanding of their number of triangulations. We also describe an intriguing new and concrete configuration, which we call the Koch chain due to its similarities to the Koch curve. A specific construction based on Koch chains is then shown to have Ω (9.08 n ) triangulations. This is a significant improvement over the previous and long-standing lower bound of Ω (8.65 n ) for the maximum number of triangulations of planar point sets.},
+  archive      = {J_JACM},
+  author       = {Daniel Rutschmann and Manuel Wettstein},
+  doi          = {10.1145/3585535},
+  journal      = {Journal of the ACM},
+  number       = {3},
+  pages        = {18:1–26},
+  shortjournal = {J. ACM},
+  title        = {Chains, koch chains, and point sets with many triangulations},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Intermediate value linearizability: A quantitative
+correctness criterion. <em>JACM</em>, <em>70</em>(2), 17:1–21. (<a
+href="https://doi.org/10.1145/3584699">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Big data processing systems often employ batched updates and data sketches to estimate certain properties of large data. For example, a CountMin sketch approximates the frequencies at which elements occur in a data stream, and a batched counter counts events in batches. This article focuses on correctness criteria for concurrent implementations of such objects. Specifically, we consider quantitative objects, whose return values are from an ordered domain, with a particular emphasis on (ε,δ)-bounded objects that estimate a numerical quantity with an error of at most ε with probability at least 1 - δ. The de facto correctness criterion for concurrent objects is linearizability. Intuitively, under linearizability, when a read overlaps an update, it must return the object’s value either before the update or after it. Consider, for example, a single batched increment operation that counts three new events, bumping a batched counter’s value from 7 to 10. In a linearizable implementation of the counter, a read overlapping this update must return either 7 or 10. We observe, however, that in typical use cases, any intermediate value between 7 and 10 would also be acceptable. To capture this additional degree of freedom, we propose Intermediate Value Linearizability (IVL) , a new correctness criterion that relaxes linearizability to allow returning intermediate values, for instance, 8 in the example above. Roughly speaking, IVL allows reads to return any value that is bounded between two return values that are legal under linearizability. A key feature of IVL is that we can prove that concurrent IVL implementations of (ε,δ)-bounded objects are themselves (ε,δ)-bounded. To illustrate the power of this result, we give a straightforward and efficient concurrent implementation of an (ε,δ)-bounded CountMin sketch, which is IVL (albeit not linearizable). We present four examples for IVL objects, each showcasing a different way of using IVL. The first is a simple wait-free IVL batched counter, with O (1) step complexity for update. The next considers an (ε,δ)-bounded CountMin sketch and further shows how to relax IVL using the notion of r -relaxation. Our third example is a non-atomic iterator over a data structure. In this example, we augment the data structure with an auxiliary history variable state that includes “tombstones” for items deleted from the data structure. Here, IVL semantics are required at the augmented level. Finally, using a priority queue , we show that some objects require IVL to be paired with other correctness criteria; indeed, a natural correctness notion for a concurrent priority queue is IVL coupled with sequential consistency. Last, we show that IVL allows for inherently cheaper implementations than linearizable ones. In particular, we show a lower bound of Ω ( n ) on the step complexity of the update operation of any wait-free linearizable batched counter from single-writer multi-reader registers, which is more expensive than our O (1) IVL implementation.},
+  archive      = {J_JACM},
+  author       = {Arik Rinberg and Idit Keidar},
+  doi          = {10.1145/3584699},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {17:1–21},
+  shortjournal = {J. ACM},
+  title        = {Intermediate value linearizability: A quantitative correctness criterion},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Lower bounds for semialgebraic range searching and stabbing
+problems. <em>JACM</em>, <em>70</em>(2), 16:1–26. (<a
+href="https://doi.org/10.1145/3578574">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the semialgebraic range searching problem, we are given a set of n points in ℝ d , and we want to preprocess the points such that for any query range belonging to a family of constant complexity semialgebraic sets (Tarski cells), all the points intersecting the range can be reported or counted efficiently. When the ranges are composed of simplices, the problem is well-understood: It can be solved using S(n) space and with Q(n) query time with \(S(n)Q(n)^d = \tilde{O}(n^d),\) where the \(\tilde{O}(\cdot)\) notation hides polylogarithmic factors and this trade-off is tight (up to n o (1) factors). In particular, there exist “low space” structures that use O(n) space with O ( n 1-1/ d ) query time [ 8 , 25 ] and “fast query” structures that use O ( n d ) space with O (log n ) query time [ 9 ]. However, for general semialgebraic ranges, only “low space” solutions are known, but the best solutions [ 7 ] match the same trade-off curve as simplex queries, with O ( n ) space and \(\tilde{O}(n^{1-1/d})\) query time. It has been conjectured that the same could be done for the “fast query” case, but this open problem has stayed unresolved. Here, we disprove this conjecture. We give the first nontrivial lower bounds for semialgebraic range searching and other related problems. More precisely, we show that any data structure for reporting the points between two concentric circles, a problem that we call 2D annulus reporting, with Q ( n ) query time must use \(S(n)=\overset{\scriptscriptstyle o}{\Omega }(n^3/Q(n)^5)\) space, where the \(\overset{\scriptscriptstyle o}{\Omega }(\cdot)\) notation hides \(n^{o(1)}\) factors, meaning, for \(Q(n)=\log ^{O(1)}n\), \(\overset{\scriptscriptstyle o}{\Omega }(n^3)\) space must be used. In addition, we study the problem of reporting the subset of input points in a polynomial slab defined by \(\lbrace (x,y)\in \mathbb {R}^2:P(x)\le y\le P(x)+w\rbrace\), where \(P(x)=\sum _{i=0}^\Delta a_i x^i\) is a univariate polynomial of degree Δ and \(a_0, \ldots , a_\Delta , w\) are given at the query time, a problem that we call polynomial slab reporting. For this, we show a space lower bound of \(\overset{\scriptscriptstyle o}{\Omega }(n^{\Delta +1}/Q(n)^{(\Delta +3)\Delta /2})\), which implies that for \(Q(n)=\log ^{O(1)}n\), we must use \(\overset{\scriptscriptstyle o}{\Omega }(n^{\Delta +1})\) space. We also consider the dual semialgebraic stabbing problems of semialgebraic range searching and present lower bounds for them. In particular, we show that in linear space, any data structure that solves 2D annulus stabbing problems must use \(\Omega (n^{2/3})\) query time. Note that this almost matches the upper bound obtained by lifting 2D annuli to 3D. Like semialgebraic range searching, we also present lower bounds for general polynomial slab stabbing problems. Again, our lower bounds are almost tight for linear size data structures in this case.},
+  archive      = {J_JACM},
+  author       = {Peyman Afshani and Pingan Cheng},
+  doi          = {10.1145/3578574},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {16:1–26},
+  shortjournal = {J. ACM},
+  title        = {Lower bounds for semialgebraic range searching and stabbing problems},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A correctness and incorrectness program logic.
+<em>JACM</em>, <em>70</em>(2), 15:1–45. (<a
+href="https://doi.org/10.1145/3582267">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract interpretation is a well-known and extensively used method to extract over-approximate program invariants by a sound program analysis algorithm. Soundness means that no program errors are lost and it is, in principle, guaranteed by construction. Completeness means that the abstract interpreter reports no false alarms for all possible inputs, but this is extremely rare because it needs a very precise analysis. We introduce a weaker notion of completeness, called local completeness , which requires that no false alarms are produced only relatively to some fixed program inputs. Based on this idea, we introduce a program logic, called Local Completeness Logic for an abstract domain A , for proving both the correctness and incorrectness of program specifications. Our proof system, which is parameterized by an abstract domain A , combines over- and under-approximating reasoning. In a provable triple ⊦ A [ p ] 𝖼 [ q ], 𝖼 is a program, q is an under-approximation of the strongest post-condition of 𝖼 on input p such that their abstractions in A coincide. This means that q is never too coarse, namely, under some mild assumptions, the abstract interpretation of 𝖼 does not yield false alarms for the input p iff q has no alarm . Therefore, proving ⊦ A [ p ] 𝖼 [ q ] not only ensures that all the alarms raised in q are true ones, but also that if q does not raise alarms, then 𝖼 is correct. We also prove that if A is the straightforward abstraction making all program properties equivalent, then our program logic coincides with O’Hearn’s incorrectness logic, while for any other abstraction, contrary to the case of incorrectness logic, our logic can also establish program correctness.},
+  archive      = {J_JACM},
+  author       = {Roberto Bruni and Roberto Giacobazzi and Roberta Gori and Francesco Ranzato},
+  doi          = {10.1145/3582267},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {15:1–45},
+  shortjournal = {J. ACM},
+  title        = {A correctness and incorrectness program logic},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Separating rank logic from polynomial time. <em>JACM</em>,
+<em>70</em>(2), 14:1–53. (<a
+href="https://doi.org/10.1145/3572918">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the search for a logic capturing polynomial time the most promising candidates are Choiceless Polynomial Time (CPT) and rank logic. Rank logic extends fixed-point logic with counting by a rank operator over prime fields. We show that the isomorphism problem for CFI graphs over ℤ 2 i cannot be defined in rank logic, even if the base graph is totally ordered. However, CPT can define this isomorphism problem. We thereby separate rank logic from CPT and in particular from polynomial time.},
+  archive      = {J_JACM},
+  author       = {Moritz Lichter},
+  doi          = {10.1145/3572918},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {14:1–53},
+  shortjournal = {J. ACM},
+  title        = {Separating rank logic from polynomial time},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Lower bounds on implementing mediators in asynchronous
+systems with rational and malicious agents. <em>JACM</em>,
+<em>70</em>(2), 13:1–21. (<a
+href="https://doi.org/10.1145/3578579">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abraham, Dolev, Geffner, and Halpern [ 1 ] proved that, in asynchronous systems, a (k, t)-robust equilibrium for n players and a trusted mediator can be implemented without the mediator as long as n &gt; 4( k+t ), where an equilibrium is ( k, t )-robust if, roughly speaking, no coalition of t players can decrease the payoff of any of the other players, and no coalition of k players can increase their payoff by deviating. We prove that this bound is tight, in the sense that if n ≤ 4( k+t ) there exist ( k, t )-robust equilibria with a mediator that cannot be implemented by the players alone. Even though implementing ( k, t )-robust mediators seems closely related to implementing asynchronous multiparty ( k+t )-secure computation [ 6 ], to the best of our knowledge there is no known straightforward reduction from one problem to another. Nevertheless, we show that there is a non-trivial reduction from a slightly weaker notion of ( k+t )-secure computation, which we call ( k+t )-strict secure computation , to implementing ( k, t )-robust mediators. We prove the desired lower bound by showing that there are functions on n variables that cannot be ( k+t )-strictly securely computed if n ≤ 4( k+t ). This also provides a simple alternative proof for the well-known lower bound of 4 t +1 on asynchronous secure computation in the presence of up to t malicious agents [ 4 , 8 , 10 ].},
+  archive      = {J_JACM},
+  author       = {Ivan Geffner and Joseph Y. Halpern},
+  doi          = {10.1145/3578579},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {13:1–21},
+  shortjournal = {J. ACM},
+  title        = {Lower bounds on implementing mediators in asynchronous systems with rational and malicious agents},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Almost optimal exact distance oracles for planar graphs.
+<em>JACM</em>, <em>70</em>(2), 12:1–50. (<a
+href="https://doi.org/10.1145/3580474">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of preprocessing a weighted directed planar graph in order to quickly answer exact distance queries. The main tension in this problem is between space S and query time Q , and since the mid-1990s all results had polynomial time-space tradeoffs, e.g., Q = ~ Θ( n/√ S ) or Q = ~Θ( n 5/2 /S 3/2 ). In this article we show that there is no polynomial tradeoff between time and space and that it is possible to simultaneously achieve almost optimal space n 1+ o (1) and almost optimal query time n o (1) . More precisely, we achieve the following space-time tradeoffs: n 1+ o (1) space and log 2+ o (1) n query time, n log 2+ o (1) n space and n o (1) query time, n 4/3+ o (1) space and log 1+ o (1) n query time. We reduce a distance query to a variety of point location problems in additively weighted Voronoi diagrams and develop new algorithms for the point location problem itself using several partially persistent dynamic tree data structures.},
+  archive      = {J_JACM},
+  author       = {Panagiotis Charalampopoulos and Paweł Gawrychowski and Yaowei Long and Shay Mozes and Seth Pettie and Oren Weimann and Christian Wulff-Nilsen},
+  doi          = {10.1145/3580474},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {12:1–50},
+  shortjournal = {J. ACM},
+  title        = {Almost optimal exact distance oracles for planar graphs},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A new algorithm for euclidean shortest paths in the plane.
+<em>JACM</em>, <em>70</em>(2), 11:1–62. (<a
+href="https://doi.org/10.1145/3580475">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a set of pairwise disjoint polygonal obstacles in the plane, finding an obstacle-avoiding Euclidean shortest path between two points is a classical problem in computational geometry and has been studied extensively. Previously, Hershberger and Suri (in SIAM Journal on Computing , 1999) gave an algorithm of O(n log n ) time and O(n log n ) space, where n is the total number of vertices of all obstacles. Recently, by modifying Hershberger and Suri’s algorithm, Wang (in SODA’21) reduced the space to O(n) while the runtime of the algorithm is still O(n log n ). In this article, we present a new algorithm of O(n+h log h ) time and O(n) space, provided that a triangulation of the free space is given, where h is the number of obstacles. The algorithm is better than the previous work when h is relatively small. Our algorithm builds a shortest path map for a source point s so that given any query point t , the shortest path length from s to t can be computed in O (log n ) time and a shortest s - t path can be produced in additional time linear in the number of edges of the path.},
+  archive      = {J_JACM},
+  author       = {Haitao Wang},
+  doi          = {10.1145/3580475},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {11:1–62},
+  shortjournal = {J. ACM},
+  title        = {A new algorithm for euclidean shortest paths in the plane},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A universal law of robustness via isoperimetry.
+<em>JACM</em>, <em>70</em>(2), 10:1–18. (<a
+href="https://doi.org/10.1145/3578580">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Classically, data interpolation with a parametrized model class is possible as long as the number of parameters is larger than the number of equations to be satisfied. A puzzling phenomenon in deep learning is that models are trained with many more parameters than what this classical theory would suggest. We propose a partial theoretical explanation for this phenomenon. We prove that for a broad class of data distributions and model classes, overparametrization is necessary if one wants to interpolate the data smoothly . Namely we show that smooth interpolation requires d times more parameters than mere interpolation, where d is the ambient data dimension. We prove this universal law of robustness for any smoothly parametrized function class with polynomial size weights, and any covariate distribution verifying isoperimetry (or a mixture thereof). In the case of two-layer neural networks and Gaussian covariates, this law was conjectured in prior work by Bubeck, Li, and Nagaraj. We also give an interpretation of our result as an improved generalization bound for model classes consisting of smooth functions.},
+  archive      = {J_JACM},
+  author       = {Sébastien Bubeck and Mark Sellke},
+  doi          = {10.1145/3578580},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {10:1–18},
+  shortjournal = {J. ACM},
+  title        = {A universal law of robustness via isoperimetry},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Universal almost optimal compression and slepian-wolf coding
+in probabilistic polynomial time. <em>JACM</em>, <em>70</em>(2), 9:1–33.
+(<a href="https://doi.org/10.1145/3575807">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In a lossless compression system with target lengths, a compressor 𝒞 maps an integer m and a binary string x to an m -bit code p , and if m is sufficiently large, a decompressor 𝒟 reconstructs x from p . We call a pair ( m,x ) achievable for (𝒞,𝒟) if this reconstruction is successful. We introduce the notion of an optimal compressor 𝒞 opt by the following universality property: For any compressor-decompressor pair (𝒞,𝒟), there exists a decompressor 𝒟 ′ such that if (m,x) is achievable for (𝒞,𝒟), then ( m + Δ , x ) is achievable for (𝒞 opt , 𝒟 ′ ), where Δ is some small value called the overhead. We show that there exists an optimal compressor that has only polylogarithmic overhead and works in probabilistic polynomial time. Differently said, for any pair (𝒞,𝒟), no matter how slow 𝒞 is, or even if 𝒞 is non-computable, 𝒞 opt is a fixed compressor that in polynomial time produces codes almost as short as those of 𝒞. The cost is that the corresponding decompressor is slower. We also show that each such optimal compressor can be used for distributed compression, in which case it can achieve optimal compression rates as given in the Slepian–Wolf theorem and even for the Kolmogorov complexity variant of this theorem.},
+  archive      = {J_JACM},
+  author       = {Bruno Bauwens* and Marius Zimand},
+  doi          = {10.1145/3575807},
+  journal      = {Journal of the ACM},
+  number       = {2},
+  pages        = {9:1–33},
+  shortjournal = {J. ACM},
+  title        = {Universal almost optimal compression and slepian-wolf coding in probabilistic polynomial time},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Convex hulls of random order types. <em>JACM</em>,
+<em>70</em>(1), 8:1–47. (<a
+href="https://doi.org/10.1145/3570636">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We establish the following two main results on order types of points in general position in the plane (realizable simple planar order types, realizable uniform acyclic oriented matroids of rank 3): (a) The number of extreme points in an n -point order type, chosen uniformly at random from all such order types, is on average 4+ o (1). For labeled order types, this number has average \(4- \mbox{$\frac{8}{n^2 - n +2}$}\) and variance at most 3. (b) The (labeled) order types read off a set of n points sampled independently from the uniform measure on a convex planar domain, smooth or polygonal, or from a Gaussian distribution are concentrated, i.e., such sampling typically encounters only a vanishingly small fraction of all order types of the given size. For the unlabeled case in (a), we prove that for any antipodal, finite subset of the two-dimensional sphere, the group of orientation preserving bijections is cyclic, dihedral, or one of A 4 , S 4 , or A 5 (and each case is possible). These are the finite subgroups of SO (3) and our proof follows the lines of their characterization by Felix Klein.},
+  archive      = {J_JACM},
+  author       = {Xavier Goaoc and Emo Welzl},
+  doi          = {10.1145/3570636},
+  journal      = {Journal of the ACM},
+  number       = {1},
+  pages        = {8:1–47},
+  shortjournal = {J. ACM},
+  title        = {Convex hulls of random order types},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On the need for large quantum depth. <em>JACM</em>,
+<em>70</em>(1), 6:1–38. (<a
+href="https://doi.org/10.1145/3570637">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Near-term quantum computers are likely to have small depths due to short coherence time and noisy gates. A natural approach to leverage these quantum computers is interleaving them with classical computers. Understanding the capabilities and limits of this hybrid approach is an essential topic in quantum computation. Most notably, the quantum Fourier transform can be implemented by a hybrid of logarithmic-depth quantum circuits and a classical polynomial-time algorithm. Therefore, it seems possible that quantum polylogarithmic depth is as powerful as quantum polynomial depth in the presence of classical computation. Indeed, Jozsa conjectured that “ Any quantum polynomial-time algorithm can be implemented with only O (log n ) quantum depth interspersed with polynomial-time classical computations. ” This can be formalized as asserting the equivalence of BQP and “ BQNC BPP .” However, Aaronson conjectured that “ there exists an oracle separation between BQP and BPP BQNC . ” BQNC BPP and BPP BQNC are two natural and seemingly incomparable ways of hybrid classical-quantum computation. In this work, we manage to prove Aaronson’s conjecture and in the meantime prove that Jozsa’s conjecture, relative to an oracle, is false. In fact, we prove a stronger statement that for any depth parameter d , there exists an oracle that separates quantum depth d and 2 d +1 in the presence of classical computation. Thus, our results show that relative to oracles, doubling the quantum circuit depth does make the hybrid model more powerful, and this cannot be traded by classical computation.},
+  archive      = {J_JACM},
+  author       = {Nai-Hui Chia and Kai-Min Chung and Ching-Yi Lai},
+  doi          = {10.1145/3570637},
+  journal      = {Journal of the ACM},
+  number       = {1},
+  pages        = {6:1–38},
+  shortjournal = {J. ACM},
+  title        = {On the need for large quantum depth},
+  volume       = {70},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

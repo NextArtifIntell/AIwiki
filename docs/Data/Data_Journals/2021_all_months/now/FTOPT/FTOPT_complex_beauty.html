@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FTOPT_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ftopt---1">FTOPT - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2021). Acceleration methods. <em>FTOPT</em>, <em>5</em>(1-2),
+1–245. (<a href="https://doi.org/10.1561/2400000036">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This monograph covers some recent advances in a range of acceleration techniques frequently used in convex optimization. We first use quadratic optimization problems to introduce two key families of methods, namely momentum and nested optimization schemes. They coincide in the quadratic case to form the Chebyshev method. We discuss momentum methods in detail, starting with the seminal work of Nesterov [1] and structure convergence proofs using a few master templates, such as that for optimized gradient methods, which provide the key benefit of showing how momentum methods optimize convergence guarantees. We further cover proximal acceleration, at the heart of the Catalyst and Accelerated Hybrid Proximal Extragradient frameworks, using similar algorithmic patterns. Common acceleration techniques rely directly on the knowledge of some of the regularity parameters in the problem at hand. We conclude by discussing restart schemes, a set of simple techniques for reaching nearly optimal convergence rates while adapting to unobserved regularity parameters.},
+  archive      = {J_FTOPT},
+  author       = {Alexandre d’Aspremont and Damien Scieur and Adrien Taylor},
+  doi          = {10.1561/2400000036},
+  journal      = {Foundations and Trends® in Optimization},
+  number       = {1-2},
+  pages        = {1-245},
+  shortjournal = {Found. Trends Optim.},
+  title        = {Acceleration methods},
+  volume       = {5},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

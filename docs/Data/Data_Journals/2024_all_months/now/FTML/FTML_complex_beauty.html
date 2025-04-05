@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FTML_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ftml---6">FTML - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2024). An introduction to deep survival analysis models for
+predicting time-to-event outcomes. <em>FTML</em>, <em>17</em>(6),
+921–1100. (<a href="https://doi.org/10.1561/2200000114">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many applications involve reasoning about time durations before a critical event happens—also called time-to-event outcomes. When will a customer cancel a subscription, a coma patient wake up, or a convicted criminal reoffend? Accurate predictions of such time durations could help downstream decision-making tasks. A key challenge is censoring: commonly, when we collect training data, we do not get to observe the time-to-event outcome for every data point. For example, a coma patient has not woken up yet, so we do not know the patient’s time until awakening. However, these data points should not be excluded from analysis as they could have characteristics that explain why they have yet to or might never experience the event. Time-to-event outcomes have been studied extensively within the field of survival analysis primarily by the statistical, medical, and reliability engineering communities, with textbooks already available in the 1970s and ’80s. Recently, the machine learning community has made significant methodological advances in survival analysis that take advantage of the representation learning ability of deep neural networks. At this point, there is a proliferation of deep survival analysis models. How do these models work? Why? What are the overarching principles in how these models are generally developed? How are different models related? This monograph aims to provide a reasonably self-contained modern introduction to survival analysis. We focus on predicting time-to-event outcomes at the individual data point level with the help of neural networks. Our goal is to provide the reader with a working understanding of precisely what the basic time-to-event prediction problem is, how it differs from standard regression and classification, and how key “design patterns” have been used time after time to derive new time-to-event prediction models, from classical methods like the Cox proportional hazards model to modern deep learning approaches such as deep kernel Kaplan-Meier estimators and neural ordinary differential equation models. We further delve into two extensions of the basic time-toevent prediction setup: predicting which of several critical events will happen first along with the time until this earliest event happens (the competing risks setting), and predicting time-to-event outcomes given a time series that grows in length over time (the dynamic setting). We conclude with a discussion of a variety of topics such as fairness, causal reasoning, interpretability, and statistical guarantees. Our monograph comes with an accompanying code repository that implements every model and evaluation metric that we cover in detail: https://github.com/georgehc/survival-intro.},
+  archive      = {J_FTML},
+  author       = {George H. Chen},
+  doi          = {10.1561/2200000114},
+  journal      = {Foundations and Trends® in Machine Learning},
+  month        = {12},
+  number       = {6},
+  pages        = {921-1100},
+  shortjournal = {Found. Trends Mach. Learn.},
+  title        = {An introduction to deep survival analysis models for predicting time-to-event outcomes},
+  volume       = {17},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Automated deep learning: Neural architecture search is not
+the end. <em>FTML</em>, <em>17</em>(5), 767–920. (<a
+href="https://doi.org/10.1561/2200000119">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning (DL) has proven to be a highly effective approach for developing models in diverse contexts, including visual perception, speech recognition, and machine translation. However, the end-to-end process for applying DL is not trivial. It requires grappling with problem formulation and context understanding, data engineering, model development, deployment, continuous monitoring and maintenance, and so on. Moreover, each of these steps typically relies heavily on humans, in terms of both knowledge and interactions, which impedes the further advancement and democratization of DL. Consequently, in response to these issues, a new field has emerged over the last few years: automated deep learning (AutoDL). This endeavor seeks to minimize the need for human involvement and is best known for its achievements in neural architecture search (NAS), a topic that has been the focus of several surveys. That stated, NAS is not the be-all and end-all of AutoDL. Accordingly, this review adopts an overarching perspective, examining research efforts into automation across the entirety of an archetypal DL workflow. In so doing, this work also proposes a comprehensive set of ten criteria by which to assess existing work in both individual publications and broader research areas. These criteria are: novelty, solution quality, efficiency, stability, interpretability, reproducibility, engineering quality, scalability, generalizability, and eco-friendliness. Thus, ultimately, this review provides an evaluative overview of AutoDL in the early 2020s, identifying where future opportunities for progress may exist.},
+  archive      = {J_FTML},
+  author       = {Xuanyi Dong and David Jacob Kedziora and Katarzyna Musial and Bogdan Gabrys},
+  doi          = {10.1561/2200000119},
+  journal      = {Foundations and Trends® in Machine Learning},
+  month        = {2},
+  number       = {5},
+  pages        = {767-920},
+  shortjournal = {Found. Trends Mach. Learn.},
+  title        = {Automated deep learning: Neural architecture search is not the end},
+  volume       = {17},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). AutonoML: Towards an integrated framework for autonomous
+machine learning. <em>FTML</em>, <em>17</em>(4), 590–766. (<a
+href="https://doi.org/10.1561/2200000093">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the last decade, the long-running endeavour to automate high-level processes in machine learning (ML) has risen to mainstream prominence, stimulated by advances in optimisation techniques and their impact on selecting ML models/algorithms. Central to this drive is the appeal of engineering a computational system that both discovers and deploys high-performance solutions to arbitrary ML problems with minimal human interaction. Beyond this, an even loftier goal is the pursuit of autonomy, which describes the capability of the system to independently adjust an ML solution over a lifetime of changing contexts. However, these ambitions are unlikely to be achieved in a robust manner without the broader synthesis of various mechanisms and theoretical frameworks, which, at the present time, remain scattered across numerous research threads. Accordingly, this review seeks to motivate a more expansive perspective on what constitutes an automated/autonomous ML system, alongside consideration of how best to consolidate those elements. In doing so, we survey developments in the following research areas: hyperparameter optimisation, multicomponent models, neural architecture search, automated feature engineering, meta-learning, multi-level ensembling, dynamic adaptation, multi-objective evaluation, resource constraints, flexible user involvement, and the principles of generalisation. We also develop a conceptual framework throughout the review, augmented by each topic, to illustrate one possible way of fusing high-level mechanisms into an autonomous ML system. Ultimately, we conclude that the notion of architectural integration deserves more discussion, without which the field of automated ML risks stifling both its technical advantages and general uptake.},
+  archive      = {J_FTML},
+  author       = {David Jacob Kedziora and Katarzyna Musial and Bogdan Gabrys},
+  doi          = {10.1561/2200000093},
+  journal      = {Foundations and Trends® in Machine Learning},
+  month        = {2},
+  number       = {4},
+  pages        = {590-766},
+  shortjournal = {Found. Trends Mach. Learn.},
+  title        = {AutonoML: Towards an integrated framework for autonomous machine learning},
+  volume       = {17},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Causal fairness analysis: A causal toolkit for fair machine
+learning. <em>FTML</em>, <em>17</em>(3), 304–589. (<a
+href="https://doi.org/10.1561/2200000106">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decision-making systems based on AI and machine learning have been used throughout a wide range of real-world scenarios, including healthcare, law enforcement, education, and finance. It is no longer far-fetched to envision a future where autonomous systems will drive entire business decisions and, more broadly, support large-scale decision-making infrastructure to solve society’s most challenging problems. Issues of unfairness and discrimination are pervasive when decisions are being made by humans, and remain (or are potentially amplified) when decisions are made using machines with little transparency, accountability, and fairness. In this monograph, we introduce a framework for causal fairness analysis with the intent of filling in this gap, i.e., understanding, modeling, and possibly solving issues of fairness in decision-making settings. The main insight of our approach will be to link the quantification of the disparities present in the observed data with the underlying, often unobserved, collection of causal mechanisms that generate the disparity in the first place, a challenge we call the Fundamental Problem of Causal Fairness Analysis (FPCFA). In order to solve the FPCFA, we study the problem of decomposing variations and empirical measures of fairness that attribute such variations to structural mechanisms and different units of the population. Our effort culminates in the Fairness Map, the first systematic attempt to organize and explain the relationship between various criteria found in the literature. Finally, we study which causal assumptions are minimally needed for performing causal fairness analysis and propose the Fairness Cookbook, which allows one to assess the existence of disparate impact and disparate treatment.},
+  archive      = {J_FTML},
+  author       = {Drago Plečko and Elias Bareinboim},
+  doi          = {10.1561/2200000106},
+  journal      = {Foundations and Trends® in Machine Learning},
+  month        = {1},
+  number       = {3},
+  pages        = {304-589},
+  shortjournal = {Found. Trends Mach. Learn.},
+  title        = {Causal fairness analysis: A causal toolkit for fair machine learning},
+  volume       = {17},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). User-friendly introduction to PAC-bayes bounds.
+<em>FTML</em>, <em>17</em>(2), 174–303. (<a
+href="https://doi.org/10.1561/2200000100">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aggregated predictors are obtained by making a set of basic predictors vote according to some weights, that is, to some probability distribution. Randomized predictors are obtained by sampling in a set of basic predictors, according to some prescribed probability distribution. Thus, aggregated and randomized predictors have in common that their definition rely on a probability distribution on the set of predictors. In statistical learning theory, there is a set of tools designed to understand the generalization ability of such predictors: PAC-Bayesian or PAC-Bayes bounds. Since the original PAC-Bayes bounds (Shawe-Taylor and Williamson, 1997; McAllester, 1998), these tools have been considerably improved in many directions. We will for example describe a simplified version of the localization technique (Catoni, 2003; Catoni, 2007) that was missed by the community, and later rediscovered as “mutual information bounds”. Very recently, PAC-Bayes bounds received a considerable attention. There was workshop on PAC-Bayes at NIPS 2017, (Almost) 50 Shades of Bayesian Learning: PACBayesian trends and insights, organized by B. Guedj, F. Bach and P. Germain. One of the reasons of this recent interest is the successful application of these bounds to neural networks (Dziugaite and Roy, 2017). Since then, this is a recurring topic of workshops in the major machine learning conferences. The objective of these notes is to provide an elementary introduction to PAC-Bayes bounds.},
+  archive      = {J_FTML},
+  author       = {Pierre Alquier},
+  doi          = {10.1561/2200000100},
+  journal      = {Foundations and Trends® in Machine Learning},
+  month        = {1},
+  number       = {2},
+  pages        = {174-303},
+  shortjournal = {Found. Trends Mach. Learn.},
+  title        = {User-friendly introduction to PAC-bayes bounds},
+  volume       = {17},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A friendly tutorial on mean-field spin glass techniques for
+non-physicists. <em>FTML</em>, <em>17</em>(1), 1–173. (<a
+href="https://doi.org/10.1561/2200000105">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mean-field spin glasses are a class of high-dimensional random cost (energy) function with special exchangeability properties. Random probability measures are defined from these energy functions by the usual Boltzmann formula. Over the last 40 years, an arsenal of sophisticated mathematical techniques (both rigorous and non-rigorous) has been developed to characterize these models. More recently, these techniques have been successfully applied to a number of canonical models in high-dimensional statistics and machine learning, which fit the same framework. This tutorial provides an introduction to such techniques, aimed at non-specialists.},
+  archive      = {J_FTML},
+  author       = {Andrea Montanari and Subhabrata Sen},
+  doi          = {10.1561/2200000105},
+  journal      = {Foundations and Trends® in Machine Learning},
+  month        = {1},
+  number       = {1},
+  pages        = {1-173},
+  shortjournal = {Found. Trends Mach. Learn.},
+  title        = {A friendly tutorial on mean-field spin glass techniques for non-physicists},
+  volume       = {17},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

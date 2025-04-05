@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TIST_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tist---82">TIST - 82</h2>
+<ul>
+<li><details>
+<summary>
+(2020). Pricing-aware real-time charging scheduling and charging
+station expansion for large-scale electric buses. <em>TIST</em>,
+<em>12</em>(1), 13:1–26. (<a
+href="https://doi.org/10.1145/3428080">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We are witnessing a rapid growth of electrified vehicles due to the ever-increasing concerns on urban air quality and energy security. Compared to other types of electric vehicles, electric buses have not yet been prevailingly adopted worldwide due to their high owning and operating costs, long charging time, and the uneven spatial distribution of charging facilities. Moreover, the highly dynamic environment factors such as unpredictable traffic congestion, different passenger demands, and even the changing weather can significantly affect electric bus charging efficiency and potentially hinder the further promotion of large-scale electric bus fleets. To address these issues, in this article, we first analyze a real-world dataset including massive data from 16,359 electric buses, 1,400 bus lines, and 5,562 bus stops. Then, we investigate the electric bus network to understand its operating and charging patterns, and further verify the necessity and feasibility of a real-time charging scheduling. With such understanding, we design busCharging , a pricing-aware real-time charging scheduling system based on Markov Decision Process to reduce the overall charging and operating costs for city-scale electric bus fleets, taking the time-variant electricity pricing into account. To show the effectiveness of busCharging , we implement it with the real-world data from Shenzhen, which includes GPS data of electric buses, the metadata of all bus lines and bus stops, combined with data of 376 charging stations for electric buses. The evaluation results show that busCharging dramatically reduces the charging cost by 23.7\% and 12.8\% of electricity usage simultaneously. Finally, we design a scheduling-based charging station expansion strategy to verify our busCharging is also effective during the charging station expansion process.},
+  archive      = {J_TIST},
+  author       = {Guang Wang and Zhihan Fang and Xiaoyang Xie and Shuai Wang and Huijun Sun and Fan Zhang and Yunhuai Liu and Desheng Zhang},
+  doi          = {10.1145/3428080},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {13:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Pricing-aware real-time charging scheduling and charging station expansion for large-scale electric buses},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Uncovering media bias via social network learning.
+<em>TIST</em>, <em>12</em>(1), 12:1–12. (<a
+href="https://doi.org/10.1145/3422181">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is known that media outlets, such as CNN and FOX, have intrinsic political bias that is reflected in their news reports. The computational prediction of such bias has broad application prospects. However, the prediction is difficult via directly analyzing the news content without high-level context. In contrast, social signals (e.g., the network structure of media followers) provide inspiring cues to uncover such bias. In this article, we realize the first attempt of predicting the latent bias of media outlets by analyzing their social network structures. In particular, we address two key challenges: network sparsity and label sparsity . The network sparsity refers to the partial sampling of the entire follower network in practical analysis and computing, whereas the label sparsity refers to the difficulty of annotating sufficient labels to train the prediction model. To cope with the network sparsity, we propose a hybrid sampling strategy to construct a training corpus that contains network information from micro to macro views. Based on this training corpus, a semi-supervised network embedding approach is proposed to learn low-dimensional yet effective network representations. To deal with the label sparsity, we adopt a graph-based label propagation scheme to supplement the missing links and augment label information for model training. The preceding two steps are iteratively optimized to reinforce each other. We further collect a large-scale dataset containing social networks of 10 media outlets together with about 300,000 followers and more than 5 million connections. Over this dataset, we compare our model to a range of state of the art. Superior performance gains demonstrate the merits of the proposed approach. More importantly, the experimental results and analyses confirm the validity of our approach for the computerized prediction of media bias.},
+  archive      = {J_TIST},
+  author       = {Yiyi Zhou and Rongrong Ji and Jinsong Su and Jiaquan Yao},
+  doi          = {10.1145/3422181},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {12:1–12},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Uncovering media bias via social network learning},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). On representation learning for road networks. <em>TIST</em>,
+<em>12</em>(1), 11:1–27. (<a
+href="https://doi.org/10.1145/3424346">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Informative representation of road networks is essential to a wide variety of applications on intelligent transportation systems. In this article, we design a new learning framework, called Representation Learning for Road Networks (RLRN), which explores various intrinsic properties of road networks to learn embeddings of intersections and road segments in road networks. To implement the RLRN framework, we propose a new neural network model, namely Road Network to Vector (RN2Vec), to learn embeddings of intersections and road segments jointly by exploring geo-locality and homogeneity of them, topological structure of the road networks, and moving behaviors of road users. In addition to model design, issues involving data preparation for model training are examined. We evaluate the learned embeddings via extensive experiments on several real-world datasets using different downstream test cases, including node/edge classification and travel time estimation. Experimental results show that the proposed RN2Vec robustly outperforms existing methods, including (i) Feature-based methods : raw features and principal components analysis (PCA); (ii) Network embedding methods : DeepWalk, LINE, and Node2vec; and (iii) Features + Network structure-based methods : network embeddings and PCA, graph convolutional networks, and graph attention networks. RN2Vec significantly outperforms all of them in terms of F1-score in classifying traffic signals (11.96\% to 16.86\%) and crossings (11.36\% to 16.67\%) on intersections and in classifying avenue (10.56\% to 15.43\%) and street (11.54\% to 16.07\%) on road segments, as well as in terms of Mean Absolute Error in travel time estimation (17.01\% to 23.58\%).},
+  archive      = {J_TIST},
+  author       = {Meng-Xiang Wang and Wang-Chien Lee and Tao-Yang Fu and Ge Yu},
+  doi          = {10.1145/3424346},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {11:1–27},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {On representation learning for road networks},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A theoretical revisit to linear convergence for saddle point
+problems. <em>TIST</em>, <em>12</em>(1), 10:1–17. (<a
+href="https://doi.org/10.1145/3420035">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, convex-concave bilinear Saddle Point Problems (SPP) is widely used in lasso problems, Support Vector Machines, game theory, and so on. Previous researches have proposed many methods to solve SPP, and present their convergence rate theoretically. To achieve linear convergence, analysis in those previouse studies requires strong convexity of φ( z ). But, we find the linear convergence can also be achieved even for a general convex but not strongly convex φ( z ). In the article, by exploiting the strong duality of SPP, we propose a new method to solve SPP, and achieve the linear convergence. We present a new general sufficient condition to achieve linear convergence, but do not require the strong convexity of φ( z ). Furthermore, a more efficient method is also proposed, and its convergence rate is analyzed in theoretical. Our analysis shows that the well conditioned φ( z ) is necessary to improve the efficiency of our method. Finally, we conduct extensive empirical studies to evaluate the convergence performance of our methods.},
+  archive      = {J_TIST},
+  author       = {Wendi Wu and Yawei Zhao and En Zhu and Xinwang Liu and Xingxing Zhang and Lailong Luo and Shixiong Wang and Jianping Yin},
+  doi          = {10.1145/3420035},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {10:1–17},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {A theoretical revisit to linear convergence for saddle point problems},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Deep learning thermal image translation for night vision
+perception. <em>TIST</em>, <em>12</em>(1), 9:1–18. (<a
+href="https://doi.org/10.1145/3426239">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Context enhancement is critical for the environmental perception in night vision applications, especially for the dark night situation without sufficient illumination. In this article, we propose a thermal image translation method, which can translate thermal/infrared (IR) images into color visible (VI) images, called IR2VI. The IR2VI consists of two cascaded steps: translation from nighttime thermal IR images to gray-scale visible images (GVI), which is called IR-GVI; and the translation from GVI to color visible images (CVI), which is known as GVI-CVI in this article. For the first step, we develop the Texture-Net, a novel unsupervised image translation neural network based on generative adversarial networks. Texture-Net can learn the intrinsic characteristics from the GVI and integrate them into the IR image. In comparison with the state-of-the-art unsupervised image translation methods, the proposed Texture-Net is able to address some common challenges, e.g., incorrect mapping and lack of fine details, with a structure connection module and a region-of-interest focal loss. For the second step, we investigated the state-of-the-art gray-scale image colorization methods and integrate the deep convolutional neural network into the IR2VI framework. The results of the comprehensive evaluation experiments demonstrate the effectiveness of the proposed IR2VI image translation method. This solution will contribute to the environmental perception and understanding in varied night vision applications.},
+  archive      = {J_TIST},
+  author       = {Shuo Liu and Mingliang Gao and Vijay John and Zheng Liu and Erik Blasch},
+  doi          = {10.1145/3426239},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {9:1–18},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Deep learning thermal image translation for night vision perception},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Deep energy factorization model for demographic prediction.
+<em>TIST</em>, <em>12</em>(1), 8:1–16. (<a
+href="https://doi.org/10.1145/3426240">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Demographic information is important for various commercial and academic proposes, but in reality, few of these data are accessible for analysis and research. To solve this problem, several studies predict demographic attributes from users’ behavioral data. However, previous works suffer from different kinds of disadvantages. Handling data sparseness and defining useful features remain especially challenge tasks. In this article, we propose a novel Deep Energy Factorization Model to address these two drawbacks. The model is a designed network that performs multi-label classification and feature representation. Experiments are conducted on four datasets with four evaluation metrics. The empirical results show that our Deep Energy Factorization Model significantly outperforms state-of-the-art models.},
+  archive      = {J_TIST},
+  author       = {Chih-Te Lai and Cheng-Te Li and Shou-De Lin},
+  doi          = {10.1145/3426240},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {8:1–16},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Deep energy factorization model for demographic prediction},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). CSL+: Scalable collective subjective logic under
+multidimensional uncertainty. <em>TIST</em>, <em>12</em>(1), 7:1–26. (<a
+href="https://doi.org/10.1145/3426193">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Using unreliable information sources generating conflicting evidence may lead to a large uncertainty, which significantly hurts the decision making process. Recently, many approaches have been taken to integrate conflicting data from multiple sources and/or fusing conflicting opinions from different entities. To explicitly deal with uncertainty, a belief model called Subjective Logic (SL), as a variant of Dumpster-Shafer Theory, has been proposed to represent subjective opinions and to merge multiple opinions by offering a rich volume of fusing operators, which have been used to solve many opinion inference problems in trust networks. However, the operators of SL are known to be lack of scalability in inferring unknown opinions from large network data as a result of the sequential procedures of merging multiple opinions. In addition, SL does not consider deriving opinions in the presence of conflicting evidence. In this work, we propose a hybrid inference method that combines SL and Probabilistic Soft Logic (PSL), namely, Collective Subjective Plus, CSL + , which is resistible to highly conflicting evidence or a lack of evidence. PSL can reason a belief in a collective manner to deal with large-scale network data, allowing high scalability based on relationships between opinions. However, PSL does not consider an uncertainty dimension in a subjective opinion. To take benefits from both SL and PSL, we proposed a hybrid approach called CSL + for achieving high scalability and high prediction accuracy for unknown opinions with uncertainty derived from a lack of evidence and/or conflicting evidence. Through the extensive experiments on four semi-synthetic and two real-world datasets, we showed that the CSL + outperforms the state-of-the-art belief model (i.e., SL), probabilistic inference models (i.e., PSL, CSL), and deep learning model (i.e., GCN-VAE-opinion) in terms of prediction accuracy, computational complexity, and real running time.},
+  archive      = {J_TIST},
+  author       = {Adil Alim and Jin-Hee Cho and Feng Chen},
+  doi          = {10.1145/3426193},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {7:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {CSL+: Scalable collective subjective logic under multidimensional uncertainty},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). BiNeTClus: Bipartite network community detection based on
+transactional clustering. <em>TIST</em>, <em>12</em>(1), 6:1–26. (<a
+href="https://doi.org/10.1145/3423067">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate the problem of community detection in bipartite networks that are characterized by the presence of two types of nodes such that connections exist only between nodes of different types. While some approaches have been proposed to identify community structures in bipartite networks, there are a number of problems still to solve. In fact, the majority of the proposed approaches suffer from one or even more of the following limitations: (1) difficulty in detecting communities in the presence of many non-discriminating nodes with atypical connections that hide the community structures, (2) loss of relevant topological information due to the transformation of the bipartite network to standard plain graphs, and (3) manually specifying several input parameters, including the number of communities to be identified. To alleviate these problems, we propose BiNeTClus, a parameter-free community detection algorithm in bipartite networks that operates in two phases. The first phase focuses on identifying an initial grouping of nodes through a transactional data model capable of dealing with the situation that involves networks with many atypical connections, that is, sparsely connected nodes and nodes of one type that massively connect to all other nodes of the second type. The second phase aims to refine the clustering results of the first phase via an optimization strategy of the bipartite modularity to identify the final community structures. Our experiments on both synthetic and real networks illustrate the suitability of the proposed approach.},
+  archive      = {J_TIST},
+  author       = {Mohamed Bouguessa and Khaled Nouri},
+  doi          = {10.1145/3423067},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {6:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {BiNeTClus: Bipartite network community detection based on transactional clustering},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Bayesian nonparametric unsupervised concept drift detection
+for data stream mining. <em>TIST</em>, <em>12</em>(1), 5:1–22. (<a
+href="https://doi.org/10.1145/3420034">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online data stream mining is of great significance in practice because of its ubiquity in many real-world scenarios, especially in the big data era. Traditional data mining algorithms cannot be directly applied to data streams due to (1) the possible change of underlying data distribution over time (i.e., concept drift ) and (2) delayed, short, or even no labels for streaming data in practice. A new research area, named unsupervised concept drift detection , has emerged to tackle this difficulty mainly based on two-sample hypothesis tests, such as the Kolmogorov–Smirnov test. However, it is surprising that none of the existing methods in this area exploit the Bayesian nonparametric hypothesis test, which has clear interpretability and straightforward prior knowledge encoding ability and no strict or unrealistic requirement of prefixing the form for the underlying data distribution. In this article, we present a Bayesian nonparametric unsupervised concept drift detection method based on the Polya tree hypothesis test. The basic idea is to decompose the underlying data distribution into a multi-resolution representation that transforms the whole distribution hypothesis test into recursive and simple binomial tests. Also, an incremental mechanism is especially designed to improve its efficiency in the stream setting. The method effectively detect drifts, and it also locates where a drift happens and the posteriors of hypotheses. The experiments on synthetic data verify the desired properties of the proposed method, and the experiments on real-world data show the better performance of the method for data stream mining compared with its frequentist counterpart in the literature.},
+  archive      = {J_TIST},
+  author       = {Junyu Xuan and Jie Lu and Guangquan Zhang},
+  doi          = {10.1145/3420034},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {5:1–22},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Bayesian nonparametric unsupervised concept drift detection for data stream mining},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Self-weighted robust LDA for multiclass classification with
+edge classes. <em>TIST</em>, <em>12</em>(1), 4:1–19. (<a
+href="https://doi.org/10.1145/3418284">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Linear discriminant analysis (LDA) is a popular technique to learn the most discriminative features for multi-class classification. A vast majority of existing LDA algorithms are prone to be dominated by the class with very large deviation from the others, i.e., edge class, which occurs frequently in multi-class classification. First, the existence of edge classes often makes the total mean biased in the calculation of between-class scatter matrix. Second, the exploitation of ℓ 2 -norm based between-class distance criterion magnifies the extremely large distance corresponding to edge class. In this regard, a novel self-weighted robust LDA with ℓ 2,1 -norm based pairwise between-class distance criterion, called SWRLDA, is proposed for multi-class classification especially with edge classes. SWRLDA can automatically avoid the optimal mean calculation and simultaneously learn adaptive weights for each class pair without setting any additional parameter. An efficient re-weighted algorithm is exploited to derive the global optimum of the challenging ℓ 2,1 -norm maximization problem. The proposed SWRLDA is easy to implement and converges fast in practice. Extensive experiments demonstrate that SWRLDA performs favorably against other compared methods on both synthetic and real-world datasets while presenting superior computational efficiency in comparison with other techniques.},
+  archive      = {J_TIST},
+  author       = {Caixia Yan and Xiaojun Chang and Minnan Luo and Qinghua Zheng and Xiaoqin Zhang and Zhihui Li and Feiping Nie},
+  doi          = {10.1145/3418284},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {4:1–19},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Self-weighted robust LDA for multiclass classification with edge classes},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A novel multi-task tensor correlation neural network for
+facial attribute prediction. <em>TIST</em>, <em>12</em>(1), 3:1–22. (<a
+href="https://doi.org/10.1145/3418285">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-task learning plays an important role in face multi-attribute prediction. At present, most researches excavate the shared information between attributes by sharing all convolutional layers. However, it is not appropriate to treat the low-level and high-level features of the face multi-attribute equally, because the high-level features are more biased toward the specific content of the category. In this article, a novel multi-attribute tensor correlation neural network (MTCN) is used to predict face attributes. MTCN shares all attribute features at the low-level layers, and then distinguishes each attribute feature at the high-level layers. To better excavate the correlations among high-level attribute features, each sub-network explores useful information from other networks to enhance its original information. Then a tensor canonical correlation analysis method is used to seek the correlations among the highest-level attributes, which enhances the original information of each attribute. After that, these features are mapped into a highly correlated space through the correlation matrix. Finally, we use sufficient experiments to verify the performance of MTCN on the CelebA and LFWA datasets and our MTCN achieves the best performance compared with the latest multi-attribute recognition algorithms under the same settings.},
+  archive      = {J_TIST},
+  author       = {Mingxing Duan and Kenli Li and Keqin Li and Qi Tian},
+  doi          = {10.1145/3418285},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {3:1–22},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {A novel multi-task tensor correlation neural network for facial attribute prediction},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Session-based hotel recommendations dataset: As part of the
+ACM recommender system challenge 2019. <em>TIST</em>, <em>12</em>(1),
+1:1–20. (<a href="https://doi.org/10.1145/3412379">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In 2019, the Recommender Systems Challenge [17] dealt for the first time with a real-world task from the area of e-tourism, namely the recommendation of hotels in booking sessions. In this context, we present the release of a new dataset that we believe is vitally important for recommendation systems research in the area of hotel search, from both academic and industry perspectives. In this article, we describe the qualitative characteristics of the dataset and present the comparison of several baseline algorithms trained on the data.},
+  archive      = {J_TIST},
+  author       = {Jens Adamczak and Yashar Deldjoo and Farshad Bakhshandegan Moghaddam and Peter Knees and Gerard-Paul Leyson and Philipp Monreal},
+  doi          = {10.1145/3412379},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {1:1–20},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Session-based hotel recommendations dataset: As part of the ACM recommender system challenge 2019},
+  volume       = {12},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). From appearance to essence: Comparing truth discovery
+methods without using ground truth. <em>TIST</em>, <em>11</em>(6),
+74:1–24. (<a href="https://doi.org/10.1145/3411749">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Truth discovery has been widely studied in recent years as a fundamental means for resolving the conflicts in multi-source data. Although many truth discovery methods have been proposed based on different considerations and intuitions, investigations show that no single method consistently outperforms the others. To select the right truth discovery method for a specific application scenario, it becomes essential to evaluate and compare the performance of different methods. A drawback of current research efforts is that they commonly assume the availability of certain ground truth for the evaluation of methods. However, the ground truth may be very limited or even impossible to obtain, rendering the evaluation biased. In this article, we present CompTruthHyp , a generic approach for comparing the performance of truth discovery methods without using ground truth. In particular, our approach calculates the probability of observations in a dataset based on the output of different methods. The probability is then ranked to reflect the performance of these methods. We review and compare 12 representative truth discovery methods and consider both single-valued and multi-valued objects. The empirical studies on both real-world and synthetic datasets demonstrate the effectiveness of our approach for comparing truth discovery methods.},
+  archive      = {J_TIST},
+  author       = {Xiu Susie Fang and Quan Z. Sheng and Xianzhi Wang and Wei Emma Zhang and Anne H. H. Ngu and Jian Yang},
+  doi          = {10.1145/3411749},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {74:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {From appearance to essence: Comparing truth discovery methods without using ground truth},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Human-computer coalition formation in weighted voting games.
+<em>TIST</em>, <em>11</em>(6), 73:1–20. (<a
+href="https://doi.org/10.1145/3408294">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article proposes a negotiation game, based on the weighted voting paradigm in cooperative game theory, where agents need to form coalitions and agree on how to share the gains. Despite the prevalence of weighted voting in the real world, there has been little work studying people’s behavior in such settings. This work addresses this gap by combining game-theoretic solution concepts with machine learning models for predicting human behavior in such domains. We present a five-player online version of a weighted voting game in which people negotiate to create coalitions. We provide an equilibrium analysis of this game and collect hundreds of instances of people’s play in the game. We show that a machine learning model with features based on solution concepts from cooperative game theory (in particular, an extension of the Deegan-Packel Index) provide a good prediction of people’s decisions to join coalitions in the game. We designed an agent that uses the prediction model to make offers to people in this game and was able to outperform other people in an extensive empirical study. These results demonstrate the benefit of incorporating concepts from cooperative game theory in the design of agents that interact with people in group decision-making settings.},
+  archive      = {J_TIST},
+  author       = {Moshe Mash and Roy Fairstein and Yoram Bachrach and Kobi Gal and Yair Zick},
+  doi          = {10.1145/3408294},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {73:1–20},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Human-computer coalition formation in weighted voting games},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A joint neural model for user behavior prediction on social
+networking platforms. <em>TIST</em>, <em>11</em>(6), 72:1–25. (<a
+href="https://doi.org/10.1145/3406540">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Social networking services provide platforms for users to perform two kinds of behaviors: consumption behavior (e.g., recommending items of interest) and social link behavior (e.g., recommending potential social links). Accurately modeling and predicting users’ two kinds of behaviors are two core tasks in these platforms with various applications. Recently, with the advance of neural networks, many neural-based models have been designed to predict a single users’ behavior, i.e., social link behavior or consumption behavior. Compared to the classical shallow models, these neural-based models show better performance to drive a user’s behavior by modeling the complex patterns. However, there are few works exploiting whether it is possible to design a neural-based model to jointly predict users’ two kinds of behaviors to further enhance the prediction performance. In fact, social scientists have already shown that users’ two kinds of behaviors are not isolated; people trend to the consumption recommendation of friends on social platforms and would like to make new friends with like-minded users. While some previous works jointly model users’ two kinds of behaviors with shallow models, we argue that the correlation between users’ two kinds of behaviors are complex, which could not be well-designed with shallow linear models. To this end, in this article, we propose a neural joint behavior prediction model named Neural Joint Behavior Prediction Model (NJBP) to mutually enhance the prediction performance of these two tasks on social networking platforms. Specifically, there are two key characteristics of our proposed model: First, to model the correlation of users’ two kinds of behaviors, we design a fusion layer in the neural network to model the positive correlation of users’ two kinds of behaviors. Second, as the observed links in the social network are often very sparse, we design a new link-based loss function that could preserve the social network topology. After that, we design a joint optimization function to allow the two behaviors modeling tasks to be trained to mutually enhance each other. Finally, extensive experimental results on two real-world datasets show that our proposed method is on average 7.14\% better than the best baseline on social link behavior while 6.21\% on consumption behavior prediction. Compared with the pair-wise loss function on two datasets, our proposed link-based loss function improves at least 4.69\% on the social link behavior prediction and 4.72\% on the consumption behavior prediction.},
+  archive      = {J_TIST},
+  author       = {Junwei Li and Le Wu and Richang Hong and Kun Zhang and Yong Ge and Yan Li},
+  doi          = {10.1145/3406540},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {72:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {A joint neural model for user behavior prediction on social networking platforms},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Fast distributed kNN graph construction using auto-tuned
+locality-sensitive hashing. <em>TIST</em>, <em>11</em>(6), 71:1–18. (<a
+href="https://doi.org/10.1145/3408889">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The k -nearest-neighbors ( k NN) graph is a popular and powerful data structure that is used in various areas of Data Science, but the high computational cost of obtaining it hinders its use on large datasets. Approximate solutions have been described in the literature using diverse techniques, among which Locality-sensitive Hashing (LSH) is a promising alternative that still has unsolved problems. We present Variable Resolution Locality-sensitive Hashing, an algorithm that addresses these problems to obtain an approximate k NN graph at a significantly reduced computational cost. Its usability is greatly enhanced by its capacity to automatically find adequate hyperparameter values, a common hindrance to LSH-based methods. Moreover, we provide an implementation in the distributed computing framework Apache Spark that takes advantage of the structure of the algorithm to efficiently distribute the computational load across multiple machines, enabling practitioners to apply this solution to very large datasets. Experimental results show that our method offers significant improvements over the state-of-the-art in the field and shows very good scalability as more machines are added to the computation.},
+  archive      = {J_TIST},
+  author       = {Carlos Eiras-Franco and David Martínez-Rego and Leslie Kanthan and César Piñeiro and Antonio Bahamonde and Bertha Guijarro-Berdiñas and Amparo Alonso-Betanzos},
+  doi          = {10.1145/3408889},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {71:1–18},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Fast distributed kNN graph construction using auto-tuned locality-sensitive hashing},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Latent unexpected recommendations. <em>TIST</em>,
+<em>11</em>(6), 70:1–25. (<a
+href="https://doi.org/10.1145/3404855">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unexpected recommender system constitutes an important tool to tackle the problem of filter bubbles and user boredom, which aims at providing unexpected and satisfying recommendations to target users at the same time. Previous unexpected recommendation methods only focus on the straightforward relations between current recommendations and user expectations by modeling unexpectedness in the feature space, thus resulting in the loss of accuracy measures to improve unexpectedness performance. In contrast to these prior models, we propose to model unexpectedness in the latent space of user and item embeddings, which allows us to capture hidden and complex relations between new recommendations and historic purchases. In addition, we develop a novel Latent Closure (LC) method to construct a hybrid utility function and provide unexpected recommendations based on the proposed model. Extensive experiments on three real-world datasets illustrate superiority of our proposed approach over the state-of-the-art unexpected recommendation models, which leads to significant increase in unexpectedness measure without sacrificing any accuracy metric under all experimental settings in this article.},
+  archive      = {J_TIST},
+  author       = {Pan Li and Alexander Tuzhilin},
+  doi          = {10.1145/3404855},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {70:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Latent unexpected recommendations},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). BOXREC: Recommending a box of preferred outfits in online
+shopping. <em>TIST</em>, <em>11</em>(6), 69:1–28. (<a
+href="https://doi.org/10.1145/3408890">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fashionable outfits are generally created by expert fashionistas, who use their creativity and in-depth understanding of fashion to make attractive outfits. Over the past few years, automation of outfit composition has gained much attention from the research community. Most of the existing outfit recommendation systems focus on pairwise item compatibility prediction (using visual and text features) to score an outfit combination having several items, followed by recommendation of top-n outfits or a capsule wardrobe having a collection of outfits based on user’s fashion taste. However, none of these consider a user’s preference of price range for individual clothing types or an overall shopping budget for a set of items. In this article, we propose a box recommendation framework—BOXREC—which at first collects user preferences across different item types (namely, top-wear, bottom-wear, and foot-wear) including price range of each type and a maximum shopping budget for a particular shopping session. It then generates a set of preferred outfits by retrieving all types of preferred items from the database (according to user specified preferences including price ranges), creates all possible combinations of three preferred items (belonging to distinct item types), and verifies each combination using an outfit scoring framework—BOXREC-OSF. Finally, it provides a box full of fashion items, such that different combinations of the items maximize the number of outfits suitable for an occasion while satisfying maximum shopping budget. We create an extensively annotated dataset of male fashion items across various types and categories (each having associated price) and a manually annotated positive and negative formal as well as casual outfit dataset. We consider a set of recently published pairwise compatibility prediction methods as competitors of BOXREC-OSF. Empirical results show superior performance of BOXREC-OSF over the baseline methods. We found encouraging results by performing both quantitative and qualitative analysis of the recommendations produced by BOXREC. Finally, based on user feedback corresponding to the recommendations given by BOXREC, we show that disliked or unpopular items can be a part of attractive outfits.},
+  archive      = {J_TIST},
+  author       = {Debopriyo Banerjee and Krothapalli Sreenivasa Rao and Shamik Sural and Niloy Ganguly},
+  doi          = {10.1145/3408890},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {69:1–28},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {BOXREC: Recommending a box of preferred outfits in online shopping},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). An empirical investigation of different classifiers,
+encoding, and ensemble schemes for next event prediction using business
+process event logs. <em>TIST</em>, <em>11</em>(6), 68:1–34. (<a
+href="https://doi.org/10.1145/3406541">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There is a growing need for empirical benchmarks that support researchers and practitioners in selecting the best machine learning technique for given prediction tasks. In this article, we consider the next event prediction task in business process predictive monitoring, and we extend our previously published benchmark by studying the impact on the performance of different encoding windows and of using ensemble schemes. The choice of whether to use ensembles and which scheme to use often depends on the type of data and classification task. While there is a general understanding that ensembles perform well in predictive monitoring of business processes, next event prediction is a task for which no other benchmarks involving ensembles are available. The proposed benchmark helps researchers to select a high-performing individual classifier or ensemble scheme given the variability at the case level of the event log under consideration. Experimental results show that choosing an optimal number of events for feature encoding is challenging, resulting in the need to consider each event log individually when selecting an optimal value. Ensemble schemes improve the performance of low-performing classifiers in this task, such as SVM, whereas high-performing classifiers, such as tree-based classifiers, are not better off when ensemble schemes are considered.},
+  archive      = {J_TIST},
+  author       = {Bayu Adhi Tama and Marco Comuzzi and Jonghyeon Ko},
+  doi          = {10.1145/3406541},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {68:1–34},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {An empirical investigation of different classifiers, encoding, and ensemble schemes for next event prediction using business process event logs},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Multiple elimination of base classifiers in ensemble
+learning using accuracy and diversity comparisons. <em>TIST</em>,
+<em>11</em>(6), 67:1–17. (<a
+href="https://doi.org/10.1145/3405790">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When generating ensemble classifiers, selecting the best set of classifiers from the base classifier pool is considered a combinatorial problem and an efficient classifier selection methodology must be utilized. Different researchers have used different strategies such as evolutionary algorithms, genetic algorithms, rule-based algorithms, simulated annealing, and so forth to select the best set of classifiers that can maximize overall ensemble classifier accuracy. In this article, we present a novel classifier selection approach to generate an ensemble classifier. The proposed approach selects classifiers in multiple rounds of elimination. In each round, a classifier is given a chance to be selected to become a part of the ensemble, if it can contribute to the overall ensemble accuracy or diversity; otherwise, it is put back into the pool. Each classifier is given multiple opportunities to participate in rounds of selection and they are discarded only if they have no remaining chances. The process is repeated until no classifier in the pool has any chance left to participate in the round of selection. To test the efficacy of the proposed approach, 13 benchmark datasets from the UCI repository are used and results are compared with single classifier models and existing state-of-the-art ensemble classifier approaches. Statistical significance testing is conducted to further validate the results, and an analysis is provided.},
+  archive      = {J_TIST},
+  author       = {Zohaib Md. Jan and Brijesh Verma},
+  doi          = {10.1145/3405790},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {67:1–17},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Multiple elimination of base classifiers in ensemble learning using accuracy and diversity comparisons},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). SafeRoute: Learning to navigate streets safely in an urban
+environment. <em>TIST</em>, <em>11</em>(6), 66:1–17. (<a
+href="https://doi.org/10.1145/3402818">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent studies show that 85\% of women have changed their traveled routes to avoid harassment and assault. Despite this, current mapping tools do not empower users with information to take charge of their personal safety. We propose SafeRoute, a novel solution to the problem of navigating cities and avoiding street harassment and crime. Unlike other street navigation applications, SafeRoute introduces a new type of path generation via deep reinforcement learning. This enables us to successfully optimize for multi-criteria path-finding and incorporate representation learning within our framework. Our agent learns to pick favorable streets to create a safe and short path with a reward function that incorporates safety and efficiency. Given access to recent crime reports in many urban cities, we train our model for experiments in Boston, New York, and San Francisco. We test our model on areas of these cities, specifically the populated downtown regions with high foot traffic. We evaluate SafeRoute and successfully improve over state-of-the-art methods by up to 17\% in local average distance from crimes while decreasing path length by up to 7\%.},
+  archive      = {J_TIST},
+  author       = {Sharon Levy and Wenhan Xiong and Elizabeth Belding and William Yang Wang},
+  doi          = {10.1145/3402818},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {66:1–17},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {SafeRoute: Learning to navigate streets safely in an urban environment},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Contextual anomaly detection in solder paste inspection with
+multi-task learning. <em>TIST</em>, <em>11</em>(6), 65:1–17. (<a
+href="https://doi.org/10.1145/3383261">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we study solder paste inspection (SPI), an important stage that is used in the semiconductor manufacturing industry, where abnormal boards should be detected. A highly accurate SPI can substantially reduce human expert involvement, as well as reduce the waste in disposing of the boards in good condition. A key difference today is that because of increasing demand in board customization, the number of board types increases substantially and quantity of the boards produced in each type decreases. Thus, the previous approaches where a fine-tuned model is developed for each board type are no longer viable. Intrinsically, our problem is an anomaly detection problem. A major specialty in today’s SPI is that the target tasks for prediction cannot be fully pre-determined due to context changes during the solder paste printing stage. Our experiences show that a conventional approach to first define a set of tasks and train these tasks offline will lead to low accuracy. Here, we propose a novel multi-task approach, where the performance of all target tasks is ensured simultaneously. We note that the SPI process is streamlined and automatic, allowing the SPI time for only a few seconds. We propose a fast clustering algorithm that reuses existing models to avoid retraining and fine tune in the inference phase. We evaluate our approach using 3-month data collected from production lines. We show that we can reduce 81.28\% of false alarms. This can translate to annual savings of $11.3 million.},
+  archive      = {J_TIST},
+  author       = {Zimu Zheng and Jie Pu and Linghui Liu and Dan Wang and Xiangming Mei and Sen Zhang and Quanyu Dai},
+  doi          = {10.1145/3383261},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {65:1–17},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Contextual anomaly detection in solder paste inspection with multi-task learning},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). DeepApp: Predicting personalized smartphone app usage via
+context-aware multi-task learning. <em>TIST</em>, <em>11</em>(6),
+64:1–12. (<a href="https://doi.org/10.1145/3408325">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smartphone mobile application (App) usage prediction, i.e., which Apps will be used next, is beneficial for user experience improvement. Through an in-depth analysis on a real-world dataset, we find that App usage is highly spatio-temporally correlated and personalized. Given the ability to model complex spatio-temporal contexts, we aim to apply deep learning to achieve high prediction accuracy. However, the personalization yields a problem: training one network for each individual suffers from data scarcity, yet training one deep neural network for all users often fails to uncover user preference. In this article, we propose a novel App usage prediction framework, named DeepApp , to achieve context-aware prediction via multi-task learning. To tackle the challenge of data scarcity, we train one general network for multiple users to share common patterns. To better utilize the spatio-temporal contexts, we supplement a location prediction task in the multi-task learning framework to learn spatio-temporal relations. As for the personalization, we add a user identification task to capture user preference. We evaluate DeepApp on the large-scale dataset by extensive experiments. Results demonstrate that DeepApp outperforms the start-of-the-art baseline by 6.44\%.},
+  archive      = {J_TIST},
+  author       = {Tong Xia and Yong Li and Jie Feng and Depeng Jin and Qing Zhang and Hengliang Luo and Qingmin Liao},
+  doi          = {10.1145/3408325},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {6},
+  pages        = {64:1–12},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {DeepApp: Predicting personalized smartphone app usage via context-aware multi-task learning},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Mapping points of interest through street view imagery and
+paid crowdsourcing. <em>TIST</em>, <em>11</em>(5), 63:1–28. (<a
+href="https://doi.org/10.1145/3403931">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the Virtual City Explorer (VCE), an online crowdsourcing platform for the collection of rich geotagged information in urban environments. Compared to other volunteered geographic information approaches, which are constrained by the number and availability of mapping enthusiasts on the ground, the VCE uses digital street imagery to allow people to virtually explore a city from anywhere in the world, using a browser or a mobile phone. In addition, contributions in VCE are designed as paid microtasks—small jobs that can be carried out without any specific knowledge of the local area or previous mapping expertise in exchange for a fee. We tested the VCE in two cities to map points of interest (PoIs) in transport and mobility, using FigureEight to recruit participants. We were able to show that our platform enables crowdworkers to submit PoI location seamlessly, cover almost all of the tested areas, and discover several PoIs not reported by other approaches. This allows the VCE to complement existing approaches that leverage experts or grassroot communities.},
+  archive      = {J_TIST},
+  author       = {Eddy Maddalena and Luis-Daniel Ibáñez and Elena Simperl},
+  doi          = {10.1145/3403931},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {63:1–28},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Mapping points of interest through street view imagery and paid crowdsourcing},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Dancing with trump in the stock market: A deep information
+echoing model. <em>TIST</em>, <em>11</em>(5), 62:1–22. (<a
+href="https://doi.org/10.1145/3403578">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is always deemed crucial to identify the key factors that could have significant impact on the stock market trend. Recently, an interesting phenomenon has emerged that some of President Trump’s posts in Twitter can surge into a dominant role on the stock market for a certain time period, although studies along this line are still in their infancy. Therefore, in this article, we study whether and how this new-rising information can help boost the performance of stock market prediction. Specifically, we have found that the echoing reinforced effect of financial news with Trump’s market-related tweets can influence the market movement—that is, some of Trump’s tweets directly impact the stock market in a short time, and the impact can be further intensified when it echoes with other financial news reports. Along this line, we propose a deep information echoing model to predict the hourly stock market trend, such as the rise and fall of the Dow Jones Industrial Average. In particular, to model the discovered echoing reinforced impact, we design a novel information echoing module with a gating mechanism in a sequential deep learning framework to capture the fused knowledge from both Trump’s tweets and financial news. Extensive experiments have been conducted on the real-world U.S. stock market data to validate the effectiveness of our model and its interpretability in understanding the usability of Trump’s posts. Our proposed deep echoing model outperforms other baselines by achieving the best accuracy of 60.42\% and obtains remarkable accumulated profits in a trading simulation, which confirms our assumption that Trump’s tweets contain indicative information for short-term market trends. Furthermore, we find that Trump’s tweets about trade and political events are more likely to be associated with short-term market movement, and it seems interesting that the impact would not degrade as time passes.},
+  archive      = {J_TIST},
+  author       = {Kun Yuan and Guannan Liu and Junjie Wu and Hui Xiong},
+  doi          = {10.1145/3403578},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {62:1–22},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Dancing with trump in the stock market: A deep information echoing model},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Moment-guided discriminative manifold correlation learning
+on ordinal data. <em>TIST</em>, <em>11</em>(5), 61:1–18. (<a
+href="https://doi.org/10.1145/3402445">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Canonical correlation analysis (CCA) is a typical and useful learning paradigm in big data analysis for capturing correlation across multiple views of the same objects. When dealing with data with additional ordinal information, traditional CCA suffers from poor performance due to ignoring the ordinal relationships within the data. Such data is becoming increasingly common, as either temporal or sequential information is often associated with the data collection process. To incorporate the ordinal information into the objective function of CCA, the so-called ordinal discriminative CCA has been presented in the literature. Although ordinal discriminative CCA can yield better ordinal regression results, its performance deteriorates when data is corrupted with noise and outliers, as it tends to smear the order information contained in class centers. To address this issue, in this article we construct a robust manifold-preserved ordinal discriminative correlation regression (rmODCR). The robustness is achieved by replacing the traditional ( l 2 -norm) class centers with l p -norm centers, where p is efficiently estimated according to the moments of the data distributions, as well as by incorporating the manifold distribution information of the data in the objective optimization. In addition, we further extend the robust manifold-preserved ordinal discriminative correlation regression to deep convolutional architectures. Extensive experimental evaluations have demonstrated the superiority of the proposed methods.},
+  archive      = {J_TIST},
+  author       = {Qing Tian and Wenqiang Zhang and Meng Cao and Liping Wang and Songcan Chen and Hujun Yin},
+  doi          = {10.1145/3402445},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {61:1–18},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Moment-guided discriminative manifold correlation learning on ordinal data},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Learning generalizable and identity-discriminative
+representations for face anti-spoofing. <em>TIST</em>, <em>11</em>(5),
+60:1–19. (<a href="https://doi.org/10.1145/3402446">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Face anti-spoofing aims to detect presentation attack to face recognition--based authentication systems. It has drawn growing attention due to the high security demand. The widely adopted CNN-based methods usually well recognize the spoofing faces when training and testing spoofing samples display similar patterns, but their performance would drop drastically on testing spoofing faces of novel patterns or unseen scenes, leading to poor generalization performance. Furthermore, almost all current methods treat face anti-spoofing as a prior step to face recognition, which prolongs the response time and makes face authentication inefficient. In this article, we try to boost the generalizability and applicability of face anti-spoofing methods by designing a new generalizable face authentication CNN (GFA-CNN) model with three novelties. First, GFA-CNN introduces a simple yet effective total pairwise confusion loss for CNN training that properly balances contributions of all spoofing patterns for recognizing the spoofing faces. Second, it incorporate a fast domain adaptation component to alleviate negative effects brought by domain variation. Third, it deploys filter diversification learning to make the learned representations more adaptable to new scenes. In addition, the proposed GFA-CNN works in a multi-task manner—it performs face anti-spoofing and face recognition simultaneously. Experimental results on five popular face anti-spoofing and face recognition benchmarks show that GFA-CNN outperforms previous face anti-spoofing methods on cross-test protocols significantly and also well preserves the identity information of input face images.},
+  archive      = {J_TIST},
+  author       = {Xiaoguang Tu and Zheng Ma and Jian Zhao and Guodong Du and Mei Xie and Jiashi Feng},
+  doi          = {10.1145/3402446},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {60:1–19},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Learning generalizable and identity-discriminative representations for face anti-spoofing},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Querying recurrent convoys over trajectory data.
+<em>TIST</em>, <em>11</em>(5), 59:1–24. (<a
+href="https://doi.org/10.1145/3400730">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Moving objects equipped with location-positioning devices continuously generate a large amount of spatio-temporal trajectory data. An interesting finding over a trajectory stream is a group of objects that are travelling together for a certain period of time. We observe that existing studies on mining co-moving objects do not consider an important correlation between co-moving objects, which is the reoccurrence of the co-moving pattern. In this study, we propose the problem of finding recurrent co-moving patterns from streaming trajectories, enabling us to discover recent co-moving patterns that are repeated within a given time period. Experimental results on real-life trajectory data verify the efficiency and effectiveness of our method.},
+  archive      = {J_TIST},
+  author       = {Munkh-Erdene Yadamjav and Zhifeng Bao and Baihua Zheng and Farhana M. Choudhury and Hanan Samet},
+  doi          = {10.1145/3400730},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {59:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Querying recurrent convoys over trajectory data},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Shapelet-transformed multi-channel EEG channel selection.
+<em>TIST</em>, <em>11</em>(5), 58:1–27. (<a
+href="https://doi.org/10.1145/3397850">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article proposes an approach to select EEG channels based on EEG shapelet transformation, aiming to reduce the setup time and inconvenience for subjects and to improve the applicable performance of Brain-Computer Interfaces (BCIs). In detail, the method selects top- k EEG channels by solving a logistic loss-embedded minimization problem with respect to EEG shapelet learning, hyperplane learning, and EEG channel weight learning simultaneously. Especially, to learn distinguished EEG shapelets for weighting contributions of each EEG channel to the logistic loss, EEG shapelet similarity is also minimized during the procedure. Furthermore, the gradient descent strategy is adopted in the article to solve the non-convex optimization problem, which finally leads to the algorithm termed StEEGCS. In a result, classification accuracy, with those EEG channels selected by StEEGCS, is improved compared to that with all EEG channels, and classification time consumption is reduced as well. Additionally, the comparisons with several state-of-the-art EEG channel selection methods on several real-world EEG datasets also demonstrate the efficacy and superiority of StEEGCS.},
+  archive      = {J_TIST},
+  author       = {Chenglong Dai and Dechang Pi and Stefanie I. Becker},
+  doi          = {10.1145/3397850},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {58:1–27},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Shapelet-transformed multi-channel EEG channel selection},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A discriminative convolutional neural network with
+context-aware attention. <em>TIST</em>, <em>11</em>(5), 57:1–21. (<a
+href="https://doi.org/10.1145/3397464">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Feature representation and feature extraction are two crucial procedures in text mining. Convolutional Neural Networks (CNN) have shown overwhelming success for text-mining tasks, since they are capable of efficiently extracting n -gram features from source data. However, vanilla CNN has its own weaknesses on feature representation and feature extraction. A certain amount of filters in CNN are inevitably duplicate and thus hinder to discriminatively represent a given text. In addition, most existing CNN models extract features in a fixed way (i.e., max pooling) that either limit the CNN to local optimum nor without considering the relation between all features, thereby unable to learn a contextual n -gram features adaptively. In this article, we propose a discriminative CNN with context-aware attention to solve the challenges of vanilla CNN. Specifically, our model mainly encourages discrimination across different filters via maximizing their earth mover distances and estimates the salience of feature candidates by considering the relation between context features. We validate carefully our findings against baselines on five benchmark datasets of classification and two datasets of summarization. The results of the experiments verify the competitive performance of our proposed model.},
+  archive      = {J_TIST},
+  author       = {Yuxiang Zhou and Lejian Liao and Yang Gao and Heyan Huang and Xiaochi Wei},
+  doi          = {10.1145/3397464},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {57:1–21},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {A discriminative convolutional neural network with context-aware attention},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). STARS: Defending against sockpuppet-based targeted attacks
+on reviewing systems. <em>TIST</em>, <em>11</em>(5), 56:1–25. (<a
+href="https://doi.org/10.1145/3397463">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Customers of virtually all online marketplaces rely upon reviews in order to select the product or service they wish to buy. These marketplaces in turn deploy review fraud detection systems so that the integrity of reviews is preserved. A well-known problem with review fraud detection systems is their underlying assumption that the majority of reviews are honest-this assumption leads to a vulnerability where an attacker can try to generate many fake reviews of a product. In this article, we consider the case where a company wishes to fraudulently promote its product through fake reviews and propose the Sockpuppet-based Targeted Attack on Reviewing Systems (STARS for short). STARS enables an attacker to enter fake reviews for a product from multiple, apparently independent, sockpuppet accounts. We show that the STARS attack enables companies to successfully promote their product against seven recent, well-known review fraud detectors on four datasets (Amazon, Epinions, and the BitcoinAlpha and OTC exchanges) by significant margins. To protect against the STARS attack, we propose a new fraud detection algorithm called RTV. RTV introduces a new class of users (called trusted users) and also considers reviews left by verified users which were not considered in existing review fraud detectors. We show that RTV significantly mitigates the impact of the STARS attack across the four datasets listed above.},
+  archive      = {J_TIST},
+  author       = {Rui Liu and Runze Liu and Andrea Pugliese and V. S. Subrahmanian},
+  doi          = {10.1145/3397463},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {56:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {STARS: Defending against sockpuppet-based targeted attacks on reviewing systems},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Adaptive HTF-MPR: An adaptive heterogeneous TensorFlow
+mapper utilizing bayesian optimization and genetic algorithms.
+<em>TIST</em>, <em>11</em>(5), 55:1–25. (<a
+href="https://doi.org/10.1145/3396949">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep neural networks are widely used in many artificial intelligence applications. They have demonstrated state-of-the-art accuracy on many artificial intelligence tasks. For this high accuracy to occur, deep neural networks require the right parameter values. This is achieved by a process known as training . The training of large amounts of data via many iterations comes at a high cost in regard to computation time and energy. Optimal resource allocation would therefore reduce the training time. TensorFlow, a computational graph library developed by Google, alleviates the development of neural network models and provides the means to train these networks. In this article, we propose Adaptive HTF-MPR to carry out the resource allocation, or mapping, on TensorFlow. Adaptive HTF-MPR searches for the best mapping in a hybrid approach. We applied the proposed methodology on two well-known image classifiers: VGG-16 and AlexNet. We also performed a full analysis of the solution space of MNIST Softmax. Our results demonstrate that Adaptive HTF-MPR outperforms the default homogeneous TensorFlow mapping. In addition to the speed up, Adaptive HTF-MPR can react to changes in the state of the system and adjust to an improved mapping.},
+  archive      = {J_TIST},
+  author       = {Ahmad Albaqsami and Maryam S. Hosseini and Masoomeh Jasemi and Nader Bagherzadeh},
+  doi          = {10.1145/3396949},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {55:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Adaptive HTF-MPR: An adaptive heterogeneous TensorFlow mapper utilizing bayesian optimization and genetic algorithms},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Multi-task learning for entity recommendation and document
+ranking in web search. <em>TIST</em>, <em>11</em>(5), 54:1–24. (<a
+href="https://doi.org/10.1145/3396501">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Entity recommendation, providing users with an improved search experience by proactively recommending related entities to a given query, has become an indispensable feature of today’s Web search engine. Existing studies typically only consider the query issued at the current timestep while ignoring the in-session user search behavior (short-term search history) or historical user search behavior across all sessions (long-term search history) when generating entity recommendations. As a consequence, they may fail to recommend entities of interest relevant to a user’s actual information need. In this work, we believe that both short-term and long-term search history convey valuable evidence that could help understand the user’s search intent behind a query, and take both of them into consideration for entity recommendation. Furthermore, there has been little work on exploring whether the use of other companion tasks in Web search such as document ranking as auxiliary tasks could improve the performance of entity recommendation. To this end, we propose a multi-task learning framework with deep neural networks (DNNs) to jointly learn and optimize two companion tasks in Web search engines: entity recommendation and document ranking, which can be easily trained in an end-to-end manner. Specifically, we regard document ranking as an auxiliary task to improve the main task of entity recommendation, where the representations of queries, sessions, and users are shared across all tasks and optimized by the multi-task objective during training. We evaluate our approach using large-scale, real-world search logs of a widely-used commercial Web search engine. We also performed extensive ablation experiments over a number of facets of the proposed multi-task DNN model to figure out their relative importance. The experimental results show that both short-term and long-term search history can bring significant improvements in recommendation effectiveness, and the combination of both outperforms using either of them individually. In addition, the experiments show that the performance of both entity recommendation and document ranking can be significantly improved, which demonstrates the effectiveness of using multi-task learning to jointly optimize the two companion tasks in Web search.},
+  archive      = {J_TIST},
+  author       = {Jizhou Huang and Haifeng Wang and Wei Zhang and Ting Liu},
+  doi          = {10.1145/3396501},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {54:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Multi-task learning for entity recommendation and document ranking in web search},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Cut-n-reveal: Time series segmentations with explanations.
+<em>TIST</em>, <em>11</em>(5), 53:1–26. (<a
+href="https://doi.org/10.1145/3394118">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent hurricane events have caused unprecedented amounts of damage on critical infrastructure systems and have severely threatened our public safety and economic health. The most observable (and severe) impact of these hurricanes is the loss of electric power in many regions, which causes breakdowns in essential public services. Understanding power outages and how they evolve during a hurricane provides insights on how to reduce outages in the future, and how to improve the robustness of the underlying critical infrastructure systems. In this article, we propose a novel scalable segmentation with explanations framework to help experts understand such datasets. Our method, CnR (Cut-n-Reveal), first finds a segmentation of the outage sequences based on the temporal variations of the power outage failure process so as to capture major pattern changes. This temporal segmentation procedure is capable of accounting for both the spatial and temporal correlations of the underlying power outage process. We then propose a novel explanation optimization formulation to find an intuitive explanation of the segmentation such that the explanation highlights the culprit time series of the change in each segment. Through extensive experiments, we show that our method consistently outperforms competitors in multiple real datasets with ground truth. We further study real county-level power outage data from several recent hurricanes (Matthew, Harvey, Irma) and show that CnR recovers important, non-trivial, and actionable patterns for domain experts, whereas baselines typically do not give meaningful results.},
+  archive      = {J_TIST},
+  author       = {Nikhil Muralidhar and Anika Tabassum and Liangzhe Chen and Supriya Chinthavali and Naren Ramakrishnan and B. Aditya Prakash},
+  doi          = {10.1145/3394118},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {53:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Cut-n-reveal: Time series segmentations with explanations},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Practical privacy preserving POI recommendation.
+<em>TIST</em>, <em>11</em>(5), 52:1–20. (<a
+href="https://doi.org/10.1145/3394138">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point-of-Interest (POI) recommendation has been extensively studied and successfully applied in industry recently. However, most existing approaches build centralized models on the basis of collecting users’ data. Both private data and models are held by the recommender, which causes serious privacy concerns. In this article, we propose a novel Privacy preserving POI Recommendation (PriRec) framework. First, to protect data privacy, users’ private data (features and actions) are kept on their own side, e.g., Cellphone or Pad. Meanwhile, the public data that need to be accessed by all the users are kept by the recommender to reduce the storage costs of users’ devices. Those public data include: (1) static data only related to the status of POI, such as POI categories, and (2) dynamic data dependent on user-POI actions such as visited counts. The dynamic data could be sensitive, and we develop local differential privacy techniques to release such data to the public with privacy guarantees. Second, PriRec follows the representations of Factorization Machine (FM) that consists of a linear model and the feature interaction model. To protect the model privacy, the linear models are saved on the users’ side, and we propose a secure decentralized gradient descent protocol for users to learn it collaboratively. The feature interaction model is kept by the recommender since there is no privacy risk, and we adopt a secure aggregation strategy in a federated learning paradigm to learn it. To this end, PriRec keeps users’ private raw data and models in users’ own hands, and protects user privacy to a large extent. We apply PriRec in real-world datasets, and comprehensive experiments demonstrate that, compared with FM, PriRec achieves comparable or even better recommendation accuracy.},
+  archive      = {J_TIST},
+  author       = {Chaochao Chen and Jun Zhou and Bingzhe Wu and Wenjing Fang and Li Wang and Yuan Qi and Xiaolin Zheng},
+  doi          = {10.1145/3394138},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {52:1–20},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Practical privacy preserving POI recommendation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A survey of unsupervised deep domain adaptation.
+<em>TIST</em>, <em>11</em>(5), 51:1–46. (<a
+href="https://doi.org/10.1145/3400066">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning has produced state-of-the-art results for a variety of tasks. While such approaches for supervised learning have performed well, they assume that training and testing data are drawn from the same distribution, which may not always be the case. As a complement to this challenge, single-source unsupervised domain adaptation can handle situations where a network is trained on labeled data from a source domain and unlabeled data from a related but different target domain with the goal of performing well at test-time on the target domain. Many single-source and typically homogeneous unsupervised deep domain adaptation approaches have thus been developed, combining the powerful, hierarchical representations from deep learning with domain adaptation to reduce reliance on potentially costly target data labels. This survey will compare these approaches by examining alternative methods, the unique and common elements, results, and theoretical insights. We follow this with a look at application areas and open research directions.},
+  archive      = {J_TIST},
+  author       = {Garrett Wilson and Diane J. Cook},
+  doi          = {10.1145/3400066},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {5},
+  pages        = {51:1–46},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {A survey of unsupervised deep domain adaptation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). DeepKey: A multimodal biometric authentication system via
+deep decoding gaits and brainwaves. <em>TIST</em>, <em>11</em>(4),
+49:1–24. (<a href="https://doi.org/10.1145/3393619">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Biometric authentication involves various technologies to identify individuals by exploiting their unique, measurable physiological and behavioral characteristics. However, traditional biometric authentication systems (e.g., face recognition, iris, retina, voice, and fingerprint) are at increasing risks of being tricked by biometric tools such as anti-surveillance masks, contact lenses, vocoder, or fingerprint films. In this article, we design a multimodal biometric authentication system named DeepKey, which uses both Electroencephalography (EEG) and gait signals to better protect against such risk. DeepKey consists of two key components: an Invalid ID Filter Model to block unauthorized subjects, and an identification model based on attention-based Recurrent Neural Network (RNN) to identify a subject’s EEG IDs and gait IDs in parallel. The subject can only be granted access while all the components produce consistent affirmations to match the user’s proclaimed identity. We implement DeepKey with a live deployment in our university and conduct extensive empirical experiments to study its technical feasibility in practice. DeepKey achieves the False Acceptance Rate (FAR) and the False Rejection Rate (FRR) of 0 and 1.0\%, respectively. The preliminary results demonstrate that DeepKey is feasible, shows consistent superior performance compared to a set of methods, and has the potential to be applied to the authentication deployment in real-world settings.},
+  archive      = {J_TIST},
+  author       = {Xiang Zhang and Lina Yao and Chaoran Huang and Tao Gu and Zheng Yang and Yunhao Liu},
+  doi          = {10.1145/3393619},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {49:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {DeepKey: A multimodal biometric authentication system via deep decoding gaits and brainwaves},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Understanding the long-term evolution of electric taxi
+networks: A longitudinal measurement study on mobility and charging
+patterns. <em>TIST</em>, <em>11</em>(4), 48:1–27. (<a
+href="https://doi.org/10.1145/3393671">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the ever-growing concerns over air pollution and energy security, more and more cities have started to replace their conventional taxi fleets with electric ones. Even though environmentally friendly, the rapid promotion of electric taxis raises problems to both taxi drivers and governments, e.g., prolonged waiting/charging time, unbalanced utilization of charging infrastructures, and inadequate taxi supply due to the long charging time. In this article, we conduct the first longitudinal measurement study to understand the long-term evolution of mobility and charging patterns by utilizing 5-year data from one of the largest electric taxi networks in the world, i.e., the Shenzhen electric taxi network in China. In particular, (1) we first perform an electric taxi contextualization about their operation and charging activities; (2) then we design a generic charging event extraction algorithm based on GPS data and charging station data, and (3) based on the contextualization and extracted charging activities, we perform a comprehensive measurement study called ePat to explore the evolution of the electric taxi network from the mobility and charging perspectives. Our ePat is based on 4.8 TB taxi GPS data, 240 GB taxi transaction data, and metadata from 117 charging stations, during an evolution process from 427 electric taxis in 2013 to 13,178 in 2018. Moreover, ePat also explores the impacts of various contexts and benefits during the evolution process. Our ePat as a comprehensive measurement of the electric taxi network mobility and charging evolution has the potential to advance the understanding of the evolution patterns of electric taxi networks and pave the way for analyzing future shared autonomous vehicles.},
+  archive      = {J_TIST},
+  author       = {Guang Wang and Fan Zhang and Huijun Sun and Yang Wang and Desheng Zhang},
+  doi          = {10.1145/3393671},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {48:1–27},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Understanding the long-term evolution of electric taxi networks: A longitudinal measurement study on mobility and charging patterns},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). End-to-end text-to-image synthesis with spatial constrains.
+<em>TIST</em>, <em>11</em>(4), 47:1–19. (<a
+href="https://doi.org/10.1145/3391709">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although the performance of automatically generating high-resolution realistic images from text descriptions has been significantly boosted, many challenging issues in image synthesis have not been fully investigated, due to shapes variations, viewpoint changes, pose changes, and the relations of multiple objects. In this article, we propose a novel end-to-end approach for text-to-image synthesis with spatial constraints by mining object spatial location and shape information. Instead of learning a hierarchical mapping from text to image, our algorithm directly generates multi-object fine-grained images through the guidance of the generated semantic layouts. By fusing text semantic and spatial information into a synthesis module and jointly fine-tuning them with multi-scale semantic layouts generated, the proposed networks show impressive performance in text-to-image synthesis for complex scenes. We evaluate our method both on single-object CUB dataset and multi-object MS-COCO dataset. Comprehensive experimental results demonstrate that our method significantly outperforms the state-of-the-art approaches consistently across different evaluation metrics.},
+  archive      = {J_TIST},
+  author       = {Min Wang and Congyan Lang and Liqian Liang and Songhe Feng and Tao Wang and Yutong Gao},
+  doi          = {10.1145/3391709},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {47:1–19},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {End-to-end text-to-image synthesis with spatial constrains},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A traffic density estimation model based on crowdsourcing
+privacy protection. <em>TIST</em>, <em>11</em>(4), 46:1–18. (<a
+href="https://doi.org/10.1145/3391707">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Acquiring traffic condition information is of great significance in transportation guidance, urban planning, and route recommendation. To date, traffic density data are generally acquired by road sound analysis, video data analysis, or in-vehicle network communication, which are usually financially or temporally expensive. Another way to get traffic conditions is to collect track data by crowdsourcing. However, this way lead to a greater risk of leaking users’ privacy. To avoid the risk, this article proposes a traffic density estimation model based on crowdsourcing privacy protection. First, in the acquisition process of the track data by crowdsourcing, dual servers are employed for transmission, and homomorphic encryption is carried out to encrypt the data to protect the data from being leaked during transmission. Second, sampling is implemented for randomization and anonymization to reduce the spatial continuity and temporal continuity of position data. In this way, the intermediate server cannot acquire users’ original data, and the main server cannot obtain users’ personal information. Finally, before data transmission, Laplace noising is performed on the users’ local position data to further protect the original location information. The proposed algorithm in this study realizes that only users have their original track data, and the servers involved in the work cannot infer the original track data, which ensures the real security of user privacy. The proposed algorithm was verified with the track data from the Didi Gaia Data Opening Plan. The experimental results showed that the proposed algorithm could still maintain the validity of data analysis results and the security of user data privacy after homomorphic encryption, noise addition, and sample collection, and displayed good robustness and scalability.},
+  archive      = {J_TIST},
+  author       = {Yapei Huang and Yun Tian and Zhijie Liu and Xiaowei Jin and Yanan Liu and Shifeng Zhao and Daxin Tian},
+  doi          = {10.1145/3391707},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {46:1–18},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {A traffic density estimation model based on crowdsourcing privacy protection},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Geosocial co-clustering: A novel framework for geosocial
+community detection. <em>TIST</em>, <em>11</em>(4), 45:1–26. (<a
+href="https://doi.org/10.1145/3391708">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As location-based services using mobile devices have become globally popular these days, social network analysis (especially, community detection) increasingly benefits from combining social relationships with geographic preferences. In this regard, this article addresses the emerging problem of geosocial community detection. We first formalize the problem of geosocial co-clustering , which co-clusters the users in social networks and the locations they visited. Geosocial co-clustering detects higher-quality communities than existing approaches by improving the mapping clusterability , whereby users in the same community tend to visit locations in the same region. While geosocial co-clustering is soundly formalized as non-negative matrix tri-factorization , conventional matrix tri-factorization algorithms suffer from a significant computational overhead when handling large-scale datasets. Thus, we also develop an efficient framework for geosocial co-clustering, called GEOsocial COarsening and DEcomposition (GEOCODE) . To achieve efficient matrix tri-factorization, GEOCODE reduces the numbers of users and locations through coarsening and then decomposes the single whole matrix tri-factorization into a set of multiple smaller sub-matrix tri-factorizations. Thorough experiments conducted using real-world geosocial networks show that GEOCODE reduces the elapsed time by 19–69 times while achieving the accuracy of up to 94.8\% compared with the state-of-the-art co-clustering algorithm. Furthermore, the benefit of the mapping clusterability is clearly demonstrated through a local expert recommendation application.},
+  archive      = {J_TIST},
+  author       = {Jungeun Kim and Jae-Gil Lee and Byung Suk Lee and Jiajun Liu},
+  doi          = {10.1145/3391708},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {45:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Geosocial co-clustering: A novel framework for geosocial community detection},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Domain-attention conditional wasserstein distance for
+multi-source domain adaptation. <em>TIST</em>, <em>11</em>(4), 44:1–19.
+(<a href="https://doi.org/10.1145/3391229">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-source domain adaptation has received considerable attention due to its effectiveness of leveraging the knowledge from multiple related sources with different distributions to enhance the learning performance. One of the fundamental challenges in multi-source domain adaptation is how to determine the amount of knowledge transferred from each source domain to the target domain. To address this issue, we propose a new algorithm, called Domain-attention Conditional Wasserstein Distance (DCWD), to learn transferred weights for evaluating the relatedness across the source and target domains. In DCWD, we design a new conditional Wasserstein distance objective function by taking the label information into consideration to measure the distance between a given source domain and the target domain. We also develop an attention scheme to compute the transferred weights of different source domains based on their conditional Wasserstein distances to the target domain. After that, the transferred weights can be used to reweight the source data to determine their importance in knowledge transfer. We conduct comprehensive experiments on several real-world data sets, and the results demonstrate the effectiveness and efficiency of the proposed method.},
+  archive      = {J_TIST},
+  author       = {Hanrui Wu and Yuguang Yan and Michael K. Ng and Qingyao Wu},
+  doi          = {10.1145/3391229},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {44:1–19},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Domain-attention conditional wasserstein distance for multi-source domain adaptation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Mining high-utility temporal patterns on time interval–based
+data. <em>TIST</em>, <em>11</em>(4), 43:1–31. (<a
+href="https://doi.org/10.1145/3391230">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we propose a novel temporal pattern mining problem, named high-utility temporal pattern mining , to fulfill the needs of various applications. Different from classical temporal pattern mining aimed at discovering frequent temporal patterns, high-utility temporal pattern mining is to find each temporal pattern whose utility is greater than or equal to the minimum-utility threshold. To facilitate efficient high-utility temporal pattern mining, several extension and pruning strategies are proposed to reduce the search space. Algorithm HUTPMiner is then proposed to efficiently mine high-utility temporal patterns with the aid of the proposed extension and pruning strategies. Experimental results show that HUTPMiner is able to prune a large number of candidates, thereby achieving high mining efficiency.},
+  archive      = {J_TIST},
+  author       = {Jun-Zhe Wang and Yi-Cheng Chen and Wen-Yueh Shih and Lin Yang and Yu-Shao Liu and Jiun-Long Huang},
+  doi          = {10.1145/3391230},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {43:1–31},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Mining high-utility temporal patterns on time interval–based data},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). An attention-based rumor detection model with
+tree-structured recursive neural networks. <em>TIST</em>,
+<em>11</em>(4), 42:1–28. (<a
+href="https://doi.org/10.1145/3391250">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Rumor spread in social media severely jeopardizes the credibility of online content. Thus, automatic debunking of rumors is of great importance to keep social media a healthy environment. While facing a dubious claim, people often dispute its truthfulness sporadically in their posts containing various cues, which can form useful evidence with long-distance dependencies. In this work, we propose to learn discriminative features from microblog posts by following their non-sequential propagation structure and generate more powerful representations for identifying rumors. For modeling non-sequential structure, we first represent the diffusion of microblog posts with propagation trees, which provide valuable clues on how a claim in the original post is transmitted and developed over time. We then present a bottom-up and a top-down tree-structured models based on Recursive Neural Networks (RvNN) for rumor representation learning and classification, which naturally conform to the message propagation process in microblogs. To enhance the rumor representation learning, we reveal that effective rumor detection is highly related to finding evidential posts, e.g., the posts expressing specific attitude towards the veracity of a claim, as an extension of the previous RvNN-based detection models that treat every post equally. For this reason, we design discriminative attention mechanisms for the RvNN-based models to selectively attend on the subset of evidential posts during the bottom-up/top-down recursive composition. Experimental results on four datasets collected from real-world microblog platforms confirm that (1) our RvNN-based models achieve much better rumor detection and classification performance than state-of-the-art approaches; (2) the attention mechanisms for focusing on evidential posts can further improve the performance of our RvNN-based method; and (3) our approach possesses superior capacity on detecting rumors at a very early stage.},
+  archive      = {J_TIST},
+  author       = {Jing Ma and Wei Gao and Shafiq Joty and Kam-Fai Wong},
+  doi          = {10.1145/3391250},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {42:1–28},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {An attention-based rumor detection model with tree-structured recursive neural networks},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). CoFi-points: Collaborative filtering via pointwise
+preference learning on user/item-set. <em>TIST</em>, <em>11</em>(4),
+41:1–24. (<a href="https://doi.org/10.1145/3389127">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the explosive growth of web resources, an increasingly important task in recommender systems is to provide high-quality personalized services by learning users’ preferences from historically observed information. As an effective preference learning technology, collaborative filtering has been widely extended to model the one-class or implicit feedback data, which is known as one-class collaborative filtering (OCCF). For a long time, pairwise ranking-oriented learning scheme has been viewed as a superior solution than the pointwise scheme for OCCF due to its higher accuracy in most cases. However, we argue that with appropriate model design, pointwise preference learning can achieve comparable or even better performance than the counterpart, i.e., pairwise preference learning. In particular, we propose a new preference assumption, i.e., pointwise preference on user/item-set. Based on this new assumption, we develop a novel, simple, and flexible solution called collaborative filtering via pointwise preference learning on user/item-set (CoFi-points). Furthermore, we derive two specific algorithms of CoFi-points with respect to the involved user-set and item-set, i.e., CoFi-points(u) and CoFi-points(i), referring to preference assumptions defined on user-set and item-set, respectively. Finally, we conduct extensive empirical studies on four real-world datasets with the state-of-the-art methods, and find that our solution can achieve very promising performance with respect to several ranking-oriented evaluation metrics.},
+  archive      = {J_TIST},
+  author       = {Lin Li and Weike Pan and Zhong Ming},
+  doi          = {10.1145/3389127},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {41:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {CoFi-points: Collaborative filtering via pointwise preference learning on User/Item-set},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). CNN-based multiple manipulation detector using frequency
+domain features of image residuals. <em>TIST</em>, <em>11</em>(4),
+40:1–26. (<a href="https://doi.org/10.1145/3388634">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Increasingly sophisticated image editing tools make it easy to modify images. Often these modifications are elaborate, convincing, and undetectable by even careful human inspection. These considerations have prompted the development of forensic algorithms and approaches to detect modifications done to an image. However, these detectors are model-driven (i.e., manipulation-specific) and the choice of a potent detector requires knowledge of the type of manipulation, something that cannot be known ( a priori ). Thus, the latest effort is directed towards developing model-free (i.e., generalized) detectors capable of detecting multiple manipulation types. In this article, we propose a novel detector capable of exposing seven different manipulation types in low-resolution compressed images. Our proposed approach is based on a two-layer convolutional neural network (CNN) to extract frequency domain features of image median filtered residual that are classified using two different classifiers—softmax and extremely randomized trees. Extensive experiments demonstrate the efficacy of proposed detector over existing state-of-the-art detectors.},
+  archive      = {J_TIST},
+  author       = {Divya Singhal and Abhinav Gupta and Anurag Tripathi and Ravi Kothari},
+  doi          = {10.1145/3388634},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {40:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {CNN-based multiple manipulation detector using frequency domain features of image residuals},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Superpixel region merging based on deep network for medical
+image segmentation. <em>TIST</em>, <em>11</em>(4), 39:1–22. (<a
+href="https://doi.org/10.1145/3386090">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatic and accurate semantic segmentation of pathological structures in medical images is challenging because of noisy disturbance, deformable shapes of pathology, and low contrast between soft tissues. Classical superpixel-based classification algorithms suffer from edge leakage due to complexity and heterogeneity inherent in medical images. Therefore, we propose a deep U-Net with superpixel region merging processing incorporated for edge enhancement to facilitate and optimize segmentation. Our approach combines three innovations: (1) different from deep learning--based image segmentation, the segmentation evolved from superpixel region merging via U-Net training getting rich semantic information, in addition to gray similarity; (2) a bilateral filtering module was adopted at the beginning of the network to eliminate external noise and enhance soft tissue contrast at edges of pathogy; and (3) a normalization layer was inserted after the convolutional layer at each feature scale, to prevent overfitting and increase the sensitivity to model parameters. This model was validated on lung CT, brain MR, and coronary CT datasets, respectively. Different superpixel methods and cross validation show the effectiveness of this architecture. The hyperparameter settings were empirically explored to achieve a good trade-off between the performance and efficiency, where a four-layer network achieves the best result in precision, recall, F-measure, and running speed. It was demonstrated that our method outperformed state-of-the-art networks, including FCN-16s, SegNet, PSPNet, DeepLabv3, and traditional U-Net, both quantitatively and qualitatively. Source code for the complete method is available at https://github.com/Leahnawho/Superpixel-network.},
+  archive      = {J_TIST},
+  author       = {Hui Liu and Haiou Wang and Yan Wu and Lei Xing},
+  doi          = {10.1145/3386090},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {39:1–22},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Superpixel region merging based on deep network for medical image segmentation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). BISTRO: Berkeley integrated system for transportation
+optimization. <em>TIST</em>, <em>11</em>(4), 38:1–27. (<a
+href="https://doi.org/10.1145/3384344">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The current trend toward urbanization and adoption of flexible and innovative mobility technologies will have complex and difficult-to-predict effects on urban transportation systems. Comprehensive methodological frameworks that account for the increasingly uncertain future state of the urban mobility landscape do not yet exist. Furthermore, few approaches have enabled the massive ingestion of urban data in planning tools capable of offering the flexibility of scenario-based design. This article introduces Berkeley Integrated System for Transportation Optimization (BISTRO), a new open source transportation planning decision support system that uses an agent-based simulation and optimization approach to anticipate and develop adaptive plans for possible technological disruptions and growth scenarios. The new framework was evaluated in the context of a machine learning competition hosted within Uber Technologies, Inc., in which over 400 engineers and data scientists participated. For the purposes of this competition, a benchmark model, based on the city of Sioux Falls, South Dakota, was adapted to the BISTRO framework. An important finding of this study was that in spite of rigorous analysis and testing done prior to the competition, the two top-scoring teams discovered an unbounded region of the search space, rendering the solutions largely uninterpretable for the purposes of decision-support. On the other hand, a follow-on study aimed to fix the objective function. It served to demonstrate BISTRO’s utility as a human-in-the-loop cyberphysical system: one that uses scenario-based optimization algorithms as a feedback mechanism to assist urban planners with iteratively refining objective function and constraints specification on intervention strategies. The portfolio of transportation intervention strategy alternatives eventually chosen achieves high-level regional planning goals developed through participatory stakeholder engagement practices.},
+  archive      = {J_TIST},
+  author       = {Sidney A. Feygin and Jessica R. Lazarus and Edward H. Forscher and Valentine Golfier-Vetterli and Jonathan W. Lee and Abhishek Gupta and Rashid A. Waraich and Colin J. R. Sheppard and Alexandre M. Bayen},
+  doi          = {10.1145/3384344},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {38:1–27},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {BISTRO: Berkeley integrated system for transportation optimization},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Knowledge-aware attentive wasserstein adversarial dialogue
+response generation. <em>TIST</em>, <em>11</em>(4), 37:1–20. (<a
+href="https://doi.org/10.1145/3384675">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Natural language generation has become a fundamental task in dialogue systems. RNN-based natural response generation methods encode the dialogue context and decode it into a response. However, they tend to generate dull and simple responses. In this article, we propose a novel framework, called KAWA-DRG (Knowledge-aware Attentive Wasserstein Adversarial Dialogue Response Generation) to model conversation-specific external knowledge and the importance variances of dialogue context in a unified adversarial encoder-decoder learning framework. In KAWA-DRG, a co-attention mechanism attends to important parts within and among context utterances with word-utterance-level attention. Prior knowledge is integrated into the conditional Wasserstein auto-encoder for learning the latent variable space. The posterior and prior distribution of latent variables are generated and trained through adversarial learning. We evaluate our model on Switchboard, DailyDialog, In-Car Assistant, and Ubuntu Dialogue Corpus. Experimental results show that KAWA-DRG outperforms the existing methods.},
+  archive      = {J_TIST},
+  author       = {Yingying Zhang and Quan Fang and Shengsheng Qian and Changsheng Xu},
+  doi          = {10.1145/3384675},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {37:1–20},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Knowledge-aware attentive wasserstein adversarial dialogue response generation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Video object segmentation and tracking: A survey.
+<em>TIST</em>, <em>11</em>(4), 36:1–47. (<a
+href="https://doi.org/10.1145/3391743">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object segmentation and object tracking are fundamental research areas in the computer vision community. These two topics are difficult to handle some common challenges, such as occlusion, deformation, motion blur, scale variation, and more. The former contains heterogeneous object, interacting object, edge ambiguity, and shape complexity; the latter suffers from difficulties in handling fast motion, out-of-view, and real-time processing. Combining the two problems of Video Object Segmentation and Tracking (VOST) can overcome their respective difficulties and improve their performance. VOST can be widely applied to many practical applications such as video summarization, high definition video compression, human computer interaction, and autonomous vehicles. This survey aims to provide a comprehensive review of the state-of-the-art VOST methods, classify these methods into different categories, and identify new trends. First, we broadly categorize VOST methods into Video Object Segmentation (VOS) and Segmentation-based Object Tracking (SOT). Each category is further classified into various types based on the segmentation and tracking mechanism. Moreover, we present some representative VOS and SOT methods of each time node. Second, we provide a detailed discussion and overview of the technical characteristics of the different methods. Third, we summarize the characteristics of the related video dataset and provide a variety of evaluation metrics. Finally, we point out a set of interesting future works and draw our own conclusions.},
+  archive      = {J_TIST},
+  author       = {Rui Yao and Guosheng Lin and Shixiong Xia and Jiaqi Zhao and Yong Zhou},
+  doi          = {10.1145/3391743},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {4},
+  pages        = {36:1–47},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Video object segmentation and tracking: A survey},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Analyzing and detecting collusive users involved in
+blackmarket retweeting activities. <em>TIST</em>, <em>11</em>(3),
+35:1–24. (<a href="https://doi.org/10.1145/3380537">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rise in popularity of social media platforms like Twitter, having higher influence on these platforms has a greater value attached to it, since it has the power to influence many decisions in the form of brand promotions and shaping opinions. However, blackmarket services that allow users to inorganically gain influence are a threat to the credibility of these social networking platforms. Twitter users can gain inorganic appraisals in the form of likes, retweets, and follows through these blackmarket services either by paying for them or by joining syndicates wherein they gain such appraisals by providing similar appraisals to other users. These customers tend to exhibit a mix of organic and inorganic retweeting behavior, making it tougher to detect them. In this article, we investigate these blackmarket customers engaged in collusive retweeting activities. We collect and annotate a novel dataset containing various types of information about blackmarket customers and use these sources of information to construct multiple user representations. We adopt Weighted Generalized Canonical Correlation Analysis (WGCCA) to combine these individual representations to derive user embeddings that allow us to effectively classify users as: genuine users, bots, promotional customers, and normal customers. Our method significantly outperforms state-of-the-art approaches (32.95\% better macro F1-score than the best baseline).},
+  archive      = {J_TIST},
+  author       = {Udit Arora and Hridoy Sankar Dutta and Brihi Joshi and Aditya Chetan and Tanmoy Chakraborty},
+  doi          = {10.1145/3380537},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {35:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Analyzing and detecting collusive users involved in blackmarket retweeting activities},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). HERA: Partial label learning by combining heterogeneous loss
+with sparse and low-rank regularization. <em>TIST</em>, <em>11</em>(3),
+34:1–19. (<a href="https://doi.org/10.1145/3379501">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Partial label learning (PLL) aims to learn from the data where each training instance is associated with a set of candidate labels, among which only one is correct. Most existing methods deal with this type of problem by either treating each candidate label equally or identifying the ground-truth label iteratively. In this article, we propose a novel PLL approach named HERA, which simultaneously incorporates the HeterogEneous Loss and the SpaRse and Low-rAnk procedure to estimate the labeling confidence for each instance while training the desired model. Specifically, the heterogeneous loss integrates the strengths of both the pairwise ranking loss and the pointwise reconstruction loss to provide informative label ranking and reconstruction information for label identification, whereas the embedded sparse and low-rank scheme constrains the sparsity of ground-truth label matrix and the low rank of noise label matrix to explore the global label relevance among the whole training data, for improving the learning model. Comprehensive ablation study demonstrates the effectiveness of our employed heterogeneous loss, and extensive experiments on both artificial and real-world datasets demonstrate that our method achieves superior or comparable performance against state-of-the-art methods.},
+  archive      = {J_TIST},
+  author       = {Gengyu Lyu and Songhe Feng and Yidong Li and Yi Jin and Guojun Dai and Congyan Lang},
+  doi          = {10.1145/3379501},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {34:1–19},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {HERA: Partial label learning by combining heterogeneous loss with sparse and low-rank regularization},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). A causal dirichlet mixture model for causal inference from
+observational data. <em>TIST</em>, <em>11</em>(3), 33:1–29. (<a
+href="https://doi.org/10.1145/3379500">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Estimating causal effects by making causal inferences from observational data is common practice in scientific studies, business decision-making, and daily life. In today’s data-driven world, causal inference has become a key part of the evaluation process for many purposes, such as examining the effects of medicine or the impact of an economic policy on society. However, although the literature contains some excellent models, there is room to improve their representation power and their ability to capture complex relationships. For these reasons, we propose a novel prior called Causal DP and a model called CDP. The prior captures the complex relationships between covariates, treatments, and outcomes in observational data using a rational probabilistic dependency structure. The model is Bayesian, nonparametric, and generative and is not based on the assumption of any parametric distribution. CDP is designed to estimate various kinds of causal effects—average, conditional average, average treated, quantile, and so on. It performs well with missing covariates and does not suffer from overfitting. Comparative experiments on synthetic datasets against several state-of-the-art methods demonstrate that CDP has a superior ability to capture complex relationships. Further, a simple evaluation to infer the effect of a job training program on trainee earnings from real-world data shows that CDP is both effective and useful for causal inference.},
+  archive      = {J_TIST},
+  author       = {Adi Lin and Jie Lu and Junyu Xuan and Fujin Zhu and Guangquan Zhang},
+  doi          = {10.1145/3379500},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {33:1–29},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {A causal dirichlet mixture model for causal inference from observational data},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Two can play that game: An adversarial evaluation of a
+cyber-alert inspection system. <em>TIST</em>, <em>11</em>(3), 32:1–20.
+(<a href="https://doi.org/10.1145/3377554">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cyber-security is an important societal concern. Cyber-attacks have increased in numbers as well as in the extent of damage caused in every attack. Large organizations operate a Cyber Security Operation Center (CSOC), which forms the first line of cyber-defense. The inspection of cyber-alerts is a critical part of CSOC operations (defender or blue team). Recent work proposed a reinforcement learning (RL) based approach for the defender’s decision-making to prevent the cyber-alert queue length from growing large and overwhelming the defender. In this article, we perform a red team (adversarial) evaluation of this approach. With the recent attacks on learning-based decision-making systems, it is even more important to test the limits of the defender’s RL approach. Toward that end, we learn several adversarial alert generation policies and the best response against them for various defender’s inspection policy. Surprisingly, we find the defender’s policies to be quite robust to the best response of the attacker. In order to explain this observation, we extend the earlier defender’s RL model to a game model with adversarial RL, and show that there exist defender policies that can be robust against any adversarial policy. We also derive a competitive baseline from the game theory model and compare it to the defender’s RL approach. However, when we go further to exploit the assumptions made in the Markov Decision Process (MDP) in the defender’s RL model, we discover an attacker policy that overwhelms the defender. We use a double oracle like approach to retrain the defender with episodes from this discovered attacker policy. This made the defender robust to the discovered attacker policy and no further harmful attacker policies were discovered. Overall, the adversarial RL and double oracle approach in RL are general techniques that are applicable to other RL usage in adversarial environments.},
+  archive      = {J_TIST},
+  author       = {Ankit Shah and Arunesh Sinha and Rajesh Ganesan and Sushil Jajodia and Hasan Cam},
+  doi          = {10.1145/3377554},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {32:1–20},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Two can play that game: An adversarial evaluation of a cyber-alert inspection system},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). WiSign: Ubiquitous american sign language recognition using
+commercial wi-fi devices. <em>TIST</em>, <em>11</em>(3), 31:1–24. (<a
+href="https://doi.org/10.1145/3377553">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we propose WiSign that recognizes the continuous sentences of American Sign Language (ASL) with existing WiFi infrastructure. Instead of identifying the individual ASL words from the manually segmented ASL sentence in existing works, WiSign can automatically segment the original channel state information (CSI) based on the power spectral density (PSD) segmentation method. WiSign constructs a five-layer Deep Belief Network (DBN) to automatically extract the features of isolated fragments, and then uses the Hidden Markov Model (HMM) with Gaussian mixture and Forward-Backward algorithm to recognize sign words. In order to further improve the accuracy, WiSign also integrates the language model N-gram, which uses the grammar rules of ASL to calibrate the recognized results of sign words. We implement a prototype of WiSign with commercial WiFi devices and evaluate its performance in real indoor environments. The results show that WiSign achieves satisfactory accuracy when recognizing ASL sentences that involve the movements of the head, arms, hands, and fingers.},
+  archive      = {J_TIST},
+  author       = {Lei Zhang and Yixiang Zhang and Xiaolong Zheng},
+  doi          = {10.1145/3377553},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {31:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {WiSign: Ubiquitous american sign language recognition using commercial wi-fi devices},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Learning three-dimensional skeleton data from sign language
+video. <em>TIST</em>, <em>11</em>(3), 30:1–24. (<a
+href="https://doi.org/10.1145/3377552">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data for sign language research is often difficult and costly to acquire. We therefore present a novel pipeline able to generate motion three-dimensional (3D) skeleton data from single-camera sign language videos only. First, three recurrent neural networks are learned to infer the three-dimensional position data of body, face, and finger joints for a high resolution of the signer’s skeleton. Subsequently, the angular displacements of all joints over time are estimated using inverse kinematics and mapped to a virtual sign avatar for animation. Last, the generated data are evaluated in detail, including a sign language recognition and sign language synthesis scenario. Utilizing a neural word classifier trained on real motion capture data, we reliably classify word segments built from our newly generated position data with similar accuracy as motion capture data (absolute difference 3.8\%). Furthermore, qualitative evaluation of sign animations shows that the avatar performs natural movements that are comprehensible and resemble animations created with original motion capture data.},
+  archive      = {J_TIST},
+  author       = {Heike Brock and Felix Law and Kazuhiro Nakadai and Yuji Nagashima},
+  doi          = {10.1145/3377552},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {30:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Learning three-dimensional skeleton data from sign language video},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Deep neighborhood component analysis for visual similarity
+modeling. <em>TIST</em>, <em>11</em>(3), 29:1–15. (<a
+href="https://doi.org/10.1145/3375787">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning effective visual similarity is an essential problem in multimedia research. Despite the promising progress made in recent years, most existing approaches learn visual features and similarities in two separate stages, which inevitably limits their performance. Once useful information has been lost in the feature extraction stage, it can hardly be recovered later. This article proposes a novel end-to-end approach for visual similarity modeling, called deep neighborhood component analysis , which discriminatively trains deep neural networks to jointly learn visual features and similarities. Specifically, we first formulate a metric learning objective that maximizes the intra-class correlations and minimizes the inter-class correlations under the neighborhood component analysis criterion, and then train deep convolutional neural networks to learn a nonlinear mapping that projects visual instances from original feature space to a discriminative and neighborhood-structure-preserving embedding space, thus resulting in better performance. We conducted extensive evaluations on several widely used and challenging datasets, and the impressive results demonstrate the effectiveness of our proposed approach.},
+  archive      = {J_TIST},
+  author       = {Xueliang Liu and Xun Yang and Meng Wang and Richang Hong},
+  doi          = {10.1145/3375787},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {29:1–15},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Deep neighborhood component analysis for visual similarity modeling},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Understand dynamic regret with switching cost for online
+decision making. <em>TIST</em>, <em>11</em>(3), 28:1–21. (<a
+href="https://doi.org/10.1145/3375788">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a metric to measure the performance of an online method, dynamic regret with switching cost has drawn much attention for online decision making problems. Although the sublinear regret has been provided in much previous research, we still have little knowledge about the relation between the dynamic regret and the switching cost . In the article, we investigate the relation for two classic online settings: Online Algorithms (OA) and Online Convex Optimization (OCO). We provide a new theoretical analysis framework that shows an interesting observation; that is, the relation between the switching cost and the dynamic regret is different for settings of OA and OCO. Specifically, the switching cost has significant impact on the dynamic regret in the setting of OA. But it does not have an impact on the dynamic regret in the setting of OCO. Furthermore, we provide a lower bound of regret for the setting of OCO, which is same with the lower bound in the case of no switching cost. It shows that the switching cost does not change the difficulty of online decision making problems in the setting of OCO.},
+  archive      = {J_TIST},
+  author       = {Yawei Zhao and Qian Zhao and Xingxing Zhang and En Zhu and Xinwang Liu and Jianping Yin},
+  doi          = {10.1145/3375788},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {28:1–21},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Understand dynamic regret with switching cost for online decision making},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Modeling with node popularities for autonomous overlapping
+community detection. <em>TIST</em>, <em>11</em>(3), 27:1–23. (<a
+href="https://doi.org/10.1145/3373760">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Overlapping community detection has triggered recent research in network analysis. One of the promising techniques for finding overlapping communities is the popular stochastic models, which, unfortunately, have some common drawbacks. They do not support an important observation that highly connected nodes are more likely to reside in the overlapping regions of communities in the network. These methods are in essence not truly unsupervised, since they require a threshold on probabilistic memberships to derive overlapping structures and need the number of communities to be specified a priori . We develop a new method to address these issues for overlapping community detection. We first present a stochastic model to accommodate the relative importance and the expected degree of every node in each community. We then infer every overlapping community by ranking the nodes according to their importance. Second, we determine the number of communities under the Bayesian framework. We evaluate our method and compare it with five state-of-the-art methods. The results demonstrate the superior performance of our method. We also apply this new method to two applications, showing its superb performance on practical problems.},
+  archive      = {J_TIST},
+  author       = {Di Jin and Bingyi Li and Pengfei Jiao and Dongxiao He and Hongyu Shan and Weixiong Zhang},
+  doi          = {10.1145/3373760},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {27:1–23},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Modeling with node popularities for autonomous overlapping community detection},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Copula-based anomaly scoring and localization for
+large-scale, high-dimensional continuous data. <em>TIST</em>,
+<em>11</em>(3), 26:1–26. (<a
+href="https://doi.org/10.1145/3372274">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The anomaly detection method presented by this article has a special feature: it not only indicates whether or not an observation is anomalous but also tells what exactly makes an anomalous observation unusual. Hence, it provides support to localize the reason of the anomaly. The proposed approach is model based; it relies on the multivariate probability distribution associated with the observations. Since the rare events are present in the tails of the probability distributions, we use copula functions, which are able to model the fat-tailed distributions well. The presented procedure scales well; it can cope with a large number of high-dimensional samples. Furthermore, our procedure can cope with missing values as well, which occur frequently in high-dimensional datasets. In the second part of the article, we demonstrate the usability of the method through a case study, where we analyze a large dataset consisting of the performance counters of a real mobile telecommunication network. Since such networks are complex systems, the signs of sub-optimal operation can remain hidden for a potentially long time. With the proposed procedure, many such hidden issues can be isolated and indicated to the network operator.},
+  archive      = {J_TIST},
+  author       = {Gábor Horváth and Edith Kovács and Roland Molontay and Szabolcs Nováczki},
+  doi          = {10.1145/3372274},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {26:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Copula-based anomaly scoring and localization for large-scale, high-dimensional continuous data},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Unified generative adversarial networks for multiple-choice
+oriented machine comprehension. <em>TIST</em>, <em>11</em>(3), 25:1–20.
+(<a href="https://doi.org/10.1145/3372120">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we address the multiple-choice machine comprehension (MC) problem in natural language processing. Existing approaches for MC are usually designed for general cases; however, we specially develop a novel method for solving the multiple-choice MC problem. We take the inspiration generative adversarial networks (GANs) and first propose an adversarial framework for multiple-choice oriented MC, named McGAN . Specifically, our approach is designed as a GAN-based method that unifies both generative and discriminative MC models. Working together, the generative model focuses on predicting relevant answer given a passage (text) and a question; the discriminative model focuses on predicting their relevancy given an answer-passage-question set. Based on the competition via adversarial training in a minimize-maximize game, the proposed method takes advantages from both models. To evaluate the performance, we test our McGAN model on three well-known datasets for multiple-choice MC. Our results show that McGAN can achieve a significant increase in accuracy compared to existing models based on all three datasets, and it consistently outperforms all tested baselines, including state-of-the-art techniques.},
+  archive      = {J_TIST},
+  author       = {Zhuang Liu and Keli Xiao and Bo Jin and Kaiyu Huang and Degen Huang and Yunxia Zhang},
+  doi          = {10.1145/3372120},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {25:1–20},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Unified generative adversarial networks for multiple-choice oriented machine comprehension},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Adversarial attacks on deep-learning models in natural
+language processing: A survey. <em>TIST</em>, <em>11</em>(3), 24:1–41.
+(<a href="https://doi.org/10.1145/3374217">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the development of high computational devices, deep neural networks (DNNs), in recent years, have gained significant popularity in many Artificial Intelligence (AI) applications. However, previous efforts have shown that DNNs are vulnerable to strategically modified samples, named adversarial examples . These samples are generated with some imperceptible perturbations, but can fool the DNNs to give false predictions. Inspired by the popularity of generating adversarial examples against DNNs in Computer Vision (CV), research efforts on attacking DNNs for Natural Language Processing (NLP) applications have emerged in recent years. However, the intrinsic difference between image (CV) and text (NLP) renders challenges to directly apply attacking methods in CV to NLP. Various methods are proposed addressing this difference and attack a wide range of NLP applications. In this article, we present a systematic survey on these works. We collect all related academic works since the first appearance in 2017. We then select, summarize, discuss, and analyze 40 representative works in a comprehensive way. To make the article self-contained, we cover preliminary knowledge of NLP and discuss related seminal works in computer vision. We conclude our survey with a discussion on open issues to bridge the gap between the existing progress and more robust adversarial attacks on NLP DNNs.},
+  archive      = {J_TIST},
+  author       = {Wei Emma Zhang and Quan Z. Sheng and Ahoud Alhazmi and Chenliang Li},
+  doi          = {10.1145/3374217},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {3},
+  pages        = {24:1–41},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Adversarial attacks on deep-learning models in natural language processing: A survey},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Using sub-optimal plan detection to identify commitment
+abandonment in discrete environments. <em>TIST</em>, <em>11</em>(2),
+23:1–26. (<a href="https://doi.org/10.1145/3372119">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Assessing whether an agent has abandoned a goal or is actively pursuing it is important when multiple agents are trying to achieve joint goals, or when agents commit to achieving goals for each other. Making such a determination for a single goal by observing only plan traces is not trivial, as agents often deviate from optimal plans for various reasons, including the pursuit of multiple goals or the inability to act optimally. In this article, we develop an approach based on domain independent heuristics from automated planning, landmarks, and fact partitions to identify sub-optimal action steps—with respect to a plan—within a fully observable plan execution trace. Such capability is very important in domains where multiple agents cooperate and delegate tasks among themselves, such as through social commitments , and need to ensure that a delegating agent can infer whether or not another agent is actually progressing towards a delegated task. We demonstrate how a creditor can use our technique to determine—by observing a trace—whether a debtor is honouring a commitment. We empirically show, for a number of representative domains, that our approach infers sub-optimal action steps with very high accuracy and detects commitment abandonment in nearly all cases.},
+  archive      = {J_TIST},
+  author       = {Ramon Fraga Pereira and Nir Oren and Felipe Meneguzzi},
+  doi          = {10.1145/3372119},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {23:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Using sub-optimal plan detection to identify commitment abandonment in discrete environments},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Travel recommendation via fusing multi-auxiliary information
+into matrix factorization. <em>TIST</em>, <em>11</em>(2), 22:1–24. (<a
+href="https://doi.org/10.1145/3372118">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As an e-commerce feature, the personalized recommendation is invariably highly-valued by both consumers and merchants. The e-tourism has become one of the hottest industries with the adoption of recommendation systems. Several lines of evidence have confirmed the travel-product recommendation is quite different from traditional recommendations. Travel products are usually browsed and purchased relatively infrequently compared with other traditional products (e.g., books and food), which gives rise to the extreme sparsity of travel data. Meanwhile, the choice of a suitable travel product is affected by an army of factors such as departure, destination, and financial and time budgets. To address these challenging problems, in this article, we propose a Probabilistic Matrix Factorization with Multi-Auxiliary Information (PMF-MAI) model in the context of the travel-product recommendation. In particular, PMF-MAI is able to fuse the probabilistic matrix factorization on the user-item interaction matrix with the linear regression on a suite of features constructed by the multiple auxiliary information. In order to fit the sparse data, PMF-MAI is built by a whole-data based learning approach that utilizes unobserved data to increase the coupling between probabilistic matrix factorization and linear regression. Extensive experiments are conducted on a real-world dataset provided by a large tourism e-commerce company. PMF-MAI shows an overwhelming superiority over all competitive baselines on the recommendation performance. Also, the importance of features is examined to reveal the crucial auxiliary information having a great impact on the adoption of travel products.},
+  archive      = {J_TIST},
+  author       = {Lei Chen and Zhiang Wu and Jie Cao and Guixiang Zhu and Yong Ge},
+  doi          = {10.1145/3372118},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {22:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Travel recommendation via fusing multi-auxiliary information into matrix factorization},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Pair-based uncertainty and diversity promoting early active
+learning for person re-identification. <em>TIST</em>, <em>11</em>(2),
+21:1–15. (<a href="https://doi.org/10.1145/3372121">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The effective training of supervised Person Re-identification (Re-ID) models requires sufficient pairwise labeled data. However, when there is limited annotation resource, it is difficult to collect pairwise labeled data. We consider a challenging and practical problem called Early Active Learning, which is applied to the early stage of experiments when there is no pre-labeled sample available as references for human annotating. Previous early active learning methods suffer from two limitations for Re-ID. First, these instance-based algorithms select instances rather than pairs, which can result in missing optimal pairs for Re-ID. Second, most of these methods only consider the representativeness of instances, which can result in selecting less diverse and less informative pairs. To overcome these limitations, we propose a novel pair-based active learning for Re-ID. Our algorithm selects pairs instead of instances from the entire dataset for annotation. Besides representativeness, we further take into account the uncertainty and the diversity in terms of pairwise relations. Therefore, our algorithm can produce the most representative, informative, and diverse pairs for Re-ID data annotation. Extensive experimental results on five benchmark Re-ID datasets have demonstrated the superiority of the proposed pair-based early active learning algorithm.},
+  archive      = {J_TIST},
+  author       = {Wenhe Liu and Xiaojun Chang and Ling Chen and Dinh Phung and Xiaoqin Zhang and Yi Yang and Alexander G. Hauptmann},
+  doi          = {10.1145/3372121},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {21:1–15},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Pair-based uncertainty and diversity promoting early active learning for person re-identification},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Single image snow removal using sparse representation and
+particle swarm optimizer. <em>TIST</em>, <em>11</em>(2), 20:1–15. (<a
+href="https://doi.org/10.1145/3372116">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Images are often corrupted by natural obscuration (e.g., snow, rain, and haze) during acquisition in bad weather conditions. The removal of snowflakes from only a single image is a challenging task due to situational variety and has been investigated only rarely. In this article, we propose a novel snow removal framework for a single image, which can be separated into a sparse image approximation module and an adaptive tolerance optimization module. The first proposed module takes the advantage of sparsity-based regularization to reconstruct a potential snow-free image. An auto-tuning mechanism for this framework is then proposed to seek a better reconstruction of a snow-free image via the time-varying inertia weight particle swarm optimizers in the second proposed module. Through collaboration of these two modules iteratively, the number of snowflakes in the reconstructed image is reduced as generations progress. By the experimental results, the proposed method achieves a better efficacy of snow removal than do other state-of-the-art techniques via both objective and subjective evaluations. As a result, the proposed method is able to remove snowflakes successfully from only a single image while preserving most original object structure information.},
+  archive      = {J_TIST},
+  author       = {Shih-Chia Huang and Da-Wei Jaw and Bo-Hao Chen and Sy-Yen Kuo},
+  doi          = {10.1145/3372116},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {20:1–15},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Single image snow removal using sparse representation and particle swarm optimizer},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Newton methods for convolutional neural networks.
+<em>TIST</em>, <em>11</em>(2), 19:1–30. (<a
+href="https://doi.org/10.1145/3368271">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning involves a difficult non-convex optimization problem, which is often solved by stochastic gradient (SG) methods. While SG is usually effective, it may not be robust in some situations. Recently, Newton methods have been investigated as an alternative optimization technique, but most existing studies consider only fully connected feedforward neural networks. These studies do not investigate some more commonly used networks such as Convolutional Neural Networks (CNN). One reason is that Newton methods for CNN involve complicated operations, and so far no works have conducted a thorough investigation. In this work, we give details of all building blocks, including the evaluation of function, gradient, Jacobian, and Gauss-Newton matrix-vector products. These basic components are very important not only for practical implementation but also for developing variants of Newton methods for CNN. We show that an efficient MATLAB implementation can be done in just several hundred lines of code. Preliminary experiments indicate that Newton methods are less sensitive to parameters than the stochastic gradient approach.},
+  archive      = {J_TIST},
+  author       = {Chien-Chih Wang and Kent Loong Tan and Chih-Jen Lin},
+  doi          = {10.1145/3368271},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {19:1–30},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Newton methods for convolutional neural networks},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Discovering underlying plans based on shallow models.
+<em>TIST</em>, <em>11</em>(2), 18:1–30. (<a
+href="https://doi.org/10.1145/3368270">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Plan recognition aims to discover target plans (i.e., sequences of actions) behind observed actions, with history plan libraries or action models in hand. Previous approaches either discover plans by maximally “matching” observed actions to plan libraries, assuming target plans are from plan libraries, or infer plans by executing action models to best explain the observed actions, assuming that complete action models are available. In real-world applications, however, target plans are often not from plan libraries, and complete action models are often not available, since building complete sets of plans and complete action models are often difficult or expensive. In this article, we view plan libraries as corpora and learn vector representations of actions using the corpora; we then discover target plans based on the vector representations. Specifically, we propose two approaches, DUP and RNNPlanner, to discover target plans based on vector representations of actions. DUP explores the EM-style (Expectation Maximization) framework to capture local contexts of actions and discover target plans by optimizing the probability of target plans, while RNNPlanner aims to leverage long-short term contexts of actions based on RNNs (Recurrent Neural Networks) framework to help recognize target plans. In the experiments, we empirically show that our approaches are capable of discovering underlying plans that are not from plan libraries without requiring action models provided. We demonstrate the effectiveness of our approaches by comparing its performance to traditional plan recognition approaches in three planning domains. We also compare DUP and RNNPlanner to see their advantages and disadvantages.},
+  archive      = {J_TIST},
+  author       = {Hankz Hankui Zhuo and Yantian Zha and Subbarao Kambhampati and Xin Tian},
+  doi          = {10.1145/3368270},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {18:1–30},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Discovering underlying plans based on shallow models},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). XLearn: Learning activity labels across heterogeneous
+datasets. <em>TIST</em>, <em>11</em>(2), 17:1–28. (<a
+href="https://doi.org/10.1145/3368272">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sensor-driven systems often need to map sensed data into meaningfully labelled activities to classify the phenomena being observed. A motivating and challenging example comes from human activity recognition in which smart home and other datasets are used to classify human activities to support applications such as ambient assisted living, health monitoring, and behavioural intervention. Building a robust and meaningful classifier needs annotated ground truth, labelled with what activities are actually being observed—and acquiring high-quality, detailed, continuous annotations remains a challenging, time-consuming, and error-prone task, despite considerable attention in the literature. In this article, we use knowledge-driven ensemble learning to develop a technique that can combine classifiers built from individually labelled datasets, even when the labels are sparse and heterogeneous. The technique both relieves individual users of the burden of annotation and allows activities to be learned individually and then transferred to a general classifier. We evaluate our approach using four third-party, real-world smart home datasets and show that it enhances activity recognition accuracies even when given only a very small amount of training data.},
+  archive      = {J_TIST},
+  author       = {Juan Ye and Simon Dobson and Franco Zambonelli},
+  doi          = {10.1145/3368272},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {17:1–28},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {XLearn: Learning activity labels across heterogeneous datasets},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Is rank aggregation effective in recommender systems? An
+experimental analysis. <em>TIST</em>, <em>11</em>(2), 16:1–26. (<a
+href="https://doi.org/10.1145/3365375">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recommender Systems are tools designed to help users find relevant information from the myriad of content available online. They work by actively suggesting items that are relevant to users according to their historical preferences or observed actions. Among recommender systems, top- N recommenders work by suggesting a ranking of N items that can be of interest to a user. Although a significant number of top- N recommenders have been proposed in the literature, they often disagree in their returned rankings, offering an opportunity for improving the final recommendation ranking by aggregating the outputs of different algorithms. Rank aggregation was successfully used in a significant number of areas, but only a few rank aggregation methods have been proposed in the recommender systems literature. Furthermore, there is a lack of studies regarding rankings’ characteristics and their possible impacts on the improvements achieved through rank aggregation. This work presents an extensive two-phase experimental analysis of rank aggregation in recommender systems. In the first phase, we investigate the characteristics of rankings recommended by 15 different top- N recommender algorithms regarding agreement and diversity. In the second phase, we look at the results of 19 rank aggregation methods and identify different scenarios where they perform best or worst according to the input rankings’ characteristics. Our results show that supervised rank aggregation methods provide improvements in the results of the recommended rankings in six out of seven datasets. These methods provide robustness even in the presence of a big set of weak recommendation rankings. However, in cases where there was a set of non-diverse high-quality input rankings, supervised and unsupervised algorithms produced similar results. In these cases, we can avoid the cost of the former in favor of the latter.},
+  archive      = {J_TIST},
+  author       = {Samuel E. L. Oliveira and Victor Diniz and Anisio Lacerda and Luiz Merschmanm and Gisele L. Pappa},
+  doi          = {10.1145/3365375},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {16:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Is rank aggregation effective in recommender systems? an experimental analysis},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Mediated secure multi-party protocols for collaborative
+filtering. <em>TIST</em>, <em>11</em>(2), 15:1–25. (<a
+href="https://doi.org/10.1145/3375402">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recommender systems have become extremely common in recent years and are utilized in a variety of domains such as movies, music, news, products, restaurants, and so on. While a typical recommender system bases its recommendations solely on users’ preference data collected by the system itself, the quality of recommendations can significantly be improved if several recommender systems (or vendors) share their data. However, such data sharing poses significant privacy and security challenges, both to the vendors and the users. In this article, we propose secure protocols for distributed item-based Collaborative Filtering. Our protocols allow to compute both the predicted ratings of items and their predicted rankings without compromising privacy nor predictions’ accuracy. Unlike previous solutions in which the secure protocols are executed solely by the vendors, our protocols assume the existence of a mediator that performs intermediate computations on encrypted data supplied by the vendors. Such a mediated setting is advantageous over the non-mediated one since it enables each vendor to communicate solely with the mediator. This yields reduced communication costs, and it allows each vendor to issue recommendations to its clients without being dependent on the availability and willingness of the other vendors to collaborate.},
+  archive      = {J_TIST},
+  author       = {Erez Shmueli and Tamir Tassa},
+  doi          = {10.1145/3375402},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {15:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Mediated secure multi-party protocols for collaborative filtering},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Flexible multi-modal hashing for scalable multimedia
+retrieval. <em>TIST</em>, <em>11</em>(2), 14:1–20. (<a
+href="https://doi.org/10.1145/3365841">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modal hashing methods could support efficient multimedia retrieval by combining multi-modal features for binary hash learning at the both offline training and online query stages. However, existing multi-modal methods cannot binarize the queries, when only one or part of modalities are provided. In this article, we propose a novel Flexible Multi-modal Hashing (FMH) method to address this problem. FMH learns multiple modality-specific hash codes and multi-modal collaborative hash codes simultaneously within a single model. The hash codes are flexibly generated according to the newly coming queries, which provide any one or combination of modality features. Besides, the hashing learning procedure is efficiently supervised by the pair-wise semantic matrix to enhance the discriminative capability. It could successfully avoid the challenging symmetric semantic matrix factorization and O ( n 2 ) storage cost of semantic matrix. Finally, we design a fast discrete optimization to learn hash codes directly with simple operations. Experiments validate the superiority of the proposed approach.},
+  archive      = {J_TIST},
+  author       = {Lei Zhu and Xu Lu and Zhiyong Cheng and Jingjing Li and Huaxiang Zhang},
+  doi          = {10.1145/3365841},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {14:1–20},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Flexible multi-modal hashing for scalable multimedia retrieval},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Web table extraction, retrieval, and augmentation: A survey.
+<em>TIST</em>, <em>11</em>(2), 13:1–35. (<a
+href="https://doi.org/10.1145/3372117">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tables are powerful and popular tools for organizing and manipulating data. A vast number of tables can be found on the Web, which represent a valuable knowledge resource. The objective of this survey is to synthesize and present two decades of research on web tables. In particular, we organize existing literature into six main categories of information access tasks: table extraction, table interpretation, table search, question answering, knowledge base augmentation, and table augmentation. For each of these tasks, we identify and describe seminal approaches, present relevant resources, and point out interdependencies among the different tasks.},
+  archive      = {J_TIST},
+  author       = {Shuo Zhang and Krisztian Balog},
+  doi          = {10.1145/3372117},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {2},
+  pages        = {13:1–35},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Web table extraction, retrieval, and augmentation: A survey},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Exploring correlation network for cheating detection.
+<em>TIST</em>, <em>11</em>(1), 12:1–23. (<a
+href="https://doi.org/10.1145/3364221">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The correlation network, typically formed by computing pairwise correlations between variables, has recently become a competitive paradigm to discover insights in various application domains, such as climate prediction, financial marketing, and bioinformatics. In this study, we adopt this paradigm to detect cheating behavior hidden in business distribution channels, where falsified big deals are often made by collusive partners to obtain lower product prices—a behavior deemed to be extremely harmful to the sale ecosystem. To this end, we assume that abnormal deals are likely to occur between two partners if their purchase-volume sequences have a strong negative correlation. This seemingly intuitive rule, however, imposes several research challenges. First, existing correlation measures are usually symmetric and thus cannot distinguish the different roles of partners in cheating. Second, the tick-to-tick correspondence between two sequences might be violated due to the possible delay of purchase behavior, which should also be captured by correlation measures. Finally, the fact that any pair of sequences could be correlated may result in a number of false-positive cheating pairs, which need to be corrected in a systematic manner. To address these issues, we propose a correlation network analysis framework for cheating detection. In the framework, we adopt an asymmetric correlation measure to distinguish the two roles, namely, cheating seller and cheating buyer , in a cheating alliance. Dynamic Time Warping is employed to address the time offset between two sequences in computing the correlation. We further propose two graph-cut methods to convert the correlation network into a bipartite graph to rank cheating partners, which simultaneously helps to remove false-positive correlation pairs. Based on a 4-year real-world channel dataset from a worldwide IT company, we demonstrate the effectiveness of the proposed method in comparison to competitive baseline methods.},
+  archive      = {J_TIST},
+  author       = {Ping Luo and Kai Shu and Junjie Wu and Li Wan and Yong Tan},
+  doi          = {10.1145/3364221},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {12:1–23},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Exploring correlation network for cheating detection},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Social science–guided feature engineering: A novel approach
+to signed link analysis. <em>TIST</em>, <em>11</em>(1), 11:1–27. (<a
+href="https://doi.org/10.1145/3364222">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many real-world relations can be represented by signed networks with positive links (e.g., friendships and trust) and negative links (e.g., foes and distrust). Link prediction helps advance tasks in social network analysis such as recommendation systems. Most existing work on link analysis focuses on unsigned social networks. The existence of negative links piques research interests in investigating whether properties and principles of signed networks differ from those of unsigned networks and mandates dedicated efforts on link analysis for signed social networks. Recent findings suggest that properties of signed networks substantially differ from those of unsigned networks and negative links can be of significant help in signed link analysis in complementary ways. In this article, we center our discussion on a challenging problem of signed link analysis . Signed link analysis faces the problem of data sparsity, i.e., only a small percentage of signed links are given. This problem can even get worse when negative links are much sparser than positive ones as users are inclined more toward positive disposition rather than negative. We investigate how we can take advantage of other sources of information for signed link analysis. This research is mainly guided by three social science theories, Emotional Information , Diffusion of Innovations , and Individual Personality . Guided by these, we extract three categories of related features and leverage them for signed link analysis. Experiments show the significance of the features gleaned from social theories for signed link prediction and addressing the data sparsity challenge.},
+  archive      = {J_TIST},
+  author       = {Ghazaleh Beigi and Jiliang Tang and Huan Liu},
+  doi          = {10.1145/3364222},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {11:1–27},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Social science–guided feature engineering: A novel approach to signed link analysis},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Trembr: Exploring road networks for trajectory
+representation learning. <em>TIST</em>, <em>11</em>(1), 10:1–25. (<a
+href="https://doi.org/10.1145/3361741">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we propose a novel representation learning framework, namely TRajectory EMBedding via Road networks (Trembr) , to learn trajectory embeddings (low-dimensional feature vectors) for use in a variety of trajectory applications. The novelty of Trembr lies in (1) the design of a recurrent neural network--(RNN) based encoder--decoder model, namely Traj2Vec , that encodes spatial and temporal properties inherent in trajectories into trajectory embeddings by exploiting the underlying road networks to constrain the learning process in accordance with the matched road segments obtained using road network matching techniques (e.g., Barefoot [24, 27]), and (2) the design of a neural network--based model, namely Road2Vec , to learn road segment embeddings in road networks that captures various relationships amongst road segments in preparation for trajectory representation learning. In addition to model design, several unique technical issues raising in Trembr, including data preparation in Road2Vec, the road segment relevance-aware loss, and the network topology constraint in Traj2Vec, are examined. To validate our ideas, we learn trajectory embeddings using multiple large-scale real-world trajectory datasets and use them in three tasks, including trajectory similarity measure, travel time prediction, and destination prediction. Empirical results show that Trembr soundly outperforms the state-of-the-art trajectory representation learning models, trajectory2vec and t2vec , by at least one order of magnitude in terms of mean rank in trajectory similarity measure, 23.3\% to 41.7\% in terms of mean absolute error (MAE) in travel time prediction, and 39.6\% to 52.4\% in terms of MAE in destination prediction.},
+  archive      = {J_TIST},
+  author       = {Tao-Yang Fu and Wang-Chien Lee},
+  doi          = {10.1145/3361741},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {10:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Trembr: Exploring road networks for trajectory representation learning},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). FROST: Movement history–conscious facility relocation.
+<em>TIST</em>, <em>11</em>(1), 9:1–26. (<a
+href="https://doi.org/10.1145/3361740">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The facility relocation (FR) problem, which aims to optimize the placement of facilities to accommodate the changes of users’ locations, has a broad spectrum of applications. Despite the significant progress made by existing solutions to the FR problem, they all assume each user is stationary and represented as a single point. Unfortunately, in reality, objects (e.g., people, animals) are mobile. For example, a car-sharing user picks up a vehicle from a station close to where he or she is currently located. Consequently, these efforts may fail to identify a superior solution to the FR problem. In this article, for the first time, we take into account the movement history of users and introduce a novel FR problem, called motion-fr , to address the preceding limitation. Specifically, we present a framework called frost to address it. frost comprises two exact algorithms: index based and index free . The former is designed to address the scenario when facilities and objects are known a priori , whereas the latter solves the motion-fr problem by jettisoning this assumption. Further, we extend the index-based algorithm to solve the general k - motion-fr problem, which aims to relocate k inferior facilities. We devise an approximate solution due to NP-hardness of the problem. Experimental study over both real-world and synthetic datasets demonstrates the superiority of our framework in comparison to state-of-the-art FR techniques in efficiency and effectiveness.},
+  archive      = {J_TIST},
+  author       = {Meng Wang and Hui Li and Jiangtao Cui and Sourav S. Bhowmick and Ping Liu},
+  doi          = {10.1145/3361740},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {9:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {FROST: Movement History–Conscious facility relocation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). DHPA: Dynamic human preference analytics framework: A case
+study on taxi drivers’ learning curve analysis. <em>TIST</em>,
+<em>11</em>(1), 8:1–19. (<a
+href="https://doi.org/10.1145/3360312">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many real-world human behaviors can be modeled and characterized as sequential decision-making processes, such as a taxi driver’s choices of working regions and times. Each driver possesses unique preferences on the sequential choices over time and improves the driver’s working efficiency. Understanding the dynamics of such preferences helps accelerate the learning process of taxi drivers. Prior works on taxi operation management mostly focus on finding optimal driving strategies or routes, lacking in-depth analysis on what the drivers learned during the process and how they affect the performance of the driver. In this work, we make the first attempt to establish Dynamic Human Preference Analytics. We inversely learn the taxi drivers’ preferences from data and characterize the dynamics of such preferences over time. We extract two types of features (i.e., profile features and habit features) to model the decision space of drivers. Then through inverse reinforcement learning, we learn the preferences of drivers with respect to these features. The results illustrate that self-improving drivers tend to keep adjusting their preferences to habit features to increase their earning efficiency while keeping the preferences to profile features invariant. However, experienced drivers have stable preferences over time. The exploring drivers tend to randomly adjust the preferences over time.},
+  archive      = {J_TIST},
+  author       = {Menghai Pan and Weixiao Huang and Yanhua Li and Xun Zhou and Zhenming Liu and Rui Song and Hui Lu and Zhihong Tian and Jun Luo},
+  doi          = {10.1145/3360312},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {8:1–19},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {DHPA: dynamic human preference analytics framework: a case study on taxi drivers’ learning curve analysis},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Transfer learning with dynamic distribution adaptation.
+<em>TIST</em>, <em>11</em>(1), 6:1–25. (<a
+href="https://doi.org/10.1145/3360309">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transfer learning aims to learn robust classifiers for the target domain by leveraging knowledge from a source domain. Since the source and the target domains are usually from different distributions, existing methods mainly focus on adapting the cross-domain marginal or conditional distributions. However, in real applications, the marginal and conditional distributions usually have different contributions to the domain discrepancy. Existing methods fail to quantitatively evaluate the different importance of these two distributions, which will result in unsatisfactory transfer performance. In this article, we propose a novel concept called Dynamic Distribution Adaptation (DDA), which is capable of quantitatively evaluating the relative importance of each distribution. DDA can be easily incorporated into the framework of structural risk minimization to solve transfer learning problems. On the basis of DDA, we propose two novel learning algorithms: (1) Manifold Dynamic Distribution Adaptation (MDDA) for traditional transfer learning, and (2) Dynamic Distribution Adaptation Network (DDAN) for deep transfer learning. Extensive experiments demonstrate that MDDA and DDAN significantly improve the transfer learning performance and set up a strong baseline over the latest deep and adversarial methods on digits recognition, sentiment analysis, and image classification. More importantly, it is shown that marginal and conditional distributions have different contributions to the domain divergence, and our DDA is able to provide good quantitative evaluation of their relative importance, which leads to better performance. We believe this observation can be helpful for future research in transfer learning.},
+  archive      = {J_TIST},
+  author       = {Jindong Wang and Yiqiang Chen and Wenjie Feng and Han Yu and Meiyu Huang and Qiang Yang},
+  doi          = {10.1145/3360309},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {6:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Transfer learning with dynamic distribution adaptation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Market clearing–based dynamic multi-agent task allocation.
+<em>TIST</em>, <em>11</em>(1), 4:1–25. (<a
+href="https://doi.org/10.1145/3356467">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Realistic multi-agent team applications often feature dynamic environments with soft deadlines that penalize late execution of tasks. This puts a premium on quickly allocating tasks to agents. However, when such problems include temporal and spatial constraints that require tasks to be executed sequentially by agents, they are NP-hard, and thus are commonly solved using general and specifically designed incomplete heuristic algorithms. We propose FMC_TA, a novel such incomplete task allocation algorithm that allows tasks to be easily sequenced to yield high-quality solutions. FMC_TA first finds allocations that are fair (envy-free), balancing the load and sharing important tasks among agents, and efficient (Pareto optimal) in a simplified version of the problem. It computes such allocations in polynomial or pseudo-polynomial time (centrally or distributedly, respectively) using a Fisher market with agents as buyers and tasks as goods. It then heuristically schedules the allocations, taking into account inter-agent constraints on shared tasks. We empirically compare our algorithm to state-of-the-art incomplete methods, both centralized and distributed, on law enforcement problems inspired by real police logs. We present a novel formalization of the law enforcement problem, which we use to perform our empirical study. The results show a clear advantage for FMC_TA in total utility and in measures in which law enforcement authorities measure their own performance. Besides problems with realistic properties, the algorithms were compared on synthetic problems in which we increased the size of different elements of the problem to investigate the algorithm’s behavior when the problem scales. The domination of the proposed algorithm was found to be consistent.},
+  archive      = {J_TIST},
+  author       = {Sofia Amador Nelke and Steven Okamoto and Roie Zivan},
+  doi          = {10.1145/3356467},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {4:1–25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Market clearing–based dynamic multi-agent task allocation},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Discovering interesting subpaths with statistical
+significance from spatiotemporal datasets. <em>TIST</em>,
+<em>11</em>(1), 2:1–24. (<a
+href="https://doi.org/10.1145/3354189">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a path in a spatial or temporal framework, we aim to find all contiguous subpaths that are both interesting (e.g., abrupt changes) and statistically significant (i.e., persistent trends rather than local fluctuations). Discovering interesting subpaths can provide meaningful information for a variety of domains including Earth science, environmental science, urban planning, and the like. Existing methods are limited to detecting individual points of interest along an input path but cannot find interesting subpaths. Our preliminary work provided a Subpath Enumeration and Pruning (SEP) algorithm to detect interesting subpaths of arbitrary length. However, SEP is not effective in avoiding detections that are random variations rather than meaningful trends, which hampers clear and proper interpretations of the results. In this article, we extend our previous work by proposing a significance testing framework to eliminate these random variations. To compute the statistical significance, we first show a baseline Monte-Carlo method based on our previous work and then propose a Dynamic Search-and-Prune (D-SAP) algorithm to improve its computational efficiency. Our experiments show that the significance testing can greatly suppress the noisy detections in the output and D-SAP can greatly reduce the execution time.},
+  archive      = {J_TIST},
+  author       = {Yiqun Xie and Xun Zhou and Shashi Shekhar},
+  doi          = {10.1145/3354189},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {2:1–24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Discovering interesting subpaths with statistical significance from spatiotemporal datasets},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2020). Forecasting price trend of bulk commodities leveraging
+cross-domain open data fusion. <em>TIST</em>, <em>11</em>(1), 1:1–26.
+(<a href="https://doi.org/10.1145/3354287">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Forecasting price trend of bulk commodities is important in international trade, not only for markets participants to schedule production and marketing plans but also for government administrators to adjust policies. Previous studies cannot support accurate fine-grained short-term prediction, since they mainly focus on coarse-grained long-term prediction using historical data. Recently, cross-domain open data provides possibilities to conduct fine-grained price forecasting, since they can be leveraged to extract various direct and indirect factors of the price. In this article, we predict the price trend over upcoming days, by leveraging cross-domain open data fusion. More specifically, we formulate the price trend into three classes (rise, slight-change, and fall), and then we predict the specific class in which the price trend of the future day lies. We take three factors into consideration: (1) supply factor considering sources providing bulk commodities, (2) demand factor focusing on vessel transportation with reflection of short time needs, and (3) expectation factor encompassing indirect features (e.g., air quality) with latent influences. A hybrid classification framework is proposed for the price trend forecasting. Evaluation conducted on nine real-world cross-domain open datasets shows that our framework can forecast the price trend accurately, outperforming multiple state-of-the-art baselines.},
+  archive      = {J_TIST},
+  author       = {Binbin Zhou and Sha Zhao and Longbiao Chen and Shijian Li and Zhaohui Wu and Gang Pan},
+  doi          = {10.1145/3354287},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  number       = {1},
+  pages        = {1:1–26},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Forecasting price trend of bulk commodities leveraging cross-domain open data fusion},
+  volume       = {11},
+  year         = {2020},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

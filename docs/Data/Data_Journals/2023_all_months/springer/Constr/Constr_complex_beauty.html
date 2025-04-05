@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Constr_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="constr---29">Constr - 29</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Optimal multivariate decision trees. <em>Constr</em>,
+<em>28</em>(4), 549–577. (<a
+href="https://doi.org/10.1007/s10601-023-09367-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, mixed-integer programming (MIP) techniques have been applied to learn optimal decision trees. Empirical research has shown that optimal trees typically have better out-of-sample performance than heuristic approaches such as CART. However, the underlying MIP formulations often suffer from weak linear programming (LP) relaxations. Many existing MIP approaches employ big-M constraints to ensure observations are routed throughout the tree in a feasible manner. This paper introduces new MIP formulations for learning optimal decision trees with multivariate branching rules and no assumptions on the feature types. We first propose a strong baseline MIP formulation that still uses big-M constraints, but yields a stronger LP relaxation than its counterparts in the literature. We then introduce a problem-specific class of valid inequalities called shattering inequalities. Each inequality encodes an inclusion-minimal set of points that cannot be shattered by a multivariate split, and in the context of a MIP formulation, the inequalities are sparse, involving at most the number of features plus two variables. We propose a separation procedure that attempts to find a violated inequality given a (possibly fractional) solution to the LP relaxation; in the case where the solution is integer, the separation is exact. Numerical experiments show that our MIP approach outperforms two other MIP formulations in terms of solution time and relative gap, and is able to improve solution time while remaining competitive with regards to out-of-sample accuracy in comparison to a wider range of approaches from the literature.},
+  archive      = {J_Constr},
+  author       = {Boutilier, Justin and Michini, Carla and Zhou, Zachary},
+  doi          = {10.1007/s10601-023-09367-y},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {4},
+  pages        = {549-577},
+  shortjournal = {Constraints},
+  title        = {Optimal multivariate decision trees},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A feature commonality-based search strategy to find high
+<span class="math display"><em>t</em></span> -wise covering solutions in
+feature models. <em>Constr</em>, <em>28</em>(4), 521–548. (<a
+href="https://doi.org/10.1007/s10601-023-09366-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {t-wise coverage is one of the most important techniques used to test configurations of software for finding bugs. It ensures that interactions between features of a Software Product Line (SPL) are tested. The size of SPLs (of thousands of features) makes the problem of finding a good test suite computationally expensive, as the number of t-wise combinations grows exponentially. In this article, we leverage Constraint Programming’s search strategies to generate test suites with a high coverage of configurations. We analyse the behaviour of the default random search strategy, and then we propose an improvement based on the commonalities (frequency) of the features. We experimentally compare to uniform sampling and state of the art sampling approaches. We show that our new search strategy outperforms all the other approaches and has the fastest running time.},
+  archive      = {J_Constr},
+  author       = {Vavrille, Mathieu},
+  doi          = {10.1007/s10601-023-09366-z},
+  journal      = {Constraints},
+  month        = {12},
+  number       = {4},
+  pages        = {521-548},
+  shortjournal = {Constraints},
+  title        = {A feature commonality-based search strategy to find high $$t$$ -wise covering solutions in feature models},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Correction to: Solution sampling with random table
+constraints. <em>Constr</em>, <em>28</em>(3), 519. (<a
+href="https://doi.org/10.1007/s10601-023-09361-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_Constr},
+  author       = {Vavrille, Mathieu and Truchet, Charlotte and Prud’homme, Charles},
+  doi          = {10.1007/s10601-023-09361-4},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {519},
+  shortjournal = {Constraints},
+  title        = {Correction to: Solution sampling with random table constraints},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The extensional constraint. <em>Constr</em>, <em>28</em>(3),
+518. (<a href="https://doi.org/10.1007/s10601-023-09358-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Extensional constraints are crucial in CP. They represent allowed combinations of values for a subset of variables (scope) using extensional representation forms such as tables (lists of tuples of constraint solutions) or MDDs (layered acyclic directed graphs where each path represents a constraint solution). Such extensional forms allow the modelization of virtually any kind of constraints. This type of constraint is among the first ones available in CP solvers. A lot of progress has been made since the design of its first propagator: supports, tabular reduction, bitwise computations, resets, table compression, and MDDs. The most recent algorithm prior to this thesis is $$\mathtt {Compact-Table}$$ . It uses a data structure called reversible sparse bitsets to speed up the computations. The work in this thesis initiates with $$\mathtt {Compact-Table}$$ , and extend it to handle other kinds of extensional representation. The first addressed representation is about compressed tables, i.e. tables containing tuples which contain single values and simple unary ( $$*$$ , $$\not = v$$ , $$\le v$$ , $$\in S$$ , ...) or binary ( $$=x+v$$ , $$\not =x+v$$ , $$\le x+v$$ , ...) restrictions. One such tuple represents several classical ones. This led to the $$\texttt{CT}^*$$ (for short tables) and $$\texttt {CT}^{bs}$$ (for basic smart tables) algorithms. The second addressed issue concerns negative tables, i.e. tables listing forbidden combinations of values. This results in the $$\texttt {CT}_{neg}$$ (for negative tables) and $$\texttt{CT}_{neg}^*$$ (for negative short tables) algorithms. The third and last adaptation addresses diagrams, i.e. layered graphs such as $$\texttt {MDDs}$$ . This led to the $$\texttt {CD}$$ (for diagrams) and $$\texttt {CD}^{bs}$$ (for basic smart diagrams) algorithms. Being able to use such diversity of representation helps to counterbalance the main drawback of classical table representations, which is their potentially exponential growth in size. Compressed tables, negative tables, and diagrams help reduce the memory consumption (storage size) required to store an equivalent representation.},
+  archive      = {J_Constr},
+  author       = {Verhaeghe, Hélène},
+  doi          = {10.1007/s10601-023-09358-z},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {518},
+  shortjournal = {Constraints},
+  title        = {The extensional constraint},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Spacetime programming: A synchronous language for constraint
+search. <em>Constr</em>, <em>28</em>(3), 516–517. (<a
+href="https://doi.org/10.1007/s10601-023-09356-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Constraint programming is a paradigm for computing with mathematical relations named constraints. It is a declarative approach to describe many real-world problems including scheduling, vehicles routing, biology and musical composition. Constraint programming must be contrasted with procedural approaches that describe how a problem is solved, whereas constraint models describe what the problem is. The part of how a constraint problem is solved is left to a general constraint solver. Unfortunately, there is no solving algorithm efficient enough to every problem, because the search strategy must often be customized per problem to attain reasonable efficiency. This is a daunting task that requires expertise and good understanding on the solver’s intrinsics. Moreover, higher-level constraint-based languages provide limited support to specify search strategies. In this dissertation, we tackle this challenge by designing a programming language for specifying search strategies. The dissertation is constructed around two axes:},
+  archive      = {J_Constr},
+  author       = {Talbot, Pierre},
+  doi          = {10.1007/s10601-023-09356-1},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {516-517},
+  shortjournal = {Constraints},
+  title        = {Spacetime programming: A synchronous language for constraint search},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Floating-point numbers round-off error analysis by
+constraint programming. <em>Constr</em>, <em>28</em>(3), 515. (<a
+href="https://doi.org/10.1007/s10601-023-09354-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Floating-point numbers are used in many applications to perform computations, often without the user’s knowledge. The mathematical models of these applications use real numbers that are often not representable on a computer. Indeed, a finite binary representation is not sufficient to represent the continuous and infinite set of real numbers. The problem is that computing with floating-point numbers often introduces a rounding error compared to its equivalent over real numbers. Knowing the order of magnitude of this error is essential in order to correctly understand the behaviour of a program. Many error analysis tools calculate an over-approximation of the errors. These over-approximations are often too coarse to effectively assess the impact of the error on the behaviour of the program. Other tools calculate an under-approximation of the maximum error, i.e., the largest possible error in absolute value. These under-approximations are either incorrect or unreachable. In this thesis, we propose a constraint system capable of capturing and reasoning about the error produced by a program that performs computations with floating-point numbers. We also propose an algorithm to search for the maximum error. For this purpose, our algorithm computes both a rigorous over-approximation and a rigorous under-approximation of the maximum error. An over-approximation is obtained from the constraint system for the errors, while a reachable under-approximation is produced using a generate-and-test procedure and a local search. Our algorithm is the first to combine both an over-approximation and an under-approximation of the error. Our methods are implemented in a solver, called FErA. Performance on a set of common problems is competitive: the rigorous enclosure produced is accurate and compares well with other state-of-the-art tools.},
+  archive      = {J_Constr},
+  author       = {Garcia, Rémy},
+  doi          = {10.1007/s10601-023-09354-3},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {515},
+  shortjournal = {Constraints},
+  title        = {Floating-point numbers round-off error analysis by constraint programming},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Reasoning and inference for (maximum) satisfiability: New
+insights. <em>Constr</em>, <em>28</em>(3), 513–514. (<a
+href="https://doi.org/10.1007/s10601-023-09365-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {At the heart of computer science and artificial intelligence, logic is often used as a powerful language to model and solve complex problems that arise in academia and in real-world applications. A well-known formalism in this context is the Satisfiability (SAT) problem which simply checks whether a given propositional formula in the form of a set of constraints, called clauses, can be satisfied. A natural optimization extension of this problem is Maximum Satisfiability (Max-SAT) which consists in determining the maximum number of clausal constraints that can be satisfied within the formula. In our work, we are interested in studying the power and limits of inference and reasoning in the context of (Maximum) Satisfiability. Our first contributions revolve around investigating inference in SAT and Max-SAT solving. First, we study statistical inference within a Multi-Armed Bandit (MAB) framework for online selection of branching heuristics in SAT and we show that it can further enhance the efficiency of modern clause-learning solvers. Moreover, we provide further insights on the power of inference in Branch and Bound algorithms for Max-SAT solving through the property of UP-resilience. Our contributions also extend to SAT and Max-SAT proof theory. We particularly attempt to theoretically bridge the gap between SAT and Max-SAT inference.},
+  archive      = {J_Constr},
+  author       = {Cherif, Mohamed Sami},
+  doi          = {10.1007/s10601-023-09365-0},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {513-514},
+  shortjournal = {Constraints},
+  title        = {Reasoning and inference for (Maximum) satisfiability: New insights},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Optimization methods based on decision diagrams for
+constraint programming, AI planning, and mathematical programming.
+<em>Constr</em>, <em>28</em>(3), 511–512. (<a
+href="https://doi.org/10.1007/s10601-023-09353-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decision diagrams (DDs) are graphical structures that can be used to solve discrete optimization problems by representing the set of feasible solutions as paths in a graph. This graphical encoding of the feasibility set can represent complex combinatorial structures and is the foundation of several novel optimization techniques. Due to their flexibility, DDs have become an attractive optimization tool for researchers in different fields, including operations research and computer science.},
+  archive      = {J_Constr},
+  author       = {Castro, Margarita Paz},
+  doi          = {10.1007/s10601-023-09353-4},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {511-512},
+  shortjournal = {Constraints},
+  title        = {Optimization methods based on decision diagrams for constraint programming, AI planning, and mathematical programming},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Scheduling through logic-based tools. <em>Constr</em>,
+<em>28</em>(3), 510. (<a
+href="https://doi.org/10.1007/s10601-023-09357-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A scheduling problem can be defined in a nutshell as the problem of determining when and how the activities of a project have to be run, according to some project requirements. Such problems are ubiquitous nowadays since they frequently appear in industry and services. In most cases the computation of solutions of scheduling problems is hard, especially when some objective, such as the duration of the project, has to be optimised. The recent performance advances on solving the problems of Boolean Satisfiability (SAT) and SAT Modulo Theories (SMT) have risen the interest in formulating hard combinatorial problems as SAT or SMT formulas, which are then solved with efficient algorithms. One of the principal advantages of such logic-based techniques is that they can certify optimality of solutions.},
+  archive      = {J_Constr},
+  author       = {Coll Caballero, Jordi},
+  doi          = {10.1007/s10601-023-09357-0},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {510},
+  shortjournal = {Constraints},
+  title        = {Scheduling through logic-based tools},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). From declarative models to local search. <em>Constr</em>,
+<em>28</em>(3), 508–509. (<a
+href="https://doi.org/10.1007/s10601-023-09359-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_Constr},
+  author       = {Björdal, Gustav},
+  doi          = {10.1007/s10601-023-09359-y},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {508-509},
+  shortjournal = {Constraints},
+  title        = {From declarative models to local search},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Constraint programming approaches to electric vehicle and
+robot routing problems. <em>Constr</em>, <em>28</em>(3), 506–507. (<a
+href="https://doi.org/10.1007/s10601-023-09355-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Driven by global efforts to curb greenhouse gas emissions, there has been significant investment in electric vehicle (EV) technology in recent years, resulting in a substantial increase in EV market share. Concurrently, the demand for mobile robots, such as unmanned aerial vehicles (UAVs) and land-based robots, has also experienced rapid growth, encouraged by recent advances in the autonomy and capabilities of these systems. Common to both of these technologies is the use of electric motors for propulsion and batteries for mobile energy storage. Techniques for the coordination of electric vehicle fleets, whether human-operated or autonomous, must address a variety of unique challenges, including sparse recharging infrastructure, significant recharge durations, and limited battery capacities.},
+  archive      = {J_Constr},
+  author       = {Booth, Kyle E. C.},
+  doi          = {10.1007/s10601-023-09355-2},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {506-507},
+  shortjournal = {Constraints},
+  title        = {Constraint programming approaches to electric vehicle and robot routing problems},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Security-aware database migration planning. <em>Constr</em>,
+<em>28</em>(3), 472–505. (<a
+href="https://doi.org/10.1007/s10601-023-09351-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Database migration is an important problem faced by companies dealing with big data. Not only is migration a costly procedure, but it also involves serious security risks as well. For some institutions, the primary focus is on reducing the cost of the migration operation, which manifests itself in application testing. For other institutions, minimizing security risks is the most important goal, especially if the data involved is of a sensitive nature. In the literature, the database migration problem has been studied from a test cost minimization perspective. In this paper, we focus on an orthogonal measure, i.e., security risk minimization. We associate security with the number of shifts needed to complete the migration task. Ideally, we want to complete the migration in as few shifts as possible, so that the risk of data exposure is minimized. In this paper, we provide a formal framework for studying the database migration problem from the perspective of security risk minimization (shift minimization) and establish the computational complexities of several models in the same. For the NP-hard models, we develop memetic algorithms that produce solutions that are within $$10\%$$ and $$7\%$$ of the optimal in $$95\%$$ of the instances under 8 and 82 seconds, respectively.},
+  archive      = {J_Constr},
+  author       = {Acikalin, Utku Umur and Caskurlu, Bugra and Subramani, K.},
+  doi          = {10.1007/s10601-023-09351-6},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {472-505},
+  shortjournal = {Constraints},
+  title        = {Security-aware database migration planning},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). CSP beyond tractable constraint languages. <em>Constr</em>,
+<em>28</em>(3), 450–471. (<a
+href="https://doi.org/10.1007/s10601-023-09362-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The constraint satisfaction problem (CSP) is among the most studied computational problems. While NP-hard, many tractable subproblems have been identified (Bulatov 2017, Zhuk 2017) Backdoors, introduced by Williams, Gomes, and Selman (2003), gradually extend such a tractable class to all CSP instances of bounded distance to the class. Backdoor size provides a natural but rather crude distance measure between a CSP instance and a tractable class. Backdoor depth, introduced by Mählmann, Siebertz, and Vigny (2021) for SAT, is a more refined distance measure, which admits the parallel utilization of different backdoor variables. Bounded backdoor size implies bounded backdoor depth, but there are instances of constant backdoor depth and arbitrarily large backdoor size. Dreier, Ordyniak, and Szeider (2022) provided fixed-parameter algorithms for finding backdoors of small depth into the classes of Horn and Krom formulas. In this paper, we consider backdoor depth for CSP. We consider backdoors w.r.t. tractable subproblems $$C_\Gamma $$ of the CSP defined by a constraint language $$\varvec{\Gamma }$$ , i.e., where all the constraints use relations from the language $$\varvec{\Gamma }$$ . Building upon Dreier et al.’s game-theoretic approach and their notion of separator obstructions, we show that for any finite, tractable, semi-conservative constraint language $$\varvec{\Gamma }$$ , the CSP is fixed-parameter tractable parameterized by the backdoor depth into $$C_{\varvec{\Gamma }}$$ plus the domain size. With backdoors of low depth, we reach classes of instances that require backdoors of arbitrary large size. Hence, our results strictly generalize several known results for CSP that are based on backdoor size.},
+  archive      = {J_Constr},
+  author       = {Dreier, Jan and Ordyniak, Sebastian and Szeider, Stefan},
+  doi          = {10.1007/s10601-023-09362-3},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {450-471},
+  shortjournal = {Constraints},
+  title        = {CSP beyond tractable constraint languages},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Complexity of minimum-size arc-inconsistency explanations.
+<em>Constr</em>, <em>28</em>(3), 427–449. (<a
+href="https://doi.org/10.1007/s10601-023-09360-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Explaining the outcome of programs has become one of the main concerns in AI research. In constraint programming, a user may want the system to explain why a given variable assignment is not feasible or how it came to the conclusion that the problem does not have any solution. One solution to the latter is to return to the user a sequence of simple reasoning steps that lead to inconsistency. Arc consistency is a well-known form of reasoning that can be understood by a human. We consider explanations as sequences of propagation steps of a constraint on a variable (i.e. the ubiquitous revise function in arc-consistency algorithms) that lead to inconsistency. We characterize several cases for which providing a shortest such explanation is easy: For instance when constraints are binary and variables have maximum degree two. However, these polynomial cases are tight. For instance, providing a shortest explanation is NP-hard when constraints are binary and the maximum degree is three, even if the number of variables is bounded. It remains NP-hard on trees, despite the fact that arc consistency is a decision procedure on trees. The problem is not even FPT-approximable unless the FPT $$\ne $$ W[2] hypothesis is false.},
+  archive      = {J_Constr},
+  author       = {Bessiere, Christian and Carbonnel, Clément and Cooper, Martin C. and Hebrard, Emmanuel},
+  doi          = {10.1007/s10601-023-09360-5},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {427-449},
+  shortjournal = {Constraints},
+  title        = {Complexity of minimum-size arc-inconsistency explanations},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Learning to select SAT encodings for pseudo-boolean and
+linear integer constraints. <em>Constr</em>, <em>28</em>(3), 397–426.
+(<a href="https://doi.org/10.1007/s10601-023-09364-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many constraint satisfaction and optimisation problems can be solved effectively by encoding them as instances of the Boolean Satisfiability problem (SAT). However, even the simplest types of constraints have many encodings in the literature with widely varying performance, and the problem of selecting suitable encodings for a given problem instance is not trivial. We explore the problem of selecting encodings for pseudo-Boolean and linear constraints using a supervised machine learning approach. We show that it is possible to select encodings effectively using a standard set of features for constraint problems; however we obtain better performance with a new set of features specifically designed for the pseudo-Boolean and linear constraints. In fact, we achieve good results when selecting encodings for unseen problem classes. Our results compare favourably to AutoFolio when using the same feature set. We discuss the relative importance of instance features to the task of selecting the best encodings, and compare several variations of the machine learning method.},
+  archive      = {J_Constr},
+  author       = {Ulrich-Oltean, Felix and Nightingale, Peter and Walker, James Alfred},
+  doi          = {10.1007/s10601-023-09364-1},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {397-426},
+  shortjournal = {Constraints},
+  title        = {Learning to select SAT encodings for pseudo-boolean and linear integer constraints},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Learn and route: Learning implicit preferences for vehicle
+routing. <em>Constr</em>, <em>28</em>(3), 363–396. (<a
+href="https://doi.org/10.1007/s10601-023-09363-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate a learning decision support system for vehicle routing, where the routing engine learns implicit preferences that human planners have when manually creating route plans (or routings). The goal is to use these learned subjective preferences on top of the distance-based objective criterion in vehicle routing systems. This is an alternative to the practice of distinctively formulating a custom vehicle routing problem (VRP) for every company with its own routing requirements. Instead, we assume the presence of past vehicle routing solutions over similar sets of customers, and learn to make similar choices. The learning approach is based on the concept of learning a Markov model, which corresponds to a probabilistic transition matrix, rather than a deterministic distance matrix. This nevertheless allows us to use existing arc routing VRP software in creating the actual routings, and to optimize over both distances and preferences at the same time. For the learning, we explore different schemes to construct the probabilistic transition matrix that can co-evolve with changing preferences over time. Our results on randomly generated instances and on a use-case with a small transportation company show that our method is able to generate results that are close to the manually created solutions, without needing to characterize all constraints and sub-objectives explicitly. Even in the case of changes in the customer sets, our approach is able to find solutions that are closer to the actual routings than when using only distances, and hence, solutions that require fewer manual changes when transformed into practical routings.},
+  archive      = {J_Constr},
+  author       = {Canoy, Rocsildes and Bucarey, Víctor and Mandi, Jayanta and Guns, Tias},
+  doi          = {10.1007/s10601-023-09363-2},
+  journal      = {Constraints},
+  month        = {9},
+  number       = {3},
+  pages        = {363-396},
+  shortjournal = {Constraints},
+  title        = {Learn and route: Learning implicit preferences for vehicle routing},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Exact methods for the oven scheduling problem.
+<em>Constr</em>, <em>28</em>(2), 320–361. (<a
+href="https://doi.org/10.1007/s10601-023-09347-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Oven Scheduling Problem (OSP) is a new parallel batch scheduling problem that arises in the area of electronic component manufacturing. Jobs need to be scheduled to one of several ovens and may be processed simultaneously in one batch if they have compatible requirements. The scheduling of jobs must respect several constraints concerning eligibility and availability of ovens, release dates of jobs, setup times between batches as well as oven capacities. Running the ovens is highly energy-intensive and thus the main objective, besides finishing jobs on time, is to minimize the cumulative batch processing time across all ovens. This objective distinguishes the OSP from other batch processing problems which typically minimize objectives related to makespan, tardiness or lateness. We propose to solve this NP-hard scheduling problem using exact techniques and present two different modelling approaches, one based on batch positions and another on representative jobs for batches. These models are formulated as constraint programming (CP) and integer linear programming (ILP) models and implemented both in the solver-independent modeling language MiniZinc and using interval variables in CP Optimizer. An extensive experimental evaluation of our solution methods is performed on a diverse set of problem instances. We evaluate the performance of several state-of-the-art solvers on the different models and on three variants of the objective function that reflect different real-life scenarios. We show that our models can find feasible solutions for instances of realistic size, many of those being provably optimal or nearly optimal solutions.},
+  archive      = {J_Constr},
+  author       = {Lackner, Marie-Louise and Mrkvicka, Christoph and Musliu, Nysret and Walkiewicz, Daniel and Winter, Felix},
+  doi          = {10.1007/s10601-023-09347-2},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {320-361},
+  shortjournal = {Constraints},
+  title        = {Exact methods for the oven scheduling problem},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Super-reparametrizations of weighted CSPs: Properties and
+optimization perspective. <em>Constr</em>, <em>28</em>(2), 277–319. (<a
+href="https://doi.org/10.1007/s10601-023-09343-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The notion of reparametrizations of Weighted CSPs (WCSPs) (also known as equivalence-preserving transformations of WCSPs) is well-known and finds its use in many algorithms to approximate or bound the optimal WCSP value. In contrast, the concept of super-reparametrizations (which are changes of the weights that keep or increase the WCSP objective for every assignment) was already proposed but never studied in detail. To fill this gap, we present a number of theoretical properties of super-reparametrizations and compare them to those of reparametrizations. Furthermore, we propose a framework for computing upper bounds on the optimal value of the (maximization version of) WCSP using super-reparametrizations. We show that it is in principle possible to employ arbitrary (under some technical conditions) constraint propagation rules to improve the bound. For arc consistency in particular, the method reduces to the known Virtual AC (VAC) algorithm. We implemented the method for singleton arc consistency (SAC) and compared it to other strong local consistencies in WCSPs on a public benchmark. The results show that the bounds obtained from SAC are superior for many instance groups.},
+  archive      = {J_Constr},
+  author       = {Dlask, Tomáš and Werner, Tomáš and de Givry, Simon},
+  doi          = {10.1007/s10601-023-09343-6},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {277-319},
+  shortjournal = {Constraints},
+  title        = {Super-reparametrizations of weighted CSPs: Properties and optimization perspective},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Activity propagation in systems of linear inequalities and
+its relation to block-coordinate descent in linear programs.
+<em>Constr</em>, <em>28</em>(2), 244–276. (<a
+href="https://doi.org/10.1007/s10601-023-09349-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a constraint propagation algorithm to detect infeasibility of a system of linear inequalities over continuous variables, which we call activity propagation. Each iteration of this algorithm chooses a subset of the inequalities and if it infers that some of them are always active (i.e., always hold with equality), it turns them into equalities. We show that this algorithm can be described as chaotic iterations and its fixed points can be characterized by a local consistency, in a similar way to traditional local consistency methods in CSP such as arc consistency. Via complementary slackness, activity propagation can be employed to iteratively improve a dual-feasible solution of large-scale linear programs in a primal-dual loop – a special case of this method is the Virtual Arc Consistency algorithm by Cooper et al. As our second contribution, we show that this method has the same set of fixed points as block-coordinate descent (BCD) applied to the dual linear program. While BCD is popular in large-scale optimization, its fixed points need not be global optima even for convex problems and a succinct characterization of convex problems optimally solvable by BCD remains elusive. Our result may open the way for such a characterization since it allows us to characterize BCD fixed points in terms of local consistencies.},
+  archive      = {J_Constr},
+  author       = {Dlask, Tomáš and Werner, Tomáš},
+  doi          = {10.1007/s10601-023-09349-0},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {244-276},
+  shortjournal = {Constraints},
+  title        = {Activity propagation in systems of linear inequalities and its relation to block-coordinate descent in linear programs},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Human-centred feasibility restoration in practice.
+<em>Constr</em>, <em>28</em>(2), 203–243. (<a
+href="https://doi.org/10.1007/s10601-023-09344-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decision systems for solving real-world combinatorial problems must be able to report infeasibility in such a way that users can understand the reasons behind it, and determine how to modify the problem to restore feasibility. Current methods mainly focus on reporting one or more subsets of the problem constraints that cause infeasibility. Methods that also show users how to restore feasibility tend to be less flexible and/or problem-dependent. We describe a problem-independent approach to feasibility restoration that combines existing techniques from the literature in novel ways to yield meaningful, useful, practical, and flexible user support. We evaluated the resulting framework on three real-world applications and conducted a qualitative expert user study with participants from different application domains.},
+  archive      = {J_Constr},
+  author       = {Senthooran, Ilankaikone and Klapperstueck, Matthias and Belov, Gleb and Czauderna, Tobias and Leo, Kevin and Wallace, Mark and Wybrow, Michael and Garcia de la Banda, Maria},
+  doi          = {10.1007/s10601-023-09344-5},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {203-243},
+  shortjournal = {Constraints},
+  title        = {Human-centred feasibility restoration in practice},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). SAT-based optimal classification trees for non-binary data.
+<em>Constr</em>, <em>28</em>(2), 166–202. (<a
+href="https://doi.org/10.1007/s10601-023-09348-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decision trees are a popular classification model in machine learning due to their interpretability and performance. Decision-tree classifiers are traditionally constructed using greedy heuristic algorithms that do not provide guarantees regarding the quality of the resultant trees. In contrast, a recent line of work employed exact optimization techniques to construct optimal decision-tree classifiers. However, most of these approaches are designed for datasets with binary features. While numeric and categorical features can be transformed into binary features, this transformation can introduce a large number of binary features and may not be efficient in practice. In this work, we present a SAT-based encoding for decision trees that directly supports non-binary data and use it to solve two well-studied variants of the optimal decision tree problem. Furthermore, we extend our approach to support cost-sensitive learning of optimal decision trees and introduce tree pruning constraints to reduce overfitting. We perform extensive experiments based on real-world and synthetic datasets that show that our approach obtains superior performance to state-of-the-art exact techniques on non-binary datasets and has significantly smaller memory consumption. We also show that our extension for cost-sensitive learning and our tree pruning constraints can help improve the prediction quality on unseen test data.},
+  archive      = {J_Constr},
+  author       = {Shati, Pouya and Cohen, Eldan and McIlraith, Sheila A.},
+  doi          = {10.1007/s10601-023-09348-1},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {166-202},
+  shortjournal = {Constraints},
+  title        = {SAT-based optimal classification trees for non-binary data},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Computing relaxations for the three-dimensional stable
+matching problem with cyclic preferences. <em>Constr</em>,
+<em>28</em>(2), 138–165. (<a
+href="https://doi.org/10.1007/s10601-023-09346-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Constraint programming has proven to be a successful framework for determining whether a given instance of the three-dimensional stable matching problem with cyclic preferences (3dsm-cyc) admits a solution. If such an instance is satisfiable, constraint models can even compute its optimal solution for several different objective functions. On the other hand, the only existing output for unsatisfiable 3dsm-cyc instances is a simple declaration of impossibility. In this paper, we explore four ways to adapt constraint models designed for 3dsm-cyc to the maximum relaxation version of the problem, that is, the computation of the smallest part of an instance whose modification leads to satisfiability. We also extend our models to support the presence of costs on elements in the instance, and to return the relaxation with lowest total cost for each of the four types of relaxation. Empirical results reveal that our relaxation models are efficient, as in most cases, they show little overhead compared to the satisfaction version.},
+  archive      = {J_Constr},
+  author       = {Cseh, Ágnes and Escamocher, Guillaume and Quesada, Luis},
+  doi          = {10.1007/s10601-023-09346-3},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {138-165},
+  shortjournal = {Constraints},
+  title        = {Computing relaxations for the three-dimensional stable matching problem with cyclic preferences},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The smallest hard trees. <em>Constr</em>, <em>28</em>(2),
+105–137. (<a href="https://doi.org/10.1007/s10601-023-09341-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We find an orientation of a tree with 20 vertices such that the corresponding fixed-template constraint satisfaction problem (CSP) is NP-complete, and prove that for every orientation of a tree with fewer vertices the corresponding CSP can be solved in polynomial time. We also compute the smallest tree that is NL-hard (assuming L≠NL), the smallest tree that cannot be solved by arc consistency, and the smallest tree that cannot be solved by Datalog. Our experimental results also support a conjecture of Bulín concerning a question of Hell, Nešetřil and Zhu, namely that ‘easy trees lack the ability to count’. Most proofs are computer-based and make use of the most recent universal-algebraic theory about the complexity of finite-domain CSPs. However, further ideas are required because of the huge number of orientations of trees. In particular, we use the well-known fact that it suffices to study orientations of trees that are cores and show how to efficiently decide whether a given orientation of a tree is a core using the arc-consistency procedure. Moreover, we present a method to generate orientations of trees that are cores that works well in practice. In this way we found interesting examples for the open research problem to classify finite-domain CSPs in NL.},
+  archive      = {J_Constr},
+  author       = {Bodirsky, Manuel and Bulín, Jakub and Starke, Florian and Wernthaler, Michael},
+  doi          = {10.1007/s10601-023-09341-8},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {105-137},
+  shortjournal = {Constraints},
+  title        = {The smallest hard trees},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A constraint programming model for the scheduling and
+workspace layout design of a dual-arm multi-tool assembly robot.
+<em>Constr</em>, <em>28</em>(2), 71–104. (<a
+href="https://doi.org/10.1007/s10601-023-09345-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The generation of a robot program can be seen as a collection of sub-problems, where many combinations of some of these sub-problems are well studied. The performance of a robot program is strongly conditioned by the location of the tasks. However, the scope of previous methods does not include workspace layout design, likely missing high-quality solutions. In industrial applications, designing robot workspace layout is part of the commissioning. We broaden the scope and show how to model a dual-arm multi-tool robot assembly problem. Our model includes more robot programming sub-problems than previous methods, as well as workspace layout design. We propose a constraint programming formulation in MiniZinc that includes elements from scheduling and routing, extended with variable task locations. We evaluate the model on realistic assembly problems and workspaces, utilizing the dual-arm YuMi robot from ABB Ltd. We also evaluate redundant constraints and various formulations for avoiding arm-to-arm collisions. The best model variant quickly finds high-quality solutions for all problem instances. This demonstrates the potential of our approach as a valuable tool for a robot programmer.},
+  archive      = {J_Constr},
+  author       = {Wessén, Johan and Carlsson, Mats and Schulte, Christian and Flener, Pierre and Pecora, Federico and Matskin, Mihhail},
+  doi          = {10.1007/s10601-023-09345-4},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {71-104},
+  shortjournal = {Constraints},
+  title        = {A constraint programming model for the scheduling and workspace layout design of a dual-arm multi-tool assembly robot},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Block-coordinate descent and local consistencies in linear
+programming. <em>Constr</em>, <em>28</em>(2), 69–70. (<a
+href="https://doi.org/10.1007/s10601-023-09350-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Even though linear programming (LP) problems can be solved in polynomial time, solving large-scale LP instances using off-the-shelf solvers may be difficult in practice, which creates demand for specialized scalable methods. One such method for large-scale problems is block-coordinate descent (BCD). However, the fixed points of this method need not be global optima even for convex optimization problems. Despite this limitation, various BCD algorithms (also called ‘convergent message-passing algorithms’) are successfully used for approximately solving the dual LP relaxation of the weighted constraint satisfaction problem (WCSP, also known as MAP inference in graphical models) and their fixed points can be characterized using local consistencies, typically variants of arc consistency. In this work, we focus on optimizing linear programs by BCD or constraint propagation and theoretically relating these approaches. To this end, we propose a general constraint-propagation-based framework for approximate optimization of large-scale linear programs whose applicability is evaluated on publicly available benchmarks. In detail, we employ this approach to approximately optimize the dual LP relaxation of weighted Max-SAT and an LP formulation of WCSP. In the latter case, we show that one can use any classical CSP constraint propagation method in order to obtain an upper bound on the optimal value. This is in contrast to existing methods that needed to be tailored to a specific chosen kind of local consistency. However, the cost for this is that our approach may not preserve the properties of the input WCSP instance, such as the set of optimal assignments, and only provides an upper bound on its optimal value, which is nevertheless important for pruning the search space during branch-and-bound search. Although one can use our general framework with any constraint propagation method in a system of linear inequalities, we identify the precise form of constraint propagation such that the stopping points of the resulting algorithm coincide with the fixed points of BCD. In other words, we identify the kind of local consistency that is enforced by BCD in any linear program. Depending on the problem being solved, this condition may be interpreted, e.g., as arc consistency or positive consistency. Thanks to these results, we characterize linear programs that are optimally solvable by BCD by refutation-completeness of the associated propagator (i.e., whether it can always detect infeasibility of a certain class of systems of linear inequalities and equalities). This allows us to identify new classes of linear programs exactly solvable by BCD, including, e.g., an LP formulation of the maximum flow problem or LP relaxations of some combinatorial problems.},
+  archive      = {J_Constr},
+  author       = {Dlask, Tomáš},
+  doi          = {10.1007/s10601-023-09350-7},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {69-70},
+  shortjournal = {Constraints},
+  title        = {Block-coordinate descent and local consistencies in linear programming},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Hybrid optimization of vehicle routing problems.
+<em>Constr</em>, <em>28</em>(2), 67–68. (<a
+href="https://doi.org/10.1007/s10601-023-09352-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vehicle routing problems are combinatorial optimization problems that aspire to design vehicle routes that minimize some measure of cost, such as the total distance traveled or the time at which the last vehicle returns to a depot, while adhering to various restrictions. Vehicle routing problems are of profound interest in both academia and industry because they are opportunities to study graph structures and algorithms, and because they underpin practical applications in a multitude of industries, but notably, the transportation and logistics industries. This dissertation presents two applications relevant to industry and develops a fully hybrid method for solving a classical vehicle routing problem.},
+  archive      = {J_Constr},
+  author       = {Lam, Edward},
+  doi          = {10.1007/s10601-023-09352-5},
+  journal      = {Constraints},
+  month        = {6},
+  number       = {2},
+  pages        = {67-68},
+  shortjournal = {Constraints},
+  title        = {Hybrid optimization of vehicle routing problems},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Towards better heuristics for solving bounded model checking
+problems. <em>Constr</em>, <em>28</em>(1), 45–66. (<a
+href="https://doi.org/10.1007/s10601-022-09339-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a new way to improve the performance of the SAT-based bounded model checking problem on sequential and parallel procedures by exploiting relevant information identified through the characteristics of the original problem. This led us to design a new way of building interesting heuristics based on the structure of the underlying problem. The proposed methodology is generic and can be applied for any SAT problem. This paper compares the state-of-the-art approaches with two new heuristics for sequential procedures: Structure-based and Linear Programming heuristics. We extend these study and applied the above methodology on parallel approaches, especially to refine the sharing measure which shows promising results.},
+  archive      = {J_Constr},
+  author       = {Kheireddine, Anissa and Renault, Etienne and Baarir, Souheib},
+  doi          = {10.1007/s10601-022-09339-8},
+  journal      = {Constraints},
+  month        = {3},
+  number       = {1},
+  pages        = {45-66},
+  shortjournal = {Constraints},
+  title        = {Towards better heuristics for solving bounded model checking problems},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The algebraic structure of the densification and the
+sparsification tasks for CSPs. <em>Constr</em>, <em>28</em>(1), 13–44.
+(<a href="https://doi.org/10.1007/s10601-022-09340-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The tractability of certain CSPs for dense or sparse instances is known from the 90s. Recently, the densification and the sparsification of CSPs were formulated as computational tasks and the systematical study of their computational complexity was initiated. We approach this problem by introducing the densification operator, i.e. the closure operator that, given an instance of a CSP, outputs all constraints that are satisfied by all of its solutions. According to the Galois theory of closure operators, any such operator is related to a certain implicational system (or, a functional dependency) Σ. We are specifically interested in those classes of fixed-template CSPs, parameterized by constraint languages Γ, for which there is an implicational system Σ whose size is a polynomial in the number of variables n. We show that in the Boolean case, such implicational systems exist if and only if Γ is of bounded width. For such languages, Σ can be computed in log-space or in a logarithmic time with a polynomial number of processors. Given an implicational system Σ, the densification task is equivalent to the computation of the closure of input constraints. The sparsification task is equivalent to the computation of the minimal key.},
+  archive      = {J_Constr},
+  author       = {Takhanov, Rustem},
+  doi          = {10.1007/s10601-022-09340-1},
+  journal      = {Constraints},
+  month        = {3},
+  number       = {1},
+  pages        = {13-44},
+  shortjournal = {Constraints},
+  title        = {The algebraic structure of the densification and the sparsification tasks for CSPs},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). An interdisciplinary experimental evaluation on the
+disjunctive temporal problem. <em>Constr</em>, <em>28</em>(1), 1–12. (<a
+href="https://doi.org/10.1007/s10601-023-09342-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We report on an extensive experimental evaluation on the Disjunctive Temporal Problem, where we adapted state-of-the-art Satisfiability Modulo Theories (SMT) encodings into the frameworks of Mixed Integer Linear Programming (MILP), (Circuit) Satisfiability (SAT), and Constraint Programming (CP). We considered 6 SMT solvers, 4 MILP solvers, 3 SAT solvers, and 3 CP solvers, broadly-recognized for their technologies. We compared all of them on several sets of benchmarks. As well as considering 2 random sets in the literature, we generated 3 new industrial and 3 new computationally-hard sets of benchmarks, which we make publicly available online. In particular, we analyzed 9885 instances, each processed on average about 33 times. Overall, SMT is confirmed to be the current best technology, but also MILP can perform very well, for instance on some random instances, on which it can be up to 2x faster than SMT. On a single machine, this experimental evaluation would have taken 598.97 days.},
+  archive      = {J_Constr},
+  author       = {Zavatteri, Matteo and Raffaele, Alice and Ostuni, Dario and Rizzi, Romeo},
+  doi          = {10.1007/s10601-023-09342-7},
+  journal      = {Constraints},
+  month        = {3},
+  number       = {1},
+  pages        = {1-12},
+  shortjournal = {Constraints},
+  title        = {An interdisciplinary experimental evaluation on the disjunctive temporal problem},
+  volume       = {28},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

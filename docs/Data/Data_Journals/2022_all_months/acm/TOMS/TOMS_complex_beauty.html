@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOMS_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="toms---44">TOMS - 44</h2>
+<ul>
+<li><details>
+<summary>
+(2022). Algorithm 1030: SC-SR1: MATLAB software for limited-memory
+SR1 trust-region methods. <em>TOMS</em>, <em>48</em>(4), 48:1–33. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a MATLAB implementation of the symmetric rank-one (SC-SR1) method that solves trust-region subproblems when a limited-memory symmetric rank-one (L-SR1) matrix is used in place of the true Hessian matrix, which can be used for large-scale optimization. The method takes advantage of two shape-changing norms [Burdakov and Yuan 2002; Burdakov et&amp;nbsp;al. 2017] to decompose the trust-region subproblem into two separate problems. Using one of the proposed norms, the resulting subproblems have closed-form solutions. Meanwhile, using the other proposed norm, one of the resulting subproblems has a closed-form solution while the other is easily solvable using techniques that exploit the structure of L-SR1 matrices. Numerical results suggest that the SC-SR1 method is able to solve trust-region subproblems to high accuracy even in the so-called “hard case.” When integrated into a trust-region algorithm, extensive numerical experiments suggest that the proposed algorithms perform well, when compared with widely used solvers, such as truncated conjugate-gradients.},
+  archive  = {J_TOMS},
+  author   = {Brust, Johannes and Burdakov, Oleg and Erway, Jennifer and Marcia, Roummel},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {48:1-33},
+  title    = {Algorithm&amp;nbsp;1030: SC-SR1: MATLAB software for limited-memory SR1 trust-region methods},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Remark on algorithm 1010: Boosting efficiency in solving
+quartic equations with no compromise in accuracy. <em>TOMS</em>,
+<em>48</em>(4), 46:1–3. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present a correction and an improvement to Algorithm&amp;nbsp;1010 [A. Orellana and C. De Michele 2020].},
+  archive  = {J_TOMS},
+  author   = {De Michele, Cristiano},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {46:1-3},
+  title    = {Remark on algorithm&amp;nbsp;1010: Boosting efficiency in solving quartic equations with no compromise in accuracy},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Waveform relaxation with asynchronous time-integration.
+<em>TOMS</em>, <em>48</em>(4), 45:1–22. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We consider Waveform Relaxation (WR) methods for parallel and partitioned time-integration of surface-coupled multiphysics problems. WR allows independent time-discretizations on independent and adaptive time-grids, while maintaining high time-integration orders. Classical WR methods such as Jacobi or Gauss-Seidel WR are typically either parallel or converge quickly.We present a novel parallel WR method utilizing asynchronous communication techniques to get both properties. Classical WR methods exchange discrete functions after time-integration of a subproblem. We instead asynchronously exchange time-point solutions during time-integration and directly incorporate all new information in the interpolants. We show both continuous and time-discrete convergence in a framework that generalizes existing linear WR convergence theory. An algorithm for choosing optimal relaxation in our new WR method is presented. Convergence is demonstrated in two conjugate heat transfer examples. Our new method shows an improved performance over classical WR methods. In one example, we show a partitioned coupling of the compressible Euler equations with a nonlinear heat equation, with subproblems implemented using the open source libraries DUNE and FEniCS.},
+  archive  = {J_TOMS},
+  author   = {Meisrimel, Peter and Birken, Philipp},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {45:1-22},
+  title    = {Waveform relaxation with asynchronous time-integration},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Pylspack: Parallel algorithms and data structures for
+sketching, column subset selection, regression, and leverage scores.
+<em>TOMS</em>, <em>48</em>(4), 44:1–27. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present parallel algorithms and data structures for three fundamental operations in Numerical Linear Algebra: (i) Gaussian and CountSketch random projections and their combination, (ii) computation of the Gram matrix, and (iii) computation of the squared row norms of the product of two matrices, with a special focus on “tall-and-skinny” matrices, which arise in many applications. We provide a detailed analysis of the ubiquitous CountSketch transform and its combination with Gaussian random projections, accounting for memory requirements, computational complexity and workload balancing. We also demonstrate how these results can be applied to column subset selection, least squares regression and leverage scores computation. These tools have been implemented in pylspack, a publicly available Python package1 whose core is written in C++ and parallelized with OpenMP and that is compatible with standard matrix data structures of SciPy and NumPy. Extensive numerical experiments indicate that the proposed algorithms scale well and significantly outperform existing libraries for tall-and-skinny matrices.},
+  archive  = {J_TOMS},
+  author   = {Sobczyk, Aleksandros and Gallopoulos, Efstratios},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {44:1-27},
+  title    = {Pylspack: Parallel algorithms and data structures for sketching, column subset selection, regression, and leverage scores},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Automatic differentiation of c++ codes on emerging manycore
+architectures with sacado. <em>TOMS</em>, <em>48</em>(4), 43:1–29. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Automatic differentiation (AD) is a well-known technique for evaluating analytic derivatives of calculations implemented on a computer, with numerous software tools available for incorporating AD technology into complex applications. However, a growing challenge for AD is the efficient differentiation of parallel computations implemented on emerging manycore computing architectures such as multicore CPUs, GPUs, and accelerators as these devices become more pervasive. In this work, we explore forward mode, operator overloading-based differentiation of C++ codes on these architectures using the widely available Sacado AD software package. In particular, we leverage Kokkos, a C++ tool providing APIs for implementing parallel computations that is portable to a wide variety of emerging architectures. We describe the challenges that arise when differentiating code for these architectures using Kokkos, and two approaches for overcoming them that ensure optimal memory access patterns as well as expose additional dimensions of fine-grained parallelism in the derivative calculation. We describe the results of several computational experiments that demonstrate the performance of the approach on a few contemporary CPU and GPU architectures. We then conclude with applications of these techniques to the simulation of discretized systems of partial differential equations.},
+  archive  = {J_TOMS},
+  author   = {Phipps, Eric and Pawlowski, Roger and Trott, Christian},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {43:1-29},
+  title    = {Automatic differentiation of c++ codes on emerging manycore architectures with sacado},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). CS-TSSOS: Correlative and term sparsity for large-scale
+polynomial optimization. <em>TOMS</em>, <em>48</em>(4), 42:1–26. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This work proposes a new moment-SOS hierarchy, called CS-TSSOS, for solving large-scale sparse polynomial optimization problems. Its novelty is to exploit simultaneously correlative sparsity and term sparsity by combining advantages of two existing frameworks for sparse polynomial optimization. The former is due to Waki et&amp;nbsp;al. [40] while the latter was initially proposed by Wang et&amp;nbsp;al. [42] and later exploited in the TSSOS hierarchy [46, 47]. In doing so we obtain CS-TSSOS—a two-level hierarchy of semidefinite programming relaxations with (i) the crucial property to involve blocks of SDP matrices and (ii) the guarantee of convergence to the global optimum under certain conditions. We demonstrate its efficiency and scalability on several large-scale instances of the celebrated Max-Cut problem and the important industrial optimal power flow problem, involving up to six thousand variables and tens of thousands of constraints.},
+  archive  = {J_TOMS},
+  author   = {Wang, Jie and Magron, Victor and Lasserre, J. B. and Mai, Ngoc Hoang Anh},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {42:1-26},
+  title    = {CS-TSSOS: Correlative and term sparsity for large-scale polynomial optimization},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). DIRECTGO: A new DIRECT-type MATLAB toolbox for
+derivative-free global optimization. <em>TOMS</em>, <em>48</em>(4),
+41:1–46. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this work, we introduce DIRECTGO, a new MATLAB toolbox for derivative-free global optimization. DIRECTGO collects various deterministic derivative-free DIRECT-type algorithms for box-constrained, generally constrained, and problems with hidden constraints. Each sequential algorithm is implemented in two ways: using static and dynamic data structures for more efficient information storage and organization. Furthermore, parallel schemes are applied to some promising algorithms within DIRECTGO. The toolbox is equipped with a graphical user interface (GUI), ensuring the user-friendly use of all functionalities available in DIRECTGO. Available features are demonstrated in detailed computational studies using a comprehensive DIRECTGOLib v1.0 library of global optimization test problems. Additionally, 11 classical engineering design problems illustrate the potential of DIRECTGO to solve challenging real-world problems. Finally, the appendix gives examples of accompanying MATLAB programs and provides a synopsis of its use on the test problems with box and general constraints.},
+  archive  = {J_TOMS},
+  author   = {Stripinis, Linas and Paulavi\v{c}ius, Remigijus},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {41:1-46},
+  title    = {DIRECTGO: A new DIRECT-type MATLAB toolbox for derivative-free global optimization},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Exploiting constant trace property in large-scale polynomial
+optimization. <em>TOMS</em>, <em>48</em>(4), 40:1–39. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We prove that every semidefinite moment relaxation of a polynomial optimization problem (POP) with a ball constraint can be reformulated as a semidefinite program involving a matrix with constant trace property (CTP). As a result, such moment relaxations can be solved efficiently by first-order methods that exploit CTP, e.g., the conditional gradient-based augmented Lagrangian method. We also extend this CTP-exploiting framework to large-scale POPs with different sparsity structures. The efficiency and scalability of our framework are illustrated on some moment relaxations for various randomly generated POPs, especially second-order moment relaxations for quadratically constrained quadratic programs.},
+  archive  = {J_TOMS},
+  author   = {Mai, Ngoc Hoang Anh and Lasserre, J. B. and Magron, Victor and Wang, Jie},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {40:1-39},
+  title    = {Exploiting constant trace property in large-scale polynomial optimization},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A normal form algorithm for tensor rank decomposition.
+<em>TOMS</em>, <em>48</em>(4), 38:1–35. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We propose a new numerical algorithm for computing the tensor rank decomposition or canonical polyadic decomposition of higher-order tensors subject to a rank and genericity constraint. Reformulating this computational problem as a system of polynomial equations allows us to leverage recent numerical linear algebra tools from computational algebraic geometry. We characterize the complexity of our algorithm in terms of an algebraic property of this polynomial system—the multigraded regularity. We prove effective bounds for many tensor formats and ranks, which are of independent interest for overconstrained polynomial system solving. Moreover, we conjecture a general formula for the multigraded regularity, yielding a (parameterized) polynomial time complexity for the tensor rank decomposition problem in the considered setting. Our numerical experiments show that our algorithm can outperform state-of-the-art numerical algorithms by an order of magnitude in terms of accuracy, computation time, and memory consumption.},
+  archive  = {J_TOMS},
+  author   = {Telen, Simon and Vannieuwenhoven, Nick},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {38:1-35},
+  title    = {A normal form algorithm&amp;nbsp;for tensor rank decomposition},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Cache-oblivious hilbert curve-based blocking scheme for
+matrix transposition. <em>TOMS</em>, <em>48</em>(4), 37:1–28. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article presents a fast SIMD Hilbert space-filling curve generator, which supports a new cache-oblivious blocking-scheme technique applied to the out-of-place transposition of general matrices. Matrix operations found in high performance computing libraries are usually parameterized based on host microprocessor specifications to minimize data movement within the different levels of memory hierarchy. The performance of cache-oblivious algorithms does not rely on such parameterizations. This type of algorithm provides an elegant and portable solution to address the lack of standardization in modern-day processors. Our solution consists in an iterative blocking scheme that takes advantage of the locality-preserving properties of Hilbert space-filling curves to minimize data movement in any memory hierarchy. This scheme traverses the input matrix, in O(nm) time and space, improving the behavior of matrix algorithms that inherently present poor memory locality. The application of this technique to the problem of out-of-place matrix transposition achieved competitive results when compared to state-of-the-art approaches. The performance of our solution surpassed Intel MKL version after employing standard software prefetching techniques.},
+  archive  = {J_TOMS},
+  author   = {Alves, Jo\~{a}o Nuno Ferreira and Russo, Lu\&#39;{\i}s Manuel Silveira and Francisco, Alexandre},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {4},
+  pages    = {37:1-28},
+  title    = {Cache-oblivious hilbert curve-based blocking scheme for matrix transposition},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1028: VTMOP: Solver for blackbox multiobjective
+optimization problems. <em>TOMS</em>, <em>48</em>(3), 36:1–34. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {VTMOP is a Fortran 2008 software package containing two Fortran modules for solving computationally expensive bound-constrained blackbox multiobjective optimization problems. VTMOP implements the algorithm of [32], which handles two or more objectives, does not require any derivatives, and produces well-distributed points over the Pareto front. The first module contains a general framework for solving multiobjective optimization problems by combining response surface methodology, trust region methodology, and an adaptive weighting scheme. The second module features a driver subroutine that implements this framework when the objective functions can be wrapped as a Fortran subroutine. Support is provided for both serial and parallel execution paradigms, and VTMOP is demonstrated on several test problems as well as one real-world problem in the area of particle accelerator optimization.},
+  archive  = {J_TOMS},
+  author   = {Chang, Tyler H. and Watson, Layne T. and Larson, Jeffrey and Neveu, Nicole and Thacker, William I. and Deshpande, Shubhangi and Lux, Thomas C. H.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {36:1-34},
+  title    = {Algorithm 1028: VTMOP: solver for blackbox multiobjective optimization problems},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1027: NOMAD version 4: Nonlinear optimization with
+the MADS algorithm. <em>TOMS</em>, <em>48</em>(3), 35:1–22. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {NOMADis a state-of-the-art software package for optimizing blackbox problems. In continuous development since 2001, it constantly evolved with the integration of new algorithmic features published in scientific publications. These features are motivated by real applications encountered by industrial partners. The latest major release of NOMAD, version&amp;nbsp;3, dates to 2008. Minor releases are produced as new features are incorporated. The present work describes NOMAD &amp;nbsp;4, a complete redesign of the previous version, with a new architecture providing more flexible code, added functionalities, and reusable code. We introduce algorithmic components, which are building blocks for more complex algorithms and can initiate other components, launch nested algorithms, or perform specialized tasks. They facilitate the implementation of new ideas, including the MegaSearchPoll component, warm and hot restarts, and a revised version of the PsdMads algorithm. Another main improvement of NOMAD &amp;nbsp;4 is the usage of parallelism, to simultaneously compute multiple blackbox evaluations and to maximize usage of available cores. Running different algorithms, tuning their parameters, and comparing their performance for optimization are simpler than before, while overall optimization performance is maintained between versions&amp;nbsp;3 and&amp;nbsp;4. NOMAD is freely available at www.gerad.ca/nomad and the whole project is visible at github.com/bbopt/nomad.},
+  archive  = {J_TOMS},
+  author   = {Audet, Charles and Le Digabel, S\&#39;{e}bastien and Montplaisir, Viviane Rochon and Tribes, Christophe},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {35:1-22},
+  title    = {Algorithm&amp;nbsp;1027: NOMAD version&amp;nbsp;4: nonlinear optimization with the MADS algorithm},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1026: Concurrent alternating least squares for
+multiple simultaneous canonical polyadic decompositions. <em>TOMS</em>,
+<em>48</em>(3), 34:1–20. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Tensor decompositions, such as CANDECOMP/PARAFAC (CP), are widely used in a variety of applications, such as chemometrics, signal processing, and machine learning. A broadly used method for computing such decompositions relies on the Alternating Least Squares (ALS) algorithm. When the number of components is small, regardless of its implementation, ALS exhibits low arithmetic intensity, which severely hinders its performance and makes GPU offloading ineffective. We observe that, in practice, experts often have to compute multiple decompositions of the same tensor, each with a small number of components (typically fewer than 20), to ultimately find the best ones to use for the application at hand. In this article, we illustrate how multiple decompositions of the same tensor can be fused together at the algorithmic level to increase the arithmetic intensity. Therefore, it becomes possible to make efficient use of GPUs for further speedups; at the same time, the technique is compatible with many enhancements typically used in ALS, such as line search, extrapolation, and non-negativity constraints. We introduce the Concurrent ALS algorithm and library, which offers an interface to MATLAB, and a mechanism to effectively deal with the issue that decompositions complete at different times. Experimental results on artificial and real datasets demonstrate a shorter time to completion due to increased arithmetic intensity.},
+  archive  = {J_TOMS},
+  author   = {Psarras, Christos and Karlsson, Lars and Bro, Rasmus and Bientinesi, Paolo},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {34:1-20},
+  title    = {Algorithm&amp;nbsp;1026: Concurrent alternating least squares for multiple simultaneous canonical polyadic decompositions},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). QPPAL: A two-phase proximal augmented lagrangian method for
+high-dimensional convex quadratic programming problems. <em>TOMS</em>,
+<em>48</em>(3), 33:1–27. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this article, we aim to solve high-dimensional convex quadratic programming (QP) problems with a large number of quadratic terms, linear equality, and inequality constraints. To solve the targeted QP problem to a desired accuracy efficiently, we consider the restricted-Wolfe dual problem and develop a two-phase Proximal Augmented Lagrangian method (QPPAL), with Phase I to generate a reasonably good initial point to warm start Phase II to obtain an accurate solution efficiently. More specifically, in Phase I, based on the recently developed symmetric Gauss-Seidel (sGS) decomposition technique, we design a novel sGS-based semi-proximal augmented Lagrangian method for the purpose of finding a solution of low to medium accuracy. Then, in Phase II, a proximal augmented Lagrangian algorithm is proposed to obtain a more accurate solution efficiently. Extensive numerical results evaluating the performance of QPPAL against existing state-of-the-art solvers Gurobi, OSQP, and QPALM are presented to demonstrate the high efficiency and robustness of our proposed algorithm for solving various classes of large-scale convex QP problems. The MATLAB implementation of the software package QPPAL is available at .},
+  archive  = {J_TOMS},
+  author   = {Liang, Ling and Li, Xudong and Sun, Defeng and Toh, Kim-Chuan},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {33:1-27},
+  title    = {QPPAL: A two-phase proximal augmented lagrangian method for high-dimensional convex quadratic programming problems},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). HIFIR: Hybrid incomplete factorization with iterative
+refinement for preconditioning ill-conditioned and singular systems.
+<em>TOMS</em>, <em>48</em>(3), 32:1–33. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We introduce a software package called Hybrid Incomplete Factorization with Iterative Refinement (HIFIR) for preconditioning sparse, unsymmetric, ill-conditioned, and potentially singular systems. HIFIR computes a hybrid incomplete factorization (HIF), which combines multilevel incomplete LU factorization with a truncated, rank-revealing QR (RRQR) factorization on the final Schur complement. This novel hybridization is based on the new theory of ϵ-accurate approximate generalized inverse (AGI). It enables near-optimal preconditioners for consistent systems and enables flexible GMRES to solve inconsistent systems when coupled with iterative refinement. In this article, we focus on some practical algorithmic and software issues of HIFIR. In particular, we introduce a new inverse-based rook pivoting (IBRP) into ILU, which improves the robustness and the overall efficiency for some ill-conditioned systems by significantly reducing the size of the final Schur complement for some systems. We also describe the software design of HIFIR in terms of its efficient data structures for supporting rook pivoting in a multilevel setting, its template-based generic programming interfaces for mixed-precision real and complex values in C++, and its user-friendly high-level interfaces in MATLAB and Python. We demonstrate the effectiveness of HIFIR for ill-conditioned or singular systems arising from several applications, including the Helmholtz equation, linear elasticity, stationary incompressible Navier–Stokes (INS) equations, and time-dependent advection-diffusion equation.},
+  archive  = {J_TOMS},
+  author   = {Chen, Qiao and Jiao, Xiangmin},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {32:1-33},
+  title    = {HIFIR: Hybrid incomplete factorization with iterative refinement for preconditioning ill-conditioned and singular systems},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Enabling new flexibility in the SUNDIALS suite of nonlinear
+and differential/algebraic equation solvers. <em>TOMS</em>,
+<em>48</em>(3), 31:1–24. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In recent years, the SUite of Nonlinear and DIfferential/ALgebraic equation Solvers (SUNDIALS) has been redesigned to better enable the use of application-specific and third-party algebraic solvers and data structures. Throughout this work, we have adhered to specific guiding principles that minimized the impact to current users while providing maximum flexibility for later evolution of solvers and data structures. The redesign was done through the addition of new linear and nonlinear solvers classes, enhancements to the vector class, and the creation of modern Fortran interfaces. The vast majority of this work has been performed “behind-the-scenes,” with minimal changes to the user interface and no reduction in solver capabilities or performance. These changes allow SUNDIALS users to more easily utilize external solver libraries and create highly customized solvers, enabling greater flexibility on extreme-scale, heterogeneous computational architectures.},
+  archive  = {J_TOMS},
+  author   = {Gardner, David J. and Reynolds, Daniel R. and Woodward, Carol S. and Balos, Cody J.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {31:1-24},
+  title    = {Enabling new flexibility in the SUNDIALS suite of nonlinear and Differential/Algebraic equation solvers},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Configurable open-source data structure for distributed
+conforming unstructured homogeneous meshes with GPU support.
+<em>TOMS</em>, <em>48</em>(3), 30:1–30. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A general multi-purpose data structure for an efficient representation of conforming unstructured homogeneous meshes for scientific computations on CPU and GPU-based systems is presented. The data structure is provided as open-source software as part of the TNL library (https://tnl-project.org/). The abstract representation supports almost any cell shape and common 2D quadrilateral, 3D hexahedron and arbitrarily dimensional simplex shapes are currently built into the library. The implementation is highly configurable via templates of the C++ language, which allows avoiding the storage of unnecessary dynamic data. The internal memory layout is based on state-of-the-art sparse matrix storage formats, which are optimized for different hardware architectures in order to provide high-performance computations. The proposed data structure is also suitable for meshes decomposed into several subdomains and distributed computing using the Message Passing Interface (MPI). The efficiency of the implemented data structure on CPU and GPU hardware architectures is demonstrated on several benchmark problems and a comparison with another library. Its applicability to advanced numerical methods is demonstrated with an example problem of two-phase flow in porous media using a numerical scheme based on the mixed-hybrid finite element method (MHFEM). We show GPU speed-ups that rise above 20 in 2D and 50 in 3D when compared to sequential CPU computations, and above 2 in 2D and 9 in 3D when compared to 12-threaded CPU computations.},
+  archive  = {J_TOMS},
+  author   = {Klinkovsk\&#39;{y}, Jakub and Oberhuber, Tom\&#39;{a}\v{s} and Fu\v{c}\&#39;{\i}k, Radek and \v{Z}abka, V\&#39;{\i}t\v{e}zslav},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {30:1-30},
+  title    = {Configurable open-source data structure for distributed conforming unstructured homogeneous meshes with GPU support},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Parallel weighted random sampling. <em>TOMS</em>,
+<em>48</em>(3), 29:1–40. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Data structures for efficient sampling from a set of weighted items are an important building block of many applications. However, few parallel solutions are known. We close many of these gaps. We give efficient, fast, and practicable parallel and distributed algorithms for building data structures that support sampling single items (alias tables, compressed data structures). This also yields a simplified and more space-efficient sequential algorithm for alias table construction. Our approaches to sampling k out of n items with/without replacement and to subset (Poisson) sampling are output-sensitive, i.e., the sampling algorithms use work linear in the number of different samples. This is also interesting in the sequential case. Weighted random permutation can be done by sorting appropriate random deviates. We show that this is possible with linear work. Finally, we give a communication-efficient, highly scalable approach to (weighted and unweighted) reservoir sampling. This algorithm is based on a fully distributed model of streaming algorithms that might be of independent interest. Experiments for alias tables and sampling with replacement show near linear speedups using up to 158 threads of shared-memory machines. An experimental evaluation of distributed weighted reservoir sampling on up to 5,120 cores also shows good speedups.},
+  archive  = {J_TOMS},
+  author   = {H\&quot;{u}bschle-Schneider, Lorenz and Sanders, Peter},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {29:1-40},
+  title    = {Parallel weighted random sampling},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Toward accurate and fast summation. <em>TOMS</em>,
+<em>48</em>(3), 28:1–39. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We introduce a new accurate summation algorithm based on the error-free summation into floating-point buckets. Our algorithm exploits ideas from Zhu and Hayes’ OnlineExactSum, but it uses a significantly smaller number of accumulators and has a better instruction-level parallelism. In the default setting, our implementation aaaSum returns a faithfully rounded floating-point approximation of the true sum. We also discuss possible modifications for the computation of reproducible, correctly rounded, and multiple precision floating-point approximations. The computational overhead for any of these modifications is kept comparably small. Numerical tests demonstrate that aaaSum performs well for very small to large problem sizes, independent of the condition number of the problem. We compare our algorithm with other accurate and high-precision summation approaches.},
+  archive  = {J_TOMS},
+  author   = {Lange, Marko},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {28:1-39},
+  title    = {Toward accurate and fast summation},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Parallel QR factorization of block low-rank matrices.
+<em>TOMS</em>, <em>48</em>(3), 27:1–28. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present two new algorithms for Householder QR factorization of Block Low-Rank (BLR) matrices: one that performs block-column-wise QR and another that is based on tiled QR. We show how the block-column-wise algorithm exploits BLR structure to achieve arithmetic complexity of 𝒪(mn), while the tiled BLR-QR exhibits 𝒪(mn1.5 complexity. However, the tiled BLR-QR has finer task granularity that allows parallel task-based execution on shared memory systems. We compare the block-column-wise BLR-QR using fork-join parallelism with tiled BLR-QR using task-based parallelism. We also compare these two implementations of Householder BLR-QR with a block-column-wise Modified Gram–Schmidt (MGS) BLR-QR using fork-join parallelism and a state-of-the-art vendor-optimized dense Householder QR in Intel MKL. For a matrix of size 131k \texttimes{} 65k, all BLR methods are more than an order of magnitude faster than the dense QR in MKL. Our methods are also robust to ill conditioning and produce better orthogonal factors than the existing MGS-based method. On a CPU with 64 cores, our parallel tiled Householder and block-column-wise Householder algorithms show a speedup of 50 and 37 times, respectively.},
+  archive  = {J_TOMS},
+  author   = {Apriansyah, M. Ridwan and Yokota, Rio},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {27:1-28},
+  title    = {Parallel QR factorization of block low-rank matrices},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). The linear algebra mapping problem. Current state of linear
+algebra languages and libraries. <em>TOMS</em>, <em>48</em>(3), 26:1–30.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We observe a disconnect between developers and end-users of linear algebra libraries. On the one hand, developers invest significant effort in creating sophisticated numerical kernels. On the other hand, end-users are progressively less likely to go through the time consuming process of directly using said kernels; instead, languages and libraries, which offer a higher level of abstraction, are becoming increasingly popular. These languages offer mechanisms that internally map the input program to lower level kernels. Unfortunately, our experience suggests that, in terms of performance, this translation is typically suboptimal.In this paper, we define the problem of mapping a linear algebra expression to a set of available building blocks as the “Linear Algebra Mapping Problem” (LAMP); we discuss its NP-complete nature, and investigate how effectively a benchmark of test problems is solved by popular high-level programming languages and libraries. Specifically, we consider Matlab, Octave, Julia, R, Armadillo (C++), Eigen (C++), and NumPy (Python); the benchmark is meant to test both compiler optimizations, as well as linear algebra specific optimizations, such as the optimal parenthesization of matrix products. The aim of this study is to facilitate the development of languages and libraries that support linear algebra computations.},
+  archive  = {J_TOMS},
+  author   = {Psarras, Christos and Barthels, Henrik and Bientinesi, Paolo},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {26:1-30},
+  title    = {The linear algebra mapping problem. current state of linear algebra languages and libraries},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Robust level-3 BLAS inverse iteration from the hessenberg
+matrix. <em>TOMS</em>, <em>48</em>(3), 25:1–30. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Inverse iteration is known to be an effective method for computing eigenvectors corresponding to simple and well-separated eigenvalues. In the non-symmetric case, the solution of shifted Hessenberg systems is a central step. Existing inverse iteration solvers approach the solution of the shifted Hessenberg systems with either RQ or LU factorizations and, once factored, solve the corresponding systems. This approach has limited level-3 BLAS potential since distinct shifts have distinct factorizations. This paper rearranges the RQ approach such that data shared between distinct shifts can be exploited. Thereby the backward substitution with the triangular R factor can be expressed mostly with matrix–matrix multiplications (level-3 BLAS). The resulting algorithm computes eigenvectors in a tiled, overflow-free, and task-parallel fashion. The numerical experiments show that the new algorithm outperforms existing inverse iteration solvers for the computation of both real and complex eigenvectors.},
+  archive  = {J_TOMS},
+  author   = {Schwarz, Angelika},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {3},
+  pages    = {25:1-30},
+  title    = {Robust level-3 BLAS inverse iteration from the hessenberg matrix},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1025: PARyOpt: A software for parallel
+asynchronous remote bayesian optimization. <em>TOMS</em>,
+<em>48</em>(2), 24:1–15. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {PARyOpt1 is a Python based implementation of the Bayesian optimization routine designed for remote and asynchronous function evaluations. Bayesian optimization is especially attractive for computational optimization due to its low cost function footprint as well as the ability to account for uncertainties in data. A key challenge to efficiently deploy any optimization strategy on distributed computing systems is the synchronization step, where data from multiple function calls is assimilated to identify the next campaign of function calls. Bayesian optimization provides an elegant approach to overcome this issue via asynchronous updates. We formulate, develop and implement a parallel, asynchronous variant of Bayesian optimization. The framework is robust and resilient to external failures. We show how such asynchronous evaluations help reduce the total optimization wall clock time for a suite of test problems. Additionally, we show how the software design of the framework allows easy extension to response surface reconstruction (Kriging), providing a high performance software for autonomous exploration. The software is available on PyPI, with examples and documentation.},
+  archive  = {J_TOMS},
+  author   = {Pokuri, Balaji Sesha Sarath and Lofquist, Alec and Risko, Chad and Ganapathysubramanian, Baskar},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {24:1-15},
+  title    = {Algorithm&amp;nbsp;1025: PARyOpt: a software for parallel asynchronous remote bayesian optimization},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1024: Spherical triangle algorithm: A fast oracle
+for convex hull membership queries. <em>TOMS</em>, <em>48</em>(2),
+23:1–32. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The Convex Hull Membership (CHM) tests whether ( p in conv(S) ) , where p and the n points of S lie in ( mathbb { R}^m ) . CHM finds applications in Linear Programming, Computational Geometry, and Machine Learning. The Triangle Algorithm (TA), previously developed, in ( O(1/varepsilon ^2) ) iterations computes ( p^{prime } in conv(S) ) , either an ( varepsilon ) -approximate solution, or a witness certifying ( p notin conv(S) ) . We first prove the equivalence of exact and approximate versions of CHM and Spherical-CHM, where ( p=0 ) and ( Vert vVert =1 ) for each v in S. If for some ( M ge 1 ) every non-witness with ( Vert p^{prime }Vert gt varepsilon ) admits ( v in S ) satisfying ( Vert p^{prime } - vVert ge sqrt {1+varepsilon /M} ) , we prove the number of iterations improves to ( O(M/varepsilon) ) and ( M le 1/varepsilon ) always holds. Equivalence of CHM and Spherical-CHM implies Minimum Enclosing Ball (MEB) algorithms can be modified to solve CHM. However, we prove ( (1+ varepsilon) ) -approximation in MEB is ( Omega (sqrt {varepsilon }) ) -approximation in Spherical-CHM. Thus, even ( O(1/varepsilon) ) iteration MEB algorithms are not superior to Spherical-TA. Similar weakness is proved for MEB core sets. Spherical-TA also results a variant of the All Vertex Triangle Algorithm (AVTA) for computing all vertices of ( conv(S) ) . Substantial computations on distinct problems demonstrate that TA and Spherical-TA generally achieve superior efficiency over algorithms such as Frank–Wolfe, MEB, and LP-Solver.},
+  archive  = {J_TOMS},
+  author   = {Kalantari, Bahman and Zhang, Yikai},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {23:1-32},
+  title    = {Algorithm&amp;nbsp;1024: spherical triangle algorithm: a fast oracle for convex hull membership queries},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1023: Restoration of function by integrals with
+cubic integral smoothing spline in r. <em>TOMS</em>, <em>48</em>(2),
+22:1–17. (<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this paper, a cubic integral smoothing spline with roughness penalty for restoring a function by integrals is described. A mathematical method for building such a spline is described in detail. The method is based on cubic integral spline with a penalty function, which minimizes the sum of squares of the difference between the observed integrals of the unknown function and the integrals of the spline being constructed, plus an additional penalty for the nonlinearity (roughness) of the spline. This method has a matrix form, and this paper shows in detail how to fill in each matrix. The parameter ( alpha ) governs the desired smoothness of the restored function. Spline knots can be chosen independently of observations, and a weight can be defined for each observation for more control over the resulting spline shape. An implementation in the R language as function int_spline is given. The function int_spline is easy to use, with all arguments completely described and corresponding examples given. An example of the application of the method in rare event analysis and forecasting is given.},
+  archive  = {J_TOMS},
+  author   = {Korablev, Yuriy},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {22:1-17},
+  title    = {Algorithm&amp;nbsp;1023: Restoration of function by integrals with cubic integral smoothing spline in r},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1022: Efficient algorithms for computing a
+rank-revealing UTV factorization on parallel computing architectures.
+<em>TOMS</em>, <em>48</em>(2), 21:1–42. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Randomized singular value decomposition (RSVD) is by now a well-established technique for efficiently computing an approximate singular value decomposition of a matrix. Building on the ideas that underpin RSVD, the recently proposed algorithm “randUTV” computes a full factorization of a given matrix that provides low-rank approximations with near-optimal error. Because the bulk of randUTV is cast in terms of communication-efficient operations such as matrix-matrix multiplication and unpivoted QR factorizations, it is faster than competing rank-revealing factorization methods such as column-pivoted QR in most high-performance computational settings. In this article, optimized randUTV implementations are presented for both shared-memory and distributed-memory computing environments. For shared memory, randUTV is redesigned in terms of an algorithm-by-blocks that, together with a runtime task scheduler, eliminates bottlenecks from data synchronization points to achieve acceleration over the standard blocked algorithm based on a purely fork-join approach. The distributed-memory implementation is based on the ScaLAPACK library. The performance of our new codes compares favorably with competing factorizations available on both shared-memory and distributed-memory architectures.},
+  archive  = {J_TOMS},
+  author   = {Heavner, N. and Igual, F. D. and Quintana-Ort\&#39;{\i}, G. and Martinsson, P. G.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {21:1-42},
+  title    = {Algorithm&amp;nbsp;1022: Efficient algorithms for computing a rank-revealing UTV factorization on parallel computing architectures},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1021: SPEX left LU, exactly solving sparse linear
+systems via a sparse left-looking integer-preserving LU factorization.
+<em>TOMS</em>, <em>48</em>(2), 20:1–23. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {SPEX Left LU is a software package for exactly solving unsymmetric sparse linear systems. As a component of the sparse exact (SPEX) software package, SPEX Left LU can be applied to any input matrix, A, whose entries are integral, rational, or decimal, and provides a solution to the system ( Ax = b ) , which is either exact or accurate to user-specified precision. SPEX Left LU preorders the matrix A with a user-specified fill-reducing ordering and computes a left-looking LU factorization with the special property that each operation used to compute the L and U matrices is integral. Notable additional applications of this package include benchmarking the stability and accuracy of state-of-the-art linear solvers and determining whether singular-to-double-precision matrices are indeed singular. Computationally, this article evaluates the impact of several novel pivoting schemes in exact arithmetic, benchmarks the exact iterative solvers within Linbox, and benchmarks the accuracy of MATLAB sparse backslash. Most importantly, it is shown that SPEX Left LU outperforms the exact iterative solvers in run time on easy instances and in stability as the iterative solver fails on a sizeable subset of the tested (both easy and hard) instances. The SPEX Left LU package is written in ANSI C, comes with a MATLAB interface, and is distributed via GitHub, as a component of the SPEX software package, and as a component of SuiteSparse.},
+  archive  = {J_TOMS},
+  author   = {Lourenco, Christopher and Chen, Jinhao and Moreno-Centeno, Erick and Davis, Timothy A.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {20:1-23},
+  title    = {Algorithm&amp;nbsp;1021: SPEX left LU, exactly solving sparse linear systems via a sparse left-looking integer-preserving LU factorization},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). On memory traffic and optimisations for low-order finite
+element assembly algorithms on multi-core CPUs. <em>TOMS</em>,
+<em>48</em>(2), 19:1–31. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Motivated by the wish to understand the achievable performance of finite element assembly on unstructured computational meshes, we dissect the standard cellwise assembly algorithm into four kernels, two of which are dominated by irregular memory traffic. Several optimisation schemes are studied together with associated lower and upper bounds on the estimated memory traffic volume. Apart from properly reordering the mesh entities, the two most significant optimisations include adopting a lookup table in adding element matrices or vectors to their global counterparts, and using a row-wise assembly algorithm for multi-threaded parallelisation. Rigorous benchmarking shows that, due to the various optimisations, the actual volumes of memory traffic are in many cases very close to the estimated lower bounds. These results confirm the effectiveness of the optimisations, while also providing a recipe for developing efficient software for finite element assembly.},
+  archive  = {J_TOMS},
+  author   = {Trotter, James D. and Cai, Xing and Funke, Simon W.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {19:1-31},
+  title    = {On memory traffic and optimisations for low-order finite element assembly algorithms on multi-core CPUs},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Construction of arbitrary order finite element
+degree-of-freedom maps on polygonal and polyhedral cell meshes.
+<em>TOMS</em>, <em>48</em>(2), 18:1–23. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We develop a method for generating degree-of-freedom maps for arbitrary order Ciarlet-type finite element spaces for any cell shape. The approach is based on the composition of permutations and transformations by cell sub-entity. Current approaches to generating degree-of-freedom maps for arbitrary order problems typically rely on a consistent orientation of cell entities that permits the definition of a common local coordinate system on shared edges and faces. However, while orientation of a mesh is straightforward for simplex cells and is a local operation, it is not a strictly local operation for quadrilateral cells and, in the case of hexahedral cells, not all meshes are orientable. The permutation and transformation approach is developed for a range of element types, including arbitrary degree Lagrange, serendipity, and divergence- and curl-conforming elements, and for a range of cell shapes. The approach is local and can be applied to cells of any shape, including general polytopes and meshes with mixed cell types. A number of examples are presented and the developed approach has been implemented in open-source libraries.},
+  archive  = {J_TOMS},
+  author   = {Scroggs, Matthew W. and Dokken, J\o{}rgen S. and Richardson, Chris N. and Wells, Garth N.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {18:1-23},
+  title    = {Construction of arbitrary order finite element degree-of-freedom maps on polygonal and polyhedral cell meshes},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A provably robust algorithm for triangle-triangle
+intersections in floating-point arithmetic. <em>TOMS</em>,
+<em>48</em>(2), 17:1–30. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Motivated by the unexpected failure of the triangle intersection component of the Projection Algorithm&amp;nbsp;for Nonmatching Grids (PANG), this article provides a robust version with proof of backward stability. The new triangle intersection algorithm ensures consistency and parsimony across three types of calculations. The set of intersections produced by the algorithm, called representations, is shown to match the set of geometric intersections, called models. The article concludes with a comparison between the old and new intersection algorithms for PANG using an example found to reliably generate failures in the former.},
+  archive  = {J_TOMS},
+  author   = {Mccoid, Conor and Gander, Martin J.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {17:1-30},
+  title    = {A provably robust algorithm&amp;nbsp;for triangle-triangle intersections in floating-point arithmetic},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Fast and accurate proper orthogonal decomposition using
+efficient sampling and iterative techniques for singular value
+decomposition. <em>TOMS</em>, <em>48</em>(2), 16:1–24. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this article, we propose a computationally efficient iterative algorithm for proper orthogonal decomposition (POD) using random sampling based techniques. In this algorithm, additional rows and columns are sampled and a merging technique is used to update the dominant POD modes in each iteration. We derive bounds for the spectral norm of the error introduced by a series of merging operations. We use an existing theorem to get an approximate measure of the quality of subspaces obtained on convergence of the iteration. Results on various datasets indicate that the POD modes and/or the subspaces are approximated with excellent accuracy with a significant runtime improvement over computing the truncated SVD. We also propose a method to compute the POD modes of large matrices that do not fit in the RAM using this iterative sampling and merging algorithms.},
+  archive  = {J_TOMS},
+  author   = {Charumathi, V. and Ramakrishna, M. and Vasudevan, Vinita},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {16:1-24},
+  title    = {Fast and accurate proper orthogonal decomposition using efficient sampling and iterative techniques for singular value decomposition},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). BiqBin: A parallel branch-and-bound solver for binary
+quadratic problems with linear constraints. <em>TOMS</em>,
+<em>48</em>(2), 15:1–31. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present BiqBin, an exact solver for linearly constrained binary quadratic problems. Our approach is based on an exact penalty method to first efficiently transform the original problem into an instance of Max-Cut, and then to solve the Max-Cut problem by a branch-and-bound algorithm. All the main ingredients are carefully developed using new semidefinite programming relaxations obtained by strengthening the existing relaxations with a set of hypermetric inequalities, applying the bundle method as the bounding routine and using new strategies for exploring the branch-and-bound tree.Furthermore, an efficient C implementation of a sequential and a parallel branch-and-bound algorithm is presented. The latter is based on a load coordinator-worker scheme using MPI for multi-node parallelization and is evaluated on a high-performance computer.The new solver is benchmarked against BiqCrunch, GUROBI, and SCIP on four families of (linearly constrained) binary quadratic problems. Numerical results demonstrate that BiqBin is a highly competitive solver. The serial version outperforms the other three solvers on the majority of the benchmark instances. We also evaluate the parallel solver and show that it has good scaling properties. The general audience can use it as an on-line service available at .},
+  archive  = {J_TOMS},
+  author   = {Gusmeroli, Nicol\`{o} and Hrga, Timotej and Lu\v{z}ar, Borut and Povh, Janez and Siebenhofer, Melanie and Wiegele, Angelika},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {15:1-31},
+  title    = {BiqBin: A parallel branch-and-bound solver for binary quadratic problems with linear constraints},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A safe computational framework for integer programming
+applied to ChváTal’s conjecture. <em>TOMS</em>, <em>48</em>(2), 14:1–12.
+(<a href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We describe a general and safe computational framework that provides integer programming results with the degree of certainty that is required for machine-assisted proofs of mathematical theorems. At its core, the framework relies on a rational branch-and-bound certificate produced by an exact integer programming solver, SCIP, in order to circumvent floating-point round-off errors present in most state-of-the-art solvers for mixed-integer programs. The resulting certificates are self-contained and checker software exists that can verify their correctness independently of the integer programming solver used to produce the certificate. This acts as a safeguard against programming errors that may be present in complex solver software. The viability of this approach is tested by applying it to finite cases of Chv\&#39;{a}tal’s conjecture, a long-standing open question in extremal combinatorics. We take particular care to verify also the correctness of the input for this specific problem, using the Coq formal proof assistant. As a result, we are able to provide the first machine-assisted proof that Chv\&#39;{a}tal’s conjecture holds for all downsets whose union of sets contains seven elements or less.},
+  archive  = {J_TOMS},
+  author   = {Eifler, Leon and Gleixner, Ambros and Pulaj, Jonad},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {14:1-12},
+  title    = {A safe computational framework for integer programming applied to Chv\&#39;{a}Tal’s conjecture},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Kummer versus montgomery face-off over prime order fields.
+<em>TOMS</em>, <em>48</em>(2), 13:1–28. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper makes a comprehensive comparison of the efficiencies of vectorized implementations of Kummer lines and Montgomery curves at various security levels. For the comparison, nine Kummer lines are considered, out of which eight are new, and new assembly implementations of all nine Kummer lines have been made. Seven previously proposed Montgomery curves are considered and new vectorized assembly implementations have been made for three of them. Our comparisons show that for all security levels, Kummer lines are consistently faster than Montgomery curves, though the speed-up gap is not much.},
+  archive  = {J_TOMS},
+  author   = {Nath, Kaushik and Sarkar, Palash},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {2},
+  pages    = {13:1-28},
+  title    = {Kummer versus montgomery face-off over prime order fields},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Algorithm 1020: Computation of multi-degree tchebycheffian
+b-splines. <em>TOMS</em>, <em>48</em>(1), 12:1–31. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Multi-degree Tchebycheffian splines are splines with pieces drawn from extended (complete) Tchebycheff spaces, which may differ from interval to interval, and possibly of different dimensions. These are a natural extension of multi-degree polynomial splines. Under quite mild assumptions, they can be represented in terms of a so-called multi-degree Tchebycheffian B-spline (MDTB-spline) basis; such basis possesses all the characterizing properties of the classical polynomial B-spline basis. We present a practical framework to compute MDTB-splines, and provide an object-oriented implementation in Matlab. The implementation supports the construction, differentiation, and visualization of MDTB-splines whose pieces belong to Tchebycheff spaces that are null-spaces of constant-coefficient linear differential operators. The construction relies on an extraction operator that maps local Tchebycheffian Bernstein functions to the MDTB-spline basis of interest.},
+  archive  = {J_TOMS},
+  author   = {Speleers, Hendrik},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {12:1-31},
+  title    = {Algorithm&amp;nbsp;1020: Computation of multi-degree tchebycheffian B-splines},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Formalization of double-word arithmetic, and comments on
+“tight and rigorous error bounds for basic building blocks of
+double-word arithmetic.” <em>TOMS</em>, <em>48</em>(1), 9:1–24. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Recently, a complete set of algorithms for manipulating double-word numbers (some classical, some new) was analyzed&amp;nbsp;[16]. We have formally proven all the theorems given in that article, using the Coq proof assistant. The formal proof work led us to: (i) locate mistakes in some of the original paper proofs (mistakes that, however, do not hinder the validity of the algorithms), (ii) significantly improve some error bounds, and (iii) generalize some results by showing that they are still valid if we slightly change the rounding mode. The consequence is that the algorithms presented in&amp;nbsp;[16] can be used with high confidence, and that some of them are even more accurate than what was believed before. This illustrates what formal proof can bring to computer arithmetic: beyond mere (yet extremely useful) verification, correction, and consolidation of already known results, it can help to find new properties. All our formal proofs are freely available.},
+  archive  = {J_TOMS},
+  author   = {Muller, Jean-Michel and Rideau, Laurence},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {9:1-24},
+  title    = {Formalization of double-word arithmetic, and comments on “Tight and rigorous error bounds for basic building blocks of double-word arithmetic”},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Bringing trimmed serendipity methods to computational
+practice in firedrake. <em>TOMS</em>, <em>48</em>(1), 8:1–19. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We present an implementation of the trimmed serendipity finite element family, using the open-source finite element package Firedrake. The new elements can be used seamlessly within the software suite for problems requiring H1, H(curl), or H(div)-conforming elements on meshes of squares or cubes. To test how well trimmed serendipity elements perform in comparison to traditional tensor product elements, we perform a sequence of numerical experiments including the primal Poisson, mixed Poisson, and Maxwell cavity eigenvalue problems. Overall, we find that the trimmed serendipity elements converge, as expected, at the same rate as the respective tensor product elements, while being able to offer significant savings in the time or memory required to solve certain problems.},
+  archive  = {J_TOMS},
+  author   = {Crum, Justin and Cheng, Cyrus and Ham, David A. and Mitchell, Lawrence and Kirby, Robert C. and Levine, Joshua A. and Gillette, Andrew},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {8:1-19},
+  title    = {Bringing trimmed serendipity methods to computational practice in firedrake},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Source-to-source automatic differentiation of OpenMP
+parallel loops. <em>TOMS</em>, <em>48</em>(1), 7:1–32. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article presents our work toward correct and efficient automatic differentiation of OpenMP parallel worksharing loops in forward and reverse mode. Automatic differentiation is a method to obtain gradients of numerical programs, which are crucial in optimization, uncertainty quantification, and machine learning. The computational cost to compute gradients is a common bottleneck in practice. For applications that are parallelized for multicore CPUs or GPUs using OpenMP, one also wishes to compute the gradients in parallel. We propose a framework to reason about the correctness of the generated derivative code, from which we justify our OpenMP extension to the differentiation model. We implement this model in the automatic differentiation tool Tapenade and present test cases that are differentiated following our extended differentiation procedure. Performance of the generated derivative programs in forward and reverse mode is better than sequential, although our reverse mode often scales worse than the input programs.},
+  archive  = {J_TOMS},
+  author   = {H\&quot;{u}ckelheim, Jan and Hasco\&quot;{e}t, Laurent},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {7:1-32},
+  title    = {Source-to-source automatic differentiation of OpenMP parallel loops},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Exploiting problem structure in derivative free
+optimization. <em>TOMS</em>, <em>48</em>(1), 6:1–25. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A structured version of derivative-free random pattern search optimization algorithms is introduced, which is able to exploit coordinate partially separable structure (typically associated with sparsity) often present in unconstrained and bound-constrained optimization problems. This technique improves performance by orders of magnitude and makes it possible to solve large problems that otherwise are totally intractable by other derivative-free methods. A library of interpolation-based modelling tools is also described, which can be associated with the structured or unstructured versions of the initial pattern search algorithm. The use of the library further enhances performance, especially when associated with structure. The significant gains in performance associated with these two techniques are illustrated using a new freely-available release of the Brute Force Optimizer (BFO) package firstly introduced in [Porcelli and Toint 2017], which incorporates them. An interesting conclusion of the numerical results presented is that providing global structural information on a problem can result in significantly less evaluations of the objective function than attempting to building local Taylor-like models.},
+  archive  = {J_TOMS},
+  author   = {Porcelli, Margherita and Toint, Philippe L.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {6:1-25},
+  title    = {Exploiting problem structure in derivative free optimization},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A computational study of using black-box QR solvers for
+large-scale sparse-dense linear least squares problems. <em>TOMS</em>,
+<em>48</em>(1), 5:1–24. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Large-scale overdetermined linear least squares problems arise in many practical applications. One popular solution method is based on the backward stable QR factorization of the system matrix A. This article focuses on sparse-dense least squares problems in which A is sparse except from a small number of rows that are considered dense. For large-scale problems, the direct application of a QR solver either fails because of insufficient memory or is unacceptably slow. We study several solution approaches based on using a sparse QR solver without modification, focussing on the case that the sparse part of A is rank deficient. We discuss partial matrix stretching and regularization and propose extending the augmented system formulation with iterative refinement for sparse problems to sparse-dense problems, optionally incorporating multi-precision arithmetic. In summary, our computational study shows that, before applying a black-box QR factorization, a check should be made for rows that are classified as dense and, if such rows are identified, then A should be split into sparse and dense blocks; a number of ways to use a black-box QR factorization to exploit this splitting are possible, with no single method found to be the best in all cases.},
+  archive  = {J_TOMS},
+  author   = {Scott, Jennifer and T\r{u}ma, Miroslav},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {5:1-24},
+  title    = {A computational study of using black-box QR solvers for large-scale sparse-dense linear least squares problems},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An algorithm for the complete solution of the quartic
+eigenvalue problem. <em>TOMS</em>, <em>48</em>(1), 4:1–34. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The quartic eigenvalue problem (λ4A+λ3B+λ2C+λD+E)x = 0 naturally arises in a plethora of applications, such as when solving the Orr–Sommerfeld equation in the stability analysis of the Poiseuille flow, in theoretical analysis and experimental design of locally resonant phononic plates, modeling a robot with electric motors in the joints, calibration of catadioptric vision system, or, for example, computation of the guided and leaky modes of a planar waveguide. This article proposes a new numerical method for the full solution (all eigenvalues and all left and right eigenvectors) that, starting with a suitable linearization, uses an initial, structure-preserving reduction designed to reveal and deflate a certain number of zero and infinite eigenvalues before the final linearization is forwarded to the QZ algorithm. The backward error in the reduction phase is bounded column wise in each coefficient matrix, which is advantageous if the coefficient matrices are graded. Numerical examples show that the proposed algorithm is capable of computing the eigenpairs with small residuals, and that it is competitive with the available state-of-the-art methods.},
+  archive  = {J_TOMS},
+  author   = {Drma\v{c}, Zlatko and Glibi\&#39;{c}, Ivana \v{S}ain},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {4:1-34},
+  title    = {An algorithm&amp;nbsp;for the complete solution of the quartic eigenvalue problem},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Reproduced computational results report for “ginkgo: A
+modern linear operator algebra framework for high performance
+computing.” <em>TOMS</em>, <em>48</em>(1), 3:1–7. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The article titled “Ginkgo: A Modern Linear Operator Algebra Framework for High Performance Computing” by Anzt et&amp;nbsp;al. presents a modern, linear operator centric, C++ library for sparse linear algebra. Experimental results in the article demonstrate that Ginkgo is a flexible and user-friendly framework capable of achieving high-performance on state-of-the-art GPU architectures.In this report, the Ginkgo library is installed and a subset of the experimental results are reproduced. Specifically, the experiment that shows the achieved memory bandwidth of the Ginkgo Krylov linear solvers on NVIDIA A100 and AMD MI100 GPUs is redone and the results are compared to what presented in the published article. Upon completion of the comparison, the published results are deemed reproducible.},
+  archive  = {J_TOMS},
+  author   = {Balos, Cody J.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {3:1-7},
+  title    = {Reproduced computational results report for “Ginkgo: A modern linear operator algebra framework for high performance computing”},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Ginkgo: A modern linear operator algebra framework for high
+performance computing. <em>TOMS</em>, <em>48</em>(1), 2:1–33. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this article, we present Ginkgo, a modern C++ math library for scientific high performance computing. While classical linear algebra libraries act on matrix and vector objects, Ginkgo’s design principle abstracts all functionality as “linear operators,” motivating the notation of a “linear operator algebra library.” Ginkgo’s current focus is oriented toward providing sparse linear algebra functionality for high performance graphics processing unit (GPU) architectures, but given the library design, this focus can be easily extended to accommodate other algorithms and hardware architectures. We introduce this sophisticated software architecture that separates core algorithms from architecture-specific backends and provide details on extensibility and sustainability measures. We also demonstrate Ginkgo’s usability by providing examples on how to use its functionality inside the MFEM and deal.ii finite element ecosystems. Finally, we offer a practical demonstration of Ginkgo’s high performance on state-of-the-art GPU architectures.},
+  archive  = {J_TOMS},
+  author   = {Anzt, Hartwig and Cojean, Terry and Flegar, Goran and G\&quot;{o}bel, Fritz and Gr\&quot;{u}tzmacher, Thomas and Nayak, Pratik and Ribizel, Tobias and Tsai, Yuhsiang Mike and Quintana-Ort\&#39;{\i}, Enrique S.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {2:1-33},
+  title    = {Ginkgo: A modern linear operator algebra framework for high performance computing},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). GraphBLAST: A high-performance linear algebra-based graph
+framework on the GPU. <em>TOMS</em>, <em>48</em>(1), 1:1–51. (<a
+href="https://doi.org/10.1145/3372419">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {High-performance implementations of graph algorithms are challenging to implement on new parallel hardware such as GPUs because of three challenges: (1)&amp;nbsp;the difficulty of coming up with graph building blocks, (2)&amp;nbsp;load imbalance on parallel hardware, and (3)&amp;nbsp;graph problems having low arithmetic intensity. To address some of these challenges, GraphBLAS is an innovative, on-going effort by the graph analytics community to propose building blocks based on sparse linear algebra, which allow graph algorithms to be expressed in a performant, succinct, composable, and portable manner. In this paper, we examine the performance challenges of a linear-algebra-based approach to building graph frameworks and describe new design principles for overcoming these bottlenecks. Among the new design principles is exploiting input sparsity, which allows users to write graph algorithms without specifying push and pull direction. Exploiting output sparsity allows users to tell the backend which values of the output in a single vectorized computation they do not want computed. Load-balancing is an important feature for balancing work amongst parallel workers. We describe the important load-balancing features for handling graphs with different characteristics. The design principles described in this paper have been implemented in “GraphBLAST”, the first high-performance linear algebra-based graph framework on NVIDIA GPUs that is open-source. The results show that on a single GPU, GraphBLAST has on average at least an order of magnitude speedup over previous GraphBLAS implementations SuiteSparse and GBTL, comparable performance to the fastest GPU hardwired primitives and shared-memory graph frameworks Ligra and Gunrock, and better performance than any other GPU graph framework, while offering a simpler and more concise programming model.},
+  archive  = {J_TOMS},
+  author   = {Yang, Carl and Bulu\c{c}, Ayd\i{}n and Owens, John D.},
+  doi      = {10.1145/3372419},
+  journal  = {ACM Trans. Math. Softw.},
+  number   = {1},
+  pages    = {1:1-51},
+  title    = {GraphBLAST: A high-performance linear algebra-based graph framework on the GPU},
+  volume   = {48},
+  year     = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

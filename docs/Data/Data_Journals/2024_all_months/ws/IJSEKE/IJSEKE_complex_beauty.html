@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJSEKE_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijseke---76">IJSEKE - 76</h2>
+<ul>
+<li><details>
+<summary>
+(2024). IRaDT: LLVM IR as target for efficient neural decompilation.
+<em>IJSEKE</em>, <em>34</em>(12), 1971–1992. (<a
+href="https://doi.org/10.1142/S0218194024500463">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decompilation is a widely utilized technique in reverse engineering, aimed at restoring binary code to human-readable high-level language code. However, the readability of the output from traditional decompilers is often poor. With advancements in language models, several learning-based decompilation methods have emerged. Nevertheless, the probabilistic nature of language models leads to outputs whose correctness cannot be guaranteed, necessitating further analysis by engineers to identify the corresponding functionality of the code. Inspired by compiler toolchains, we propose a novel approach to enhance the effectiveness of language models in decompilation tasks. Traditional rule-based methods and learning-based techniques are fused together in our approach, drawing insights from both paradigms. Specifically, we present a pre-trained sequence-to-sequence model called IRaDT tailored to refine decompilation outputs at the intermediate representation level. Through this hybridization, we aim to address the limitations of existing methodologies and achieve more accurate and robust decompilation. We construct a diverse decompilation dataset targeting IR and evaluated IRaDT based on this dataset. The experimental results indicate that IRaDT has the ability to improve the readability of IR while ensuring its compileability, achieving a 74% improvement compared to RetDec and a 93% improvement compared to ChatGPT.},
+  archive      = {J_IJSEKE},
+  author       = {Yuzhang Li and Tao Xu and Chunlu Wang},
+  doi          = {10.1142/S0218194024500463},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {12},
+  pages        = {1971-1992},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {IRaDT: LLVM IR as target for efficient neural decompilation},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Boosting commit classification based on multivariate mixed
+features and heterogeneous classifier selection. <em>IJSEKE</em>,
+<em>34</em>(12), 1949–1970. (<a
+href="https://doi.org/10.1142/S021819402450044X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Commit classification plays a crucial role in software maintenance, as it permits developers to make informed decisions regarding resource allocation and code review. There are several approaches for automatic commit classification, yet they do not sufficiently explore the features related to commits and consider the advantages of ensemble models over individual models. Therefore, there is some room for improvement. In this paper, we propose MuheCC, a commit classification approach based on multivariate mixed features and heterogeneous classifier selection to address these challenges. It mainly consists of three phases: (1) Multivariate mixed feature extraction, which extracts features from commit messages, changed code and handcrafted features to construct comprehensive mixed features; (2) Hyperparameter tuning based on genetic algorithm, which utilizes genetic algorithm to optimize candidate traditional models and ensemble models; (3) Heterogeneous classifier selection, which selects the optimal combinations of traditional and ensemble models, respectively, to build a heterogeneous classifier for commit classification. To evaluate this approach, we extend an existing dataset with code changes for each commit and compare MuheCC with three baselines on this real-world dataset. The results show that MuheCC outperforms all baselines, especially improving the best baseline by 7.25% for accuracy, 6.88% for precision, 7.25% for recall and 7.06% for F 1 -score. Furthermore, the ablation experiments validate that the performance advantage of MuheCC is mainly attributed to the multivariate features (e.g. 12.55% contributions to accuracy) and the heterogeneous classifier (e.g. 12.26% contributions to accuracy). We further discuss the impact of hyperparameter tuning and heterogeneous classifier selection on the performance of MuheCC. These results prove the superiority and potential practical value of MuheCC.},
+  archive      = {J_IJSEKE},
+  author       = {Yuhan Wu and Yingling Li and Ziao Wang and Qushan Tan and Jing Liu and Yuao Jiang},
+  doi          = {10.1142/S021819402450044X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {12},
+  pages        = {1949-1970},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Boosting commit classification based on multivariate mixed features and heterogeneous classifier selection},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). MORCoRA: Multi-objective refactoring recommendation
+considering review availability. <em>IJSEKE</em>, <em>34</em>(12),
+1919–1947. (<a href="https://doi.org/10.1142/S0218194024500438">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background : Search-based refactoring involves searching for a sequence of refactorings to achieve specific objectives. Although a typical objective is improving code quality, a different perspective is also required; the searched sequence must undergo review before being applied and may not be applied if the review fails or is postponed due to no proper reviewers. Aim : Therefore, it is essential to ensure that the searched sequence of refactorings can be reviewed promptly by reviewers who meet two criteria: (1) having enough expertise and (2) being free of heavy workload. The two criteria are regarded as the review availability of the refactoring sequence. Method: We propose MORCoRA, a multi-objective search-based technique that can search for code quality improvable, semantic preserved, and high review availability possessed refactoring sequences and corresponding proper reviewers. Results : We evaluate MORCoRA on six open-source repositories. The quantitative analysis reveals that MORCoRA can effectively recommend refactoring sequences that fit the requirements. The qualitative analysis demonstrates that the refactorings recommended by MORCoRA can enhance code quality and effectively address code smells. Furthermore, the recommended reviewers for those refactorings possess high expertise and are available to review. Conclusions : We recommend that refactoring recommenders consider both the impact on quality improvement and the developer resources required for review when recommending refactorings.},
+  archive      = {J_IJSEKE},
+  author       = {Lei Chen and Shinpei Hayashi},
+  doi          = {10.1142/S0218194024500438},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {12},
+  pages        = {1919-1947},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {MORCoRA: Multi-objective refactoring recommendation considering review availability},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An empirical study of the impact of class overlap on the
+performance and interpretability of cross-version defect prediction.
+<em>IJSEKE</em>, <em>34</em>(12), 1895–1918. (<a
+href="https://doi.org/10.1142/S0218194024500414">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The class overlap problem refers to instances from different categories heavily overlapping in the feature space. This issue is one of the challenges in improving the performance of software defect prediction (SDP). Currently, the studies on the impact of class overlap on SDP mainly focused on within-project defect prediction and cross-project defect prediction. Moreover, the existing class overlap instances cleaning methods are not suitable for cross-version defect prediction. In this paper, we propose a class overlap instances cleaning method based on the Ratio of K-nearest neighbors with the Same Label (RKSL). This method removes instances with the abnormal neighbor ratio in the training set. Based on the RKSL method, we investigate the impact of class overlap on the performance and interpretability of the cross-version defect prediction model. The experiment results show that class overlap can affect the performance of cross-version defect prediction models significantly. The RKSL method can handle the class overlap problem in defect datasets, but it may impact the interpretability of models. Through the analysis of feature changes, we consider that class overlap instances cleaning can assist models in identifying more important features.},
+  archive      = {J_IJSEKE},
+  author       = {Hui Han and Qiao Yu and Yi Zhu and Shengyi Cheng and Yu Zhang},
+  doi          = {10.1142/S0218194024500414},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {12},
+  pages        = {1895-1918},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {An empirical study of the impact of class overlap on the performance and interpretability of cross-version defect prediction},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Selecting third-party libraries: The web developers’
+perspective. <em>IJSEKE</em>, <em>34</em>(12), 1857–1893. (<a
+href="https://doi.org/10.1142/S0218194024500402">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Web developers use third-party libraries to enhance the performance and effectiveness of web development process. There may be different libraries to perform each task, and they have a significant impact on a project’s timelines and success; therefore, library selection is crucial. Many factors influence library selection, making it challenging for a web developer to choose the best library to utilize. Researchers have found out the factors that data scientists and software developers consider when selecting a third-party library. This research determines the factors that web developers consider when selecting a library by conducting a survey of web developers using the same 26 factors (used for software developers and data scientists). This work highlights the top-ranked library selection factors based on the ratings by web developers and identifies new factors influencing web developers’ choice of libraries. This research also compares the top-ranked library selection factors highlighted by web developers with the ones identified by software developers and data scientists. It also discusses the factors that these two communities and web developers score differently. This study finds out that web developers rate 14 factors differently from software developers and there are 12 factors that web developers rate differently from data scientists.},
+  archive      = {J_IJSEKE},
+  author       = {Mehreen Tabassum and Wasi Haider Butt and Abdul Wahab Muzaffar and Saima Anwar Lashari},
+  doi          = {10.1142/S0218194024500402},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {12},
+  pages        = {1857-1893},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Selecting third-party libraries: The web developers’ perspective},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Toward proactive maintenance: A multi-tiered architecture
+for industrial equipment health monitoring and remaining useful life
+prediction. <em>IJSEKE</em>, <em>34</em>(12), 1831–1856. (<a
+href="https://doi.org/10.1142/S0218194024500396">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This research paper introduces a comprehensive proactive maintenance architecture designed for large-scale industrial machinery systems. The proposed architectural framework integrates supervised and unsupervised machine learning business processes in order to enhance maintenance capabilities. The primary objective of this architecture is to enhance operational efficiency and reduce the occurrence of problems in industrial equipment. The collection of data on the state of industrial machinery is conducted through the utilization of sensors that are attached to it. The recommended framework offers modules that might potentially implement capabilities such as immediate anomaly detection, pre-failure status prediction, and assessment of remaining usable life. We offer a prototype implementation to verify the appropriateness of the proposed framework for testing purposes. The prototype utilizes a simulation framework, Cooja, to model a sensor network. The concept entails the collection of status data from industrial machinery by each sensor. The prototype utilizes a machine learning library for data streams, the MOA framework, to design and implement a business process for anomaly detection using unsupervised machine learning, as well as a business process for early machine fault prediction using supervised machine learning. In addition, deep learning libraries are employed to construct a business process that predicts the remaining operational lifespan of industrial machinery that is anticipated to experience failure. Furthermore, we examined the efficacy of the prototype’s integrated business protocols in this investigation. The proposed framework aligns effectively with software architectures designed to offer maintenance functionalities for industrial machinery, as indicated by our research findings.},
+  archive      = {J_IJSEKE},
+  author       = {Emrullah Gultekin and Mehmet S. Aktas},
+  doi          = {10.1142/S0218194024500396},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {12},
+  pages        = {1831-1856},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Toward proactive maintenance: A multi-tiered architecture for industrial equipment health monitoring and remaining useful life prediction},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Predictive prefetching in client–server systems: A
+navigational behavior modeling approach. <em>IJSEKE</em>,
+<em>34</em>(11), 1807–1830. (<a
+href="https://doi.org/10.1142/S0218194024500384">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A key challenge faced in client–server systems that heavily rely on data is the fast delivery of data to end-users. To address this difficulty, this study presents a novel approach for modeling and forecasting user navigational browsing behavior, to establish an efficient prefetching mechanism. Regarding the approach for representing page visit data, we employ the Word2Vec embedding technique to encode each user’s page visit as a numerical vector. Regarding the encoding of browsing activity data, we utilize aggregation on the embedding vectors. These vectors correspond to page visits occurring sequentially and are used to describe each user’s browsing behavior using a numerical vector. In the proposed method, machine learning algorithms are employed to analyze and model the browsing behavior of all users. Machine learning models are employed to forecast the next user action during the navigation of data-intensive web and mobile application web pages. Subsequently, we employ this forecast to establish an intelligent prefetching method, which provides the capability of acquiring predicted web page data in proxy servers before it is requested. An experimental study was conducted using a large-scale open-source dataset derived from a mobile application used in a coffee shop, containing several hundred thousand sessions from tens of thousands of users over a 10-day period. The evaluation employed metrics such as prediction accuracy which can be called prefetching accuracy and cache hit/miss rates. The machine learning algorithms applied include K-Nearest Neighbor, AdaBoost, Decision Tree, Support Vector Machine, Multi-layer Perceptron, Random Forest, LightGBM, Long Short-Term Memory and Bidirectional Long Short-Term Memory. The purpose of this experimental study was to examine the efficacy of the proposed approach. The findings of the empirical investigation suggest that the proposed method has the potential to provide an efficient prefetching methodology when sufficient user navigational data is available. Hence, the method enhances the performance of data-intensive client–server-based systems.},
+  archive      = {J_IJSEKE},
+  author       = {Tolga Buyuktanir and Mehmet S. Aktas},
+  doi          = {10.1142/S0218194024500384},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {11},
+  pages        = {1807-1830},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Predictive prefetching in Client–Server systems: A navigational behavior modeling approach},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A formal language for performance evaluation based on
+reinforcement learning. <em>IJSEKE</em>, <em>34</em>(11), 1783–1805. (<a
+href="https://doi.org/10.1142/S0218194024500372">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Temporal Logics are a rich variety of logical systems designed for specifying properties over time, and about events and changes in the world over time. Traditional temporal logic, however, is limited to binary outcomes true or false and lacks the capacity to specify performance properties of a system such as the maximum, minimum, or average costs between states. Current languages do not accommodate the quantification of such performance properties, especially in scenarios involving infinite execution paths where performance property like cumulative sums may fail to converge. To this end, this paper introduces a novel formal language aimed at assessing system performance, which encapsulates not only temporal dynamics but also various performance-related properties. In this study, this paper utilizes reinforcement learning techniques to compute the values of performance property formulas. Finally, in the experimental part, a formal language representation of system performance properties was implemented, and the values of the performance property formulas were computed using reinforcement learning. The effectiveness and feasibility of the proposed method were validated.},
+  archive      = {J_IJSEKE},
+  author       = {Fujun Wang and Lixing Tan and Zining Cao and Yan Ma and Li Zhang},
+  doi          = {10.1142/S0218194024500372},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {11},
+  pages        = {1783-1805},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A formal language for performance evaluation based on reinforcement learning},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Video multimodal entity linking via multi-perspective
+enhanced subgraph contrastive network. <em>IJSEKE</em>, <em>34</em>(11),
+1757–1781. (<a href="https://doi.org/10.1142/S0218194024500360">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video Multimodal Entity Linking (VMEL) is a task to link entities mentioned in videos to entities in multimodal knowledge bases. However, current entity linking methods primarily focus on text and image modalities, neglecting the significance of video modality. To address this challenge, we propose a novel framework called the multi-perspective enhanced Subgraph Contrastive Network (SCMEL) and construct a VMEL dataset named SceneMEL, based on tourism domain. We first integrate textual, auditory and visual modal contexts of videos to generate a comprehensive high-recall candidate entity set. Furthermore, a semantic-enhanced video description subgraph generation module is utilized to convert videos into a multimodal feature graph structure and perform subgraph sampling on the domain-specific knowledge graph. Lastly, we conduct contrastive learning on local perspectives (text, audio, visual) within the video subgraphs and the knowledge graph subgraphs, as well as global perspectives, to capture fine-grained semantic information about videos and entities. A series of experimental results on SceneMel demonstrate the effectiveness of the proposed approach.},
+  archive      = {J_IJSEKE},
+  author       = {Huayu Li and Yang Yue and Xiaojun Man and Haiyang Li},
+  doi          = {10.1142/S0218194024500360},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {11},
+  pages        = {1757-1781},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Video multimodal entity linking via multi-perspective enhanced subgraph contrastive network},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Extended association rule mining and its application to
+software engineering data sets. <em>IJSEKE</em>, <em>34</em>(11),
+1735–1756. (<a href="https://doi.org/10.1142/S0218194024500347">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Association rule mining is a highly effective approach to data analysis for datasets of varying sizes, accommodating diverse feature values. Nevertheless, deriving practical rules from datasets with numerical variables presents a challenge, as these variables must be discretized beforehand. Quantitative association rule mining addresses this issue, allowing the extraction of valuable rules. This paper introduces an extension to quantitative association rules, incorporating a two-variable function in their consequent part. The use of correlation functions, statistical test functions, and error functions is also introduced. We illustrate the utility of this extension through three case studies employing software engineering datasets. In case study 1, we successfully pinpointed the conditions that result in either a high or low correlation between effort and software size, offering valuable insights for software project managers. In case study 2, we effectively identified the conditions that lead to a high or low correlation between the number of bugs and source lines of code, aiding in the formulation of software test planning strategies. In case study 3, we applied our approach to the two-step software effort estimation process, uncovering the conditions most likely to yield low effort estimation errors.},
+  archive      = {J_IJSEKE},
+  author       = {Hidekazu Saito and Kinari Nishiura and Akito Monden and Shuji Morisaki},
+  doi          = {10.1142/S0218194024500347},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {11},
+  pages        = {1735-1756},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Extended association rule mining and its application to software engineering data sets},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Assessing the use of GitHub copilot on students of
+engineering of information systems. <em>IJSEKE</em>, <em>34</em>(11),
+1717–1734. (<a href="https://doi.org/10.1142/S0218194024500335">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study examines the impact of AI programming assistants like GitHub Copilot and ChatGPT on software engineering efficiency, an area that has seen limited empirical research. We experimentally evaluated the performance of programmers ( n = 1 6 ) in Python coding tasks with and without AI assistance, measuring time-to-completion and feature implementation. Results indicate that participants utilizing AI assistance completed tasks significantly faster ( p = 0.033) and implemented more required features ( p = 0.012) compared to those relying solely on unaided coding. These findings offer empirical insights into the integration of AI tools in software development workflows, highlighting their potential to enhance efficiency without compromising code quality or completeness, with implications for organizational pipelines and practitioner skills. Responses to exit surveys suggest that participants without IA tools assistance encountered frustrations related to code recall, time constraints, and problem-solving, while assisted participants reported no negative experiences, focusing instead on successful completion of tasks within the allotted time.},
+  archive      = {J_IJSEKE},
+  author       = {Federico Cirett-Galán and Raquel Torres-Peralta and René Navarro-Hernández and José Luis Ochoa-Hernández and San Contreras-Rivera and Luis Arturo Estrada-Ríos and Germán Machado-Encinas},
+  doi          = {10.1142/S0218194024500335},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {11},
+  pages        = {1717-1734},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Assessing the use of GitHub copilot on students of engineering of information systems},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Towards effective people management in software projects: A
+comprehensive catalog of good practices. <em>IJSEKE</em>,
+<em>34</em>(11), 1693–1715. (<a
+href="https://doi.org/10.1142/S021819402430001X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Software project success depends on effective people management; however, managers often rely on intuition rather than evidence-based practice. To bridge this gap, we compiled a catalog of good practices to assist managers in implementing people management practices, reducing resistance, and simultaneously collecting indicators that can be used to evaluate the effectiveness of practices. We compiled the practices outlined in the literature from 63 selected studies conducted from 2016 to 2023. These studies were then categorized into 9 problem domains and 16 associated practices. Subsequently, through a survey, these practices were validated by 31 professionals, enabling classification based on overall relevance and problem-resolution efficacy. The results underscore the importance of interpersonal skills (soft skills) over technical abilities (hard skills) and highlight the significance of continuous feedback, open communication, and transparent management practices. This catalog is a valuable resource for managers to assess and customize practices for their specific project needs.},
+  archive      = {J_IJSEKE},
+  author       = {Marcelo F. Burkard and Lisandra M. Fontoura},
+  doi          = {10.1142/S021819402430001X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {11},
+  pages        = {1693-1715},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Towards effective people management in software projects: A comprehensive catalog of good practices},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Semantic code clone detection based on community detection.
+<em>IJSEKE</em>, <em>34</em>(10), 1661–1692. (<a
+href="https://doi.org/10.1142/S0218194024500323">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic code clone detection is to find code snippets that are structurally or syntactically different, but semantically identical. It plays an important role in software reuse, code compression. Many existing studies have achieved good performance in non-semantic clone, but semantic clone is still a challenging task. Recently, several works have used tree or graph, such as Abstract Syntax Tree (AST), Control Flow Graph (CFG) or Program Dependency Graph (PDG) to extract semantic information from source codes. In order to reduce the complexity of tree and graph, some studies transform them into node sequences. However, this transformation will lose some semantic information. To address this issue, we propose a novel high-performance method that utilizes community detection to extract features of AST while preserving its semantic information. First, based on the AST of source code, we exploit community detection to split AST into different subtrees to extract the underlying semantics information of different code blocks, and use centrality analysis to quantify the semantic information as the weight of AST nodes. Then, the AST is converted into a sequence of tokens with weights, and a Siamese neural network model is used to detect the similarity of token sequences for semantic code clone detection. Finally, to evaluate our approach, we conduct experiments on two standard benchmark datasets, Google Code Jam (GCJ) and BigCloneBench (BCB). Experimental results show that our model outperforms the eight publicly available state-of-the-art methods in detecting code clones. It is five times faster than the tree-based method (ASTNN) in terms of time complexity.},
+  archive      = {J_IJSEKE},
+  author       = {Zexuan Wan and Chunli Xie and Quanrun Lv and Yasheng Fan},
+  doi          = {10.1142/S0218194024500323},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {10},
+  pages        = {1661-1692},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Semantic code clone detection based on community detection},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Multi-label classification of pure code. <em>IJSEKE</em>,
+<em>34</em>(10), 1641–1659. (<a
+href="https://doi.org/10.1142/S0218194024500311">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Currently, there is a significant amount of public code in the IT communities, programming forums and code repositories. Many of these codes lack classification labels, or have imprecise labels, which causes inconvenience to code management and retrieval. Some classification methods have been proposed to automatically assign labels to the code. However, these methods mainly rely on code comments or surrounding text, and the classification effect is limited by the quality of them. So far, there are a few methods that rely solely on the code itself to assign labels to the code. In this paper, an encoder-only method is proposed to assign multiple labels to the code of an algorithmic problem, in which UniXcoder is employed to encode the input code and the encoding results correspond to the output labels through the classification heads. The proposed method relies only on the code itself. We construct a dataset to evaluate the proposed method, which consists of source code in three programming languages (C + + , Java, Python) with a total size of approximately 120 K. The results of the comparative experiment show that the proposed method has better performance in multi-label classification task of pure code than encoder–decoder methods.},
+  archive      = {J_IJSEKE},
+  author       = {Bin Gao and Hongwu Qin and Xiuqin Ma},
+  doi          = {10.1142/S0218194024500311},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {10},
+  pages        = {1641-1659},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Multi-label classification of pure code},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A systematic translation validation framework for MLIR-based
+compilers. <em>IJSEKE</em>, <em>34</em>(10), 1621–1640. (<a
+href="https://doi.org/10.1142/S021819402450030X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces an innovative translation validation framework designed for MLIR-based compilers, which has garnered considerable prominence in fields such as machine learning, high-performance computing and hardware design. Despite rigorous testing, compilers based on MLIR might still induce incorrect results and undefined behaviors, necessitating verification work. Our framework first takes a pair of MLIR programs as inputs and check their function signature’s compatibility before encoding them into SMT expressions. Then it uses the Z3 SMT solver to check whether the target program refines the source program. Our framework transcends the dialect limitations of past solutions, thereby providing validation support to a wider range of MLIR-based compilers. We demonstrate its effectiveness through evaluations on prominent open-source MLIR-based compilers, where we identified bugs and undefined behaviors. We further demonstrate the capability of this framework by validating two practical deep-learning accelerator designs.},
+  archive      = {J_IJSEKE},
+  author       = {Yanzhao Wang and Fei Xie and Zhenkun Yang and Pasquale Cocchini and Jin Yang},
+  doi          = {10.1142/S021819402450030X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {10},
+  pages        = {1621-1640},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A systematic translation validation framework for MLIR-based compilers},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Pattern mining-based warning prioritization by refining
+abstract syntax tree. <em>IJSEKE</em>, <em>34</em>(10), 1593–1619. (<a
+href="https://doi.org/10.1142/S0218194024500293">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Static code analysis tools (SATs) are widely used to detect potential defects in software projects. However, the usability of SATs is seriously hindered by a large number of unactionable warnings. Currently, many warning prioritization approaches are proposed to improve the usability of SATs. These approaches mainly extract different warning features to capture the statistical or historical information of warnings, thereby ranking actionable warnings in front of unactionable warnings. Such features are extracted by extremely relying on domain knowledge. However, the precise domain knowledge is difficult to be acquired. Also, the domain knowledge obtained in a project cannot be directly applied to other projects due to different application scenarios among different projects. To address the above problem, we propose a pattern mining-based warning prioritization approach based on the warning-related Abstract Syntax Tree (AST). To automatically mine actionable warning patterns, our approach leverages an advanced technique to collect actionable warnings, designs an algorithm to extract the warning-related AST, and mines patterns from ASTs of all actionable warnings. To prioritize the newly reported warnings, our approach combines exact and fuzzing matching techniques to calculate the similarity score between patterns of the newly reported warnings and the mined actionable warning patterns. We compare our approach with four typical baselines on five open-source and large-scale Java projects. The results show that our approach outperforms four baselines and achieves the maximum MAP (0.76) and MRR (2.19). Besides, a case study on Defect4J dataset demonstrates that our approach can discover 83% of true defects in the top 10 warnings.},
+  archive      = {J_IJSEKE},
+  author       = {Xiuting Ge and Xuanye Li and Yuanyuan Sun and Mingshuang Qing and Haitao Zheng and Huibin Zhang and Xianyu Wu},
+  doi          = {10.1142/S0218194024500293},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {10},
+  pages        = {1593-1619},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Pattern mining-based warning prioritization by refining abstract syntax tree},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Program segment testing for human–machine pair programming.
+<em>IJSEKE</em>, <em>34</em>(10), 1565–1591. (<a
+href="https://doi.org/10.1142/S0218194024500281">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human–Machine Pair Programming (HMPP) is a promising technique in the software development process, which means that software construction can be done in the manner that humans are responsible for developing the program while computer is responsible for monitoring the program in real-time and reporting errors. The Java runtime exceptions in the current version of the software under construction can only be effectively detected by means of its execution. Traditional software testing techniques are suitable for testing completed programs but face a challenge in building a suitable testing environment for testing the partial programs produced during HMPP. In this paper, we put forward a novel technique, called Program Segment Testing (PST) for automatically identifying errors caused by runtime exceptions to support HMPP. We first introduce the relevant involved in this technique to detect index out of bounds exceptions, a representative of runtime exceptions. Then we discuss the methodology of this technique in detail and illustrate its workflow with a simple case study. Finally, we carry out an experiment to evaluate this technique and compare it with three existing fault detection techniques using several programs to demonstrate its effectiveness.},
+  archive      = {J_IJSEKE},
+  author       = {Lei Rao and Shaoying Liu and Ai Liu},
+  doi          = {10.1142/S0218194024500281},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {10},
+  pages        = {1565-1591},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Program segment testing for Human–Machine pair programming},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Optimizing mutation-based fault localization through
+contribution-based test case reduction. <em>IJSEKE</em>,
+<em>34</em>(10), 1537–1564. (<a
+href="https://doi.org/10.1142/S021819402450027X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fault localization is an expensive phase of software debugging processes. Although Mutation-based Fault Localization (MBFL) is a promising technique, its computational cost remains high due to the extensive mutation executions involved in mutation analysis. Previous studies have primarily focused on reducing costs by decreasing the mutant numbers and optimizing the execution, yielding promising results. However, test case reduction has also proven to be effective in reducing costs in MBFL. In this paper, we propose an approach called Contribution-Based Test Case Reduction (CBTCR) aimed at enhancing MBFL efficiency. CBTCR assesses the contribution value of each test case and selects them accordingly. The reduced test suite is then used for mutant execution. We evaluate CBTCR on 543 real software faults from Defects4J benchmark. Results show that CBTCR outperforms other MBFL test case reduction strategies (e.g. FTMES, IETCR), in terms of the Top-N and MAP metrics. Moreover, CBTCR achieves an average cost reduction of 87.06%, while maintaining accuracy comparable to those of the original MBFL techniques. This research paper presents an innovative and effective solution for optimizing MBFL, which can significantly reduce the cost and time required for software debugging.},
+  archive      = {J_IJSEKE},
+  author       = {Haifeng Wang and Kun Yang and Tong Wu},
+  doi          = {10.1142/S021819402450027X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {10},
+  pages        = {1537-1564},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Optimizing mutation-based fault localization through contribution-based test case reduction},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Identification of key classes in software systems based on
+static analysis and voting mechanism. <em>IJSEKE</em>, <em>34</em>(9),
+1513–1535. (<a href="https://doi.org/10.1142/S0218194024500220">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Identifying key classes of a software system can help developers understand the system quickly, reduce the time for system maintenance, and prevent security risks caused by defects in key classes. So far, many approaches have been proposed to identify key classes from software systems. However, some approaches select too many key class candidates, making it inconvenient and difficult for developers to start understanding the system from these classes. For the other approaches, although the number of key class candidates is not large, their effectiveness needs to be further improved. To this end, in this paper, we propose a new model, named SAVM, to detect key classes by combining static analysis and a voting mechanism. First, we extract structural information from the source codes of a software system and construct a class coupling network (CCN) using this information. Then, we present the VRWD method that iteratively identifies important nodes in CCN based on a voting mechanism. Specifically, in each iteration, a node votes for its outgoing neighbors and in the meantime receives votes from its incoming neighbors. Afterward, the node that attains the highest voting score is elected as the important node in this turn. Finally, the corresponding classes of the selected important nodes are the key class candidates. The effectiveness of the proposed model and eight other baselines is evaluated in eight open-source Java projects. The experimental results show that although no method performs the best in all projects, according to the average ranking of the Friedman test, our method overall performs better compared to the baselines. In addition, this paper also proves through experiments that our approach can be applied to large-scale software projects. These indicate that our approach is a valuable technique for developers.},
+  archive      = {J_IJSEKE},
+  author       = {Caiyun Mao and Longjie Li and Li Liu and Zhixin Ma},
+  doi          = {10.1142/S0218194024500220},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1513-1535},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Identification of key classes in software systems based on static analysis and voting mechanism},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Combining error guessing and logical reasoning for software
+fault localization via deep learning. <em>IJSEKE</em>, <em>34</em>(9),
+1485–1511. (<a href="https://doi.org/10.1142/S0218194024500219">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automated fault localization has been extensively studied to improve the effectiveness of software debugging. Existing automated fault localization methods neglect the guidance of the simple and easily available debugging information on fault localization. To bridge manual fault localization with automated fault localization, we propose a fault localization approach combining error guessing and logical reasoning via deep learning. The proposed approach simulates the actual debugging process. Specifically, developers’ debugging experience and context dependencies between methods are mapped into two different types of coverage matrices. The constructed matrices are fed to a convolutional neural network (CNN) to predict whether a method is buggy or not. To validate the effectiveness of the proposed approach, we designed and constructed the empirical study on the widely used Defect4J datasets. With respect to the top- n ( n = 1 , 3 , 5 ) metric, our approach outperforms the state-of-the-art DeepFL and other five methods including Ochai, Muse, MULTRIC, TraPT and FLUCSS. Particularly, compared with the above methods, our approach has an improvement of 5–182% for top-1. In terms of MFR and MAR, the proposed approach is slightly lower than the best DeepFL but better than the other five methods. The approach we presented achieving the unification of manual and automatic debugging can aid in the improvement of fault localization accuracy.},
+  archive      = {J_IJSEKE},
+  author       = {Rongcun Wang and Mingmei Fan and Yue Yan and Shujuan Jiang},
+  doi          = {10.1142/S0218194024500219},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1485-1511},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Combining error guessing and logical reasoning for software fault localization via deep learning},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Security development lifecycle-based adaptive reward
+mechanism for reinforcement learning in continuous integration testing
+optimization. <em>IJSEKE</em>, <em>34</em>(9), 1457–1483. (<a
+href="https://doi.org/10.1142/S0218194024500244">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuous automated testing throughout each cycle can ensure the security of the continuous integration (CI) development lifecycle. Test case prioritization (TCP) is a critical factor in optimizing automated testing, which prioritizes potentially failed test cases and improves the efficiency of automated testing. In CI automated testing, the TCP is a continuous decision-making process that can be solved with reinforcement learning (RL). RL-based CITCP can continuously generate a TCP strategy for each CI development lifecycle, with the reward mechanism as the core. The reward mechanism consists of the reward function and the reward strategy. However, there are new challenges to RL-based CITCP in real-industry CI testing. With high-frequency iteration, the reward function is often calculated with a fixed length of historical information, ignoring the spatial characteristics of the current cycle. Therefore, the dynamic time window (DTW)-based reward function is proposed to perform the reward calculation, which adaptively adjusts the recent historical information range based on the integration cycle. Moreover, with low-failure testing, the reward strategy usually only rewards failure test cases, which creates a sparse reward problem in RL. To address this issue, the similarity-based reward strategy is proposed, which increases the reward objects of some passed test cases, similar to the failure test cases. The DTW-based reward function and the similarity-based reward strategy together constitute the proposed adaptive reward mechanism in RL-based CITCP. To validate the effectiveness of the adaptive reward mechanism, experimental verification is carried out on 13 industrial data sets. The experimental results show that the adaptive reward mechanism can improve the TCP effect, where the average NAPFD is maximally improved by 7.29%, the average Recall is maximally improved by 6.04% and the average TTF is improved by 6.81 positions with a maximum of 63.77.},
+  archive      = {J_IJSEKE},
+  author       = {Yang Yang and Weiwei Wang and Zheng Li and Lieshan Zhang and Chaoyue Pan},
+  doi          = {10.1142/S0218194024500244},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1457-1483},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Security development lifecycle-based adaptive reward mechanism for reinforcement learning in continuous integration testing optimization},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024a). Quantum software encompasses classical software: Density
+matrix from the laplacian. <em>IJSEKE</em>, <em>34</em>(9), 1441–1456.
+(<a href="https://doi.org/10.1142/S0218194024410043">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is widely understood that quantum computing — quantum gates upon qubits — is the general case, encompassing computing by classical means, viz . Boolean logic upon classical bits. It also seems reasonable that Quantum Software should encompass Classical Software. However, to accept such a statement regarding software, the feeling that it seems reasonable is not enough. One needs clear-cut definitions and formal conclusions. This is exactly the purpose of this paper. Previously, we have represented Classical Software by the Laplacian Matrix. More recently, we have shown that Quantum Software is faithfully represented by Density Matrices. It turns out that a Laplacian Matrix normalized by the Laplacian Trace easily obtains a Density Matrix. This opens the horizons for Quantum Software operations — such as unitary and reversible evolution — not naturally available with the classical Laplacian. This paper provides the necessary definitions and conclusions, illustrating the more general Quantum operations with a relevant case study, playing the double role of both classical and quantum software.},
+  archive      = {J_IJSEKE},
+  author       = {Iaakov Exman},
+  doi          = {10.1142/S0218194024410043},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1441-1456},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Quantum software encompasses classical software: Density matrix from the laplacian},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Automata-based quantum circuit design patterns
+identification: A novel approach and experimental verification.
+<em>IJSEKE</em>, <em>34</em>(9), 1415–1439. (<a
+href="https://doi.org/10.1142/S0218194024410031">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a strategy for identifying design patterns in quantum circuits. The foundation of this approach relies on using the information procured from both the segmentation and the analysis of these circuits as primary data. The approach of the methodology is based on the novel interpretation of quantum circuit components through the lens of an automaton. Additionally, the method entails the generation of input symbols for this finite automaton. The symbols are derived from the matching process between design patterns and components of quantum circuits. Two tool prototypes, QPainter and QCDPDTool, have been developed to represent quantum circuits graphically and automatically detect quantum patterns. Using them, the primary reasoning process is carried out by an automaton that can manage representations of quantum circuit components. A suite of experiments on a set of quantum circuit sequences reveals promising results and offers empirical support for our approach. Furthermore, we explore how these experimental findings can be leveraged to improve the efficacy of design pattern identification in quantum circuits.},
+  archive      = {J_IJSEKE},
+  author       = {Francisco P. Romero and José A. Cruz-Lemus and Sergio Jiménez-Fernández and Mario Piattini},
+  doi          = {10.1142/S0218194024410031},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1415-1439},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Automata-based quantum circuit design patterns identification: A novel approach and experimental verification},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Quantum software engineering: Practical challenges.
+<em>IJSEKE</em>, <em>34</em>(9), 1387–1413. (<a
+href="https://doi.org/10.1142/S021819402441002X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum computing is a young discipline that specializes in the construction of hardware and software using the quantum properties of nature, to solve problems of higher complexity that classical computing cannot address, in multiple business areas. The most important computing revolution of the last 60 years has begun because of the integration of classical computing, quantum computing and artificial intelligence. In this paper, we present a pragmatic survey of the main quantum computing areas, focusing in particular on software and the need for real Quantum Software Engineering (QSE) to produce quantum software with sufficient quality and productivity, which is the fundamental axis for the diffusion of quantum computing.},
+  archive      = {J_IJSEKE},
+  author       = {Mario Piattini and José Luis Hevia and Guido Peterssen},
+  doi          = {10.1142/S021819402441002X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1387-1413},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Quantum software engineering: Practical challenges},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A noise validation for quantum circuit scheduling through a
+service-oriented architecture. <em>IJSEKE</em>, <em>34</em>(9),
+1371–1386. (<a href="https://doi.org/10.1142/S0218194024410018">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Progress in the realm of quantum technologies is paving the way for a multitude of potential applications across different sectors. However, the reduced number of available quantum computers, their technical limitations, and the high demand for their use are posing some problems for developers and researchers. Mainly, users trying to execute quantum circuits on these devices are usually facing long waiting times in the task queues. In this context, this work proposes a Service-Oriented architecture to reduce waiting times and optimize quantum computer usage by scheduling the circuits from different users into combined circuits that are executed at the same time. To validate this proposal, different widely known quantum algorithms have been selected and executed in combined circuits. The obtained results are then compared with the results of executing the same algorithms in an isolated way. This allowed us to measure the impact of the use of the scheduler against quantum noise. Among the obtained results, it has been possible to verify that the noise suffered by executing a combination of circuits through the proposed scheduler does not critically affect the outcomes.},
+  archive      = {J_IJSEKE},
+  author       = {Javier Romero-Álvarez and Jaime Alvarado-Valiente and Jorge Casco-Seco and Enrique Moguel and Jose Garcia-Alonso and Juan M. Murillo},
+  doi          = {10.1142/S0218194024410018},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1371-1386},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A noise validation for quantum circuit scheduling through a service-oriented architecture},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024b). Quantum software: The brain of quantum — guest editor’s
+introduction. <em>IJSEKE</em>, <em>34</em>(9), 1367–1370. (<a
+href="https://doi.org/10.1142/S0218194024020029">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum Software, its engineering and its applications are becoming more and more indispensable components of the current knowledge baggage of researchers and industrial professionals. Given the continuous accelerating developments of Quantum Computing, and the vastness of available knowledge, one needs efficient methods to dedicate the limited available personal time to the correct choice of selective information. This Special Issue on “Quantum Computing and Software Engineering” offers a small, but diverse set of papers covering theoretical, practical software system design and a pragmatic survey of Quantum Software Engineering, being a map pointing to references of relevance, aiming to answer the issue of choice of selective information.},
+  archive      = {J_IJSEKE},
+  author       = {Iaakov Exman},
+  doi          = {10.1142/S0218194024020029},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {9},
+  pages        = {1367-1370},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Quantum software: The brain of quantum — guest editor’s introduction},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Fine-grained entity-type completion based on
+neighborhood-attention and cartesian–polar coordinates mapping.
+<em>IJSEKE</em>, <em>34</em>(8), 1339–1366. (<a
+href="https://doi.org/10.1142/S0218194024500268">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Entities refer to things that exist objectively, and entity types are concepts abstracted from entities that have the same features or properties. However, the entity types in the knowledge graph are always incomplete. Currently, the main approach for predicting missing entity types is to learn structured representations of entities and types separately, which ignores neighborhood semantic knowledge of the entity. Therefore, this paper proposes the aggregation neighborhood semantics model for type completion (ANSTC), which extracts neighborhood triple features of target entities with two attentional mechanisms. Meanwhile, the spatial mapping module in ANSTC maps entities from Cartesian coordinate to Polar coordinate system, which can map similar vectors onto a concentric circle and then rotate the angle according to the fine-grained difference to achieve entity-to-type transformation. Moreover, we add semantic features from text to the entity representations to enrich semantics. Through experimental comparison on the FB15K and YAGO43K dataset, we get similar results to the baseline. We also construct person dataset in computer domain, and the values of MRR, Hit@1, Hit@3 and Hit@10 are improved compared with the ConnectE model. The experimental results demonstrate that our model can effectively predict the fine-grained entity types in the domain dataset, and achieve state-of-the-art performance.},
+  archive      = {J_IJSEKE},
+  author       = {Xiaoming Zhang and Xinrui Li and Huiyong Wang},
+  doi          = {10.1142/S0218194024500268},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {8},
+  pages        = {1339-1366},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Fine-grained entity-type completion based on neighborhood-attention and Cartesian–Polar coordinates mapping},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Flaky test detection based on adaptive latest position
+execution for concurrent android applications. <em>IJSEKE</em>,
+<em>34</em>(8), 1313–1338. (<a
+href="https://doi.org/10.1142/S0218194024500232">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tests may pass or fail under the same conditions. These tests are commonly known as flaky tests. In Android applications, the primary reason for flaky tests is attributed to its event-driven programming paradigm and multi-threading concurrency mechanism. It may activate an unexpected event order when a test is executed, causing test flakiness. The later the execution of asynchronous events, the more likely it is to result in test flakiness. Inspired by this deduction, this paper puts forward a flaky test detection method for concurrent Android applications based on adaptive latest position execution. In more detail, the latest execution positions of each asynchronous event are identified by analyzing the sequential dependencies between events. On this basis, the asynchronous event is scheduled at the corresponding position, thereby trying to change the test results and detecting flaky tests. To validate the effectiveness and efficiency of our approach, a series of experiments are conducted on 16 known flaky test cases across 7 Android applications. The experimental results show that compared with the state-of-the-art tool FlakeScanner, the flaky test detection rate of our approach improves by 18.75%.},
+  archive      = {J_IJSEKE},
+  author       = {Weixi Zhang and Weiwei Wang and Ruilian Zhao},
+  doi          = {10.1142/S0218194024500232},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {8},
+  pages        = {1313-1338},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Flaky test detection based on adaptive latest position execution for concurrent android applications},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Integration of UML class diagrams based on semantics and
+structure. <em>IJSEKE</em>, <em>34</em>(8), 1281–1312. (<a
+href="https://doi.org/10.1142/S0218194024500207">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a high-level reuse, software design reuse has received more and more attention because of its important impact on the subsequent development stages. Usually, the design models are typically represented as some graphs or diagrams, in which Unified Modeling Language (UML) class diagram is so widely used in software design that it has become the de facto standard. There has been some research on the reuse of UML class diagrams so far, mainly focusing on matching and retrieval. However, it is worth noting that there are many similar class diagrams modeling the same object or some related class diagrams modeling different aspects of the same object in the reuse repository. As a matter of fact, the primary step to achieve a high-quality reuse is to have high-quality software artifacts, so the well-designed UML class diagrams become a necessary resource for software design reuse. Therefore, it is necessary to integrate these class diagrams so that they have stronger modeling ability, and eliminating redundancy is another benefit of the integration. Up to now, there has been little discussion about the integration of class diagrams, so we propose an integration approach based on semantics and structure in this paper. The equivalent elements that can identify the semantically merged parts are defined, and the possible conflict items are listed from both semantic and structural aspects. The integration procedure composed of three stages is proposed, in which an approach combining semantic common class diagrams (SCCDs) and structural common graph sequence (SCGS) is combined to determine the merged parts, the integration issue of heterogeneous class diagrams is considered from the proposed abstract models, and the conflict resolution for each conflict item is described by examples. The experimental results show the effectiveness of our proposed integration approach.},
+  archive      = {J_IJSEKE},
+  author       = {Zhongchen Yuan and Xingda Hu and Gang Zhang and Zongmin Ma},
+  doi          = {10.1142/S0218194024500207},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {8},
+  pages        = {1281-1312},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Integration of UML class diagrams based on semantics and structure},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Group-based federated knowledge distillation intrusion
+detection. <em>IJSEKE</em>, <em>34</em>(8), 1251–1279. (<a
+href="https://doi.org/10.1142/S0218194024500190">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intrusion detection based on federated learning allows the sharing of more high-quality attack samples to improve the intrusion detection performance of local models while preserving the privacy of local data. Most research on federated learning intrusion detection requires local models to be homogeneous. However, in practical scenarios, local models often include both homogeneous and heterogeneous models due to differences in hardware capabilities and business requirements among nodes. Additionally, there is still room for improvement in the accuracy of recognizing novel attacks in existing researches. To address the challenges mentioned above, we propose a Group-based Federated Knowledge Distillation Intrusion Detection approach. First, through a step-by-step grouping method, we achieve the grouping effect of intra-group homogeneity and inter-group heterogeneity, laying the foundation for reducing the aggregation difficulty in intra-group homogenous aggregation and inter-group heterogeneous aggregation. Second, in intra-group homogenous aggregation, a dual-objective optimization model is employed to quantify the learning quality of local models. Weight coefficients are assigned based on the learning quality to perform weighted aggregation. Lastly, in inter-group heterogeneous aggregation, the group leader model’s learning quality is used to classify and aggregate local soft labels, generating global soft labels. Group leader models utilize global soft labels for knowledge distillation to acquire knowledge from heterogeneous models. Experimental results on NSL-KDD and UNSW-NB datasets demonstrate the superiority of our proposed method over other algorithms.},
+  archive      = {J_IJSEKE},
+  author       = {Tiaokang Gao and Xiaoning Jin},
+  doi          = {10.1142/S0218194024500190},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {8},
+  pages        = {1251-1279},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Group-based federated knowledge distillation intrusion detection},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Automated test case generation for path coverage by using
+multi-objective particle swarm optimization algorithm with reinforcement
+learning and relationship matrix strategies. <em>IJSEKE</em>,
+<em>34</em>(8), 1221–1249. (<a
+href="https://doi.org/10.1142/S0218194024500189">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Software testing is an important phase in software life cycle, and test case generation occupies the main part of the testing workload. Path coverage is the most stringent and difficult coverage criteria, so automatic test case generation for path coverage (ATCG-PC) is an important task in software testing. ATCG-PC is usually abstracted as an optimization search problem, and the commonly used solution algorithm is swarm intelligence algorithm. This paper proposes a path coverage test case generation algorithm based on improved multi-objective particle swarm optimization (IMOPSO) algorithm. The algorithm uses the multi-objective strategy to generate test cases for a group of similar paths at a time, and is supplemented by the particle action selection strategy based on reinforcement learning and the secondary search algorithm based on relationship matrix, which makes use of the similarity information between paths to speed up the early convergence and help to quickly reach the optimal solution around the local optimal position. By grouping the paths according to the similarity, the algorithm reduces the test case consumption, and improves the efficiency of test case generation. Experimental results show that, compared with the existing methods, the proposed algorithm can achieve higher path coverage with less test case consumption and is also suitable for large-scale programs.},
+  archive      = {J_IJSEKE},
+  author       = {Shuwen Liang and Zhitao He},
+  doi          = {10.1142/S0218194024500189},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {8},
+  pages        = {1221-1249},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Automated test case generation for path coverage by using multi-objective particle swarm optimization algorithm with reinforcement learning and relationship matrix strategies},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A dual relaxation method for neural network verification.
+<em>IJSEKE</em>, <em>34</em>(8), 1199–1220. (<a
+href="https://doi.org/10.1142/S0218194024500177">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the robustness verification of neural networks, formal methods have been used to give deterministic guarantees for neural networks. However, recent studies have found that the verification method of single-neuron relaxation in this field has an inherent convex barrier that affects its verification capability. To address this problem, we propose a new verification method by combining dual-neuron relaxation and linear programming. This method captures the dependencies between different neurons in the same hidden layer by adding a two-neuron joint constraint to the linear programming model, thus overcoming the convex barrier problem caused by relaxation for only a single neuron. Our method avoids the combination of exponential inequality constraints and can be computed in polynomial time. Experimental results show that we can obtain tighter bounds and achieve more accurate verification than single-neuron relaxation methods.},
+  archive      = {J_IJSEKE},
+  author       = {Huanzhang Xiong and Gang Hou and Yueyuan Qin and Jie Wang and Weiqiang Kong},
+  doi          = {10.1142/S0218194024500177},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {8},
+  pages        = {1199-1220},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A dual relaxation method for neural network verification},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Approach to detect windows malware based on malicious
+tendency image and ResNet algorithm. <em>IJSEKE</em>, <em>34</em>(7),
+1173–1197. (<a href="https://doi.org/10.1142/S0218194024500256">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Timely detection of self-replicating malware in the high market share Windows operating system can effectively prevent personal or corporate financial losses. The form and characteristics of malware are constantly evolving, leading to a concept drift issue that gradually decreases the effectiveness of traditional detection methods. Therefore, we propose WinMDet, a Windows malware detection method based on malicious tendency image and ResNet algorithm. First, to tackle the complexity and difficulty in accurately characterizing malware features, WinMDet retains detailed malware features and encodes them into malicious tendency images to better describe malware across different periods. Secondly, WinMDet utilizes previously generated malicious tendency images to train the initial detection model. Then, to alleviate the issue of malware concept drift, WinMDet employs Local Maximum Mean Discrepancy (LMMD) as the criterion for model transfer, enhancing the initial detection model’s ability to distinguish between malware and benign software. We conducted a comprehensive evaluation of WinMDet using common metrics such as accuracy, precision and recall. The results indicate that WinMDet performs remarkably well in terms of accuracy, exceeding 82%. Additionally, significant improvements were observed in precision and recall, surpassing 82.42% and 82.06%, respectively. After employing our LMMD-based transfer method, the initial detection model improved the detection accuracy of malware in 2021 and 2022 by approximately 4.22% to 8.06%. The false negative rate decreased by at most 4.34%, and the false positive rate decreased by at most 4.61%.},
+  archive      = {J_IJSEKE},
+  author       = {Bing Zhang and Hongchang Zhang and Rong Ren and Zhen Wen and Qian Wang},
+  doi          = {10.1142/S0218194024500256},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {7},
+  pages        = {1173-1197},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Approach to detect windows malware based on malicious tendency image and ResNet algorithm},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A cross-project defect prediction approach based on code
+semantics and cross-version structural information. <em>IJSEKE</em>,
+<em>34</em>(7), 1135–1171. (<a
+href="https://doi.org/10.1142/S0218194024500165">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Context: Cross-project defect prediction (CPDP), due to the potential of adaption by industry in realistic scenarios, had gained significant attention from the research community. Currently, existing CPDP studies use static statistical features designed by experts, which might not capture the semantic and structural aspects of software, resulting in low accuracy in defect prediction. Meanwhile, they tend to overlook the valuable iterative information brought about by version updates in mature software projects. Objective: This paper introduces DETECTOR, a novel CPDP approach based on coDE semanTic and cross-vErsion struCTural infORmation to leverage cross-versions features of the software and improve the performance of CPDP. Methods: DETECTOR parses source code to exploit Abstract Syntax Trees (ASTs) and cross-version software network (Cross-SN) that consists of internal class dependency network and cross-version class dependency edges. It utilizes Attention-based Bi-LSTM and simplified graph convolutional neural networks to automatically extract software features from ASTs and Cross-SN. The extracted features are fused using gate (⋅) to generate more effective cross-version features. Finally the source project is selected to carry out the data used to train the classifier to predict the defects. Results: Empirical studies on seven open-source Java projects, the experiment results show that: (1) DETECTOR outperforms the state-of-the-art models in CPDP; (2) our proposed cross-version dependent edges positively contribute to DETECTOR performance; (3) gate (⋅) outperforms existing strategies in fusion features; (4) more multi-versions information enhance DETECTOR’s performance. Conclusion: DETECTOR can predict more defects in CPDP and improve the accuracy and effectiveness of prediction.},
+  archive      = {J_IJSEKE},
+  author       = {Yifan Zou and Huiqiang Wang and Hongwu Lv and Shuai Zhao and Haoye Tian},
+  doi          = {10.1142/S0218194024500165},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {7},
+  pages        = {1135-1171},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A cross-project defect prediction approach based on code semantics and cross-version structural information},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). The evolution mechanism of correctness for cyber-physical
+system. <em>IJSEKE</em>, <em>34</em>(7), 1095–1134. (<a
+href="https://doi.org/10.1142/S0218194024500153">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cyber-physical Systems (CPS) are widely used in all areas of life. Ensuring the correctness of CPS remains an enduring challenge during its development and design phases. One approach to ascertain the correctness of CPS is behavior equivalence based on bisimulation. However, whether the implementation development process develops in the right direction has an important impact on obtaining the correct system implementation. Especially, the development process of complex CPS often yields a multitude of implementation versions, the correlation among these versions partly signifies the correctness of the development process. This paper formalizes the relationship between the implementation versions and establishes a formal description of the development process progressing in the correct direction, leveraging the concept of a “limit idea.” Initially, we introduce the concept of “limit bisimulation” for CPS systems to delineate implementations acquired during the CPS development process. Specific limit bisimulations are demonstrated to represent distinct scenarios within the development process. Subsequently, the convergence mechanism of implementations is modeled through bisimulation limits, encapsulating the CPS’s specification as the ultimate goal of obtained implementations during the development process. Finally, the congruence property of the bisimulation limit is proved, which accounts for the relation between specification and implementation versions can be decomposed into a refinement hierarchy. The limit theorem of bisimulation in CPS can help the designer and developer of CPS to comprehend the development course better.},
+  archive      = {J_IJSEKE},
+  author       = {Yanfang Ma and Liang Chen},
+  doi          = {10.1142/S0218194024500153},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {7},
+  pages        = {1095-1134},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {The evolution mechanism of correctness for cyber-physical system},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Consistency checking for refactoring from coarse-grained
+locks to fine-grained locks. <em>IJSEKE</em>, <em>34</em>(7), 1063–1093.
+(<a href="https://doi.org/10.1142/S0218194024500141">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Refactoring for locks is widely used to improve the scalability and performance of concurrent programs. However, when refactoring from coarse-grained locks to fine-grained locks, the behavior of concurrent programs may be changed. To this end, we present LockCheck , a consistency-checking approach based on the parallel extended finite automaton for fine-grained locks. First, we model the critical sections of concurrent programs through control flow analysis and dependency analysis. Second, we sequentialize the concurrent programs to get all the possible transition paths. Furthermore, it reduces the exploration of the redundant paths using partial order theory to obtain the compared transition paths. Finally, we combine consistency rules to check the consistency of the program before and after refactoring. We evaluated LockCheck in five open-source projects. A total of 1528 refactoring operations have been evaluated and 93 inconsistent refactoring operations have been detected. The results show that LockCheck can effectively detect inconsistent behavior when coarse-grained locks are refactored into fine-grained locks.},
+  archive      = {J_IJSEKE},
+  author       = {Yang Zhang and Jingjing Liu and Lin Qi and Grant Meredith},
+  doi          = {10.1142/S0218194024500141},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {7},
+  pages        = {1063-1093},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Consistency checking for refactoring from coarse-grained locks to fine-grained locks},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An ensemble keyword extraction model for news texts with
+statistical and graphical features. <em>IJSEKE</em>, <em>34</em>(7),
+1047–1061. (<a href="https://doi.org/10.1142/S0218194024500128">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Keyword extraction is an essential tool for many text mining applications such as automatic indexing, summarizing, classification, clustering and automatic filtering. Automated keyword extraction is essential as the daily text data to be reached and processed have increased tremendously over the Internet, e.g. millions of news articles are published daily online. In this paper, a novel ensemble model for automatic extraction of keywords from news articles is proposed. The proposed model handles keyword extraction as a sequence labeling task. Two sub-modules representing the statistical and graphical features by their calculated scores for each input token were combined in the token classification module. The Ensemble Token Classification module was trained and tested separately with the ensemble algorithms Random Forest, XgBoost, Decision Tree and Voting Classification. For training, we collected two news datasets from Kazakh and Russian news sites published in Cyrillic alphabet. We also collected an Arabic news dataset, ArabianNews. The performance of the model was also compared with the widely used 500N-KPCrowd dataset in the literature, which consists of English news content in Latin alphabet. The proposed model achieved the best performance with an F 1 -score of 0.71 and 0.86 on the 500N-KPCrowd and Russian datasets, respectively. We attained the best F 1 -score (0.97) with the KazakhNews and ArabianNews datasets.},
+  archive      = {J_IJSEKE},
+  author       = {Aiman Abibullayeva and Hüma Kılıç and Aydin Cetin},
+  doi          = {10.1142/S0218194024500128},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {7},
+  pages        = {1047-1061},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {An ensemble keyword extraction model for news texts with statistical and graphical features},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Robotic process automation efficiency for mobile app
+testing: An empirical investigation. <em>IJSEKE</em>, <em>34</em>(7),
+1025–1046. (<a href="https://doi.org/10.1142/S0218194024500116">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In today’s rapidly evolving software environment, the graphical user interface (GUI) plays a crucial role in providing intuitive, user-friendly interaction. However, traditional intrusive GUI testing methods often face challenges such as interrupting user workflows, requiring significant manual effort and insufficient test scenario coverage. Non-intrusive testing methods, such as Robotic Process Automation (RPA), offer a solution to validate GUI functionality without modifying the application’s code or affecting the user experience. RPA systems automate repetitive tasks by simulating user interactions, becoming valuable tools in GUI testing. However, challenges like limited computational resources, time constraints, or restricted exploration capabilities may limit the efficiency of individual RPA agents, thus restricting coverage and effectiveness. To address this issue, this study explores the performance of a single RPA agent versus an RPA cluster under different testing conditions, using three popular testing methods: Monkey, Stoat and Q-testing. Experimental results indicate that an RPA cluster outperforms a single RPA in GUI coverage and error detection, making a significant contribution to the field of non-intrusive GUI exploration testing. The findings of this study provide directions for future research to ensure the delivery of high-quality mobile applications.},
+  archive      = {J_IJSEKE},
+  author       = {Yuqiong Wang and Yuxiao Zhao and Xiang Wang and Weidong Tang and Jinhui Zhang and Shaolei Wang and Peng Wang and Jian Hu},
+  doi          = {10.1142/S0218194024500116},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {7},
+  pages        = {1025-1046},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Robotic process automation efficiency for mobile app testing: An empirical investigation},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Efficient construction of practical python call graphs with
+entity knowledge base. <em>IJSEKE</em>, <em>34</em>(7), 999–1024. (<a
+href="https://doi.org/10.1142/S0218194024500104">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Call graphs facilitate various tasks in software engineering. However, for the dynamic language Python, the complex language features and external library dependencies pose enormous challenges for building the call graphs of real projects. Some program analysis techniques used for call graph construction in other languages are impractical for Python. In this paper, we present STAR, a practical technique for the construction of Python static call graphs. We reformulate call graph construction as an entity identification task. STAR leverages inter-module summary and cross-project dependencies to construct a fine-grained entity knowledge base to identify the possible nodes and edges of the call graph in the code, and then construct the call graph. Our evaluation of three benchmarks shows that (1) STAR improves recall in three benchmarks compared to three baseline tools. Especially, STAR improves the recall of reachable nodes and reachable edges compared with the state-of-the-art tool by 11.3% and 9.8%, respectively; (2) STAR achieves comparable performance as three baseline tools in execution time and memory usage and is more efficient in large projects; (3) STAR can be effectively used for the task of detecting vulnerability propagation with real-world cases. We expect our results will attract more exploration of practical methods and improve the application of Python call graphs.},
+  archive      = {J_IJSEKE},
+  author       = {Yulu Cao and Lin Chen and Zhifei Chen and Jiacheng Zhong and Xiaowei Zhang and Linzhang Wang},
+  doi          = {10.1142/S0218194024500104},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {7},
+  pages        = {999-1024},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Efficient construction of practical python call graphs with entity knowledge base},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). TRAFMEL: Multimodal entity linking based on transformer
+reranking and multimodal co-attention fusion. <em>IJSEKE</em>,
+<em>34</em>(6), 973–997. (<a
+href="https://doi.org/10.1142/S021819402450013X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multimodal entity linking aims to link mentions to target entities in the multimodal knowledge graph. The current multimodal entity linking mainly focuses on the global fusion of text and image, seldom fully exploring the correlation between modalities. In order to improve the fusion effect of multimodal feature, we propose a multimodal entity linking model based on a Multimodal Co-Attention Fusion strategy. This strategy is designed to enable text and image to guide each other for extracting features, thus making full exploration of the correlation between modalities to improve the fine-grained feature fusion effect. Furthermore, we also design a candidate entity generation strategy based on Transformer, which combines multiple candidate entity sets and adjusts the candidate entity ranking to obtain high-quality candidate entity sets. We perform experiments on domain datasets and public datasets, and the experimental results demonstrate that our model has a good performance in candidate entity generation and multimodal feature fusion, outperforming the state-of-the-art baseline models.},
+  archive      = {J_IJSEKE},
+  author       = {Xiaoming Zhang and Kaikai Meng and Huiyong Wang},
+  doi          = {10.1142/S021819402450013X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {6},
+  pages        = {973-997},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {TRAFMEL: Multimodal entity linking based on transformer reranking and multimodal co-attention fusion},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). How did COVID-19 impact software design activities in global
+software engineering — systematic review. <em>IJSEKE</em>,
+<em>34</em>(6), 941–971. (<a
+href="https://doi.org/10.1142/S0218194024500098">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background: Global Software Engineering (GSE) extends geographical, temporal, and cultural boundaries in distributed environments. Over the past two decades, GSE research has evolved to manage software development for distributed teams. The COVID-19 pandemic highlights the need for comprehensive research, particularly during the software design phase, to support team collaboration in distributed development. Aim: This study systematically analyzes the evolution of research emphasis in the GSE field, specifically exploring on whether the research focuses increasing on software design due to the global pandemic. Method: We systematically analyzed the existing literature in two phases. In the first phase of our study, we mapped GSE research over the two decades leading to the pandemic (2000–2020). In the second phase, we used the forward snowballing approach to examine the literature on the software design phase published between 2020 and 2022. Results: The analysis of 592 research studies in the two phases reveals various trends in GSE research. Evaluation research is the most explored research type in methods and processes, and human aspects of development. Despite the paradigm shift caused by the COVID-19 pandemic that increased reliance on distributed teams, results show that while software organizations are extensively studied across all software engineering phases, the software design phase remains one of the least explored areas. Conclusion: This work highlights the evolving GSE research trends, emphasizing the rising significance of collaborative software design in distributed settings. Our findings address current research gaps and underscore the need for further research on software design activities. This contribution envisions a more collaborative, adaptable GSE field, guiding future research to support distributed teams.},
+  archive      = {J_IJSEKE},
+  author       = {Mahum Adil and Ilenia Fronza and Claus Pahl},
+  doi          = {10.1142/S0218194024500098},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {6},
+  pages        = {941-971},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {How did COVID-19 impact software design activities in global software engineering — systematic review},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Improving windows malware detection using the random forest
+algorithm and multi-view analysis. <em>IJSEKE</em>, <em>34</em>(6),
+909–939. (<a href="https://doi.org/10.1142/S0218194024500086">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cybercriminals motivated by malign purpose and financial gain are rapidly developing new variants of sophisticated malware using automated tools, and most of these malware target Windows operating systems. This serious threat demands efficient techniques to analyze and detect zero-day, polymorphic and metamorphic malware. This paper introduces two frameworks for Windows malware detection using random forest algorithms. The first scheme uses features obtained from static and dynamic analysis for training, and the second scheme uses features obtained from static, dynamic, malware image analysis, location-sensitive hashing and file format inspections. We carried out an extensive experiment on two feature sets, and the proposed schemes are evaluated using seven standard evaluation metrics. The experiment results demonstrate that the second scheme recognizes unseen malware better than the first scheme and three state-of-the-art works. The findings show that the second scheme’s multi-view feature set contributes to its 99.58% accuracy and lowers false positive rate of 0.54%.},
+  archive      = {J_IJSEKE},
+  author       = {S. Syed Suhaila and K. Sundara Krishnan},
+  doi          = {10.1142/S0218194024500086},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {6},
+  pages        = {909-939},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Improving windows malware detection using the random forest algorithm and multi-view analysis},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Model-driven approach for making citizen science data FAIR.
+<em>IJSEKE</em>, <em>34</em>(6), 891–907. (<a
+href="https://doi.org/10.1142/S0218194024500074">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Citizen Science (CS) initiatives have proliferated in different scientific and social fields, producing vast amounts of data. Existing CS projects usually adopt PPSR Core as a data and metadata standard. However, these projects are still not FAIR (Findable, Accessible, Interoperable and Reusable)-compliant. We propose to use DCAT as a data and metadata standard since it helps to improve the interoperability of CS data catalogs and all the FAIR features. For this purpose, in this paper we present a model-driven approach to make CS data FAIR. Our approach has the following contributions: (i) the definition of a metamodel based on PPSR Core, (ii) the definition of a DCAT profile for CS, (iii) a definition of set of automated transformations from PPSR Core to DCAT. Finally, the implementation of the model-driven process has been validated by evaluating several FAIR metrics. The results show that our proposal has significantly improved the FAIR quality of CS projects.},
+  archive      = {J_IJSEKE},
+  author       = {Reynaldo Alvarez Luna and Irene Garrigós and Jose Zubcoff and César González-Mora},
+  doi          = {10.1142/S0218194024500074},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {6},
+  pages        = {891-907},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Model-driven approach for making citizen science data FAIR},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An imperfect debugging non-homogeneous poisson process
+software reliability model based on a 3-parameter s-shaped function.
+<em>IJSEKE</em>, <em>34</em>(6), 869–889. (<a
+href="https://doi.org/10.1142/S0218194024500062">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Considering the testing process of the software system as a stochastic process is a primary approach to the software reliability modeling technique. Besides some popular distributions, the Poisson distribution has been considered the best based on its advantage when modeling the times at which arrivals enter a system. In the non-homogeneous Poisson process group of models, the S-shaped function is a value curve with many good results. This paper proposes a new imperfect debugging software reliability model based on (1) an Imperfect debugging assumption (the testing process could cause new faults); and (2) the Fault detection rate can be controlled more effectively by the appearance of a growth-rate-controller. The real data from industrial projects verify the application of this model based on good popular criteria values.},
+  archive      = {J_IJSEKE},
+  author       = {Nguyen Hung-Cuong and Huynh Quyet-Thang},
+  doi          = {10.1142/S0218194024500062},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {6},
+  pages        = {869-889},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {An imperfect debugging non-homogeneous poisson process software reliability model based on a 3-parameter S-shaped function},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Multi-intent inline code comment generation via large
+language model. <em>IJSEKE</em>, <em>34</em>(6), 845–868. (<a
+href="https://doi.org/10.1142/S0218194024500050">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Code comment generation typically refers to the process of generating concise natural language descriptions for a piece of code, which facilitates program comprehension activities. Inline code comments, as a part of code comments, are also crucial for program comprehension. Recently, the emergence of large language models (LLMs) has significantly boosted the performance of natural language processing tasks. This naturally inspires us to explore the performance of the LLMs in the task of inline code comment generation. To this end, we evaluate open-source LLMs on a large-scale dataset and compare the results with the current state-of-the-art methods. Specifically, we explore the model performance in the following scenarios based on the widely used evaluation metrics (i.e. BLEU, Meteor, and ROUGE-L): (1) generation with simple instruction; (2) few-shot-guided generation with random examples selected from the database; (3) few-shot-guided generation with similar examples selected from the database; and (4) adopt the re-ranking strategy for the output of LLMs. Our findings reveal that: (1) under the simple instruction scenario, LLMs could not fully show the potential in the task of inline comment generation compared to the state-of-the-art models; (2) random few-shot leads to a slight improvement; (3) similar few-shot and re-ranking strategy could significantly enhance the performance of LLMs; and (4) for inline comment and code snippet pairs with different intents, why category achieves the best performance and what category achieves relatively poorer performance. That remains consistent across all four scenarios. Our findings shed light on future research directions for using LLMs in inline comment generation tasks.},
+  archive      = {J_IJSEKE},
+  author       = {Xiaowei Zhang and Zhifei Chen and Yulu Cao and Lin Chen and Yuming Zhou},
+  doi          = {10.1142/S0218194024500050},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {6},
+  pages        = {845-868},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Multi-intent inline code comment generation via large language model},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A novel entity and relation joint interaction learning
+approach for entity alignment. <em>IJSEKE</em>, <em>34</em>(5), 821–843.
+(<a href="https://doi.org/10.1142/S0218194024500049">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Entity alignment (EA) aims to find equivalent entities in knowledge graphs (KGs) from multiple data sources and is a crucial step in integrating KGs. Recent studies learn the similarity of entity embeddings by aggregating neighboring entities. However, these methods solely compare neighboring entities and do not incorporate the connected relation between an entity and its neighbors. In this paper, we propose a novel E ntity and R elation joint I nteraction L earning (ERIL) approach, which effectively captures the interaction between entities and relations, enhancing the precision of alignment across different KGs. Specifically, the ERIL model jointly learns the neighborhood features of entities and the spatial structure of relations to train a shared permutation matrix, capturing comprehensive associative relations within KGs. Moreover, a semi-supervised iterative framework is designed to leverage the positive interactions between entities and relations to identify more aligned entities. Extensive experiments are conducted on five benchmark datasets to demonstrate the effectiveness of ERIL compared with existing state-of-the-art EA methods. On DBP15K, our model ERIL outperforms currently available EA methods by 1.9% on Hits@10.},
+  archive      = {J_IJSEKE},
+  author       = {Di Wu and Tong Li and Yiran Zhao and Junrui Liu and Zifang Tang and Zhen Yang},
+  doi          = {10.1142/S0218194024500049},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {5},
+  pages        = {821-843},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A novel entity and relation joint interaction learning approach for entity alignment},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Sentiment-time heterogeneous residual graph attention
+transformer for session-based recommendation. <em>IJSEKE</em>,
+<em>34</em>(5), 793–820. (<a
+href="https://doi.org/10.1142/S0218194024500037">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Session-Based Recommendation (SBR) systems are facing considerable challenges, with their primary objective being to implement precise recommendations based on users’ historical behavior sequences. Graph Neural Networks (GNNs) have emerged as powerful tools for processing graph-structured data in recommendation systems. Although recent research has advanced in this area, a significant gap remains in the in-depth exploration of transitional relationships between user interests. Additionally, real-world recommendation scenarios typically involve various heterogeneous relationships, which contain a wealth of information that can significantly enhance the learning of user preferences. To address this research gap, in this paper, we introduce a model termed the Sentiment-Time Heterogeneous Residual Graph Attention Transformer (STH-ResGAT), which is designed to capture the dynamic nature of user interests and the complexity inherent in heterogeneous graphs. In STH-ResGAT, we develop a Sentiment-Time-Heterogeneous Graph (STH-Graph) that integrates sentiment and time factors into the edges of the graph structure. Furthermore, the Residual Graph Attention Transformer for Heterogeneous Networks (ResGAT-Het) is designed to manage diverse node and edge types based on the STH-Graph. Extensive experiments are conducted on four widely-used benchmark datasets: Ciao, Yelp, Epinions and LibraryThing. The results demonstrate that our proposed STH-ResGAT method significantly outperforms previous state-of-the-art baseline approaches.The implementation of ResGAT-Het is available in https://github.com/zhangyu2234/ResGAT-Het.git .},
+  archive      = {J_IJSEKE},
+  author       = {Jun Wang and Shuang Zhang},
+  doi          = {10.1142/S0218194024500037},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {5},
+  pages        = {793-820},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Sentiment-time heterogeneous residual graph attention transformer for session-based recommendation},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Modeling and control of drinking water supply
+infrastructures through multi-agent systems for sustainability.
+<em>IJSEKE</em>, <em>34</em>(5), 775–791. (<a
+href="https://doi.org/10.1142/S0218194024500025">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditionally, drinking water supply infrastructures have been designed to store as much water as possible and to do so during the energy cheap hours. This approach is unsustainable today. The use of digital systems capable of modeling the behavior of infrastructures and the creation of intelligent control systems can help to make drinking water supply systems more efficient and effective, while still meeting minimum service requirements. This work proposes the development of a control system, based on multi-agent systems (MAS), capable of generating an intelligent control over a drinking water infrastructure, based on the use of local interests of the agents and with an emergent behavior coherent with the needs. To validate the proposal, a simulator based on the infrastructures of a medium-sized Spanish city of 5000 inhabitants has been built and the control has been simulated using the MAS. The results show how the system can maintain the objectives set, handling unknown situations, and facilitating the development of future physical systems based on a just-in-time paradigm that guarantees sustainability, as it allows the generation of virtualizations of the infrastructures and their behavior, thus being able to study the best option for an infrastructure to resolve a supply situation.},
+  archive      = {J_IJSEKE},
+  author       = {Carlos Calatayud Asensi and José Vicente Berná Martínez and Lucía Arnau Muñoz and Francisco Maciá Pérez},
+  doi          = {10.1142/S0218194024500025},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {5},
+  pages        = {775-791},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Modeling and control of drinking water supply infrastructures through multi-agent systems for sustainability},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Toward pointer-analysis-based vulnerability discovery in
+human–machine pair programming. <em>IJSEKE</em>, <em>34</em>(5),
+751–774. (<a href="https://doi.org/10.1142/S0218194024500013">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pointer analysis is the underlying technique of many static analysis tools for vulnerability discovery. It has proved to be effective in identifying a variety of vulnerabilities, such as buffer overflow vulnerabilities and injection vulnerabilities. However, most existing pointer analysis approaches require whole-program availability, i.e. the program to be analyzed should be complete, which may hinder a timely analysis during the coding phase. In this paper, we present two approaches, exhaustive and demand-driven pointer analyses, both of which are applied to a paradigm known as Human–Machine Pair Programming. The ideas enable us to discover security flaws as early as in the coding phase. In this paper, we describe in detail how our approaches maintain flow sensitivity and propagate points-to and taint information in an incremental fashion. We conduct an evaluation of our approaches on SecuriBench Micro and show that the approaches can capture all the potential vulnerabilities in the test cases, though several false alarms are reported.},
+  archive      = {J_IJSEKE},
+  author       = {Pingyan Wang and Shaoying Liu},
+  doi          = {10.1142/S0218194024500013},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {5},
+  pages        = {751-774},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Toward pointer-analysis-based vulnerability discovery in Human–Machine pair programming},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). EFSP: An enhanced full scrum process model. <em>IJSEKE</em>,
+<em>34</em>(5), 729–749. (<a
+href="https://doi.org/10.1142/S0218194023500699">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Scrum has emerged as the most widely used and desired Agile approach for providing corporate strategic competency by establishing a solid foundation for project management. However, there are several issues confronted during its implementation. Some researchers tried to solve specific areas of Scrum issues except only research that covers several aspects without resolving all of them. So, this study presents the EFSP model for improving maintainability, security and reusability. Methodologically, in this study, we carry out the following tasks: (i) apply Mark or 7C model on requirements, and (ii) identify Scrum aspects (artifacts and/or activities) that should be expanded as follows: adding the concept of systematic reusability into sprint planning, classifying the requirements into four layers according to clean architecture into sprint backlog, and evolutionary model into sprint. This model offers solutions to these problems while maintaining the simplicity and flexibility of Scrum. The system evaluation results have achieved an improvement in maintainability by reducing technical debt from 1.6% to 0.9%, security from 10 to 3, timeliness from 5 to 2, and improving team productivity from 1.24 to 2.78. The EFSP model may be utilized to develop a standard in other projects.},
+  archive      = {J_IJSEKE},
+  author       = {Naglaa A. Eldanasory and Amira M. Idrees and Engy Yehia},
+  doi          = {10.1142/S0218194023500699},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {5},
+  pages        = {729-749},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {EFSP: An enhanced full scrum process model},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Exploring the impact of vocabulary techniques on code
+completion: A comparative approach. <em>IJSEKE</em>, <em>34</em>(5),
+705–727. (<a href="https://doi.org/10.1142/S0218194023500687">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Integrated Development Environments (IDEs) are pivotal in enhancing productivity with features like code completion in modern software development. Recent advancements in Natural Language Processing (NLP) have empowered neural language models for code completion. In this study, we present an extensive investigation of the impact of open and closed vocabulary systems on the task of code completion. Specifically, we compare open and closed vocabulary systems with various vocabulary sizes to observe their impact on code completion performance. We experiment with three different open vocabulary systems: byte pair encoding (BPE), WordPiece and Unigram to compare them with closed-vocabulary systems to analyze their modeling performance. We also conduct experiments with different context sizes to study their impact on code completion performance. We have experimented using various prominent language models, including one from recurrent neural networks and five from transformers. Our results indicate that vocabulary size significantly impacts modeling performance and can artificially boost the accuracy of code completion models, especially in the case of a closed-vocabulary system. Moreover, we find that different vocabulary systems have varying impacts on token coverage, whereas open-vocabulary systems exhibit better token coverage. Our findings offer valuable insights for building effective code completion models, aiding researchers and practitioners in this field.},
+  archive      = {J_IJSEKE},
+  author       = {Yasir Hussain and Zhiqiu Huang and Yu Zhou and Izhar Ahmed Khan},
+  doi          = {10.1142/S0218194023500687},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {5},
+  pages        = {705-727},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Exploring the impact of vocabulary techniques on code completion: A comparative approach},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). SCR-LIBM: A correctly rounded elementary function library in
+double-precision. <em>IJSEKE</em>, <em>34</em>(4), 675–703. (<a
+href="https://doi.org/10.1142/S0218194023500675">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The MPFR and CR-LIBM math libraries are frequently utilized due to their ability to generate correctly rounded results for all double-precision inputs. However, it is worth noting that MPFR has a slower average performance, while CR-LIBM achieves correct rounding over two iterations, rendering it less stable. In addition, CR-LIBM has a poor performance in handling the worst-case of correct rounding. This paper implements a correctly rounded elementary function library called SCR-LIBM in double-precision, which is stable and efficient. Our key idea is to divide subdomains and use the low-degree Taylor polynomial to approximate the elementary function in each subdomain. We simulate the high-precision representation based on the double–double data format, and use the error-free transformation and Double-double algorithm to control the error in the process of polynomial approximation and output compensation. Our approach ensures that the elementary function is correctly rounded, without the need for redundant iterations. The experimental evaluation shows that the average performance of elementary functions implemented in SCR-LIBM is 8.534 times faster than that of MPFR, and 2.492 times faster than that of CR-LIBM when dealing with the worst-case of correct rounding. What’s more, our SCR-LIBM is more stable than CR-LIBM.},
+  archive      = {J_IJSEKE},
+  author       = {Yang Qu and Jinchen Xu and Bei Zhou and Jiangwei Hao and Fei Li and Zuoyan Zhang},
+  doi          = {10.1142/S0218194023500675},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {4},
+  pages        = {675-703},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {SCR-LIBM: A correctly rounded elementary function library in double-precision},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Function-level code obfuscation detection through
+self-attention-guided multi-representation fusion. <em>IJSEKE</em>,
+<em>34</em>(4), 651–673. (<a
+href="https://doi.org/10.1142/S0218194023500663">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Malware developers often employ code obfuscation techniques to conceal their malicious functionality, making it challenging to detect and analyze such software. While various de-obfuscation techniques exist, the majority of them require prior knowledge of the obfuscation tools and techniques in use. Identifying the specific obfuscation tools or algorithms applied to the obfuscated code is thus of vital importance, which, however, typically demands in-depth expert knowledge and substantial efforts. Therefore, this paper presents DeObA, a deep learning (DL) driven approach for the precise and efficient detection of obfuscation algorithms on the fine-grained function-level code snippets. To comprehensively capture unique patterns or features of different obfuscation algorithms from code, DeObA works on multiple distinct code views, encompassing token sequences, abstract syntax trees (AST) and program dependency graphs (PDG), which will reflect the code’s lexical morphology, syntactic and structural aspects. After individually collecting obfuscation-indicative features with well-matched DL encoder from each code view, a self-attention-based fusion strategy is performed on these features to produce an integrated, dense, yet feature-rich vector. This vector is then fed into a softmax classification layer for prediction. Due to the lack of a moderately sized dataset, a large obfuscation corpus is curated with 7 different obfuscation tools and a total of 12 obfuscation algorithms on 39,070 C/C + + functions. The experimental evaluations conducted on the dataset exhibit a distinguished detection performance of DeObA, which achieve accuracy rates of 99.90% and 99.19% on the obfuscation tool detection and obfuscation algorithm detection tasks, respectively. The ablation study also confirms the active role of considering multiple distinct code views and the effectiveness of the designed self-attention-based fusion strategy.},
+  archive      = {J_IJSEKE},
+  author       = {Zhenzhou Tian and Ruikang He and Hongliang Zhao and Lingwei Chen},
+  doi          = {10.1142/S0218194023500663},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {4},
+  pages        = {651-673},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Function-level code obfuscation detection through self-attention-guided multi-representation fusion},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). On the measures of success in replication of controlled
+experiments with STRIDE. <em>IJSEKE</em>, <em>34</em>(4), 623–650. (<a
+href="https://doi.org/10.1142/S0218194023500651">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To avoid costly security patching after software deployment, security-by-design techniques (e.g. threat analysis) are adopted in organizations to find and mitigate security issues before the system is ever implemented. Organizations are ramping up such (heavily manual) activities, but there is a global gap in the security workforce. Favorable performance indicators would result in cost savings for organizations with scarce security experts. However, past empirical studies were inconclusive regarding some performance indicators of threat analysis techniques, thus practitioners have little evidence for choosing the technique to adopt. To address this issue, we replicated a controlled experiment with STRIDE. Our study aimed to measure and compare the performance indicators (productivity and precision) of two STRIDE variants (per-element and per-interaction). Since we made some similar observations to the original study, we conclude that the two approaches are not different enough to make a practical impact. To this end, the choice of which variant to adopt should be informed by the needs of the organization performing threat analysis. We conclude by discussing some of the unexplored yet relevant topic domains in the context of STRIDE that will be considered in future work.},
+  archive      = {J_IJSEKE},
+  author       = {Winnie Mbaka and Katja Tuma},
+  doi          = {10.1142/S0218194023500651},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {4},
+  pages        = {623-650},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {On the measures of success in replication of controlled experiments with STRIDE},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). EFSM model-based testing for android applications.
+<em>IJSEKE</em>, <em>34</em>(4), 597–621. (<a
+href="https://doi.org/10.1142/S0218194023500638">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model-based testing provides an effective means for ensuring the quality of Android apps. Nevertheless, existing models that focus on event sequences and abstract them into Finite State Machines (FSMs) may lack precision and determinism because of the different data values of events that can result in various states of Android applications. To address this issue, a novel model based on Extended Finite State Machines (EFSMs) for Android apps is proposed in this paper. The approach leverages machine learning to infer data constraints on events and annotates them on state transitions, leading to a more precise and deterministic model. Additionally, a state abstraction strategy is presented to further refine the model. Besides, test diversity plays a vital role in enhancing test suite effectiveness. To achieve high coverage and fault detection, test cases are generated from the EFSM model with the help of a Genetic Algorithm (GA), guided by test diversity. To evaluate the effectiveness of our approach, this paper carries out experiments on 93 open-source apps. The results show that our approach performs better in code coverage and crash detection than the existing open-source model-based testing tools. Particularly, the 19 unique crashes that involve complex data constraints are detected by our approach.},
+  archive      = {J_IJSEKE},
+  author       = {Weiwei Wang and Junxia Guo and Beite Li and Ying Shang and Ruilian Zhao},
+  doi          = {10.1142/S0218194023500638},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {4},
+  pages        = {597-621},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {EFSM model-based testing for android applications},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). OdegVul: An approach for statement-level defect prediction.
+<em>IJSEKE</em>, <em>34</em>(4), 569–595. (<a
+href="https://doi.org/10.1142/S0218194023500614">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Defect prediction research has been conducted for more than 40 years, with the goal of estimating the defect-prone blocks of source code. Prior studies, however, had two major limitations: (1) coarse-grained defect prediction results and (2) weak long-term dependencies modeling. As a result, developers need to review the prediction results to figure out which function or even which line of code produced the issue. In this study, we present OdegVul, a novel statement-level defect prediction model, to address these concerns. To capture both semantic and structural relationships between statements, a statement representation framework combining deep learning and graph neural networks is designed. Then the long-term dependencies between statements are encoded as a partial differential equation of a graph neural network. Through the experiment of 32 releases of 9 open-source Java projects, we found that semantic and structural dependencies are crucial to statement-level defect prediction. OdegVul outperforms other state-of-the-art (SOTA) predictors and achieves reasonable performance in cross-project statement-level defect prediction scenarios. The finer granularity of predicting results reduces the developer’s workforce in reviewing the prediction results and increases the practicality of the defect prediction model. The source code of OdegVul is available at https://github.com/CoderYinDaqiang/OdegVul .},
+  archive      = {J_IJSEKE},
+  author       = {Guoqiang Yin and Wei Wang and Haiyan Li},
+  doi          = {10.1142/S0218194023500614},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {4},
+  pages        = {569-595},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {OdegVul: An approach for statement-level defect prediction},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). The allocation scheme of software development budget with
+minimal conflict attributes. <em>IJSEKE</em>, <em>34</em>(4), 545–568.
+(<a href="https://doi.org/10.1142/S0218194023500596">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {During the process of software development, a significant challenge revolves around accurately estimating the associated costs. The primary goal of project managers is to ensure the delivery of a highly trustworthiness product that aligns with the designated budgetary constraints. Nonetheless, the trustworthiness of software hinges upon a range of distinct attributes. When implementing a budget allocation scheme to enhance these attributes, conflicts among them may arise. Thus, it becomes imperative to select an appropriate allocation scheme that effectively mitigates conflict-associated costs. In this paper, we will define the conflict costs and establish costs estimation models. The difficulty coefficient constraint for improving attributes is established. Subsequently, we will analyze the relative importance weights of these attributes. Drawing upon the conflict costs, importance weights, and difficulty coefficient constraint, we present an algorithm to determine an appropriate budget allocation scheme, which can minimize conflict-associated costs. Finally, we provide an illustrative example that demonstrates the practicability of our proposed algorithm. This research offers valuable insights to software managers, aiding them in the reasonable allocation of budgetary resources, thereby maximizing overall benefits.},
+  archive      = {J_IJSEKE},
+  author       = {Yanfang Ma and Wei Zhou},
+  doi          = {10.1142/S0218194023500596},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {4},
+  pages        = {545-568},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {The allocation scheme of software development budget with minimal conflict attributes},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An empirical study on model-agnostic techniques for source
+code-based defect prediction. <em>IJSEKE</em>, <em>34</em>(3), 511–544.
+(<a href="https://doi.org/10.1142/S0218194023500572">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Interpretation is important for adopting software defect prediction in practice. Model-agnostic techniques such as Local Interpretable Model-agnostic Explanation (LIME) can help practitioners understand the factors which contribute to the prediction. They are effective and useful for models constructed on tabular data with traditional features. However, when they are applied on source code-based models, they cannot differentiate the contribution of code tokens in different locations for deep learning-based models with Bag-of-Word features. Besides, only using limited features as explanation may result in information loss about actual riskiness. Such limitations may lead to inaccurate explanation for source code-based models, and make model-agnostic techniques not useful and helpful as expected. Thus, we apply a perturbation-based approach Randomized Input Sampling Explanation (RISE) for source code-based defect prediction. Besides, to fill the gap that there lacks a systematical evaluation on model-agnostic techniques on source code-based defect models, we also conduct an extensive case study on the model-agnostic techniques on both token frequency-based and deep learning-based models. We find that (1) model-agnostic techniques are effective to identify the most important code tokens for an individual prediction and predict defective lines based on the importance scores, (2) using limited features (code tokens) for explanation may result in information loss about actual riskiness, and (3) RISE is more effective than others as it can generate more accurate explanation, achieve better cost-effectiveness for line-level prediction, and result in less information loss about actual riskiness. Based on such findings, we suggest that model-agnostic techniques can be a supplement to file-level source code-based defect models, while such explanations should be used with caution as actual risky tokens may be ignored. Also, compared with LIME, we would recommend RISE for a more effective explanation.},
+  archive      = {J_IJSEKE},
+  author       = {Yi Zhu and Yuxiang Gao and Qiao Yu},
+  doi          = {10.1142/S0218194023500572},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {3},
+  pages        = {511-544},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {An empirical study on model-agnostic techniques for source code-based defect prediction},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). GTFP: Network fault prediction based on graph and time
+series. <em>IJSEKE</em>, <em>34</em>(3), 489–510. (<a
+href="https://doi.org/10.1142/S0218194023500560">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the explosion of 5G network scale, the network structure becomes increasingly complex. During the operation of the network devices, the probability of anomalies or faults increases accordingly. Network faults may lead to the disappearance of important information and cause unpredictable losses. The prediction of network faults can enhance the quality of network services and reduce economic loss. In this paper, we propose the concept of 4D features and use the BERT algorithm to extract semantic features, the graph neural network algorithm to extract network topology information, and the Temporal Convolutional Network (TCN) algorithm to extract time series. Based on this, we propose Fault Prediction based on GraphSage and TCN (GTFP), an end-to-end solution of network fault alarm prediction, which is based on GraphSage and TCN (GTCN), a hybrid algorithm of a graph neural network and the TCN model. Our solution takes the historical alarm data as input. First, we filter out the alarm noises irrelevant to the faults through data cleaning. Then, we employ feature engineering to extract the valid alarm features, including the statistical features of the network alarm information, the semantic features of the alarm texts, the sequential features of the alarms and the network topology features of the nodes where the alarms are located. Finally, we use GTCN to predict future fault alarms based on the extracted features. Experiments on the alarm data of a real service system show that GTFP performs better than the state-of-the-art algorithms of fault alarm prediction.},
+  archive      = {J_IJSEKE},
+  author       = {Zhongliang Li and Junjun Ding and Zongming Ma},
+  doi          = {10.1142/S0218194023500560},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {3},
+  pages        = {489-510},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {GTFP: Network fault prediction based on graph and time series},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A dual decision-making continuous reinforcement learning
+method based on Sim2Real. <em>IJSEKE</em>, <em>34</em>(3), 467–488. (<a
+href="https://doi.org/10.1142/S0218194023500626">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuous reinforcement learning carries potential security risks when applied in real-world scenarios, which could have significant societal implications. While its field of application is expanding, the majority of applications still remain confined to virtual environments. If only a single continuous learning method is applied to an unmanned system, it will still forget previously learned experiences, and retraining will be required when it encounters unknown environments. This reduces the learning efficiency of the unmanned system. To address these issues, some scholars have suggested prioritizing the experience playback pool and using transfer learning to apply previously learned strategies to new environments. However, these methods only alleviate the speed at which the unmanned system forgets its experiences and do not fundamentally solve the problem. Additionally, they cannot prevent dangerous actions and falling into local optima. Therefore, we propose a dual decision-making continuous learning method based on simulation to reality (Sim2Real). This method employs a knowledge body to eliminate the local optimal dilemma, and corrects bad strategies in a timely manner to ensure that the unmanned system makes the best decision every time. Our experimental results demonstrate that our method has a 30% higher success rate than other state-of-the-art methods, and the model transfer to real scenes is still highly effective.},
+  archive      = {J_IJSEKE},
+  author       = {Wenwen Xiao and Xinzhi Wang and Xiangfeng Luo and Shaorong Xie},
+  doi          = {10.1142/S0218194023500626},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {3},
+  pages        = {467-488},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A dual decision-making continuous reinforcement learning method based on Sim2Real},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). MOID: Many-to-one patent graph embedding base infringement
+detection model. <em>IJSEKE</em>, <em>34</em>(3), 449–465. (<a
+href="https://doi.org/10.1142/S0218194023420019">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the increasing number of patent applications over the years, instances of patent infringement cases have become more frequent. However, traditional manual patent infringement detection models are no longer suitable for large-scale infringement detection. Existing automated models mainly focus on detecting one-to-one patent infringements, but neglect the many-to-one scenarios. The many-to-one patent infringement detection model faces some major challenges. First, the diversity of patent domains, complexity of content and ambiguity of features make it difficult to extract and represent patent features. Second, patent infringement detection relies on the correlation between patents and the comparison of contextual information as the key factors, but modeling the process and drawing conclusions present challenges. To address these challenges, we propose a many-to-one patent graph (MPG) embedding base infringement detection model. Our model extracts the relationship between keywords and patents, as well as association relation between keywords from many-to-one patent texts (MPTs), to construct a MPG. We obtain patent infringement features through graph embedding of MPG. By using these embedding features as input, the many-to-one infringement detection (MOID) model outputs the conclusion on whether a patent is infringed or not. The comparative experimental results indicate that our model improves accuracy, precision and F-measure by 3.81%, 11.82% and 5.37%, respectively, when compared to the state-of-the-art method.},
+  archive      = {J_IJSEKE},
+  author       = {Weidong Liu and Fei Li and Senjun Pei and Chunming Cheng},
+  doi          = {10.1142/S0218194023420019},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {3},
+  pages        = {449-465},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {MOID: Many-to-one patent graph embedding base infringement detection model},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Dialogue generation model with hierarchical encoding and
+semantic segmentation of dialogue context. <em>IJSEKE</em>,
+<em>34</em>(3), 427–447. (<a
+href="https://doi.org/10.1142/S0218194024400011">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dialogue generation, as a crucial subtask of dialogue systems, is garnering increasing attention in the field of Natural Language Processing (NLP). The success of dialogue generation relies on effectively utilizing context information to ensure coherent and diverse responses. However, current approaches heavily rely on external sources rather than leveraging the inherent dialogue content. We propose a new approach to address this challenge by introducing semantic segmentation from the field of image processing into NLP. Our contribution lies in the development of a Dialogue Generation model with Hierarchical Encoding and Semantic segmentation of dialogue Context, which is called DGHESC. This model is topic and speaker-aware, capturing the flow of topic and speaker information within the dialogue context using a hierarchical transformer-based framework. Specifically, we extract semantic information at the word-level for each utterance, segment the dialogue context based on topic and speaker semantics, and employ attention mechanisms to model the context at the utterance-level. Experimental results on two open-domain datasets demonstrate the effectiveness of DGHESC. It enhances response quality and achieves state-of-the-art performances on the datasets.},
+  archive      = {J_IJSEKE},
+  author       = {Xiao Wei and Yidian Lin and Qitao Hu},
+  doi          = {10.1142/S0218194024400011},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {3},
+  pages        = {427-447},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Dialogue generation model with hierarchical encoding and semantic segmentation of dialogue context},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Review and application of knowledge graph in crisis
+management. <em>IJSEKE</em>, <em>34</em>(3), 393–425. (<a
+href="https://doi.org/10.1142/S0218194023300038">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the contemporary social environment, social crisis events occur frequently with significant impacts. Effective management of these events requires comprehensive group intention mining, which encompasses intention detection and intention attribution. Knowledge graph inference facilitates the detection of group intention in crisis events. This is supported by the construction of crisis knowledge graphs, which organize crisis elements and inter-element relations into structured semantic information. This paper provides a comprehensive overview of the research about knowledge graph in social crisis management, focusing on three key areas: knowledge graph construction and inference, knowledge graph-based interpretable crisis attribution, and risk management. Specifically, the interpretable semantics in crisis knowledge graphs enables attribution of intention. To illustrate the significance of knowledge graphs in group intention mining, the COVID-19 and China–US game events are selected as two case studies. Finally, the paper proposes future research directions to solve the limitations of existing knowledge graph-related methods in social crises.},
+  archive      = {J_IJSEKE},
+  author       = {Xinzhi Wang and Mengyue Li and Weiwang Chen and Yige Yao and Zhennan Li and Yi Liu and Hui Zhang},
+  doi          = {10.1142/S0218194023300038},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {3},
+  pages        = {393-425},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Review and application of knowledge graph in crisis management},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Guest editor’s introduction — special issue on social
+computing and engineering. <em>IJSEKE</em>, <em>34</em>(3), 391–392. (<a
+href="https://doi.org/10.1142/S0218194024020017">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJSEKE},
+  author       = {Xinzhi Wang},
+  doi          = {10.1142/S0218194024020017},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {3},
+  pages        = {391-392},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Guest editor’s introduction — special issue on social computing and engineering},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). DTester: Diversity-driven test case generation for web
+applications. <em>IJSEKE</em>, <em>34</em>(2), 357–390. (<a
+href="https://doi.org/10.1142/S0218194023500559">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Search-based Test Case Generation (TCG) for web applications suffers from unstable performance and suboptimal test suite problems due to diversity loss. However, previous diversity metrics mainly only focus on client-side models or server-side code, which are prone to low robustness and poor generalization in practical applications. We propose a diversity-driven TCG method DTester, which can maximize behavior exploration and minimize the test suite size while covering more server-side vulnerable paths. Three diversity metrics (i.e. phenotypic coupling , intent coupling and competitiveness ) are proposed to measure the underlying relationship between test cases from user behavior, code logic and test execution history. Moreover, a 3-dimensional weight graph is designed to model association among metrics, which provides fine-grained guidance for the genetic algorithm to generate diverse test cases from the client-side behavior model. Our empirical evaluation on five web applications shows that DTester can efficiently and robustly generate better test suites than the state-of-the-art TCG method. The maximum improvement is 8 5 % , 6 0 % , 7 1 6 % and 8 8 % in efficiency , test suite size , diversity and robustness .},
+  archive      = {J_IJSEKE},
+  author       = {Shumei Wu and Zexing Chang and Zhanwen Zhang and Zheng Li and Yong Liu},
+  doi          = {10.1142/S0218194023500559},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {2},
+  pages        = {357-390},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {DTester: Diversity-driven test case generation for web applications},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). ICG: A machine learning benchmark dataset and baselines for
+inline code comments generation task. <em>IJSEKE</em>, <em>34</em>(2),
+331–356. (<a href="https://doi.org/10.1142/S0218194023500547">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a fundamental component of software documentation, code comments could help developers comprehend and maintain programs. Several datasets of method header comments have been proposed in previous studies for machine learning-based code comment generation. As part of code comments, inline code comments are also crucial for code understanding activities. However, unlike method header comments written in a standard format and describing the whole method code, inline comments are often written in arbitrary formats by developers due to timelines pressures and different aspects of code snippets in the method are described. Currently, there is no large-scale dataset used for inline comments generation considering these. Hence, this naturally inspires us to explore whether we can construct a dataset to foster machine learning research that not only performs fine-grained noise-cleaning but conducts a taxonomy of inline comments. To this end, we first collect inline comments and code snippets from 8000 Java projects on GitHub. Then, we conduct a manual review to obtain heuristic rules, which could be used to clean the data noise in a fine-grained manner. As a result, we construct a large-scale benchmark dataset named ICG with 5,740,770 pairs of inline comments and code snippets. We then build a comprehensive taxonomy and conduct a statistical and manual analysis to explore the performances of different categories of inline comments, such as helpfulness in code understanding. After that, we provide and compare several baseline models to automatically generate inline comments, such as CodeBERT, to enhance the usability of the benchmark for researchers. The availability of our benchmark and baselines can help develop and validate new inline comment generation methods, which would also further facilitate code understanding activities.},
+  archive      = {J_IJSEKE},
+  author       = {Xiaowei Zhang and Lin Chen and Weiqin Zou and Yulu Cao and Hao Ren and Zhi Wang and Yanhui Li and Yuming Zhou},
+  doi          = {10.1142/S0218194023500547},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {2},
+  pages        = {331-356},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {ICG: A machine learning benchmark dataset and baselines for inline code comments generation task},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Formalization and verification of enhanced group
+communication CoAP. <em>IJSEKE</em>, <em>34</em>(2), 301–330. (<a
+href="https://doi.org/10.1142/S0218194023500535">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the flourish of the Internet of Things (IoT), the group communication Constrained Application Protocol (CoAP) emerged at the historic moment, enabling homogeneous devices with constrained computing ability to communicate with ease. CoAP is widely used in transportation, health care and many other aspects. Hence, it is prominent to propose a flexible and efficient architecture for usage in such scenarios and study the data security and consistency of the architecture from the perspective of formal methods. In this paper, we extend the group communication CoAP model to the enhanced group communication CoAP by the introduction of smart gateways and binding to new security suites. We make further improvements to increase the scalability and flexibility of the architecture, making it more applicable in a healthcare scenario or smart home scenario. And we adopt process algebra Communicating Sequential Processes (CSP) with real-time extension to model the enhanced group communication CoAP. We use model checker PAT to verify eight properties of our model on an abstract level, including four basic properties and four security properties. We also conduct a simulation on the local machine for validation of the above properties on a more detailed level. Despite some simplifications of physical properties, both results of the verification and simulation show that the proposed architecture can satisfy those requirements and demonstrate a good possibility of being securely put into service.},
+  archive      = {J_IJSEKE},
+  author       = {Sini Chen and Ran Li and Huibiao Zhu},
+  doi          = {10.1142/S0218194023500535},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {2},
+  pages        = {301-330},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Formalization and verification of enhanced group communication CoAP},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). NNTBFV: Simplifying and verifying neural networks using
+testing-based formal verification. <em>IJSEKE</em>, <em>34</em>(2),
+273–300. (<a href="https://doi.org/10.1142/S0218194023500523">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural networks are extensively employed in safety-critical systems. However, these critical systems incorporating neural networks continue to pose risks due to the presence of adversarial examples. Although the security of neural networks can be enhanced by verification, verifying neural networks is an NP-hard problem, making the application of verification algorithms to large-scale neural networks a challenging task. For this reason, we propose NNTBFV, a framework that utilizes the principles of Testing-Based Formal Verification (TBFV) to simplify neural networks and verify the simplified networks. Unlike conventional neural network pruning techniques, this approach is based on specifications, with the goal of deriving approximate execution paths under given preconditions. To mitigate the potential issue of unverifiable conditions due to overly broad preconditions, we also propose a precondition partition method. Empirical evidence shows that as the range of preconditions narrows, the size of the execution paths also reduces accordingly. The execution path generated by NNTBFV is still a neural network, so it can be verified by verification tools. In response to the results from the verification tool, we provide a theoretical method for analysis. We evaluate the effectiveness of NNTBFV on the ACAS Xu model project, choosing Verification-based and Random-based neural network simplification algorithms as the baselines for NNTBFV. Experiment results show that NNTBFV can effectively approximate the baseline in terms of simplification capability, and it surpasses the efficiency of the random-based method.},
+  archive      = {J_IJSEKE},
+  author       = {Haiyi Liu and Shaoying Liu and Guangquan Xu and Ai Liu and Dingbang Fang},
+  doi          = {10.1142/S0218194023500523},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {2},
+  pages        = {273-300},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {NNTBFV: Simplifying and verifying neural networks using testing-based formal verification},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A business-oriented methodology to evaluate the security of
+software architecture quantitatively. <em>IJSEKE</em>, <em>34</em>(2),
+239–271. (<a href="https://doi.org/10.1142/S0218194023500511">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Software architecture security design is a key stage in developing business-oriented system, such as business-critical system, ICT system and AI system. Many typical accidents also remind us that the security of software architecture even plays a more important role than the code security in most software systems. However, there are very few researches which focus on the security of software architecture. Especially, we don’t find a systematic and feasible quantitative method to evaluate the security of software architecture. To fill this gap, we launched a research project focusing on software architecture security since 2019 and try to provide a series of quantitative methods for evaluating the security of software architecture. In this paper, a business-oriented quantitative method was proposed to evaluate the security of software architecture from the view of business-critical security insurance. In our method, both business dependency graph (BDG) and multi-hierarchical dependency graph (MHDG) are defined and constructed first for describing businesses and their relationships, and system components and their relationships; then, attack points and business key-points are identified and labeled on BDG and MHDG; and further, all potential attack paths and effective attack paths in the system based on MHDG are detected; and finally, a set of security indicators is defined and used to evaluate the security of software architecture quantitatively. For more effective experiments, we use software architectures with different styles and different evolution versions. Experimental results show that our method can reflect effectively the security characteristics of software architecture with different styles, can find the security changes of different architecture evolution versions for the same system, and can perform quantitative evaluation of software architecture security efficiently.},
+  archive      = {J_IJSEKE},
+  author       = {Hao Chen and Shengyang Zhou and Chen Chen and Zheng Dai and Bixin Li},
+  doi          = {10.1142/S0218194023500511},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {2},
+  pages        = {239-271},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A business-oriented methodology to evaluate the security of software architecture quantitatively},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Unifying behavioral and feature modeling for testing of
+software product lines. <em>IJSEKE</em>, <em>34</em>(2), 203–238. (<a
+href="https://doi.org/10.1142/S021819402350050X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing software product line (SPL) engineering testing approaches generally provide positive testing that validates the SPL’s functionality. Negative testing is commonly neglected. This research aims to unify behavioral and feature models of an SPL, enable testing before and after variability binding for domain-centric and product-centric testing, and combine positive and negative testing for a holistic testing view. This study suggests behavioral modeling with event sequence graphs (ESGs). This heterogeneous modeling strategy supports bottom-up domain testing and top-down product testing with the feature model. This new feature-oriented ESG test creation method generates shorter test sequences than the original ESG optimum test sequences. Statechart and original ESG test-generating methods are compared. Positive testing findings are similar. The Statechart technique generated 12 test cases with 59 events, whereas the ESG technique created six test cases with 60 events. The ESG technique generated 205 negative test cases with 858 events with the Test Suite Designer tool. However, the Conformiq Designer tool for the Statechart technique does not have a negative test case generation capability. It is shown that the proposed ESG-based holistic approach confirms not only the desirable (positive) properties but also the undesirable (negative) ones. As an additional research, the traditional ESG test-generating approach is compared to the new feature-oriented method on six SPLs of different sizes and features. Our case study results show that the traditional ESG test generation approach demonstrated higher positive test generation scores compare to the proposed feature-oriented test generation approach. However, our proposed feature-oriented test generation approach is capable of generating shorter test sequences, which could be beneficial for reducing the execution time of test cases compared to traditional ESG approach. Finally, our case study has also shown that regardless of the test generation approach, there has been found no significant difference between the Bottom-up and Top-down test strategies with respect to their positive test generation scores.},
+  archive      = {J_IJSEKE},
+  author       = {Fevzi Belli and Tugkan Tuglular and Ekincan Ufuktepe},
+  doi          = {10.1142/S021819402350050X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {2},
+  pages        = {203-238},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Unifying behavioral and feature modeling for testing of software product lines},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Context-encoded code change representation for automated
+commit message generation. <em>IJSEKE</em>, <em>34</em>(1), 185–202. (<a
+href="https://doi.org/10.1142/S0218194023500493">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Changes in source code are an inevitable part of software development. They are the results of indispensable activities such as fixing bugs or improving functionality. Descriptions for code changes (commit messages) help people better understand the changes. However, due to the lack of motivation and time pressure, writing high-quality commit messages remains reluctantly considered. Several methods have been proposed with the aim of automated commit message generation. However, the existing methods are still limited because they only utilize either the changed codes or the changed codes combined with their surrounding statements. This paper proposes a method to represent code changes by combining the changed codes and the unchanged codes which have program dependence on the changed codes. Specifically, we first create program dependence graphs (PDGs) of source code before and after the change. After that, slices related to the changed code from these PDGs are extracted. These slices are then merged to represent the change. This method overcomes the limitations of current representations while improving the performance of 5/6 of state-of-the-art commit message generation methods by up to 15% in METEOR, 14% in ROUGE-L, and 10% in BLEU-4.},
+  archive      = {J_IJSEKE},
+  author       = {Thanh Trong Vu and Thanh-Dat Do and Hieu Dinh Vo},
+  doi          = {10.1142/S0218194023500493},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {1},
+  pages        = {185-202},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Context-encoded code change representation for automated commit message generation},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Benchmarking whole knowledge graph embedding techniques.
+<em>IJSEKE</em>, <em>34</em>(1), 163–184. (<a
+href="https://doi.org/10.1142/S0218194023500481">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge Graphs (KGs) are gaining popularity and are being widely used in a plethora of applications. They owe their popularity to the fact that KGs are an ideal form to integrate and retrieve data originating from various sources. Using KGs as input for Machine Learning (ML) tasks allows to perform predictions on these popular graph structures. However, KGs cannot directly be used as ML input in their graph representation, they first require to be transformed to a vector space representation through an embedding technique. As ML techniques are data-driven, they can generalize over unseen input data that deviates to some extent from the data they were trained upon. To fully exploit the generalization capabilities of ML algorithms when using embedded KGs as input, small changes in the KGs should also result in small changes in the embedding space. Various embedding techniques for graphs in general exist, however, they have not been tailored towards embedding whole KGs, while KGs can be considered a special kind of graph that adheres to a certain KG schema. This paper evaluates if these existing embedding techniques that embed the whole graphs can represent the similarity between KGs in their embedding space, allowing ML algorithms to generalize over their input. We compare the similarities between KGs in terms of changes in size, entity labels, and KG schema. We found that most techniques were able to represent the similarities in terms of size and entity labels in their embedding space, however, none of the techniques were able to capture the similarities in KG schema.},
+  archive      = {J_IJSEKE},
+  author       = {Pieter Bonte and Sander Vanden Hautte and Filip De Turck and Sofie Van Hoecke and Femke Ongenae},
+  doi          = {10.1142/S0218194023500481},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {1},
+  pages        = {163-184},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Benchmarking whole knowledge graph embedding techniques},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). An extensible modeling method supporting ontology-based
+scenario specification and domain-specific extension. <em>IJSEKE</em>,
+<em>34</em>(1), 91–162. (<a
+href="https://doi.org/10.1142/S021819402350047X">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Scenario-based techniques, also known as scenario methods, have been actively employed to resolve intricate problems for engineering complex software systems. Scenarios are powerful tools that allow engineers to analyze the dynamics and contexts of complex systems. Despite the widespread use, there is a lack of a well-established reference framework that systematically organizes key concepts and attributes of scenarios. This has left engineers without a systematic guidance at the method level, hindering their ability to utilize the scenario methods effectively. To address the challenges associated with scenario methods, this study aims to provide a reference framework and modeling method. By conducting a literature review and suggesting a Conceptual Scenario Framework (CSF), we establish a conceptual basis that systematically presents the core concepts and characteristics of scenarios. Additionally, we introduce the Extensible Scenario Modeling Method (ESMM) that empowers engineers to perform scenario modeling and domain-specific extensions using the framework. With the inclusion of the Extensible Scenario Modeling Language (ESML), which comprises domain-general model types and classes for scenario description and ontological analysis, ESMM facilitates flexible design of domain-specific scenario elements through language-level extensions. This study assesses the proposed method in comparison to existing scenario development methods in the automated driving system domain. Through an analysis of their ability to represent scenario data, it was established that the language constructs of ESML possess semantic expressiveness suitable for serving as a reference framework. Furthermore, the findings from the case study validate the extensibility of ESMM for specialization in creating a scenario modeling language tailored to specific domains, while also effectively supporting the ontological analysis of particular application domains.},
+  archive      = {J_IJSEKE},
+  author       = {Young-Min Baek and Esther Cho and Donghwan Shin and Doo-Hwan Bae},
+  doi          = {10.1142/S021819402350047X},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {1},
+  pages        = {91-162},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {An extensible modeling method supporting ontology-based scenario specification and domain-specific extension},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A modeling and verification method of cyber-physical systems
+based on AADL and process algebra. <em>IJSEKE</em>, <em>34</em>(1),
+49–89. (<a href="https://doi.org/10.1142/S0218194023500468">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cyber-Physical Systems (CPS) are the next generation of intelligent systems that integrate information control devices with physical resources. With increasingly close connections between CPS components and frequent interactions, potential defects grow exponentially, rendering the operating environment of CPS unreliable. Therefore, research on methods and theories to ensure the correctness, safety and reliability of CPS is not only an important research topic but also an inevitable challenge. In this paper, we propose a CPS modeling and verification method based on Architecture Analysis &amp; Design Language (AADL) and process algebra to address this challenge. Due to the continuous, time-constrained, stochastic, uncertain and concurrent characteristics of CPS, this paper considers both flexibility and rigor in the modeling process. We first extend the ability of AADL to describe the multiple characteristics of CPS and propose Hybrid Probability-AADL (HP-AADL). Second, this paper introduces conditional execution, conditional interruption and probability operators into Temporal Calculus of Communication Systems (TCCS) and designs a new formal modeling language Hybrid Probability-Temporal Calculus of Communication Systems (HP-TCCS). However, HP-AADL is a semi-formal modeling language that cannot be directly used for formal verification, it cannot strictly guarantee the quality of the established CPS models, including its functional correctness and safety. Therefore, this paper proposes transformation rules from HP-AADL to HP-TCCS, which enables model checking of CPS models described in HP-AADL within HP-TCCS. Additionally, this paper designs a new formal specification language HPAT-Spatial Temporal Logic (HPAT-STL) based on Probabilistic Computation Tree Logic (PCTL) and Spatial Logic, which characterizes the temporal, probabilistic and spatial properties of CPS model. To achieve formal verification of HP-TCCS model and HPAT-STL formulas, this paper proposes a model checking algorithm HPAT-Model Checking Algorithm (HPAT-MCA). Finally, we discuss a typical CPS example to demonstrate the effectiveness of our proposed method in ensuring correct, safe and reliable CPS.},
+  archive      = {J_IJSEKE},
+  author       = {Zhen Li and Zining Cao and Fujun Wang and Chao Xing},
+  doi          = {10.1142/S0218194023500468},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {1},
+  pages        = {49-89},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {A modeling and verification method of cyber-physical systems based on AADL and process algebra},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Specifying requirements for modern software development: A
+test-oriented methodology. <em>IJSEKE</em>, <em>34</em>(1), 27–48. (<a
+href="https://doi.org/10.1142/S0218194023500407">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Most modern computer systems operate in distributed environments. To develop and test such applications, services, and systems, it is necessary to consider the physical devices, architectures, communication, security and deployment mechanisms involved. However, the requirements’ specification process still replicates that of traditional applications: details remain implicit and are hidden in the description. As a result, specifications are difficult to identify and, ultimately, tests are designed in the traditional way: they overlook constraints and fail to achieve the desired effects. Our objective is to design a methodology for specifying requirements in both traditional software and applications deployed in distributed environments. We present an iterative and incremental requirements specification methodology. This methodology allows us to describe functional requirements and incorporate non-functional or quality constraints, which is the main contribution of this proposal. To ensure that quality requirements are specified during the design phase, the methodology proposes a series of phases, stages and artefacts that ensure the discovery and consideration of these requirements. In order to find out the strengths and weaknesses of our methodology, we have carried out a comparative study with other similar proposals in the literature. To this end, evaluation criteria were defined by considering standards and good practices in Requirements Engineering. The results of the comparative study show that our methodology constitutes a solid procedure for a detailed requirements specification from the beginning of the software development cycle. This represents an advance over the rest of the proposals studied. Our methodology contributes to the simplification of the design and execution phases of software testing, enabling traceability between the specified requirements and the designed test cases.},
+  archive      = {J_IJSEKE},
+  author       = {Alejandro Miguel Güemes Esperón and Francisco Maciá Pérez and José Vicente Berna Martínez and Martha Dunia Delgado Dapena and Iren Lorenzo Fonseca},
+  doi          = {10.1142/S0218194023500407},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {1},
+  pages        = {27-48},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Specifying requirements for modern software development: A test-oriented methodology},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Towards exogenous coordination of concurrent cloud
+applications. <em>IJSEKE</em>, <em>34</em>(1), 1–25. (<a
+href="https://doi.org/10.1142/S0218194023500389">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud computing offers opportunities to increase productivity and reduce costs. Quickly adapting to changing needs is key to maintaining cloud applications. In traditional development, coordination is implemented in computational code. Although change impact analyses are studied, adjusting the implementation is time-consuming and error-prone when the coordination strategy changes. Exogenous coordination separates the implemented coordination and computational code to cope with this problem. This separation improves the reusability of components. Additionally, other applications with similar interaction patterns can reuse the coordination specification. The main contribution of this paper is to propose a methodology to develop and maintain cloud applications following the exogenous approach. To illustrate the idea, we introduce a new framework named OCCIwareBIP, which integrates JavaBIP — a framework for the exogenous coordination of concurrent Java components into OCCIware — a framework for designing cloud applications. We also leverage the coordination model to verify the deadlock-freedom of the cloud application. Finally, we present an application to show the ability of our approach to guarantee the safety and benefits of modularization in developing concurrent cloud applications.},
+  archive      = {J_IJSEKE},
+  author       = {Trinh Le-Khanh and Hoang-Gia Nguyen and Simon Bliudze and Philippe Merle},
+  doi          = {10.1142/S0218194023500389},
+  journal      = {International Journal of Software Engineering and Knowledge Engineering},
+  number       = {1},
+  pages        = {1-25},
+  shortjournal = {Int. J. Soft. Eng. Knowl. Eng.},
+  title        = {Towards exogenous coordination of concurrent cloud applications},
+  volume       = {34},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

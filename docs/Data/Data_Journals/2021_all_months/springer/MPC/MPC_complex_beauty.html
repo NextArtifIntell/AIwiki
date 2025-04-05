@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MPC_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mpc---20">MPC - 20</h2>
+<ul>
+<li><details>
+<summary>
+(2021). Computational aspects of infeasibility analysis in mixed
+integer programming. <em>MPC</em>, <em>13</em>(4), 753–785. (<a
+href="https://doi.org/10.1007/s12532-021-00202-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The analysis of infeasible subproblems plays an important role in solving mixed integer programs (MIPs) and is implemented in most major MIP solvers. There are two fundamentally different concepts to generate valid global constraints from infeasible subproblems: conflict graph analysis and dual proof analysis. While conflict graph analysis detects sets of contradicting variable bounds in an implication graph, dual proof analysis derives valid linear constraints from the proof of the dual LP’s unboundedness. The main contribution of this paper is twofold. Firstly, we present three enhancements of dual proof analysis: presolving via variable cancellation, strengthening by applying mixed integer rounding functions, and a filtering mechanism. Further, we provide a comprehensive computational study evaluating the impact of every presented component regarding dual proof analysis. Secondly, this paper presents the first combined approach that uses both conflict graph and dual proof analysis simultaneously within a single MIP solution process. All experiments are carried out on general MIP instances from the standard public test set Miplib  2017; the presented algorithms have been implemented within the non-commercial MIP solver SCIP and the commercial MIP solver FICO Xpress.},
+  archive      = {J_MPC},
+  author       = {Witzig, Jakob and Berthold, Timo and Heinz, Stefan},
+  doi          = {10.1007/s12532-021-00202-0},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {753-785},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Computational aspects of infeasibility analysis in mixed integer programming},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A stochastic approximation method for approximating the
+efficient frontier of chance-constrained nonlinear programs.
+<em>MPC</em>, <em>13</em>(4), 705–751. (<a
+href="https://doi.org/10.1007/s12532-020-00199-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a stochastic approximation method for approximating the efficient frontier of chance-constrained nonlinear programs. Our approach is based on a bi-objective viewpoint of chance-constrained programs that seeks solutions on the efficient frontier of optimal objective value versus risk of constraints violation. To this end, we construct a reformulated problem whose objective is to minimize the probability of constraints violation subject to deterministic convex constraints (which includes a bound on the objective function value). We adapt existing smoothing-based approaches for chance-constrained problems to derive a convergent sequence of smooth approximations of our reformulated problem, and apply a projected stochastic subgradient algorithm to solve it. In contrast with exterior sampling-based approaches (such as sample average approximation) that approximate the original chance-constrained program with one having finite support, our proposal converges to stationary solutions of a smooth approximation of the original problem, thereby avoiding poor local solutions that may be an artefact of a fixed sample. Our proposal also includes a tailored implementation of the smoothing-based approach that chooses key algorithmic parameters based on problem data. Computational results on four test problems from the literature indicate that our proposed approach can efficiently determine good approximations of the efficient frontier.},
+  archive      = {J_MPC},
+  author       = {Kannan, Rohit and Luedtke, James R.},
+  doi          = {10.1007/s12532-020-00199-y},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {705-751},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A stochastic approximation method for approximating the efficient frontier of chance-constrained nonlinear programs},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Benders decomposition with adaptive oracles for large scale
+optimization. <em>MPC</em>, <em>13</em>(4), 683–703. (<a
+href="https://doi.org/10.1007/s12532-020-00197-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes an algorithm to efficiently solve large optimization problems which exhibit a column bounded block-diagonal structure, where subproblems differ in right-hand side and cost coefficients. Similar problems are often tackled using cutting-plane algorithms, which allow for an iterative and decomposed solution of the problem. When solving subproblems is computationally expensive and the set of subproblems is large, cutting-plane algorithms may slow down severely. In this context we propose two novel adaptive oracles that yield inexact information, potentially much faster than solving the subproblem. The first adaptive oracle is used to generate inexact but valid cutting planes, and the second adaptive oracle gives a valid upper bound of the true optimal objective. These two oracles progressively “adapt” towards the true exact oracle if provided with an increasing number of exact solutions, stored throughout the iterations. These adaptive oracles are embedded within a Benders-type algorithm able to handle inexact information. We compare the Benders with adaptive oracles against a standard Benders algorithm on a stochastic investment planning problem. The proposed algorithm shows the capability to substantially reduce the computational effort to obtain an $$\epsilon $$ -optimal solution: an illustrative case is 31.9 times faster for a $$1.00\%$$ convergence tolerance and 15.4 times faster for a $$0.01\%$$ tolerance.},
+  archive      = {J_MPC},
+  author       = {Mazzi, Nicolò and Grothey, Andreas and McKinnon, Ken and Sugishita, Nagisa},
+  doi          = {10.1007/s12532-020-00197-0},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {683-703},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Benders decomposition with adaptive oracles for large scale optimization},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A benders squared ( <span
+class="math display"><em>B</em><sup>2</sup></span> ) framework for
+infinite-horizon stochastic linear programs. <em>MPC</em>,
+<em>13</em>(4), 645–681. (<a
+href="https://doi.org/10.1007/s12532-020-00195-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a nested decomposition scheme for infinite-horizon stochastic linear programs. Our approach can be seen as a provably convergent extension of stochastic dual dynamic programming to the infinite-horizon setting: we explore a sequence of finite-horizon problems of increasing length until we can guarantee convergence with a given confidence level. The methodology alternates between a forward pass to explore sample paths and determine trial solutions, and a backward pass to generate a polyhedral approximation of the optimal value function by computing subgradients from the dual of the scenario subproblems. A computational study on a large set of randomly generated instances for two classes of problems shows that the proposed algorithm is able to effectively solve instances of moderate size to high precision, provided that the instance structure allows the construction of what we call constant-statepolicies with satisfactory objective function value.},
+  archive      = {J_MPC},
+  author       = {Nannicini, Giacomo and Traversi, Emiliano and Calvo, Roberto Wolfler},
+  doi          = {10.1007/s12532-020-00195-2},
+  journal      = {Mathematical Programming Computation},
+  number       = {4},
+  pages        = {645-681},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A benders squared ( $$B^2$$ ) framework for infinite-horizon stochastic linear programs},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). An inexact proximal augmented lagrangian framework with
+arbitrary linearly convergent inner solver for composite convex
+optimization. <em>MPC</em>, <em>13</em>(3), 583–644. (<a
+href="https://doi.org/10.1007/s12532-021-00205-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose an inexact proximal augmented Lagrangian framework with explicit inner problem termination rule for composite convex optimization problems. We consider arbitrary linearly convergent inner solver including in particular stochastic algorithms, making the resulting framework more scalable facing the ever-increasing problem dimension. Each subproblem is solved inexactly with an explicit and self-adaptive stopping criterion, without requiring to set an a priori target accuracy. When the primal and dual domain are bounded, our method achieves $$O(1/\sqrt{\epsilon })$$ and $$O(1/{\epsilon })$$ complexity bound in terms of number of inner solver iterations, respectively for the strongly convex and non-strongly convex case. Without the boundedness assumption, only logarithm terms need to be added and the above two complexity bounds increase respectively to $${\tilde{O}}(1/\sqrt{\epsilon })$$ and $${\tilde{O}}(1/{\epsilon })$$ , which hold both for obtaining $$\epsilon $$ -optimal and $$\epsilon $$ -KKT solution. Within the general framework that we propose, we also obtain $${\tilde{O}}(1/{\epsilon })$$ and $${\tilde{O}}(1/{\epsilon ^2})$$ complexity bounds under relative smoothness assumption on the differentiable component of the objective function. We show through theoretical analysis as well as numerical experiments the computational speedup possibly achieved by the use of randomized inner solvers for large-scale problems.},
+  archive      = {J_MPC},
+  author       = {Li, Fei and Qu, Zheng},
+  doi          = {10.1007/s12532-021-00205-x},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {583-644},
+  shortjournal = {Math. Program. Comput.},
+  title        = {An inexact proximal augmented lagrangian framework with arbitrary linearly convergent inner solver for composite convex optimization},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Deterministic global optimization with gaussian processes
+embedded. <em>MPC</em>, <em>13</em>(3), 553–581. (<a
+href="https://doi.org/10.1007/s12532-021-00204-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gaussian processes (Kriging) are interpolating data-driven models that are frequently applied in various disciplines. Often, Gaussian processes are trained on datasets and are subsequently embedded as surrogate models in optimization problems. These optimization problems are nonconvex and global optimization is desired. However, previous literature observed computational burdens limiting deterministic global optimization to Gaussian processes trained on few data points. We propose a reduced-space formulation for deterministic global optimization with trained Gaussian processes embedded. For optimization, the branch-and-bound solver branches only on the free variables and McCormick relaxations are propagated through explicit Gaussian process models. The approach also leads to significantly smaller and computationally cheaper subproblems for lower and upper bounding. To further accelerate convergence, we derive envelopes of common covariance functions for GPs and tight relaxations of acquisition functions used in Bayesian optimization including expected improvement, probability of improvement, and lower confidence bound. In total, we reduce computational time by orders of magnitude compared to state-of-the-art methods, thus overcoming previous computational burdens. We demonstrate the performance and scaling of the proposed method and apply it to Bayesian optimization with global optimization of the acquisition function and chance-constrained programming. The Gaussian process models, acquisition functions, and training scripts are available open-source within the “MeLOn—Machine Learning Models for Optimization” toolbox ( https://git.rwth-aachen.de/avt.svt/public/MeLOn ).},
+  archive      = {J_MPC},
+  author       = {Schweidtmann, Artur M. and Bongartz, Dominik and Grothe, Daniel and Kerkenhoff, Tim and Lin, Xiaopeng and Najman, Jaromił and Mitsos, Alexander},
+  doi          = {10.1007/s12532-021-00204-y},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {553-581},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Deterministic global optimization with gaussian processes embedded},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Design and implementation of a modular interior-point solver
+for linear optimization. <em>MPC</em>, <em>13</em>(3), 509–551. (<a
+href="https://doi.org/10.1007/s12532-020-00200-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces the algorithmic design and implementation of Tulip, an open-source interior-point solver for linear optimization. It implements a regularized homogeneous interior-point algorithm with multiple centrality corrections, and therefore handles unbounded and infeasible problems. The solver is written in Julia, thus allowing for a flexible and efficient implementation: Tulip’s algorithmic framework is fully disentangled from linear algebra implementations and from a model’s arithmetic. In particular, this allows to seamlessly integrate specialized routines for structured problems. Extensive computational results are reported. We find that Tulip is competitive with open-source interior-point solvers on the H. Mittelmann’s benchmark of barrier linear programming solvers. Furthermore, we design specialized linear algebra routines for structured master problems in the context of Dantzig–Wolfe decomposition. These routines yield a tenfold speedup on large and dense instances that arise in power systems operation and two-stage stochastic programming, thereby outperforming state-of-the-art commercial interior point method solvers. Finally, we illustrate Tulip’s ability to use different levels of arithmetic precision by solving problems in extended precision.},
+  archive      = {J_MPC},
+  author       = {Tanneau, Mathieu and Anjos, Miguel F. and Lodi, Andrea},
+  doi          = {10.1007/s12532-020-00200-8},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {509-551},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Design and implementation of a modular interior-point solver for linear optimization},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A triangulation and fill-reducing initialization procedure
+for the simplex algorithm. <em>MPC</em>, <em>13</em>(3), 491–508. (<a
+href="https://doi.org/10.1007/s12532-020-00188-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The computation of an initial basis is of great importance for simplex algorithms since it determines to a large extent the number of iterations and the computational effort needed to solve linear programs. We propose three algorithms that aim to construct an initial basis that is sparse and will reduce the fill-in and computational effort during LU factorization and updates that are utilized in modern simplex implementations. The algorithms rely on triangulation and fill-reducing ordering techniques that are invoked prior to LU factorization. We compare the performance of the CPLEX 12.6.1 primal and dual simplex algorithms using the proposed starting bases against CPLEX using its default crash procedure over a set of 95 large benchmarks (NETLIB, Kennington, Mészáros, Mittelmann). The best proposed algorithm utilizes METIS (Karypis and Kumar in SIAM J Sci Comput 20:359–392, 1998), produces remarkably sparse starting bases, and results in 5\% reduction of the geometric mean of the execution time of CPLEX’s primal simplex algorithm. Although the proposed algorithm improves CPLEX’s primal simplex algorithm across all problem types studied in this paper, it performs better on hard problems, i.e., the instances for which the CPLEX default requires over 1000 s. For these problems, the proposed algorithm results in 37\% reduction of the geometric mean of the execution time of CPLEX’s primal simplex algorithm. The proposed algorithm also reduces the execution time of CPLEX’s dual simplex on hard instances by 10\%. For the instances that are most difficult for CPLEX, and for which CPLEX experiences numerical difficulties as it approaches the optimal solution, the best proposed algorithm speeds up CPLEX by more than 10 times. Finally, the proposed algorithms lead to a natural way to parallelize CPLEX with speedups over CPLEX’s dual simplex of 1.2 and 1.3 on two and four cores, respectively.},
+  archive      = {J_MPC},
+  author       = {Ploskas, Nikolaos and Sahinidis, Nikolaos V. and Samaras, Nikolaos},
+  doi          = {10.1007/s12532-020-00188-1},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {491-508},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A triangulation and fill-reducing initialization procedure for the simplex algorithm},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). MIPLIB 2017: Data-driven compilation of the 6th
+mixed-integer programming library. <em>MPC</em>, <em>13</em>(3),
+443–490. (<a href="https://doi.org/10.1007/s12532-020-00194-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We report on the selection process leading to the sixth version of the Mixed Integer Programming Library, MIPLIB 2017. Selected from an initial pool of 5721 instances, the new MIPLIB 2017 collection consists of 1065 instances. A subset of 240 instances was specially selected for benchmarking solver performance. For the first time, these sets were compiled using a data-driven selection process supported by the solution of a sequence of mixed integer optimization problems, which encode requirements on diversity and balancedness with respect to instance features and performance data.},
+  archive      = {J_MPC},
+  author       = {Gleixner, Ambros and Hendel, Gregor and Gamrath, Gerald and Achterberg, Tobias and Bastubbe, Michael and Berthold, Timo and Christophel, Philipp and Jarck, Kati and Koch, Thorsten and Linderoth, Jeff and Lübbecke, Marco and Mittelmann, Hans D. and Ozyurt, Derya and Ralphs, Ted K. and Salvagnin, Domenico and Shinano, Yuji},
+  doi          = {10.1007/s12532-020-00194-3},
+  journal      = {Mathematical Programming Computation},
+  number       = {3},
+  pages        = {443-490},
+  shortjournal = {Math. Program. Comput.},
+  title        = {MIPLIB 2017: Data-driven compilation of the 6th mixed-integer programming library},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Polytope volume by descent in the face lattice and
+applications in social choice. <em>MPC</em>, <em>13</em>(2), 415–442.
+(<a href="https://doi.org/10.1007/s12532-020-00198-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We describe the computation of polytope volumes by descent in the face lattice, its implementation in Normaliz, and the connection to reverse-lexicographic triangulations. The efficiency of the algorithm is demonstrated by several high dimensional polytopes of different characteristics. Finally, we present an application to voting theory where polytope volumes appear as probabilities of certain paradoxa.},
+  archive      = {J_MPC},
+  author       = {Bruns, Winfried and Ichim, Bogdan},
+  doi          = {10.1007/s12532-020-00198-z},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {415-442},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Polytope volume by descent in the face lattice and applications in social choice},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Managing randomization in the multi-block alternating
+direction method of multipliers for quadratic optimization.
+<em>MPC</em>, <em>13</em>(2), 339–413. (<a
+href="https://doi.org/10.1007/s12532-020-00192-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Alternating Direction Method of Multipliers (ADMM) has gained a lot of attention for solving large-scale and objective-separable constrained optimization. However, the two-block variable structure of the ADMM still limits the practical computational efficiency of the method, because one big matrix factorization is needed at least once even for linear and convex quadratic programming. This drawback may be overcome by enforcing a multi-block structure of the decision variables in the original optimization problem. Unfortunately, the multi-block ADMM, with more than two blocks, is not guaranteed to be convergent. On the other hand, two positive developments have been made: first, if in each cyclic loop one randomly permutes the updating order of the multiple blocks, then the method converges in expectation for solving any system of linear equations with any number of blocks. Secondly, such a randomly permuted ADMM also works for equality-constrained convex quadratic programming even when the objective function is not separable. The goal of this paper is twofold. First, we add more randomness into the ADMM by developing a randomly assembled cyclic ADMM (RAC-ADMM) where the decision variables in each block are randomly assembled. We discuss the theoretical properties of RAC-ADMM and show when random assembling helps and when it hurts, and develop a criterion to guarantee that it converges almost surely. Secondly, using the theoretical guidance on RAC-ADMM, we conduct multiple numerical tests on solving both randomly generated and large-scale benchmark quadratic optimization problems, which include continuous, and binary graph-partition and quadratic assignment, and selected machine learning problems. Our numerical tests show that the RAC-ADMM, with a variable-grouping strategy, could significantly improve the computation efficiency on solving most quadratic optimization problems.},
+  archive      = {J_MPC},
+  author       = {Mihić, Krešimir and Zhu, Mingxi and Ye, Yinyu},
+  doi          = {10.1007/s12532-020-00192-5},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {339-413},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Managing randomization in the multi-block alternating direction method of multipliers for quadratic optimization},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Minotaur: A mixed-integer nonlinear optimization toolkit.
+<em>MPC</em>, <em>13</em>(2), 301–338. (<a
+href="https://doi.org/10.1007/s12532-020-00196-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a flexible framework for general mixed-integer nonlinear programming (MINLP), called Minotaur, that enables both algorithm exploration and structure exploitation without compromising computational efficiency. This paper documents the concepts and classes in our framework and shows that our implementations of standard MINLP techniques are efficient compared with other state-of-the-art solvers. We then describe structure-exploiting extensions that we implement in our framework and demonstrate their impact on solution times. Without a flexible framework that enables structure exploitation, finding global solutions to difficult nonconvex MINLP problems will remain out of reach for many applications.},
+  archive      = {J_MPC},
+  author       = {Mahajan, Ashutosh and Leyffer, Sven and Linderoth, Jeff and Luedtke, James and Munson, Todd},
+  doi          = {10.1007/s12532-020-00196-1},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {301-338},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Minotaur: A mixed-integer nonlinear optimization toolkit},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021a). Publisher correction to: Signomial and polynomial
+optimization via relative entropy and partial dualization. <em>MPC</em>,
+<em>13</em>(2), 297–299. (<a
+href="https://doi.org/10.1007/s12532-021-00201-1">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the original publication of the article, the reference list in the pdf version has been published with an error.},
+  archive      = {J_MPC},
+  author       = {Murray, Riley and Chandrasekaran, Venkat and Wierman, Adam},
+  doi          = {10.1007/s12532-021-00201-1},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {297-299},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Publisher correction to: Signomial and polynomial optimization via relative entropy and partial dualization},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021b). Signomial and polynomial optimization via relative entropy
+and partial dualization. <em>MPC</em>, <em>13</em>(2), 257–295. (<a
+href="https://doi.org/10.1007/s12532-020-00193-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We describe a generalization of the Sums-of-AM/GM-Exponential (SAGE) methodology for relative entropy relaxations of constrained signomial and polynomial optimization problems. Our approach leverages the fact that SAGE certificates conveniently and transparently blend with convex duality, in a way which enables partial dualization of certain structured constraints. This more general approach retains key properties of ordinary SAGE relaxations (e.g. sparsity preservation), and inspires a projective method of solution recovery which respects partial dualization. We illustrate the utility of our methodology with a range of examples from the global optimization literature, along with a publicly available software package.},
+  archive      = {J_MPC},
+  author       = {Murray, Riley and Chandrasekaran, Venkat and Wierman, Adam},
+  doi          = {10.1007/s12532-020-00193-4},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {257-295},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Signomial and polynomial optimization via relative entropy and partial dualization},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Incorporating bounds from decision diagrams into integer
+programming. <em>MPC</em>, <em>13</em>(2), 225–256. (<a
+href="https://doi.org/10.1007/s12532-020-00191-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decision diagrams have been successfully used to help solve several classes of discrete optimization problems. We explore an approach to incorporate them into integer programming solvers, motivated by the wide adoption of integer programming technology in practice. The main challenge is to map generic integer programming models to a recursive structure that is suitable for decision diagram compilation. We propose a framework that opportunistically constructs decision diagrams for suitable substructures, if present. In particular, we explore the use of a prevalent substructure in integer programming solvers known as the conflict graph, which we show to be amenable to decision diagrams. We use Lagrangian relaxation and constraint propagation to consider constraints that are not represented directly by the substructure. We use the decision diagrams to generate dual and primal bounds to improve the pruning process of the branch-and-bound tree of the solver. Computational results on the independent set problem with side constraints indicate that our approach can provide substantial speedups when conflict graphs are present.},
+  archive      = {J_MPC},
+  author       = {Tjandraatmadja, Christian and van Hoeve, Willem-Jan},
+  doi          = {10.1007/s12532-020-00191-6},
+  journal      = {Mathematical Programming Computation},
+  number       = {2},
+  pages        = {225-256},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Incorporating bounds from decision diagrams into integer programming},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A column and constraint generation algorithm for the dynamic
+knapsack problem with stochastic item sizes. <em>MPC</em>,
+<em>13</em>(1), 185–223. (<a
+href="https://doi.org/10.1007/s12532-020-00189-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a version of the knapsack problem in which an item size is random and revealed only when the decision maker attempts to insert it. After every successful insertion the decision maker can choose the next item dynamically based on the remaining capacity and available items, while an unsuccessful insertion terminates the process. We propose an exact algorithm based on a reformulation of the value function linear program, which dynamically prices variables to refine a value function approximation and generates cutting planes to maintain a dual bound. We provide a detailed analysis of the zero-capacity case, in which the knapsack capacity is zero, and all item sizes have positive probability of equaling zero. We also provide theoretical properties of the general algorithm and an extensive computational study. Our main empirical conclusion is that the algorithm is able to significantly reduce the gap when initial bounds and/or heuristic policies perform poorly.},
+  archive      = {J_MPC},
+  author       = {Blado, Daniel and Toriello, Alejandro},
+  doi          = {10.1007/s12532-020-00189-0},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {185-223},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A column and constraint generation algorithm for the dynamic knapsack problem with stochastic item sizes},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). MiniCP: A lightweight solver for constraint programming.
+<em>MPC</em>, <em>13</em>(1), 133–184. (<a
+href="https://doi.org/10.1007/s12532-020-00190-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces MiniCP, a lightweight, open-source solver for constraint programming. MiniCP is motivated by educational purposes and the desire to provide the core implementation of a constraint-programming solver for students in computer science and industrial engineering. The design of MiniCP provides a one-to-one mapping between the theoretical and implementation concepts and its compositional abstractions favor extensibility and flexibility. MiniCP obviously does not support all available constraint-programming features and implementation techniques, but these could be implemented as future extensions or exploratory projects. MiniCP also comes with a full set of exercises, unit tests, and development projects.},
+  archive      = {J_MPC},
+  author       = {Michel, L. and Schaus, P. and Van Hentenryck, P.},
+  doi          = {10.1007/s12532-020-00190-7},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {133-184},
+  shortjournal = {Math. Program. Comput.},
+  title        = {MiniCP: A lightweight solver for constraint programming},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Mixed-integer programming techniques for the connected
+max-k-cut problem. <em>MPC</em>, <em>13</em>(1), 75–132. (<a
+href="https://doi.org/10.1007/s12532-020-00186-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider an extended version of the classical Max- $$k$$ -Cut problem in which we additionally require that the parts of the graph partition are connected. For this problem we study two alternative mixed-integer linear formulations and review existing as well as develop new branch-and-cut techniques like cuts, branching rules, propagation, primal heuristics, and symmetry breaking. The main focus of this paper is an extensive numerical study in which we analyze the impact of the different techniques for various test sets. It turns out that the techniques from the existing literature are not sufficient to solve an adequate fraction of the test sets. However, our novel techniques significantly outperform the existing ones both in terms of running times and the overall number of instances that can be solved.},
+  archive      = {J_MPC},
+  author       = {Hojny, Christopher and Joormann, Imke and Lüthen, Hendrik and Schmidt, Martin},
+  doi          = {10.1007/s12532-020-00186-3},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {75-132},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Mixed-integer programming techniques for the connected max-k-cut problem},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Hard to solve instances of the euclidean traveling salesman
+problem. <em>MPC</em>, <em>13</em>(1), 51–74. (<a
+href="https://doi.org/10.1007/s12532-020-00184-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The well known 4/3 conjecture states that the integrality ratio of the subtour LP is at most 4/3 for metric Traveling Salesman instances. We present a family of Euclidean Traveling Salesman instances for which we prove that the integrality ratio of the subtour LP converges to 4/3. These instances (using the rounded Euclidean norm) turn out to be hard to solve exactly with Concorde, the fastest existing exact TSP solver. For a 200 vertex instance from our family of Euclidean Traveling Salesman instances Concorde needs several days of CPU time. This is more than 1,000,000 times more runtime than for a TSPLIB instance of similar size. Thus our new family of Euclidean Traveling Salesman instances may serve as new benchmark instances for TSP algorithms.},
+  archive      = {J_MPC},
+  author       = {Hougardy, Stefan and Zhong, Xianghui},
+  doi          = {10.1007/s12532-020-00184-5},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {51-74},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Hard to solve instances of the euclidean traveling salesman problem},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Asynchronous lagrangian scenario decomposition.
+<em>MPC</em>, <em>13</em>(1), 1–50. (<a
+href="https://doi.org/10.1007/s12532-020-00185-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a distributed asynchronous algorithm for solving two-stage stochastic mixed-integer programs (SMIP) using scenario decomposition, aimed at industrial-scale instances of the stochastic unit commitment (SUC) problem. The algorithm is motivated by large differences in run times observed among scenario subproblems of SUC instances, which can result in inefficient use of distributed computing resources by synchronous parallel algorithms. Our algorithm performs dual iterations asynchronously using a block-coordinate subgradient descent method which allows performing block-coordinate updates using delayed information, while candidate primal solutions are recovered from the solutions of scenario subproblems using heuristics. We present a high performance computing implementation of the asynchronous algorithm, detailing the operations performed by each parallel process and the communication mechanisms among them. We conduct numerical experiments using SUC instances of the Western Electricity Coordinating Council system with up to 1000 scenarios and of the Central Western European system with up to 120 scenarios. We also conduct numerical experiments on generic SMIP instances from the SIPLIB library (DCAP and SSLP). The results demonstrate the general applicability of the proposed algorithm and its ability to solve industrial-scale SUC instances within operationally acceptable time frames. Moreover, we find that an equivalent synchronous parallel algorithm would leave cores idle up to 80.4\% of the time on our realistic test instances, an observation which underscores the need for designing asynchronous optimization schemes in order to fully exploit distributed computing on real world applications.},
+  archive      = {J_MPC},
+  author       = {Aravena, Ignacio and Papavasiliou, Anthony},
+  doi          = {10.1007/s12532-020-00185-4},
+  journal      = {Mathematical Programming Computation},
+  number       = {1},
+  pages        = {1-50},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Asynchronous lagrangian scenario decomposition},
+  volume       = {13},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

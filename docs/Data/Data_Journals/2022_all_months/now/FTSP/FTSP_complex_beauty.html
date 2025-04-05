@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FTSP_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ftsp---4">FTSP - 4</h2>
+<ul>
+<li><details>
+<summary>
+(2022). Online component analysis, architectures and applications.
+<em>FTSP</em>, <em>16</em>(3-4), 224–429. (<a
+href="https://doi.org/10.1561/2000000112">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This monograph deals with principal component analysis (PCA), kernel component analysis (KPCA), and independent component analysis (ICA), highlighting their applications to streaming-data implementations. The basic concepts related to PCA, KPCA, and ICA are widely available in the literature; however, very few texts deal with their practical implementation in computationally limited resources. The presentation tries to emphasize the current solutions considering possible constraints in power consumption and desirable computational complexity. For instance, there are good examples in biomedical engineering applications where tools like PCA and ICA can sort out the human body’s activities. For example, it is possible to remove noise and undesirable artifacts from a target signal such as EEG and ECG, among others. In turn, KPCA may be a valuable resource for non-linear image denoising. Nonetheless, many current solutions rely on batch processing implemented in general-purpose computing resources.In general terms, PCA consists of a sequence of uncorrelated data projections ordered according to their variances and employing mutually orthogonal directions. PCA is mighty in extracting hidden linear structures in high-dimension datasets. The standard PCA implementation computes the eigenvectors of the data-covariance matrix, retaining those directions to which the data exhibit the highest projection variances. This concept can be extended to the so-called Kernel PCA, wherein the data instances are implicitly mapped into a high-dimensional feature space via some non-linear transform, typically unknown. Conversely, ICA strengthens the PCA maximization variance approach by imposing the strict premise of mutual independence on the resulting projections. In fact, ICA comes to rescue the traditional tools when one aims at assessing non-Gaussian sources from data, often not available for direct measurement. Frequently, ICA and KPCA are more powerful tools for solving challenging tasks than PCA since they exploit high-order statistics from data.All these methods require some simplifications to allow a simple online implementation when coping with streaming data. This monograph describes some state-of-the-art solutions for PCA, KPCA, and ICA, emphasizing their online deployments. Many online PCA and, more recently, KPCA techniques were proposed based on Hebbian learning rules and fixed-point iterative equations. Notably, online KPCA solutions also include data selection strategies to define a compact dictionary over which the kernel components are expanded. The complexity of these dictionaries is controlled by simply setting a single hyperparameter. In both cases, the online extensions proposed rely on simple equations, can track nonstationary environments, and require reduced storage, enabling its use in real-time applications operating in low-cost embedded hardware.This monograph discusses the state-of-the-art online PCA and KPCA techniques in a unified and principled manner, presenting solutions that achieve a higher convergence speed and accuracy in many applications, particularly image processing. Besides, this work also explains how to remove various artifacts from data records based on blind source separation (BSS) by ICA, splitting feature identification from feature separation. Herein, three FastICA online hardware architectures and implementation for biomedical signal processing are addressed. The main features are summarized as follows: 1) energy-efficient FastICA using the early determination scheme; 2) cost-effective variable-channel FastICA using the Gram-Schmidt-based whitening algorithm; and 3) moving-window-based online FastICA algorithm with limited memory. The post-layout simulation results with artificial and EEG data validate the design concepts.In summary, this monograph presents the leading algorithmic solutions for PCA, KPCA, ICA, Iterative PCA, Online KPCA, and Online ICA, focusing on approaches amenable to process streaming signals. Furthermore, it provides some insights into how to choose the right solution for practical systems. Along the way, some implementation examples are provided in a variety of areas.},
+  archive      = {J_FTSP},
+  author       = {João B. O. Souza Filho and Lan-Da Van and Tzyy-Ping Jung and Paulo S. R. Diniz},
+  doi          = {10.1561/2000000112},
+  journal      = {Foundations and Trends® in Signal Processing},
+  number       = {3-4},
+  pages        = {224-429},
+  shortjournal = {Found. Trends Signal Process.},
+  title        = {Online component analysis, architectures and applications},
+  volume       = {16},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An introduction to quantum machine learning for engineers.
+<em>FTSP</em>, <em>16</em>(1-2), 1–223. (<a
+href="https://doi.org/10.1561/2000000118">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the current noisy intermediate-scale quantum (NISQ) era, quantum machine learning is emerging as a dominant paradigm to program gate-based quantum computers. In quantum machine learning, the gates of a quantum circuit are parameterized, and the parameters are tuned via classical optimization based on data and on measurements of the outputs of the circuit. Parameterized quantum circuits (PQCs) can efficiently address combinatorial optimization problems, implement probabilistic generative models, and carry out inference (classification and regression). This monograph provides a self-contained introduction to quantum machine learning for an audience of engineers with a background in probability and linear algebra. It first describes the necessary background, concepts, and tools necessary to describe quantum operations and measurements. Then, it covers parameterized quantum circuits, the variational quantum eigensolver, as well as unsupervised and supervised quantum machine learning formulations.},
+  archive      = {J_FTSP},
+  author       = {Osvaldo Simeone},
+  doi          = {10.1561/2000000118},
+  journal      = {Foundations and Trends® in Signal Processing},
+  number       = {1-2},
+  pages        = {1-223},
+  shortjournal = {Found. Trends Signal Process.},
+  title        = {An introduction to quantum machine learning for engineers},
+  volume       = {16},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Wireless for machine learning: A survey. <em>FTSP</em>,
+<em>15</em>(4), 290–399. (<a
+href="https://doi.org/10.1561/2000000114">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As data generation increasingly takes place on devices without a wired connection, Machine Learning (ML) related traffic will be ubiquitous in wireless networks. Many studies have shown that traditional wireless protocols are highly inefficient or unsustainable to support ML, which creates the need for new wireless communication methods. In this monograph, we give a comprehensive review of the state-of-the-art wireless methods that are specifically designed to support ML services over distributed datasets. Currently, there are two clear themes within the literature, analog over-the-air computation and digital radio resource management optimized for ML. This survey gives an introduction to these methods, reviews the most important works, highlights open problems, and discusses application scenarios.},
+  archive      = {J_FTSP},
+  author       = {Henrik Hellström and José Mairton B. da Silva Jr. and Mohammad Mohammadi Amiri and Mingzhe Chen and Viktoria Fodor and H. Vincent Poor and Carlo Fischione},
+  doi          = {10.1561/2000000114},
+  journal      = {Foundations and Trends® in Signal Processing},
+  number       = {4},
+  pages        = {290-399},
+  shortjournal = {Found. Trends Signal Process.},
+  title        = {Wireless for machine learning: A survey},
+  volume       = {15},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Bilevel methods for image reconstruction. <em>FTSP</em>,
+<em>15</em>(2-3), 121–289. (<a
+href="https://doi.org/10.1561/2000000111">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This review discusses methods for learning parameters for image reconstruction problems using bilevel formulations. Image reconstruction typically involves optimizing a cost function to recover a vector of unknown variables that agrees with collected measurements and prior assumptions. Stateof- the-art image reconstruction methods learn these prior assumptions from training data using various machine learning techniques, such as bilevel methods.One can view the bilevel problem as formalizing hyperparameter optimization, as bridging machine learning and cost function based optimization methods, or as a method to learn variables best suited to a specific task. More formally, bilevel problems attempt to minimize an upper-level loss function, where variables in the upper-level loss function are themselves minimizers of a lower-level cost function.This review contains a running example problem of learning tuning parameters and the coefficients for sparsifying filters used in a regularizer. Such filters generalize the popular total variation regularization method, and learned filters are closely related to convolutional neural networks approaches that are rapidly gaining in popularity. Here, the lower-level problem is to reconstruct an image using a regularizer with learned sparsifying filters; the corresponding upper-level optimization problem involves a measure of reconstructed image quality based on training data.This review discusses multiple perspectives to motivate the use of bilevel methods and to make them more easily accessible to different audiences. We then turn to ways to optimize the bilevel problem, providing pros and cons of the variety of proposed approaches. Finally we overview bilevel applications in image reconstruction.},
+  archive      = {J_FTSP},
+  author       = {Caroline Crockett and Jeffrey A. Fessler},
+  doi          = {10.1561/2000000111},
+  journal      = {Foundations and Trends® in Signal Processing},
+  number       = {2-3},
+  pages        = {121-289},
+  shortjournal = {Found. Trends Signal Process.},
+  title        = {Bilevel methods for image reconstruction},
+  volume       = {15},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

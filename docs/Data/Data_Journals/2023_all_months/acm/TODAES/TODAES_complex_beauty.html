@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TODAES_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="todaes---22">TODAES - 22</h2>
+<ul>
+<li><details>
+<summary>
+(2023). Flip: Data-centric edge CGRA accelerator. <em>TODAES</em>,
+<em>29</em>(1), 22:1–25. (<a
+href="https://doi.org/10.1145/3631118">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Coarse-Grained Reconfigurable Arrays (CGRA) are promising edge accelerators due to the outstanding balance in flexibility, performance, and energy efficiency. Classic CGRAs statically map compute operations onto the processing elements (PE) and route the data dependencies among the operations through the Network-on-Chip. However, CGRAs are designed for fine-grained static instruction-level parallelism and struggle to accelerate applications with dynamic and irregular data-level parallelism, such as graph processing. To address this limitation, we present Flip , a novel accelerator that enhances traditional CGRA architectures to boost the performance of graph applications. Flip retains the classic CGRA execution model while introducing a special data-centric mode for efficient graph processing. Specifically, it leverages the inherent data parallelism of graph algorithms by mapping graph vertices onto PEs rather than the operations and supporting dynamic routing of temporary data according to the runtime evolution of the graph frontier. Experimental results demonstrate that Flip achieves up to 36× speedup with merely 19\% more area compared to classic CGRAs. Compared to state-of-the-art large-scale graph processors, Flip has similar energy efficiency and 2.2× better area efficiency at a much-reduced power/area budget.},
+  archive      = {J_TODAES},
+  author       = {Dan Wu and Peng Chen* and Thilini Kaushalya Bandara and Zhaoying Li and Tulika Mitra},
+  doi          = {10.1145/3631118},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {12},
+  number       = {1},
+  pages        = {22:1–25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Flip: Data-centric edge CGRA accelerator},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Mathematical framework for optimizing crossbar allocation
+for ReRAM-based CNN accelerators. <em>TODAES</em>, <em>29</em>(1),
+21:1–24. (<a href="https://doi.org/10.1145/3631523">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The resistive random-access memory (ReRAM) has widely been used to accelerate convolutional neural networks (CNNs) thanks to its analog in-memory computing capability. ReRAM crossbars not only store layers’ weights, but also perform in-situ matrix-vector multiplications which are core operations of CNNs. To boost the performance of ReRAM-based CNN accelerators, crossbars can be duplicated to explore more intra-layer parallelism. The crossbar allocation scheme can significantly influence both the computing throughput and bandwidth requirements of ReRAM-based CNN accelerators. Under the resource constraints (i.e., crossbars and memory bandwidths), how to find the optimal number of crossbars for each layer to maximize the inference performance for an entire CNN is an unsolved problem. In this work, we find the optimal crossbar allocation scheme by mathematically modeling the problem as a constrained optimization problem and solving it with a dynamic programming based solver. Experiments demonstrate that our model for CNN inference time is almost precise, and the proposed framework can obtain solutions with near-optimal inference time. We also emphasize that communication (i.e., data access) is an important factor and must also be considered when determining the optimal crossbar allocation scheme.},
+  archive      = {J_TODAES},
+  author       = {Wanqian Li and Yinhe Han and Xiaoming Chen},
+  doi          = {10.1145/3631523},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {12},
+  number       = {1},
+  pages        = {21:1–24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Mathematical framework for optimizing crossbar allocation for ReRAM-based CNN accelerators},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). BOOM-explorer: RISC-v BOOM microarchitecture design space
+exploration. <em>TODAES</em>, <em>29</em>(1), 20:1–23. (<a
+href="https://doi.org/10.1145/3630013">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Microarchitecture parameters tuning is critical in the microprocessor design cycle. It is a non-trivial design space exploration (DSE) problem due to the large solution space, cycle-accurate simulators’ modeling inaccuracy, and high simulation runtime for performance evaluations. Previous methods require massive expert efforts to construct interpretable equations or high computing resource demands to train black-box prediction models. This article follows the black-box methods due to better solution qualities than analytical methods in general. We summarize two learned lessons and propose BOOM-Explorer accordingly. First, embedding microarchitecture domain knowledge in the DSE improves the solution quality. Second, BOOM-Explorer makes the microarchitecture DSE for register-transfer-level designs within the limited time budget feasible. We enhance BOOM-Explorer with the diversity-guidance, further improving the algorithm performance. Experimental results with RISC-V Berkeley-Out-of-Order Machine under 7-nm technology show that our proposed methodology achieves an average of 18.75\% higher Pareto hypervolume, 35.47\% less average distance to reference set, and 65.38\% less overall running time compared to previous approaches.},
+  archive      = {J_TODAES},
+  author       = {Chen Bai and Qi Sun and Jianwang Zhai and Yuzhe Ma and Bei Yu and Martin D. F. Wong},
+  doi          = {10.1145/3630013},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {12},
+  number       = {1},
+  pages        = {20:1–23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {BOOM-explorer: RISC-V BOOM microarchitecture design space exploration},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). NeuroCool: Dynamic thermal management of 3D DRAM for deep
+neural networks through customized prefetching. <em>TODAES</em>,
+<em>29</em>(1), 19:1–35. (<a
+href="https://doi.org/10.1145/3630012">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep neural network (DNN) implementations are typically characterized by huge datasets and concurrent computation, resulting in a demand for high memory bandwidth due to intensive data movement between processors and off-chip memory. Performing DNN inference on general-purpose cores/edge is gaining attraction to enhance user experience and reduce latency. The mismatch in the CPU and conventional DRAM speed leads to under-utilization of the compute capabilities, causing increased inference time. 3D DRAM is a promising solution to effectively fulfill the bandwidth requirement of high-throughput DNNs. However, due to high power density in stacked architectures, 3D DRAMs need dynamic thermal management (DTM), resulting in performance overhead due to memory-induced CPU throttling. We study the thermal impact of DNN applications running on a 3D DRAM system, and make a case for a memory temperature-aware customized prefetch mechanism to reduce DTM overheads and significantly improve performance. In our proposed NeuroCool DTM policy, we intelligently place either DRAM ranks or tiers in low power state, using the DNN layer characteristics and access rate. We establish the generalization of our approach through training and test datasets comprising diverse data points from widely used DNN applications. Experimental results on popular DNNs show that NeuroCool results in a average performance gain of 44\% (as high as 52\%) and memory energy improvement of 43\% (as high as 69\%) over general-purpose DTM policies.},
+  archive      = {J_TODAES},
+  author       = {Shailja Pandey and Lokesh Siddhu and Preeti Ranjan Panda},
+  doi          = {10.1145/3630012},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {12},
+  number       = {1},
+  pages        = {19:1–35},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {NeuroCool: Dynamic thermal management of 3D DRAM for deep neural networks through customized prefetching},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A machine learning approach to improving timing consistency
+between global route and detailed route. <em>TODAES</em>,
+<em>29</em>(1), 18:1–25. (<a
+href="https://doi.org/10.1145/3626959">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the unavailability of routing information in design stages prior to detailed routing (DR), the tasks of timing prediction and optimization pose major challenges. Inaccurate timing prediction wastes design effort, hurts circuit performance, and may lead to design failure. This work focuses on timing prediction after clock tree synthesis and placement legalization, which is the earliest opportunity to time and optimize a “complete” netlist. The article first documents that having “oracle knowledge” of the final post-DR parasitics enables post-global routing (GR) optimization to produce improved final timing outcomes. To bridge the gap between GR-based parasitic and timing estimation and post-DR results during post-GR optimization , machine learning (ML)-based models are proposed, including the use of features for macro blockages for accurate predictions for designs with macros. Based on a set of experimental evaluations, it is demonstrated that these models show higher accuracy than GR-based timing estimation. When used during post-GR optimization, the ML-based models show demonstrable improvements in post-DR circuit performance. The methodology is applied to two different tool flows—OpenROAD and a commercial tool flow—and results on an open-source 45nm bulk and a commercial 12nm FinFET enablement show improvements in post-DR timing slack metrics without increasing congestion. The models are demonstrated to be generalizable to designs generated under different clock period constraints and are robust to training data with small levels of noise.},
+  archive      = {J_TODAES},
+  author       = {Vidya A. Chhabria and Wenjing Jiang and Andrew B. Kahng and Sachin S. Sapatnekar},
+  doi          = {10.1145/3626959},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {12},
+  number       = {1},
+  pages        = {18:1–25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A machine learning approach to improving timing consistency between global route and detailed route},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Construction of all multilayer monolithic RSMTs and its
+application to monolithic 3D IC routing. <em>TODAES</em>,
+<em>29</em>(1), 17:1–28. (<a
+href="https://doi.org/10.1145/3626958">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Monolithic three-dimensional (M3D) integration allows ultra-thin silicon tier stacking in a single package. The high-density stacking is acquiring interest and is becoming more popular for smaller footprint areas, shorter wirelength, higher performance, and lower power consumption than the conventional planar fabrication technologies. The physical design of M3D integrated circuits requires several design steps, such as three-dimensional (3D) placement, 3D clock-tree synthesis, 3D routing, and 3D optimization. Among these, 3D routing is significantly time consuming due to countless routing blockages. Therefore, 3D routers proposed in the literature insert monolithic interlayer vias (MIVs) and perform tier-by-tier routing in two substeps. In this article, we propose an algorithm to build a routing topology database (DB) used to construct all multilayer monolithic rectilinear Steiner minimum trees on the 3D Hanan grid. To demonstrate the effectiveness of the DB in various applications, we use the DB to construct timing-driven 3D routing topologies and perform congestion-aware global routing on 3D designs. We anticipate that the algorithm and the DB will help 3D routers reduce the runtime of the MIV insertion step and improve the quality of the 3D routing.},
+  archive      = {J_TODAES},
+  author       = {Monzurul Islam Dewan and Sheng-En David Lin and Dae Hyun Kim},
+  doi          = {10.1145/3626958},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {12},
+  number       = {1},
+  pages        = {17:1–28},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Construction of all multilayer monolithic RSMTs and its application to monolithic 3D IC routing},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Introduction to the special issue on design for testability
+and reliability of security-aware hardware. <em>TODAES</em>,
+<em>29</em>(1), 1:1–3. (<a
+href="https://doi.org/10.1145/3631476">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The research on design for testability and reliability of security-aware hardware has been important in both academia and industry. With ever-growing globalization, commercial hardware design, manufacturing, transportation, and supply now involve many different countries, resulting in aggravated vulnerability from hardware design to manufacturing. Hardware with malicious purposes implanted from the third-party manufacturing process may control the operation of a circuit and tamper its functions, causing serious security issues. However, hardware includes not only devices and circuits but also systems. An important fact is that testability, reliability, and security technologies come from different design layers, but the impact evaluation is conducted at the system level. In other words, the testability, reliability, and security design of different layers can be carried out in a holistic manner to achieve optimization for the whole system. In addition, the testability, reliability, and security design technologies of each design layer can be collaboratively conducted to achieve better performance. The testability, reliability, and security tradeoff has garnered attention from academia and industry, particularly in the Post-Moore Era, due to the complexities and opportunities arising from new architectures and technologies.},
+  archive      = {J_TODAES},
+  author       = {Tianming Ni and Xiaoqing Wen and Hussam Amrouch and Cheng Zhuo and Peilin Song},
+  doi          = {10.1145/3631476},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {12},
+  number       = {1},
+  pages        = {1:1–3},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Introduction to the special issue on design for testability and reliability of security-aware hardware},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). NPU-accelerated imitation learning for thermal optimization
+of QoS-constrained heterogeneous multi-cores. <em>TODAES</em>,
+<em>29</em>(1), 16:1–23. (<a
+href="https://doi.org/10.1145/3626320">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thermal optimization of a heterogeneous clustered multi-core processor under user-defined QoS targets requires application migration and DVFS. However, selecting the core to execute each application and the VF levels of each cluster is a complex problem because (1) the diverse characteristics and QoS targets of applications require different optimizations, and (2) per-cluster DVFS requires a global optimization considering all running applications. State-of-the-art resource management for power or temperature minimization either relies on measurements that are commonly not available (such as power) or fails to consider all the dimensions of the optimization (e.g., by using simplified analytical models). To solve this, ML methods can be employed. In particular, IL leverages the optimality of an oracle policy, yet at low run-time overhead, by training a model from oracle demonstrations. We are the first to employ IL for temperature minimization under QoS targets. We tackle the complexity by training NN at design time and accelerate the run-time NN inference using NPU. While such NN accelerators are becoming increasingly widespread, they are so far only used to accelerate user applications. In contrast, we use for the first time an existing accelerator on a real platform to accelerate NN-based resource management. To show the superiority of IL compared to RL in our targeted problem, we also develop multi-agent RL-based management. Our evaluation on a HiKey 970 board with an Arm big.LITTLE CPU and NPU shows that IL achieves significant temperature reductions at a negligible run-time overhead. We compare TOP-IL against several techniques. Compared to ondemand Linux governor, TOP-IL reduces the average temperature by up to 17 ˆC at minimal QoS violations for both techniques. Compared to the RL policy, our TOP-IL achieves 63\% to 89\% fewer QoS violations while resulting similar average temperatures. Moreover, TOP-IL outperforms the RL policy in terms of stability. We additionally show that our IL-based technique also generalizes to different software (unseen applications) and even hardware (different cooling) than used for training.},
+  archive      = {J_TODAES},
+  author       = {Martin Rapp and Heba Khdr and Nikita Krohmer and Jörg Henkel},
+  doi          = {10.1145/3626320},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {16:1–23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {NPU-accelerated imitation learning for thermal optimization of QoS-constrained heterogeneous multi-cores},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). MOEA/d vs. NSGA-II: A comprehensive comparison for
+multi/many objective analog/RF circuit optimization through a generic
+benchmark. <em>TODAES</em>, <em>29</em>(1), 15:1–23. (<a
+href="https://doi.org/10.1145/3626096">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thanks to the enhanced computational capacity of modern computers, even sophisticated analog/radio frequency (RF) circuit sizing problems can be solved via electronic design automation (EDA) tools. Recently, several analog/RF circuit optimization algorithms have been successfully applied to automatize the analog/RF circuit design process. Conventionally, metaheuristic algorithms are widely used in optimization process. Among various nature-inspired algorithms, evolutionary algorithms (EAs) have been more preferred due to their superiorities (robustness, efficiency, accuracy etc.) over the other algorithms. Furthermore, EAs have been diversified and several distinguished analog/RF circuit optimization approaches for single-, multi-, and many-objective problems have been reported in the literature. However, there are conflicting claims on the performance of these algorithms and no objective performance comparison has been revealed yet. In the previous work, only a few case study circuits have been under test to demonstrate the superiority of the utilized algorithm, so a limited comparison has been made for only these specific circuits. The underlying reason is that the literature lacks a generic benchmark for analog/RF circuit sizing problem. To address these issues, we propose a comprehensive comparison of the most popular two evolutionary computation algorithms, namely Non-Sorting Genetic Algorithm-II and Multi-Objective Evolutionary Algorithm based Decomposition, in this article. For that purpose, we introduce two ad hoc testbenches for analog and RF circuits including the common building blocks. The comparison has been made at both multi- and many-objective domains and the performances of algorithms have been quantitatively revealed through the well-known Pareto-optimal front quality metrics.},
+  archive      = {J_TODAES},
+  author       = {Enes Saǧlican and Engin Afacan},
+  doi          = {10.1145/3626096},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {15:1–23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {MOEA/D vs. NSGA-II: A comprehensive comparison for Multi/Many objective Analog/RF circuit optimization through a generic benchmark},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Lightning: Leveraging DVFS-induced transient fault injection
+to attack deep learning accelerator of GPUs. <em>TODAES</em>,
+<em>29</em>(1), 14:1–22. (<a
+href="https://doi.org/10.1145/3617893">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graphics Processing Units (GPU) are widely used as deep learning accelerators because of its high performance and low power consumption. Additionally, it remains secure against hardware-induced transient fault injection attacks, a classic type of attacks that have been developed on other computing platforms. In this work, we demonstrate that well-trained machine learning models are robust against hardware fault injection attacks when the faults are generated randomly. However, we discover that these models have components, which we refer to as sensitive targets, that are vulnerable to faults. By exploiting this vulnerability, we propose the Lightning attack, which precisely strikes the model’s sensitive targets with hardware-induced transient faults based on the Dynamic Voltage and Frequency Scaling (DVFS). We design a sensitive targets search algorithm to find the most critical processing units of Deep Neural Network (DNN) models determining the inference results, and develop a genetic algorithm to automatically optimize the attack parameters for DVFS to induce faults. Experiments on three commodity Nvidia GPUs for four widely-used DNN models show that the proposed Lightning attack can reduce the inference accuracy by 69.1\% on average for non-targeted attacks, and, more interestingly, achieve a success rate of 67.9\% for targeted attacks.},
+  archive      = {J_TODAES},
+  author       = {Rihui Sun and Pengfei Qiu and Yongqiang Lyu and Jian Dong and Haixia Wang and Dongsheng Wang and Gang Qu},
+  doi          = {10.1145/3617893},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {14:1–22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Lightning: Leveraging DVFS-induced transient fault injection to attack deep learning accelerator of GPUs},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A compact TRNG design for FPGA based on the metastability of
+RO-driven shift registers. <em>TODAES</em>, <em>29</em>(1), 13:1–17. (<a
+href="https://doi.org/10.1145/3610295">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {True random number generators (TRNGs), as an important component of security systems, have received a lot of attention for their related research. The previous researches have provided a large number of TRNG solutions, however, they still failed to reach an excellent tradeoff in various performance metrics. This article presents a shift-registers metastability-based TRNG, which is implemented by compact reference units and comparison units. By forcing the D flip-flops in the shift-registers into the metastable state, it optimizes the problem that the conventional metastability entropy sources consume excessive hardware resources. And a new method of metastable randomness extraction is used to reduce the bias of metastable output. The proposed TRNG is implemented in Xilinx Spartan-6 and Virtex-6 FPGAs, which generate random sequences that pass the NIST SP800-22, NIST SP800-90B tests and show excellent robustness to voltage and temperature variations. This TRNG can consume only 3 slices of the FPGA, but it has a high throughput rate of 25 Mbit/s. In comparison with state-of-the-art FPGA-compatible TRNGs, the proposed TRNG achieves the highest figure of merit FOM, which means that the proposed TRNG significantly outperforms previous researches in terms of hardware resources, throughput rate, and operating frequency tradeoffs.},
+  archive      = {J_TODAES},
+  author       = {Qingsong Peng and Jingchang Bian and Zhengfeng Huang and Senling Wang and Aibin Yan},
+  doi          = {10.1145/3610295},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {13:1–17},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A compact TRNG design for FPGA based on the metastability of RO-driven shift registers},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Yield optimization for analog circuits over multiple corners
+via bayesian neural networks: Enhancing circuit reliability under
+environmental variation. <em>TODAES</em>, <em>29</em>(1), 12:1–17. (<a
+href="https://doi.org/10.1145/3626321">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The reliability of circuits is significantly affected by process variations in manufacturing and environmental variation during operation. Current yield optimization algorithms take process variations into consideration to improve circuit reliability. However, the influence of environmental variations (e.g., voltage and temperature variations) is often ignored in current methods because of the high computational cost. In this article, a novel and efficient approach named BNN-BYO is proposed to optimize the yield of analog circuits in multiple environmental corners. First, we use a Bayesian Neural Network (BNN) to simultaneously model the yields and performances of interest in multiple corners efficiently. Next, the multi-corner yield optimization can be performed by embedding BNN into a Bayesian optimization framework. Since the correlation among yields and performances of interest in different corners is implicitly encoded in the BNN model, it provides great modeling capabilities for yields and their uncertainties to improve the efficiency of yield optimization. Our experimental results demonstrate that the proposed method can save up to 45.3\% of simulation cost compared to other baseline methods to achieve the same target yield. In addition, for the same simulation cost, our proposed method can find better design points with 3.2\% yield improvement.},
+  archive      = {J_TODAES},
+  author       = {Nanlin Guo and Fulin Peng and Jiahe Shi and Fan Yang and Jun Tao and Xuan Zeng},
+  doi          = {10.1145/3626321},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {12:1–17},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Yield optimization for analog circuits over multiple corners via bayesian neural networks: Enhancing circuit reliability under environmental variation},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). ICP-RL: Identifying critical paths for fault diagnosis using
+reinforcement learning. <em>TODAES</em>, <em>29</em>(1), 11:1–20. (<a
+href="https://doi.org/10.1145/3610294">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Identifying the critical paths is crucial to reducing the complexity of performance analysis and reliability calculation for logic circuits. In this article, we propose a method for identifying the critical path in a combination circuit using a reinforcement learning framework to enhance its applicability and compatibility. Initially, we configured the learning environment of the model based on circuit structure information to provide valuable information for decision-making on time. Subsequently, the upper confidence bound applied to trees (UCT) algorithm is employed to construct the behavior decision strategy of the model, which avoids invalid traversal and reduces computing costs. Then, a goal-oriented reward and punishment function is constructed based on the distance from the circuit primary outputs. Finally, based on the parallel computing strategy, we construct an adaptive training method to improve the model’s prediction accuracy by using finite sampling, which speeds up the convergence speed and enhances the quality of the model. Experimental results on benchmark circuits show that, with the functional timing analysis method as the reference, the average accuracy of the proposed method is as high as 99.39\% and the single average calculation speed is 18.07 times faster than that of the reference method. Compared with the Monte Carlo model, the proposed method has a higher critical path hit rate, and the average calculation speed is 928.75 times faster.},
+  archive      = {J_TODAES},
+  author       = {Jie Xiao and Yingying Ge and Ru Wang and Jungang Lou},
+  doi          = {10.1145/3610294},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {11:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ICP-RL: Identifying critical paths for fault diagnosis using reinforcement learning},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). The resistance analysis attack and security enhancement of
+the IMC LUT based on the complementary resistive switch cells.
+<em>TODAES</em>, <em>29</em>(1), 10:1–21. (<a
+href="https://doi.org/10.1145/3616870">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The resistive random access memory (RRAM) based in-memory computing (IMC) is an emerging architecture to address the challenge of the “memory wall” problem. The complementary resistive switch (CRS) cell connects two bipolar RRAM elements anti-serially to reduce the sneak current in the crossbar array. The CRS array is a generic computing platform, for the arbitrary logic functions can be implemented in it. The IMC CRS LUT consumes fewer CRS cells than the static CRS LUT. The CRS array has built-in polymorphic characteristics because the correct logic function cannot be distinguished based on the circuit layout. However, the logic state of every CRS cell can be readout after each operation. It helps the attacker to recover the correct function of the IMC CRS LUT. This work discusses the resistance analysis attack of the IMC LUT based on the CRS array. The proposed resistance analysis attack method is able to be applied to different computation styles based on the CRS array, such as the CRS IMPLY, CRS NOR-OR/NAND-AND, and so on. The attacker can recover the logic function of the LUT by tracing the states of CRS cells. Furthermore, an improved IMC CRS LUT method is proposed and discussed to enhance security. The simulation and analysis results show that the improved IMC CRS LUT can resist various attacks, and it maintains the polymorphic characteristics of the IMC CRS LUT. And the N-bit full adder circuit based on the improved IMC CRS NOR-OR LUTs achieves the best performance compared with the previous counterparts.},
+  archive      = {J_TODAES},
+  author       = {Xiaole Cui and Mingqi Yin and Hanqing Liu and Xiaoxin Cui},
+  doi          = {10.1145/3616870},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {10:1–21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {The resistance analysis attack and security enhancement of the IMC LUT based on the complementary resistive switch cells},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Heterogeneous integration supply chain integrity through
+blockchain and CHSM. <em>TODAES</em>, <em>29</em>(1), 9:1–25. (<a
+href="https://doi.org/10.1145/3625823">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the past few decades, electronics have become commonplace in government, commercial, and social domains. These devices have developed rapidly, as seen in the prevalent use of system-on-chips rather than separate integrated circuits on a single circuit board. As the semiconductor community begins conversations over the end of Moore’s law, an approach to further increase both functionality per area and yield using segregated functionality dies on a common interposer die, labeled a System in Package (SiP), is gaining attention. Thus, the chiplet and SiP space has grown to meet this demand, creating a new packaging paradigm, advanced packaging, and a new supply chain. This new distributed supply chain with multiple chiplet developers and foundries has augmented counterfeit vulnerabilities. Chiplets are currently available on an open market, and their origin and authenticity consequently are difficult to ascertain. With this lack of control over the stages of the supply chain, counterfeit threats manifest at the chiplet, interposer, and SiP levels. In this article, we identify counterfeit threats in the SiP domain, and we propose a mitigating framework utilizing blockchain for the effective traceability of SiPs to establish provenance. Our framework utilizes the Chiplet Hardware Security Module to authenticate a SiP throughout its life. To accomplish this, we leverage SiP information including electronic chip identification of chiplets, combating die and IC recycling sensor information, documentation, test patterns and/or electrical measurements, grade, and part number of the SiP. We detail the structure of the blockchain and establish protocols for both enrolling trusted information into the blockchain network and authenticating the SiP. Our framework mitigates SiP counterfeit threats including recycled, remarked, cloned, overproduced interposer, forged documentation, and substituted chiplet while detecting of out-of-spec and defective SiPs.},
+  archive      = {J_TODAES},
+  author       = {Paul E. Calzada and Md. Sami Ul Islam Sami and Kimia Zamiri Azar and Fahim Rahman and Farimah Farahmandi and Mark Tehranipoor},
+  doi          = {10.1145/3625823},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {9:1–25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Heterogeneous integration supply chain integrity through blockchain and CHSM},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). AD2VNCS: Adversarial defense and device variation-tolerance
+in memristive crossbar-based neuromorphic computing systems.
+<em>TODAES</em>, <em>29</em>(1), 8:1–19. (<a
+href="https://doi.org/10.1145/3600231">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, memristive crossbar-based neuromorphic computing systems (NCS) have obtained extremely high performance in neural network acceleration. However, adversarial attacks and conductance variations of memristors bring reliability challenges to NCS design. First, adversarial attacks can fool the neural network and pose a serious threat to security critical applications. However, device variations lead to degradation of the network accuracy. In this article, we propose DFS (Deep neural network Feature importance Sampling) and BFS (Bayesian neural network Feature importance Sampling) training strategies, which consist of Bayesian Neural Network (BNN) prior setting, clustering-based loss function, and feature importance sampling techniques, to simultaneously combat device variation, white-box attack, and black-box attack challenges. Experimental results clearly demonstrate that the proposed training framework can improve the NCS reliability.},
+  archive      = {J_TODAES},
+  author       = {Yongtian Bi and Qi Xu and Hao Geng and Song Chen and Yi Kang},
+  doi          = {10.1145/3600231},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {8:1–19},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {AD2VNCS: Adversarial defense and device variation-tolerance in memristive crossbar-based neuromorphic computing systems},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Test compression for launch-on-capture transition fault
+testing. <em>TODAES</em>, <em>29</em>(1), 7:1–20. (<a
+href="https://doi.org/10.1145/3597433">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A new low-power test compression scheme, called Dcompress , is proposed for launch-on-capture transition fault testing by using a new seed encoding scheme, a new design for testability architecture, and a new low-power test application procedure. The new seed encoding scheme generates seeds for all tests by selecting a primitive polynomial that encodes all tests of a compact test set. A software-defined linear feedback shift register architecture, called SLFSR , is proposed to make the new method conform to the current flow of design and test. Experimental results on benchmark circuits show that test data volume can be compressed up to 6300X with the well-compacted baseline test set for a design with 11.8M gates and more than 1.1M scan flip-flops.},
+  archive      = {J_TODAES},
+  author       = {Dong Xiang},
+  doi          = {10.1145/3597433},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {7:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Test compression for launch-on-capture transition fault testing},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A high throughput STR-based TRNG by jitter precise
+quantization superposing. <em>TODAES</em>, <em>29</em>(1), 6:1–19. (<a
+href="https://doi.org/10.1145/3606373">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of integrated circuits and the continuous progress of computing capability, higher demands have been placed on the security and speed of data encryption in security systems. As a basic hardware security primitive, the true random number generator (TRNG) plays an important role in the encryption system, which requires higher throughput and randomness with lower hardware overhead. However, the throughput of TRNG is related to the entropy source’s quality and the randomness extraction methodology. To quantify the randomness of the entropy source with higher efficiency and quality, we utilize the independent jitter of the self-timed ring (STR) to generate original entropy and propose a high throughput jitter-based TRNG which can extract random information at the pulse of oscillation signal by jitter precise quantization superposing and random oscillation sampling. The proposed TRNG has been implemented on Artix-7 and Virtex-6 FPGAs. The generated true random number successfully passes the NIST SP800-22 and NIST SP800-90B tests while also exhibiting a minimum entropy greater than 0.9947. The most prominent superiority of our proposed TRNG is that it achieves a high throughput of 330 Mbps with an ultra-low hardware overhead of only 35 LUTs and 12 DFFs.},
+  archive      = {J_TODAES},
+  author       = {Yuan Zhang and Jiliang Zhang},
+  doi          = {10.1145/3606373},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {6:1–19},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A high throughput STR-based TRNG by jitter precise quantization superposing},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). A reliability-aware splitting duty-cycle physical unclonable
+function based on trade-off process, voltage, and temperature
+variations. <em>TODAES</em>, <em>29</em>(1), 5:1–16. (<a
+href="https://doi.org/10.1145/3594667">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The physical unclonable function (PUF) is a hardware security primitive that can be used to prevent malicious attacks aimed at obtaining device information at the hardware level. The ring oscillator (RO) PUF has attracted considerable research attention. To improve the reliability of the RO PUF under voltage and temperature changes, the response of the duty-cycle (DC) PUF was obtained by comparing the duty cycle of the RO rather than the period. However, this method reduces the effective utilization of process variations, which limits its implementation in mature advanced manufacturing processes. In this study, a splitting duty-cycle (SDC) PUF was proposed to balance the effective extraction of process variations and robustness under voltage and temperature changes. The sensibility formula between the performance of SDC PUF and process, voltage, and temperature was established through a circuit model and statistical methodology, and the comprehensive characteristics of SDC PUF were analyzed theoretically. Next, 16 SDC PUFs with 128-bit responses were implemented and measured on a Xilinx Virtex-7 device. The experimental results revealed that the average native reliability of SDC PUF was 98.97\%, and the reliability was 97.32\% under various voltage and temperature conditions. This result revealed advantages over the DC PUF implemented in the same device. The uniqueness of the SDC PUF was 50.42\%, and it passed the NIST SP 800-22 randomness and autocorrelation function tests.},
+  archive      = {J_TODAES},
+  author       = {Jingchang Bian and Zhengfeng Huang and Peng Ye and Zhao Yang and Huaguo Liang},
+  doi          = {10.1145/3594667},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {5:1–16},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A reliability-aware splitting duty-cycle physical unclonable function based on trade-off process, voltage, and temperature variations},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). On-chip ESD protection design methodologies by CAD
+simulation. <em>TODAES</em>, <em>29</em>(1), 4:1–41. (<a
+href="https://doi.org/10.1145/3593808">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Electrostatic discharge (ESD) can cause malfunction or failure of integrated circuits (ICs) . On-chip ESD protection design is a major IC design-for-reliability (DfR) challenge, particularly for complex chips made in advanced technology nodes. Traditional trial-and-error approaches become unacceptable to practical ESD protection designs for advanced ICs. Full-chip ESD protection circuit design optimization, prediction, and verification become essential to advanced chip designs, which highly depends on CAD algorithm and simulation that has been a constant research topic for decades. This paper reviews recent advances in CAD-enabled on-chip ESD protection circuit simulation design technologies and ESD-IC co-design methodologies. Key challenges of ESD CAD design practices are outlined. Practical ESD protection simulation design examples are discussed.},
+  archive      = {J_TODAES},
+  author       = {Zijin Pan and Xunyu Li and Weiquan Hao and Runyu Miao and Albert Wang},
+  doi          = {10.1145/3593808},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {4:1–41},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {On-chip ESD protection design methodologies by CAD simulation},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). ProtFe: Low-cost secure power side-channel protection for
+general and custom FeFET-based memories. <em>TODAES</em>,
+<em>29</em>(1), 3:1–18. (<a
+href="https://doi.org/10.1145/3604589">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ferroelectric Field Effect Transistors (FeFETs) have spurred increasing interest in both memories and computing applications, thanks to their CMOS compatibility, low-power operation, and high scalability. However, new security threats to the FeFET-based memories also arise. A major threat is the power analysis side-channel attack (P-SCA), which exploits the power traces of the memory access to obtain data information. There have been several effective efforts on resistive nonvolatile memories (NVMs), but they fail to meet the requirements for secure FeFET-based memories due to the different capacitive FeFETs load. Directly applying these existing countermeasures to the P-SCA protection for FeFETs induces huge challenges, especially for the balance between power side-channel resistance and corresponding overheads. To address this issue, we leverage the unique features of FeFETs and propose ProtFe , namely the protection methods for FeFET-based memories, including the pipelined multi-step write strategy ( PiMWrite ) and the split array design ( SpA ). PiMWrite is proposed for general FeFET-based memories, and inserts specially designed intermediate states to mitigate information leakage with pipelined steps to reduce overheads. SpA is proposed for custom FeFET-based memories, and simultaneously writes two split portions of the array with shared minimized peripherals to go beyond the balance between security and overheads. Simulation results show that PiMWrite expands the search space of a single power trace to 21× and involves nearly zero hardware penalties. SpA presents 33× search space improvement with negligible latency, 0.6\% area, and only 7.1\% energy overhead. ProtFe achieves improved balance between security and overheads, compared with the state-of-the-art works.},
+  archive      = {J_TODAES},
+  author       = {Taixin Li and Boran Sun and Hongtao Zhong and Yixin Xu and Vijaykrishnan Narayanan and Liang Shi and Tianyi Wang and Yao Yu and Thomas Kämpfe and Kai Ni and Huazhong Yang and Xueqing Li},
+  doi          = {10.1145/3604589},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {3:1–18},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ProtFe: Low-cost secure power side-channel protection for general and custom FeFET-based memories},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). An efficient ring oscillator PUF using programmable delay
+units on FPGA. <em>TODAES</em>, <em>29</em>(1), 2:1–20. (<a
+href="https://doi.org/10.1145/3593807">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ring oscillator (RO) PUF can be implemented on different FPGA platforms with high uniqueness and reliability. To decrease the hardware cost of conventional RO PUFs, a new design using the programmable delay units is proposed, namely, PRO PUF. The programmable interconnect points (PIPs) of programmable delay units are used to enhance the configurability. The PUF cell of the proposed design has the ability to be efficiently programmed to an RO PUF at any stage by adjusting the propagation paths of the delay units. A significant number of responses can be generated by the proposed PRO PUF while consuming fewer hardware resources. To verify the performance, the proposed design has been implemented on Xilinx FPGAs and also simulated using a standard 40nm technology. The experimental results have shown that the proposed design achieves high uniqueness, reliability, and hardware efficiency. Moreover, the PRO PUF has been evaluated using a machine learning attack, the CMA-ES attack. The results have shown that the proposed structure is more resistant to common modeling attacks when compared to conventional RO-related PUF designs.},
+  archive      = {J_TODAES},
+  author       = {Yijun Cui and Jiang Li and Yunpeng Chen and Chenghua Wang and Chongyan Gu and Máire O’neill and Weiqiang Liu},
+  doi          = {10.1145/3593807},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {11},
+  number       = {1},
+  pages        = {2:1–20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {An efficient ring oscillator PUF using programmable delay units on FPGA},
+  volume       = {29},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

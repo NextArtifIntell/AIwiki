@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJDAR_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijdar---29">IJDAR - 29</h2>
+<ul>
+<li><details>
+<summary>
+(2022). Textline alignment on the image domain. <em>IJDAR</em>,
+<em>25</em>(4), 415–427. (<a
+href="https://doi.org/10.1007/s10032-022-00408-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Editing and publishing a historical manuscript involves a research phase to recover the original manuscript and reconstruct the transmission of its text based on the relations between its surviving copies. Manuscript alignment, which aims to locate the shared and the different text among a set of copies of the same manuscript, is essential for this phase. In this paper, we present an alignment algorithm for historical handwritten documents that works directly on the image domain due to the absence of an accurate handwritten text recognition (HTR) system for handwritten historical documents and the necessity to visualize the original manuscripts in parallel to examine features beyond the transcribed text. Our approach extracts subwords, estimates the similarity among these subwords, and establishes an alignment among them. We extract subwords from textlines images and convert them into sequences of subword images. It estimates the similarity between two subwords using a Siamese network model and applies Longest Common Subsequence (LCS) to establish the alignment between two image sequences. We have implemented our algorithm, trained the Siamese model, and evaluate its performance using textline images from historical documents. Our algorithm outperformed the state-of-the-art by large margins. Unlike the state-of-the-art, the framework builds the alignment from scratch without requiring any prior knowledge concern subwords boundaries. In addition, we build a new dataset for textline alignment for historical documents, which include ten pairs of pages taken from two copies of two Arabic manuscripts and annotated at the subword level.},
+  archive      = {J_IJDAR},
+  author       = {Madi, Boraq and Droby, Ahmad and El-Sana, Jihad},
+  doi          = {10.1007/s10032-022-00408-5},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {415-427},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Textline alignment on the image domain},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Benchmarking online sequence-to-sequence and character-based
+handwriting recognition from IMU-enhanced pens. <em>IJDAR</em>,
+<em>25</em>(4), 385–414. (<a
+href="https://doi.org/10.1007/s10032-022-00415-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Handwriting is one of the most frequently occurring patterns in everyday life and with it comes challenging applications such as handwriting recognition, writer identification and signature verification. In contrast to offline HWR that only uses spatial information (i.e., images), online HWR uses richer spatio-temporal information (i.e., trajectory data or inertial data). While there exist many offline HWR datasets, there are only little data available for the development of OnHWR methods on paper as it requires hardware-integrated pens. This paper presents data and benchmark models for real-time sequence-to-sequence learning and single character-based recognition. Our data are recorded by a sensor-enhanced ballpoint pen, yielding sensor data streams from triaxial accelerometers, a gyroscope, a magnetometer and a force sensor at 100 Hz. We propose a variety of datasets including equations and words for both the writer-dependent and writer-independent tasks. Our datasets allow a comparison between classical OnHWR on tablets and on paper with sensor-enhanced pens. We provide an evaluation benchmark for seq2seq and single character-based HWR using recurrent and temporal convolutional networks and transformers combined with a connectionist temporal classification (CTC) loss and cross-entropy (CE) losses. Our convolutional network combined with BiLSTMs outperforms transformer-based architectures, is on par with InceptionTime for sequence-based classification tasks and yields better results compared to 28 state-of-the-art techniques. Time-series augmentation methods improve the sequence-based task, and we show that CE variants can improve the single classification task. Our implementations together with the large benchmark of state-of-the-art techniques of novel OnHWR datasets serve as a baseline for future research in the area of OnHWR on paper.},
+  archive      = {J_IJDAR},
+  author       = {Ott, Felix and Rügamer, David and Heublein, Lucas and Hamann, Tim and Barth, Jens and Bischl, Bernd and Mutschler, Christopher},
+  doi          = {10.1007/s10032-022-00415-6},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {385-414},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Benchmarking online sequence-to-sequence and character-based handwriting recognition from IMU-enhanced pens},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Conv-transformer architecture for unconstrained off-line
+urdu handwriting recognition. <em>IJDAR</em>, <em>25</em>(4), 373–384.
+(<a href="https://doi.org/10.1007/s10032-022-00416-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unconstrained off-line handwriting text recognition in general and for Arabic-like scripts in particular is a challenging task and is still an active research area. Transformer-based models for English handwriting recognition have recently shown promising results. In this paper, we have explored the use of transformer architecture for Urdu handwriting recognition. The use of a convolution neural network before a Vanilla full transformer and using Urdu printed text-lines along with handwritten text lines during the training are the highlights of the proposed work. The convolution layers act to reduce the spatial resolutions and compensate for the $$n^{2}$$ complexity of transformer multi-head attention layers. Moreover, the printed text images in the training phase help the model in learning a greater number of ligatures (a prominent feature of Arabic-like scripts) and a better language model. Our model achieved state-of-the-art accuracy (CER of $$5.31\%$$ ) on publicly available NUST-UHWR dataset (Zia et al. in Neural Comput Appl 34:1–14, 2021).},
+  archive      = {J_IJDAR},
+  author       = {Riaz, Nauman and Arbab, Haziq and Maqsood, Arooba and Nasir, Khuzaeymah and Ul-Hasan, Adnan and Shafait, Faisal},
+  doi          = {10.1007/s10032-022-00416-5},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {373-384},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Conv-transformer architecture for unconstrained off-line urdu handwriting recognition},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A novel holistic unconstrained handwritten urdu recognition
+system using convolutional neural networks. <em>IJDAR</em>,
+<em>25</em>(4), 351–371. (<a
+href="https://doi.org/10.1007/s10032-022-00414-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Handwritten Urdu recognition has been the least explored to date due to unavailability of a standard hand-written Urdu dataset, huge variation among writing styles of different Urdu writers, irregular positioning of diacritics associated with ligatures, similarity in shape of some Urdu characters in writing, and unavailability of an efficient learning and training technique. Few researchers have proposed the handwritten Urdu datasets among which only Urdu Nastaliq handwritten dataset (UNHD) is publicly available. The UNHD contains ligatures of only up to five characters and does not cover the entire Urdu ligature corpus. Hence, we present a novel comprehensive handwritten Urdu dataset named UHLD for the ‘Urdu Handwritten Ligature Dataset’:—which consists of ligatures of up to seven-character length and covers most of the ligature corpus of the Urdu language. The UHLD is written by both genders independent of age of person, paper color, paper type (blank or ruled), ink color, pen type. We propose an unconstrained handwritten Urdu recognition system that can recognize handwritten Urdu ligatures with up to six characters. A new robust algorithm has also been proposed here that is able to divide a complete ligature into primary and secondary components with 98% accuracy on a large Urdu dataset. Our proposed holistic handwritten Urdu recognition system ensures independent recognition of both primary and secondary components of a word/ligature. The proposed recognition technique is transformation invariant and computationally efficient and achieves a better recognition rate of 97% for UHLD and 93% for UNHD.},
+  archive      = {J_IJDAR},
+  author       = {Ganai, Aejaz Farooq and Khursheed, Farida},
+  doi          = {10.1007/s10032-022-00414-7},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {351-371},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {A novel holistic unconstrained handwritten urdu recognition system using convolutional neural networks},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Combination of explicit segmentation with Seq2Seq
+recognition for fine analysis of children handwriting. <em>IJDAR</em>,
+<em>25</em>(4), 339–350. (<a
+href="https://doi.org/10.1007/s10032-022-00409-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the task of analyzing children handwriting in the context of a dictation task. The objective is to detect orthographic and phonological errors. To achieve this goal, we extend an existing handwriting analysis engine, based on an explicit segmentation of the handwritten input, originally developed for children copying exercises. We present a new approach, based on the combination of this analysis engine with a deep learning word recognition approach in order to improve both the recognition and segmentation performance. Explicit segmentation needs prior knowledge, and the deep network recognition predictions are a reliable approximation of the ground truth which can guide the analysis process. We propose to combine multiple prior knowledge strategies to further improve the analysis performance. Furthermore, we exploit the deep network approximate implicit segmentation to optimize the existing analysis process in terms of complexity.},
+  archive      = {J_IJDAR},
+  author       = {Krichen, Omar and Corbillé, Simon and Anquetil, Éric and Girard, Nathalie and Fromont, Élisa and Nerdeux, Pauline},
+  doi          = {10.1007/s10032-022-00409-4},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {339-350},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Combination of explicit segmentation with Seq2Seq recognition for fine analysis of children handwriting},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A survey of historical document image datasets.
+<em>IJDAR</em>, <em>25</em>(4), 305–338. (<a
+href="https://doi.org/10.1007/s10032-022-00405-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a systematic literature review of image datasets for document image analysis, focusing on historical documents, such as handwritten manuscripts and early prints. Finding appropriate datasets for historical document analysis is a crucial prerequisite to facilitate research using different machine learning algorithms. However, because of the very large variety of the actual data (e.g., scripts, tasks, dates, support systems, and amount of deterioration), the different formats for data and label representation, and the different evaluation processes and benchmarks, finding appropriate datasets is a difficult task. This work fills this gap, presenting a meta-study on existing datasets. After a systematic selection process (according to PRISMA guidelines), we select 65 studies that are chosen based on different factors, such as the year of publication, number of methods implemented in the article, reliability of the chosen algorithms, dataset size, and journal outlet. We summarize each study by assigning it to one of three pre-defined tasks: document classification, layout structure, or content analysis. We present the statistics, document type, language, tasks, input visual aspects, and ground truth information for every dataset. In addition, we provide the benchmark tasks and results from these papers or recent competitions. We further discuss gaps and challenges in this domain. We advocate for providing conversion tools to common formats (e.g., COCO format for computer vision tasks) and always providing a set of evaluation metrics, instead of just one, to make results comparable across studies.},
+  archive      = {J_IJDAR},
+  author       = {Nikolaidou, Konstantina and Seuret, Mathias and Mokayed, Hamam and Liwicki, Marcus},
+  doi          = {10.1007/s10032-022-00405-8},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {305-338},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {A survey of historical document image datasets},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A holistic approach for image-to-graph: Application to
+optical music recognition. <em>IJDAR</em>, <em>25</em>(4), 293–303. (<a
+href="https://doi.org/10.1007/s10032-022-00417-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A number of applications would benefit from neural approaches that are capable of generating graphs from images in an end-to-end fashion. One of these fields is optical music recognition (OMR), which focuses on the computational reading of music notation from document images. Given that music notation can be expressed as a graph, the aforementioned approach represents a promising solution for OMR. In this work, we propose a new neural architecture that retrieves a certain representation of a graph—identified by a specific order of its vertices—in an end-to-end manner. This architecture works by means of a double output: It sequentially predicts the possible categories of the vertices, along with the edges between each of their pairs. The experiments carried out prove the effectiveness of our proposal as regards retrieving graph structures from excerpts of handwritten musical notation. Our results also show that certain design decisions, such as the choice of graph representations, play a fundamental role in the performance of this approach.},
+  archive      = {J_IJDAR},
+  author       = {Garrido-Munoz, Carlos and Rios-Vila, Antonio and Calvo-Zaragoza, Jorge},
+  doi          = {10.1007/s10032-022-00417-4},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {293-303},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {A holistic approach for image-to-graph: Application to optical music recognition},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Domain adaptation for staff-region retrieval of music score
+images. <em>IJDAR</em>, <em>25</em>(4), 281–292. (<a
+href="https://doi.org/10.1007/s10032-022-00411-w">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optical music recognition (OMR) is the field that studies how to automatically read music notation from score images. One of the relevant steps within the OMR workflow is the staff-region retrieval. This process is a key step because any undetected staff will not be processed by the subsequent steps. This task has previously been addressed as a supervised learning problem in the literature; however, ground-truth data are not always available, so each new manuscript requires a preliminary manual annotation. This situation is one of the main bottlenecks in OMR, because of the countless number of existing manuscripts , and the associated manual labeling cost. With the aim of mitigating this issue, we propose the application of a domain adaptation technique, the so-called Domain-Adversarial Neural Network (DANN), based on a combination of a gradient reversal layer and a domain classifier in the inference neural architecture. The results from our experiments support the benefits of our proposed solution, obtaining improvements of approximately 29% in the F-score.},
+  archive      = {J_IJDAR},
+  author       = {Castellanos, Francisco J. and Gallego, Antonio Javier and Calvo-Zaragoza, Jorge and Fujinaga, Ichiro},
+  doi          = {10.1007/s10032-022-00411-w},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {281-292},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Domain adaptation for staff-region retrieval of music score images},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). BCBId: First bangla comic dataset and its applications.
+<em>IJDAR</em>, <em>25</em>(4), 265–279. (<a
+href="https://doi.org/10.1007/s10032-022-00412-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Comic document image analysis is now an active field of research in both academia and industry. However, comic document image processing research suffers due to its inherent complexities and the limited availability of benchmark public datasets. This paper describes the creation of the first-ever comic dataset among Indian Languages, namely Bangla Comic Book Image dataset (BCBId) ( https://sites.google.com/view/banglacomicbookdataset ), which is also made public for the benefit of the researchers. BCBId consists of 3327 images taken from 64 Bangla comic stories written by 8 writers. Bangla is the 6th most popular spoken language in the world—used by 265 million people ( https://en.wikipedia.org/wiki/Languages_of_India ), and has a century-old heritage of comic strips (in newspapers) and books. BCBId has the ground truth for extracting various visual components of the comic book images, i.e., panels, characters, speech balloons, and text lines. BCBId also includes the metadata encoding of all images in XML format to describe the underlined structure, semantics, and other features of the documents to pursue research on understanding stories and dialogues. A tool is specifically designed for accurate and faster ground-truth generation. As an application of the dataset, we carry out the sentiment analysis of comic stories—the first-ever attempt on comic book images. We also elaborate on a couple of applications of the BCBId in the comic research domain. Besides, we estimate the errors made by the annotators during the annotation process and describe different evaluation parameters to test the efficacy of the comic document image analysis algorithms.},
+  archive      = {J_IJDAR},
+  author       = {Dutta, Arpita and Biswas, Samit and Das, Amit Kumar},
+  doi          = {10.1007/s10032-022-00412-9},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {265-279},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {BCBId: First bangla comic dataset and its applications},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Character spotting and autonomous tagging: Offline
+handwriting recognition for bangla, korean and other alphabetic scripts.
+<em>IJDAR</em>, <em>25</em>(4), 245–263. (<a
+href="https://doi.org/10.1007/s10032-022-00410-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper demonstrates a framework for offline handwriting recognition using character spotting and autonomous tagging which works for any alphabetic script. Character spotting builds on the idea of object detection to find character elements in unsegmented word images. An autonomous tagging approach is introduced which automates the production of a character image training set by estimating character locations in a word based on typical character size. Although scripts can vary vividly from each other, our proposed approach provides a simple and powerful workflow for unconstrained offline recognition that should work for any alphabetic script with few adjustments. Here we demonstrate this approach with handwritten Bangla, obtaining a character recognition accuracy (CRA) of 94.8% and 91.12% with precision and autonomous tagging, respectively. Furthermore, we explained how character spotting and autonomous tagging can be implemented for other alphabetic scripts. We demonstrated that with handwritten Hangul/Korean obtaining a Jamo recognition accuracy (JRA) of 93.16% using a tiny fraction of the PE92 training set. The combination of character spotting and autonomous tagging takes away one of the biggest frustrations—data annotation by hand, and thus, we believe this has the potential to revolutionize the growth of offline recognition development.},
+  archive      = {J_IJDAR},
+  author       = {Majid, Nishatul and Smith, Elisa H. Barney},
+  doi          = {10.1007/s10032-022-00410-x},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {245-263},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Character spotting and autonomous tagging: Offline handwriting recognition for bangla, korean and other alphabetic scripts},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Advances in handwriting recognition. <em>IJDAR</em>,
+<em>25</em>(4), 241–243. (<a
+href="https://doi.org/10.1007/s10032-022-00421-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJDAR},
+  author       = {Porwal, Utkarsh and Fornés, Alicia and Shafait, Faisal},
+  doi          = {10.1007/s10032-022-00421-8},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {12},
+  number       = {4},
+  pages        = {241-243},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Advances in handwriting recognition},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Retraction note: Offline scripting-free author
+identification based on speeded-up robust features. <em>IJDAR</em>,
+<em>25</em>(3), 239. (<a
+href="https://doi.org/10.1007/s10032-022-00404-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJDAR},
+  author       = {Sharma, Manoj Kumar and Dhaka, Vijay Pal},
+  doi          = {10.1007/s10032-022-00404-9},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {9},
+  number       = {3},
+  pages        = {239},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Retraction note: Offline scripting-free author identification based on speeded-up robust features},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022a). Correction to: Radical-based extract and recognition
+networks for oracle character recognition. <em>IJDAR</em>,
+<em>25</em>(3), 237. (<a
+href="https://doi.org/10.1007/s10032-022-00402-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJDAR},
+  author       = {Lin, Xiaoyu and Chen, Shanxiong and Zhao, Fujia and Qiu, Xiaogang},
+  doi          = {10.1007/s10032-022-00402-x},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {9},
+  number       = {3},
+  pages        = {237},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Correction to: Radical-based extract and recognition networks for oracle character recognition},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022b). Radical-based extract and recognition networks for oracle
+character recognition. <em>IJDAR</em>, <em>25</em>(3), 219–235. (<a
+href="https://doi.org/10.1007/s10032-021-00392-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The recognition of Oracle bone inscription (OBI) is one of the most fundamental aspect of OBI study. However, the complex glyph structure and many variants of OBI, which hinder the advancement of automatic recognition research. In order to solve these problems, this paper designs an Oracle radical extract and recognition framework(ORERF) based on deep learning. First, combining the maximally stable extremal regions(MSER) algorithm and self-defined post-processing algorithm to generate Oracle single radical data annotation; then, the generated Oracle radical-level annotation data set is input into the detection network, the detection network integrates multi-scale features, and uses the attention mechanism to implicitly extract Oracle single radical features, and then feeds the feature map to the detection module for radical detection; finally, we put the detected radicals to the auxiliary classifier network for recognition. The method of treating an OBI character as a composition of radicals rather than as a character category is a human-like method that can reduce the size of the vocabulary, ignore redundant information among similar characters. The experimental results are highlighted and compared to demonstrate the efficiency of the method. Furthermore, we also introduce two new datasets containing Oracle radical character dataset(ORCD) and Oracle combined-character dataset(OCCD).},
+  archive      = {J_IJDAR},
+  author       = {Lin, Xiaoyu and Chen, Shanxiong and Zhao, Fujia and Qiu, Xiaogang},
+  doi          = {10.1007/s10032-021-00392-2},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {9},
+  number       = {3},
+  pages        = {219-235},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Radical-based extract and recognition networks for oracle character recognition},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Boosting modern and historical handwritten text recognition
+with deformable convolutions. <em>IJDAR</em>, <em>25</em>(3), 207–217.
+(<a href="https://doi.org/10.1007/s10032-022-00401-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Handwritten Text Recognition (HTR) in free-layout pages is a challenging image understanding task that can provide a relevant boost to the digitization of handwritten documents and reuse of their content. The task becomes even more challenging when dealing with historical documents due to the variability of the writing style and degradation of the page quality. State-of-the-art HTR approaches typically couple recurrent structures for sequence modeling with Convolutional Neural Networks for visual feature extraction. Since convolutional kernels are defined on fixed grids and focus on all input pixels independently while moving over the input image, this strategy disregards the fact that handwritten characters can vary in shape, scale, and orientation even within the same document and that the ink pixels are more relevant than the background ones. To cope with these specific HTR difficulties, we propose to adopt deformable convolutions, which can deform depending on the input at hand and better adapt to the geometric variations of the text. We design two deformable architectures and conduct extensive experiments on both modern and historical datasets. Experimental results confirm the suitability of deformable convolutions for the HTR task.},
+  archive      = {J_IJDAR},
+  author       = {Cascianelli, Silvia and Cornia, Marcella and Baraldi, Lorenzo and Cucchiara, Rita},
+  doi          = {10.1007/s10032-022-00401-y},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {9},
+  number       = {3},
+  pages        = {207-217},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Boosting modern and historical handwritten text recognition with deformable convolutions},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Fusion of visual representations for multimodal information
+extraction from unstructured transactional documents. <em>IJDAR</em>,
+<em>25</em>(3), 187–205. (<a
+href="https://doi.org/10.1007/s10032-022-00399-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The importance of automated document understanding in terms of today’s businesses’ speed, efficiency, and cost reduction is indisputable. Although structured and semi-structured business documents have been studied intensively within the literature, information extraction from the unstructured ones remains still an open and challenging research topic due to their difficulty levels and the scarcity of available datasets. Transactional documents occupy a special place among the various types of business documents as they serve to track the financial flow and are the most studied type accordingly. The processing of unstructured transactional documents requires the extraction of complex relations (i.e., n-ary, document-level, overlapping, and nested relations). Studies focusing on unstructured transactional documents rely mostly on textual information. However, the impact of their visual compositions remains an unexplored area and may be valuable on their automatic understanding. For the first time in the literature, this article investigates the impact of using different visual representations and their fusion on information extraction from unstructured transactional documents (i.e., for complex relation extraction from money transfer order documents). It introduces and experiments with five different visual representation approaches (i.e., word bounding box, grid embedding, grid convolutional neural network, layout embedding, and layout graph convolutional neural network) and their possible fusion with five different strategies (i.e., three basic vector operations, weighted fusion, and attention-based fusion). The results show that fusion strategies provide a valuable enhancement on combining diverse visual information from which unstructured transactional document understanding obtains different benefits depending on the context. While different visual representations have little effect when added individually to a pure textual baseline, their fusion provides a relative error reduction of up to 33%.},
+  archive      = {J_IJDAR},
+  author       = {Oral, Berke and Eryiğit, Gülşen},
+  doi          = {10.1007/s10032-022-00399-3},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {9},
+  number       = {3},
+  pages        = {187-205},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Fusion of visual representations for multimodal information extraction from unstructured transactional documents},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). CarveNet: A channel-wise attention-based network for
+irregular scene text recognition. <em>IJDAR</em>, <em>25</em>(3),
+177–186. (<a href="https://doi.org/10.1007/s10032-022-00398-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although it has achieved considerable progress in recent years, recognizing irregular text in natural scene is still a challenging problem due to the distortion and background interference. The prior works use either spatial transformation network(STN) or 2D Attention mechanism to improve the recognition accuracy. However, STN-based methods are not robust as the limited network capacity while 2D Attention-based methods are highly interfered by fuzziness, distortion and background. In this paper, we propose a text recognition model CarveNet which consists of three substructures: feature extractor, feature filter and decoder. Feature extractor utilizes FPN (Feature Pyramid Network) to aggregate multi-scale hierarchical feature maps and obtain a larger receptive field. Then, feature filter composed of stacked Residual Channel Attention Block is followed to separate text features from background interference. The 2D self-attention-based decoder generates the text sequence according to the output of feature filter and the previously generated symbols. Extensive evaluation results show CarveNet achieves state-of-the-art on both regular and irregular scene text recognition benchmark datasets. Compared with the previous work based on 2D self-attention, CarveNet achieves accuracy increases of 2.3 and 4.6% on irregular dataset SVTP and CT80.},
+  archive      = {J_IJDAR},
+  author       = {Wu, Guibin and Zhang, Zheng and Xiong, Yongping},
+  doi          = {10.1007/s10032-022-00398-4},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {9},
+  number       = {3},
+  pages        = {177-186},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {CarveNet: A channel-wise attention-based network for irregular scene text recognition},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Scene text detection via decoupled feature pyramid networks.
+<em>IJDAR</em>, <em>25</em>(3), 163–175. (<a
+href="https://doi.org/10.1007/s10032-022-00397-5">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Detecting arbitrary shape scene texts is challenging mainly due to the varied aspect ratios, curves, and scales. In this paper, we propose a novel arbitrary shape scene text detection method via Decoupled Feature Pyramid Networks (DFPN) and regression-based linking (RegLink). Our innovative DFPN decouples the width and height of feature maps generated by FPN to enhance the discriminability of features for varied aspect ratios. As quadrilateral regression results cannot directly represent curve text, we propose a simple yet effective RegLink to link pixels into text instances because pixels in the same curve text have an identical target quadrilateral. Thus, our RegLink can extend the ability of the rotated rectangles text detector for detecting curve text. Besides, we propose a Feature Scale Module to enhance the robustness of features for varied scales. In this way, our method can effectively detect scene texts in arbitrary shapes. Meanwhile, experimental results on three publicly available challenging datasets demonstrate the effectiveness of our method. The code and model of our method is available at https://github.com/lmplayer/DFPN-master .},
+  archive      = {J_IJDAR},
+  author       = {Liang, Min and Hou, Jie-Bo and Zhu, Xiaobin and Yang, Chun and Qin, Jingyan},
+  doi          = {10.1007/s10032-022-00397-5},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {9},
+  number       = {3},
+  pages        = {163-175},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Scene text detection via decoupled feature pyramid networks},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022a). Correction to: Personalizing image enhancement for critical
+visual tasks: Improved legibility of papyri using color processing and
+visual illusions. <em>IJDAR</em>, <em>25</em>(2), 161. (<a
+href="https://doi.org/10.1007/s10032-022-00393-9">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article develops theoretical, algorithmic, perceptual, and interaction aspects of script legibility enhancement in the visible light spectrum for the purpose of scholarly editing of papyri texts.},
+  archive      = {J_IJDAR},
+  author       = {Atanasiu, Vlad and Marthot-Santaniello, Isabelle},
+  doi          = {10.1007/s10032-022-00393-9},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {6},
+  number       = {2},
+  pages        = {161},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Correction to: personalizing image enhancement for critical visual tasks: improved legibility of papyri using color processing and visual illusions},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022b). Personalizing image enhancement for critical visual tasks:
+Improved legibility of papyri using color processing and visual
+illusions. <em>IJDAR</em>, <em>25</em>(2), 129–160. (<a
+href="https://doi.org/10.1007/s10032-021-00386-0">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article develops theoretical, algorithmic, perceptual, and interaction aspects of script legibility enhancement in the visible light spectrum for the purpose of scholarly editing of papyri texts. Novel legibility enhancement algorithms based on color processing and visual illusions are compared to classic methods in a user experience experiment. (1) The proposed methods outperformed the comparison methods. (2) Users exhibited a broad behavioral spectrum, under the influence of factors such as personality and social conditioning, tasks and application domains, expertise level and image quality, and affordances of software, hardware, and interfaces. No single enhancement method satisfied all factor configurations. Therefore, it is suggested to offer users a broad choice of methods to facilitate personalization, contextualization, and complementarity. (3) A distinction is made between casual and critical vision on the basis of signal ambiguity and error consequences. The criteria of a paradigm for enhancing images for critical applications comprise: interpreting images skeptically; approaching enhancement as a system problem; considering all image structures as potential information; and making uncertainty and alternative interpretations explicit, both visually and numerically.},
+  archive      = {J_IJDAR},
+  author       = {Atanasiu, Vlad and Marthot-Santaniello, Isabelle},
+  doi          = {10.1007/s10032-021-00386-0},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {6},
+  number       = {2},
+  pages        = {129-160},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Personalizing image enhancement for critical visual tasks: Improved legibility of papyri using color processing and visual illusions},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Arbitrary-shaped scene text detection with keypoint-based
+shape representation. <em>IJDAR</em>, <em>25</em>(2), 115–127. (<a
+href="https://doi.org/10.1007/s10032-022-00396-6">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently scene text detection has become a hot research topic. Arbitrary-shaped text detection is more challenging due to the irregular geometry of the texts such as long curved shapes. Most existing works attempt to solve the problem by using bottom-up methods, followed by heuristic post-processing, or top-down methods with boundary regression. Through analysis and comparison, we present an efficient framework to detect arbitrary-shaped text by fusing bottom-up and top-down methods. Specifically, we use a segmentation method as the bottom-up detector to regress the text areas. We employ an anchor-free method as the top-down detector to represent and distinguish each text based on the results of bottom-up detector. To detect text with arbitrary shapes, we propose a keypoint-based shape representation method, which treats a text as several keypoints linked together. Then, keypoints are regressed by the top-down detector. With the keypoint-based shape representation, the detected text can be easily rectified by Thin Plate Spline (TPS) transformation, and the framework can be directly extended to support end-to-end text spotting. Extensive experiments on several public benchmarks, including both regular-shaped and arbitrary-shaped scene texts in natural images, demonstrate that our method has achieved state-of-the-art performance .},
+  archive      = {J_IJDAR},
+  author       = {Qin, Shuxin and Chen, Lin},
+  doi          = {10.1007/s10032-022-00396-6},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {6},
+  number       = {2},
+  pages        = {115-127},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Arbitrary-shaped scene text detection with keypoint-based shape representation},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Robust text line detection in historical documents: Learning
+and evaluation methods. <em>IJDAR</em>, <em>25</em>(2), 95–114. (<a
+href="https://doi.org/10.1007/s10032-022-00395-7">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Text line segmentation is one of the key steps in historical document understanding. It is challenging due to the variety of fonts, contents, writing styles and the quality of documents that have degraded through the years. In this paper, we address the limitations that currently prevent people from building line segmentation models with a high generalization capacity. We present a study conducted using three state-of-the-art systems Doc-UFCN, dhSegment and ARU-Net and show that it is possible to build generic models trained on a wide variety of historical document datasets that can correctly segment diverse unseen pages. This paper also highlights the importance of the annotations used during training: Each existing dataset is annotated differently. We present a unification of the annotations and show its positive impact on the final text recognition results. In this end, we present a complete evaluation strategy using standard pixel-level metrics, object-level ones and introducing goal-oriented metrics.},
+  archive      = {J_IJDAR},
+  author       = {Boillet, Mélodie and Kermorvant, Christopher and Paquet, Thierry},
+  doi          = {10.1007/s10032-022-00395-7},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {6},
+  number       = {2},
+  pages        = {95-114},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Robust text line detection in historical documents: Learning and evaluation methods},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Feature learning and encoding for multi-script writer
+identification. <em>IJDAR</em>, <em>25</em>(2), 79–93. (<a
+href="https://doi.org/10.1007/s10032-022-00394-8">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Writer identification from handwriting samples has been an interesting research problem for the pattern recognition community in general and handwriting recognition community in particular. In most cases, however, it is assumed that writers produce writing samples in a single script only. A more challenging scenario is the multi-script writer identification where the training and test samples of writers belong to different scripts. This paper presents a deep learning-based solution for writer identification in a multi-script scenario. The technique relies on identifying keypoints in handwriting and extracting small patches around these keypoints. These patches are aimed to capture the writing gestures of individuals which are likely to be common across multiple scripts. Robust feature representations are learned from these patches using a deep convolutional neural network and the features are encoded using a newly proposed variant of the Vector of Locally Aggregated Descriptors (VLAD). Experiments on three bilingual handwriting datasets including writing samples in Arabic, English, French, Chinese and Farsi report promising identification rates and significantly outperform the current state-of-the-art on this problem.},
+  archive      = {J_IJDAR},
+  author       = {Semma, Abdelillah and Hannad, Yaâcoub and Siddiqi, Imran and Lazrak, Said and Kettani, Mohamed El Youssfi El},
+  doi          = {10.1007/s10032-022-00394-8},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {6},
+  number       = {2},
+  pages        = {79-93},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Feature learning and encoding for multi-script writer identification},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Segmentation for document layout analysis: Not dead yet.
+<em>IJDAR</em>, <em>25</em>(2), 67–77. (<a
+href="https://doi.org/10.1007/s10032-021-00391-3">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Document layout analysis is often the first task in document understanding systems, where a document is broken down into identifiable sections. One of the most common approaches to this task is image segmentation, where each pixel in a document image is classified. However, this task is challenging because as the number of classes increases, small and infrequent objects often get missed. In this paper, we propose a weighted bounding box regression loss methodology to improve accuracy for segmentation of document layouts, while demonstrating our results on our dense article dataset (DAD) and the existing PubLayNet dataset. First, we collect and annotate 43 document object classes across 450 open access research articles, constructing DAD. After benchmarking several segmentation networks, we achieve an F1 score of 96.26% on DAD and 97.11% on PubLayNet with DeeplabV3+, while also showing a bounding box regression method for segmentation results that improves the F1 by +1.99 points on DAD. Finally, we demonstrate the networks trained on DAD can be used as a bootstrapped annotation tool for the existing document layout datasets, decreasing annotation time by 38% with DeeplabV3+.},
+  archive      = {J_IJDAR},
+  author       = {Markewich, Logan and Zhang, Hao and Xing, Yubin and Lambert-Shirzad, Navid and Jiang, Zhexin and Lee, Roy Ka-Wei and Li, Zhi and Ko, Seok-Bum},
+  doi          = {10.1007/s10032-021-00391-3},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {6},
+  number       = {2},
+  pages        = {67-77},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {Segmentation for document layout analysis: Not dead yet},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A novel normal to tangent line (NTL) algorithm for scale
+invariant feature extraction for urdu OCR. <em>IJDAR</em>,
+<em>25</em>(1), 51–66. (<a
+href="https://doi.org/10.1007/s10032-021-00389-x">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The font invariant recognition of Urdu optical characters is a difficult task due to the nature of Nastalique script. Urdu Nastalique is a complex script as it is excessively cursive and contains characters which are overlapping. Characters also change shape along with change in context. The identification of starting position of same character in different contexts further increases complexity. Hence, an optical character recognition (OCR) system, which is trained to recognize characters of a particular font size, may not show the same level of accuracy if font size varies. While considering this complexity the current research has focused on discovering such a feature set which may provide sufficient information for scale invariant Urdu optical character recognition. For this task, calligraphic properties of Urdu Nastalique, the thickness of ligature, the direction of movement of calligraphic pen and global geometric features (height and weight) are used as feature set. The feature of thickness is extracted using two novel algorithms, i.e. “Normal to Tangent Line Algorithm (NTL)” and “Angle to Tangent Line Algorithm (ATL)”. These features are fed to three different models, i.e. correlation, C4.5 and feedforward artificial neural network, and the performance of these models is also compared with SIFT (Scale Invariant Features Transformation). For training and testing, both real and fabricated data sets are employed. The new benchmark dataset of extracted features named Urdu OCR—Scale Invariant Feature Vectors (SIFVs), is developed and released at Kaggle. The newly developed SIFVs dataset, when used to train Correlation, C4.5 and ANN-based models, outperformed SIFT descriptors and yielded 94.56%, 90.54% and 94.65% accuracy, respectively, while SIFT descriptors achieved only 75.45% accuracy on average.},
+  archive      = {J_IJDAR},
+  author       = {Naseer, Asma and Hussain, Sarmad and Zafar, Kashif and Khan, Ayesha},
+  doi          = {10.1007/s10032-021-00389-x},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {3},
+  number       = {1},
+  pages        = {51-66},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {A novel normal to tangent line (NTL) algorithm for scale invariant feature extraction for urdu OCR},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An end-to-end network for irregular printed mongolian
+recognition. <em>IJDAR</em>, <em>25</em>(1), 41–50. (<a
+href="https://doi.org/10.1007/s10032-021-00388-y">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mongolian is a language spoken in Inner Mongolia, China. In the recognition process, due to the shooting angle and other reasons, the image and text will be deformed, which will cause certain difficulties in recognition. This paper propose a triplet attention Mogrifier network (TAMN) for print Mongolian text recognition. The network uses a spatial transformation network to correct deformed Mongolian images. It uses gated recurrent convolution layers (GRCL) combine with triplet attention module to extract image features for the corrected images. The Mogrifier long short-term memory (LSTM) network gets the context sequence information in the feature and finally uses the decoder’s LSTM attention to get the prediction result. Experimental results show the spatial transformation network can effectively recognize deformed Mongolian images, and the recognition accuracy can reach 90.30%. This network achieves good performance in Mongolian text recognition compare with the current mainstream text recognition network. The dataset has been publicly available at https://github.com/ShaoDonCui/Mongolian-recognition .},
+  archive      = {J_IJDAR},
+  author       = {Cui, ShaoDong and Su, YiLa and Qing dao er ji, Ren and Ji, YaTu},
+  doi          = {10.1007/s10032-021-00388-y},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {3},
+  number       = {1},
+  pages        = {41-50},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {An end-to-end network for irregular printed mongolian recognition},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). MRZ code extraction from visa and passport documents using
+convolutional neural networks. <em>IJDAR</em>, <em>25</em>(1), 29–39.
+(<a href="https://doi.org/10.1007/s10032-021-00384-2">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Detecting and extracting information from the machine-readable zone (MRZ) on passports and visas is becoming increasingly important for verifying document authenticity. However, computer vision methods for performing similar tasks, such as optical character recognition, fail to extract the MRZ from digital images of passports with reasonable accuracy. We present a specially designed model based on convolutional neural networks that is able to successfully extract MRZ information from digital images of passports of arbitrary orientation and size. Our model achieves 100% MRZ detection rate and 99.25% character recognition macro-f1 score on a passport and visa dataset.},
+  archive      = {J_IJDAR},
+  author       = {Liu, Yichuan and Joren, Hailey and Gupta, Otkrist and Raviv, Dan},
+  doi          = {10.1007/s10032-021-00384-2},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {3},
+  number       = {1},
+  pages        = {29-39},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {MRZ code extraction from visa and passport documents using convolutional neural networks},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). <span class="math display">$$\hbox {TG}^2$$</span>:
+Text-guided transformer GAN for restoring document readability and
+perceived quality. <em>IJDAR</em>, <em>25</em>(1), 15–28. (<a
+href="https://doi.org/10.1007/s10032-021-00387-z">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Most image enhancement methods focused on restoration of digitized textual documents are limited to cases where the text information is still preserved in the input image, which may often not be the case. In this work, we propose a novel generative document restoration method which allows conditioning the restoration on a guiding signal in the form of target text transcription and which does not need paired high- and low-quality images for training. We introduce a neural network architecture with an implicit text-to-image alignment module. We demonstrate good results on inpainting, debinarization and deblurring tasks, and we show that the trained models can be used to manually alter text in document images. A user study shows that that human observers confuse the outputs of the proposed enhancement method with reference high-quality images in as many as 30% of cases.},
+  archive      = {J_IJDAR},
+  author       = {Kodym, Oldřich and Hradiš, Michal},
+  doi          = {10.1007/s10032-021-00387-z},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {3},
+  number       = {1},
+  pages        = {15-28},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {$$\hbox {TG}^2$$: Text-guided transformer GAN for restoring document readability and perceived quality},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). TableSegNet: A fully convolutional network for table
+detection and segmentation in document images. <em>IJDAR</em>,
+<em>25</em>(1), 1–14. (<a
+href="https://doi.org/10.1007/s10032-021-00390-4">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advances in image object detection lead to applying deep convolution neural networks in the document image analysis domain. Unlike general colorful and pattern-rich objects, tables in document images have properties that limit the capacity of deep learning structures. Significant variation in size and aspect ratio and the local similarity among document components are the main challenges that require both global features for detection and local features for the separation of nearby objects. To deal with these challenges, we present TableSegNet, a compact architecture of a fully convolutional network to detect and separate tables simultaneously. TableSegNet consists of a deep convolution path to detect table regions in low resolution and a shallower path to locate table locations in high resolution and split the detected regions into individual tables. To improve the detection and separation capacity, TableSegNet uses convolution blocks of wide kernel sizes in the feature extraction process and an additional table-border class in the main output. With only 8.1 million parameters and trained purely on document images from the beginning, TableSegNet has achieved state-of-the-art F1 score at the IoU threshold of 0.9 on the ICDAR2019 and the highest number of correctly detected tables on the ICDAR2013 table detection datasets.},
+  archive      = {J_IJDAR},
+  author       = {Nguyen, Duc-Dung},
+  doi          = {10.1007/s10032-021-00390-4},
+  journal      = {International Journal on Document Analysis and Recognition},
+  month        = {3},
+  number       = {1},
+  pages        = {1-14},
+  shortjournal = {Int. J. Doc. Anal. Recognit.},
+  title        = {TableSegNet: A fully convolutional network for table detection and segmentation in document images},
+  volume       = {25},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

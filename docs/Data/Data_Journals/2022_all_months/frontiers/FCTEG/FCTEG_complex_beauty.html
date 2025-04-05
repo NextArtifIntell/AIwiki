@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FCTEG_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="fcteg---37">FCTEG - 37</h2>
+<ul>
+<li><details>
+<summary>
+(2022). Cooperative path-following control of a remotely operated
+underwater vehicle for human visual inspection task. <em>FCTEG</em>,
+<em>3</em>, 1056937. (<a
+href="https://doi.org/10.3389/fcteg.2022.1056937">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, significant attention has been paid to remotely operated underwater vehicles (ROVs) in the performance of underwater tasks, such as the inspection and maintenance of the underwater infrastructure. The workload of ROV operators tends to be high, even for the skilled operators. Therefore, assistance methods for the operators are desired. This study focuses on a task in which a human operator controls an underwater robot to follow a certain path while visually inspecting objects in the vicinity of the path. In such a task, it is desirable to achieve the speed of trajectory control manually because the visual inspection is performed by a human operator. However, to allocate resources to visual inspection, it is desirable to minimize the workload on the path-following by assisting with the automatic control. Therefore, the objective of this study is to develop a cooperative path-following control method that achieves the above-mentioned task by expanding a robust path-following control law of non-holonomic wheeled vehicles. To simplify this problem, we considered a path-following and visual objects recognition task in a two-dimensional plane. We conducted an experiment with participants (n = 16) who completed the task using the proposed method and manual control. We compared results in terms of object recognition success rate, tracking error, completion time, attention distribution, and workload. The results showed that both the path-following errors and workload of the participants were significantly smaller with the proposed method than with manual control. In addition, subjective responses demonstrated that operator attention tended to be allocated to object recognition rather than robot operation tasks with the proposed method. These results demonstrate the effectiveness of the proposed cooperative path-following control method.},
+  archive      = {J_FCTEG},
+  author       = {Sato, Eito and Liu, Hailong and Orita, Yasuaki and Sakagami, Norimitsu and Wada, Takahiro},
+  doi          = {10.3389/fcteg.2022.1056937},
+  journal      = {Frontiers in Control Engineering},
+  month        = {12},
+  pages        = {1056937},
+  shortjournal = {Front. Control Eng.},
+  title        = {Cooperative path-following control of a remotely operated underwater vehicle for human visual inspection task},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Brain modeling for control: A review. <em>FCTEG</em>,
+<em>3</em>, 1046764. (<a
+href="https://doi.org/10.3389/fcteg.2022.1046764">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neurostimulation technologies have seen a recent surge in interest from the neuroscience and controls communities alike due to their proven potential to treat conditions such as epilepsy, Parkinson’s Disease, and depression. The provided stimulation can be of different types, such as electric, magnetic, and optogenetic, and is generally applied to a specific region of the brain in order to drive the local and/or global neural dynamics to a desired state of (in)activity. For most neurostimulation techniques, however, an underlying theoretical understanding of their efficacy is still lacking. From a control-theoretic perspective, it is important to understand how each stimulus modality interacts with the inherent complex network dynamics of the brain in order to assess the controllability of the system and develop neurophysiologically relevant computational models that can be used to design the stimulation profile systematically and in closed loop. In this paper, we review the computational modeling studies of 1) deep brain stimulation, 2) transcranial magnetic stimulation, 3) direct current stimulation, 4) transcranial electrical stimulation, and 5) optogenetics as five of the most popular and commonly used neurostimulation technologies in research and clinical settings. For each technology, we split the reviewed studies into 1) theory-driven biophysical models capturing the low-level physics of the interactions between the stimulation source and neuronal tissue, 2) data-driven stimulus-response models which capture the end-to-end effects of stimulation on various biomarkers of interest, and 3) data-driven dynamical system models that extract the precise dynamics of the brain’s response to neurostimulation from neural data. While our focus is particularly on the latter category due to their greater utility in control design, we review key works in the former two categories as the basis and context in which dynamical system models have been and will be developed. In all cases, we highlight the strength and weaknesses of the reviewed works and conclude the review with discussions on outstanding challenges and critical avenues for future work.},
+  archive      = {J_FCTEG},
+  author       = {Acharya, Gagan and Ruf, Sebastian F. and Nozari, Erfan},
+  doi          = {10.3389/fcteg.2022.1046764},
+  journal      = {Frontiers in Control Engineering},
+  month        = {12},
+  pages        = {1046764},
+  shortjournal = {Front. Control Eng.},
+  title        = {Brain modeling for control: A review},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Inference of regulatory networks through temporally sparse
+data. <em>FCTEG</em>, <em>3</em>, 1017256. (<a
+href="https://doi.org/10.3389/fcteg.2022.1017256">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A major goal in genomics is to properly capture the complex dynamical behaviors of gene regulatory networks (GRNs). This includes inferring the complex interactions between genes, which can be used for a wide range of genomics analyses, including diagnosis or prognosis of diseases and finding effective treatments for chronic diseases such as cancer. Boolean networks have emerged as a successful class of models for capturing the behavior of GRNs. In most practical settings, inference of GRNs should be achieved through limited and temporally sparse genomics data. A large number of genes in GRNs leads to a large possible topology candidate space, which often cannot be exhaustively searched due to the limitation in computational resources. This paper develops a scalable and efficient topology inference for GRNs using Bayesian optimization and kernel-based methods. Rather than an exhaustive search over possible topologies, the proposed method constructs a Gaussian Process (GP) with a topology-inspired kernel function to account for correlation in the likelihood function. Then, using the posterior distribution of the GP model, the Bayesian optimization efficiently searches for the topology with the highest likelihood value by optimally balancing between exploration and exploitation. The performance of the proposed method is demonstrated through comprehensive numerical experiments using a well-known mammalian cell-cycle network.},
+  archive      = {J_FCTEG},
+  author       = {Alali, Mohammad and Imani, Mahdi},
+  doi          = {10.3389/fcteg.2022.1017256},
+  journal      = {Frontiers in Control Engineering},
+  month        = {12},
+  pages        = {1017256},
+  shortjournal = {Front. Control Eng.},
+  title        = {Inference of regulatory networks through temporally sparse data},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). PID control: Resilience with respect to controller
+implementation. <em>FCTEG</em>, <em>3</em>, 1061830. (<a
+href="https://doi.org/10.3389/fcteg.2022.1061830">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One of the major drawbacks of the basic parallel formulations of a PID controller is the effects of proportional and derivative kick. In order to minimize these effects, modified forms of parallel controller structures such as PI-D and I-PD are usually considered in practice. In addition, there is a usual servo/regulation tradeoff regarding closed-loop control system operation. Appropriate tuning is needed for each situation. One way of focusing explicitly on load disturbance is by the appropriate selection of a controller equation. A gap is generated here between the conception of a tuning rule and its final application that may need deployment on different controller equations. There is no danger when we go from PI-D to I-PD as we just change reference processing. However, there will be a loss of performance. The potential loss of performance, depending on the final controller equations used, motivates the authors to introduce the idea of resilient PID tuning: minimize the effects of changing the controller equation on the achieved performance/robustness. Today, this can be seen as a complement to the well-known controller fragility concept. On the basis of this scenario, this paper motivates the analysis of a tuning rule from such a point of view and also emphasizes the benefits that a better process model may provide from such an aspect.},
+  archive      = {J_FCTEG},
+  author       = {Alfaro, V. M. and Vilanova, R.},
+  doi          = {10.3389/fcteg.2022.1061830},
+  journal      = {Frontiers in Control Engineering},
+  month        = {11},
+  pages        = {1061830},
+  shortjournal = {Front. Control Eng.},
+  title        = {PID control: Resilience with respect to controller implementation},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Negotiation-based cooperative planning of local
+trajectories. <em>FCTEG</em>, <em>3</em>, 1058980. (<a
+href="https://doi.org/10.3389/fcteg.2022.1058980">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, a cooperative local trajectory planner based on negotiation theory for human‐robot interaction is developed. It is implemented on a robot, which accompanies patients to examination rooms as part of the HoLLiECares project. For this purpose, an existing human–machine cooperation model for decision-making in one-time conflict cases is applied to a time-repeated negotiation of motion primitives. In negotiation theory, time pressure in the form of deadlines is classically used to achieve agreements. Since deadlines do not naturally exist in all technical applications and their artificial insertion would create an unintuitive system behavior for an involved human, a reciprocal tit-for-tat strategy for the automation is applied in the present work to achieve agreements. This leads to a system behavior that is able to dynamically change between human-in-the-lead behavior or automation-in-the-lead behavior and everything in between depending on the concession of the human and thus on human’s desire. The cooperative negotiation-based local trajectory planner is tested simulatively.},
+  archive      = {J_FCTEG},
+  author       = {Schneider, Julian and Rothfuß, Simon and Hohmann, Sören},
+  doi          = {10.3389/fcteg.2022.1058980},
+  journal      = {Frontiers in Control Engineering},
+  month        = {11},
+  pages        = {1058980},
+  shortjournal = {Front. Control Eng.},
+  title        = {Negotiation-based cooperative planning of local trajectories},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Online driver model parameter identification using the
+lyapunov approach based shared control. <em>FCTEG</em>, <em>3</em>,
+1055915. (<a href="https://doi.org/10.3389/fcteg.2022.1055915">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The work described in this paper proposes a new conflict minimisation strategy in shared driving control for lane keeping systems (LKS) in intelligent vehicles. This strategy takes into account a dynamic driver model, where the driver’s parameters are identified online using the Lyapunov approach. The design of an adaptive shared controller is based on the dynamic parameters of the driver model which changes according to the driver and the situation encountered. Based on Lyapunov stability arguments, the overall asymptotic stability of the closed-loop control system with the adaptive driver model and the variation of the vehicle speed is proved and an LMI optimization is used to formulate the control design. The simulation results, conducted with the SHERPA dynamic car simulator under real-world driving situations, show the importance of integrating a dynamic driver model in the controller design in order to decrease the conflict between the driver and the lane keeping system and to ensure the safety of the vehicle as well as to increase the confidence and acceptability of the driver.},
+  archive      = {J_FCTEG},
+  author       = {Oudainia, Mohamed Radjeb and Sentouh, Chouki and Nguyen, Anh-Tu and Popieul, Jean-Christophe},
+  doi          = {10.3389/fcteg.2022.1055915},
+  journal      = {Frontiers in Control Engineering},
+  month        = {11},
+  pages        = {1055915},
+  shortjournal = {Front. Control Eng.},
+  title        = {Online driver model parameter identification using the lyapunov approach based shared control},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Fuzzy logic control of five-DOF active magnetic bearing
+system based on sliding mode concept. <em>FCTEG</em>, <em>3</em>,
+1008134. (<a href="https://doi.org/10.3389/fcteg.2022.1008134">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In rotor dynamics, the deviation of the shaft is a common phenomenon. The main reasons for the deviation are non-linear attractive forces, harmonic disturbances, system parameter variations, etc. Active magnetic bearings (AMBs) are used to support the rotor inside the air gap in rotating machines, thus avoiding wear and tear and possible breakdowns. This paper proposes a fuzzy sliding mode-inspired control (FSMIC) technique for the five-degrees-of-freedom (DOF) AMB system in the presence of system uncertainties and measurement noises. The fuzzy logic is used to estimate the auxiliary control input of the sliding mode control (SMC) to attenuate the chattering. The variable gains are designed with the help of superintended fuzzy logic to bring more flexibility to the controller performance. The stability analysis is presented with the help of the Lyapunov function candidate. The simulation studies for the AMB system under distinct types of control techniques, i.e., PID, SMC, and FSMIC, illustrate the effectiveness of the proposed control strategy.},
+  archive      = {J_FCTEG},
+  author       = {Saha, Sudipta and Amrr, Syed Muhammad and Bhutto, Javed Khan and AlJohani, Anas Ayesh and Nabi, M.},
+  doi          = {10.3389/fcteg.2022.1008134},
+  journal      = {Frontiers in Control Engineering},
+  month        = {11},
+  pages        = {1008134},
+  shortjournal = {Front. Control Eng.},
+  title        = {Fuzzy logic control of five-DOF active magnetic bearing system based on sliding mode concept},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). How much is enough in watering plants? State-of-the-art in
+irrigation control: Advances, challenges, and opportunities with respect
+to precision irrigation. <em>FCTEG</em>, <em>3</em>, 982463. (<a
+href="https://doi.org/10.3389/fcteg.2022.982463">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With a rapidly expanding global population placing an ever growing demand on freshwater resources, an increased focus on irrigation techniques tailored to the specific needs of plant appears as one solution to minimize overall freshwater consumption. Precision irrigation methods seek to realize an acceptable compromise between yield and irrigation water consumption through control of the timing and quantity of water supplied to plants. The goal is to maintain the water content of the soil, achieve specific water use efficiency with regard to yield or maintain the physiological response of the plant to water stress within predetermined limits. Reliance on soil moisture measurements to establish irrigation water demand inadequately addresses heterogenous distribution of water in soil. Growing research interest is observed detailing the determination of plant water status directly from physiological responses. This paper reviews irrigation control approaches based on different plant water status assessment techniques. A distinct focus is made on application scale of the discussed control approaches, an aspect that has not been considered intensively enough in previous discussions of irrigation control approaches. A discussion of the observed strengths and shortcomings and technological advances supporting the various methods used to quantify plant water status extends the review. Emerging trends that are likely to have an impact on plant water status determination and optimal timing and quantification of irrigation water requirements are integrated to show latest results. A peek into the future of precision irrigation foresees greater reliance on plant-based signals, both in characterization of the control variable, namely the plant water status, and in generation of controller outputs in terms of quantity and timing.},
+  archive      = {J_FCTEG},
+  author       = {Owino, Lina and Söffker, Dirk},
+  doi          = {10.3389/fcteg.2022.982463},
+  journal      = {Frontiers in Control Engineering},
+  month        = {9},
+  pages        = {982463},
+  shortjournal = {Front. Control Eng.},
+  title        = {How much is enough in watering plants? state-of-the-art in irrigation control: Advances, challenges, and opportunities with respect to precision irrigation},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Predictor-based phase-lead active disturbance rejection
+control design for industrial processes with input delay.
+<em>FCTEG</em>, <em>3</em>, 954164. (<a
+href="https://doi.org/10.3389/fcteg.2022.954164">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For industrial processes subject to input delay, a predictor-based phase-lead active disturbance rejection control (ADRC) scheme is proposed in this article for improving disturbance rejection performance by introducing a phase-lead module for feedback control. First, an extended state observer (ESO) in combination with a generalized delay-free output predictor is presented to estimate the delay-free system state together with load disturbance lumped with process uncertainties. To reduce the phase lag caused by not only ESO but also the delay-free output predictor, a phase-lead module is then added into the disturbance observation channel so as to expedite disturbance estimation and thus improve the disturbance rejection performance. Consequently, the ESO gain vector and feedback controller are analytically designed by specifying the desired poles for the observer and the closed-loop system, respectively. Moreover, a digital implementation of the proposed scheme is presented to facilitate the practical applications, followed by a robust stability analysis of the closed-loop system based on the small gain theorem. Illustrative examples from the literature are used to demonstrate the effectiveness and merits of the proposed method over the existing methods.},
+  archive      = {J_FCTEG},
+  author       = {Li, Xiaomeng and Hao, Shoulin and Liu, Tao and Yan, Bin and Zhou, Yongzhi},
+  doi          = {10.3389/fcteg.2022.954164},
+  journal      = {Frontiers in Control Engineering},
+  month        = {9},
+  pages        = {954164},
+  shortjournal = {Front. Control Eng.},
+  title        = {Predictor-based phase-lead active disturbance rejection control design for industrial processes with input delay},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Control of dead-time process: From the smith predictor to
+general multi-input multi-output dead-time compensators. <em>FCTEG</em>,
+<em>3</em>, 953768. (<a
+href="https://doi.org/10.3389/fcteg.2022.953768">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This review paper deals with the analysis, design, and tuning of dead-time compensators for stable and unstable multi-input multi-output (MIMO) processes with multiple time delays. It is well known that, even in the single-input single-output case, processes with significant dead times are difficult to control using standard feedback controllers. For MIMO systems, the study of processes with dead time is more involved, particularly when the process behavior exhibits different dead times in the different input-output relationships. Because of this, much research has been conducted in the last 50 years on this subject, with different approaches and proposals of controllers for covering a variety of objectives. Thus, this paper gives an overview of this important topic, focusing on the solutions derived from the Smith Predictor. First, a historical perspective of the different controllers proposed in the literature is presented. Then, the general solution of the problem is developed, paying particular attention to robustness and disturbance rejection properties, because of their importance and usefulness in industrial processes. All the development is done in the discrete-time case, which allows direct digital implementation. Two simulation case studies are presented to illustrate some of the ideas discussed in the paper, and an experimental case study is used to discuss aspects of practical implementation.},
+  archive      = {J_FCTEG},
+  author       = {Normey-Rico, Julio E. and Santos, Tito L. M. and Flesch, Rodolfo C. C. and Torrico, Bismark C.},
+  doi          = {10.3389/fcteg.2022.953768},
+  journal      = {Frontiers in Control Engineering},
+  month        = {9},
+  pages        = {953768},
+  shortjournal = {Front. Control Eng.},
+  title        = {Control of dead-time process: From the smith predictor to general multi-input multi-output dead-time compensators},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Model predictive control of cancer cellular dynamics: A new
+strategy for therapy design. <em>FCTEG</em>, <em>3</em>, 935018. (<a
+href="https://doi.org/10.3389/fcteg.2022.935018">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in cybergenetics have led to the development of new computational and experimental platforms that enable us to robustly steer cellular dynamics by applying external feedback control. Such technologies have never been applied to regulate intracellular dynamics of cancer cells. Here, we show in silico that adaptive model predictive control (MPC) can effectively be used to steer the simulated signalling dynamics of Non-Small Cell Lung Cancer (NSCLC) cells to resemble those of wild type cells. Our optimisation-based control algorithm enables tailoring the cost function to force the controller to alternate different drugs and/or reduce drug exposure, minimising both drug-induced toxicity and resistance to treatment. Our results pave the way for new cybergenetics experiments in cancer cells, and, longer term, can support the design of improved drug combination therapies in biomedical applications.},
+  archive      = {J_FCTEG},
+  author       = {Smart, Benjamin and de Cesare, Irene and Renson, Ludovic and Marucci, Lucia},
+  doi          = {10.3389/fcteg.2022.935018},
+  journal      = {Frontiers in Control Engineering},
+  month        = {9},
+  pages        = {935018},
+  shortjournal = {Front. Control Eng.},
+  title        = {Model predictive control of cancer cellular dynamics: A new strategy for therapy design},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Comparative analysis of different FOPI approximations and
+number of terms used on simulations of a battery-powered, field-oriented
+induction motor based electric vehicle traction system. <em>FCTEG</em>,
+<em>3</em>, 922308. (<a
+href="https://doi.org/10.3389/fcteg.2022.922308">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Because of their enhanced performance, the fractional order proportional-integral (FOPI) controllers are becoming an appealing choice for controlling induction motor speed. To implement FOPI controllers, several fractional order integral approximations are available in the literature. The approximation used, and the order of approximation affects the speed tracking, transient response, and induction motor power consumption. This further affects the energy consumption analysis if simulations are conducted based on such approximations. In this paper an electric vehicle (EV) traction system is simulated to investigate the effect of such approximations on the simulations of a battery powered, induction motor driven EV system. The system consists of an indirect field-oriented induction motor, a lithium-ion battery bank, and a three-phase inverter. This work presents a quantitative analysis of the performance of FOPI controllers using different approximations, and order of approximations is presented. The controllers are evaluated based on speed tracking, transient response, computational time, and power consumption. Both step functions and standard drive cycles are used as the speed reference signal to evaluate the effects of using different approximations and different orders of approximation, when different references are used. This work establishes a reference set of simulations that can be used to infer the amount of error in battery state of charge, and state of health analysis conducted on such an EV system, when dealing with FOPI controllers under different approximations and related settings.},
+  archive      = {J_FCTEG},
+  author       = {Elsaadany, Mazen and Elahi, Muhammad Qasim and AtaAllah, Faris and Rehman, Habibur and Mukhopadhyay, Shayok},
+  doi          = {10.3389/fcteg.2022.922308},
+  journal      = {Frontiers in Control Engineering},
+  month        = {9},
+  pages        = {922308},
+  shortjournal = {Front. Control Eng.},
+  title        = {Comparative analysis of different FOPI approximations and number of terms used on simulations of a battery-powered, field-oriented induction motor based electric vehicle traction system},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Editorial: Linear parameter varying systems modeling,
+identification and control. <em>FCTEG</em>, <em>3</em>, 970136. (<a
+href="https://doi.org/10.3389/fcteg.2022.970136">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FCTEG},
+  author       = {Lopes Dos Santos, Paulo and Azevedo Perdicoulis, Teresa and Ramos, José A. and Fontes, Fernando A. C. C. and Sename, Olivier},
+  doi          = {10.3389/fcteg.2022.970136},
+  journal      = {Frontiers in Control Engineering},
+  month        = {8},
+  pages        = {970136},
+  shortjournal = {Front. Control Eng.},
+  title        = {Editorial: Linear parameter varying systems modeling, identification and control},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Automatic generation and updating of process industrial
+digital twins for estimation and control - a review. <em>FCTEG</em>,
+<em>3</em>, 954858. (<a
+href="https://doi.org/10.3389/fcteg.2022.954858">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This review aims at assessing the opportunities and challenges of creating and using digital twins for process industrial systems over their life-cycle in the context of estimation and control. The scope is, therefore, to provide a survey on mechanisms to generate models for process industrial systems using machine learning (purely data-driven) and automated equation-based modeling. In particular, we consider learning, validation, and updating of large-scale (i.e., plant-wide or plant-stage but not component-wide) equation-based process models. These aspects are discussed in relation to typical application cases for the digital twins creating value for users both on the operational and planning level for process industrial systems. These application cases are also connected to the needed technologies and the maturity of those as given by the state of the art. Combining all aspects, a way forward to enable the automatic generation and updating of digital twins is proposed, outlining the required research and development activities. The paper is the outcome of the research project AutoTwin-PRE funded by Strategic Innovation Program PiiA within the Swedish Innovation Agency VINNOVA and the academic version of an industry report prior published by PiiA.},
+  archive      = {J_FCTEG},
+  author       = {Birk, Wolfgang and Hostettler, Roland and Razi, Maryam and Atta, Khalid and Tammia, Rasmus},
+  doi          = {10.3389/fcteg.2022.954858},
+  journal      = {Frontiers in Control Engineering},
+  month        = {8},
+  pages        = {954858},
+  shortjournal = {Front. Control Eng.},
+  title        = {Automatic generation and updating of process industrial digital twins for estimation and control - a review},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Design and implementation of high-order PID for second-order
+processes with time delay. <em>FCTEG</em>, <em>3</em>, 953477. (<a
+href="https://doi.org/10.3389/fcteg.2022.953477">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this study, a state-space pole placement approach is first proposed to design high-order PID controllers for high-order processes. The method makes use of a single parameter to determine the locations of closed-loop poles; thus, a high-order PID controller can be tuned with this parameter. To implement the high-order PID controller in practice, an observer-based PID structure is proposed. The structure utilizes a model-free observer to estimate the plant output and its derivatives, thus retaining the high-order PID structure but can filter the measurement noise and make the high-order derivatives of the plant output available for control. The proposed method is applied to design high-order PID controllers for second-order processes with time delay. Simulation results show that high-order PID can indeed improve the performance of conventional PID controllers for second-order processes with time delay in disturbance rejection and robustness.},
+  archive      = {J_FCTEG},
+  author       = {Han, Wenjie and Hu, Xingqi and Damiran, Ulemj and Tan, Wen},
+  doi          = {10.3389/fcteg.2022.953477},
+  journal      = {Frontiers in Control Engineering},
+  month        = {8},
+  pages        = {953477},
+  shortjournal = {Front. Control Eng.},
+  title        = {Design and implementation of high-order PID for second-order processes with time delay},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Motorized FES-cycling and closed-loop nonlinear control for
+power tracking using a finite-time stable torque algorithm.
+<em>FCTEG</em>, <em>3</em>, 910126. (<a
+href="https://doi.org/10.3389/fcteg.2022.910126">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Functional electrical stimulation (FES)-induced cycling is a rehabilitation strategy that activates lower-limb muscles to achieve coordinated pedaling in individuals with movement disorders. An electric motor is included in-the-loop assisting the rider as needed to prolong exercise duration and mitigate muscle fatigue. Power tracking objectives have been prescribed for motorized FES-cycling, where muscles and the electric motor are assigned to track desired cadence (speed) and torque trajectories. However, predetermined desired trajectories can yield poor cycling performance since the functional capacity of each individual is unknown. In particular, when muscles are tasked to track a desired torque, a dynamic approach is well-motivated to adjust the torque demand for the rider in real-time (e.g., a constant torque demand may be unfeasible throughout a cycling session since muscles fatigue). In this paper, input-output data is exploited using a finite-time algorithm to estimate the target desired torque leveraging an estimate of the active torque produced by muscles via FES. The convergence rate of the finite-time algorithm can be adjusted by tuning selectable parameters. The cycle-rider system is modeled as a nonlinear, time-varying, state-dependent switched system to activate lower-limb muscles and an electric motor. To achieve cadence and torque tracking, nonlinear robust tracking controllers are designed for muscles and motor. A robust sliding mode controller is designed for the electric motor to track a desired constant cadence trajectory. Moreover, an integral torque feedback controller is designed to activate quadriceps, hamstrings, and gluteus muscle groups to track the desired torque trajectory computed by the finite-time algorithm. A Lyapunov-based stability analysis is developed to ensure exponential tracking of the closed-loop cadence error system and global uniformly ultimate bounded (GUUB) torque tracking. A discrete-time Lyapunov-based stability analysis leveraging a recent tool for finite-time systems is developed to ensure convergence and guarantee that the finite-time algorithm is Hölder continuous. The developed tracking controllers for the muscles and electric motor and finite-time algorithm to compute the desired torque are implemented in real-time during cycling experiments in seven able-bodied individuals. Multiple cycling trials are implemented with different gain parameters of the finite-time torque algorithm to compare tracking performance for all participants.},
+  archive      = {J_FCTEG},
+  author       = {Chang, Chen-Hao and Casas, Jonathan and Sanyal, Amit K. and Duenas, Victor H.},
+  doi          = {10.3389/fcteg.2022.910126},
+  journal      = {Frontiers in Control Engineering},
+  month        = {8},
+  pages        = {910126},
+  shortjournal = {Front. Control Eng.},
+  title        = {Motorized FES-cycling and closed-loop nonlinear control for power tracking using a finite-time stable torque algorithm},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Conversion from unstructured LTI controllers to
+observer-structured ones for LPV systems. <em>FCTEG</em>, <em>3</em>,
+804549. (<a href="https://doi.org/10.3389/fcteg.2022.804549">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper considers the conversion problem from unstructured linear time-invariant (LTI) controllers to observer-structured LTI controllers, whose structure is similar to but not exactly the same as the so-called “Luenberger observer–based controllers,” for linear parameter-varying (LPV) plant systems. In contrast to Luenberger observer–based controllers, observer-structured LTI controllers can be defined and constructed even if the plant systems are given as LPV systems. In the conversion problem, the state-space matrices of the observer-structured LTI controller are parameterized with those of the given unstructured LTI controller, one free matrix, and a state transformation matrix. We also show a method to obtain the optimal state transformation matrix with respect to the convergence of the discrepancy between the plant state and the observer-structured controller state for a stochastically defined non-zero initial plant state. Several toy examples are included to illustrate the effectiveness and the usefulness of observer-structured LTI controllers, and the utility of the proposed conversion parametrization.},
+  archive      = {J_FCTEG},
+  author       = {Sato, Masayuki and Sebe, Noboru},
+  doi          = {10.3389/fcteg.2022.804549},
+  journal      = {Frontiers in Control Engineering},
+  month        = {8},
+  pages        = {804549},
+  shortjournal = {Front. Control Eng.},
+  title        = {Conversion from unstructured LTI controllers to observer-structured ones for LPV systems},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Future trends for a first course in control engineering.
+<em>FCTEG</em>, <em>3</em>, 956665. (<a
+href="https://doi.org/10.3389/fcteg.2022.956665">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This review summarises recent thinking in the academic control community on the future of control as a topic and thus on the design and focus of control courses at university. It is notable that the current thinking is quite controversial and significantly at odds with traditional practice, and thus implementing such changes will require substantial effort and will from the community.},
+  archive      = {J_FCTEG},
+  author       = {Rossiter, John Anthony},
+  doi          = {10.3389/fcteg.2022.956665},
+  journal      = {Frontiers in Control Engineering},
+  month        = {7},
+  pages        = {956665},
+  shortjournal = {Front. Control Eng.},
+  title        = {Future trends for a first course in control engineering},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Plantwide decentralized controller design for hybrid solar
+thermal power plant. <em>FCTEG</em>, <em>3</em>, 853625. (<a
+href="https://doi.org/10.3389/fcteg.2022.853625">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Solar Thermal Power (STP) plants are promising avenues for solar energy assisted power generation. However, they face operational challenges due to diurnal and seasonal variations in available solar radiation, and varying atmospheric conditions in terms of cloud cover, dust levels, etc. Thus, to operate an STP plant at high efficiency and to meet the electricity demand, optimization and control strategies are critical. This paper focuses on designing decentralized controllers to ensure the safe and efficient operation of a hybrid STP which was designed and commissioned a few years ago (Nayak et al., Current Science, 2015, 109, 1445–1457). The STP is hybrid as it uses two different technologies for solar power collection, namely Parabolic Trough Collector (PTC) for heating oil and a Linear Fresnel Reflector (LFR) for generating direct steam. Superheated steam, generated using heat exchangers, subsequently drives the turbine generator block to generate electricity. In the current work, we develop decentralized controllers which ensure safe operation while meeting the production target of the hybrid STP. Towards this end, key control loops in the plant are identified. Continuous transfer function models are identified for these control loops using step tests. PID controllers are then obtained for these loops based on the resulting transfer function models. Wherever relevant, the feedback action of PID controllers is supplemented by a feedforward control action that reacts to the disturbances. Override control action is also implemented to ensure safe operation. The utility of the proposed plantwide decentralized control scheme is demonstrated via simulation studies by comparing the performance of the hybrid STP under open-loop and closed-loop in presence of disturbances and significant dynamic variability in the plant operation via two case studies. Results indicate significantly superior performance of closed-loop operation across various performance metrics.},
+  archive      = {J_FCTEG},
+  author       = {Kannaiyan, Surender and Bhartiya, Sharad and Bhushan, Mani},
+  doi          = {10.3389/fcteg.2022.853625},
+  journal      = {Frontiers in Control Engineering},
+  month        = {7},
+  pages        = {853625},
+  shortjournal = {Front. Control Eng.},
+  title        = {Plantwide decentralized controller design for hybrid solar thermal power plant},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Heart rate dynamics identification and control in cycle
+ergometer exercise: Comparison of first- and second-order performance.
+<em>FCTEG</em>, <em>3</em>, 894180. (<a
+href="https://doi.org/10.3389/fcteg.2022.894180">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background: Accurate and robust feedback control of human heart rate is important for exercise testing and prescription. Feedback controllers can be designed using first-order, linear, time-invariant models of heart rate dynamics, but it remains to investigate whether second-order models lead to better identification and control performance. The distinguishing contribution of this research is the direct employment of established physiological principles to determine model structure, and to focus the feedback-design goals: cardiac physiology proposes a two-phase second-order response, delineated into fast and slow components; the natural phenomenon of broad-spectrum heart-rate variability motivates a novel feedback design approach that appropriately shapes the input-sensitivity function.Aim: The aim of this work was to compare the fidelity of first- and second-order models of heart rate response during cycle-ergometer exercise, and to compare the accuracy and dynamics of feedback controllers that were designed using the two model structures.Methods: Twenty-seven participants each took part in two identification tests to generate separate estimation and validation data sets, where ergometer work rate was a pseudo-random binary sequence and in two feedback tests where controllers were designed using the first- or second-order models.Results: Second-order models gave substantially and significantly higher model fit (51.9% vs. 47.9%, p &amp;lt; 0.0001; second order vs. first order) and lower root-mean-square model error (2.93 bpm vs. 3.21 bpm, p &amp;lt; 0.0001). There was modest improvement in tracking accuracy with controllers based on second-order models, where mean root-mean-square tracking errors were 2.62 bpm (second order) and 2.77 bpm (first order), with p = 0.052. Controllers based on second-order models were found to be substantially and significantly more dynamic: mean values of average control signal power were 9.61 W2 and 7.56 W2, p &amp;lt; 0.0001.Conclusion: The results of this study confirm the hypotheses that second-order models of heart-rate dynamics give better fidelity than first-order models, and that feedback compensator designs that use the additional dynamic mode give more accurate and more dynamic closed-loop control performance.},
+  archive      = {J_FCTEG},
+  author       = {Spörri, Alexander H. and Wang, Hanjie and Hunt, Kenneth J.},
+  doi          = {10.3389/fcteg.2022.894180},
+  journal      = {Frontiers in Control Engineering},
+  month        = {5},
+  pages        = {894180},
+  shortjournal = {Front. Control Eng.},
+  title        = {Heart rate dynamics identification and control in cycle ergometer exercise: Comparison of first- and second-order performance},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Power allocation for remote estimation over known and
+unknown gilbert-elliott channels. <em>FCTEG</em>, <em>3</em>, 861055.
+(<a href="https://doi.org/10.3389/fcteg.2022.861055">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we consider the problem of power scheduling of a sensor that transmits over a (possibly) unknown Gilbert-Elliott (GE) channel for remote state estimation. The sensor supports two power modes, namely low power, and high power. The scheduling policy determines when to use low power or high power for data transmission over a fading channel with temporal correlation while satisfying the energy constraints. Although error-free acknowledgement/negative-acknowledgement (ACK/NACK) signals are provided by the remote estimator, they only provide meaningful information about the underlying channel state when low power is utilized. This leads to a partially observable Markov decision process (POMDP) problem and we derive conditions that preserve the optimality of a stationary schedule derived for its fully observable counterpart. However, implementing this schedule requires knowledge of the parameters of the GE model which are not available in practice. To address this, we adopt a Bayesian framework to learn these parameters online and propose an algorithm that is shown to satisfy the energy constraint while achieving near-optimal performance via simulation.},
+  archive      = {J_FCTEG},
+  author       = {Farjam, Tahmoores and Charalambous, Themistoklis},
+  doi          = {10.3389/fcteg.2022.861055},
+  journal      = {Frontiers in Control Engineering},
+  month        = {4},
+  pages        = {861055},
+  shortjournal = {Front. Control Eng.},
+  title        = {Power allocation for remote estimation over known and unknown gilbert-elliott channels},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Aerial survey robotics in extreme environments: Mapping
+volcanic CO2 emissions with flocking UAVs. <em>FCTEG</em>, <em>3</em>,
+836720. (<a href="https://doi.org/10.3389/fcteg.2022.836720">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present methods for autonomous collaborative surveying of volcanic CO2 emissions using aerial robots. CO2 is a useful predictor of volcanic eruptions and an influential greenhouse gas. However, current CO2 mapping methods are hazardous and inefficient, as a result, only a small fraction of CO2 emitting volcanoes have been surveyed. We develop algorithms and a platform to measure volcanic CO2 emissions. The Dragonfly Unpiloted Aerial Vehicle (UAV) platform is capable of long-duration CO2 collection flights in harsh environments. We implement two survey algorithms on teams of Dragonfly robots and demonstrate that they effectively map gas emissions and locate the highest gas concentrations. Our experiments culminate in a successful field test of collaborative rasterization and gradient descent algorithms in a challenging real-world environment at the edge of the Valles Caldera supervolcano. Both algorithms treat multiple flocking UAVs as a distributed flexible instrument. Simultaneous sensing in multiple UAVs gives scientists greater confidence in estimates of gas concentrations and the locations of sources of those emissions. These methods are also applicable to a range of other airborne concentration mapping tasks, such as pipeline leak detection and contaminant localization.},
+  archive      = {J_FCTEG},
+  author       = {Ericksen, John and Fricke, G. Matthew and Nowicki, Scott and Fischer, Tobias P. and Hayes, Julie C. and Rosenberger, Karissa and Wolf, Samantha R. and Fierro, Rafael and Moses, Melanie E.},
+  doi          = {10.3389/fcteg.2022.836720},
+  journal      = {Frontiers in Control Engineering},
+  month        = {3},
+  pages        = {836720},
+  shortjournal = {Front. Control Eng.},
+  title        = {Aerial survey robotics in extreme environments: Mapping volcanic CO2 emissions with flocking UAVs},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Integration of photovoltaic generation within a modeling
+framework for energy hubs. <em>FCTEG</em>, <em>3</em>, 833146. (<a
+href="https://doi.org/10.3389/fcteg.2022.833146">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Energy efficiency is a topic with many publications related to resource exploitation at a local scale; via well-performed energy management, substantial environmental and economic benefits can be achieved. In this article, the models used to forecast the photovoltaic power yield in two distinct facilities are described. These facilities are part of the same production plant, which makes use of different heterogeneous resources (carbon dioxide, water, thermal energy, and electricity) and has already been analyzed in a problem that consists in finding the set of variables that minimize the operation cost. In order to predict the power production for both photovoltaic fields, the expressions for radiation on sloped surfaces and the equivalent circuit for solar cells are employed, and the inverters and wire-transmission loss effects are considered. Furthermore, their integration within a general-purpose modeling framework for energy hubs is demonstrated. The comparison between validation results and production real data shows that despite the slight overestimation of the energy yield, the models are suitable to forecast the production of both facilities with a suitable accuracy, as the R2 coefficients of both facilities lie between 0.95 and 0.96.},
+  archive      = {J_FCTEG},
+  author       = {Ramos-Teodoro, Jerónimo and Rodríguez, Francisco and Berenguel, Manuel},
+  doi          = {10.3389/fcteg.2022.833146},
+  journal      = {Frontiers in Control Engineering},
+  month        = {3},
+  pages        = {833146},
+  shortjournal = {Front. Control Eng.},
+  title        = {Integration of photovoltaic generation within a modeling framework for energy hubs},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Signal-to-noise ratio based fault detection and
+identification. <em>FCTEG</em>, <em>3</em>, 806558. (<a
+href="https://doi.org/10.3389/fcteg.2022.806558">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we introduce signal-to-noise ratio (SNR) based fault detection and identification mechanisms for a networked control system feedback loop, where the network component is represented by an additive white noise (AWN) channel. The SNR approach is known to be a steady-state analysis and design tool, thus we first introduce a finite time approximation for the estimated AWN channel SNR. We then consider the case of a general linear time-invariant plant model with one unstable pole. The potential faults that we discuss here cover simultaneously the plant model gain and/or the unstable pole. The fault detection is performed relative to the estimated AWN channel SNR. The fault identification is performed using recursive least squares ideas and then further validated with the observed SNR value, when a fault has been previously detected. We show that the proposed SNR-based fault mechanism (fault detection plus fault identification) is capable of processing the proposed faults. We conclude discussing future research based on the contributions exposed in the present work.},
+  archive      = {J_FCTEG},
+  author       = {Rojas, Alejandro J. and Garcés, Hugo O.},
+  doi          = {10.3389/fcteg.2022.806558},
+  journal      = {Frontiers in Control Engineering},
+  month        = {3},
+  pages        = {806558},
+  shortjournal = {Front. Control Eng.},
+  title        = {Signal-to-noise ratio based fault detection and identification},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An ellipsoidal predictor–corrector state estimation scheme
+for linear continuous-time systems with bounded parameters and bounded
+measurement errors. <em>FCTEG</em>, <em>3</em>, 785795. (<a
+href="https://doi.org/10.3389/fcteg.2022.785795">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For linear time-invariant dynamic systems with exactly known coefficients of their system matrices for which measurements with bounded errors are available at discrete time instants, an optimal polygonal state estimation scheme was recently published. This scheme allows for tightly enclosing all possible state trajectories in presence of uncertain, but bounded, system inputs which may be varying arbitrarily within in their bounds. Moreover, this approach is also capable of accounting for uncertainty related to the measurement time instants. However, the drawback of this polygonal technique is its rapidly increasing complexity for larger system dimensions. For that reason, the polygonal state enclosures are replaced by a computationally less expensive, but nearly optimal, ellipsoidal enclosure technique in this paper. Numerical simulations for representative benchmark examples focusing both on applications with precisely known and uncertain parameters conclude this contribution.},
+  archive      = {J_FCTEG},
+  author       = {Rauh, Andreas and Rohou, Simon and Jaulin, Luc},
+  doi          = {10.3389/fcteg.2022.785795},
+  journal      = {Frontiers in Control Engineering},
+  month        = {3},
+  pages        = {785795},
+  shortjournal = {Front. Control Eng.},
+  title        = {An ellipsoidal Predictor–Corrector state estimation scheme for linear continuous-time systems with bounded parameters and bounded measurement errors},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Interval extension of neural network models for the
+electrochemical behavior of high-temperature fuel cells. <em>FCTEG</em>,
+<em>3</em>, 785123. (<a
+href="https://doi.org/10.3389/fcteg.2022.785123">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In various research projects, it has been demonstrated that feedforward neural network models (possibly extended toward dynamic representations) are efficient means for identifying numerous dependencies of the electrochemical behavior of high-temperature fuel cells. These dependencies include external inputs such as gas mass flows, gas inlet temperatures, and the electric current as well as internal fuel cell states such as the temperature. Typically, the research on using neural networks in this context is focused only on point-valued training data. As a result, the neural network provides solely point-valued estimates for such quantities as the stack voltage and instantaneous fuel cell power. Although advantageous, for example, for robust control synthesis, quantifying the reliability of neural network models in terms of interval bounds for the network’s output has not yet received wide attention. In practice, however, such information is essential for optimizing the utilization of the supplied fuel. An additional goal is to make sure that the maximum power point is not exceeded since that would lead to accelerated stack degradation. To solve the data-driven modeling task with the focus on reliability assessment, a novel offline and online parameterization strategy for interval extensions of neural network models is presented in this paper. Its functionality is demonstrated using real-life measured data for a solid oxide fuel cell stack that is operated with temporally varying electric currents and fuel gas mass flows.},
+  archive      = {J_FCTEG},
+  author       = {Rauh, Andreas and Auer, Ekaterina},
+  doi          = {10.3389/fcteg.2022.785123},
+  journal      = {Frontiers in Control Engineering},
+  month        = {3},
+  pages        = {785123},
+  shortjournal = {Front. Control Eng.},
+  title        = {Interval extension of neural network models for the electrochemical behavior of high-temperature fuel cells},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Self-triggered control of multi-agent systems with external
+disturbances. <em>FCTEG</em>, <em>3</em>, 835052. (<a
+href="https://doi.org/10.3389/fcteg.2022.835052">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the consensus of multi-agent systems (MASs) by virtue of event-triggered mechanism. Considering the existence of external disturbances, we use a disturbance observer to estimate the disturbance signals and eliminate the corresponding effects by using estimators to compensate the input control terms. The self-triggered condition is designed and proved that there is no Zeno behavior. We show that the proposed disturbance observer can estimate the external disturbance signals well under the self-triggered condition. Finally, simulation examples are presented to verify the theoretical results.},
+  archive      = {J_FCTEG},
+  author       = {Li, Xiang and Zhu, Jing},
+  doi          = {10.3389/fcteg.2022.835052},
+  journal      = {Frontiers in Control Engineering},
+  month        = {2},
+  pages        = {835052},
+  shortjournal = {Front. Control Eng.},
+  title        = {Self-triggered control of multi-agent systems with external disturbances},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Control of jump markov uncertain linear systems with general
+probability distributions. <em>FCTEG</em>, <em>3</em>, 806543. (<a
+href="https://doi.org/10.3389/fcteg.2022.806543">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a method to control a class of jump Markov linear systems with uncertain initialization of the continuous state and affected by disturbances. Both types of uncertainties are modeled as stochastic processes with arbitrarily chosen probability distributions, for which however, the expected values and (co-)variances are known. The paper elaborates on the control task of steering the uncertain system into a target set by use of continuous controls, while chance constraints have to be satisfied for all possible state sequences of the Markov chain. The proposed approach uses a stochastic model predictive control approach on moving finite-time horizons with tailored constraints to achieve the control goal with prescribed confidence. Key steps of the procedure are (i) to over-approximate probabilistic reachable sets by use of the Chebyshev inequality, and (ii) to embed a tightened version of the original constraints into the optimization problem, in order to obtain a control strategy satisfying the specifications. Convergence of the probabilistic reachable sets is attained by suitable bounding of the state covariance matrices for arbitrary Markov chain sequences. The paper presents the main steps of the solution approach, discusses its properties, and illustrates the principle for a numeric example.},
+  archive      = {J_FCTEG},
+  author       = {Flüs, Patrick and Stursberg, Olaf},
+  doi          = {10.3389/fcteg.2022.806543},
+  journal      = {Frontiers in Control Engineering},
+  month        = {2},
+  pages        = {806543},
+  shortjournal = {Front. Control Eng.},
+  title        = {Control of jump markov uncertain linear systems with general probability distributions},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Path planning for a jumping rover team with a charging
+station in multi-waypoints visiting missions. <em>FCTEG</em>,
+<em>3</em>, 803468. (<a
+href="https://doi.org/10.3389/fcteg.2022.803468">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper demonstrates an innovative group of robots, consisting of jumping rovers and a charging station, improved traversability and extended energy endurance when traveling to multiple target locations. By employing different jumping rovers with distinct energy consumption characteristics and jumping capabilities, we focus on searching for the most energy-efficient path of each jumping rover in a multi-waypoints visiting mission with obstacles. As jumping rovers can jump onto or over some obstacles without navigating around them, they have the potential to save energy by generating alternative paths to overcome obstacles. Moreover, due to the energy demands for the multi-waypoints mission and the limited battery capacity, a charging station is considered to provide extra energy for enhanced endurance during the mission. We first apply a refined rapidly-exploring random tree star (RRT∗) algorithm to find energy-efficient paths between any two target locations. Then, the genetic algorithm (GA) is applied to select the most profitable combination of paths to visit all targets with energy constraints. Finally, we verify the improved mobility and energy efficiency in both virtual simulation and experimental tests using a group of customized jumping rovers with a charging station and the proposed path planning and task allocation method.},
+  archive      = {J_FCTEG},
+  author       = {Jung , Myungjin and Chuen Tan , Kai and Dai, Ran},
+  doi          = {10.3389/fcteg.2022.803468},
+  journal      = {Frontiers in Control Engineering},
+  month        = {2},
+  pages        = {803468},
+  shortjournal = {Front. Control Eng.},
+  title        = {Path planning for a jumping rover team with a charging station in multi-waypoints visiting missions},
+  volume       = {3},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Distributed control of discrete-time linear multi-agent
+systems with optimal energy performance. <em>FCTEG</em>, <em>2</em>,
+797362. (<a href="https://doi.org/10.3389/fcteg.2021.797362">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the leader-based distributed optimal control problem of discrete-time linear multi-agent systems (MASs) on directed communication topologies. In particular, the communication topology under consideration consists of only one directed spanning tree. A distributed consensus control protocol depending on the information between agents and their neighbors is designed to guarantee the consensus of MASs. In addition, the optimization of energy cost performance can be obtained using the proposed protocol. Subsequently, a numerical example is provided to demonstrate the effectiveness of the presented protocol.},
+  archive      = {J_FCTEG},
+  author       = {Huang, Guan and Zhang, Zhuo and Yan, Weisheng},
+  doi          = {10.3389/fcteg.2021.797362},
+  journal      = {Frontiers in Control Engineering},
+  month        = {4},
+  pages        = {797362},
+  shortjournal = {Front. Control Eng.},
+  title        = {Distributed control of discrete-time linear multi-agent systems with optimal energy performance},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Resilient biomedical systems design under noise using
+logic-based machine learning. <em>FCTEG</em>, <em>2</em>, 778118. (<a
+href="https://doi.org/10.3389/fcteg.2021.778118">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Increased reliance on electronic health records and plethora of new sensor technologies has enabled the use of machine learning (ML) in medical diagnosis. This has opened up promising opportunities for faster and automated decision making, particularly in early and repetitive diagnostic routines. Nevertheless, there are also increased possibilities of data aberrance arising from environmentally induced noise. It is vital to create ML models that are resilient in the presence of data noise to minimize erroneous classifications that could be crucial. This study uses a recently proposed ML algorithm called the Tsetlin machine (TM) to study the robustness against noise-injected medical data. We test two different feature extraction methods, in conjunction with the TM, to explore how feature engineering can mitigate the impact of noise corruption. Our results show the TM is capable of effective classification even with a signal-to-noise ratio (SNR) of −15dB as its training parameters remain resilient to noise injection. We show that high testing data sensitivity can still be possible at very low SNRs through a balance of feature distribution–based discretization and a rule mining algorithm used as a noise filtering encoding method. Through this method we show how a smaller number of core features can be extracted from a noisy problem space resulting in reduced ML model complexity and memory footprint—in some cases up to 6x fewer training parameters while retaining equal or better performance. In addition, we investigate the cost of noise resilience in terms of energy when compared with recently proposed binarized neural networks.},
+  archive      = {J_FCTEG},
+  author       = {Rahman, Tousif and Shafik, Rishad and Granmo, Ole-Christoffer and Yakovlev, Alex},
+  doi          = {10.3389/fcteg.2021.778118},
+  journal      = {Frontiers in Control Engineering},
+  month        = {4},
+  pages        = {778118},
+  shortjournal = {Front. Control Eng.},
+  title        = {Resilient biomedical systems design under noise using logic-based machine learning},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). An online interval-based inertial navigation system for
+control purposes of autonomous boats. <em>FCTEG</em>, <em>2</em>,
+786188. (<a href="https://doi.org/10.3389/fcteg.2021.786188">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Interval analysis is a numerical tool classically used for solving nonlinear equations in a guaranteed way. It has been shown that it can be used to build reliable nonlinear state estimators for dynamical systems. Numerous simulations inspired from real-life applications have shown the applicability of the approach. This paper proposes to implement an interval-based INS (Inertial Navigation System) in an actual robot to estimate its orientation and position. It shows that some types of outliers can be naturally handled by the fusion algorithm, while the resulting controller can be both fast and reliable. Experiments with an actual autonomous boat conclude this article.},
+  archive      = {J_FCTEG},
+  author       = {Le Bars, Fabrice and Sanchez , Robin and Jaulin , Luc and Rohou , Simon and Rauh , Andreas},
+  doi          = {10.3389/fcteg.2021.786188},
+  journal      = {Frontiers in Control Engineering},
+  month        = {3},
+  pages        = {786188},
+  shortjournal = {Front. Control Eng.},
+  title        = {An online interval-based inertial navigation system for control purposes of autonomous boats},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Quantification of fractional dynamical stability of EEG
+signals as a bio-marker for cognitive motor control. <em>FCTEG</em>,
+<em>2</em>, 787747. (<a
+href="https://doi.org/10.3389/fcteg.2021.787747">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Assessing the stability of biological system models has aided in uncovering a plethora of new insights in genetics, neuroscience, and medicine. In this paper, we focus on analyzing the stability of neurological signals, including electroencephalogram (EEG) signals. Interestingly, spatiotemporal discrete-time linear fractional-order systems (DTLFOS) have been shown to accurately and efficiently represent a variety of neurological and physiological signals. Here, we leverage the conditions for stability of DTLFOS to assess a real-world EEG data set. By analyzing the stability of EEG signals during movement and rest tasks, we provide evidence of the usefulness of the quantification of stability as a bio-marker for cognitive motor control.},
+  archive      = {J_FCTEG},
+  author       = {Reed, Emily A. and Bogdan, Paul and Pequito, Sérgio},
+  doi          = {10.3389/fcteg.2021.787747},
+  journal      = {Frontiers in Control Engineering},
+  month        = {2},
+  pages        = {787747},
+  shortjournal = {Front. Control Eng.},
+  title        = {Quantification of fractional dynamical stability of EEG signals as a bio-marker for cognitive motor control},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Robust feedback control for discrete-time systems based on
+iterative LMIs with polytopic uncertainty representations subject to
+stochastic noise. <em>FCTEG</em>, <em>2</em>, 786152. (<a
+href="https://doi.org/10.3389/fcteg.2021.786152">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper deals with the design of linear observer-based state feedback controllers with constant gains for a class of nonlinear discrete-time systems in the form of a quasi-linear representation in presence of stochastic noise. For taking into account nonlinearities in the design of linear observer-based state feedback controllers, a polytopic modeling approach is investigated. An optimization problem is formulated to reduce the sensitivity of the controlled system towards stochastic input, state, and output noise with a predefined covariance. Due to the nonlinearities, the separation principle does not hold, thus, the controller and the observer have to be designed simultaneously. For this purpose, a Lyapunov-based method is used, which provides, in addition to the controller and observer gains, a stability proof for the nonlinear closed loop in a predefined polytopic domain. In general, this leads to nonlinear matrix inequalities. To solve these nonlinear matrix inequalities efficiently, we propose an approach based on linear matrix inequalities (LMIs) with a superposed iteration rule. When using this iterative LMI approach, a minimization task can be solved additionally, which desensitizes the closed loop to stochastic noise. The proposed method additionally enables the consideration of different linear closed loop structures by a unified Lyapunov-based framework. The efficiency of the proposed approach is demonstrated and compared with a classical LQG approach for a nonlinear overhead traveling crane.},
+  archive      = {J_FCTEG},
+  author       = {Dehnert, Robert and Damaszek, Michelle and Lerch, Sabine and Rauh, Andreas and Tibken, Bernd},
+  doi          = {10.3389/fcteg.2021.786152},
+  journal      = {Frontiers in Control Engineering},
+  month        = {2},
+  pages        = {786152},
+  shortjournal = {Front. Control Eng.},
+  title        = {Robust feedback control for discrete-time systems based on iterative LMIs with polytopic uncertainty representations subject to stochastic noise},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). A submodular receding horizon control strategy to
+distributed persistent monitoring. <em>FCTEG</em>, <em>2</em>, 786877.
+(<a href="https://doi.org/10.3389/fcteg.2021.786877">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the multi-agent persistent monitoring problem via a novel distributed submodular receding horizon control approach. In order to approximate global monitoring performance, with the definition of sub-modularity, the original persistent monitoring objective is divided into several local objectives in a receding horizon framework, and the optimal trajectories of each agent are obtained by taking into account the neighborhood information. Specifically, the optimization horizon of each local objective is derived from the local target states and the information received from their neighboring agents. Based on the sub-modularity of each local objective, the distributed greedy algorithm is proposed. As a result, each agent coordinates with neighboring agents asynchronously and optimizes its trajectory independently, which reduces the computational complexity while achieving the global performance as much as possible. The conditions are established to ensure the estimation error converges to a bounded global performance. Finally, simulation results show the effectiveness of the proposed method.},
+  archive      = {J_FCTEG},
+  author       = {Zhao, Xiaohu and Zou, Yuanyuan and Li, Shaoyuan},
+  doi          = {10.3389/fcteg.2021.786877},
+  journal      = {Frontiers in Control Engineering},
+  month        = {1},
+  pages        = {786877},
+  shortjournal = {Front. Control Eng.},
+  title        = {A submodular receding horizon control strategy to distributed persistent monitoring},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Event-based resilient control of multi-agent systems in
+non-ideal communication networks. <em>FCTEG</em>, <em>2</em>, 786318.
+(<a href="https://doi.org/10.3389/fcteg.2021.786318">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article focuses on the consensus problem of linear multi-agent systems under denial-of-service attacks and directed switching topologies. With only intermittent communication, the leader-following consensus can be preserved by fully distributed event-triggered strategies. Theoretical analysis shows that the proposed event-triggered resilient controller guarantees the exponential convergence in the presence of denial-of-service attacks and the exclusion of Zeno behavior. Compared to the existing studies where continuous communication between neighboring agents is required, the event-triggered data reduction scheme is provided to tackle the effects of denial-of-service attacks on directed switching topology as well as to avoid continuous communication and reduce energy consumption. The obtained results can be extended to the scenario without a leader. Numerical simulations are finally given to illustrate the effectiveness of the proposed method.},
+  archive      = {J_FCTEG},
+  author       = {Lyu, Jianting and Sun, Lianghui and Wang, Xin and Gao, Dai},
+  doi          = {10.3389/fcteg.2021.786318},
+  journal      = {Frontiers in Control Engineering},
+  month        = {1},
+  pages        = {786318},
+  shortjournal = {Front. Control Eng.},
+  title        = {Event-based resilient control of multi-agent systems in non-ideal communication networks},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2022). Proportional predictive control of networked linear switched
+reluctance machine system with time-varying delay. <em>FCTEG</em>,
+<em>2</em>, 771857. (<a
+href="https://doi.org/10.3389/fcteg.2021.771857">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, a proportional predictive (PP) control strategy is proposed and a high-precision position tracking controller is designed for the networked linear switched reluctance machine system (NLSRMS) with time-varying delay. The closed-loop system model of the NLSRMS is constructed based on the PP control strategy. The stability conditions of the system are proposed by combining the optimal control value calculated by the cost function. The controller of the closed-loop NLSRMS is designed by using continuously updated predictive output equation information based on calculation. The comparative study of the proposed PP and PID control methods is presented by tracking several types of signals. The maximum steady errors of PP and PID control strategies are 0.2 mm and 2 mm under the sinusoidal signal, respectively. The maximum steady errors of PP and PID control strategies are 0.07 mm and 0.7 mm under the square signal, respectively. The simulation results show the effectiveness of the proposed PP control strategy.},
+  archive      = {J_FCTEG},
+  author       = {Qiu, Li and Deng, Tao and Yang, Xiaomei and Najariyan, Marzieh and Pan, Jianfei and Liu, Chengxiang},
+  doi          = {10.3389/fcteg.2021.771857},
+  journal      = {Frontiers in Control Engineering},
+  month        = {1},
+  pages        = {771857},
+  shortjournal = {Front. Control Eng.},
+  title        = {Proportional predictive control of networked linear switched reluctance machine system with time-varying delay},
+  volume       = {2},
+  year         = {2022},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

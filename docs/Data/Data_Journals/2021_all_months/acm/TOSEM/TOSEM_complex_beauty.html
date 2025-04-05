@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOSEM_complex_beauty</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tosem---78">TOSEM - 78</h2>
+<ul>
+<li><details>
+<summary>
+(2021). What you see is what it means! Semantic representation
+learning of code based on visualization and transfer learning.
+<em>TOSEM</em>, <em>31</em>(2), 31:1–34. (<a
+href="https://doi.org/10.1145/3485135">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent successes in training word embeddings for Natural Language Processing ( NLP ) tasks have encouraged a wave of research on representation learning for source code, which builds on similar NLP methods. The overall objective is then to produce code embeddings that capture the maximum of program semantics. State-of-the-art approaches invariably rely on a syntactic representation (i.e., raw lexical tokens, abstract syntax trees, or intermediate representation tokens) to generate embeddings, which are criticized in the literature as non-robust or non-generalizable. In this work, we investigate a novel embedding approach based on the intuition that source code has visual patterns of semantics. We further use these patterns to address the outstanding challenge of identifying semantic code clones. We propose the WySiWiM ( ‘ ‘What You See Is What It Means ” ) approach where visual representations of source code are fed into powerful pre-trained image classification neural networks from the field of computer vision to benefit from the practical advantages of transfer learning. We evaluate the proposed embedding approach on the task of vulnerable code prediction in source code and on two variations of the task of semantic code clone identification: code clone detection (a binary classification problem), and code classification (a multi-classification problem). We show with experiments on the BigCloneBench (Java), Open Judge (C) that although simple, our WySiWiM approach performs as effectively as state-of-the-art approaches such as ASTNN or TBCNN. We also showed with data from NVD and SARD that WySiWiM representation can be used to learn a vulnerable code detector with reasonable performance (accuracy ∼90\%). We further explore the influence of different steps in our approach, such as the choice of visual representations or the classification algorithm, to eventually discuss the promises and limitations of this research direction.},
+  archive      = {J_TOSEM},
+  author       = {Patrick Keller and Abdoul Kader Kaboré and Laura Plein and Jacques Klein and Yves Le Traon and Tegawendé F. Bissyandé},
+  doi          = {10.1145/3485135},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {31:1–34},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {What you see is what it means! semantic representation learning of code based on visualization and transfer learning},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Why do smart contracts self-destruct? Investigating the
+selfdestruct function on ethereum. <em>TOSEM</em>, <em>31</em>(2),
+30:1–37. (<a href="https://doi.org/10.1145/3488245">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The selfdestruct function is provided by Ethereum smart contracts to destroy a contract on the blockchain system. However, it is a double-edged sword for developers. On the one hand, using the selfdestruct function enables developers to remove smart contracts ( SCs ) from Ethereum and transfers Ethers when emergency situations happen, e.g., being attacked. On the other hand, this function can increase the complexity for the development and open an attack vector for attackers. To better understand the reasons why SC developers include or exclude the selfdestruct function in their contracts, we conducted an online survey to collect feedback from them and summarize the key reasons. Their feedback shows that 66.67\% of the developers will deploy an updated contract to the Ethereum after destructing the old contract. According to this information, we propose a method to find the self-destructed contracts (also called predecessor contracts) and their updated version (successor contracts) by computing the code similarity. By analyzing the difference between the predecessor contracts and their successor contracts, we found five reasons that led to the death of the contracts; two of them (i.e., Unmatched ERC20 Token and Limits of Permission ) might affect the life span of contracts. We developed a tool named LifeScope to detect these problems. LifeScope reports 0 false positives or negatives in detecting Unmatched ERC20 Token . In terms of Limits of Permission , LifeScope achieves 77.89\% of F-measure and 0.8673 of AUC in average. According to the feedback of developers who exclude selfdestruct functions, we propose suggestions to help developers use selfdestruct functions in Ethereum smart contracts better.},
+  archive      = {J_TOSEM},
+  author       = {Jiachi Chen and Xin Xia and David Lo and John Grundy},
+  doi          = {10.1145/3488245},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {30:1–37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Why do smart contracts self-destruct? investigating the selfdestruct function on ethereum},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Guided feature identification and removal for
+resource-constrained firmware. <em>TOSEM</em>, <em>31</em>(2), 28:1–25.
+(<a href="https://doi.org/10.1145/3487568">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IoT firmware oftentimes incorporates third-party components, such as network-oriented middleware and media encoders/decoders. These components consist of large and mature codebases, shipping with a variety of non-critical features. Feature bloat increases code size, complicates auditing/debugging, and reduces stability. This is problematic for IoT devices, which are severely resource-constrained and must remain operational in the field for years. Unfortunately, identification and complete removal of code related to unwanted features requires familiarity with codebases of interest, cumbersome manual effort, and may introduce bugs. We address these difficulties by introducing PRAT, a system that takes as input the codebase of software of interest, identifies and maps features to code, presents this information to a human analyst, and removes all code belonging to unwanted features. PRAT solves the challenge of identifying feature-related code through a novel form of differential dynamic analysis and visualizes results as user-friendly feature graphs . Evaluation on diverse codebases shows superior code removal compared to both manual feature deactivation and state-of-art debloating tools, and generality across programming languages. Furthermore, a user study comparing PRAT to manual code analysis shows that it can significantly simplify the feature identification workflow.},
+  archive      = {J_TOSEM},
+  author       = {Ryan Williams and Tongwei Ren and Lorenzo De Carli and Long Lu and Gillian Smith},
+  doi          = {10.1145/3487568},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {28:1–25},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Guided feature identification and removal for resource-constrained firmware},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A tale of two cities: Software developers working from home
+during the COVID-19 pandemic. <em>TOSEM</em>, <em>31</em>(2), 27:1–37.
+(<a href="https://doi.org/10.1145/3487567">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The COVID-19 pandemic has shaken the world to its core and has provoked an overnight exodus of developers who normally worked in an office setting to working from home. The magnitude of this shift and the factors that have accompanied this new unplanned work setting go beyond what the software engineering community has previously understood to be remote work. To find out how developers and their productivity were affected, we distributed two surveys (with a combined total of 3,634 responses that answered all required questions) weeks apart to understand the presence and prevalence of the benefits, challenges, and opportunities to improve this special circumstance of remote work. From our thematic qualitative analysis and statistical quantitative analysis, we find that there is a dichotomy of developer experiences influenced by many different factors (that for some are a benefit, while for others a challenge). For example, a benefit for some was being close to family members but for others having family members share their working space and interrupting their focus, was a challenge. Our surveys led to powerful narratives from respondents and revealed the scale at which these experiences exist to provide insights as to how the future of (pandemic) remote work can evolve.},
+  archive      = {J_TOSEM},
+  author       = {Denae Ford and Margaret-Anne Storey and Thomas Zimmermann and Christian Bird and Sonia Jaffe and Chandra Maddila and Jenna L. Butler and Brian Houck and Nachiappan Nagappan},
+  doi          = {10.1145/3487567},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {27:1–37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {A tale of two cities: Software developers working from home during the COVID-19 pandemic},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A practical approach for dynamic taint tracking with
+control-flow relationships. <em>TOSEM</em>, <em>31</em>(2), 26:1–43. (<a
+href="https://doi.org/10.1145/3485464">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic taint tracking, a technique that traces relationships between values as a program executes, has been used to support a variety of software engineering tasks. Some taint tracking systems only consider data flows and ignore control flows. As a result, relationships between some values are not reflected by the analysis. Many applications of taint tracking either benefit from or rely on these relationships being traced, but past works have found that tracking control flows resulted in over-tainting, dramatically reducing the precision of the taint tracking system. In this article, we introduce Conflux , alternative semantics for propagating taint tags along control flows. Conflux aims to reduce over-tainting by decreasing the scope of control flows and providing a heuristic for reducing loop-related over-tainting. We created a Java implementation of Conflux and performed a case study exploring the effect of Conflux on a concrete application of taint tracking, automated debugging. In addition to this case study, we evaluated Conflux ’s accuracy using a novel benchmark consisting of popular, real-world programs. We compared Conflux against existing taint propagation policies, including a state-of-the-art approach for reducing control-flow-related over-tainting, finding that Conflux had the highest F1 score on 43 out of the 48 total tests.},
+  archive      = {J_TOSEM},
+  author       = {Katherine Hough and Jonathan Bell},
+  doi          = {10.1145/3485464},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {26:1–43},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {A practical approach for dynamic taint tracking with control-flow relationships},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). How software refactoring impacts execution time.
+<em>TOSEM</em>, <em>31</em>(2), 25:1–23. (<a
+href="https://doi.org/10.1145/3485136">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Refactoring aims at improving the maintainability of source code without modifying its external behavior. Previous works proposed approaches to recommend refactoring solutions to software developers. The generation of the recommended solutions is guided by metrics acting as proxy for maintainability (e.g., number of code smells removed by the recommended solution). These approaches ignore the impact of the recommended refactorings on other non-functional requirements, such as performance, energy consumption, and so forth. Little is known about the impact of refactoring operations on non-functional requirements other than maintainability. We aim to fill this gap by presenting the largest study to date to investigate the impact of refactoring on software performance, in terms of execution time. We mined the change history of 20 systems that defined performance benchmarks in their repositories, with the goal of identifying commits in which developers implemented refactoring operations impacting code components that are exercised by the performance benchmarks. Through a quantitative and qualitative analysis, we show that refactoring operations can significantly impact the execution time. Indeed, none of the investigated refactoring types can be considered “safe” in ensuring no performance regression. Refactoring types aimed at decomposing complex code entities (e.g., Extract Class/Interface, Extract Method) have higher chances of triggering performance degradation, suggesting their careful consideration when refactoring performance-critical code.},
+  archive      = {J_TOSEM},
+  author       = {Luca Traini and Daniele Di Pompeo and Michele Tucci and Bin Lin and Simone Scalabrino and Gabriele Bavota and Michele Lanza and Rocco Oliveto and Vittorio Cortellessa},
+  doi          = {10.1145/3485136},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {25:1–23},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {How software refactoring impacts execution time},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Analyzing uncertainty in release planning: A method and
+experiment for fixed-date release cycles. <em>TOSEM</em>,
+<em>31</em>(2), 24:1–39. (<a
+href="https://doi.org/10.1145/3490487">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Release planning—deciding what features to implement in upcoming releases of a software system—is a critical activity in iterative software development. Many release planning methods exist, but most ignore the inevitable uncertainty in estimating software development effort and business value. The article’s objective is to study whether analyzing uncertainty during release planning generates better release plans than if uncertainty is ignored. To study this question, we have developed a novel release planning method under uncertainty, called BEARS, that models uncertainty using Bayesian probability distributions and recommends release plans that maximize expected net present value and expected punctuality. We then compare release plans recommended by BEARS to those recommended by methods that ignore uncertainty on 32 release planning problems. The experiment shows that BEARS recommends release plans with higher expected net present value and expected punctuality than methods that ignore uncertainty, thereby indicating the harmful effects of ignoring uncertainty during release planning. These results highlight the importance of eliciting and analyzing uncertainty in software effort and value estimations and call for increased research in these areas.},
+  archive      = {J_TOSEM},
+  author       = {Olawole Oni and Emmanuel Letier},
+  doi          = {10.1145/3490487},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {24:1–39},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Analyzing uncertainty in release planning: A method and experiment for fixed-date release cycles},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Why do developers reject refactorings in open-source
+projects? <em>TOSEM</em>, <em>31</em>(2), 23:1–23. (<a
+href="https://doi.org/10.1145/3487062">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Refactoring operations are behavior-preserving changes aimed at improving source code quality. While refactoring is largely considered a good practice, refactoring proposals in pull requests are often rejected after the code review. Understanding the reasons behind the rejection of refactoring contributions can shed light on how such contributions can be improved, essentially benefiting software quality. This article reports a study in which we manually coded rejection reasons inferred from 330 refactoring-related pull requests from 207 open-source Java projects. We surveyed 267 developers to assess their perceived prevalence of these identified rejection reasons, further complementing the reasons. Our study resulted in a comprehensive taxonomy consisting of 26 refactoring-related rejection reasons and 21 process-related rejection reasons. The taxonomy, accompanied with representative examples and highlighted implications, provides developers with valuable insights on how to ponder and polish their refactoring contributions, and indicates a number of directions researchers can pursue toward better refactoring recommenders.},
+  archive      = {J_TOSEM},
+  author       = {Jevgenija Pantiuchina and Bin Lin and Fiorella Zampetti and Massimiliano Di Penta and Michele Lanza and Gabriele Bavota},
+  doi          = {10.1145/3487062},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {23:1–23},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Why do developers reject refactorings in open-source projects?},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). ConE: A concurrent edit detection tool for large-scale
+software development. <em>TOSEM</em>, <em>31</em>(2), 22:1–26. (<a
+href="https://doi.org/10.1145/3478019">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern, complex software systems are being continuously extended and adjusted. The developers responsible for this may come from different teams or organizations, and may be distributed over the world. This may make it difficult to keep track of what other developers are doing, which may result in multiple developers concurrently editing the same code areas. This, in turn, may lead to hard-to-merge changes or even merge conflicts, logical bugs that are difficult to detect, duplication of work, and wasted developer productivity. To address this, we explore the extent of this problem in the pull-request-based software development model. We study half a year of changes made to six large repositories in Microsoft in which at least 1,000 pull requests are created each month. We find that files concurrently edited in different pull requests are more likely to introduce bugs. Motivated by these findings, we design, implement, and deploy a service named Concurrent Edit Detector (ConE) that proactively detects pull requests containing concurrent edits, to help mitigate the problems caused by them. ConE has been designed to scale, and to minimize false alarms while still flagging relevant concurrently edited files. Key concepts of ConE include the detection of the Extent of Overlap between pull requests, and the identification of Rarely Concurrently Edited Files . To evaluate ConE, we report on its operational deployment on 234 repositories inside Microsoft. ConE assessed 26,000 pull requests and made 775 recommendations about conflicting changes, which were rated as useful in over 70\% (554) of the cases. From interviews with 48 users, we learned that they believed ConE would save time in conflict resolution and avoiding duplicate work, and that over 90\% intend to keep using the service on a daily basis.},
+  archive      = {J_TOSEM},
+  author       = {Chandra Maddila and Nachiappan Nagappan and Christian Bird and Georgios Gousios and Arie van Deursen},
+  doi          = {10.1145/3478019},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {22:1–26},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {ConE: A concurrent edit detection tool for large-scale software development},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Feature matching-based approaches to improve the robustness
+of android visual GUI testing. <em>TOSEM</em>, <em>31</em>(2), 21:1–32.
+(<a href="https://doi.org/10.1145/3477427">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In automated Visual GUI Testing (VGT) for Android devices, the available tools often suffer from low robustness to mobile fragmentation, leading to incorrect results when running the same tests on different devices. To soften these issues, we evaluate two feature matching-based approaches for widget detection in VGT scripts, which use, respectively, the complete full-screen snapshot of the application ( Fullscreen ) and the cropped images of its widgets ( Cropped ) as visual locators to match on emulated devices. Our analysis includes validating the portability of different feature-based visual locators over various apps and devices and evaluating their robustness in terms of cross-device portability and correctly executed interactions. We assessed our results through a comparison with two state-of-the-art tools, EyeAutomate and Sikuli. Despite a limited increase in the computational burden, our Fullscreen approach outperformed state-of-the-art tools in terms of correctly identified locators across a wide range of devices and led to a 30\% increase in passing tests. Our work shows that VGT tools’ dependability can be improved by bridging the testing and computer vision communities. This connection enables the design of algorithms targeted to domain-specific needs and thus inherently more usable and robust.},
+  archive      = {J_TOSEM},
+  author       = {Luca Ardito and Andrea Bottino and Riccardo Coppola and Fabrizio Lamberti and Francesco Manigrasso and Lia Morra and Marco Torchiano},
+  doi          = {10.1145/3477427},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {21:1–32},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Feature matching-based approaches to improve the robustness of android visual GUI testing},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Classifying mobile applications using word embeddings.
+<em>TOSEM</em>, <em>31</em>(2), 20:1–30. (<a
+href="https://doi.org/10.1145/3474827">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern application stores enable developers to classify their apps by choosing from a set of generic categories, or genres, such as health, games, and music. These categories are typically static—new categories do not necessarily emerge over time to reflect innovations in the mobile software landscape. With thousands of apps classified under each category, locating apps that match a specific consumer interest can be a challenging task. To overcome this challenge, in this article, we propose an automated approach for classifying mobile apps into more focused categories of functionally related application domains. Our aim is to enhance apps visibility and discoverability. Specifically, we employ word embeddings to generate numeric semantic representations of app descriptions. These representations are then classified to generate more cohesive categories of apps. Our empirical investigation is conducted using a dataset of 600 apps, sampled from the Education, Health&amp;Fitness, and Medical categories of the Apple App Store. The results show that our classification algorithms achieve their best performance when app descriptions are vectorized using GloVe, a count-based model of word embeddings. Our findings are further validated using a dataset of Sharing Economy apps and the results are evaluated by 12 human subjects. The results show that GloVe combined with Support Vector Machines can produce app classifications that are aligned to a large extent with human-generated classifications.},
+  archive      = {J_TOSEM},
+  author       = {Fahimeh Ebrahimi and Miroslav Tushev and Anas Mahmoud},
+  doi          = {10.1145/3474827},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {20:1–30},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Classifying mobile applications using word embeddings},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Measuring and modeling group dynamics in open-source
+software development: A tensor decomposition approach. <em>TOSEM</em>,
+<em>31</em>(2), 19:1–50. (<a
+href="https://doi.org/10.1145/3473139">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many open-source software projects depend on a few core developers, who take over both the bulk of coordination and programming tasks. They are supported by peripheral developers, who contribute either via discussions or programming tasks, often for a limited time. It is unclear what role these peripheral developers play in the programming and communication efforts, as well as the temporary task-related sub-groups in the projects. We mine code-repository data and mailing-list discussions to model the relationships and contributions of developers in a social network and devise a method to analyze the temporal collaboration structures in communication and programming, learning about the strength and stability of social sub-groups in open-source software projects. Our method uses multi-modal social networks on a series of time windows. Previous work has reduced the network structure representing developer collaboration to networks with only one type of interaction, which impedes the simultaneous analysis of more than one type of interaction. We use both communication and version-control data of open-source software projects and model different types of interaction over time. To demonstrate the practicability of our measurement and analysis method, we investigate 10 substantial and popular open-source software projects and show that, if sub-groups evolve, modeling these sub-groups helps predict the future evolution of interaction levels of programmers and groups of developers. Our method allows maintainers and other stakeholders of open-source software projects to assess instabilities and organizational changes in developer interaction and can be applied to different use cases in organizational analysis, such as understanding the dynamics of a specific incident or discussion.},
+  archive      = {J_TOSEM},
+  author       = {Thomas Bock and Angelika Schmid and Sven Apel},
+  doi          = {10.1145/3473139},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {19:1–50},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Measuring and modeling group dynamics in open-source software development: A tensor decomposition approach},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Model transformation development using automated
+requirements analysis, metamodel matching, and transformation by
+example. <em>TOSEM</em>, <em>31</em>(2), 18:1–71. (<a
+href="https://doi.org/10.1145/3471907">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we address how the production of model transformations (MT) can be accelerated by automation of transformation synthesis from requirements, examples, and metamodels. We introduce a synthesis process based on metamodel matching, correspondence patterns between metamodels, and completeness and consistency analysis of matches. We describe how the limitations of metamodel matching can be addressed by combining matching with automated requirements analysis and model transformation by example (MTBE) techniques. We show that in practical examples a large percentage of required transformation functionality can usually be constructed automatically, thus potentially reducing development effort. We also evaluate the efficiency of synthesised transformations. Our novel contributions are: The concept of correspondence patterns between metamodels of a transformation. Requirements analysis of transformations using natural language processing (NLP) and machine learning (ML). Symbolic MTBE using “predictive specification” to infer transformations from examples. Transformation generation in multiple MT languages and in Java, from an abstract intermediate language.},
+  archive      = {J_TOSEM},
+  author       = {K. Lano and S. Kolahdouz-Rahimi and S. Fang},
+  doi          = {10.1145/3471907},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {18:1–71},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Model transformation development using automated requirements analysis, metamodel matching, and transformation by example},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A survey of flaky tests. <em>TOSEM</em>, <em>31</em>(1),
+17:1–74. (<a href="https://doi.org/10.1145/3476105">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tests that fail inconsistently, without changes to the code under test, are described as flaky . Flaky tests do not give a clear indication of the presence of software bugs and thus limit the reliability of the test suites that contain them. A recent survey of software developers found that 59\% claimed to deal with flaky tests on a monthly, weekly, or daily basis. As well as being detrimental to developers, flaky tests have also been shown to limit the applicability of useful techniques in software testing research. In general, one can think of flaky tests as being a threat to the validity of any methodology that assumes the outcome of a test only depends on the source code it covers. In this article, we systematically survey the body of literature relevant to flaky test research, amounting to 76 papers. We split our analysis into four parts: addressing the causes of flaky tests, their costs and consequences, detection strategies, and approaches for their mitigation and repair. Our findings and their implications have consequences for how the software-testing community deals with test flakiness, pertinent to practitioners and of interest to those wanting to familiarize themselves with the research area.},
+  archive      = {J_TOSEM},
+  author       = {Owain Parry and Gregory M. Kapfhammer and Michael Hilton and Phil McMinn},
+  doi          = {10.1145/3476105},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {17:1–74},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {A survey of flaky tests},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Towards a consistent interpretation of AIOps models.
+<em>TOSEM</em>, <em>31</em>(1), 16:1–38. (<a
+href="https://doi.org/10.1145/3488269">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Artificial Intelligence for IT Operations (AIOps) has been adopted in organizations in various tasks, including interpreting models to identify indicators of service failures. To avoid misleading practitioners, AIOps model interpretations should be consistent (i.e., different AIOps models on the same task agree with one another on feature importance). However, many AIOps studies violate established practices in the machine learning community when deriving interpretations, such as interpreting models with suboptimal performance, though the impact of such violations on the interpretation consistency has not been studied. In this article, we investigate the consistency of AIOps model interpretation along three dimensions: internal consistency, external consistency, and time consistency. We conduct a case study on two AIOps tasks: predicting Google cluster job failures and Backblaze hard drive failures. We find that the randomness from learners, hyperparameter tuning, and data sampling should be controlled to generate consistent interpretations. AIOps models with AUCs greater than 0.75 yield more consistent interpretation compared to low-performing models. Finally, AIOps models that are constructed with the Sliding Window or Full History approaches have the most consistent interpretation with the trends presented in the entire datasets. Our study provides valuable guidelines for practitioners to derive consistent AIOps model interpretation.},
+  archive      = {J_TOSEM},
+  author       = {Yingzhe Lyu and Gopi Krishnan Rajbahadur and Dayi Lin and Boyuan Chen and Zhen Ming (Jack) Jiang},
+  doi          = {10.1145/3488269},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {16:1–38},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Towards a consistent interpretation of AIOps models},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). On the reproducibility and replicability of deep learning in
+software engineering. <em>TOSEM</em>, <em>31</em>(1), 15:1–46. (<a
+href="https://doi.org/10.1145/3477535">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Context: Deep learning (DL) techniques have gained significant popularity among software engineering (SE) researchers in recent years. This is because they can often solve many SE challenges without enormous manual feature engineering effort and complex domain knowledge. Objective: Although many DL studies have reported substantial advantages over other state-of-the-art models on effectiveness, they often ignore two factors: (1) reproducibility —whether the reported experimental results can be obtained by other researchers using authors’ artifacts (i.e., source code and datasets) with the same experimental setup; and (2) replicability —whether the reported experimental result can be obtained by other researchers using their re-implemented artifacts with a different experimental setup. We observed that DL studies commonly overlook these two factors and declare them as minor threats or leave them for future work. This is mainly due to high model complexity with many manually set parameters and the time-consuming optimization process, unlike classical supervised machine learning (ML) methods (e.g., random forest). This study aims to investigate the urgency and importance of reproducibility and replicability for DL studies on SE tasks. Method: In this study, we conducted a literature review on 147 DL studies recently published in 20 SE venues and 20 AI (Artificial Intelligence) venues to investigate these issues. We also re-ran four representative DL models in SE to investigate important factors that may strongly affect the reproducibility and replicability of a study. Results: Our statistics show the urgency of investigating these two factors in SE, where only 10.2\% of the studies investigate any research question to show that their models can address at least one issue of replicability and/or reproducibility. More than 62.6\% of the studies do not even share high-quality source code or complete data to support the reproducibility of their complex models. Meanwhile, our experimental results show the importance of reproducibility and replicability, where the reported performance of a DL model could not be reproduced for an unstable optimization process. Replicability could be substantially compromised if the model training is not convergent, or if performance is sensitive to the size of vocabulary and testing data. Conclusion: It is urgent for the SE community to provide a long-lasting link to a high-quality reproduction package, enhance DL-based solution stability and convergence, and avoid performance sensitivity on different sampled data.},
+  archive      = {J_TOSEM},
+  author       = {Chao Liu and Cuiyun Gao and Xin Xia and David Lo and John Grundy and Xiaohu Yang},
+  doi          = {10.1145/3477535},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {15:1–46},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {On the reproducibility and replicability of deep learning in software engineering},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Automatic fault detection for deep learning programs using
+graph transformations. <em>TOSEM</em>, <em>31</em>(1), 14:1–27. (<a
+href="https://doi.org/10.1145/3470006">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Nowadays, we are witnessing an increasing demand in both corporates and academia for exploiting Deep Learning ( DL ) to solve complex real-world problems. A DL program encodes the network structure of a desirable DL model and the process by which the model learns from the training dataset. Like any software, a DL program can be faulty, which implies substantial challenges of software quality assurance, especially in safety-critical domains. It is therefore crucial to equip DL development teams with efficient fault detection techniques and tools. In this article, we propose NeuraLint , a model-based fault detection approach for DL programs, using meta-modeling and graph transformations. First, we design a meta-model for DL programs that includes their base skeleton and fundamental properties. Then, we construct a graph-based verification process that covers 23 rules defined on top of the meta-model and implemented as graph transformations to detect faults and design inefficiencies in the generated models (i.e., instances of the meta-model). First, the proposed approach is evaluated by finding faults and design inefficiencies in 28 synthesized examples built from common problems reported in the literature. Then NeuraLint successfully finds 64 faults and design inefficiencies in 34 real-world DL programs extracted from Stack Overflow posts and GitHub repositories. The results show that NeuraLint effectively detects faults and design issues in both synthesized and real-world examples with a recall of 70.5\% and a precision of 100\%. Although the proposed meta-model is designed for feedforward neural networks, it can be extended to support other neural network architectures such as recurrent neural networks. Researchers can also expand our set of verification rules to cover more types of issues in DL programs.},
+  archive      = {J_TOSEM},
+  author       = {Amin Nikanjam and Houssem Ben Braiek and Mohammad Mehdi Morovati and Foutse Khomh},
+  doi          = {10.1145/3470006},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {14:1–27},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Automatic fault detection for deep learning programs using graph transformations},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). SPI: Automated identification of security patches via
+commits. <em>TOSEM</em>, <em>31</em>(1), 13:1–27. (<a
+href="https://doi.org/10.1145/3468854">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Security patches in open source software, providing security fixes to identified vulnerabilities, are crucial in protecting against cyber attacks. Security advisories and announcements are often publicly released to inform the users about potential security vulnerability. Despite the National Vulnerability Database (NVD) publishes identified vulnerabilities, a vast majority of vulnerabilities and their corresponding security patches remain beyond public exposure, e.g., in the open source libraries that are heavily relied on by developers. As many of these patches exist in open sourced projects, the problem of curating and gathering security patches can be difficult due to their hidden nature. An extensive and complete security patches dataset could help end-users such as security companies, e.g., building a security knowledge base, or researcher, e.g., aiding in vulnerability research. To efficiently curate security patches including undisclosed patches at large scale and low cost, we propose a deep neural-network-based approach built upon commits of open source repositories. First, we design and build security patch datasets that include 38,291 security-related commits and 1,045 Common Vulnerabilities and Exposures (CVE) patches from four large-scale C programming language libraries. We manually verify each commit, among the 38,291 security-related commits, to determine if they are security related. We devise and implement a deep learning-based security patch identification system that consists of two composite neural networks: one commit-message neural network that utilizes pretrained word representations learned from our commits dataset and one code-revision neural network that takes code before revision and after revision and learns the distinction on the statement level. Our system leverages the power of the two networks for Security Patch Identification. Evaluation results show that our system significantly outperforms SVM and K-fold stacking algorithms. The result on the combined dataset achieves as high as 87.93\% F1-score and precision of 86.24\%. We deployed our pipeline and learned model in an industrial production environment to evaluate the generalization ability of our approach. The industrial dataset consists of 298,917 commits from 410 new libraries that range from a wide functionalities. Our experiment results and observation on the industrial dataset proved that our approach can identify security patches effectively among open sourced projects.},
+  archive      = {J_TOSEM},
+  author       = {Yaqin Zhou and Jing Kai Siow and Chenyu Wang and Shangqing Liu and Yang Liu},
+  doi          = {10.1145/3468854},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {13:1–27},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {SPI: Automated identification of security patches via commits},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). CodeMatcher: Searching code based on sequential semantics of
+important query words. <em>TOSEM</em>, <em>31</em>(1), 12:1–37. (<a
+href="https://doi.org/10.1145/3465403">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To accelerate software development, developers frequently search and reuse existing code snippets from a large-scale codebase, e.g., GitHub. Over the years, researchers proposed many information retrieval (IR)-based models for code search, but they fail to connect the semantic gap between query and code. An early successful deep learning (DL)-based model DeepCS solved this issue by learning the relationship between pairs of code methods and corresponding natural language descriptions. Two major advantages of DeepCS are the capability of understanding irrelevant/noisy keywords and capturing sequential relationships between words in query and code. In this article, we proposed an IR-based model CodeMatcher that inherits the advantages of DeepCS (i.e., the capability of understanding the sequential semantics in important query words), while it can leverage the indexing technique in the IR-based model to accelerate the search response time substantially. CodeMatcher first collects metadata for query words to identify irrelevant/noisy ones, then iteratively performs fuzzy search with important query words on the codebase that is indexed by the Elasticsearch tool and finally reranks a set of returned candidate code according to how the tokens in the candidate code snippet sequentially matched the important words in a query. We verified its effectiveness on a large-scale codebase with ~41K repositories. Experimental results showed that CodeMatcher achieves an MRR (a widely used accuracy measure for code search) of 0.60, outperforming DeepCS, CodeHow, and UNIF by 82\%, 62\%, and 46\%, respectively. Our proposed model is over 1.2K times faster than DeepCS. Moreover, CodeMatcher outperforms two existing online search engines (GitHub and Google search) by 46\% and 33\%, respectively, in terms of MRR. We also observed that: fusing the advantages of IR-based and DL-based models is promising; improving the quality of method naming helps code search, since method name plays an important role in connecting query and code.},
+  archive      = {J_TOSEM},
+  author       = {Chao Liu and Xin Xia and David Lo and Zhiwe Liu and Ahmed E. Hassan and Shanping Li},
+  doi          = {10.1145/3465403},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {12:1–37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {CodeMatcher: Searching code based on sequential semantics of important query words},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Automating app review response generation based on
+contextual knowledge. <em>TOSEM</em>, <em>31</em>(1), 11:1–36. (<a
+href="https://doi.org/10.1145/3464969">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {User experience of mobile apps is an essential ingredient that can influence the user base and app revenue. To ensure good user experience and assist app development, several prior studies resort to analysis of app reviews, a type of repository that directly reflects user opinions about the apps. Accurately responding to the app reviews is one of the ways to relieve user concerns and thus improve user experience. However, the response quality of the existing method relies on the pre-extracted features from other tools, including manually labelled keywords and predicted review sentiment, which may hinder the generalizability and flexibility of the method. In this article, we propose a novel neural network approach, named CoRe, with the contextual knowledge naturally incorporated and without involving external tools. Specifically, CoRe integrates two types of contextual knowledge in the training corpus, including official app descriptions from app store and responses of the retrieved semantically similar reviews, for enhancing the relevance and accuracy of the generated review responses. Experiments on practical review data show that CoRe can outperform the state-of-the-art method by 12.36\% in terms of BLEU-4, an accuracy metric that is widely used to evaluate text generation systems.},
+  archive      = {J_TOSEM},
+  author       = {Cuiyun Gao and Wenjie Zhou and Xin Xia and David Lo and Qi Xie and Michael R. Lyu},
+  doi          = {10.1145/3464969},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {11:1–36},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Automating app review response generation based on contextual knowledge},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Bug localization in model-based systems in the wild.
+<em>TOSEM</em>, <em>31</em>(1), 10:1–32. (<a
+href="https://doi.org/10.1145/3472616">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The companies that have adopted the Model-Driven Engineering (MDE) paradigm have the advantage of working at a high level of abstraction. Nevertheless, they have the disadvantage of the lack of tools available to perform bug localization at the model level. In addition, in an MDE context, a bug can be related to different MDE artefacts, such as design-time models, model transformations, or run-time models. Starting the bug localization in the wrong place or with the wrong tool can lead to a result that is unsatisfactory. We evaluate how to apply the existing model-based approaches in order to mitigate the effect of starting the localization in the wrong place. We also take into account that software engineers can refine the results at different stages. In our evaluation, we compare different combinations of the application of bug localization approaches and human refinement. The combination of our approaches plus manual refinement obtains the best results. We performed a statistical analysis to provide evidence of the significance of the results. The conclusions obtained from this evaluation are: humans have to be involved at the right time in the process (or results can even get worse), and artefact-independence can be achieved without worsening the results.},
+  archive      = {J_TOSEM},
+  author       = {Lorena Arcega and Jaime Font and Øystein Haugen and Carlos Cetina},
+  doi          = {10.1145/3472616},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {10:1–32},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Bug localization in model-based systems in the wild},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The case for adaptive security interventions.
+<em>TOSEM</em>, <em>31</em>(1), 9:1–52. (<a
+href="https://doi.org/10.1145/3471930">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite the availability of various methods and tools to facilitate secure coding, developers continue to write code that contains common vulnerabilities. It is important to understand why technological advances do not sufficiently facilitate developers in writing secure code. To widen our understanding of developers&#39; behaviour, we considered the complexity of the security decision space of developers using theory from cognitive and social psychology. Our interdisciplinary study reported in this article (1) draws on the psychology literature to provide conceptual underpinnings for three categories of impediments to achieving security goals, (2) reports on an in-depth meta-analysis of existing software security literature that identified a catalogue of factors that influence developers&#39; security decisions, and (3) characterises the landscape of existing security interventions that are available to the developer during coding and identifies gaps. Collectively, these show that different forms of impediments to achieving security goals arise from different contributing factors. Interventions will be more effective where they reflect psychological factors more sensitively and marry technical sophistication, psychological frameworks, and usability. Our analysis suggests “adaptive security interventions” as a solution that responds to the changing security needs of individual developers and a present a proof-of-concept tool to substantiate our suggestion.},
+  archive      = {J_TOSEM},
+  author       = {Irum Rauf and Marian Petre and Thein Tun and Tamara Lopez and Paul Lunn and Dirk Van Der Linden and John Towse and Helen Sharp and Mark Levine and Awais Rashid and Bashar Nuseibeh},
+  doi          = {10.1145/3471930},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {9:1–52},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {The case for adaptive security interventions},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Parallel test prioritization. <em>TOSEM</em>,
+<em>31</em>(1), 8:1–50. (<a
+href="https://doi.org/10.1145/3471906">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although regression testing is important to guarantee the software quality in software evolution, it suffers from the widely known cost problem. To address this problem, existing researchers made dedicated efforts on test prioritization, which optimizes the execution order of tests to detect faults earlier; while practitioners in industry leveraged more computing resources to save the time cost of regression testing. By combining these two orthogonal solutions, in this article, we define the problem of parallel test prioritization, which is to conduct test prioritization in the scenario of parallel test execution to reduce the cost of regression testing. Different from traditional sequential test prioritization, parallel test prioritization aims at generating a set of test sequences, each of which is allocated in an individual computing resource and executed in parallel. In particular, we propose eight parallel test prioritization techniques by adapting the existing four sequential test prioritization techniques, by including and excluding testing time in prioritization. To investigate the performance of the eight parallel test prioritization techniques, we conducted an extensive study on 54 open-source projects and a case study on 16 commercial projects from Baidu , a famous search service provider with 600M monthly active users. According to the two studies, parallel test prioritization does improve the efficiency of regression testing, and cost-aware additional parallel test prioritization technique significantly outperforms the other techniques, indicating that this technique is a good choice for practical parallel testing. Besides, we also investigated the influence of two external factors, the number of computing resources and time allowed for parallel testing, and find that more computing resources indeed improve the performance of parallel test prioritization. In addition, we investigated the influence of two more factors, test granularity and coverage criterion, and find that parallel test prioritization can still accelerate regression testing in parallel scenario. Moreover, we investigated the benefit of parallel test prioritization on the regression testing process of continuous integration, considering both the cumulative acceleration performance and the overhead of prioritization techniques, and the results demonstrate the superiority of parallel test prioritization.},
+  archive      = {J_TOSEM},
+  author       = {Jianyi Zhou and Junjie Chen and Dan Hao},
+  doi          = {10.1145/3471906},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {8:1–50},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Parallel test prioritization},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Psychometrics in behavioral software engineering: A
+methodological introduction with guidelines. <em>TOSEM</em>,
+<em>31</em>(1), 7:1–36. (<a
+href="https://doi.org/10.1145/3469888">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A meaningful and deep understanding of the human aspects of software engineering (SE) requires psychological constructs to be considered. Psychology theory can facilitate the systematic and sound development as well as the adoption of instruments (e.g., psychological tests, questionnaires) to assess these constructs. In particular, to ensure high quality, the psychometric properties of instruments need evaluation. In this article, we provide an introduction to psychometric theory for the evaluation of measurement instruments for SE researchers. We present guidelines that enable using existing instruments and developing new ones adequately. We conducted a comprehensive review of the psychology literature framed by the Standards for Educational and Psychological Testing. We detail activities used when operationalizing new psychological constructs, such as item pooling, item review, pilot testing, item analysis, factor analysis, statistical property of items, reliability, validity, and fairness in testing and test bias. We provide an openly available example of a psychometric evaluation based on our guideline. We hope to encourage a culture change in SE research towards the adoption of established methods from psychology. To improve the quality of behavioral research in SE, studies focusing on introducing, validating, and then using psychometric instruments need to be more common.},
+  archive      = {J_TOSEM},
+  author       = {Daniel Graziotin and Per Lenberg and Robert Feldt and Stefan Wagner},
+  doi          = {10.1145/3469888},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {7:1–36},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Psychometrics in behavioral software engineering: A methodological introduction with guidelines},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Towards an anatomy of software craftsmanship.
+<em>TOSEM</em>, <em>31</em>(1), 6:1–49. (<a
+href="https://doi.org/10.1145/3468504">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Context: The concept of software craftsmanship has early roots in computing, and in 2009, the Manifesto for Software Craftsmanship was formulated as a reaction to how the Agile methods were practiced and taught. But software craftsmanship has seldom been studied from a software engineering perspective. Objective: The objective of this article is to systematize an anatomy of software craftsmanship through literature studies and a longitudinal case study. Method: We performed a snowballing literature review based on an initial set of nine papers, resulting in 18 papers and 11 books. We also performed a case study following seven years of software development of a product for the financial market, eliciting qualitative, and quantitative results. We used thematic coding to synthesize the results into categories. Results: The resulting anatomy is centered around four themes, containing 17 principles and 47 hierarchical practices connected to the principles. We present the identified practices based on the experiences gathered from the case study, triangulating with the literature results. Conclusion: We provide our systematically derived anatomy of software craftsmanship with the goal of inspiring more research into the principles and practices of software craftsmanship and how these relate to other principles within software engineering in general.},
+  archive      = {J_TOSEM},
+  author       = {Anders Sundelin and Javier Gonzalez-huerta and Krzysztof Wnuk and Tony Gorschek},
+  doi          = {10.1145/3468504},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {6:1–49},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Towards an anatomy of software craftsmanship},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). MICOSE4aPS: Industrially applicable maturity metric to
+improve systematic reuse of control software. <em>TOSEM</em>,
+<em>31</em>(1), 5:1–24. (<a
+href="https://doi.org/10.1145/3467896">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {automated Production Systems (aPS) are highly complex, mechatronic systems that usually have to operate reliably for many decades. Standardization and reuse of control software modules is a core prerequisite to achieve the required system quality in increasingly shorter development cycles. However, industrial case studies in aPS show that many aPS companies still struggle with strategically reusing software. This paper proposes a metric-based approach to objectively measure the m aturity of i ndustrial IEC 61131-based co ntrol s oftwar e in aPS (MICOSE4aPS) to identify potential weaknesses and quality issues hampering systematic reuse. Module developers in the machine and plant manufacturing industry can directly benefit as the metric calculation is integrated into the software engineering workflow. An in-depth industrial evaluation in a top-ranked machine manufacturing company in food packaging and an expert evaluation with different companies confirmed the benefit of efficiently managing the quality of control software.},
+  archive      = {J_TOSEM},
+  author       = {Birgit Vogel-Heuser and Eva-Maria Neumann and Juliane Fischer},
+  doi          = {10.1145/3467896},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {5:1–24},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {MICOSE4aPS: Industrially applicable maturity metric to improve systematic reuse of control software},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The impact of dormant defects on defect prediction: A study
+of 19 apache projects. <em>TOSEM</em>, <em>31</em>(1), 4:1–26. (<a
+href="https://doi.org/10.1145/3467895">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Defect prediction models can be beneficial to prioritize testing, analysis, or code review activities, and has been the subject of a substantial effort in academia, and some applications in industrial contexts. A necessary precondition when creating a defect prediction model is the availability of defect data from the history of projects. If this data is noisy, the resulting defect prediction model could result to be unreliable. One of the causes of noise for defect datasets is the presence of “dormant defects,” i.e., of defects discovered several releases after their introduction. This can cause a class to be labeled as defect-free while it is not, and is, therefore “snoring.” In this article, we investigate the impact of snoring on classifiers&#39; accuracy and the effectiveness of a possible countermeasure, i.e., dropping too recent data from a training set. We analyze the accuracy of 15 machine learning defect prediction classifiers, on data from more than 4,000 defects and 600 releases of 19 open source projects from the Apache ecosystem. Our results show that on average across projects (i) the presence of dormant defects decreases the recall of defect prediction classifiers, and (ii) removing from the training set the classes that in the last release are labeled as not defective significantly improves the accuracy of the classifiers. In summary, this article provides insights on how to create defects datasets by mitigating the negative effect of dormant defects on defect prediction.},
+  archive      = {J_TOSEM},
+  author       = {Davide Falessi and Aalok Ahluwalia and Massimiliano DI Penta},
+  doi          = {10.1145/3467895},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {4:1–26},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {The impact of dormant defects on defect prediction: A study of 19 apache projects},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Memory-safety challenge considered solved? An in-depth study
+with all rust CVEs. <em>TOSEM</em>, <em>31</em>(1), 3:1–25. (<a
+href="https://doi.org/10.1145/3466642">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Rust is an emerging programming language that aims at preventing memory-safety bugs without sacrificing much efficiency. The claimed property is very attractive to developers, and many projects start using the language. However, can Rust achieve the memory-safety promise? This article studies the question by surveying 186 real-world bug reports collected from several origins, which contain all existing Rust common vulnerability and exposures (CVEs) of memory-safety issues by 2020-12-31. We manually analyze each bug and extract their culprit patterns. Our analysis result shows that Rust can keep its promise that all memory-safety bugs require unsafe code, and many memory-safety bugs in our dataset are mild soundness issues that only leave a possibility to write memory-safety bugs without unsafe code. Furthermore, we summarize three typical categories of memory-safety bugs, including automatic memory reclaim, unsound function, and unsound generic or trait. While automatic memory claim bugs are related to the side effect of Rust newly-adopted ownership-based resource management scheme, unsound function reveals the essential challenge of Rust development for avoiding unsound code, and unsound generic or trait intensifies the risk of introducing unsoundness. Based on these findings, we propose two promising directions toward improving the security of Rust development, including several best practices of using specific APIs and methods to detect particular bugs involving unsafe code. Our work intends to raise more discussions regarding the memory-safety issues of Rust and facilitate the maturity of the language.},
+  archive      = {J_TOSEM},
+  author       = {Hui Xu and Zhuangbin Chen and Mingshen Sun and Yangfan Zhou and Michael R. Lyu},
+  doi          = {10.1145/3466642},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {3:1–25},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Memory-safety challenge considered solved? an in-depth study with all rust CVEs},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Adaptive hypermutation for search-based system test
+generation: A study on REST APIs with EvoMaster. <em>TOSEM</em>,
+<em>31</em>(1), 2:1–52. (<a
+href="https://doi.org/10.1145/3464940">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {REST web services are widely popular in industry, and search techniques have been successfully used to automatically generate system-level test cases for those systems. In this article, we propose a novel mutation operator which is designed specifically for test generation at system-level, with a particular focus on REST APIs. In REST API testing, and often in system testing in general, an individual can have a long and complex chromosome. Furthermore, there are two specific issues: (1) fitness evaluation in system testing is highly costly compared with the number of objectives (e.g., testing targets) to optimize for; and (2) a large part of the genotype might have no impact on the phenotype of the individuals (e.g., input data that has no impact on the execution flow in the tested program). Due to these issues, it might be not suitable to apply a typical low mutation rate like 1/ n (where n is the number of genes in an individual), which would lead to mutating only one gene on average. Therefore, in this article, we propose an adaptive weight-based hypermutation, which is aware of the different characteristics of the mutated genes. We developed adaptive strategies that enable the selection and mutation of genes adaptively based on their fitness impact and mutation history throughout the search. To assess our novel proposed mutation operator, we implemented it in the EvoMaster tool, integrated in the MIO algorithm, and further conducted an empirical study with three artificial REST APIs and four real-world REST APIs. Results show that our novel mutation operator demonstrates noticeable improvements over the default MIO. It provides a significant improvement in performance for six out of the seven case studies, where the relative improvement is up to +12.09\% for target coverage, +12.69\% for line coverage, and +32.51\% for branch coverage.},
+  archive      = {J_TOSEM},
+  author       = {Man Zhang and Andrea Arcuri},
+  doi          = {10.1145/3464940},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {2:1–52},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Adaptive hypermutation for search-based system test generation: A study on REST APIs with EvoMaster},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Enhancing search-based testing with testability
+transformations for existing APIs. <em>TOSEM</em>, <em>31</em>(1),
+1:1–34. (<a href="https://doi.org/10.1145/3477271">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Search-based software testing (SBST) has been shown to be an effective technique to generate test cases automatically. Its effectiveness strongly depends on the guidance of the fitness function. Unfortunately, a common issue in SBST is the so-called flag problem , where the fitness landscape presents a plateau that provides no guidance to the search. In this article, we provide a series of novel testability transformations aimed at providing guidance in the context of commonly used API calls (e.g., strings that need to be converted into valid date/time objects). We also provide specific transformations aimed at helping the testing of REST Web Services. We implemented our novel techniques as an extension to EvoMaster , an SBST tool that generates system-level test cases. Experiments on nine open-source REST web services, as well as an industrial web service, show that our novel techniques improve performance significantly.},
+  archive      = {J_TOSEM},
+  author       = {Andrea Arcuri and Juan P. Galeotti},
+  doi          = {10.1145/3477271},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {1:1–34},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Enhancing search-based testing with testability transformations for existing APIs},
+  volume       = {31},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Context-aware retrieval-based deep commit message
+generation. <em>TOSEM</em>, <em>30</em>(4), 56:1–30. (<a
+href="https://doi.org/10.1145/3464689">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Commit messages recorded in version control systems contain valuable information for software development, maintenance, and comprehension. Unfortunately, developers often commit code with empty or poor quality commit messages. To address this issue, several studies have proposed approaches to generate commit messages from commit diffs . Recent studies make use of neural machine translation algorithms to try and translate git diffs into commit messages and have achieved some promising results. However, these learning-based methods tend to generate high-frequency words but ignore low-frequency ones. In addition, they suffer from exposure bias issues, which leads to a gap between training phase and testing phase. In this article, we propose CoRec to address the above two limitations. Specifically, we first train a context-aware encoder-decoder model that randomly selects the previous output of the decoder or the embedding vector of a ground truth word as context to make the model gradually aware of previous alignment choices. Given a diff for testing, the trained model is reused to retrieve the most similar diff from the training set. Finally, we use the retrieval diff to guide the probability distribution for the final generated vocabulary. Our method combines the advantages of both information retrieval and neural machine translation. We evaluate CoRec on a dataset from Liu et al. and a large-scale dataset crawled from 10K popular Java repositories in Github. Our experimental results show that CoRec significantly outperforms the state-of-the-art method NNGen by 19\% on average in terms of BLEU.},
+  archive      = {J_TOSEM},
+  author       = {Haoye Wang and Xin Xia and David Lo and Qiang He and Xinyu Wang and John Grundy},
+  doi          = {10.1145/3464689},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {56:1–30},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Context-aware retrieval-based deep commit message generation},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Understanding software-2.0: A study of machine learning
+library usage and evolution. <em>TOSEM</em>, <em>30</em>(4), 55:1–42.
+(<a href="https://doi.org/10.1145/3453478">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Enabled by a rich ecosystem of Machine Learning (ML) libraries, programming using learned models , i.e., Software-2.0 , has gained substantial adoption. However, we do not know what challenges developers encounter when they use ML libraries. With this knowledge gap, researchers miss opportunities to contribute to new research directions, tool builders do not invest resources where automation is most needed, library designers cannot make informed decisions when releasing ML library versions, and developers fail to use common practices when using ML libraries. We present the first large-scale quantitative and qualitative empirical study to shed light on how developers in Software-2.0 use ML libraries, and how this evolution affects their code. Particularly, using static analysis we perform a longitudinal study of 3,340 top-rated open-source projects with 46,110 contributors. To further understand the challenges of ML library evolution, we survey 109 developers who introduce and evolve ML libraries. Using this rich dataset we reveal several novel findings. Among others, we found an increasing trend of using ML libraries: The ratio of new Python projects that use ML libraries increased from 2\% in 2013 to 50\% in 2018. We identify several usage patterns including the following: (i) 36\% of the projects use multiple ML libraries to implement various stages of the ML workflows, (ii) developers update ML libraries more often than the traditional libraries , (iii) strict upgrades are the most popular for ML libraries among other update kinds, (iv) ML library updates often result in cascading library updates, and (v) ML libraries are often downgraded (22.04\% of cases). We also observed unique challenges when evolving and maintaining Software-2.0 such as (i) binary incompatibility of trained ML models and (ii) benchmarking ML models. Finally, we present actionable implications of our findings for researchers, tool builders, developers, educators, library vendors, and hardware vendors.},
+  archive      = {J_TOSEM},
+  author       = {Malinda Dilhara and Ameya Ketkar and Danny Dig},
+  doi          = {10.1145/3453478},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {55:1–42},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Understanding software-2.0: A study of machine learning library usage and evolution},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). An empirical study of the impact of data splitting decisions
+on the performance of AIOps solutions. <em>TOSEM</em>, <em>30</em>(4),
+54:1–38. (<a href="https://doi.org/10.1145/3447876">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {AIOps (Artificial Intelligence for IT Operations) leverages machine learning models to help practitioners handle the massive data produced during the operations of large-scale systems. However, due to the nature of the operation data, AIOps modeling faces several data splitting-related challenges, such as imbalanced data, data leakage, and concept drift. In this work, we study the data leakage and concept drift challenges in the context of AIOps and evaluate the impact of different modeling decisions on such challenges. Specifically, we perform a case study on two commonly studied AIOps applications: (1) predicting job failures based on trace data from a large-scale cluster environment and (2) predicting disk failures based on disk monitoring data from a large-scale cloud storage environment. First, we observe that the data leakage issue exists in AIOps solutions. Using a time-based splitting of training and validation datasets can significantly reduce such data leakage, making it more appropriate than using a random splitting in the AIOps context. Second, we show that AIOps solutions suffer from concept drift. Periodically updating AIOps models can help mitigate the impact of such concept drift, while the performance benefit and the modeling cost of increasing the update frequency depend largely on the application data and the used models. Our findings encourage future studies and practices on developing AIOps solutions to pay attention to their data-splitting decisions to handle the data leakage and concept drift challenges.},
+  archive      = {J_TOSEM},
+  author       = {Yingzhe Lyu and Heng Li and Mohammed Sayagh and Zhen Ming (Jack) Jiang and Ahmed E. Hassan},
+  doi          = {10.1145/3447876},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {54:1–38},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {An empirical study of the impact of data splitting decisions on the performance of AIOps solutions},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Recommending faulty configurations for interacting systems
+under test using multi-objective search. <em>TOSEM</em>, <em>30</em>(4),
+53:1–36. (<a href="https://doi.org/10.1145/3464939">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern systems, such as cyber-physical systems, often consist of multiple products within/across product lines communicating with each other through information networks. Consequently, their runtime behaviors are influenced by product configurations and networks. Such systems play a vital role in our daily life; thus, ensuring their correctness by thorough testing becomes essential. However, testing these systems is particularly challenging due to a large number of possible configurations and limited available resources. Therefore, it is important and practically useful to test these systems with specific configurations under which products will most likely fail to communicate with each other. Motivated by this, we present a search-based configuration recommendation ( SBCR ) approach to recommend faulty configurations for the system under test (SUT) based on cross-product line (CPL) rules. CPL rules are soft constraints, constraining product configurations while indicating the most probable system states with a certain degree of confidence. In SBCR , we defined four search objectives based on CPL rules and combined them with six commonly applied search algorithms. To evaluate SBCR (i.e., SBCR NSGA-II , SBCR IBEA , SBCR MoCell , SBCR SPEA2 , SBCR PAES , and SBCR SMPSO ), we performed two case studies (Cisco and Jitsi) and conducted difference analyses. Results show that for both of the case studies, SBCR significantly outperformed random search-based configuration recommendation ( RBCR ) for 86\% of the total comparisons based on six quality indicators, and 100\% of the total comparisons based on the percentage of faulty configurations (PFC). Among the six variants of SBCR, SBCR SPEA2 outperformed the others in 85\% of the total comparisons based on six quality indicators and 100\% of the total comparisons based on PFC.},
+  archive      = {J_TOSEM},
+  author       = {Safdar Aqeel Safdar and Tao Yue and Shaukat Ali},
+  doi          = {10.1145/3464939},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {53:1–36},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Recommending faulty configurations for interacting systems under test using multi-objective search},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). The agile success model: A mixed-methods study of a
+large-scale agile transformation. <em>TOSEM</em>, <em>30</em>(4),
+52:1–46. (<a href="https://doi.org/10.1145/3464938">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Organizations are increasingly adopting Agile frameworks for their internal software development. Cost reduction, rapid deployment, requirements and mental model alignment are typical reasons for an Agile transformation. This article presents an in-depth field study of a large-scale Agile transformation in a mission-critical environment, where stakeholders’ commitment was a critical success factor. The goal of such a transformation was to implement mission-oriented features, reducing costs and time to operate in critical scenarios. The project lasted several years and involved over 40 professionals. We report how a hierarchical and plan-driven organization exploited Agile methods to develop a Command &amp; Control (C2) system. Accordingly, we first abstract our experience, inducing a success model of general use for other comparable organizations by performing a post-mortem study. The goal of the inductive research process was to identify critical success factors and their relations. Finally, we validated and generalized our model through Partial Least Squares - Structural Equation Modelling, surveying 200 software engineers involved in similar projects. We conclude the article with data-driven recommendations concerning the management of Agile projects.},
+  archive      = {J_TOSEM},
+  author       = {Daniel Russo},
+  doi          = {10.1145/3464938},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {52:1–46},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {The agile success model: A mixed-methods study of a large-scale agile transformation},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Evaluation of software architectures under uncertainty: A
+systematic literature review. <em>TOSEM</em>, <em>30</em>(4), 51:1–50.
+(<a href="https://doi.org/10.1145/3464305">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Context: Evaluating software architectures in uncertain environments raises new challenges, which require continuous approaches. We define continuous evaluation as multiple evaluations of the software architecture that begins at the early stages of the development and is periodically and repeatedly performed throughout the lifetime of the software system. Numerous approaches have been developed for continuous evaluation; to handle dynamics and uncertainties at run-time, over the past years, these approaches are still very few, limited, and lack maturity. Objective: This review surveys efforts on architecture evaluation and provides a unified terminology and perspective on the subject. Method: We conducted a systematic literature review to identify and analyse architecture evaluation approaches for uncertainty including continuous and non-continuous, covering work published between 1990–2020. We examined each approach and provided a classification framework for this field. We present an analysis of the results and provide insights regarding open challenges. Major results and conclusions: The survey reveals that most of the existing architecture evaluation approaches typically lack an explicit linkage between design-time and run-time. Additionally, there is a general lack of systematic approaches on how continuous architecture evaluation can be realised or conducted. To remedy this lack, we present a set of necessary requirements for continuous evaluation and describe some examples.},
+  archive      = {J_TOSEM},
+  author       = {Dalia Sobhy and Rami Bahsoon and Leandro Minku and Rick Kazman},
+  doi          = {10.1145/3464305},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {51:1–50},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Evaluation of software architectures under uncertainty: A systematic literature review},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Software architectural migration: An automated planning
+approach. <em>TOSEM</em>, <em>30</em>(4), 50:1–35. (<a
+href="https://doi.org/10.1145/3461011">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Software architectural designs are usually changed over time to support emerging technologies and to adhere to new principles. Architectural migration is an important activity that helps to transform the architectural styles applied during a system’s design with the result of modernising the system. If not performed correctly, this process could lead to potential system failures. This article presents an automated approach to refactoring architectural design and to planning the evolution process. With our solution, the architectural design can be refactored, ensuring that system functionality is preserved. Furthermore, the architectural migration process allows the system to be safely and incrementally transformed. We have evaluated our approach with five real-world software applications. The results prove the effectiveness of our approach and identify factors that impact the performance of architectural verification and migration planning. An interesting finding is that planning algorithms generate migration plans that differ in term of their relative efficiency.},
+  archive      = {J_TOSEM},
+  author       = {Nacha Chondamrongkul and Jing Sun and Ian Warren},
+  doi          = {10.1145/3461011},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {50:1–35},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Software architectural migration: An automated planning approach},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Speeding up data manipulation tasks with alternative
+implementations: An exploratory study. <em>TOSEM</em>, <em>30</em>(4),
+49:1–28. (<a href="https://doi.org/10.1145/3456873">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As data volume and complexity grow at an unprecedented rate, the performance of data manipulation programs is becoming a major concern for developers. In this article, we study how alternative API choices could improve data manipulation performance while preserving task-specific input/output equivalence. We propose a lightweight approach that leverages the comparative structures in Q&amp;A sites to extracting alternative implementations. On a large dataset of Stack Overflow posts, our approach extracts 5,080 pairs of alternative implementations that invoke different data manipulation APIs to solve the same tasks, with an accuracy of 86\%. Experiments show that for 15\% of the extracted pairs, the faster implementation achieved &gt;10x speedup over its slower alternative. We also characterize 68 recurring alternative API pairs from the extraction results to understand the type of APIs that can be used alternatively. To put these findings into practice, we implement a tool, AlterApi7 , to automatically optimize real-world data manipulation programs. In the 1,267 optimization attempts on the Kaggle dataset, 76\% achieved desirable performance improvements with up to orders-of-magnitude speedup. Finally, we discuss notable challenges of using alternative APIs for optimizing data manipulation programs. We hope that our study offers a new perspective on API recommendation and automatic performance optimization.},
+  archive      = {J_TOSEM},
+  author       = {Yida Tao and Shan Tang and Yepang Liu and Zhiwu Xu and Shengchao Qin},
+  doi          = {10.1145/3456873},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {49:1–28},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Speeding up data manipulation tasks with alternative implementations: An exploratory study},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Automatically identifying the quality of developer chats for
+post hoc use. <em>TOSEM</em>, <em>30</em>(4), 48:1–28. (<a
+href="https://doi.org/10.1145/3450503">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Software engineers are crowdsourcing answers to their everyday challenges on Q&amp;A forums (e.g., Stack Overflow) and more recently in public chat communities such as Slack, IRC, and Gitter. Many software-related chat conversations contain valuable expert knowledge that is useful for both mining to improve programming support tools and for readers who did not participate in the original chat conversations. However, most chat platforms and communities do not contain built-in quality indicators (e.g., accepted answers, vote counts). Therefore, it is difficult to identify conversations that contain useful information for mining or reading, i.e., conversations of post hoc quality. In this article, we investigate automatically detecting developer conversations of post hoc quality from public chat channels. We first describe an analysis of 400 developer conversations that indicate potential characteristics of post hoc quality, followed by a machine learning-based approach for automatically identifying conversations of post hoc quality. Our evaluation of 2,000 annotated Slack conversations in four programming communities (python, clojure, elm, and racket) indicates that our approach can achieve precision of 0.82, recall of 0.90, F-measure of 0.86, and MCC of 0.57. To our knowledge, this is the first automated technique for detecting developer conversations of post hoc quality.},
+  archive      = {J_TOSEM},
+  author       = {Preetha Chatterjee and Kostadin Damevski and Nicholas A. Kraft and Lori Pollock},
+  doi          = {10.1145/3450503},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {48:1–28},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Automatically identifying the quality of developer chats for post hoc use},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Specifying with interface and trait abstractions in abstract
+state machines: A controlled experiment. <em>TOSEM</em>, <em>30</em>(4),
+47:1–29. (<a href="https://doi.org/10.1145/3450968">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract State Machine (ASM) theory is a well-known state-based formal method. As in other state-based formal methods, the proposed specification languages for ASMs still lack easy-to-comprehend abstractions to express structural and behavioral aspects of specifications. Our goal is to investigate object-oriented abstractions such as interfaces and traits for ASM-based specification languages. We report on a controlled experiment with 98 participants to study the specification efficiency and effectiveness in which participants needed to comprehend an informal specification as problem (stimulus) in form of a textual description and express a corresponding solution in form of a textual ASM specification using either interface or trait syntax extensions. The study was carried out with a completely randomized design and one alternative (interface or trait) per experimental group. The results indicate that specification effectiveness of the traits experiment group shows a better performance compared to the interfaces experiment group, but specification efficiency shows no statistically significant differences. To the best of our knowledge, this is the first empirical study studying the specification effectiveness and efficiency of object-oriented abstractions in the context of formal methods.},
+  archive      = {J_TOSEM},
+  author       = {Philipp Paulweber and Georg Simhandl and Uwe Zdun},
+  doi          = {10.1145/3450968},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {47:1–29},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Specifying with interface and trait abstractions in abstract state machines: A controlled experiment},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Eagle: CFL-reachability-based precision-preserving
+acceleration of object-sensitive pointer analysis with partial context
+sensitivity. <em>TOSEM</em>, <em>30</em>(4), 46:1–46. (<a
+href="https://doi.org/10.1145/3450492">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object sensitivity is widely used as a context abstraction for computing the points-to information context-sensitively for object-oriented programming languages such as Java. Due to the combinatorial explosion of contexts in large object-oriented programs, k -object-sensitive pointer analysis (under k -limiting), denoted k -obj , is often inefficient even when it is scalable for small values of k , where k ⩽ 2 holds typically. A recent popular approach for accelerating k -obj trades precision for efficiency by instructing k -obj to analyze only some methods in a program context-sensitively, determined heuristically by a pre-analysis. In this article, we investigate how to develop a fundamentally different approach, Eagle , for designing a pre-analysis that can make k -obj run significantly faster while maintaining its precision. The novelty of Eagle is to enable k -obj to analyze a method with partial context sensitivity (i.e., context-sensitively for only some of its selected variables/allocation sites) by solving a context-free-language (CFL) reachability problem based on a new CFL-reachability formulation of k -obj . By regularizing one CFL for specifying field accesses and using another CFL for specifying method calls, we have formulated Eagle as a fully context-sensitive taint analysis (without k -limiting) that is both effective (by selecting the variables/allocation sites to be analyzed by k -obj context-insensitively so as to reduce the number of context-sensitive facts inferred by k -obj in the program) and efficient (by running linearly in terms of the number of pointer assignment edges in the program). As Eagle represents the first precision-preserving pre-analysis, our evaluation focuses on demonstrating its significant performance benefits in accelerating k -obj for a set of popular Java benchmarks and applications, with call graph construction, may-fail-casting, and polymorphic call detection as three important client analyses.},
+  archive      = {J_TOSEM},
+  author       = {Jingbo Lu and Dongjie He and Jingling Xue},
+  doi          = {10.1145/3450492},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {46:1–46},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Eagle: CFL-reachability-based precision-preserving acceleration of object-sensitive pointer analysis with partial context sensitivity},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). How far have we progressed in identifying self-admitted
+technical debts? A comprehensive empirical study. <em>TOSEM</em>,
+<em>30</em>(4), 45:1–56. (<a
+href="https://doi.org/10.1145/3447247">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Background. Self-admitted technical debt (SATD) is a special kind of technical debt that is intentionally introduced and remarked by code comments. Those technical debts reduce the quality of software and increase the cost of subsequent software maintenance. Therefore, it is necessary to find out and resolve these debts in time. Recently, many automatic approaches have been proposed to identify SATD. Problem. Popular IDEs support a number of predefined task annotation tags for indicating SATD in comments, which have been used in many projects. However, such clear prior knowledge is neglected by existing SATD identification approaches when identifying SATD. Objective. We aim to investigate how far we have really progressed in the field of SATD identification by comparing existing approaches with a simple approach that leverages the predefined task tags to identify SATD. Method. We first propose a simple heuristic approach that fuzzily Matches task Annotation Tags ( MAT ) in comments to identify SATD. In nature, MAT is an unsupervised approach, which does not need any data to train a prediction model and has a good understandability. Then, we examine the real progress in SATD identification by comparing MAT against existing approaches. Result. The experimental results reveal that: (1) MAT has a similar or even superior performance for SATD identification compared with existing approaches, regardless of whether non-effort-aware or effort-aware evaluation indicators are considered; (2) the SATDs (or non-SATDs) correctly identified by existing approaches are highly overlapped with those identified by MAT ; and (3) supervised approaches misclassify many SATDs marked with task tags as non-SATDs, which can be easily corrected by their combinations with MAT . Conclusion. It appears that the problem of SATD identification has been (unintentionally) complicated by our community, i.e., the real progress in SATD comments identification is not being achieved as it might have been envisaged. We hence suggest that, when many task tags are used in the comments of a target project, future SATD identification studies should use MAT as an easy-to-implement baseline to demonstrate the usefulness of any newly proposed approach.},
+  archive      = {J_TOSEM},
+  author       = {Zhaoqiang Guo and Shiran Liu and Jinping Liu and Yanhui Li and Lin Chen and Hongmin Lu and Yuming Zhou},
+  doi          = {10.1145/3447247},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {45:1–56},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {How far have we progressed in identifying self-admitted technical debts? a comprehensive empirical study},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Diversifying focused testing for unit testing.
+<em>TOSEM</em>, <em>30</em>(4), 44:1–24. (<a
+href="https://doi.org/10.1145/3447265">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Software changes constantly, because developers add new features or modifications. This directly affects the effectiveness of the test suite associated with that software, especially when these new modifications are in a specific area that no test case covers. This article tackles the problem of generating a high-quality test suite to cover repeatedly a given point in a program, with the ultimate goal of exposing faults possibly affecting the given program point. Both search-based software testing and constraint solving offer ready, but low-quality, solutions to this: Ideally, a maximally diverse covering test set is required, whereas search and constraint solving tend to generate test sets with biased distributions. Our approach, Diversified Focused Testing (DFT), uses a search strategy inspired by GödelTest. We artificially inject parameters into the code branching conditions and use a bi-objective search algorithm to find diverse inputs by perturbing the injected parameters, while keeping the path conditions still satisfiable. Our results demonstrate that our technique, DFT, is able to cover a desired point in the code at least 90\% of the time. Moreover, adding diversity improves the bug detection and the mutation killing abilities of the test suites. We show that DFT achieves better results than focused testing, symbolic execution, and random testing by achieving from 3\% to 70\% improvement in mutation score and up to 100\% improvement in fault detection across 105 software subjects.},
+  archive      = {J_TOSEM},
+  author       = {Héctor D. Menéndez and Gunel Jahangirova and Federica Sarro and Paolo Tonella and David Clark},
+  doi          = {10.1145/3447265},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {44:1–24},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Diversifying focused testing for unit testing},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Toward a holistic approach to verification and validation of
+autonomous cognitive systems. <em>TOSEM</em>, <em>30</em>(4), 43:1–43.
+(<a href="https://doi.org/10.1145/3447246">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When applying formal verification to a system that interacts with the real world, we must use a model of the environment. This model represents an abstraction of the actual environment, so it is necessarily incomplete and hence presents an issue for system verification. If the actual environment matches the model, then the verification is correct; however, if the environment falls outside the abstraction captured by the model, then we cannot guarantee that the system is well behaved. A solution to this problem consists in exploiting the model of the environment used for statically verifying the system’s behaviour and, if the verification succeeds, using it also for validating the model against the real environment via runtime verification. The article discusses this approach and demonstrates its feasibility by presenting its implementation on top of a framework integrating the Agent Java PathFinder model checker. A high-level Domain Specific Language is used to model the environment in a user-friendly way; the latter is then compiled to trace expressions for both static formal verification and runtime verification. To evaluate our approach, we apply it to two different case studies: an autonomous cruise control system and a simulation of the Mars Curiosity rover.},
+  archive      = {J_TOSEM},
+  author       = {Angelo Ferrando and Louise A. Dennis and Rafael C. Cardoso and Michael Fisher and Davide Ancona and Viviana Mascardi},
+  doi          = {10.1145/3447246},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {43:1–43},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Toward a holistic approach to verification and validation of autonomous cognitive systems},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). When and how to make breaking changes: Policies and
+practices in 18 open source software ecosystems. <em>TOSEM</em>,
+<em>30</em>(4), 42:1–56. (<a
+href="https://doi.org/10.1145/3447245">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Open source software projects often rely on package management systems that help projects discover, incorporate, and maintain dependencies on other packages, maintained by other people. Such systems save a great deal of effort over ad hoc ways of advertising, packaging, and transmitting useful libraries, but coordination among project teams is still needed when one package makes a breaking change affecting other packages. Ecosystems differ in their approaches to breaking changes, and there is no general theory to explain the relationships between features, behavioral norms, ecosystem outcomes, and motivating values. We address this through two empirical studies. In an interview case study, we contrast Eclipse, NPM, and CRAN, demonstrating that these different norms for coordination of breaking changes shift the costs of using and maintaining the software among stakeholders, appropriate to each ecosystem’s mission. In a second study, we combine a survey, repository mining, and document analysis to broaden and systematize these observations across 18 ecosystems. We find that all ecosystems share values such as stability and compatibility, but differ in other values. Ecosystems’ practices often support their espoused values, but in surprisingly diverse ways. The data provides counterevidence against easy generalizations about why ecosystem communities do what they do.},
+  archive      = {J_TOSEM},
+  author       = {Chris Bogart and Christian Kästner and James Herbsleb and Ferdian Thung},
+  doi          = {10.1145/3447245},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {42:1–56},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {When and how to make breaking changes: Policies and practices in 18 open source software ecosystems},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Leveraging control flow knowledge in SMT solving of program
+verification. <em>TOSEM</em>, <em>30</em>(4), 41:1–26. (<a
+href="https://doi.org/10.1145/3446211">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Satisfiability modulo theories (SMT) solvers have been widely applied as the reasoning engine for diverse software analysis and verification technologies. The efficiency of the SMT solver has significant effects on the performance of these technologies. However, current SMT solvers are designed for the general purpose of constraint solving. Lots of useful knowledge of programs cannot be utilized during SMT solving. As a result, the SMT solver may spend much effort to explore redundant search space. In this article, we propose a novel approach to utilizing control-flow knowledge in SMT solving. With this technique, the search space can be considerably reduced, and the efficiency of SMT solving is observably improved. We conducted extensive experiments on credible benchmarks. The results show significant improvements of our approach.},
+  archive      = {J_TOSEM},
+  author       = {Jianhui Chen and Fei He},
+  doi          = {10.1145/3446211},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {4},
+  pages        = {41:1–26},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Leveraging control flow knowledge in SMT solving of program verification},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). On the impact of sample duplication in
+machine-learning-based android malware detection. <em>TOSEM</em>,
+<em>30</em>(3), 40:1–38. (<a
+href="https://doi.org/10.1145/3446905">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Malware detection at scale in the Android realm is often carried out using machine learning techniques. State-of-the-art approaches such as DREBIN and MaMaDroid are reported to yield high detection rates when assessed against well-known datasets. Unfortunately, such datasets may include a large portion of duplicated samples, which may bias recorded experimental results and insights. In this article, we perform extensive experiments to measure the performance gap that occurs when datasets are de-duplicated. Our experimental results reveal that duplication in published datasets has a limited impact on supervised malware classification models. This observation contrasts with the finding of Allamanis on the general case of machine learning bias for big code. Our experiments, however, show that sample duplication more substantially affects unsupervised learning models (e.g., malware family clustering). Nevertheless, we argue that our fellow researchers and practitioners should always take sample duplication into consideration when performing machine-learning-based (via either supervised or unsupervised learning) Android malware detections, no matter how significant the impact might be.},
+  archive      = {J_TOSEM},
+  author       = {Yanjie Zhao and Li Li and Haoyu Wang and Haipeng Cai and Tegawendé F. Bissyandé and Jacques Klein and John Grundy},
+  doi          = {10.1145/3446905},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {40:1–38},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {On the impact of sample duplication in machine-learning-based android malware detection},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). IntDroid: Android malware detection based on API intimacy
+analysis. <em>TOSEM</em>, <em>30</em>(3), 39:1–32. (<a
+href="https://doi.org/10.1145/3442588">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Android, the most popular mobile operating system, has attracted millions of users around the world. Meanwhile, the number of new Android malware instances has grown exponentially in recent years. On the one hand, existing Android malware detection systems have shown that distilling the program semantics into a graph representation and detecting malicious programs by conducting graph matching are able to achieve high accuracy on detecting Android malware. However, these traditional graph-based approaches always perform expensive program analysis and suffer from low scalability on malware detection. On the other hand, because of the high scalability of social network analysis, it has been applied to complete large-scale malware detection. However, the social-network-analysis-based method only considers simple semantic information (i.e., centrality) for achieving market-wide mobile malware scanning, which may limit the detection effectiveness when benign apps show some similar behaviors as malware. In this article, we aim to combine the high accuracy of traditional graph-based method with the high scalability of social-network-analysis--based method for Android malware detection. Instead of using traditional heavyweight static analysis, we treat function call graphs of apps as complex social networks and apply social-network--based centrality analysis to unearth the central nodes within call graphs. After obtaining the central nodes, the average intimacies between sensitive API calls and central nodes are computed to represent the semantic features of the graphs. We implement our approach in a tool called IntDroid and evaluate it on a dataset of 3,988 benign samples and 4,265 malicious samples. Experimental results show that IntDroid is capable of detecting Android malware with an F-measure of 97.1\% while maintaining a True-positive Rate of 99.1\%. Although the scalability is not as fast as a social-network-analysis--based method (i.e., MalScan ), compared to a traditional graph-based method, IntDroid is more than six times faster than MaMaDroid . Moreover, in a corpus of apps collected from GooglePlay market, IntDroid is able to identify 28 zero-day malware that can evade detection of existing tools, one of which has been downloaded and installed by more than ten million users. This app has also been flagged as malware by six anti-virus scanners in VirusTotal, one of which is Symantec Mobile Insight .},
+  archive      = {J_TOSEM},
+  author       = {Deqing Zou and Yueming Wu and Siru Yang and Anki Chauhan and Wei Yang and Jiangying Zhong and Shihan Dou and Hai Jin},
+  doi          = {10.1145/3442588},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {39:1–32},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {IntDroid: Android malware detection based on API intimacy analysis},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). DeepWukong: Statically detecting software vulnerabilities
+using deep graph neural network. <em>TOSEM</em>, <em>30</em>(3),
+38:1–33. (<a href="https://doi.org/10.1145/3436877">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Static bug detection has shown its effectiveness in detecting well-defined memory errors, e.g., memory leaks, buffer overflows, and null dereference. However, modern software systems have a wide variety of vulnerabilities. These vulnerabilities are extremely complicated with sophisticated programming logic, and these bugs are often caused by different bad programming practices, challenging existing bug detection solutions. It is hard and labor-intensive to develop precise and efficient static analysis solutions for different types of vulnerabilities, particularly for those that may not have a clear specification as the traditional well-defined vulnerabilities. This article presents D eep W ukong , a new deep-learning-based embedding approach to static detection of software vulnerabilities for C/C++ programs. Our approach makes a new attempt by leveraging advanced recent graph neural networks to embed code fragments in a compact and low-dimensional representation, producing a new code representation that preserves high-level programming logic (in the form of control- and data-flows) together with the natural language information of a program. Our evaluation studies the top 10 most common C/C++ vulnerabilities during the past 3 years. We have conducted our experiments using 105,428 real-world programs by comparing our approach with four well-known traditional static vulnerability detectors and three state-of-the-art deep-learning-based approaches. The experimental results demonstrate the effectiveness of our research and have shed light on the promising direction of combining program analysis with deep learning techniques to address the general static code analysis challenges.},
+  archive      = {J_TOSEM},
+  author       = {Xiao Cheng and Haoyu Wang and Jiayi Hua and Guoai Xu and Yulei Sui},
+  doi          = {10.1145/3436877},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {38:1–33},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {DeepWukong: Statically detecting software vulnerabilities using deep graph neural network},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). How should i improve the UI of my app?: A study of user
+reviews of popular apps in the google play. <em>TOSEM</em>,
+<em>30</em>(3), 37:1–38. (<a
+href="https://doi.org/10.1145/3447808">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {UI (User Interface) is an essential factor influencing users’ perception of an app. However, it is hard for even professional designers to determine if the UI is good or not for end-users. Users’ feedback (e.g., user reviews in the Google Play) provides a way for app owners to understand how the users perceive the UI. In this article, we conduct an in-depth empirical study to analyze the UI issues of mobile apps. In particular, we analyze more than 3M UI-related reviews from 22,199 top free-to-download apps and 9,380 top non-free apps in the Google Play Store. By comparing the rating of UI-related reviews and other reviews of an app, we observe that UI-related reviews have lower ratings than other reviews. By manually analyzing a random sample of 1,447 UI-related reviews with a 95\% confidence level and a 5\% interval, we identify 17 UI-related issues types that belong to four categories (i.e., “Appearance,” “Interaction,” “Experience,” and “Others” ). In these issue types, we find “Generic Review” is the most occurring one. “Comparative Review” and “Advertisement” are the most negative two UI issue types. Faced with these UI issues, we explore the patterns of interaction between app owners and users. We identify eight patterns of how app owners dialogue with users about UI issues by the review-response mechanism. We find “Apology or Appreciation” and “Information Request” are the most two frequent patterns. We find updating UI timely according to feedback is essential to satisfy users. Besides, app owners could also fix UI issues without updating UI, especially for issue types belonging to “Interaction” category. Our findings show that there exists a positive impact if app owners could actively interact with users to improve UI quality and boost users’ satisfactoriness about the UIs.},
+  archive      = {J_TOSEM},
+  author       = {Qiuyuan Chen and Chunyang Chen and Safwat Hassan and Zhengchang Xing and Xin Xia and Ahmed E. Hassan},
+  doi          = {10.1145/3447808},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {37:1–38},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {How should i improve the UI of my app?: A study of user reviews of popular apps in the google play},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). An adaptive search budget allocation approach for
+search-based test case generation. <em>TOSEM</em>, <em>30</em>(3),
+36:1–26. (<a href="https://doi.org/10.1145/3446199">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Search-based techniques have been successfully used to automate test case generation. Such approaches allocate a fixed search budget to generate test cases aiming at maximizing code coverage. The search budget plays a crucial role; due to the hugeness of the search space, the higher the assigned budget, the higher the expected coverage. Code components have different structural properties that may affect the ability of search-based techniques to achieve a high coverage level. Thus, allocating a fixed search budget for all the components is not recommended and a component-specific search budget should be preferred. However, deciding the budget to assign to a given component is not a trivial task. In this article, we introduce Budget Optimization for Testing (BOT), an approach to adaptively allocate the search budget to the classes under test. BOT requires information about the branch coverage that will be achieved on each class with a given search budget. Therefore, we also introduce BRANCHOS, an approach that predicts coverage in a budget-aware way. The results of our experiments show that (i) BRANCHOS can approximate the branch coverage in time with a low error, and (ii) BOT can significantly increase the coverage achieved by a test generation tool and the effectiveness of generated tests.},
+  archive      = {J_TOSEM},
+  author       = {Simone Scalabrino and Antonio Mastropaolo and Gabriele Bavota and Rocco Oliveto},
+  doi          = {10.1145/3446199},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {36:1–26},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {An adaptive search budget allocation approach for search-based test case generation},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Architecting internet of things systems with blockchain: A
+catalog of tactics. <em>TOSEM</em>, <em>30</em>(3), 35:1–46. (<a
+href="https://doi.org/10.1145/3442412">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Blockchain offers a distributed ledger to record data collected from Internet of Thing (IoT) devices as immutable and tamper-proof transactions and securely shared among authorized participants in a Peer-to-Peer (P2P) network. Despite the growing interest in using blockchain for securing IoT systems, there is a general lack of systematic research and comprehensive review of the design issues on the integration of blockchain and IoT from the software architecture perspective. This article presents a catalog of architectural tactics for the design of IoT systems supported by blockchain as a result of a Systematic Literature Review (SLR) on IoT and blockchain to extract the commonly reported quality attributes, design decisions, and relevant architectural tactics for the architectural design of this category of systems. Our findings are threefold: (i) identification of security, scalability, performance, and interoperability as the commonly reported quality attributes; (ii) a catalog of twelve architectural tactics for the design of IoT systems supported by blockchain; and (iii) gaps in research that include tradeoffs among quality attributes and identified tactics. These tactics might provide architects and designers with different options when searching for an optimal architectural design that meets the quality attributes of interest and constraints of a system.},
+  archive      = {J_TOSEM},
+  author       = {Wendy Yánez and Rami Bahsoon and Yuqun Zhang and Rick Kazman},
+  doi          = {10.1145/3442412},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {35:1–46},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Architecting internet of things systems with blockchain: A catalog of tactics},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A formal framework of software product line analyses.
+<em>TOSEM</em>, <em>30</em>(3), 34:1–37. (<a
+href="https://doi.org/10.1145/3442389">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A number of product-line analysis approaches lift analyses such as type checking, model checking, and theorem proving from the level of single programs to the level of product lines. These approaches share concepts and mechanisms that suggest an unexplored potential for reuse of key analysis steps and properties, implementation, and verification efforts. Despite the availability of taxonomies synthesizing such approaches, there still remains the underlying problem of not being able to describe product-line analyses and their properties precisely and uniformly. We propose a formal framework that models product-line analyses in a compositional manner, providing an overall understanding of the space of family-based, feature-based, and product-based analysis strategies. It defines precisely how the different types of product-line analyses compose and inter-relate. To ensure soundness, we formalize the framework, providing mechanized specification and proofs of key concepts and properties of the individual analyses. The formalization provides unambiguous definitions of domain terminology and assumptions as well as solid evidence of key properties based on rigorous formal proofs. To qualitatively assess the generality of the framework, we discuss to what extent it describes five representative product-line analyses targeting the following properties: safety, performance, dataflow facts, security, and functional program properties.},
+  archive      = {J_TOSEM},
+  author       = {Thiago Castro and Leopoldo Teixeira and Vander Alves and Sven Apel and Maxime Cordy and Rohit Gheyi},
+  doi          = {10.1145/3442389},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {34:1–37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {A formal framework of software product line analyses},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Predicting performance anomalies in software systems at
+run-time. <em>TOSEM</em>, <em>30</em>(3), 33:1–33. (<a
+href="https://doi.org/10.1145/3440757">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High performance is a critical factor to achieve and maintain the success of a software system. Performance anomalies represent the performance degradation issues (e.g., slowing down in system response times) of software systems at run-time. Performance anomalies can cause a dramatically negative impact on users’ satisfaction. Prior studies propose different approaches to detect anomalies by analyzing execution logs and resource utilization metrics after the anomalies have happened. However, the prior detection approaches cannot predict the anomalies ahead of time; such limitation causes an inevitable delay in taking corrective actions to prevent performance anomalies from happening. We propose an approach that can predict performance anomalies in software systems and raise anomaly warnings in advance. Our approach uses a Long-Short Term Memory neural network to capture the normal behaviors of a software system. Then, our approach predicts performance anomalies by identifying the early deviations from the captured normal system behaviors. We conduct extensive experiments to evaluate our approach using two real-world software systems (i.e., Elasticsearch and Hadoop). We compare the performance of our approach with two baselines. The first baseline is one state-to-the-art baseline called Unsupervised Behavior Learning. The second baseline predicts performance anomalies by checking if the resource utilization exceeds pre-defined thresholds. Our results show that our approach can predict various performance anomalies with high precision (i.e., 97–100\%) and recall (i.e., 80–100\%), while the baselines achieve 25–97\% precision and 93–100\% recall. For a range of performance anomalies, our approach can achieve sufficient lead times that vary from 20 to 1,403 s (i.e., 23.4 min). We also demonstrate the ability of our approach to predict the performance anomalies that are caused by real-world performance bugs. For predicting performance anomalies that are caused by real-world performance bugs, our approach achieves 95–100\% precision and 87–100\% recall, while the baselines achieve 49–83\% precision and 100\% recall. The obtained results show that our approach outperforms the existing anomaly prediction approaches and is able to predict performance anomalies in real-world systems.},
+  archive      = {J_TOSEM},
+  author       = {Guoliang Zhao and Safwat Hassan and Ying Zou and Derek Truong and Toby Corbin},
+  doi          = {10.1145/3440757},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {33:1–33},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Predicting performance anomalies in software systems at run-time},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Taming reflection: An essential step toward whole-program
+analysis of android apps. <em>TOSEM</em>, <em>30</em>(3), 32:1–36. (<a
+href="https://doi.org/10.1145/3440033">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Android developers heavily use reflection in their apps for legitimate reasons. However, reflection is also significantly used for hiding malicious actions. Unfortunately, current state-of-the-art static analysis tools for Android are challenged by the presence of reflective calls, which they usually ignore. Thus, the results of their security analysis, e.g., for private data leaks, are incomplete, given the measures taken by malware writers to elude static detection. We propose a new instrumentation-based approach to address this issue in a non-invasive way. Specifically, we introduce to the community a prototype tool called DroidRA, which reduces the resolution of reflective calls to a composite constant propagation problem and then leverages the COAL solver to infer the values of reflection targets. After that, it automatically instruments the app to replace reflective calls with their corresponding Java calls in a traditional paradigm. Our approach augments an app so that it can be more effectively statically analyzable, including by such static analyzers that are not reflection-aware. We evaluate DroidRA on benchmark apps as well as on real-world apps, and we demonstrate that it can indeed infer the target values of reflective calls and subsequently allow state-of-the-art tools to provide more sound and complete analysis results.},
+  archive      = {J_TOSEM},
+  author       = {Xiaoyu Sun and Li Li and Tegawendé F. Bissyandé and Jacques Klein and Damien Octeau and John Grundy},
+  doi          = {10.1145/3440033},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {32:1–36},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Taming reflection: An essential step toward whole-program analysis of android apps},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Automatic API usage scenario documentation from technical
+q&amp;a sites. <em>TOSEM</em>, <em>30</em>(3), 31:1–45. (<a
+href="https://doi.org/10.1145/3439769">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The online technical Q&amp;A site Stack Overflow (SO) is popular among developers to support their coding and diverse development needs. To address shortcomings in API official documentation resources, several research works have thus focused on augmenting official API documentation with insights (e.g., code examples) from SO. The techniques propose to add code examples/insights about APIs into its official documentation. Recently, surveys of software developers find that developers in SO consider the combination of code examples and reviews about APIs as a form of API documentation, and that they consider such a combination to be more useful than official API documentation when the official resources can be incomplete, ambiguous, incorrect, and outdated. Reviews are opinionated sentences with positive/negative sentiments. However, we are aware of no previous research that attempts to automatically produce API documentation from SO by considering both API code examples and reviews. In this article, we present two novel algorithms that can be used to automatically produce API documentation from SO by combining code examples and reviews towards those examples. The first algorithm is called statistical documentation, which shows the distribution of positivity and negativity around the code examples of an API using different metrics (e.g., star ratings). The second algorithm is called concept-based documentation, which clusters similar and conceptually relevant usage scenarios. An API usage scenario contains a code example, a textual description of the underlying task addressed by the code example, and the reviews (i.e., opinions with positive and negative sentiments) from other developers towards the code example. We deployed the algorithms in Opiner, a web-based platform to aggregate information about APIs from online forums. We evaluated the algorithms by mining all Java JSON-based posts in SO and by conducting three user studies based on produced documentation from the posts. The first study is a survey, where we asked the participants to compare our proposed algorithms against a Javadoc-syle documentation format (called as Type-based documentation in Opiner). The participants were asked to compare along four development scenarios (e.g., selection, documentation). The participants preferred our proposed two algorithms over type-based documentation. In our second user study, we asked the participants to complete four coding tasks using Opiner and the API official and informal documentation resources. The participants were more effective and accurate while using Opiner. In a subsequent survey, more than 80\% of participants asked the Opiner documentation platform to be integrated into the formal API documentation to complement and improve the API official documentation.},
+  archive      = {J_TOSEM},
+  author       = {Gias Uddin and Foutse Khomh and Chanchal K. Roy},
+  doi          = {10.1145/3439769},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {31:1–45},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Automatic API usage scenario documentation from technical Q&amp;A sites},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Toward an objective measure of developers’ cognitive
+activities. <em>TOSEM</em>, <em>30</em>(3), 30:1–40. (<a
+href="https://doi.org/10.1145/3434643">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding how developers carry out different computer science activities with objective measures can help to improve productivity and guide the use and development of supporting tools in software engineering. In this article, we present two controlled experiments involving 112 students to explore multiple computing activities (code comprehension, code review, and data structure manipulations) using three different objective measures including neuroimaging (functional near-infrared spectroscopy (fNIRS) and functional magnetic resonance imaging (fMRI)) and eye tracking. By examining code review and prose review using fMRI, we find that the neural representations of programming languages vs. natural languages are distinct. We can classify which task a participant is undertaking based solely on brain activity, and those task distinctions are modulated by expertise. We leverage insights from the psychological notion of spatial ability to decode the neural representations of several fundamental data structures and their manipulations using fMRI, fNIRS, and eye tracking. We examine list, array, tree, and mental rotation tasks and find that data structure and spatial operations use the same focal regions of the brain but to different degrees: they are related but distinct neural tasks. We demonstrate best practices and describe the implication and tradeoffs between fMRI, fNIRS, eye tracking, and self-reporting for software engineering research.},
+  archive      = {J_TOSEM},
+  author       = {Zohreh Sharafi and Yu Huang and Kevin Leach and Westley Weimer},
+  doi          = {10.1145/3434643},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {30:1–40},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Toward an objective measure of developers’ cognitive activities},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Are multi-language design smells fault-prone? An empirical
+study. <em>TOSEM</em>, <em>30</em>(3), 29:1–56. (<a
+href="https://doi.org/10.1145/3432690">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Nowadays, modern applications are developed using components written in different programming languages and technologies. The cost benefits of reuse and the advantages of each programming language are two main incentives behind the proliferation of such systems. However, as the number of languages increases, so do the challenges related to the development and maintenance of these systems. In such situations, developers may introduce design smells (i.e., anti-patterns and code smells) which are symptoms of poor design and implementation choices. Design smells are defined as poor design and coding choices that can negatively impact the quality of a software program despite satisfying functional requirements. Studies on mono-language systems suggest that the presence of design smells may indicate a higher risk of future bugs and affects code comprehension, thus making systems harder to maintain. However, the impact of multi-language design smells on software quality such as fault-proneness is yet to be investigated. In this article, we present an approach to detect multi-language design smells in the context of JNI systems. We then investigate the prevalence of those design smells and their impacts on fault-proneness. Specifically, we detect 15 design smells in 98 releases of 9 open-source JNI projects. Our results show that the design smells are prevalent in the selected projects and persist throughout the releases of the systems. We observe that, in the analyzed systems, 33.95\% of the files involving communications between Java and C/C++ contain occurrences of multi-language design smells. Some kinds of smells are more prevalent than others, e.g., Unused Parameters , Too Much Scattering , and Unused Method Declaration . Our results suggest that files with multi-language design smells can often be more associated with bugs than files without these smells, and that specific smells are more correlated to fault-proneness than others. From analyzing fault-inducing commit messages, we also extracted activities that are more likely to introduce bugs in smelly files. We believe that our findings are important for practitioners as it can help them prioritize design smells during the maintenance of multi-language systems.},
+  archive      = {J_TOSEM},
+  author       = {Mouna Abidi and Md Saidur Rahman and Moses Openja and Foutse Khomh},
+  doi          = {10.1145/3432690},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {29:1–56},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Are multi-language design smells fault-prone? an empirical study},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Developing cost-effective blockchain-powered applications: A
+case study of the gas usage of smart contract transactions in the
+ethereum blockchain platform. <em>TOSEM</em>, <em>30</em>(3), 28:1–38.
+(<a href="https://doi.org/10.1145/3431726">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ethereum is a blockchain platform that hosts and executes smart contracts. Executing a function of a smart contract burns a certain amount of gas units (a.k.a., gas usage). The total gas usage depends on how much computing power is necessary to carry out the execution of the function. Ethereum follows a free-market policy for deciding the transaction fee for executing a transaction. More specifically, transaction issuers choose how much they are willing to pay for each unit of gas (a.k.a., gas price). The final transaction fee corresponds to the gas price times the gas usage. Miners process transactions to gain mining rewards, which come directly from these transaction fees. The flexibility and the inherent complexity of the gas system pose challenges to the development of blockchain-powered applications. Developers of blockchain-powered applications need to translate requests received in the frontend of their application into one or more smart contract transactions. Yet, it is unclear how developers should set the gas parameters of these transactions given that (i) miners are free to prioritize transactions whichever way they wish and (ii) the gas usage of a contract transaction is only known after the transaction is processed and included in a new block. In this article, we analyze the gas usage of Ethereum transactions that were processed between Oct. 2017 and Feb. 2019 (the Byzantium era). We discover that (i) most miners prioritize transactions based on their gas price only, (ii) 25\% of the functions that received at least 10 transactions have an unstable gas usage (coefficient of variation = 19\%), and (iii) a simple prediction model that operates on the recent gas usage of a function achieves an R-Squared of 0.76 and a median absolute percentage error of 3.3\%. We conclude that (i) blockchain-powered application developers should be aware that transaction prioritization in Ethereum is frequently done based solely on the gas price of transactions (e.g., a higher transaction fee does not necessarily imply a higher transaction priority) and act accordingly and (ii) blockchain-powered application developers can leverage gas usage prediction models similar to ours to make more informed decisions to set the gas price of their transactions. Lastly, based on our findings, we list and discuss promising avenues for future research.},
+  archive      = {J_TOSEM},
+  author       = {Abdullah A. Zarir and Gustavo A. Oliva and Zhen M. (Jack) Jiang and Ahmed E. Hassan},
+  doi          = {10.1145/3431726},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {28:1–38},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Developing cost-effective blockchain-powered applications: A case study of the gas usage of smart contract transactions in the ethereum blockchain platform},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Facet-oriented modelling. <em>TOSEM</em>, <em>30</em>(3),
+27:1–59. (<a href="https://doi.org/10.1145/3428076">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Models are the central assets in model-driven engineering (MDE), as they are actively used in all phases of software development. Models are built using metamodel-based languages, and so objects in models are typed by a metamodel class. This typing is static, established at creation time, and cannot be changed later. Therefore, objects in MDE are closed and fixed with respect to the class they conform to, the fields they have, and the well-formedness constraints they must comply with. This hampers many MDE activities, like the reuse of model-related artefacts such as transformations, the opportunistic or dynamic combination of metamodels, or the dynamic reconfiguration of models. To alleviate this rigidity, we propose making model objects open so that they can acquire or drop so-called facets . These contribute with a type, fields and constraints to the objects holding them. Facets are defined by regular metamodels, hence being a lightweight extension of standard metamodelling. Facet metamodels may declare usage interfaces , as well as laws that govern the assignment of facets to objects (or classes). This article describes our proposal, reporting on a theory, analysis techniques, and an implementation. The benefits of the approach are validated on the basis of five case studies dealing with annotation models, transformation reuse, multi-view modelling, multi-level modelling, and language product lines.},
+  archive      = {J_TOSEM},
+  author       = {Juan De Lara and Esther Guerra and Jörg Kienzle},
+  doi          = {10.1145/3428076},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {27:1–59},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Facet-oriented modelling},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). A hybrid approach to formal verification of higher-order
+masked arithmetic programs. <em>TOSEM</em>, <em>30</em>(3), 26:1–42. (<a
+href="https://doi.org/10.1145/3428015">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Side-channel attacks, which are capable of breaking secrecy via side-channel information, pose a growing threat to the implementation of cryptographic algorithms. Masking is an effective countermeasure against side-channel attacks by removing the statistical dependence between secrecy and power consumption via randomization. However, designing efficient and effective masked implementations turns out to be an error-prone task. Current techniques for verifying whether masked programs are secure are limited in their applicability and accuracy, especially when they are applied. To bridge this gap, in this article, we first propose a sound type system, equipped with an efficient type inference algorithm, for verifying masked arithmetic programs against higher-order attacks. We then give novel model-counting-based and pattern-matching-based methods that are able to precisely determine whether the potential leaky observable sets detected by the type system are genuine or simply spurious. We evaluate our approach on various implementations of arithmetic cryptographic programs. The experiments confirm that our approach outperforms the state-of-the-art baselines in terms of applicability, accuracy, and efficiency.},
+  archive      = {J_TOSEM},
+  author       = {Pengfei Gao and Hongyi Xie and Fu Song and Taolue Chen},
+  doi          = {10.1145/3428015},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {3},
+  pages        = {26:1–42},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {A hybrid approach to formal verification of higher-order masked arithmetic programs},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Why my code summarization model does not work: Code comment
+improvement with category prediction. <em>TOSEM</em>, <em>30</em>(2),
+25:1–29. (<a href="https://doi.org/10.1145/3434280">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Code summarization aims at generating a code comment given a block of source code and it is normally performed by training machine learning algorithms on existing code block-comment pairs. Code comments in practice have different intentions. For example, some code comments might explain how the methods work, while others explain why some methods are written. Previous works have shown that a relationship exists between a code block and the category of a comment associated with it. In this article, we aim to investigate to which extent we can exploit this relationship to improve code summarization performance. We first classify comments into six intention categories and manually label 20,000 code-comment pairs. These categories include “what,” “why,” “how-to-use,” “how-it-is-done,” “property,” and “others.” Based on this dataset, we conduct an experiment to investigate the performance of different state-of-the-art code summarization approaches on the categories. We find that the performance of different code summarization approaches varies substantially across the categories. Moreover, the category for which a code summarization model performs the best is different for the different models. In particular, no models perform the best for “why” and “property” comments among the six categories. We design a composite approach to demonstrate that comment category prediction can boost code summarization to reach better results. The approach leverages classified code-category labeled data to train a classifier to infer categories. Then it selects the most suitable models for inferred categories and outputs the composite results. Our composite approach outperforms other approaches that do not consider comment categories and obtains a relative improvement of 8.57\% and 16.34\% in terms of ROUGE-L and BLEU-4 score, respectively.},
+  archive      = {J_TOSEM},
+  author       = {Qiuyuan Chen and Xin Xia and Han Hu and David Lo and Shanping Li},
+  doi          = {10.1145/3434280},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {25:1–29},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Why my code summarization model does not work: Code comment improvement with category prediction},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Leveraging the defects life cycle to label affected versions
+and defective classes. <em>TOSEM</em>, <em>30</em>(2), 24:1–35. (<a
+href="https://doi.org/10.1145/3433928">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Two recent studies explicitly recommend labeling defective classes in releases using the affected versions (AV) available in issue trackers (e.g., Jira). This practice is coined as the realistic approach . However, no study has investigated whether it is feasible to rely on AVs. For example, how available and consistent is the AV information on existing issue trackers? Additionally, no study has attempted to retrieve AVs when they are unavailable. The aim of our study is threefold: (1) to measure the proportion of defects for which the realistic method is usable, (2) to propose a method for retrieving the AVs of a defect, thus making the realistic approach usable when AVs are unavailable, (3) to compare the accuracy of the proposed method versus three SZZ implementations. The assumption of our proposed method is that defects have a stable life cycle in terms of the proportion of the number of versions affected by the defects before discovering and fixing these defects. Results related to 212 open-source projects from the Apache ecosystem, featuring a total of about 125,000 defects, reveal that the realistic method cannot be used in the majority (51\%) of defects. Therefore, it is important to develop automated methods to retrieve AVs. Results related to 76 open-source projects from the Apache ecosystem, featuring a total of about 6,250,000 classes, affected by 60,000 defects, and spread over 4,000 versions and 760,000 commits, reveal that the proportion of the number of versions between defect discovery and fix is pretty stable (standard deviation &lt;2)—across the defects of the same project. Moreover, the proposed method resulted significantly more accurate than all three SZZ implementations in (i) retrieving AVs, (ii) labeling classes as defective, and (iii) in developing defects repositories to perform feature selection. Thus, when the realistic method is unusable, the proposed method is a valid automated alternative to SZZ for retrieving the origin of a defect. Finally, given the low accuracy of SZZ, researchers should consider re-executing the studies that have used SZZ as an oracle and, in general, should prefer selecting projects with a high proportion of available and consistent AVs.},
+  archive      = {J_TOSEM},
+  author       = {Bailey Vandehei and Daniel Alencar Da Costa and Davide Falessi},
+  doi          = {10.1145/3433928},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {24:1–35},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Leveraging the defects life cycle to label affected versions and defective classes},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Interpreting deep learning-based vulnerability detector
+predictions based on heuristic searching. <em>TOSEM</em>,
+<em>30</em>(2), 23:1–31. (<a
+href="https://doi.org/10.1145/3429444">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Detecting software vulnerabilities is an important problem and a recent development in tackling the problem is the use of deep learning models to detect software vulnerabilities. While effective, it is hard to explain why a deep learning model predicts a piece of code as vulnerable or not because of the black-box nature of deep learning models. Indeed, the interpretability of deep learning models is a daunting open problem. In this article, we make a significant step toward tackling the interpretability of deep learning model in vulnerability detection. Specifically, we introduce a high-fidelity explanation framework, which aims to identify a small number of tokens that make significant contributions to a detector’s prediction with respect to an example. Systematic experiments show that the framework indeed has a higher fidelity than existing methods, especially when features are not independent of each other (which often occurs in the real world). In particular, the framework can produce some vulnerability rules that can be understood by domain experts for accepting a detector’s outputs (i.e., true positives) or rejecting a detector’s outputs (i.e., false-positives and false-negatives). We also discuss limitations of the present study, which indicate interesting open problems for future research.},
+  archive      = {J_TOSEM},
+  author       = {Deqing Zou and Yawei Zhu and Shouhuai Xu and Zhen Li and Hai Jin and Hengkai Ye},
+  doi          = {10.1145/3429444},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {23:1–31},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Interpreting deep learning-based vulnerability detector predictions based on heuristic searching},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Are comments on stack overflow well organized for easy
+retrieval by developers? <em>TOSEM</em>, <em>30</em>(2), 22:1–31. (<a
+href="https://doi.org/10.1145/3434279">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many Stack Overflow answers have associated informative comments that can strengthen them and assist developers. A prior study found that comments can provide additional information to point out issues in their associated answer, such as the obsolescence of an answer. By showing more informative comments (e.g., the ones with higher scores) and hiding less informative ones, developers can more effectively retrieve information from the comments that are associated with an answer. Currently, Stack Overflow prioritizes the display of comments, and, as a result, 4.4 million comments (possibly including informative comments) are hidden by default from developers. In this study, we investigate whether this mechanism effectively organizes informative comments. We find that (1) the current comment organization mechanism does not work well due to the large amount of tie-scored comments (e.g., 87\% of the comments have 0-score) and (2) in 97.3\% of answers with hidden comments, at least one comment that is possibly informative is hidden while another comment with the same score is shown (i.e., unfairly hidden comments). The longest unfairly hidden comment is more likely to be informative than the shortest one. Our findings highlight that Stack Overflow should consider adjusting the comment organization mechanism to help developers effectively retrieve informative comments. Furthermore, we build a classifier that can effectively distinguish informative comments from uninformative comments. We also evaluate two alternative comment organization mechanisms (i.e., the Length mechanism and the Random mechanism) based on text similarity and the prediction of our classifier.},
+  archive      = {J_TOSEM},
+  author       = {Haoxiang Zhang and Shaowei Wang and Tse-Hsun (Peter) Chen and Ahmed E. Hassan},
+  doi          = {10.1145/3434279},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {22:1–31},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Are comments on stack overflow well organized for easy retrieval by developers?},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Why an android app is classified as malware: Toward malware
+classification interpretation. <em>TOSEM</em>, <em>30</em>(2), 21:1–29.
+(<a href="https://doi.org/10.1145/3423096">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine learning–(ML) based approach is considered as one of the most promising techniques for Android malware detection and has achieved high accuracy by leveraging commonly used features. In practice, most of the ML classifications only provide a binary label to mobile users and app security analysts. However, stakeholders are more interested in the reason why apps are classified as malicious in both academia and industry. This belongs to the research area of interpretable ML but in a specific research domain (i.e., mobile malware detection). Although several interpretable ML methods have been exhibited to explain the final classification results in many cutting-edge Artificial Intelligent–based research fields, until now, there is no study interpreting why an app is classified as malware or unveiling the domain-specific challenges. In this article, to fill this gap, we propose a novel and interpretable ML-based approach (named XMal ) to classify malware with high accuracy and explain the classification result meanwhile. (1) The first classification phase of XMal hinges multi-layer perceptron and attention mechanism and also pinpoints the key features most related to the classification result. (2) The second interpreting phase aims at automatically producing neural language descriptions to interpret the core malicious behaviors within apps. We evaluate the behavior description results by leveraging a human study and an in-depth quantitative analysis. Moreover, we further compare XMal with the existing interpretable ML-based methods (i.e., Drebin and LIME) to demonstrate the effectiveness of XMal . We find that XMal is able to reveal the malicious behaviors more accurately. Additionally, our experiments show that XMal can also interpret the reason why some samples are misclassified by ML classifiers. Our study peeks into the interpretable ML through the research of Android malware detection and analysis.},
+  archive      = {J_TOSEM},
+  author       = {Bozhi Wu and Sen Chen and Cuiyun Gao and Lingling Fan and Yang Liu and Weiping Wen and Michael R. Lyu},
+  doi          = {10.1145/3423096},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {21:1–29},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Why an android app is classified as malware: Toward malware classification interpretation},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). An empirical study on type annotations: Accuracy, speed, and
+suggestion effectiveness. <em>TOSEM</em>, <em>30</em>(2), 20:1–29. (<a
+href="https://doi.org/10.1145/3439775">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Type annotations connect variables to domain-specific types. They enable the power of type checking and can detect faults early. In practice, type annotations have a reputation of being burdensome to developers. We lack, however, an empirical understanding of how and why they are burdensome. Hence, we seek to measure the baseline accuracy and speed for developers making type annotations to previously unseen code. We also study the impact of one or more type suggestions. We conduct an empirical study of 97 developers using 20 randomly selected code artifacts from the robotics domain containing physical unit types. We find that subjects select the correct physical type with just 51\% accuracy, and a single correct annotation takes about 2 minutes on average. Showing subjects a single suggestion has a strong and significant impact on accuracy both when correct and incorrect, while showing three suggestions retains the significant benefits without the negative effects. We also find that suggestions do not come with a time penalty. We require subjects to explain their annotation choices, and we qualitatively analyze their explanations. We find that identifier names and reasoning about code operations are the primary clues for selecting a type. We also examine two state-of-the-art automated type annotation systems and find opportunities for their improvement.},
+  archive      = {J_TOSEM},
+  author       = {John-Paul Ore and Carrick Detweiler and Sebastian Elbaum},
+  doi          = {10.1145/3439775},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {20:1–29},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {An empirical study on type annotations: Accuracy, speed, and suggestion effectiveness},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Killing stubborn mutants with symbolic execution.
+<em>TOSEM</em>, <em>30</em>(2), 19:1–23. (<a
+href="https://doi.org/10.1145/3425497">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce SEMu , a Dynamic Symbolic Execution technique that generates test inputs capable of killing stubborn mutants (killable mutants that remain undetected after a reasonable amount of testing). SEMu aims at mutant propagation (triggering erroneous states to the program output) by incrementally searching for divergent program behaviors between the original and the mutant versions. We model the mutant killing problem as a symbolic execution search within a specific area in the programs’ symbolic tree. In this framework, the search area is defined and controlled by parameters that allow scalable and cost-effective mutant killing. We integrate SEMu in KLEE and experimented with Coreutils (a benchmark frequently used in symbolic execution studies). Our results show that our modeling plays an important role in mutant killing. Perhaps more importantly, our results also show that, within a two-hour time limit, SEMu kills 37\% of the stubborn mutants, where KLEE kills none and where the mutant infection strategy (strategy suggested by previous research) kills 17\%.},
+  archive      = {J_TOSEM},
+  author       = {Thierry Titcheu Chekam and Mike Papadakis and Maxime Cordy and Yves Le Traon},
+  doi          = {10.1145/3425497},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {19:1–23},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Killing stubborn mutants with symbolic execution},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Emoji-powered sentiment and emotion detection from software
+developers’ communication data. <em>TOSEM</em>, <em>30</em>(2), 18:1–48.
+(<a href="https://doi.org/10.1145/3424308">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sentiment and emotion detection from textual communication records of developers have various application scenarios in software engineering (SE). However, commonly used off-the-shelf sentiment/emotion detection tools cannot obtain reliable results in SE tasks and misunderstanding of technical knowledge is demonstrated to be the main reason. Then researchers start to create labeled SE-related datasets manually and customize SE-specific methods. However, the scarce labeled data can cover only very limited lexicon and expressions. In this article, we employ emojis as an instrument to address this problem. Different from manual labels that are provided by annotators, emojis are self-reported labels provided by the authors themselves to intentionally convey affective states and thus are suitable indications of sentiment and emotion in texts. Since emojis have been widely adopted in online communication, a large amount of emoji-labeled texts can be easily accessed to help tackle the scarcity of the manually labeled data. Specifically, we leverage Tweets and GitHub posts containing emojis to learn representations of SE-related texts through emoji prediction. By predicting emojis containing in each text, texts that tend to surround the same emoji are represented with similar vectors, which transfers the sentiment knowledge contained in emoji usage to the representations of texts. Then we leverage the sentiment-aware representations as well as manually labeled data to learn the final sentiment/emotion classifier via transfer learning. Compared to existing approaches, our approach can achieve significant improvement on representative benchmark datasets, with an average increase of 0.036 and 0.049 in macro-F1 in sentiment and emotion detection, respectively. Further investigations reveal that the large-scale Tweets make a key contribution to the power of our approach. This finding informs future research not to unilaterally pursue the domain-specific resource but try to transform knowledge from the open domain through ubiquitous signals such as emojis. Finally, we present the open challenges of sentiment and emotion detection in SE through a qualitative analysis of texts misclassified by our approach.},
+  archive      = {J_TOSEM},
+  author       = {Zhenpeng Chen and Yanbin Cao and Huihan Yao and Xuan Lu and Xin Peng and Hong Mei and Xuanzhe Liu},
+  doi          = {10.1145/3424308},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {18:1–48},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Emoji-powered sentiment and emotion detection from software developers’ communication data},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Test data generation for path coverage of MPI programs using
+SAEO. <em>TOSEM</em>, <em>30</em>(2), 17:1–37. (<a
+href="https://doi.org/10.1145/3423132">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Message-passing interface (MPI) programs, a typical kind of parallel programs, have been commonly used in various applications. However, it generally takes exhaustive computation to run these programs when generating test data to test them. In this article, we propose a method of test data generation for path coverage of MPI programs using surrogate-assisted evolutionary optimization, which can efficiently generate test data with high quality. We first divide a sample set of a program into a number of clusters according to the multi-mode characteristic of the coverage problem, with each cluster training a surrogate model. Then, we estimate the fitness of each individual using one or more surrogate models when generating test data through evolving a population. Finally, a small number of representative individuals are selected to execute the program, with the purpose of obtaining their real fitness, to guide the subsequent evolution of the population. We apply the proposed method to seven benchmark MPI programs and compare it with several state-of-the-art approaches. The experimental results show that the proposed method can generate test data with reduced computation, thus improving the testing efficiency.},
+  archive      = {J_TOSEM},
+  author       = {Dunwei Gong and Baicai Sun and Xiangjuan Yao and Tian Tian},
+  doi          = {10.1145/3423132},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {17:1–37},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Test data generation for path coverage of MPI programs using SAEO},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Adversarial specification mining. <em>TOSEM</em>,
+<em>30</em>(2), 16:1–40. (<a
+href="https://doi.org/10.1145/3424307">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There have been numerous studies on mining temporal specifications from execution traces. These approaches learn finite-state automata (FSA) from execution traces when running tests. To learn accurate specifications of a software system, many tests are required. Existing approaches generalize from a limited number of traces or use simple test generation strategies. Unfortunately, these strategies may not exercise uncommon usage patterns of a software system. To address this problem, we propose a new approach, adversarial specification mining, and develop a prototype, Diversity through Counter-examples (DICE). DICE has two components: DICE-Tester and DICE-Miner. After mining Linear Temporal Logic specifications from an input test suite, DICE-Tester adversarially guides test generation, searching for counterexamples to these specifications to invalidate spurious properties. These counterexamples represent gaps in the diversity of the input test suite. This process produces execution traces of usage patterns that were unrepresented in the input test suite. Next, we propose a new specification inference algorithm, DICE-Miner, to infer FSAs using the traces, guided by the temporal specifications. We find that the inferred specifications are of higher quality than those produced by existing state-of-the-art specification miners. Finally, we use the FSAs in a fuzzer for servers of stateful protocols, increasing its coverage.},
+  archive      = {J_TOSEM},
+  author       = {Hong Jin Kang and David Lo},
+  doi          = {10.1145/3424307},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {16:1–40},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Adversarial specification mining},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). History-based model repair recommendations. <em>TOSEM</em>,
+<em>30</em>(2), 15:1–46. (<a
+href="https://doi.org/10.1145/3419017">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Models in Model-driven Engineering are primary development artifacts that are heavily edited in all stages of software development and that can become temporarily inconsistent during editing. In general, there are many alternatives to resolve an inconsistency, and which one is the most suitable depends on a variety of factors. As also proposed by recent approaches to model repair, it is reasonable to leave the actual choice and approval of a repair alternative to the discretion of the developer. Model repair tools can support developers by proposing a list of the most promising repairs. Such repair recommendations will be only accepted in practice if the generated proposals are plausible and understandable, and if the set as a whole is manageable. Current approaches, which mostly focus on exhaustive search strategies, exploring all possible model repairs without considering the intention of historic changes, fail in meeting these requirements. In this article, we present a new approach to generate repair proposals that aims at inconsistencies that have been introduced by past incomplete edit steps that can be located in the version history of a model. Such an incomplete edit step is either undone or it is extended to a full execution of a consistency-preserving edit operation. The history-based analysis of inconsistencies as well as the generation of repair recommendations are fully automated, and all interactive selection steps are supported by our repair tool called R E V ISION . We evaluate our approach using histories of real-world models obtained from popular open-source modeling projects hosted in the Eclipse Git repository, including the evolution of the entire UML meta-model. Our experimental results confirm our hypothesis that most of the inconsistencies, namely, 93.4, can be resolved by complementing incomplete edits. 92.6\% of the generated repair proposals are relevant in the sense that their effect can be observed in the models’ histories. 94.9\% of the relevant repair proposals are ranked at the topmost position.},
+  archive      = {J_TOSEM},
+  author       = {Manuel Ohrndorf and Christopher Pietsch and Udo Kelter and Lars Grunske and Timo Kehrer},
+  doi          = {10.1145/3419017},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {15:1–46},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {History-based model repair recommendations},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Beyond tests: Program vulnerability repair via crash
+constraint extraction. <em>TOSEM</em>, <em>30</em>(2), 14:1–27. (<a
+href="https://doi.org/10.1145/3418461">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automated program repair is an emerging technology that seeks to automatically rectify program errors and vulnerabilities. Repair techniques are driven by a correctness criterion that is often in the form of a test suite. Such test-based repair may produce overfitting patches, where the patches produced fail on tests outside the test suite driving the repair. In this work, we present a repair method that fixes program vulnerabilities without the need for a voluminous test suite. Given a vulnerability as evidenced by an exploit, the technique extracts a constraint representing the vulnerability with the help of sanitizers. The extracted constraint serves as a proof obligation that our synthesized patch should satisfy. The proof obligation is met by propagating the extracted constraint to locations that are deemed to be “suitable” fix locations. An implementation of our approach (E xtract F ix ) on top of the KLEE symbolic execution engine shows its efficacy in fixing a wide range of vulnerabilities taken from the ManyBugs benchmark, real-world CVEs and Google’s OSS-Fuzz framework. We believe that our work presents a way forward for the overfitting problem in program repair by generalizing observable hazards/vulnerabilities (as constraint) from a single failing test or exploit.},
+  archive      = {J_TOSEM},
+  author       = {Xiang Gao and Bo Wang and Gregory J. Duck and Ruyi Ji and Yingfei Xiong and Abhik Roychoudhury},
+  doi          = {10.1145/3418461},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {14:1–27},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Beyond tests: Program vulnerability repair via crash constraint extraction},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Test selection for deep learning systems. <em>TOSEM</em>,
+<em>30</em>(2), 13:1–22. (<a
+href="https://doi.org/10.1145/3417330">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Testing of deep learning models is challenging due to the excessive number and complexity of the computations involved. As a result, test data selection is performed manually and in an ad hoc way. This raises the question of how we can automatically select candidate data to test deep learning models. Recent research has focused on defining metrics to measure the thoroughness of a test suite and to rely on such metrics to guide the generation of new tests. However, the problem of selecting/prioritising test inputs (e.g., to be labelled manually by humans) remains open. In this article, we perform an in-depth empirical comparison of a set of test selection metrics based on the notion of model uncertainty (model confidence on specific inputs). Intuitively, the more uncertain we are about a candidate sample, the more likely it is that this sample triggers a misclassification. Similarly, we hypothesise that the samples for which we are the most uncertain are the most informative and should be used in priority to improve the model by retraining. We evaluate these metrics on five models and three widely used image classification problems involving real and artificial (adversarial) data produced by five generation algorithms. We show that uncertainty-based metrics have a strong ability to identify misclassified inputs, being three times stronger than surprise adequacy and outperforming coverage-related metrics. We also show that these metrics lead to faster improvement in classification accuracy during retraining: up to two times faster than random selection and other state-of-the-art metrics on all models we considered.},
+  archive      = {J_TOSEM},
+  author       = {Wei Ma and Mike Papadakis and Anestis Tsakmalis and Maxime Cordy and Yves Le Traon},
+  doi          = {10.1145/3417330},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {13:1–22},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Test selection for deep learning systems},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Enabledness-based testing of object protocols.
+<em>TOSEM</em>, <em>30</em>(2), 12:1–36. (<a
+href="https://doi.org/10.1145/3415153">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A significant proportion of classes in modern software introduce or use object protocols, prescriptions on the temporal orderings of method calls on objects. This article studies search-based test generation techniques that aim to exploit a particular abstraction of object protocols (enabledness preserving abstractions (EPAs)) to find failures. We define coverage criteria over an extension of EPAs that includes abnormal method termination and define a search-based test case generation technique aimed at achieving high coverage. Results suggest that the proposed case generation technique with a fitness function that aims at combined structural and extended EPA coverage can provide better failure-detection capabilities not only for protocol failures but also for general failures when compared to random testing and search-based test generation for standard structural coverage.},
+  archive      = {J_TOSEM},
+  author       = {Javier Godoy and Juan Pablo Galeotti and Diego Garbervetsky and Sebastián Uchitel},
+  doi          = {10.1145/3415153},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {2},
+  pages        = {12:1–36},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Enabledness-based testing of object protocols},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Verification of program transformations with inductive
+refinement types. <em>TOSEM</em>, <em>30</em>(1), 5:1–33. (<a
+href="https://doi.org/10.1145/3409805">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-level transformation languages like Rascal include expressive features for manipulating large abstract syntax trees: first-class traversals, expressive pattern matching, backtracking, and generalized iterators. We present the design and implementation of an abstract interpretation tool, Rabit, for verifying inductive type and shape properties for transformations written in such languages. We describe how to perform abstract interpretation based on operational semantics, specifically focusing on the challenges arising when analyzing the expressive traversals and pattern matching. Finally, we evaluate Rabit on a series of transformations (normalization, desugaring, refactoring, code generators, type inference, etc.) showing that we can effectively verify stated properties.},
+  archive      = {J_TOSEM},
+  author       = {Ahmad Salim Al-Sibahi and Thomas P. Jensen and Aleksandar S. Dimovski and Andrzej Wąsowski},
+  doi          = {10.1145/3409805},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {5:1–33},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Verification of program transformations with inductive refinement types},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Security smells in ansible and chef scripts: A replication
+study. <em>TOSEM</em>, <em>30</em>(1), 3:1–31. (<a
+href="https://doi.org/10.1145/3408897">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Context: Security smells are recurring coding patterns that are indicative of security weakness and require further inspection. As infrastructure as code (IaC) scripts, such as Ansible and Chef scripts, are used to provision cloud-based servers and systems at scale, security smells in IaC scripts could be used to enable malicious users to exploit vulnerabilities in the provisioned systems. Goal: The goal of this article is to help practitioners avoid insecure coding practices while developing infrastructure as code scripts through an empirical study of security smells in Ansible and Chef scripts. Methodology: We conduct a replication study where we apply qualitative analysis with 1,956 IaC scripts to identify security smells for IaC scripts written in two languages: Ansible and Chef. We construct a static analysis tool called Security Linter for Ansible and Chef scripts (SLAC) to automatically identify security smells in 50,323 scripts collected from 813 open source software repositories. We also submit bug reports for 1,000 randomly selected smell occurrences. Results: We identify two security smells not reported in prior work: missing default in case statement and no integrity check. By applying SLAC we identify 46,600 occurrences of security smells that include 7,849 hard-coded passwords. We observe agreement for 65 of the responded 94 bug reports, which suggests the relevance of security smells for Ansible and Chef scripts amongst practitioners. Conclusion: We observe security smells to be prevalent in Ansible and Chef scripts, similarly to that of the Puppet scripts. We recommend practitioners to rigorously inspect the presence of the identified security smells in Ansible and Chef scripts using (i) code review, and (ii) static analysis tools.},
+  archive      = {J_TOSEM},
+  author       = {Akond Rahman and Md Rayhanur Rahman and Chris Parnin and Laurie Williams},
+  doi          = {10.1145/3408897},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {3:1–31},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {Security smells in ansible and chef scripts: A replication study},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). StreamGen: Model-driven development of distributed streaming
+applications. <em>TOSEM</em>, <em>30</em>(1), 1:1–30. (<a
+href="https://doi.org/10.1145/3408895">www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Distributed streaming applications, i.e., applications that process massive streams of data in a distributed fashion, are becoming increasingly popular to tame the velocity and the volume of Big Data . Nevertheless, the widespread adoption of data-intensive processing is still limited by the non-trivial design paradigms involved, which deal with the unboundedness and volume of involved data streams and by the many distributed streaming platforms, each with its own characteristics and APIs. In this article, we present StreamGen, a Model-Driven Engineering tool to simplify the design of such streaming applications and automatically generate the corresponding code. StreamGen is able to automatically generate fully working and processing-ready code for different target platforms (e.g., Apache Spark, Apache Flink). Evaluation shows that (i) StreamGen is general enough to model and generate the code, offering comparable performance against a preexisting similar and well-known application; (ii) the tool is fully compliant with streaming concepts defined as part of the Google Dataflow Model; and (iii) users with little computer science background and limited experience with big data have been able to work with StreamGen and create/refactor an application in a matter of minutes.},
+  archive      = {J_TOSEM},
+  author       = {Michele Guerriero and Damian Andrew Tamburri and Elisabetta Di Nitto},
+  doi          = {10.1145/3408895},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  number       = {1},
+  pages        = {1:1–30},
+  shortjournal = {ACM Trans. Softw. Eng. Methodol.},
+  title        = {StreamGen: Model-driven development of distributed streaming applications},
+  volume       = {30},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>
