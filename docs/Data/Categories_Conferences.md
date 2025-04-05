@@ -175,7 +175,7 @@
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
 |[PMLR](https://proceedings.mlr.press/)|[International Conference on Artificial Intelligence and Statistics](https://aistats.org)|[Proc. Int. Conf. Artif. Intell. Statist.](https://aistats.org)|[AISTATS](https://proceedings.mlr.press/)|1997-|False|C|10/10/2024|03/05/2025|**-177**|Phuket, Thailand|Artificial Intelligence; Learning Theory; Statistics|
 |[PMLR](https://proceedings.mlr.press/)|[International Conference on Algorithmic Learning Theory](http://algorithmiclearningtheory.org/)|[Proc. Int. Conf. Algorithmic Learn. Theory](http://algorithmiclearningtheory.org/alt2025/)|[ALT](https://proceedings.mlr.press/)|1990-|False|C|01/10/2024|24/02/2025|NONE|Politecnico di Milano, Milan, Italy|Learning Theory|
-|[PMLR](https://proceedings.mlr.press/)|[Annual Conference On Computational Learning Theory](http://learningtheory.org)|[Proc. Conf. Learn. Theory](https://learningtheory.org/colt2025/)|[COLT](https://dl.acm.org/conference/colt/proceedings)|1988-|False|B|06/02/2025|30/06/2025|**-58**| Lyon, France|Learning Theory|
+|[PMLR](https://proceedings.mlr.press/)|[Annual Conference On Computational Learning Theory](http://learningtheory.org)|[Proc. Conf. Learn. Theory](https://learningtheory.org/colt2025/)|[COLT](https://dl.acm.org/conference/colt/proceedings)|1988-|False|B|06/02/2025|30/06/2025|**-58**|Lyon, France|Learning Theory|
 
 ## Statistics
 

@@ -22,5 +22,5 @@ The Proceedings of Machine Learning Research is a series that publishes machine 
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[PMLR](https://proceedings.mlr.press/)|[Annual Conference On Computational Learning Theory](http://learningtheory.org)|[Proc. Conf. Learn. Theory](https://learningtheory.org/colt2025/)|[COLT](https://dl.acm.org/conference/colt/proceedings)|1988-|False|B|06/02/2025|30/06/2025|**-58**| Lyon, France|Learning Theory|
+|[PMLR](https://proceedings.mlr.press/)|[Annual Conference On Computational Learning Theory](http://learningtheory.org)|[Proc. Conf. Learn. Theory](https://learningtheory.org/colt2025/)|[COLT](https://dl.acm.org/conference/colt/proceedings)|1988-|False|B|06/02/2025|30/06/2025|**-58**|Lyon, France|Learning Theory|
 
