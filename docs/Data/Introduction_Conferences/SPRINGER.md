@@ -27,7 +27,7 @@ Springer Nature Link is the reading platform of choice for hundreds of thousands
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[SPRINGER](https://www.springer.com/)|[European Conference on Computer Vision](https://eccv.ecva.net/)|[Proc. Eur. Conf. Comput. Vis.](https://eccv.ecva.net/)|[ECCV](https://link.springer.com/conference/eccv)|1990-|False|B|06/03/2026|08/09/2026|**336**|Malmö, Sweden|Computer Vision; European Conference|
+|[SPRINGER](https://www.springer.com/)|[European Conference on Computer Vision](https://eccv.ecva.net/)|[Proc. Eur. Conf. Comput. Vis.](https://eccv.ecva.net/)|[ECCV](https://link.springer.com/conference/eccv)|1990-|False|B|06/03/2026|08/09/2026|**335**|Malmö, Sweden|Computer Vision; European Conference|
 
 ## EMO
 
@@ -39,31 +39,37 @@ Springer Nature Link is the reading platform of choice for hundreds of thousands
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[SPRINGER](https://www.springer.com/)|[European Conference on Genetic Programming](https://www.evostar.org/)|[Proc. Eur. Conf. Genet. Program.](https://www.evostar.org/2025/eurogp/)|[EuroGP](https://link.springer.com/conference/eurogp)|1998-|False||01/11/2024|23/04/2025|**-154**|Trieste, Italy|European Conference; Evolutionary Computation|
+|[SPRINGER](https://www.springer.com/)|[European Conference on Genetic Programming](https://www.evostar.org/)|[Proc. Eur. Conf. Genet. Program.](https://www.evostar.org/2025/eurogp/)|[EuroGP](https://link.springer.com/conference/eurogp)|1998-|False||01/11/2024|23/04/2025|**-155**|Trieste, Italy|European Conference; Evolutionary Computation|
 
 ## EvoAPPS
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[SPRINGER](https://www.springer.com/)|[International Conference on Applications of Evolutionary Computation](https://www.evostar.org/)|[Proc. Int. Conf. Appl. Evol. Comput.](https://www.evostar.org/2025/evoapps/)|[EvoAPPS](https://link.springer.com/conference/evoapplications)|2010-|False||01/11/2024|23/04/2025|**-154**|Trieste, Italy|European Conference; Evolutionary Computation|
+|[SPRINGER](https://www.springer.com/)|[International Conference on Applications of Evolutionary Computation](https://www.evostar.org/)|[Proc. Int. Conf. Appl. Evol. Comput.](https://www.evostar.org/2025/evoapps/)|[EvoAPPS](https://link.springer.com/conference/evoapplications)|2010-|False||01/11/2024|23/04/2025|**-155**|Trieste, Italy|European Conference; Evolutionary Computation|
 
 ## EvoCOP
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[SPRINGER](https://www.springer.com/)|[Evolutionary Computation in Combinatorial Optimisation](https://www.evostar.org/)|[Proc. Eur. Conf. Evol. Comput. Comb. Optim.](https://www.evostar.org/2025/evocop/)|[EvoCOP](https://link.springer.com/conference/evocop)|2004-|False||01/11/2024|23/04/2025|**-154**|Trieste, Italy|European Conference; Evolutionary Computation|
+|[SPRINGER](https://www.springer.com/)|[Evolutionary Computation in Combinatorial Optimisation](https://www.evostar.org/)|[Proc. Eur. Conf. Evol. Comput. Comb. Optim.](https://www.evostar.org/2025/evocop/)|[EvoCOP](https://link.springer.com/conference/evocop)|2004-|False||01/11/2024|23/04/2025|**-155**|Trieste, Italy|European Conference; Evolutionary Computation|
 
 ## EvoMUSART
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[SPRINGER](https://www.springer.com/)|[Artificial Intelligence in Music, Sound, Art and Design](https://www.evostar.org/)|[Proc. Int. Conf. Artif. Intell. Music, Sound, Art and Design](https://www.evostar.org/2025/evomusart/)|[EvoMUSART](https://link.springer.com/conference/evomusart)|2012-|False||01/11/2024|23/04/2025|**-154**|Trieste, Italy|European Conference; Evolutionary Computation|
+|[SPRINGER](https://www.springer.com/)|[Artificial Intelligence in Music, Sound, Art and Design](https://www.evostar.org/)|[Proc. Int. Conf. Artif. Intell. Music, Sound, Art and Design](https://www.evostar.org/2025/evomusart/)|[EvoMUSART](https://link.springer.com/conference/evomusart)|2012-|False||01/11/2024|23/04/2025|**-155**|Trieste, Italy|European Conference; Evolutionary Computation|
 
 ## ICANN
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[SPRINGER](https://www.springer.com/)|International Conference on Artificial Neural Networks|[Proc. Int. Conf. Artif. Neural Netw. Mach. Learn.](https://e-nns.org/icann2025/)|[ICANN](https://link.springer.com/conference/icann)|1991-|False|C|15/03/2025|09/09/2025|**-20**|Kaunas, Lithuania|Neural Networks|
+|[SPRINGER](https://www.springer.com/)|International Conference on Artificial Neural Networks|[Proc. Int. Conf. Artif. Neural Netw. Mach. Learn.](https://e-nns.org/icann2025/)|[ICANN](https://link.springer.com/conference/icann)|1991-|False|C|15/03/2025|09/09/2025|**-21**|Kaunas, Lithuania|Neural Networks|
+
+## ICSI
+
+|Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
+|-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
+|[SPRINGER](https://www.springer.com/)|[Conference on Robot Learning](https://iasei.org/)|[Proc. Int. Conf. Swarm Intell.](https://iasei.org/icsi2025/)|[ICSI](https://link.springer.com/conference/icsi)|2010-|False||18/04/2025|11/07/2025|**13**|Yokohama, Japan|Evolutionary Computation; Swarm Intelligence|
 
 ## PPSN
 

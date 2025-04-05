@@ -10,5 +10,5 @@ Founded in 1979, the Association for the Advancement of Artificial Intelligence 
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[AAAI](https://www.aaai.org/)|[AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/conferences.php)|[Proc. AAAI Conf. Artif. Intell.](https://aaai.org/conference/aaai/aaai-25/)|[AAAI](https://ojs.aaai.org/index.php/AAAI/issue/archive)|1980-|False|A|07/08/2025|20/01/2026|**125**|Singapore|Artificial Intelligence|
+|[AAAI](https://www.aaai.org/)|[AAAI Conference on Artificial Intelligence](https://aaai.org/Conferences/conferences.php)|[Proc. AAAI Conf. Artif. Intell.](https://aaai.org/conference/aaai/aaai-25/)|[AAAI](https://ojs.aaai.org/index.php/AAAI/issue/archive)|1980-|False|A|07/08/2025|20/01/2026|**124**|Singapore|Artificial Intelligence|
 

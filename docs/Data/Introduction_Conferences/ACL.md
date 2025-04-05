@@ -10,5 +10,5 @@ The Association for Computational Linguistics (ACL) is the premier international
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[ACL](https://www.aclweb.org/)|[Annual Meeting of the Association for Computational Linguistics](https://aclanthology.org/venues/acl/)|[Proc. Annu. Meeting Assoc. Comput. Linguistics](https://2025.aclweb.org/)|[ACL](https://aclanthology.org/venues/acl/)|1962-|False|A|15/02/2025|28/07/2025|**-48**|Vienna, Austria|NLP|
+|[ACL](https://www.aclweb.org/)|[Annual Meeting of the Association for Computational Linguistics](https://aclanthology.org/venues/acl/)|[Proc. Annu. Meeting Assoc. Comput. Linguistics](https://2025.aclweb.org/)|[ACL](https://aclanthology.org/venues/acl/)|1962-|False|A|15/02/2025|28/07/2025|**-49**|Vienna, Austria|NLP|
 

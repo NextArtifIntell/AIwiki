@@ -12,5 +12,5 @@ Since 1975, USENIX has brought together the community of engineers, researchers,
 
 |Publisher|Full/Homepage|Abbr/About|Flag/Archive|Period|Top|CCF|Submit|Current|DDL|Location|Type|
 |-        |-            |-         |-           |-     |-  |-  |-     |-      |-  |-       |-   |
-|[USENIX](https://www.usenix.org/)|[Usenix Symposium On Operating Systems Design And Implementations](https://www.usenix.org)|[Proc. USENIX Symp. Oper. Syst. Des. Implement.](https://www.usenix.org/conference/osdi25)|[OSDI](https://dl.acm.org/conference/osdi/proceedings)|1994-|False|A|03/12/2024|07/07/2025|**-122**|Boston, USA|Operating Systems|
+|[USENIX](https://www.usenix.org/)|[Usenix Symposium On Operating Systems Design And Implementations](https://www.usenix.org)|[Proc. USENIX Symp. Oper. Syst. Des. Implement.](https://www.usenix.org/conference/osdi25)|[OSDI](https://dl.acm.org/conference/osdi/proceedings)|1994-|False|A|03/12/2024|07/07/2025|**-123**|Boston, USA|Operating Systems|
 
