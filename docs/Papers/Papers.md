@@ -1,4 +1,4 @@
-# Weekly Papers
+# Papers
 
 ## arXiv and IEEE Early Access
 
