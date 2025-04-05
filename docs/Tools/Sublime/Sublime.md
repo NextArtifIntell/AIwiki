@@ -94,10 +94,10 @@ Add a series of useful plugins.
 - [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements): [x]
 - [Sublime_rainbow_csv](https://github.com/mechatroner/sublime_rainbow_csv): [x]
 - [Sublime-text-git](https://github.com/kemayo/sublime-text-git): [x]
-- [gitignore](https://github.com/github/gitignore): [x] - (**deprecated**)
-- [RainbowBrackets](https://github.com/absop/RainbowBrackets): [x] - (**deprecated**)
-- [TabsExtra](https://facelessuser.github.io/TabsExtra/installation/): [x] - (**deprecated**)
-- [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer): [x] - (**deprecated**)
+- [gitignore](https://github.com/github/gitignore): [x]
+- [RainbowBrackets](https://github.com/absop/RainbowBrackets): [x]
+- [TabsExtra](https://facelessuser.github.io/TabsExtra/installation/): [x]
+- [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer): [x]
 
 ### For Markdown
 
